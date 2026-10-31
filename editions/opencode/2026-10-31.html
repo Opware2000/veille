@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opencode — samedi 31 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opencode.xml" title="r/opencode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opencode — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune version d'opencode n'a été publiée depuis la 2.2.5, la veille au soir, et aucun post de la nuit n'annonce de nouveauté du programme lui-même.</li>
+<li>Deux éléments passent le filtre : la grille tarifaire de l'agent concurrent Command Code, qui revend de l'usage de GLM 5.3 Flash, et le journal d'un agent opencode maintenu en session persistante sur un serveur depuis vingt jours.</li>
+<li>Édition courte : elle suit la première édition du même jour, envoyée à 3 h 19 (heure de Paris), et ne couvre donc que les quatre posts publiés depuis.</li>
+</ul>
+<h2>Versions et fonctionnalités</h2>
+<ul>
+<li>Rien de nouveau du côté d'opencode. La dernière version publiée reste la 2.2.5, le 30 octobre à 23 h 17 UTC (<a href="https://github.com/anomalyco/opencode/releases/tag/v2.2.5">notes de version</a>), et l'API GitHub n'en signale aucune autre depuis. Le dépôt a encore été modifié ce matin à 6 h 12 UTC, sans publication de version.</li>
+<li>Un cinquième post reprend l'actualité du compte Claude dans OpenCode (« You CAN now use your Claude subscription in OpenCode », u/shtrjones87, 1 h 00) : c'est exactement le fait documenté dans l'édition de ce matin, sans élément nouveau, donc écarté du corps.</li>
+</ul>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<ul>
+<li><strong>Ce que coûte GLM 5.3 Flash chez l'agent concurrent Command Code.</strong> Un post de u/iArxic (1 h 14) raconte qu'en demandant à Command Code quels fournisseurs ils utilisent, il s'est vu répondre que c'était un secret d'entreprise, puis a été banni après une coupure de session. Le seul élément chiffré du message est que leur offre donnerait « 100 $ pour 10 $ » sur GLM 5.3 Flash. Vérification faite sur le site de l'éditeur : le forfait GOAT à 10 $ par mois annonce « jusqu'à 100 $ de crédits inclus » et environ 75 000 requêtes, mais ces crédits sont répartis par modèle — 80 $ sur GLM-5.3 Flash, 80 $ sur DeepSeek V4.1 Flash, 100 $ sur Ling 3.1 Flash, 70 $ sur Tencent Hy3 et 70 $ sur Qwen 3.8 27B. Le « 100 $ » du post correspond donc à l'enveloppe totale du forfait, pas à celle de GLM 5.3 Flash. Pour être complet, le forfait à 1 $ par mois inclut 10 $ de crédits et celui à 100 $ par mois 150 $ (<a href="https://commandcode.ai/pricing">commandcode.ai/pricing</a>).</li>
+<li>Les deux autres affirmations du post — des serveurs annoncés entre 300 et 500 jetons par seconde, et des réponses sortant en partie en chinois et en espagnol — ne reposent que sur les captures d'écran de l'auteur. Je n'ai trouvé aucune source les confirmant : à considérer comme un témoignage, pas comme un fait. Le refus de citer les fournisseurs et le bannissement ne sont, eux non plus, attestés que par l'auteur.</li>
+<li>Fiche du modèle chez le même éditeur : GLM-5.3 Flash (identifiant <code>z-ai/glm-5.3-flash</code>), publié le 26 août 2026, 1,05 M de jetons de contexte, 0,15 $ par million de jetons en entrée et 0,50 $ en sortie, 0,03 $ pour la lecture du cache, disponible à partir du forfait Go (<a href="https://commandcode.ai/models/glm-5-3-flash">commandcode.ai/models/glm-5-3-flash</a>). Pour situer : un fil de comparaison opencode / Command Code sur ce même modèle avait déjà été publié sur le subreddit (« GLM 5.3 Flash — OC vs CC Comparison »).</li>
+</ul>
+<h2>Méthodes et retours d'expérience</h2>
+<ul>
+<li><strong>Vingt jours d'agent opencode en session persistante.</strong> u/2tacchi publie chaque jour l'avancement d'un site dont le contenu est réécrit à partir du commentaire le mieux noté d'un fil Reddit (vingtième jour ce matin). Le montage est décrit précisément : l'agent tourne sur un serveur privé isolé, dans une session opencode persistante, de sorte que les consignes et les entrées passées sont conservées d'un jour à l'autre ; une consigne permanente lui interdit de poser des questions de relance, ce qui permet un enchaînement sans intervention humaine ; une page d'archive conserve toutes les versions précédentes du site ainsi que les contextes et les constructions successives du modèle. Le modèle employé est DeepSeek V4.1 Flash. Le site est bien en ligne, la page d'accueil comme l'archive répondent (<a href="https://dailymorph.app/">dailymorph.app</a>). Ce qui est reprenable : la session persistante comme mémoire entre deux exécutions, une consigne du type « ne pose pas de question de relance » pour un agent non surveillé, et la conservation du contexte de chaque exécution comme moyen de repérer une dérive. Ce qui manque : aucun dépôt, aucun fichier de configuration, aucun chiffre de coût n'est publié — la méthode est racontée, pas documentée, et le message est le vingtième d'une série quotidienne (les jours 9, 10, 13, 16, 17 et 19 sont également visibles).</li>
+</ul>
+<h2>Volume</h2>
+<p>Quatre posts publiés dans l'intervalle, deux retenus, deux écartés, soit un taux de rétention de 50 %. Sur un nombre aussi faible, ce taux n'a pas de valeur : la nuit dernière, sur le même subreddit, le filtre avait retenu six posts sur vingt-cinq. Écartés : une demande de conseil d'achat entre l'offre de démarrage indienne de Cursor et l'abonnement opencode Go, sans aucune donnée, et la redite de l'actualité Claude citée plus haut. Aucune erreur de collecte n'est consignée dans <code>meta.json</code> (dernière collecte à 4 h 59 UTC), et rien n'a été publié sur Telegram.</p>
+<footer>Édition du samedi 31 octobre 2026 — <a href="https://opware2000.github.io/veille/opencode.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

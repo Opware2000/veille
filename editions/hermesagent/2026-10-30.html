@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — vendredi 30 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Trois apports réels cette fois : Talaria, un client Android libre pour Hermes (il n'en existait aucun) ; un greffon qui exécute le code de l'agent dans des bacs à sable persistants et parallèles sur une grappe Flame ; Oh My Hermes, une couche d'exploitation qui place un graphe de tâches vérifiées au-dessus de Hermes. Quatrième entrée, Autonomous Lamp : un robot de bureau dont le système est libre, mais dont le matériel coûte 999 dollars.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Talaria — un client Android libre pour Hermes</h3>
+<ul>
+<li>Ce que c'est : une application Android qui se connecte au tableau de bord Hermes que vous faites déjà tourner, si bien que conversations, profils et tâches sont les mêmes que sur le bureau. Conversation en flux avec lignes d'outils, approbations, commandes slash, pièces jointes, Markdown, LaTeX et Mermaid ; bots et conversations de groupe ; tâches planifiées ; compétences et réglages ; dictée, lecture à voix haute et conversation mains libres.</li>
+<li>Ce que ça apporte : un client mobile de plein droit, là où Android n'en avait aucun (l'existant, Hermes Conduit, est réservé à iOS). S'y ajoute un greffon facultatif de notifications chiffrées de bout en bout avec cartes enrichies (cartes, graphiques, lieux) et accès aux données du téléphone (santé, position, agenda), chaque accès restant désactivé tant qu'on ne l'active pas.</li>
+<li>Licence et prix : MIT, gratuit. L'auteur précise s'inspirer de Hermes Conduit sans aucun lien avec son auteur.</li>
+<li>Dépôts vérifiés : github.com/dawnforge-lab/talaria — MIT, 1 étoile, créé le 28 octobre 2026, dernière poussée le 29 octobre 2026 ; greffon et relais : github.com/dawnforge-lab/talaria-plugin — MIT, 0 étoile, dernière poussée le 29 octobre 2026.</li>
+<li>Réserves : projet d'un jour, une seule étoile à l'heure de la vérification, et l'auteur annonce que Claude a rédigé une partie du code. Les notifications exigent votre propre projet Firebase et un relais à monter soi-même.</li>
+<li>Remarque de collecte : le même billet a été publié deux fois, à 12h45 puis à 15h30 (UTC), par le même auteur. Une seule entrée retenue ici.</li>
+</ul>
+<h3>Oh My Hermes (OMH) — une couche d'exploitation au-dessus de Hermes</h3>
+<ul>
+<li>Ce que c'est : un ensemble de compétences et de greffons qui transforme une demande en graphe de petites tâches (« nodes ») exécutées en parallèle par plusieurs voies (« lanes »). La commande /dag-ulw construit le graphe puis l'exécute, avec une boucle vérifier-réparer-revérifier : dans la démonstration citée, un contrôleur détecte un disque M.2 à 94 °C, OMH répare, revérifie le même nœud, et n'annonce « vérifié » qu'ensuite. Chaque voie porte une catégorie de travail (ultrabrain, deep, visual-engineering, quick) qui fixe sa chaîne de modèles et son effort de raisonnement ; si un fournisseur refuse un modèle, la chaîne passe au suivant au lieu de se dégrader en silence. Le paquet embarque plus de cent compétences spécialisées omh-*.</li>
+<li>Ce que ça apporte : parallélisme et contrôle qualité sans quitter Hermes. OMH ne corrige ni ne remplace Hermes et n'écrit pas dans sa mémoire ; c'est une surcouche, pas un agent concurrent.</li>
+<li>Licence et prix : MIT, gratuit (installation par npm).</li>
+<li>Dépôt vérifié : github.com/rlaope/oh-my-hermes — MIT, 4 881 étoiles, 388 forks, créé le 3 juin 2026, dernière poussée le 30 octobre 2026.</li>
+<li>Réserves : le billet du subreddit est un résumé signé « Hermes_helper » et non l'annonce de l'auteur ; la partie matérielle montrée dans la démonstration est un rendu de synthèse, ce que l'auteur reconnaît lui-même. Le modèle par défaut de la démonstration était Claude Opus 5.5, avec plusieurs voies en parallèle : à surveiller du côté du coût.</li>
+</ul>
+<h3>Autonomous Lamp — un robot de bureau dont le système est libre</h3>
+<ul>
+<li>Ce que c'est : une lampe-robot (caméra grand angle, réseau de microphones, haut-parleurs stéréo, cinq servos pour la tête) qui héberge Hermes. Hermes y tourne comme serveur local exposé en HTTP et SSE, ou la lampe peut pointer vers une instance Hermes de votre réseau local. Le cerveau est interchangeable depuis l'interface web (Hermes, Claude Code, Codex, OpenClaw, OpenCode, PicoClaw), persona, mémoire et connecteurs suivant le changement. L'appareil observe la pièce — mouvement, visages, lumière, son — et le signale à Hermes, qui gagne ainsi un contexte qui ne se limite pas à ce qu'on lui écrit. Les compétences sont des fichiers SKILL.md : pour faire bouger ou éclairer la lampe, Hermes ajoute une note à sa réponse et le système d'exploitation la traduit en mouvements, sans que l'agent touche jamais aux servos.</li>
+<li>Ce que ça apporte : à ma connaissance le premier montage grand public qui donne à Hermes des yeux, des oreilles et un corps, avec un système d'exploitation libre utilisable sur Raspberry Pi 4/5 ou OrangePi.</li>
+<li>Licence et prix : lampOS est libre (Apache-2.0) ; la lampe assemblée est annoncée à 999 dollars, expédition annoncée au 30 novembre 2026. Le matériel sort donc du cadre « gratuit ou peu coûteux » : je le signale comme tel plutôt que de l'écarter en silence.</li>
+<li>Dépôts vérifiés : github.com/autonomous-ai/lampOS — Apache-2.0, 527 étoiles, créé le 4 juin 2026, dernière poussée le 30 octobre 2026. L'ancien dépôt autonomous-lamp a été archivé et renommé (autonomous-os) ; l'API GitHub a redirigé lors de ma vérification.</li>
+<li>Réserves : c'est un produit commercial dont seule la partie logicielle est libre, et le système fonctionne avec d'autres agents que Hermes.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Greffon Flame — exécuter le code de l'agent dans des bacs à sable persistants et parallèles</h3>
+<ul>
+<li>Ce que c'est : un greffon qui permet à Hermes d'exécuter du Python et du shell sur une grappe Flame, par deux outils. « Sandbox » conserve un système de fichiers de travail d'un appel à l'autre : l'agent crée un fichier, le traite, puis inspecte le résultat à une étape ultérieure. « Session » soumet plusieurs extraits indépendants d'un coup et renvoie un résultat pour chacun.</li>
+<li>Ce que ça apporte : un bac à sable qui survit entre les étapes et l'exécution parallèle. Aujourd'hui le terminal de l'agent repart d'un état neuf à chaque appel ; ici, le travail intermédiaire — fichiers, environnement Python — est conservé, ce qui convient aux analyses de données menées par étapes.</li>
+<li>Licence et prix : Apache-2.0, gratuit. Flame est un moteur à installer sur sa propre grappe Kubernetes ; l'hébergement n'est pas le sujet du billet.</li>
+<li>Mesures annoncées : 127 ms en médiane entre la création du bac à sable et le premier résultat Python, sur 12 échantillons, image préchauffée ; appels Python à chaud autour de 24 à 25 ms. L'auteur précise que ce sont des mesures du SDK, hors inférence du modèle, hors orchestration Hermes et hors latence réseau d'un client distant, et que l'échantillon de démarrage est trop petit pour garantir la latence en queue.</li>
+<li>Réserve, importante : je n'ai pas trouvé de dépôt dédié à ce greffon. Il est présenté par k82cn, l'auteur du projet Flame lui-même (github.com/k82cn/flame — Apache-2.0, 0 étoile, dernière poussée le 30 octobre 2026, description « A distributed system for intelligent workload »), et le billet ne contient aucun lien vers un greffon publiable. À considérer comme une annonce d'auteur à suivre, non comme un paquet vérifié.</li>
+</ul>
+<h2>Volume</h2>
+<p>20 posts publiés dans l'intervalle, 4 éléments retenus (5 posts, le doublon Talaria compté une fois), 15 posts écartés.</p>
+<p>Motifs d'écartement : questions et demandes d'aide, demandes de conseil sur un choix de modèle ou de fournisseur de mémoire, plaintes sur le prix du portail Nous, difficultés d'installation sous Fedora, retours d'expérience sur des modèles non censurés, expérience d'auto-amélioration sans outil publiable, et un post intitulé « NOW OFFICIALLY FREE on iOS » sans corps ni lien : aucune application n'y est identifiable, il est donc écarté faute d'être vérifiable (il concerne peut-être le client iOS Hermes Conduit, mais rien ne le confirme).</p>
+<p>La dernière collecte s'est déroulée sans erreur (journal meta.json : aucune entrée dans « errors », dernier passage le 30 octobre 2026 à 03h41 UTC).</p>
+<footer>Édition du vendredi 30 octobre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

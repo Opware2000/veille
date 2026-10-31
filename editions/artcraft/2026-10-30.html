@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — vendredi 30 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>SolidCraft, la CAO paramétrique libre éditée par Tangency Labs, fait son entrée dans le lanceur officiel ArtCraft ; sa version v0.27.1 est sortie ce matin.</li>
+<li>Un dépôt communautaire auto-hébergeable déploie désormais les versions web des Craft apps, SolidCraft compris.</li>
+<li>Une alerte, isolée et non confirmée, signale que LightCraft 0.15 appliquerait une édition IA à l'import d'un fichier DNG.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>SolidCraft entre dans le lanceur ArtCraft</h3>
+<p>Le lanceur officiel (storytold/craft-launcher) référence SolidCraft, présenté comme une « application communautaire » éditée par Tangency Labs, aux côtés de DeckCraft, GridCraft, CADCraft, SoundCraft et FigCraft. Concrètement, l'application n'est plus un projet à installer à la main : le lanceur affiche l'icône, la fiche et le téléchargement correspondant à votre système. C'est la première application d'un éditeur tiers à intégrer la vitrine ArtCraft, qui cesse donc d'être un catalogue strictement interne. L'entrée est publiée par u/Zelda_Junkie1 : https://www.reddit.com/r/ArtCraftAI/comments/1xiv0ji/solidcraft_in_the_artcraft_launcher/</p>
+<h3>SolidCraft v0.27.x</h3>
+<p>Le dépôt tangency-labs/solidcraft (licence Apache 2.0, 12 105 étoiles et 1 567 forks au 30 octobre, créé le 7 octobre 2026) a publié v0.27.0 puis v0.27.1 dans la nuit, dernières écritures du dépôt à 04 h 45 UTC. Le projet couvre le poste de travail et le navigateur, et expose un serveur MCP pour piloter la modélisation depuis un agent. Incertitude à signaler : le site officiel solidcraft.io annonce toujours « v0.12.0 disponible » alors que GitHub liste v0.27.1, soit un écart de quinze versions mineures — l'indicateur de version du site est vraisemblablement en retard, mais je n'ai pas trouvé de note d'explication.</p>
+<h3>Automatiser VectorCraft par son serveur MCP</h3>
+<p>Un utilisateur, u/audioglass, raconte avoir converti 50 documents Word de codes-barres en planches d'étiquettes prêtes à imprimer (1 200 étiquettes, 24 par planche) en pilotant VectorCraft par son serveur MCP branché à Claude : lecture des documents, décodage des codes-barres, redessin vectoriel, placement sur le gabarit et vérification des PDF produits, sans intervention manuelle. La capacité n'est pas nouvelle — le dépôt de VectorCraft documente bien une API de commandes, un serveur MCP en stdio (<code>vectorcraft-cli -- mcp</code>) et un mode lot sans interface (<code>--export</code>) — mais ce retour montre le type de tâche industrielle que l'automatisation rend possible. Le fil : https://www.reddit.com/r/ArtCraftAI/comments/1xikzpi/just_turned_50_word_docs_of_barcodes_into/</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>deploy-usecraftapps inclut SolidCraft</h3>
+<p>Le dépôt liyu1981/deploy-usecraftapps (13 étoiles, mis à jour le 29 octobre) assemble les versions web des Craft apps en un site statique auto-hébergeable, avec procédure pour Apache, nginx, Docker, Cloudflare Pages, Vercel ou Netlify, et un script de mise à jour automatique. SolidCraft vient d'y être ajouté ; une instance de démonstration est en ligne sur https://usecraftapps.liyu1981.xyz. Pour un établissement ou un poste isolé, c'est le moyen d'essayer la suite entière dans un navigateur sans rien installer. Annonce par u/Conflict-Mother : https://www.reddit.com/r/ArtCraftAI/comments/1xih7yj/deployusecraftapps_now_includes_solidcraft/</p>
+<h3>ProCraft for Android, dérivé mobile de l'écosystème</h3>
+<p>u/Mewtewpew publie artcraft-android/procraft-android, application de peinture native pour Android écrite en Rust (moteur et rendu wgpu) avec interface Kotlin/Jetpack Compose : pinceaux sensibles à la pression, calques avec modes de fusion, réglages, sélection, transformation, animation et peinture 3D. Le dépôt compte 29 étoiles, créé le 23 octobre, dernier envoi le 29 octobre, sous double licence MIT ou Apache 2.0, état annoncé « bêta », Android 10 minimum. L'auteur annonce dans son fil l'import et l'export des fichiers .procreate ainsi que des portages vers Windows, macOS et Linux (moteur Rust déjà écrit, interface à faire) : ces deux points viennent de son message et ne sont pas encore lisibles dans les fichiers du dépôt que j'ai consultés. Fil : https://www.reddit.com/r/ArtCraftAI/comments/1xijhdm/i_created_a_11_android_procreate_procraft_working/</p>
+<h3>Téléchargeur de polices libres pour Windows</h3>
+<p>u/PhobicPeople met à disposition un script PowerShell qui récupère une trentaine de polices libres depuis leurs sources officielles, à destination des installations neuves, sans Office ni Adobe, là où la suite manque justement de polices système. Le script ne demande pas de droits administrateur, crée un dossier sur le bureau et ouvre l'explorateur à la fin ; l'auteur rappelle que les licences diffèrent d'une police à l'autre et fournit les liens directs en secours. Aucun dépôt n'est cité : le script vit dans le message Reddit, à lire avant de l'exécuter. Fil : https://www.reddit.com/r/ArtCraftAI/comments/1xipih0/free_font_downloader_to_get_started/</p>
+<h2>Autour d'ArtCraft</h2>
+<ul>
+<li>SolidCraft (https://solidcraft.io) se présente comme un concurrent direct de Fusion 360 et de SolidWorks, entièrement en Rust, gratuit et sous Apache 2.0, avec esquisse contrainte, historique de fonctions modifiable, paramètres nommés, export STEP et maillages, et serveur MCP pour l'agent. L'écosystème autour se structure vite : le fork WCKDai/polykrom ajoute l'analyse de contraintes et un compagnon IA, et jrussellsmyth/fusion2solidcraft traduit les projets Fusion 360 vers SolidCraft, tous deux actifs les 29 et 30 octobre.</li>
+<li>Congegno, présenté dans le subreddit comme un environnement de simulation multiphysique bâti sur des moteurs libres, ne dispose que d'un dépôt de publications (msavox/congegno-releases) ; le code source n'est pas publié, la mention « open source » n'est donc pas vérifiable. Le message d'origine n'a pas de texte et je n'ai pas pu le récupérer.</li>
+<li>Rien de notable, dans la fenêtre, du côté de ComfyUI, InvokeAI, Krita AI Diffusion ou des autres outils de création assistée examinés.</li>
+</ul>
+<h2>À signaler</h2>
+<h3>LightCraft 0.15 : édition appliquée automatiquement à l'import (non confirmé)</h3>
+<p>u/bobchin_c signale que LightCraft 0.15 a appliqué une édition IA à un fichier .DNG dès son import, sans action de sa part, et joint une vidéo montrant la modification en direct ; il indique avoir supprimé l'application en attendant. Vérifications faites : la version 0.15.0 a bien été publiée le 28 octobre 2026 (28 fichiers) ; ses notes de version ne mentionnent aucune modification automatique à l'import et portent sur la migration vers egui 0.37, une invite de mise à jour au démarrage, des corrections de sécurité sur les conteneurs HEIF et les décodeurs RAW, et des exports pleine taille plus rapides. Aucun autre utilisateur ne confirme le comportement dans le fil. Je classe donc le signalement comme isolé et non confirmé, sans pouvoir l'exclure : un rendu dérivé affiché à l'import (profil de boîtier, courbe appliquée par défaut, aperçu) produirait la même impression sans qu'aucune donnée soit modifiée. Vidéo : https://youtube.com/shorts/per7usa4zhM — fil : https://www.reddit.com/r/ArtCraftAI/comments/1xit0mt/alert_lightcraft_ver_15_applied_an_ai_edit_on/</p>
+<h3>Correctifs de sécurité dans LightCraft 0.15</h3>
+<p>Indépendamment de ce signalement, la version 0.15.0 inclut deux correctifs de sécurité (« bound heic-rs 0.1.4 work around hostile HEIF containers » et « bound hostile-memory paths in the raw decoders ») : si vous importez des fichiers HEIC ou RAW de provenance incertaine, la mise à jour a un intérêt direct.</p>
+<h2>Volume</h2>
+<p>26 messages publiés dans l'intervalle, 6 retenus, 20 écartés (taux de rétention d'environ 23 %, conforme à un subreddit où dominent les questions et les demandes de fonctionnalités). Collecte en bon état : dernière passe le 30 octobre à 03 h 20 UTC, 2 nouveaux messages, aucune erreur.</p>
+<footer>Édition du vendredi 30 octobre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

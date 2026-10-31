@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Veille r/DeepSeek</title>
+<link>https://opware2000.github.io/veille/deepseek.html</link>
+<description>Veille quotidienne du subreddit r/DeepSeek — éditions rédigées pour Nicolas.</description>
+<language>fr-fr</language>
+<atom:link href="https://opware2000.github.io/veille/deepseek.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Sat, 31 Oct 2026 07:27:47 +0100</lastBuildDate>
+<generator>Hermes Agent — veille_rss.py</generator>
+<ttl>60</ttl>
+<item>
+<title>Veille r/DeepSeek — samedi 31 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/deepseek/2026-10-31.html</link>
+<guid isPermaLink="false">deepseek-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 07:27:47 +0100</pubDate>
+<category>r/DeepSeek</category>
+<description><![CDATA[<h1>Veille r/DeepSeek — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deuxième édition du jour : la première a été envoyée ce matin à 00h34 UTC en guise de preuve d'envoi, celle-ci ne couvre donc que les posts parus depuis (31 octobre, 00h23 à 04h55 UTC). La première édition du document est conservée sous le nom <code>veille-deepseek-2026-10-31.premiere-edition.md</code>.</li>
+<li>Aucun nouveau modèle ni changement de prix publié par DeepSeek dans l'intervalle ; le dépôt de poids le plus récent reste DeepSeek-V4.1-Flash-1017 (17 octobre).</li>
+<li>Command Code annonce sur son compte officiel que le quota de 100 dollars d'usage de DeepSeek V4.1 Flash 1017 sur son forfait GOAT à 10 dollars par mois devient permanent — sa documentation tarifaire ne le reflète pas encore. Le fil sur la quantification est confirmé par le dépôt : la configuration publiée du modèle déclare bien des experts en FP4.</li>
+</ul>
+<h2>Modèles et poids</h2>
+<p>Rien de nouveau publié dans l'intervalle : le dépôt le plus récent de l'organisation <code>deepseek-ai</code> reste DeepSeek-V4.1-Flash-1017 (créé le 17 octobre 2026, licence MIT, 145 869 téléchargements et 4 028 mentions « j'aime » relevés sur Hugging Face ce matin).</p>
+<p>Deux points de repère, vérifiés dans les fichiers du dépôt et cités par les fils retenus plus bas :</p>
+<ul>
+<li>Le <code>config.json</code> déclare un bloc <code>quantization_config</code> avec <code>quant_method: fp8</code>, des blocs de poids de 32×32, des échelles <code>ue8m0</code> et surtout <code>expert_dtype: fp4</code>. Les experts routés sont donc bien stockés en FP4, le reste des poids en FP8 (204 milliards de paramètres en F8_E4M3, 557 milliards en I8 pour l'indexeur et le reste). Le contexte déclaré est de 1 048 576 jetons.</li>
+<li>La documentation officielle de l'API, consultée ce matin, confirme que le nom de modèle <code>deepseek-flash</code> est servi par DeepSeek-V4.1-Flash-1017 et que les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code>, toujours acceptés, sont facturés au tarif Flash. C'est l'explication la plus probable des plaintes de dégradation visant « V4 » depuis la sortie de 1017 : le modèle derrière le nom a changé. Le message du journal qui portait cette plainte ne contenait aucune mesure et n'a pas été retenu.</li>
+</ul>
+<h2>Prix, accès et quotas</h2>
+<p><strong>Command Code — le quota DeepSeek du forfait GOAT annoncé comme permanent</strong> (post <code>1xjwwvs</code>, auteur <code>ahmadawaiscom</code>, renvoyant à un message identique dans r/CommandCode).</p>
+<p>Source primaire : la publication du compte officiel @CommandCodeAI, le 31 octobre 2026 à 00h40 UTC — « GOAT just made $100 credits PERMANENT. On $10/mo plan. DeepSeek V4.1 Flash 1017: $100 usage. GLM 5.3 Flash: $100 usage ». Le message Reddit reprend ces chiffres et ajoute que ce sont des « full weight models » (poids complets) et un débit annoncé de 300 à 500 jetons par seconde pour GLM 5.3 Flash. Ces éléments sont des annonces commerciales, non mesurées par un tiers.</p>
+<p>Divergence à signaler : les pages tarifaires et la documentation de Command Code consultées ce matin n'ont pas encore été mises à jour. Elles indiquent toujours que 10 dollars achètent 80 dollars de crédits (« jusqu'à 100 dollars avec les remises ») et décrivent, pour DeepSeek V4.1 Flash, une remise à 60 dollars sur GOAT rattachée à une fenêtre de septembre 2026. Le caractère permanent du quota de 100 dollars repose donc à ce jour sur l'annonce du compte officiel, pas sur la documentation, et la valeur annoncée pour DeepSeek (100 dollars) dépasse ce que la page des remises détaille.</p>
+<p>Chiffres relevés dans la même documentation, utiles pour comparer : DeepSeek V4.1 Flash y est facturé 0,15 dollar par million de jetons en entrée et 0,60 en sortie hors pointe, 0,30 et 1,20 aux heures de pointe (01h–04h et 06h–10h UTC, du lundi au vendredi) — même grille que DeepSeek V4 Flash ; la limite affichée pour V4.1 Flash est de 41 000 requêtes par tranche de cinq heures et 205 000 par mois.</p>
+<p>Deux points signalés en commentaires, non vérifiés : le forfait Go d'OpenCode offrirait un quota comparable (« So did OpenCode Go »), et les requêtes sous engagement de non-conservation des données (ZDR) seraient facturées en supplément.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>« DeepSeek Is Already FP4 — What Exactly Are People Quantizing? »</strong> (post <code>1xk1dvl</code>, auteur <code>Rem_Adyu</code>, repost d'un message déposé dans r/Artificials).</p>
+<p>La question de départ — pourquoi quantifier davantage un modèle déjà quantifié — repose sur une affirmation que j'ai pu vérifier : les experts du modèle 1017 sont déclarés en FP4 dans la configuration publiée. La réponse la plus argumentée du fil fait valoir que l'intérêt n'est pas la qualité mais l'empreinte mémoire : descendre plus bas permet de faire tenir le modèle sur un seul GPU de 32 Go (une Radeon R9700 est citée), le partage entre mémoire vidéo et mémoire système étant le facteur limitant. Le fil ne contient aucune mesure de débit ni comparaison de qualité entre le FP4 d'origine et les quantifications Q1 ou Q2 ; un intervenant le dit explicitement et rappelle qu'aucun banc d'essai public ne compare les versions sous-FP4 au FP4/FP8 livrés. À rapprocher de l'édition précédente, qui signalait déjà des quantifications GGUF de 1017 publiées par Unsloth et ISTA-DASLab.</p>
+<p>Le même fil mentionne en passant que DeepSeek a publié son moteur d'inférence, DeepInfer. Vérifié : dépôt <code>deepseek-ai/DeepInfer</code>, licence Apache-2.0, 24 538 étoiles, créé le 16 octobre 2026, dernière mise à jour le 26 octobre. Il s'agit du moteur d'inférence hors ligne pour DeepSeek-V4.1-Flash, dont la prise en charge matérielle annoncée se limite aux GPU NVIDIA SM100 et aux NPU Huawei Ascend 950 : rien qui vise les cartes grand public, et aucune quantification GGUF dans ce dépôt.</p>
+<h2>Intégrations et outils tiers</h2>
+<p>Rien de vérifiable dans l'intervalle. Le seul élément est un commentaire d'une ligne dans le fil sur le forfait GOAT, mentionné ci-dessus et non vérifié.</p>
+<h2>Volume</h2>
+<p>4 posts publiés et examinés depuis l'édition précédente (tous parus le 31 octobre entre 00h23 et 04h55 UTC) ; 2 retenus, 2 écartés — une plainte sur le comportement du modèle en jeu de rôle, une remarque sur la perception de la date de coupure des connaissances. Taux de rétention : 50 %, ce qui est dans la fourchette normale de ce subreddit, où les questions et les plaintes dominent. Le journal de collecte ne signale aucune erreur ; dernière collecte le 31 octobre à 05h00 UTC.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/DeepSeek — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deuxième édition du jour : la première a été envoyée ce matin à 00h34 UTC en guise de preuve d'envoi, celle-ci ne couvre donc que les posts parus depuis (31 octobre, 00h23 à 04h55 UTC). La première édition du document est conservée sous le nom <code>veille-deepseek-2026-10-31.premiere-edition.md</code>.</li>
+<li>Aucun nouveau modèle ni changement de prix publié par DeepSeek dans l'intervalle ; le dépôt de poids le plus récent reste DeepSeek-V4.1-Flash-1017 (17 octobre).</li>
+<li>Command Code annonce sur son compte officiel que le quota de 100 dollars d'usage de DeepSeek V4.1 Flash 1017 sur son forfait GOAT à 10 dollars par mois devient permanent — sa documentation tarifaire ne le reflète pas encore. Le fil sur la quantification est confirmé par le dépôt : la configuration publiée du modèle déclare bien des experts en FP4.</li>
+</ul>
+<h2>Modèles et poids</h2>
+<p>Rien de nouveau publié dans l'intervalle : le dépôt le plus récent de l'organisation <code>deepseek-ai</code> reste DeepSeek-V4.1-Flash-1017 (créé le 17 octobre 2026, licence MIT, 145 869 téléchargements et 4 028 mentions « j'aime » relevés sur Hugging Face ce matin).</p>
+<p>Deux points de repère, vérifiés dans les fichiers du dépôt et cités par les fils retenus plus bas :</p>
+<ul>
+<li>Le <code>config.json</code> déclare un bloc <code>quantization_config</code> avec <code>quant_method: fp8</code>, des blocs de poids de 32×32, des échelles <code>ue8m0</code> et surtout <code>expert_dtype: fp4</code>. Les experts routés sont donc bien stockés en FP4, le reste des poids en FP8 (204 milliards de paramètres en F8_E4M3, 557 milliards en I8 pour l'indexeur et le reste). Le contexte déclaré est de 1 048 576 jetons.</li>
+<li>La documentation officielle de l'API, consultée ce matin, confirme que le nom de modèle <code>deepseek-flash</code> est servi par DeepSeek-V4.1-Flash-1017 et que les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code>, toujours acceptés, sont facturés au tarif Flash. C'est l'explication la plus probable des plaintes de dégradation visant « V4 » depuis la sortie de 1017 : le modèle derrière le nom a changé. Le message du journal qui portait cette plainte ne contenait aucune mesure et n'a pas été retenu.</li>
+</ul>
+<h2>Prix, accès et quotas</h2>
+<p><strong>Command Code — le quota DeepSeek du forfait GOAT annoncé comme permanent</strong> (post <code>1xjwwvs</code>, auteur <code>ahmadawaiscom</code>, renvoyant à un message identique dans r/CommandCode).</p>
+<p>Source primaire : la publication du compte officiel @CommandCodeAI, le 31 octobre 2026 à 00h40 UTC — « GOAT just made $100 credits PERMANENT. On $10/mo plan. DeepSeek V4.1 Flash 1017: $100 usage. GLM 5.3 Flash: $100 usage ». Le message Reddit reprend ces chiffres et ajoute que ce sont des « full weight models » (poids complets) et un débit annoncé de 300 à 500 jetons par seconde pour GLM 5.3 Flash. Ces éléments sont des annonces commerciales, non mesurées par un tiers.</p>
+<p>Divergence à signaler : les pages tarifaires et la documentation de Command Code consultées ce matin n'ont pas encore été mises à jour. Elles indiquent toujours que 10 dollars achètent 80 dollars de crédits (« jusqu'à 100 dollars avec les remises ») et décrivent, pour DeepSeek V4.1 Flash, une remise à 60 dollars sur GOAT rattachée à une fenêtre de septembre 2026. Le caractère permanent du quota de 100 dollars repose donc à ce jour sur l'annonce du compte officiel, pas sur la documentation, et la valeur annoncée pour DeepSeek (100 dollars) dépasse ce que la page des remises détaille.</p>
+<p>Chiffres relevés dans la même documentation, utiles pour comparer : DeepSeek V4.1 Flash y est facturé 0,15 dollar par million de jetons en entrée et 0,60 en sortie hors pointe, 0,30 et 1,20 aux heures de pointe (01h–04h et 06h–10h UTC, du lundi au vendredi) — même grille que DeepSeek V4 Flash ; la limite affichée pour V4.1 Flash est de 41 000 requêtes par tranche de cinq heures et 205 000 par mois.</p>
+<p>Deux points signalés en commentaires, non vérifiés : le forfait Go d'OpenCode offrirait un quota comparable (« So did OpenCode Go »), et les requêtes sous engagement de non-conservation des données (ZDR) seraient facturées en supplément.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>« DeepSeek Is Already FP4 — What Exactly Are People Quantizing? »</strong> (post <code>1xk1dvl</code>, auteur <code>Rem_Adyu</code>, repost d'un message déposé dans r/Artificials).</p>
+<p>La question de départ — pourquoi quantifier davantage un modèle déjà quantifié — repose sur une affirmation que j'ai pu vérifier : les experts du modèle 1017 sont déclarés en FP4 dans la configuration publiée. La réponse la plus argumentée du fil fait valoir que l'intérêt n'est pas la qualité mais l'empreinte mémoire : descendre plus bas permet de faire tenir le modèle sur un seul GPU de 32 Go (une Radeon R9700 est citée), le partage entre mémoire vidéo et mémoire système étant le facteur limitant. Le fil ne contient aucune mesure de débit ni comparaison de qualité entre le FP4 d'origine et les quantifications Q1 ou Q2 ; un intervenant le dit explicitement et rappelle qu'aucun banc d'essai public ne compare les versions sous-FP4 au FP4/FP8 livrés. À rapprocher de l'édition précédente, qui signalait déjà des quantifications GGUF de 1017 publiées par Unsloth et ISTA-DASLab.</p>
+<p>Le même fil mentionne en passant que DeepSeek a publié son moteur d'inférence, DeepInfer. Vérifié : dépôt <code>deepseek-ai/DeepInfer</code>, licence Apache-2.0, 24 538 étoiles, créé le 16 octobre 2026, dernière mise à jour le 26 octobre. Il s'agit du moteur d'inférence hors ligne pour DeepSeek-V4.1-Flash, dont la prise en charge matérielle annoncée se limite aux GPU NVIDIA SM100 et aux NPU Huawei Ascend 950 : rien qui vise les cartes grand public, et aucune quantification GGUF dans ce dépôt.</p>
+<h2>Intégrations et outils tiers</h2>
+<p>Rien de vérifiable dans l'intervalle. Le seul élément est un commentaire d'une ligne dans le fil sur le forfait GOAT, mentionné ci-dessus et non vérifié.</p>
+<h2>Volume</h2>
+<p>4 posts publiés et examinés depuis l'édition précédente (tous parus le 31 octobre entre 00h23 et 04h55 UTC) ; 2 retenus, 2 écartés — une plainte sur le comportement du modèle en jeu de rôle, une remarque sur la perception de la date de coupure des connaissances. Taux de rétention : 50 %, ce qui est dans la fourchette normale de ce subreddit, où les questions et les plaintes dominent. Le journal de collecte ne signale aucune erreur ; dernière collecte le 31 octobre à 05h00 UTC.</p>]]></content:encoded>
+</item>
+</channel>
+</rss>

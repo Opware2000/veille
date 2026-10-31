@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — samedi 31 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Sept éléments cette fois : deux applications nouvelles (Mercury, avec son avatar 3D Ptera, et MeshChief, un navigateur piloté par l'agent), un firmware libre qui met Hermes dans un robot de bureau, deux greffons libres (caméras Reolink, texte arabe de droite à gauche), la mise à jour de Conduit sur iOS et l'ouverture d'une bêta privée de l'application mobile officielle. Le reste du lot est fait de questions, de plaintes et de retours d'expérience. La collecte s'est déroulée sans erreur.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Nous-Girl — Hermes dans un robot de bureau StackChan</h3>
+<ul>
+<li>Ce que c'est : un firmware libre pour le petit robot M5Stack StackChan (carte CoreS3, ESP32-S3), publié à l'occasion de NousCon NYC. Le robot parle, écoute, fait des mimiques, danse, possède des modes DJ et « rave », fabrique des mèmes et sait envoyer un courriel. La voix et l'écoute s'appuient sur LiquidAI LFM 3 Audio, Hermes Agent fournissant le modèle, la mémoire, l'apprentissage et les compétences.</li>
+<li>Ce que ça apporte : un corps pour l'agent, sur un matériel ouvert de bureau, avec un dépôt public que l'auteur présente comme réutilisable pour d'autres robots.</li>
+<li>Licence et prix : MIT, gratuit. Le kit StackChan est un matériel vendu séparément ; je n'ai pas relevé son prix.</li>
+<li>Dépôt vérifié : github.com/dax8it/nous-girl-stackchan — MIT, 15 étoiles, créé le 28 octobre 2026, dernière poussée le 29 octobre 2026 ; la description du dépôt le donne lui-même pour une bêta.</li>
+<li>Réserves : le billet est signé par un autre compte que celui du dépôt, qui est attribué à dax8it et au pseudonyme u/alexcovo_eth ; c'est un projet personnel récent, à une quinzaine d'étoiles.</li>
+</ul>
+<h3>Mercury — avatars 3D pour la conversation vocale avec Hermes (Ptera)</h3>
+<ul>
+<li>Ce que c'est : une application Android à achat unique qui se connecte au tableau de bord Hermes que l'on fait déjà tourner. Ptera, premier de trois avatars 3D modélisés sous Blender, écoute, réfléchit et répond pendant une conversation vocale, à la place d'une forme d'onde. L'auteur annonce ensuite un mode réunion réunissant jusqu'à trois agents, chacun avec son avatar.</li>
+<li>Ce que ça apporte : rendre la conversation vocale lisible et suivable à l'écran, ce qui manque à la plupart des clients d'agents. L'application se présente comme un client ordinaire du tableau de bord, sans serveur intermédiaire éditeur.</li>
+<li>Licence et prix : 6,90 euros en paiement unique sur Google Play, sans abonnement, sans achat intégré et sans publicité. L'application est à code fermé ; le module serveur facultatif Argus est installé en clair sur l'instance Hermes, donc lisible.</li>
+<li>Réserves : code fermé, donc invérifiable, et je n'ai vérifié ni la fiche ni le prix sur la boutique. Le billet est une annonce d'auteur.</li>
+</ul>
+<h3>MeshChief — un vrai navigateur pour l'agent, avec approbation sur le téléphone</h3>
+<ul>
+<li>Ce que c'est : un navigateur Chromium embarquant un serveur MCP, que Hermes pilote à travers un réseau Tailscale — jamais l'Internet public — dans un onglet visible sur le bureau. Toute action qui modifie quelque chose (valider, publier, payer) déclenche une carte d'approbation sur l'ordinateur ou le téléphone, avec trois choix : autoriser une fois, autoriser pour cette tâche, arrêter.</li>
+<li>Ce que ça apporte : accéder aux sites derrière un identifiant — consoles sans API, tableaux de bord, formulaires — sans confier ses comptes à un navigateur sans tête qu'on ne peut pas surveiller.</li>
+<li>Licence et prix : accès anticipé annoncé gratuit, 40 places. Aucune licence publiée à ma connaissance : ni libre, ni open source d'après ce que j'en vois, et je n'ai trouvé aucun dépôt. Disponible sous Linux et Windows seulement.</li>
+<li>Réserves : la gratuité est temporaire par construction (accès anticipé) et les critères « libre et gratuit » ne sont donc pas remplis durablement ; les cartes d'approbation se répétaient lors des nouvelles tentatives, correctif annoncé en cours.</li>
+<li>Remarque de collecte : le même texte a été publié deux fois le 30 octobre (à 09h29 UTC par MeshChiefHQ, puis à 13h06 par Andrew_DesktopRigs). Une seule entrée retenue.</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Hermes Conduit 2.2.1 — Pulse, un agent qui prend l'initiative</h3>
+<ul>
+<li>Ce que c'est : le client iOS de référence de Hermes (2.2.1, compilation 244) reçoit Pulse, marqué bêta par son auteur. Au lieu d'attendre une question, Hermes parcourt périodiquement le contexte dont il dispose et remonte ce qui mérite attention : une chose qu'on avait dit reprendre et qu'on n'a pas reprise, une tâche qu'il avait promis de terminer, une tâche planifiée en échec, une échéance, un anniversaire, un ancien échange redevenu pertinent. Il peut aussi composer un point du matin.</li>
+<li>Ce que ça apporte : une tentative sérieuse de rendre l'assistant proactif plutôt que réactif, chaque carte permettant de revenir dans la conversation concernée ou de lancer l'action proposée.</li>
+<li>Licence et prix : distribué sur l'App Store ; ce billet ne donne pas le prix, et je ne l'ai pas vérifié.</li>
+<li>Réserve : l'auteur indique avoir sauté l'annonce de la version 2.2.0, si bien que le détail des changements intermédiaires manque, et Pulse est explicitement en bêta.</li>
+</ul>
+<h3>Application mobile officielle de Hermes — bêta privée ouverte à NousCon</h3>
+<ul>
+<li>Ce que c'est : un participant au rassemblement NousCon de New York annonce avoir reçu l'accès à la bêta privée de l'application mobile officielle de Nous Research, et propose de répondre aux questions.</li>
+<li>Réserves : annonce sans aucun détail vérifiable — ni date de publication, ni plateforme, ni dépôt, ni conditions d'accès. À suivre, mais rien de concret à se mettre sous la dent pour l'instant.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Greffon caméras Reolink, piloté depuis WhatsApp</h3>
+<ul>
+<li>Ce que c'est : un greffon Hermes offrant six commandes slash, alimenté par quatre caméras intérieures Reolink et un groupe d'occupation Home Assistant. Quand le foyer se vide, la surveillance s'arme ; une personne détectée sur une caméra armée envoie une notification WhatsApp. La passerelle Reolink tourne dans le même empilement Docker que Hermes en réseau partagé, liée à 127.0.0.1:9000 sans publier de port, donc joignable par l'agent sans être visible sur le réseau local ; le registre des caméras, avec ses identifiants chiffrés, est un montage partagé, ce qui évite deux coffres. Environ 400 lignes de Python, un superviseur, une configuration JSON.</li>
+<li>Ce que ça apporte : une alerte de sécurité domestique sans compte ni nuage, avec un choix explicite : si Home Assistant devient injoignable, le guet se désarme au lieu de se déclencher à l'aveugle. Point important souligné par l'auteur : rien dans la chaîne d'alerte ne dépend d'un modèle « intelligent », ce qui la rend sûre à laisser tourner.</li>
+<li>Licence et prix : les fichiers de compétence, les manifestes de greffon et les installateurs sont sous Apache-2.0 ; les binaires de l'outil Reolink sont propriétaires, mais gratuits et utilisables sans compte. Gratuit.</li>
+<li>Vérification : le billet parle d'« that repo » sans en donner l'adresse, et je n'ai trouvé aucun dépôt pour ce greffon — il n'est donc pas vérifiable. Le seul lien du billet renvoie à l'outil officiel de Reolink, github.com/reolink/reolink-cli : Apache-2.0, 118 étoiles, créé le 14 juillet 2026, dernière poussée le 13 octobre 2026, décrit comme un outil en ligne de commande local (captures, PTZ, détection, flux RTSP, serveur MCP intégré).</li>
+</ul>
+<h3>hermes-telegram-rtl — réponses arabes de droite à gauche sur Telegram</h3>
+<ul>
+<li>Ce que c'est : un greffon qui active l'indicateur de sens d'écriture des messages enrichis de Telegram lorsque la réponse est majoritairement en arabe (persan et ourdou compris) : titres, listes, tableaux et citations s'alignent alors à droite, les blocs de code restant de gauche à droite. Lorsqu'une réponse ne peut pas prendre la forme d'un message enrichi — invites d'approbation, cartes de clarification, réponses très longues — il ajoute un marqueur de droite à gauche en début de ligne et convertit les puces en numéros.</li>
+<li>Ce que ça apporte : une sortie correctement alignée là où Hermes ne renseigne pas encore ce drapeau.</li>
+<li>Licence et prix : MIT, gratuit. Installation par <code>hermes plugins install Yazeed-A-H/hermes-telegram-rtl --enable</code>, puis redémarrage de la passerelle.</li>
+<li>Dépôt vérifié : github.com/Yazeed-A-H/hermes-telegram-rtl — MIT, 0 étoile, créé et dernière poussée le 30 octobre 2026.</li>
+<li>Réserve, donnée par l'auteur lui-même : c'est un contournement temporaire qui s'accroche aux entrailles de Hermes et peut casser à chaque mise à jour (relancer test_patch.py après chacune) ; testé uniquement sur Hermes 0.22.5, macOS et Telegram pour iOS.</li>
+</ul>
+<h2>Volume</h2>
+<p>42 posts publiés dans l'intervalle, 7 éléments retenus (8 posts, le doublon MeshChief compté une fois), 34 posts écartés.</p>
+<p>Motifs d'écartement : questions d'installation et de dépannage (mise à jour du CLI, désinstallation d'un navigateur automatisé, autorisation de NotebookLM sous Windows, recherche de sources d'images avec API, tarification des modèles du portail Nous, réponses tronquées), plaintes et lassitude à l'égard de Hermes, comparaisons avec Claude Code, Codex, Muse ou Grok Bot, retours d'expérience sur des configurations locales (RTX 5070 Ti, mini-PC Geekcom, modèles Qwen), partages de cas d'usage sans outil publié (tutorat de chimie, agent de généalogie), un fil hebdomadaire automatique, un billet de circonstance sur NousCon, un tutoriel vidéo sur le routage de modèles, un guide en français d'empilement « low-cost », une astuce sur la transmission de règles à un sous-agent par fichier temporaire, et un thème de terminal « Nous Girl » écarté parce que purement décoratif (MIT, 4 étoiles).</p>
+<p>La dernière collecte s'est déroulée sans erreur (journal meta.json : aucune entrée dans « errors », dernier passage le 31 octobre 2026 à 04h56 UTC).</p>
+<footer>Édition du samedi 31 octobre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

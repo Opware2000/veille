@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — vendredi 30 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Dix projets nouveaux ou mis à jour, dont cinq dépôts libres vérifiés (Jotter, Vitrus, Yomu, Talaris, smokescreen) et un outil de recherche sur l'espace latent de Gemma-4-31B.</li>
+<li>Astrolume génère des étoiles physiquement cohérentes : c'est le seul projet de la sélection directement réutilisable en classe (SVT, enseignement scientifique).</li>
+<li>Taux de rétention de 27 % (41 posts examinés, 11 retenus) : conforme à la nature du subreddit, où dominent récits et questions.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li><strong>Jotter — bloc-notes Markdown local, gratuit et libre.</strong> Né d'une frustration précise : coller du texte venu d'Obsidian dans une autre application sans perdre les sauts de ligne ni la mise en forme. Jotter enregistre les notes en fichiers ordinaires, sait ouvrir un coffre Obsidian existant, propose plusieurs modes de copie selon la destination, gère notes liées, tâches et rappels, et une IA facultative avec sa propre clé d'API ou un modèle local. Première version Windows disponible ; Linux en bêta ouverte ; macOS, Android et iOS annoncés. Licence MIT, 7 étoiles, dernière mise à jour le 30 octobre 2026 (dépôt GChavez0210/Jotter). Le site annonce « gratuit et local d'abord » ; la page ne publie pas de tarif payant à ce jour. https://jotter.mx — https://github.com/GChavez0210/Jotter</li>
+<li><strong>Vitrus — mesure d'audience libre pour ses propres applications.</strong> Un enseignant d'informatique, qui gère plusieurs applications, a écrit cet outil parce que la mise en place de Google Analytics lui paraissait pénible. Une seule interface pour suivre les applications web, iOS et Android. Licence Apache-2.0, 6 étoiles, dernière mise à jour le 23 octobre 2026. https://github.com/Vitrus-Dev/vitrus</li>
+<li><strong>Yomu — traduction de mangas hors ligne sur Android.</strong> Détection des bulles, reconnaissance de caractères et traduction tournent entièrement sur le téléphone, y compris avec un modèle léger comme Qwen 1,5 B. L'application fonctionne en surcouche : elle repère les bulles à l'écran, dans presque n'importe quelle application, et affiche la traduction par-dessus. Licence AGPL-3.0, 28 étoiles, dernière mise à jour le 28 octobre 2026. L'auteur prévient que le projet est en cours et qu'il ne l'a testé que sur un Galaxy S23 : le rendu dépend fortement du matériel. https://github.com/artsaraiva/yomu</li>
+<li><strong>Talaris — bureau « espace de pensée » pour Hyprland.</strong> Plutôt qu'une arborescence de fichiers, ce shell organise le travail par projets, tâches, notes et canevas, avec un assistant intégré. C'est un choix d'interface radical, qui suppose d'installer Hyprland (gestionnaire de fenêtres Linux). Licence GPL-3.0, dépôt très récent : 0 étoile, dernière mise à jour le 29 octobre 2026, donc à essayer sans attendre de stabilité. https://github.com/jpmoo/talaris</li>
+<li><strong>Logos Theodolite — exploration de l'espace latent de Gemma-4-31B.</strong> Outil de recherche pour examiner la géométrie interne du modèle (lentille jacobienne) et les circuits qu'il mobilise. Public visé : qui s'intéresse à l'interprétabilité des grands modèles et manipule déjà Gemma-4-31B. Licence Apache-2.0, 6 étoiles, dernière mise à jour le 29 octobre 2026. Réserve : le post ne contient pas de lien et les URL sont retirées à la collecte ; le dépôt whp199/logos-theodolite correspond par sa description (« J-lens geometry &amp; circuit instrument for Gemma-4-31B-it »), mais le rapprochement n'est pas certain. https://github.com/whp199/logos-theodolite</li>
+<li><strong>Astrolume — univers procédural d'étoiles physiquement contraint.</strong> Application web gratuite qui engendre une carte infinie d'étoiles à partir d'une graine : chaque étoile tirée donne sa masse, son rayon, sa température, son âge, sa rotation, ses planètes, avec une vue WebGL de sa surface. Toutes les valeurs sortent de relations et tables publiées (fonction de masse de Kroupa, tables de couleur de Pecaut et Mamajek, polytropes de Lane-Emden) ; les valeurs approchées sont signalées. Seul le Soleil est réel. Utile en classe pour faire manipuler des ordres de grandeur stellaires : l'auteur explique avoir fait corriger son IA par recoupement numérique, par exemple quand des étoiles géantes héritaient de taches minuscules, ce qui est physiquement faux. Code non publié (une seule page HTML), donc pas de licence vérifiable. https://astrolume.ableproman.hu</li>
+<li><strong>Éditeur complet de jeu Pokémon 4e génération.</strong> Outil de modification de ROM (Pokémon Platine) à interface graphique : peinture du relief et des cartes, statistiques des Pokémon, capacités, villes et intérieurs, dresseurs et leur comportement, magasins et leurs prix, génération procédurale de routes, et un onglet de mods qui active d'un clic le type Fée, les Pokémon suiveurs ou une capacité de surf sur lave. L'argument de l'auteur est juste : l'outillage libre de la 3e génération est riche, celui de la 4e beaucoup moins accessible. Réserve importante : le post renvoie à un dépôt GitHub, mais les liens ne sont pas conservés à la collecte et aucune recherche ne permet de l'identifier avec certitude (le compte GitHub de l'auteur ne publie pas ce dépôt). Licence, étoiles et date de mise à jour ne sont donc pas vérifiables. L'auteur rappelle qu'une ROM obtenue légalement est nécessaire. Post : https://www.reddit.com/r/vibecoding/comments/1xi3kan/pokemon_gen_4_game_editor_made_with_claude/</li>
+<li><strong>Lecteur audio Tumblr.</strong> Application web gratuite qui rejoue les billets audio de n'importe quel blog Tumblr, en remplacement d'un outil d'époque tombé en panne. Deux détails la rendent utile : un mécanisme de réveil des fichiers endormis (Tumblr renvoie une erreur 502 sur les fichiers non écoutés depuis longtemps, ce qui les fait passer pour corrompus sur le site officiel), et la lecture continue en arrière-plan sur mobile, écran éteint. Tri chronologique et filtres par mois ou par année. L'auteur annonce du logiciel libre, mais aucun dépôt n'est identifiable à partir de la collecte (liens retirés), et aucune licence n'est vérifiable. Post : https://www.reddit.com/r/vibecoding/comments/1xihe9z/vibecoded_an_app_where_you_can_listen_to_any/</li>
+<li><strong>Switch Lab — comparateur sonore de cent interrupteurs mécaniques.</strong> Application web gratuite, sans inscription ni installation : on tape sur un clavier en trois dimensions et on remplace les interrupteurs pour écouter les sons réellement enregistrés de cent modèles. Sert à choisir un clavier avant achat. Utilité limitée hors de ce cas, mais l'exécution est soignée (sons réels, mêmes touches d'un modèle à l'autre). Gratuit, code source non publié : ni licence ni dépôt vérifiables. https://switchlab.app</li>
+<li><strong>DoughBoy — calculateur de pâte, application Android.</strong> Calcule les quantités à partir des pourcentages de boulanger, pour pizzas, pains, focaccias, bagels, brioches et levains, en tenant compte du poolish, de la biga, du pointage au froid et du levain, avec rappels, mode cuisson pas à pas et journal de fournées photographié. Fonctionne hors ligne. Réserve : application propriétaire, gratuite mais avec achats intégrés, code source non publié ; l'auteur sollicite des retours et annonce une version iOS. https://play.google.com/store/apps/details?id=com.fluxappstudios.doughboy</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>bevy_smokescreen — fumées volumétriques pour moteur Bevy.</strong> Greffon Rust à déposer dans un jeu écrit avec Bevy : la fumée remplit les pièces, s'écoule par les portes et masque la vue (grenades fumigènes, murs de fumée, gaz, bancs de brume), en rendu volumétrique, facetté ou cristallin. Conçu pour rester performant en réseau et donc utilisable en multijoueur. Version 0.2.0 publiée sur crates.io (projet créé le 17 octobre 2026), licence Apache-2.0, 3 étoiles sur le dépôt, dernière mise à jour le 29 octobre 2026. https://crates.io/crates/bevy_smokescreen — https://github.com/VagabondTech/smokescreen</li>
+</ul>
+<h2>Volume</h2>
+<p>41 posts publiés dans l'intervalle, 11 retenus, 30 écartés.</p>
+<p>La collecte s'est déroulée sans erreur (dernier passage le 30 octobre 2026 à 3 h 40 UTC).</p>
+<footer>Édition du vendredi 30 octobre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

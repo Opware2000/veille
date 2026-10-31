@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — samedi 31 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Peu de matière en vingt-quatre heures : trois posts seulement, dont deux qui passent le filtre. Un paquet LuaLaTeX d'ornements floraux calculés en Lua dans les marges (tikz-flora), avec un configurateur en ligne, et la classe lucidcv, un modèle de CV en LuaLaTeX qui produit un PDF lisible par les machines, désormais publiée sur le CTAN. Le troisième message est une petite annonce de prestation payante, écartée.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>tikz-flora — des ornements floraux poussés dans les marges, calculés en Lua</h3>
+<p>Le fil « fleurs » de la semaine (déjà signalé dans l'édition du 30 octobre) a donné naissance à un paquet : tikz-flora fait pousser, dans la marge d'un document LuaLaTeX, une plante différente à chaque page — tiges, feuilles, fleurs, dorures, et si on le souhaite abeilles, papillons, oiseaux et escargots. Tout est calculé en Lua et dessiné avec PGF, sans aucune image importée : rien à charger, rien à redimensionner, et l'ornement s'adapte à la page. La croissance suit l'article de référence de Wong, Zongker et Salesin sur les ornements floraux générés par ordinateur (SIGGRAPH 1998), et les encres reproduisent les rampes de couleurs Pilot iroshizuku relevées par le projet madoromi.</p>
+<p>Utilisation, d'après la notice : il faut une distribution avec LuaLaTeX (TeX Live 2023 ou plus récent, MiKTeX ou TinyTeX). Le paquet s'obtient en téléchargeant <code>tikzflora.zip</code> depuis le site, ou s'installe pour tous les documents en copiant <code>tikzflora.sty</code>, <code>tikzflora-boot.lua</code> et le dossier <code>lua/</code> dans <code>TEXMFHOME/tex/lualatex/tikzflora/</code> (le chemin se lit avec <code>kpsewhich -var-value TEXMFHOME</code>). Document minimal :</p>
+<pre><code class="language-latex">\documentclass{article}
+\usepackage[left=5.5cm,right=2cm]{geometry} % de la place pour la flore
+\usepackage{tikzflora}
+\florasetup{seed=7}
+\begin{document}
+Texte.
+\end{document}
+</code></pre>
+<p><code>\florasetup{...}</code> règle les paramètres pour la suite du document à partir de la page en cours, <code>\florathispage{...}</code> pour une seule page ; une clé mal orthographiée arrête la compilation avec un message qui nomme la clé. Un configurateur en ligne (site https://flora.alpacasoft.dev) permet de régler les paramètres, de voir le résultat en direct et de télécharger l'archive, et le paquet fonctionne sur Overleaf en téléversant le zip (le <code>latexmkrc</code> fourni sélectionne LuaLaTeX). Deux exemplaires, assez longs, avec les extensions de polices et les scripts.</p>
+<p>Vérifications : dépôt https://github.com/wn-mitch/tikz-flora, licence MIT, 5 étoiles, créé et mis à jour le 31 octobre 2026 — donc très jeune, mais avec tests, outillage et analyse dans le dépôt. Le paquet n'est pas au CTAN (page inexistante à l'heure de la collecte) : il faudra le remettre à la main après chaque mise à jour de TeX Live. Le projet se présente comme la suite de florilegium de Kevin Raymond (https://github.com/kevinraymond/florilegium, licence MIT, 745 étoiles, créé le 30 octobre 2026), qui avait rencontré un vrai succès sur le forum.</p>
+<p>À quoi cela sert-il dans un document scientifique ? À rien pour le contenu, et il ne faut pas le vendre autrement : c'est de la décoration, à réserver par exemple à un rapport de projet ou à un dossier à rendre. L'intérêt technique est ailleurs — c'est un exemple complet de paquet LuaLaTeX qui génère des dessins procéduraux en PGF, utile à lire si l'on veut écrire soi-même un générateur de figures aléatoires reproductibles (la graine <code>seed</code> fixe le tirage).</p>
+<h3>lucidcv — modèle de CV en LuaLaTeX dont le texte reste extractible</h3>
+<p>Classe LuaLaTeX pour CV sur une ou deux colonnes, fondée sur le dessin PlushCV mais réécrite, dont la particularité est la lisibilité de la sortie par les machines : les espaces de mot sont de vrais caractères d'espace et les icônes n'extraient rien, si bien que les robots de tri de candidatures et les extracteurs de texte relisent le contenu dans le bon ordre. La sortie est un PDF/A-2b balisé, les couleurs, polices, tailles et espacements sont paramétrables, et une suite de tests (sur le dépôt) vérifie l'extraction avec plusieurs moteurs PDF et plusieurs variantes de mise en page. Ce n'est pas un document scientifique, mais la technique vaut d'être connue : elle montre comment régler un document LaTeX pour qu'il reste exploitable automatiquement, question qui se pose aussi pour des dossiers administratifs ou des formulaires.</p>
+<p>Le post d'origine demandait simplement comment être référencé sur latextemplates.com ; l'intérêt vérifiable est ailleurs, dans le fait que le modèle est bien au CTAN : paquet <code>lucidcv</code>, version 1.0.0, licence triple MIT / LPPL 1.3c / OFL. Dépôt https://github.com/xGoldy/lucidcv, 112 étoiles, dernière mise à jour le 30 octobre 2026 ; GitHub n'arrive pas à identifier la licence du dépôt (il annonce « autre »), alors que la page du CTAN cite les trois licences, écart à noter mais sans conséquence pratique.</p>
+<h2>Volume</h2>
+<p>3 posts examinés depuis la dernière édition (30 et 31 octobre), 2 retenus, 1 écarté, soit un taux de rétention de 67 %, sur un intervalle d'une seule journée. Ce chiffre n'a pas la même signification que celui de l'édition précédente (10 retenus sur 25) : le flux de r/LaTeX est irrégulier, et vingt-quatre heures sans beaucoup de trafic suffisent à faire monter un pourcentage. Écarté : une annonce de prestation payante de mise en forme (Overleaf, APA, 15 à 25 dollars par article), sans contenu réutilisable.</p>
+<p>La collecte du 31 octobre à 04h58 UTC s'est déroulée sans erreur (<code>errors</code> vide dans <code>meta.json</code>).</p>
+<footer>Édition du samedi 31 octobre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

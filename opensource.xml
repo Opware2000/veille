@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Veille r/opensource</title>
+<link>https://opware2000.github.io/veille/opensource.html</link>
+<description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
+<language>fr-fr</language>
+<atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Sat, 31 Oct 2026 06:52:11 +0100</lastBuildDate>
+<generator>Hermes Agent — veille_rss.py</generator>
+<ttl>60</ttl>
+<item>
+<title>Veille r/opensource — samedi 31 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-10-31.html</link>
+<guid isPermaLink="false">opensource-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 06:52:11 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq annonces retenues sur sept posts publiés depuis la dernière édition : trois outils de développeur (une bibliothèque PDF en Go, une interface graphique pour rclone, un traceur d'exécutions d'agents) et deux applications grand public (cartes d'exploration GPS, moteur de jeu dans le navigateur).<br />
+Le subreddit reste dominé par les questions et les débats, mais les projets présentés cette fois ont tous une licence explicite et un dépôt actif.<br />
+Taux de rétention élevé (71 %) : deux posts seulement ont été écartés, dont un retiré par la modération.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenPDF — bibliothèque PDF complète en Go, sous licence MIT</h3>
+<p>Ce que c'est : une bibliothèque PDF pour le langage Go, en pur Go, qui couvre la création de documents (tableaux, images, en-têtes, table de matières), l'extraction de texte et d'images, la fusion et le découpage, le remplissage de formulaires, la protection par mot de passe, la signature numérique et sa vérification, le caviardage, l'assainissement, la production de PDF/A et PDF/UA, ainsi que le rendu des pages en images avec un point d'accroche pour l'OCR.<br />
+Ce que ça apporte : la plupart des outils PDF sont soit des utilitaires en ligne de commande, soit des bibliothèques en C avec des liaisons, soit des kits commerciaux sous clé de licence. Une bibliothèque en Go sous licence permissive couvre ce besoin sans quitter l'écosystème Go, ce qui permet d'intégrer génération et signature de PDF dans un service existant sans dépendance binaire externe.<br />
+Licence et prix : MIT, gratuit.<br />
+Lien : https://github.com/OpenMellon/openpdf<br />
+Vérification : licence MIT confirmée par l'API GitHub, 5 étoiles, dépôt créé le 27 octobre 2026, dernière mise à jour le 30 octobre 2026. Projet de quatre jours, très en amont : la couverture annoncée est large, mais elle n'est pas éprouvée par un usage réel.</p>
+<h3>ducksdrive — Google Drive comme dossier ordinaire sous Linux, par-dessus rclone</h3>
+<p>Ce que c'est : une interface graphique en Python pour rclone, avec icône dans la zone de notification et panneau de suivi des transferts. Elle vise les utilisateurs qui viennent de Windows et trouvent les montages de cloud peu commodes sous Linux.<br />
+Ce que ça apporte : rclone sait déjà tout faire, mais uniquement en ligne de commande ; cette surcouche rend le montage d'un dossier distant et le suivi des gros transferts accessibles sans terminal. À noter : l'auteur se présente comme électrotechnicien et non programmeur, et indique avoir été aidé par l'intelligence artificielle — le dépôt compte deux étoiles et aucune version publiée, il faut donc le voir comme une première ébauche plutôt qu'un outil établi.<br />
+Licence et prix : MIT, gratuit.<br />
+Lien : https://github.com/Patopatetico2-lab/ducksdrive<br />
+Vérification : licence MIT confirmée par l'API GitHub, 2 étoiles, dépôt créé le 26 septembre 2026, dernière mise à jour le 30 octobre 2026.</p>
+<h3>RayTrace (raytrace-cli) — voir ce qu'un agent de codage a réellement fait</h3>
+<p>Ce que c'est : un outil qui enregistre les invites, le contexte, les appels d'outils et le coût d'une exécution d'agent de codage (Claude Code et Codex sont cités), et qui, dans un bac à sable local, relève les processus réellement lancés — afin de comparer ce que l'agent dit avoir fait avec ce qui s'est passé au niveau du noyau. Un tableau de bord local affiche les traces.<br />
+Ce que ça apporte : c'est l'un des rares outils du genre à croiser le récit de l'agent et les appels système observés, là où la plupart des plateformes de traçage ne consignent que la première version. Pour un enseignant ou un établissement qui veut savoir ce qu'un agent exécute sur une machine, c'est la fonction utile.<br />
+Licence et prix : MIT, gratuit ; l'auteur indique que le stockage distant des traces est optionnel.<br />
+Lien : https://github.com/Godcreatebugs/raytrace-cli (site de l'auteur : https://www.raytracer.si)<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 étoile, dépôt créé le 6 octobre 2026, dernière mise à jour le 31 octobre 2026. Incertitude : le post annonce « presque tout » avoir été libéré, et propose un service d'hébergement des traces ; la frontière entre l'outil libre et l'offre commerciale n'est pas claire, et je n'ai pas pu la vérifier.</p>
+<h3>HoldMyTrack — cartes d'exploration à partir de son propre historique GPS</h3>
+<p>Ce que c'est : une application web (et une version Android annoncée) qui rassemble sur une seule carte les activités de plein air choisies, avec trois modes d'affichage (normal, carte de chaleur, zones parcourues) et des récits pour regrouper les sorties sur plusieurs jours. Des fonctions d'édition et de lieux privés sont prévues.<br />
+Ce que ça apporte : transformer un historique de traces GPS dispersé en une carte de ce qu'on a exploré, sans dépendre d'un service fermé ni livrer ses positions : le stockage peut être auto-hébergé. Une démonstration publique est accessible sans inscription.<br />
+Licence et prix : MIT, gratuit, auto-hébergeable.<br />
+Lien : https://github.com/HoldMyTrack/platform (démonstration : https://holdmytrack.com)<br />
+Vérification : licence MIT confirmée par l'API GitHub, 4 étoiles, dépôt créé le 14 septembre 2026, dernière mise à jour le 31 octobre 2026. Le dépôt est actif depuis six semaines, ce qui le distingue des projets d'un jour. Je n'ai pas vérifié la disponibilité réelle de l'application Android ni sa présence sur un magasin d'applications.</p>
+<h3>D2-Web — Diablo II (1.13c) réécrit en C++ et jouable dans le navigateur</h3>
+<p>Ce que c'est : une réimplémentation du moteur de Diablo II: Lord of Destruction en version 1.13c, en C++ compilé en WebAssembly, qui tourne dans Chrome ou Chromium. Il faut fournir les fichiers du jeu d'origine, qui restent sur la machine. L'auteur annonce des vérifications automatiques de fidélité : il rejoue les mêmes entrées sur le jeu d'origine et sur sa version, puis compare états, paquets, rendu et déclenchements sonores.<br />
+Ce que ça apporte : c'est une démonstration technique remarquable — porter un moteur de jeu complet dans un navigateur — et sa méthode de validation (rejeu d'entrées, comparaison de paquets) est réutilisable ailleurs, notamment pour enseigner les tests de non-régression. L'intérêt reste toutefois ludique : le post signale une version alpha, où des écrans et des sons manquent encore. Le jeu d'origine étant propriétaire, seule la réécriture du moteur est libre.<br />
+Licence et prix : MIT pour le code, gratuit ; les données du jeu ne sont pas fournies.<br />
+Lien : https://github.com/Virtastic/d2-web<br />
+Vérification : licence MIT confirmée par l'API GitHub, 19 étoiles, dépôt créé le 29 octobre 2026, dernière mise à jour le 31 octobre 2026. Le dépôt ne contient pas de version publiée à télécharger, seulement la compilation depuis les sources et une démonstration en ligne.</p>
+<h2>Volume</h2>
+<p>7 posts publiés dans l'intervalle, 5 retenus, 2 écartés. Taux de rétention de 71 %, élevé pour ce subreddit : l'un des posts écartés est une simple question sur l'adoption d'une police d'emojis libres (OpenMoji) dans les applications libres, sans logiciel annoncé ; l'autre, un générateur de cartes Apple Wallet pour pièces d'identité indiennes, a été retiré par la modération parce que le dépôt lié ne comporte pas de licence libre — je l'ai donc écarté, l'annonce « open source » n'étant pas vérifiable.<br />
+Collecte : la dernière passe s'est terminée le 31 octobre 2026 à 04h57 UTC sans aucune erreur signalée.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq annonces retenues sur sept posts publiés depuis la dernière édition : trois outils de développeur (une bibliothèque PDF en Go, une interface graphique pour rclone, un traceur d'exécutions d'agents) et deux applications grand public (cartes d'exploration GPS, moteur de jeu dans le navigateur).<br />
+Le subreddit reste dominé par les questions et les débats, mais les projets présentés cette fois ont tous une licence explicite et un dépôt actif.<br />
+Taux de rétention élevé (71 %) : deux posts seulement ont été écartés, dont un retiré par la modération.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenPDF — bibliothèque PDF complète en Go, sous licence MIT</h3>
+<p>Ce que c'est : une bibliothèque PDF pour le langage Go, en pur Go, qui couvre la création de documents (tableaux, images, en-têtes, table de matières), l'extraction de texte et d'images, la fusion et le découpage, le remplissage de formulaires, la protection par mot de passe, la signature numérique et sa vérification, le caviardage, l'assainissement, la production de PDF/A et PDF/UA, ainsi que le rendu des pages en images avec un point d'accroche pour l'OCR.<br />
+Ce que ça apporte : la plupart des outils PDF sont soit des utilitaires en ligne de commande, soit des bibliothèques en C avec des liaisons, soit des kits commerciaux sous clé de licence. Une bibliothèque en Go sous licence permissive couvre ce besoin sans quitter l'écosystème Go, ce qui permet d'intégrer génération et signature de PDF dans un service existant sans dépendance binaire externe.<br />
+Licence et prix : MIT, gratuit.<br />
+Lien : https://github.com/OpenMellon/openpdf<br />
+Vérification : licence MIT confirmée par l'API GitHub, 5 étoiles, dépôt créé le 27 octobre 2026, dernière mise à jour le 30 octobre 2026. Projet de quatre jours, très en amont : la couverture annoncée est large, mais elle n'est pas éprouvée par un usage réel.</p>
+<h3>ducksdrive — Google Drive comme dossier ordinaire sous Linux, par-dessus rclone</h3>
+<p>Ce que c'est : une interface graphique en Python pour rclone, avec icône dans la zone de notification et panneau de suivi des transferts. Elle vise les utilisateurs qui viennent de Windows et trouvent les montages de cloud peu commodes sous Linux.<br />
+Ce que ça apporte : rclone sait déjà tout faire, mais uniquement en ligne de commande ; cette surcouche rend le montage d'un dossier distant et le suivi des gros transferts accessibles sans terminal. À noter : l'auteur se présente comme électrotechnicien et non programmeur, et indique avoir été aidé par l'intelligence artificielle — le dépôt compte deux étoiles et aucune version publiée, il faut donc le voir comme une première ébauche plutôt qu'un outil établi.<br />
+Licence et prix : MIT, gratuit.<br />
+Lien : https://github.com/Patopatetico2-lab/ducksdrive<br />
+Vérification : licence MIT confirmée par l'API GitHub, 2 étoiles, dépôt créé le 26 septembre 2026, dernière mise à jour le 30 octobre 2026.</p>
+<h3>RayTrace (raytrace-cli) — voir ce qu'un agent de codage a réellement fait</h3>
+<p>Ce que c'est : un outil qui enregistre les invites, le contexte, les appels d'outils et le coût d'une exécution d'agent de codage (Claude Code et Codex sont cités), et qui, dans un bac à sable local, relève les processus réellement lancés — afin de comparer ce que l'agent dit avoir fait avec ce qui s'est passé au niveau du noyau. Un tableau de bord local affiche les traces.<br />
+Ce que ça apporte : c'est l'un des rares outils du genre à croiser le récit de l'agent et les appels système observés, là où la plupart des plateformes de traçage ne consignent que la première version. Pour un enseignant ou un établissement qui veut savoir ce qu'un agent exécute sur une machine, c'est la fonction utile.<br />
+Licence et prix : MIT, gratuit ; l'auteur indique que le stockage distant des traces est optionnel.<br />
+Lien : https://github.com/Godcreatebugs/raytrace-cli (site de l'auteur : https://www.raytracer.si)<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 étoile, dépôt créé le 6 octobre 2026, dernière mise à jour le 31 octobre 2026. Incertitude : le post annonce « presque tout » avoir été libéré, et propose un service d'hébergement des traces ; la frontière entre l'outil libre et l'offre commerciale n'est pas claire, et je n'ai pas pu la vérifier.</p>
+<h3>HoldMyTrack — cartes d'exploration à partir de son propre historique GPS</h3>
+<p>Ce que c'est : une application web (et une version Android annoncée) qui rassemble sur une seule carte les activités de plein air choisies, avec trois modes d'affichage (normal, carte de chaleur, zones parcourues) et des récits pour regrouper les sorties sur plusieurs jours. Des fonctions d'édition et de lieux privés sont prévues.<br />
+Ce que ça apporte : transformer un historique de traces GPS dispersé en une carte de ce qu'on a exploré, sans dépendre d'un service fermé ni livrer ses positions : le stockage peut être auto-hébergé. Une démonstration publique est accessible sans inscription.<br />
+Licence et prix : MIT, gratuit, auto-hébergeable.<br />
+Lien : https://github.com/HoldMyTrack/platform (démonstration : https://holdmytrack.com)<br />
+Vérification : licence MIT confirmée par l'API GitHub, 4 étoiles, dépôt créé le 14 septembre 2026, dernière mise à jour le 31 octobre 2026. Le dépôt est actif depuis six semaines, ce qui le distingue des projets d'un jour. Je n'ai pas vérifié la disponibilité réelle de l'application Android ni sa présence sur un magasin d'applications.</p>
+<h3>D2-Web — Diablo II (1.13c) réécrit en C++ et jouable dans le navigateur</h3>
+<p>Ce que c'est : une réimplémentation du moteur de Diablo II: Lord of Destruction en version 1.13c, en C++ compilé en WebAssembly, qui tourne dans Chrome ou Chromium. Il faut fournir les fichiers du jeu d'origine, qui restent sur la machine. L'auteur annonce des vérifications automatiques de fidélité : il rejoue les mêmes entrées sur le jeu d'origine et sur sa version, puis compare états, paquets, rendu et déclenchements sonores.<br />
+Ce que ça apporte : c'est une démonstration technique remarquable — porter un moteur de jeu complet dans un navigateur — et sa méthode de validation (rejeu d'entrées, comparaison de paquets) est réutilisable ailleurs, notamment pour enseigner les tests de non-régression. L'intérêt reste toutefois ludique : le post signale une version alpha, où des écrans et des sons manquent encore. Le jeu d'origine étant propriétaire, seule la réécriture du moteur est libre.<br />
+Licence et prix : MIT pour le code, gratuit ; les données du jeu ne sont pas fournies.<br />
+Lien : https://github.com/Virtastic/d2-web<br />
+Vérification : licence MIT confirmée par l'API GitHub, 19 étoiles, dépôt créé le 29 octobre 2026, dernière mise à jour le 31 octobre 2026. Le dépôt ne contient pas de version publiée à télécharger, seulement la compilation depuis les sources et une démonstration en ligne.</p>
+<h2>Volume</h2>
+<p>7 posts publiés dans l'intervalle, 5 retenus, 2 écartés. Taux de rétention de 71 %, élevé pour ce subreddit : l'un des posts écartés est une simple question sur l'adoption d'une police d'emojis libres (OpenMoji) dans les applications libres, sans logiciel annoncé ; l'autre, un générateur de cartes Apple Wallet pour pièces d'identité indiennes, a été retiré par la modération parce que le dépôt lié ne comporte pas de licence libre — je l'ai donc écarté, l'annonce « open source » n'étant pas vérifiable.<br />
+Collecte : la dernière passe s'est terminée le 31 octobre 2026 à 04h57 UTC sans aucune erreur signalée.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/opensource — vendredi 30 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-10-30.html</link>
+<guid isPermaLink="false">opensource-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 06:51:49 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces retenues sur huit posts publiés depuis la dernière édition : un utilitaire de batterie pour Linux, une suite bureautique en Rust encore jeune, une version 1.9 pour un éditeur PDF GPLv3 très suivi, et une bibliothèque de conversion PDF en Python.<br />
+Le reste du subreddit est toujours dominé par le débat sur l'interdiction des projets assistés par IA ; rien d'utilisable dans ce flot.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OhmWatt — état et santé de la batterie sous Linux</h3>
+<p>Ce que c'est : une application de bureau (Go et Wails v3) qui affiche le niveau, la puissance instantanée en watts, le pourcentage d'usure, le nombre de cycles matériels et l'historique de charge et de décharge ; elle gère aussi les machines à deux batteries, comme les ThinkPad.<br />
+Ce que ça apporte : ces données existent déjà dans le noyau mais ne s'obtiennent aujourd'hui qu'en ligne de commande (<code>upower</code>, lecture de <code>sysfs</code>) ; OhmWatt les met dans une fenêtre, hors ligne, pour environ 20 Mo de mémoire vive.<br />
+Licence et prix : MIT, gratuit. Paquets annoncés pour Ubuntu/Debian (.deb), Fedora (.rpm), Arch et une AppImage autonome — je n'ai pas vérifié que les quatre sont déjà publiés.<br />
+Lien : https://github.com/osspakistan/ohmwatt<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 étoile, dépôt créé le 29 octobre 2026, dernière mise à jour le 29 octobre 2026. Projet d'un jour, à considérer comme une première version.</p>
+<h3>Ely Office — suite bureautique hors ligne en Rust</h3>
+<p>Ce que c'est : des applications de bureau hors ligne écrites en Rust avec la bibliothèque d'interface GPUI, présentées comme une suite bureautique ; le texte du post indique qu'elles s'appuient sur la trousse LibreOffice.<br />
+Ce que ça apporte : une interface native récente par-dessus l'outillage LibreOffice, sans dépendance au cloud. L'intérêt réel reste à mesurer : le dépôt est trop récent pour juger de la stabilité ou de la couverture fonctionnelle.<br />
+Licence et prix : MIT, gratuit.<br />
+Liens : https://github.com/ELY-Open-Source/ElyOffice et un miroir Gitea, https://git.zacharyzhang.com/ZacharyZhang-NY/ElyOffice<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 108 étoiles, dépôt créé le 19 octobre 2026, dernière mise à jour le 30 octobre 2026. Le rythme est soutenu, mais l'ancienneté ne permet pas encore de trancher sur la qualité.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>KillerPDF 1.9.0 — éditeur PDF libre pour Windows</h3>
+<p>Ce que c'est : un éditeur PDF complet pour Windows (C# / WPF, moteur de rendu PDFium, OCR Tesseract), qui couvre consultation, annotation, OCR, fusion, découpage, signature, formulaires et traitement par lots, sans compte ni abonnement.<br />
+Nouveautés de cette version : édition véritable du texte, caviardage définitif, chiffrement AES-256, export vers Word, Excel et PowerPoint, et un moteur de rendu maison annoncé 37 à 66 % plus économe en mémoire.<br />
+Licence et prix : GPLv3, gratuit, sans télémétrie.<br />
+Lien : https://github.com/SteveTheKiller/KillerPDF<br />
+Vérification : licence GPLv3 confirmée par l'API GitHub, 4 233 étoiles, dépôt créé le 16 avril 2026, dernière mise à jour le 29 octobre 2026 ; la version 1.9.0 est bien publiée le 29 octobre 2026. Le site officiel affichait encore la 1.8.91 au moment de la rédaction, la publication du binaire suit donc peut-être le dépôt avec un léger retard.</p>
+<h3>anyconvert 0.1.11 — conversion de PDF en Python sans dépendance externe</h3>
+<p>Ce que c'est : une bibliothèque Python de conversion de documents PDF vers DOCX, PPTX, ODT, ODP, TXT, HTML et SVG, qui n'utilise que la bibliothèque standard ; elle sert de moteur de conversion à l'éditeur PDF de son auteur et est publiée sur PyPI.<br />
+Nouveautés de cette version : un générateur HTML5 (flux sémantique réajustable ou mise en page fidèle au pixel), export HTML autonome en un seul fichier avec ressources en Base64 et politique de sécurité hors ligne, export SVG page par page, prise en charge native du WebP, cibles HTML et SVG ajoutées à l'interface en ligne de commande comme à l'API Python, refonte de l'analyseur de courbes de Bézier et corrections sur les graphiques vectoriels dans PowerPoint, Word et LibreOffice.<br />
+Licence et prix : GPL-3.0, gratuit.<br />
+Lien : https://github.com/word-sys/anyconvert (l'application associée : https://github.com/word-sys/word-sys-pdf-editor)<br />
+Vérification : licence GPL-3.0 confirmée par l'API GitHub, 7 étoiles, dépôt créé le 18 septembre 2026, dernière mise à jour le 29 octobre 2026. L'application parente, elle, compte 132 étoiles.</p>
+<h2>Volume</h2>
+<p>8 posts publiés dans l'intervalle, 4 retenus, 4 écartés. Taux de rétention de 50 %, proche du niveau habituel des subreddits de discussion : les posts écartés sont une question sur les assistants de codage, un incident de serveur web, une opinion de développeur de thème sur l'IA et l'annonce d'un outil d'administration diffusé par adresse IPFS, sans dépôt ni version utilisable.<br />
+Collecte : la dernière passe s'est terminée le 30 octobre 2026 à 05h47 UTC sans aucune erreur signalée.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces retenues sur huit posts publiés depuis la dernière édition : un utilitaire de batterie pour Linux, une suite bureautique en Rust encore jeune, une version 1.9 pour un éditeur PDF GPLv3 très suivi, et une bibliothèque de conversion PDF en Python.<br />
+Le reste du subreddit est toujours dominé par le débat sur l'interdiction des projets assistés par IA ; rien d'utilisable dans ce flot.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OhmWatt — état et santé de la batterie sous Linux</h3>
+<p>Ce que c'est : une application de bureau (Go et Wails v3) qui affiche le niveau, la puissance instantanée en watts, le pourcentage d'usure, le nombre de cycles matériels et l'historique de charge et de décharge ; elle gère aussi les machines à deux batteries, comme les ThinkPad.<br />
+Ce que ça apporte : ces données existent déjà dans le noyau mais ne s'obtiennent aujourd'hui qu'en ligne de commande (<code>upower</code>, lecture de <code>sysfs</code>) ; OhmWatt les met dans une fenêtre, hors ligne, pour environ 20 Mo de mémoire vive.<br />
+Licence et prix : MIT, gratuit. Paquets annoncés pour Ubuntu/Debian (.deb), Fedora (.rpm), Arch et une AppImage autonome — je n'ai pas vérifié que les quatre sont déjà publiés.<br />
+Lien : https://github.com/osspakistan/ohmwatt<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 étoile, dépôt créé le 29 octobre 2026, dernière mise à jour le 29 octobre 2026. Projet d'un jour, à considérer comme une première version.</p>
+<h3>Ely Office — suite bureautique hors ligne en Rust</h3>
+<p>Ce que c'est : des applications de bureau hors ligne écrites en Rust avec la bibliothèque d'interface GPUI, présentées comme une suite bureautique ; le texte du post indique qu'elles s'appuient sur la trousse LibreOffice.<br />
+Ce que ça apporte : une interface native récente par-dessus l'outillage LibreOffice, sans dépendance au cloud. L'intérêt réel reste à mesurer : le dépôt est trop récent pour juger de la stabilité ou de la couverture fonctionnelle.<br />
+Licence et prix : MIT, gratuit.<br />
+Liens : https://github.com/ELY-Open-Source/ElyOffice et un miroir Gitea, https://git.zacharyzhang.com/ZacharyZhang-NY/ElyOffice<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 108 étoiles, dépôt créé le 19 octobre 2026, dernière mise à jour le 30 octobre 2026. Le rythme est soutenu, mais l'ancienneté ne permet pas encore de trancher sur la qualité.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>KillerPDF 1.9.0 — éditeur PDF libre pour Windows</h3>
+<p>Ce que c'est : un éditeur PDF complet pour Windows (C# / WPF, moteur de rendu PDFium, OCR Tesseract), qui couvre consultation, annotation, OCR, fusion, découpage, signature, formulaires et traitement par lots, sans compte ni abonnement.<br />
+Nouveautés de cette version : édition véritable du texte, caviardage définitif, chiffrement AES-256, export vers Word, Excel et PowerPoint, et un moteur de rendu maison annoncé 37 à 66 % plus économe en mémoire.<br />
+Licence et prix : GPLv3, gratuit, sans télémétrie.<br />
+Lien : https://github.com/SteveTheKiller/KillerPDF<br />
+Vérification : licence GPLv3 confirmée par l'API GitHub, 4 233 étoiles, dépôt créé le 16 avril 2026, dernière mise à jour le 29 octobre 2026 ; la version 1.9.0 est bien publiée le 29 octobre 2026. Le site officiel affichait encore la 1.8.91 au moment de la rédaction, la publication du binaire suit donc peut-être le dépôt avec un léger retard.</p>
+<h3>anyconvert 0.1.11 — conversion de PDF en Python sans dépendance externe</h3>
+<p>Ce que c'est : une bibliothèque Python de conversion de documents PDF vers DOCX, PPTX, ODT, ODP, TXT, HTML et SVG, qui n'utilise que la bibliothèque standard ; elle sert de moteur de conversion à l'éditeur PDF de son auteur et est publiée sur PyPI.<br />
+Nouveautés de cette version : un générateur HTML5 (flux sémantique réajustable ou mise en page fidèle au pixel), export HTML autonome en un seul fichier avec ressources en Base64 et politique de sécurité hors ligne, export SVG page par page, prise en charge native du WebP, cibles HTML et SVG ajoutées à l'interface en ligne de commande comme à l'API Python, refonte de l'analyseur de courbes de Bézier et corrections sur les graphiques vectoriels dans PowerPoint, Word et LibreOffice.<br />
+Licence et prix : GPL-3.0, gratuit.<br />
+Lien : https://github.com/word-sys/anyconvert (l'application associée : https://github.com/word-sys/word-sys-pdf-editor)<br />
+Vérification : licence GPL-3.0 confirmée par l'API GitHub, 7 étoiles, dépôt créé le 18 septembre 2026, dernière mise à jour le 29 octobre 2026. L'application parente, elle, compte 132 étoiles.</p>
+<h2>Volume</h2>
+<p>8 posts publiés dans l'intervalle, 4 retenus, 4 écartés. Taux de rétention de 50 %, proche du niveau habituel des subreddits de discussion : les posts écartés sont une question sur les assistants de codage, un incident de serveur web, une opinion de développeur de thème sur l'IA et l'annonce d'un outil d'administration diffusé par adresse IPFS, sans dépôt ni version utilisable.<br />
+Collecte : la dernière passe s'est terminée le 30 octobre 2026 à 05h47 UTC sans aucune erreur signalée.</p>]]></content:encoded>
+</item>
+</channel>
+</rss>

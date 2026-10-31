@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — vendredi 30 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces retenues sur huit posts publiés depuis la dernière édition : un utilitaire de batterie pour Linux, une suite bureautique en Rust encore jeune, une version 1.9 pour un éditeur PDF GPLv3 très suivi, et une bibliothèque de conversion PDF en Python.<br />
+Le reste du subreddit est toujours dominé par le débat sur l'interdiction des projets assistés par IA ; rien d'utilisable dans ce flot.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OhmWatt — état et santé de la batterie sous Linux</h3>
+<p>Ce que c'est : une application de bureau (Go et Wails v3) qui affiche le niveau, la puissance instantanée en watts, le pourcentage d'usure, le nombre de cycles matériels et l'historique de charge et de décharge ; elle gère aussi les machines à deux batteries, comme les ThinkPad.<br />
+Ce que ça apporte : ces données existent déjà dans le noyau mais ne s'obtiennent aujourd'hui qu'en ligne de commande (<code>upower</code>, lecture de <code>sysfs</code>) ; OhmWatt les met dans une fenêtre, hors ligne, pour environ 20 Mo de mémoire vive.<br />
+Licence et prix : MIT, gratuit. Paquets annoncés pour Ubuntu/Debian (.deb), Fedora (.rpm), Arch et une AppImage autonome — je n'ai pas vérifié que les quatre sont déjà publiés.<br />
+Lien : https://github.com/osspakistan/ohmwatt<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 étoile, dépôt créé le 29 octobre 2026, dernière mise à jour le 29 octobre 2026. Projet d'un jour, à considérer comme une première version.</p>
+<h3>Ely Office — suite bureautique hors ligne en Rust</h3>
+<p>Ce que c'est : des applications de bureau hors ligne écrites en Rust avec la bibliothèque d'interface GPUI, présentées comme une suite bureautique ; le texte du post indique qu'elles s'appuient sur la trousse LibreOffice.<br />
+Ce que ça apporte : une interface native récente par-dessus l'outillage LibreOffice, sans dépendance au cloud. L'intérêt réel reste à mesurer : le dépôt est trop récent pour juger de la stabilité ou de la couverture fonctionnelle.<br />
+Licence et prix : MIT, gratuit.<br />
+Liens : https://github.com/ELY-Open-Source/ElyOffice et un miroir Gitea, https://git.zacharyzhang.com/ZacharyZhang-NY/ElyOffice<br />
+Vérification : licence MIT confirmée par l'API GitHub, 1 108 étoiles, dépôt créé le 19 octobre 2026, dernière mise à jour le 30 octobre 2026. Le rythme est soutenu, mais l'ancienneté ne permet pas encore de trancher sur la qualité.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>KillerPDF 1.9.0 — éditeur PDF libre pour Windows</h3>
+<p>Ce que c'est : un éditeur PDF complet pour Windows (C# / WPF, moteur de rendu PDFium, OCR Tesseract), qui couvre consultation, annotation, OCR, fusion, découpage, signature, formulaires et traitement par lots, sans compte ni abonnement.<br />
+Nouveautés de cette version : édition véritable du texte, caviardage définitif, chiffrement AES-256, export vers Word, Excel et PowerPoint, et un moteur de rendu maison annoncé 37 à 66 % plus économe en mémoire.<br />
+Licence et prix : GPLv3, gratuit, sans télémétrie.<br />
+Lien : https://github.com/SteveTheKiller/KillerPDF<br />
+Vérification : licence GPLv3 confirmée par l'API GitHub, 4 233 étoiles, dépôt créé le 16 avril 2026, dernière mise à jour le 29 octobre 2026 ; la version 1.9.0 est bien publiée le 29 octobre 2026. Le site officiel affichait encore la 1.8.91 au moment de la rédaction, la publication du binaire suit donc peut-être le dépôt avec un léger retard.</p>
+<h3>anyconvert 0.1.11 — conversion de PDF en Python sans dépendance externe</h3>
+<p>Ce que c'est : une bibliothèque Python de conversion de documents PDF vers DOCX, PPTX, ODT, ODP, TXT, HTML et SVG, qui n'utilise que la bibliothèque standard ; elle sert de moteur de conversion à l'éditeur PDF de son auteur et est publiée sur PyPI.<br />
+Nouveautés de cette version : un générateur HTML5 (flux sémantique réajustable ou mise en page fidèle au pixel), export HTML autonome en un seul fichier avec ressources en Base64 et politique de sécurité hors ligne, export SVG page par page, prise en charge native du WebP, cibles HTML et SVG ajoutées à l'interface en ligne de commande comme à l'API Python, refonte de l'analyseur de courbes de Bézier et corrections sur les graphiques vectoriels dans PowerPoint, Word et LibreOffice.<br />
+Licence et prix : GPL-3.0, gratuit.<br />
+Lien : https://github.com/word-sys/anyconvert (l'application associée : https://github.com/word-sys/word-sys-pdf-editor)<br />
+Vérification : licence GPL-3.0 confirmée par l'API GitHub, 7 étoiles, dépôt créé le 18 septembre 2026, dernière mise à jour le 29 octobre 2026. L'application parente, elle, compte 132 étoiles.</p>
+<h2>Volume</h2>
+<p>8 posts publiés dans l'intervalle, 4 retenus, 4 écartés. Taux de rétention de 50 %, proche du niveau habituel des subreddits de discussion : les posts écartés sont une question sur les assistants de codage, un incident de serveur web, une opinion de développeur de thème sur l'IA et l'annonce d'un outil d'administration diffusé par adresse IPFS, sans dépôt ni version utilisable.<br />
+Collecte : la dernière passe s'est terminée le 30 octobre 2026 à 05h47 UTC sans aucune erreur signalée.</p>
+<footer>Édition du vendredi 30 octobre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

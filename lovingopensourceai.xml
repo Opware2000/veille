@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Veille r/LovingOpenSourceAI</title>
+<link>https://opware2000.github.io/veille/lovingopensourceai.html</link>
+<description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
+<language>fr-fr</language>
+<atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Sat, 31 Oct 2026 06:11:47 +0100</lastBuildDate>
+<generator>Hermes Agent — veille_rss.py</generator>
+<ttl>60</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — samedi 31 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-10-31.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 06:11:47 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Trois propositions dans le journal de collecte, trois retenues : l'agent proactif OpenDuet, l'assistant hors ligne Survival LLM et Ollada, un gestionnaire de modèles de diffusion de texte.<br />
+Aucune erreur de collecte ; en revanche le journal n'a enregistré aucun nouveau billet entre le 30 octobre à 16 h 11 UTC et la collecte de ce matin — le subreddit a donc été calme sur la nuit.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenDuet — un agent proactif qui travaille de son côté et rend des comptes</h3>
+<p>Ce que c'est : un modèle d'agent libre publié par CopilotKit. L'agent reçoit une tâche et la mène seul, en tenant l'utilisateur informé de son avancement ; l'annonce précise que chaque agent dispose de son propre ordinateur (environnement d'exécution) et qu'on peut le piloter depuis le web, un téléphone, Slack ou Microsoft Teams.<br />
+Ce que cela apporte : c'est un point de départ immédiatement réutilisable pour qui veut un agent autonome sans écrire soi-même toute la mécanique de suivi et de reprise en main. La contrepartie est qu'il s'agit d'un canevas à adapter, pas d'un logiciel fini.<br />
+Licence et prix : MIT, gratuit. Le dépôt compte 1 666 étoiles et 210 forks, créé le 21 octobre 2026, dernière poussée le 28 octobre 2026 — projet jeune mais vivant.<br />
+Lien : https://github.com/CopilotKit/OpenDuet</p>
+<h3>Survival LLM — un assistant et une bibliothèque entièrement hors ligne, sources affichées</h3>
+<p>Ce que c'est : une application gratuite qui installe sur l'ordinateur un modèle de langue local accompagné d'une bibliothèque documentaire : environ 930 000 des articles Wikipédia les plus consultés, plus des guides médicaux, de la FEMA et du CDC. Une version allégée de 1,3 Go laisse de côté Wikipédia et iFixit ; la bibliothèque complète pèse environ 9 Go. L'installation se fait une fois en ligne, puis tout fonctionne sans réseau et aucune question ne quitte la machine.<br />
+Ce que cela apporte : la fonctionnalité intéressante n'est pas le modèle mais la traçabilité — chaque réponse affiche la liste des articles consultés, et un clic ouvre l'article au passage exact. L'application mesure la mémoire vive disponible et propose un modèle adapté. Pour un usage pédagogique, c'est un exemple concret d'assistant documentaire local avec citation des sources ; le prix de cette honnêteté est admis par le README lui-même, qui reconnaît que certains modèles citaient des articles qu'ils n'avaient jamais ouverts, et que l'application substitue désormais les articles réellement lus.<br />
+Licence et prix : le fichier LICENSE du dépôt contient bien un texte de licence MIT, mais l'API GitHub ne l'identifie pas automatiquement et la classe « Other » — petite divergence à connaître avant de réutiliser le code. Gratuit.<br />
+Vérification : 1 004 étoiles, 81 forks, créé le 24 octobre 2026, dernière poussée le 29 octobre 2026. En revanche, le chiffre d'évaluation cité par l'annonce (22 questions de panne de courant et de premiers secours notées à l'aveugle par des juges automatiques) n'est vérifiable nulle part ailleurs que dans le billet : à prendre comme une déclaration de l'auteur.<br />
+Lien : https://github.com/anonnerdfrenzy/survival-llm</p>
+<h3>Ollada — « l'Ollama des modèles de diffusion de texte »</h3>
+<p>Ce que c'est : un outil en ligne de commande qui installe, télécharge et fait tourner des modèles de diffusion de texte (dLLM), c'est-à-dire la famille de modèles qui engendre le texte par débruitage plutôt que mot après mot, à la manière d'Ollama pour les modèles classiques. Le projet recense cinq modèles de 1,7 à 8 milliards de paramètres, dont des contributions de SDAR et de Nvidia.<br />
+Ce que cela apporte : cette famille de modèles était jusqu'ici éparpillée sur Hugging Face, avec des codes de génération incompatibles et des réglages non documentés. Ollada ramène l'usage à trois commandes — installation, téléchargement, exécution — et isole chaque famille de modèles dans son propre environnement Python, ce qui permet de faire cohabiter des versions de bibliothèques normalement incompatibles (transformers 4.x pour Dream, 5.3.0 pour DiffCoder). Un serveur local compatible est prévu par une extension.<br />
+Licence et prix : MIT, gratuit. Vérification : 1 étoile, 0 fork, dépôt créé le 21 octobre 2026, dernière poussée le 30 octobre 2026 — projet tout neuf, à essayer avec discernement. Le site de présentation (opensourcerulesz.github.io/ollada) n'a pas répondu lors de la vérification ; l'existence réelle des cinq modèles annoncés n'a donc pas pu être confirmée indépendamment du dépôt, même si le README décrit la même approche.<br />
+Lien : https://github.com/OpenSourceRulesz/ollada</p>
+<h2>Volume</h2>
+<p>3 posts publiés dans l'intervalle, 3 retenus, 0 écarté — rétention de 100 %, ce qui correspond à la nature de ce subreddit, où l'essentiel des billets présente un outil plutôt que de poser une question.</p>
+<h2>Réserves</h2>
+<p>La vérification GitHub a été faite avec un jeton authentifié (licence, étoiles, forks, dates de création et de dernière poussée). Deux points n'ont pas pu être confirmés par une source indépendante : l'évaluation chiffrée de Survival LLM et la liste des cinq modèles d'Ollada, le site de ce dernier étant injoignable au moment de la rédaction.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Trois propositions dans le journal de collecte, trois retenues : l'agent proactif OpenDuet, l'assistant hors ligne Survival LLM et Ollada, un gestionnaire de modèles de diffusion de texte.<br />
+Aucune erreur de collecte ; en revanche le journal n'a enregistré aucun nouveau billet entre le 30 octobre à 16 h 11 UTC et la collecte de ce matin — le subreddit a donc été calme sur la nuit.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenDuet — un agent proactif qui travaille de son côté et rend des comptes</h3>
+<p>Ce que c'est : un modèle d'agent libre publié par CopilotKit. L'agent reçoit une tâche et la mène seul, en tenant l'utilisateur informé de son avancement ; l'annonce précise que chaque agent dispose de son propre ordinateur (environnement d'exécution) et qu'on peut le piloter depuis le web, un téléphone, Slack ou Microsoft Teams.<br />
+Ce que cela apporte : c'est un point de départ immédiatement réutilisable pour qui veut un agent autonome sans écrire soi-même toute la mécanique de suivi et de reprise en main. La contrepartie est qu'il s'agit d'un canevas à adapter, pas d'un logiciel fini.<br />
+Licence et prix : MIT, gratuit. Le dépôt compte 1 666 étoiles et 210 forks, créé le 21 octobre 2026, dernière poussée le 28 octobre 2026 — projet jeune mais vivant.<br />
+Lien : https://github.com/CopilotKit/OpenDuet</p>
+<h3>Survival LLM — un assistant et une bibliothèque entièrement hors ligne, sources affichées</h3>
+<p>Ce que c'est : une application gratuite qui installe sur l'ordinateur un modèle de langue local accompagné d'une bibliothèque documentaire : environ 930 000 des articles Wikipédia les plus consultés, plus des guides médicaux, de la FEMA et du CDC. Une version allégée de 1,3 Go laisse de côté Wikipédia et iFixit ; la bibliothèque complète pèse environ 9 Go. L'installation se fait une fois en ligne, puis tout fonctionne sans réseau et aucune question ne quitte la machine.<br />
+Ce que cela apporte : la fonctionnalité intéressante n'est pas le modèle mais la traçabilité — chaque réponse affiche la liste des articles consultés, et un clic ouvre l'article au passage exact. L'application mesure la mémoire vive disponible et propose un modèle adapté. Pour un usage pédagogique, c'est un exemple concret d'assistant documentaire local avec citation des sources ; le prix de cette honnêteté est admis par le README lui-même, qui reconnaît que certains modèles citaient des articles qu'ils n'avaient jamais ouverts, et que l'application substitue désormais les articles réellement lus.<br />
+Licence et prix : le fichier LICENSE du dépôt contient bien un texte de licence MIT, mais l'API GitHub ne l'identifie pas automatiquement et la classe « Other » — petite divergence à connaître avant de réutiliser le code. Gratuit.<br />
+Vérification : 1 004 étoiles, 81 forks, créé le 24 octobre 2026, dernière poussée le 29 octobre 2026. En revanche, le chiffre d'évaluation cité par l'annonce (22 questions de panne de courant et de premiers secours notées à l'aveugle par des juges automatiques) n'est vérifiable nulle part ailleurs que dans le billet : à prendre comme une déclaration de l'auteur.<br />
+Lien : https://github.com/anonnerdfrenzy/survival-llm</p>
+<h3>Ollada — « l'Ollama des modèles de diffusion de texte »</h3>
+<p>Ce que c'est : un outil en ligne de commande qui installe, télécharge et fait tourner des modèles de diffusion de texte (dLLM), c'est-à-dire la famille de modèles qui engendre le texte par débruitage plutôt que mot après mot, à la manière d'Ollama pour les modèles classiques. Le projet recense cinq modèles de 1,7 à 8 milliards de paramètres, dont des contributions de SDAR et de Nvidia.<br />
+Ce que cela apporte : cette famille de modèles était jusqu'ici éparpillée sur Hugging Face, avec des codes de génération incompatibles et des réglages non documentés. Ollada ramène l'usage à trois commandes — installation, téléchargement, exécution — et isole chaque famille de modèles dans son propre environnement Python, ce qui permet de faire cohabiter des versions de bibliothèques normalement incompatibles (transformers 4.x pour Dream, 5.3.0 pour DiffCoder). Un serveur local compatible est prévu par une extension.<br />
+Licence et prix : MIT, gratuit. Vérification : 1 étoile, 0 fork, dépôt créé le 21 octobre 2026, dernière poussée le 30 octobre 2026 — projet tout neuf, à essayer avec discernement. Le site de présentation (opensourcerulesz.github.io/ollada) n'a pas répondu lors de la vérification ; l'existence réelle des cinq modèles annoncés n'a donc pas pu être confirmée indépendamment du dépôt, même si le README décrit la même approche.<br />
+Lien : https://github.com/OpenSourceRulesz/ollada</p>
+<h2>Volume</h2>
+<p>3 posts publiés dans l'intervalle, 3 retenus, 0 écarté — rétention de 100 %, ce qui correspond à la nature de ce subreddit, où l'essentiel des billets présente un outil plutôt que de poser une question.</p>
+<h2>Réserves</h2>
+<p>La vérification GitHub a été faite avec un jeton authentifié (licence, étoiles, forks, dates de création et de dernière poussée). Deux points n'ont pas pu être confirmés par une source indépendante : l'évaluation chiffrée de Survival LLM et la liste des cinq modèles d'Ollada, le site de ce dernier étant injoignable au moment de la rédaction.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — vendredi 30 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-10-30.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-10-30</guid>
+<pubDate>Fri, 30 Oct 2026 06:11:53 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Journée courte : deux publications seulement depuis la dernière édition, toutes deux retenues. D'un côté la version 4 de MinerU, qui ajoute une bibliothèque locale de documents à l'analyse de PDF ; de l'autre MarkItDown, l'utilitaire Python de Microsoft qui convertit à peu près n'importe quel fichier en Markdown. Les deux sont gratuits et lisibles par un enseignant qui manipule des documents.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>MarkItDown — convertir n'importe quel fichier en Markdown</h3>
+<p>Ce que c'est : un utilitaire Python léger qui transforme des fichiers très variés (PDF, Word, PowerPoint, Excel, HTML, images, fichiers audio) en Markdown propre, destiné aux chaînes de traitement des grands modèles de langage.</p>
+<p>Ce que ça apporte concrètement : au lieu de recopier un document à la main pour le donner à un assistant, on le convertit en une commande. L'outil met l'accent sur la conservation de la structure du document — titres, listes, tableaux — plutôt que sur l'extraction brute de texte, ce qui le distingue de solutions plus anciennes comme textract. Utile pour préparer des corpus de cours, indexer des annales ou alimenter un assistant local avec vos propres documents.</p>
+<p>Licence et prix : MIT, gratuit, dépôt public. Le projet totalise environ 192 900 étoiles et a été mis à jour le 28 octobre 2026 (dernière version publiée : 0.1.9, le 21 octobre 2026). Il s'installe comme un paquet Python classique et peut aussi s'utiliser en ligne de commande.</p>
+<p>Lien : https://github.com/microsoft/markitdown</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>MinerU 4.0 — analyse de documents, bibliothèque locale et outils de service réunis</h3>
+<p>Ce que c'est : une nouvelle version majeure de MinerU, outil d'analyse de documents complexes (PDF, fichiers bureautiques) qui les convertit en Markdown ou en JSON exploitables par des agents. La version 4 réunit dans un même flux la conversion de documents, une bibliothèque locale de documents et des outils de service, là où les versions précédentes se limitaient à la conversion.</p>
+<p>Ce que ça apporte concrètement : on peut désormais garder ses documents convertis dans une bibliothèque locale plutôt que de relancer une conversion à chaque usage, et exposer le tout comme service ou comme source pour un agent. Pour un usage enseignant, cela signifie transformer un lot de sujets, de rapports ou de manuels en base de texte interrogeable sans repasser par un service en ligne.</p>
+<p>Licence et prix : Apache 2.0 assortie de conditions supplémentaires propres au projet, gratuit. GitHub n'identifie pas automatiquement cette licence composite (il affiche « NOASSERTION ») : le fichier du dépôt précise qu'un usage commercial reste libre en dessous de certains seuils de chiffre d'affaires, au-delà desquels une licence commerciale séparée est requise. Un usage pédagogique est donc couvert sans difficulté. Le dépôt compte environ 82 800 étoiles et a été mis à jour le 30 octobre 2026 ; la dernière version publiée est la 4.1.2, datée du 29 octobre 2026.</p>
+<p>Lien : https://github.com/opendatalab/MinerU</p>
+<h2>Volume</h2>
+<p>2 posts publiés dans l'intervalle, 2 retenus, 0 écarté (taux de rétention de 100 % sur cette édition, ce qui tient au faible volume plutôt qu'à un filtre relâché).</p>
+<hr />
+<p>Note de collecte : la dernière passe du collecteur s'est terminée le 30 octobre 2026 à 03h38 UTC sans aucune erreur signalée.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Journée courte : deux publications seulement depuis la dernière édition, toutes deux retenues. D'un côté la version 4 de MinerU, qui ajoute une bibliothèque locale de documents à l'analyse de PDF ; de l'autre MarkItDown, l'utilitaire Python de Microsoft qui convertit à peu près n'importe quel fichier en Markdown. Les deux sont gratuits et lisibles par un enseignant qui manipule des documents.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>MarkItDown — convertir n'importe quel fichier en Markdown</h3>
+<p>Ce que c'est : un utilitaire Python léger qui transforme des fichiers très variés (PDF, Word, PowerPoint, Excel, HTML, images, fichiers audio) en Markdown propre, destiné aux chaînes de traitement des grands modèles de langage.</p>
+<p>Ce que ça apporte concrètement : au lieu de recopier un document à la main pour le donner à un assistant, on le convertit en une commande. L'outil met l'accent sur la conservation de la structure du document — titres, listes, tableaux — plutôt que sur l'extraction brute de texte, ce qui le distingue de solutions plus anciennes comme textract. Utile pour préparer des corpus de cours, indexer des annales ou alimenter un assistant local avec vos propres documents.</p>
+<p>Licence et prix : MIT, gratuit, dépôt public. Le projet totalise environ 192 900 étoiles et a été mis à jour le 28 octobre 2026 (dernière version publiée : 0.1.9, le 21 octobre 2026). Il s'installe comme un paquet Python classique et peut aussi s'utiliser en ligne de commande.</p>
+<p>Lien : https://github.com/microsoft/markitdown</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>MinerU 4.0 — analyse de documents, bibliothèque locale et outils de service réunis</h3>
+<p>Ce que c'est : une nouvelle version majeure de MinerU, outil d'analyse de documents complexes (PDF, fichiers bureautiques) qui les convertit en Markdown ou en JSON exploitables par des agents. La version 4 réunit dans un même flux la conversion de documents, une bibliothèque locale de documents et des outils de service, là où les versions précédentes se limitaient à la conversion.</p>
+<p>Ce que ça apporte concrètement : on peut désormais garder ses documents convertis dans une bibliothèque locale plutôt que de relancer une conversion à chaque usage, et exposer le tout comme service ou comme source pour un agent. Pour un usage enseignant, cela signifie transformer un lot de sujets, de rapports ou de manuels en base de texte interrogeable sans repasser par un service en ligne.</p>
+<p>Licence et prix : Apache 2.0 assortie de conditions supplémentaires propres au projet, gratuit. GitHub n'identifie pas automatiquement cette licence composite (il affiche « NOASSERTION ») : le fichier du dépôt précise qu'un usage commercial reste libre en dessous de certains seuils de chiffre d'affaires, au-delà desquels une licence commerciale séparée est requise. Un usage pédagogique est donc couvert sans difficulté. Le dépôt compte environ 82 800 étoiles et a été mis à jour le 30 octobre 2026 ; la dernière version publiée est la 4.1.2, datée du 29 octobre 2026.</p>
+<p>Lien : https://github.com/opendatalab/MinerU</p>
+<h2>Volume</h2>
+<p>2 posts publiés dans l'intervalle, 2 retenus, 0 écarté (taux de rétention de 100 % sur cette édition, ce qui tient au faible volume plutôt qu'à un filtre relâché).</p>
+<hr />
+<p>Note de collecte : la dernière passe du collecteur s'est terminée le 30 octobre 2026 à 03h38 UTC sans aucune erreur signalée.</p>]]></content:encoded>
+</item>
+</channel>
+</rss>

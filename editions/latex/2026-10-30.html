@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — vendredi 30 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — vendredi 30 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Trois outils nouveaux méritent un essai : TikzEdt Modern, éditeur visuel de figures TikZ qui prend en charge Chemfig et les montages de laboratoire (PST-Labo) — directement utile pour les schémas de TP —, TeXline, éditeur LaTeX local sous Windows, et l'extension latex-objects qui automatise les retouches de formules dans Obsidian. À signaler aussi : Prism, l'éditeur LaTeX en ligne d'OpenAI, ferme le 1er janvier 2027.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>TikzEdt Modern — éditeur visuel TikZ, avec Chemfig et schémas de laboratoire</h3>
+<p>Reprise du projet TikzEdt, qui n'était plus maintenu : édition visuelle du dessin avec accrochage et points de contrôle, aperçu rendu par TeX, coloration syntaxique, complétion, pliage, recherche et diagnostics, prise en charge de pdfLaTeX, LuaLaTeX et XeLaTeX. Le point intéressant pour l'enseignement des sciences : un éditeur de molécules Chemfig (cycles, liaisons stéréochimiques, doublets non liants) et un éditeur PST-Labo expérimental pour le matériel de laboratoire et les couches de liquides. Export en SVG, PDF ou image, extraits de code classés par catégories.</p>
+<p>Réserves annoncées par l'auteur lui-même : aperçu de développement, Windows seulement, .NET embarqué mais TeX et les utilitaires PDF à installer séparément, téléchargements non signés, et l'édition visuelle ne gère pas encore les macros TeX arbitraires. Dépôt mohabouz/TikzEdt-Modern, licence GPL-3.0, 5 étoiles, dernière mise à jour le 27 octobre 2026 (dépôt créé le 22 octobre).</p>
+<h3>TeXline 1.0 — éditeur LaTeX local pour Windows</h3>
+<p>Éditeur fondé sur TeXworks, avec un mode « focus » qui n'affiche qu'une section à la fois, un va-et-vient entre source et PDF qui conserve la position de lecture, la possibilité de garder une équation ou un passage à côté du brouillon, et une prise en charge de Beamer (liste des frames, révélations progressives, aperçu des diapositives). Il sait aussi éditer visuellement des figures, des tableaux et des structures de formules, chercher dans la bibliographie et conserver des versions d'un passage avant réécriture. Windows 10/11 x64 seulement, s'appuie sur le TeX Live ou le MiKTeX déjà installé, sans compte à créer ; installateur ou archive portable, interfaces en anglais et en chinois.</p>
+<p>Site : https://texline.dev — source : https://github.com/novak382/TeXline, licence GPL-3.0, 1 étoile, dernière mise à jour le 27 octobre 2026 (dépôt créé le 23 octobre). Le seul défaut réel est l'absence de version Linux ou macOS.</p>
+<h3>Scribe — éditeur Rust avec Python intégré</h3>
+<p>Éditeur de bureau multiplateforme annoncé comme entièrement configurable (thème, raccourcis, polices), avec import de projets Overleaf par git et historique, rendu LaTeX immédiat, éditeurs de tableaux et d'équations, prise de notes, et surtout exécution de Python à l'intérieur du document pour que les figures se régénèrent à la compilation. C'est cette dernière fonction qui le distingue, ainsi que la rapidité de compilation revendiquée.</p>
+<p>Le site https://scribe.georgekiritsis.com répond, mais aucun dépôt public, aucune licence publiée et aucune version téléchargeable au moment de la collecte : la gratuité « pour toujours » reste une annonce non vérifiable. À revoir avant de s'y engager, surtout pour un usage professionnel.</p>
+<h3>opencode-citecheck — vérifier les DOI d'un fichier .bib</h3>
+<p>Outil en ligne de commande, lancé par npx, qui contrôle que chaque DOI d'une bibliographie correspond à un article existant et que le titre annoncé correspond bien, et qui signale les articles rétractés. Il ne vérifie pas que la source soutient l'affirmation citée, seulement que la référence existe et pointe vers le bon article. Il sert d'abord à repérer les références fabriquées quand une IA rédige ou retouche un .bib, cas devenu courant.</p>
+<p>Dépôt https://github.com/Xtardy/opencode-citecheck, licence MIT, 0 étoile, dernière mise à jour le 24 octobre 2026 (dépôt créé le 19 octobre) — projet très jeune, testé par son auteur seulement.</p>
+<h3>latex-objects — retouches de formules dans Obsidian</h3>
+<p>Extension pour Obsidian qui automatise les petites manipulations répétitives sur les formules : basculer une formule en ligne (<code>$x$</code>) en formule centrée (<code>$$x$$</code>) et inversement, la transformer en environnement <code>align</code> en plaçant les <code>&amp;</code> devant la première relation de chaque ligne, renommer un environnement en mettant à jour le <code>\end</code> correspondant, ajouter ou retirer <code>\left</code> et <code>\right</code> autour du crochet le plus proche, ou encore envelopper et défaire un environnement. En mode Vim, elle ajoute des objets de texte comparables à ceux de vimtex (<code>dim</code>, <code>cie</code>, <code>ciB</code>) ; les commandes fonctionnent sans Vim.</p>
+<p>Dépôt https://github.com/confuserdotcom/obsidian-latex-objects, licence MIT, 0 étoile, dernière mise à jour le 30 octobre 2026, publiée sur le répertoire communautaire d'Obsidian (https://community.obsidian.md/plugins/latex-objects). Sans intérêt si vous n'écrivez pas vos brouillons en Markdown ; pertinent dès lors que l'on passe régulièrement de Markdown à LaTeX.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>TexLite 0.19.0 — agents de code intégrés</h3>
+<p>Éditeur LaTeX web auto-hébergé, présenté comme une alternative légère à Overleaf pour de petites équipes. La version 0.19.0 permet de brancher un agent de code installé localement (Codex, OpenCode) directement dans l'éditeur : on choisit son propre modèle et ses propres permissions, là où Overleaf impose son assistance intégrée. Le reste des mises à jour des deux derniers mois n'est pas détaillé dans le message.</p>
+<p>Dépôt https://github.com/SWUFE-DB-Group/TexLite, licence AGPL-3.0, 68 étoiles, dernière mise à jour le 30 octobre 2026 (dépôt créé le 3 août 2026) — projet actif.</p>
+<h3>Prism (OpenAI) ferme le 1er janvier 2027</h3>
+<p>Prism, l'éditeur LaTeX en ligne et espace de travail scientifique gratuit d'OpenAI (https://prism.openai.com), annonce sa fermeture au 1er janvier 2027 : les projets doivent être exportés avant cette date. Le service avait une certaine audience parce qu'il intégrait ChatGPT et Codex à la rédaction scientifique. D'après un commentaire du fil, l'export ne conserverait ni les commentaires ni l'historique des versions — je n'ai pas pu le vérifier sur la page de Prism, qui ne détaille que la date et l'invitation à exporter. La nouvelle a relancé les discussions sur les alternatives à Overleaf, sans qu'une comparaison vérifiable en soit sortie.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>Une image Docker LaTeX plusieurs fois plus légère que texlive-full</h3>
+<p>Le projet Calkit publie une image Docker destinée à la rédaction technique, fondée sur TinyTeX et incluant Pandoc. Les chiffres du dépôt, mesurés en amd64 : 900 Mo décompressée et 430 Mo à télécharger, contre 6,2 Go et 2,7 Go pour l'image <code>texlive/texlive:latest-full</code>. Les paquets manquants s'installent dans un répertoire <code>texmf</code> local à la première compilation, et l'image embarque latexmk, latexdiff, ainsi que make4ht avec Ghostscript pour convertir un document en .docx sans Word. Usage direct :</p>
+<pre><code class="language-sh">mkdir -p &quot;$HOME/.cache/calkit-texmf&quot;
+docker run --rm -it --user &quot;$(id -u):$(id -g)&quot; \
+    -v &quot;$PWD&quot;:/work -v &quot;$HOME/.cache/calkit-texmf&quot;:/texmf -w /work \
+    ghcr.io/calkit/latex:latest latexmk -pdf -cd paper/main.tex
+</code></pre>
+<p>Fichiers : https://github.com/calkit/calkit/tree/main/images/latex (dépôt calkit/calkit, licence MIT, 60 étoiles, dernière mise à jour le 30 octobre 2026). Réserve de vérification : le message annonce une image « environ dix fois plus petite » ; les chiffres publiés donnent un rapport de 7 en taille décompressée et de 6,3 en téléchargement. L'écart n'est pas énorme, mais l'annonce est un peu optimiste.</p>
+<h3>Overleaf Community Edition prêt à l'emploi, en Docker</h3>
+<p>Empaquetage communautaire d'Overleaf CE avec TeX Live complet, images préconstruites pour ARM64 et AMD64 (donc pas de construction à attendre), stockage local persistant pour les projets, les comptes et l'historique, et un petit lanceur. XeLaTeX, LuaLaTeX et la découverte des polices sont compris, ce qui explique la taille.</p>
+<p>Dépôt https://github.com/vishvish/overleaf-personal, licence AGPL-3.0, 0 étoile, créé et mis à jour le 27 octobre 2026. L'auteur le teste avec OrbStack sur Apple Silicon ; le démarrage et la compilation en AMD64 ont été vérifiés en émulation seulement. C'est l'option la plus directe pour retrouver l'interface Overleaf sur un serveur personnel, sans abonnement.</p>
+<h3>Un tutoriel interactif utilisable avec des élèves</h3>
+<p>https://cortex.corca.ai/docs/en/tutorial propose un parcours en cinq étapes — écrire un premier document, organiser le texte, écrire des mathématiques, renvoyer aux figures, sections et équations, citer ses sources — où l'on tape le code directement dans le navigateur, sans installation. Disponible en français. Convient à des élèves qui découvrent LaTeX. À signaler : c'est la documentation d'un éditeur commercial (CorTeX, société Corca) ; le tutoriel est en accès libre, mais son objectif affiché est aussi de faire connaître le produit.</p>
+<h2>Volume</h2>
+<p>25 posts publiés du 20 au 30 octobre dans le journal, 10 retenus, 15 écartés, soit un taux de rétention de 40 %. Sur un forum d'entraide comme r/LaTeX, la majorité des messages sont des demandes de dépannage ponctuelles, écartées par construction ; un taux de cet ordre y est normal et ne signale pas un filtre défaillant.</p>
+<p>Deux précisions de méthode. Cette édition est la première de la veille r/LaTeX : le journal n'avait aucun état antérieur, elle couvre donc la totalité des posts collectés (dix jours) et non les seules dernières quarante-huit heures ; l'horizon de quatre jours et le fichier de déduplication prennent effet à partir de la prochaine édition. Par ailleurs, les trois derniers posts du journal, publiés le 29 et le 30 octobre, venaient d'arriver au moment de la rédaction : s'ils avaient été collectés après l'édition, ils auraient été reportés au lendemain. La collecte du 30 octobre à 11h01 UTC s'est déroulée sans erreur.</p>
+<footer>Édition du vendredi 30 octobre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

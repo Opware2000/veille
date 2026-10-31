@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — samedi 31 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Six projets nouveaux ou mis à jour, dont cinq dépôts GitHub vérifiés ; quatre concernent directement l'outillage du développeur (terminal, audio, IDE rétro, contrôle des ports USB).</li>
+<li>Taux de rétention de 16 % (38 posts examinés, 6 retenus) : conforme à la nature du subreddit, où les récits de projets personnels et les questions occupent la majorité des publications. Les jeux et démonstrations, très nombreux cette semaine, ont été écartés faute de constituer un outil réutilisable.</li>
+<li>Signalé par honnêteté : nodeterm, présenté comme « 100 % libre », est publié sous Business Source License 1.1, qui n'est pas une licence libre au sens de l'Open Source Initiative ; les versions se téléchargent librement.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li><strong>nodeterm — gestionnaire de terminaux en canevas pour l'agentique.</strong> À l'origine, un développeur voulait gérer plusieurs projets, dont des connexions SSH distantes, sans empiler les onglets de son terminal. Le résultat est plus large : chaque terminal est un nœud déplaçable sur un canevas infini, les agents (Claude, Codex, Gemini) y tournent en parallèle avec un état visible, deux nœuds peuvent être reliés pour échanger leur contexte, et chaque session vit dans tmux, donc elle survit à la fermeture de l'application comme au redémarrage de la machine. Les opérations Git sont intégrées et les sessions restent accessibles depuis un téléphone. Fonctionne sous macOS et Linux, avec une édition serveur dans le navigateur ; Windows est en bêta et l'installateur n'est pas signé. Réserve de licence : Business Source License 1.1 (usage en production autorisé, mais interdiction de revendre ou d'héberger le logiciel comme produit concurrent), soit une licence « source disponible » et non une licence libre classique ; GitHub ne reconnaît pas de licence SPDX. 2 224 étoiles, 255 bifurcations, dernière mise à jour le 30 octobre 2026. Le site présente le projet comme gratuit, sans abonnement annoncé. https://nodeterm.dev — https://github.com/eneskirca/nodeterm</li>
+<li><strong>AudioRouter — routage audio visuel, libre, pour Windows 11.</strong> On place sur un canevas ses entrées (microphone, son des applications), ses traitements (porte de bruit, égaliseur, compresseur, greffons VST2 et VST3 déjà installés) et ses sorties (Discord, OBS, casque, enregistrement séparé en WAV ou FLAC), et l'on modifie tout pendant que le son tourne. Sont également prévus : transfert d'audio entre deux ordinateurs du réseau local, touches Stream Deck, API locale et serveur MCP pour laisser un assistant configurer les routes. Licence GPL-3.0, 52 étoiles, dépôt créé le 5 septembre 2026, dernière mise à jour le 31 octobre 2026 (dernière version publiée v0.0.24, 28 octobre 2026). Gratuit, sans compte ni abonnement, tout en local ; l'auteur prévient que les versions actuelles sont des aperçus expérimentaux non signés. Utilité indirecte pour la classe : c'est un bon exemple documenté de projet entièrement dirigé par spécifications et fichiers de règles. https://audiorouter.org — https://github.com/MrDesjardins/audiorouter</li>
+<li><strong>VibeBasic — un clone de Visual Basic 6 qui tourne sous macOS, Windows et Linux.</strong> Le même geste qu'à l'époque : déposer un bouton sur un formulaire, double-cliquer, écrire deux lignes, appuyer sur F5. Le langage VB6 est réimplémenté (procédures, tableaux de contrôles, gestion d'erreurs, modules de classe, entrées-sorties de fichiers, accès aux bases SQLite à la place des fichiers Jet), avec éditeur de menus, débogueur pas à pas, 59 types de contrôles et lecture des projets <code>.vbp</code> existants. Un assistant facultatif se connecte à un serveur compatible OpenAI, y compris un modèle local par Ollama ou vLLM, et sait fabriquer un formulaire à partir d'une description ou suggérer une correction en cas d'erreur. Tout est présenté en aperçu avant application. Réserves : le projet est un passe-temps en cours, les DLL (<code>Declare</code>), les ActiveX et l'OLE ne sont pas pris en charge ; GitHub n'identifie aucune licence et le dépôt n'affiche aucun tarif, seule la gratuité du téléchargement des versions est constatable. 4 étoiles, dernière mise à jour le 27 octobre 2026, dernière version v0.13.1. https://github.com/Stigern/VibeBasic</li>
+<li><strong>Currents — identification des poissons hors ligne sur iPhone.</strong> Cette application de pêche fonctionne sans réseau : identification de plus de 1 500 espèces, journal des prises avec fiche de partage, suggestions de spots et prévisions. Le code est publié sous licence MIT (2 étoiles, dernière mise à jour le 30 octobre 2026). Point d'attention : le post d'origine ne contient que le titre, et le dépôt comme le lien vers l'App Store ont été retrouvés grâce à un repost du même message dans un autre subreddit (r/iOSAppsMarketing, identifiant 1xjfyf6) ; le rapprochement entre le post et ce dépôt repose donc sur l'identité de l'auteur et du texte. Version installable : https://apps.apple.com/app/id6771932525 — dépôt : https://github.com/PndaMan/Currents</li>
+<li><strong>Wispee — réseau social sans compte.</strong> Chaque profil est une page personnelle, reliée aux autres par un fil d'actualité, sans inscription : on arrive, on lit, on publie. L'auteur y a ajouté messagerie, appels audio et vidéo (par MiroTalk), karaoké, jeux multijoueurs et solo, lecteur de musique, thèmes et fonds personnalisables, modération communautaire et générateur de bandes dessinées ; le classement est chronologique, avec un onglet des publications les plus réagies, sans algorithme. L'inspiration revendiquée est Neocities ou Nekoweb. Réserve : application web gratuite mais propriétaire, aucun dépôt ni licence n'est annoncé, et l'auteur indique l'avoir développée seul pendant cinq mois avec l'offre gratuite de Gemini ; il faut donc s'attendre à un service fragile. https://wispee.com</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>USBGuardGUI 0.2.0 — interface graphique GTK4 pour USBGuard (Linux).</strong> Nouvelle version d'un client de bureau qui permet, sans ligne de commande, de voir les périphériques USB connectés, de les autoriser ou de les bloquer pour la session ou définitivement, et de gérer les règles par formulaire guidé ou par éditeur de texte. Apports de la 0.2.0 : aperçu des appareils correspondant à une règle avant son enregistrement, détail des interfaces et des chemins de port physiques, historique local des 200 derniers événements, corrections de navigation clavier et d'accessibilité testées sous GNOME et KDE Plasma. Écrit en Rust avec GTK4/libadwaita, licence MIT, 4 étoiles, dépôt créé le 30 août 2026, dernière mise à jour le 26 octobre 2026 (version publiée sous forme de paquets DEB, RPM, Arch et Flatpak, avec sommes de contrôle et signatures Sigstore). Le projet ne remplace pas USBGuard lui-même : son démon et sa passerelle D-Bus doivent être installés et actifs, ce qui suppose des droits d'administration pour la mise en place. https://github.com/onyks-os/USBGuardGUI</li>
+</ul>
+<h2>Volume</h2>
+<p>38 posts publiés dans l'intervalle, 6 retenus, 32 écartés.</p>
+<p>La collecte s'est déroulée sans erreur (dernier passage le 31 octobre 2026 à 4 h 55 UTC).</p>
+<footer>Édition du samedi 31 octobre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
