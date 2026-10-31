@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Veilles quotidiennes de Nicolas</title></head>
+  <body>
+    <outline text="Toutes les veilles" title="Toutes les veilles" type="rss" xmlUrl="https://opware2000.github.io/veille/veille.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/ArtCraftAI" title="Veille r/ArtCraftAI" type="rss" xmlUrl="https://opware2000.github.io/veille/artcraft.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/macapps" title="Veille r/macapps" type="rss" xmlUrl="https://opware2000.github.io/veille/macapps.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/LovingOpenSourceAI" title="Veille r/LovingOpenSourceAI" type="rss" xmlUrl="https://opware2000.github.io/veille/lovingopensourceai.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/BestGitHubRepos" title="Veille r/BestGitHubRepos" type="rss" xmlUrl="https://opware2000.github.io/veille/bestgithubrepos.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/vibecoding" title="Veille r/vibecoding" type="rss" xmlUrl="https://opware2000.github.io/veille/vibecoding.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/hermesagent" title="Veille r/hermesagent" type="rss" xmlUrl="https://opware2000.github.io/veille/hermesagent.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/opensource" title="Veille r/opensource" type="rss" xmlUrl="https://opware2000.github.io/veille/opensource.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/LaTeX" title="Veille r/LaTeX" type="rss" xmlUrl="https://opware2000.github.io/veille/latex.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/opencode" title="Veille r/opencode" type="rss" xmlUrl="https://opware2000.github.io/veille/opencode.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille r/DeepSeek" title="Veille r/DeepSeek" type="rss" xmlUrl="https://opware2000.github.io/veille/deepseek.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+  </body></opml>
