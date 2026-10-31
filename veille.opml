@@ -14,4 +14,5 @@
     <outline text="Veille r/opencode" title="Veille r/opencode" type="rss" xmlUrl="https://opware2000.github.io/veille/opencode.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille r/DeepSeek" title="Veille r/DeepSeek" type="rss" xmlUrl="https://opware2000.github.io/veille/deepseek.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille CTAN" title="Veille CTAN" type="rss" xmlUrl="https://opware2000.github.io/veille/ctan.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille Clément Mondary" title="Veille Clément Mondary" type="rss" xmlUrl="https://opware2000.github.io/veille/mondary.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
   </body></opml>

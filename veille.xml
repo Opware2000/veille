@@ -6,9 +6,728 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 11:41:52 +0100</lastBuildDate>
+<lastBuildDate>Sat, 31 Oct 2026 11:49:51 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille Clément Mondary — samedi 31 octobre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-10-31.html</link>
+<guid isPermaLink="false">mondary-2026-10-31</guid>
+<pubDate>Sat, 31 Oct 2026 11:49:51 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Première édition : la veille n'avait aucun antécédent, elle couvre donc l'ensemble du journal de collecte, soit 102 billets publiés entre le 11 et le 31 octobre 2026 (le blog en publie environ cinq par jour) ; l'horizon de quatre jours s'appliquera aux éditions suivantes.<br />
+102 billets examinés, 87 retenus, 15 écartés. Le blog ne publie que des outils, d'où un taux de rétention élevé ; sur ces 87, une trentaine concerne les agents et les modèles d'IA, et un bon quart est réservé à macOS.<br />
+La dernière collecte (31 octobre, 10h41 UTC) s'est déroulée sans erreur.</p>
+<h2>Documents, notes et bureautique</h2>
+<h3>GenOffice</h3>
+<p>Suite bureautique native pour macOS, Windows et Linux qui ouvre et enregistre de vrais fichiers .docx, .xlsx et .pptx : styles, commentaires et révisions survivent à l'enregistrement, et l'agent IA intégré écrit dans le document sous forme de révisions annulables. Un CLI permet aussi de produire et de vérifier des .pptx sans ouvrir de fenêtre, à travers 29 outils MCP. C'est la solution à regarder si vous voulez rédiger et échanger des documents au format exigé par l'Établissement sans passer par une suite propriétaire.<br />
+Licence Apache-2.0, avec une réserve : le dossier <code>ee/</code> est réservé à des modules entreprise sous licence spécifique. Dépôt lancé le 31 juillet 2026, 11 415 étoiles relevées sur l'API GitHub (7 900 au moment du billet), version 0.10.1467 du 27 septembre.<br />
+<a href="https://mondary.design/2026/10/genoffice-la-suite-office-open-source-ou-lia-edite-le-vrai-fichier/">GenOffice</a></p>
+<h3>Alexandrie</h3>
+<p>Wiki auto-hébergé qui réunit prise de notes, documentation et publication dans un seul éditeur Markdown étendu, utilisable hors ligne et déployable par une commande Docker Compose. Dossiers imbriqués, espaces de travail, étiquettes. Se présente comme une alternative à Notion, Confluence et Obsidian. C'est l'option à considérer pour rassembler vos cours et vos documents dans un espace unique qui reste chez vous.<br />
+MIT, code public, sans pistage ni publicité ; le site hébergé vit de dons.<br />
+<a href="https://mondary.design/2026/10/alexandrie-votre-espace-markdown-organise-avec-elegance/">Alexandrie</a></p>
+<h3>Reflect</h3>
+<p>Application de notes local-first dont les notes restent de simples fichiers Markdown dans un dossier que vous choisissez : notes du jour, liens <code>[[</code> et backlinks, recherche locale instantanée, recherche sémantique optionnelle calculée sur la machine, capture depuis le navigateur, mémos audio transcrits. L'IA est facultative et à clé personnelle (OpenAI, Anthropic, Google, OpenRouter), avec des réponses citées vers vos notes ; la synchronisation passe par iCloud Drive ou par Git, le dépôt privé étant créé depuis l'application.<br />
+Sans compte ni serveur imposé. À savoir : la sauvegarde Git inclut vos notes, le réglage de confidentialité protège des services tiers, pas de votre propre dépôt.<br />
+<a href="https://mondary.design/2026/10/reflect-vos-notes-restent-des-fichiers-markdown-chez-vous/">Reflect</a></p>
+<h3>Markraft</h3>
+<p>Carnet Markdown natif pour macOS qui surgit par-dessus n'importe quelle application d'une pression sur ⌥N, avec formatage en direct, formules LaTeX hors ligne et mode vim. Chaque note est un fichier .md rangé dans le dossier de votre choix. Alternative libre à Raycast Notes, écrite en Rust, sans vue web, dans la barre de menus.<br />
+MIT, gratuit, sans compte ni télémétrie, macOS 13 et plus, Apple Silicon comme Intel (77 étoiles sur GitHub).<br />
+<a href="https://mondary.design/2026/10/markraft-un-carnet-markdown-flottant-et-libre-pour-remplacer-raycast-notes/">Markraft</a></p>
+<h3>Noty</h3>
+<p>Notes collantes rangées au bord de l'écran sur macOS : on survole le paquet, il s'évente, on tire la note voulue. Pratique pour garder sous les yeux une liste de tâches ou les points d'un cours en préparation, sans fenêtre supplémentaire.<br />
+MIT, chiffrement local, sans compte, macOS 15 et plus, environ 1,6 Mo (503 étoiles). Signature ad hoc : un clic droit puis « Ouvrir » sera demandé au premier lancement.<br />
+<a href="https://mondary.design/2026/10/noty-des-notes-collantes-qui-vivent-au-bord-de-votre-ecran/">Noty</a></p>
+<h3>Binders</h3>
+<p>Application macOS qui transforme ce que vous dites et entendez en réunion, et ce que vous écrivez, en notes, tâches et réponses sourcées. La dictée, le modèle de langage et les données restent sur la machine : pas de compte, pas de cloud, pas d'abonnement. L'application expose un serveur MCP qui la branche à Claude Code, Cursor, VS Code ou Codex.<br />
+Gratuit et open source, GPL-3.0. La 0.4.0 est une pré-version de septembre 2026 sur un dépôt créé le 21 septembre (24 étoiles sur l'API) : à essayer en connaissance de cause.<br />
+<a href="https://mondary.design/2026/10/binders-le-mac-qui-retient-ce-que-vous-dites-entendez-et-ecrivez/">Binders</a></p>
+<h3>Parrot</h3>
+<p>Dictée au push-to-talk sur macOS : vous maintenez la touche fn, vous parlez, vous relâchez, le texte se colle au curseur dans n'importe quelle application. Tout tourne sur le Neural Engine, sans compte ni abonnement, et le fichier de réglages peut être un lien symbolique vers un dépôt de configuration versionné.<br />
+MIT, gratuit, macOS 14 minimum, Apple Silicon exclusivement (version 0.2.0, un seul contributeur) : le multiplateforme est un non-objectif assumé.<br />
+<a href="https://mondary.design/2026/10/parrot-dictee-au-push-to-talk-dans-toutes-vos-apps-de-mac-sans-cloud/">Parrot</a></p>
+<h3>Typeless</h3>
+<p>Dictée vocale multiplateforme (macOS, Windows, Linux, iOS, Android) qui rend un texte déjà corrigé et mis en forme, dans l'application où vous vous trouvez : touche Fn sur Mac, Alt droit sous Windows, bouton Speak du clavier sur mobile. Utile pour dicter un commentaire de copie ou un mémo, mais à réserver aux contenus non sensibles : l'audio et un contexte limité (application utilisée, texte voisin) sont traités dans le cloud puis supprimés, selon l'éditeur.<br />
+Offre gratuite limitée en mots, sans quota chiffré affiché ; Pro à 12 dollars par mois en facturation annuelle (30 dollars au mois), avec les mots illimités ; neuf minutes maximum par dictée.<br />
+<a href="https://mondary.design/2026/10/typeless-dictez-partout-obtenez-un-texte-deja-nettoye/">Typeless</a></p>
+<h3>Tangerine</h3>
+<p>Utilitaire macOS qui convertit et édite vos fichiers sans quitter le Finder : vous maintenez ⇧ en glissant un fichier, une roue de formats s'ouvre sous le pointeur, vous déposez sur le format voulu. 188 conversions et 25 outils, tout est traité sur la machine et l'original n'est jamais touché. Commode pour alléger une image destinée à un sujet ou convertir une vidéo avant de l'intégrer.<br />
+20 fichiers offerts, puis 15 dollars en paiement unique, sans abonnement. Apple Silicon seulement, macOS 13 ou plus.<br />
+<a href="https://mondary.design/2026/10/tangerine-le-convertisseur-de-fichiers-qui-sinvoque-dun-shift-glisser/">Tangerine</a></p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>Open WebUI</h3>
+<p>Interface web que vous installez chez vous et qui devient le point d'entrée unique de vos modèles : Ollama en local, toute API compatible OpenAI, RAG sur vos documents, mémoire, Notes et plugins Python, en une commande d'installation. C'est la façon la plus directe de faire travailler un modèle local sur vos propres documents.<br />
+Attention à la licence : le code est libre au sens large, mais la licence Open WebUI impose de ne pas retirer le nom ni le logo du projet au-delà de 50 utilisateurs sur trente jours glissants, ou avec une autorisation écrite ou une licence entreprise. 153 000 étoiles, version 0.11.4 du 21 septembre 2026.<br />
+<a href="https://mondary.design/2026/10/open-webui-linterface-ia-self-hosted-qui-accueille-tous-vos-modeles/">Open WebUI</a></p>
+<h3>opencodex</h3>
+<p>Proxy local qui sert Codex et Claude Code depuis un seul port et traduit leur protocole vers le fournisseur de votre choix : Claude, Gemini, Grok, DeepSeek, Ollama, tout point d'accès compatible OpenAI. Vous gardez les interfaces d'origine et changez de modèle derrière, ce qui permet de faire tourner un abonnement déjà payé ou un modèle local dans ces clients. Discipline d'ingénierie remarquable : flux traduits fidèlement, port occupé refusé au démarrage, points de contrôle /healthz et /readyz.<br />
+MIT, 16 400 étoiles et 1 234 forks en trois mois. Le billet signale honnêtement le revers : le projet s'interpose entre vous et le fournisseur, et Anthropic peut suspendre un compte dont le trafic passe par un proxy tiers ; l'installateur Windows n'est pas signé.<br />
+<a href="https://mondary.design/2026/10/opencodex-le-proxy-local-qui-fait-tourner-codex-et-claude-code-sur-nimporte-quel-modele/">opencodex</a></p>
+<h3>Magpie</h3>
+<p>Petite application qui inventorie les agents IA installés sur votre machine, affiche le modèle que chacun utilise et le change d'un clic, en exposant un gateway local qui traduit entre les API OpenAI, Anthropic et Gemini. Elle prend en charge les abonnements que vous payez déjà (Claude, ChatGPT, Copilot) pour les transformer en fournisseurs partagés par tous les agents, avec rotation selon la date de renouvellement, mise à l'écart d'une clé en échec et retour progressif.<br />
+Gratuit, open source, MIT. Binaire de moins de 15 Mo, interface dans le webview du système, sans Electron.<br />
+<a href="https://mondary.design/2026/10/magpie-un-menu-bar-pour-donner-le-meme-catalogue-de-modeles-a-tous-vos-agents-ia/">Magpie</a></p>
+<h3>Hedos</h3>
+<p>Binaire Rust unique qui inventorie les modèles d'IA déjà présents sur la machine (Ollama, cache Hugging Face, LM Studio, fichiers GGUF et safetensors en vrac) sans rien déplacer, puis les sert à travers un gateway local compatible OpenAI, Ollama et Anthropic, avec une interface en terminal utilisable en SSH et en tmux. Il sait aussi poser Claude Code, OpenCode, Aider, Goose ou Crush sur un modèle local.<br />
+MIT, gratuit, hors ligne. macOS et Linux seulement, pas de version Windows ; projet jeune (43 étoiles annoncées, 480 sur l'API GitHub côté binaire).<br />
+<a href="https://mondary.design/2026/10/hedos-etagere-modeles-ia-locaux/">Hedos</a></p>
+<h3>BaseRT</h3>
+<p>Runtime d'inférence local pour Apple Silicon et NVIDIA GB10 : une ligne d'installation, un CLI unique pour tirer un modèle, discuter ou le servir en API compatible OpenAI, avec des noyaux GPU écrits à la main pour Metal et la mémoire unifiée. Une alternative crédible à llama.cpp ou MLX sur Mac récent, plus rapide à l'amorçage selon les mesures de l'éditeur.<br />
+Le dépôt est en Apache-2.0 (CLI, format, en-têtes, bindings), mais le moteur lui-même est un binaire précompilé propriétaire. M1 ou plus avec macOS 14, ou GB10 sous Linux.<br />
+<a href="https://mondary.design/2026/10/basert-le-runtime-llm-local-qui-bat-llama-cpp-sur-apple-silicon/">BaseRT</a></p>
+<h3>Cognee</h3>
+<p>Couche de mémoire open source pour agents, en Apache-2.0, qui transforme vos documents, votre code et vos conversations en graphe de connaissances auto-hébergé, interposé entre vos données et le modèle, y compris local. Quatre opérations couvrent le cycle : ingestion, construction du graphe, requête, remise à jour. Sert à éviter qu'un agent refasse le même travail et vous fasse payer deux fois les jetons.<br />
+Python 3.10 à 3.14, 31 000 étoiles. Deux réserves : le mode Postgres de production est un produit sous licence, et le benchmark publié repose sur les jeux de données de l'équipe.<br />
+<a href="https://mondary.design/2026/10/cognee-la-memoire-qui-survit-a-vos-sessions-dagents/">Cognee</a></p>
+<h3>Gortex</h3>
+<p>Moteur d'intelligence de code qui indexe un dépôt en graphe de connaissances (fichiers, symboles, imports, appels, routes) et le sert à votre agent de programmation en MCP, en HTTP et dans une interface web, entièrement en local, en un seul binaire. Sur l'exemple du billet, une modification passe de 11 480 jetons de lecture à 688. Économie de contexte et de temps sur un dépôt de cours ou de scripts volumineux.<br />
+<a href="https://mondary.design/2026/10/gortex-le-graphe-de-code-qui-evite-a-votre-agent-de-relire-vos-fichiers/">Gortex</a></p>
+<h3>TypeLLM</h3>
+<p>Couche de décodage typé au-dessus des LLM open source : elle renvoie du texte, des entiers, des nombres, des booléens et des choix contraints par un schéma JSON, accepte des images et enchaîne plusieurs décisions dépendantes dans un même appel, sans modifier les poids du modèle.<br />
+Apache-2.0, Python 3.10 ou plus. Réservé à l'auto-hébergement sérieux : il faut déjà servir un modèle compatible sur un serveur à GPU, avec SGLang et le cache de préfixe.<br />
+<a href="https://mondary.design/2026/10/typellm-des-sorties-typees-pour-vos-workflows-llm/">TypeLLM</a></p>
+<h3>Atomic Agent</h3>
+<p>Agent IA local-first qui travaille dans le répertoire où vous le lancez : navigation web avec garde-fou, lecture et modification de fichiers, extraction de texte de PDF, préparation de commandes shell soumises à votre accord, mémoire locale, tâches planifiées et serveurs MCP. Modèles locaux via llama.cpp, avec option cloud. Les sessions, traces et profils de navigateur restent dans un répertoire local.<br />
+MIT, 3 484 étoiles sur l'API. Le score annoncé sur le benchmark GAIA L1 vient du projet lui-même : pas de validation indépendante à ce jour.<br />
+<a href="https://mondary.design/2026/10/atomic-agent-un-agent-ia-local-qui-agit-vraiment-sur-votre-machine/">Atomic Agent</a></p>
+<h3>Minke</h3>
+<p>Application de bureau local-first qui fournit une coque à DeepSeek Harness (moteur d'agents en MIT, 236 000 étoiles annoncées) : conversations, fichiers, terminal, navigateur partagé où vous pouvez reprendre la souris d'un agent bloqué, modèles locaux, et accès depuis le téléphone.<br />
+Apache-2.0, 695 étoiles, dépôt créé le 15 août 2026. Rien ne quitte la machine si vous pointez l'agent vers un modèle local.<br />
+<a href="https://mondary.design/2026/10/minke-deepseek-harness-trouve-enfin-un-corps/">Minke</a></p>
+<h3>OMP</h3>
+<p>Agent de codage en terminal dont le cœur Rust embarque des fonctions d'éditeur : renommage propagé par LSP, débogage réel via lldb, dlv et debugpy, exécution de Python et de JavaScript dans la même session, subagents et un modèle « conseiller » qui relit chaque tour. Une seule session pour inspecter, modifier et vérifier.<br />
+MIT, construit par Stencil Labs autour d'un fork de Pi ; le binaire tourne aussi sous Windows sans WSL.<br />
+<a href="https://mondary.design/2026/10/omp-un-agent-de-codage-qui-a-lediteur-branche-dessus/">OMP</a></p>
+<h3>Sinclair</h3>
+<p>Terminal open source pour macOS et Linux qui fait tourner vos agents de codage dans des panneaux reliés par un bus partagé, chacun dans son propre worktree Git et affichant son état (travaille, bloqué, terminé). Rendu GPU.<br />
+Projet jeune — quelques centaines de validations, Windows en bêta, communauté encore réduite.<br />
+<a href="https://mondary.design/2026/10/sinclair-le-terminal-ou-vivent-vos-equipes-dagents/">Sinclair</a></p>
+<h3>AtAt</h3>
+<p>Utilitaire macOS qui déplie un agent IA dans n'importe quel champ de texte : vous tapez @@, la sélection ou une capture d'écran part avec la question, la réponse s'insère au curseur. Il pilote les agents que vous avez déjà (Claude Code, Codex, Cursor, Hermes, OpenCode) ou votre propre clé d'API, avec possibilité de rester en local via Ollama.<br />
+Attention au prix : sept jours d'essai, puis abonnement annuel ou licence à vie. macOS 15 et plus, puces Apple, application Swift native.<br />
+<a href="https://mondary.design/2026/10/atat-agent-ia-mac/">AtAt</a></p>
+<h3>One</h3>
+<p>Application macOS (et iPhone) qui rassemble dans une seule boîte de réception les questions posées par Claude Code, Codex, OpenCode ou Pi : vous répondez d'une touche ou à la voix, avec capture d'écran, et l'agent repart. Elle détecte seule les sessions en cours, y compris dans les applications.<br />
+Gratuit, macOS 13 et plus, Apple Silicon comme Intel ; le traitement passe par votre abonnement ChatGPT (quota Codex). L'app iPhone est en bêta TestFlight.<br />
+<a href="https://mondary.design/2026/10/one-repondez-a-vos-agents-de-code-sans-changer-de-fenetre/">One</a></p>
+<h3>Saggar</h3>
+<p>Terminal macOS natif pensé pour la supervision : chaque agent tourne dans une vraie session de shell que vous pouvez lire, interrompre et reprendre, et l'application ne vous rappelle à l'écran que lorsqu'une décision est attendue. Les sessions sont organisées par projet, branche et worktree.<br />
+Limite nette : macOS 26 Tahoe et puce Apple uniquement, ni Windows ni Linux.<br />
+<a href="https://mondary.design/2026/10/saggar-le-terminal-qui-remet-lhumain-dans-la-boucle-des-agents/">Saggar</a></p>
+<h3>herdrup</h3>
+<p>Client iOS pour le tableau de bord des agents qui tournent sur votre machine : l'application reste silencieuse tant que tout va bien, vous envoie une notification dès qu'un agent a besoin de vous, et le vrai terminal est à un geste derrière la carte. Compatible Claude Code, Codex et une vingtaine d'autres agents, en SSH sur votre réseau, sans compte ni cloud.<br />
+Apache-2.0. La notification passe par un relais, mais le texte n'y est ni stocké ni journalisé selon le projet ; rien d'équivalent sous Android.<br />
+<a href="https://mondary.design/2026/10/herdrup-agents-depuis-iphone/">herdrup</a></p>
+<h3>Ellora</h3>
+<p>Poste de travail hébergé dans le cloud, conçu pour être partagé avec vos agents : éditeur complet, explorateur de fichiers, shell et exécution, avec des tâches qui affichent leur état (en cours, terminé, vous attend).<br />
+En accès anticipé sur liste d'attente : aucune tarification publiée, aucun dépôt public ni documentation ouverte. À suivre plutôt qu'à adopter.<br />
+<a href="https://mondary.design/2026/10/ellora-un-poste-de-travail-cloud-pour-vous-et-vos-agents/">Ellora</a></p>
+<h3>SmythOS Studio</h3>
+<p>Atelier visuel auto-hébergé pour composer des agents par glisser-déposer et les exécuter chez vous : canvas de composition, tests à chaud, pile Docker complète (Traefik, MySQL, Redis) qui répond sur le port 6060, et export en fichiers .smyth rechargeables par le runtime et son CLI. Se présente comme une alternative à n8n, sans que vos clés et vos données partent chez un hébergeur.<br />
+MIT, 659 étoiles. Réserve relevée à l'API GitHub : le dépôt n'a pas été poussé depuis avril 2026.<br />
+<a href="https://mondary.design/2026/10/smythos-studio-agents-ia-glisser-deposer-self-hosted/">SmythOS Studio</a></p>
+<h3>Mailroom</h3>
+<p>Application web auto-hébergée qui fait tourner une boîte mail d'assistance sur l'infrastructure Cloudflare, où un agent IA rédige les réponses et vous laisse le bouton d'envoi, avec clé d'idempotence et plafond d'envoi quotidien.<br />
+Les prérequis sont réels : domaine dont les DNS sont chez Cloudflare, R2 activé, plan Workers payant à environ 5 dollars par mois tant qu'Email Sending est en bêta. Intéressant pour l'adresse de contact d'un site pédagogique, disproportionné pour une boîte ordinaire.<br />
+<a href="https://mondary.design/2026/10/mailroom-la-boite-mail-self-hosted-ou-lagent-redige-et-vous-validez/">Mailroom</a></p>
+<h3>IamSpeaker</h3>
+<p>Entraînement à la prise de parole entièrement local : l'IA joue d'abord votre présentation depuis vos diapositives, puis analyse votre enregistrement — débit, tics de langage, prononciation, intonation. Ollama, Whisper et Piper, sans clé d'API ni enregistrement envoyé chez un éditeur. Directement transposable à la préparation d'une intervention en classe ou devant des collègues.<br />
+MIT, interface en cinq langues. Projet très peu suivi (8 étoiles, dernier envoi en juillet 2026).<br />
+<a href="https://mondary.design/2026/10/iamspeaker-coach-presentations-local/">IamSpeaker</a></p>
+<h3>xKiro</h3>
+<p>Passerelle qui concentre les grands fournisseurs de modèles (Claude, ChatGPT, Gemini, DeepSeek, Grok, plus d'une quarantaine d'autres) derrière une seule clé d'API, compatible avec les SDK OpenAI et Anthropic : on change de modèle en modifiant un paramètre. Bascule automatique vers une autre route si un fournisseur flanche, 40 modèles gratuits et 500 000 jetons par jour sans carte bancaire.<br />
+Plans payants à partir de 5 dollars par mois, avec une économie annoncée de 50 à 70 % sur les tarifs des fournisseurs. Service commercial : la stabilité en production reste à éprouver.<br />
+<a href="https://mondary.design/2026/10/xkiro-une-api-un-point-dacces-a-des-dizaines-de-modeles-ia/">xKiro</a></p>
+<h3>VibeIndex</h3>
+<p>Annuaire tenu à la main recensant 285 outils de « vibe coding » en seize catégories, avec fiche, capture d'écran, étoiles GitHub, filtres et recherche. Utile comme point d'entrée quand vous cherchez un agent, un constructeur d'application ou un serveur MCP sans savoir lequel.<br />
+<a href="https://mondary.design/2026/10/vibeindex-285-outils-de-vibe-coding-reunis-dans-un-annuaire-enfin-lisible/">Répertoire VibeIndex</a></p>
+<h3>ArtCraft</h3>
+<p>Studio open source d'image et de vidéo par IA où l'on compose la scène (plans, calques, éléments 3D, personnages) avant de lancer le rendu, avec un mode « Image to Location » qui garde un décor cohérent d'un plan à l'autre. Bureau macOS et Windows, compilation depuis les sources sous Linux, version navigateur.<br />
+Projet Rust à 6 200 étoiles ; pas d'abonnement, vous appelez les fournisseurs directement. Réserve : le fichier LICENSE.md est encore une licence maison en cours de rédaction, pas une licence standardisée. Cette veille ArtCraft fait l'objet d'un suivi séparé.<br />
+<a href="https://mondary.design/2026/10/artcraft-composer-la-scene-avant-de-demander-le-rendu/">ArtCraft</a></p>
+<h3>Brilliant</h3>
+<p>Éditeur vectoriel 2D type Figma qui fonctionne aussi comme serveur MCP : Claude Code, Cursor ou Codex écrivent directement sur le canvas et ce qu'ils produisent arrive en vecteurs éditables, avec annulation du dernier tour d'agent, linter d'espacement et de contraste, et désigns versionnés comme du code.<br />
+L'éditeur est gratuit ; les plans payants ajoutent l'IA et le stockage. Application de bureau macOS et Windows, site mettant macOS en avant.<br />
+<a href="https://mondary.design/2026/10/brilliant-un-canvas-de-design-vectoriel-pilote-par-vos-agents/">Brilliant</a></p>
+<h3>Whiteboard</h3>
+<p>Canvas open source de bureau où vous et vos agents concevez un logiciel ensemble : diagrammes de séquence, diff sémantique, traces d'agent reliées au code source, à partir de vos dépôts locaux, branché sur les outils d'agent que vous utilisez déjà.<br />
+MIT, 3 401 étoiles sur l'API. Utile pour rendre lisible une explication technique d'élève ou pour préparer une séance d'algorithme.<br />
+<a href="https://mondary.design/2026/10/whiteboard-un-canvas-open-source-pour-dessiner-des-logiciels-avec-des-agents/">Whiteboard</a></p>
+<h3>Iris</h3>
+<p>Utilitaire Rust qui transforme une commande courte ou un appel MCP en capture d'écran fiable d'un site en direct, prétraitée pour un agent : une commande rend une image en 1440×900, avec cadrage par sélecteur CSS et attente des polices, images et animations. Donne des yeux à un agent qui doit vérifier un rendu.<br />
+MIT, 534 étoiles. Nécessite un navigateur de la famille Chrome.<br />
+<a href="https://mondary.design/2026/10/iris-la-camera-des-agents-de-code/">Iris</a></p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<h3>Termix</h3>
+<p>Plateforme auto-hébergée de gestion de serveurs qui réunit terminal SSH, bureau distant (RDP, VNC, Telnet via Guacamole), gestion de fichiers, tunnels, Docker, métriques et automatisations dans une seule console, en web, en bureau et sur mobile. Directement utile à un RUPN qui doit suivre plusieurs machines et baies, et gratuit là où Termius facture.<br />
+Open source, Apache-2.0, sans abonnement ni plan payant.<br />
+<a href="https://mondary.design/2026/10/termix-ssh-bureau-distant-et-metriques-reunis-dans-une-seule-console-self-hosted/">Termix</a></p>
+<h3>Orchard</h3>
+<p>Application macOS native, écrite en Swift, qui donne une interface graphique au runtime de conteneurs d'Apple : conteneurs, machines Linux persistantes réglables en processeur, mémoire et point de montage, grappes Kubernetes, projets Compose et modèles d'IA locaux, sans repasser par la ligne de commande. Simplifie nettement l'usage d'un service auto-hébergé sur un Mac.<br />
+MIT, 1 601 étoiles, version 2.4.3 du 21 septembre. Contraintes assumées : macOS 26 Tahoe obligatoire et seul le runtime d'Apple est piloté.<br />
+<a href="https://mondary.design/2026/10/orchard-le-gui-natif-macos-pour-apple-container/">Orchard</a></p>
+<h3>SheepTerm</h3>
+<p>Client SSH pour l'administration réseau : il colore la sortie de chaque équipement selon son constructeur (Cisco IOS et NX-OS, Aruba CX, Junos, Huawei VRP, Comware, PAN-OS, FortiOS, Gaia, Linux), ouvre la page de configuration d'un pare-feu à côté de sa console et permet d'interroger l'IA sur la sortie affichée. Pensé pour qui manipule plusieurs marques dans la même journée.<br />
+Gratuit pour macOS et Windows ; le panneau IA s'appuie sur votre propre abonnement et reste éteint tant que le CLI correspondant n'est pas installé.<br />
+<a href="https://mondary.design/2026/10/sheepterm-le-terminal-ssh-qui-parle-enfin-le-langage-des-ingenieurs-reseau/">SheepTerm</a></p>
+<h3>FossFLOW</h3>
+<p>Éditeur de diagrammes open source qui dessine une infrastructure en vue isométrique directement dans le navigateur : icônes posées sur la grille, liens routés automatiquement, sauvegarde toutes les cinq secondes, export JSON, fonctionnement hors ligne une fois installé. Utile pour cartographier le réseau d'un établissement ou monter un schéma de salle de classe.<br />
+License MIT. Deux réserves : le dépôt est un fork d'OpenFLOW et, selon l'API GitHub, il n'a plus été poussé depuis août 2025 ; les packs d'icônes ont leur propre licence.<br />
+<a href="https://mondary.design/2026/10/fossflow-diagrammes-isometriques/">FossFLOW</a></p>
+<h3>Disktree</h3>
+<p>Carte en mosaïque qui analyse un dossier ou un disque Linux, montre ce qui occupe la place, laisse marquer ce qui doit partir, puis supprimer après relecture — avec, pour un dépôt Git, l'indication des modifications, stashs et commits non poussés. Économie d'espace immédiate sur un serveur de salle.<br />
+MIT, version 0.9.1 ; les binaires publiés visent Linux x86_64, ni ARM, ni macOS, ni Windows.<br />
+<a href="https://mondary.design/2026/10/disktree-reperer-ce-qui-occupe-votre-disque/">Disktree</a></p>
+<h3>Flea</h3>
+<p>Gestionnaire de fichiers taillé pour Omarchy : Quickshell devant, Rust derrière, tout au clavier, avec trois vues (liste, colonnes, grille), aperçu rapide, accès MTP/PTP et réseau (SMB, SFTP, WebDAV, NFS), journal d'annulation. 100 000 fichiers stabilisés en 0,92 seconde pour 71,9 Mio de mémoire selon le billet.<br />
+MIT, version 0.3.6 du 28 septembre. Deux limites : il exige Omarchy et Quickshell 0.3.1, et l'interface terminal annoncée n'existe pas encore.<br />
+<a href="https://mondary.design/2026/10/flea-gestionnaire-fichiers-omarchy/">Flea</a></p>
+<h3>Termscp</h3>
+<p>Client de transfert de fichiers en interface terminal : SFTP, SCP, FTP, FTPS, S3 et compatibles, GCS, WebDAV, SMB et Kubernetes dans un explorateur à deux panneaux, sur Windows, macOS, Linux, FreeBSD et NetBSD. Les identifiants sont chiffrés en AES, avec la clé dans le coffre du système quand il en existe un.<br />
+MIT, installation en une ligne ; binaires Linux liés statiquement. Alternative sérieuse à WinSCP ou FileZilla quand on vit dans le terminal.<br />
+<a href="https://mondary.design/2026/10/termscp-le-transfert-de-fichiers-qui-reste-dans-votre-terminal/">Termscp</a></p>
+<h3>Faro</h3>
+<p>Client de bureau qui réunit un navigateur de fichiers à deux panneaux, un vrai terminal SSH et un pont d'accès pour les agents IA, avec seize backends derrière une même interface Rust : SFTP, FTP, FTPS, S3 et compatibles (R2, B2, Wasabi, MinIO, Scaleway, OVH), Azure, WebDAV et d'autres. Une session SSH enregistrée une fois sert au navigateur comme au terminal.<br />
+MIT. Projet encore confidentiel (50 étoiles sur l'API GitHub).<br />
+<a href="https://mondary.design/2026/10/faro-le-client-de-fichiers-qui-prete-vos-sessions-a-un-agent-ia/">Faro</a></p>
+<h3>Muxy</h3>
+<p>Multiplexeur de terminal pour macOS construit sur libghostty, qui range les terminaux par projet et par worktree Git plutôt que par session : les sessions survivent à la fermeture de l'application, un CLI et des compétences officielles permettent aux agents de piloter l'espace de travail, et deux applications compagnon iOS et Android suivent les sessions à distance. 490 thèmes, extensions en npm.<br />
+MIT, installation par Homebrew, macOS 14 minimum. Il faut accepter la mécanique maison (daemon, extensions, réglages).<br />
+<a href="https://mondary.design/2026/10/muxy-terminal-mac-agents/">Muxy</a></p>
+<h3>Tern</h3>
+<p>Multiplexeur de terminal écrit en Rust, compatible Kitty, dont les sessions vivent dans un démon qui survit à la fenêtre : panneaux, répertoires et historique reviennent à l'identique, et la même session s'affiche dans l'application Mac, dans un onglet de navigateur et sur iPhone, avec saisie synchronisée. Mermaid, LaTeX et diffs dessinés nativement.<br />
+Bêta fermée sur liste d'attente, aucun dépôt public, aucun téléchargement disponible : les chiffres de performance viennent de l'éditeur. À suivre, pas encore utilisable.<br />
+<a href="https://mondary.design/2026/10/tern-le-terminal-dont-les-sessions-survivent-a-la-fenetre/">Tern</a></p>
+<h3>MetalTerm</h3>
+<p>Terminal macOS dont chaque image passe par Metal 3 : un journal de 200 Mo défile à 120 images par seconde, et chaque commande devient un bloc avec sa durée et son statut. Les notifications OSC 9 et 777 remontent dans le centre de notifications.<br />
+Gratuit, sans compte, sans télémétrie, fichier .dmg de 6 Mo notarisé. Encore en bêta et le code source est privé (le dépôt ne publie que le site et la documentation des thèmes) ; macOS 14 seulement, aucun réglage importé d'un autre terminal.<br />
+<a href="https://mondary.design/2026/10/metalterm-un-terminal-macos-dessine-par-le-gpu-avec-ses-commandes-en-blocs/">MetalTerm</a></p>
+<h3>Kaku</h3>
+<p>Terminal macOS dérivé de WezTerm livré déjà réglé : polices, thèmes clair et sombre, onglets, panneaux et outils de shell configurés, avec un assistant IA qui reste inactif tant que vous ne lui branchez pas votre propre fournisseur. Bon compromis pour qui veut la puissance de WezTerm sans passer une soirée sur le fichier de configuration.<br />
+MIT, version 0.21.0, près de 6 000 étoiles. macOS uniquement, aucune version Windows ou Linux annoncée.<br />
+<a href="https://mondary.design/2026/10/kaku-un-terminal-macos-qui-arrive-deja-regle-ia-comprise/">Kaku</a></p>
+<h3>Fresh</h3>
+<p>Éditeur de terminal construit comme un IDE : démarrage instantané, usage possible à la souris, fichiers de plusieurs gigaoctets, orchestrateur de worktrees pour les agents IA et revue Git façon Magit. Écrit en Rust, un seul binaire statique ; les extensions TypeScript sont exécutées dans une machine virtuelle embarquée, sans répertoire node_modules sur le disque.<br />
+GPL-3.0, 9 379 étoiles sur l'API GitHub, projet actif. Une vraie alternative à Vim pour qui ne veut pas apprendre les modes.<br />
+<a href="https://mondary.design/2026/10/fresh-un-ide-complet-dans-le-terminal-sans-mode-a-apprendre/">Fresh</a></p>
+<h3>CommitPlus</h3>
+<p>Client Git natif et léger pour macOS, écrit en Swift : réordonner ou écraser des commits par glisser-déposer, cherry-pick entre branches, publication d'une branche, Git Flow intégré, annulation universelle par Cmd+Z, IA facultative.<br />
+Gratuit, open source sous AGPLv3, sans compte obligatoire. Une réponse crédible à l'inertie des clients Electron.<br />
+<a href="https://mondary.design/2026/10/commitplus-un-client-git-natif-leger-et-open-source-pour-macos/">CommitPlus</a></p>
+<h3>OmniWM</h3>
+<p>Gestionnaire de fenêtres en mosaïque pour macOS qui réunit les colonnes défilantes de Niri et le découpage binaire d'Hyprland, avec terminal Ghostty intégré, palette de commandes unifiée, barre de bureaux qui affiche CPU, GPU, RAM et disque, et pilotage complet en ligne de commande.<br />
+Libre, GPL-2.0, sans abonnement, versions signées et notarisées. Conditions sévères : macOS 26 Tahoe sur Apple Silicon, permissions Accessibilité et surveillance des entrées, réglage « Displays have separate Spaces » puis déconnexion.<br />
+<a href="https://mondary.design/2026/10/omniwm-le-tiling-facon-niri-et-hyprland-enfin-natif-sur-macos/">OmniWM</a></p>
+<h3>Rooms</h3>
+<p>Petit gestionnaire de fenêtres macOS qui rassemble les fenêtres d'un projet dans une « room » : une combinaison de touches rappelle tout ce qui appartient au projet, dans la disposition choisie, et masque le reste ; rien n'est jamais fermé. Approche souple, sans grille imposée.<br />
+MIT, 403 étoiles. Ne gère pas les onglets de navigateur.<br />
+<a href="https://mondary.design/2026/10/rooms/">Rooms</a></p>
+<h3>PortPal</h3>
+<p>Tableau de bord de bureau qui affiche tous les ports en écoute sur la machine, identifie le processus fautif et le termine en un clic, en reconnaissant les ports habituels (React, Vite, Node, Postgres, Redis, MySQL) et en nommant le projet d'origine. Fini la chasse aux identifiants de processus dans le terminal.<br />
+MIT, application Tauri 2 disponible pour Windows, macOS et Linux (binaire Rust, fenêtre React).<br />
+<a href="https://mondary.design/2026/10/portpal-voir-ce-qui-squatte-vos-ports-et-le-fermer-en-un-clic/">PortPal</a></p>
+<h3>WhatThePort</h3>
+<p>Application macOS native dans la barre des menus qui rassemble vos serveurs de développement : projet, branche, port, mémoire, alerte si un serveur dépasse sa limite ou gagne plus de 500 Mo en dix minutes, ouverture dans le navigateur ou arrêt au survol, et reprise de la conversation d'agent rattachée à la branche.<br />
+Licence MIT annoncée, recompilable avec Swift 5.9. Réservé au Mac : téléchargement précompilé pour Apple Silicon sous macOS 14 ou plus.<br />
+<a href="https://mondary.design/2026/10/whattheport-gardez-vos-serveurs-de-developpement-sous-controle/">WhatThePort</a></p>
+<h3>Crisp</h3>
+<p>Panneau de barre de menus pour macOS qui rend nets les écrans externes : mise à l'échelle HiDPI sur n'importe quel moniteur, luminosité par DDC, préréglages, écrans virtuels, et un CLI pour scripter le tout. Directement utile pour un vidéoprojecteur ou un second écran dont macOS ne propose que deux réglages.<br />
+Gratuit, open source, MIT, sans abonnement, macOS 14 minimum, Intel et Apple Silicon. Les équivalents commerciaux (BetterDisplay Pro, Lunar Pro) coûtent 21,99 et 23 dollars.<br />
+<a href="https://mondary.design/2026/10/crisp-le-panneau-gratuit-qui-rend-nets-vos-ecrans-externes-sur-mac/">Crisp</a></p>
+<h3>Yalqen</h3>
+<p>Navigateur Chromium open source pour macOS avec onglets verticaux, barre de commande au clavier, bloqueur de publicités intégré sans extension et outils de développement à un raccourci. Les mots de passe sont chiffrés avec une clé gardée dans le Trousseau et ne quittent pas la machine. À considérer pour un poste de salle où l'on veut un navigateur propre et discret.<br />
+MIT. Limites assumées : Apple Silicon uniquement, macOS 13 et plus, ni Spaces ni split view, ni import de favoris, ni synchronisation ; projet très jeune (33 étoiles).<br />
+<a href="https://mondary.design/2026/10/yalqen-le-navigateur-developpeur-qui-bloque-les-pubs-sans-extension/">Yalqen</a></p>
+<h3>Search</h3>
+<p>Navigateur WebKit de 6 Mo signé par un studio parisien, qui ouvre en un tiers de seconde : onglets en colonne ou en bandeau, publicités bloquées avant chargement, mots de passe dans le Trousseau, extensions du Chrome Web Store prises en charge à partir de macOS 15.4. Code Swift d'environ 42 000 lignes, compilable chez vous.<br />
+MIT pour le code ; le nom et l'icône restent la propriété du studio, donc un fork doit être renommé. Gratuit, sans compte, Apple Silicon, macOS 14 minimum, ni version iOS ni synchronisation.<br />
+<a href="https://mondary.design/2026/10/search-un-navigateur-webkit-de-6-mo-qui-ouvre-en-un-tiers-de-seconde/">Search</a></p>
+<h3>Yoinks</h3>
+<p>Téléchargeur en ligne de commande qui prend en charge YouTube, TikTok, X, Instagram et plus de 1 800 sites : un lien, un choix de qualité ou de fichier audio, le fichier arrive dans vos téléchargements. Sans publicité ni faux bouton de téléchargement, et il réutilise votre installation de yt-dlp si elle existe — utile pour archiver une vidéo avant de la projeter en classe, sans connexion.<br />
+MIT, binaire autonome installé dans ~/.yoinks/bin sans dépendance à Python ; projet très jeune (créé en juillet, 1 800 étoiles).<br />
+<a href="https://mondary.design/2026/10/yoinks-telechargez-nimporte-quelle-video-depuis-le-terminal-sans-pub/">Yoinks</a></p>
+<h3>Purge</h3>
+<p>Nettoyeur de Mac gratuit et open source qui débusque caches applicatifs, gros fichiers oubliés et restes d'applications désinstallées, et envoie tout à la corbeille plutôt que de supprimer définitivement. Il ne touche qu'à une liste blanche de chemins compilée dans le binaire : ce qu'il ne reconnaît pas n'apparaît même pas dans les résultats.<br />
+MIT, 1 479 étoiles sur l'API GitHub, écrit en Swift.<br />
+<a href="https://mondary.design/2026/10/purge-le-nettoyeur-de-mac-qui-ne-supprime-jamais-rien/">Purge</a></p>
+<h3>WonderBox</h3>
+<p>Utilitaire macOS natif qui force les applications à réduire leurs caches via la même alerte de pression mémoire que le système, puis purge le cache fichier ; il vide aussi les caches de gestionnaires de paquets (npm, pnpm, Yarn, bun, uv, Cargo, Go, Gradle, Maven, CocoaPods) et ceux de Chromium et Electron, pilote les ventilateurs et garde le Mac éveillé.<br />
+MIT, macOS 14 minimum, Intel et Apple Silicon ; signature ad hoc, il faudra donc un clic droit puis « Ouvrir ». Projet très jeune (créé le 20 septembre 2026, huit validations) : les 480 étoiles relevées à l'API GitHub ne remplacent pas le recul, et l'API des caches touchés mérite un œil avant usage sur un poste de travail.<br />
+<a href="https://mondary.design/2026/10/wonderbox-le-toolkit-natif-macos-qui-optimise-la-memoire-et-vide-les-gros-caches/">WonderBox</a></p>
+<h3>Mac Performance Monitor</h3>
+<p>Moniteur de performance natif pour macOS qui enregistre en continu la pression mémoire, le processeur, le disque, le réseau, la batterie et les capteurs, et laisse revenir à l'instant où un ralentissement a commencé — y compris sur les moteurs d'IA locaux comme Ollama, MLX ou LM Studio.<br />
+MIT, signé et notarisé par Apple, sans télémétrie, historique conservé sur la machine. macOS 15 minimum et Apple Silicon exclusivement ; dépôt créé en juillet 2026, quelques approximations assumées (la bande passante GPU est une estimation).<br />
+<a href="https://mondary.design/2026/10/mac-performance-monitor-le-moniteur-dactivite-de-macos-qui-remonte-le-temps/">Mac Performance Monitor</a></p>
+<h3>TinyShield</h3>
+<p>Pare-feu natif pour macOS qui affiche en direct quelles applications ouvrent une connexion et permet de les bloquer une par une, avec un historique remontant jusqu'au mois. Utile pour voir ce qui sort d'un poste de salle ou d'un ordinateur portable de l'établissement.<br />
+La version gratuite se limite à une règle de blocage et une règle d'autorisation et à cinq minutes d'historique ; les licences à achat unique (29 à 69 dollars selon la formule, deux ans de mises à jour sauf formule à vie) débloquent le reste. macOS 15 ou plus, installation par extension réseau à approuver. Face à LuLu, gratuit et libre, l'argument est le suivi de trafic.<br />
+<a href="https://mondary.design/2026/10/tinyshield-voir-qui-se-connecte-depuis-votre-mac-et-le-bloquer-en-un-clic/">TinyShield</a></p>
+<h3>Openpanel</h3>
+<p>Plateforme d'analytique web et produit open source, alternative à Mixpanel : entonnoirs, cohortes, profils et historique de session, suivi des revenus, sans cookie dès l'installation, conforme au RGPD dans son offre hébergée en Europe, et auto-hébergeable par Docker Compose.<br />
+AGPL-3.0, 7 225 étoiles, projet actif. Côté tarifs, on choisit son volume d'événements mensuels, le reste est illimité — pertinent uniquement si vous publiez un site ou une application à mesurer.<br />
+<a href="https://mondary.design/2026/10/openpanel-une-alternative-a-mixpanel-open-source-et-sans-cookies/">Openpanel</a></p>
+<h3>TinyJS</h3>
+<p>Runtime de bureau qui transforme une page web en application native avec un vrai backend JavaScript, sur macOS, Windows et Linux, en réutilisant le webview du système plutôt qu'en embarquçant Chromium : une application de base pèse environ 6 Mo au lieu de 150. Menus, dialogues natifs, presse-papiers surveillé, raccourcis globaux, secrets dans le trousseau du système, Touch ID et Windows Hello.<br />
+MIT, moins de trois mois d'existence, 510 étoiles, code en C.<br />
+<a href="https://mondary.design/2026/10/tinyjs-des-applications-de-bureau-en-javascript-qui-tiennent-dans-6-mo-2/">TinyJS</a></p>
+<h3>ScriptC</h3>
+<p>Compilateur TypeScript vers binaire natif développé par Vercel Labs : un fichier .ts devient un exécutable autonome de quelques centaines de kilo-octets, sans Node ni V8. L'exemple du billet pèse 329 752 octets et démarre en 4 ms contre 35 ms pour Node. Large surface Node couverte (système de fichiers, processus, pile réseau) ; cible WASI et module pour iOS et Android.<br />
+macOS arm64 est la plateforme principale, la compilation croisée vers Linux et Windows passe par Zig.<br />
+<a href="https://mondary.design/2026/10/scriptc-votre-typescript-compile-en-binaire-natif-sans-node/">ScriptC</a></p>
+<h3>Syncular</h3>
+<p>Moteur de synchronisation hors ligne d'abord : chaque client garde une vraie base SQLite locale et un journal de commits autoritatif côté serveur réconcilie tout, y compris les écritures faites sans réseau, dans l'ordre de création et de façon idempotente. Pertinent pour un projet d'application de terrain ou de collecte de notes hors connexion.<br />
+Apache-2.0, mais en version pré-1.0 et maintenu par une seule personne ; la gestion des conflits reste à votre charge.<br />
+<a href="https://mondary.design/2026/10/syncular-un-sqlite-local-par-client-un-seul-journal-serveur/">Syncular</a></p>
+<h3>VICE</h3>
+<p>Outil en ligne de commande d'audit de sécurité web : il prend une URL ou un dossier de projet, crawle la page dans un vrai navigateur (y compris les fragments chargés à la demande) et remonte les vrais problèmes — secrets dans les paquets JavaScript, politiques RLS Supabase manquantes, injections, eval, ReDoS — avec le numéro de ligne et le correctif, un score sur 100 et un rapport HTML. Intégrable en action GitHub avec commentaire de revue et dépôt SARIF.<br />
+MIT, installation en une ligne, Node 22.12 minimum.<br />
+<a href="https://mondary.design/2026/10/vice-un-audit-de-securite-web-qui-lit-vos-bundles-js-et-vos-policies-rls/">VICE</a></p>
+<h3>ODiff</h3>
+<p>Comparateur d'images pixel par pixel taillé pour les visuels presque identiques : capture d'écran, photo recadrée, rendu d'IA. Binaire natif écrit en Zig, comparaison pleine page en une seconde là où pixelmatch et ImageMagick en demandent six ou sept, avec sortie possible directement dans le terminal via le protocole graphique de Kitty. Utile pour détecter qu'une ressource a changé, ou pour faire comparer deux images à un agent.<br />
+MIT, binaires précompilés pour la plupart des plateformes, 3 288 étoiles.<br />
+<a href="https://mondary.design/2026/10/odiff-la-comparaison-dimages-pixel-par-pixel-qui-tient-en-une-seconde/">ODiff</a></p>
+<h3>Shotnix</h3>
+<p>Application macOS qui enregistre l'écran et ouvre la vidéo déjà montée : zoom automatique sur chaque salve de clics, curseur redessiné et lissé, sous-titres transcrits sur la machine, export .srt ou WebVTT et traduction locale à partir de macOS 15. Évite le passage par un monteur pour une capsule vidéo de cours.<br />
+Gratuit et open source, mais la page du billet ne nomme pas la licence précise, et l'API GitHub ne l'identifie pas sur le dépôt annoncé : à vérifier avant un usage institutionnel. Apple Silicon uniquement, macOS 13 et plus, projet créé en avril 2026.<br />
+<a href="https://mondary.design/2026/10/shotnix-vos-enregistrements-decran-mac-souvrent-deja-montes/">Shotnix</a></p>
+<h3>Tiny Clips</h3>
+<p>Petite application qui vit dans la barre des menus de macOS ou la zone de notification de Windows et capture en PNG, MP4 ou GIF, avec annotation et rognage sur place, puis rangement dans une bibliothèque. L'enregistrement vidéo encode en H.264 accéléré matériellement, avec micro et son du système.<br />
+Gratuit, open source, sans compte, deux applications distinctes (WinUI 3 sous Windows, Swift et ScreenCaptureKit sur Mac). Alternative crédible à CleanShot X pour un usage scolaire.<br />
+<a href="https://mondary.design/2026/10/tiny-clips-capture-video-et-gif-dans-la-barre-de-menus-sur-mac-et-windows/">Tiny Clips</a></p>
+<h3>Snapzy</h3>
+<p>Application native macOS de capture d'écran, d'enregistrement et d'annotation, dans la barre des menus : treize outils d'annotation, OCR entièrement sur la machine, détection de QR codes et de liens, enregistrement audio et micro, montage, export MP4 ou GIF. Reprend la syntaxe de CleanShot X sans abonnement ni télémétrie ; le cloud est facultatif et à votre propre hébergement.<br />
+Gratuit, open source sous licence BSD 3-Clause. À savoir : ses raccourcis se substituent à ceux de macOS, qu'il faut désactiver au préalable.<br />
+<a href="https://mondary.design/2026/10/snapzy-capturer-et-annoter-son-ecran-sur-mac-sans-abonnement/">Snapzy</a></p>
+<h3>AutoShelf</h3>
+<p>Application macOS qui surveille vos dossiers et range les fichiers toute seule selon des règles condition → action (déplacer, copier, renommer, étiqueter, archiver, mettre à la corbeille), avec aperçu avant activation, ligne de commande et serveur MCP pour piloter le tri depuis un assistant local. Tout se passe hors ligne.<br />
+Gratuit avec une règle pleinement fonctionnelle ; le passage à Pro est un achat unique de 19,99 dollars, sans abonnement. macOS 13 ou plus, binaire universel.<br />
+<a href="https://mondary.design/2026/10/autoshelf-vos-fichiers-ranges-avant-meme-dy-penser/">AutoShelf</a></p>
+<h2>Sciences, données et création graphique</h2>
+<h3>GeoLibre</h3>
+<p>Plateforme SIG open source, légère et conçue pour le cloud, qui tourne dans le navigateur, sur le bureau, sur mobile et dans Jupyter, en traitant les données dans votre session plutôt que sur un serveur. Plus de 1 000 outils de géotraitement (vectoriel, raster, télédétection, hydrologie, terrain, LiDAR) exécutés dans le navigateur par WebAssembly, requêtes SQL spatiales DuckDB, même base de code pour Windows, macOS, Linux, Android, iOS, Python et R. C'est l'outil le plus directement utile de cette édition pour la géologie : cartes géologiques, couches, analyses de terrain, sans installer QGIS ni ouvrir de compte.<br />
+<a href="https://mondary.design/2026/10/geolibre-sig-open-source-navigateur/">GeoLibre</a></p>
+<h3>Inbetween</h3>
+<p>Atelier vectoriel gratuit dans le navigateur pour dessiner formes, pictogrammes et caractères sur des grilles géométriques, avec calques et vue d'animation qui produit un MP4. Convient à la fabrication de pictogrammes cohérents ou d'un alphabet maison pour des supports de cours.<br />
+Fonctionne en local (stockage IndexedDB) ; la page ne précise pas de licence d'usage, à vérifier avant d'intégrer les créations à un document commercial.<br />
+<a href="https://mondary.design/2026/10/inbetween/">Inbetween</a></p>
+<h3>SVG Path Editor</h3>
+<p>Éditeur d'attribut <code>d</code> qui tourne entièrement dans le navigateur : vous collez le chemin d'un dessin vectoriel, déplacez ses points et ses poignées à la souris, et la chaîne de commandes se réécrit en direct, avec arrondi, recentrage et optimisation pour nettoyer un tracé avant de l'insérer dans une figure ou une diapositive.<br />
+Apache-2.0, 5 300 étoiles, dépôt suivi depuis 2020 ; le moteur est publié à part comme paquet npm.<br />
+<a href="https://mondary.design/2026/10/svg-path-editor-reprendre-un-path-svg-a-la-souris-sans-ouvrir-illustrator/">SVG Path Editor</a></p>
+<h3>VGPU</h3>
+<p>Bibliothèque WebGPU en TypeScript qui pousse le même code vers un canvas de navigateur, un rendu sans fenêtre sous Node.js et une suite de tests, avec des importations WGSL typées et une documentation pensée pour les agents de code. Utile pour enseigner la programmation graphique ou le calcul sur GPU, côté web.<br />
+MIT, portée par Vercel Labs, sur une branche de développement : à suivre.<br />
+<a href="https://mondary.design/2026/10/vgpu-un-seul-webgpu/">VGPU</a></p>
+<h3>GPUI Kit</h3>
+<p>Framework Rust pour applications de bureau, construit sur le moteur d'interface de Zed : plus de 75 composants documentés, tableaux taillés pour des centaines de milliers de lignes, éditeur de code, graphiques, système de fenêtres. Extrait d'une application de trading réellement exploitée en production.<br />
+Apache-2.0, près de 15 000 étoiles. Le rendu WebAssembly dans le navigateur reste limité à des démonstrations.<br />
+<a href="https://mondary.design/2026/10/gpui-kit/">GPUI Kit</a></p>
+<h3>Typeface</h3>
+<p>Extension de navigateur qui révèle en un survol la police d'un texte : fonte, fonderie, corps, graisse, couleur, avec réglages testables en direct et un catalogue de fonderies indépendantes. Lecture des styles calculés, sans serveur, sans télémétrie. Pratique pour retrouver une fonte repérée sur un site et pour montrer à des élèves comment est faite une page.<br />
+<a href="https://mondary.design/2026/10/typeface-la-police-de-nimporte-quelle-page-web-revelee-dun-survol/">Typeface</a></p>
+<h2>Python et enseignement de l'informatique</h2>
+<h3>Pyxel</h3>
+<p>Moteur de jeu rétro pour Python qui reprend les contraintes des consoles 8 et 16 bits — 16 couleurs, quatre canaux audio — avec éditeurs de sprites, de tuiles, de sons et de musiques intégrés. Le fichier de jeu se transforme en exécutable ou en page HTML autonome, jouable dans n'importe quel navigateur, y compris sur téléphone. Cadre volontairement étroit, idéal en SNT ou en club informatique : on finit un petit jeu au lieu d'assembler des ressources.<br />
+Licence MIT annoncée par le billet et par le projet ; l'API GitHub ne sait pas l'identifier automatiquement (signalé comme « autre »), ce qui n'empêche pas l'usage. Plus de 18 000 étoiles, Windows, macOS, Linux et navigateur via WebAssembly.<br />
+<a href="https://mondary.design/2026/10/pyxel-moteur-jeux-retro-python/">Pyxel</a></p>
+<h3>Open-Slide</h3>
+<p>Framework de présentation open source qui transforme votre agent de code en auteur de diapositives : chaque diapositive est un composant React sur un canvas fixe de 1920 × 1080, un inspecteur visuel convertit vos retouches en commentaires que l'agent applique, et l'export se fait en HTML, PDF ou PPTX. Comme vos cours sont déjà en Markdown et convertis en LaTeX, c'est la piste la plus sérieuse pour produire des diapositives par agent.<br />
+MIT, plus de 8 700 étoiles, dépôt créé en avril 2026 et très actif (plus de 9 500 étoiles relevées à l'API, dernière poussée le 29 octobre).<br />
+<a href="https://mondary.design/2026/10/open-slide-le-framework-de-slides-ou-lagent-ecrit-le-react/">Open-Slide</a></p>
+<h3>Bencho</h3>
+<p>Bibliothèque de 32 composants d'interface vivants, directement manipulables dans le navigateur : on les presse, on les glisse, on règle leurs paramètres en direct, puis on récupère le code. Intéressant pédagogiquement pour montrer ce qu'est une interaction réussie avant d'écrire une ligne de HTML ou de JavaScript.<br />
+La page ne mentionne ni licence ni prix : à vérifier avant de réutiliser le code dans un support.<br />
+<a href="https://mondary.design/2026/10/bencho-32-composants-dinterface-a-manipuler-avant-de-prendre-le-code/">Bencho</a></p>
+<h3>SmoothUI</h3>
+<p>Catalogue de 198 composants React animés, gratuits et open source, qui s'installent un par un dans un projet shadcn/ui avec leurs dépendances. Le catalogue est lisible par machine (JSON, texte brut, API sans clé), et un assistant peut chercher, installer et illustrer un composant sans ouvrir le navigateur. Utile pour un projet web de classe (SNT) ou une page de présentation.<br />
+MIT, gratuit, le code installé vous appartient.<br />
+<a href="https://mondary.design/2026/10/smoothui-198-composants-react-animes-prets-pour-shadcn-ui/">SmoothUI</a></p>
+<h3>UIMaxxing</h3>
+<p>Bibliothèque de 122 composants shadcn au parti pris visuel assumé (animation, typographie cinétique, interfaces de marchés), dont 75 gratuits, installables par une commande.<br />
+Licence à lire avant usage : usage gratuit, modification et usage commercial autorisés sans crédit, mais la republication de la bibliothèque est interdite et l'entraînement de modèles d'IA sur le code est explicitement visé.<br />
+<a href="https://mondary.design/2026/10/uimaxxing-122-composants-shadcn-avec-une-vraie-signature-visuelle/">UIMaxxing</a></p>
+<h3>Rare UI</h3>
+<p>Collection open source de composants React animés livrée comme registre shadcn : le code source arrive dans votre arborescence, vous redéfinissez les couleurs, la physique des ressorts et le comportement, sans dépendance opaque.<br />
+Gratuit, usage personnel et commercial autorisé, mais la revente des composants est exclue et un lien visible vers le projet est demandé.<br />
+<a href="https://mondary.design/2026/10/rare-ui/">Rare UI</a></p>
+<h3>Shadcn Admin</h3>
+<p>Tableau de bord d'administration open source construit avec Shadcn et Vite, avec une dizaine d'écrans complets (tableau de bord, utilisateurs, tâches, messagerie, paramètres, authentification) à étudier ou à adapter pour une application React. Bon support pour un projet d'élèves en SNT ou en NSI.<br />
+MIT, plus de 14 000 étoiles, démonstration en ligne sans installation.<br />
+<a href="https://mondary.design/2026/10/shadcn-admin-des-ecrans-dadministration-shadcn-prets-a-decortiquer/">Shadcn Admin</a></p>
+<h3>Capacitor</h3>
+<p>Runtime natif open source qui fait tourner une application web (React, Vue, Svelte, Angular, ou du HTML et CSS simples) sur iOS et Android, en PWA, avec 38 greffons officiels et un CLI qui permet d'écrire du natif quand il le faut. C'est le moyen le plus court de transformer une page faite en classe en application installable sur téléphone.<br />
+MIT. Node 22 ou plus ; la compilation iOS impose un Mac avec Xcode 26, Android se contente d'Android Studio. Un module expérimental permet même de faire tourner un modèle sur l'appareil, sans réseau.<br />
+<a href="https://mondary.design/2026/10/capacitor-votre-app-web-devient-une-application-native-ios-et-android/">Capacitor</a></p>
+<h3>LinPad</h3>
+<p>Application qui installe Alpine Linux directement sur un iPad : bureau à fenêtres avec mosaïque, espaces de travail, vrai terminal avec apk, bash, Node 22, Python et git, Firefox et VS Code dans des fenêtres iPad natives. Ni machine virtuelle ni connexion à distance : un fork d'iSH qui traduit les appels système Linux, avec un JIT ARM64 en option et le presse-papiers, le son et le glisser-déposer partagés avec iPadOS. De quoi organiser un atelier Python sur tablette là où l'on n'a que des iPad.<br />
+GPLv3, gratuit, sans abonnement ni télémétrie. Réserve : l'installation passe par un chargement latéral d'une vingtaine de minutes, un identifiant gratuit limite à trois applications et impose un rafraîchissement tous les sept jours, et désinstaller l'application efface /root et /home. Comptez donc un usage de démonstration ou de club, pas un poste de travail pérenne.<br />
+<a href="https://mondary.design/2026/10/linpad-du-vrai-linux-sur-ipad-sans-jailbreak-ni-machine-virtuelle/">LinPad</a></p>
+<h3>MyGo</h3>
+<p>Framework Go pour créer des applications de bureau : chaque fenêtre affiche soit une page web dans le webview du système, soit une interface native dessinée par l'application, et une même application peut mélanger les deux, dans un binaire de quelques mégaoctets. Ni Electron ni Chromium embarqué : WKWebView sur macOS, WebKitGTK sous Linux, WebView2 sous Windows. Environ 7 Mo pour le binaire, 44 Mo de mémoire en interface native, 0 % de processeur au repos selon le projet. Go 1.27 minimum.<br />
+MIT, 3 800 étoiles, dépôt encore actif le jour de la rédaction.<br />
+<a href="https://mondary.design/2026/10/mygo-des-apps-desktop-en-go-web-et-natif-dans-un-seul-binaire/">MyGo</a></p>
+<h2>Volume</h2>
+<p>102 billets publiés dans l'intervalle (du 11 au 31 octobre 2026), 87 retenus, 15 écartés. Motifs d'exclusion dominants : jeux vidéo, streaming et lecteurs de bandes dessinées ; gadgets d'affichage ou de personnalisation (fond d'écran animé, réorganisation cosmétique de la barre de menus, notifications Android) ; ornements de sites web sans usage fonctionnel ; annuaires de design ; et une application d'abonnement après essai de quatorze jours (les quinze billets écartés sont Wallnetic, Claude Marge, Inspora, Liquid Glass, Terminal.army, FlowActions, ShiftBar, Designeer, Design Engineer Tools, Dockbar, Streambert, Panels, Letterboxx, Game Compressor et Bottom Notifications).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<p>Première édition : la veille n'avait aucun antécédent, elle couvre donc l'ensemble du journal de collecte, soit 102 billets publiés entre le 11 et le 31 octobre 2026 (le blog en publie environ cinq par jour) ; l'horizon de quatre jours s'appliquera aux éditions suivantes.<br />
+102 billets examinés, 87 retenus, 15 écartés. Le blog ne publie que des outils, d'où un taux de rétention élevé ; sur ces 87, une trentaine concerne les agents et les modèles d'IA, et un bon quart est réservé à macOS.<br />
+La dernière collecte (31 octobre, 10h41 UTC) s'est déroulée sans erreur.</p>
+<h2>Documents, notes et bureautique</h2>
+<h3>GenOffice</h3>
+<p>Suite bureautique native pour macOS, Windows et Linux qui ouvre et enregistre de vrais fichiers .docx, .xlsx et .pptx : styles, commentaires et révisions survivent à l'enregistrement, et l'agent IA intégré écrit dans le document sous forme de révisions annulables. Un CLI permet aussi de produire et de vérifier des .pptx sans ouvrir de fenêtre, à travers 29 outils MCP. C'est la solution à regarder si vous voulez rédiger et échanger des documents au format exigé par l'Établissement sans passer par une suite propriétaire.<br />
+Licence Apache-2.0, avec une réserve : le dossier <code>ee/</code> est réservé à des modules entreprise sous licence spécifique. Dépôt lancé le 31 juillet 2026, 11 415 étoiles relevées sur l'API GitHub (7 900 au moment du billet), version 0.10.1467 du 27 septembre.<br />
+<a href="https://mondary.design/2026/10/genoffice-la-suite-office-open-source-ou-lia-edite-le-vrai-fichier/">GenOffice</a></p>
+<h3>Alexandrie</h3>
+<p>Wiki auto-hébergé qui réunit prise de notes, documentation et publication dans un seul éditeur Markdown étendu, utilisable hors ligne et déployable par une commande Docker Compose. Dossiers imbriqués, espaces de travail, étiquettes. Se présente comme une alternative à Notion, Confluence et Obsidian. C'est l'option à considérer pour rassembler vos cours et vos documents dans un espace unique qui reste chez vous.<br />
+MIT, code public, sans pistage ni publicité ; le site hébergé vit de dons.<br />
+<a href="https://mondary.design/2026/10/alexandrie-votre-espace-markdown-organise-avec-elegance/">Alexandrie</a></p>
+<h3>Reflect</h3>
+<p>Application de notes local-first dont les notes restent de simples fichiers Markdown dans un dossier que vous choisissez : notes du jour, liens <code>[[</code> et backlinks, recherche locale instantanée, recherche sémantique optionnelle calculée sur la machine, capture depuis le navigateur, mémos audio transcrits. L'IA est facultative et à clé personnelle (OpenAI, Anthropic, Google, OpenRouter), avec des réponses citées vers vos notes ; la synchronisation passe par iCloud Drive ou par Git, le dépôt privé étant créé depuis l'application.<br />
+Sans compte ni serveur imposé. À savoir : la sauvegarde Git inclut vos notes, le réglage de confidentialité protège des services tiers, pas de votre propre dépôt.<br />
+<a href="https://mondary.design/2026/10/reflect-vos-notes-restent-des-fichiers-markdown-chez-vous/">Reflect</a></p>
+<h3>Markraft</h3>
+<p>Carnet Markdown natif pour macOS qui surgit par-dessus n'importe quelle application d'une pression sur ⌥N, avec formatage en direct, formules LaTeX hors ligne et mode vim. Chaque note est un fichier .md rangé dans le dossier de votre choix. Alternative libre à Raycast Notes, écrite en Rust, sans vue web, dans la barre de menus.<br />
+MIT, gratuit, sans compte ni télémétrie, macOS 13 et plus, Apple Silicon comme Intel (77 étoiles sur GitHub).<br />
+<a href="https://mondary.design/2026/10/markraft-un-carnet-markdown-flottant-et-libre-pour-remplacer-raycast-notes/">Markraft</a></p>
+<h3>Noty</h3>
+<p>Notes collantes rangées au bord de l'écran sur macOS : on survole le paquet, il s'évente, on tire la note voulue. Pratique pour garder sous les yeux une liste de tâches ou les points d'un cours en préparation, sans fenêtre supplémentaire.<br />
+MIT, chiffrement local, sans compte, macOS 15 et plus, environ 1,6 Mo (503 étoiles). Signature ad hoc : un clic droit puis « Ouvrir » sera demandé au premier lancement.<br />
+<a href="https://mondary.design/2026/10/noty-des-notes-collantes-qui-vivent-au-bord-de-votre-ecran/">Noty</a></p>
+<h3>Binders</h3>
+<p>Application macOS qui transforme ce que vous dites et entendez en réunion, et ce que vous écrivez, en notes, tâches et réponses sourcées. La dictée, le modèle de langage et les données restent sur la machine : pas de compte, pas de cloud, pas d'abonnement. L'application expose un serveur MCP qui la branche à Claude Code, Cursor, VS Code ou Codex.<br />
+Gratuit et open source, GPL-3.0. La 0.4.0 est une pré-version de septembre 2026 sur un dépôt créé le 21 septembre (24 étoiles sur l'API) : à essayer en connaissance de cause.<br />
+<a href="https://mondary.design/2026/10/binders-le-mac-qui-retient-ce-que-vous-dites-entendez-et-ecrivez/">Binders</a></p>
+<h3>Parrot</h3>
+<p>Dictée au push-to-talk sur macOS : vous maintenez la touche fn, vous parlez, vous relâchez, le texte se colle au curseur dans n'importe quelle application. Tout tourne sur le Neural Engine, sans compte ni abonnement, et le fichier de réglages peut être un lien symbolique vers un dépôt de configuration versionné.<br />
+MIT, gratuit, macOS 14 minimum, Apple Silicon exclusivement (version 0.2.0, un seul contributeur) : le multiplateforme est un non-objectif assumé.<br />
+<a href="https://mondary.design/2026/10/parrot-dictee-au-push-to-talk-dans-toutes-vos-apps-de-mac-sans-cloud/">Parrot</a></p>
+<h3>Typeless</h3>
+<p>Dictée vocale multiplateforme (macOS, Windows, Linux, iOS, Android) qui rend un texte déjà corrigé et mis en forme, dans l'application où vous vous trouvez : touche Fn sur Mac, Alt droit sous Windows, bouton Speak du clavier sur mobile. Utile pour dicter un commentaire de copie ou un mémo, mais à réserver aux contenus non sensibles : l'audio et un contexte limité (application utilisée, texte voisin) sont traités dans le cloud puis supprimés, selon l'éditeur.<br />
+Offre gratuite limitée en mots, sans quota chiffré affiché ; Pro à 12 dollars par mois en facturation annuelle (30 dollars au mois), avec les mots illimités ; neuf minutes maximum par dictée.<br />
+<a href="https://mondary.design/2026/10/typeless-dictez-partout-obtenez-un-texte-deja-nettoye/">Typeless</a></p>
+<h3>Tangerine</h3>
+<p>Utilitaire macOS qui convertit et édite vos fichiers sans quitter le Finder : vous maintenez ⇧ en glissant un fichier, une roue de formats s'ouvre sous le pointeur, vous déposez sur le format voulu. 188 conversions et 25 outils, tout est traité sur la machine et l'original n'est jamais touché. Commode pour alléger une image destinée à un sujet ou convertir une vidéo avant de l'intégrer.<br />
+20 fichiers offerts, puis 15 dollars en paiement unique, sans abonnement. Apple Silicon seulement, macOS 13 ou plus.<br />
+<a href="https://mondary.design/2026/10/tangerine-le-convertisseur-de-fichiers-qui-sinvoque-dun-shift-glisser/">Tangerine</a></p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>Open WebUI</h3>
+<p>Interface web que vous installez chez vous et qui devient le point d'entrée unique de vos modèles : Ollama en local, toute API compatible OpenAI, RAG sur vos documents, mémoire, Notes et plugins Python, en une commande d'installation. C'est la façon la plus directe de faire travailler un modèle local sur vos propres documents.<br />
+Attention à la licence : le code est libre au sens large, mais la licence Open WebUI impose de ne pas retirer le nom ni le logo du projet au-delà de 50 utilisateurs sur trente jours glissants, ou avec une autorisation écrite ou une licence entreprise. 153 000 étoiles, version 0.11.4 du 21 septembre 2026.<br />
+<a href="https://mondary.design/2026/10/open-webui-linterface-ia-self-hosted-qui-accueille-tous-vos-modeles/">Open WebUI</a></p>
+<h3>opencodex</h3>
+<p>Proxy local qui sert Codex et Claude Code depuis un seul port et traduit leur protocole vers le fournisseur de votre choix : Claude, Gemini, Grok, DeepSeek, Ollama, tout point d'accès compatible OpenAI. Vous gardez les interfaces d'origine et changez de modèle derrière, ce qui permet de faire tourner un abonnement déjà payé ou un modèle local dans ces clients. Discipline d'ingénierie remarquable : flux traduits fidèlement, port occupé refusé au démarrage, points de contrôle /healthz et /readyz.<br />
+MIT, 16 400 étoiles et 1 234 forks en trois mois. Le billet signale honnêtement le revers : le projet s'interpose entre vous et le fournisseur, et Anthropic peut suspendre un compte dont le trafic passe par un proxy tiers ; l'installateur Windows n'est pas signé.<br />
+<a href="https://mondary.design/2026/10/opencodex-le-proxy-local-qui-fait-tourner-codex-et-claude-code-sur-nimporte-quel-modele/">opencodex</a></p>
+<h3>Magpie</h3>
+<p>Petite application qui inventorie les agents IA installés sur votre machine, affiche le modèle que chacun utilise et le change d'un clic, en exposant un gateway local qui traduit entre les API OpenAI, Anthropic et Gemini. Elle prend en charge les abonnements que vous payez déjà (Claude, ChatGPT, Copilot) pour les transformer en fournisseurs partagés par tous les agents, avec rotation selon la date de renouvellement, mise à l'écart d'une clé en échec et retour progressif.<br />
+Gratuit, open source, MIT. Binaire de moins de 15 Mo, interface dans le webview du système, sans Electron.<br />
+<a href="https://mondary.design/2026/10/magpie-un-menu-bar-pour-donner-le-meme-catalogue-de-modeles-a-tous-vos-agents-ia/">Magpie</a></p>
+<h3>Hedos</h3>
+<p>Binaire Rust unique qui inventorie les modèles d'IA déjà présents sur la machine (Ollama, cache Hugging Face, LM Studio, fichiers GGUF et safetensors en vrac) sans rien déplacer, puis les sert à travers un gateway local compatible OpenAI, Ollama et Anthropic, avec une interface en terminal utilisable en SSH et en tmux. Il sait aussi poser Claude Code, OpenCode, Aider, Goose ou Crush sur un modèle local.<br />
+MIT, gratuit, hors ligne. macOS et Linux seulement, pas de version Windows ; projet jeune (43 étoiles annoncées, 480 sur l'API GitHub côté binaire).<br />
+<a href="https://mondary.design/2026/10/hedos-etagere-modeles-ia-locaux/">Hedos</a></p>
+<h3>BaseRT</h3>
+<p>Runtime d'inférence local pour Apple Silicon et NVIDIA GB10 : une ligne d'installation, un CLI unique pour tirer un modèle, discuter ou le servir en API compatible OpenAI, avec des noyaux GPU écrits à la main pour Metal et la mémoire unifiée. Une alternative crédible à llama.cpp ou MLX sur Mac récent, plus rapide à l'amorçage selon les mesures de l'éditeur.<br />
+Le dépôt est en Apache-2.0 (CLI, format, en-têtes, bindings), mais le moteur lui-même est un binaire précompilé propriétaire. M1 ou plus avec macOS 14, ou GB10 sous Linux.<br />
+<a href="https://mondary.design/2026/10/basert-le-runtime-llm-local-qui-bat-llama-cpp-sur-apple-silicon/">BaseRT</a></p>
+<h3>Cognee</h3>
+<p>Couche de mémoire open source pour agents, en Apache-2.0, qui transforme vos documents, votre code et vos conversations en graphe de connaissances auto-hébergé, interposé entre vos données et le modèle, y compris local. Quatre opérations couvrent le cycle : ingestion, construction du graphe, requête, remise à jour. Sert à éviter qu'un agent refasse le même travail et vous fasse payer deux fois les jetons.<br />
+Python 3.10 à 3.14, 31 000 étoiles. Deux réserves : le mode Postgres de production est un produit sous licence, et le benchmark publié repose sur les jeux de données de l'équipe.<br />
+<a href="https://mondary.design/2026/10/cognee-la-memoire-qui-survit-a-vos-sessions-dagents/">Cognee</a></p>
+<h3>Gortex</h3>
+<p>Moteur d'intelligence de code qui indexe un dépôt en graphe de connaissances (fichiers, symboles, imports, appels, routes) et le sert à votre agent de programmation en MCP, en HTTP et dans une interface web, entièrement en local, en un seul binaire. Sur l'exemple du billet, une modification passe de 11 480 jetons de lecture à 688. Économie de contexte et de temps sur un dépôt de cours ou de scripts volumineux.<br />
+<a href="https://mondary.design/2026/10/gortex-le-graphe-de-code-qui-evite-a-votre-agent-de-relire-vos-fichiers/">Gortex</a></p>
+<h3>TypeLLM</h3>
+<p>Couche de décodage typé au-dessus des LLM open source : elle renvoie du texte, des entiers, des nombres, des booléens et des choix contraints par un schéma JSON, accepte des images et enchaîne plusieurs décisions dépendantes dans un même appel, sans modifier les poids du modèle.<br />
+Apache-2.0, Python 3.10 ou plus. Réservé à l'auto-hébergement sérieux : il faut déjà servir un modèle compatible sur un serveur à GPU, avec SGLang et le cache de préfixe.<br />
+<a href="https://mondary.design/2026/10/typellm-des-sorties-typees-pour-vos-workflows-llm/">TypeLLM</a></p>
+<h3>Atomic Agent</h3>
+<p>Agent IA local-first qui travaille dans le répertoire où vous le lancez : navigation web avec garde-fou, lecture et modification de fichiers, extraction de texte de PDF, préparation de commandes shell soumises à votre accord, mémoire locale, tâches planifiées et serveurs MCP. Modèles locaux via llama.cpp, avec option cloud. Les sessions, traces et profils de navigateur restent dans un répertoire local.<br />
+MIT, 3 484 étoiles sur l'API. Le score annoncé sur le benchmark GAIA L1 vient du projet lui-même : pas de validation indépendante à ce jour.<br />
+<a href="https://mondary.design/2026/10/atomic-agent-un-agent-ia-local-qui-agit-vraiment-sur-votre-machine/">Atomic Agent</a></p>
+<h3>Minke</h3>
+<p>Application de bureau local-first qui fournit une coque à DeepSeek Harness (moteur d'agents en MIT, 236 000 étoiles annoncées) : conversations, fichiers, terminal, navigateur partagé où vous pouvez reprendre la souris d'un agent bloqué, modèles locaux, et accès depuis le téléphone.<br />
+Apache-2.0, 695 étoiles, dépôt créé le 15 août 2026. Rien ne quitte la machine si vous pointez l'agent vers un modèle local.<br />
+<a href="https://mondary.design/2026/10/minke-deepseek-harness-trouve-enfin-un-corps/">Minke</a></p>
+<h3>OMP</h3>
+<p>Agent de codage en terminal dont le cœur Rust embarque des fonctions d'éditeur : renommage propagé par LSP, débogage réel via lldb, dlv et debugpy, exécution de Python et de JavaScript dans la même session, subagents et un modèle « conseiller » qui relit chaque tour. Une seule session pour inspecter, modifier et vérifier.<br />
+MIT, construit par Stencil Labs autour d'un fork de Pi ; le binaire tourne aussi sous Windows sans WSL.<br />
+<a href="https://mondary.design/2026/10/omp-un-agent-de-codage-qui-a-lediteur-branche-dessus/">OMP</a></p>
+<h3>Sinclair</h3>
+<p>Terminal open source pour macOS et Linux qui fait tourner vos agents de codage dans des panneaux reliés par un bus partagé, chacun dans son propre worktree Git et affichant son état (travaille, bloqué, terminé). Rendu GPU.<br />
+Projet jeune — quelques centaines de validations, Windows en bêta, communauté encore réduite.<br />
+<a href="https://mondary.design/2026/10/sinclair-le-terminal-ou-vivent-vos-equipes-dagents/">Sinclair</a></p>
+<h3>AtAt</h3>
+<p>Utilitaire macOS qui déplie un agent IA dans n'importe quel champ de texte : vous tapez @@, la sélection ou une capture d'écran part avec la question, la réponse s'insère au curseur. Il pilote les agents que vous avez déjà (Claude Code, Codex, Cursor, Hermes, OpenCode) ou votre propre clé d'API, avec possibilité de rester en local via Ollama.<br />
+Attention au prix : sept jours d'essai, puis abonnement annuel ou licence à vie. macOS 15 et plus, puces Apple, application Swift native.<br />
+<a href="https://mondary.design/2026/10/atat-agent-ia-mac/">AtAt</a></p>
+<h3>One</h3>
+<p>Application macOS (et iPhone) qui rassemble dans une seule boîte de réception les questions posées par Claude Code, Codex, OpenCode ou Pi : vous répondez d'une touche ou à la voix, avec capture d'écran, et l'agent repart. Elle détecte seule les sessions en cours, y compris dans les applications.<br />
+Gratuit, macOS 13 et plus, Apple Silicon comme Intel ; le traitement passe par votre abonnement ChatGPT (quota Codex). L'app iPhone est en bêta TestFlight.<br />
+<a href="https://mondary.design/2026/10/one-repondez-a-vos-agents-de-code-sans-changer-de-fenetre/">One</a></p>
+<h3>Saggar</h3>
+<p>Terminal macOS natif pensé pour la supervision : chaque agent tourne dans une vraie session de shell que vous pouvez lire, interrompre et reprendre, et l'application ne vous rappelle à l'écran que lorsqu'une décision est attendue. Les sessions sont organisées par projet, branche et worktree.<br />
+Limite nette : macOS 26 Tahoe et puce Apple uniquement, ni Windows ni Linux.<br />
+<a href="https://mondary.design/2026/10/saggar-le-terminal-qui-remet-lhumain-dans-la-boucle-des-agents/">Saggar</a></p>
+<h3>herdrup</h3>
+<p>Client iOS pour le tableau de bord des agents qui tournent sur votre machine : l'application reste silencieuse tant que tout va bien, vous envoie une notification dès qu'un agent a besoin de vous, et le vrai terminal est à un geste derrière la carte. Compatible Claude Code, Codex et une vingtaine d'autres agents, en SSH sur votre réseau, sans compte ni cloud.<br />
+Apache-2.0. La notification passe par un relais, mais le texte n'y est ni stocké ni journalisé selon le projet ; rien d'équivalent sous Android.<br />
+<a href="https://mondary.design/2026/10/herdrup-agents-depuis-iphone/">herdrup</a></p>
+<h3>Ellora</h3>
+<p>Poste de travail hébergé dans le cloud, conçu pour être partagé avec vos agents : éditeur complet, explorateur de fichiers, shell et exécution, avec des tâches qui affichent leur état (en cours, terminé, vous attend).<br />
+En accès anticipé sur liste d'attente : aucune tarification publiée, aucun dépôt public ni documentation ouverte. À suivre plutôt qu'à adopter.<br />
+<a href="https://mondary.design/2026/10/ellora-un-poste-de-travail-cloud-pour-vous-et-vos-agents/">Ellora</a></p>
+<h3>SmythOS Studio</h3>
+<p>Atelier visuel auto-hébergé pour composer des agents par glisser-déposer et les exécuter chez vous : canvas de composition, tests à chaud, pile Docker complète (Traefik, MySQL, Redis) qui répond sur le port 6060, et export en fichiers .smyth rechargeables par le runtime et son CLI. Se présente comme une alternative à n8n, sans que vos clés et vos données partent chez un hébergeur.<br />
+MIT, 659 étoiles. Réserve relevée à l'API GitHub : le dépôt n'a pas été poussé depuis avril 2026.<br />
+<a href="https://mondary.design/2026/10/smythos-studio-agents-ia-glisser-deposer-self-hosted/">SmythOS Studio</a></p>
+<h3>Mailroom</h3>
+<p>Application web auto-hébergée qui fait tourner une boîte mail d'assistance sur l'infrastructure Cloudflare, où un agent IA rédige les réponses et vous laisse le bouton d'envoi, avec clé d'idempotence et plafond d'envoi quotidien.<br />
+Les prérequis sont réels : domaine dont les DNS sont chez Cloudflare, R2 activé, plan Workers payant à environ 5 dollars par mois tant qu'Email Sending est en bêta. Intéressant pour l'adresse de contact d'un site pédagogique, disproportionné pour une boîte ordinaire.<br />
+<a href="https://mondary.design/2026/10/mailroom-la-boite-mail-self-hosted-ou-lagent-redige-et-vous-validez/">Mailroom</a></p>
+<h3>IamSpeaker</h3>
+<p>Entraînement à la prise de parole entièrement local : l'IA joue d'abord votre présentation depuis vos diapositives, puis analyse votre enregistrement — débit, tics de langage, prononciation, intonation. Ollama, Whisper et Piper, sans clé d'API ni enregistrement envoyé chez un éditeur. Directement transposable à la préparation d'une intervention en classe ou devant des collègues.<br />
+MIT, interface en cinq langues. Projet très peu suivi (8 étoiles, dernier envoi en juillet 2026).<br />
+<a href="https://mondary.design/2026/10/iamspeaker-coach-presentations-local/">IamSpeaker</a></p>
+<h3>xKiro</h3>
+<p>Passerelle qui concentre les grands fournisseurs de modèles (Claude, ChatGPT, Gemini, DeepSeek, Grok, plus d'une quarantaine d'autres) derrière une seule clé d'API, compatible avec les SDK OpenAI et Anthropic : on change de modèle en modifiant un paramètre. Bascule automatique vers une autre route si un fournisseur flanche, 40 modèles gratuits et 500 000 jetons par jour sans carte bancaire.<br />
+Plans payants à partir de 5 dollars par mois, avec une économie annoncée de 50 à 70 % sur les tarifs des fournisseurs. Service commercial : la stabilité en production reste à éprouver.<br />
+<a href="https://mondary.design/2026/10/xkiro-une-api-un-point-dacces-a-des-dizaines-de-modeles-ia/">xKiro</a></p>
+<h3>VibeIndex</h3>
+<p>Annuaire tenu à la main recensant 285 outils de « vibe coding » en seize catégories, avec fiche, capture d'écran, étoiles GitHub, filtres et recherche. Utile comme point d'entrée quand vous cherchez un agent, un constructeur d'application ou un serveur MCP sans savoir lequel.<br />
+<a href="https://mondary.design/2026/10/vibeindex-285-outils-de-vibe-coding-reunis-dans-un-annuaire-enfin-lisible/">Répertoire VibeIndex</a></p>
+<h3>ArtCraft</h3>
+<p>Studio open source d'image et de vidéo par IA où l'on compose la scène (plans, calques, éléments 3D, personnages) avant de lancer le rendu, avec un mode « Image to Location » qui garde un décor cohérent d'un plan à l'autre. Bureau macOS et Windows, compilation depuis les sources sous Linux, version navigateur.<br />
+Projet Rust à 6 200 étoiles ; pas d'abonnement, vous appelez les fournisseurs directement. Réserve : le fichier LICENSE.md est encore une licence maison en cours de rédaction, pas une licence standardisée. Cette veille ArtCraft fait l'objet d'un suivi séparé.<br />
+<a href="https://mondary.design/2026/10/artcraft-composer-la-scene-avant-de-demander-le-rendu/">ArtCraft</a></p>
+<h3>Brilliant</h3>
+<p>Éditeur vectoriel 2D type Figma qui fonctionne aussi comme serveur MCP : Claude Code, Cursor ou Codex écrivent directement sur le canvas et ce qu'ils produisent arrive en vecteurs éditables, avec annulation du dernier tour d'agent, linter d'espacement et de contraste, et désigns versionnés comme du code.<br />
+L'éditeur est gratuit ; les plans payants ajoutent l'IA et le stockage. Application de bureau macOS et Windows, site mettant macOS en avant.<br />
+<a href="https://mondary.design/2026/10/brilliant-un-canvas-de-design-vectoriel-pilote-par-vos-agents/">Brilliant</a></p>
+<h3>Whiteboard</h3>
+<p>Canvas open source de bureau où vous et vos agents concevez un logiciel ensemble : diagrammes de séquence, diff sémantique, traces d'agent reliées au code source, à partir de vos dépôts locaux, branché sur les outils d'agent que vous utilisez déjà.<br />
+MIT, 3 401 étoiles sur l'API. Utile pour rendre lisible une explication technique d'élève ou pour préparer une séance d'algorithme.<br />
+<a href="https://mondary.design/2026/10/whiteboard-un-canvas-open-source-pour-dessiner-des-logiciels-avec-des-agents/">Whiteboard</a></p>
+<h3>Iris</h3>
+<p>Utilitaire Rust qui transforme une commande courte ou un appel MCP en capture d'écran fiable d'un site en direct, prétraitée pour un agent : une commande rend une image en 1440×900, avec cadrage par sélecteur CSS et attente des polices, images et animations. Donne des yeux à un agent qui doit vérifier un rendu.<br />
+MIT, 534 étoiles. Nécessite un navigateur de la famille Chrome.<br />
+<a href="https://mondary.design/2026/10/iris-la-camera-des-agents-de-code/">Iris</a></p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<h3>Termix</h3>
+<p>Plateforme auto-hébergée de gestion de serveurs qui réunit terminal SSH, bureau distant (RDP, VNC, Telnet via Guacamole), gestion de fichiers, tunnels, Docker, métriques et automatisations dans une seule console, en web, en bureau et sur mobile. Directement utile à un RUPN qui doit suivre plusieurs machines et baies, et gratuit là où Termius facture.<br />
+Open source, Apache-2.0, sans abonnement ni plan payant.<br />
+<a href="https://mondary.design/2026/10/termix-ssh-bureau-distant-et-metriques-reunis-dans-une-seule-console-self-hosted/">Termix</a></p>
+<h3>Orchard</h3>
+<p>Application macOS native, écrite en Swift, qui donne une interface graphique au runtime de conteneurs d'Apple : conteneurs, machines Linux persistantes réglables en processeur, mémoire et point de montage, grappes Kubernetes, projets Compose et modèles d'IA locaux, sans repasser par la ligne de commande. Simplifie nettement l'usage d'un service auto-hébergé sur un Mac.<br />
+MIT, 1 601 étoiles, version 2.4.3 du 21 septembre. Contraintes assumées : macOS 26 Tahoe obligatoire et seul le runtime d'Apple est piloté.<br />
+<a href="https://mondary.design/2026/10/orchard-le-gui-natif-macos-pour-apple-container/">Orchard</a></p>
+<h3>SheepTerm</h3>
+<p>Client SSH pour l'administration réseau : il colore la sortie de chaque équipement selon son constructeur (Cisco IOS et NX-OS, Aruba CX, Junos, Huawei VRP, Comware, PAN-OS, FortiOS, Gaia, Linux), ouvre la page de configuration d'un pare-feu à côté de sa console et permet d'interroger l'IA sur la sortie affichée. Pensé pour qui manipule plusieurs marques dans la même journée.<br />
+Gratuit pour macOS et Windows ; le panneau IA s'appuie sur votre propre abonnement et reste éteint tant que le CLI correspondant n'est pas installé.<br />
+<a href="https://mondary.design/2026/10/sheepterm-le-terminal-ssh-qui-parle-enfin-le-langage-des-ingenieurs-reseau/">SheepTerm</a></p>
+<h3>FossFLOW</h3>
+<p>Éditeur de diagrammes open source qui dessine une infrastructure en vue isométrique directement dans le navigateur : icônes posées sur la grille, liens routés automatiquement, sauvegarde toutes les cinq secondes, export JSON, fonctionnement hors ligne une fois installé. Utile pour cartographier le réseau d'un établissement ou monter un schéma de salle de classe.<br />
+License MIT. Deux réserves : le dépôt est un fork d'OpenFLOW et, selon l'API GitHub, il n'a plus été poussé depuis août 2025 ; les packs d'icônes ont leur propre licence.<br />
+<a href="https://mondary.design/2026/10/fossflow-diagrammes-isometriques/">FossFLOW</a></p>
+<h3>Disktree</h3>
+<p>Carte en mosaïque qui analyse un dossier ou un disque Linux, montre ce qui occupe la place, laisse marquer ce qui doit partir, puis supprimer après relecture — avec, pour un dépôt Git, l'indication des modifications, stashs et commits non poussés. Économie d'espace immédiate sur un serveur de salle.<br />
+MIT, version 0.9.1 ; les binaires publiés visent Linux x86_64, ni ARM, ni macOS, ni Windows.<br />
+<a href="https://mondary.design/2026/10/disktree-reperer-ce-qui-occupe-votre-disque/">Disktree</a></p>
+<h3>Flea</h3>
+<p>Gestionnaire de fichiers taillé pour Omarchy : Quickshell devant, Rust derrière, tout au clavier, avec trois vues (liste, colonnes, grille), aperçu rapide, accès MTP/PTP et réseau (SMB, SFTP, WebDAV, NFS), journal d'annulation. 100 000 fichiers stabilisés en 0,92 seconde pour 71,9 Mio de mémoire selon le billet.<br />
+MIT, version 0.3.6 du 28 septembre. Deux limites : il exige Omarchy et Quickshell 0.3.1, et l'interface terminal annoncée n'existe pas encore.<br />
+<a href="https://mondary.design/2026/10/flea-gestionnaire-fichiers-omarchy/">Flea</a></p>
+<h3>Termscp</h3>
+<p>Client de transfert de fichiers en interface terminal : SFTP, SCP, FTP, FTPS, S3 et compatibles, GCS, WebDAV, SMB et Kubernetes dans un explorateur à deux panneaux, sur Windows, macOS, Linux, FreeBSD et NetBSD. Les identifiants sont chiffrés en AES, avec la clé dans le coffre du système quand il en existe un.<br />
+MIT, installation en une ligne ; binaires Linux liés statiquement. Alternative sérieuse à WinSCP ou FileZilla quand on vit dans le terminal.<br />
+<a href="https://mondary.design/2026/10/termscp-le-transfert-de-fichiers-qui-reste-dans-votre-terminal/">Termscp</a></p>
+<h3>Faro</h3>
+<p>Client de bureau qui réunit un navigateur de fichiers à deux panneaux, un vrai terminal SSH et un pont d'accès pour les agents IA, avec seize backends derrière une même interface Rust : SFTP, FTP, FTPS, S3 et compatibles (R2, B2, Wasabi, MinIO, Scaleway, OVH), Azure, WebDAV et d'autres. Une session SSH enregistrée une fois sert au navigateur comme au terminal.<br />
+MIT. Projet encore confidentiel (50 étoiles sur l'API GitHub).<br />
+<a href="https://mondary.design/2026/10/faro-le-client-de-fichiers-qui-prete-vos-sessions-a-un-agent-ia/">Faro</a></p>
+<h3>Muxy</h3>
+<p>Multiplexeur de terminal pour macOS construit sur libghostty, qui range les terminaux par projet et par worktree Git plutôt que par session : les sessions survivent à la fermeture de l'application, un CLI et des compétences officielles permettent aux agents de piloter l'espace de travail, et deux applications compagnon iOS et Android suivent les sessions à distance. 490 thèmes, extensions en npm.<br />
+MIT, installation par Homebrew, macOS 14 minimum. Il faut accepter la mécanique maison (daemon, extensions, réglages).<br />
+<a href="https://mondary.design/2026/10/muxy-terminal-mac-agents/">Muxy</a></p>
+<h3>Tern</h3>
+<p>Multiplexeur de terminal écrit en Rust, compatible Kitty, dont les sessions vivent dans un démon qui survit à la fenêtre : panneaux, répertoires et historique reviennent à l'identique, et la même session s'affiche dans l'application Mac, dans un onglet de navigateur et sur iPhone, avec saisie synchronisée. Mermaid, LaTeX et diffs dessinés nativement.<br />
+Bêta fermée sur liste d'attente, aucun dépôt public, aucun téléchargement disponible : les chiffres de performance viennent de l'éditeur. À suivre, pas encore utilisable.<br />
+<a href="https://mondary.design/2026/10/tern-le-terminal-dont-les-sessions-survivent-a-la-fenetre/">Tern</a></p>
+<h3>MetalTerm</h3>
+<p>Terminal macOS dont chaque image passe par Metal 3 : un journal de 200 Mo défile à 120 images par seconde, et chaque commande devient un bloc avec sa durée et son statut. Les notifications OSC 9 et 777 remontent dans le centre de notifications.<br />
+Gratuit, sans compte, sans télémétrie, fichier .dmg de 6 Mo notarisé. Encore en bêta et le code source est privé (le dépôt ne publie que le site et la documentation des thèmes) ; macOS 14 seulement, aucun réglage importé d'un autre terminal.<br />
+<a href="https://mondary.design/2026/10/metalterm-un-terminal-macos-dessine-par-le-gpu-avec-ses-commandes-en-blocs/">MetalTerm</a></p>
+<h3>Kaku</h3>
+<p>Terminal macOS dérivé de WezTerm livré déjà réglé : polices, thèmes clair et sombre, onglets, panneaux et outils de shell configurés, avec un assistant IA qui reste inactif tant que vous ne lui branchez pas votre propre fournisseur. Bon compromis pour qui veut la puissance de WezTerm sans passer une soirée sur le fichier de configuration.<br />
+MIT, version 0.21.0, près de 6 000 étoiles. macOS uniquement, aucune version Windows ou Linux annoncée.<br />
+<a href="https://mondary.design/2026/10/kaku-un-terminal-macos-qui-arrive-deja-regle-ia-comprise/">Kaku</a></p>
+<h3>Fresh</h3>
+<p>Éditeur de terminal construit comme un IDE : démarrage instantané, usage possible à la souris, fichiers de plusieurs gigaoctets, orchestrateur de worktrees pour les agents IA et revue Git façon Magit. Écrit en Rust, un seul binaire statique ; les extensions TypeScript sont exécutées dans une machine virtuelle embarquée, sans répertoire node_modules sur le disque.<br />
+GPL-3.0, 9 379 étoiles sur l'API GitHub, projet actif. Une vraie alternative à Vim pour qui ne veut pas apprendre les modes.<br />
+<a href="https://mondary.design/2026/10/fresh-un-ide-complet-dans-le-terminal-sans-mode-a-apprendre/">Fresh</a></p>
+<h3>CommitPlus</h3>
+<p>Client Git natif et léger pour macOS, écrit en Swift : réordonner ou écraser des commits par glisser-déposer, cherry-pick entre branches, publication d'une branche, Git Flow intégré, annulation universelle par Cmd+Z, IA facultative.<br />
+Gratuit, open source sous AGPLv3, sans compte obligatoire. Une réponse crédible à l'inertie des clients Electron.<br />
+<a href="https://mondary.design/2026/10/commitplus-un-client-git-natif-leger-et-open-source-pour-macos/">CommitPlus</a></p>
+<h3>OmniWM</h3>
+<p>Gestionnaire de fenêtres en mosaïque pour macOS qui réunit les colonnes défilantes de Niri et le découpage binaire d'Hyprland, avec terminal Ghostty intégré, palette de commandes unifiée, barre de bureaux qui affiche CPU, GPU, RAM et disque, et pilotage complet en ligne de commande.<br />
+Libre, GPL-2.0, sans abonnement, versions signées et notarisées. Conditions sévères : macOS 26 Tahoe sur Apple Silicon, permissions Accessibilité et surveillance des entrées, réglage « Displays have separate Spaces » puis déconnexion.<br />
+<a href="https://mondary.design/2026/10/omniwm-le-tiling-facon-niri-et-hyprland-enfin-natif-sur-macos/">OmniWM</a></p>
+<h3>Rooms</h3>
+<p>Petit gestionnaire de fenêtres macOS qui rassemble les fenêtres d'un projet dans une « room » : une combinaison de touches rappelle tout ce qui appartient au projet, dans la disposition choisie, et masque le reste ; rien n'est jamais fermé. Approche souple, sans grille imposée.<br />
+MIT, 403 étoiles. Ne gère pas les onglets de navigateur.<br />
+<a href="https://mondary.design/2026/10/rooms/">Rooms</a></p>
+<h3>PortPal</h3>
+<p>Tableau de bord de bureau qui affiche tous les ports en écoute sur la machine, identifie le processus fautif et le termine en un clic, en reconnaissant les ports habituels (React, Vite, Node, Postgres, Redis, MySQL) et en nommant le projet d'origine. Fini la chasse aux identifiants de processus dans le terminal.<br />
+MIT, application Tauri 2 disponible pour Windows, macOS et Linux (binaire Rust, fenêtre React).<br />
+<a href="https://mondary.design/2026/10/portpal-voir-ce-qui-squatte-vos-ports-et-le-fermer-en-un-clic/">PortPal</a></p>
+<h3>WhatThePort</h3>
+<p>Application macOS native dans la barre des menus qui rassemble vos serveurs de développement : projet, branche, port, mémoire, alerte si un serveur dépasse sa limite ou gagne plus de 500 Mo en dix minutes, ouverture dans le navigateur ou arrêt au survol, et reprise de la conversation d'agent rattachée à la branche.<br />
+Licence MIT annoncée, recompilable avec Swift 5.9. Réservé au Mac : téléchargement précompilé pour Apple Silicon sous macOS 14 ou plus.<br />
+<a href="https://mondary.design/2026/10/whattheport-gardez-vos-serveurs-de-developpement-sous-controle/">WhatThePort</a></p>
+<h3>Crisp</h3>
+<p>Panneau de barre de menus pour macOS qui rend nets les écrans externes : mise à l'échelle HiDPI sur n'importe quel moniteur, luminosité par DDC, préréglages, écrans virtuels, et un CLI pour scripter le tout. Directement utile pour un vidéoprojecteur ou un second écran dont macOS ne propose que deux réglages.<br />
+Gratuit, open source, MIT, sans abonnement, macOS 14 minimum, Intel et Apple Silicon. Les équivalents commerciaux (BetterDisplay Pro, Lunar Pro) coûtent 21,99 et 23 dollars.<br />
+<a href="https://mondary.design/2026/10/crisp-le-panneau-gratuit-qui-rend-nets-vos-ecrans-externes-sur-mac/">Crisp</a></p>
+<h3>Yalqen</h3>
+<p>Navigateur Chromium open source pour macOS avec onglets verticaux, barre de commande au clavier, bloqueur de publicités intégré sans extension et outils de développement à un raccourci. Les mots de passe sont chiffrés avec une clé gardée dans le Trousseau et ne quittent pas la machine. À considérer pour un poste de salle où l'on veut un navigateur propre et discret.<br />
+MIT. Limites assumées : Apple Silicon uniquement, macOS 13 et plus, ni Spaces ni split view, ni import de favoris, ni synchronisation ; projet très jeune (33 étoiles).<br />
+<a href="https://mondary.design/2026/10/yalqen-le-navigateur-developpeur-qui-bloque-les-pubs-sans-extension/">Yalqen</a></p>
+<h3>Search</h3>
+<p>Navigateur WebKit de 6 Mo signé par un studio parisien, qui ouvre en un tiers de seconde : onglets en colonne ou en bandeau, publicités bloquées avant chargement, mots de passe dans le Trousseau, extensions du Chrome Web Store prises en charge à partir de macOS 15.4. Code Swift d'environ 42 000 lignes, compilable chez vous.<br />
+MIT pour le code ; le nom et l'icône restent la propriété du studio, donc un fork doit être renommé. Gratuit, sans compte, Apple Silicon, macOS 14 minimum, ni version iOS ni synchronisation.<br />
+<a href="https://mondary.design/2026/10/search-un-navigateur-webkit-de-6-mo-qui-ouvre-en-un-tiers-de-seconde/">Search</a></p>
+<h3>Yoinks</h3>
+<p>Téléchargeur en ligne de commande qui prend en charge YouTube, TikTok, X, Instagram et plus de 1 800 sites : un lien, un choix de qualité ou de fichier audio, le fichier arrive dans vos téléchargements. Sans publicité ni faux bouton de téléchargement, et il réutilise votre installation de yt-dlp si elle existe — utile pour archiver une vidéo avant de la projeter en classe, sans connexion.<br />
+MIT, binaire autonome installé dans ~/.yoinks/bin sans dépendance à Python ; projet très jeune (créé en juillet, 1 800 étoiles).<br />
+<a href="https://mondary.design/2026/10/yoinks-telechargez-nimporte-quelle-video-depuis-le-terminal-sans-pub/">Yoinks</a></p>
+<h3>Purge</h3>
+<p>Nettoyeur de Mac gratuit et open source qui débusque caches applicatifs, gros fichiers oubliés et restes d'applications désinstallées, et envoie tout à la corbeille plutôt que de supprimer définitivement. Il ne touche qu'à une liste blanche de chemins compilée dans le binaire : ce qu'il ne reconnaît pas n'apparaît même pas dans les résultats.<br />
+MIT, 1 479 étoiles sur l'API GitHub, écrit en Swift.<br />
+<a href="https://mondary.design/2026/10/purge-le-nettoyeur-de-mac-qui-ne-supprime-jamais-rien/">Purge</a></p>
+<h3>WonderBox</h3>
+<p>Utilitaire macOS natif qui force les applications à réduire leurs caches via la même alerte de pression mémoire que le système, puis purge le cache fichier ; il vide aussi les caches de gestionnaires de paquets (npm, pnpm, Yarn, bun, uv, Cargo, Go, Gradle, Maven, CocoaPods) et ceux de Chromium et Electron, pilote les ventilateurs et garde le Mac éveillé.<br />
+MIT, macOS 14 minimum, Intel et Apple Silicon ; signature ad hoc, il faudra donc un clic droit puis « Ouvrir ». Projet très jeune (créé le 20 septembre 2026, huit validations) : les 480 étoiles relevées à l'API GitHub ne remplacent pas le recul, et l'API des caches touchés mérite un œil avant usage sur un poste de travail.<br />
+<a href="https://mondary.design/2026/10/wonderbox-le-toolkit-natif-macos-qui-optimise-la-memoire-et-vide-les-gros-caches/">WonderBox</a></p>
+<h3>Mac Performance Monitor</h3>
+<p>Moniteur de performance natif pour macOS qui enregistre en continu la pression mémoire, le processeur, le disque, le réseau, la batterie et les capteurs, et laisse revenir à l'instant où un ralentissement a commencé — y compris sur les moteurs d'IA locaux comme Ollama, MLX ou LM Studio.<br />
+MIT, signé et notarisé par Apple, sans télémétrie, historique conservé sur la machine. macOS 15 minimum et Apple Silicon exclusivement ; dépôt créé en juillet 2026, quelques approximations assumées (la bande passante GPU est une estimation).<br />
+<a href="https://mondary.design/2026/10/mac-performance-monitor-le-moniteur-dactivite-de-macos-qui-remonte-le-temps/">Mac Performance Monitor</a></p>
+<h3>TinyShield</h3>
+<p>Pare-feu natif pour macOS qui affiche en direct quelles applications ouvrent une connexion et permet de les bloquer une par une, avec un historique remontant jusqu'au mois. Utile pour voir ce qui sort d'un poste de salle ou d'un ordinateur portable de l'établissement.<br />
+La version gratuite se limite à une règle de blocage et une règle d'autorisation et à cinq minutes d'historique ; les licences à achat unique (29 à 69 dollars selon la formule, deux ans de mises à jour sauf formule à vie) débloquent le reste. macOS 15 ou plus, installation par extension réseau à approuver. Face à LuLu, gratuit et libre, l'argument est le suivi de trafic.<br />
+<a href="https://mondary.design/2026/10/tinyshield-voir-qui-se-connecte-depuis-votre-mac-et-le-bloquer-en-un-clic/">TinyShield</a></p>
+<h3>Openpanel</h3>
+<p>Plateforme d'analytique web et produit open source, alternative à Mixpanel : entonnoirs, cohortes, profils et historique de session, suivi des revenus, sans cookie dès l'installation, conforme au RGPD dans son offre hébergée en Europe, et auto-hébergeable par Docker Compose.<br />
+AGPL-3.0, 7 225 étoiles, projet actif. Côté tarifs, on choisit son volume d'événements mensuels, le reste est illimité — pertinent uniquement si vous publiez un site ou une application à mesurer.<br />
+<a href="https://mondary.design/2026/10/openpanel-une-alternative-a-mixpanel-open-source-et-sans-cookies/">Openpanel</a></p>
+<h3>TinyJS</h3>
+<p>Runtime de bureau qui transforme une page web en application native avec un vrai backend JavaScript, sur macOS, Windows et Linux, en réutilisant le webview du système plutôt qu'en embarquçant Chromium : une application de base pèse environ 6 Mo au lieu de 150. Menus, dialogues natifs, presse-papiers surveillé, raccourcis globaux, secrets dans le trousseau du système, Touch ID et Windows Hello.<br />
+MIT, moins de trois mois d'existence, 510 étoiles, code en C.<br />
+<a href="https://mondary.design/2026/10/tinyjs-des-applications-de-bureau-en-javascript-qui-tiennent-dans-6-mo-2/">TinyJS</a></p>
+<h3>ScriptC</h3>
+<p>Compilateur TypeScript vers binaire natif développé par Vercel Labs : un fichier .ts devient un exécutable autonome de quelques centaines de kilo-octets, sans Node ni V8. L'exemple du billet pèse 329 752 octets et démarre en 4 ms contre 35 ms pour Node. Large surface Node couverte (système de fichiers, processus, pile réseau) ; cible WASI et module pour iOS et Android.<br />
+macOS arm64 est la plateforme principale, la compilation croisée vers Linux et Windows passe par Zig.<br />
+<a href="https://mondary.design/2026/10/scriptc-votre-typescript-compile-en-binaire-natif-sans-node/">ScriptC</a></p>
+<h3>Syncular</h3>
+<p>Moteur de synchronisation hors ligne d'abord : chaque client garde une vraie base SQLite locale et un journal de commits autoritatif côté serveur réconcilie tout, y compris les écritures faites sans réseau, dans l'ordre de création et de façon idempotente. Pertinent pour un projet d'application de terrain ou de collecte de notes hors connexion.<br />
+Apache-2.0, mais en version pré-1.0 et maintenu par une seule personne ; la gestion des conflits reste à votre charge.<br />
+<a href="https://mondary.design/2026/10/syncular-un-sqlite-local-par-client-un-seul-journal-serveur/">Syncular</a></p>
+<h3>VICE</h3>
+<p>Outil en ligne de commande d'audit de sécurité web : il prend une URL ou un dossier de projet, crawle la page dans un vrai navigateur (y compris les fragments chargés à la demande) et remonte les vrais problèmes — secrets dans les paquets JavaScript, politiques RLS Supabase manquantes, injections, eval, ReDoS — avec le numéro de ligne et le correctif, un score sur 100 et un rapport HTML. Intégrable en action GitHub avec commentaire de revue et dépôt SARIF.<br />
+MIT, installation en une ligne, Node 22.12 minimum.<br />
+<a href="https://mondary.design/2026/10/vice-un-audit-de-securite-web-qui-lit-vos-bundles-js-et-vos-policies-rls/">VICE</a></p>
+<h3>ODiff</h3>
+<p>Comparateur d'images pixel par pixel taillé pour les visuels presque identiques : capture d'écran, photo recadrée, rendu d'IA. Binaire natif écrit en Zig, comparaison pleine page en une seconde là où pixelmatch et ImageMagick en demandent six ou sept, avec sortie possible directement dans le terminal via le protocole graphique de Kitty. Utile pour détecter qu'une ressource a changé, ou pour faire comparer deux images à un agent.<br />
+MIT, binaires précompilés pour la plupart des plateformes, 3 288 étoiles.<br />
+<a href="https://mondary.design/2026/10/odiff-la-comparaison-dimages-pixel-par-pixel-qui-tient-en-une-seconde/">ODiff</a></p>
+<h3>Shotnix</h3>
+<p>Application macOS qui enregistre l'écran et ouvre la vidéo déjà montée : zoom automatique sur chaque salve de clics, curseur redessiné et lissé, sous-titres transcrits sur la machine, export .srt ou WebVTT et traduction locale à partir de macOS 15. Évite le passage par un monteur pour une capsule vidéo de cours.<br />
+Gratuit et open source, mais la page du billet ne nomme pas la licence précise, et l'API GitHub ne l'identifie pas sur le dépôt annoncé : à vérifier avant un usage institutionnel. Apple Silicon uniquement, macOS 13 et plus, projet créé en avril 2026.<br />
+<a href="https://mondary.design/2026/10/shotnix-vos-enregistrements-decran-mac-souvrent-deja-montes/">Shotnix</a></p>
+<h3>Tiny Clips</h3>
+<p>Petite application qui vit dans la barre des menus de macOS ou la zone de notification de Windows et capture en PNG, MP4 ou GIF, avec annotation et rognage sur place, puis rangement dans une bibliothèque. L'enregistrement vidéo encode en H.264 accéléré matériellement, avec micro et son du système.<br />
+Gratuit, open source, sans compte, deux applications distinctes (WinUI 3 sous Windows, Swift et ScreenCaptureKit sur Mac). Alternative crédible à CleanShot X pour un usage scolaire.<br />
+<a href="https://mondary.design/2026/10/tiny-clips-capture-video-et-gif-dans-la-barre-de-menus-sur-mac-et-windows/">Tiny Clips</a></p>
+<h3>Snapzy</h3>
+<p>Application native macOS de capture d'écran, d'enregistrement et d'annotation, dans la barre des menus : treize outils d'annotation, OCR entièrement sur la machine, détection de QR codes et de liens, enregistrement audio et micro, montage, export MP4 ou GIF. Reprend la syntaxe de CleanShot X sans abonnement ni télémétrie ; le cloud est facultatif et à votre propre hébergement.<br />
+Gratuit, open source sous licence BSD 3-Clause. À savoir : ses raccourcis se substituent à ceux de macOS, qu'il faut désactiver au préalable.<br />
+<a href="https://mondary.design/2026/10/snapzy-capturer-et-annoter-son-ecran-sur-mac-sans-abonnement/">Snapzy</a></p>
+<h3>AutoShelf</h3>
+<p>Application macOS qui surveille vos dossiers et range les fichiers toute seule selon des règles condition → action (déplacer, copier, renommer, étiqueter, archiver, mettre à la corbeille), avec aperçu avant activation, ligne de commande et serveur MCP pour piloter le tri depuis un assistant local. Tout se passe hors ligne.<br />
+Gratuit avec une règle pleinement fonctionnelle ; le passage à Pro est un achat unique de 19,99 dollars, sans abonnement. macOS 13 ou plus, binaire universel.<br />
+<a href="https://mondary.design/2026/10/autoshelf-vos-fichiers-ranges-avant-meme-dy-penser/">AutoShelf</a></p>
+<h2>Sciences, données et création graphique</h2>
+<h3>GeoLibre</h3>
+<p>Plateforme SIG open source, légère et conçue pour le cloud, qui tourne dans le navigateur, sur le bureau, sur mobile et dans Jupyter, en traitant les données dans votre session plutôt que sur un serveur. Plus de 1 000 outils de géotraitement (vectoriel, raster, télédétection, hydrologie, terrain, LiDAR) exécutés dans le navigateur par WebAssembly, requêtes SQL spatiales DuckDB, même base de code pour Windows, macOS, Linux, Android, iOS, Python et R. C'est l'outil le plus directement utile de cette édition pour la géologie : cartes géologiques, couches, analyses de terrain, sans installer QGIS ni ouvrir de compte.<br />
+<a href="https://mondary.design/2026/10/geolibre-sig-open-source-navigateur/">GeoLibre</a></p>
+<h3>Inbetween</h3>
+<p>Atelier vectoriel gratuit dans le navigateur pour dessiner formes, pictogrammes et caractères sur des grilles géométriques, avec calques et vue d'animation qui produit un MP4. Convient à la fabrication de pictogrammes cohérents ou d'un alphabet maison pour des supports de cours.<br />
+Fonctionne en local (stockage IndexedDB) ; la page ne précise pas de licence d'usage, à vérifier avant d'intégrer les créations à un document commercial.<br />
+<a href="https://mondary.design/2026/10/inbetween/">Inbetween</a></p>
+<h3>SVG Path Editor</h3>
+<p>Éditeur d'attribut <code>d</code> qui tourne entièrement dans le navigateur : vous collez le chemin d'un dessin vectoriel, déplacez ses points et ses poignées à la souris, et la chaîne de commandes se réécrit en direct, avec arrondi, recentrage et optimisation pour nettoyer un tracé avant de l'insérer dans une figure ou une diapositive.<br />
+Apache-2.0, 5 300 étoiles, dépôt suivi depuis 2020 ; le moteur est publié à part comme paquet npm.<br />
+<a href="https://mondary.design/2026/10/svg-path-editor-reprendre-un-path-svg-a-la-souris-sans-ouvrir-illustrator/">SVG Path Editor</a></p>
+<h3>VGPU</h3>
+<p>Bibliothèque WebGPU en TypeScript qui pousse le même code vers un canvas de navigateur, un rendu sans fenêtre sous Node.js et une suite de tests, avec des importations WGSL typées et une documentation pensée pour les agents de code. Utile pour enseigner la programmation graphique ou le calcul sur GPU, côté web.<br />
+MIT, portée par Vercel Labs, sur une branche de développement : à suivre.<br />
+<a href="https://mondary.design/2026/10/vgpu-un-seul-webgpu/">VGPU</a></p>
+<h3>GPUI Kit</h3>
+<p>Framework Rust pour applications de bureau, construit sur le moteur d'interface de Zed : plus de 75 composants documentés, tableaux taillés pour des centaines de milliers de lignes, éditeur de code, graphiques, système de fenêtres. Extrait d'une application de trading réellement exploitée en production.<br />
+Apache-2.0, près de 15 000 étoiles. Le rendu WebAssembly dans le navigateur reste limité à des démonstrations.<br />
+<a href="https://mondary.design/2026/10/gpui-kit/">GPUI Kit</a></p>
+<h3>Typeface</h3>
+<p>Extension de navigateur qui révèle en un survol la police d'un texte : fonte, fonderie, corps, graisse, couleur, avec réglages testables en direct et un catalogue de fonderies indépendantes. Lecture des styles calculés, sans serveur, sans télémétrie. Pratique pour retrouver une fonte repérée sur un site et pour montrer à des élèves comment est faite une page.<br />
+<a href="https://mondary.design/2026/10/typeface-la-police-de-nimporte-quelle-page-web-revelee-dun-survol/">Typeface</a></p>
+<h2>Python et enseignement de l'informatique</h2>
+<h3>Pyxel</h3>
+<p>Moteur de jeu rétro pour Python qui reprend les contraintes des consoles 8 et 16 bits — 16 couleurs, quatre canaux audio — avec éditeurs de sprites, de tuiles, de sons et de musiques intégrés. Le fichier de jeu se transforme en exécutable ou en page HTML autonome, jouable dans n'importe quel navigateur, y compris sur téléphone. Cadre volontairement étroit, idéal en SNT ou en club informatique : on finit un petit jeu au lieu d'assembler des ressources.<br />
+Licence MIT annoncée par le billet et par le projet ; l'API GitHub ne sait pas l'identifier automatiquement (signalé comme « autre »), ce qui n'empêche pas l'usage. Plus de 18 000 étoiles, Windows, macOS, Linux et navigateur via WebAssembly.<br />
+<a href="https://mondary.design/2026/10/pyxel-moteur-jeux-retro-python/">Pyxel</a></p>
+<h3>Open-Slide</h3>
+<p>Framework de présentation open source qui transforme votre agent de code en auteur de diapositives : chaque diapositive est un composant React sur un canvas fixe de 1920 × 1080, un inspecteur visuel convertit vos retouches en commentaires que l'agent applique, et l'export se fait en HTML, PDF ou PPTX. Comme vos cours sont déjà en Markdown et convertis en LaTeX, c'est la piste la plus sérieuse pour produire des diapositives par agent.<br />
+MIT, plus de 8 700 étoiles, dépôt créé en avril 2026 et très actif (plus de 9 500 étoiles relevées à l'API, dernière poussée le 29 octobre).<br />
+<a href="https://mondary.design/2026/10/open-slide-le-framework-de-slides-ou-lagent-ecrit-le-react/">Open-Slide</a></p>
+<h3>Bencho</h3>
+<p>Bibliothèque de 32 composants d'interface vivants, directement manipulables dans le navigateur : on les presse, on les glisse, on règle leurs paramètres en direct, puis on récupère le code. Intéressant pédagogiquement pour montrer ce qu'est une interaction réussie avant d'écrire une ligne de HTML ou de JavaScript.<br />
+La page ne mentionne ni licence ni prix : à vérifier avant de réutiliser le code dans un support.<br />
+<a href="https://mondary.design/2026/10/bencho-32-composants-dinterface-a-manipuler-avant-de-prendre-le-code/">Bencho</a></p>
+<h3>SmoothUI</h3>
+<p>Catalogue de 198 composants React animés, gratuits et open source, qui s'installent un par un dans un projet shadcn/ui avec leurs dépendances. Le catalogue est lisible par machine (JSON, texte brut, API sans clé), et un assistant peut chercher, installer et illustrer un composant sans ouvrir le navigateur. Utile pour un projet web de classe (SNT) ou une page de présentation.<br />
+MIT, gratuit, le code installé vous appartient.<br />
+<a href="https://mondary.design/2026/10/smoothui-198-composants-react-animes-prets-pour-shadcn-ui/">SmoothUI</a></p>
+<h3>UIMaxxing</h3>
+<p>Bibliothèque de 122 composants shadcn au parti pris visuel assumé (animation, typographie cinétique, interfaces de marchés), dont 75 gratuits, installables par une commande.<br />
+Licence à lire avant usage : usage gratuit, modification et usage commercial autorisés sans crédit, mais la republication de la bibliothèque est interdite et l'entraînement de modèles d'IA sur le code est explicitement visé.<br />
+<a href="https://mondary.design/2026/10/uimaxxing-122-composants-shadcn-avec-une-vraie-signature-visuelle/">UIMaxxing</a></p>
+<h3>Rare UI</h3>
+<p>Collection open source de composants React animés livrée comme registre shadcn : le code source arrive dans votre arborescence, vous redéfinissez les couleurs, la physique des ressorts et le comportement, sans dépendance opaque.<br />
+Gratuit, usage personnel et commercial autorisé, mais la revente des composants est exclue et un lien visible vers le projet est demandé.<br />
+<a href="https://mondary.design/2026/10/rare-ui/">Rare UI</a></p>
+<h3>Shadcn Admin</h3>
+<p>Tableau de bord d'administration open source construit avec Shadcn et Vite, avec une dizaine d'écrans complets (tableau de bord, utilisateurs, tâches, messagerie, paramètres, authentification) à étudier ou à adapter pour une application React. Bon support pour un projet d'élèves en SNT ou en NSI.<br />
+MIT, plus de 14 000 étoiles, démonstration en ligne sans installation.<br />
+<a href="https://mondary.design/2026/10/shadcn-admin-des-ecrans-dadministration-shadcn-prets-a-decortiquer/">Shadcn Admin</a></p>
+<h3>Capacitor</h3>
+<p>Runtime natif open source qui fait tourner une application web (React, Vue, Svelte, Angular, ou du HTML et CSS simples) sur iOS et Android, en PWA, avec 38 greffons officiels et un CLI qui permet d'écrire du natif quand il le faut. C'est le moyen le plus court de transformer une page faite en classe en application installable sur téléphone.<br />
+MIT. Node 22 ou plus ; la compilation iOS impose un Mac avec Xcode 26, Android se contente d'Android Studio. Un module expérimental permet même de faire tourner un modèle sur l'appareil, sans réseau.<br />
+<a href="https://mondary.design/2026/10/capacitor-votre-app-web-devient-une-application-native-ios-et-android/">Capacitor</a></p>
+<h3>LinPad</h3>
+<p>Application qui installe Alpine Linux directement sur un iPad : bureau à fenêtres avec mosaïque, espaces de travail, vrai terminal avec apk, bash, Node 22, Python et git, Firefox et VS Code dans des fenêtres iPad natives. Ni machine virtuelle ni connexion à distance : un fork d'iSH qui traduit les appels système Linux, avec un JIT ARM64 en option et le presse-papiers, le son et le glisser-déposer partagés avec iPadOS. De quoi organiser un atelier Python sur tablette là où l'on n'a que des iPad.<br />
+GPLv3, gratuit, sans abonnement ni télémétrie. Réserve : l'installation passe par un chargement latéral d'une vingtaine de minutes, un identifiant gratuit limite à trois applications et impose un rafraîchissement tous les sept jours, et désinstaller l'application efface /root et /home. Comptez donc un usage de démonstration ou de club, pas un poste de travail pérenne.<br />
+<a href="https://mondary.design/2026/10/linpad-du-vrai-linux-sur-ipad-sans-jailbreak-ni-machine-virtuelle/">LinPad</a></p>
+<h3>MyGo</h3>
+<p>Framework Go pour créer des applications de bureau : chaque fenêtre affiche soit une page web dans le webview du système, soit une interface native dessinée par l'application, et une même application peut mélanger les deux, dans un binaire de quelques mégaoctets. Ni Electron ni Chromium embarqué : WKWebView sur macOS, WebKitGTK sous Linux, WebView2 sous Windows. Environ 7 Mo pour le binaire, 44 Mo de mémoire en interface native, 0 % de processeur au repos selon le projet. Go 1.27 minimum.<br />
+MIT, 3 800 étoiles, dépôt encore actif le jour de la rédaction.<br />
+<a href="https://mondary.design/2026/10/mygo-des-apps-desktop-en-go-web-et-natif-dans-un-seul-binaire/">MyGo</a></p>
+<h2>Volume</h2>
+<p>102 billets publiés dans l'intervalle (du 11 au 31 octobre 2026), 87 retenus, 15 écartés. Motifs d'exclusion dominants : jeux vidéo, streaming et lecteurs de bandes dessinées ; gadgets d'affichage ou de personnalisation (fond d'écran animé, réorganisation cosmétique de la barre de menus, notifications Android) ; ornements de sites web sans usage fonctionnel ; annuaires de design ; et une application d'abonnement après essai de quatorze jours (les quinze billets écartés sont Wallnetic, Claude Marge, Inspora, Liquid Glass, Terminal.army, FlowActions, ShiftBar, Designeer, Design Engineer Tools, Dockbar, Streambert, Panels, Letterboxx, Game Compressor et Bottom Notifications).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-10-31.html</link>
