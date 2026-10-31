@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — samedi 31 octobre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — samedi 31 octobre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Première édition : aucun identifiant n'était encore consigné, le document couvre donc l'intégralité du journal collecté, du 27 au 31 octobre 2026 (32 annonces) ; l'horizon de quatre jours s'appliquera à partir de la prochaine.</li>
+<li>Un seul paquet de votre liste a été mis à jour : babel 26.15 (progression de l'étiquetage PDF, code destiné à Plain TeX séparé et gelé, corrections).</li>
+<li>Six nouveaux paquets passent le filtre, dont subcaptionlite (sous-légendes sans le paquet caption) et algorithmlite (flottants algorithm sans le paquet float).</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>babel 26.15</strong> (29 octobre 2026, licence LPPL 1.3) — https://ctan.org/pkg/babel</p>
+<p>L'annonce ne donne que le numéro de version et renvoie à la page « What's new in babel 26.15 », que j'ai lue. Trois points en ressortent. D'abord l'étiquetage PDF progresse : une nouvelle option <code>phoneme</code> s'ajoute à <code>\foreignlanguage</code> (elle exige du PDF 2 et les lecteurs actuels ne l'exploitent pas encore), et <code>\selectlanguage</code> comme <code>\foreignlanguage</code> produisent désormais un texte correctement étiqueté, les environnements <code>selectlanguage</code>, <code>otherlanguage</code> et <code>otherlanguage*</code> restant en chantier car la commande <code>\end</code> intervient souvent avant la fin du paragraphe. Ensuite le code destiné à Plain TeX a été séparé du cœur LaTeX et pratiquement gelé, ce qui ne change rien à la maintenance et rien à votre classe. Enfin quelques corrections : <code>\footnote</code>, l'option <code>layout=footnotes</code> et les règles de césure du russe.</p>
+<p>Conséquence pour nBook3 : rien à adapter pour l'usage courant. Si vous activez l'étiquetage (<code>\DocumentMetadata{tagging=on}</code>), cette version améliore le résultat ; l'option temporaire <code>babel-metadata=tagging</code> devra disparaître quand les environnements seront pris en charge.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<ul>
+<li>
+<p><strong>subcaptionlite 1.0</strong> (26 octobre 2026, LPPL 1.3) — https://ctan.org/pkg/subcaptionlite<br />
+  Fournit les environnements <code>subfigure</code> et <code>subtable</code>, ainsi que <code>\subcaption</code>, <code>\subcaptionbox</code> et <code>\subref</code>, avec la syntaxe du paquet <code>subcaption</code>, mais sans charger <code>caption</code> : il ne touche pas à <code>\@makecaption</code>, ce qui le rend utilisable dans une classe qui définit elle-même l'aspect de ses légendes. Votre classe charge déjà <code>caption</code> et <code>subcaption</code> ; l'intérêt est donc de disposer d'une variante allégée, à examiner si vous souhaitez un jour alléger cette chaîne, ou sous-figurer dans un contexte où <code>caption</code> gêne.</p>
+</li>
+<li>
+<p><strong>algorithmlite 1.0 puis 1.1</strong> (26 et 28 octobre 2026, LPPL 1.3) — https://ctan.org/pkg/algorithmlite<br />
+  Définit les environnements <code>algorithm</code> et <code>algorithm*</code> selon le mécanisme de flottants du cœur LaTeX, sans charger le paquet <code>float</code>, lequel redéfinit <code>\caption</code> pour tous les flottants du document. Pratique pour présenter un algorithme en SNT sans payer ce coût ; la version 1.1, parue deux jours après la première publication, ajoute la prise en charge du PDF étiqueté et l'enregistrement du flottant. Attention : ce n'est pas un paquet d'algorithmique comme <code>algorithm2e</code>, seulement un conteneur de flottant, le contenu de l'algorithme restant à votre charge.</p>
+</li>
+<li>
+<p><strong>textdate 1.0</strong> (LPPL 1.3) — https://ctan.org/pkg/textdate<br />
+  La commande <code>\textdate</code> convertit une date numérique en date en toutes lettres, dans sept langues, en acceptant les formes ISO comme la forme jour-mois-année des langues qui l'utilisent. La date peut être fournie directement ou lue dans une macro, ce qui permet de dater automatiquement un en-tête d'évaluation ou de corrigé. Le numéro de version n'est pas daté dans l'API CTAN.</p>
+</li>
+<li>
+<p><strong>doodle-icons 0.1a</strong> (26 octobre 2026, LPPL 1.3 et CC0) — https://ctan.org/pkg/doodle-icons<br />
+  Met les icônes « Doodle Icons » (domaine public) à disposition par des commandes LaTeX, à la manière de <code>twemojis</code> ; l'implémentation repose sur des images PDF issues de SVG, donc elle fonctionne sur toute installation, sans police supplémentaire. Même famille d'usage que <code>lucide-icons</code> et <code>ccicons</code>, que vous chargez déjà. Réserve de vérification : l'annonce porte la version 0.1a, l'API CTAN indique ce matin 0.1c datée du 31 octobre — le paquet a été remis à jour depuis l'annonce, sans nouvelle annonce dans le journal.</p>
+</li>
+<li>
+<p><strong>game-icons 0.1a</strong> (30 octobre 2026, LPPL 1.3, CC-BY 3 et CC0) — https://ctan.org/pkg/game-icons<br />
+  Donne accès aux plus de 4000 icônes du projet game-icons.net et à ses 59 badges, par <code>\gameicons{nom}</code>, en ligne ou à une hauteur donnée ; les icônes sont noires par défaut et prennent la couleur du texte. Utile pour des pictogrammes de consignes dans un exercice, même si le fonds d'origine est celui d'un site de jeux.</p>
+</li>
+<li>
+<p><strong>matchedsplit 0.8.1</strong> (29 octobre 2026, LPPL 1.3) — https://ctan.org/pkg/matchedsplit<br />
+  Propose les environnements <code>matchedsplit</code>, <code>matchedalign</code> et <code>matchedalign*</code>, remplaçants facultatifs des environnements amsmath correspondants : les délimiteurs <code>\left</code>, <code>\middle</code> et <code>\right</code> restent appariés et de taille cohérente lorsqu'une équation est coupée manuellement sur plusieurs lignes, avec un coloriage facultatif des délimiteurs selon leur profondeur. Première publication sur CTAN ; comme vous chargez <code>mathtools</code>, la coexistence est à tester avant de s'en servir dans un cours.</p>
+</li>
+</ul>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><code>alterqcm</code> 5.00c (27 octobre, LPPL 1.3) : QCM en tableaux à deux colonnes ; les options passent désormais par <code>pgfkeys</code>, chargé seul, sans PGF/TikZ. Paquet hors de votre liste nBook3, mais directement lié aux évaluations : si vous l'utilisez pour vos QCM, la façon de passer les options a changé.</li>
+<li><code>physketch</code> 0.1.1 (29 octobre, LPPL 1.3) : styles et dessins TikZ pour la physique (surfaces, pistons, ressorts, poulies, forces, lentilles, montages électriques). Documentation russe ajoutée, les forces des exemples utilisent le style <code>force</code>, et les clés non documentées <code>zigzag</code>, <code>snake</code> et <code>shape</code> des ressorts ont été retirées : un document qui s'en servait ne compilera plus.</li>
+<li><code>beamertheme-tcolorbox</code> 1.7 (29 octobre, LPPL 1.3) : thème interne beamer construit sur <code>tcolorbox</code> ; les ombres et dégradés des blocs semi-transparents sont supprimés pour éviter les problèmes d'opacité, ce qui change l'aspect de ce thème sans toucher au paquet <code>tcolorbox</code> lui-même.</li>
+<li><code>tagpdf</code> 1.0i (29 octobre, LPPL 1.3) : code d'étiquetage PDF du projet LaTeX ; corrige un avertissement avec le LaTeX du 1er novembre 2026. À mettre à jour de préférence avant cette date si vous étiquetez vos PDF.</li>
+<li><code>user-persona</code> 2.0 (LPPL 1.3) : fiches de « persona » pour l'interaction homme-machine, avec options de mise en forme (couleurs, largeur, étiquettes) et nouveaux éléments graphiques. Marginal pour la SVT ; éventuellement utilisable en SNT sur les usages et l'ergonomie, à vous de juger.</li>
+</ul>
+<h2>Volume</h2>
+<p>32 annonces publiées dans l'intervalle (27 au 31 octobre 2026), 13 retenues — dont une seule concernant un paquet de votre liste — et 19 écartées. Motifs dominants : écritures et langues non latines (neuf annonces : bangla, persan, japonais, coréen, chinois, arabe), gabarits propres à une université ou à un établissement (quatre), adaptations à une revue savante précise (deux, pour aomart), théorie des jeux combinatoires (deux), documents juridiques (un), mise à jour de maintenance sans effet visible (un).</p>
+<p>La dernière collecte (31 octobre, 11h29 heure de Paris) s'est terminée sans erreur.</p>
+<footer>Édition du samedi 31 octobre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
