@@ -6,9 +6,66 @@
 <description>Veille quotidienne du subreddit r/vibecoding — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/vibecoding.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 06:37:01 +0100</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 06:33:20 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/vibecoding — dimanche 1er novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-01.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-01</guid>
+<pubDate>Sun, 01 Nov 2026 06:33:20 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>La semaine d'Halloween a produit surtout des jeux bricolés et des récits d'expérience : sur trente messages parus depuis la dernière édition, six seulement annoncent un logiciel utilisable. Le fait du jour est le front-end GPL « Halcyon Video », qui transforme une bibliothèque Jellyfin ou Plex en magasin de cassettes vidéo des années 1990 que l'on parcourt à pied — bientôt un millier d'étoiles. À signaler aussi, côté Linux, un portage GTK de DishyLink par un développeur indépendant.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Halcyon Video — parcourir sa vidéothèque comme un magasin de location</h3>
+<p>Le projet présente une interface en 3D dans laquelle on se déplace à la première personne dans un magasin de cassettes des années 1990, chaque rayon correspondant à sa propre bibliothèque Jellyfin (et, à terme, à ses jeux Steam). Les présentoirs et le décor changent selon la saison — une décoration d'Halloween est en place, les suivantes sont annoncées. Le tout s'auto-héberge ; la démonstration publique se visite dans le navigateur.</p>
+<p>Auteur : halcyon-video (projet personnel). Dépôt : https://github.com/halcyon-video/halcyon-video — licence GPL-3.0, 954 étoiles, TypeScript, dernière mise à jour le 31 octobre 2026 (créé le 3 août 2026). Démonstration : https://halcyon-video.github.io/halcyon-video/</p>
+<h3>DishyLink pour Linux (interfaces GTK) — portage indépendant d'une application libre</h3>
+<p>Un développeur indépendant, ancien de la gestion de données et du développement web, publie le portage natif Linux de DishyLink, application libre qui surveille l'état et la performance d'une antenne Starlink depuis un ordinateur (l'amont existe pour macOS, Windows et navigateur). Il ajoute au passage le changement de mot de passe Wi-Fi, absent de l'original. L'auteur prévient que le logiciel n'est pas encore abouti, qu'il ne se connecte encore à rien d'extérieur, et qu'il n'a été testé que sur Fedora Workstation ; aucune compilation Ubuntu n'est publiée pour l'instant.</p>
+<p>Incertitude : le billet ne donne aucun lien vers le dépôt du portage — il annonce seulement que les compilations « viendront de GitHub ». L'amont, lui, est vérifiable : https://github.com/DaveyHert/dishylink — licence MIT, 372 étoiles, dernière mise à jour le 1er novembre 2026. Licence du portage : MIT également, d'après l'auteur.</p>
+<h3>Atelier — application de peinture numérique</h3>
+<p>Présentation d'une application de peinture dont l'auteur dit vouloir simuler la peinture réelle (mélange des couleurs, outils de pinceau) plutôt que de proposer un simple calque numérique. Incertitude : le billet ne comporte ni lien, ni licence, ni indication de prix — le contenu publié sur Reddit est une vidéo de démonstration, et aucune adresse de téléchargement n'a pu être retrouvée. À retenir comme piste, pas encore comme outil installable.</p>
+<h2>Extensions et greffons</h2>
+<h3>tab_manager — extension Chrome de gestion des onglets</h3>
+<p>Un développeur publie une extension personnelle qui regroupe automatiquement les nouveaux onglets par nom de domaine, replie les groupes pour décharger la barre d'onglets, met les groupes en veille pour libérer de la mémoire et ajoute un panneau latéral vertical affichant les titres complets. Destinée à ceux qui gardent plusieurs dizaines d'onglets ouverts. Elle n'est volontairement pas publiée sur le Chrome Web Store : le code est à installer soi-même.</p>
+<p>Dépôt : https://github.com/AlpineSinger/tab_manager — licence MIT, 0 étoile, créé et dernière mise à jour le 31 octobre 2026. Projet tout neuf, à manipuler avec prudence.</p>
+<h2>Dépôt libre mis en avant</h2>
+<h3>img2threejs — image de référence vers modèle Three.js</h3>
+<p>Un message de démonstration (personnages d'animation placés dans une scène 3D d'Halloween) rappelle l'existence de ce projet libre : il reconstruit l'objet d'une image de référence en modèle Three.js procédural, animable et utilisable tel quel dans le code, plutôt que de produire un maillage lourd. L'auteur l'a combiné au service propriétaire Viggle AI PINOC pour l'ossature automatique — cette partie-là n'est pas libre et n'est pas retenue.</p>
+<p>Dépôt : https://github.com/img2threejs/img2threejs — licence Apache-2.0, 19 971 étoiles, Python, dernière mise à jour le 1er novembre 2026 (créé le 15 juillet 2026).</p>
+<h3>Wanderer — monde ASCII d'ambiance pour les sessions d'étude</h3>
+<p>Petit programme de bureau qui affiche un monde en caractères ASCII peuplé d'un crabe se promenant dans six environnements, avec cycle jour/nuit suivant l'horloge locale et commandes de lecture reliées à l'application Spotify du bureau. L'auteur l'a fait pour avoir quelque chose d'apaisant à l'écran pendant qu'il travaille ; il fonctionne localement, sans clé d'API ni service en ligne. Le principe est facilement transposable ailleurs, mais l'intérêt pédagogique reste à démontrer.</p>
+<p>Dépôt : https://github.com/kekidev/wanderer — aucune licence déclarée sur le dépôt (à signaler : sans licence explicite, la réutilisation du code n'est pas autorisée par défaut), 1 étoile, TypeScript, dernière mise à jour le 1er novembre 2026.</p>
+<h2>Volume</h2>
+<p>30 posts publiés dans l'intervalle, 6 retenus, 24 écartés, soit un taux de rétention de 20 %. Ce taux est la norme de r/vibecoding, subreddit de récits et de questions : la période d'Halloween l'a même tiré vers le bas, la file ayant été envahie de petits jeux de circonstance, de captures de progrès de projets personnels et de plaintes contre les fournisseurs de modèles. Aucun échec de collecte à signaler (dernière collecte le 1er novembre 2026 à 04h34 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>La semaine d'Halloween a produit surtout des jeux bricolés et des récits d'expérience : sur trente messages parus depuis la dernière édition, six seulement annoncent un logiciel utilisable. Le fait du jour est le front-end GPL « Halcyon Video », qui transforme une bibliothèque Jellyfin ou Plex en magasin de cassettes vidéo des années 1990 que l'on parcourt à pied — bientôt un millier d'étoiles. À signaler aussi, côté Linux, un portage GTK de DishyLink par un développeur indépendant.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Halcyon Video — parcourir sa vidéothèque comme un magasin de location</h3>
+<p>Le projet présente une interface en 3D dans laquelle on se déplace à la première personne dans un magasin de cassettes des années 1990, chaque rayon correspondant à sa propre bibliothèque Jellyfin (et, à terme, à ses jeux Steam). Les présentoirs et le décor changent selon la saison — une décoration d'Halloween est en place, les suivantes sont annoncées. Le tout s'auto-héberge ; la démonstration publique se visite dans le navigateur.</p>
+<p>Auteur : halcyon-video (projet personnel). Dépôt : https://github.com/halcyon-video/halcyon-video — licence GPL-3.0, 954 étoiles, TypeScript, dernière mise à jour le 31 octobre 2026 (créé le 3 août 2026). Démonstration : https://halcyon-video.github.io/halcyon-video/</p>
+<h3>DishyLink pour Linux (interfaces GTK) — portage indépendant d'une application libre</h3>
+<p>Un développeur indépendant, ancien de la gestion de données et du développement web, publie le portage natif Linux de DishyLink, application libre qui surveille l'état et la performance d'une antenne Starlink depuis un ordinateur (l'amont existe pour macOS, Windows et navigateur). Il ajoute au passage le changement de mot de passe Wi-Fi, absent de l'original. L'auteur prévient que le logiciel n'est pas encore abouti, qu'il ne se connecte encore à rien d'extérieur, et qu'il n'a été testé que sur Fedora Workstation ; aucune compilation Ubuntu n'est publiée pour l'instant.</p>
+<p>Incertitude : le billet ne donne aucun lien vers le dépôt du portage — il annonce seulement que les compilations « viendront de GitHub ». L'amont, lui, est vérifiable : https://github.com/DaveyHert/dishylink — licence MIT, 372 étoiles, dernière mise à jour le 1er novembre 2026. Licence du portage : MIT également, d'après l'auteur.</p>
+<h3>Atelier — application de peinture numérique</h3>
+<p>Présentation d'une application de peinture dont l'auteur dit vouloir simuler la peinture réelle (mélange des couleurs, outils de pinceau) plutôt que de proposer un simple calque numérique. Incertitude : le billet ne comporte ni lien, ni licence, ni indication de prix — le contenu publié sur Reddit est une vidéo de démonstration, et aucune adresse de téléchargement n'a pu être retrouvée. À retenir comme piste, pas encore comme outil installable.</p>
+<h2>Extensions et greffons</h2>
+<h3>tab_manager — extension Chrome de gestion des onglets</h3>
+<p>Un développeur publie une extension personnelle qui regroupe automatiquement les nouveaux onglets par nom de domaine, replie les groupes pour décharger la barre d'onglets, met les groupes en veille pour libérer de la mémoire et ajoute un panneau latéral vertical affichant les titres complets. Destinée à ceux qui gardent plusieurs dizaines d'onglets ouverts. Elle n'est volontairement pas publiée sur le Chrome Web Store : le code est à installer soi-même.</p>
+<p>Dépôt : https://github.com/AlpineSinger/tab_manager — licence MIT, 0 étoile, créé et dernière mise à jour le 31 octobre 2026. Projet tout neuf, à manipuler avec prudence.</p>
+<h2>Dépôt libre mis en avant</h2>
+<h3>img2threejs — image de référence vers modèle Three.js</h3>
+<p>Un message de démonstration (personnages d'animation placés dans une scène 3D d'Halloween) rappelle l'existence de ce projet libre : il reconstruit l'objet d'une image de référence en modèle Three.js procédural, animable et utilisable tel quel dans le code, plutôt que de produire un maillage lourd. L'auteur l'a combiné au service propriétaire Viggle AI PINOC pour l'ossature automatique — cette partie-là n'est pas libre et n'est pas retenue.</p>
+<p>Dépôt : https://github.com/img2threejs/img2threejs — licence Apache-2.0, 19 971 étoiles, Python, dernière mise à jour le 1er novembre 2026 (créé le 15 juillet 2026).</p>
+<h3>Wanderer — monde ASCII d'ambiance pour les sessions d'étude</h3>
+<p>Petit programme de bureau qui affiche un monde en caractères ASCII peuplé d'un crabe se promenant dans six environnements, avec cycle jour/nuit suivant l'horloge locale et commandes de lecture reliées à l'application Spotify du bureau. L'auteur l'a fait pour avoir quelque chose d'apaisant à l'écran pendant qu'il travaille ; il fonctionne localement, sans clé d'API ni service en ligne. Le principe est facilement transposable ailleurs, mais l'intérêt pédagogique reste à démontrer.</p>
+<p>Dépôt : https://github.com/kekidev/wanderer — aucune licence déclarée sur le dépôt (à signaler : sans licence explicite, la réutilisation du code n'est pas autorisée par défaut), 1 étoile, TypeScript, dernière mise à jour le 1er novembre 2026.</p>
+<h2>Volume</h2>
+<p>30 posts publiés dans l'intervalle, 6 retenus, 24 écartés, soit un taux de rétention de 20 %. Ce taux est la norme de r/vibecoding, subreddit de récits et de questions : la période d'Halloween l'a même tiré vers le bas, la file ayant été envahie de petits jeux de circonstance, de captures de progrès de projets personnels et de plaintes contre les fournisseurs de modèles. Aucun échec de collecte à signaler (dernière collecte le 1er novembre 2026 à 04h34 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-10-31.html</link>

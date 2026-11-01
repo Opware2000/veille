@@ -6,9 +6,46 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 06:11:47 +0100</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 06:11:28 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — dimanche 1er novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-01.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-01</guid>
+<pubDate>Sun, 01 Nov 2026 06:11:28 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un seul billet nouveau dans le journal depuis l'édition d'hier, et il est retenu : Xberg, moteur libre d'extraction de contenu à partir de documents de toute nature, publié sous licence MIT.<br />
+Le journal de collecte n'a pas signalé d'erreur ; le subreddit a été peu actif sur la nuit.<br />
+Ce faible volume n'appelle pas de conclusion sur le filtre, la rétention de ce subreddit se situant d'ordinaire autour de 90 %.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Xberg — un moteur unique pour extraire le contenu de n'importe quel document</h3>
+<p>Ce que c'est : un moteur d'extraction écrit en Rust, présenté comme le moteur d'intelligence documentaire « rapide et précis pour toutes les langues ». On lui donne un fichier quelconque — PDF, tableur, image numérisée, fichier audio, page web, archive, ou même une arborescence de code source — et il rend du texte propre, des tableaux, des métadonnées et des données structurées. L'annonce avance 107 formats et 141 extensions reconnus, 371 langages de programmation analysés, six formats de sortie et quinze liaisons de langage ; ces chiffres se retrouvent à l'identique dans le fichier README du dépôt, ce qui les rend cohérents sans pour autant les rendre vérifiables indépendamment.</p>
+<p>Ce que cela apporte concrètement : le projet remplace une chaîne habituellement composée d'une dizaine de bibliothèques distinctes (détection de format, lecture, reconnaissance de texte, extraction de tableaux) par un seul cœur. Les capacités utiles au travail enseignant sont réunies au même endroit : reconnaissance de caractères par Tesseract, PaddleOCR, Candle ou un modèle de vision, avec chaînes de repli et scores de confiance ; reconstruction de la mise en page et des grilles de tableaux par des modèles de structure ; transcription de l'audio et de la vidéo par Whisper ; extraction récursive d'archives imbriquées ; traduction et résumé. Le tout tourne sur processeur, sans carte graphique. On peut l'employer comme simple commande en ligne de commande, comme bibliothèque dans quinze langages (dont Python et JavaScript), comme serveur d'interface de programmation, ou comme serveur MCP, ce qui permet de le brancher directement sur un agent d'IA. Il existe aussi des greffons pour Claude Code, OpenCode, Gemini CLI et d'autres agents, qui exposent l'extraction et la reconnaissance de caractères comme outils. Cas d'usage immédiat pour un professeur : tirer en Markdown le texte et les tableaux de sujets d'examen au format PDF ou d'images numérisées, ce qui produit ensuite du LaTeX propre.</p>
+<p>Licence et prix : MIT, donc gratuit, y compris pour un usage commercial du cœur du moteur. Attention toutefois, l'éditeur vend à côté deux offres commerciales (Xberg Pro, auto-hébergée dans un conteneur, et Xberg Enterprise sur Kubernetes) : le projet libre et les offres payantes coexistent, il faut donc lire la page de tarifs avant de s'engager sur un déploiement en équipe. L'annonce, elle, porte bien sur le moteur libre.</p>
+<p>Vérification du dépôt (API GitHub, avec jeton) : dépôt <code>xberg-io/xberg</code>, licence MIT, 9 495 étoiles, 610 forks, créé le 31 janvier 2025, dernière poussée le 1er novembre 2026 à 02 h 51 UTC — projet actif et largement suivi. La dernière version publiée est étiquetée v1.3.10, datée du 13 octobre 2026. Installation documentée par <code>pip install xberg</code>, <code>npm install @xberg-io/xberg</code>, <code>cargo add xberg</code>, Homebrew ou Scoop.</p>
+<p>Lien : https://github.com/xberg-io/xberg</p>
+<p>Remarque : le billet renvoie aussi vers une page de présentation hébergée sur le site lifehubber.com, qui tient un annuaire de « plus de 300 ressources d'IA » (modèles, agents, outils, jeux de données). C'est un répertoire de découverte, pas un logiciel, et il n'a pas été vérifié.</p>
+<h2>Volume</h2>
+<p>1 post publié dans l'intervalle, 1 retenu, 0 écarté — rétention de 100 %. Comme à l'accoutumée dans ce subreddit, le filtre n'a écarté aucun billet, l'essentiel des publications y présente un outil plutôt que de poser une question.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un seul billet nouveau dans le journal depuis l'édition d'hier, et il est retenu : Xberg, moteur libre d'extraction de contenu à partir de documents de toute nature, publié sous licence MIT.<br />
+Le journal de collecte n'a pas signalé d'erreur ; le subreddit a été peu actif sur la nuit.<br />
+Ce faible volume n'appelle pas de conclusion sur le filtre, la rétention de ce subreddit se situant d'ordinaire autour de 90 %.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Xberg — un moteur unique pour extraire le contenu de n'importe quel document</h3>
+<p>Ce que c'est : un moteur d'extraction écrit en Rust, présenté comme le moteur d'intelligence documentaire « rapide et précis pour toutes les langues ». On lui donne un fichier quelconque — PDF, tableur, image numérisée, fichier audio, page web, archive, ou même une arborescence de code source — et il rend du texte propre, des tableaux, des métadonnées et des données structurées. L'annonce avance 107 formats et 141 extensions reconnus, 371 langages de programmation analysés, six formats de sortie et quinze liaisons de langage ; ces chiffres se retrouvent à l'identique dans le fichier README du dépôt, ce qui les rend cohérents sans pour autant les rendre vérifiables indépendamment.</p>
+<p>Ce que cela apporte concrètement : le projet remplace une chaîne habituellement composée d'une dizaine de bibliothèques distinctes (détection de format, lecture, reconnaissance de texte, extraction de tableaux) par un seul cœur. Les capacités utiles au travail enseignant sont réunies au même endroit : reconnaissance de caractères par Tesseract, PaddleOCR, Candle ou un modèle de vision, avec chaînes de repli et scores de confiance ; reconstruction de la mise en page et des grilles de tableaux par des modèles de structure ; transcription de l'audio et de la vidéo par Whisper ; extraction récursive d'archives imbriquées ; traduction et résumé. Le tout tourne sur processeur, sans carte graphique. On peut l'employer comme simple commande en ligne de commande, comme bibliothèque dans quinze langages (dont Python et JavaScript), comme serveur d'interface de programmation, ou comme serveur MCP, ce qui permet de le brancher directement sur un agent d'IA. Il existe aussi des greffons pour Claude Code, OpenCode, Gemini CLI et d'autres agents, qui exposent l'extraction et la reconnaissance de caractères comme outils. Cas d'usage immédiat pour un professeur : tirer en Markdown le texte et les tableaux de sujets d'examen au format PDF ou d'images numérisées, ce qui produit ensuite du LaTeX propre.</p>
+<p>Licence et prix : MIT, donc gratuit, y compris pour un usage commercial du cœur du moteur. Attention toutefois, l'éditeur vend à côté deux offres commerciales (Xberg Pro, auto-hébergée dans un conteneur, et Xberg Enterprise sur Kubernetes) : le projet libre et les offres payantes coexistent, il faut donc lire la page de tarifs avant de s'engager sur un déploiement en équipe. L'annonce, elle, porte bien sur le moteur libre.</p>
+<p>Vérification du dépôt (API GitHub, avec jeton) : dépôt <code>xberg-io/xberg</code>, licence MIT, 9 495 étoiles, 610 forks, créé le 31 janvier 2025, dernière poussée le 1er novembre 2026 à 02 h 51 UTC — projet actif et largement suivi. La dernière version publiée est étiquetée v1.3.10, datée du 13 octobre 2026. Installation documentée par <code>pip install xberg</code>, <code>npm install @xberg-io/xberg</code>, <code>cargo add xberg</code>, Homebrew ou Scoop.</p>
+<p>Lien : https://github.com/xberg-io/xberg</p>
+<p>Remarque : le billet renvoie aussi vers une page de présentation hébergée sur le site lifehubber.com, qui tient un annuaire de « plus de 300 ressources d'IA » (modèles, agents, outils, jeux de données). C'est un répertoire de découverte, pas un logiciel, et il n'a pas été vérifié.</p>
+<h2>Volume</h2>
+<p>1 post publié dans l'intervalle, 1 retenu, 0 écarté — rétention de 100 %. Comme à l'accoutumée dans ce subreddit, le filtre n'a écarté aucun billet, l'essentiel des publications y présente un outil plutôt que de poser une question.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-10-31.html</link>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/macapps — dimanche 1er novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../macapps.xml" title="r/macapps">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/macapps — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Six messages publiés depuis la dernière édition, cinq retenus, un écarté (le mégathread mensuel de promotion).</li>
+<li>Deux applications nouvelles (Kakuchi, Findow), un logiciel libre en version majeure (CompressO 4.0), une mise à jour d'OpenVox et une nouvelle version d'ExtraDock.</li>
+<li>Le taux de rétention est élevé cette fois-ci (cinq sur six) : la fenêtre ne contient presque que des annonces de développeurs présentant leur propre outil, ce que le filtre retient par principe.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Kakuchi — des widgets que l'on décrit en une phrase (14,99 $, achat unique, logiciel propriétaire)</h3>
+<p>Kakuchi place des widgets sur le bureau, l'écran de verrouillage, la barre de menus et l'encoche du Mac. Il en fournit une cinquantaine prêts à l'emploi (lecture en cours, calendrier, météo, état du système, suivi d'usage d'un agent IA), mais la fonction intéressante est ailleurs : on décrit en langage naturel le widget que l'on veut, et l'application le construit, avec données, mise en page et apparence. Un site sans flux RSS peut être lu directement (« les derniers articles de tel site »), et l'on peut obtenir des choses non journalistiques : un compteur d'eau avec bouton d'incrément, un compte à rebours de voyage avec la météo du lieu d'arrivée, la liste de ses demandes de fusion GitHub.</p>
+<p>Ce que cela apporte concrètement : fabriquer son propre widget sans écrire une ligne de HTML, de CSS et de JavaScript, contrairement à Übersicht, qui reste gratuit et libre mais laisse tout à écrire. Le point technique à retenir est que la construction utilise l'abonnement IA déjà payé (Claude, Codex) ou une clé personnelle, ou encore un modèle local (Ollama, LM Studio) : l'application ne vend pas d'IA par-dessus. Les widgets Übersicht existants continuent d'ailleurs de fonctionner à côté.</p>
+<p>Prix : 14,99 $ une fois en tarif de lancement, annoncé comme devant passer à 24 $ ensuite, mises à jour à vie, garantie de remboursement de 14 jours. C'est un logiciel propriétaire, pas un logiciel libre, et il exige macOS 14 ou plus récent. L'IA n'est pas comprise dans le prix.<br />
+Lien : https://kakuchi.app (annonce : https://www.reddit.com/r/macapps/comments/1xk7u8t/)</p>
+<h3>Findow — rechercher, restaurer et agencer ses fenêtres (19,99 $, achat unique, logiciel propriétaire)</h3>
+<p>Findow regroupe dans une seule application de la barre de menus ce qui demande d'ordinaire trois ou quatre utilitaires : retrouver n'importe quelle fenêtre en tapant son titre, rappeler des espaces de travail enregistrés d'une seule touche, aligner les fenêtres en mosaïque, faire défiler les fenêtres en bandeau, et masquer l'écran pendant un appel. L'intérêt affiché est l'intégration : ces fonctions se connaissent entre elles, là où AltTab, Rectangle et consorts s'ignorent.</p>
+<p>Réserve à garder en tête : chaque fonction prise séparément est déjà couverte par du logiciel libre et gratuit (Rectangle, Loop, AeroSpace, yabai), et le développeur le reconnaît lui-même dans sa comparaison. Le prix se justifie donc seulement si l'on tient au regroupement.<br />
+Prix : 19,99 $ une fois pour un Mac, essai de 14 jours.<br />
+Lien : https://findow.app — la page répond (code HTTP 200) mais son contenu se construit en JavaScript, je n'ai pas pu y relire le prix : celui-ci provient de l'annonce du développeur.<br />
+Annonce : https://www.reddit.com/r/macapps/comments/1xk8mo9/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>CompressO 4.0 — compression de vidéos, d'images et d'audio (libre, AGPL-3.0, gratuit)</h3>
+<p>CompressO est une application de compression écrite en Rust, gratuite et publiée sous licence AGPL-3.0, disponible pour macOS, Windows et Linux. La version 4.0 est la plus grosse mise à jour depuis la création du projet. Elle ajoute :</p>
+<ul>
+<li>la compression vers une taille cible exacte : on indique le poids maximum souhaité, l'application choisit seule le meilleur réglage de qualité en dessous — utile pour les pièces jointes de courriel et les limites de taille des plates-formes ;</li>
+<li>une zone de dépôt dans la barre de menus, qui compresse sans ouvrir la fenêtre principale ;</li>
+<li>la surveillance de dossiers, avec compression automatique à l'arrivée d'un nouveau média ;</li>
+<li>des préréglages enregistrables par type de média, chacun avec son dossier de destination, utilisables partout ;</li>
+<li>la compression audio, l'extraction de la piste audio d'une vidéo, et de nouveaux formats (JPEG XL, HEIC, AVIF, BMP, TIFF, M4V, MTS, M2TS, TS) ;</li>
+<li>l'accélération matérielle par la carte graphique (le format AV1 devient beaucoup plus rapide) ;</li>
+<li>une taille d'application fortement réduite.</li>
+</ul>
+<p>Vérification du dépôt : <code>codeforreal1/compressO</code> — licence AGPL-3.0, 4 852 étoiles, dernière poussée le 29 octobre 2026. La version 4.0.0 est publiée depuis le 27 octobre 2026. L'application n'est pas notariée par Apple, ce que le projet signale lui-même ; l'installation par Homebrew (<code>brew install --cask codeforreal1/tap/compresso</code>) évite le blocage de macOS au premier lancement.<br />
+Lien : https://compresso.codeforreal.com — dépôt : https://github.com/codeforreal1/compressO<br />
+Annonce : https://www.reddit.com/r/macapps/comments/1xk93ap/</p>
+<h3>OpenVox 2.9.0 — synthèse vocale locale (gratuit, 19,99 $ pour la version Pro)</h3>
+<p>OpenVox est une boîte à outils vocale locale pour Mac à processeur Apple : synthèse vocale, clonage de voix, transcription, doublage et fabrication de livres audio, le tout sans envoi vers un service en ligne. La version 2.9.0 apporte trois choses : le moteur VoxCPM2, qui couvre trente langues en 48 kHz et sait cloner une voix dans une langue différente de celle de l'enregistrement de référence, en trois tailles de modèle selon la mémoire disponible ; Chatterbox V3 ; et onze nouvelles langues d'interface. Le portugais du Brésil a été retravaillé, les voix clonées sonnaient auparavant trop proches du portugais européen.</p>
+<p>Pour situer par rapport à l'outillage déjà en place ici : le service actuel de synthèse repose sur Kokoro en français. OpenVox n'est pas un logiciel libre, mais il n'a pas d'abonnement et sa version gratuite est utilisable (5 000 caractères par jour, trois clones de voix) ; la version Pro coûte 19,99 $ une seule fois, sans limite de caractères ni de clones. Il s'adresse aux Mac Apple Silicon sous macOS 15 ou plus récent.<br />
+Lien : https://openvoxai.com — App Store : https://apps.apple.com/us/app/openvox-ai-text-to-speech/id6758789314<br />
+Annonce : https://www.reddit.com/r/macapps/comments/1xk7g7b/</p>
+<h3>ExtraDock 5 — plusieurs docks sur plusieurs écrans (payant, logiciel propriétaire, environ 24 € à vie)</h3>
+<p>ExtraDock ajoute un dock sur chaque écran et permet de le configurer finement : icônes et couleurs, dock par espace de travail, affichage des seules applications en cours, masquage du Finder ou de la corbeille, widgets (duplication du dock système, étagère de fichiers, piles de dossiers), affichage automatique selon les écrans connectés. Il peut remplacer le dock de macOS ou le compléter. La version 5 est la version officielle pour macOS 26 et 27 ; la version 4 reste disponible pour macOS 12 à 15, et une même licence couvre les deux.</p>
+<p>À signaler clairement : c'est un logiciel propriétaire et payant. Le tarif affiché au moment de la rédaction est de 23,99 € (prix de lancement, au lieu de 39,99 €) pour une licence à vie sur un Mac, ou 14,99 € pour un an ; la formule « à vie » comprend un an de mises à jour, la reconduction des mises à jour étant facultative à 9,99 € par an. Pour le seul aperçu des fenêtres au survol du dock, des solutions libres existent (DockDoor, notamment).<br />
+Lien : https://extradock.app<br />
+Annonce : https://www.reddit.com/r/macapps/comments/1xk9i3y/</p>
+<h2>Volume</h2>
+<p>Six messages publiés dans l'intervalle, cinq retenus, un écarté : le mégathread mensuel « The App Pile — November 2026 », qui est un fil de promotion et n'annonce aucun logiciel. Les collectes des dernières vingt-quatre heures n'ont signalé aucune erreur.</p>
+<footer>Édition du dimanche 1 novembre 2026 — <a href="https://opware2000.github.io/veille/macapps.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

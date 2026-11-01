@@ -6,9 +6,76 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 05:51:57 +0100</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 05:54:41 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille ArtCraft — dimanche 1er novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-01.html</link>
+<guid isPermaLink="false">artcraft-2026-11-01</guid>
+<pubDate>Sun, 01 Nov 2026 05:54:41 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux posts seulement passent le filtre sur les dix-huit parus depuis la dernière édition : un lien de téléchargement du lanceur tombé en 404, et un projet libre tiers repéré par la communauté.</li>
+<li>Hors Reddit, l'information de la nuit : le lanceur ArtCraft est passé en v0.12.0 ce matin, et la v0.11.1 d'hier est la première version publiée qui corrige l'incident antivirus Windows d'« Update all ».</li>
+<li>Aucune nouvelle version d'ArtCraft lui-même, ni des applications de la suite, depuis le 31 octobre.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le téléchargement du lanceur en v0.10.0 ne répond plus (u/YuriViroj)</h3>
+<p>Un utilisateur signale un 404 sur l'adresse de l'installateur Windows <code>artcraft-launcher-0.10.0-windows-x64.msi</code>. La vérification sur le dépôt confirme que les pages de publication des versions v0.10.0 et v0.11.0 ont été retirées : les étiquettes Git subsistent, mais les fichiers ne sont plus proposés au téléchargement — l'adresse testée renvoie bien un 404. Ce n'est pas une panne, c'est la conséquence du retrait des deux versions mises en cause dans l'incident antivirus (voir « À signaler »). La version courante du lanceur est la v0.12.0. Toute personne ayant conservé un ancien lien doit passer par la page des publications du dépôt.<br />
+Source : https://www.reddit.com/r/ArtCraftAI/comments/1xk6pu0/ — u/YuriViroj.</p>
+<h3>Lanceur ArtCraft v0.12.0, publiée ce matin (hors Reddit, vérifié sur GitHub)</h3>
+<p>La v0.12.0 du lanceur a été publiée le dimanche 1er novembre à 05h17 (heure de Paris), avec des paquets pour Windows (x64, x86, arm64), macOS universel, Linux (AppImage, deb, rpm, flatpak, paquet Arch, plus une variante riscv64) et FreeBSD. Deux changements utiles : l'ajout de « Craft Anything » à la liste des applications du lanceur, et une chaîne de publication Flatpak par image OCI vers GHCR. La version précédente, v0.11.1, datait du 31 octobre à 07h25.</p>
+<p>Dépôt : https://github.com/storytold/craft-launcher</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p>Rien cette fois-ci : aucun logiciel additionnel, addon ni greffon pour les applications Craft n'a été annoncé dans l'intervalle.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>GrazySAI, clone libre de Paint Tool SAI 2 (u/Status-Mixture-3252)</h3>
+<p>Un membre du subreddit a signalé un projet découvert sur GitHub : GrazySAI, un programme de peinture et d'animation écrit en Rust, présenté comme un clone de Paint Tool SAI 2, avec brosses mélangeant la peinture, calques, chronologie d'animation, marionnette, 3D et prise en charge des tablettes graphiques. Il est sous licence MIT et se présente comme multiplateforme (Windows, Linux, FreeBSD). Chiffres relevés sur l'API GitHub : dépôt créé le 14 octobre 2026, 4 étoiles seulement, dernière publication v1.4.5 le 31 octobre — le projet est donc très jeune et confidentiel, contrairement aux applications ArtCraft. Il ne s'agit pas d'une application Craft et rien n'indique encore de lien avec ArtCraft, mais il relève du même mouvement de réimplémentations libres en Rust.<br />
+Source : https://www.reddit.com/r/ArtCraftAI/comments/1xkh4tn/ — u/Status-Mixture-3252.</p>
+<h3>Logiciels comparables</h3>
+<p>Rien de notable ces dernières vingt-quatre heures. La dernière version publiée de Krita AI Diffusion, vérifiée sur l'API GitHub, reste la 1.54.0-pre du 3 octobre 2026 (pré-version pour Krita 6) ; aucun changement notable non plus du côté d'ArtCraft lui-même, dont la dernière publication (v0.41.0) date du 26 septembre.</p>
+<h2>À signaler</h2>
+<h3>Incident antivirus Windows du lanceur, corrigé depuis hier</h3>
+<p>Le dépôt du lanceur documente un incident qui a affecté des utilisateurs Windows sous ArtCraft Launcher. Depuis la v0.10.0 (29 octobre, 19h47 UTC), la fonction « Update all » appliquée à deux applications système ou plus passait par un PowerShell élevé, masqué, exécutant un script encodé en Base64, qui lançait ensuite <code>msiexec</code> sur des paquets situés dans un dossier accessible en écriture. Cette combinaison — processus caché, demande d'élévation, commande encodée — correspond à un schéma classique de logiciel malveillant : un utilisateur a rapporté une détection comportementale Kaspersky (<code>PDM:Trojan.Win32.Generic</code>), qui a tué et supprimé <code>artcraft-launcher.exe</code> ainsi que son raccourci et son entrée de registre, l'obligeant à tout réinstaller. Rien n'indique une intention malveillante : le script ne lançait que des paquets vérifiés par leur empreinte, et Windows affichait bien une demande de permission. Les analyses de fichiers n'ont rien détecté (aucun moteur VirusTotal ne signale les versions concernées), ce qui s'explique : la détection est comportementale et n'a pas pu être reproduite par l'équipe, même après le correctif.</p>
+<p>La route fautive a été annulée (#1077), et la v0.11.1 du 31 octobre est la première version publiée qui contient cette annulation ; la v0.11.0 et la v0.10.0 ont été retirées. Deux réserves subsistent, telles que le dépôt les énonce : les rétrogradations d'applications système utilisent encore le même PowerShell élevé, et la correction ne répare pas les installations déjà endommagées. Le retour à un fonctionnement sûr a un coût : on retrouve une demande de permission par application au lieu d'une seule pour la série.</p>
+<p>Deux écarts à signaler honnêtement. D'une part, le document d'incident du dépôt indique encore qu'« aucune version publiée ne contient le correctif » : il a été rédigé le 31 octobre à 05h31 UTC, soit une heure avant la publication de la v0.11.1 qui le contient — il est donc en retard sur l'état réel. D'autre part, la détection n'ayant jamais été reproduite, on ne peut pas affirmer que le correctif la fasse disparaître.</p>
+<h2>Volume</h2>
+<p>18 posts publiés dans l'intervalle, 2 retenus, 16 écartés (soit un taux de rétention d'environ 11 %, conforme à ce que l'on observe sur ce subreddit un samedi : beaucoup de questions de support, de retours d'expérience et de demandes de fonctionnalités sans réalisation).</p>
+<p>Note technique : la dernière collecte a réussi (1er novembre, 03h44 UTC, aucune erreur) ; le journal contient 150 posts.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux posts seulement passent le filtre sur les dix-huit parus depuis la dernière édition : un lien de téléchargement du lanceur tombé en 404, et un projet libre tiers repéré par la communauté.</li>
+<li>Hors Reddit, l'information de la nuit : le lanceur ArtCraft est passé en v0.12.0 ce matin, et la v0.11.1 d'hier est la première version publiée qui corrige l'incident antivirus Windows d'« Update all ».</li>
+<li>Aucune nouvelle version d'ArtCraft lui-même, ni des applications de la suite, depuis le 31 octobre.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le téléchargement du lanceur en v0.10.0 ne répond plus (u/YuriViroj)</h3>
+<p>Un utilisateur signale un 404 sur l'adresse de l'installateur Windows <code>artcraft-launcher-0.10.0-windows-x64.msi</code>. La vérification sur le dépôt confirme que les pages de publication des versions v0.10.0 et v0.11.0 ont été retirées : les étiquettes Git subsistent, mais les fichiers ne sont plus proposés au téléchargement — l'adresse testée renvoie bien un 404. Ce n'est pas une panne, c'est la conséquence du retrait des deux versions mises en cause dans l'incident antivirus (voir « À signaler »). La version courante du lanceur est la v0.12.0. Toute personne ayant conservé un ancien lien doit passer par la page des publications du dépôt.<br />
+Source : https://www.reddit.com/r/ArtCraftAI/comments/1xk6pu0/ — u/YuriViroj.</p>
+<h3>Lanceur ArtCraft v0.12.0, publiée ce matin (hors Reddit, vérifié sur GitHub)</h3>
+<p>La v0.12.0 du lanceur a été publiée le dimanche 1er novembre à 05h17 (heure de Paris), avec des paquets pour Windows (x64, x86, arm64), macOS universel, Linux (AppImage, deb, rpm, flatpak, paquet Arch, plus une variante riscv64) et FreeBSD. Deux changements utiles : l'ajout de « Craft Anything » à la liste des applications du lanceur, et une chaîne de publication Flatpak par image OCI vers GHCR. La version précédente, v0.11.1, datait du 31 octobre à 07h25.</p>
+<p>Dépôt : https://github.com/storytold/craft-launcher</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p>Rien cette fois-ci : aucun logiciel additionnel, addon ni greffon pour les applications Craft n'a été annoncé dans l'intervalle.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>GrazySAI, clone libre de Paint Tool SAI 2 (u/Status-Mixture-3252)</h3>
+<p>Un membre du subreddit a signalé un projet découvert sur GitHub : GrazySAI, un programme de peinture et d'animation écrit en Rust, présenté comme un clone de Paint Tool SAI 2, avec brosses mélangeant la peinture, calques, chronologie d'animation, marionnette, 3D et prise en charge des tablettes graphiques. Il est sous licence MIT et se présente comme multiplateforme (Windows, Linux, FreeBSD). Chiffres relevés sur l'API GitHub : dépôt créé le 14 octobre 2026, 4 étoiles seulement, dernière publication v1.4.5 le 31 octobre — le projet est donc très jeune et confidentiel, contrairement aux applications ArtCraft. Il ne s'agit pas d'une application Craft et rien n'indique encore de lien avec ArtCraft, mais il relève du même mouvement de réimplémentations libres en Rust.<br />
+Source : https://www.reddit.com/r/ArtCraftAI/comments/1xkh4tn/ — u/Status-Mixture-3252.</p>
+<h3>Logiciels comparables</h3>
+<p>Rien de notable ces dernières vingt-quatre heures. La dernière version publiée de Krita AI Diffusion, vérifiée sur l'API GitHub, reste la 1.54.0-pre du 3 octobre 2026 (pré-version pour Krita 6) ; aucun changement notable non plus du côté d'ArtCraft lui-même, dont la dernière publication (v0.41.0) date du 26 septembre.</p>
+<h2>À signaler</h2>
+<h3>Incident antivirus Windows du lanceur, corrigé depuis hier</h3>
+<p>Le dépôt du lanceur documente un incident qui a affecté des utilisateurs Windows sous ArtCraft Launcher. Depuis la v0.10.0 (29 octobre, 19h47 UTC), la fonction « Update all » appliquée à deux applications système ou plus passait par un PowerShell élevé, masqué, exécutant un script encodé en Base64, qui lançait ensuite <code>msiexec</code> sur des paquets situés dans un dossier accessible en écriture. Cette combinaison — processus caché, demande d'élévation, commande encodée — correspond à un schéma classique de logiciel malveillant : un utilisateur a rapporté une détection comportementale Kaspersky (<code>PDM:Trojan.Win32.Generic</code>), qui a tué et supprimé <code>artcraft-launcher.exe</code> ainsi que son raccourci et son entrée de registre, l'obligeant à tout réinstaller. Rien n'indique une intention malveillante : le script ne lançait que des paquets vérifiés par leur empreinte, et Windows affichait bien une demande de permission. Les analyses de fichiers n'ont rien détecté (aucun moteur VirusTotal ne signale les versions concernées), ce qui s'explique : la détection est comportementale et n'a pas pu être reproduite par l'équipe, même après le correctif.</p>
+<p>La route fautive a été annulée (#1077), et la v0.11.1 du 31 octobre est la première version publiée qui contient cette annulation ; la v0.11.0 et la v0.10.0 ont été retirées. Deux réserves subsistent, telles que le dépôt les énonce : les rétrogradations d'applications système utilisent encore le même PowerShell élevé, et la correction ne répare pas les installations déjà endommagées. Le retour à un fonctionnement sûr a un coût : on retrouve une demande de permission par application au lieu d'une seule pour la série.</p>
+<p>Deux écarts à signaler honnêtement. D'une part, le document d'incident du dépôt indique encore qu'« aucune version publiée ne contient le correctif » : il a été rédigé le 31 octobre à 05h31 UTC, soit une heure avant la publication de la v0.11.1 qui le contient — il est donc en retard sur l'état réel. D'autre part, la détection n'ayant jamais été reproduite, on ne peut pas affirmer que le correctif la fasse disparaître.</p>
+<h2>Volume</h2>
+<p>18 posts publiés dans l'intervalle, 2 retenus, 16 écartés (soit un taux de rétention d'environ 11 %, conforme à ce que l'on observe sur ce subreddit un samedi : beaucoup de questions de support, de retours d'expérience et de demandes de fonctionnalités sans réalisation).</p>
+<p>Note technique : la dernière collecte a réussi (1er novembre, 03h44 UTC, aucune erreur) ; le journal contient 150 posts.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-10-31.html</link>
