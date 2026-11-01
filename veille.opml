@@ -17,5 +17,5 @@
     <outline text="Veille Clément Mondary" title="Veille Clément Mondary" type="rss" xmlUrl="https://opware2000.github.io/veille/mondary.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille numérique éducatif et RUPN" title="Veille numérique éducatif et RUPN" type="rss" xmlUrl="https://opware2000.github.io/veille/rupen.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille applications et logiciel libre" title="Veille applications et logiciel libre" type="rss" xmlUrl="https://opware2000.github.io/veille/avonture.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
-    <outline text="Veille veille pédagogique et scientifique" title="Veille veille pédagogique et scientifique" type="rss" xmlUrl="https://opware2000.github.io/veille/pedagogique.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille pédagogique et scientifique" title="Veille pédagogique et scientifique" type="rss" xmlUrl="https://opware2000.github.io/veille/pedagogique.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
   </body></opml>

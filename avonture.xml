@@ -3,7 +3,7 @@
 <channel>
 <title>Veille applications et logiciel libre</title>
 <link>https://opware2000.github.io/veille/index.html</link>
-<description>Veille quotidienne du subreddit applications et logiciel libre — éditions rédigées pour Nicolas.</description>
+<description>Veille quotidienne — applications et logiciel libre — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/avonture.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Sat, 31 Oct 2026 12:00:10 +0100</lastBuildDate>

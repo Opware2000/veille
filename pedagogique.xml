@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 <channel>
-<title>Veille veille pédagogique et scientifique</title>
+<title>Veille pédagogique et scientifique</title>
 <link>https://opware2000.github.io/veille/index.html</link>
-<description>Veille quotidienne du subreddit veille pédagogique et scientifique — éditions rédigées pour Nicolas.</description>
+<description>Veille quotidienne — pédagogique et scientifique — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/pedagogique.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Sun, 01 Nov 2026 10:29:50 +0100</lastBuildDate>
@@ -14,7 +14,7 @@
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-01.html</link>
 <guid isPermaLink="false">pedagogique-2026-11-01</guid>
 <pubDate>Sun, 01 Nov 2026 10:29:50 +0100</pubDate>
-<category>veille pédagogique et scientifique</category>
+<category>pédagogique et scientifique</category>
 <description><![CDATA[<h1>Veille pédagogique et scientifique — dimanche 1er novembre 2026</h1>
 <h2>Veille du 1er novembre 2026</h2>
 <h3>1. Informatique pédagogique / RUPN</h3>

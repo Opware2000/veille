@@ -3,7 +3,7 @@
 <channel>
 <title>Veille CTAN</title>
 <link>https://opware2000.github.io/veille/index.html</link>
-<description>Veille quotidienne du subreddit CTAN — éditions rédigées pour Nicolas.</description>
+<description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Sun, 01 Nov 2026 07:34:08 +0100</lastBuildDate>
