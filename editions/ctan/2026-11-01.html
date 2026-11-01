@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — dimanche 1er novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une seule annonce nouvelle depuis l'édition d'hier : le cœur LaTeX lui-même, dans sa livraison datée du 1er novembre 2026, accompagnée de LaTeX News 44 (dix pages).</li>
+<li>Deux points touchent des paquets que vous chargez : <code>subcaption</code> reçoit un correctif de secours et <code>listings</code> devient exploitable en PDF étiqueté.</li>
+<li>Aucun paquet de votre liste nBook3 n'a été mis à jour et rien n'exige d'adapter votre classe aujourd'hui : votre dépôt ne déclare pas d'instances de titres ni d'étiquetage PDF.</li>
+</ul>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><code>latex-base</code> version 2026-11-01 (licence LPPL 1.3c, https://ctan.org/pkg/latex-base) — l'annonce ne dit rien d'autre que « voir LaTeX News 44 » ; j'ai lu cette note de version, dont voici ce qui peut vous concerner. Le paquet <code>listings</code>, que <code>nBookSlides.cls</code> charge pour vos diaporamas de code, est désormais largement compatible avec l'étiquetage PDF : un style est chargé automatiquement après lui. Des points restent ouverts (les cadres, les échappements vers les mathématiques, <code>\lstinline</code> délimité par des accolades), et tout cela ne produit d'effet que dans un document commençant par <code>\DocumentMetadata</code> : votre classe ne l'utilise pas, il n'y a donc rien à changer, mais c'est une bonne nouvelle pour le jour où vous voudrez produire des PDF accessibles. Le paquet <code>subcaption</code>, également chargé par <code>nBook3.cls</code>, était touché par la correction d'une coquille vieille de trente ans dans <code>amsmath</code> (juin 2025) : les étiquettes <code>sub@</code> écrites dans le fichier <code>.aux</code> n'étaient plus produites et chaque <code>\subref</code> affichait « ?? » sans autre signal qu'un avertissement. <code>latex-firstaid</code> rétablit le comportement attendu quand les deux paquets sont chargés, ce qui est votre cas ; la correction de fond reste attendue du côté de <code>subcaption</code>, dont la maintenance est aujourd'hui peu active. Trois autres changements méritent une ligne. L'émulation d'<code>enumitem</code> fournie par le noyau (uniquement dans les documents étiquetés) a été étendue : la clé <code>labelindent</code> s'ajoute, les clés de marges acceptent la valeur « ! », et <code>\newlist</code> ne casse plus sur une liste <code>description</code> — vous chargez le véritable <code>enumitem</code>, ces corrections ne vous concernent donc pas. Les commandes de titre par gabarits, introduites en juin 2026, ont été refondues : les anciennes instances doivent être renommées avec le suffixe <code>-v1</code> (par exemple <code>display</code> devient <code>display-v1</code>) et seront retirées un jour. J'ai vérifié votre dépôt (commit <code>d80015b</code>) : aucune déclaration <code>\DeclareInstance</code> de titre, aucun <code>\DocumentMetadata</code>, vos titres passant encore par les mécanismes classiques — aucune adaptation à prévoir. Enfin le noyau gagne quelques commandes directement utiles à une classe maison : <code>\strongemph</code> (mise en évidence forte, avec ses déclarations <code>\DeclareStrongEmphSequence</code>, <code>\strongemreset</code> et <code>\strongemforce</code>), <code>\AddPunct</code> pour n'ajouter un point en fin de titre que s'il n'y en a pas déjà, <code>\IfTemplateExistsTF</code>, la syntaxe <code>+=</code> pour modifier une valeur de clé sans la connaître, et le raccourci Lua <code>luatexbase.new_luacommand</code>. S'y ajoutent, du côté des paquets de la catégorie « tools », des corrections à <code>afterpage</code> (des pages pouvaient disparaître autour d'une page trop grande), <code>showkeys</code>, <code>longtable</code> (compteur non incrémenté pour les tableaux sans légende, d'où des destinations dupliquées avec <code>hyperref</code>) et <code>bm</code>, qui prend en charge les polices mathématiques OpenType de <code>unicode-math</code>. Pour finir, la note annonce l'arrivée de <code>ltx-talk</code> (v0.6.10), classe de présentations accessible écrite pour remplacer <code>beamer</code> en conservant sa syntaxe : votre thème <code>nBookSlides</code> devra un jour choisir entre les deux, mais rien n'est urgent, la classe étant encore en cours de conception.</li>
+</ul>
+<h2>Volume</h2>
+<p>1 annonce publiée dans l'intervalle (depuis l'édition du 31 octobre, collecte du 1er novembre à 5h33 heure de Paris), 1 retenue, aucune écartée. Aucune erreur lors de la dernière collecte.</p>
+<footer>Édition du dimanche 1 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

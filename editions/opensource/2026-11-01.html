@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — dimanche 1er novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Neuf posts parus depuis la dernière édition, sept retenus : deux outils nouveaux (OpsCrew, Crestr), la reprise du projet Fonoster, une nouvelle bibliothèque d'interface pour le langage Pascal, et trois mises à jour substantielles (Foldergram, CompressO, l'éditeur PDF de word-sys). Deux posts écartés, faute d'annonce concrète.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpsCrew — déployer une application sur son propre serveur, sans dépendre d'un hébergeur</h3>
+<p>OpsCrew est un outil en ligne de commande, assisté par des agents, qui analyse le dépôt GitHub d'une application, en déduit le cadre de développement, les dépendances et les variables d'environnement, puis prépare le déploiement : configuration Docker, infrastructure décrite en OpenTofu ou Terraform, chaîne d'intégration continue, HTTPS, durcissement du serveur et pare-feu. L'application des changements d'infrastructure demande une validation explicite. Hetzner Cloud, DigitalOcean, un serveur privé existant, Portainer, Docker local, Cloudflare et GitHub Pages sont pris en charge ; AWS, Google Cloud, Azure et Contabo sont annoncés pour la suite.</p>
+<p>Le projet est très jeune : dépôt créé le 11 octobre 2026, deux étoiles seulement, dernière modification le 1er novembre 2026. Licence Apache-2.0. Le même auteur le présente ailleurs comme un greffon pour Claude Code, ce que le billet ne dit pas.</p>
+<p>Dépôt : https://github.com/softzer0/opscrew</p>
+<h3>Crestr — planificateur de randonnée libre pour le Royaume-Uni et l'Irlande</h3>
+<p>Son auteur, étudiant, l'a écrit à partir de seize ans parce que l'export des tracés au format GPX vers une montre est payant chez les plateformes grand public (AllTrails, Komoot). Crestr trace des itinéraires de marche avec accroche aux sentiers, enregistre des points d'intérêt, exporte en GPX ou GeoJSON, et propose une interface adaptée au téléphone. La version 1.0.0 vient d'être publiée.</p>
+<p>Licence MIT, 51 étoiles, dépôt créé le 21 décembre 2025 et dernière modification le 31 octobre 2026.</p>
+<p>Dépôt : https://github.com/abdlfc11/Crestr-Hiking-App</p>
+<h3>Fonoster — la voix programmable, reconstruite autour d'agents d'IA</h3>
+<p>Fonoster, alternative libre à Twilio, ressort après plusieurs années de silence, entièrement réécrit. La nouveauté du jour est le renversement de perspective : Fonoster sert désormais à créer un agent vocal auquel on attribue un numéro de téléphone, qui répond aux appels. On peut aussi construire ses propres applications vocales sur des flux WebSocket, en utilisant le protocole Fonoster ou les flux média de Twilio, apporter ses propres numéros et liaisons SIP, et récupérer les enregistrements d'appels et les notifications. L'auto-hébergement tient en un fichier Docker Compose, sans installation de Node.js. La documentation et la liste des fournisseurs de synthèse, de reconnaissance vocale et de modèles de langue restent à étoffer, ce que l'auteur reconnaît.</p>
+<p>Licence MIT, 8 158 étoiles, dernière modification le 1er novembre 2026 ; version v0.47.2 publiée le 31 octobre 2026.</p>
+<p>Dépôt : https://github.com/fonoster/fonoster — site : https://fonoster.com</p>
+<h3>Blaise Canvas UI — une bibliothèque d'interface, sans dépendance externe, pour le langage Pascal</h3>
+<p>Graeme Geldenhuys, auteur de fpGUI depuis vingt ans, présente une refonte complète plutôt qu'un portage : des composants dessinés par la bibliothèque elle-même, sans GTK, sans Qt, sans FreeType, en s'appuyant uniquement sur les interfaces du système. Le rendu est déterministe (les tests d'images de référence sont identiques bit à bit entre macOS arm64 et Linux x86-64), la mise à l'échelle fractionnaire est gérée, la police et le découpage du texte sont intégrés (tables Unicode 15.1, écritures de droite à gauche), et chaque composant se décrit dans un arbre sémantique relié à AT-SPI2 sous Linux et NSAccessibility sous macOS. Les intergiciels X11 et Wayland sont implémentés directement dans le langage ; un intergiciel Windows est écrit mais attend le générateur de code Windows du compilateur. Le rendu par processeur graphique (Metal en premier) est annoncé.</p>
+<p>Il faut le dire nettement : il s'agit d'une prévisualisation, pas d'une version publiée. Le dépôt doit être rendu public avec la version 0.1.0, sous peu selon l'auteur. Le développement est assisté par un agent d'IA, l'auteur précisant qu'il fixe les objectifs et les décisions de conception. Environ 37 000 lignes écrites dans le langage Blaise, plus de 200 tests automatisés.</p>
+<p>Annonce : https://github.com/graemeg/blaise/discussions/255 — projet Blaise : licence Apache-2.0, 305 étoiles, dépôt créé le 29 avril 2026, dernière modification le 1er novembre 2026.</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Foldergram 1.3.0</strong> — galerie de photos et de vidéos auto-hébergée qui présente simplement des dossiers locaux comme des profils, avec un défilement de type Instagram. La version 1.3.0, publiée le 31 octobre 2026, ajoute les carrousels et le partage de dossier. Licence AGPL-3.0, 594 étoiles, dernière modification le 31 octobre 2026. Dépôt : https://github.com/foldergram/foldergram</p>
+</li>
+<li>
+<p><strong>CompressO 4.0</strong> — compression de vidéos, d'images et de sons sous macOS, Windows et Linux, sans envoi en ligne. La version 4.0, publiée le 27 octobre 2026, apporte le choix de la taille cible, la surveillance de dossiers et la zone de dépôt. L'annonce ne détaillait pas ces fonctions, reprises du site officiel. Licence AGPL-3.0, 4 852 étoiles, dernière modification le 29 octobre 2026. Dépôt : https://github.com/codeforreal1/compressO</p>
+</li>
+<li>
+<p><strong>word-sys's PDF Editor 1.12.0</strong> — éditeur de PDF libre pour le poste de travail. Cette version ajoute un moteur de formulaires interactifs (champs de texte, cases à cocher, boutons radio, listes déroulantes, création et mise en page des champs, aplatissement définitif), la signature numérique au format PAdES avec certificats PKCS#12 et prise en charge des jetons matériels PKCS#11 pour cartes à puce et modules USB, l'horodatage cryptographique RFC 3161, et une censure définitive du contenu. Les paquets sont sur Flathub et dans les publications GitHub. Licence GPL-3.0, 136 étoiles, dernière modification le 31 octobre 2026. Dépôt : https://github.com/word-sys/word-sys-pdf-editor</p>
+</li>
+<li>
+<p>Hors Reddit, vérification faite auprès de l'API GitHub : opencode a publié la version <strong>2.2.5</strong> le 30 octobre 2026, aucun fil du subreddit n'en parlait.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>Neuf posts examinés, sept retenus, deux écartés, soit 78 % de rétention. La collecte n'a signalé aucune erreur (dernière passe le 1er novembre 2026 à 04h36 UTC). Les deux posts écartés sont un billet d'exercices sur le langage Go, sans annonce de logiciel, et un message de mécontentement sur l'usage des licences libres. Ce taux élevé ne traduit pas un filtre trop indulgent : sur un intervalle d'une journée, r/opensource est presque uniquement composé d'annonces, contrairement à son profil habituel où les discussions occupent la moitié du flux.</p>
+<footer>Édition du dimanche 1 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

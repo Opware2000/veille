@@ -6,9 +6,54 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 07:03:54 +0100</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 07:02:53 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/LaTeX — dimanche 1er novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-01.html</link>
+<guid isPermaLink="false">latex-2026-11-01</guid>
+<pubDate>Sun, 01 Nov 2026 07:02:53 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un seul élément notable depuis la dernière édition : <strong>retex</strong>, un moteur TeX réimplémenté en Rust, annoncé comme compatible LuaLaTeX au pixel près, plus rapide et doté de messages d'erreur lisibles.</li>
+<li>Le fil Reddit qui l'annonce a été retiré par la modération ; les faits ont donc été vérifiés à la source, sur crates.io et GitLab.</li>
+<li>Le second post de l'intervalle est une image sans source ni explication (« Fundamentos de modelacion ») : écarté.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>retex — un moteur TeX réécrit en Rust, compatible LuaLaTeX</h3>
+<p><strong>Ce que c'est.</strong> Un moteur de composition écrit de zéro en Rust, présenté comme une réimplémentation « clean-room » de LuaLaTeX : il lit les paquets et les polices d'une installation TeX Live existante et produit le même PDF. L'auteur affirme une identité au pixel près avec LuaLaTeX à 300 dpi sur un corpus de plus de 600 documents (articles arXiv et manuels de paquets CTAN). Il fonctionne comme remplaçant direct de <code>luatex</code> avec l'option <code>--compat=luatex</code>.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> Trois choses intéressent directement la rédaction de documents scientifiques. D'abord la vitesse : une passe prend entre le tiers et la moitié du temps de LuaLaTeX, et une compilation complète serait deux à trois fois plus rapide (médiane du corpus : 2,6×). L'exemple cité — compilation complète du manuel de PGF, 834 s avec LuaLaTeX contre 399 s avec retex — est cohérent avec cette fourchette. Ensuite les messages d'erreur, qui indiquent ce qui ne va pas et proposent une correction, ce qui est l'un des principaux reproches faits à TeX. Enfin les fonctions absentes de LuaLaTeX : prise en charge native du SVG en entrée et en sortie, export direct en HTML, Markdown, ODT et ODP (un diaporama Beamer ressort donc comme une présentation modifiable dans LibreOffice ou PowerPoint), et compilation en WebAssembly, utilisable dans un navigateur sans qu'aucun fichier ne quitte la machine. Une bibliothèque Python complète l'ensemble : rendu d'une page en image (tableau NumPy, PNG, objet Pillow), utile pour produire des figures ou faire vérifier un document en intégration continue.</p>
+<p><strong>Réserves à connaître.</strong> Le projet revendique une licence CC0-1.0 (domaine public), mais l'API GitLab n'identifie aucune licence pour le dépôt, alors qu'un fichier <code>LICENSE</code> y figure : écart à signaler, la déclaration crates.io restant la plus explicite. Le README précise aussi, sans détour, que le code a été entièrement produit par un grand modèle de langage, qu'il n'a donc pas d'auteur humain, et qu'il se veut une « traduction automatique » du travail de Knuth et des centaines de bénévoles qui ont suivi. La revendication de propreté juridique (aucun code d'une autre implémentation lu, hors sources du domaine public) est une affirmation de l'auteur, non un fait vérifié ici. Enfin, le fil Reddit d'annonce a été retiré par la modération du subreddit, ce qui est fréquent pour une auto-promotion, mais n'enlève rien à la vérification faite sur les dépôts. Le rythme de publication, lui, est très soutenu : la version 1.6.0 puis 1.7.0-beta.2 sont sorties le même jour, le 31 octobre.</p>
+<p><strong>Licence et état des dépôts (vérifiés le 1er novembre 2026).</strong><br />
+- Dépôt GitLab <code>severin-lemaignan/retex</code> : public, 6 étoiles, aucun fork, créé le 17 octobre 2026, dernière activité le 31 octobre 2026 ; licence non identifiée par l'API GitLab.<br />
+- Paquet crates.io <code>retex</code> : version courante 1.7.0-beta.2 (publiée le 31 octobre 2026), 260 téléchargements, licence déclarée CC0-1.0. La page web de crates.io ne répond pas à une requête scriptée (404), l'API, elle, répond normalement.<br />
+- Éditeur en ligne : https://severin-lemaignan.gitlab.io/retex (répond 200).<br />
+- Sources : https://gitlab.com/severin-lemaignan/retex — paquet : https://crates.io/crates/retex — fil d'origine : https://www.reddit.com/r/LaTeX/comments/1xk7hc6/</p>
+<h2>Volume</h2>
+<p>Deux posts publiés depuis la dernière édition, un retenu, un écarté, soit un taux de rétention de 50 %. Sur un fil d'entraide comme r/LaTeX, un taux de cet ordre est normal : l'essentiel du trafic est constitué de questions de dépannage ponctuelles, hors critère. La dernière collecte (1er novembre 2026, 4 h 37 UTC) n'a signalé aucune erreur et n'a rapporté aucun post nouveau depuis celle du 31 octobre ; le journal couvre trente posts, dont vingt-huit déjà traités.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un seul élément notable depuis la dernière édition : <strong>retex</strong>, un moteur TeX réimplémenté en Rust, annoncé comme compatible LuaLaTeX au pixel près, plus rapide et doté de messages d'erreur lisibles.</li>
+<li>Le fil Reddit qui l'annonce a été retiré par la modération ; les faits ont donc été vérifiés à la source, sur crates.io et GitLab.</li>
+<li>Le second post de l'intervalle est une image sans source ni explication (« Fundamentos de modelacion ») : écarté.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>retex — un moteur TeX réécrit en Rust, compatible LuaLaTeX</h3>
+<p><strong>Ce que c'est.</strong> Un moteur de composition écrit de zéro en Rust, présenté comme une réimplémentation « clean-room » de LuaLaTeX : il lit les paquets et les polices d'une installation TeX Live existante et produit le même PDF. L'auteur affirme une identité au pixel près avec LuaLaTeX à 300 dpi sur un corpus de plus de 600 documents (articles arXiv et manuels de paquets CTAN). Il fonctionne comme remplaçant direct de <code>luatex</code> avec l'option <code>--compat=luatex</code>.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> Trois choses intéressent directement la rédaction de documents scientifiques. D'abord la vitesse : une passe prend entre le tiers et la moitié du temps de LuaLaTeX, et une compilation complète serait deux à trois fois plus rapide (médiane du corpus : 2,6×). L'exemple cité — compilation complète du manuel de PGF, 834 s avec LuaLaTeX contre 399 s avec retex — est cohérent avec cette fourchette. Ensuite les messages d'erreur, qui indiquent ce qui ne va pas et proposent une correction, ce qui est l'un des principaux reproches faits à TeX. Enfin les fonctions absentes de LuaLaTeX : prise en charge native du SVG en entrée et en sortie, export direct en HTML, Markdown, ODT et ODP (un diaporama Beamer ressort donc comme une présentation modifiable dans LibreOffice ou PowerPoint), et compilation en WebAssembly, utilisable dans un navigateur sans qu'aucun fichier ne quitte la machine. Une bibliothèque Python complète l'ensemble : rendu d'une page en image (tableau NumPy, PNG, objet Pillow), utile pour produire des figures ou faire vérifier un document en intégration continue.</p>
+<p><strong>Réserves à connaître.</strong> Le projet revendique une licence CC0-1.0 (domaine public), mais l'API GitLab n'identifie aucune licence pour le dépôt, alors qu'un fichier <code>LICENSE</code> y figure : écart à signaler, la déclaration crates.io restant la plus explicite. Le README précise aussi, sans détour, que le code a été entièrement produit par un grand modèle de langage, qu'il n'a donc pas d'auteur humain, et qu'il se veut une « traduction automatique » du travail de Knuth et des centaines de bénévoles qui ont suivi. La revendication de propreté juridique (aucun code d'une autre implémentation lu, hors sources du domaine public) est une affirmation de l'auteur, non un fait vérifié ici. Enfin, le fil Reddit d'annonce a été retiré par la modération du subreddit, ce qui est fréquent pour une auto-promotion, mais n'enlève rien à la vérification faite sur les dépôts. Le rythme de publication, lui, est très soutenu : la version 1.6.0 puis 1.7.0-beta.2 sont sorties le même jour, le 31 octobre.</p>
+<p><strong>Licence et état des dépôts (vérifiés le 1er novembre 2026).</strong><br />
+- Dépôt GitLab <code>severin-lemaignan/retex</code> : public, 6 étoiles, aucun fork, créé le 17 octobre 2026, dernière activité le 31 octobre 2026 ; licence non identifiée par l'API GitLab.<br />
+- Paquet crates.io <code>retex</code> : version courante 1.7.0-beta.2 (publiée le 31 octobre 2026), 260 téléchargements, licence déclarée CC0-1.0. La page web de crates.io ne répond pas à une requête scriptée (404), l'API, elle, répond normalement.<br />
+- Éditeur en ligne : https://severin-lemaignan.gitlab.io/retex (répond 200).<br />
+- Sources : https://gitlab.com/severin-lemaignan/retex — paquet : https://crates.io/crates/retex — fil d'origine : https://www.reddit.com/r/LaTeX/comments/1xk7hc6/</p>
+<h2>Volume</h2>
+<p>Deux posts publiés depuis la dernière édition, un retenu, un écarté, soit un taux de rétention de 50 %. Sur un fil d'entraide comme r/LaTeX, un taux de cet ordre est normal : l'essentiel du trafic est constitué de questions de dépannage ponctuelles, hors critère. La dernière collecte (1er novembre 2026, 4 h 37 UTC) n'a signalé aucune erreur et n'a rapporté aucun post nouveau depuis celle du 31 octobre ; le journal couvre trente posts, dont vingt-huit déjà traités.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-10-31.html</link>

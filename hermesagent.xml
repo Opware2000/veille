@@ -6,9 +6,66 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 06:44:23 +0100</lastBuildDate>
+<lastBuildDate>Sun, 01 Nov 2026 06:41:55 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/hermesagent — dimanche 1er novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-01.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-01</guid>
+<pubDate>Sun, 01 Nov 2026 06:41:55 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux propositions retenues sur les 27 messages publiés depuis la précédente édition : une application iPhone gratuite pour piloter un serveur Hermes à distance (Hermes Paper 2.2), et LenoxVI, un projet libre de restitution audio multi-zones piloté par l'agent. Le reste du journal est occupé par des questions d'abonnement et de modèle local, qui ne sont pas des annonces.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Paper 2.2 — piloter son serveur Hermes depuis un iPhone</h3>
+<p>Application iOS native, client de l'API, du tableau de bord ou de l'interface web d'un serveur Hermes auto-hébergé : on colle l'adresse du serveur et l'application détermine seule à qui elle parle. Elle affiche le déroulement des commandes de l'agent, permet d'approuver une commande risquée depuis le téléphone (ou depuis l'écran verrouillé), laisse la réponse continuer sur le serveur quand on verrouille l'appareil, et gère les tâches planifiées (planification, mise en pause, exécution immédiate, historique). La version 2.2, publiée le 30 octobre, ajoute la connexion par identifiant et mot de passe, nécessaire quand l'hébergeur n'expose qu'une page de connexion web et pas de clé d'API.</p>
+<ul>
+<li>Prix : gratuite sur l'App Store (aucun achat intégré annoncé sur la fiche). Le magasin consulté est la Roumanie ; le tarif peut varier selon le magasin.</li>
+<li>Licence : application propriétaire, aucun dépôt public trouvé (recherche GitHub sur le nom : un seul résultat sans rapport). À distinguer des composants libres : c'est le client qui est fermé, pas Hermes.</li>
+<li>Contrainte : iOS 26.6 minimum.</li>
+<li>Fiche : https://apps.apple.com/ro/app/hermes-paper-harness/id6820495872</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xka2ck/hermes_paper_22_is_out/</li>
+</ul>
+<h3>LenoxVI — audio multi-zones pour un agent, avec micros déportés</h3>
+<p>Application bâtie sur Pipecat, présentée par son développeur : des nœuds micro ESP32 (ReSpeaker XVF3800) captent la voix à distance, et la réponse est diffusée vers n'importe quelle zone Sonos ou WiiM du logement. Le mot d'éveil reste exécuté sur le matériel local ; la reconnaissance vocale peut être locale (faster-whisper), hybride ou en ligne, avec repli automatique sur le moteur embarqué (faster-whisper + Kokoro) si le fournisseur tombe. Sonos baisse le volume pour la réponse puis reprend la musique. Panneau web complet, flashage du micrologiciel depuis Chrome ou Edge, mots d'éveil personnalisés via openWakeWord, sessions par zone, routage multi-agents (Hermes, OpenClaw, Nanobot). Annoncé comme fonctionnant aussi bien avec Home Assistant qu'avec un agent.</p>
+<ul>
+<li>Licence : Apache 2.0. Dépôt : https://github.com/LenoxSI/lenoxvi — 2 étoiles, créé le 19 octobre 2026, dernière poussée le 31 octobre 2026. Site : https://lenoxsi.com</li>
+<li>Prix : projet libre, mais le matériel est à acheter (nœuds micro ESP32, enceintes Sonos ou WiiM existantes). Prévu : mots d'éveil par zone et boîtiers micro encastrables imprimés en 3D.</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xkgi4n/lenoxvi_multizone_highfidelity_audio_for_your_ai/</li>
+</ul>
+<h2>Volume</h2>
+<p>27 posts publiés dans l'intervalle, 2 retenus, 25 écartés (7 %). Ce taux est nettement plus bas que d'ordinaire sur ce subreddit : la journée a été presque entièrement composée de questions de débutants, de plaintes sur les abonnements (ChatGPT, Claude, crédits supplémentaires, palier « ultra ») et de retours d'expérience sur des applications déjà connues, qui ne sont pas des annonces. Un premier bilan de la veille sur ce subreddit sera plus parlant sur la durée.</p>
+<h2>Note de méthode</h2>
+<p>Deux messages intéressants n'ont pas pu être exploités : « Building a flexible system around Hermes agent » (1xkalbu) décrit un plan de montage pour agent auto-hébergé, mais sans lien public exploitable dans le journal collecté ; « Less memory, more wiki » (1xko483) renvoie à un article de blog exposant une méthode, sans logiciel publié. Tous deux relèvent de la documentation, pas de l'annonce d'un outil, et sont donc écartés selon le critère de tri — ils sont signalés ici pour information.</p>
+<p>La collecte n'a signalé aucune erreur (dernière passe le 1er novembre à 05h35, heure de Paris). Le flux atom d'un message individuel reste inaccessible depuis ce serveur (réponse « network policy » de Reddit), l'information provient donc du journal et de l'API de l'App Store.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux propositions retenues sur les 27 messages publiés depuis la précédente édition : une application iPhone gratuite pour piloter un serveur Hermes à distance (Hermes Paper 2.2), et LenoxVI, un projet libre de restitution audio multi-zones piloté par l'agent. Le reste du journal est occupé par des questions d'abonnement et de modèle local, qui ne sont pas des annonces.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Paper 2.2 — piloter son serveur Hermes depuis un iPhone</h3>
+<p>Application iOS native, client de l'API, du tableau de bord ou de l'interface web d'un serveur Hermes auto-hébergé : on colle l'adresse du serveur et l'application détermine seule à qui elle parle. Elle affiche le déroulement des commandes de l'agent, permet d'approuver une commande risquée depuis le téléphone (ou depuis l'écran verrouillé), laisse la réponse continuer sur le serveur quand on verrouille l'appareil, et gère les tâches planifiées (planification, mise en pause, exécution immédiate, historique). La version 2.2, publiée le 30 octobre, ajoute la connexion par identifiant et mot de passe, nécessaire quand l'hébergeur n'expose qu'une page de connexion web et pas de clé d'API.</p>
+<ul>
+<li>Prix : gratuite sur l'App Store (aucun achat intégré annoncé sur la fiche). Le magasin consulté est la Roumanie ; le tarif peut varier selon le magasin.</li>
+<li>Licence : application propriétaire, aucun dépôt public trouvé (recherche GitHub sur le nom : un seul résultat sans rapport). À distinguer des composants libres : c'est le client qui est fermé, pas Hermes.</li>
+<li>Contrainte : iOS 26.6 minimum.</li>
+<li>Fiche : https://apps.apple.com/ro/app/hermes-paper-harness/id6820495872</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xka2ck/hermes_paper_22_is_out/</li>
+</ul>
+<h3>LenoxVI — audio multi-zones pour un agent, avec micros déportés</h3>
+<p>Application bâtie sur Pipecat, présentée par son développeur : des nœuds micro ESP32 (ReSpeaker XVF3800) captent la voix à distance, et la réponse est diffusée vers n'importe quelle zone Sonos ou WiiM du logement. Le mot d'éveil reste exécuté sur le matériel local ; la reconnaissance vocale peut être locale (faster-whisper), hybride ou en ligne, avec repli automatique sur le moteur embarqué (faster-whisper + Kokoro) si le fournisseur tombe. Sonos baisse le volume pour la réponse puis reprend la musique. Panneau web complet, flashage du micrologiciel depuis Chrome ou Edge, mots d'éveil personnalisés via openWakeWord, sessions par zone, routage multi-agents (Hermes, OpenClaw, Nanobot). Annoncé comme fonctionnant aussi bien avec Home Assistant qu'avec un agent.</p>
+<ul>
+<li>Licence : Apache 2.0. Dépôt : https://github.com/LenoxSI/lenoxvi — 2 étoiles, créé le 19 octobre 2026, dernière poussée le 31 octobre 2026. Site : https://lenoxsi.com</li>
+<li>Prix : projet libre, mais le matériel est à acheter (nœuds micro ESP32, enceintes Sonos ou WiiM existantes). Prévu : mots d'éveil par zone et boîtiers micro encastrables imprimés en 3D.</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xkgi4n/lenoxvi_multizone_highfidelity_audio_for_your_ai/</li>
+</ul>
+<h2>Volume</h2>
+<p>27 posts publiés dans l'intervalle, 2 retenus, 25 écartés (7 %). Ce taux est nettement plus bas que d'ordinaire sur ce subreddit : la journée a été presque entièrement composée de questions de débutants, de plaintes sur les abonnements (ChatGPT, Claude, crédits supplémentaires, palier « ultra ») et de retours d'expérience sur des applications déjà connues, qui ne sont pas des annonces. Un premier bilan de la veille sur ce subreddit sera plus parlant sur la durée.</p>
+<h2>Note de méthode</h2>
+<p>Deux messages intéressants n'ont pas pu être exploités : « Building a flexible system around Hermes agent » (1xkalbu) décrit un plan de montage pour agent auto-hébergé, mais sans lien public exploitable dans le journal collecté ; « Less memory, more wiki » (1xko483) renvoie à un article de blog exposant une méthode, sans logiciel publié. Tous deux relèvent de la documentation, pas de l'annonce d'un outil, et sont donc écartés selon le critère de tri — ils sont signalés ici pour information.</p>
+<p>La collecte n'a signalé aucune erreur (dernière passe le 1er novembre à 05h35, heure de Paris). Le flux atom d'un message individuel reste inaccessible depuis ce serveur (réponse « network policy » de Reddit), l'information provient donc du journal et de l'API de l'App Store.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — samedi 31 octobre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-10-31.html</link>
