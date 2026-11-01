@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Clément Mondary — dimanche 1er novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../mondary.xml" title="Clément Mondary">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Clément Mondary — dimanche 1er novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois billets publiés depuis l'édition précédente (31 octobre, 11h00 à 13h00 UTC) : extraction locale de PDF vers JSON, framework d'application pilotée par un agent, bureau complet sur téléphone Android. Les trois sont retenus.<br />
+La dernière collecte (1er novembre, 4h33 UTC) s'est faite sans erreur et n'a trouvé aucun billet publié après ceux-ci ; l'édition ne couvre donc que ces trois publications.</p>
+<h2>Documents, notes et bureautique</h2>
+<h3>LIFT</h3>
+<p>Modèle de vision de 9 milliards de paramètres qui prend un PDF ou une image et rend un objet JSON conforme au schéma qu'on lui fournit. Il n'y a pas de couche OCR à intercaler : le décodage est contraint par le schéma, la sortie est donc typée et valide, ou elle échoue franchement. Les pages sont converties en images (pypdfium2) puis envoyées au modèle en une seule requête, environ mille jetons par page, ce qui permet de rattacher correctement une valeur commencée page 3 et terminée page 7. Chaque fichier produit son <code>.json</code> et un <code>_metadata.json</code> (nombre de pages, jetons consommés, sortie brute en cas d'échec). Deux moteurs au choix : chargement des poids dans le processus (torch, environ 19 Go au premier téléchargement) ou serveur Docker vLLM dimensionné sur la mémoire de la carte, de la T4 à la H100, avec une fenêtre de 131 072 jetons ; une application Streamlit, Schema Studio, sert à mettre au point les schémas sur ses propres documents.<br />
+Pour vous, l'usage direct est de faire passer un dossier de scans ou de PDF — copies d'élèves, relevés, formulaires, bulletins — vers des données structurées exploitables dans un tableur, sans que les documents quittent la machine.<br />
+À savoir avant de s'engager : les types simples, les tableaux et les objets imbriqués passent, mais <code>enum</code>, <code>anyOf</code>, <code>oneOf</code>, <code>$ref</code> et <code>additionalProperties</code> sont écartés et la garantie de sortie valide tombe avec eux. Sur le benchmark publié par l'auteur (225 documents, environ 11 000 champs), LIFT atteint 90,2 % de précision par champ contre 81,5 % pour NuExtract3, mais seulement 20,9 % de documents entièrement corrects : excellent champ par champ, fragile dès qu'un document compte beaucoup de champs. Le modèle est également sensible à la longueur : un PDF de 60 pages représente déjà 50 000 jetons en une requête.<br />
+Licence : code en Apache-2.0, mais les poids relèvent d'une OpenRAIL-M modifiée (recherche, usage personnel, entreprises de moins de 5 M$ de financement ; concurrence directe avec l'API de l'éditeur interdite, licence commerciale à part) — c'est écrit dans le billet et c'est la vraie réserve du projet. Python 3.12 ou plus, GPU recommandé. Dépôt <code>datalab-to/lift</code> : 1 272 étoiles, dernière poussée le 22 octobre 2026 ; la dernière publication est la v0.1.2 du 5 octobre 2026, alors que le billet cite la 0.1.1 de juin.<br />
+<a href="https://mondary.design/2026/10/lift-vos-pdf-et-vos-scans-deviennent-du-json-sur-votre-propre-gpu/">LIFT</a></p>
+<h3>DEXTOP</h3>
+<p>Application Android qui transforme un téléphone en espace de travail de type bureau : fenêtres libres à redimensionner et déplacer, espaces de travail enregistrés puis restaurés d'un geste pour retrouver les mêmes applications dans la même disposition, surcouche de commandes accessible par un balayage à trois doigts (résolution, orientation, luminosité, volume, modes de saisie, casting), prise en charge d'une souris et d'un clavier physiques comme du curseur logiciel, clic droit, défilement à deux doigts et pincement. Un écran externe connecté est géré avec l'agencement entre écrans et le passage du pointeur de l'un à l'autre ; un indicateur peut afficher images par seconde, mémoire, batterie et consommation, et l'enregistrement vidéo peut se limiter au bureau plutôt qu'à tout le système.<br />
+L'intérêt pratique est de disposer d'un poste de travail mobile sans matériel supplémentaire : un téléphone ou un pliable branché sur un vidéoprojecteur ou un écran, et l'on dispose de plusieurs fenêtres côte à côte, ce qui reste rare dans une salle de classe. Sur les appareils pliables, la moitié supérieure tient le bureau pendant que la moitié inférieure devient clavier et pavé tactile.<br />
+La compatibilité est le point à nuancer, et l'auteur le dit : l'expérience la plus complète demande Samsung DeX ; les téléphones Android 11 et plus compatibles avec le mode bureau, dont les Pixel 8 et suivants, sont pris en charge, mais le comportement varie selon l'appareil, le micrologiciel et les accessoires.<br />
+Entièrement gratuit et open source sous GPL-3.0, sans abonnement. Dépôt <code>NarYuki/Dextop</code> : 1 081 étoiles, créé le 12 août 2026, dernière poussée le 31 octobre 2026.<br />
+<a href="https://mondary.design/2026/10/dextop-transformer-son-telephone-android-en-bureau-a-part-entiere/">DEXTOP</a></p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>AGENT-NATIVE</h3>
+<p>Framework TypeScript pour construire des applications où un agent et une interface React travaillent sur les mêmes actions et le même état. Le problème visé n'est pas le modèle mais le contrat entre l'agent et l'interface : plutôt que d'écrire deux fois chaque opération, on la déclare une fois avec <code>defineAction()</code> et elle réapparaît partout — hook React <code>useActionQuery</code>, outil d'agent, transport HTTP, commande en ligne de commande, outil MCP et outil A2A — avec le même schéma zod, la même validation et les mêmes permissions. L'état, métier comme interface, vit dans PostgreSQL via Drizzle (PGlite en local pour développer sans base à monter) ; l'interface écrit une clé de navigation à chaque changement de route et l'agent la lit avant d'agir, ce qui lui donne le contexte sans qu'on le rédige à la main ; les écritures de l'agent arrivent en SSE, avec un repli par interrogation périodique chez les hébergeurs sans état. Le framework se lit en trois couches : le socle (actions, base, authentification, exécution de l'agent), une boîte à outils d'éléments d'interface réutilisables, et une dizaine d'applications complètes forkables (enregistrement d'écran, tri de courrier, analytique, maquettes, poste de pilotage partagé). On démarre par <code>npx --yes @agent-native/core@latest create</code>, puis on greffe ce qui manque.<br />
+Pour votre usage, c'est un cadre crédible si vous ou vos élèves construisez une petite application où un agent doit agir sur des données réelles : le modèle reste au choix (OpenAI Agents, Claude Agent SDK, Vercel AI SDK, AG-UI ou le vôtre) et le SQL de l'agent est en lecture seule par défaut, les écritures passant par des actions typées.<br />
+Réserve de l'auteur, à reprendre telle quelle : dépôt né en mars 2026, déjà plus de 6 500 commits, documentation immense et interface de programmation qui bouge vite ; l'authentification et le multi-utilisateur demandent une vraie configuration. C'est un investissement, pas une installation.<br />
+Licence MIT. Dépôt <code>BuilderIO/agent-native</code> : 7 571 étoiles, créé le 12 mars 2026, dernière poussée le 1er novembre 2026.<br />
+<a href="https://mondary.design/2026/10/agent-native-le-framework-ou-lagent-et-linterface-partagent-le-meme-etat/">Agent-Native</a></p>
+<h2>Volume</h2>
+<p>3 billets publiés dans l'intervalle, 3 retenus, 0 écarté (aucun des trois ne tombait dans les catégories exclues : jeux, streaming, musique, gadgets, abonnements sans usage scolaire).</p>
+<footer>Édition du dimanche 1 novembre 2026 — <a href="https://opware2000.github.io/veille/mondary.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
