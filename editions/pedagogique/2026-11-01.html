@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille pédagogique et scientifique — dimanche 1er novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../pedagogique.xml" title="veille pédagogique et scientifique">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille pédagogique et scientifique — dimanche 1er novembre 2026</h1>
+<h2>Veille du 1er novembre 2026</h2>
+<h3>1. Informatique pédagogique / RUPN</h3>
+<p><em>(source imposée <strong>Korben</strong> : flux inchangé depuis le 30 octobre — deux tests de chargeurs UGREEN et un article partenaire Surfshark. <strong>Zéro item Korben.</strong> Les avis CERT-FR du 29 et du 30 octobre ont déjà tous été signalés, sauf un.)</em></p>
+<ul>
+<li><strong>CERT-FR — AVI-1426, multiples vulnérabilités dans Veeam Management Pack (publié le 30 oct. à 16 h 05)</strong> : seul avis neuf depuis le dernier passage. Veeam sauvegarde beaucoup de serveurs d'établissements et de collectivités ; à remonter si le rectorat ou la DSI s'appuie dessus. Gratuit. <a href="https://www.cert.ssi.gouv.fr/avis/CERTFR-2026-AVI-1426/">cert.ssi.gouv.fr</a></li>
+<li><strong>CNIL — webinaire « Outils de rejeu de session : la CNIL présente sa recommandation », 17 nov., inscriptions le 3 nov.</strong> : les outils de <em>session replay</em> enregistrent le déroulé d'une navigation (clics, saisies, parcours) et existent sur des sites grand public, parfois sur des ENT. La CNIL vient d'arrêter une recommandation sur le sujet : utile pour arbitrer ce qui est acceptable en établissement. Gratuit, en ligne. <a href="https://www.cnil.fr/fr/evenement/webinaire-recommandation-outils-rejeu-de-session">cnil.fr</a></li>
+</ul>
+<p><strong>2 nouveautés seulement cette semaine</strong> sur cette rubrique (silence de Korben, aucun avis CERT-FR inédit entre le 30 octobre et aujourd'hui).</p>
+<h3>2. IA pour le développement</h3>
+<ul>
+<li><strong>Mistral Large 4 (« le Chonk ») — poids ouverts publiés le 29 octobre sur Hugging Face</strong> (<code>mistralai/Mistral-Large-4-1T-A52B</code>) : ~1 000 Md de paramètres pour 52 Md actifs, variantes FP8 et NVFP4, contexte jusqu'à 1 M de jetons. Ce qui change par rapport au 27/10 (simple annonce) : les fichiers sont disponibles, sous licence « Mistral Ecosystem Open-Weight » (MIT modifiée — usage et fine-tuning libres, mais <strong>revendre de l'inférence en tant que service exige une licence commerciale séparée</strong>). Gratuit. <a href="https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B">huggingface.co</a></li>
+<li><strong>IBM — Granite Switch 4.1 (14-15 oct., Apache 2.0)</strong> : modèles modulaires 3B / 8B / 30B qui composent modèle de base + adaptateur de décision + adaptateur de sécurité + encodeur parole-texte vers <strong>un seul endpoint</strong>. Des GGUF existent pour llama.cpp et Ollama, donc testable sur Mac. Pédagogiquement, cela montre concrètement qu'un « modèle » est un assemblage. Gratuit, open source. <a href="https://huggingface.co/ibm-granite/granite-switch-4.1-30b">huggingface.co</a> · <a href="https://github.com/generative-computing/granite-switch">github.com</a></li>
+<li><strong>Codex CLI 0.166.0 (changelog officiel du 29 oct.)</strong> : reprise explicite d'une file d'attente (<code>queue and resume</code>), contrôles réseau du bac à sable, sélection de transcription entièrement au clavier, recherche intégrée. Le même jour, OpenAI <strong>double les quotas Work et Codex</strong> des offres Pro et Business Premium. Gratuit (client), quota selon l'abonnement. <a href="https://learn.chatgpt.com/docs/changelog">learn.chatgpt.com</a></li>
+<li><strong>opencode v2.2.5 — tag publié le 30 octobre à 23 h 17</strong> : version sortie sur GitHub, mais la page changelog ne détaille pas encore ses points saillants (le dernier contenu documenté reste la v2.2.4). À suivre plutôt qu'à déployer à l'aveugle. Gratuit, open source. <a href="https://github.com/anomalyco/opencode/releases">github.com</a></li>
+<li><strong>ChatGPT — bascule entre comptes sur iOS et Android (notes du 29 oct.)</strong> : deux comptes restent connectés en parallèle et se permutent sans déconnexion, chacun gardant conversations, mémoire et abonnement. Pratique pour séparer perso et pro. Gratuit. <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes">help.openai.com</a></li>
+</ul>
+<h3>3. IA et éducation</h3>
+<p><em>(source imposée <strong>ActuIA — IA dans l'éducation</strong> : <strong>rien de neuf depuis le 8 octobre</strong> — les brèves visibles s'arrêtent à Georgia Tech/Emory, ChatGPT for Teens et la Norvège, déjà signalées. Complété par des sources primaires.)</em></p>
+<ul>
+<li><strong>Nature — « Can maths survive AI? » : Terence Tao appelle à un monde « Maths 2.0 » (World View du 29 oct.)</strong> : les machines produisent des solutions en masse ; il plaide pour que la discipline valorise la compréhension humaine plutôt que le volume de démonstrations publiées. Transposable directement à l'évaluation et à l'intégrité académique au lycée. Gratuit. <a href="https://www.nature.com/articles/d41586-026-03389-1">nature.com</a></li>
+<li><strong>Nature — « AI doctors' orders come with a sky-high bill » (Research Highlight, n° 8138 du 29 oct.)</strong> : les grands modèles prescrivent <strong>plus de tests, de références et de médicaments</strong> que les médecins humains, ce qui augmente le coût des soins. Support simple pour parler du biais « exhaustif » des IA. Gratuit. <a href="https://www.nature.com/articles/d41586-026-03320-8">nature.com</a></li>
+<li><strong>IH2EF — « Piloter une stratégie IA en EPLE », formation de formateurs, le 16 novembre 2026 à 16 h</strong> ; la session « collection académique » suit le 4 février 2027. Volet encadrement du dispositif national. Gratuit pour les personnels. <a href="https://www.ih2ef.gouv.fr/ia-et-education-le-rapport-du-senat">ih2ef.gouv.fr</a></li>
+</ul>
+<p><strong>3 nouveautés seulement dans cette rubrique</strong>, faute de publication récente côté ActuIA.</p>
+<h3>4. Python pour l'enseignement</h3>
+<ul>
+<li><strong>Astral — « Bringing uv and ty together » (13 oct.)</strong> : intégration expérimentale entre le gestionnaire de paquets <strong>uv</strong> et le vérificateur de types <strong>ty</strong> ; support de premier ordre des <strong>scripts</strong> Python en ligne de commande comme dans l'éditeur, plus une commande unifiée <code>uv check</code>. Un élève qui écrit un seul <code>.py</code> gagne typage et vérification sans structure de projet. Gratuit, open source. <a href="https://astral.sh/blog/uv-ty-integration">astral.sh</a></li>
+<li><strong>Python 3.15 — interpréteur « à queue d'appels » dans les binaires Windows officiels</strong> : construit avec Visual Studio 2026 (MSVC 18), <strong>15 à 20 % plus rapide</strong> que l'interpréteur switch-case sur x86-64 (jusqu'à 40 % sur de petits scripts Python pur) ; la même version apporte <code>abi3t</code>, ABI stable pour la compilation <em>free-threaded</em>. Concret à montrer en NSI sur poste Windows. Gratuit. <a href="https://docs.python.org/3/whatsnew/3.15.html">docs.python.org</a></li>
+<li><strong>Real Python — « Learn With Mentor AI : A Guided Journey Through Async Python » (29 oct.)</strong> : parcours d'apprentissage guidé par questions sur l'asynchrone. Utile avant d'aborder <code>async</code>/<code>await</code>. Gratuit. <a href="https://realpython.com">realpython.com</a></li>
+<li><strong>State of Django 2026 (JetBrains + Django Software Foundation)</strong> : près de <strong>3 500 réponses</strong>, plus de 40 pays ; PostgreSQL choisi par 76 à 79 % des répondants depuis cinq ans, <strong>43 % déjà en Django 6.0</strong>. Chiffres utilisables pour situer un atelier web en SNT/NSI. Gratuit. <a href="https://realpython.com/python-news-october-2026">realpython.com</a></li>
+<li><strong>Python 3.16.0a2 annoncée pour le 10 novembre 2026</strong> (PEP 826) : la première alpha est sortie le 13 octobre ; gel des fonctionnalités en mai 2027, version finale en octobre 2027. À retenir pour planifier vos mises à jour. Gratuit. <a href="https://hugovk.dev/next-release">hugovk.dev</a></li>
+</ul>
+<h3>5. Sciences</h3>
+<p><em>(source imposée <strong>Pour la Science</strong> : RSS inchangé depuis le 26 octobre, mais ses pages de rubrique ont bougé — deux articles neufs ci-dessous. Complété par Nature et ScienceDaily.)</em></p>
+<ul>
+<li><strong>Pour la Science — « Neurotechnologies : le droit actuel suffit-il à protéger notre cerveau ? »</strong> : entretien avec la juriste Sonia Desmoulin (États généraux de la bioéthique 2026) — faut-il de nouveaux « neurodroits » ? En complément, <strong>« Implants cérébraux : comment préserver l'intégrité mentale ? »</strong> : stimulation profonde, interfaces de communication, confidentialité et consentement. Excellent pour l'enseignement scientifique. Gratuit (articles en partie abonnés). <a href="https://www.pourlascience.fr/sr/etats-generaux-de-la-bioethique/neurotechnologies-le-droit-actuel-suffit-il-a-proteger-notre-cerveau-29711.php">pourlascience.fr</a></li>
+<li><strong>Nature — <em>Megacauda sungei</em>, précurseur des mammifères vieux de 165 Ma (numéro du 29 oct.)</strong> : semi-aquatique et fouisseur comme l'ornithorynque, mais surtout doté d'un <strong>voile du palais et de muscles constricteurs</strong> d'après la conservation de sa gorge — la machinerie qui permet de téter et d'avaler sans fausse route, donc bien antérieure aux mammifères. <a href="https://www.nature.com/articles/s41586-026-11107-0">nature.com</a></li>
+<li><strong>Nature News — « A single antimatter particle in a cage… » (29 oct.)</strong> : des physiciens ont piégé et refroidi <strong>un positron pendant des mois</strong> pour mesurer son moment magnétique avec une précision extrême. Directement utilisable sur l'antimatière et la mesure. <a href="https://www.nature.com/articles/d41586-026-03342-2">nature.com</a></li>
+<li><strong>Nature — « Vast new fossil record challenges story of Earth's 'big five' mass extinctions » (29 oct.)</strong> : un registre fossile bien plus vaste bouscule le récit classique des cinq grandes extinctions. À raccrocher à la géologie et à l'évolution. <a href="https://www.nature.com/articles/d41586-026-03316-4">nature.com</a></li>
+<li><strong>Nature — « Glacial CO2 drawdown by plankton metabolic balance »</strong> : en eaux froides, la respiration du plancton ralentit plus que la photosynthèse, donc plus de carbone coule vers l'océan profond ; l'effet expliquerait <strong>environ un quart</strong> de la chute du CO₂ lors de la dernière glaciation. Idéal pour le cycle du carbone. <a href="https://www.nature.com/subjects/climate-sciences">nature.com</a></li>
+<li><strong>Nature Research Highlight — « Surprise! White dwarf stars come in a rainbow of colours »</strong> : malgré leur nom, des naines blanches proches sont rose, jaune ou autre. Détail d'astrophysique facile à caser. <a href="https://www.nature.com/articles/d41586-026-03319-1">nature.com</a></li>
+<li><strong>ScienceDaily (28 oct.) — les salamandres noires et jaunes d'Europe fluorescent en vert et cyan sous ultraviolets</strong> : la fluorescence, longtemps attribuée à des espèces exotiques, existe chez un amphibien commun d'Europe. Accroche expérimentale (lampe UV) sur les interactions lumière-matière du vivant. <a href="https://www.sciencedaily.com/news/plants_animals/nature">sciencedaily.com</a></li>
+<li><strong>ScienceDaily (27 oct.) — les araignées auraient des phases proches du sommeil paradoxal</strong> : stades de sommeil distincts et mouvements oculaires comparables au REM humain (étude de Bonn). Pour discuter de l'analogie entre modèles animaux et sommeil humain. <a href="https://www.sciencedaily.com/news/plants_animals/nature">sciencedaily.com</a></li>
+</ul>
+<p><strong>À retenir</strong><br />
+<strong>Mistral Large 4 passe en poids ouverts</strong> (29 oct., licence avec clause de revente à surveiller) et <strong>l'unique avis de sécurité neuf est Veeam Management Pack</strong> (AVI-1426). Côté classe, les articles de Pour la Science sur les <strong>neurodroits</strong> tombent dans l'actualité des États généraux de la bioéthique, et <em>Megacauda</em> comme le plancton glaciaire sont réutilisables tels quels. Deux rubriques restent sous le seuil : <strong>Informatique pédagogique/RUPN (2 items)</strong> et <strong>IA et éducation (3 items)</strong> — Korben est muet depuis le 30 octobre et ActuIA-éducation depuis le 8 octobre.</p>
+<p>[[audio_as_voice]]</p>
+<footer>Édition du dimanche 1 novembre 2026 — <a href="https://opware2000.github.io/veille/pedagogique.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
