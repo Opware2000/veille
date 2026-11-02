@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — lundi 2 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un seul élément notable depuis la dernière édition : <strong>plainmath</strong>, un paquet qui transforme des phrases en anglais courant en mathématiques composées, présenté par son auteur avec une documentation détaillée.</li>
+<li>Réserve importante : aucune adresse de téléchargement n'accompagne l'annonce et le paquet est absent de CTAN ; en l'état, il n'est pas installable.</li>
+<li>Les deux autres posts de l'intervalle sont des questions ponctuelles, hors critère.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>plainmath — écrire des mathématiques en anglais courant</h3>
+<p><strong>Ce que c'est.</strong> Un paquet LaTeX qui prend une phrase en anglais et la compose en mathématiques : <code>\plainmath{integral from 0 to infinity of x^2 e^(-x) dx}</code>, <code>\plainmath{sum of 1 over i^2 for i = 1 to infinity = pi^2 over 6}</code>. Les commandes se raccourcissent par <code>\plainmathalias</code> (réduire <code>infinity</code> à <code>inf</code>, <code>over</code> à <code>ov</code>), et l'auteur annonce plus de 750 cas couverts : analyse, limites, sommes, ensembles, logique, physique, matrices, probabilités, unités et chimie (<code>chem(2 H2 + O2 -&gt; 2 H2O)</code>).</p>
+<p><strong>Ce que ça apporte concrètement.</strong> L'intérêt réel n'est pas de remplacer LaTeX par de l'anglais, mais d'accélérer la saisie de formules longues et de rendre un document lisible par un débutant. L'auteur chiffre le gain sur un exemple : une démonstration écrite en clair ferait 465 caractères contre 714 en syntaxe classique. Le dispositif est plus complet qu'une simple table de correspondances : <code>\plainmathword</code> définit une formule comme un mot, <code>\plainmathfunction{sum}{\sum_{?1=?2}^{?3}}</code> crée une fonction à arguments, <code>\begin{plainmathblock}</code> compose un calcul ligne à ligne (alignement automatique sur les relations, saut de ligne implicite), les matrices s'écrivent <code>matrix(1,2;3,4)</code>, les parenthèses s'ajustent seules à la hauteur du contenu. Les réglages sont nombreux (<code>mode</code>, <code>frac</code>, <code>limits</code>, <code>connectives</code>, styles d'ensembles, de vecteurs, de probabilités, d'exposants) et modifiables globalement, par groupe ou appel par appel, avec <code>\plainmathsetup</code> et <code>\plainmath[...]</code>. Le paquet demande LaTeX 2021-06 ou plus récent, <code>mathtools</code> et <code>amssymb</code>, et fonctionne avec pdfLaTeX, XeLaTeX, LuaLaTeX et le latex classique.</p>
+<p><strong>Réserve : rien à installer pour l'instant.</strong> L'annonce ne contient aucun lien de téléchargement, ni dépôt, ni page de paquet, et <code>https://ctan.org/json/2.0/pkg/plainmath</code> répond « Not found » le 2 novembre 2026 ; une recherche dans l'API GitHub ne renvoie aucun dépôt correspondant. Le second auteur cité n'a plus de compte Reddit. Il faut donc lire cette annonce comme une démonstration de faisabilité, pas comme un outil disponible : impossible, en l'état, d'en vérifier la licence ni de l'essayer. L'usage annoncé — produire du LaTeX à partir de dictée vocale, notamment — reste une hypothèse de lecteur, non une fonction livrée.</p>
+<h2>Volume</h2>
+<p>Trois posts publiés depuis la dernière édition, un retenu, deux écartés, soit un taux de rétention de 33 %. Les deux posts écartés sont une question de goûts typographiques sur les polices sérif de TeX Live, sans contenu réutilisable, et une demande d'aide pour dessiner un entrelacs en TikZ sans code fourni. Sur un forum d'entraide comme r/LaTeX, un taux de cet ordre est normal : l'essentiel du trafic est constitué de questions de dépannage ponctuelles, hors critère. La dernière collecte (2 novembre 2026, 4 h 15 UTC) n'a signalé aucune erreur.</p>
+<footer>Édition du lundi 2 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

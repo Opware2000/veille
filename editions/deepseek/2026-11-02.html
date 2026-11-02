@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — lundi 2 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucun nouveau modèle : le dépôt Hugging Face de DeepSeek n'a rien publié depuis le 17 octobre (V4.1-Flash-1017), et la page officielle des tarifs ne mentionne toujours que <code>deepseek-flash</code> et <code>deepseek-v4-pro</code>. Les deux messages qui croient déceler un modèle « en test » ou réclament une version 4.1 Pro restent des impressions sans élément vérifiable.</li>
+<li>Le fil du moment est un incident : la génération s'arrête sur un message de « limite de longueur » et le bouton « Continuer » ne répond plus, y compris dans des conversations neuves. Cinq messages indépendants le décrivent, sans confirmation ni correctif annoncé côté DeepSeek.</li>
+<li>Deux mesures de coût à retenir : environ 0,76 dollar pour une scène Three.js complète avec Flash 4.1 contre 28,27 dollars avec Opus 5.5 chez un utilisateur, et 9 milliards de jetons pour 67 dollars chez un autre. Ces chiffres sont rapportés par leurs auteurs, pas audités.</li>
+</ul>
+<h2>Modèles et poids</h2>
+<p>Rien de nouveau, et c'est un résultat vérifié : la liste des modèles publiés par <code>deepseek-ai</code> sur Hugging Face s'arrête à <code>DeepSeek-V4.1-Flash-1017</code> (créé le 17 octobre 2026, 2,1 millions de téléchargements pour <code>DeepSeek-V4.1-Flash</code>), et la page officielle « Models &amp; Pricing » de la documentation DeepSeek donne toujours les mêmes deux entrées : <code>deepseek-flash</code> servi par DeepSeek-V4.1-Flash-1017, et <code>deepseek-v4-pro</code> servi par DeepSeek-V4-Pro-0813. Les deux modèles annoncent une fenêtre de contexte de 1 million de jetons et une sortie maximale de 384 000 jetons ; le mode réflexion est activé par défaut, la vision n'existe que sur Flash.</p>
+<p>Un point de nomenclature utile, documenté par la même page : les noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code> restent acceptés par l'API, mais les modèles correspondants sont retirés — les requêtes sont servies par V4.1-Flash-1017 et facturées au tarif Flash.</p>
+<p>Les messages « New model, new update!? » (1xl5li0, différence de mise en forme et d'usage des emoji) et « Any updates about 4.1 Pro? » (1xllanm, sans contenu) ne sont donc appuyés par aucune publication officielle : écartés faute d'élément vérifiable, mais la vérification a été faite.</p>
+<h2>Prix, accès et quotas</h2>
+<ul>
+<li><strong>Facturation nouvelle des outils de recherche, côté officiel.</strong> La page « Models &amp; Pricing » annonce que les API Search et Fetch, autonomes, sont facturées 0,75 dollar pour 1 000 requêtes réussies à partir du 1er novembre 2026 à 00h00 heure de Pékin. Jusqu'à cette date, les appels d'outils côté serveur passés par DeepSeek Harness, Claude Code ou Codex étaient gratuits. C'est le changement d'accès concret de la période pour un usage en agent, et il ne vient pas de Reddit mais de la documentation éditeur.</li>
+<li><strong>Grille en vigueur, pour mémoire</strong> (par million de jetons, heures pleines 01h-04h et 06h-10h UTC du lundi au vendredi hors jours fériés chinois, heures creuses à moitié prix) : Flash — 0,003 dollar en entrée avec cache atteint et 0,15 dollar sans cache en heures creuses, 0,6 dollar en sortie ; Pro — 0,022 / 0,66 / 1,98 dollar. Limite de simultanéité : 2 500 requêtes pour Flash, 500 pour Pro.</li>
+<li><strong>Comparaison de quotas et de coût réel (1xl04of, rapport d'utilisateur).</strong> L'auteur indique avoir consommé 9 milliards de jetons pour 67 dollars via l'API DeepSeek sur le mois, environ deux tiers de ce trafic tombant dans la fenêtre de remise, et oppose cela au quota de son abonnement GLM Pro v2 (60 millions de jetons par tranche de 5 heures, 1,2 milliard par mois, plafond qui se déclenche selon lui quel que soit le comptage annoncé). Il juge V4.1 Flash « presque aussi bon » que GLM 5.3 complet et plus rapide. Aucun de ces chiffres n'est vérifiable depuis l'extérieur : ce sont des relevés personnels, cohérents avec la grille officielle mais non contrôlables.</li>
+<li>Un opérateur tiers (1xkxchs) présente une capture d'écran de sa grille tarifaire pour un service d'API DeepSeek et demande des retours. Le service n'est pas nommé et la grille n'est lisible que dans l'image : mentionné pour mémoire, aucun élément exploitable n'a pu être vérifié.</li>
+</ul>
+<h2>Intégrations et outils tiers</h2>
+<ul>
+<li><strong>deepseek-desktop-linux</strong> (<code>barunespadhy/deepseek-desktop-linux</code>, 1xll0ud) : application de bureau Linux qui enveloppe la version web et le harness, avec mise à jour depuis l'interface, réglages d'apparence (rayon des coins, CSS personnalisé) et partage du dossier <code>~/.dsh</code> avec l'interface en ligne de commande, de sorte que les sessions sont communes aux deux. D'après l'API GitHub : dépôt créé le 1er novembre 2026, 0 étoile, aucun fork, dernier envoi le 1er novembre à 23h05 UTC, langage principal Python, <strong>licence non déclarée</strong> (GitHub ne renvoie aucune licence, ce qui interdit de conclure à un usage libre). La seule publication est la version 0.1.0 du 2 novembre, avec trois paquets d'environ 250 à 300 Mo (.deb, .rpm, .tar.gz).</li>
+<li><strong>AgenC Core</strong> (<code>tetsuo-ai/agenc-core</code>), cité en transparence par l'auteur de la comparaison de coûts : harness en terminal sous licence MIT, 101 étoiles, 18 forks, dernier envoi le 1er novembre 2026. Le dépôt se présente comme un cadre d'orchestration destiné à « multiplier la capacité d'un modèle par dollar d'inférence ».</li>
+</ul>
+<h2>Méthodes et retours d'expérience</h2>
+<ul>
+<li><strong>Comparer les coûts à travail égal, plutôt que le prix au jeton (1xkz302).</strong> L'auteur donne aux deux modèles la même consigne — une colonie minière procédurale en Three.js, tunnels, wagonnets, four, cycle jour/nuit, sans ressource externe — avec le même effort maximal, puis relève le coût rapporté par chaque harnais : au moins 0,763 dollar pour DeepSeek Flash 4.1 via l'API directe en heures creuses, contre 28,27 dollars pour Opus 5.5, ce dernier calculé à partir de l'usage de jetons journalisé, cache et réflexion compris. Deux réserves d'honnêteté : ce sont deux montages différents (AgenC Core d'un côté, Claude Code de l'autre), donc la comparaison porte sur les ensembles et non sur les seuls modèles ; et le chiffre DeepSeek provient du compteur du harnais, pas d'une facture. La méthode reste reproductible et c'est elle qui est utile : même invite, même effort, coût mesuré des deux côtés.</li>
+<li><strong>Se servir de la fenêtre d'heures creuses comme d'un levier tarifaire</strong> revient dans les deux messages précédents : les heures pleines sont limitées à 01h-04h et 06h-10h UTC du lundi au vendredi, tout le reste étant à moitié prix. Pour un usage en lot la nuit ou le week-end, l'écart est du simple au double.</li>
+</ul>
+<h2>Volume</h2>
+<p>26 posts publiés dans l'intervalle (du 1er novembre 06h29 au 2 novembre 03h02 UTC), 4 retenus, 22 écartés, soit un taux de rétention de 15 %. Le taux est faible mais conforme à la nature du subreddit, qui publie surtout des questions de dépannage, des plaintes et des rapports d'incident : les messages écartés les plus nombreux concernent l'incident de « limite de longueur » décrit en tête d'édition, des demandes de conseil de fournisseur et des images. La collecte du 2 novembre à 04h17 UTC s'est déroulée sans erreur (<code>meta.json</code> : <code>errors</code> vide).</p>
+<footer>Édition du lundi 2 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
