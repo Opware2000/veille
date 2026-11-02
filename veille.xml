@@ -6,9 +6,42 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 02 Nov 2026 06:26:39 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 06:37:17 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/vibecoding — lundi 2 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-02.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 06:37:17 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Fenêtre pauvre en logiciels : sur vingt-deux messages parus depuis la dernière édition, deux seulement annoncent un outil utilisable, le reste étant des jeux, des captures de progrès personnels et des questions sur les limites d'abonnement. Le fait notable du jour est la libération du code de Nyx Player, lecteur IPTV jusque-là propriétaire, publié en GPL-3.0 le même jour que sa version Android (9 % de rétention, très en dessous de la moyenne du subreddit, mais conforme à ce qu'on observe les lendemains de week-end de game jam).</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Nyx Player — lecteur IPTV libre pour Windows, Android et Android TV</h3>
+<p>Application de lecture d'un abonnement IPTV personnel au format Xtream Codes : elle transforme la liste brute de flux en bibliothèque présentable (affiches, résumés et notes récupérés chez TMDB), ajoute un guide des programmes et synchronise le compte entre les appareils. L'application ne fournit aucun contenu, elle lit l'abonnement apporté par l'utilisateur ; ni publicité ni revente.</p>
+<p>Ce qui est nouveau, c'est le passage à la version 0.8.0 — arrivée des versions Android téléphone et Android TV, jusque-là limitées à Windows — et surtout la libération du code, annoncée dans le même message. L'auteur indique ne pas être développeur professionnel et avoir construit l'application presque entièrement avec des agents de codage assisté.</p>
+<p>Licence : GPL-3.0. Gratuit, sans publicité. Source : https://github.com/kunai974/nyx-player (dépôt créé le 1er novembre 2026, 11 étoiles, dernière mise à jour le 1er novembre 2026). Site de téléchargement : https://nyxplayer.app</p>
+<h3>TizenPowerSync — pilotage de l'alimentation d'un téléviseur Samsung sous Linux</h3>
+<p>Utilitaire Python qui met en veille et rallume un téléviseur Samsung utilisé comme moniteur d'ordinateur, en s'appuyant sur HDMI-CEC et sur l'interface WebSocket du système Tizen, et en suivant l'état de l'écran de veille de KDE. L'auteur décrit précisément le problème résolu : son téléviseur ignore la mise en veille DPMS habituelle, reste allumé plus d'une demi-heure sur « aucun signal » et ne se rallume pas tout seul ; le démon y remédie en quelques secondes, côté extinction comme côté reprise. Un client d'appairage avec le téléviseur est fourni. Il fonctionne actuellement sous KDE Plasma 6 en Wayland et l'auteur annonce vouloir l'étendre à GNOME, aux composites Wayland génériques et à X11 ; les contributions sont déclarées bienvenues.</p>
+<p>Incertitude : aucun fichier de licence ne figure dans le dépôt, donc le code est publié à vue mais pas formellement libre — sans licence explicite, la réutilisation n'est pas autorisée par défaut. Dépôt : https://github.com/mystica555/tizen-power-sync — 0 étoile, Python, créé le 1er novembre 2026 et dernière mise à jour le jour même. Page du projet : https://mystica555.github.io/tizen-power-sync/</p>
+<h2>Volume</h2>
+<p>22 posts parus dans l'intervalle, 2 retenus, 20 écartés, soit un taux de rétention de 9 %. C'est nettement moins que la moyenne du subreddit (environ 20 %) : la fenêtre est dominée par des jeux publiés ou testés entre-temps (Tinymon Tactics, un jeu d'Halloween, une démo de jeu de pêche, une démo d'auto-combattant), par des captures de progrès de projets personnels, par un fil de questions quotidiennes automatisé et par des questions sur la consommation d'abonnement aux modèles. Aucun échec de collecte à signaler (dernière collecte le 2 novembre 2026 à 04h12 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Fenêtre pauvre en logiciels : sur vingt-deux messages parus depuis la dernière édition, deux seulement annoncent un outil utilisable, le reste étant des jeux, des captures de progrès personnels et des questions sur les limites d'abonnement. Le fait notable du jour est la libération du code de Nyx Player, lecteur IPTV jusque-là propriétaire, publié en GPL-3.0 le même jour que sa version Android (9 % de rétention, très en dessous de la moyenne du subreddit, mais conforme à ce qu'on observe les lendemains de week-end de game jam).</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Nyx Player — lecteur IPTV libre pour Windows, Android et Android TV</h3>
+<p>Application de lecture d'un abonnement IPTV personnel au format Xtream Codes : elle transforme la liste brute de flux en bibliothèque présentable (affiches, résumés et notes récupérés chez TMDB), ajoute un guide des programmes et synchronise le compte entre les appareils. L'application ne fournit aucun contenu, elle lit l'abonnement apporté par l'utilisateur ; ni publicité ni revente.</p>
+<p>Ce qui est nouveau, c'est le passage à la version 0.8.0 — arrivée des versions Android téléphone et Android TV, jusque-là limitées à Windows — et surtout la libération du code, annoncée dans le même message. L'auteur indique ne pas être développeur professionnel et avoir construit l'application presque entièrement avec des agents de codage assisté.</p>
+<p>Licence : GPL-3.0. Gratuit, sans publicité. Source : https://github.com/kunai974/nyx-player (dépôt créé le 1er novembre 2026, 11 étoiles, dernière mise à jour le 1er novembre 2026). Site de téléchargement : https://nyxplayer.app</p>
+<h3>TizenPowerSync — pilotage de l'alimentation d'un téléviseur Samsung sous Linux</h3>
+<p>Utilitaire Python qui met en veille et rallume un téléviseur Samsung utilisé comme moniteur d'ordinateur, en s'appuyant sur HDMI-CEC et sur l'interface WebSocket du système Tizen, et en suivant l'état de l'écran de veille de KDE. L'auteur décrit précisément le problème résolu : son téléviseur ignore la mise en veille DPMS habituelle, reste allumé plus d'une demi-heure sur « aucun signal » et ne se rallume pas tout seul ; le démon y remédie en quelques secondes, côté extinction comme côté reprise. Un client d'appairage avec le téléviseur est fourni. Il fonctionne actuellement sous KDE Plasma 6 en Wayland et l'auteur annonce vouloir l'étendre à GNOME, aux composites Wayland génériques et à X11 ; les contributions sont déclarées bienvenues.</p>
+<p>Incertitude : aucun fichier de licence ne figure dans le dépôt, donc le code est publié à vue mais pas formellement libre — sans licence explicite, la réutilisation n'est pas autorisée par défaut. Dépôt : https://github.com/mystica555/tizen-power-sync — 0 étoile, Python, créé le 1er novembre 2026 et dernière mise à jour le jour même. Page du projet : https://mystica555.github.io/tizen-power-sync/</p>
+<h2>Volume</h2>
+<p>22 posts parus dans l'intervalle, 2 retenus, 20 écartés, soit un taux de rétention de 9 %. C'est nettement moins que la moyenne du subreddit (environ 20 %) : la fenêtre est dominée par des jeux publiés ou testés entre-temps (Tinymon Tactics, un jeu d'Halloween, une démo de jeu de pêche, une démo d'auto-combattant), par des captures de progrès de projets personnels, par un fil de questions quotidiennes automatisé et par des questions sur la consommation d'abonnement aux modèles. Aucun échec de collecte à signaler (dernière collecte le 2 novembre 2026 à 04h12 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — lundi 2 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-02.html</link>
