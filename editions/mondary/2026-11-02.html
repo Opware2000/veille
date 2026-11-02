@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Clément Mondary — lundi 2 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../mondary.xml" title="Clément Mondary">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Clément Mondary — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés depuis l'édition précédente (1er novembre, 9h00 à 13h00 UTC) : un écran d'affichage pour agents personnels, un catalogue de 267 agents de code, un registre de jauges SVG, un suivi d'abonnements mobiles et un orchestrateur d'agents en parallèle. Quatre sont retenus, un est écarté.<br />
+La dernière collecte (2 novembre, 4h36 UTC) s'est faite sans erreur ; elle n'a rien trouvé de plus récent que ces cinq billets, l'édition ne couvre donc que ceux-là.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>TELEVISION</h3>
+<p>Poste d'affichage pour agents personnels, en trois pièces. Un serveur local installé sur la machine où tourne l'agent (paquet npm <code>@telepath-computer/television</code>, commande <code>tv</code>, service utilisateur <code>launchd</code> ou <code>systemd</code> avec <code>tv serve --persist</code>, port 32848 par défaut, état dans <code>~/.television</code>), un visualiseur, et des « artefacts » persistants que l'agent dépose, modifie et range dans des canaux. Le visualiseur est soit une application Mac (Apple Silicon, macOS 12 ou plus), soit n'importe quel navigateur, par un lien de connexion qui embarque le jeton d'accès.</p>
+<p>L'idée utile : ce que l'agent fabrique — calendrier de la semaine, liste de tâches cochables, tableau dense d'enregistrements — cesse de remonter dans le fil de conversation et reste consultable, modifiable, à part. Le paquet installe aussi trois compétences qui apprennent à l'agent quand une réponse visuelle vaut mieux qu'un paragraphe. Vous pouvez regarder depuis un autre appareil du réseau : le serveur reste sur la machine de l'agent, la commande <code>tv</code> ne dialogue qu'en local et l'exposition publique n'est pas prise en charge.</p>
+<p>À savoir : Windows n'est pas géré côté agent, Node 22.12 au minimum, les artefacts qui sont des pages web externes ne s'affichent pas dans un navigateur (l'application Mac les affiche), et la télémétrie est active par défaut, désactivable par <code>tv telemetry disable</code> ou <code>DO_NOT_TRACK=1</code>.<br />
+L'auteur annonce une licence MIT ; l'interface de GitHub ne la reconnaît pas et classe le dépôt en « Other » — écart à signaler, la licence n'est donc pas confirmée par l'API. Dépôt <code>telepath-computer/television</code> : 245 étoiles, dernière poussée le 31 octobre 2026, projet créé le 1er octobre 2026.<br />
+<a href="https://mondary.design/2026/11/television-lecran-ou-votre-agent-depose-ce-quil-construit-pour-vous/">TELEVISION</a></p>
+<h3>AGENCY AGENTS</h3>
+<p>Collection de 267 fiches d'agents spécialisés, réparties en 18 divisions, à installer dans un assistant de code — Claude Code, Cursor, Codex, Gemini CLI, GitHub Copilot, opencode, Aider, Windsurf et une quinzaine d'autres au total. Chaque agent tient dans un fichier Markdown construit sur la même trame : identité et caractère, missions et méthode de travail, livrables techniques commentés, critères de réussite mesurables. Le catalogue va des métiers d'ingénierie (65 fiches : architecte backend, SRE, commandant de réponse aux incidents) au marketing, au design et à la sécurité.</p>
+<p>Deux voies d'installation : un script <code>install.sh</code> avec ciblage par division ou par agent et mode d'essai <code>dry-run</code>, ou une application native en Tauri 2 pour macOS, Windows et Linux qui parcourt le catalogue, montre la fiche avant installation et tient un registre local — empreinte du fichier source, outil, destination, projet — avec détection des fichiers obsolètes, modifiés ou étrangers. Deux réserves : les fiches sont de qualité inégale sur un catalogue de cette taille, et tout est en anglais. Signalé par l'auteur : opencode n'enregistre qu'environ 119 agents et ignore le reste sans le dire, l'installateur prévient quand la sélection dépasse ce seuil.<br />
+Licence MIT, sans compte ni télémétrie. Dépôt <code>msitarzewski/agency-agents</code> : 165 956 étoiles et plus de 570 commits au 2 novembre 2026 (l'auteur annonçait environ 156 000 étoiles à la rédaction du billet, la progression explique l'écart), dernière poussée le 25 octobre 2026.<br />
+<a href="https://mondary.design/2026/11/agency-agents-267-specialistes-ia-prets-a-installer-dans-votre-editeur-de-code/">AGENCY AGENTS</a></p>
+<h3>DIRI</h3>
+<p>Application native qui rassemble les agents de code installés sur la machine — Claude Code, Codex, Cursor, Gemini et une vingtaine d'autres — dans une seule fenêtre. Elle ne remplace pas ces outils, elle les lance, avec des manifestes par agent et des profils pour basculer tous les onglets sur un autre compte en un clic, avec estimation des coûts et des jetons. Une barre latérale sépare les sessions en cours, en attente de réponse et terminées, et signale celles qui attendent une décision ; chaque agent travaille dans son propre arbre de travail Git, donc les modifications parallèles ne se recouvrent pas ; un panneau de revue montre les différences, permet d'indexer, de committer et de suivre les vérifications de demande de fusion à côté de la session concernée.</p>
+<p>Deux points qui comptent pour une machine de professeur : chaque terminal appartient à son propre processus, fermer la fenêtre ou redémarrer l'outil n'interrompt donc aucun agent, et un serveur MCP intégré permet à un agent d'en lancer d'autres, de leur confier des tâches suivies, d'attendre les résultats et de relire les différences. Tout reste local ou passe par SSH avec la configuration OpenSSH existante, sans service hébergé ni compte à créer.<br />
+Limites annoncées : macOS 15 au minimum (Apple silicon et Intel, application signée), le portage Linux est une bêta sur Ubuntu 22.04 et 24.04 dépendant de Vulkan 1.3, et les paquets Linux ne sortent pas à chaque version. Installation par Homebrew ou par image disque.<br />
+Écart à signaler : l'auteur écrit « licence Apache 2.0 », l'interface de GitHub déclare le dépôt sous AGPL-3.0 — les deux ne concordent pas. Dépôt <code>cristicretu/diri</code> : 483 étoiles, dernière poussée le 2 novembre 2026.<br />
+<a href="https://mondary.design/2026/11/diri-des-dizaines-dagents-de-code-en-parallele-un-seul-ecran/">DIRI</a></p>
+<h2>Sciences, données et création graphique</h2>
+<h3>GAUGE UI</h3>
+<p>Registre de composants pour React, distribué au format shadcn : une quinzaine de primitives SVG — arc, empilement d'arcs pondérés, zones colorées, graduations, étiquettes, aiguille, anneau imbriqué, disque — que l'on compose pour dessiner une jauge, un cadran, un anneau de progression ou une rose des vents. La commande <code>npx shadcn@latest add https://www.gauge-ui.dev/r/gauge.json</code> dépose un dossier <code>components/gauge/</code> dans le projet : le code vous appartient, aucune bibliothèque de graphiques n'entre dans le paquet final, et la seule dépendance déclarée est l'utilitaire <code>cn</code> de shadcn.</p>
+<p>L'intérêt est de pouvoir ajuster chaque pièce — retirer une graduation, garder un arc nu, régler les angles, les seuils et les couleurs — là où une bibliothèque de jauges fermée oblige à accepter son dessin. L'animation est incluse sans dépendance, avec ressort ou interpolation, et se désactive d'elle-même si l'utilisateur a demandé moins de mouvement ; une primitive enveloppe un cadran dans un curseur accessible au clavier. Un studio en ligne sert à composer le cadran et à copier le composant obtenu, avec 26 préréglages.<br />
+Le revers annoncé : il faut raisonner en coordonnées polaires, donc lire les primitives avant de comprendre un pixel mal placé, et le projet est très jeune. Écart entre le billet et l'API : l'auteur indique treize étoiles, GitHub en compte 173 au 2 novembre 2026 — le dépôt a visiblement beaucoup grandi depuis la rédaction. Licence MIT, dépôt <code>thordursk/gauge-ui</code>, dernière poussée le 26 octobre 2026. Usage visé : une page web, pas un document ni une application de bureau.<br />
+<a href="https://mondary.design/2026/11/gauge-ui-vos-jauges-et-cadrans-svg-en-primitives-react/">GAUGE UI</a></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 4 retenus, 1 écarté : SUBIQ, application mobile fermée de suivi des abonnements personnels (gratuite jusqu'à deux abonnements, puis Premium entre 9,99 et 39,99 dollars, données synchronisées chez Firebase et analyse des courriels confiée à Gemini) — hors des usages retenus, faute de servir à produire un cours, à tenir un réseau ou à administrer un parc.</p>
+<footer>Édition du lundi 2 novembre 2026 — <a href="https://opware2000.github.io/veille/mondary.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

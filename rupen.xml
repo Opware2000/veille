@@ -6,9 +6,48 @@
 <description>Veille quotidienne — numérique éducatif et RUPN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/rupen.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 12:04:51 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 07:51:39 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille RUPN — semaine du 2 au 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/rupen/2026-11-02.html</link>
+<guid isPermaLink="false">rupen-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 07:51:39 +0100</pubDate>
+<category>numérique éducatif et RUPN</category>
+<description><![CDATA[<h1>Veille RUPN — semaine du 2 au 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau à trier cette semaine : les deux sources (DRANE de Bourgogne-Franche-Comté et DANE de Versailles) n'ont publié aucun article depuis l'édition du 31 octobre, et leurs journaux de collecte sont identiques à ceux déjà traités.</li>
+<li>Un seul rendez-vous dans les sept jours : le café Édu-Up du jeudi 5 novembre, consacré à Fovéa 2 (ARTE Éducation), trente minutes à 13 h sans inscription.</li>
+<li>Deux échéances encore ouvertes côté cybersécurité : la déclaration d'un atelier sur le cyberharcèlement le vendredi 6 novembre, et la clôture du challenge de la Fresque des cybercitoyens le vendredi 13 novembre.</li>
+</ul>
+<h2>À noter cette semaine</h2>
+<ul>
+<li><strong>Jeudi 5 novembre 2026, 13 h – 13 h 30 — café Édu-Up « Fovéa 2 » (ARTE Éducation).</strong> Visioconférence de trente minutes, ouverte à tous les enseignants sans inscription préalable, pendant laquelle l'éditeur présente la ressource et répond aux questions. Connexion : https://edurl.fr/edu-up. Le calendrier vérifié ce jour annonce ensuite Ridisi 2 (10 décembre), Sim'Agora (7 janvier), Gao&amp;Blaze Lite (4 février), NatBraille 3.0 (11 mars), Nanouk (1er avril) et AccessDoc (13 mai) ; la page a été contrôlée le 2 novembre : https://edu-up.forge.apps.education.fr/t-1/cafes.html</li>
+<li><strong>Vendredi 6 novembre 2026 — journée nationale de lutte contre le harcèlement.</strong> Le challenge de la Fresque des cybercitoyens demande aux établissements inscrits de déclarer au moins un atelier par niveau de classe sur le thème du cyberharcèlement à cette date.</li>
+<li><strong>Vendredi 13 novembre 2026 — clôture du challenge de la Fresque des cybercitoyens.</strong> Les ateliers animés entre le 1er octobre et cette date comptent pour le classement académique et national.</li>
+<li>Ces deux échéances sont des rappels de l'édition du 31 octobre, conservés parce qu'elles tombent dans la semaine ; je n'ai pas pu vérifier à nouveau les consignes de déclaration, le Digipad du challenge ayant renvoyé une erreur 500 le 31 octobre. Si votre établissement participe, le référent régional reste le plus sûr pour confirmer le format attendu.</li>
+</ul>
+<h2>Volume</h2>
+<p>Zéro article nouveau : dix articles au journal de la DRANE de Bourgogne-Franche-Comté (le plus récent du 30 octobre) et dix au flux de la DANE de Versailles (le plus récent du 14 octobre), tous déjà traités le 31 octobre et inscrits dans les fichiers de déduplication. Aucun retenu, aucun écarté, pour la seule raison qu'il n'y avait rien à examiner : ce n'est pas un effet du tri. Les deux collectes du 2 novembre (4 h 36) se sont déroulées sans erreur, champ <code>errors</code> vide des deux côtés ; les flux interrogés directement ce matin renvoient exactement les mêmes dix dernières entrées, donc rien n'a été manqué. Prochaine édition lundi 9 novembre, à 7 h 50.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille RUPN — semaine du 2 au 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau à trier cette semaine : les deux sources (DRANE de Bourgogne-Franche-Comté et DANE de Versailles) n'ont publié aucun article depuis l'édition du 31 octobre, et leurs journaux de collecte sont identiques à ceux déjà traités.</li>
+<li>Un seul rendez-vous dans les sept jours : le café Édu-Up du jeudi 5 novembre, consacré à Fovéa 2 (ARTE Éducation), trente minutes à 13 h sans inscription.</li>
+<li>Deux échéances encore ouvertes côté cybersécurité : la déclaration d'un atelier sur le cyberharcèlement le vendredi 6 novembre, et la clôture du challenge de la Fresque des cybercitoyens le vendredi 13 novembre.</li>
+</ul>
+<h2>À noter cette semaine</h2>
+<ul>
+<li><strong>Jeudi 5 novembre 2026, 13 h – 13 h 30 — café Édu-Up « Fovéa 2 » (ARTE Éducation).</strong> Visioconférence de trente minutes, ouverte à tous les enseignants sans inscription préalable, pendant laquelle l'éditeur présente la ressource et répond aux questions. Connexion : https://edurl.fr/edu-up. Le calendrier vérifié ce jour annonce ensuite Ridisi 2 (10 décembre), Sim'Agora (7 janvier), Gao&amp;Blaze Lite (4 février), NatBraille 3.0 (11 mars), Nanouk (1er avril) et AccessDoc (13 mai) ; la page a été contrôlée le 2 novembre : https://edu-up.forge.apps.education.fr/t-1/cafes.html</li>
+<li><strong>Vendredi 6 novembre 2026 — journée nationale de lutte contre le harcèlement.</strong> Le challenge de la Fresque des cybercitoyens demande aux établissements inscrits de déclarer au moins un atelier par niveau de classe sur le thème du cyberharcèlement à cette date.</li>
+<li><strong>Vendredi 13 novembre 2026 — clôture du challenge de la Fresque des cybercitoyens.</strong> Les ateliers animés entre le 1er octobre et cette date comptent pour le classement académique et national.</li>
+<li>Ces deux échéances sont des rappels de l'édition du 31 octobre, conservés parce qu'elles tombent dans la semaine ; je n'ai pas pu vérifier à nouveau les consignes de déclaration, le Digipad du challenge ayant renvoyé une erreur 500 le 31 octobre. Si votre établissement participe, le référent régional reste le plus sûr pour confirmer le format attendu.</li>
+</ul>
+<h2>Volume</h2>
+<p>Zéro article nouveau : dix articles au journal de la DRANE de Bourgogne-Franche-Comté (le plus récent du 30 octobre) et dix au flux de la DANE de Versailles (le plus récent du 14 octobre), tous déjà traités le 31 octobre et inscrits dans les fichiers de déduplication. Aucun retenu, aucun écarté, pour la seule raison qu'il n'y avait rien à examiner : ce n'est pas un effet du tri. Les deux collectes du 2 novembre (4 h 36) se sont déroulées sans erreur, champ <code>errors</code> vide des deux côtés ; les flux interrogés directement ce matin renvoient exactement les mêmes dix dernières entrées, donc rien n'a été manqué. Prochaine édition lundi 9 novembre, à 7 h 50.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille RUPN — semaine du 26 octobre au 1er novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/rupen/2026-10-31.html</link>

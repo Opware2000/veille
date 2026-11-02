@@ -6,9 +6,34 @@
 <description>Veille quotidienne — applications et logiciel libre — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/avonture.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 31 Oct 2026 12:00:10 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 08:01:30 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille applications et logiciel libre — semaine du lundi 2 novembre au dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/avonture/2026-11-02.html</link>
+<guid isPermaLink="false">avonture-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 08:01:30 +0100</pubDate>
+<category>applications et logiciel libre</category>
+<description><![CDATA[<h1>Veille applications et logiciel libre — semaine du lundi 2 novembre au dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau qui mérite votre attention : le blog de Christophe Avonture ne publie aucun article depuis le 29 octobre 2026, et son flux s'arrête toujours à cette date.</li>
+<li>La collecte du 2 novembre 2026 à 5h36 (heure de Paris) n'a relevé aucune entrée nouvelle — 20 entrées au flux, 20 déjà consignées — et s'est déroulée sans erreur.</li>
+<li>Rappel de la semaine dernière : l'édition du 31 octobre couvrait l'intégralité des 20 articles alors présents dans le journal ; l'horizon de quatre jours s'applique donc à partir de maintenant.</li>
+</ul>
+<h2>Volume</h2>
+<p>0 article publié dans l'intervalle (2 au 8 novembre 2026), 0 retenu, 0 écarté. La veille a tourné normalement : le journal ne contient que les 20 articles déjà traités lors de la première édition, tous marqués comme traités dans <code>digested.txt</code>. Le rythme habituel du blog — un billet le lundi, un le jeudi — n'a pas été tenu pour ce lundi ; l'article attendu ce jour n'était pas encore publié au moment de la collecte.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille applications et logiciel libre — semaine du lundi 2 novembre au dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau qui mérite votre attention : le blog de Christophe Avonture ne publie aucun article depuis le 29 octobre 2026, et son flux s'arrête toujours à cette date.</li>
+<li>La collecte du 2 novembre 2026 à 5h36 (heure de Paris) n'a relevé aucune entrée nouvelle — 20 entrées au flux, 20 déjà consignées — et s'est déroulée sans erreur.</li>
+<li>Rappel de la semaine dernière : l'édition du 31 octobre couvrait l'intégralité des 20 articles alors présents dans le journal ; l'horizon de quatre jours s'applique donc à partir de maintenant.</li>
+</ul>
+<h2>Volume</h2>
+<p>0 article publié dans l'intervalle (2 au 8 novembre 2026), 0 retenu, 0 écarté. La veille a tourné normalement : le journal ne contient que les 20 articles déjà traités lors de la première édition, tous marqués comme traités dans <code>digested.txt</code>. Le rythme habituel du blog — un billet le lundi, un le jeudi — n'a pas été tenu pour ce lundi ; l'article attendu ce jour n'était pas encore publié au moment de la collecte.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille applications et logiciel libre — semaine du lundi 26 octobre au dimanche 1er novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/avonture/2026-10-31.html</link>
