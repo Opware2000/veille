@@ -6,9 +6,133 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 02 Nov 2026 06:37:17 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 06:52:50 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/opensource — lundi 2 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-02.html</link>
+<guid isPermaLink="false">opensource-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 06:52:50 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Dix posts parus depuis la dernière édition, quatre retenus, tous des outils nouveaux : une gestion de maintenance industrielle (MantPro), un tableau de bord Windows (Astraeus), un client S3 (BucketBridge) et un logiciel de commande de fraiseuse numérique (3C Tool). Six posts écartés : trois questions ou demandes, un échange de plaintes, une annonce sans information exploitable, et la republication d'une version déjà traitée ici le 31 octobre.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>MantPro — gestion de maintenance assistée, sur le poste de travail comme sur téléphone</h3>
+<p>Un technicien de maintenance industrielle a écrit son propre logiciel de gestion de maintenance (GMAO, ou CMMS en anglais) pour se passer des tableurs et des abonnements. L'application couvre les ordres de travail, les tâches récurrentes, l'historique des interventions, le parc de machines avec étiquettes QR, les pièces détachées et le stock, avec des indicateurs de fiabilité (temps moyen entre pannes, temps moyen de réparation) et des exports en PDF, CSV et Excel. Le poste de travail fonctionne sous Windows et Linux (Python et PyQt6), les deux applications Android servent aux interventions et à l'inventaire ; elles fonctionnent hors connexion et se synchronisent au retour du réseau. L'installation est autonome, sans limitation du nombre d'utilisateurs ni d'équipements.</p>
+<p>Licence AGPL-3.0, 6 étoiles, dépôt créé le 30 janvier 2026 et dernière modification le 2 novembre 2026 (le projet semble avoir été ouvert avant l'annonce). La documentation du dépôt est en espagnol.</p>
+<p>Dépôt : https://github.com/AnabasaSoft/MantPro</p>
+<h3>Astraeus — un tableau de bord posé sur le bord de l'écran, sous Windows</h3>
+<p>Plutôt qu'un tableau de bord écrit en technologies web, son auteur l'a écrit en C++20 avec Direct2D et DirectComposition, pour qu'il se comporte comme un élément du système. Il apparaît au survol du bord supérieur de l'écran ou par le raccourci Windows + Alt + A, et rassemble musique et paroles synchronisées, surveillance du système, réglage du son et du réseau, météo, calendrier et quelques menus utilitaires.</p>
+<p>Licence GPL-3.0, 26 étoiles, dernière modification le 1er novembre 2026. Les sources et les instructions de compilation sont dans le dépôt ; aucune version précompilée n'est annoncée dans le billet.</p>
+<p>Dépôt : https://github.com/Icetist/Astraeus</p>
+<h3>BucketBridge — client de stockage objet, avec Linux traité comme un système de premier rang</h3>
+<p>Les clients de stockage compatible S3 pour poste de travail sont souvent réservés à Windows ou payants ; BucketBridge se présente comme une alternative libre écrite en Rust, avec une interface Tauri et un outil en ligne de commande (<code>bb</code>). Il fonctionne avec Amazon S3 comme avec les services compatibles (MinIO, Cloudflare R2, Backblaze B2, Wasabi), et se distribue en AppImage, en paquet Debian et en archive. Aucune télémétrie n'est annoncée. La version 0.1 est une première publication : les retours de test sur différentes distributions sont explicitement demandés.</p>
+<p>Licence GPL-3.0, 8 étoiles, dernière modification le 1er novembre 2026.</p>
+<p>Dépôt : https://github.com/anupshaw50/BucketBridge</p>
+<h3>3C Tool — pilotage d'une fraiseuse numérique de hobby, du dessin au G-code</h3>
+<p>Le billet annonce la partie logicielle d'une fraiseuse à commande numérique personnelle : 3C Tool est une suite de fabrication assistée par ordinateur et de conduite de machine pour un contrôleur FluidNC (compatible GRBL). Elle produit le G-code, alimente la machine et commande ses mouvements. Le billet ne donne pas de lien direct : le dépôt a été retrouvé par recherche, et sa correspondance avec la vidéo citée (même nom de projet que le modèle de fraiseuse diffusé) reste à confirmer. Les plans et fichiers de la machine sont publiés sous licence libre sur Printables.</p>
+<p>Licence MIT, 2 étoiles, dépôt créé le 11 octobre 2026, dernière modification le 26 octobre 2026. Le logiciel est écrit en C#.</p>
+<p>Dépôt : https://github.com/Classic-Car-EVO/3CTool</p>
+<h2>Volume</h2>
+<p>Dix posts publiés dans l'intervalle, quatre retenus, six écartés. Les écartés se répartissent ainsi : deux demandes d'outils sans annonce (un éditeur audio pour Android, une fonction de calcul manuscrit), un échange de plaintes sur le travail des mainteneurs, une republication du billet « Built my first Typescript library » sans contenu ni lien exploitable dans le journal, et deux annonces déjà traitées ici (Foldergram 1.3.0 dans l'édition du 31 octobre, la même version 1.12.0 de l'éditeur PDF word-sys dans celle du 1er novembre). La collecte n'a signalé aucune erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Dix posts parus depuis la dernière édition, quatre retenus, tous des outils nouveaux : une gestion de maintenance industrielle (MantPro), un tableau de bord Windows (Astraeus), un client S3 (BucketBridge) et un logiciel de commande de fraiseuse numérique (3C Tool). Six posts écartés : trois questions ou demandes, un échange de plaintes, une annonce sans information exploitable, et la republication d'une version déjà traitée ici le 31 octobre.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>MantPro — gestion de maintenance assistée, sur le poste de travail comme sur téléphone</h3>
+<p>Un technicien de maintenance industrielle a écrit son propre logiciel de gestion de maintenance (GMAO, ou CMMS en anglais) pour se passer des tableurs et des abonnements. L'application couvre les ordres de travail, les tâches récurrentes, l'historique des interventions, le parc de machines avec étiquettes QR, les pièces détachées et le stock, avec des indicateurs de fiabilité (temps moyen entre pannes, temps moyen de réparation) et des exports en PDF, CSV et Excel. Le poste de travail fonctionne sous Windows et Linux (Python et PyQt6), les deux applications Android servent aux interventions et à l'inventaire ; elles fonctionnent hors connexion et se synchronisent au retour du réseau. L'installation est autonome, sans limitation du nombre d'utilisateurs ni d'équipements.</p>
+<p>Licence AGPL-3.0, 6 étoiles, dépôt créé le 30 janvier 2026 et dernière modification le 2 novembre 2026 (le projet semble avoir été ouvert avant l'annonce). La documentation du dépôt est en espagnol.</p>
+<p>Dépôt : https://github.com/AnabasaSoft/MantPro</p>
+<h3>Astraeus — un tableau de bord posé sur le bord de l'écran, sous Windows</h3>
+<p>Plutôt qu'un tableau de bord écrit en technologies web, son auteur l'a écrit en C++20 avec Direct2D et DirectComposition, pour qu'il se comporte comme un élément du système. Il apparaît au survol du bord supérieur de l'écran ou par le raccourci Windows + Alt + A, et rassemble musique et paroles synchronisées, surveillance du système, réglage du son et du réseau, météo, calendrier et quelques menus utilitaires.</p>
+<p>Licence GPL-3.0, 26 étoiles, dernière modification le 1er novembre 2026. Les sources et les instructions de compilation sont dans le dépôt ; aucune version précompilée n'est annoncée dans le billet.</p>
+<p>Dépôt : https://github.com/Icetist/Astraeus</p>
+<h3>BucketBridge — client de stockage objet, avec Linux traité comme un système de premier rang</h3>
+<p>Les clients de stockage compatible S3 pour poste de travail sont souvent réservés à Windows ou payants ; BucketBridge se présente comme une alternative libre écrite en Rust, avec une interface Tauri et un outil en ligne de commande (<code>bb</code>). Il fonctionne avec Amazon S3 comme avec les services compatibles (MinIO, Cloudflare R2, Backblaze B2, Wasabi), et se distribue en AppImage, en paquet Debian et en archive. Aucune télémétrie n'est annoncée. La version 0.1 est une première publication : les retours de test sur différentes distributions sont explicitement demandés.</p>
+<p>Licence GPL-3.0, 8 étoiles, dernière modification le 1er novembre 2026.</p>
+<p>Dépôt : https://github.com/anupshaw50/BucketBridge</p>
+<h3>3C Tool — pilotage d'une fraiseuse numérique de hobby, du dessin au G-code</h3>
+<p>Le billet annonce la partie logicielle d'une fraiseuse à commande numérique personnelle : 3C Tool est une suite de fabrication assistée par ordinateur et de conduite de machine pour un contrôleur FluidNC (compatible GRBL). Elle produit le G-code, alimente la machine et commande ses mouvements. Le billet ne donne pas de lien direct : le dépôt a été retrouvé par recherche, et sa correspondance avec la vidéo citée (même nom de projet que le modèle de fraiseuse diffusé) reste à confirmer. Les plans et fichiers de la machine sont publiés sous licence libre sur Printables.</p>
+<p>Licence MIT, 2 étoiles, dépôt créé le 11 octobre 2026, dernière modification le 26 octobre 2026. Le logiciel est écrit en C#.</p>
+<p>Dépôt : https://github.com/Classic-Car-EVO/3CTool</p>
+<h2>Volume</h2>
+<p>Dix posts publiés dans l'intervalle, quatre retenus, six écartés. Les écartés se répartissent ainsi : deux demandes d'outils sans annonce (un éditeur audio pour Android, une fonction de calcul manuscrit), un échange de plaintes sur le travail des mainteneurs, une republication du billet « Built my first Typescript library » sans contenu ni lien exploitable dans le journal, et deux annonces déjà traitées ici (Foldergram 1.3.0 dans l'édition du 31 octobre, la même version 1.12.0 de l'éditeur PDF word-sys dans celle du 1er novembre). La collecte n'a signalé aucune erreur.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/hermesagent — lundi 2 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-02.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 06:44:27 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée dominée par les applications mobiles et le confort d'affichage : un client Android libre complet pour Hermes, un lecteur de Markdown et un gestionnaire de fenêtres pour macOS.</li>
+<li>Quatre posts retenus sur vingt-neuf examinés (le reste est fait de questions, de récits d'installation et de plaintes, la rétention de ce subreddit tourne autour de 15 à 20 %).</li>
+<li>La collecte de 4h13 UTC s'est déroulée sans erreur ; aucune annonce de version d'Hermes lui-même n'est passée dans l'intervalle.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Pocket — client Android libre pour Hermes, agent embarqué ou déporté</h3>
+<p>Un développeur indépendant présente une application Android sous GPLv3 pour piloter Hermes depuis un téléphone. Elle ne se contente pas d'appeler une API de conversation : elle parle le protocole de passerelle utilisé par l'application de bureau, ce qui donne accès sur mobile au fil de raisonnement, aux appels d'outils, aux demandes d'autorisation, aux fichiers, à la mémoire, aux tâches planifiées et au tableau Kanban. Trois modes d'exécution sont proposés et permutables : un système Linux embarqué (via proot, environ 1 Go d'espace, sans root ni Termux), une connexion à une installation Termux existante, ou un accès au serveur personnel par Tailscale sans ouvrir de port vers Internet. S'y ajoutent l'approbation des commandes depuis la notification, la reprise d'une réponse en cours, les profils dotés de leur propre SOUL.md, un terminal et un navigateur sur bureau virtuel. Android 10 minimum.</p>
+<p>Vérification du dépôt (API GitHub) : <code>traveler3022/Hermes-Pocket</code>, licence GPL-3.0, 9 étoiles, 0 duplication, créé le 1er juillet 2026, dernier envoi le 1er novembre 2026 à 22h27 UTC, écrit en Kotlin. Le faible nombre d'étoiles correspond à un projet jeune ; à noter que deux clients Android plus anciens et bien plus suivis existent (<code>Codename-11/hermes-relay</code>, MIT, 414 étoiles ; <code>Hy4ri/hermes-mobile</code>, Apache-2.0, 378 étoiles), Hermes Pocket se distinguant par le mode « tout embarqué » sans serveur.</p>
+<p>Lien : https://www.reddit.com/r/hermesagent/comments/1xlfz1s/</p>
+<h3>slowread — lecteur de Markdown en colonne unique</h3>
+<p>Un post de partage de configuration se termine par une promotion assumée de l'outil de son auteur : slowread présente un fichier Markdown comme un livre, en une colonne étroite, avec table des matières suivie, mode concentration qui estompe tout sauf le paragraphe courant, « lecture bionique » et estimation du temps de lecture. Le rendu se fait entièrement dans le navigateur — le document n'est jamais téléversé — et il existe aussi en lecteur en ligne de commande avec rechargement à chaud et édition enregistrée sur le disque. C'est exactement le type d'outil utile pour relire un cours converti en Markdown.</p>
+<p>Vérification du dépôt : <code>serverheroes/slowread</code>, licence MIT, 1 étoile, créé le 12 août 2026, dernier envoi le 27 août 2026, JavaScript. Gratuit et sans compte pour l'usage local ; le partage d'un document par lien est la seule fonction qui passe par le serveur de l'auteur (liens valables 24 heures).</p>
+<p>Lien : https://slowread.md — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h3>OmniWM — gestionnaire de fenêtres en mosaïque pour macOS</h3>
+<p>Le même post vante OmniWM, qu'il compare aux gestionnaires de fenêtres Linux. Il s'agit d'un gestionnaire en mosaïque pour Mac Apple Silicon sous macOS 26, avec colonnes défilantes à la manière de Niri, découpage BSP à la manière d'Hyprland, terminal escamotable, palette de commandes et automatisation par ligne de commande. Aucune désactivation de la protection d'intégrité du système n'est nécessaire, et les versions officielles sont signées et notariées. Retenu malgré la restriction à macOS, qui n'est pas la plate-forme de travail de l'établissement.</p>
+<p>Vérification du dépôt : <code>OmniNull/OmniWM</code>, licence GPL-2.0, 3 501 étoiles, créé le 20 octobre 2025, dernier envoi le 2 novembre 2026 à 5h40 UTC, écrit en Swift. Gratuit, version 0.7.1. Installation par Homebrew (<code>brew install --cask omniwm</code>).</p>
+<p>Lien : https://omniwm.app — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Modèles Apple Foundation Models accessibles en local par la commande <code>fm serve</code></h3>
+<p>Sous macOS 26, la troisième génération des modèles d'Apple qui équipent Siri peut être servie en local sur une machine Mac : <code>fm serve --host 127.0.0.1 --port 1976</code> expose un modèle qui tourne sur le moteur neuronal, sans coût et sans requête vers l'extérieur, avec raisonnement et appel d'outils. Le poids des modèles est déjà chargé par le système, ce qui évite de consommer de la mémoire supplémentaire, ce qui rend la chose intéressante pour une petite machine toujours allumée. Il faut être clair sur deux limites : il ne s'agit ni de logiciel libre ni d'un modèle ouvert, et l'usage suppose macOS 26 sur une machine Apple récente. L'auteur du post le propose comme moteur d'appoint pour des tâches courtes (domotique, résumés), pas comme modèle principal.</p>
+<p>Référence citée par l'auteur : https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models<br />
+Post : https://www.reddit.com/r/hermesagent/comments/1xkxyu6/</p>
+<h2>Extensions et greffons</h2>
+<h3>5dive-browser — sessions de navigation authentifiées réutilisées par l'agent</h3>
+<p>Un développeur publie un greffon de navigateur libre pour agent (Apache-2.0) : il fournit un vrai Chrome, en mode fenêtré, sur le serveur, avec des sessions authentifiées à la main une fois pour toutes. L'agent hérite de la session et jamais du mot de passe. Le post qui l'accompagne mesure autre chose, et c'est le résultat le plus utile : en activant le mode fenêtré (<code>browser: headed: true</code> dans la configuration, sous Xvfb puisque le serveur n'a pas d'écran), le nombre de tâches bloquées par une protection anti-robot est passé de 39 à 20 sur cent tâches web, pour un coût équivalent (0,73 contre 0,72 dollar) au prix d'une exécution plus lente (86 secondes par tâche contre 68). L'auteur précise que la comparaison ne porte que sur une seule série de mesures et que l'écart (13 contre 18 tâches réussies) peut relever du hasard.</p>
+<p>Vérification du dépôt : <code>5dive-ai/5dive-browser</code>, licence Apache-2.0, 1 étoile, créé le 20 septembre 2026, dernier envoi le 1er novembre 2026, JavaScript.</p>
+<p>Lien : https://github.com/5dive-ai/5dive-browser — post : https://www.reddit.com/r/hermesagent/comments/1xl6gc6/</p>
+<h2>Volume</h2>
+<p>29 posts publiés dans l'intervalle, 4 retenus, 25 écartés.</p>
+<p>Remarque sur un post non retenu : une annonce d'une quantification 2,3 bits par poids d'un modèle Qwen de 27 milliards de paramètres, tenant sur une carte de 12 Go, a été repérée (post <code>1xlmu8p</code>, également publié dans r/LocalLLM et r/Qwen_AI), mais son corps est vide dans le journal et aucun dépôt Hugging Face correspondant n'a pu être relié à l'annonce : elle n'est donc pas reprise ici, faute de lien vérifiable.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée dominée par les applications mobiles et le confort d'affichage : un client Android libre complet pour Hermes, un lecteur de Markdown et un gestionnaire de fenêtres pour macOS.</li>
+<li>Quatre posts retenus sur vingt-neuf examinés (le reste est fait de questions, de récits d'installation et de plaintes, la rétention de ce subreddit tourne autour de 15 à 20 %).</li>
+<li>La collecte de 4h13 UTC s'est déroulée sans erreur ; aucune annonce de version d'Hermes lui-même n'est passée dans l'intervalle.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Pocket — client Android libre pour Hermes, agent embarqué ou déporté</h3>
+<p>Un développeur indépendant présente une application Android sous GPLv3 pour piloter Hermes depuis un téléphone. Elle ne se contente pas d'appeler une API de conversation : elle parle le protocole de passerelle utilisé par l'application de bureau, ce qui donne accès sur mobile au fil de raisonnement, aux appels d'outils, aux demandes d'autorisation, aux fichiers, à la mémoire, aux tâches planifiées et au tableau Kanban. Trois modes d'exécution sont proposés et permutables : un système Linux embarqué (via proot, environ 1 Go d'espace, sans root ni Termux), une connexion à une installation Termux existante, ou un accès au serveur personnel par Tailscale sans ouvrir de port vers Internet. S'y ajoutent l'approbation des commandes depuis la notification, la reprise d'une réponse en cours, les profils dotés de leur propre SOUL.md, un terminal et un navigateur sur bureau virtuel. Android 10 minimum.</p>
+<p>Vérification du dépôt (API GitHub) : <code>traveler3022/Hermes-Pocket</code>, licence GPL-3.0, 9 étoiles, 0 duplication, créé le 1er juillet 2026, dernier envoi le 1er novembre 2026 à 22h27 UTC, écrit en Kotlin. Le faible nombre d'étoiles correspond à un projet jeune ; à noter que deux clients Android plus anciens et bien plus suivis existent (<code>Codename-11/hermes-relay</code>, MIT, 414 étoiles ; <code>Hy4ri/hermes-mobile</code>, Apache-2.0, 378 étoiles), Hermes Pocket se distinguant par le mode « tout embarqué » sans serveur.</p>
+<p>Lien : https://www.reddit.com/r/hermesagent/comments/1xlfz1s/</p>
+<h3>slowread — lecteur de Markdown en colonne unique</h3>
+<p>Un post de partage de configuration se termine par une promotion assumée de l'outil de son auteur : slowread présente un fichier Markdown comme un livre, en une colonne étroite, avec table des matières suivie, mode concentration qui estompe tout sauf le paragraphe courant, « lecture bionique » et estimation du temps de lecture. Le rendu se fait entièrement dans le navigateur — le document n'est jamais téléversé — et il existe aussi en lecteur en ligne de commande avec rechargement à chaud et édition enregistrée sur le disque. C'est exactement le type d'outil utile pour relire un cours converti en Markdown.</p>
+<p>Vérification du dépôt : <code>serverheroes/slowread</code>, licence MIT, 1 étoile, créé le 12 août 2026, dernier envoi le 27 août 2026, JavaScript. Gratuit et sans compte pour l'usage local ; le partage d'un document par lien est la seule fonction qui passe par le serveur de l'auteur (liens valables 24 heures).</p>
+<p>Lien : https://slowread.md — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h3>OmniWM — gestionnaire de fenêtres en mosaïque pour macOS</h3>
+<p>Le même post vante OmniWM, qu'il compare aux gestionnaires de fenêtres Linux. Il s'agit d'un gestionnaire en mosaïque pour Mac Apple Silicon sous macOS 26, avec colonnes défilantes à la manière de Niri, découpage BSP à la manière d'Hyprland, terminal escamotable, palette de commandes et automatisation par ligne de commande. Aucune désactivation de la protection d'intégrité du système n'est nécessaire, et les versions officielles sont signées et notariées. Retenu malgré la restriction à macOS, qui n'est pas la plate-forme de travail de l'établissement.</p>
+<p>Vérification du dépôt : <code>OmniNull/OmniWM</code>, licence GPL-2.0, 3 501 étoiles, créé le 20 octobre 2025, dernier envoi le 2 novembre 2026 à 5h40 UTC, écrit en Swift. Gratuit, version 0.7.1. Installation par Homebrew (<code>brew install --cask omniwm</code>).</p>
+<p>Lien : https://omniwm.app — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Modèles Apple Foundation Models accessibles en local par la commande <code>fm serve</code></h3>
+<p>Sous macOS 26, la troisième génération des modèles d'Apple qui équipent Siri peut être servie en local sur une machine Mac : <code>fm serve --host 127.0.0.1 --port 1976</code> expose un modèle qui tourne sur le moteur neuronal, sans coût et sans requête vers l'extérieur, avec raisonnement et appel d'outils. Le poids des modèles est déjà chargé par le système, ce qui évite de consommer de la mémoire supplémentaire, ce qui rend la chose intéressante pour une petite machine toujours allumée. Il faut être clair sur deux limites : il ne s'agit ni de logiciel libre ni d'un modèle ouvert, et l'usage suppose macOS 26 sur une machine Apple récente. L'auteur du post le propose comme moteur d'appoint pour des tâches courtes (domotique, résumés), pas comme modèle principal.</p>
+<p>Référence citée par l'auteur : https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models<br />
+Post : https://www.reddit.com/r/hermesagent/comments/1xkxyu6/</p>
+<h2>Extensions et greffons</h2>
+<h3>5dive-browser — sessions de navigation authentifiées réutilisées par l'agent</h3>
+<p>Un développeur publie un greffon de navigateur libre pour agent (Apache-2.0) : il fournit un vrai Chrome, en mode fenêtré, sur le serveur, avec des sessions authentifiées à la main une fois pour toutes. L'agent hérite de la session et jamais du mot de passe. Le post qui l'accompagne mesure autre chose, et c'est le résultat le plus utile : en activant le mode fenêtré (<code>browser: headed: true</code> dans la configuration, sous Xvfb puisque le serveur n'a pas d'écran), le nombre de tâches bloquées par une protection anti-robot est passé de 39 à 20 sur cent tâches web, pour un coût équivalent (0,73 contre 0,72 dollar) au prix d'une exécution plus lente (86 secondes par tâche contre 68). L'auteur précise que la comparaison ne porte que sur une seule série de mesures et que l'écart (13 contre 18 tâches réussies) peut relever du hasard.</p>
+<p>Vérification du dépôt : <code>5dive-ai/5dive-browser</code>, licence Apache-2.0, 1 étoile, créé le 20 septembre 2026, dernier envoi le 1er novembre 2026, JavaScript.</p>
+<p>Lien : https://github.com/5dive-ai/5dive-browser — post : https://www.reddit.com/r/hermesagent/comments/1xl6gc6/</p>
+<h2>Volume</h2>
+<p>29 posts publiés dans l'intervalle, 4 retenus, 25 écartés.</p>
+<p>Remarque sur un post non retenu : une annonce d'une quantification 2,3 bits par poids d'un modèle Qwen de 27 milliards de paramètres, tenant sur une carte de 12 Go, a été repérée (post <code>1xlmu8p</code>, également publié dans r/LocalLLM et r/Qwen_AI), mais son corps est vide dans le journal et aucun dépôt Hugging Face correspondant n'a pu être relié à l'annonce : elle n'est donc pas reprise ici, faute de lien vérifiable.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — lundi 2 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-02.html</link>

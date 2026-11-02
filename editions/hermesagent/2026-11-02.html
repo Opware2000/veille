@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — lundi 2 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée dominée par les applications mobiles et le confort d'affichage : un client Android libre complet pour Hermes, un lecteur de Markdown et un gestionnaire de fenêtres pour macOS.</li>
+<li>Quatre posts retenus sur vingt-neuf examinés (le reste est fait de questions, de récits d'installation et de plaintes, la rétention de ce subreddit tourne autour de 15 à 20 %).</li>
+<li>La collecte de 4h13 UTC s'est déroulée sans erreur ; aucune annonce de version d'Hermes lui-même n'est passée dans l'intervalle.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Pocket — client Android libre pour Hermes, agent embarqué ou déporté</h3>
+<p>Un développeur indépendant présente une application Android sous GPLv3 pour piloter Hermes depuis un téléphone. Elle ne se contente pas d'appeler une API de conversation : elle parle le protocole de passerelle utilisé par l'application de bureau, ce qui donne accès sur mobile au fil de raisonnement, aux appels d'outils, aux demandes d'autorisation, aux fichiers, à la mémoire, aux tâches planifiées et au tableau Kanban. Trois modes d'exécution sont proposés et permutables : un système Linux embarqué (via proot, environ 1 Go d'espace, sans root ni Termux), une connexion à une installation Termux existante, ou un accès au serveur personnel par Tailscale sans ouvrir de port vers Internet. S'y ajoutent l'approbation des commandes depuis la notification, la reprise d'une réponse en cours, les profils dotés de leur propre SOUL.md, un terminal et un navigateur sur bureau virtuel. Android 10 minimum.</p>
+<p>Vérification du dépôt (API GitHub) : <code>traveler3022/Hermes-Pocket</code>, licence GPL-3.0, 9 étoiles, 0 duplication, créé le 1er juillet 2026, dernier envoi le 1er novembre 2026 à 22h27 UTC, écrit en Kotlin. Le faible nombre d'étoiles correspond à un projet jeune ; à noter que deux clients Android plus anciens et bien plus suivis existent (<code>Codename-11/hermes-relay</code>, MIT, 414 étoiles ; <code>Hy4ri/hermes-mobile</code>, Apache-2.0, 378 étoiles), Hermes Pocket se distinguant par le mode « tout embarqué » sans serveur.</p>
+<p>Lien : https://www.reddit.com/r/hermesagent/comments/1xlfz1s/</p>
+<h3>slowread — lecteur de Markdown en colonne unique</h3>
+<p>Un post de partage de configuration se termine par une promotion assumée de l'outil de son auteur : slowread présente un fichier Markdown comme un livre, en une colonne étroite, avec table des matières suivie, mode concentration qui estompe tout sauf le paragraphe courant, « lecture bionique » et estimation du temps de lecture. Le rendu se fait entièrement dans le navigateur — le document n'est jamais téléversé — et il existe aussi en lecteur en ligne de commande avec rechargement à chaud et édition enregistrée sur le disque. C'est exactement le type d'outil utile pour relire un cours converti en Markdown.</p>
+<p>Vérification du dépôt : <code>serverheroes/slowread</code>, licence MIT, 1 étoile, créé le 12 août 2026, dernier envoi le 27 août 2026, JavaScript. Gratuit et sans compte pour l'usage local ; le partage d'un document par lien est la seule fonction qui passe par le serveur de l'auteur (liens valables 24 heures).</p>
+<p>Lien : https://slowread.md — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h3>OmniWM — gestionnaire de fenêtres en mosaïque pour macOS</h3>
+<p>Le même post vante OmniWM, qu'il compare aux gestionnaires de fenêtres Linux. Il s'agit d'un gestionnaire en mosaïque pour Mac Apple Silicon sous macOS 26, avec colonnes défilantes à la manière de Niri, découpage BSP à la manière d'Hyprland, terminal escamotable, palette de commandes et automatisation par ligne de commande. Aucune désactivation de la protection d'intégrité du système n'est nécessaire, et les versions officielles sont signées et notariées. Retenu malgré la restriction à macOS, qui n'est pas la plate-forme de travail de l'établissement.</p>
+<p>Vérification du dépôt : <code>OmniNull/OmniWM</code>, licence GPL-2.0, 3 501 étoiles, créé le 20 octobre 2025, dernier envoi le 2 novembre 2026 à 5h40 UTC, écrit en Swift. Gratuit, version 0.7.1. Installation par Homebrew (<code>brew install --cask omniwm</code>).</p>
+<p>Lien : https://omniwm.app — post d'origine : https://www.reddit.com/r/hermesagent/comments/1xllujc/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Modèles Apple Foundation Models accessibles en local par la commande <code>fm serve</code></h3>
+<p>Sous macOS 26, la troisième génération des modèles d'Apple qui équipent Siri peut être servie en local sur une machine Mac : <code>fm serve --host 127.0.0.1 --port 1976</code> expose un modèle qui tourne sur le moteur neuronal, sans coût et sans requête vers l'extérieur, avec raisonnement et appel d'outils. Le poids des modèles est déjà chargé par le système, ce qui évite de consommer de la mémoire supplémentaire, ce qui rend la chose intéressante pour une petite machine toujours allumée. Il faut être clair sur deux limites : il ne s'agit ni de logiciel libre ni d'un modèle ouvert, et l'usage suppose macOS 26 sur une machine Apple récente. L'auteur du post le propose comme moteur d'appoint pour des tâches courtes (domotique, résumés), pas comme modèle principal.</p>
+<p>Référence citée par l'auteur : https://machinelearning.apple.com/research/introducing-third-generation-of-apple-foundation-models<br />
+Post : https://www.reddit.com/r/hermesagent/comments/1xkxyu6/</p>
+<h2>Extensions et greffons</h2>
+<h3>5dive-browser — sessions de navigation authentifiées réutilisées par l'agent</h3>
+<p>Un développeur publie un greffon de navigateur libre pour agent (Apache-2.0) : il fournit un vrai Chrome, en mode fenêtré, sur le serveur, avec des sessions authentifiées à la main une fois pour toutes. L'agent hérite de la session et jamais du mot de passe. Le post qui l'accompagne mesure autre chose, et c'est le résultat le plus utile : en activant le mode fenêtré (<code>browser: headed: true</code> dans la configuration, sous Xvfb puisque le serveur n'a pas d'écran), le nombre de tâches bloquées par une protection anti-robot est passé de 39 à 20 sur cent tâches web, pour un coût équivalent (0,73 contre 0,72 dollar) au prix d'une exécution plus lente (86 secondes par tâche contre 68). L'auteur précise que la comparaison ne porte que sur une seule série de mesures et que l'écart (13 contre 18 tâches réussies) peut relever du hasard.</p>
+<p>Vérification du dépôt : <code>5dive-ai/5dive-browser</code>, licence Apache-2.0, 1 étoile, créé le 20 septembre 2026, dernier envoi le 1er novembre 2026, JavaScript.</p>
+<p>Lien : https://github.com/5dive-ai/5dive-browser — post : https://www.reddit.com/r/hermesagent/comments/1xl6gc6/</p>
+<h2>Volume</h2>
+<p>29 posts publiés dans l'intervalle, 4 retenus, 25 écartés.</p>
+<p>Remarque sur un post non retenu : une annonce d'une quantification 2,3 bits par poids d'un modèle Qwen de 27 milliards de paramètres, tenant sur une carte de 12 Go, a été repérée (post <code>1xlmu8p</code>, également publié dans r/LocalLLM et r/Qwen_AI), mais son corps est vide dans le journal et aucun dépôt Hugging Face correspondant n'a pu être relié à l'annonce : elle n'est donc pas reprise ici, faute de lien vérifiable.</p>
+<footer>Édition du lundi 2 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
