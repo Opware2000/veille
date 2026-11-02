@@ -6,9 +6,124 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 01 Nov 2026 05:54:41 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 06:02:22 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille ArtCraft — lundi 2 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-02.html</link>
+<guid isPermaLink="false">artcraft-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 06:02:22 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'équipe d'ArtCraft publie <strong>Craft Anything 0.1.0</strong>, l'outil d'exploration et de reconstruction de logiciels qui leur sert à produire la suite : c'est l'annonce la plus lourde de l'intervalle. La presse informatique allemande s'y intéresse (vidéo de c't 3003). Côté communauté : un outil de synchronisation type Lightroom pour LightCraft, un outil 360° testé avec FilmCraft, un modèle texte-image local de 5 milliards de paramètres et un projet d'alternative libre à Substance Painter.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>Craft Anything 0.1.0 — l'atelier d'ingénierie inverse de l'équipe, désormais libre</h3>
+<p>Michael, cofondateur d'ArtCraft, annonce la sortie de <strong>Craft Anything</strong> en version 0.1.0 (alpha précoce), sous licence Apache-2.0, dépôt <code>storytold/craft-anything</code> (1 519 étoiles au 2 novembre, dépôt créé le 31 octobre). L'outil sert à étudier des sites, applications, jeux et fichiers avec des outils qui conservent les preuves de leurs constats, puis à bâtir son propre projet avec un agent de codage, par approche « clean-room » ou inspection approfondie assumée. Il existe en application de bureau (macOS, Windows, Linux, Web), en ligne de commande et en serveur MCP, avec un jeton de demande d'autorisation avant toute action hors des règles fixées. Distributions : paquets macOS, MSI et portables Windows (dont ARM64), Flatpak, AppImage, deb, rpm et tarballs Linux (x86_64, aarch64, RISC-V), FreeBSD. Le lanceur ArtCraft passe à la version 0.12.0. Ce que ça change : l'outillage interne qui a servi à produire les Crafting Apps devient public, ce qui rend praticable l'écriture d'un « Craft » maison, mais la version 0.1.0 ne promet pas encore la maturité. Second fil le même jour avec la même annonce, « Woah, a new app by the ArtCraft team » (image), dont la discussion apporte deux précisions : l'outil a été nommé d'après REA (Reverse Engineer Anything), et les utilisateurs signalent d'abord le coût en jetons d'un clonage sérieux, puis une incompatibilité possible avec les règles récentes d'Anthropic côté Claude : un utilisateur abonné à Claude rapporte que l'application ne trouve pas son installation, et un autre se plaint de ne pouvoir indiquer ni adresse ni modèle local, la seule option visible étant « Use Hermes ».</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xkvppr/in_response_to_anthropic_blocking_rea_we/ — u/DifficultyBudget2986</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl5wry/woah_a_new_app_by_the_artcraft_team/ — u/Johnwick19802</li>
+<li>Page officielle : https://getartcraft.com/apps/craft-anything — dépôt : https://github.com/storytold/craft-anything</li>
+</ul>
+<h3>La presse allemande s'en empare : « ArtCraft hat mich in eine Krise gestürzt »</h3>
+<p>Un membre du subreddit partage la vidéo de la chaîne <strong>c't 3003</strong> (émanation du magazine allemand c't), intitulée « ArtCraft m'a plongé dans une crise » ; les sous-titres fonctionnent, précise l'auteur du fil. Ce n'est pas un article mais une vidéo, et l'auteur du post n'ajoute aucun commentaire au-delà de son enthousiasme. Ce que ça indique : la suite Crafting Apps sort du cercle des forums techniques pour atteindre la presse informatique grand public germanophone, un signe de notoriété plutôt que d'information technique.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl1psq/very_cool_review_by_german_tech_outlet_subtiles/ — u/Street-Cup-8409 — vidéo : https://youtu.be/3zqh0gpyZDI</li>
+</ul>
+<h3>TextureCraft : une application de plus, annoncée sans texte</h3>
+<p>Un membre publie « Another one: TextureCraft », accompagné d'une seule capture d'écran. Aucun texte, aucun dépôt, aucune licence : je ne peux donc pas confirmer de quoi il s'agit, ni si l'application est liée à l'équipe d'ArtCraft ou à un développeur tiers. Cette incertitude est signalée telle quelle ; le fil est retenu parce que le titre annonce une nouveauté de l'écosystème, pas parce qu'il la documente.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xladrj/another_one_texturecraft/ — u/Conscious-Sound-2716</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>SphereCraft 360 — incruster des médias plats sur des images 360° (Windows)</h3>
+<p>Un développeur publie <strong>SphereCraft 360</strong>, application Windows gratuite qui place des vidéos ou images plates sur des séquences équirectangulaires 360°, avec export ProRes 4444 MOV transparent, PNG et MP4 sur fond vert. L'auteur indique l'avoir testée avec FilmCraft. L'application compilée ne demande pas Python, mais FFmpeg et FFprobe doivent être installés à part ; les instructions sont dans le README. Le dépôt <code>PitKub/SphereCraft360</code> a été créé le 1er novembre et ne déclare aucune licence (GitHub n'en identifie aucune), ce qui limite la réutilisation, même si les binaires sont distribués gratuitement.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl3soa/i_made_a_free_windows_tool_for_placing_flat_media/ — u/Jazzlike-Main1894 — dépôt : https://github.com/PitKub/SphereCraft360</li>
+</ul>
+<h3>lightcraft-cloud — synchronisation type Lightroom pour LightCraft, sur son propre stockage</h3>
+<p><strong>lightcraft-cloud</strong> reproduit une partie de ce que fait Lightroom CC sans passer par le cloud d'Adobe : un poste Windows ou Linux reste la copie maîtresse et publie des aperçus vers un stockage au choix (Google Drive, OneDrive, S3, WebDAV, SFTP — tout ce que gère rclone), pour éditer depuis un téléphone ou un second ordinateur et renvoyer les modifications. L'application de bureau pilote LightCraft par son interface en ligne de commande et s'appuie sur des fichiers de retouche xmp, sans modification de LightCraft lui-même. Une application Android dérivée, <code>lightcraft-android</code>, permet d'éditer et de synchroniser depuis le téléphone. Les deux dépôts sont sous Apache-2.0 ; la synchronisation prend environ deux minutes et l'auteur prévient qu'il ne faut pas confier à l'outil ses seules sauvegardes. L'édition simultanée à plusieurs n'est pas prise en charge.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlhn1d/lightroomstyle_sync_for_lightcraft_using_your_own/ — u/tinytom21 — dépôts : https://github.com/tinytom21/lightcraft-cloud et https://github.com/tinytom21/lightcraft-android</li>
+</ul>
+<h3>Morphi — outil de dégradés animés, né du modèle proposé par ArtCraft</h3>
+<p>Un développeur raconte avoir réalisé, après avoir vu l'architecture des applications d'ArtCraft, son propre outil de design : <strong>Morphi</strong>, un générateur de dégradés animés qu'il décrit comme une fonctionnalité absente d'Adobe. La publication ne contient pas de texte, seulement la démonstration vidéo et le lien du site. Il s'agit d'un projet tiers, hébergé sur Vercel, sans dépôt ni licence publiés à ce stade.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xleph4/artcraft_made_me_realise_i_could_build_my_dream/ — u/TwinbladeMusic — site : https://morphi-zeta.vercel.app</li>
+</ul>
+<h3>Alternative libre à Substance Painter (Windows et Linux) — annoncée sans dépôt</h3>
+<p>Le même auteur que pour le modèle Moss Image annonce une alternative libre et gratuite à Substance Painter pour Windows et Linux, mais la publication ne contient qu'une vidéo (hébergée sur Reddit) : ni nom du logiciel, ni dépôt, ni licence. Impossible, en l'état, de la retrouver ou de la vérifier. Le post est retenu parce qu'il documente une intention réelle dans l'écosystème, pas parce qu'il est exploitable.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl8a9e/i_built_a_free_opensource_alternative_to/ — u/Pixelsmithing4life</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<ul>
+<li><strong>Moss Image, modèle texte-image local de 5 milliards de paramètres.</strong> Un membre rapporte l'avoir découvert le 1er novembre et l'avoir fait tourner « sans faute » sur un MacBook Pro M1 13 pouces à 16 Go de mémoire vive (Sequoia 15.8.2), donc entièrement hors ligne. Il l'utilise en complément des Crafting Apps, avec l'intention de générer par les outils en ligne de commande puis de retoucher dans PhotoCraft, DesignCraft et EffectCraft, l'appariement des trois passant par MCP — il précise ne pas avoir encore résolu ce point. Le fil est un retour d'expérience, mais la donnée utile est le chiffre : un modèle texte-image de 5 milliards de paramètres tient sur un portable d'entrée de gamme Apple. Le message ne cite pas de nom de dépôt ; la source du modèle reste à vérifier. https://www.reddit.com/r/ArtCraftAI/comments/1xl80w0/moss_image_local_5b_open_weight_texttoimage_model/ — u/Pixelsmithing4life</li>
+<li><strong>Gridline, station de travail audio libre (GPL-3.0) pour utilisateurs de FL Studio.</strong> Développée pour Windows, macOS, Linux et BSD, elle ouvre les projets <code>.flp</code> et les paquets de boucles <code>.zip</code> (canaux, motifs, notes, clips, automatisation, routage de la console), conserve les réglages des greffons tiers, intègre 175 instruments et effets, prend en charge VST3, CLAP, VST2, AU et LV2, sépare les pistes audio sur la machine et propose la collaboration pair-à-pair chiffrée sans compte. Aucun rapport avec ArtCraft : c'est un projet libre annoncé dans le même subreddit, à titre de comparaison sur ce que la communauté attend d'un logiciel de création natif. https://www.reddit.com/r/ArtCraftAI/comments/1xkwin6/i_made_a_free_open_source_daw_for_fl_studio_users/ — u/lolitemaultes</li>
+<li><strong>SolidCraft, de l'atelier Tangency Labs, dans le lanceur ArtCraft.</strong> Repéré au fil d'un commentaire plutôt que dans un post : la CAO paramétrique libre <code>tangency-labs/solidcraft</code> (Apache-2.0, 12 949 étoiles, dépôt créé le 7 octobre) est distribuée par le lanceur ArtCraft, qui l'attribue à Tangency Labs alors que les autres applications y figurent sous le nom d'ArtCraft. L'organisation publie également PcbCraft, SolidCore et FieldCraft. Le lien exact entre les deux équipes n'est pas documenté publiquement dans ce que j'ai pu lire ; à suivre.</li>
+</ul>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Mise à jour sous Linux jugée pénible.</strong> Un utilisateur rapporte devoir lancer le lanceur puis mettre chaque application à jour séparément, avec des demandes de mot de passe administrateur à répétition, là où il attendrait un paquet géré par <code>apt</code> ou un gestionnaire de paquets de distribution ; il estime que les applications devraient y être intégrées proprement. Dans le même fil, un autre utilisateur confirme qu'une version récente du lanceur sait désormais se mettre à jour lui-même depuis l'application (cas du Flatpak), et que SolidCraft 0.29.0 y est bien présent. À retenir comme friction récurrente, pas comme incident.</li>
+</ul>
+<h2>Volume</h2>
+<p>19 posts publiés dans l'intervalle (depuis l'édition du 1er novembre, 4 h 54), 11 retenus, 8 écartés (idées et demandes de fonctionnalités sans suite, questions de support, rapports de bug isolés, retours d'expérience subjectifs). La collecte s'est déroulée sans erreur (dernier passage le 2 novembre à 3 h 56 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'équipe d'ArtCraft publie <strong>Craft Anything 0.1.0</strong>, l'outil d'exploration et de reconstruction de logiciels qui leur sert à produire la suite : c'est l'annonce la plus lourde de l'intervalle. La presse informatique allemande s'y intéresse (vidéo de c't 3003). Côté communauté : un outil de synchronisation type Lightroom pour LightCraft, un outil 360° testé avec FilmCraft, un modèle texte-image local de 5 milliards de paramètres et un projet d'alternative libre à Substance Painter.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>Craft Anything 0.1.0 — l'atelier d'ingénierie inverse de l'équipe, désormais libre</h3>
+<p>Michael, cofondateur d'ArtCraft, annonce la sortie de <strong>Craft Anything</strong> en version 0.1.0 (alpha précoce), sous licence Apache-2.0, dépôt <code>storytold/craft-anything</code> (1 519 étoiles au 2 novembre, dépôt créé le 31 octobre). L'outil sert à étudier des sites, applications, jeux et fichiers avec des outils qui conservent les preuves de leurs constats, puis à bâtir son propre projet avec un agent de codage, par approche « clean-room » ou inspection approfondie assumée. Il existe en application de bureau (macOS, Windows, Linux, Web), en ligne de commande et en serveur MCP, avec un jeton de demande d'autorisation avant toute action hors des règles fixées. Distributions : paquets macOS, MSI et portables Windows (dont ARM64), Flatpak, AppImage, deb, rpm et tarballs Linux (x86_64, aarch64, RISC-V), FreeBSD. Le lanceur ArtCraft passe à la version 0.12.0. Ce que ça change : l'outillage interne qui a servi à produire les Crafting Apps devient public, ce qui rend praticable l'écriture d'un « Craft » maison, mais la version 0.1.0 ne promet pas encore la maturité. Second fil le même jour avec la même annonce, « Woah, a new app by the ArtCraft team » (image), dont la discussion apporte deux précisions : l'outil a été nommé d'après REA (Reverse Engineer Anything), et les utilisateurs signalent d'abord le coût en jetons d'un clonage sérieux, puis une incompatibilité possible avec les règles récentes d'Anthropic côté Claude : un utilisateur abonné à Claude rapporte que l'application ne trouve pas son installation, et un autre se plaint de ne pouvoir indiquer ni adresse ni modèle local, la seule option visible étant « Use Hermes ».</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xkvppr/in_response_to_anthropic_blocking_rea_we/ — u/DifficultyBudget2986</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl5wry/woah_a_new_app_by_the_artcraft_team/ — u/Johnwick19802</li>
+<li>Page officielle : https://getartcraft.com/apps/craft-anything — dépôt : https://github.com/storytold/craft-anything</li>
+</ul>
+<h3>La presse allemande s'en empare : « ArtCraft hat mich in eine Krise gestürzt »</h3>
+<p>Un membre du subreddit partage la vidéo de la chaîne <strong>c't 3003</strong> (émanation du magazine allemand c't), intitulée « ArtCraft m'a plongé dans une crise » ; les sous-titres fonctionnent, précise l'auteur du fil. Ce n'est pas un article mais une vidéo, et l'auteur du post n'ajoute aucun commentaire au-delà de son enthousiasme. Ce que ça indique : la suite Crafting Apps sort du cercle des forums techniques pour atteindre la presse informatique grand public germanophone, un signe de notoriété plutôt que d'information technique.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl1psq/very_cool_review_by_german_tech_outlet_subtiles/ — u/Street-Cup-8409 — vidéo : https://youtu.be/3zqh0gpyZDI</li>
+</ul>
+<h3>TextureCraft : une application de plus, annoncée sans texte</h3>
+<p>Un membre publie « Another one: TextureCraft », accompagné d'une seule capture d'écran. Aucun texte, aucun dépôt, aucune licence : je ne peux donc pas confirmer de quoi il s'agit, ni si l'application est liée à l'équipe d'ArtCraft ou à un développeur tiers. Cette incertitude est signalée telle quelle ; le fil est retenu parce que le titre annonce une nouveauté de l'écosystème, pas parce qu'il la documente.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xladrj/another_one_texturecraft/ — u/Conscious-Sound-2716</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>SphereCraft 360 — incruster des médias plats sur des images 360° (Windows)</h3>
+<p>Un développeur publie <strong>SphereCraft 360</strong>, application Windows gratuite qui place des vidéos ou images plates sur des séquences équirectangulaires 360°, avec export ProRes 4444 MOV transparent, PNG et MP4 sur fond vert. L'auteur indique l'avoir testée avec FilmCraft. L'application compilée ne demande pas Python, mais FFmpeg et FFprobe doivent être installés à part ; les instructions sont dans le README. Le dépôt <code>PitKub/SphereCraft360</code> a été créé le 1er novembre et ne déclare aucune licence (GitHub n'en identifie aucune), ce qui limite la réutilisation, même si les binaires sont distribués gratuitement.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl3soa/i_made_a_free_windows_tool_for_placing_flat_media/ — u/Jazzlike-Main1894 — dépôt : https://github.com/PitKub/SphereCraft360</li>
+</ul>
+<h3>lightcraft-cloud — synchronisation type Lightroom pour LightCraft, sur son propre stockage</h3>
+<p><strong>lightcraft-cloud</strong> reproduit une partie de ce que fait Lightroom CC sans passer par le cloud d'Adobe : un poste Windows ou Linux reste la copie maîtresse et publie des aperçus vers un stockage au choix (Google Drive, OneDrive, S3, WebDAV, SFTP — tout ce que gère rclone), pour éditer depuis un téléphone ou un second ordinateur et renvoyer les modifications. L'application de bureau pilote LightCraft par son interface en ligne de commande et s'appuie sur des fichiers de retouche xmp, sans modification de LightCraft lui-même. Une application Android dérivée, <code>lightcraft-android</code>, permet d'éditer et de synchroniser depuis le téléphone. Les deux dépôts sont sous Apache-2.0 ; la synchronisation prend environ deux minutes et l'auteur prévient qu'il ne faut pas confier à l'outil ses seules sauvegardes. L'édition simultanée à plusieurs n'est pas prise en charge.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlhn1d/lightroomstyle_sync_for_lightcraft_using_your_own/ — u/tinytom21 — dépôts : https://github.com/tinytom21/lightcraft-cloud et https://github.com/tinytom21/lightcraft-android</li>
+</ul>
+<h3>Morphi — outil de dégradés animés, né du modèle proposé par ArtCraft</h3>
+<p>Un développeur raconte avoir réalisé, après avoir vu l'architecture des applications d'ArtCraft, son propre outil de design : <strong>Morphi</strong>, un générateur de dégradés animés qu'il décrit comme une fonctionnalité absente d'Adobe. La publication ne contient pas de texte, seulement la démonstration vidéo et le lien du site. Il s'agit d'un projet tiers, hébergé sur Vercel, sans dépôt ni licence publiés à ce stade.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xleph4/artcraft_made_me_realise_i_could_build_my_dream/ — u/TwinbladeMusic — site : https://morphi-zeta.vercel.app</li>
+</ul>
+<h3>Alternative libre à Substance Painter (Windows et Linux) — annoncée sans dépôt</h3>
+<p>Le même auteur que pour le modèle Moss Image annonce une alternative libre et gratuite à Substance Painter pour Windows et Linux, mais la publication ne contient qu'une vidéo (hébergée sur Reddit) : ni nom du logiciel, ni dépôt, ni licence. Impossible, en l'état, de la retrouver ou de la vérifier. Le post est retenu parce qu'il documente une intention réelle dans l'écosystème, pas parce qu'il est exploitable.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xl8a9e/i_built_a_free_opensource_alternative_to/ — u/Pixelsmithing4life</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<ul>
+<li><strong>Moss Image, modèle texte-image local de 5 milliards de paramètres.</strong> Un membre rapporte l'avoir découvert le 1er novembre et l'avoir fait tourner « sans faute » sur un MacBook Pro M1 13 pouces à 16 Go de mémoire vive (Sequoia 15.8.2), donc entièrement hors ligne. Il l'utilise en complément des Crafting Apps, avec l'intention de générer par les outils en ligne de commande puis de retoucher dans PhotoCraft, DesignCraft et EffectCraft, l'appariement des trois passant par MCP — il précise ne pas avoir encore résolu ce point. Le fil est un retour d'expérience, mais la donnée utile est le chiffre : un modèle texte-image de 5 milliards de paramètres tient sur un portable d'entrée de gamme Apple. Le message ne cite pas de nom de dépôt ; la source du modèle reste à vérifier. https://www.reddit.com/r/ArtCraftAI/comments/1xl80w0/moss_image_local_5b_open_weight_texttoimage_model/ — u/Pixelsmithing4life</li>
+<li><strong>Gridline, station de travail audio libre (GPL-3.0) pour utilisateurs de FL Studio.</strong> Développée pour Windows, macOS, Linux et BSD, elle ouvre les projets <code>.flp</code> et les paquets de boucles <code>.zip</code> (canaux, motifs, notes, clips, automatisation, routage de la console), conserve les réglages des greffons tiers, intègre 175 instruments et effets, prend en charge VST3, CLAP, VST2, AU et LV2, sépare les pistes audio sur la machine et propose la collaboration pair-à-pair chiffrée sans compte. Aucun rapport avec ArtCraft : c'est un projet libre annoncé dans le même subreddit, à titre de comparaison sur ce que la communauté attend d'un logiciel de création natif. https://www.reddit.com/r/ArtCraftAI/comments/1xkwin6/i_made_a_free_open_source_daw_for_fl_studio_users/ — u/lolitemaultes</li>
+<li><strong>SolidCraft, de l'atelier Tangency Labs, dans le lanceur ArtCraft.</strong> Repéré au fil d'un commentaire plutôt que dans un post : la CAO paramétrique libre <code>tangency-labs/solidcraft</code> (Apache-2.0, 12 949 étoiles, dépôt créé le 7 octobre) est distribuée par le lanceur ArtCraft, qui l'attribue à Tangency Labs alors que les autres applications y figurent sous le nom d'ArtCraft. L'organisation publie également PcbCraft, SolidCore et FieldCraft. Le lien exact entre les deux équipes n'est pas documenté publiquement dans ce que j'ai pu lire ; à suivre.</li>
+</ul>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Mise à jour sous Linux jugée pénible.</strong> Un utilisateur rapporte devoir lancer le lanceur puis mettre chaque application à jour séparément, avec des demandes de mot de passe administrateur à répétition, là où il attendrait un paquet géré par <code>apt</code> ou un gestionnaire de paquets de distribution ; il estime que les applications devraient y être intégrées proprement. Dans le même fil, un autre utilisateur confirme qu'une version récente du lanceur sait désormais se mettre à jour lui-même depuis l'application (cas du Flatpak), et que SolidCraft 0.29.0 y est bien présent. À retenir comme friction récurrente, pas comme incident.</li>
+</ul>
+<h2>Volume</h2>
+<p>19 posts publiés dans l'intervalle (depuis l'édition du 1er novembre, 4 h 54), 11 retenus, 8 écartés (idées et demandes de fonctionnalités sans suite, questions de support, rapports de bug isolés, retours d'expérience subjectifs). La collecte s'est déroulée sans erreur (dernier passage le 2 novembre à 3 h 56 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — dimanche 1er novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-01.html</link>

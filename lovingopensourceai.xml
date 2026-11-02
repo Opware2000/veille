@@ -6,9 +6,64 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 01 Nov 2026 06:11:28 +0100</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 06:11:50 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — lundi 2 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-02.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-02</guid>
+<pubDate>Mon, 02 Nov 2026 06:11:50 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Quatre posts parus depuis la dernière édition, deux retenus.</li>
+<li>Microsoft (avec UC Berkeley) publie TokenEconomizer, un outil libre qui fait baisser de 18 à 31 % le coût des agents de codage sans changer de modèle.</li>
+<li>Un rendez-vous hebdomadaire de l'agrégateur LifeHubber met en avant cinq projets libres : agents macOS, OCR de documents, recherche sémantique locale. Les liens passent par son site ; j'ai vérifié chaque dépôt.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>TokenEconomizer — reprendre la main sur le coût des agents de codage</h3>
+<p>Ce que c'est : un outil développé par Microsoft Research, Microsoft Security et l'université de Berkeley, qui s'intercale dans un agent de codage existant (Claude Code, Codex, GitHub Copilot CLI, Pi) sans toucher au modèle. Trois mécanismes : des « micro-compétences » qui mémorisent au fil des sessions comment fonctionne le dépôt, l'abandon des outils que l'agent n'utilise jamais sur ce dépôt, et l'interruption des boucles où l'agent répète la même erreur.<br />
+Ce que ça apporte : sur les tâches SWE-Bench, les auteurs annoncent un coût moyen inférieur de 18,4 à 30,9 % sur cinq couples agent-modèle, un coût plus faible dans les trente cellules (dépôt × couple) mesurées, et un taux de réussite (Pass@1) en hausse dans quatre cas sur cinq. Ces chiffres viennent du dépôt et de l'article des auteurs ; ils ne sont pas reproduits ici.<br />
+Licence et prix : Apache 2.0, gratuit. 4 093 étoiles, dernière modification le 1er novembre 2026. Le dépôt est très récent : à considérer comme un prototype de recherche, pas comme un outil stabilisé.<br />
+Lien : https://github.com/microsoft/TokenEconomizer</p>
+<h2>Sélection de projets libres relayée par LifeHubber</h2>
+<p>Le post est un rendez-vous éditorial hebdomadaire de l'agrégateur LifeHubber, qui signale lui-même ne pas vérifier les projets qu'il cite. Les outils présentés ne sont pas des nouveautés du jour ; les liens du post passent par son site, je donne ici les dépôts d'origine.</p>
+<ul>
+<li><strong>Osaurus</strong> — harnais d'agents natif pour macOS : on y branche un modèle local ou distant, avec mémoire persistante, outils et API locales. Réservé aux Mac Apple Silicon. Licence MIT, 8 102 étoiles, dernière modification le 2 novembre 2026. https://github.com/osaurus-ai/osaurus</li>
+<li><strong>OpenOats</strong> — assistant de réunion pour macOS : il transcrit la conversation et fait remonter pendant l'appel les passages utiles de ses propres notes ; le fournisseur de suggestions peut être local ou distant. Licence MIT, 2 627 étoiles, dernière modification le 27 octobre 2026. https://github.com/yazinsai/OpenOats</li>
+<li><strong>Surya</strong> — OCR et analyse de mise en page (ordre de lecture, tableaux, formules) sur images et PDF, dans plus de 90 langues. C'est la brique à regarder pour numériser des documents sans service en ligne. Licence Apache 2.0, 21 566 étoiles, dernière modification le 29 octobre 2026. https://github.com/datalab-to/surya</li>
+<li><strong>LEANN</strong> — index de recherche sémantique construit en local sur ses propres fichiers, annoncé avec 97 % d'économie de stockage par rapport à un index vectoriel classique. Licence MIT, 13 748 étoiles, dernière modification le 2 novembre 2026. Attention : le dépôt a déménagé, <code>yichuan-w/LEANN</code> redirige désormais vers <code>StarTrail-org/LEANN</code> ; l'adresse relayée par l'agrégateur est à corriger. https://github.com/StarTrail-org/LEANN</li>
+<li><strong>LFM2.5 Encoders</strong> (Liquid AI) — deux modèles d'encodage (230 M et 350 M de paramètres) destinés à être affinés pour la classification, la recherche, le reclassement ou la comparaison de textes ; ils servent à trier du texte plutôt qu'à tenir une conversation. La version « encoder » est distincte des modèles génératifs LFM2.5 plus connus. Incertitude sur le plan juridique : la fiche Hugging Face déclare une licence « other » (licence propre à Liquid AI), qui n'est pas une licence libre reconnue ; à examiner avant tout usage hors expérimentation. 111 mentions d'intérêt et 3 055 téléchargements pour la version 230 M, publiée le 27 juillet 2026. https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M</li>
+</ul>
+<h2>Volume</h2>
+<p>4 posts publiés dans l'intervalle (1er novembre), 2 retenus, 2 écartés — une question sur les bacs à sable d'agents et un récit de contribution au projet Go, sans annonce de logiciel.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — lundi 2 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Quatre posts parus depuis la dernière édition, deux retenus.</li>
+<li>Microsoft (avec UC Berkeley) publie TokenEconomizer, un outil libre qui fait baisser de 18 à 31 % le coût des agents de codage sans changer de modèle.</li>
+<li>Un rendez-vous hebdomadaire de l'agrégateur LifeHubber met en avant cinq projets libres : agents macOS, OCR de documents, recherche sémantique locale. Les liens passent par son site ; j'ai vérifié chaque dépôt.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>TokenEconomizer — reprendre la main sur le coût des agents de codage</h3>
+<p>Ce que c'est : un outil développé par Microsoft Research, Microsoft Security et l'université de Berkeley, qui s'intercale dans un agent de codage existant (Claude Code, Codex, GitHub Copilot CLI, Pi) sans toucher au modèle. Trois mécanismes : des « micro-compétences » qui mémorisent au fil des sessions comment fonctionne le dépôt, l'abandon des outils que l'agent n'utilise jamais sur ce dépôt, et l'interruption des boucles où l'agent répète la même erreur.<br />
+Ce que ça apporte : sur les tâches SWE-Bench, les auteurs annoncent un coût moyen inférieur de 18,4 à 30,9 % sur cinq couples agent-modèle, un coût plus faible dans les trente cellules (dépôt × couple) mesurées, et un taux de réussite (Pass@1) en hausse dans quatre cas sur cinq. Ces chiffres viennent du dépôt et de l'article des auteurs ; ils ne sont pas reproduits ici.<br />
+Licence et prix : Apache 2.0, gratuit. 4 093 étoiles, dernière modification le 1er novembre 2026. Le dépôt est très récent : à considérer comme un prototype de recherche, pas comme un outil stabilisé.<br />
+Lien : https://github.com/microsoft/TokenEconomizer</p>
+<h2>Sélection de projets libres relayée par LifeHubber</h2>
+<p>Le post est un rendez-vous éditorial hebdomadaire de l'agrégateur LifeHubber, qui signale lui-même ne pas vérifier les projets qu'il cite. Les outils présentés ne sont pas des nouveautés du jour ; les liens du post passent par son site, je donne ici les dépôts d'origine.</p>
+<ul>
+<li><strong>Osaurus</strong> — harnais d'agents natif pour macOS : on y branche un modèle local ou distant, avec mémoire persistante, outils et API locales. Réservé aux Mac Apple Silicon. Licence MIT, 8 102 étoiles, dernière modification le 2 novembre 2026. https://github.com/osaurus-ai/osaurus</li>
+<li><strong>OpenOats</strong> — assistant de réunion pour macOS : il transcrit la conversation et fait remonter pendant l'appel les passages utiles de ses propres notes ; le fournisseur de suggestions peut être local ou distant. Licence MIT, 2 627 étoiles, dernière modification le 27 octobre 2026. https://github.com/yazinsai/OpenOats</li>
+<li><strong>Surya</strong> — OCR et analyse de mise en page (ordre de lecture, tableaux, formules) sur images et PDF, dans plus de 90 langues. C'est la brique à regarder pour numériser des documents sans service en ligne. Licence Apache 2.0, 21 566 étoiles, dernière modification le 29 octobre 2026. https://github.com/datalab-to/surya</li>
+<li><strong>LEANN</strong> — index de recherche sémantique construit en local sur ses propres fichiers, annoncé avec 97 % d'économie de stockage par rapport à un index vectoriel classique. Licence MIT, 13 748 étoiles, dernière modification le 2 novembre 2026. Attention : le dépôt a déménagé, <code>yichuan-w/LEANN</code> redirige désormais vers <code>StarTrail-org/LEANN</code> ; l'adresse relayée par l'agrégateur est à corriger. https://github.com/StarTrail-org/LEANN</li>
+<li><strong>LFM2.5 Encoders</strong> (Liquid AI) — deux modèles d'encodage (230 M et 350 M de paramètres) destinés à être affinés pour la classification, la recherche, le reclassement ou la comparaison de textes ; ils servent à trier du texte plutôt qu'à tenir une conversation. La version « encoder » est distincte des modèles génératifs LFM2.5 plus connus. Incertitude sur le plan juridique : la fiche Hugging Face déclare une licence « other » (licence propre à Liquid AI), qui n'est pas une licence libre reconnue ; à examiner avant tout usage hors expérimentation. 111 mentions d'intérêt et 3 055 téléchargements pour la version 230 M, publiée le 27 juillet 2026. https://huggingface.co/LiquidAI/LFM2.5-Encoder-230M</li>
+</ul>
+<h2>Volume</h2>
+<p>4 posts publiés dans l'intervalle (1er novembre), 2 retenus, 2 écartés — une question sur les bacs à sable d'agents et un récit de contribution au projet Go, sans annonce de logiciel.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — dimanche 1er novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-01.html</link>
