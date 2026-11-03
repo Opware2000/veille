@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — mardi 3 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée des clients mobiles et des navigateurs : un client Android libre avec montres et voiture, un navigateur spatial pour macOS, et l'arrivée d'un réseau social hébergé que l'agent rejoint en son nom.</li>
+<li>Cinq posts retenus sur trente et un examinés ; le reste est fait de questions, de demandes d'aide et de retours d'usage sans annonce de logiciel.</li>
+<li>Rappel de la semaine côté Hermes Agent : 417 fusions, dont un verrou de compétence, l'arrêt d'une tâche en cours d'exécution et le choix de la politique de rattrapage d'un job manqué.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermes Onyx — client Android libre, avec montres et voiture</h3>
+<p>Un développeur présente Hermes Onyx, application Android native pour piloter un agent Hermes auto-hébergé (Ollama, vLLM ou Hermes Agent) sur son propre serveur. Aucune télémétrie, clés et données conservées chez soi. Trois usages sortent du téléphone : déclencher des tâches et dicter des commandes depuis une montre Wear OS, dialoguer en mains libres et écouter des résumés contextuels via Android Auto, et suivre les journaux d'exécution ou gérer les autorisations d'outils depuis téléphone ou tablette. Le projet est annoncé tout récent et cherche des testeurs.</p>
+<p>Vérification du dépôt (API GitHub) : <code>JemaOS/hermes-onyx</code>, licence MIT, 2 étoiles, créé le 26 octobre 2026, dernier envoi le 3 novembre 2026 à 2h08 UTC, écrit en Kotlin. Le nombre d'étoiles ne reflète que l'âge du projet. Les modes embarqué et montre sont annoncés mais non vérifiables depuis le dépôt seul : à confirmer par un essai.</p>
+<p>Lien : https://github.com/JemaOS/hermes-onyx — post : https://www.reddit.com/r/hermesagent/comments/1xltyy9/</p>
+<h3>Waypoint — navigateur spatial sans télémétrie pour macOS</h3>
+<p>Waypoint organise la navigation sur un canevas 2D infini : chaque page vit dans une tuile native, ce qui remplace les onglets et les extensions de gestion d'onglets par un espace qu'on parcourt et qu'on zoome. Trois points intéressants : des « bocaux » de sessions isolées (travail, achats, navigation anonyme) aux cookies et stockages séparés ; un filtrage réseau au niveau du réseau avant l'établissement des connexions, avec une liste de 41 000 hôtes bloqueurs ; et des outils locaux (mode sombre inversé par tuile, découpe d'articles en Markdown, marque-pages liés au bocal de session). L'auteur signale que l'outil a été construit et publié avec Hermes Agent.</p>
+<p>Vérification du dépôt : <code>rpmalouin/waypoint</code>, licence MIT, 0 étoile, créé le 2 novembre 2026, dernier envoi le jour même à 20h21 UTC, écrit en TypeScript. Projet donc âgé de quelques heures, et restreint à macOS Apple Silicon — ce n'est pas la plate-forme du lycée, mais l'isolement des sessions et le blocage réseau en amont sont transposables dans l'idée.</p>
+<p>Lien : https://github.com/rpmalouin/waypoint — post : https://www.reddit.com/r/hermesagent/comments/1xmb7vn/</p>
+<h3>Xenogram — réseau social hébergé où l'agent tient votre place</h3>
+<p>Xenogram propose à plusieurs agents de se retrouver sur un même service : chaque agent rejoint la plateforme en son nom et pour son humain, lit et publie, répond, suit d'autres agents et ne remonte à son humain que ce qui demande un accord. La mise en place tient en une phrase donnée à l'agent (« lis xenogram.com/skill et installe-moi ») : rien à installer, l'agent lit une page et parle à une API.</p>
+<p>Réserve à énoncer clairement : c'est un service hébergé en test alpha, sans dépôt public ni licence annoncée à ce jour, et la gratuité n'est pas documentée ; les données de profil et les conversations passent par les serveurs de l'éditeur. À essayer en connaissance de cause, avec un profil minimal.</p>
+<p>Lien : https://xenogram.com — post : https://www.reddit.com/r/hermesagent/comments/1xm584f/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Redde 2.3.1 — fonctions proactives et application macOS native</h3>
+<p>Redde est le client pour iPhone, iPad, montre Apple et CarPlay qui se connecte à son propre agent Hermes. La version 2.3.1 ajoute des fonctions dites proactives : l'agent propose le matin une série de tâches à accepter ou refuser d'un geste, apprend des choix retenus et prépare des mises en garde avant les rendez-vous. Tout est désactivé par défaut et l'activation se fait depuis un greffon Redde côté Hermes. La même version apporte une application macOS native. L'application reste gratuite d'après l'annonce ; le client est propriétaire et aucune licence n'est publiée.</p>
+<p>Lien : https://redde.app — post : https://www.reddit.com/r/hermesagent/comments/1xmez6z/</p>
+<h3>Hermes Agent — 417 fusions du 26 octobre au 2 novembre</h3>
+<p>Le récapitulatif hebdomadaire des fusions apporte des changements directement utiles au quotidien : verrouillage d'une compétence pour empêcher l'agent de la modifier, possibilité d'arrêter une tâche en pleine exécution (desktop, annulation, suppression) et choix de rattraper ou d'ignorer les exécutions manquées d'une tâche planifiée ; les tâches planifiées reçoivent désormais l'heure de déclenchement dans leur invite. Côté agent : un plafond facultatif sur la durée totale d'une réponse en flux, et la possibilité pour un greffon de bloquer un tour avant qu'il n'atteigne le modèle. Côté interface : les fichiers SOUL.md, compétences et fichiers de contexte mis à jour sont repris par les sessions en cours (« refresh-prompts »), les réglages du bureau et de l'application web suivent l'utilisateur d'un appareil à l'autre sur une même machine, et les demandes d'autorisation affichent enfin les caractères Unicode cachés au lieu de les masquer. De nombreux correctifs de sécurité sur les passerelles, les greffons et l'application web sont également comptés.</p>
+<p>Le détail complet figure dans le post ; les « 110 ajouts et mises à jour de greffons » y sont renvoyés au récapitulatif du mardi, qui n'apparaît pas dans l'intervalle examiné.</p>
+<p>Post : https://www.reddit.com/r/hermesagent/comments/1xm5a7r/</p>
+<h2>Volume</h2>
+<p>31 posts publiés dans l'intervalle, 5 retenus, 26 écartés.</p>
+<p>Remarques sur deux posts non retenus, à la limite du filtre. Le premier (<code>1xlniyf</code>) est une comparaison de dix systèmes de mémoire libre pour agents sur le banc d'essai BEAM, qui désigne EverOS et Hindsight en tête, au niveau du contexte complet pour vingt-quatre à trente-cinq fois moins de texte lu ; c'est un banc d'essai et non l'annonce d'un outil utilisable, donc écarté, mais il reste utile si vous cherchez à améliorer la mémoire de votre agent. Le second (<code>1xlzd8f</code>) annonce une application Android brésilienne, ARGUS CODE PANOPTES, citant l'intégration de plusieurs agents et de plus de trente fournisseurs, avec les propres clés de l'utilisateur ; l'application n'est qu'en bêta fermée, sans dépôt ni licence : aucune version utilisable, écarté pour cette raison.</p>
+<footer>Édition du mardi 3 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
