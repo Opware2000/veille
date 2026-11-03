@@ -6,9 +6,56 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 03 Nov 2026 06:44:51 +0100</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 06:51:25 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
-<ttl>60</ttl>
+<ttl>15</ttl>
+<item>
+<title>Veille r/opensource — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-03.html</link>
+<guid isPermaLink="false">opensource-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 06:51:25 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une bibliothèque Python pour émuler des manettes de jeu franchit un cap : la version 0.2.0 aligne enfin Windows et Linux sur presque toutes les fonctions.</li>
+<li>Un passionné met en avant Ourchive, logiciel libre d'archive de fanworks à installer soi-même, encore en démonstration.</li>
+<li>Les trois autres posts de l'intervalle sont des questions de recherche d'outil ou une simple vitrine d'hébergement : écartés.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ourchive — héberger soi-même une archive de créations</h3>
+<p>Ourchive est un logiciel libre à installer sur son propre serveur pour tenir une archive de fanworks (textes, images, audio) : métadonnées libres sous forme d'étiquettes, comptes utilisateurs, signets, collections et commentaires. Le post le présente comme une alternative décentralisée à Archive of Our Own, chaque installation restant autonome ; la fédération entre instances n'est pas encore en place. Le projet existe depuis 2023 et l'instance publique est toujours en démonstration, ce qui limite pour l'instant l'usage à un cercle restreint — l'intérêt technique reste réel pour quiconque veut héberger une archive communautaire sans dépendre d'une plateforme unique.</p>
+<p>Dépôt <code>OurchiveIO/ourchive</code> : licence GPL-3.0, 19 étoiles, dernière mise à jour le 3 novembre 2026 (projet actif). https://github.com/OurchiveIO/ourchive</p>
+<h3>Chessforge — échecs multijoueurs dans le navigateur</h3>
+<p>Chessforge est un jeu d'échecs multijoueurs qui tourne directement dans le navigateur, appuyé sur le moteur Stockfish 19 Lite. Son auteur le présente comme un projet d'apprentissage et demande des retours sur l'interface et le jeu. Le dépôt vient d'être créé (1er novembre 2026) et n'a encore ni étoile ni communauté ; à signaler comme un projet très jeune, pas comme un outil éprouvé. Licence AGPL-3.0. https://github.com/nitin-is-me/chessforge</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>vgamepad 0.2.0 — manettes virtuelles en Python</h3>
+<p>La bibliothèque Python <code>vgamepad</code> permet de simuler une manette Xbox 360 ou DualShock 4 depuis un programme, ce qui sert aux tests automatisés de jeux et aux projets d'accessibilité. La version 0.2.0, publiée ces derniers jours par son mainteneur, rend disponible sous Linux comme sous Windows la quasi-totalité des fonctions des deux manettes, y compris gyroscope, accéléromètre et pavé tactile du contrôleur Sony. La dépendance Windows ViGEmBus n'étant plus maintenue, la bibliothèque embarque une version figée du pilote ; l'auteur cherche un remplaçant actif.</p>
+<p>Dépôt <code>yannbouteiller/vgamepad</code> : licence MIT, 263 étoiles, dernière mise à jour le 27 octobre 2026. https://github.com/yannbouteiller/vgamepad</p>
+<h2>Volume</h2>
+<p>6 posts publiés dans l'intervalle, 3 retenus, 3 écartés (deux demandes de recommandation — logiciel BIM et planification de rotations d'équipes — et une page personnelle hébergeant neuf outils existants, qui n'annonce aucun logiciel nouveau).</p>
+<p>La dernière collecte du journal s'est déroulée sans erreur (3 novembre 2026, 3 h 52 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une bibliothèque Python pour émuler des manettes de jeu franchit un cap : la version 0.2.0 aligne enfin Windows et Linux sur presque toutes les fonctions.</li>
+<li>Un passionné met en avant Ourchive, logiciel libre d'archive de fanworks à installer soi-même, encore en démonstration.</li>
+<li>Les trois autres posts de l'intervalle sont des questions de recherche d'outil ou une simple vitrine d'hébergement : écartés.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ourchive — héberger soi-même une archive de créations</h3>
+<p>Ourchive est un logiciel libre à installer sur son propre serveur pour tenir une archive de fanworks (textes, images, audio) : métadonnées libres sous forme d'étiquettes, comptes utilisateurs, signets, collections et commentaires. Le post le présente comme une alternative décentralisée à Archive of Our Own, chaque installation restant autonome ; la fédération entre instances n'est pas encore en place. Le projet existe depuis 2023 et l'instance publique est toujours en démonstration, ce qui limite pour l'instant l'usage à un cercle restreint — l'intérêt technique reste réel pour quiconque veut héberger une archive communautaire sans dépendre d'une plateforme unique.</p>
+<p>Dépôt <code>OurchiveIO/ourchive</code> : licence GPL-3.0, 19 étoiles, dernière mise à jour le 3 novembre 2026 (projet actif). https://github.com/OurchiveIO/ourchive</p>
+<h3>Chessforge — échecs multijoueurs dans le navigateur</h3>
+<p>Chessforge est un jeu d'échecs multijoueurs qui tourne directement dans le navigateur, appuyé sur le moteur Stockfish 19 Lite. Son auteur le présente comme un projet d'apprentissage et demande des retours sur l'interface et le jeu. Le dépôt vient d'être créé (1er novembre 2026) et n'a encore ni étoile ni communauté ; à signaler comme un projet très jeune, pas comme un outil éprouvé. Licence AGPL-3.0. https://github.com/nitin-is-me/chessforge</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>vgamepad 0.2.0 — manettes virtuelles en Python</h3>
+<p>La bibliothèque Python <code>vgamepad</code> permet de simuler une manette Xbox 360 ou DualShock 4 depuis un programme, ce qui sert aux tests automatisés de jeux et aux projets d'accessibilité. La version 0.2.0, publiée ces derniers jours par son mainteneur, rend disponible sous Linux comme sous Windows la quasi-totalité des fonctions des deux manettes, y compris gyroscope, accéléromètre et pavé tactile du contrôleur Sony. La dépendance Windows ViGEmBus n'étant plus maintenue, la bibliothèque embarque une version figée du pilote ; l'auteur cherche un remplaçant actif.</p>
+<p>Dépôt <code>yannbouteiller/vgamepad</code> : licence MIT, 263 étoiles, dernière mise à jour le 27 octobre 2026. https://github.com/yannbouteiller/vgamepad</p>
+<h2>Volume</h2>
+<p>6 posts publiés dans l'intervalle, 3 retenus, 3 écartés (deux demandes de recommandation — logiciel BIM et planification de rotations d'équipes — et une page personnelle hébergeant neuf outils existants, qui n'annonce aucun logiciel nouveau).</p>
+<p>La dernière collecte du journal s'est déroulée sans erreur (3 novembre 2026, 3 h 52 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — mardi 3 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-03.html</link>

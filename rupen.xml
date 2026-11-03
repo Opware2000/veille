@@ -8,7 +8,7 @@
 <atom:link href="https://opware2000.github.io/veille/rupen.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Mon, 02 Nov 2026 07:51:39 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
-<ttl>60</ttl>
+<ttl>15</ttl>
 <item>
 <title>Veille RUPN — semaine du 2 au 8 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/rupen/2026-11-02.html</link>
