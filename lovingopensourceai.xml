@@ -6,9 +6,50 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 03 Nov 2026 06:13:12 +0100</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 00:21:33 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — mercredi 4 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-04.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-04</guid>
+<pubDate>Wed, 04 Nov 2026 00:21:33 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux annonces seulement depuis la dernière édition, mais deux outils qui méritent un essai : OpenWork, une application de bureau libre où des agents travaillent directement sur vos fichiers, présentée comme l'équivalent ouvert de Claude Cowork, et Qwen Audio Agent, une couche vocale temps réel pour agents, publiée par l'équipe Qwen Audio d'Alibaba sous licence Apache 2.0.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenWork — le « Claude Cowork » libre, construit sur opencode</h3>
+<p>OpenWork est une application de bureau (macOS, Windows, Linux) dans laquelle des agents d'intelligence artificielle travaillent sur vos propres fichiers : lecture et écriture de documents, traitement de tableurs, de présentations et de PDF, exécution de commandes. Le projet s'appuie sur opencode et se présente explicitement comme l'alternative libre à Claude Cowork et à Codex. Le choix du modèle est libre : plus de cinquante fournisseurs au choix, votre propre clé d'API, ou bien un modèle local servi par Ollama. Aucun compte OpenWork n'est exigé pour l'usage local, et les fichiers restent sur la machine ; l'application expose par ailleurs un serveur MCP qui permet à un agent déjà installé (Claude Code, Codex, Cursor…) de réutiliser les mêmes compétences et les mêmes connexions.</p>
+<p>Ce que cela apporte : un poste de travail d'agents installable sur son ordinateur, sans dépendre d'un abonnement ni envoyer ses documents chez un tiers, avec la possibilité de basculer d'un modèle à l'autre selon la tâche.</p>
+<p>Licence et prix : licence MIT pour l'application de bureau, avec une exception pour le répertoire <code>ee</code> (fonctionnalités d'entreprise sous licence OpenWork Enterprise Edition) ; GitHub annonce la licence comme « Other » car il ne sait pas trancher ce mélange, d'où l'écart entre la fiche et le fichier LICENSE, qu'il faut lire. Application gratuite ; les fonctions d'équipe hébergées sont l'offre commerciale. Le dépôt a été créé en janvier 2026 et compte 24 386 étoiles et 2 479 forks ; dernière modification le 3 novembre 2026. La version v0.18.64 est sortie le 3 novembre 2026, une semaine après la v0.18.63.</p>
+<p>Lien : https://github.com/different-ai/openwork — téléchargement sur https://openworklabs.com/download</p>
+<h3>Qwen Audio Agent — une voix temps réel qui ne coupe pas la parole à l'agent</h3>
+<p>Qwen Audio Agent est un moteur vocal temps réel pour agents : l'agent continue de parler et de se manifester pendant qu'il réfléchit, appelle un outil ou exécute une tâche, au lieu de laisser un silence puis de répondre d'un bloc, et il annonce de lui-même quand le travail est terminé. Le projet comprend plusieurs interfaces (TUI, application de bureau, passerelle intégrable) et s'interconnecte aux agents dorsaux par les protocoles ACP et A2A. Un serveur de modèles vocaux et un modèle de front sont nécessaires : il s'agit d'un cadre à installer et à configurer, pas d'un logiciel prêt à l'emploi comme OpenWork.</p>
+<p>Ce que cela apporte : de quoi donner une présence vocale continue à un agent qui travaille sur des tâches longues, ce qui manque à la plupart des outils actuels, qui sont soit textuels, soit strictement tour à tour.</p>
+<p>Licence et prix : Apache 2.0, gratuit. 3 124 étoiles, 330 forks, dernière modification le 2 novembre 2026, dépôt créé en juillet 2026. La version majeure 2.0.0 date de septembre 2026. Le projet est porté par l'organisation QwenAudio, adossée à Alibaba, ce qui lui donne du poids mais aussi une dépendance à l'écosystème Qwen ; le dépôt a été modifié dans les jours qui précèdent cette édition, mais je n'ai pas vérifié ce qui a changé.</p>
+<p>Lien : https://github.com/QwenAudio/qwen-audio-agent</p>
+<h2>Volume</h2>
+<p>Deux posts publiés dans l'intervalle, deux retenus, aucun écarté.</p>
+<p>La collecte est saine : la dernière passe s'est terminée le 3 novembre 2026 à 23 h 09 UTC sans erreur signalée dans le journal.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux annonces seulement depuis la dernière édition, mais deux outils qui méritent un essai : OpenWork, une application de bureau libre où des agents travaillent directement sur vos fichiers, présentée comme l'équivalent ouvert de Claude Cowork, et Qwen Audio Agent, une couche vocale temps réel pour agents, publiée par l'équipe Qwen Audio d'Alibaba sous licence Apache 2.0.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenWork — le « Claude Cowork » libre, construit sur opencode</h3>
+<p>OpenWork est une application de bureau (macOS, Windows, Linux) dans laquelle des agents d'intelligence artificielle travaillent sur vos propres fichiers : lecture et écriture de documents, traitement de tableurs, de présentations et de PDF, exécution de commandes. Le projet s'appuie sur opencode et se présente explicitement comme l'alternative libre à Claude Cowork et à Codex. Le choix du modèle est libre : plus de cinquante fournisseurs au choix, votre propre clé d'API, ou bien un modèle local servi par Ollama. Aucun compte OpenWork n'est exigé pour l'usage local, et les fichiers restent sur la machine ; l'application expose par ailleurs un serveur MCP qui permet à un agent déjà installé (Claude Code, Codex, Cursor…) de réutiliser les mêmes compétences et les mêmes connexions.</p>
+<p>Ce que cela apporte : un poste de travail d'agents installable sur son ordinateur, sans dépendre d'un abonnement ni envoyer ses documents chez un tiers, avec la possibilité de basculer d'un modèle à l'autre selon la tâche.</p>
+<p>Licence et prix : licence MIT pour l'application de bureau, avec une exception pour le répertoire <code>ee</code> (fonctionnalités d'entreprise sous licence OpenWork Enterprise Edition) ; GitHub annonce la licence comme « Other » car il ne sait pas trancher ce mélange, d'où l'écart entre la fiche et le fichier LICENSE, qu'il faut lire. Application gratuite ; les fonctions d'équipe hébergées sont l'offre commerciale. Le dépôt a été créé en janvier 2026 et compte 24 386 étoiles et 2 479 forks ; dernière modification le 3 novembre 2026. La version v0.18.64 est sortie le 3 novembre 2026, une semaine après la v0.18.63.</p>
+<p>Lien : https://github.com/different-ai/openwork — téléchargement sur https://openworklabs.com/download</p>
+<h3>Qwen Audio Agent — une voix temps réel qui ne coupe pas la parole à l'agent</h3>
+<p>Qwen Audio Agent est un moteur vocal temps réel pour agents : l'agent continue de parler et de se manifester pendant qu'il réfléchit, appelle un outil ou exécute une tâche, au lieu de laisser un silence puis de répondre d'un bloc, et il annonce de lui-même quand le travail est terminé. Le projet comprend plusieurs interfaces (TUI, application de bureau, passerelle intégrable) et s'interconnecte aux agents dorsaux par les protocoles ACP et A2A. Un serveur de modèles vocaux et un modèle de front sont nécessaires : il s'agit d'un cadre à installer et à configurer, pas d'un logiciel prêt à l'emploi comme OpenWork.</p>
+<p>Ce que cela apporte : de quoi donner une présence vocale continue à un agent qui travaille sur des tâches longues, ce qui manque à la plupart des outils actuels, qui sont soit textuels, soit strictement tour à tour.</p>
+<p>Licence et prix : Apache 2.0, gratuit. 3 124 étoiles, 330 forks, dernière modification le 2 novembre 2026, dépôt créé en juillet 2026. La version majeure 2.0.0 date de septembre 2026. Le projet est porté par l'organisation QwenAudio, adossée à Alibaba, ce qui lui donne du poids mais aussi une dépendance à l'écosystème Qwen ; le dépôt a été modifié dans les jours qui précèdent cette édition, mais je n'ai pas vérifié ce qui a changé.</p>
+<p>Lien : https://github.com/QwenAudio/qwen-audio-agent</p>
+<h2>Volume</h2>
+<p>Deux posts publiés dans l'intervalle, deux retenus, aucun écarté.</p>
+<p>La collecte est saine : la dernière passe s'est terminée le 3 novembre 2026 à 23 h 09 UTC sans erreur signalée dans le journal.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — mardi 3 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-03.html</link>
