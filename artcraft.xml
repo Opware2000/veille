@@ -6,9 +6,76 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 03 Nov 2026 05:57:27 +0100</lastBuildDate>
+<lastBuildDate>Wed, 04 Nov 2026 00:03:15 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — mercredi 4 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-04.html</link>
+<guid isPermaLink="false">artcraft-2026-11-04</guid>
+<pubDate>Wed, 04 Nov 2026 00:03:15 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune version officielle de la suite n'est parue dans l'intervalle, mais trois outils communautaires neufs ont été présentés : PresentCraft, Kinoklip et ProxyCraft.</li>
+<li>Un utilisateur espagnol signale l'arrivée d'une application de la suite sur F-Droid ; l'application concernée n'est pas nommée dans le message et l'officialité du paquet n'est pas confirmée.</li>
+<li>Le reste du subreddit reste dominé par des demandes d'applications et des questions d'assistance, écartées du tri.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Vectrive : ossature et machine à états dans l'animateur</h3>
+<p>L'auteur du projet explique avoir ajouté un système d'ossature (bones) et une machine à états à l'animateur de son application, avec un rendu visuel volontairement guidé pour que les débutants s'y retrouvent. Faute de réponse de l'équipe ArtCraft, il a fixé le nom de l'application à « Vectrive » : un outil qui réunit dessin vectoriel de type Illustrator et animation dans une même interface.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmzslt/added_bones_and_state_machine_to_the_animator/ — auteur u/OwnSpot8721.</p>
+<h3>Une application de la suite publiée sur F-Droid</h3>
+<p>Un membre du subreddit annonce qu'une application de la suite ArtCraft est désormais officiellement sur F-Droid et qu'il s'agit, pour l'instant, de la seule de la suite à y figurer. Incertitude à signaler : le message (en espagnol) n'indique pas de quel logiciel il s'agit — le lien du post ne mène qu'à une capture d'écran — et les commentaires demandent si la publication vient bien de l'équipe ArtCraft, sans réponse apportée dans le fil. Les commentaires évoquent aussi une version Android de PhotoCraft encore attendue.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmx847/ya_esta_oficialmente_en_fdroid_es_la_unica_de_la/ — auteur u/Radiant-Seat-869.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>PresentCraft — présentations à partir de Markdown</h3>
+<p>Projet libre lancé dans le sillage d'ArtCraft : son auteur a construit un outil de présentation inspiré du principe de la suite, avec un site dédié (presentcraft.myanmars.app) et un dépôt public. Le dépôt <code>saturngod/PresentCraft</code> (https://github.com/saturngod/PresentCraft) est décrit comme un convertisseur « Markdown to Presentation » ; il compte 15 étoiles, a été mis à jour le 3 novembre 2026 et GitHub n'identifie aucune licence, ce qui doit être vérifié avant toute réutilisation.<br />
+Site : https://presentcraft.myanmars.app/ — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmv1tl/inspired_by_artcraft_i_built_presentcraft/ — auteur u/AbilityElegant9602.</p>
+<h3>Kinoklip — monteur vidéo libre pour Linux, calqué sur DaVinci Resolve</h3>
+<p>Deux développeurs annoncent la bêta de Kinoklip, monteur vidéo libre sous licence GPL-3.0, distribué en un seul fichier AppImage et destiné à reproduire au plus près l'interface, les comportements et les raccourcis de DaVinci Resolve, afin de pouvoir suivre les tutoriels existants. L'argument avancé est l'installation et la prise en charge des codecs sous Linux, jugées pénibles dans Resolve (absence de H.264, H.265 et AAC hors version Studio et hors GPU NVIDIA). Le projet a été développé avec l'aide d'un assistant IA ; les auteurs avertissent qu'il s'agit d'une bêta avec des bogues attendus. Le lien du dépôt n'apparaît pas dans la partie du message collectée.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn4kyp/i_built_kinoklip_with_an_llm_a_free_opensource/ — auteur u/SeniorMatthew.</p>
+<h3>ProxyCraft — générateur de proxys vidéo accéléré par le GPU</h3>
+<p>Un monteur a publié un outil libre (MIT) pour Windows 10/11 qui fabrique des proxys ProRes 422 (Proxy ¼ et ½, LT ½), H.264 et H.265 en ¼ ou ½, avec décodage, redimensionnement et encodage sur GPU (NVIDIA, Intel Quick Sync, AMD AMF, ou repli processeur). L'intérêt pour un utilisateur de FilmCraft est direct : l'auteur indique avoir ramené la génération de proxys d'un projet 8K d'environ 8 heures à 17 minutes, contre un traitement fait dans son monteur ; un test nul n'est pas fourni et les chiffres dépendent du matériel. L'outil conserve la cadence, le timecode, la rotation et les pistes audio, range les proxys dans un dossier voisin et ignore les clips déjà traités.<br />
+Dépôt : https://github.com/PitKub/ProxyCraft (1 étoile, licence MIT, active le 3 novembre 2026) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn591e/i_made_a_free_opensource_proxy_creator_for/ — auteur u/Jazzlike-Main1894.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>Pika H3 Flex, un modèle vidéo présenté comme le moins cher du marché</h3>
+<p>Un post relaie la sortie par Pika d'un nouveau modèle vidéo mis en avant pour son prix ; le message ne contient ni lien ni détail, l'affirmation « le modèle le plus abordable » n'est donc pas vérifiable en l'état. La presse spécialisée confirme une annonce Pika H3 Flex le 29 octobre 2026, réservée d'abord aux membres de l'API Club puis disponible dans l'application à partir du 2 novembre 2026 : modèle post-entraîné à partir de MiniMax H3, publié en poids ouverts sous forme d'adaptateurs LoRA pour la base de 33 milliards de paramètres, clips de 5 à 15 secondes à 24 images par seconde. Attention à la distinction entre les deux offres : les poids ouverts sont plafonnés à 768p et n'incluent ni l'agrandisseur, ni la séparation de stems, ni le réécrivain de requêtes de Pika.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn17no/pika_released_the_most_affordable_video_model/ — auteur u/videorouter.</p>
+<h2>Volume</h2>
+<p>23 posts parus dans l'intervalle (3 novembre, de 04 h 53 à 21 h 08 UTC), 6 retenus, 17 écartés. La dernière collecte s'est terminée le 3 novembre 2026 à 22 h 17 UTC sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune version officielle de la suite n'est parue dans l'intervalle, mais trois outils communautaires neufs ont été présentés : PresentCraft, Kinoklip et ProxyCraft.</li>
+<li>Un utilisateur espagnol signale l'arrivée d'une application de la suite sur F-Droid ; l'application concernée n'est pas nommée dans le message et l'officialité du paquet n'est pas confirmée.</li>
+<li>Le reste du subreddit reste dominé par des demandes d'applications et des questions d'assistance, écartées du tri.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Vectrive : ossature et machine à états dans l'animateur</h3>
+<p>L'auteur du projet explique avoir ajouté un système d'ossature (bones) et une machine à états à l'animateur de son application, avec un rendu visuel volontairement guidé pour que les débutants s'y retrouvent. Faute de réponse de l'équipe ArtCraft, il a fixé le nom de l'application à « Vectrive » : un outil qui réunit dessin vectoriel de type Illustrator et animation dans une même interface.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmzslt/added_bones_and_state_machine_to_the_animator/ — auteur u/OwnSpot8721.</p>
+<h3>Une application de la suite publiée sur F-Droid</h3>
+<p>Un membre du subreddit annonce qu'une application de la suite ArtCraft est désormais officiellement sur F-Droid et qu'il s'agit, pour l'instant, de la seule de la suite à y figurer. Incertitude à signaler : le message (en espagnol) n'indique pas de quel logiciel il s'agit — le lien du post ne mène qu'à une capture d'écran — et les commentaires demandent si la publication vient bien de l'équipe ArtCraft, sans réponse apportée dans le fil. Les commentaires évoquent aussi une version Android de PhotoCraft encore attendue.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmx847/ya_esta_oficialmente_en_fdroid_es_la_unica_de_la/ — auteur u/Radiant-Seat-869.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>PresentCraft — présentations à partir de Markdown</h3>
+<p>Projet libre lancé dans le sillage d'ArtCraft : son auteur a construit un outil de présentation inspiré du principe de la suite, avec un site dédié (presentcraft.myanmars.app) et un dépôt public. Le dépôt <code>saturngod/PresentCraft</code> (https://github.com/saturngod/PresentCraft) est décrit comme un convertisseur « Markdown to Presentation » ; il compte 15 étoiles, a été mis à jour le 3 novembre 2026 et GitHub n'identifie aucune licence, ce qui doit être vérifié avant toute réutilisation.<br />
+Site : https://presentcraft.myanmars.app/ — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xmv1tl/inspired_by_artcraft_i_built_presentcraft/ — auteur u/AbilityElegant9602.</p>
+<h3>Kinoklip — monteur vidéo libre pour Linux, calqué sur DaVinci Resolve</h3>
+<p>Deux développeurs annoncent la bêta de Kinoklip, monteur vidéo libre sous licence GPL-3.0, distribué en un seul fichier AppImage et destiné à reproduire au plus près l'interface, les comportements et les raccourcis de DaVinci Resolve, afin de pouvoir suivre les tutoriels existants. L'argument avancé est l'installation et la prise en charge des codecs sous Linux, jugées pénibles dans Resolve (absence de H.264, H.265 et AAC hors version Studio et hors GPU NVIDIA). Le projet a été développé avec l'aide d'un assistant IA ; les auteurs avertissent qu'il s'agit d'une bêta avec des bogues attendus. Le lien du dépôt n'apparaît pas dans la partie du message collectée.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn4kyp/i_built_kinoklip_with_an_llm_a_free_opensource/ — auteur u/SeniorMatthew.</p>
+<h3>ProxyCraft — générateur de proxys vidéo accéléré par le GPU</h3>
+<p>Un monteur a publié un outil libre (MIT) pour Windows 10/11 qui fabrique des proxys ProRes 422 (Proxy ¼ et ½, LT ½), H.264 et H.265 en ¼ ou ½, avec décodage, redimensionnement et encodage sur GPU (NVIDIA, Intel Quick Sync, AMD AMF, ou repli processeur). L'intérêt pour un utilisateur de FilmCraft est direct : l'auteur indique avoir ramené la génération de proxys d'un projet 8K d'environ 8 heures à 17 minutes, contre un traitement fait dans son monteur ; un test nul n'est pas fourni et les chiffres dépendent du matériel. L'outil conserve la cadence, le timecode, la rotation et les pistes audio, range les proxys dans un dossier voisin et ignore les clips déjà traités.<br />
+Dépôt : https://github.com/PitKub/ProxyCraft (1 étoile, licence MIT, active le 3 novembre 2026) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn591e/i_made_a_free_opensource_proxy_creator_for/ — auteur u/Jazzlike-Main1894.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>Pika H3 Flex, un modèle vidéo présenté comme le moins cher du marché</h3>
+<p>Un post relaie la sortie par Pika d'un nouveau modèle vidéo mis en avant pour son prix ; le message ne contient ni lien ni détail, l'affirmation « le modèle le plus abordable » n'est donc pas vérifiable en l'état. La presse spécialisée confirme une annonce Pika H3 Flex le 29 octobre 2026, réservée d'abord aux membres de l'API Club puis disponible dans l'application à partir du 2 novembre 2026 : modèle post-entraîné à partir de MiniMax H3, publié en poids ouverts sous forme d'adaptateurs LoRA pour la base de 33 milliards de paramètres, clips de 5 à 15 secondes à 24 images par seconde. Attention à la distinction entre les deux offres : les poids ouverts sont plafonnés à 768p et n'incluent ni l'agrandisseur, ni la séparation de stems, ni le réécrivain de requêtes de Pika.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn17no/pika_released_the_most_affordable_video_model/ — auteur u/videorouter.</p>
+<h2>Volume</h2>
+<p>23 posts parus dans l'intervalle (3 novembre, de 04 h 53 à 21 h 08 UTC), 6 retenus, 17 écartés. La dernière collecte s'est terminée le 3 novembre 2026 à 22 h 17 UTC sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — mardi 3 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-03.html</link>
