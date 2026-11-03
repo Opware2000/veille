@@ -6,9 +6,34 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 03 Nov 2026 06:51:25 +0100</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 07:01:39 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-03.html</link>
+<guid isPermaLink="false">latex-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 07:01:39 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau qui mérite votre attention : un seul post non traité depuis la dernière édition, et il ne passe pas le filtre.</li>
+<li>Il s'agit de l'annonce d'une plateforme en ligne (FormuTex : conversion Word/PDF vers LaTeX, générateurs de matrices, équations et tableaux) qui n'est pas encore ouverte au public et qui ne donne aucune adresse : l'auteur demande surtout quels besoins couvrir. Aucun élément vérifiable, aucun outil utilisable aujourd'hui — je le signale plutôt que de le retenir à tort.</li>
+<li>La collecte n'a signalé aucune erreur (<code>meta.json</code> : <code>errors</code> vide, dernier passage le 3 novembre à 4 h 53 UTC).</li>
+</ul>
+<h2>Volume</h2>
+<p>1 post publié dans l'intervalle, 0 retenu, 1 écarté, soit un taux de rétention de 0 %. Sur un subreddit d'entraide comme r/LaTeX, dont le flux est fait pour l'essentiel de questions de dépannage ponctuelles, un taux très faible sur une seule journée est normal : il tient ici au hasard du calendrier (un unique post non traité entre deux éditions) et non à un filtre trop strict.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Rien de nouveau qui mérite votre attention : un seul post non traité depuis la dernière édition, et il ne passe pas le filtre.</li>
+<li>Il s'agit de l'annonce d'une plateforme en ligne (FormuTex : conversion Word/PDF vers LaTeX, générateurs de matrices, équations et tableaux) qui n'est pas encore ouverte au public et qui ne donne aucune adresse : l'auteur demande surtout quels besoins couvrir. Aucun élément vérifiable, aucun outil utilisable aujourd'hui — je le signale plutôt que de le retenir à tort.</li>
+<li>La collecte n'a signalé aucune erreur (<code>meta.json</code> : <code>errors</code> vide, dernier passage le 3 novembre à 4 h 53 UTC).</li>
+</ul>
+<h2>Volume</h2>
+<p>1 post publié dans l'intervalle, 0 retenu, 1 écarté, soit un taux de rétention de 0 %. Sur un subreddit d'entraide comme r/LaTeX, dont le flux est fait pour l'essentiel de questions de dépannage ponctuelles, un taux très faible sur une seule journée est normal : il tient ici au hasard du calendrier (un unique post non traité entre deux éditions) et non à un filtre trop strict.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — mardi 3 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-03.html</link>
