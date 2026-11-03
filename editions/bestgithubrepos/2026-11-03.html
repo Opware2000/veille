@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/BestGitHubRepos — mardi 3 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../bestgithubrepos.xml" title="r/BestGitHubRepos">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/BestGitHubRepos — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>31 posts parus depuis la dernière édition (tous datés du 2 novembre), 18 retenus, 13 écartés : le fil est presque entièrement publié par un compte automatique qui recopie chaque dépôt avec son README, d'où un tri qui écarte surtout les bibliothèques de développement, l'infrastructure d'entreprise et les parcours d'apprentissage.</li>
+<li>Trois trouvailles du jour : OpenIDEA (un IDE réécrit en Rust, très léger), Orfeo (apprentissage du piano à partir de ses propres fichiers MIDI, sans abonnement) et Open Notebook (alternative auto-hébergée à NotebookLM).</li>
+<li>Collecte sans incident : le fichier d'état ne signale aucune erreur (dernière passe à 3 h 49 UTC).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Développement</h3>
+<p><strong>OpenIDEA — l'IDE familier réécrit en Rust</strong><br />
+Application native qui reprend les repères d'IntelliJ IDEA (raccourcis, fenêtres d'outils, recherche universelle) avec éditeur, analyse de code, débogueur, Git, terminal, bases de données et client HTTP pour plus de soixante langages. Le projet annonce l'ouverture d'un projet Python d'environ 770 fichiers en 0,9 seconde pour 169 Mo de mémoire, contre plusieurs secondes et plusieurs centaines de mégaoctets pour IntelliJ. C'est un logiciel très jeune : les chiffres de comparaison viennent du projet lui-même et méritent d'être vérifiés à l'usage. Compilations macOS, Windows et Linux.<br />
+Apache-2.0, 5 172 étoiles, mise à jour le 3 novembre 2026 (dépôt créé le 21 octobre 2026, dernière version 0.1.33) — https://github.com/l0ng-ai/openidea</p>
+<p><strong>Kiro Crew — un espace de travail qui survit à la fermeture du terminal</strong><br />
+Environnement persistant pour le travail de développement : sessions, mémoire, tâches planifiées et points de reprise survivent aux redémarrages de la passerelle, les corrections apportées à l'agent deviennent des leçons durables et les motifs répétés se transforment en compétences réutilisables et modifiables à la main. Se pilote depuis une application de bureau, un tableau de bord web, la ligne de commande ou des messageries (Slack, Discord), et s'exécute sur son propre Mac, dans un conteneur ou sur une machine distante.<br />
+Apache-2.0, 4 742 étoiles, mise à jour le 3 novembre 2026 (version 0.11.0 du 30 octobre) — https://github.com/kirodotdev/KiroCrew</p>
+<p><strong>Lerd — environnements PHP locaux, sans démon Docker</strong><br />
+Donne à chaque projet PHP un domaine en <code>.test</code> avec HTTPS, la bonne version de PHP et les services nécessaires, dans des conteneurs Podman sans privilèges : rien ne s'installe dans le PHP du système, rien ne tourne en root et la désinstallation laisse la machine propre. Le projet détecte seul le cadre employé (Laravel, Symfony, WordPress, Drupal, Magento) au lieu d'exiger un fichier de composition par projet ; les définitions sont des fichiers YAML ouverts aux contributions. Dispose aussi d'un tableau de bord web, d'une interface en terminal, d'un serveur MCP pour que les agents gèrent l'environnement, et depuis peu d'un système de greffons et d'un programme d'installation Windows. L'auteur signale lui-même qu'il est le mainteneur du projet.<br />
+MIT, 1 481 étoiles, mise à jour le 2 novembre 2026 (dépôt créé le 17 mars 2026, première version en mars 2026) — https://github.com/lerd-env/lerd</p>
+<h3>Intelligence artificielle locale et mémoire</h3>
+<p><strong>Lemonade — un serveur d'IA local aux allures d'API du nuage</strong><br />
+Installe un service local qui expose les interfaces standard d'OpenAI, d'Anthropic et d'Ollama, ce qui permet de brancher des centaines d'applications existantes sur des modèles exécutés chez soi, avec gestionnaire de modèles, interfaces de conversation, de génération d'images et de synthèse vocale. Existe aussi en binaire portable à intégrer dans une application tierce, avec des variantes pour iOS et Android. Windows, Linux, macOS, Docker.<br />
+Apache-2.0, 6 079 étoiles, mise à jour le 3 novembre 2026 (version 2026.44.1 du 28 octobre) — https://github.com/lemonade-sdk/lemonade</p>
+<p><strong>Open Notebook — l'alternative auto-hébergée à NotebookLM</strong><br />
+Reprend l'idée du carnet de recherche assisté : on rassemble PDF, vidéos, sons, pages web et documents bureautiques, puis on interroge l'ensemble, on fait rédiger des notes et on génère des fichiers audio de synthèse à plusieurs voix. Gère plusieurs carnets, vingt et un fournisseurs de modèles au choix (dont Ollama et LM Studio, donc entièrement local), et la recherche plein texte comme la recherche vectorielle. Installation par un fichier de composition Docker.<br />
+MIT, 41 434 étoiles, mise à jour le 1er novembre 2026 (dernière version 1.15.0 du 4 octobre) — https://github.com/lfnovo/open-notebook</p>
+<p><strong>MemPalace — une mémoire d'agent stockée mot pour mot</strong><br />
+Conserve l'historique des conversations en texte brut, sans résumer ni reformuler, et le retrouve par recherche sémantique : ce que l'agent relit est exactement ce qui a été dit, ce qui limite les déformations en chaîne. La couche de recherche est remplaçable (ChromaDB par défaut, interface documentée pour en écrire une autre) et rien ne quitte la machine sans accord explicite. S'installe comme outil en ligne de commande.<br />
+MIT, 60 279 étoiles, mise à jour le 31 octobre 2026 (version 3.11.0 du 14 octobre) — https://github.com/MemPalace/mempalace</p>
+<p><strong>Mesh LLM — répartir un gros modèle sur plusieurs machines</strong><br />
+Fait tourner un modèle de langue sur un ensemble de machines reliées entre elles : si un seul nœud tient le modèle, il le sert localement ; sinon le modèle est découpé en étages et réparti, chaque pair ne téléchargeant que les fragments dont il a besoin. Le transport entre nœuds est chiffré de bout en bout, le maillage peut être privé (jeton d'invitation) ou public (découverte par Nostr), et chaque nœud expose la même interface compatible OpenAI. L'intérêt dépend évidemment du nombre de machines disponibles.<br />
+Apache-2.0, 3 857 étoiles, mise à jour le 3 novembre 2026 (version 0.78.1 du 5 octobre) — https://github.com/Mesh-LLM/mesh-llm</p>
+<p><strong>Idol — une photo, un objet en trois dimensions</strong><br />
+SDK d'inférence qui transforme une seule image en modèle d'objet au format des gaussiennes 3D (de 32 768 à 1 048 576 points, 262 144 par défaut), avec détourage automatique du sujet. C'est un projet de recherche très jeune, à un seul contributeur et sans licence de version publiée malgré le dépôt Apache-2.0 : à considérer comme une démonstration plutôt qu'un outil stable.<br />
+Apache-2.0, 658 étoiles, mise à jour le 29 octobre 2026 (dépôt créé le 28 octobre 2026, aucune version publiée) — https://github.com/speridlabs/idol-sdk</p>
+<h3>Système, données personnelles et vie privée</h3>
+<p><strong>AliasVault — mots de passe et alias de courriel au même endroit</strong><br />
+Gestionnaire de mots de passe entièrement chiffré, auto-hébergeable, qui fabrique en plus des adresses de courriel jetables grâce à un serveur de messagerie intégré : une adresse par service, révocable quand elle commence à recevoir du courrier indésirable. Comprend l'authentification à deux facteurs, la reprise d'un fichier d'export d'un autre gestionnaire, les clés d'accès et des extensions de navigateur pour Chrome, Firefox, Edge, Safari et Brave. Deux méthodes d'installation sur son propre serveur.<br />
+AGPL-3.0, 3 432 étoiles, mise à jour le 2 novembre 2026 (version 0.31.1 du 14 octobre) — https://github.com/aliasvault/aliasvault</p>
+<p><strong>Burrow — l'entretien du Mac dans une seule application (macOS)</strong><br />
+Tableau de bord de l'état du système avec courbes par indicateur et liste de processus, recherche et suppression en masse des fichiers d'installation <code>.dmg</code> et <code>.pkg</code> restés en place, entretien en un clic (reconstruction des caches, réparation des métadonnées, purge du DNS, redémarrage du Dock et du Finder), liste des applications installées avec désinstallation multiple et onglet de mises à jour (applications et Homebrew séparément), enfin carte proportionnelle du disque avec exploration dossier par dossier. Chaque analyse propose d'abord une simulation sans risque. Application native pour macOS seulement, installable par Homebrew.<br />
+MIT, 1 681 étoiles, mise à jour le 2 novembre 2026 (version 0.14.0 du 10 août, dépôt créé le 31 mai 2026) — https://github.com/caezium/burrow</p>
+<p><strong>Monica — un carnet de relations, auto-hébergé</strong><br />
+Répertoire personnel qui documente la vie de ses proches : fiches de contact, liens de parenté et d'amitié, rappels d'anniversaires, notes sur les circonstances d'une rencontre, activités partagées, documents et photos rangés par personne, plusieurs carnets et comptes, interface traduite en vingt-sept langues. Attention : la dernière version publiée date de mai 2024, le dépôt reçoit encore des modifications mais l'activité de publication est faible — à vérifier avant de s'y engager.<br />
+AGPL-3.0, 25 630 étoiles, dépôt modifié le 28 octobre 2026 mais dernière version 4.1.2 du 4 mai 2024 — https://github.com/monicahq/monica</p>
+<h3>Création et pédagogie</h3>
+<p><strong>Orfeo — apprendre le piano avec ses propres fichiers MIDI</strong><br />
+Application de bureau qui affiche les notes tombant sur un clavier, permet de jouer par-dessus avec un clavier MIDI, reconnaît les accords en temps réel, explore accords et gammes, sépare une piste de piano en main gauche et main droite, et fonctionne sans compte, sans télémétrie et sans leçon payante : on apporte sa propre bibliothèque MIDI. Le code est déjà écrit pour être multiplateforme, mais seules les compilations Windows existent pour l'instant ; l'auteur cherche des contributeurs pour Linux et macOS.<br />
+GPL-3.0, 429 étoiles, mise à jour le 2 novembre 2026 (version 1.6.0 du 31 octobre) — https://github.com/Squarebow/Orfeo</p>
+<p><strong>Manim — fabriquer des animations mathématiques</strong><br />
+Bibliothèque Python qui produit, par le code, des animations mathématiques précises — c'est l'outil des vidéos de 3Blue1Brown — avec un module utilisable directement dans les carnets Jupyter. Projet déjà établi, rappelé ici parce qu'il reste la voie la plus directe pour fabriquer une animation projetable sans logiciel de montage.<br />
+MIT, 42 171 étoiles, mise à jour le 2 novembre 2026 (version 0.22.1 du 27 octobre) — https://github.com/ManimCommunity/manim</p>
+<h2>Extensions et greffons</h2>
+<p><strong>StableGen — générer, texturer et animer des modèles 3D dans Blender</strong><br />
+Greffon Blender qui place des caméras autour d'un objet ou d'une scène, génère une image depuis chaque point de vue en utilisant les précédentes comme contexte (d'où une texture cohérente sur tout le tour), projette le résultat sur les surfaces visibles, permet de repeindre une seule zone et de la régénérer, en déduit les cartes de matière (couleur, rugosité, métallique, normales), puis ajoute un squelette et des poids de peau pour récupérer des animations Mixamo et exporter le tout en glTF ou FBX vers Godot, Unity, Unreal ou le web.<br />
+GPL-3.0, 1 329 étoiles, mise à jour le 2 novembre 2026 (version 0.4.0 du 28 octobre) — https://github.com/sakalond/StableGen</p>
+<p><strong>unslop — dégraisser une interface visiblement générée par une machine</strong><br />
+Compétence pour Claude Code et Codex qui audite une interface repérée comme typique d'une production automatique, propose une direction esthétique, puis reprend dans l'ordre les espacements, les couleurs, les icônes, les libellés, la typographie, la mise en page et les animations. Signalons que le dépôt est publié sous Creative Commons Attribution 4.0, une licence prévue pour des contenus et non pour du logiciel : les conditions de réutilisation du code méritent d'être lues avant de s'en servir en classe.<br />
+CC-BY-4.0 (licence de contenu, inhabituelle pour du code), 6 500 étoiles, mise à jour le 1er novembre 2026 (dépôt créé le 29 octobre 2026) — https://github.com/heydamir/unslop</p>
+<p><strong>apple-hig — les règles d'interface d'Apple à disposition d'un agent</strong><br />
+Compétence pour agents qui confronte les écrans, barres et dispositions d'un projet aux recommandations d'Apple, propose des options argumentées et cite ses sources, construit les modifications en SwiftUI dans l'ordre prévu puis les vérifie dans le simulateur ; elle refuse explicitement de produire des maquettes HTML et signale les vérifications qu'elle n'a pas pu faire. Utile aux seuls développeurs d'applications Apple.<br />
+MIT, 765 étoiles, mise à jour le 17 octobre 2026 (dépôt créé le 15 mars 2026, aucune version publiée) — https://github.com/justinwetch/HIGAgentSkills</p>
+<p><strong>render-markdown.nvim — lire du Markdown proprement dans Neovim</strong><br />
+Affiche titres, blocs de code, listes, cases à cocher, citations, encadrés, tableaux, liens et formules LaTeX directement dans Neovim, sans fenêtre externe, avec bascule entre vue rendue et vue brute selon le mode, masquage du texte virtuel sur la ligne du curseur et rendu limité aux lignes visibles pour les gros fichiers. Nécessite Neovim 0.9 au minimum (0.10 recommandé).<br />
+MIT, 5 224 étoiles, mise à jour le 10 octobre 2026 (version 8.14.0 du 15 septembre) — https://github.com/MeanderingProgrammer/render-markdown.nvim</p>
+<p><strong>nvim-lint — lancer les bons correcteurs dans Neovim</strong><br />
+Greffon asynchrone qui complète le client de langage intégré là où il n'existe pas de serveur, ou là où un outil autonome fait mieux : il lance l'analyseur, lit sa sortie et remonte les résultats dans le système de diagnostics de Neovim, avec un analyseur générique qui réutilise les options de compilation du tampon courant. Neovim 0.9.5 ou plus récent.<br />
+GPL-3.0, 2 785 étoiles, mise à jour le 29 octobre 2026 (aucune version publiée) — https://github.com/mfussenegger/nvim-lint</p>
+<h2>Volume</h2>
+<p>31 posts parus dans l'intervalle (tous publiés le 2 novembre 2026), 18 retenus, 13 écartés. Ont été écartés les bibliothèques et infrastructures de développement (Deep Agents, Langfuse, Nasiko, KServe, Milvus), les outils d'entreprise (Mautic pour l'automatisation marketing, OpenBot déjà écarté la veille comme plateforme de collaborateurs IA visant les équipes), les parcours d'apprentissage et recueils de tutoriels (90DaysOfDevOps, Learn PyTorch, Liquid AI Cookbook), le SDK Apple Silicon Laya-CoreML, ainsi qu'un atlas historique chinois interactif et un lecteur de mangas et d'animations, tous deux hors du champ des outils utiles à un particulier.</p>
+<footer>Édition du mardi 3 novembre 2026 — <a href="https://opware2000.github.io/veille/bestgithubrepos.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

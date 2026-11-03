@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — mardi 3 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'équipe d'ArtCraft ajoute une seizième application : <strong>MaterialCraft 0.1.0</strong>, un designer de matériaux procéduraux à nœuds (l'équivalent de Substance Designer), publié dans la nuit et déjà intégré au lanceur. <strong>TextureCraft</strong> passe en 0.3.0 et confirme sa sortie publique. Côté communauté : un greffon de sous-titrage Whisper pour FilmCraft, un fork de PhotoCraft qui branche ChatGPT dans l'interface, et la suite en WebAssembly auto-hébergée en un conteneur.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>MaterialCraft 0.1.0 — l'équivalent de Substance Designer, publié sans annonce de l'éditeur</h3>
+<p>Une nouvelle application de l'équipe : <strong>MaterialCraft</strong>, dépôt <code>storytold/materialcraft</code>, sous Apache-2.0 (créé le 1er novembre, 65 étoiles au 3 novembre). Sa version 0.1.0 est publiée le 3 novembre à 0 h 09 UTC, et le lanceur la référence depuis sa version 0.14.0 (0 h 41 UTC, apportée par la contribution #1162 de dylanmtaylor). D'après son README, elle construit des matériaux PBR carrelables à partir de bruits, motifs et filtres dans un graphe de nœuds, avec aperçu en direct en 2D et sur un modèle 3D et export des cartes pour n'importe quel moteur ; natif sur macOS, Windows, Linux et FreeBSD, et dans le navigateur par WebAssembly. Ce que ça change : la suite comble le chaînon du texturing procédural, à côté de TextureCraft qui peint sur la surface — mais <strong>la page du site officiel renvoie une erreur 404</strong> (<code>getartcraft.com/apps/materialcraft</code>) et la page « Crafting Apps » annonce toujours « quinze applications » : la publication est en avance sur la documentation. Le post du subreddit l'avait repérée sur GitHub avant même son passage dans le lanceur.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9arc/new_app_alert/ — u/FreddieThePebble</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Dépôt : https://github.com/storytold/materialcraft — lanceur : https://github.com/storytold/craft-launcher/releases/tag/v0.14.0</li>
+</ul>
+<h3>TextureCraft 0.3.0 — la peinture de textures 3D confirmée en version publique</h3>
+<p><strong>TextureCraft</strong> (<code>storytold/texturecraft</code>, Apache-2.0, 267 étoiles, dépôt créé le 14 octobre) publie sa version <strong>0.3.0</strong> le 3 novembre à 0 h 45 UTC, après une 0.2.0 le 1er novembre : la cadence reste d'une version tous les deux jours environ. C'est l'application repérée le 2 novembre dans un post sans texte, dont on sait maintenant qu'elle peint des matériaux PBR directement sur les maillages (calques, masques, générateurs, matériaux intelligents, cuisson des cartes de maillage accélérée par le GPU, moteur de texels jusqu'en 8K, export glTF, FBX, USD, OBJ, STL entre autres, avec serveur MCP et ligne de commande). Ce que ça change : la suite tient désormais les deux bouts du travail de texture, peinture et matériaux procéduraux. Deux réserves : la page officielle ne propose encore que les installateurs 0.2.0 pour les téléchargements autonomes, et le chiffre de « 94 % d'avancement » avancé par un membre vient du dépôt, pas d'une mesure vérifiée.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmat4x/i_totally_missed_the_release_of_texturecraft_its/ — u/Jellygator0</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Page officielle : https://getartcraft.com/apps/texturecraft — dépôt : https://github.com/storytold/texturecraft</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>Un greffon de sous-titrage Whisper pour FilmCraft (gratuit, sans dépôt publié)</h3>
+<p>u/MrYhi — Germán, de la chaîne YouTube « La Sed No Es Nada » — publie une petite interface qui transcrit les vidéos avec faster-whisper et envoie la transcription directement dans FilmCraft sous forme de sous-titres. Le lancement installe le modèle Whisper s'il manque, détecte FilmCraft et l'ouvre ; l'interface permet de régler le nombre de caractères par ligne, la durée minimale, la police, la taille et la couleur, puis d'envoyer le tout sur la ligne de temps, en temps réel. La vidéo de démonstration (publiée le 31 octobre, environ 2 500 vues) montre aussi les limites actuelles de FilmCraft : positions de sous-titre limitées à haut, milieu et bas, ni contour ni ombre, et la conversion d'un sous-titre en graphique pour le déplacer librement. Le téléchargement est gratuit, par un lien Google Drive placé dans la description de la vidéo ; <strong>aucun dépôt, aucune licence, aucune version</strong> ne sont publiés, donc rien n'est vérifiable au-delà de la démonstration, et un fichier venant d'un Drive anonyme mérite la prudence d'usage.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlogd4/now_you_can_subtitule_with_this_plugin/ — u/MrYhi — vidéo : https://youtu.be/bYsH3aboLKU</li>
+</ul>
+<h3>photocraft-ai — un fork de PhotoCraft qui branche ChatGPT dans l'interface</h3>
+<p>u/Latter_Newspaper5303, passé de Photoshop à PhotoCraft la semaine dernière, publie son fork <code>BLEZZ0102/photocraft-ai</code>, dont la version <code>v0.19.0-ai-beta.2</code> ajoute des fonctions d'intelligence artificielle <strong>dans</strong> l'interface de l'éditeur, au lieu de passer par Codex connecté en MCP. Il s'appuie sur l'abonnement ChatGPT existant pour ne rien payer de plus, et accepte aussi une clé d'API pour Nano Banana (Gemini), FLUX et Seedream (Volcengine). Le dépôt, sous Apache-2.0, a été créé le 30 octobre et compte 6 étoiles. L'auteur précise lui-même qu'il s'agit d'un fork et que la version officielle n'a pas ces fonctions. Ce que ça change : le chaînage entre édition et génération se fait sans quitter la fenêtre, à condition d'accepter un binaire communautaire à 6 étoiles.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmgpt1/a_chatgpt_intergrated_fork_of_photocraft/ — u/Latter_Newspaper5303 — dépôt : https://github.com/BLEZZ0102/photocraft-ai</li>
+</ul>
+<h3>ArtCraft Hub — la suite en WebAssembly, auto-hébergée dans un conteneur</h3>
+<p>u/Accomplished_Walk243 publie <strong>ArtCraft Hub</strong> (<code>GeorgeArgyrakis/artcraft-hub</code>), un conteneur Docker qui sert les versions WebAssembly des applications d'ArtCraft derrière un tableau de bord : recherche instantanée, filtres par catégorie, favoris, deux thèmes, synchronisation automatique des nouvelles versions depuis GitHub avec commutation de version dans l'interface, et serveur Caddy préconfiguré (types MIME des fichiers WASM, compression, en-têtes COEP pour SharedArrayBuffer). L'auteur assume l'avoir écrit en pair-programmation avec une intelligence artificielle et cite <code>artcraft-in-a-box</code> de sbuchweitz comme inspiration. Le dépôt a été créé le 1er novembre, compte 4 étoiles et <strong>ne déclare aucune licence</strong>, ce qui limite la réutilisation. Ce que ça change : toute la suite devient accessible depuis un navigateur sur son propre serveur, sans installer seize applications.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlzgh5/artcraft_hub_selfhosted_webassembly_artcraft/ — u/Accomplished_Walk243 — dépôt : https://github.com/GeorgeArgyrakis/artcraft-hub</li>
+</ul>
+<h3>AnimeCraft — un projet communautaire d'animation vectorielle, sans dépôt publié</h3>
+<p>u/OwnSpot8721 présente <strong>AnimeCraft</strong>, né de sa demande d'une alternative à Rive : dessin vectoriel avec courbes de Bézier et opérations booléennes exactes, rigging avec cinématique inverse à deux os, peinture de poids, machines à états visuelles, le tout écrit en Rust et compilé en WebAssembly pour le bureau (Windows, macOS, Linux) et le navigateur. Il propose à l'équipe d'ArtCraft d'intégrer le projet à sa collection. La démonstration est une vidéo de la chaîne « The Alethia Journal » ; le post ne donne ni dépôt, ni licence, ni lien de téléchargement, et mes recherches n'ont pas trouvé de dépôt correspondant (le nom est porté par plusieurs dépôts sans rapport). À suivre si le projet se concrétise, à ne pas installer en l'état.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9w0n/i_created_a_monster_whose_name_is_animecraft/ — u/OwnSpot8721 — vidéo : https://youtu.be/DWBHi5FCxw4</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable dans les dernières 24 heures sur les logiciels comparables : les recherches sur ComfyUI, InvokeAI et Krita AI Diffusion ne renvoient que des pages de référence et des versions anciennes, sans annonce datée de la journée.</p>
+<h2>À signaler</h2>
+<ul>
+<li>Décalage entre les dépôts et le site officiel : MaterialCraft n'a pas de page (404 alors que le dépôt la cite comme adresse d'accueil) et la page de TextureCraft ne propose encore que les installateurs 0.2.0, alors qu'une 0.3.0 est publiée ce matin. Ce n'est pas un incident, mais quiconque télécharge une version autonome récupère une version plus ancienne que celle du lanceur.</li>
+<li>Aucune alerte de sécurité, aucun faux positif d'antivirus et aucune régression générale signalés dans l'intervalle.</li>
+</ul>
+<h2>Volume</h2>
+<p>37 posts publiés dans l'intervalle (depuis l'édition du 2 novembre, 5 h 02), 6 retenus, 31 écartés (questions d'installation et de support, demandes de clonage sans suite, idées de projets, avis et retours d'expérience, mèmes, rapports de bug isolés). Taux de rétention d'environ 16 % : faible, ce qui est la marque de ce subreddit, où la majorité des messages sont des demandes de fonctionnalités et des questions d'usage. La collecte s'est déroulée sans erreur (dernier passage le 3 novembre à 4 h 08 UTC).</p>
+<footer>Édition du mardi 3 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

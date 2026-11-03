@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — mardi 3 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Fenêtre plus fournie que la veille : sur trente messages parus depuis la dernière édition, sept annoncent un outil utilisable, dont quatre projets libres dont le code est publié. Le plus intéressant est Chrome Controlla, un serveur MCP local qui donne à un agent de codage une prise vérifiable sur Chrome ; viennent ensuite cinq greffons OBS en GPL-2.0 et un petit mélangeur audio Linux sous licence MIT. Les vingt-trois autres messages sont des jeux, des récits de fabrication assistée et des questions d'abonnement.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Chrome Controlla — pilotage de Chrome par un agent, avec preuve d'exécution</h3>
+<p>Serveur MCP local qui relie un agent de codage (Codex, Cursor, Claude Code, opencode) à une extension Chrome installée à la main, par messagerie native. Il expose six outils (browser, snapshot, act, workflow, extract, verify) et, surtout, garde l'identité exacte de l'onglet et du document en cours de travail. L'auteur part d'un problème précis : un clic qui expire laisse l'agent dans le doute, et une nouvelle tentative peut soumettre deux fois le même formulaire. Son outil rebinde une référence périmée, fait défiler jusqu'à la cible hors écran et la revérifie, mais <strong>ne rejoue jamais une écriture dont il ne peut pas prouver qu'elle a eu lieu</strong> — il rend le doute plutôt qu'un succès inventé. Le dépôt contient les mesures d'exactitude et une matrice de qualification par système ; l'installation demande de compiler soi-même (Rust) et d'enregistrer l'identifiant de son extension, il n'y a pas de binaire universel.</p>
+<p>Licence Apache-2.0, gratuit. Dépôt : https://github.com/Praket7/NaviChrome (dépôt créé le 6 octobre 2026, 2 étoiles, dernière mise à jour le 2 novembre 2026 ; il a été renommé depuis le lien donné dans le message, qui pointait vers chrome-controlla).</p>
+<h3>Pipeweaver SMC-Mixer — piloter l'audio Linux avec un contrôleur MIDI</h3>
+<p>Application Rust qui transforme un contrôleur MIDI M-VAVE SMC-Mixer en surface de mixage pour Pipeweaver, le gestionnaire de sources audio sous Linux. Elle se connecte au service local de Pipeweaver en WebSocket, lit les niveaux en direct, et renvoie les changements de volume, de coupure et de mixage par son API : on obtient l'équivalent du logiciel Beacn, mais sans matériel dédié, avec un contrôleur à vingt-cinq euros. C'est très étroit — il faut exactement ce contrôleur et Pipeweaver installé — mais l'auteur l'assume et publie le code pour que d'autres l'adaptent.</p>
+<p>Licence MIT, gratuit. Dépôt : https://github.com/DeSynkro/pipeweaver-smc-mixer (2 étoiles, Rust, dernière mise à jour le 3 novembre 2026).</p>
+<h3>Teardown — voir ses dépendances avant de les corriger</h3>
+<p>Outil web qui lit un fichier de verrouillage (lockfile, manifeste ou SBOM, jamais le code) et affiche les dépendances d'une application en trois dimensions, chaque vulnérabilité reliée au paquet qui l'a introduite. Le classement se fait sur l'exploitation réelle — maliciels connus, catalogue KEV de la CISA, exploits publics, score EPSS — plutôt que sur le score CVSS, et chaque correctif proposé vient avec l'invite à donner à son agent de codage. L'auteur insiste sur un point de méthode : le tri est du code déterministe, le modèle de langue ne sert qu'à rédiger l'explication, ce qui évite qu'il invente une priorité.</p>
+<p>Incertitude : la page de présentation ne mentionne ni prix ni licence, et aucun code source n'est publié ; je ne peux donc pas dire s'il est gratuit et durablement accessible. L'auteur indique une version « à venir » avec connexion GitHub. À essayer : https://teardown.pro</p>
+<h3>Wormhole — déplacer une fenêtre d'un Mac à l'autre</h3>
+<p>Petite application macOS qui extrait une fenêtre d'un second Mac et l'affiche sur la machine courante comme une fenêtre normale, avec son icône dans le Dock ; le clavier et le presse-papiers suivent. L'appairage se fait par un code à six chiffres, la liaison est chiffrée et directe entre les deux machines, sans compte ni serveur intermédiaire. L'auteur a construit son propre outil après avoir trouvé à 199 dollars l'application qui faisait cela, et le vend 5 dollars, prix qui monte par paliers de vingt ventes. C'est un produit propriétaire, réservé à macOS, sans code publié — je le signale parce qu'il est bon marché et que l'auteur en décrit honnêtement les ratés de lancement, mais il sort du cadre du logiciel libre.</p>
+<p>Incertitude : l'adresse donnée dans le message (wormhole.app) est celle d'un service de partage de fichiers sans rapport avec cette application ; je n'ai pas pu atteindre la page du produit.</p>
+<h3>Cacti OS — façade d'émulation pour le rétrogaming</h3>
+<p>Environnement de jeu rétro avec intégration des succès RetroAchievements, construit par quelqu'un qui dit ne pas savoir programmer et l'avoir fait avec Claude. Le projet est jeune et l'auteur demande des retours sur les bugs et les directions à prendre.</p>
+<p>Incertitude, et elle est de taille : le dépôt lié ne contient que le canal de mise à jour (deux fichiers de version, 1.10.0 et 1.12.0), ni code source ni licence. C'est donc un gratuiciel, pas un logiciel libre, et il est impossible d'en vérifier le contenu. Dépôt : https://github.com/kryptalivian/CactiOS-Updates (0 étoile, aucune licence, dernière mise à jour le 2 novembre 2026).</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Envy UI 0.4.0 — éditeur d'interfaces de jeu, désormais aussi pour Unity</h3>
+<p>Éditeur de bureau qui remplace la maquette dessinée à part : on compose menus, affichages tête haute et inventaires sur un canevas, et le même fichier s'exécute dans le jeu, côté Godot, navigateur ou Unity. La version 0.3.0 avait apporté le moteur Unity (à partir d'Unity 6.3, sur UI Toolkit), l'import des fichiers .envy.json comme ressources et le rechargement à chaud ; la 0.4.0 ajoute des contrôles autonomes (curseurs, listes déroulantes, champs de saisie) qui lisent et écrivent une valeur par chemin de données sans code de jeu, des expressions dans le texte (« {boss.hp / boss.hpMax | percent} » affiche 58 %) et le style mot à mot dans une ligne. Le prix est de 9,99 dollars sur itch.io (7,99 en promotion), paiement unique avec toutes les mises à jour 1.x, sans abonnement. Logiciel propriétaire ; Windows aujourd'hui, Linux annoncé. Application : https://envyui.com</p>
+<h2>Extensions et greffons</h2>
+<h3>Cinq greffons libres pour OBS Studio, écrits par un vidéo-jockey</h3>
+<p>Un VJ publie cinq outils GPL-2.0 pour OBS, tous sur GitHub sous le compte https://github.com/jbrick2070 :</p>
+<ul>
+<li>obs-playlister — source OBS qui enchaîne les dossiers, fichiers et listes de lecture dans l'ordre, sous Windows et Linux (1 étoile, dernière mise à jour le 2 novembre 2026).</li>
+<li>midi-fadester — le fader d'un contrôleur MIDI APC40 devient le T-bar d'OBS, ce que l'auteur cherchait depuis des mois sans le trouver (1 étoile).</li>
+<li>visual-sidechain — effets de shader réagissant au son, avec une touche d'arrêt d'urgence (1 étoile).</li>
+<li>streamdeck-fadester — le même mixage sur un Stream Deck Plus, avec dispositions prêtes à l'emploi ; soumis au magasin Elgato (TypeScript, 1 étoile).</li>
+<li>vjster — réglage en direct de la vitesse vidéo depuis le Stream Deck, dans Chrome comme dans OBS (JavaScript, 0 étoile).</li>
+</ul>
+<p>Le message vaut aussi pour la méthode : plan avant code, relecture de chaque modification par un second modèle, tests par mutation, et essai systématique sur le matériel réel — c'est ainsi qu'il a trouvé un bug que personne n'avait vu, l'appel WebSocket d'OBS annulant chaque relâchement du T-bar.</p>
+<h2>Volume</h2>
+<p>30 posts parus dans l'intervalle, 7 retenus, 23 écartés, soit un taux de rétention de 23 %, conforme à la moyenne du subreddit (environ 20 %). Les messages écartés sont des jeux (un jeu de casino dans le navigateur, un jeu de sous-marin en Unreal Engine 5, deux jeux d'horreur, une reprise de 007 sous MPL-2.0), des récits de fabrication assistée par modèles sans outil à installer, des questions de support ou d'abonnement aux fournisseurs de modèles, et deux annonces commerciales sans version essayable (une API de design sur rendez-vous, un annuaire de fournisseurs de modèles « débridés »). Aucun échec de collecte à signaler (dernière collecte le 3 novembre 2026 à 03h50 UTC).</p>
+<footer>Édition du mardi 3 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

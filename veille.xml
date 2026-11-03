@@ -6,9 +6,460 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 03 Nov 2026 05:05:12 +0100</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 06:35:18 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>60</ttl>
+<item>
+<title>Veille r/vibecoding — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-03.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 06:35:18 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Fenêtre plus fournie que la veille : sur trente messages parus depuis la dernière édition, sept annoncent un outil utilisable, dont quatre projets libres dont le code est publié. Le plus intéressant est Chrome Controlla, un serveur MCP local qui donne à un agent de codage une prise vérifiable sur Chrome ; viennent ensuite cinq greffons OBS en GPL-2.0 et un petit mélangeur audio Linux sous licence MIT. Les vingt-trois autres messages sont des jeux, des récits de fabrication assistée et des questions d'abonnement.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Chrome Controlla — pilotage de Chrome par un agent, avec preuve d'exécution</h3>
+<p>Serveur MCP local qui relie un agent de codage (Codex, Cursor, Claude Code, opencode) à une extension Chrome installée à la main, par messagerie native. Il expose six outils (browser, snapshot, act, workflow, extract, verify) et, surtout, garde l'identité exacte de l'onglet et du document en cours de travail. L'auteur part d'un problème précis : un clic qui expire laisse l'agent dans le doute, et une nouvelle tentative peut soumettre deux fois le même formulaire. Son outil rebinde une référence périmée, fait défiler jusqu'à la cible hors écran et la revérifie, mais <strong>ne rejoue jamais une écriture dont il ne peut pas prouver qu'elle a eu lieu</strong> — il rend le doute plutôt qu'un succès inventé. Le dépôt contient les mesures d'exactitude et une matrice de qualification par système ; l'installation demande de compiler soi-même (Rust) et d'enregistrer l'identifiant de son extension, il n'y a pas de binaire universel.</p>
+<p>Licence Apache-2.0, gratuit. Dépôt : https://github.com/Praket7/NaviChrome (dépôt créé le 6 octobre 2026, 2 étoiles, dernière mise à jour le 2 novembre 2026 ; il a été renommé depuis le lien donné dans le message, qui pointait vers chrome-controlla).</p>
+<h3>Pipeweaver SMC-Mixer — piloter l'audio Linux avec un contrôleur MIDI</h3>
+<p>Application Rust qui transforme un contrôleur MIDI M-VAVE SMC-Mixer en surface de mixage pour Pipeweaver, le gestionnaire de sources audio sous Linux. Elle se connecte au service local de Pipeweaver en WebSocket, lit les niveaux en direct, et renvoie les changements de volume, de coupure et de mixage par son API : on obtient l'équivalent du logiciel Beacn, mais sans matériel dédié, avec un contrôleur à vingt-cinq euros. C'est très étroit — il faut exactement ce contrôleur et Pipeweaver installé — mais l'auteur l'assume et publie le code pour que d'autres l'adaptent.</p>
+<p>Licence MIT, gratuit. Dépôt : https://github.com/DeSynkro/pipeweaver-smc-mixer (2 étoiles, Rust, dernière mise à jour le 3 novembre 2026).</p>
+<h3>Teardown — voir ses dépendances avant de les corriger</h3>
+<p>Outil web qui lit un fichier de verrouillage (lockfile, manifeste ou SBOM, jamais le code) et affiche les dépendances d'une application en trois dimensions, chaque vulnérabilité reliée au paquet qui l'a introduite. Le classement se fait sur l'exploitation réelle — maliciels connus, catalogue KEV de la CISA, exploits publics, score EPSS — plutôt que sur le score CVSS, et chaque correctif proposé vient avec l'invite à donner à son agent de codage. L'auteur insiste sur un point de méthode : le tri est du code déterministe, le modèle de langue ne sert qu'à rédiger l'explication, ce qui évite qu'il invente une priorité.</p>
+<p>Incertitude : la page de présentation ne mentionne ni prix ni licence, et aucun code source n'est publié ; je ne peux donc pas dire s'il est gratuit et durablement accessible. L'auteur indique une version « à venir » avec connexion GitHub. À essayer : https://teardown.pro</p>
+<h3>Wormhole — déplacer une fenêtre d'un Mac à l'autre</h3>
+<p>Petite application macOS qui extrait une fenêtre d'un second Mac et l'affiche sur la machine courante comme une fenêtre normale, avec son icône dans le Dock ; le clavier et le presse-papiers suivent. L'appairage se fait par un code à six chiffres, la liaison est chiffrée et directe entre les deux machines, sans compte ni serveur intermédiaire. L'auteur a construit son propre outil après avoir trouvé à 199 dollars l'application qui faisait cela, et le vend 5 dollars, prix qui monte par paliers de vingt ventes. C'est un produit propriétaire, réservé à macOS, sans code publié — je le signale parce qu'il est bon marché et que l'auteur en décrit honnêtement les ratés de lancement, mais il sort du cadre du logiciel libre.</p>
+<p>Incertitude : l'adresse donnée dans le message (wormhole.app) est celle d'un service de partage de fichiers sans rapport avec cette application ; je n'ai pas pu atteindre la page du produit.</p>
+<h3>Cacti OS — façade d'émulation pour le rétrogaming</h3>
+<p>Environnement de jeu rétro avec intégration des succès RetroAchievements, construit par quelqu'un qui dit ne pas savoir programmer et l'avoir fait avec Claude. Le projet est jeune et l'auteur demande des retours sur les bugs et les directions à prendre.</p>
+<p>Incertitude, et elle est de taille : le dépôt lié ne contient que le canal de mise à jour (deux fichiers de version, 1.10.0 et 1.12.0), ni code source ni licence. C'est donc un gratuiciel, pas un logiciel libre, et il est impossible d'en vérifier le contenu. Dépôt : https://github.com/kryptalivian/CactiOS-Updates (0 étoile, aucune licence, dernière mise à jour le 2 novembre 2026).</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Envy UI 0.4.0 — éditeur d'interfaces de jeu, désormais aussi pour Unity</h3>
+<p>Éditeur de bureau qui remplace la maquette dessinée à part : on compose menus, affichages tête haute et inventaires sur un canevas, et le même fichier s'exécute dans le jeu, côté Godot, navigateur ou Unity. La version 0.3.0 avait apporté le moteur Unity (à partir d'Unity 6.3, sur UI Toolkit), l'import des fichiers .envy.json comme ressources et le rechargement à chaud ; la 0.4.0 ajoute des contrôles autonomes (curseurs, listes déroulantes, champs de saisie) qui lisent et écrivent une valeur par chemin de données sans code de jeu, des expressions dans le texte (« {boss.hp / boss.hpMax | percent} » affiche 58 %) et le style mot à mot dans une ligne. Le prix est de 9,99 dollars sur itch.io (7,99 en promotion), paiement unique avec toutes les mises à jour 1.x, sans abonnement. Logiciel propriétaire ; Windows aujourd'hui, Linux annoncé. Application : https://envyui.com</p>
+<h2>Extensions et greffons</h2>
+<h3>Cinq greffons libres pour OBS Studio, écrits par un vidéo-jockey</h3>
+<p>Un VJ publie cinq outils GPL-2.0 pour OBS, tous sur GitHub sous le compte https://github.com/jbrick2070 :</p>
+<ul>
+<li>obs-playlister — source OBS qui enchaîne les dossiers, fichiers et listes de lecture dans l'ordre, sous Windows et Linux (1 étoile, dernière mise à jour le 2 novembre 2026).</li>
+<li>midi-fadester — le fader d'un contrôleur MIDI APC40 devient le T-bar d'OBS, ce que l'auteur cherchait depuis des mois sans le trouver (1 étoile).</li>
+<li>visual-sidechain — effets de shader réagissant au son, avec une touche d'arrêt d'urgence (1 étoile).</li>
+<li>streamdeck-fadester — le même mixage sur un Stream Deck Plus, avec dispositions prêtes à l'emploi ; soumis au magasin Elgato (TypeScript, 1 étoile).</li>
+<li>vjster — réglage en direct de la vitesse vidéo depuis le Stream Deck, dans Chrome comme dans OBS (JavaScript, 0 étoile).</li>
+</ul>
+<p>Le message vaut aussi pour la méthode : plan avant code, relecture de chaque modification par un second modèle, tests par mutation, et essai systématique sur le matériel réel — c'est ainsi qu'il a trouvé un bug que personne n'avait vu, l'appel WebSocket d'OBS annulant chaque relâchement du T-bar.</p>
+<h2>Volume</h2>
+<p>30 posts parus dans l'intervalle, 7 retenus, 23 écartés, soit un taux de rétention de 23 %, conforme à la moyenne du subreddit (environ 20 %). Les messages écartés sont des jeux (un jeu de casino dans le navigateur, un jeu de sous-marin en Unreal Engine 5, deux jeux d'horreur, une reprise de 007 sous MPL-2.0), des récits de fabrication assistée par modèles sans outil à installer, des questions de support ou d'abonnement aux fournisseurs de modèles, et deux annonces commerciales sans version essayable (une API de design sur rendez-vous, un annuaire de fournisseurs de modèles « débridés »). Aucun échec de collecte à signaler (dernière collecte le 3 novembre 2026 à 03h50 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Fenêtre plus fournie que la veille : sur trente messages parus depuis la dernière édition, sept annoncent un outil utilisable, dont quatre projets libres dont le code est publié. Le plus intéressant est Chrome Controlla, un serveur MCP local qui donne à un agent de codage une prise vérifiable sur Chrome ; viennent ensuite cinq greffons OBS en GPL-2.0 et un petit mélangeur audio Linux sous licence MIT. Les vingt-trois autres messages sont des jeux, des récits de fabrication assistée et des questions d'abonnement.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Chrome Controlla — pilotage de Chrome par un agent, avec preuve d'exécution</h3>
+<p>Serveur MCP local qui relie un agent de codage (Codex, Cursor, Claude Code, opencode) à une extension Chrome installée à la main, par messagerie native. Il expose six outils (browser, snapshot, act, workflow, extract, verify) et, surtout, garde l'identité exacte de l'onglet et du document en cours de travail. L'auteur part d'un problème précis : un clic qui expire laisse l'agent dans le doute, et une nouvelle tentative peut soumettre deux fois le même formulaire. Son outil rebinde une référence périmée, fait défiler jusqu'à la cible hors écran et la revérifie, mais <strong>ne rejoue jamais une écriture dont il ne peut pas prouver qu'elle a eu lieu</strong> — il rend le doute plutôt qu'un succès inventé. Le dépôt contient les mesures d'exactitude et une matrice de qualification par système ; l'installation demande de compiler soi-même (Rust) et d'enregistrer l'identifiant de son extension, il n'y a pas de binaire universel.</p>
+<p>Licence Apache-2.0, gratuit. Dépôt : https://github.com/Praket7/NaviChrome (dépôt créé le 6 octobre 2026, 2 étoiles, dernière mise à jour le 2 novembre 2026 ; il a été renommé depuis le lien donné dans le message, qui pointait vers chrome-controlla).</p>
+<h3>Pipeweaver SMC-Mixer — piloter l'audio Linux avec un contrôleur MIDI</h3>
+<p>Application Rust qui transforme un contrôleur MIDI M-VAVE SMC-Mixer en surface de mixage pour Pipeweaver, le gestionnaire de sources audio sous Linux. Elle se connecte au service local de Pipeweaver en WebSocket, lit les niveaux en direct, et renvoie les changements de volume, de coupure et de mixage par son API : on obtient l'équivalent du logiciel Beacn, mais sans matériel dédié, avec un contrôleur à vingt-cinq euros. C'est très étroit — il faut exactement ce contrôleur et Pipeweaver installé — mais l'auteur l'assume et publie le code pour que d'autres l'adaptent.</p>
+<p>Licence MIT, gratuit. Dépôt : https://github.com/DeSynkro/pipeweaver-smc-mixer (2 étoiles, Rust, dernière mise à jour le 3 novembre 2026).</p>
+<h3>Teardown — voir ses dépendances avant de les corriger</h3>
+<p>Outil web qui lit un fichier de verrouillage (lockfile, manifeste ou SBOM, jamais le code) et affiche les dépendances d'une application en trois dimensions, chaque vulnérabilité reliée au paquet qui l'a introduite. Le classement se fait sur l'exploitation réelle — maliciels connus, catalogue KEV de la CISA, exploits publics, score EPSS — plutôt que sur le score CVSS, et chaque correctif proposé vient avec l'invite à donner à son agent de codage. L'auteur insiste sur un point de méthode : le tri est du code déterministe, le modèle de langue ne sert qu'à rédiger l'explication, ce qui évite qu'il invente une priorité.</p>
+<p>Incertitude : la page de présentation ne mentionne ni prix ni licence, et aucun code source n'est publié ; je ne peux donc pas dire s'il est gratuit et durablement accessible. L'auteur indique une version « à venir » avec connexion GitHub. À essayer : https://teardown.pro</p>
+<h3>Wormhole — déplacer une fenêtre d'un Mac à l'autre</h3>
+<p>Petite application macOS qui extrait une fenêtre d'un second Mac et l'affiche sur la machine courante comme une fenêtre normale, avec son icône dans le Dock ; le clavier et le presse-papiers suivent. L'appairage se fait par un code à six chiffres, la liaison est chiffrée et directe entre les deux machines, sans compte ni serveur intermédiaire. L'auteur a construit son propre outil après avoir trouvé à 199 dollars l'application qui faisait cela, et le vend 5 dollars, prix qui monte par paliers de vingt ventes. C'est un produit propriétaire, réservé à macOS, sans code publié — je le signale parce qu'il est bon marché et que l'auteur en décrit honnêtement les ratés de lancement, mais il sort du cadre du logiciel libre.</p>
+<p>Incertitude : l'adresse donnée dans le message (wormhole.app) est celle d'un service de partage de fichiers sans rapport avec cette application ; je n'ai pas pu atteindre la page du produit.</p>
+<h3>Cacti OS — façade d'émulation pour le rétrogaming</h3>
+<p>Environnement de jeu rétro avec intégration des succès RetroAchievements, construit par quelqu'un qui dit ne pas savoir programmer et l'avoir fait avec Claude. Le projet est jeune et l'auteur demande des retours sur les bugs et les directions à prendre.</p>
+<p>Incertitude, et elle est de taille : le dépôt lié ne contient que le canal de mise à jour (deux fichiers de version, 1.10.0 et 1.12.0), ni code source ni licence. C'est donc un gratuiciel, pas un logiciel libre, et il est impossible d'en vérifier le contenu. Dépôt : https://github.com/kryptalivian/CactiOS-Updates (0 étoile, aucune licence, dernière mise à jour le 2 novembre 2026).</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Envy UI 0.4.0 — éditeur d'interfaces de jeu, désormais aussi pour Unity</h3>
+<p>Éditeur de bureau qui remplace la maquette dessinée à part : on compose menus, affichages tête haute et inventaires sur un canevas, et le même fichier s'exécute dans le jeu, côté Godot, navigateur ou Unity. La version 0.3.0 avait apporté le moteur Unity (à partir d'Unity 6.3, sur UI Toolkit), l'import des fichiers .envy.json comme ressources et le rechargement à chaud ; la 0.4.0 ajoute des contrôles autonomes (curseurs, listes déroulantes, champs de saisie) qui lisent et écrivent une valeur par chemin de données sans code de jeu, des expressions dans le texte (« {boss.hp / boss.hpMax | percent} » affiche 58 %) et le style mot à mot dans une ligne. Le prix est de 9,99 dollars sur itch.io (7,99 en promotion), paiement unique avec toutes les mises à jour 1.x, sans abonnement. Logiciel propriétaire ; Windows aujourd'hui, Linux annoncé. Application : https://envyui.com</p>
+<h2>Extensions et greffons</h2>
+<h3>Cinq greffons libres pour OBS Studio, écrits par un vidéo-jockey</h3>
+<p>Un VJ publie cinq outils GPL-2.0 pour OBS, tous sur GitHub sous le compte https://github.com/jbrick2070 :</p>
+<ul>
+<li>obs-playlister — source OBS qui enchaîne les dossiers, fichiers et listes de lecture dans l'ordre, sous Windows et Linux (1 étoile, dernière mise à jour le 2 novembre 2026).</li>
+<li>midi-fadester — le fader d'un contrôleur MIDI APC40 devient le T-bar d'OBS, ce que l'auteur cherchait depuis des mois sans le trouver (1 étoile).</li>
+<li>visual-sidechain — effets de shader réagissant au son, avec une touche d'arrêt d'urgence (1 étoile).</li>
+<li>streamdeck-fadester — le même mixage sur un Stream Deck Plus, avec dispositions prêtes à l'emploi ; soumis au magasin Elgato (TypeScript, 1 étoile).</li>
+<li>vjster — réglage en direct de la vitesse vidéo depuis le Stream Deck, dans Chrome comme dans OBS (JavaScript, 0 étoile).</li>
+</ul>
+<p>Le message vaut aussi pour la méthode : plan avant code, relecture de chaque modification par un second modèle, tests par mutation, et essai systématique sur le matériel réel — c'est ainsi qu'il a trouvé un bug que personne n'avait vu, l'appel WebSocket d'OBS annulant chaque relâchement du T-bar.</p>
+<h2>Volume</h2>
+<p>30 posts parus dans l'intervalle, 7 retenus, 23 écartés, soit un taux de rétention de 23 %, conforme à la moyenne du subreddit (environ 20 %). Les messages écartés sont des jeux (un jeu de casino dans le navigateur, un jeu de sous-marin en Unreal Engine 5, deux jeux d'horreur, une reprise de 007 sous MPL-2.0), des récits de fabrication assistée par modèles sans outil à installer, des questions de support ou d'abonnement aux fournisseurs de modèles, et deux annonces commerciales sans version essayable (une API de design sur rendez-vous, un annuaire de fournisseurs de modèles « débridés »). Aucun échec de collecte à signaler (dernière collecte le 3 novembre 2026 à 03h50 UTC).</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/BestGitHubRepos — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-03.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 06:26:07 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>31 posts parus depuis la dernière édition (tous datés du 2 novembre), 18 retenus, 13 écartés : le fil est presque entièrement publié par un compte automatique qui recopie chaque dépôt avec son README, d'où un tri qui écarte surtout les bibliothèques de développement, l'infrastructure d'entreprise et les parcours d'apprentissage.</li>
+<li>Trois trouvailles du jour : OpenIDEA (un IDE réécrit en Rust, très léger), Orfeo (apprentissage du piano à partir de ses propres fichiers MIDI, sans abonnement) et Open Notebook (alternative auto-hébergée à NotebookLM).</li>
+<li>Collecte sans incident : le fichier d'état ne signale aucune erreur (dernière passe à 3 h 49 UTC).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Développement</h3>
+<p><strong>OpenIDEA — l'IDE familier réécrit en Rust</strong><br />
+Application native qui reprend les repères d'IntelliJ IDEA (raccourcis, fenêtres d'outils, recherche universelle) avec éditeur, analyse de code, débogueur, Git, terminal, bases de données et client HTTP pour plus de soixante langages. Le projet annonce l'ouverture d'un projet Python d'environ 770 fichiers en 0,9 seconde pour 169 Mo de mémoire, contre plusieurs secondes et plusieurs centaines de mégaoctets pour IntelliJ. C'est un logiciel très jeune : les chiffres de comparaison viennent du projet lui-même et méritent d'être vérifiés à l'usage. Compilations macOS, Windows et Linux.<br />
+Apache-2.0, 5 172 étoiles, mise à jour le 3 novembre 2026 (dépôt créé le 21 octobre 2026, dernière version 0.1.33) — https://github.com/l0ng-ai/openidea</p>
+<p><strong>Kiro Crew — un espace de travail qui survit à la fermeture du terminal</strong><br />
+Environnement persistant pour le travail de développement : sessions, mémoire, tâches planifiées et points de reprise survivent aux redémarrages de la passerelle, les corrections apportées à l'agent deviennent des leçons durables et les motifs répétés se transforment en compétences réutilisables et modifiables à la main. Se pilote depuis une application de bureau, un tableau de bord web, la ligne de commande ou des messageries (Slack, Discord), et s'exécute sur son propre Mac, dans un conteneur ou sur une machine distante.<br />
+Apache-2.0, 4 742 étoiles, mise à jour le 3 novembre 2026 (version 0.11.0 du 30 octobre) — https://github.com/kirodotdev/KiroCrew</p>
+<p><strong>Lerd — environnements PHP locaux, sans démon Docker</strong><br />
+Donne à chaque projet PHP un domaine en <code>.test</code> avec HTTPS, la bonne version de PHP et les services nécessaires, dans des conteneurs Podman sans privilèges : rien ne s'installe dans le PHP du système, rien ne tourne en root et la désinstallation laisse la machine propre. Le projet détecte seul le cadre employé (Laravel, Symfony, WordPress, Drupal, Magento) au lieu d'exiger un fichier de composition par projet ; les définitions sont des fichiers YAML ouverts aux contributions. Dispose aussi d'un tableau de bord web, d'une interface en terminal, d'un serveur MCP pour que les agents gèrent l'environnement, et depuis peu d'un système de greffons et d'un programme d'installation Windows. L'auteur signale lui-même qu'il est le mainteneur du projet.<br />
+MIT, 1 481 étoiles, mise à jour le 2 novembre 2026 (dépôt créé le 17 mars 2026, première version en mars 2026) — https://github.com/lerd-env/lerd</p>
+<h3>Intelligence artificielle locale et mémoire</h3>
+<p><strong>Lemonade — un serveur d'IA local aux allures d'API du nuage</strong><br />
+Installe un service local qui expose les interfaces standard d'OpenAI, d'Anthropic et d'Ollama, ce qui permet de brancher des centaines d'applications existantes sur des modèles exécutés chez soi, avec gestionnaire de modèles, interfaces de conversation, de génération d'images et de synthèse vocale. Existe aussi en binaire portable à intégrer dans une application tierce, avec des variantes pour iOS et Android. Windows, Linux, macOS, Docker.<br />
+Apache-2.0, 6 079 étoiles, mise à jour le 3 novembre 2026 (version 2026.44.1 du 28 octobre) — https://github.com/lemonade-sdk/lemonade</p>
+<p><strong>Open Notebook — l'alternative auto-hébergée à NotebookLM</strong><br />
+Reprend l'idée du carnet de recherche assisté : on rassemble PDF, vidéos, sons, pages web et documents bureautiques, puis on interroge l'ensemble, on fait rédiger des notes et on génère des fichiers audio de synthèse à plusieurs voix. Gère plusieurs carnets, vingt et un fournisseurs de modèles au choix (dont Ollama et LM Studio, donc entièrement local), et la recherche plein texte comme la recherche vectorielle. Installation par un fichier de composition Docker.<br />
+MIT, 41 434 étoiles, mise à jour le 1er novembre 2026 (dernière version 1.15.0 du 4 octobre) — https://github.com/lfnovo/open-notebook</p>
+<p><strong>MemPalace — une mémoire d'agent stockée mot pour mot</strong><br />
+Conserve l'historique des conversations en texte brut, sans résumer ni reformuler, et le retrouve par recherche sémantique : ce que l'agent relit est exactement ce qui a été dit, ce qui limite les déformations en chaîne. La couche de recherche est remplaçable (ChromaDB par défaut, interface documentée pour en écrire une autre) et rien ne quitte la machine sans accord explicite. S'installe comme outil en ligne de commande.<br />
+MIT, 60 279 étoiles, mise à jour le 31 octobre 2026 (version 3.11.0 du 14 octobre) — https://github.com/MemPalace/mempalace</p>
+<p><strong>Mesh LLM — répartir un gros modèle sur plusieurs machines</strong><br />
+Fait tourner un modèle de langue sur un ensemble de machines reliées entre elles : si un seul nœud tient le modèle, il le sert localement ; sinon le modèle est découpé en étages et réparti, chaque pair ne téléchargeant que les fragments dont il a besoin. Le transport entre nœuds est chiffré de bout en bout, le maillage peut être privé (jeton d'invitation) ou public (découverte par Nostr), et chaque nœud expose la même interface compatible OpenAI. L'intérêt dépend évidemment du nombre de machines disponibles.<br />
+Apache-2.0, 3 857 étoiles, mise à jour le 3 novembre 2026 (version 0.78.1 du 5 octobre) — https://github.com/Mesh-LLM/mesh-llm</p>
+<p><strong>Idol — une photo, un objet en trois dimensions</strong><br />
+SDK d'inférence qui transforme une seule image en modèle d'objet au format des gaussiennes 3D (de 32 768 à 1 048 576 points, 262 144 par défaut), avec détourage automatique du sujet. C'est un projet de recherche très jeune, à un seul contributeur et sans licence de version publiée malgré le dépôt Apache-2.0 : à considérer comme une démonstration plutôt qu'un outil stable.<br />
+Apache-2.0, 658 étoiles, mise à jour le 29 octobre 2026 (dépôt créé le 28 octobre 2026, aucune version publiée) — https://github.com/speridlabs/idol-sdk</p>
+<h3>Système, données personnelles et vie privée</h3>
+<p><strong>AliasVault — mots de passe et alias de courriel au même endroit</strong><br />
+Gestionnaire de mots de passe entièrement chiffré, auto-hébergeable, qui fabrique en plus des adresses de courriel jetables grâce à un serveur de messagerie intégré : une adresse par service, révocable quand elle commence à recevoir du courrier indésirable. Comprend l'authentification à deux facteurs, la reprise d'un fichier d'export d'un autre gestionnaire, les clés d'accès et des extensions de navigateur pour Chrome, Firefox, Edge, Safari et Brave. Deux méthodes d'installation sur son propre serveur.<br />
+AGPL-3.0, 3 432 étoiles, mise à jour le 2 novembre 2026 (version 0.31.1 du 14 octobre) — https://github.com/aliasvault/aliasvault</p>
+<p><strong>Burrow — l'entretien du Mac dans une seule application (macOS)</strong><br />
+Tableau de bord de l'état du système avec courbes par indicateur et liste de processus, recherche et suppression en masse des fichiers d'installation <code>.dmg</code> et <code>.pkg</code> restés en place, entretien en un clic (reconstruction des caches, réparation des métadonnées, purge du DNS, redémarrage du Dock et du Finder), liste des applications installées avec désinstallation multiple et onglet de mises à jour (applications et Homebrew séparément), enfin carte proportionnelle du disque avec exploration dossier par dossier. Chaque analyse propose d'abord une simulation sans risque. Application native pour macOS seulement, installable par Homebrew.<br />
+MIT, 1 681 étoiles, mise à jour le 2 novembre 2026 (version 0.14.0 du 10 août, dépôt créé le 31 mai 2026) — https://github.com/caezium/burrow</p>
+<p><strong>Monica — un carnet de relations, auto-hébergé</strong><br />
+Répertoire personnel qui documente la vie de ses proches : fiches de contact, liens de parenté et d'amitié, rappels d'anniversaires, notes sur les circonstances d'une rencontre, activités partagées, documents et photos rangés par personne, plusieurs carnets et comptes, interface traduite en vingt-sept langues. Attention : la dernière version publiée date de mai 2024, le dépôt reçoit encore des modifications mais l'activité de publication est faible — à vérifier avant de s'y engager.<br />
+AGPL-3.0, 25 630 étoiles, dépôt modifié le 28 octobre 2026 mais dernière version 4.1.2 du 4 mai 2024 — https://github.com/monicahq/monica</p>
+<h3>Création et pédagogie</h3>
+<p><strong>Orfeo — apprendre le piano avec ses propres fichiers MIDI</strong><br />
+Application de bureau qui affiche les notes tombant sur un clavier, permet de jouer par-dessus avec un clavier MIDI, reconnaît les accords en temps réel, explore accords et gammes, sépare une piste de piano en main gauche et main droite, et fonctionne sans compte, sans télémétrie et sans leçon payante : on apporte sa propre bibliothèque MIDI. Le code est déjà écrit pour être multiplateforme, mais seules les compilations Windows existent pour l'instant ; l'auteur cherche des contributeurs pour Linux et macOS.<br />
+GPL-3.0, 429 étoiles, mise à jour le 2 novembre 2026 (version 1.6.0 du 31 octobre) — https://github.com/Squarebow/Orfeo</p>
+<p><strong>Manim — fabriquer des animations mathématiques</strong><br />
+Bibliothèque Python qui produit, par le code, des animations mathématiques précises — c'est l'outil des vidéos de 3Blue1Brown — avec un module utilisable directement dans les carnets Jupyter. Projet déjà établi, rappelé ici parce qu'il reste la voie la plus directe pour fabriquer une animation projetable sans logiciel de montage.<br />
+MIT, 42 171 étoiles, mise à jour le 2 novembre 2026 (version 0.22.1 du 27 octobre) — https://github.com/ManimCommunity/manim</p>
+<h2>Extensions et greffons</h2>
+<p><strong>StableGen — générer, texturer et animer des modèles 3D dans Blender</strong><br />
+Greffon Blender qui place des caméras autour d'un objet ou d'une scène, génère une image depuis chaque point de vue en utilisant les précédentes comme contexte (d'où une texture cohérente sur tout le tour), projette le résultat sur les surfaces visibles, permet de repeindre une seule zone et de la régénérer, en déduit les cartes de matière (couleur, rugosité, métallique, normales), puis ajoute un squelette et des poids de peau pour récupérer des animations Mixamo et exporter le tout en glTF ou FBX vers Godot, Unity, Unreal ou le web.<br />
+GPL-3.0, 1 329 étoiles, mise à jour le 2 novembre 2026 (version 0.4.0 du 28 octobre) — https://github.com/sakalond/StableGen</p>
+<p><strong>unslop — dégraisser une interface visiblement générée par une machine</strong><br />
+Compétence pour Claude Code et Codex qui audite une interface repérée comme typique d'une production automatique, propose une direction esthétique, puis reprend dans l'ordre les espacements, les couleurs, les icônes, les libellés, la typographie, la mise en page et les animations. Signalons que le dépôt est publié sous Creative Commons Attribution 4.0, une licence prévue pour des contenus et non pour du logiciel : les conditions de réutilisation du code méritent d'être lues avant de s'en servir en classe.<br />
+CC-BY-4.0 (licence de contenu, inhabituelle pour du code), 6 500 étoiles, mise à jour le 1er novembre 2026 (dépôt créé le 29 octobre 2026) — https://github.com/heydamir/unslop</p>
+<p><strong>apple-hig — les règles d'interface d'Apple à disposition d'un agent</strong><br />
+Compétence pour agents qui confronte les écrans, barres et dispositions d'un projet aux recommandations d'Apple, propose des options argumentées et cite ses sources, construit les modifications en SwiftUI dans l'ordre prévu puis les vérifie dans le simulateur ; elle refuse explicitement de produire des maquettes HTML et signale les vérifications qu'elle n'a pas pu faire. Utile aux seuls développeurs d'applications Apple.<br />
+MIT, 765 étoiles, mise à jour le 17 octobre 2026 (dépôt créé le 15 mars 2026, aucune version publiée) — https://github.com/justinwetch/HIGAgentSkills</p>
+<p><strong>render-markdown.nvim — lire du Markdown proprement dans Neovim</strong><br />
+Affiche titres, blocs de code, listes, cases à cocher, citations, encadrés, tableaux, liens et formules LaTeX directement dans Neovim, sans fenêtre externe, avec bascule entre vue rendue et vue brute selon le mode, masquage du texte virtuel sur la ligne du curseur et rendu limité aux lignes visibles pour les gros fichiers. Nécessite Neovim 0.9 au minimum (0.10 recommandé).<br />
+MIT, 5 224 étoiles, mise à jour le 10 octobre 2026 (version 8.14.0 du 15 septembre) — https://github.com/MeanderingProgrammer/render-markdown.nvim</p>
+<p><strong>nvim-lint — lancer les bons correcteurs dans Neovim</strong><br />
+Greffon asynchrone qui complète le client de langage intégré là où il n'existe pas de serveur, ou là où un outil autonome fait mieux : il lance l'analyseur, lit sa sortie et remonte les résultats dans le système de diagnostics de Neovim, avec un analyseur générique qui réutilise les options de compilation du tampon courant. Neovim 0.9.5 ou plus récent.<br />
+GPL-3.0, 2 785 étoiles, mise à jour le 29 octobre 2026 (aucune version publiée) — https://github.com/mfussenegger/nvim-lint</p>
+<h2>Volume</h2>
+<p>31 posts parus dans l'intervalle (tous publiés le 2 novembre 2026), 18 retenus, 13 écartés. Ont été écartés les bibliothèques et infrastructures de développement (Deep Agents, Langfuse, Nasiko, KServe, Milvus), les outils d'entreprise (Mautic pour l'automatisation marketing, OpenBot déjà écarté la veille comme plateforme de collaborateurs IA visant les équipes), les parcours d'apprentissage et recueils de tutoriels (90DaysOfDevOps, Learn PyTorch, Liquid AI Cookbook), le SDK Apple Silicon Laya-CoreML, ainsi qu'un atlas historique chinois interactif et un lecteur de mangas et d'animations, tous deux hors du champ des outils utiles à un particulier.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>31 posts parus depuis la dernière édition (tous datés du 2 novembre), 18 retenus, 13 écartés : le fil est presque entièrement publié par un compte automatique qui recopie chaque dépôt avec son README, d'où un tri qui écarte surtout les bibliothèques de développement, l'infrastructure d'entreprise et les parcours d'apprentissage.</li>
+<li>Trois trouvailles du jour : OpenIDEA (un IDE réécrit en Rust, très léger), Orfeo (apprentissage du piano à partir de ses propres fichiers MIDI, sans abonnement) et Open Notebook (alternative auto-hébergée à NotebookLM).</li>
+<li>Collecte sans incident : le fichier d'état ne signale aucune erreur (dernière passe à 3 h 49 UTC).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Développement</h3>
+<p><strong>OpenIDEA — l'IDE familier réécrit en Rust</strong><br />
+Application native qui reprend les repères d'IntelliJ IDEA (raccourcis, fenêtres d'outils, recherche universelle) avec éditeur, analyse de code, débogueur, Git, terminal, bases de données et client HTTP pour plus de soixante langages. Le projet annonce l'ouverture d'un projet Python d'environ 770 fichiers en 0,9 seconde pour 169 Mo de mémoire, contre plusieurs secondes et plusieurs centaines de mégaoctets pour IntelliJ. C'est un logiciel très jeune : les chiffres de comparaison viennent du projet lui-même et méritent d'être vérifiés à l'usage. Compilations macOS, Windows et Linux.<br />
+Apache-2.0, 5 172 étoiles, mise à jour le 3 novembre 2026 (dépôt créé le 21 octobre 2026, dernière version 0.1.33) — https://github.com/l0ng-ai/openidea</p>
+<p><strong>Kiro Crew — un espace de travail qui survit à la fermeture du terminal</strong><br />
+Environnement persistant pour le travail de développement : sessions, mémoire, tâches planifiées et points de reprise survivent aux redémarrages de la passerelle, les corrections apportées à l'agent deviennent des leçons durables et les motifs répétés se transforment en compétences réutilisables et modifiables à la main. Se pilote depuis une application de bureau, un tableau de bord web, la ligne de commande ou des messageries (Slack, Discord), et s'exécute sur son propre Mac, dans un conteneur ou sur une machine distante.<br />
+Apache-2.0, 4 742 étoiles, mise à jour le 3 novembre 2026 (version 0.11.0 du 30 octobre) — https://github.com/kirodotdev/KiroCrew</p>
+<p><strong>Lerd — environnements PHP locaux, sans démon Docker</strong><br />
+Donne à chaque projet PHP un domaine en <code>.test</code> avec HTTPS, la bonne version de PHP et les services nécessaires, dans des conteneurs Podman sans privilèges : rien ne s'installe dans le PHP du système, rien ne tourne en root et la désinstallation laisse la machine propre. Le projet détecte seul le cadre employé (Laravel, Symfony, WordPress, Drupal, Magento) au lieu d'exiger un fichier de composition par projet ; les définitions sont des fichiers YAML ouverts aux contributions. Dispose aussi d'un tableau de bord web, d'une interface en terminal, d'un serveur MCP pour que les agents gèrent l'environnement, et depuis peu d'un système de greffons et d'un programme d'installation Windows. L'auteur signale lui-même qu'il est le mainteneur du projet.<br />
+MIT, 1 481 étoiles, mise à jour le 2 novembre 2026 (dépôt créé le 17 mars 2026, première version en mars 2026) — https://github.com/lerd-env/lerd</p>
+<h3>Intelligence artificielle locale et mémoire</h3>
+<p><strong>Lemonade — un serveur d'IA local aux allures d'API du nuage</strong><br />
+Installe un service local qui expose les interfaces standard d'OpenAI, d'Anthropic et d'Ollama, ce qui permet de brancher des centaines d'applications existantes sur des modèles exécutés chez soi, avec gestionnaire de modèles, interfaces de conversation, de génération d'images et de synthèse vocale. Existe aussi en binaire portable à intégrer dans une application tierce, avec des variantes pour iOS et Android. Windows, Linux, macOS, Docker.<br />
+Apache-2.0, 6 079 étoiles, mise à jour le 3 novembre 2026 (version 2026.44.1 du 28 octobre) — https://github.com/lemonade-sdk/lemonade</p>
+<p><strong>Open Notebook — l'alternative auto-hébergée à NotebookLM</strong><br />
+Reprend l'idée du carnet de recherche assisté : on rassemble PDF, vidéos, sons, pages web et documents bureautiques, puis on interroge l'ensemble, on fait rédiger des notes et on génère des fichiers audio de synthèse à plusieurs voix. Gère plusieurs carnets, vingt et un fournisseurs de modèles au choix (dont Ollama et LM Studio, donc entièrement local), et la recherche plein texte comme la recherche vectorielle. Installation par un fichier de composition Docker.<br />
+MIT, 41 434 étoiles, mise à jour le 1er novembre 2026 (dernière version 1.15.0 du 4 octobre) — https://github.com/lfnovo/open-notebook</p>
+<p><strong>MemPalace — une mémoire d'agent stockée mot pour mot</strong><br />
+Conserve l'historique des conversations en texte brut, sans résumer ni reformuler, et le retrouve par recherche sémantique : ce que l'agent relit est exactement ce qui a été dit, ce qui limite les déformations en chaîne. La couche de recherche est remplaçable (ChromaDB par défaut, interface documentée pour en écrire une autre) et rien ne quitte la machine sans accord explicite. S'installe comme outil en ligne de commande.<br />
+MIT, 60 279 étoiles, mise à jour le 31 octobre 2026 (version 3.11.0 du 14 octobre) — https://github.com/MemPalace/mempalace</p>
+<p><strong>Mesh LLM — répartir un gros modèle sur plusieurs machines</strong><br />
+Fait tourner un modèle de langue sur un ensemble de machines reliées entre elles : si un seul nœud tient le modèle, il le sert localement ; sinon le modèle est découpé en étages et réparti, chaque pair ne téléchargeant que les fragments dont il a besoin. Le transport entre nœuds est chiffré de bout en bout, le maillage peut être privé (jeton d'invitation) ou public (découverte par Nostr), et chaque nœud expose la même interface compatible OpenAI. L'intérêt dépend évidemment du nombre de machines disponibles.<br />
+Apache-2.0, 3 857 étoiles, mise à jour le 3 novembre 2026 (version 0.78.1 du 5 octobre) — https://github.com/Mesh-LLM/mesh-llm</p>
+<p><strong>Idol — une photo, un objet en trois dimensions</strong><br />
+SDK d'inférence qui transforme une seule image en modèle d'objet au format des gaussiennes 3D (de 32 768 à 1 048 576 points, 262 144 par défaut), avec détourage automatique du sujet. C'est un projet de recherche très jeune, à un seul contributeur et sans licence de version publiée malgré le dépôt Apache-2.0 : à considérer comme une démonstration plutôt qu'un outil stable.<br />
+Apache-2.0, 658 étoiles, mise à jour le 29 octobre 2026 (dépôt créé le 28 octobre 2026, aucune version publiée) — https://github.com/speridlabs/idol-sdk</p>
+<h3>Système, données personnelles et vie privée</h3>
+<p><strong>AliasVault — mots de passe et alias de courriel au même endroit</strong><br />
+Gestionnaire de mots de passe entièrement chiffré, auto-hébergeable, qui fabrique en plus des adresses de courriel jetables grâce à un serveur de messagerie intégré : une adresse par service, révocable quand elle commence à recevoir du courrier indésirable. Comprend l'authentification à deux facteurs, la reprise d'un fichier d'export d'un autre gestionnaire, les clés d'accès et des extensions de navigateur pour Chrome, Firefox, Edge, Safari et Brave. Deux méthodes d'installation sur son propre serveur.<br />
+AGPL-3.0, 3 432 étoiles, mise à jour le 2 novembre 2026 (version 0.31.1 du 14 octobre) — https://github.com/aliasvault/aliasvault</p>
+<p><strong>Burrow — l'entretien du Mac dans une seule application (macOS)</strong><br />
+Tableau de bord de l'état du système avec courbes par indicateur et liste de processus, recherche et suppression en masse des fichiers d'installation <code>.dmg</code> et <code>.pkg</code> restés en place, entretien en un clic (reconstruction des caches, réparation des métadonnées, purge du DNS, redémarrage du Dock et du Finder), liste des applications installées avec désinstallation multiple et onglet de mises à jour (applications et Homebrew séparément), enfin carte proportionnelle du disque avec exploration dossier par dossier. Chaque analyse propose d'abord une simulation sans risque. Application native pour macOS seulement, installable par Homebrew.<br />
+MIT, 1 681 étoiles, mise à jour le 2 novembre 2026 (version 0.14.0 du 10 août, dépôt créé le 31 mai 2026) — https://github.com/caezium/burrow</p>
+<p><strong>Monica — un carnet de relations, auto-hébergé</strong><br />
+Répertoire personnel qui documente la vie de ses proches : fiches de contact, liens de parenté et d'amitié, rappels d'anniversaires, notes sur les circonstances d'une rencontre, activités partagées, documents et photos rangés par personne, plusieurs carnets et comptes, interface traduite en vingt-sept langues. Attention : la dernière version publiée date de mai 2024, le dépôt reçoit encore des modifications mais l'activité de publication est faible — à vérifier avant de s'y engager.<br />
+AGPL-3.0, 25 630 étoiles, dépôt modifié le 28 octobre 2026 mais dernière version 4.1.2 du 4 mai 2024 — https://github.com/monicahq/monica</p>
+<h3>Création et pédagogie</h3>
+<p><strong>Orfeo — apprendre le piano avec ses propres fichiers MIDI</strong><br />
+Application de bureau qui affiche les notes tombant sur un clavier, permet de jouer par-dessus avec un clavier MIDI, reconnaît les accords en temps réel, explore accords et gammes, sépare une piste de piano en main gauche et main droite, et fonctionne sans compte, sans télémétrie et sans leçon payante : on apporte sa propre bibliothèque MIDI. Le code est déjà écrit pour être multiplateforme, mais seules les compilations Windows existent pour l'instant ; l'auteur cherche des contributeurs pour Linux et macOS.<br />
+GPL-3.0, 429 étoiles, mise à jour le 2 novembre 2026 (version 1.6.0 du 31 octobre) — https://github.com/Squarebow/Orfeo</p>
+<p><strong>Manim — fabriquer des animations mathématiques</strong><br />
+Bibliothèque Python qui produit, par le code, des animations mathématiques précises — c'est l'outil des vidéos de 3Blue1Brown — avec un module utilisable directement dans les carnets Jupyter. Projet déjà établi, rappelé ici parce qu'il reste la voie la plus directe pour fabriquer une animation projetable sans logiciel de montage.<br />
+MIT, 42 171 étoiles, mise à jour le 2 novembre 2026 (version 0.22.1 du 27 octobre) — https://github.com/ManimCommunity/manim</p>
+<h2>Extensions et greffons</h2>
+<p><strong>StableGen — générer, texturer et animer des modèles 3D dans Blender</strong><br />
+Greffon Blender qui place des caméras autour d'un objet ou d'une scène, génère une image depuis chaque point de vue en utilisant les précédentes comme contexte (d'où une texture cohérente sur tout le tour), projette le résultat sur les surfaces visibles, permet de repeindre une seule zone et de la régénérer, en déduit les cartes de matière (couleur, rugosité, métallique, normales), puis ajoute un squelette et des poids de peau pour récupérer des animations Mixamo et exporter le tout en glTF ou FBX vers Godot, Unity, Unreal ou le web.<br />
+GPL-3.0, 1 329 étoiles, mise à jour le 2 novembre 2026 (version 0.4.0 du 28 octobre) — https://github.com/sakalond/StableGen</p>
+<p><strong>unslop — dégraisser une interface visiblement générée par une machine</strong><br />
+Compétence pour Claude Code et Codex qui audite une interface repérée comme typique d'une production automatique, propose une direction esthétique, puis reprend dans l'ordre les espacements, les couleurs, les icônes, les libellés, la typographie, la mise en page et les animations. Signalons que le dépôt est publié sous Creative Commons Attribution 4.0, une licence prévue pour des contenus et non pour du logiciel : les conditions de réutilisation du code méritent d'être lues avant de s'en servir en classe.<br />
+CC-BY-4.0 (licence de contenu, inhabituelle pour du code), 6 500 étoiles, mise à jour le 1er novembre 2026 (dépôt créé le 29 octobre 2026) — https://github.com/heydamir/unslop</p>
+<p><strong>apple-hig — les règles d'interface d'Apple à disposition d'un agent</strong><br />
+Compétence pour agents qui confronte les écrans, barres et dispositions d'un projet aux recommandations d'Apple, propose des options argumentées et cite ses sources, construit les modifications en SwiftUI dans l'ordre prévu puis les vérifie dans le simulateur ; elle refuse explicitement de produire des maquettes HTML et signale les vérifications qu'elle n'a pas pu faire. Utile aux seuls développeurs d'applications Apple.<br />
+MIT, 765 étoiles, mise à jour le 17 octobre 2026 (dépôt créé le 15 mars 2026, aucune version publiée) — https://github.com/justinwetch/HIGAgentSkills</p>
+<p><strong>render-markdown.nvim — lire du Markdown proprement dans Neovim</strong><br />
+Affiche titres, blocs de code, listes, cases à cocher, citations, encadrés, tableaux, liens et formules LaTeX directement dans Neovim, sans fenêtre externe, avec bascule entre vue rendue et vue brute selon le mode, masquage du texte virtuel sur la ligne du curseur et rendu limité aux lignes visibles pour les gros fichiers. Nécessite Neovim 0.9 au minimum (0.10 recommandé).<br />
+MIT, 5 224 étoiles, mise à jour le 10 octobre 2026 (version 8.14.0 du 15 septembre) — https://github.com/MeanderingProgrammer/render-markdown.nvim</p>
+<p><strong>nvim-lint — lancer les bons correcteurs dans Neovim</strong><br />
+Greffon asynchrone qui complète le client de langage intégré là où il n'existe pas de serveur, ou là où un outil autonome fait mieux : il lance l'analyseur, lit sa sortie et remonte les résultats dans le système de diagnostics de Neovim, avec un analyseur générique qui réutilise les options de compilation du tampon courant. Neovim 0.9.5 ou plus récent.<br />
+GPL-3.0, 2 785 étoiles, mise à jour le 29 octobre 2026 (aucune version publiée) — https://github.com/mfussenegger/nvim-lint</p>
+<h2>Volume</h2>
+<p>31 posts parus dans l'intervalle (tous publiés le 2 novembre 2026), 18 retenus, 13 écartés. Ont été écartés les bibliothèques et infrastructures de développement (Deep Agents, Langfuse, Nasiko, KServe, Milvus), les outils d'entreprise (Mautic pour l'automatisation marketing, OpenBot déjà écarté la veille comme plateforme de collaborateurs IA visant les équipes), les parcours d'apprentissage et recueils de tutoriels (90DaysOfDevOps, Learn PyTorch, Liquid AI Cookbook), le SDK Apple Silicon Laya-CoreML, ainsi qu'un atlas historique chinois interactif et un lecteur de mangas et d'animations, tous deux hors du champ des outils utiles à un particulier.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-03.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 06:13:12 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux posts parus depuis la dernière édition, tous deux retenus.</li>
+<li>Alysis publie une application de bureau pour son agent libre multi-modèles : gratuite avec sa propre clé d'interface ou un modèle exécuté en local, forfaits gérés à partir de 1 dollar par mois.</li>
+<li>pixelfx rassemble 244 effets d'animation en pixel art, chacun sous forme de bout de code réutilisable (licence MIT), avec une extension pour Claude Code qui en fabrique d'autres.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Alysis Code — l'agent en ligne de commande passe en application de bureau</h3>
+<p>Ce que c'est : un agent d'intelligence artificielle libre, développé par une petite équipe basée à Athènes. Le moteur existait déjà en ligne de commande ; la nouveauté de ce post est l'application de bureau pour Mac et Windows, qui rend l'outil utilisable sans terminal (version 0.1.57 de l'application, moteur 0.16.0 publié le 1er novembre 2026).<br />
+Ce que ça apporte : l'agent n'est lié à aucun fournisseur. On y branche une clé OpenAI, Anthropic, Gemini ou DeepSeek, ou bien un modèle exécuté chez soi par Ollama ou LM Studio, et l'on change de modèle tâche par tâche. Il ne se limite pas au code : tableurs, documents texte, diaporamas, PDF et recherche documentaire sont annoncés. Les commandes s'exécutent dans un bac à sable, avec une isolation stricte par défaut — c'est le point à vérifier soi-même avant de le laisser écrire dans un dépôt, un agent de ce genre ayant accès au système de fichiers.<br />
+Licence et prix : moteur sous Apache 2.0, gratuit avec sa propre clé d'interface ou un modèle local. Pour qui préfère un accès déjà géré, l'éditeur propose deux forfaits par abonnement — « Beta » à 1 dollar par mois (500 crédits, plafonds de 20 crédits sur 5 heures et 40 sur 7 jours) et « Alpha » à 5 dollars par mois. Le code de la page de tarifs mentionne en outre une dotation gratuite d'environ 0,50 dollar de crédits par mois ; cette information vient de la source de la page, dont le contenu est fabriqué par le navigateur, et je n'ai pas pu la lire sur une page rendue — à considérer comme incertaine.<br />
+Vérification : dépôt https://github.com/AlysisAi/AlysisCode — 198 étoiles, 25 duplications, dernière modification le 2 novembre 2026. Les installateurs Windows et macOS sont signés et notariés ; seule la version Mac pour processeur Apple Silicon est fournie, et il n'existe pas d'application de bureau pour Linux.<br />
+Lien : https://github.com/AlysisAi/AlysisCode — site : https://alysiscode.com/</p>
+<h3>pixelfx — 244 effets de pixel art à réutiliser, et de quoi en créer d'autres</h3>
+<p>Ce que c'est : une bibliothèque d'effets et d'animations en pixel art — feu, explosions, sorts, météo, éléments d'interface, objets à ramasser, petites créatures — où chaque effet est un court programme JavaScript, affiché en direct dans une galerie et exportable en planches de sprites pour n'importe quel moteur de jeu. Douze enchaînements complets transforment les effets en attaques, du mouvement d'armement jusqu'à la récupération ; les effets impliquant un personnage sont joués, avec contact et réaction de la cible.<br />
+Ce que ça apporte : de quoi habiller un jeu ou une animation dans le navigateur sans dessiner chaque image, et une extension pour Claude Code qui produit de nouveaux effets selon la méthode « dessiner, afficher, regarder, corriger ». Le dépôt s'appuie explicitement sur le travail et la méthode de Hugo Duprez (Sprite Fusion), crédités en tête de certains fichiers.<br />
+Licence et prix : MIT, gratuit. Dépôt créé le 30 octobre 2026 — très récent —, 3 641 étoiles, 495 duplications, dernière modification le 31 octobre 2026 ; aucune version publiée au sens de GitHub, on récupère le dépôt directement. Galerie : https://patch-gg.github.io/pixelfx/ (répond).<br />
+Réserve : le post n'est pas de l'auteur mais d'un compte qui relaie des ressources vers son propre site, lequel signale ne pas vérifier les projets qu'il cite. Le dépôt, lui, est bien distinct de ce site.<br />
+Lien : https://github.com/patch-gg/pixelfx</p>
+<h2>Volume</h2>
+<p>2 posts publiés dans l'intervalle, 2 retenus, 0 écarté. La collecte la plus récente (3 novembre 2026, 4 h 48 heure de Paris) s'est terminée sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux posts parus depuis la dernière édition, tous deux retenus.</li>
+<li>Alysis publie une application de bureau pour son agent libre multi-modèles : gratuite avec sa propre clé d'interface ou un modèle exécuté en local, forfaits gérés à partir de 1 dollar par mois.</li>
+<li>pixelfx rassemble 244 effets d'animation en pixel art, chacun sous forme de bout de code réutilisable (licence MIT), avec une extension pour Claude Code qui en fabrique d'autres.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Alysis Code — l'agent en ligne de commande passe en application de bureau</h3>
+<p>Ce que c'est : un agent d'intelligence artificielle libre, développé par une petite équipe basée à Athènes. Le moteur existait déjà en ligne de commande ; la nouveauté de ce post est l'application de bureau pour Mac et Windows, qui rend l'outil utilisable sans terminal (version 0.1.57 de l'application, moteur 0.16.0 publié le 1er novembre 2026).<br />
+Ce que ça apporte : l'agent n'est lié à aucun fournisseur. On y branche une clé OpenAI, Anthropic, Gemini ou DeepSeek, ou bien un modèle exécuté chez soi par Ollama ou LM Studio, et l'on change de modèle tâche par tâche. Il ne se limite pas au code : tableurs, documents texte, diaporamas, PDF et recherche documentaire sont annoncés. Les commandes s'exécutent dans un bac à sable, avec une isolation stricte par défaut — c'est le point à vérifier soi-même avant de le laisser écrire dans un dépôt, un agent de ce genre ayant accès au système de fichiers.<br />
+Licence et prix : moteur sous Apache 2.0, gratuit avec sa propre clé d'interface ou un modèle local. Pour qui préfère un accès déjà géré, l'éditeur propose deux forfaits par abonnement — « Beta » à 1 dollar par mois (500 crédits, plafonds de 20 crédits sur 5 heures et 40 sur 7 jours) et « Alpha » à 5 dollars par mois. Le code de la page de tarifs mentionne en outre une dotation gratuite d'environ 0,50 dollar de crédits par mois ; cette information vient de la source de la page, dont le contenu est fabriqué par le navigateur, et je n'ai pas pu la lire sur une page rendue — à considérer comme incertaine.<br />
+Vérification : dépôt https://github.com/AlysisAi/AlysisCode — 198 étoiles, 25 duplications, dernière modification le 2 novembre 2026. Les installateurs Windows et macOS sont signés et notariés ; seule la version Mac pour processeur Apple Silicon est fournie, et il n'existe pas d'application de bureau pour Linux.<br />
+Lien : https://github.com/AlysisAi/AlysisCode — site : https://alysiscode.com/</p>
+<h3>pixelfx — 244 effets de pixel art à réutiliser, et de quoi en créer d'autres</h3>
+<p>Ce que c'est : une bibliothèque d'effets et d'animations en pixel art — feu, explosions, sorts, météo, éléments d'interface, objets à ramasser, petites créatures — où chaque effet est un court programme JavaScript, affiché en direct dans une galerie et exportable en planches de sprites pour n'importe quel moteur de jeu. Douze enchaînements complets transforment les effets en attaques, du mouvement d'armement jusqu'à la récupération ; les effets impliquant un personnage sont joués, avec contact et réaction de la cible.<br />
+Ce que ça apporte : de quoi habiller un jeu ou une animation dans le navigateur sans dessiner chaque image, et une extension pour Claude Code qui produit de nouveaux effets selon la méthode « dessiner, afficher, regarder, corriger ». Le dépôt s'appuie explicitement sur le travail et la méthode de Hugo Duprez (Sprite Fusion), crédités en tête de certains fichiers.<br />
+Licence et prix : MIT, gratuit. Dépôt créé le 30 octobre 2026 — très récent —, 3 641 étoiles, 495 duplications, dernière modification le 31 octobre 2026 ; aucune version publiée au sens de GitHub, on récupère le dépôt directement. Galerie : https://patch-gg.github.io/pixelfx/ (répond).<br />
+Réserve : le post n'est pas de l'auteur mais d'un compte qui relaie des ressources vers son propre site, lequel signale ne pas vérifier les projets qu'il cite. Le dépôt, lui, est bien distinct de ce site.<br />
+Lien : https://github.com/patch-gg/pixelfx</p>
+<h2>Volume</h2>
+<p>2 posts publiés dans l'intervalle, 2 retenus, 0 écarté. La collecte la plus récente (3 novembre 2026, 4 h 48 heure de Paris) s'est terminée sans erreur.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/macapps — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-03.html</link>
+<guid isPermaLink="false">macapps-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 06:02:45 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée riche en outils maison : dix applications nouvelles ou récemment rendues gratuites, dont deux gestionnaires de fenêtres (Switch, Paneo) et une interface graphique pour Time Machine (Backup Atlas).</li>
+<li>Trois sont en bêta gratuite à durée non fixée (Backup Atlas, Superliner, Lockyn) : à essayer avant que le tarif ne soit décidé.</li>
+<li>Une seule mise à jour notable, SLIDR 1.4, qui ajoute la luminosité du clavier.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Switch — remplaçant libre du ⌘-Tab</h3>
+<p>Sanyam, son développeur, publie une nouvelle version d'un sélecteur de fenêtres qui remplace le ⌘-Tab du système : il liste toutes les fenêtres ouvertes (et non seulement les applications), accepte la frappe d'un début de titre pour filtrer, fait apparaître les fenêtres des autres espaces et permet de fermer, masquer ou quitter une fenêtre sans sortir du sélecteur. Depuis juin, le projet est passé de 275 à 614 étoiles sur GitHub et a reçu quatorze versions. Gratuit et open source ; GitHub ne sait pas identifier la licence (NOASSERTION), le dépôt annonçant un usage libre « pour tout usage non concurrent ». 617 étoiles, dernière mise à jour le 3 novembre 2026. Installable par Homebrew. Post : https://www.reddit.com/r/macapps/comments/1xm6jvu/ — dépôt : https://github.com/Sanyam-G/switch</p>
+<h3>Paneo — gestionnaire de fenêtres à zones</h3>
+<p>Inspiré de FancyZones (Windows), Paneo permet de dessiner des dispositions personnalisées puis d'y déposer les fenêtres en maintenant la touche Maj. Achat unique de 3,99 $, valable sur deux Macs. Le développeur cherche dix testeurs : le code 64Q2OL6L au paiement rend l'achat gratuit pour les dix premiers. Post : https://www.reddit.com/r/macapps/comments/1xmgd26/</p>
+<h3>DesktopPlus — indicateur d'espaces dans la barre de menus</h3>
+<p>Utilitaire natif notarié qui affiche en permanence l'espace (bureau virtuel) actif et les applications ouvertes sur les espaces voisins, permet de changer d'espace d'un clic, de déplacer une application d'un espace à l'autre par glisser-déposer, et propose un gestionnaire de tâches avec surveillance de la mémoire vive ainsi que des préréglages d'applications (codage, montage…). Essai de quatorze jours avec toutes les fonctions, sans coordonnées bancaires, puis achat unique dont le montant n'est pas indiqué dans le message. Post : https://www.reddit.com/r/macapps/comments/1xm41ci/</p>
+<h3>Backup Atlas — interface graphique pour Time Machine</h3>
+<p>Raphaël, développeur indépendant allemand, propose une application qui rend lisibles les sauvegardes Time Machine : bandeau des sept derniers jours montrant le volume de chaque sauvegarde et les fichiers modifiés ou supprimés, comparaison ligne à ligne entre une version ancienne et la version courante, restauration dans le dossier de son choix (impossible depuis Sonoma), analyse en arrière-plan des sauvegardes antérieures à l'installation, et une icône de barre de menus qui ne s'allume qu'en cas de problème réel (sauvegarde en retard ou disque débranché). Bêta gratuite sur clés. Post : https://www.reddit.com/r/macapps/comments/1xly8ri/</p>
+<h3>Superliner — plan de notes à « supertags »</h3>
+<p>Application native de prise de notes en plan, où une étiquette peut porter ses propres champs (par exemple #livre avec auteur, note et date de lecture) ; une étiquette peut en étendre une autre. Les notes restent des fichiers JSON dans un dossier choisi, avec une copie Markdown générée, sans compte ni télémétrie. Gratuit pendant la bêta, tarif ultérieur non décidé ; macOS 14 minimum. Non open source, et l'auteur signale lui-même qu'il reste des manques : pas de synchronisation ni de version iPhone, import encore inachevé. Post : https://www.reddit.com/r/macapps/comments/1xm1otq/</p>
+<h3>Lockyn — anneaux d'activité pour le travail concentré</h3>
+<p>Deux développeurs indépendants reprennent l'idée des anneaux de l'Apple Watch pour le travail : l'application estime la concentration à partir de la profondeur des sessions et des changements de contexte, sans minuteur à lancer, et permet de choisir les applications considérées comme du travail. L'historique reste sur le Mac, sans capture d'écran ni journal des frappes. Gratuit pendant la bêta ; tarif annoncé ensuite à 1,99 $/mois ou 39,99 $ en licence à vie. Post : https://www.reddit.com/r/macapps/comments/1xlxt3b/</p>
+<h3>LightScroll — limites de temps sur les sites</h3>
+<p>Application gratuite dans sa version de base (jusqu'à deux règles) qui impose une courte pause aléatoire avant d'ouvrir un site surveillé, puis ouvre une session limitée ; au-delà du quota quotidien, un code fourni par une personne de confiance peut être exigé pour continuer. Les auteurs insistent sur une approche qui guide plutôt que culpabilise. Post : https://www.reddit.com/r/macapps/comments/1xm9mjg/</p>
+<h3>Widget Ninja — composez vos propres widgets de bureau</h3>
+<p>Éditeur visuel, sans code, qui permet d'assembler des widgets de bureau à partir de l'agenda, des rappels, de la météo et des photos : dispositions multiples (semaine, mois, année en points, tableau d'affichage), listes qui se remplissent d'elles-mêmes, pages cliquables, Shortcuts déclenchables et éléments qui réagissent à une condition (météo, heure, batterie, prochain rendez-vous). Version Mac sortie, version iPhone en cours d'examen par Apple ; le prix n'est pas indiqué dans le message. Post : https://www.reddit.com/r/macapps/comments/1xm6lpx/</p>
+<h3>B-Roll Mosaic — vidéothèque pour le montage</h3>
+<p>Développée pendant deux ans par un auteur qui apprenait Swift, cette application n'est pas un logiciel de montage mais une vidéothèque : elle organise les rushes avec les étiquettes et les mots-clés de macOS, permet de choisir des points d'entrée et de sortie qu'elle transmet automatiquement au glisser-déposer vers un logiciel de montage, et accepte des listes de lecture servant d'avant-projet. Prix non annoncé. Post : https://www.reddit.com/r/macapps/comments/1xmfg5n/</p>
+<h3>Wallpets 2.0 — catalogue d'animaux de bureau passé au gratuit</h3>
+<p>Application décorative (un animal qui suit le curseur, réagit aux caresses et s'endort) dont le développeur rend le catalogue public gratuit avec la version 2.0 : plus de 190 animaux, alors que l'achat unique de 7,99 $ était auparavant nécessaire au-delà d'un chat et d'un chien. La création d'un animal à partir de photos de son propre compagnon reste payante, 24,99 $ une fois par animal. Aucun intérêt fonctionnel, mais le prix est passé à zéro sans limitation annoncée (l'offre est liée à une campagne dont la fin n'est pas fixée). Post : https://www.reddit.com/r/macapps/comments/1xlnwvh/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>SLIDR 1.4</strong> : la version ajoute la luminosité du clavier par glissement sur le bord inférieur de l'écran, en plus du volume et de la luminosité de l'écran (réglage qui n'existe pas nativement sur les Mac sans touches de rétroéclairage). Application payante : essai gratuit de trois jours, puis 2,49 $ pour les deux cents premiers acheteurs avec le code promotionnel annoncé dans le message, et 50 % de réduction sur deux cents codes supplémentaires. Le développeur indique que l'application a rapporté environ 770 livres en neuf mois. Post : https://www.reddit.com/r/macapps/comments/1xm4hut/</li>
+</ul>
+<h2>Volume</h2>
+<p>15 posts publiés dans l'intervalle, 11 retenus, 4 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée riche en outils maison : dix applications nouvelles ou récemment rendues gratuites, dont deux gestionnaires de fenêtres (Switch, Paneo) et une interface graphique pour Time Machine (Backup Atlas).</li>
+<li>Trois sont en bêta gratuite à durée non fixée (Backup Atlas, Superliner, Lockyn) : à essayer avant que le tarif ne soit décidé.</li>
+<li>Une seule mise à jour notable, SLIDR 1.4, qui ajoute la luminosité du clavier.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Switch — remplaçant libre du ⌘-Tab</h3>
+<p>Sanyam, son développeur, publie une nouvelle version d'un sélecteur de fenêtres qui remplace le ⌘-Tab du système : il liste toutes les fenêtres ouvertes (et non seulement les applications), accepte la frappe d'un début de titre pour filtrer, fait apparaître les fenêtres des autres espaces et permet de fermer, masquer ou quitter une fenêtre sans sortir du sélecteur. Depuis juin, le projet est passé de 275 à 614 étoiles sur GitHub et a reçu quatorze versions. Gratuit et open source ; GitHub ne sait pas identifier la licence (NOASSERTION), le dépôt annonçant un usage libre « pour tout usage non concurrent ». 617 étoiles, dernière mise à jour le 3 novembre 2026. Installable par Homebrew. Post : https://www.reddit.com/r/macapps/comments/1xm6jvu/ — dépôt : https://github.com/Sanyam-G/switch</p>
+<h3>Paneo — gestionnaire de fenêtres à zones</h3>
+<p>Inspiré de FancyZones (Windows), Paneo permet de dessiner des dispositions personnalisées puis d'y déposer les fenêtres en maintenant la touche Maj. Achat unique de 3,99 $, valable sur deux Macs. Le développeur cherche dix testeurs : le code 64Q2OL6L au paiement rend l'achat gratuit pour les dix premiers. Post : https://www.reddit.com/r/macapps/comments/1xmgd26/</p>
+<h3>DesktopPlus — indicateur d'espaces dans la barre de menus</h3>
+<p>Utilitaire natif notarié qui affiche en permanence l'espace (bureau virtuel) actif et les applications ouvertes sur les espaces voisins, permet de changer d'espace d'un clic, de déplacer une application d'un espace à l'autre par glisser-déposer, et propose un gestionnaire de tâches avec surveillance de la mémoire vive ainsi que des préréglages d'applications (codage, montage…). Essai de quatorze jours avec toutes les fonctions, sans coordonnées bancaires, puis achat unique dont le montant n'est pas indiqué dans le message. Post : https://www.reddit.com/r/macapps/comments/1xm41ci/</p>
+<h3>Backup Atlas — interface graphique pour Time Machine</h3>
+<p>Raphaël, développeur indépendant allemand, propose une application qui rend lisibles les sauvegardes Time Machine : bandeau des sept derniers jours montrant le volume de chaque sauvegarde et les fichiers modifiés ou supprimés, comparaison ligne à ligne entre une version ancienne et la version courante, restauration dans le dossier de son choix (impossible depuis Sonoma), analyse en arrière-plan des sauvegardes antérieures à l'installation, et une icône de barre de menus qui ne s'allume qu'en cas de problème réel (sauvegarde en retard ou disque débranché). Bêta gratuite sur clés. Post : https://www.reddit.com/r/macapps/comments/1xly8ri/</p>
+<h3>Superliner — plan de notes à « supertags »</h3>
+<p>Application native de prise de notes en plan, où une étiquette peut porter ses propres champs (par exemple #livre avec auteur, note et date de lecture) ; une étiquette peut en étendre une autre. Les notes restent des fichiers JSON dans un dossier choisi, avec une copie Markdown générée, sans compte ni télémétrie. Gratuit pendant la bêta, tarif ultérieur non décidé ; macOS 14 minimum. Non open source, et l'auteur signale lui-même qu'il reste des manques : pas de synchronisation ni de version iPhone, import encore inachevé. Post : https://www.reddit.com/r/macapps/comments/1xm1otq/</p>
+<h3>Lockyn — anneaux d'activité pour le travail concentré</h3>
+<p>Deux développeurs indépendants reprennent l'idée des anneaux de l'Apple Watch pour le travail : l'application estime la concentration à partir de la profondeur des sessions et des changements de contexte, sans minuteur à lancer, et permet de choisir les applications considérées comme du travail. L'historique reste sur le Mac, sans capture d'écran ni journal des frappes. Gratuit pendant la bêta ; tarif annoncé ensuite à 1,99 $/mois ou 39,99 $ en licence à vie. Post : https://www.reddit.com/r/macapps/comments/1xlxt3b/</p>
+<h3>LightScroll — limites de temps sur les sites</h3>
+<p>Application gratuite dans sa version de base (jusqu'à deux règles) qui impose une courte pause aléatoire avant d'ouvrir un site surveillé, puis ouvre une session limitée ; au-delà du quota quotidien, un code fourni par une personne de confiance peut être exigé pour continuer. Les auteurs insistent sur une approche qui guide plutôt que culpabilise. Post : https://www.reddit.com/r/macapps/comments/1xm9mjg/</p>
+<h3>Widget Ninja — composez vos propres widgets de bureau</h3>
+<p>Éditeur visuel, sans code, qui permet d'assembler des widgets de bureau à partir de l'agenda, des rappels, de la météo et des photos : dispositions multiples (semaine, mois, année en points, tableau d'affichage), listes qui se remplissent d'elles-mêmes, pages cliquables, Shortcuts déclenchables et éléments qui réagissent à une condition (météo, heure, batterie, prochain rendez-vous). Version Mac sortie, version iPhone en cours d'examen par Apple ; le prix n'est pas indiqué dans le message. Post : https://www.reddit.com/r/macapps/comments/1xm6lpx/</p>
+<h3>B-Roll Mosaic — vidéothèque pour le montage</h3>
+<p>Développée pendant deux ans par un auteur qui apprenait Swift, cette application n'est pas un logiciel de montage mais une vidéothèque : elle organise les rushes avec les étiquettes et les mots-clés de macOS, permet de choisir des points d'entrée et de sortie qu'elle transmet automatiquement au glisser-déposer vers un logiciel de montage, et accepte des listes de lecture servant d'avant-projet. Prix non annoncé. Post : https://www.reddit.com/r/macapps/comments/1xmfg5n/</p>
+<h3>Wallpets 2.0 — catalogue d'animaux de bureau passé au gratuit</h3>
+<p>Application décorative (un animal qui suit le curseur, réagit aux caresses et s'endort) dont le développeur rend le catalogue public gratuit avec la version 2.0 : plus de 190 animaux, alors que l'achat unique de 7,99 $ était auparavant nécessaire au-delà d'un chat et d'un chien. La création d'un animal à partir de photos de son propre compagnon reste payante, 24,99 $ une fois par animal. Aucun intérêt fonctionnel, mais le prix est passé à zéro sans limitation annoncée (l'offre est liée à une campagne dont la fin n'est pas fixée). Post : https://www.reddit.com/r/macapps/comments/1xlnwvh/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>SLIDR 1.4</strong> : la version ajoute la luminosité du clavier par glissement sur le bord inférieur de l'écran, en plus du volume et de la luminosité de l'écran (réglage qui n'existe pas nativement sur les Mac sans touches de rétroéclairage). Application payante : essai gratuit de trois jours, puis 2,49 $ pour les deux cents premiers acheteurs avec le code promotionnel annoncé dans le message, et 50 % de réduction sur deux cents codes supplémentaires. Le développeur indique que l'application a rapporté environ 770 livres en neuf mois. Post : https://www.reddit.com/r/macapps/comments/1xm4hut/</li>
+</ul>
+<h2>Volume</h2>
+<p>15 posts publiés dans l'intervalle, 11 retenus, 4 écartés.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille ArtCraft — mardi 3 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-03.html</link>
+<guid isPermaLink="false">artcraft-2026-11-03</guid>
+<pubDate>Tue, 03 Nov 2026 05:57:27 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'équipe d'ArtCraft ajoute une seizième application : <strong>MaterialCraft 0.1.0</strong>, un designer de matériaux procéduraux à nœuds (l'équivalent de Substance Designer), publié dans la nuit et déjà intégré au lanceur. <strong>TextureCraft</strong> passe en 0.3.0 et confirme sa sortie publique. Côté communauté : un greffon de sous-titrage Whisper pour FilmCraft, un fork de PhotoCraft qui branche ChatGPT dans l'interface, et la suite en WebAssembly auto-hébergée en un conteneur.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>MaterialCraft 0.1.0 — l'équivalent de Substance Designer, publié sans annonce de l'éditeur</h3>
+<p>Une nouvelle application de l'équipe : <strong>MaterialCraft</strong>, dépôt <code>storytold/materialcraft</code>, sous Apache-2.0 (créé le 1er novembre, 65 étoiles au 3 novembre). Sa version 0.1.0 est publiée le 3 novembre à 0 h 09 UTC, et le lanceur la référence depuis sa version 0.14.0 (0 h 41 UTC, apportée par la contribution #1162 de dylanmtaylor). D'après son README, elle construit des matériaux PBR carrelables à partir de bruits, motifs et filtres dans un graphe de nœuds, avec aperçu en direct en 2D et sur un modèle 3D et export des cartes pour n'importe quel moteur ; natif sur macOS, Windows, Linux et FreeBSD, et dans le navigateur par WebAssembly. Ce que ça change : la suite comble le chaînon du texturing procédural, à côté de TextureCraft qui peint sur la surface — mais <strong>la page du site officiel renvoie une erreur 404</strong> (<code>getartcraft.com/apps/materialcraft</code>) et la page « Crafting Apps » annonce toujours « quinze applications » : la publication est en avance sur la documentation. Le post du subreddit l'avait repérée sur GitHub avant même son passage dans le lanceur.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9arc/new_app_alert/ — u/FreddieThePebble</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Dépôt : https://github.com/storytold/materialcraft — lanceur : https://github.com/storytold/craft-launcher/releases/tag/v0.14.0</li>
+</ul>
+<h3>TextureCraft 0.3.0 — la peinture de textures 3D confirmée en version publique</h3>
+<p><strong>TextureCraft</strong> (<code>storytold/texturecraft</code>, Apache-2.0, 267 étoiles, dépôt créé le 14 octobre) publie sa version <strong>0.3.0</strong> le 3 novembre à 0 h 45 UTC, après une 0.2.0 le 1er novembre : la cadence reste d'une version tous les deux jours environ. C'est l'application repérée le 2 novembre dans un post sans texte, dont on sait maintenant qu'elle peint des matériaux PBR directement sur les maillages (calques, masques, générateurs, matériaux intelligents, cuisson des cartes de maillage accélérée par le GPU, moteur de texels jusqu'en 8K, export glTF, FBX, USD, OBJ, STL entre autres, avec serveur MCP et ligne de commande). Ce que ça change : la suite tient désormais les deux bouts du travail de texture, peinture et matériaux procéduraux. Deux réserves : la page officielle ne propose encore que les installateurs 0.2.0 pour les téléchargements autonomes, et le chiffre de « 94 % d'avancement » avancé par un membre vient du dépôt, pas d'une mesure vérifiée.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmat4x/i_totally_missed_the_release_of_texturecraft_its/ — u/Jellygator0</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Page officielle : https://getartcraft.com/apps/texturecraft — dépôt : https://github.com/storytold/texturecraft</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>Un greffon de sous-titrage Whisper pour FilmCraft (gratuit, sans dépôt publié)</h3>
+<p>u/MrYhi — Germán, de la chaîne YouTube « La Sed No Es Nada » — publie une petite interface qui transcrit les vidéos avec faster-whisper et envoie la transcription directement dans FilmCraft sous forme de sous-titres. Le lancement installe le modèle Whisper s'il manque, détecte FilmCraft et l'ouvre ; l'interface permet de régler le nombre de caractères par ligne, la durée minimale, la police, la taille et la couleur, puis d'envoyer le tout sur la ligne de temps, en temps réel. La vidéo de démonstration (publiée le 31 octobre, environ 2 500 vues) montre aussi les limites actuelles de FilmCraft : positions de sous-titre limitées à haut, milieu et bas, ni contour ni ombre, et la conversion d'un sous-titre en graphique pour le déplacer librement. Le téléchargement est gratuit, par un lien Google Drive placé dans la description de la vidéo ; <strong>aucun dépôt, aucune licence, aucune version</strong> ne sont publiés, donc rien n'est vérifiable au-delà de la démonstration, et un fichier venant d'un Drive anonyme mérite la prudence d'usage.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlogd4/now_you_can_subtitule_with_this_plugin/ — u/MrYhi — vidéo : https://youtu.be/bYsH3aboLKU</li>
+</ul>
+<h3>photocraft-ai — un fork de PhotoCraft qui branche ChatGPT dans l'interface</h3>
+<p>u/Latter_Newspaper5303, passé de Photoshop à PhotoCraft la semaine dernière, publie son fork <code>BLEZZ0102/photocraft-ai</code>, dont la version <code>v0.19.0-ai-beta.2</code> ajoute des fonctions d'intelligence artificielle <strong>dans</strong> l'interface de l'éditeur, au lieu de passer par Codex connecté en MCP. Il s'appuie sur l'abonnement ChatGPT existant pour ne rien payer de plus, et accepte aussi une clé d'API pour Nano Banana (Gemini), FLUX et Seedream (Volcengine). Le dépôt, sous Apache-2.0, a été créé le 30 octobre et compte 6 étoiles. L'auteur précise lui-même qu'il s'agit d'un fork et que la version officielle n'a pas ces fonctions. Ce que ça change : le chaînage entre édition et génération se fait sans quitter la fenêtre, à condition d'accepter un binaire communautaire à 6 étoiles.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmgpt1/a_chatgpt_intergrated_fork_of_photocraft/ — u/Latter_Newspaper5303 — dépôt : https://github.com/BLEZZ0102/photocraft-ai</li>
+</ul>
+<h3>ArtCraft Hub — la suite en WebAssembly, auto-hébergée dans un conteneur</h3>
+<p>u/Accomplished_Walk243 publie <strong>ArtCraft Hub</strong> (<code>GeorgeArgyrakis/artcraft-hub</code>), un conteneur Docker qui sert les versions WebAssembly des applications d'ArtCraft derrière un tableau de bord : recherche instantanée, filtres par catégorie, favoris, deux thèmes, synchronisation automatique des nouvelles versions depuis GitHub avec commutation de version dans l'interface, et serveur Caddy préconfiguré (types MIME des fichiers WASM, compression, en-têtes COEP pour SharedArrayBuffer). L'auteur assume l'avoir écrit en pair-programmation avec une intelligence artificielle et cite <code>artcraft-in-a-box</code> de sbuchweitz comme inspiration. Le dépôt a été créé le 1er novembre, compte 4 étoiles et <strong>ne déclare aucune licence</strong>, ce qui limite la réutilisation. Ce que ça change : toute la suite devient accessible depuis un navigateur sur son propre serveur, sans installer seize applications.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlzgh5/artcraft_hub_selfhosted_webassembly_artcraft/ — u/Accomplished_Walk243 — dépôt : https://github.com/GeorgeArgyrakis/artcraft-hub</li>
+</ul>
+<h3>AnimeCraft — un projet communautaire d'animation vectorielle, sans dépôt publié</h3>
+<p>u/OwnSpot8721 présente <strong>AnimeCraft</strong>, né de sa demande d'une alternative à Rive : dessin vectoriel avec courbes de Bézier et opérations booléennes exactes, rigging avec cinématique inverse à deux os, peinture de poids, machines à états visuelles, le tout écrit en Rust et compilé en WebAssembly pour le bureau (Windows, macOS, Linux) et le navigateur. Il propose à l'équipe d'ArtCraft d'intégrer le projet à sa collection. La démonstration est une vidéo de la chaîne « The Alethia Journal » ; le post ne donne ni dépôt, ni licence, ni lien de téléchargement, et mes recherches n'ont pas trouvé de dépôt correspondant (le nom est porté par plusieurs dépôts sans rapport). À suivre si le projet se concrétise, à ne pas installer en l'état.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9w0n/i_created_a_monster_whose_name_is_animecraft/ — u/OwnSpot8721 — vidéo : https://youtu.be/DWBHi5FCxw4</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable dans les dernières 24 heures sur les logiciels comparables : les recherches sur ComfyUI, InvokeAI et Krita AI Diffusion ne renvoient que des pages de référence et des versions anciennes, sans annonce datée de la journée.</p>
+<h2>À signaler</h2>
+<ul>
+<li>Décalage entre les dépôts et le site officiel : MaterialCraft n'a pas de page (404 alors que le dépôt la cite comme adresse d'accueil) et la page de TextureCraft ne propose encore que les installateurs 0.2.0, alors qu'une 0.3.0 est publiée ce matin. Ce n'est pas un incident, mais quiconque télécharge une version autonome récupère une version plus ancienne que celle du lanceur.</li>
+<li>Aucune alerte de sécurité, aucun faux positif d'antivirus et aucune régression générale signalés dans l'intervalle.</li>
+</ul>
+<h2>Volume</h2>
+<p>37 posts publiés dans l'intervalle (depuis l'édition du 2 novembre, 5 h 02), 6 retenus, 31 écartés (questions d'installation et de support, demandes de clonage sans suite, idées de projets, avis et retours d'expérience, mèmes, rapports de bug isolés). Taux de rétention d'environ 16 % : faible, ce qui est la marque de ce subreddit, où la majorité des messages sont des demandes de fonctionnalités et des questions d'usage. La collecte s'est déroulée sans erreur (dernier passage le 3 novembre à 4 h 08 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — mardi 3 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'équipe d'ArtCraft ajoute une seizième application : <strong>MaterialCraft 0.1.0</strong>, un designer de matériaux procéduraux à nœuds (l'équivalent de Substance Designer), publié dans la nuit et déjà intégré au lanceur. <strong>TextureCraft</strong> passe en 0.3.0 et confirme sa sortie publique. Côté communauté : un greffon de sous-titrage Whisper pour FilmCraft, un fork de PhotoCraft qui branche ChatGPT dans l'interface, et la suite en WebAssembly auto-hébergée en un conteneur.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>MaterialCraft 0.1.0 — l'équivalent de Substance Designer, publié sans annonce de l'éditeur</h3>
+<p>Une nouvelle application de l'équipe : <strong>MaterialCraft</strong>, dépôt <code>storytold/materialcraft</code>, sous Apache-2.0 (créé le 1er novembre, 65 étoiles au 3 novembre). Sa version 0.1.0 est publiée le 3 novembre à 0 h 09 UTC, et le lanceur la référence depuis sa version 0.14.0 (0 h 41 UTC, apportée par la contribution #1162 de dylanmtaylor). D'après son README, elle construit des matériaux PBR carrelables à partir de bruits, motifs et filtres dans un graphe de nœuds, avec aperçu en direct en 2D et sur un modèle 3D et export des cartes pour n'importe quel moteur ; natif sur macOS, Windows, Linux et FreeBSD, et dans le navigateur par WebAssembly. Ce que ça change : la suite comble le chaînon du texturing procédural, à côté de TextureCraft qui peint sur la surface — mais <strong>la page du site officiel renvoie une erreur 404</strong> (<code>getartcraft.com/apps/materialcraft</code>) et la page « Crafting Apps » annonce toujours « quinze applications » : la publication est en avance sur la documentation. Le post du subreddit l'avait repérée sur GitHub avant même son passage dans le lanceur.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9arc/new_app_alert/ — u/FreddieThePebble</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Dépôt : https://github.com/storytold/materialcraft — lanceur : https://github.com/storytold/craft-launcher/releases/tag/v0.14.0</li>
+</ul>
+<h3>TextureCraft 0.3.0 — la peinture de textures 3D confirmée en version publique</h3>
+<p><strong>TextureCraft</strong> (<code>storytold/texturecraft</code>, Apache-2.0, 267 étoiles, dépôt créé le 14 octobre) publie sa version <strong>0.3.0</strong> le 3 novembre à 0 h 45 UTC, après une 0.2.0 le 1er novembre : la cadence reste d'une version tous les deux jours environ. C'est l'application repérée le 2 novembre dans un post sans texte, dont on sait maintenant qu'elle peint des matériaux PBR directement sur les maillages (calques, masques, générateurs, matériaux intelligents, cuisson des cartes de maillage accélérée par le GPU, moteur de texels jusqu'en 8K, export glTF, FBX, USD, OBJ, STL entre autres, avec serveur MCP et ligne de commande). Ce que ça change : la suite tient désormais les deux bouts du travail de texture, peinture et matériaux procéduraux. Deux réserves : la page officielle ne propose encore que les installateurs 0.2.0 pour les téléchargements autonomes, et le chiffre de « 94 % d'avancement » avancé par un membre vient du dépôt, pas d'une mesure vérifiée.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmat4x/i_totally_missed_the_release_of_texturecraft_its/ — u/Jellygator0</li>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm0kwi/yo_texturecraft_is_outand_in_the_github_page_for/ — u/Pixelsmithing4life</li>
+<li>Page officielle : https://getartcraft.com/apps/texturecraft — dépôt : https://github.com/storytold/texturecraft</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>Un greffon de sous-titrage Whisper pour FilmCraft (gratuit, sans dépôt publié)</h3>
+<p>u/MrYhi — Germán, de la chaîne YouTube « La Sed No Es Nada » — publie une petite interface qui transcrit les vidéos avec faster-whisper et envoie la transcription directement dans FilmCraft sous forme de sous-titres. Le lancement installe le modèle Whisper s'il manque, détecte FilmCraft et l'ouvre ; l'interface permet de régler le nombre de caractères par ligne, la durée minimale, la police, la taille et la couleur, puis d'envoyer le tout sur la ligne de temps, en temps réel. La vidéo de démonstration (publiée le 31 octobre, environ 2 500 vues) montre aussi les limites actuelles de FilmCraft : positions de sous-titre limitées à haut, milieu et bas, ni contour ni ombre, et la conversion d'un sous-titre en graphique pour le déplacer librement. Le téléchargement est gratuit, par un lien Google Drive placé dans la description de la vidéo ; <strong>aucun dépôt, aucune licence, aucune version</strong> ne sont publiés, donc rien n'est vérifiable au-delà de la démonstration, et un fichier venant d'un Drive anonyme mérite la prudence d'usage.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlogd4/now_you_can_subtitule_with_this_plugin/ — u/MrYhi — vidéo : https://youtu.be/bYsH3aboLKU</li>
+</ul>
+<h3>photocraft-ai — un fork de PhotoCraft qui branche ChatGPT dans l'interface</h3>
+<p>u/Latter_Newspaper5303, passé de Photoshop à PhotoCraft la semaine dernière, publie son fork <code>BLEZZ0102/photocraft-ai</code>, dont la version <code>v0.19.0-ai-beta.2</code> ajoute des fonctions d'intelligence artificielle <strong>dans</strong> l'interface de l'éditeur, au lieu de passer par Codex connecté en MCP. Il s'appuie sur l'abonnement ChatGPT existant pour ne rien payer de plus, et accepte aussi une clé d'API pour Nano Banana (Gemini), FLUX et Seedream (Volcengine). Le dépôt, sous Apache-2.0, a été créé le 30 octobre et compte 6 étoiles. L'auteur précise lui-même qu'il s'agit d'un fork et que la version officielle n'a pas ces fonctions. Ce que ça change : le chaînage entre édition et génération se fait sans quitter la fenêtre, à condition d'accepter un binaire communautaire à 6 étoiles.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xmgpt1/a_chatgpt_intergrated_fork_of_photocraft/ — u/Latter_Newspaper5303 — dépôt : https://github.com/BLEZZ0102/photocraft-ai</li>
+</ul>
+<h3>ArtCraft Hub — la suite en WebAssembly, auto-hébergée dans un conteneur</h3>
+<p>u/Accomplished_Walk243 publie <strong>ArtCraft Hub</strong> (<code>GeorgeArgyrakis/artcraft-hub</code>), un conteneur Docker qui sert les versions WebAssembly des applications d'ArtCraft derrière un tableau de bord : recherche instantanée, filtres par catégorie, favoris, deux thèmes, synchronisation automatique des nouvelles versions depuis GitHub avec commutation de version dans l'interface, et serveur Caddy préconfiguré (types MIME des fichiers WASM, compression, en-têtes COEP pour SharedArrayBuffer). L'auteur assume l'avoir écrit en pair-programmation avec une intelligence artificielle et cite <code>artcraft-in-a-box</code> de sbuchweitz comme inspiration. Le dépôt a été créé le 1er novembre, compte 4 étoiles et <strong>ne déclare aucune licence</strong>, ce qui limite la réutilisation. Ce que ça change : toute la suite devient accessible depuis un navigateur sur son propre serveur, sans installer seize applications.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xlzgh5/artcraft_hub_selfhosted_webassembly_artcraft/ — u/Accomplished_Walk243 — dépôt : https://github.com/GeorgeArgyrakis/artcraft-hub</li>
+</ul>
+<h3>AnimeCraft — un projet communautaire d'animation vectorielle, sans dépôt publié</h3>
+<p>u/OwnSpot8721 présente <strong>AnimeCraft</strong>, né de sa demande d'une alternative à Rive : dessin vectoriel avec courbes de Bézier et opérations booléennes exactes, rigging avec cinématique inverse à deux os, peinture de poids, machines à états visuelles, le tout écrit en Rust et compilé en WebAssembly pour le bureau (Windows, macOS, Linux) et le navigateur. Il propose à l'équipe d'ArtCraft d'intégrer le projet à sa collection. La démonstration est une vidéo de la chaîne « The Alethia Journal » ; le post ne donne ni dépôt, ni licence, ni lien de téléchargement, et mes recherches n'ont pas trouvé de dépôt correspondant (le nom est porté par plusieurs dépôts sans rapport). À suivre si le projet se concrétise, à ne pas installer en l'état.</p>
+<ul>
+<li>https://www.reddit.com/r/ArtCraftAI/comments/1xm9w0n/i_created_a_monster_whose_name_is_animecraft/ — u/OwnSpot8721 — vidéo : https://youtu.be/DWBHi5FCxw4</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable dans les dernières 24 heures sur les logiciels comparables : les recherches sur ComfyUI, InvokeAI et Krita AI Diffusion ne renvoient que des pages de référence et des versions anciennes, sans annonce datée de la journée.</p>
+<h2>À signaler</h2>
+<ul>
+<li>Décalage entre les dépôts et le site officiel : MaterialCraft n'a pas de page (404 alors que le dépôt la cite comme adresse d'accueil) et la page de TextureCraft ne propose encore que les installateurs 0.2.0, alors qu'une 0.3.0 est publiée ce matin. Ce n'est pas un incident, mais quiconque télécharge une version autonome récupère une version plus ancienne que celle du lanceur.</li>
+<li>Aucune alerte de sécurité, aucun faux positif d'antivirus et aucune régression générale signalés dans l'intervalle.</li>
+</ul>
+<h2>Volume</h2>
+<p>37 posts publiés dans l'intervalle (depuis l'édition du 2 novembre, 5 h 02), 6 retenus, 31 écartés (questions d'installation et de support, demandes de clonage sans suite, idées de projets, avis et retours d'expérience, mèmes, rapports de bug isolés). Taux de rétention d'environ 16 % : faible, ce qui est la marque de ce subreddit, où la majorité des messages sont des demandes de fonctionnalités et des questions d'usage. La collecte s'est déroulée sans erreur (dernier passage le 3 novembre à 4 h 08 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique — mardi 3 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-03.html</link>
