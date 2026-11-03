@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — mercredi 4 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La journée a été productive en greffons : une interface générative pour Hermes Desktop, une extension de responsabilité personnelle (mémoire des tâches et relances), et un tableau de bord local de consommation de jetons. Côté modèles, un script permet de facturer le quota « Vibe » d'un abonnement Mistral au lieu du petit quota API.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>TokenTelemetry — tableau de bord local de consommation</h3>
+<p>Outil d'observation entièrement local : il lit les journaux de votre répertoire Hermes et n'envoie rien à l'extérieur. Il suit la dépense et la durée des sessions par profil d'agent, la santé de la passerelle (disponibilité, latence par appel), les traces des sous-agents, et la progression des fichiers de mémoire ainsi que leur historique de modification ; il signale aussi les dépenses anormales dues aux jetons de raisonnement de certains modèles. Un greffon dédié ajoute un onglet de lancement dans le tableau de bord Hermes. L'auteur annonce 19 agents pris en charge et affirme que Hermes domine son échantillon (11 251 lancements sur 13 000, dont 9 940 sous Linux) — chiffre déclaratif, invérifiable de l'extérieur.<br />
+Licence MIT ; le tableau de bord affiche 385 étoiles et une dernière poussée le 3 novembre 2026 ; le greffon Hermes, 5 étoiles (dernière poussée le 5 octobre 2026).<br />
+<a href="https://github.com/VasiHemanth/tokentelemetry">https://github.com/VasiHemanth/tokentelemetry</a> — <a href="https://github.com/VasiHemanth/tokentelemetry-hermes-plugin">https://github.com/VasiHemanth/tokentelemetry-hermes-plugin</a></p>
+<h3>HermesAgent-Mistral-Vibe — facturer le quota « Vibe » au lieu du quota API</h3>
+<p>Un abonnement Mistral (la formule étudiante donne 12,75 € d'usage API et 127,50 € d'usage « Vibe », ce dernier réservé à leur client officiel) laisse une grande barre Vibe inutilisée à côté d'une petite barre API épuisée. L'auteur a relevé que la connexion du client <code>mistral-vibe</code> n'est qu'un flux d'appareil PKCE : les quatre appels HTTP ont été rejoués par un script d'une centaine de lignes, qui produit une clé API Mistral ordinaire facturée sur le pool Vibe. Cela fonctionne donc avec Hermes, sans le client officiel, pour environ dix fois le budget. Réserve signalée dans les commentaires : la formule Vibe n'offre pas d'option de non-conservation des données — à vérifier avant d'y envoyer des documents de travail.<br />
+Aucune licence déclarée à l'API GitHub, 0 étoile, dépôt créé et poussé le 3 novembre 2026.<br />
+<a href="https://github.com/WyliGr/HermesAgent-Mistral-Vibe">https://github.com/WyliGr/HermesAgent-Mistral-Vibe</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Vory 1.5.1</strong> — client Apple (iPhone, iPad, Mac, Apple Watch) pour sa propre passerelle Hermes, en bêta publique TestFlight. Cette version gère l'écran pliable iPhone Duo (liste et conversation côte à côte, ouverture en livre ou en laptop), fait tenir ou défiler correctement les blocs de code et les tableaux, affiche les formules mathématiques, met les messages en file d'attente, conserve l'apparence des robots par passerelle et consomme moins de mémoire pendant la diffusion des réponses longues. L'auteur précise qu'il ne suit pas les choix d'interface de l'application officielle de Nous et continuera son propre client.<br />
+  Licence MIT ; 73 étoiles, dépôt poussé le 3 novembre 2026.<br />
+<a href="https://github.com/vory-dev/vory">https://github.com/vory-dev/vory</a></li>
+<li><strong>Hermes Paper Harness 2.3</strong> — client iOS pour Hermes, gratuit sur l'App Store (version 2.3 publiée le 3 novembre 2026 ; prix vérifié à 0). Nouveautés : anneau de remplissage du contexte dans chaque conversation (comptage de jetons fourni par le serveur), menu « Chat Options » regroupant contexte, modèle, effort de raisonnement, mode YOLO et liste des tâches, approbation automatique des commandes du mode YOLO, affichage des modifications de fichiers en vert et rouge avec numéros de ligne, liste des tâches épinglée au-dessus de la zone de saisie, tableaux restitués en vraies grilles copiables dans un tableur, et trois commandes nouvelles (<code>/context</code>, <code>/yolo</code>, <code>/tasks</code>). Le code n'est pas publié, contrairement à Vory.<br />
+<a href="https://apps.apple.com/ro/app/hermes-paper-harness/id6820495872">https://apps.apple.com/ro/app/hermes-paper-harness/id6820495872</a></li>
+<li><strong>Application mobile officielle</strong> — la page <a href="https://hermes-agent.nousresearch.com/mobile">https://hermes-agent.nousresearch.com/mobile</a> propose désormais un formulaire d'inscription à la bêta, pour iOS comme pour Android, en remplacement du lien TestFlight hors service. Simple liste d'attente, aucune date de disponibilité annoncée.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>hermes-genui</strong> — greffon pour Hermes Desktop qui remplace les pavés de texte par de l'interface réelle : graphiques survolables, tableaux, plannings avec images, calculatrices à curseurs et explications pas à pas. Installation : <code>hermes plugins install sagarmainkar/hermes-genui --enable</code>, puis découverte de l'outil désactivée (<code>hermes config set tools.tool_search.enabled off</code>), redémarrage de la passerelle et activation dans Capacités → Greffons. Licence MIT ; 11 étoiles, dépôt créé et poussé le 3 novembre 2026 (tout récent, donc peu éprouvé).<br />
+<a href="https://github.com/sagarmainkar/hermes-genui">https://github.com/sagarmainkar/hermes-genui</a></li>
+<li><strong>hermes-task-coach</strong> — compétence (skill) d'engagement personnel : vérifications conversationnelles, relances respectueuses et aide concrète à finir ce qui est commencé, plutôt qu'une énième liste de tâches. L'auteur cherche justement des retours, notamment sur les cas limites (pause d'une vérification en cours, demande ambiguë de clôture avec deux tâches actives). Licence MIT ; 0 étoile, publié le 3 novembre 2026 — projet neuf, à considérer comme expérimental.<br />
+<a href="https://github.com/minutezer0/hermes-task-coach">https://github.com/minutezer0/hermes-task-coach</a></li>
+<li><strong>agent-automations</strong> — prototype de greffon qui laisse l'agent construire des chaînes d'agents à étapes, les réutiliser et les relancer, avec limites, modèles par étape, flux conditionnels et retour du coût et des jetons. Sous le capot, LangChain, mais sans avoir à l'écrire soi-même. L'auteur annonce un coût par exécution passé de 0,14–0,50 dollar à 0,04–0,07 dollar sur son propre cas, et un meilleur taux de réussite sur les consignes longues ; une interface de réglage des flux est annoncée. Licence MIT ; 0 étoile, dernier envoi le 3 novembre 2026 — phase la plus précoce, à tester avant tout usage quotidien.<br />
+<a href="https://github.com/Bruce-Hopkins/agent-automations">https://github.com/Bruce-Hopkins/agent-automations</a></li>
+<li><strong>Catalogue de greffons : 116 ajouts en une semaine</strong> — un récapitulatif hebdomadaire (27 octobre – 3 novembre) recense 116 greffons nouveaux, classés par thème, avec le nombre d'étoiles de chaque dépôt. Les plus étoilés de la semaine : <em>agentmemory</em> (mémoire persistante pour agents de codage), <em>nostr-vpn</em> (réseau maillé privé à travers le client <code>nvpn</code>), <em>elevenlabs-music</em> (officiel, génération musicale), <em>tokenjuice</em> (compactage local des sorties de terminal avant de les envoyer au modèle), <em>minimalist-themes</em>. Vérification faite pour les deux que j'ai pu contrôler directement : <em>agentmemory</em> est en Apache-2.0 avec 30 118 étoiles (poussée du 3 novembre 2026), <em>tokenjuice</em> en MIT avec 528 étoiles (poussée du 2 novembre 2026) — les chiffres annoncés correspondent. Les autres entrées du récapitulatif n'ont pas été vérifiées une par une. Rappel de l'auteur, utile : un greffon reçoit les permissions de l'agent, donc lire le dépôt avant d'installer.<br />
+  Publication hebdomadaire du compte u/Hermes_helper sur r/hermesagent.</li>
+</ul>
+<h2>Volume</h2>
+<p>35 posts publiés dans l'intervalle, 9 retenus, 26 écartés (questions de dépannage, retours d'usage, comparaisons de fournisseurs et d'hébergeurs, discussions de modèles, contenus vidéo sans annonce d'outil). Taux de rétention d'environ 26 %, conforme à ce que produit ce subreddit. Collecte du 3 novembre 2026 à 23 h 12 UTC sans erreur.</p>
+<footer>Édition du mercredi 4 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
