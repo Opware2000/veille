@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — mercredi 4 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois éléments retenus, tous des outils d'édition ou de compilation : l'extension Emacs <strong>texpresso-view</strong> (aperçu LaTeX vivant, page rendue à côté du source), l'éditeur <strong>Turbotex</strong> (moteur TeX embarqué, aucun TeX Live à installer) et la version <strong>2.1 de ModernTex</strong> (insertion de théorèmes, export d'un projet en archive arXiv).</li>
+<li>Aucun paquet LaTeX ni nouvelle classe dans l'intervalle : la journée est composée d'annonces d'éditeurs, dont deux sont des produits commerciaux ou fermés — c'est signalé pour chacun.</li>
+<li>La collecte n'a signalé aucune erreur (<code>meta.json</code> : <code>errors</code> vide, dernier passage le 3 novembre à 23 h 14 UTC).</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>texpresso-view — l'aperçu LaTeX vivant dans Emacs</h3>
+<p><strong>Ce que c'est.</strong> Une extension Emacs qui affiche la page rendue dans une fenêtre à côté du source et la met à jour au fil de la frappe, comme le fait pdf-tools mais sans recompilation complète. Elle s'appuie sur TeXpresso, le moteur de rendu incrémental existant, et vise les utilisateurs d'Emacs qui écrivent au clavier sans quitter l'éditeur.</p>
+<p><strong>Vérifications.</strong> Le dépôt <code>github.com/stefanoconiglio/emacs-texpresso-view</code> répond : licence GPL-3.0, 16 étoiles, dernière poussée le 2 novembre 2026. Il repose sur <code>github.com/let-def/texpresso</code> (licence MIT, 799 étoiles, dernière poussée le 1er novembre 2026). Réserve : le post Reddit lui-même n'est qu'un GIF animé, sans lien vers le dépôt ; l'adresse ci-dessus vient d'une recherche, pas de l'annonce. L'extension est très récente (quelques jours) : à essayer sans en attendre la stabilité d'un outil installé.</p>
+<h3>Turbotex — un éditeur qui embarque son moteur TeX</h3>
+<p><strong>Ce que c'est.</strong> Un éditeur de bureau présenté comme une alternative à Overleaf et à l'extension LaTeX de VS Code. Le moteur Tectonic est embarqué (il télécharge les paquets au premier usage, donc aucune installation de TeX Live n'est nécessaire, même si l'on peut pointer l'application vers pdfLaTeX, XeLaTeX ou LuaLaTeX), Texlab fournit complétion et diagnostics, SyncTeX assure l'aller-retour entre le source et le PDF, et un « Figure Maker » exécute matplotlib dans un noyau Python embarqué pour écrire des figures dans le projet. Un système de relecture permet d'envoyer un lien d'annotation, puis de fusionner les remarques. Les fonctions d'IA (proposer une réécriture, corriger une erreur du journal, tracer une figure) s'exécutent avec un compte ChatGPT personnel et peuvent être désactivées entièrement.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> L'intérêt principal est l'absence d'installation : sur un poste où l'on ne veut pas (ou ne peut pas) déployer TeX Live, l'éditeur compile un article réel dès l'installation. Le noyau Python embarqué est utile pour des figures générées à partir de données, cas fréquent en SVT.</p>
+<p><strong>Vérifications et réserves.</strong> Le site <code>https://turbotex.app/</code> répond (consulté le 4 novembre) et propose des téléchargements macOS, Windows et Linux ; il annonce la gratuité pour l'usage hors ligne. En revanche l'annonce Reddit parle d'une <strong>liste d'attente</strong> alors que la page propose déjà les binaires — écart à signaler, l'un des deux n'est pas à jour. Le logiciel est <strong>fermé</strong> : aucun dépôt public, donc aucune licence vérifiable, et l'auteur cherche encore son modèle économique pour la compilation en ligne. Le support macOS est limité aux puces Apple (pas d'Intel).</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>ModernTex 2.1 — théorèmes et export vers arXiv</h3>
+<p>Éditeur LaTeX natif pour macOS (payment unique de 19,99 dollars après sept jours d'essai, mises à jour comprises, macOS 14 ou plus récent). La version 2.1 ajoute deux fonctions de fin de rédaction : l'insertion assistée de théorèmes, lemmes, preuves et remarques (avec le préambule <code>amsthm</code> et les <code>\newtheorem</code> correspondants), et l'export d'un projet en une archive ZIP, avec une option qui range les fichiers selon la structure attendue par arXiv (source, <code>.bbl</code>, bibliographie, figures). L'auteur annonce aussi un « build the file in view », la compilation depuis la vue du document.</p>
+<p><strong>Réserves.</strong> Le post Reddit n'est qu'une capture d'écran, sans lien vers l'éditeur ; les détails ci-dessus viennent de la page de l'éditeur (<code>purplelink.llc/moderntex</code>), consultée le 4 novembre. Cette page porte un écart interne : elle décrit les nouveautés « in 2.1 » alors que la fiche de téléchargement indique encore la version 2.0.3 — à vérifier dans l'application avant d'attendre ces fonctions. Le logiciel est commercial et fermé, et son éditeur reconnaît une première sortie en septembre 2026 seulement. Sur macOS uniquement ; sans intérêt direct sur Linux ou Windows.</p>
+<h2>Volume</h2>
+<p>Quatre posts publiés dans l'intervalle, trois retenus, un écarté, soit un taux de rétention de 75 %. Le post écarté est la présentation d'un service payant (un serveur MCP qui met en forme un manuscrit selon les exigences d'une revue, avec facturation à l'usage, autour de 2 à 4 dollars par mois) : le produit n'existe pas encore, aucune adresse ni démonstration n'est fournie, l'auteur ne fait que sonder l'intérêt du forum — rien de réutilisable en l'état. Le taux élevé du jour tient au hasard du calendrier (une journée d'annonces d'outils, sans les questions de dépannage qui constituent d'ordinaire le gros du flux), pas à un relâchement du filtre : sur ce subreddit, un taux faible reste la norme.</p>
+<footer>Édition du mercredi 4 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
