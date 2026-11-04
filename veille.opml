@@ -20,4 +20,5 @@
     <outline text="Veille pédagogique et scientifique" title="Veille pédagogique et scientifique" type="rss" xmlUrl="https://opware2000.github.io/veille/pedagogique.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille Renaud Dékode" title="Veille Renaud Dékode" type="rss" xmlUrl="https://opware2000.github.io/veille/renaud.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille IA et éducation (ActuIA)" title="Veille IA et éducation (ActuIA)" type="rss" xmlUrl="https://opware2000.github.io/veille/actuia.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille IA, sciences et société (ActuIA)" title="Veille IA, sciences et société (ActuIA)" type="rss" xmlUrl="https://opware2000.github.io/veille/actuia-sciences.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
   </body></opml>
