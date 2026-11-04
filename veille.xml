@@ -6,9 +6,68 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 04 Nov 2026 20:21:42 +0100</lastBuildDate>
+<lastBuildDate>Thu, 05 Nov 2026 00:03:14 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — jeudi 5 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-05.html</link>
+<guid isPermaLink="false">artcraft-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 00:03:14 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois versions correctives sont parues depuis la dernière édition : WordCraft 0.15.1 et PdfCraft 0.18.1 (4 novembre, 3 h 51 UTC), puis DesignCraft 0.17.1 dans la soirée — corrections de fond, sans nouvelle fonctionnalité majeure.</li>
+<li>Un utilisateur publie une méthode de contournement des lenteurs des applications sur Mac Intel, et l'éditeur d'une solution de stockage annonce l'intégration des outils ArtCraft côté serveur pour les équipes et les salles de classe.</li>
+<li>Le reste de l'intervalle est saturé de demandes d'applications et de questions d'assistance, écartées du tri.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>WordCraft 0.15.1, PdfCraft 0.18.1 et DesignCraft 0.17.1</h3>
+<p>Aucun des trois textes d'accompagnement n'annonce de fonctionnalité nouvelle : ce sont des correctifs et des travaux de robustesse. WordCraft 0.15.1 accélère la lecture à voix haute (recherche binaire des citations au lieu d'un balayage caractère par caractère), intègre 75 paquets linguistiques et la vérification orthographique fusionnée, coupe les noms de police lus dans la table du fichier à 128 caractères et refuse les collections WOFF2 aux répertoires reconstruits anormalement volumineux ; les touches Page précédente / Page suivante déplacent désormais d'une page complète en mode Plan, Brouillon et Affichage web. PdfCraft 0.18.1 corrige le blocage de la molette en bord de page en vue non continue, la perte de l'entrée /PCAdded lors de la réécriture d'un objet pour la censure, l'écriture en double de l'arbre de pages à la création d'un document, et l'optimisation des images placées sous un masque ; FormCalc n'imprime plus que quinze chiffres significatifs. DesignCraft 0.17.1 rend l'import de nombreux graphismes linéaire (indexation des fichiers par contenu), conserve les étiquettes et classes de styles à l'aller-retour IDML, et règle plusieurs défauts de l'interface (nuancier qui se rouvre sur le composant quitté, mise en page, relecture inutile des images liées à chaque cycle de contrôle).<br />
+Versions publiées respectivement les 4 novembre 2026 à 3 h 51 UTC (WordCraft et PdfCraft) et à 20 h 37 UTC (DesignCraft), sur les dépôts publics <code>storytold/wordcraft</code>, <code>storytold/pdfcraft</code> et <code>storytold/designcraft</code> (licence Apache-2.0).</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>napp-it : les applications web d'ArtCraft intégrées à une interface de serveur</h3>
+<p>L'éditeur de napp-it, interface web d'administration de serveurs ZFS et de leurs grappes, annonce la prise en charge des applications web d'ArtCraft : installation, mise à jour et service web optimisé, accessibles par un proxy unique sans installation locale, dans un navigateur. Le module complémentaire cs-team met en avant des usages collectifs — gestion de groupes, équipes multiculturelles ou classes d'une année sur l'autre, parcs informatiques mixtes — ainsi qu'un assistant d'aide indexé sur des sources et une alternative légère à Office 365 / Nextcloud pour le calcul et le texte en multijoueur. Le projet existe depuis dix-sept ans et se présente comme libre, fonctionnant sous Illumos/Solaris, FreeBSD, Linux, macOS ou Windows. Réserve : l'annonce est celle de l'éditeur du module, elle ne provient pas de l'équipe ArtCraft, et aucune contrepartie ou accord avec storytold n'est mentionné.<br />
+Site : https://www.napp-it.org/ (documentation : https://www.napp-it.org/pdf/cs-team_en.pdf, les deux répondent) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xnv83v/announcement_nappit_csteam_environment_for/ — auteur u/<em>gea</em>.</p>
+<h3>Lancer le binaire directement : parade aux lenteurs sur Mac Intel</h3>
+<p>Un utilisateur de Mac Pro 2013 (deux Xeons, 64 Go de mémoire, deux cartes graphiques, macOS Sequoia via OpenCore Legacy Patcher) publie une parade aux ralentissements des applications ArtCraft sur les Mac Intel : au lieu d'ouvrir l'application par son icône, il la lance depuis le Terminal — <code>bash /Applications/PhotoCraft.app/Contents/MacOS/PhotoCraft</code> —, ce qui court-circuite le cache de fenêtres de macOS et les fonctions de restauration sécurisée que le système impose au détriment des correctifs graphiques pour machines anciennes. L'avertissement « Secure coding » affiché dans le Terminal est attendu. Il s'agit d'un contournement de la communauté, non d'un correctif officiel : il ne s'applique qu'aux Mac Intel sous OpenCore, il faut garder la fenêtre du Terminal ouverte pendant le travail, et aucune mesure chiffrée n'accompagne le témoignage. À considérer comme une piste à tester, pas comme une solution validée.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xngkl6/fix_for_artcraft_photocraft_lag_on_intel_macs/ — auteur u/Surfella.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable dans l'intervalle : aucune actualité marquante relevée ces dernières vingt-quatre heures sur ComfyUI, InvokeAI, Krita AI Diffusion ni sur les autres interfaces de génération locale examinées. La presse spécialisée continue de relayer la suite ArtCraft comme alternative libre aux applications Adobe, sans annonce nouvelle.</p>
+<h2>À signaler</h2>
+<h3>LightCraft : lenteurs signalées après la mise à jour</h3>
+<p>Un utilisateur se plaint qu'après être passé à la dernière version de LightCraft, « tout ce qu'il fait » déclenche un rendu, ce qui rend le travail impossible, alors que le comportement était normal auparavant. Le signalement est isolé, sans capture ni journal, et aucun autre membre du subreddit ne le confirme dans le fil : il ne permet donc pas d'établir une régression généralisée de LightCraft 0.18.0 (publiée le 3 novembre), mais l'hypothèse mérite d'être surveillée dans les prochaines éditions.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xntoen/lightcraft_rendering/ — auteur u/Maximum-Grand-946.</p>
+<h2>Volume</h2>
+<p>33 posts parus dans l'intervalle (du 3 novembre à 22 h 25 au 4 novembre à 21 h 10 UTC), 3 retenus, 30 écartés. S'y ajoute la vérification directe des dépôts de l'éditeur, qui a révélé les trois versions correctives citées ci-dessus. La dernière collecte s'est terminée le 4 novembre 2026 à 22 h 29 UTC sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois versions correctives sont parues depuis la dernière édition : WordCraft 0.15.1 et PdfCraft 0.18.1 (4 novembre, 3 h 51 UTC), puis DesignCraft 0.17.1 dans la soirée — corrections de fond, sans nouvelle fonctionnalité majeure.</li>
+<li>Un utilisateur publie une méthode de contournement des lenteurs des applications sur Mac Intel, et l'éditeur d'une solution de stockage annonce l'intégration des outils ArtCraft côté serveur pour les équipes et les salles de classe.</li>
+<li>Le reste de l'intervalle est saturé de demandes d'applications et de questions d'assistance, écartées du tri.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>WordCraft 0.15.1, PdfCraft 0.18.1 et DesignCraft 0.17.1</h3>
+<p>Aucun des trois textes d'accompagnement n'annonce de fonctionnalité nouvelle : ce sont des correctifs et des travaux de robustesse. WordCraft 0.15.1 accélère la lecture à voix haute (recherche binaire des citations au lieu d'un balayage caractère par caractère), intègre 75 paquets linguistiques et la vérification orthographique fusionnée, coupe les noms de police lus dans la table du fichier à 128 caractères et refuse les collections WOFF2 aux répertoires reconstruits anormalement volumineux ; les touches Page précédente / Page suivante déplacent désormais d'une page complète en mode Plan, Brouillon et Affichage web. PdfCraft 0.18.1 corrige le blocage de la molette en bord de page en vue non continue, la perte de l'entrée /PCAdded lors de la réécriture d'un objet pour la censure, l'écriture en double de l'arbre de pages à la création d'un document, et l'optimisation des images placées sous un masque ; FormCalc n'imprime plus que quinze chiffres significatifs. DesignCraft 0.17.1 rend l'import de nombreux graphismes linéaire (indexation des fichiers par contenu), conserve les étiquettes et classes de styles à l'aller-retour IDML, et règle plusieurs défauts de l'interface (nuancier qui se rouvre sur le composant quitté, mise en page, relecture inutile des images liées à chaque cycle de contrôle).<br />
+Versions publiées respectivement les 4 novembre 2026 à 3 h 51 UTC (WordCraft et PdfCraft) et à 20 h 37 UTC (DesignCraft), sur les dépôts publics <code>storytold/wordcraft</code>, <code>storytold/pdfcraft</code> et <code>storytold/designcraft</code> (licence Apache-2.0).</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>napp-it : les applications web d'ArtCraft intégrées à une interface de serveur</h3>
+<p>L'éditeur de napp-it, interface web d'administration de serveurs ZFS et de leurs grappes, annonce la prise en charge des applications web d'ArtCraft : installation, mise à jour et service web optimisé, accessibles par un proxy unique sans installation locale, dans un navigateur. Le module complémentaire cs-team met en avant des usages collectifs — gestion de groupes, équipes multiculturelles ou classes d'une année sur l'autre, parcs informatiques mixtes — ainsi qu'un assistant d'aide indexé sur des sources et une alternative légère à Office 365 / Nextcloud pour le calcul et le texte en multijoueur. Le projet existe depuis dix-sept ans et se présente comme libre, fonctionnant sous Illumos/Solaris, FreeBSD, Linux, macOS ou Windows. Réserve : l'annonce est celle de l'éditeur du module, elle ne provient pas de l'équipe ArtCraft, et aucune contrepartie ou accord avec storytold n'est mentionné.<br />
+Site : https://www.napp-it.org/ (documentation : https://www.napp-it.org/pdf/cs-team_en.pdf, les deux répondent) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xnv83v/announcement_nappit_csteam_environment_for/ — auteur u/<em>gea</em>.</p>
+<h3>Lancer le binaire directement : parade aux lenteurs sur Mac Intel</h3>
+<p>Un utilisateur de Mac Pro 2013 (deux Xeons, 64 Go de mémoire, deux cartes graphiques, macOS Sequoia via OpenCore Legacy Patcher) publie une parade aux ralentissements des applications ArtCraft sur les Mac Intel : au lieu d'ouvrir l'application par son icône, il la lance depuis le Terminal — <code>bash /Applications/PhotoCraft.app/Contents/MacOS/PhotoCraft</code> —, ce qui court-circuite le cache de fenêtres de macOS et les fonctions de restauration sécurisée que le système impose au détriment des correctifs graphiques pour machines anciennes. L'avertissement « Secure coding » affiché dans le Terminal est attendu. Il s'agit d'un contournement de la communauté, non d'un correctif officiel : il ne s'applique qu'aux Mac Intel sous OpenCore, il faut garder la fenêtre du Terminal ouverte pendant le travail, et aucune mesure chiffrée n'accompagne le témoignage. À considérer comme une piste à tester, pas comme une solution validée.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xngkl6/fix_for_artcraft_photocraft_lag_on_intel_macs/ — auteur u/Surfella.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable dans l'intervalle : aucune actualité marquante relevée ces dernières vingt-quatre heures sur ComfyUI, InvokeAI, Krita AI Diffusion ni sur les autres interfaces de génération locale examinées. La presse spécialisée continue de relayer la suite ArtCraft comme alternative libre aux applications Adobe, sans annonce nouvelle.</p>
+<h2>À signaler</h2>
+<h3>LightCraft : lenteurs signalées après la mise à jour</h3>
+<p>Un utilisateur se plaint qu'après être passé à la dernière version de LightCraft, « tout ce qu'il fait » déclenche un rendu, ce qui rend le travail impossible, alors que le comportement était normal auparavant. Le signalement est isolé, sans capture ni journal, et aucun autre membre du subreddit ne le confirme dans le fil : il ne permet donc pas d'établir une régression généralisée de LightCraft 0.18.0 (publiée le 3 novembre), mais l'hypothèse mérite d'être surveillée dans les prochaines éditions.<br />
+Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xntoen/lightcraft_rendering/ — auteur u/Maximum-Grand-946.</p>
+<h2>Volume</h2>
+<p>33 posts parus dans l'intervalle (du 3 novembre à 22 h 25 au 4 novembre à 21 h 10 UTC), 3 retenus, 30 écartés. S'y ajoute la vérification directe des dépôts de l'éditeur, qui a révélé les trois versions correctives citées ci-dessus. La dernière collecte s'est terminée le 4 novembre 2026 à 22 h 29 UTC sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille IA, sciences et société — mercredi 4 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/actuia-sciences/2026-11-04.html</link>
@@ -5561,61 +5620,6 @@ MIT, 3 800 étoiles, dépôt encore actif le jour de la rédaction.<br />
 </ul>
 <h2>Volume</h2>
 <p>Quatre posts publiés dans l'intervalle, deux retenus, deux écartés, soit un taux de rétention de 50 %. Sur un nombre aussi faible, ce taux n'a pas de valeur : la nuit dernière, sur le même subreddit, le filtre avait retenu six posts sur vingt-cinq. Écartés : une demande de conseil d'achat entre l'offre de démarrage indienne de Cursor et l'abonnement opencode Go, sans aucune donnée, et la redite de l'actualité Claude citée plus haut. Aucune erreur de collecte n'est consignée dans <code>meta.json</code> (dernière collecte à 4 h 59 UTC), et rien n'a été publié sur Telegram.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LaTeX — samedi 31 octobre 2026</title>
-<link>https://opware2000.github.io/veille/editions/latex/2026-10-31.html</link>
-<guid isPermaLink="false">latex-2026-10-31</guid>
-<pubDate>Sat, 31 Oct 2026 07:03:54 +0100</pubDate>
-<category>r/LaTeX</category>
-<description><![CDATA[<h1>Veille r/LaTeX — samedi 31 octobre 2026</h1>
-<h2>En bref</h2>
-<p>Peu de matière en vingt-quatre heures : trois posts seulement, dont deux qui passent le filtre. Un paquet LuaLaTeX d'ornements floraux calculés en Lua dans les marges (tikz-flora), avec un configurateur en ligne, et la classe lucidcv, un modèle de CV en LuaLaTeX qui produit un PDF lisible par les machines, désormais publiée sur le CTAN. Le troisième message est une petite annonce de prestation payante, écartée.</p>
-<h2>Paquets, classes et outils nouveaux</h2>
-<h3>tikz-flora — des ornements floraux poussés dans les marges, calculés en Lua</h3>
-<p>Le fil « fleurs » de la semaine (déjà signalé dans l'édition du 30 octobre) a donné naissance à un paquet : tikz-flora fait pousser, dans la marge d'un document LuaLaTeX, une plante différente à chaque page — tiges, feuilles, fleurs, dorures, et si on le souhaite abeilles, papillons, oiseaux et escargots. Tout est calculé en Lua et dessiné avec PGF, sans aucune image importée : rien à charger, rien à redimensionner, et l'ornement s'adapte à la page. La croissance suit l'article de référence de Wong, Zongker et Salesin sur les ornements floraux générés par ordinateur (SIGGRAPH 1998), et les encres reproduisent les rampes de couleurs Pilot iroshizuku relevées par le projet madoromi.</p>
-<p>Utilisation, d'après la notice : il faut une distribution avec LuaLaTeX (TeX Live 2023 ou plus récent, MiKTeX ou TinyTeX). Le paquet s'obtient en téléchargeant <code>tikzflora.zip</code> depuis le site, ou s'installe pour tous les documents en copiant <code>tikzflora.sty</code>, <code>tikzflora-boot.lua</code> et le dossier <code>lua/</code> dans <code>TEXMFHOME/tex/lualatex/tikzflora/</code> (le chemin se lit avec <code>kpsewhich -var-value TEXMFHOME</code>). Document minimal :</p>
-<pre><code class="language-latex">\documentclass{article}
-\usepackage[left=5.5cm,right=2cm]{geometry} % de la place pour la flore
-\usepackage{tikzflora}
-\florasetup{seed=7}
-\begin{document}
-Texte.
-\end{document}
-</code></pre>
-<p><code>\florasetup{...}</code> règle les paramètres pour la suite du document à partir de la page en cours, <code>\florathispage{...}</code> pour une seule page ; une clé mal orthographiée arrête la compilation avec un message qui nomme la clé. Un configurateur en ligne (site https://flora.alpacasoft.dev) permet de régler les paramètres, de voir le résultat en direct et de télécharger l'archive, et le paquet fonctionne sur Overleaf en téléversant le zip (le <code>latexmkrc</code> fourni sélectionne LuaLaTeX). Deux exemplaires, assez longs, avec les extensions de polices et les scripts.</p>
-<p>Vérifications : dépôt https://github.com/wn-mitch/tikz-flora, licence MIT, 5 étoiles, créé et mis à jour le 31 octobre 2026 — donc très jeune, mais avec tests, outillage et analyse dans le dépôt. Le paquet n'est pas au CTAN (page inexistante à l'heure de la collecte) : il faudra le remettre à la main après chaque mise à jour de TeX Live. Le projet se présente comme la suite de florilegium de Kevin Raymond (https://github.com/kevinraymond/florilegium, licence MIT, 745 étoiles, créé le 30 octobre 2026), qui avait rencontré un vrai succès sur le forum.</p>
-<p>À quoi cela sert-il dans un document scientifique ? À rien pour le contenu, et il ne faut pas le vendre autrement : c'est de la décoration, à réserver par exemple à un rapport de projet ou à un dossier à rendre. L'intérêt technique est ailleurs — c'est un exemple complet de paquet LuaLaTeX qui génère des dessins procéduraux en PGF, utile à lire si l'on veut écrire soi-même un générateur de figures aléatoires reproductibles (la graine <code>seed</code> fixe le tirage).</p>
-<h3>lucidcv — modèle de CV en LuaLaTeX dont le texte reste extractible</h3>
-<p>Classe LuaLaTeX pour CV sur une ou deux colonnes, fondée sur le dessin PlushCV mais réécrite, dont la particularité est la lisibilité de la sortie par les machines : les espaces de mot sont de vrais caractères d'espace et les icônes n'extraient rien, si bien que les robots de tri de candidatures et les extracteurs de texte relisent le contenu dans le bon ordre. La sortie est un PDF/A-2b balisé, les couleurs, polices, tailles et espacements sont paramétrables, et une suite de tests (sur le dépôt) vérifie l'extraction avec plusieurs moteurs PDF et plusieurs variantes de mise en page. Ce n'est pas un document scientifique, mais la technique vaut d'être connue : elle montre comment régler un document LaTeX pour qu'il reste exploitable automatiquement, question qui se pose aussi pour des dossiers administratifs ou des formulaires.</p>
-<p>Le post d'origine demandait simplement comment être référencé sur latextemplates.com ; l'intérêt vérifiable est ailleurs, dans le fait que le modèle est bien au CTAN : paquet <code>lucidcv</code>, version 1.0.0, licence triple MIT / LPPL 1.3c / OFL. Dépôt https://github.com/xGoldy/lucidcv, 112 étoiles, dernière mise à jour le 30 octobre 2026 ; GitHub n'arrive pas à identifier la licence du dépôt (il annonce « autre »), alors que la page du CTAN cite les trois licences, écart à noter mais sans conséquence pratique.</p>
-<h2>Volume</h2>
-<p>3 posts examinés depuis la dernière édition (30 et 31 octobre), 2 retenus, 1 écarté, soit un taux de rétention de 67 %, sur un intervalle d'une seule journée. Ce chiffre n'a pas la même signification que celui de l'édition précédente (10 retenus sur 25) : le flux de r/LaTeX est irrégulier, et vingt-quatre heures sans beaucoup de trafic suffisent à faire monter un pourcentage. Écarté : une annonce de prestation payante de mise en forme (Overleaf, APA, 15 à 25 dollars par article), sans contenu réutilisable.</p>
-<p>La collecte du 31 octobre à 04h58 UTC s'est déroulée sans erreur (<code>errors</code> vide dans <code>meta.json</code>).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LaTeX — samedi 31 octobre 2026</h1>
-<h2>En bref</h2>
-<p>Peu de matière en vingt-quatre heures : trois posts seulement, dont deux qui passent le filtre. Un paquet LuaLaTeX d'ornements floraux calculés en Lua dans les marges (tikz-flora), avec un configurateur en ligne, et la classe lucidcv, un modèle de CV en LuaLaTeX qui produit un PDF lisible par les machines, désormais publiée sur le CTAN. Le troisième message est une petite annonce de prestation payante, écartée.</p>
-<h2>Paquets, classes et outils nouveaux</h2>
-<h3>tikz-flora — des ornements floraux poussés dans les marges, calculés en Lua</h3>
-<p>Le fil « fleurs » de la semaine (déjà signalé dans l'édition du 30 octobre) a donné naissance à un paquet : tikz-flora fait pousser, dans la marge d'un document LuaLaTeX, une plante différente à chaque page — tiges, feuilles, fleurs, dorures, et si on le souhaite abeilles, papillons, oiseaux et escargots. Tout est calculé en Lua et dessiné avec PGF, sans aucune image importée : rien à charger, rien à redimensionner, et l'ornement s'adapte à la page. La croissance suit l'article de référence de Wong, Zongker et Salesin sur les ornements floraux générés par ordinateur (SIGGRAPH 1998), et les encres reproduisent les rampes de couleurs Pilot iroshizuku relevées par le projet madoromi.</p>
-<p>Utilisation, d'après la notice : il faut une distribution avec LuaLaTeX (TeX Live 2023 ou plus récent, MiKTeX ou TinyTeX). Le paquet s'obtient en téléchargeant <code>tikzflora.zip</code> depuis le site, ou s'installe pour tous les documents en copiant <code>tikzflora.sty</code>, <code>tikzflora-boot.lua</code> et le dossier <code>lua/</code> dans <code>TEXMFHOME/tex/lualatex/tikzflora/</code> (le chemin se lit avec <code>kpsewhich -var-value TEXMFHOME</code>). Document minimal :</p>
-<pre><code class="language-latex">\documentclass{article}
-\usepackage[left=5.5cm,right=2cm]{geometry} % de la place pour la flore
-\usepackage{tikzflora}
-\florasetup{seed=7}
-\begin{document}
-Texte.
-\end{document}
-</code></pre>
-<p><code>\florasetup{...}</code> règle les paramètres pour la suite du document à partir de la page en cours, <code>\florathispage{...}</code> pour une seule page ; une clé mal orthographiée arrête la compilation avec un message qui nomme la clé. Un configurateur en ligne (site https://flora.alpacasoft.dev) permet de régler les paramètres, de voir le résultat en direct et de télécharger l'archive, et le paquet fonctionne sur Overleaf en téléversant le zip (le <code>latexmkrc</code> fourni sélectionne LuaLaTeX). Deux exemplaires, assez longs, avec les extensions de polices et les scripts.</p>
-<p>Vérifications : dépôt https://github.com/wn-mitch/tikz-flora, licence MIT, 5 étoiles, créé et mis à jour le 31 octobre 2026 — donc très jeune, mais avec tests, outillage et analyse dans le dépôt. Le paquet n'est pas au CTAN (page inexistante à l'heure de la collecte) : il faudra le remettre à la main après chaque mise à jour de TeX Live. Le projet se présente comme la suite de florilegium de Kevin Raymond (https://github.com/kevinraymond/florilegium, licence MIT, 745 étoiles, créé le 30 octobre 2026), qui avait rencontré un vrai succès sur le forum.</p>
-<p>À quoi cela sert-il dans un document scientifique ? À rien pour le contenu, et il ne faut pas le vendre autrement : c'est de la décoration, à réserver par exemple à un rapport de projet ou à un dossier à rendre. L'intérêt technique est ailleurs — c'est un exemple complet de paquet LuaLaTeX qui génère des dessins procéduraux en PGF, utile à lire si l'on veut écrire soi-même un générateur de figures aléatoires reproductibles (la graine <code>seed</code> fixe le tirage).</p>
-<h3>lucidcv — modèle de CV en LuaLaTeX dont le texte reste extractible</h3>
-<p>Classe LuaLaTeX pour CV sur une ou deux colonnes, fondée sur le dessin PlushCV mais réécrite, dont la particularité est la lisibilité de la sortie par les machines : les espaces de mot sont de vrais caractères d'espace et les icônes n'extraient rien, si bien que les robots de tri de candidatures et les extracteurs de texte relisent le contenu dans le bon ordre. La sortie est un PDF/A-2b balisé, les couleurs, polices, tailles et espacements sont paramétrables, et une suite de tests (sur le dépôt) vérifie l'extraction avec plusieurs moteurs PDF et plusieurs variantes de mise en page. Ce n'est pas un document scientifique, mais la technique vaut d'être connue : elle montre comment régler un document LaTeX pour qu'il reste exploitable automatiquement, question qui se pose aussi pour des dossiers administratifs ou des formulaires.</p>
-<p>Le post d'origine demandait simplement comment être référencé sur latextemplates.com ; l'intérêt vérifiable est ailleurs, dans le fait que le modèle est bien au CTAN : paquet <code>lucidcv</code>, version 1.0.0, licence triple MIT / LPPL 1.3c / OFL. Dépôt https://github.com/xGoldy/lucidcv, 112 étoiles, dernière mise à jour le 30 octobre 2026 ; GitHub n'arrive pas à identifier la licence du dépôt (il annonce « autre »), alors que la page du CTAN cite les trois licences, écart à noter mais sans conséquence pratique.</p>
-<h2>Volume</h2>
-<p>3 posts examinés depuis la dernière édition (30 et 31 octobre), 2 retenus, 1 écarté, soit un taux de rétention de 67 %, sur un intervalle d'une seule journée. Ce chiffre n'a pas la même signification que celui de l'édition précédente (10 retenus sur 25) : le flux de r/LaTeX est irrégulier, et vingt-quatre heures sans beaucoup de trafic suffisent à faire monter un pourcentage. Écarté : une annonce de prestation payante de mise en forme (Overleaf, APA, 15 à 25 dollars par article), sans contenu réutilisable.</p>
-<p>La collecte du 31 octobre à 04h58 UTC s'est déroulée sans erreur (<code>errors</code> vide dans <code>meta.json</code>).</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
