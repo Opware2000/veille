@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Clément Mondary — mercredi 4 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../mondary.xml" title="Clément Mondary">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Clément Mondary — mercredi 4 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Dix billets publiés les 2 et 3 novembre, huit retenus, deux écartés. Aucune édition n'a été écrite le 3 novembre : celle-ci couvre donc deux jours de billets, et le seul envoi manquant est celui-là.<br />
+Le fil dominant reste l'outillage des agents de code — orchestration d'équipes, supervision de sessions, pilotage à distance depuis le navigateur ou le téléphone. À côté : un enregistreur d'écran, un carnet de notes en dossiers, un atelier SSH dans le navigateur et un nettoyeur de Mac.<br />
+La dernière collecte (3 novembre, 22 h 43 UTC) s'est faite sans erreur.</p>
+<h2>Documents, notes et bureautique</h2>
+<h3>OPENSCREEN</h3>
+<p>Enregistreur d'écran open source conçu pour produire une démonstration propre sans montage. Il place un zoom sur les clics pendant la prise, permet de retoucher le curseur après coup, transcrit la voix en local avec whisper.cpp et exporte en MP4 ou en GIF. Licence MIT, sans filigrane ni compte à créer, sur macOS, Windows et Linux.</p>
+<p>L'intérêt pour un cours : capter une manipulation d'écran (une fonction de tableur, une commande de terminal) et la garder en vidéo courte ou en GIF, sans passer par un service en ligne ni payer un abonnement. C'est le type d'outil qui sert deux fois, à vous pour préparer et aux élèves pour réviser.<br />
+<a href="https://mondary.design/2026/11/openscreen-enregistreur-ecran-open-source/">OPENSCREEN</a></p>
+<h3>NOTEM</h3>
+<p>Carnet de notes natif macOS qui refuse la base de données : chaque note est un dossier ordinaire sur le disque, contenant un fichier Markdown, un fichier riche pour la mise en forme, des métadonnées et les pièces jointes. Ouvrir le dossier dans le Finder, lire le Markdown avec la ligne de commande, copier le tout sur un disque externe : rien ne disparaît si l'application est supprimée. Les catégories sont des sous-dossiers, des règles de classement déplacent les notes non classées, et la recherche « par sens » s'appuie sur un calcul local. La synchronisation par iCloud Drive reste optionnelle et le mode hors ligne fonctionne sans compte.</p>
+<p>Deux limites : l'application est réservée à macOS (version 26 ou plus récente) et l'export vers Obsidian est à sens unique, l'application n'écrasant jamais un fichier qu'elle n'a pas créé. Rien n'est annoncé sur le prix dans le billet.</p>
+<p>Licence MIT. Dépôt <code>mikagosz/NoteM</code> : 9 étoiles, dernière poussée le 17 octobre 2026, écrit en Swift. Projet jeune, à essayer plutôt qu'à confier des notes uniques.<br />
+<a href="https://mondary.design/2026/11/notem-vos-notes-dans-des-dossiers-que-vous-possedez/">NOTEM</a></p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>OPENRIG</h3>
+<p>Harnais multi-agents auto-hébergé : au lieu de lancer six terminaux et de coordonner à la main, on décrit son équipe dans un fichier YAML — des groupes, des sièges, des règles de continuité — puis <code>rig up</code> démarre les sessions tmux et les agents. Un agent pilote reçoit les demandes et délègue ; <code>rig send</code> interroge directement le spécialiste d'un domaine, <code>rig queue</code> crée une tâche nommée avec un responsable, et chaque siège garde la même adresse (<code>dev-owner@mon-projet</code>) même quand la conversation qui l'occupe change. Le contexte et les décisions survivent donc d'une session à l'autre, ce qui est exactement ce qui manque quand on enchaîne les tâches longues avec Claude Code ou Codex.</p>
+<p>Sous le capot : un démon local, une interface en ligne de commande, une interface texte et un serveur MCP, le tout sur tmux et SQLite ; <code>rig down --snapshot</code> fige l'état complet de l'équipe et <code>rig up</code> le restaure. Des équipes prêtes à l'emploi sont fournies, de deux à sept sièges, dont une qui passe le travail de la prise en charge à la relecture.</p>
+<p>À savoir avant d'installer : Node.js 22 ou 24, tmux, macOS ou Linux — pas de Windows natif, WSL2 non testé. Et l'outil écrit des crochets et des réglages de confiance dans les configurations de Claude Code et de Codex, ce que la documentation détaille longuement.</p>
+<p>Licence Apache 2.0. Dépôt <code>mvschwarz/openrig</code> : 8 591 étoiles et une poussée le 4 novembre 2026 (l'auteur annonçait 4,6 k étoiles à la rédaction du billet, la progression explique l'écart).<br />
+<a href="https://mondary.design/2026/11/openrig-equipe-agents-persistante/">OPENRIG</a></p>
+<h3>HERDR WEB UI</h3>
+<p>Client navigateur et téléphone pour <code>herdr</code>, le gestionnaire de panneaux d'agents : chaque panneau — Claude Code, Codex, pi et quelques autres — devient une conversation lisible, avec le vrai terminal à un clic et des alertes poussées quand un agent attend une réponse. L'application ne lance rien : elle se branche sur une session <code>herdr</code> déjà en marche et lit les fichiers de session natifs, si bien que le panneau continue de vivre dans le terminal.</p>
+<p>L'usage concret : vous quittez l'écran pendant qu'un agent travaille, une demande d'approbation arrive en notification, vous répondez depuis la carte — le serveur vérifie au passage que le menu proposé est toujours le bon, ce qui évite de valider une question périmée. On peut joindre une capture d'écran, mentionner des fichiers ou empiler des messages pendant que l'agent continue. L'installation tient en une ligne (herdr 0.9.0 ou plus, Bun 1.4, Node 18 au minimum, sans droits d'administrateur) et l'interface écoute sur <code>127.0.0.1:7317</code>.</p>
+<p>Deux réserves : le chat n'est fidèle que pour les agents dont le fichier de session est lisible (les autres n'ont que la vue terminal, et sous Windows elle reste un miroir), et l'accès depuis le téléphone exige HTTPS — Tailscale, tunnel SSH ou serveur inverse.</p>
+<p>Licence MIT. Le dépôt indiqué par l'auteur (<code>devswha/herdr-web-ui</code>) redirige désormais vers <code>devswha/ovis</code>, le projet ayant été renommé : 1 851 étoiles, poussée le 4 novembre 2026, licence MIT confirmée par l'API.<br />
+<a href="https://mondary.design/2026/11/herdr-web-ui-pilotez-claude-code-et-codex-depuis-votre-telephone/">HERDR WEB UI</a></p>
+<h3>AGENT MONITOR</h3>
+<p>Tableau de bord local qui rend lisibles les sessions d'agents de code empilées dans les dossiers de fichiers JSONL. Au lancement il scanne les emplacements par défaut de chaque fournisseur (<code>~/.codex/sessions</code>, <code>~/.claude/projects</code>, <code>~/.pi/agent/sessions</code>, <code>~/.hermes</code>) sans configuration, liste les exécutions dans une barre latérale, et affiche l'agent principal avec tous ses sous-agents sous forme de graphe : chaque nœud porte son état, son modèle et ses jetons entrants et sortants, et un clic ouvre la trace complète (conversation, appels d'outils, résultats) dans un onglet.</p>
+<p>La partie budgétaire est soignée : totaux par agent, jetons par minute, cumul dans le temps et bascule par modèle. L'outil calcule des équivalents de facturation d'API — cache et paliers de contexte compris — et signale les modèles inconnus comme non tarifés plutôt que d'inventer un montant. Tout reste sur la machine, la base de l'agent Hermes est ouverte en lecture seule.</p>
+<p>Réserves : projet jeune (créé en septembre 2026), constructions non signées et, au 4 novembre, <strong>aucune licence déclarée</strong> dans le dépôt — à surveiller avant de s'y appuyer. Il existe des versions macOS, Windows et Linux, ou une exécution depuis les sources avec Node.js 22.12 ou plus.</p>
+<p>Dépôt <code>donvito/agent-monitor</code> : 86 étoiles, dernière poussée le 21 septembre 2026, TypeScript.<br />
+<a href="https://mondary.design/2026/11/agent-monitor-agents-de-code/">AGENT MONITOR</a></p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<h3>TERNSSH</h3>
+<p>Atelier SSH complet derrière une interface web : terminal, transfert de fichiers par SFTP, supervision en temps réel et widgets déplaçables sur un tableau de bord. Deux façons de le déployer, sur Cloudflare Workers ou en conteneur Docker, ce qui le place du côté des machines personnelles et des petits parcs plutôt que de l'infrastructure lourde.</p>
+<p>Pour un RUPN, la valeur tient à l'accès depuis n'importe quel navigateur, y compris depuis un poste où rien n'est installé, avec un tableau de bord qui montre en un coup d'œil l'état des serveurs suivis. À condition d'accepter d'exposer une interface web devant SSH : le déploiement et l'authentification sont donc à soigner avant toute mise en ligne.</p>
+<p>Licence GPL-3.0, présenté comme open source par l'auteur.<br />
+<a href="https://mondary.design/2026/11/ternssh-pilotez-vos-serveurs-ssh-depuis-un-tableau-de-bord-web/">TERNSSH</a></p>
+<h3>CLEARSPACE</h3>
+<p>Nettoyeur et désinstalleur pour Mac, construit autour d'une idée simple : rien n'est supprimé sans qu'on l'ait vu. Quatre outils séparés — aperçu global, nettoyage, désinstalleur, analyse de l'espace — dans une application qui ne cherche pas à tout faire. Le désinstalleur liste les fichiers liés à une application choisie, en épargnant les données partagées avec d'autres, et affiche le poids exact avant validation. Le nettoyage balaie par catégories : caches, journaux, données de navigateurs, fichiers de développement, reliquats. La vue « Space Lens » donne l'occupation disque en arborescence, tailles et parts du total, ce qui suffit à repérer un dossier oublié sans ouvrir plusieurs fenêtres du Finder.</p>
+<p>La prudence est explicite : chemins protégés (système, documents, applications en cours d'exécution) jamais proposés, tout passe par la corbeille, donc réversible ; l'accès complet au disque est demandé une seule fois pour lire les dossiers que macOS protège. Aucun compte, aucune télémétrie, application signée et notarisée par Apple.</p>
+<p>Réserves : Mac uniquement, Apple Silicon (M1 et plus récent) sous macOS 14 Sonoma ou plus, et version 0.2.2 — jeune. Surtout, <strong>ni prix ni licence ne sont annoncés</strong> sur le site officiel : l'information manque, il faudra la vérifier au téléchargement plutôt que de la supposer.<br />
+<a href="https://mondary.design/2026/11/clearspace-liberer-lespace-de-son-mac-sans-compromis/">CLEARSPACE</a></p>
+<h2>Sciences, données et création graphique</h2>
+<h3>SPACE UI</h3>
+<p>Registre de composants React au format shadcn, avec une différence de fond : le code est copié dans votre dépôt (<code>components/ui/</code>) au lieu d'arriver dans <code>node_modules</code>. Soixante primitives et quatre-vingts crochets sont gratuits — de quoi monter une interface complète —, le reste est payant : cent quatorze composants interactifs, les blocs de page en WebGL, les shaders et vingt-deux gabarits, pour 99 dollars par an ou 129 dollars une fois, licence commerciale comprise. Le dépôt du site est en MIT, et le code copié vous appartient dans tous les cas.</p>
+<p>Le point notable n'est pas la bibliothèque mais ce qui est fait pour les agents : aucune dépendance à mettre à jour, un index de documentation en texte brut (<code>/llms.txt</code>, <code>/llms-full.txt</code>, n'importe quelle page en Markdown), et un serveur MCP — celui, officiel, de shadcn — pour que Claude Code ou Cursor trouvent et installent les pièces sans quitter la conversation.</p>
+<p>Hors de votre chaîne habituelle (Markdown et LaTeX), mais utile si vous faites produire des pages web pour l'SNT ou pour un projet de classe : les primitives gratuites se testent sans rien engager.<br />
+<a href="https://mondary.design/2026/11/space-ui-le-registre-react-que-vos-agents-installent-eux-memes/">SPACE UI</a></p>
+<h2>Volume</h2>
+<p>10 billets publiés dans l'intervalle, 8 retenus, 2 écartés. LONGCAT-VIDEO-AVATAR, modèle de génération d'avatar vidéo piloté par l'audio (poids sous licence MIT mais démonstrations non utilisables commercialement, 13,6 milliards de paramètres, PyTorch 2.6 et CUDA 12.4) : hors de portée d'un poste de lycée et sans application réaliste pour vos cours. OPENNOW, client de bureau pour GeForce NOW : du jeu vidéo en streaming, quelle que soit la qualité du client. Aucun billet n'a été écarté faute de réel contenu.</p>
+<footer>Édition du mercredi 4 novembre 2026 — <a href="https://opware2000.github.io/veille/mondary.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
