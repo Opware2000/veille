@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — jeudi 5 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune mise à jour des paquets que vous utilisez : la section principale est vide cette fois. Un thème beamer pour les diaporamas de cours fait son entrée, et trois mises à jour peuvent servir aux figures et aux mathématiques des documents.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>beamertheme-niederrhein</strong> — thème beamer générique qui fournit des types de diapositives prêts à l'emploi pour un cours : page de titre, séparateur de section, diapositives de contenu avec une ligne de citation de source, et trois dispositions d'images (deux, trois ou quatre images partageant une légende unique). La bibliographie passe par biblatex avec le moteur bibtex8, donc sans appel séparé à BibTeX. Version 1.5 du 2 novembre 2026, licence LPPL 1.3c.<br />
+https://ctan.org/pkg/beamertheme-niederrhein<br />
+Réserve : l'identité visuelle est celle de la Fachhochschule Niederrhein, et votre <code>nBookSlides.cls</code> porte déjà votre propre thème ; ce qui est directement réutilisable, ce sont les dispositions d'images à légende partagée et la ligne de citation en bas de diapositive. Le texte de l'annonce est tronqué par le collecteur après la mention de biblatex : la liste complète des types de diapositives n'est donc pas vérifiable ici.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>tkz-fn 1.01c</strong> (3 novembre 2026) — ajoute <code>\tkzFnImplicit[options]{F(x,y)}</code>, qui trace une courbe définie implicitement par <code>F(x,y) = 0</code> à partir d'une expression. Le paquet succède à tkz-fct et calcule tout en Lua sous LuaLaTeX (plus besoin de gnuplot, <code>fp</code> ni tkz-base) ; ses tracés sont ceux des mathématiques du lycée. Vous utilisez TikZ et pgfplots : c'est ici la voie la plus simple pour les courbes implicites, que pgfplots ne trace que par échantillonnage de niveau. https://ctan.org/pkg/tkz-fn</li>
+<li><strong>PlantUML 0.8.1</strong> — deux formats de sortie vectorielle en plus : <code>output=eps</code> (schémas vectoriels produits par un serveur PlantUML et convertis par epstopdf) et <code>output=pdf</code> (vectoriel à texte sélectionnable, écrit par le <code>plantuml.jar</code> local). Le paquet produit les schémas depuis un jar local ou un serveur PlantUML et les insère en TikZ, PDF, PNG, SVG ou EPS ; il fonctionne sous LuaLaTeX comme sous pdfLaTeX, met les schémas en cache et peut donc être compilé sans <em>shell escape</em> (sur Overleaf, par exemple). https://ctan.org/pkg/plantuml</li>
+<li><strong>verbdef 0.2a</strong> (2 novembre 2026, équipe du projet LaTeX) — corrige des espaces visibles dans <code>\verbdef*</code> avec les moteurs Unicode. Vous ne chargez pas ce paquet ; la mention tient à votre compilation en LuaLaTeX.</li>
+</ul>
+<h2>Volume</h2>
+<p>Huit annonces parues depuis la précédente édition (toutes du 4 novembre), quatre retenues — aucune ne concerne vos paquets — et quatre écartées : deux gabarits de thèse propres à une université (abnTeX2-ufv, scientific-thesis-cover), un outil en ligne de commande réservé à la bibliographie mathématique par MathSciNet (bibupdate) et un paquet humoristique (sesameseeds).</p>
+<footer>Édition du jeudi 5 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
