@@ -6,9 +6,60 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 05 Nov 2026 01:04:40 +0100</lastBuildDate>
+<lastBuildDate>Thu, 05 Nov 2026 01:12:24 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — jeudi 5 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-05.html</link>
+<guid isPermaLink="false">latex-2026-11-05</guid>
+<pubDate>Thu, 05 Nov 2026 01:12:24 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le subreddit reste calme, Hacker News fournit l'essentiel de la matière : deux éditeurs LaTeX récents (Corollary sur Mac, Math Inline pour VS Code), un lecteur Markdown qui affiche les formules, et surtout la refonte complète des aperçus LaTeX d'Org mode, annoncée pour Org 10.0.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Math Inline — rendu des formules LaTeX dans l'éditeur Markdown de VS Code</h3>
+<p>Extension VS Code qui affiche <code>$...$</code> et <code>$$...$$</code> directement dans le volet d'édition, sans basculer vers l'aperçu. Le curseur placé dans une formule redonne accès au code TeX, le déplacement hors de la formule la réaffiche ; les blocs <code>aligned</code> et <code>cases</code> sont traités ligne par ligne. L'extension souligne le TeX invalide et prévient lorsque la formule ne passera pas dans l'aperçu KaTeX de VS Code. Publiée sur le Marketplace et Open VSX, dépôt <code>polecoder/math-inline</code> sous licence MIT, créé le 19 octobre 2026, 0 étoile, dernier envoi le 3 novembre 2026. Utile à quiconque rédige en Markdown avant conversion : plus besoin d'ouvrir l'aperçu ou un compilateur externe pour vérifier une formule.</p>
+<p>Site : https://polecoder.github.io/math-inline-landing — Marketplace : https://marketplace.visualstudio.com/items?itemName=polecoder.math-inline</p>
+<h3>Corollary — éditeur LaTeX macOS avec IA locale</h3>
+<p>Éditeur de type Overleaf (arborescence de fichiers, source, PDF compilé côte à côte, <code>⌘</code>-clic du PDF vers la ligne source) qui compile avec TeX Live et installe lui-même la distribution et les paquets manquants. Sa particularité : les fonctions d'assistance tournent en local via le modèle Apple Intelligence de macOS, sans compte ni clé d'API, donc hors ligne. Les modifications proposées s'affichent en comparaison à accepter ou refuser, et l'outil bloque une suggestion qui supprimerait une citation ou altérerait une équation ; une photo de formule manuscrite est convertie en LaTeX par GLM-OCR. L'auteur publie lui-même la mesure de qualité de son dispositif : sur 80 demandes de modification en texte brut, 78 conservent <code>\cite</code>, <code>\ref</code>, <code>\label</code> et les formules, mais aucun des 20 essais en sortie structurée n'aboutit, l'échappement JSON détruisant les barres obliques — la retouche de document entier n'est donc pas au point. Réserves à connaître : Mac Apple silicon uniquement, IA locale exigée sous macOS 26, et l'auteur signale l'usage d'Ollama ou d'une clé d'API externe comme solution de repli. Écrit pour prendre la suite de Prism, qui ferme le 1er janvier 2027. Dépôt <code>calvinyz/corollary</code> sous licence Apache 2.0, créé le 1er novembre 2026, 5 étoiles, dernier envoi le 1er novembre 2026 — projet de quelques jours, donc à considérer comme une démonstration encore jeune.</p>
+<p>Site : https://calvinyz.github.io/corollary/</p>
+<h3>Platessa — lecteur Markdown avec formules</h3>
+<p>Petit lecteur Markdown en Python et Tkinter qui affiche les images à leur place dans le texte et rend les formules LaTeX. Raccourcis Vim pour le défilement, zoom par <code>+</code>/<code>-</code>/<code>0</code>, images locales et distantes acceptées, rechargement du fichier par <code>r</code>. L'auteur indique explicitement l'avoir écrit par génération de code assistée, ce qui invite à le prendre pour ce qu'il est : un utilitaire récent et minimal. Dépôt <code>vincenzoaurelio/Platessa</code> sous licence BSD 3-clause, créé le 4 novembre 2026, 0 étoile, dernier envoi le 4 novembre 2026.</p>
+<p>Dépôt : https://github.com/vincenzoaurelio/Platessa</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Org mode : refonte complète du système d'aperçus LaTeX (prévue pour Org 10.0)</h3>
+<p>Le billet « Fabulously Fancy Fragments » de This Month in Org annonce la réécriture intégrale du mécanisme d'aperçu LaTeX d'Org, avec un billet d'accompagnement plus technique chez Karthik Chikmagalur. Les défauts de l'ancien système sont énumérés sans détour : chaque fragment compilé dans un processus LaTeX neuf, compilation séquentielle qui bloque Emacs, environ un quart de seconde par fragment, taille et ligne de base des aperçus jamais alignées sur le texte, couleurs figées à la génération, erreurs LaTeX masquées sans avertissement. Le remplacement s'appuie sur une bibliothèque d'enchaînement de processus, <code>org-async</code>, et sur le cache <code>org-persist</code> : les fragments sont rendus en parallèle, et un tampon rouvert les réaffiche quasi instantanément. Les mesures annoncées donnent environ 70× plus rapide en pire cas, une taille et une ligne de base harmonisées avec la police du tampon en mode graphique, des couleurs qui suivent le thème, et la prise en charge de TikZ et des structures complexes. La fonctionnalité est fusionnée sur la branche principale et non encore publiée : elle arrivera avec Org 10.0, ce qui suppose une version d'Emacs à même de la recevoir. Rien de tout cela ne concerne directement l'écriture de documents LaTeX hors Emacs, mais c'est la seule actualité substantielle de la période et elle compte pour ceux qui prennent leurs notes de cours ou de recherche dans Org.</p>
+<p>Compte rendu : https://blog.tecosaur.net/tmio/2026-11-01-preview.html — Explication technique : https://karthinks.com/software/understanding-org-latex-preview/</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>Passer de l'ancien aperçu Org au nouveau</h3>
+<p>L'ancien basculement manuel des fragments est remplacé par un mode mineur dédié, <code>org-latex-preview-mode</code>, qui reprend les fonctions du paquet tiers <code>org-fragtog</code> et permet donc de le désinstaller. Lorsque la variable <code>org-latex-preview-mode-display-live</code> est activée, l'aperçu se met à jour pendant la frappe. Côté installation LaTeX, les auteurs recommandent <code>mylatexformat.sty</code> et <code>preview.sty</code>, ainsi que <code>dvisvgm</code> en version 3.1 ou supérieure (ou <code>dvipng</code>), faute de quoi le rendu graphique et l'alignement des lignes de base ne seront pas obtenus. Deux variables méritent d'être connues pour maîtriser l'espace disque et l'apparence : <code>org-latex-preview-persist-expiry</code> règle la durée de conservation des aperçus en cache et <code>org-latex-preview-appearance-options</code> permet de corriger finement la taille si l'accord entre la police LaTeX et celle d'Emacs n'est pas exact.</p>
+<h2>Volume</h2>
+<p>9 posts examinés depuis la précédente édition (5 Reddit, 4 Hacker News), 6 retenus, 3 écartés, soit un taux de rétention d'environ 67 %. Les trois écartés sont une demande d'aide sur l'éditeur Texifier dont le site ne répond plus, un fil de discussion sur l'usage des assistants pour programmer en LaTeX sans élément vérifiable, et un site parodique recensant les éditeurs LaTeX. La collecte du 4 novembre 2026 à 23 h 51 UTC s'est terminée sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le subreddit reste calme, Hacker News fournit l'essentiel de la matière : deux éditeurs LaTeX récents (Corollary sur Mac, Math Inline pour VS Code), un lecteur Markdown qui affiche les formules, et surtout la refonte complète des aperçus LaTeX d'Org mode, annoncée pour Org 10.0.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Math Inline — rendu des formules LaTeX dans l'éditeur Markdown de VS Code</h3>
+<p>Extension VS Code qui affiche <code>$...$</code> et <code>$$...$$</code> directement dans le volet d'édition, sans basculer vers l'aperçu. Le curseur placé dans une formule redonne accès au code TeX, le déplacement hors de la formule la réaffiche ; les blocs <code>aligned</code> et <code>cases</code> sont traités ligne par ligne. L'extension souligne le TeX invalide et prévient lorsque la formule ne passera pas dans l'aperçu KaTeX de VS Code. Publiée sur le Marketplace et Open VSX, dépôt <code>polecoder/math-inline</code> sous licence MIT, créé le 19 octobre 2026, 0 étoile, dernier envoi le 3 novembre 2026. Utile à quiconque rédige en Markdown avant conversion : plus besoin d'ouvrir l'aperçu ou un compilateur externe pour vérifier une formule.</p>
+<p>Site : https://polecoder.github.io/math-inline-landing — Marketplace : https://marketplace.visualstudio.com/items?itemName=polecoder.math-inline</p>
+<h3>Corollary — éditeur LaTeX macOS avec IA locale</h3>
+<p>Éditeur de type Overleaf (arborescence de fichiers, source, PDF compilé côte à côte, <code>⌘</code>-clic du PDF vers la ligne source) qui compile avec TeX Live et installe lui-même la distribution et les paquets manquants. Sa particularité : les fonctions d'assistance tournent en local via le modèle Apple Intelligence de macOS, sans compte ni clé d'API, donc hors ligne. Les modifications proposées s'affichent en comparaison à accepter ou refuser, et l'outil bloque une suggestion qui supprimerait une citation ou altérerait une équation ; une photo de formule manuscrite est convertie en LaTeX par GLM-OCR. L'auteur publie lui-même la mesure de qualité de son dispositif : sur 80 demandes de modification en texte brut, 78 conservent <code>\cite</code>, <code>\ref</code>, <code>\label</code> et les formules, mais aucun des 20 essais en sortie structurée n'aboutit, l'échappement JSON détruisant les barres obliques — la retouche de document entier n'est donc pas au point. Réserves à connaître : Mac Apple silicon uniquement, IA locale exigée sous macOS 26, et l'auteur signale l'usage d'Ollama ou d'une clé d'API externe comme solution de repli. Écrit pour prendre la suite de Prism, qui ferme le 1er janvier 2027. Dépôt <code>calvinyz/corollary</code> sous licence Apache 2.0, créé le 1er novembre 2026, 5 étoiles, dernier envoi le 1er novembre 2026 — projet de quelques jours, donc à considérer comme une démonstration encore jeune.</p>
+<p>Site : https://calvinyz.github.io/corollary/</p>
+<h3>Platessa — lecteur Markdown avec formules</h3>
+<p>Petit lecteur Markdown en Python et Tkinter qui affiche les images à leur place dans le texte et rend les formules LaTeX. Raccourcis Vim pour le défilement, zoom par <code>+</code>/<code>-</code>/<code>0</code>, images locales et distantes acceptées, rechargement du fichier par <code>r</code>. L'auteur indique explicitement l'avoir écrit par génération de code assistée, ce qui invite à le prendre pour ce qu'il est : un utilitaire récent et minimal. Dépôt <code>vincenzoaurelio/Platessa</code> sous licence BSD 3-clause, créé le 4 novembre 2026, 0 étoile, dernier envoi le 4 novembre 2026.</p>
+<p>Dépôt : https://github.com/vincenzoaurelio/Platessa</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Org mode : refonte complète du système d'aperçus LaTeX (prévue pour Org 10.0)</h3>
+<p>Le billet « Fabulously Fancy Fragments » de This Month in Org annonce la réécriture intégrale du mécanisme d'aperçu LaTeX d'Org, avec un billet d'accompagnement plus technique chez Karthik Chikmagalur. Les défauts de l'ancien système sont énumérés sans détour : chaque fragment compilé dans un processus LaTeX neuf, compilation séquentielle qui bloque Emacs, environ un quart de seconde par fragment, taille et ligne de base des aperçus jamais alignées sur le texte, couleurs figées à la génération, erreurs LaTeX masquées sans avertissement. Le remplacement s'appuie sur une bibliothèque d'enchaînement de processus, <code>org-async</code>, et sur le cache <code>org-persist</code> : les fragments sont rendus en parallèle, et un tampon rouvert les réaffiche quasi instantanément. Les mesures annoncées donnent environ 70× plus rapide en pire cas, une taille et une ligne de base harmonisées avec la police du tampon en mode graphique, des couleurs qui suivent le thème, et la prise en charge de TikZ et des structures complexes. La fonctionnalité est fusionnée sur la branche principale et non encore publiée : elle arrivera avec Org 10.0, ce qui suppose une version d'Emacs à même de la recevoir. Rien de tout cela ne concerne directement l'écriture de documents LaTeX hors Emacs, mais c'est la seule actualité substantielle de la période et elle compte pour ceux qui prennent leurs notes de cours ou de recherche dans Org.</p>
+<p>Compte rendu : https://blog.tecosaur.net/tmio/2026-11-01-preview.html — Explication technique : https://karthinks.com/software/understanding-org-latex-preview/</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>Passer de l'ancien aperçu Org au nouveau</h3>
+<p>L'ancien basculement manuel des fragments est remplacé par un mode mineur dédié, <code>org-latex-preview-mode</code>, qui reprend les fonctions du paquet tiers <code>org-fragtog</code> et permet donc de le désinstaller. Lorsque la variable <code>org-latex-preview-mode-display-live</code> est activée, l'aperçu se met à jour pendant la frappe. Côté installation LaTeX, les auteurs recommandent <code>mylatexformat.sty</code> et <code>preview.sty</code>, ainsi que <code>dvisvgm</code> en version 3.1 ou supérieure (ou <code>dvipng</code>), faute de quoi le rendu graphique et l'alignement des lignes de base ne seront pas obtenus. Deux variables méritent d'être connues pour maîtriser l'espace disque et l'apparence : <code>org-latex-preview-persist-expiry</code> règle la durée de conservation des aperçus en cache et <code>org-latex-preview-appearance-options</code> permet de corriger finement la taille si l'accord entre la police LaTeX et celle d'Emacs n'est pas exact.</p>
+<h2>Volume</h2>
+<p>9 posts examinés depuis la précédente édition (5 Reddit, 4 Hacker News), 6 retenus, 3 écartés, soit un taux de rétention d'environ 67 %. Les trois écartés sont une demande d'aide sur l'éditeur Texifier dont le site ne répond plus, un fil de discussion sur l'usage des assistants pour programmer en LaTeX sans élément vérifiable, et un site parodique recensant les éditeurs LaTeX. La collecte du 4 novembre 2026 à 23 h 51 UTC s'est terminée sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — jeudi 5 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-05.html</link>
@@ -5203,105 +5254,6 @@ Ce faible volume n'appelle pas de conclusion sur le filtre, la rétention de ce 
 <p>Remarque : le billet renvoie aussi vers une page de présentation hébergée sur le site lifehubber.com, qui tient un annuaire de « plus de 300 ressources d'IA » (modèles, agents, outils, jeux de données). C'est un répertoire de découverte, pas un logiciel, et il n'a pas été vérifié.</p>
 <h2>Volume</h2>
 <p>1 post publié dans l'intervalle, 1 retenu, 0 écarté — rétention de 100 %. Comme à l'accoutumée dans ce subreddit, le filtre n'a écarté aucun billet, l'essentiel des publications y présente un outil plutôt que de poser une question.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — dimanche 1er novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-01.html</link>
-<guid isPermaLink="false">macapps-2026-11-01</guid>
-<pubDate>Sun, 01 Nov 2026 06:03:29 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — dimanche 1er novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Six messages publiés depuis la dernière édition, cinq retenus, un écarté (le mégathread mensuel de promotion).</li>
-<li>Deux applications nouvelles (Kakuchi, Findow), un logiciel libre en version majeure (CompressO 4.0), une mise à jour d'OpenVox et une nouvelle version d'ExtraDock.</li>
-<li>Le taux de rétention est élevé cette fois-ci (cinq sur six) : la fenêtre ne contient presque que des annonces de développeurs présentant leur propre outil, ce que le filtre retient par principe.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>Kakuchi — des widgets que l'on décrit en une phrase (14,99 $, achat unique, logiciel propriétaire)</h3>
-<p>Kakuchi place des widgets sur le bureau, l'écran de verrouillage, la barre de menus et l'encoche du Mac. Il en fournit une cinquantaine prêts à l'emploi (lecture en cours, calendrier, météo, état du système, suivi d'usage d'un agent IA), mais la fonction intéressante est ailleurs : on décrit en langage naturel le widget que l'on veut, et l'application le construit, avec données, mise en page et apparence. Un site sans flux RSS peut être lu directement (« les derniers articles de tel site »), et l'on peut obtenir des choses non journalistiques : un compteur d'eau avec bouton d'incrément, un compte à rebours de voyage avec la météo du lieu d'arrivée, la liste de ses demandes de fusion GitHub.</p>
-<p>Ce que cela apporte concrètement : fabriquer son propre widget sans écrire une ligne de HTML, de CSS et de JavaScript, contrairement à Übersicht, qui reste gratuit et libre mais laisse tout à écrire. Le point technique à retenir est que la construction utilise l'abonnement IA déjà payé (Claude, Codex) ou une clé personnelle, ou encore un modèle local (Ollama, LM Studio) : l'application ne vend pas d'IA par-dessus. Les widgets Übersicht existants continuent d'ailleurs de fonctionner à côté.</p>
-<p>Prix : 14,99 $ une fois en tarif de lancement, annoncé comme devant passer à 24 $ ensuite, mises à jour à vie, garantie de remboursement de 14 jours. C'est un logiciel propriétaire, pas un logiciel libre, et il exige macOS 14 ou plus récent. L'IA n'est pas comprise dans le prix.<br />
-Lien : https://kakuchi.app (annonce : https://www.reddit.com/r/macapps/comments/1xk7u8t/)</p>
-<h3>Findow — rechercher, restaurer et agencer ses fenêtres (19,99 $, achat unique, logiciel propriétaire)</h3>
-<p>Findow regroupe dans une seule application de la barre de menus ce qui demande d'ordinaire trois ou quatre utilitaires : retrouver n'importe quelle fenêtre en tapant son titre, rappeler des espaces de travail enregistrés d'une seule touche, aligner les fenêtres en mosaïque, faire défiler les fenêtres en bandeau, et masquer l'écran pendant un appel. L'intérêt affiché est l'intégration : ces fonctions se connaissent entre elles, là où AltTab, Rectangle et consorts s'ignorent.</p>
-<p>Réserve à garder en tête : chaque fonction prise séparément est déjà couverte par du logiciel libre et gratuit (Rectangle, Loop, AeroSpace, yabai), et le développeur le reconnaît lui-même dans sa comparaison. Le prix se justifie donc seulement si l'on tient au regroupement.<br />
-Prix : 19,99 $ une fois pour un Mac, essai de 14 jours.<br />
-Lien : https://findow.app — la page répond (code HTTP 200) mais son contenu se construit en JavaScript, je n'ai pas pu y relire le prix : celui-ci provient de l'annonce du développeur.<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk8mo9/</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>CompressO 4.0 — compression de vidéos, d'images et d'audio (libre, AGPL-3.0, gratuit)</h3>
-<p>CompressO est une application de compression écrite en Rust, gratuite et publiée sous licence AGPL-3.0, disponible pour macOS, Windows et Linux. La version 4.0 est la plus grosse mise à jour depuis la création du projet. Elle ajoute :</p>
-<ul>
-<li>la compression vers une taille cible exacte : on indique le poids maximum souhaité, l'application choisit seule le meilleur réglage de qualité en dessous — utile pour les pièces jointes de courriel et les limites de taille des plates-formes ;</li>
-<li>une zone de dépôt dans la barre de menus, qui compresse sans ouvrir la fenêtre principale ;</li>
-<li>la surveillance de dossiers, avec compression automatique à l'arrivée d'un nouveau média ;</li>
-<li>des préréglages enregistrables par type de média, chacun avec son dossier de destination, utilisables partout ;</li>
-<li>la compression audio, l'extraction de la piste audio d'une vidéo, et de nouveaux formats (JPEG XL, HEIC, AVIF, BMP, TIFF, M4V, MTS, M2TS, TS) ;</li>
-<li>l'accélération matérielle par la carte graphique (le format AV1 devient beaucoup plus rapide) ;</li>
-<li>une taille d'application fortement réduite.</li>
-</ul>
-<p>Vérification du dépôt : <code>codeforreal1/compressO</code> — licence AGPL-3.0, 4 852 étoiles, dernière poussée le 29 octobre 2026. La version 4.0.0 est publiée depuis le 27 octobre 2026. L'application n'est pas notariée par Apple, ce que le projet signale lui-même ; l'installation par Homebrew (<code>brew install --cask codeforreal1/tap/compresso</code>) évite le blocage de macOS au premier lancement.<br />
-Lien : https://compresso.codeforreal.com — dépôt : https://github.com/codeforreal1/compressO<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk93ap/</p>
-<h3>OpenVox 2.9.0 — synthèse vocale locale (gratuit, 19,99 $ pour la version Pro)</h3>
-<p>OpenVox est une boîte à outils vocale locale pour Mac à processeur Apple : synthèse vocale, clonage de voix, transcription, doublage et fabrication de livres audio, le tout sans envoi vers un service en ligne. La version 2.9.0 apporte trois choses : le moteur VoxCPM2, qui couvre trente langues en 48 kHz et sait cloner une voix dans une langue différente de celle de l'enregistrement de référence, en trois tailles de modèle selon la mémoire disponible ; Chatterbox V3 ; et onze nouvelles langues d'interface. Le portugais du Brésil a été retravaillé, les voix clonées sonnaient auparavant trop proches du portugais européen.</p>
-<p>Pour situer par rapport à l'outillage déjà en place ici : le service actuel de synthèse repose sur Kokoro en français. OpenVox n'est pas un logiciel libre, mais il n'a pas d'abonnement et sa version gratuite est utilisable (5 000 caractères par jour, trois clones de voix) ; la version Pro coûte 19,99 $ une seule fois, sans limite de caractères ni de clones. Il s'adresse aux Mac Apple Silicon sous macOS 15 ou plus récent.<br />
-Lien : https://openvoxai.com — App Store : https://apps.apple.com/us/app/openvox-ai-text-to-speech/id6758789314<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk7g7b/</p>
-<h3>ExtraDock 5 — plusieurs docks sur plusieurs écrans (payant, logiciel propriétaire, environ 24 € à vie)</h3>
-<p>ExtraDock ajoute un dock sur chaque écran et permet de le configurer finement : icônes et couleurs, dock par espace de travail, affichage des seules applications en cours, masquage du Finder ou de la corbeille, widgets (duplication du dock système, étagère de fichiers, piles de dossiers), affichage automatique selon les écrans connectés. Il peut remplacer le dock de macOS ou le compléter. La version 5 est la version officielle pour macOS 26 et 27 ; la version 4 reste disponible pour macOS 12 à 15, et une même licence couvre les deux.</p>
-<p>À signaler clairement : c'est un logiciel propriétaire et payant. Le tarif affiché au moment de la rédaction est de 23,99 € (prix de lancement, au lieu de 39,99 €) pour une licence à vie sur un Mac, ou 14,99 € pour un an ; la formule « à vie » comprend un an de mises à jour, la reconduction des mises à jour étant facultative à 9,99 € par an. Pour le seul aperçu des fenêtres au survol du dock, des solutions libres existent (DockDoor, notamment).<br />
-Lien : https://extradock.app<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk9i3y/</p>
-<h2>Volume</h2>
-<p>Six messages publiés dans l'intervalle, cinq retenus, un écarté : le mégathread mensuel « The App Pile — November 2026 », qui est un fil de promotion et n'annonce aucun logiciel. Les collectes des dernières vingt-quatre heures n'ont signalé aucune erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — dimanche 1er novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Six messages publiés depuis la dernière édition, cinq retenus, un écarté (le mégathread mensuel de promotion).</li>
-<li>Deux applications nouvelles (Kakuchi, Findow), un logiciel libre en version majeure (CompressO 4.0), une mise à jour d'OpenVox et une nouvelle version d'ExtraDock.</li>
-<li>Le taux de rétention est élevé cette fois-ci (cinq sur six) : la fenêtre ne contient presque que des annonces de développeurs présentant leur propre outil, ce que le filtre retient par principe.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>Kakuchi — des widgets que l'on décrit en une phrase (14,99 $, achat unique, logiciel propriétaire)</h3>
-<p>Kakuchi place des widgets sur le bureau, l'écran de verrouillage, la barre de menus et l'encoche du Mac. Il en fournit une cinquantaine prêts à l'emploi (lecture en cours, calendrier, météo, état du système, suivi d'usage d'un agent IA), mais la fonction intéressante est ailleurs : on décrit en langage naturel le widget que l'on veut, et l'application le construit, avec données, mise en page et apparence. Un site sans flux RSS peut être lu directement (« les derniers articles de tel site »), et l'on peut obtenir des choses non journalistiques : un compteur d'eau avec bouton d'incrément, un compte à rebours de voyage avec la météo du lieu d'arrivée, la liste de ses demandes de fusion GitHub.</p>
-<p>Ce que cela apporte concrètement : fabriquer son propre widget sans écrire une ligne de HTML, de CSS et de JavaScript, contrairement à Übersicht, qui reste gratuit et libre mais laisse tout à écrire. Le point technique à retenir est que la construction utilise l'abonnement IA déjà payé (Claude, Codex) ou une clé personnelle, ou encore un modèle local (Ollama, LM Studio) : l'application ne vend pas d'IA par-dessus. Les widgets Übersicht existants continuent d'ailleurs de fonctionner à côté.</p>
-<p>Prix : 14,99 $ une fois en tarif de lancement, annoncé comme devant passer à 24 $ ensuite, mises à jour à vie, garantie de remboursement de 14 jours. C'est un logiciel propriétaire, pas un logiciel libre, et il exige macOS 14 ou plus récent. L'IA n'est pas comprise dans le prix.<br />
-Lien : https://kakuchi.app (annonce : https://www.reddit.com/r/macapps/comments/1xk7u8t/)</p>
-<h3>Findow — rechercher, restaurer et agencer ses fenêtres (19,99 $, achat unique, logiciel propriétaire)</h3>
-<p>Findow regroupe dans une seule application de la barre de menus ce qui demande d'ordinaire trois ou quatre utilitaires : retrouver n'importe quelle fenêtre en tapant son titre, rappeler des espaces de travail enregistrés d'une seule touche, aligner les fenêtres en mosaïque, faire défiler les fenêtres en bandeau, et masquer l'écran pendant un appel. L'intérêt affiché est l'intégration : ces fonctions se connaissent entre elles, là où AltTab, Rectangle et consorts s'ignorent.</p>
-<p>Réserve à garder en tête : chaque fonction prise séparément est déjà couverte par du logiciel libre et gratuit (Rectangle, Loop, AeroSpace, yabai), et le développeur le reconnaît lui-même dans sa comparaison. Le prix se justifie donc seulement si l'on tient au regroupement.<br />
-Prix : 19,99 $ une fois pour un Mac, essai de 14 jours.<br />
-Lien : https://findow.app — la page répond (code HTTP 200) mais son contenu se construit en JavaScript, je n'ai pas pu y relire le prix : celui-ci provient de l'annonce du développeur.<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk8mo9/</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>CompressO 4.0 — compression de vidéos, d'images et d'audio (libre, AGPL-3.0, gratuit)</h3>
-<p>CompressO est une application de compression écrite en Rust, gratuite et publiée sous licence AGPL-3.0, disponible pour macOS, Windows et Linux. La version 4.0 est la plus grosse mise à jour depuis la création du projet. Elle ajoute :</p>
-<ul>
-<li>la compression vers une taille cible exacte : on indique le poids maximum souhaité, l'application choisit seule le meilleur réglage de qualité en dessous — utile pour les pièces jointes de courriel et les limites de taille des plates-formes ;</li>
-<li>une zone de dépôt dans la barre de menus, qui compresse sans ouvrir la fenêtre principale ;</li>
-<li>la surveillance de dossiers, avec compression automatique à l'arrivée d'un nouveau média ;</li>
-<li>des préréglages enregistrables par type de média, chacun avec son dossier de destination, utilisables partout ;</li>
-<li>la compression audio, l'extraction de la piste audio d'une vidéo, et de nouveaux formats (JPEG XL, HEIC, AVIF, BMP, TIFF, M4V, MTS, M2TS, TS) ;</li>
-<li>l'accélération matérielle par la carte graphique (le format AV1 devient beaucoup plus rapide) ;</li>
-<li>une taille d'application fortement réduite.</li>
-</ul>
-<p>Vérification du dépôt : <code>codeforreal1/compressO</code> — licence AGPL-3.0, 4 852 étoiles, dernière poussée le 29 octobre 2026. La version 4.0.0 est publiée depuis le 27 octobre 2026. L'application n'est pas notariée par Apple, ce que le projet signale lui-même ; l'installation par Homebrew (<code>brew install --cask codeforreal1/tap/compresso</code>) évite le blocage de macOS au premier lancement.<br />
-Lien : https://compresso.codeforreal.com — dépôt : https://github.com/codeforreal1/compressO<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk93ap/</p>
-<h3>OpenVox 2.9.0 — synthèse vocale locale (gratuit, 19,99 $ pour la version Pro)</h3>
-<p>OpenVox est une boîte à outils vocale locale pour Mac à processeur Apple : synthèse vocale, clonage de voix, transcription, doublage et fabrication de livres audio, le tout sans envoi vers un service en ligne. La version 2.9.0 apporte trois choses : le moteur VoxCPM2, qui couvre trente langues en 48 kHz et sait cloner une voix dans une langue différente de celle de l'enregistrement de référence, en trois tailles de modèle selon la mémoire disponible ; Chatterbox V3 ; et onze nouvelles langues d'interface. Le portugais du Brésil a été retravaillé, les voix clonées sonnaient auparavant trop proches du portugais européen.</p>
-<p>Pour situer par rapport à l'outillage déjà en place ici : le service actuel de synthèse repose sur Kokoro en français. OpenVox n'est pas un logiciel libre, mais il n'a pas d'abonnement et sa version gratuite est utilisable (5 000 caractères par jour, trois clones de voix) ; la version Pro coûte 19,99 $ une seule fois, sans limite de caractères ni de clones. Il s'adresse aux Mac Apple Silicon sous macOS 15 ou plus récent.<br />
-Lien : https://openvoxai.com — App Store : https://apps.apple.com/us/app/openvox-ai-text-to-speech/id6758789314<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk7g7b/</p>
-<h3>ExtraDock 5 — plusieurs docks sur plusieurs écrans (payant, logiciel propriétaire, environ 24 € à vie)</h3>
-<p>ExtraDock ajoute un dock sur chaque écran et permet de le configurer finement : icônes et couleurs, dock par espace de travail, affichage des seules applications en cours, masquage du Finder ou de la corbeille, widgets (duplication du dock système, étagère de fichiers, piles de dossiers), affichage automatique selon les écrans connectés. Il peut remplacer le dock de macOS ou le compléter. La version 5 est la version officielle pour macOS 26 et 27 ; la version 4 reste disponible pour macOS 12 à 15, et une même licence couvre les deux.</p>
-<p>À signaler clairement : c'est un logiciel propriétaire et payant. Le tarif affiché au moment de la rédaction est de 23,99 € (prix de lancement, au lieu de 39,99 €) pour une licence à vie sur un Mac, ou 14,99 € pour un an ; la formule « à vie » comprend un an de mises à jour, la reconduction des mises à jour étant facultative à 9,99 € par an. Pour le seul aperçu des fenêtres au survol du dock, des solutions libres existent (DockDoor, notamment).<br />
-Lien : https://extradock.app<br />
-Annonce : https://www.reddit.com/r/macapps/comments/1xk9i3y/</p>
-<h2>Volume</h2>
-<p>Six messages publiés dans l'intervalle, cinq retenus, un écarté : le mégathread mensuel « The App Pile — November 2026 », qui est un fil de promotion et n'annonce aucun logiciel. Les collectes des dernières vingt-quatre heures n'ont signalé aucune erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

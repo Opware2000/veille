@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — jeudi 5 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — jeudi 5 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le subreddit reste calme, Hacker News fournit l'essentiel de la matière : deux éditeurs LaTeX récents (Corollary sur Mac, Math Inline pour VS Code), un lecteur Markdown qui affiche les formules, et surtout la refonte complète des aperçus LaTeX d'Org mode, annoncée pour Org 10.0.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Math Inline — rendu des formules LaTeX dans l'éditeur Markdown de VS Code</h3>
+<p>Extension VS Code qui affiche <code>$...$</code> et <code>$$...$$</code> directement dans le volet d'édition, sans basculer vers l'aperçu. Le curseur placé dans une formule redonne accès au code TeX, le déplacement hors de la formule la réaffiche ; les blocs <code>aligned</code> et <code>cases</code> sont traités ligne par ligne. L'extension souligne le TeX invalide et prévient lorsque la formule ne passera pas dans l'aperçu KaTeX de VS Code. Publiée sur le Marketplace et Open VSX, dépôt <code>polecoder/math-inline</code> sous licence MIT, créé le 19 octobre 2026, 0 étoile, dernier envoi le 3 novembre 2026. Utile à quiconque rédige en Markdown avant conversion : plus besoin d'ouvrir l'aperçu ou un compilateur externe pour vérifier une formule.</p>
+<p>Site : https://polecoder.github.io/math-inline-landing — Marketplace : https://marketplace.visualstudio.com/items?itemName=polecoder.math-inline</p>
+<h3>Corollary — éditeur LaTeX macOS avec IA locale</h3>
+<p>Éditeur de type Overleaf (arborescence de fichiers, source, PDF compilé côte à côte, <code>⌘</code>-clic du PDF vers la ligne source) qui compile avec TeX Live et installe lui-même la distribution et les paquets manquants. Sa particularité : les fonctions d'assistance tournent en local via le modèle Apple Intelligence de macOS, sans compte ni clé d'API, donc hors ligne. Les modifications proposées s'affichent en comparaison à accepter ou refuser, et l'outil bloque une suggestion qui supprimerait une citation ou altérerait une équation ; une photo de formule manuscrite est convertie en LaTeX par GLM-OCR. L'auteur publie lui-même la mesure de qualité de son dispositif : sur 80 demandes de modification en texte brut, 78 conservent <code>\cite</code>, <code>\ref</code>, <code>\label</code> et les formules, mais aucun des 20 essais en sortie structurée n'aboutit, l'échappement JSON détruisant les barres obliques — la retouche de document entier n'est donc pas au point. Réserves à connaître : Mac Apple silicon uniquement, IA locale exigée sous macOS 26, et l'auteur signale l'usage d'Ollama ou d'une clé d'API externe comme solution de repli. Écrit pour prendre la suite de Prism, qui ferme le 1er janvier 2027. Dépôt <code>calvinyz/corollary</code> sous licence Apache 2.0, créé le 1er novembre 2026, 5 étoiles, dernier envoi le 1er novembre 2026 — projet de quelques jours, donc à considérer comme une démonstration encore jeune.</p>
+<p>Site : https://calvinyz.github.io/corollary/</p>
+<h3>Platessa — lecteur Markdown avec formules</h3>
+<p>Petit lecteur Markdown en Python et Tkinter qui affiche les images à leur place dans le texte et rend les formules LaTeX. Raccourcis Vim pour le défilement, zoom par <code>+</code>/<code>-</code>/<code>0</code>, images locales et distantes acceptées, rechargement du fichier par <code>r</code>. L'auteur indique explicitement l'avoir écrit par génération de code assistée, ce qui invite à le prendre pour ce qu'il est : un utilitaire récent et minimal. Dépôt <code>vincenzoaurelio/Platessa</code> sous licence BSD 3-clause, créé le 4 novembre 2026, 0 étoile, dernier envoi le 4 novembre 2026.</p>
+<p>Dépôt : https://github.com/vincenzoaurelio/Platessa</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Org mode : refonte complète du système d'aperçus LaTeX (prévue pour Org 10.0)</h3>
+<p>Le billet « Fabulously Fancy Fragments » de This Month in Org annonce la réécriture intégrale du mécanisme d'aperçu LaTeX d'Org, avec un billet d'accompagnement plus technique chez Karthik Chikmagalur. Les défauts de l'ancien système sont énumérés sans détour : chaque fragment compilé dans un processus LaTeX neuf, compilation séquentielle qui bloque Emacs, environ un quart de seconde par fragment, taille et ligne de base des aperçus jamais alignées sur le texte, couleurs figées à la génération, erreurs LaTeX masquées sans avertissement. Le remplacement s'appuie sur une bibliothèque d'enchaînement de processus, <code>org-async</code>, et sur le cache <code>org-persist</code> : les fragments sont rendus en parallèle, et un tampon rouvert les réaffiche quasi instantanément. Les mesures annoncées donnent environ 70× plus rapide en pire cas, une taille et une ligne de base harmonisées avec la police du tampon en mode graphique, des couleurs qui suivent le thème, et la prise en charge de TikZ et des structures complexes. La fonctionnalité est fusionnée sur la branche principale et non encore publiée : elle arrivera avec Org 10.0, ce qui suppose une version d'Emacs à même de la recevoir. Rien de tout cela ne concerne directement l'écriture de documents LaTeX hors Emacs, mais c'est la seule actualité substantielle de la période et elle compte pour ceux qui prennent leurs notes de cours ou de recherche dans Org.</p>
+<p>Compte rendu : https://blog.tecosaur.net/tmio/2026-11-01-preview.html — Explication technique : https://karthinks.com/software/understanding-org-latex-preview/</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>Passer de l'ancien aperçu Org au nouveau</h3>
+<p>L'ancien basculement manuel des fragments est remplacé par un mode mineur dédié, <code>org-latex-preview-mode</code>, qui reprend les fonctions du paquet tiers <code>org-fragtog</code> et permet donc de le désinstaller. Lorsque la variable <code>org-latex-preview-mode-display-live</code> est activée, l'aperçu se met à jour pendant la frappe. Côté installation LaTeX, les auteurs recommandent <code>mylatexformat.sty</code> et <code>preview.sty</code>, ainsi que <code>dvisvgm</code> en version 3.1 ou supérieure (ou <code>dvipng</code>), faute de quoi le rendu graphique et l'alignement des lignes de base ne seront pas obtenus. Deux variables méritent d'être connues pour maîtriser l'espace disque et l'apparence : <code>org-latex-preview-persist-expiry</code> règle la durée de conservation des aperçus en cache et <code>org-latex-preview-appearance-options</code> permet de corriger finement la taille si l'accord entre la police LaTeX et celle d'Emacs n'est pas exact.</p>
+<h2>Volume</h2>
+<p>9 posts examinés depuis la précédente édition (5 Reddit, 4 Hacker News), 6 retenus, 3 écartés, soit un taux de rétention d'environ 67 %. Les trois écartés sont une demande d'aide sur l'éditeur Texifier dont le site ne répond plus, un fil de discussion sur l'usage des assistants pour programmer en LaTeX sans élément vérifiable, et un site parodique recensant les éditeurs LaTeX. La collecte du 4 novembre 2026 à 23 h 51 UTC s'est terminée sans erreur.</p>
+<footer>Édition du jeudi 5 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
