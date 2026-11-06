@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — vendredi 6 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — vendredi 6 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une seule nouveauté de premier plan : <strong>Papilot</strong>, éditeur LaTeX où l'on relit et corrige le <strong>PDF</strong> au lieu du source, en laissant un agent de code modifier les fichiers dans un worktree Git.</li>
+<li>Deux outils annexes, hors composition de documents : <strong>Untie</strong> (rendu de formules TeX et Typst en Go pur) et <strong>Pencil Ready</strong> (fiches de calcul imprimables, écrites avec Typst).</li>
+<li>Le reste du flux est constitué de questions d'entraide (dix sur LaTeX Stack Exchange, sept sur le forum Typst) : écartées par principe, comme chaque jour sur ce thème.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Papilot — relire et corriger un article directement sur le PDF, par un agent</h3>
+<p><strong>Ce que c'est.</strong> Un espace de travail pour réviser un article LaTeX avec un agent de code. Le principe est inversé par rapport aux éditeurs classiques : on ne lit pas le source, on annote le PDF. On sélectionne une phrase, on encadre une équation ou une figure, on écrit ce qui doit changer (« dis-le plus simplement », « déplace la légende en haut à droite », « change 1 ») ; Papilot transmet à l'agent les lignes source exactes correspondantes, sans qu'il ait à deviner dans quel fichier elles se trouvent. Chaque changement proposé s'affiche en comparaison avant/après sur la page composée, à accepter ou refuser.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> Chaque tâche tourne dans son propre <em>worktree</em> Git : le manuscrit ne bouge pas tant que la modification n'est pas acceptée, et l'acceptation puis l'enregistrement des changements sont deux étapes distinctes. L'historique du document reste donc un historique Git ordinaire, avec un message de commit rédigé par l'agent. Depuis la version 0.9.0, on peut aussi ouvrir la vue « LaTeX » d'un changement et corriger le source proposé à la main avant de reconstruire la comparaison. Les agents pris en charge sont nombreux et interchangeables : Codex, Claude, Cursor, GitHub Copilot, Grok, Antigravity, Kimi, GLM, DeepSeek, Qwen et OpenCode ; Papilot ne stocke aucune clé, chacun utilisant la connexion déjà installée sur la machine. Une correction de compilation peut être demandée à l'agent depuis la fenêtre d'import, et le travail reste non validé tant qu'on ne l'a pas inspecté.</p>
+<p><strong>Version et vérifications.</strong> Version 0.9.0, publiée le 5 novembre 2026 (binaire macOS Apple silicon et Intel, AppImage et paquet Debian pour Linux, installation <code>npm install -g papilot</code>). Dépôt <code>PapilotAI/papilot</code> : licence <strong>MIT</strong>, <strong>135 étoiles</strong>, créé le 26 octobre 2026, dernière poussée le 6 novembre 2026 à 00 h 10 UTC — l'activité est donc quotidienne. La 0.9.0 ajoute un espace de gestion de versions complet (index, comparaison du source, commit, synchronisation, historique), toute une panoplie d'annotations du PDF (notes, marques de région, notes collantes, marques de suppression), un « stylo magique » avec des instructions réutilisables (polir, raccourcir, corriger une dernière ligne courte, connecter, vérifier), les notifications système et une installation par Nix. La limite de 180 000 caractères qui tronquait les relectures a été supprimée.</p>
+<p><strong>Réserves.</strong> Le logiciel exige Node 22.22 ou plus récent, Git, une installation TeX complète (<code>latexmk</code>, <code>synctex</code>) et au moins un agent installé et connecté : ce n'est pas un éditeur autonome, c'est une surcouche. L'interface n'existe qu'en anglais et en chinois simplifié — pas de français. Le projet a dix jours, la version ne dépasse pas 0.9 : à considérer comme un outil jeune, malgré une cadence de développement soutenue et une licence permissive.</p>
+<p>Site : https://papilot.ai — dépôt : https://github.com/PapilotAI/papilot</p>
+<h3>Untie — un moteur de rendu de formules qui accepte TeX et Typst</h3>
+<p>Bibliothèque écrite en Go pur (sans CGO) qui analyse les formules mathématiques en syntaxe <strong>TeX ou Typst</strong> et les dessine à partir d'une représentation intermédiaire commune, en listes d'affichage, en SVG ou en PNG. Elle vise les développeurs qui doivent afficher des maths dans une application native, avec une intégration prévue au cadriciel MyGo et un support du Markdown. Dépôt <code>caelyreth/untie</code> : licence Apache 2.0, 55 étoiles, créé le 2 novembre 2026, dernière poussée le 4 novembre 2026. Aucun intérêt direct pour composer un document : c'est un composant de programme, pas un paquet LaTeX.</p>
+<p>Site et documentation : https://untie.iki.moe — dépôt : https://github.com/caelyreth/untie</p>
+<h3>Pencil Ready — fiches de calcul à imprimer, produites avec Typst</h3>
+<p>Générateur de feuilles d'exercices de calcul posé au format papier (A4 ou Letter) : additions, soustractions, multiplications, divisions posées, tables, fractions, décimaux, pourcentages, moyenne, ordre des opérations. Le choix du niveau et du type d'exercice se fait sur le site, qui renvoie un PDF. Réalisé en Rust et Typst, sans LaTeX. Dépôt <code>kung-foo/pencil-ready</code> : licence MIT, 1 étoile, créé le 10 avril 2026, dernière poussée le 5 novembre 2026 — le site est nettement plus visible que le dépôt. Le niveau visé est l'école primaire, en deçà du lycée ; ce qui vaut d'être noté est la méthode : un gabarit Typst paramétré pour produire des feuilles propres à imprimer.</p>
+<p>Site : https://pencilready.com — dépôt : https://github.com/kung-foo/pencil-ready</p>
+<h2>Volume</h2>
+<p>Vingt entrées examinées dans l'intervalle (trois du journal principal — deux de Hacker News, une du flux Reddit — et dix-sept des journaux de flux : dix questions de LaTeX Stack Exchange, sept sujets du forum Typst), trois retenues, dix-sept écartées, soit un taux de rétention de 15 %. Vingt-deux entrées supplémentaires du relais Reddit ont été reconnues comme doublons de fils déjà traités et écartées sans examen. Le taux faible est la norme de ce thème : LaTeX Stack Exchange et le forum Typst ne publient presque que des questions de dépannage, écartées par principe, tandis que la veille ne retient que ce qui annonce un outil, une version ou une technique réutilisable. Aucune erreur de collecte n'est signalée (<code>meta.json</code> vide côté journal principal, dernière passe le 5 novembre à 23 h 51 UTC ; idem pour les quatre journaux de flux, dernière passe à 22 h 51 UTC).</p>
+<footer>Édition du vendredi 6 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
