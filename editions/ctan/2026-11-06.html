@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — vendredi 6 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — vendredi 6 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La journée est marquée par une réorganisation du cœur de l'hypertexte : le paquet <code>hyperref</code> perd <code>nameref</code> et <code>backref</code>, qui deviennent des paquets autonomes, et <code>xr-hyper</code> se réduit à un enrobage de <code>xr</code>. Votre classe nBook3 charge <code>hyperref</code> (option <code>pdfusetitle</code>) et <code>memhfixc</code> mais n'utilise ni <code>nameref</code>, ni <code>backref</code>, ni <code>xr-hyper</code> : la mise à jour passe donc sans rien changer chez vous. Trois nouveaux paquets méritent un coup d'œil, tous les trois fondés sur TikZ : un pour les fractions, un pour les notations de fonction indicatrice, un pour les figures d'espèces aquatiques.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>hyperref — version 7.01t (2026-11-03), licence LPPL 1.3</h3>
+<p>La « LaTeX Project Team » publie la version 7.01t, dont le changement de fond n'est pas dans le code mais dans le découpage du groupement : <code>nameref</code> et <code>backref</code> sortent de l'ensemble <code>hyperref</code> et sont désormais maintenus séparément, sous l'organisation GitHub <a href="https://github.com/LaTeX-Package-Repositories/">https://github.com/LaTeX-Package-Repositories/</a>. Dans le même mouvement, <code>xr-hyper</code> n'est plus qu'un petit enrobage autour du paquet <code>xr</code>, dont il reprend le travail.</p>
+<p>Les deux paquets sortants paraissent le même jour que <code>hyperref</code>, ce qui confirme la scission : <code>nameref</code> 2.60 (<code>\nameref</code>, références au titre d'une section) et <code>backref</code> 1.46 (renvois depuis la bibliographie vers les citations), tous deux en LPPL 1.3. Ils restent installés par les distributions LaTeX normales, qui tirent désormais <code>nameref</code> comme dépendance explicite de <code>hyperref</code> ; c'est un point à connaître seulement si vous copiez à la main un <code>hyperref.sty</code> dans un dossier personnel, auquel cas il faut aussi y placer <code>nameref.sty</code>.</p>
+<p>Ce que cela implique pour lui : rien, en l'état. J'ai vérifié le dépôt <code>Opware2000/nBook3</code> (commit <code>9dff71b</code>, 6 novembre 2026) : <code>nBook3.cls</code> charge <code>\RequirePackage[pdfusetitle]{hyperref}</code> puis <code>\RequirePackage{memhfixc}</code>, et aucune occurrence de <code>nameref</code>, <code>backref</code>, <code>xr-hyper</code> ou <code>xr</code> n'apparaît dans les classes ni dans les documents. La seule conséquence pratique serait de vérifier, après mise à jour de TeX Live, que <code>nameref</code> est toujours présent dans la distribution ; il l'est dans une installation complète. Le paquet <code>memhfixc</code>, qui corrige l'interaction de <code>hyperref</code> avec <code>memoir</code>, ne fait pas partie de la scission.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>tikzpizza — version 0.2 (2026-11-04), licence LPPL 1.3</h3>
+<p><code>tikzpizza</code> dessine des pizzas en bande dessinée pour les exercices de fractions, sur des fiches, des évaluations ou des diapositives. La pizza peut être ronde, carrée, rectangulaire ou en polygone régulier, et se découper en parts égales, en parts de tailles choisies, en grilles et bandes, ou selon des coupes décentrées — « justes » en surface ou volontairement injustes en angle —, y compris des parts maladroites. On choisit les sauces, les fromages et quatorze garnitures sur des parts désignées, plus les parts mangées, les bouchées et le plateau avec ses miettes. Le champ d'emploi le plus évident est le cycle 3 et la sixième, donc en amont de vos classes, mais l'outil reste pratique pour toute activité sur les fractions en remise à niveau ou en SNT lorsqu'on illustre un partage. Lien : <a href="https://ctan.org/pkg/tikzpizza">https://ctan.org/pkg/tikzpizza</a></p>
+<h3>mathbb-one — version 1.0 (2026-11-04), licence LPPL 1.3c et autre licence libre</h3>
+<p><code>amssymb</code> ne fournit aucun chiffre pour <code>\mathbb</code> : <code>\mathbb{1}</code> — la fonction indicatrice — imprime un symbole parasite. <code>mathbb-one</code> corrige ce point, sans rien modifier d'autre : il fait afficher à <code>\mathbb{1}</code> et à <code>\Bbbone</code> le « 1 » des polices <code>bbm</code> de Gilles F. Robert, qui est la forme la plus proche du style Computer Modern de <code>\mathbb</code>, et il le fait en police vectorielle (donc à l'échelle sans perte). Utile dès qu'un document de mathématiques, de physique ou de sciences emploie des indicatrices ; à noter si votre classe charge déjà <code>amssymb</code> ou <code>unicode-math</code>, la coexistence restant à essayer sur un document court avant adoption. Lien : <a href="https://ctan.org/pkg/mathbb-one">https://ctan.org/pkg/mathbb-one</a></p>
+<h3>tikzfins — version 0.3 (2026-11-04), licence LPPL 1.3c</h3>
+<p><code>tikzfins</code> dessine en TikZ des poissons d'aquarium de profil, sous forme d'illustrations vectorielles plates avec contre-ombrage, nageoires translucides, rayons de nageoires et les marques réelles des espèces. Le paquet en propose vingt-deux : poisson-clown, chirurgien bleu, poisson-lion, requin à pointes noires, poisson rouge, combattant, néon bleu, corydoras, etc., auxquels s'ajoutent des escargots, une étoile de mer, une crevette nettoyeuse, un bernard-l'ermite et une méduse. Pour un professeur de SVT, l'intérêt tient à la fidélité des livrées : elles permettent d'illustrer une clé de détermination, un peuplement aquatique ou des figures d'anatomie comparée sans dépendre d'images importées, et les dessins restent nets à toute échelle puisqu'ils sont vectoriels. La construction des figures n'est pas documentée ici plus avant : je n'ai pas vérifié la qualité du rendu, seulement ce qu'annonce le paquet. Lien : <a href="https://ctan.org/pkg/tikzfins">https://ctan.org/pkg/tikzfins</a></p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>beamertheme-tcolorbox</strong> 1.8 (2026-11-04, LPPL 1.3c) : thème interne de <code>beamer</code> (et de <code>ltx-talk</code>) qui reproduit les blocs beamer standards avec des <code>tcolorbox</code> — celles-là mêmes que votre classe charge directement ; cette version améliore la prise en charge de la découverte progressive (<code>\uncover</code>) avec <code>ltx-talk</code>. Lien : <a href="https://ctan.org/pkg/beamertheme-tcolorbox">https://ctan.org/pkg/beamertheme-tcolorbox</a></li>
+</ul>
+<h2>Volume</h2>
+<p>Treize annonces publiées dans l'intervalle, cinq retenues (dont une concernant un paquet que vous utilisez), huit écartées : quatre gabarits et styles d'édition savante (SBL, IEEE, bibleref-sbl), un paquet de typographie du japonais en mode vertical (<code>pxpgftate</code>), un paquet de linguistique (<code>linguexx</code>), et un vieux groupement de macros sans conséquence pour votre classe (<code>piff</code>).</p>
+<footer>Édition du vendredi 6 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
