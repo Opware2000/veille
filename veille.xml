@@ -6,9 +6,114 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 06 Nov 2026 05:05:03 +0100</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 00:03:15 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — samedi 7 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-07.html</link>
+<guid isPermaLink="false">artcraft-2026-11-07</guid>
+<pubDate>Sat, 07 Nov 2026 00:03:15 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Vague de versions coordonnée dans la nuit du 6 au 7 novembre : les seize applications et le lanceur ont tous été republiés entre 21 h 21 et 21 h 26 (heure de Paris), le lanceur passant en 0.15.0.</li>
+<li>La communauté signale EffectCraft 0.21 comme lent au point d'être inutilisable ; la version 0.22.0 est sortie dans la même vague, sans que sa note de version annonce de correctif de performance.</li>
+<li>Côté communauté : NoteCraft 0.0.9 annoncé avec une première version Android, et BurnCraft, un outil de gravure laser construit avec Craft Anything.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Vague de versions du 6 novembre sur tous les dépôts d'applications</h3>
+<p>Versions publiées entre 20 h 21 et 20 h 26 UTC (21 h 21 à 21 h 26 à Paris) le 6 novembre, vérifiées par l'API GitHub sur chaque dépôt de l'organisation <code>storytold</code>. Aucune de ces publications n'a été annoncée sur le subreddit ni dans le flux du dépôt principal <code>storytold/artcraft</code> : c'est le contrôle systématique des dépôts qui les fait apparaître.</p>
+<ul>
+<li><strong>Lanceur 0.15.0</strong> : correction de l'installation et de la désinstallation en mode administrateur sous Windows (contexte MSI lu sans lancer PowerShell), rétrogradation de version qui ne retire plus que les produits déclarés par la machine, réglage de la fenêtre unique, reconnaissance des polices CJK sans décoder tous les enregistrements.</li>
+<li><strong>PhotoCraft 0.21.0</strong> : import PSD/PSB et EXR diffusé par bandes bornées, limite mémoire de l'import PSD calculée d'après la RAM disponible, mémoire de l'enregistrement réduite, enregistrement facultatif d'un document aplati à pleine taille dans les fichiers <code>.pcraft</code>, mode portable fiabilisé, et plusieurs correctifs de sécurité sur le traitement des fichiers.</li>
+<li><strong>VectorCraft 0.22.0</strong> : import Affinity borné (protection contre les archives malformées), ouverture des EPS produits par <code>eps2write</code> de Ghostscript, export PDF où les encres de tons directs nommées <code>All</code> ou <code>None</code> restent des tons directs, comptage des objets corrigé dans Document Info.</li>
+<li><strong>EffectCraft 0.22.0</strong> : Roto Brush conserve ses caches de détourage hors session, timecodes EDL alignés sur le temps de chaque fichier, meilleure lecture des fichiers Lottie, vidéo BT.2020 PQ et HLG reconnue en Rec. 2100, export H.264/HEVC/AV1 qui étiquette la couleur de ses propres images, rotation d'un enfant autour de son propre point d'ancrage.</li>
+<li><strong>Craft Anything 0.5.0</strong> : les exécutions OpenCode natives disposent des outils de Craft Anything et affichent leurs appels d'outils, catalogue d'interface géorgien, MaterialCraft listé dans les tableaux d'applications japonais, coréen et chinois.</li>
+<li><strong>Série complète</strong> : FilmCraft 0.18.0, DesignCraft 0.18.0, PdfCraft 0.19.0, LightCraft 0.19.0, GridCraft 0.17.0, SoundCraft 0.18.0, CADCraft 0.18.0, FigCraft 0.16.0, WordCraft 0.16.0, DeckCraft 0.16.0, TextureCraft 0.4.0, MaterialCraft 0.2.0.</li>
+</ul>
+<p>La concordance des horodatages indique une publication d'ensemble plutôt que douze chantiers séparés.</p>
+<h3>La page officielle des Crafting Apps passe à seize applications</h3>
+<p>Post de <strong>u/bebel022</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpp6nx/crafting_apps_sixteen_opensource_creative_apps/</p>
+<p>Le fil renvoie à la page officielle des applications, <code>https://getartcraft.com/apps</code>, qui annonce désormais <strong>seize applications libres écrites en Rust</strong> et propose le lanceur en 0.15.0. La page liste MaterialCraft parmi elles, en plus de PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft, EffectCraft, DesignCraft, FigCraft, TextureCraft, WordCraft, SoundCraft, DeckCraft, CADCraft, GridCraft et Craft Anything. Elle rappelle les principes communs : tout est sur GitHub sous licence permissive, aucun intergiciel Electron, chaque application pilotable en ligne de commande, par canal de contrôle JSON ou par serveur MCP.</p>
+<h3>PhotoCraft jugé pleinement utilisable sous Linux</h3>
+<p>Post de <strong>u/Additional-Leg-7403</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xp8xr1/photocraft_is_fully_usable_now/</p>
+<p>Un utilisateur sous Linux rapporte que le glisser-déposer des photos fonctionne depuis la mise à jour et que le reste de l'application l'est aussi ; il détoure et compose des affiches, et estime ne plus manquer d'aucune fonction de Photoshop. C'est un témoignage d'utilisateur, pas une annonce de l'éditeur, mais il documente une étape de maturité sur la plateforme Linux, jusque-là la plus en retard.</p>
+<h3>Dépôt principal : règles d'atelier ajoutées pour les agents</h3>
+<p>Le seul commit du dépôt <code>storytold/artcraft</code> sur la période (n° 2749) recopie les règles communes de contribution en tête d'<code>AGENTS.md</code> et ajoute une vérification automatique en intégration continue. Aucune conséquence visible pour l'utilisateur ; cela confirme que le projet cadre désormais l'usage des agents de codage sur son propre dépôt, comme il le fait pour Craft Anything.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>NoteCraft 0.0.9 — application communautaire hors dépôt officiel</h3>
+<p>Post de <strong>u/PassNarrow3128</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpoetd/unofficial_notecraft_v009_coming_soon/</p>
+<p>Annonce d'une version 0.0.9 pour NoteCraft, présentée comme non officielle, sur <code>https://notecraft.cloud/</code>. Au programme : première version Android (portage attribué à un contributeur GitHub), canevas infini avec dessin dans l'espace libre, repères et mesures de performance, localisation sur les treize langues de démonstration et aide utilisateur en français et en espagnol. La version est annoncée comme « à venir » ; aucune date n'est donnée, et aucun dépôt public n'est mentionné dans le fil.</p>
+<h3>BurnCraft — logiciel de gravure et de découpe laser</h3>
+<p>Post de <strong>u/amruthwo</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xphszn/burncraft_laser_engraver_software/</p>
+<p>L'auteur développe un logiciel de pilotage de graveur laser en utilisant Craft Anything : il y a transposé des conventions de logiciel de CAO et la baguette magique des logiciels de retouche d'image. BurnCraft lit les fichiers <code>.lbrn</code>, <code>.lbrn2</code> et <code>.lbdev</code> de LightBurn, ce qui permettrait de récupérer des projets existants. Il propose de publier le projet sur GitHub si l'intérêt se confirme : rien n'est donc disponible au téléchargement à ce stade.</p>
+<h3>Faire tourner les applications web sur iPadOS, par un serveur local</h3>
+<p>Post de <strong>u/Bchliu</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xp3hfm/ipados_craft_apps/</p>
+<p>Un utilisateur a testé l'exécution des versions web des applications Craft sur iPad en installant un serveur web local (application Worldwideweb Mobile) auquel il se reconnecte depuis le navigateur, avec une page de lancement fabriquée par IA. Le procédé fonctionne mais reste un bricolage : Apple n'autorise pas l'exécution en arrière-plan, donc le serveur doit rester au premier plan.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>LYNX SHARE, station audio libre qui ouvre les projets FL Studio</h3>
+<p>Post de <strong>u/Kau_an137</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpfqfz/open_source_lynx_share_a_lightweight_daw_built_in/</p>
+<p>Station audionumérique libre écrite en C++20 sur JUCE 8, publiée sur le subreddit d'ArtCraft parce que la communauté réclame régulièrement un équivalent libre de FL Studio. Elle ouvre directement les projets <code>.flp</code> sans FL Studio installé — structures de projet, motifs, arrangements, automatisation, routage de la console, échantillons et configuration des greffons —, réimplémente plus de soixante-quinze greffons natifs de FL Studio et accepte les formats VST3 et CLAP. Aucune date de publication ni adresse de dépôt n'est donnée dans le message : à vérifier avant de s'y fier.</p>
+<p>Aucune autre actualité notable sur les logiciels comparables dans les journaux suivis.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>EffectCraft 0.21 fortement ralenti</strong> : un utilisateur (u/orgullodemaciano, 6 novembre, https://www.reddit.com/r/ArtCraftAI/comments/1xpg1a1/effect_craft_021_terrible_performance/) rapporte que la version 0.21 — c'est-à-dire 0.21.1, publiée le 5 novembre — rend le logiciel inutilisable et ralentit toute la machine, y compris sur un simple flou rapide, avec 32 Go de mémoire. Le rapport est isolé et non confirmé par d'autres utilisateurs ; la version 0.22.0 publiée le 6 novembre au soir ne mentionne pas de correctif de performance dans sa note de version. À vérifier avant de conclure à une régression de la série 0.21.</li>
+<li>La collecte n'a signalé aucune erreur sur la période (<code>meta.json</code> vide côté r/ArtCraftAI et côté flux complémentaires).</li>
+</ul>
+<h2>Volume</h2>
+<p>35 posts publiés dans l'intervalle (r/ArtCraftAI), 7 retenus, 28 écartés ; plus un commit du dépôt principal et le contrôle des versions publiées sur les dépôts d'applications. Aucune nouvelle entrée de version ni vidéo dans les journaux complémentaires. Taux de rétention d'environ 20 %, conforme à la nature du subreddit, partagé entre annonces et questions de support : les demandes de fonctionnalités, questions d'installation, retours d'expérience et rapports de bug isolés constituent l'essentiel des posts écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Vague de versions coordonnée dans la nuit du 6 au 7 novembre : les seize applications et le lanceur ont tous été republiés entre 21 h 21 et 21 h 26 (heure de Paris), le lanceur passant en 0.15.0.</li>
+<li>La communauté signale EffectCraft 0.21 comme lent au point d'être inutilisable ; la version 0.22.0 est sortie dans la même vague, sans que sa note de version annonce de correctif de performance.</li>
+<li>Côté communauté : NoteCraft 0.0.9 annoncé avec une première version Android, et BurnCraft, un outil de gravure laser construit avec Craft Anything.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Vague de versions du 6 novembre sur tous les dépôts d'applications</h3>
+<p>Versions publiées entre 20 h 21 et 20 h 26 UTC (21 h 21 à 21 h 26 à Paris) le 6 novembre, vérifiées par l'API GitHub sur chaque dépôt de l'organisation <code>storytold</code>. Aucune de ces publications n'a été annoncée sur le subreddit ni dans le flux du dépôt principal <code>storytold/artcraft</code> : c'est le contrôle systématique des dépôts qui les fait apparaître.</p>
+<ul>
+<li><strong>Lanceur 0.15.0</strong> : correction de l'installation et de la désinstallation en mode administrateur sous Windows (contexte MSI lu sans lancer PowerShell), rétrogradation de version qui ne retire plus que les produits déclarés par la machine, réglage de la fenêtre unique, reconnaissance des polices CJK sans décoder tous les enregistrements.</li>
+<li><strong>PhotoCraft 0.21.0</strong> : import PSD/PSB et EXR diffusé par bandes bornées, limite mémoire de l'import PSD calculée d'après la RAM disponible, mémoire de l'enregistrement réduite, enregistrement facultatif d'un document aplati à pleine taille dans les fichiers <code>.pcraft</code>, mode portable fiabilisé, et plusieurs correctifs de sécurité sur le traitement des fichiers.</li>
+<li><strong>VectorCraft 0.22.0</strong> : import Affinity borné (protection contre les archives malformées), ouverture des EPS produits par <code>eps2write</code> de Ghostscript, export PDF où les encres de tons directs nommées <code>All</code> ou <code>None</code> restent des tons directs, comptage des objets corrigé dans Document Info.</li>
+<li><strong>EffectCraft 0.22.0</strong> : Roto Brush conserve ses caches de détourage hors session, timecodes EDL alignés sur le temps de chaque fichier, meilleure lecture des fichiers Lottie, vidéo BT.2020 PQ et HLG reconnue en Rec. 2100, export H.264/HEVC/AV1 qui étiquette la couleur de ses propres images, rotation d'un enfant autour de son propre point d'ancrage.</li>
+<li><strong>Craft Anything 0.5.0</strong> : les exécutions OpenCode natives disposent des outils de Craft Anything et affichent leurs appels d'outils, catalogue d'interface géorgien, MaterialCraft listé dans les tableaux d'applications japonais, coréen et chinois.</li>
+<li><strong>Série complète</strong> : FilmCraft 0.18.0, DesignCraft 0.18.0, PdfCraft 0.19.0, LightCraft 0.19.0, GridCraft 0.17.0, SoundCraft 0.18.0, CADCraft 0.18.0, FigCraft 0.16.0, WordCraft 0.16.0, DeckCraft 0.16.0, TextureCraft 0.4.0, MaterialCraft 0.2.0.</li>
+</ul>
+<p>La concordance des horodatages indique une publication d'ensemble plutôt que douze chantiers séparés.</p>
+<h3>La page officielle des Crafting Apps passe à seize applications</h3>
+<p>Post de <strong>u/bebel022</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpp6nx/crafting_apps_sixteen_opensource_creative_apps/</p>
+<p>Le fil renvoie à la page officielle des applications, <code>https://getartcraft.com/apps</code>, qui annonce désormais <strong>seize applications libres écrites en Rust</strong> et propose le lanceur en 0.15.0. La page liste MaterialCraft parmi elles, en plus de PhotoCraft, VectorCraft, FilmCraft, LightCraft, PdfCraft, EffectCraft, DesignCraft, FigCraft, TextureCraft, WordCraft, SoundCraft, DeckCraft, CADCraft, GridCraft et Craft Anything. Elle rappelle les principes communs : tout est sur GitHub sous licence permissive, aucun intergiciel Electron, chaque application pilotable en ligne de commande, par canal de contrôle JSON ou par serveur MCP.</p>
+<h3>PhotoCraft jugé pleinement utilisable sous Linux</h3>
+<p>Post de <strong>u/Additional-Leg-7403</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xp8xr1/photocraft_is_fully_usable_now/</p>
+<p>Un utilisateur sous Linux rapporte que le glisser-déposer des photos fonctionne depuis la mise à jour et que le reste de l'application l'est aussi ; il détoure et compose des affiches, et estime ne plus manquer d'aucune fonction de Photoshop. C'est un témoignage d'utilisateur, pas une annonce de l'éditeur, mais il documente une étape de maturité sur la plateforme Linux, jusque-là la plus en retard.</p>
+<h3>Dépôt principal : règles d'atelier ajoutées pour les agents</h3>
+<p>Le seul commit du dépôt <code>storytold/artcraft</code> sur la période (n° 2749) recopie les règles communes de contribution en tête d'<code>AGENTS.md</code> et ajoute une vérification automatique en intégration continue. Aucune conséquence visible pour l'utilisateur ; cela confirme que le projet cadre désormais l'usage des agents de codage sur son propre dépôt, comme il le fait pour Craft Anything.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>NoteCraft 0.0.9 — application communautaire hors dépôt officiel</h3>
+<p>Post de <strong>u/PassNarrow3128</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpoetd/unofficial_notecraft_v009_coming_soon/</p>
+<p>Annonce d'une version 0.0.9 pour NoteCraft, présentée comme non officielle, sur <code>https://notecraft.cloud/</code>. Au programme : première version Android (portage attribué à un contributeur GitHub), canevas infini avec dessin dans l'espace libre, repères et mesures de performance, localisation sur les treize langues de démonstration et aide utilisateur en français et en espagnol. La version est annoncée comme « à venir » ; aucune date n'est donnée, et aucun dépôt public n'est mentionné dans le fil.</p>
+<h3>BurnCraft — logiciel de gravure et de découpe laser</h3>
+<p>Post de <strong>u/amruthwo</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xphszn/burncraft_laser_engraver_software/</p>
+<p>L'auteur développe un logiciel de pilotage de graveur laser en utilisant Craft Anything : il y a transposé des conventions de logiciel de CAO et la baguette magique des logiciels de retouche d'image. BurnCraft lit les fichiers <code>.lbrn</code>, <code>.lbrn2</code> et <code>.lbdev</code> de LightBurn, ce qui permettrait de récupérer des projets existants. Il propose de publier le projet sur GitHub si l'intérêt se confirme : rien n'est donc disponible au téléchargement à ce stade.</p>
+<h3>Faire tourner les applications web sur iPadOS, par un serveur local</h3>
+<p>Post de <strong>u/Bchliu</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xp3hfm/ipados_craft_apps/</p>
+<p>Un utilisateur a testé l'exécution des versions web des applications Craft sur iPad en installant un serveur web local (application Worldwideweb Mobile) auquel il se reconnecte depuis le navigateur, avec une page de lancement fabriquée par IA. Le procédé fonctionne mais reste un bricolage : Apple n'autorise pas l'exécution en arrière-plan, donc le serveur doit rester au premier plan.</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>LYNX SHARE, station audio libre qui ouvre les projets FL Studio</h3>
+<p>Post de <strong>u/Kau_an137</strong> — https://www.reddit.com/r/ArtCraftAI/comments/1xpfqfz/open_source_lynx_share_a_lightweight_daw_built_in/</p>
+<p>Station audionumérique libre écrite en C++20 sur JUCE 8, publiée sur le subreddit d'ArtCraft parce que la communauté réclame régulièrement un équivalent libre de FL Studio. Elle ouvre directement les projets <code>.flp</code> sans FL Studio installé — structures de projet, motifs, arrangements, automatisation, routage de la console, échantillons et configuration des greffons —, réimplémente plus de soixante-quinze greffons natifs de FL Studio et accepte les formats VST3 et CLAP. Aucune date de publication ni adresse de dépôt n'est donnée dans le message : à vérifier avant de s'y fier.</p>
+<p>Aucune autre actualité notable sur les logiciels comparables dans les journaux suivis.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>EffectCraft 0.21 fortement ralenti</strong> : un utilisateur (u/orgullodemaciano, 6 novembre, https://www.reddit.com/r/ArtCraftAI/comments/1xpg1a1/effect_craft_021_terrible_performance/) rapporte que la version 0.21 — c'est-à-dire 0.21.1, publiée le 5 novembre — rend le logiciel inutilisable et ralentit toute la machine, y compris sur un simple flou rapide, avec 32 Go de mémoire. Le rapport est isolé et non confirmé par d'autres utilisateurs ; la version 0.22.0 publiée le 6 novembre au soir ne mentionne pas de correctif de performance dans sa note de version. À vérifier avant de conclure à une régression de la série 0.21.</li>
+<li>La collecte n'a signalé aucune erreur sur la période (<code>meta.json</code> vide côté r/ArtCraftAI et côté flux complémentaires).</li>
+</ul>
+<h2>Volume</h2>
+<p>35 posts publiés dans l'intervalle (r/ArtCraftAI), 7 retenus, 28 écartés ; plus un commit du dépôt principal et le contrôle des versions publiées sur les dépôts d'applications. Aucune nouvelle entrée de version ni vidéo dans les journaux complémentaires. Taux de rétention d'environ 20 %, conforme à la nature du subreddit, partagé entre annonces et questions de support : les demandes de fonctionnalités, questions d'installation, retours d'expérience et rapports de bug isolés constituent l'essentiel des posts écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique — vendredi 6 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-06.html</link>
@@ -5465,57 +5570,6 @@ Le revers annoncé : il faut raisonner en coordonnées polaires, donc lire les p
 <p><strong>Réserve : rien à installer pour l'instant.</strong> L'annonce ne contient aucun lien de téléchargement, ni dépôt, ni page de paquet, et <code>https://ctan.org/json/2.0/pkg/plainmath</code> répond « Not found » le 2 novembre 2026 ; une recherche dans l'API GitHub ne renvoie aucun dépôt correspondant. Le second auteur cité n'a plus de compte Reddit. Il faut donc lire cette annonce comme une démonstration de faisabilité, pas comme un outil disponible : impossible, en l'état, d'en vérifier la licence ni de l'essayer. L'usage annoncé — produire du LaTeX à partir de dictée vocale, notamment — reste une hypothèse de lecteur, non une fonction livrée.</p>
 <h2>Volume</h2>
 <p>Trois posts publiés depuis la dernière édition, un retenu, deux écartés, soit un taux de rétention de 33 %. Les deux posts écartés sont une question de goûts typographiques sur les polices sérif de TeX Live, sans contenu réutilisable, et une demande d'aide pour dessiner un entrelacs en TikZ sans code fourni. Sur un forum d'entraide comme r/LaTeX, un taux de cet ordre est normal : l'essentiel du trafic est constitué de questions de dépannage ponctuelles, hors critère. La dernière collecte (2 novembre 2026, 4 h 15 UTC) n'a signalé aucune erreur.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/opensource — lundi 2 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/opensource/2026-11-02.html</link>
-<guid isPermaLink="false">opensource-2026-11-02</guid>
-<pubDate>Mon, 02 Nov 2026 06:52:50 +0100</pubDate>
-<category>r/opensource</category>
-<description><![CDATA[<h1>Veille r/opensource — lundi 2 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix posts parus depuis la dernière édition, quatre retenus, tous des outils nouveaux : une gestion de maintenance industrielle (MantPro), un tableau de bord Windows (Astraeus), un client S3 (BucketBridge) et un logiciel de commande de fraiseuse numérique (3C Tool). Six posts écartés : trois questions ou demandes, un échange de plaintes, une annonce sans information exploitable, et la republication d'une version déjà traitée ici le 31 octobre.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>MantPro — gestion de maintenance assistée, sur le poste de travail comme sur téléphone</h3>
-<p>Un technicien de maintenance industrielle a écrit son propre logiciel de gestion de maintenance (GMAO, ou CMMS en anglais) pour se passer des tableurs et des abonnements. L'application couvre les ordres de travail, les tâches récurrentes, l'historique des interventions, le parc de machines avec étiquettes QR, les pièces détachées et le stock, avec des indicateurs de fiabilité (temps moyen entre pannes, temps moyen de réparation) et des exports en PDF, CSV et Excel. Le poste de travail fonctionne sous Windows et Linux (Python et PyQt6), les deux applications Android servent aux interventions et à l'inventaire ; elles fonctionnent hors connexion et se synchronisent au retour du réseau. L'installation est autonome, sans limitation du nombre d'utilisateurs ni d'équipements.</p>
-<p>Licence AGPL-3.0, 6 étoiles, dépôt créé le 30 janvier 2026 et dernière modification le 2 novembre 2026 (le projet semble avoir été ouvert avant l'annonce). La documentation du dépôt est en espagnol.</p>
-<p>Dépôt : https://github.com/AnabasaSoft/MantPro</p>
-<h3>Astraeus — un tableau de bord posé sur le bord de l'écran, sous Windows</h3>
-<p>Plutôt qu'un tableau de bord écrit en technologies web, son auteur l'a écrit en C++20 avec Direct2D et DirectComposition, pour qu'il se comporte comme un élément du système. Il apparaît au survol du bord supérieur de l'écran ou par le raccourci Windows + Alt + A, et rassemble musique et paroles synchronisées, surveillance du système, réglage du son et du réseau, météo, calendrier et quelques menus utilitaires.</p>
-<p>Licence GPL-3.0, 26 étoiles, dernière modification le 1er novembre 2026. Les sources et les instructions de compilation sont dans le dépôt ; aucune version précompilée n'est annoncée dans le billet.</p>
-<p>Dépôt : https://github.com/Icetist/Astraeus</p>
-<h3>BucketBridge — client de stockage objet, avec Linux traité comme un système de premier rang</h3>
-<p>Les clients de stockage compatible S3 pour poste de travail sont souvent réservés à Windows ou payants ; BucketBridge se présente comme une alternative libre écrite en Rust, avec une interface Tauri et un outil en ligne de commande (<code>bb</code>). Il fonctionne avec Amazon S3 comme avec les services compatibles (MinIO, Cloudflare R2, Backblaze B2, Wasabi), et se distribue en AppImage, en paquet Debian et en archive. Aucune télémétrie n'est annoncée. La version 0.1 est une première publication : les retours de test sur différentes distributions sont explicitement demandés.</p>
-<p>Licence GPL-3.0, 8 étoiles, dernière modification le 1er novembre 2026.</p>
-<p>Dépôt : https://github.com/anupshaw50/BucketBridge</p>
-<h3>3C Tool — pilotage d'une fraiseuse numérique de hobby, du dessin au G-code</h3>
-<p>Le billet annonce la partie logicielle d'une fraiseuse à commande numérique personnelle : 3C Tool est une suite de fabrication assistée par ordinateur et de conduite de machine pour un contrôleur FluidNC (compatible GRBL). Elle produit le G-code, alimente la machine et commande ses mouvements. Le billet ne donne pas de lien direct : le dépôt a été retrouvé par recherche, et sa correspondance avec la vidéo citée (même nom de projet que le modèle de fraiseuse diffusé) reste à confirmer. Les plans et fichiers de la machine sont publiés sous licence libre sur Printables.</p>
-<p>Licence MIT, 2 étoiles, dépôt créé le 11 octobre 2026, dernière modification le 26 octobre 2026. Le logiciel est écrit en C#.</p>
-<p>Dépôt : https://github.com/Classic-Car-EVO/3CTool</p>
-<h2>Volume</h2>
-<p>Dix posts publiés dans l'intervalle, quatre retenus, six écartés. Les écartés se répartissent ainsi : deux demandes d'outils sans annonce (un éditeur audio pour Android, une fonction de calcul manuscrit), un échange de plaintes sur le travail des mainteneurs, une republication du billet « Built my first Typescript library » sans contenu ni lien exploitable dans le journal, et deux annonces déjà traitées ici (Foldergram 1.3.0 dans l'édition du 31 octobre, la même version 1.12.0 de l'éditeur PDF word-sys dans celle du 1er novembre). La collecte n'a signalé aucune erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/opensource — lundi 2 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix posts parus depuis la dernière édition, quatre retenus, tous des outils nouveaux : une gestion de maintenance industrielle (MantPro), un tableau de bord Windows (Astraeus), un client S3 (BucketBridge) et un logiciel de commande de fraiseuse numérique (3C Tool). Six posts écartés : trois questions ou demandes, un échange de plaintes, une annonce sans information exploitable, et la republication d'une version déjà traitée ici le 31 octobre.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>MantPro — gestion de maintenance assistée, sur le poste de travail comme sur téléphone</h3>
-<p>Un technicien de maintenance industrielle a écrit son propre logiciel de gestion de maintenance (GMAO, ou CMMS en anglais) pour se passer des tableurs et des abonnements. L'application couvre les ordres de travail, les tâches récurrentes, l'historique des interventions, le parc de machines avec étiquettes QR, les pièces détachées et le stock, avec des indicateurs de fiabilité (temps moyen entre pannes, temps moyen de réparation) et des exports en PDF, CSV et Excel. Le poste de travail fonctionne sous Windows et Linux (Python et PyQt6), les deux applications Android servent aux interventions et à l'inventaire ; elles fonctionnent hors connexion et se synchronisent au retour du réseau. L'installation est autonome, sans limitation du nombre d'utilisateurs ni d'équipements.</p>
-<p>Licence AGPL-3.0, 6 étoiles, dépôt créé le 30 janvier 2026 et dernière modification le 2 novembre 2026 (le projet semble avoir été ouvert avant l'annonce). La documentation du dépôt est en espagnol.</p>
-<p>Dépôt : https://github.com/AnabasaSoft/MantPro</p>
-<h3>Astraeus — un tableau de bord posé sur le bord de l'écran, sous Windows</h3>
-<p>Plutôt qu'un tableau de bord écrit en technologies web, son auteur l'a écrit en C++20 avec Direct2D et DirectComposition, pour qu'il se comporte comme un élément du système. Il apparaît au survol du bord supérieur de l'écran ou par le raccourci Windows + Alt + A, et rassemble musique et paroles synchronisées, surveillance du système, réglage du son et du réseau, météo, calendrier et quelques menus utilitaires.</p>
-<p>Licence GPL-3.0, 26 étoiles, dernière modification le 1er novembre 2026. Les sources et les instructions de compilation sont dans le dépôt ; aucune version précompilée n'est annoncée dans le billet.</p>
-<p>Dépôt : https://github.com/Icetist/Astraeus</p>
-<h3>BucketBridge — client de stockage objet, avec Linux traité comme un système de premier rang</h3>
-<p>Les clients de stockage compatible S3 pour poste de travail sont souvent réservés à Windows ou payants ; BucketBridge se présente comme une alternative libre écrite en Rust, avec une interface Tauri et un outil en ligne de commande (<code>bb</code>). Il fonctionne avec Amazon S3 comme avec les services compatibles (MinIO, Cloudflare R2, Backblaze B2, Wasabi), et se distribue en AppImage, en paquet Debian et en archive. Aucune télémétrie n'est annoncée. La version 0.1 est une première publication : les retours de test sur différentes distributions sont explicitement demandés.</p>
-<p>Licence GPL-3.0, 8 étoiles, dernière modification le 1er novembre 2026.</p>
-<p>Dépôt : https://github.com/anupshaw50/BucketBridge</p>
-<h3>3C Tool — pilotage d'une fraiseuse numérique de hobby, du dessin au G-code</h3>
-<p>Le billet annonce la partie logicielle d'une fraiseuse à commande numérique personnelle : 3C Tool est une suite de fabrication assistée par ordinateur et de conduite de machine pour un contrôleur FluidNC (compatible GRBL). Elle produit le G-code, alimente la machine et commande ses mouvements. Le billet ne donne pas de lien direct : le dépôt a été retrouvé par recherche, et sa correspondance avec la vidéo citée (même nom de projet que le modèle de fraiseuse diffusé) reste à confirmer. Les plans et fichiers de la machine sont publiés sous licence libre sur Printables.</p>
-<p>Licence MIT, 2 étoiles, dépôt créé le 11 octobre 2026, dernière modification le 26 octobre 2026. Le logiciel est écrit en C#.</p>
-<p>Dépôt : https://github.com/Classic-Car-EVO/3CTool</p>
-<h2>Volume</h2>
-<p>Dix posts publiés dans l'intervalle, quatre retenus, six écartés. Les écartés se répartissent ainsi : deux demandes d'outils sans annonce (un éditeur audio pour Android, une fonction de calcul manuscrit), un échange de plaintes sur le travail des mainteneurs, une republication du billet « Built my first Typescript library » sans contenu ni lien exploitable dans le journal, et deux annonces déjà traitées ici (Foldergram 1.3.0 dans l'édition du 31 octobre, la même version 1.12.0 de l'éditeur PDF word-sys dans celle du 1er novembre). La collecte n'a signalé aucune erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
