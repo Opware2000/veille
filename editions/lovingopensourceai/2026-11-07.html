@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — samedi 7 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le subreddit a livré peu de fils neufs dans l'intervalle, mais les sources de remplacement ont été productives : quatre outils libres pour développeurs ou makers (analyse de dépôts, protection avant exécution, navigateur iOS Bluetooth, animation de mécanismes LEGO), deux projets scientifiques ouverts (ToyBlocks d'Ai2 pour la robotique, rappel de la bibliothèque Camelot pour l'extraction de tableaux PDF) et un modèle à poids ouverts annoncé mais pas encore publié (Inkling 2 Small). Deux outils grand public gratuits complètent l'édition : IRIDIA, un rippeur de CD sous GPLv3, et Kugelblitz, un « Google Earth » gratuit pour macOS.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>AI-Atlas — évaluer les projets d'IA libre autrement que par les étoiles GitHub</h3>
+<p>Plateforme web indépendante qui analyse les dépôts GitHub publics de six domaines (apprentissage automatique, vision, science des données, traitement du langage et grands modèles, agents, MLOps) selon sept critères : profondeur technique, difficulté conceptuelle, originalité, complétude, utilité, documentation, reproductibilité. L'auteur annonce 1 900 projets cartographiés et un accès sans compte, le code n'étant jamais exécuté. Le service est gratuit, mais c'est un site : <strong>son propre code n'est pas publié</strong>, contrairement aux projets qu'il évalue — c'est une nuance à garder en tête. La fréquentation réelle reste inconnue, les chiffres cités venant de l'auteur, et le compteur affiché sur la page d'accueil (147 profils) est bien en deçà des 1 900 projets annoncés sur Reddit.<br />
+https://getaiatlas.com/</p>
+<h3>IRIDIA — rippeur de CD portable pour Windows, sous GPLv3</h3>
+<p>Application Windows portable (aucune installation) qui extrait un CD audio avec 142 préréglages d'encodage FFmpeg, sortie native DSD (DSF/DFF, DSD64 à DSD512), FLAC, WAV, ALAC, MP3, Opus, AAC, ré-échantillonnage d'un signal stéréo vers du multicanal jusqu'à 7,1, plusieurs formats de sortie pour une seule lecture du disque, mode d'extraction sûre avec correction d'offset, métadonnées MusicBrainz et pochettes automatiques. Développeur présentant son propre outil. Recoupement GitHub : licence GPL-3.0, dépôt créé le 6 novembre 2026, 3 étoiles, dernière poussée le même jour. L'auteur signale lui-même que <strong>les tests sur lecteurs physiques restent à faire</strong> : à vérifier avant de s'y fier pour archiver une collection.<br />
+https://github.com/Aaronstanley78/IRIDIA</p>
+<h3>CloneGuard — inspecter un dépôt avant de l'exécuter</h3>
+<p>Outil en ligne de commande qui balaie un dépôt à la recherche des procédés classiques de logiciel malveillant : vol d'identifiants, appels réseau dissimulés, code obscurci, scripts d'exécution automatique. Lecture seule, sans dépendance. Utile en salle informatique comme sur un serveur d'auto-hébergement, où la question « puis-je lancer ce dépôt ? » se pose à chaque nouveau projet. Recoupement GitHub : MIT, créé le 3 novembre 2026, 10 étoiles, dernière poussée le 3 novembre. Sur Hacker News : 25 points, 6 commentaires.<br />
+https://github.com/tharun208/cloneguard</p>
+<h3>Wand — navigateur iOS libre pour le Bluetooth et le NFC du web</h3>
+<p>Navigateur open source pour iPhone qui prend en charge WebBluetooth (BLE/GATT) et WebNFC (étiquettes NDEF), deux interfaces que Safari n'expose pas. Il sert d'abord aux développeurs de matériel, mais il permet aussi de fabriquer des pages web qui dialoguent avec des objets connectés sans passer par une application native. Recoupement GitHub : MIT, créé le 21 octobre 2026, 8 étoiles, dernière poussée le 6 novembre. Sur Hacker News : 12 points, aucun commentaire — nouveauté encore peu vue.<br />
+https://github.com/hito-dev/wand-browser</p>
+<h3>LDraw Mecha — reconstituer et animer les mécanismes d'un modèle LEGO</h3>
+<p>Jeu d'outils agentiques qui lit un fichier source LDraw de modèle LEGO, déduit la structure et les mécanismes présents (engrenages, liaisons), puis les anime dans Blender. La démonstration prolonge LDraw Nova, du même auteur, qui générait les modèles. Recoupement GitHub : AGPL-3.0, créé le 3 octobre 2026, 9 étoiles, dernière poussée le 6 novembre. Outil de démonstration plus que de production, mais l'approche — déduire un mécanisme à partir du code source d'une maquette — est réutilisable pour d'autres formats techniques.<br />
+https://github.com/anteloc/ldraw-mecha</p>
+<h3>MoofTCP — remplacer MacTCP sur les Mac 68000</h3>
+<p>Implémentation moderne de la pile TCP pour System 6 et les Mac 68000, conçue comme substitut direct de MacTCP. Projet de niche, mais rare : maintenir en état un parc ancien demande exactement ce genre de greffon réseau. Recoupement GitHub : MIT, créé le 28 octobre 2026, 39 étoiles, dernière poussée le 6 novembre. Sur Hacker News : 23 points, 14 commentaires.<br />
+https://github.com/matthewmrichter/mooftcp</p>
+<h3>Kugelblitz — un « Google Earth » gratuit pour macOS</h3>
+<p>Application macOS gratuite qui affiche la Terre (et cinq autres corps) en globe et en atlas, sur du relief réel, avec imagerie, carte routière et carte topographique, des milliers de cartes ouvertes ajoutables depuis sa bibliothèque, OpenStreetMap servi par son propre serveur de tuiles, sans compte et sans téléchargement de régions. Des événements calculés (éclipses sur 5 000 ans, séismes, éruptions) s'affichent à leur date. <strong>Attention : l'application est gratuite mais ses sources ne sont pas publiées</strong> — les données, elles, sont ouvertes et chaque source est listée avec sa licence dans l'application. Utile pour la géologie et la cartographie, à condition d'accepter un logiciel fermé.<br />
+https://apps.metaebene.me/en/kugelblitz</p>
+<h3>ToyBlocks — un « milieu contrôlé » ouvert pour l'apprentissage robotique</h3>
+<p>Ai2 (Allen Institute for AI) publie ToyBlocks, premier « FoundationWorld » : un simulateur ouvert où un bras robotisé manipule des blocs sur une table, avec génération automatique des tâches et des démonstrations, et des mesures qui vont au-delà du taux de réussite (vitesse d'exécution, forces exercées, progression). La comparaison faite par les chercheurs est celle du milieu de culture en biologie : un cadre volontairement simple où l'on fait varier un paramètre à la fois pour comprendre ce qu'un modèle a réellement appris. Le dépôt est sous Apache-2.0 (créé le 4 novembre 2026, 19 étoiles), avec 85 336 démonstrations publiées, deux modèles entraînés et une documentation ; une seconde version plus large est annoncée dans quelques semaines.<br />
+https://github.com/allenai/ToyBlocks — https://huggingface.co/blog/allenai/toyblocks</p>
+<h3>Camelot — extraire les tableaux d'un PDF en lignes et colonnes</h3>
+<p>Rappel d'un outil déjà ancien, mis en avant par un compte de veille de ressources : bibliothèque Python qui transforme un tableau enfermé dans un PDF en données inspectables ou exportables en CSV. Le cadre d'usage est celui du tableau reçu dans un rapport, et non d'un tableur. Recoupement GitHub : MIT, création 2019, <strong>3 844 étoiles</strong>, dernière poussée le 30 octobre 2026 — donc un projet établi, pas une nouveauté ; l'entrée est signalée ici parce que ce type de bibliothèque reste peu connue dans l'enseignement.<br />
+https://github.com/camelot-dev/camelot</p>
+<h3>Unleash — plateforme de drapeaux de fonctionnalité auto-hébergeable</h3>
+<p>Rappel, par ses auteurs, d'un serveur de drapeaux de fonctionnalité libre, développé depuis onze ans : permet d'activer ou de désactiver une fonctionnalité sans redéployer, et de mener des tests A/B contrôlés. Recoupement GitHub : AGPL-3.0, 14 111 étoiles, dernière poussée le 6 novembre 2026. Sur Hacker News : 94 points, 59 commentaires. Rien de neuf dans l'annonce elle-même — elle signale l'anniversaire du projet, pas une version.<br />
+https://github.com/Unleash/unleash</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Android Remote Control MCP v1.13.0</strong> — serveur MCP qui tourne sur le téléphone et donne à un agent d'IA la main sur n'importe quelle application Android. La nouveauté de cette version est un tunnel HTTPS chiffré de bout en bout intégré, sans compte : certificats Let's Encrypt, Google Trust Services ou ZeroSSL, clé privée restant sur le téléphone, surveillance des journaux de transparence des certificats pour prévenir si un autre titulaire obtient un certificat au même nom. L'argument avancé est que Cloudflare et ngrok voient le trafic, pas cette infrastructure. Recoupement GitHub : 790 étoiles, dernière poussée le 6 novembre 2026 ; <strong>la licence n'est pas reconnue par GitHub</strong> (mention « Other »), donc à lire avant réutilisation.<br />
+https://github.com/danielealbano/android-remote-control-mcp/releases/tag/v1.13.0</p>
+<p><strong>kitty 0.50</strong> — l'émulateur de terminal sous GPLv3 sait désormais restaurer au lancement les fenêtres, onglets et leur historique de défilement après une fin de session, sur Linux comme sur macOS, via le réglage <code>restore_session_after_logout</code>. Sur Linux, cela suppose un portail de bureau avec l'interface « inhibit » en version 3, et l'état est rangé en clair (lisible par le seul propriétaire) ; sur macOS il est chiffré. À noter pour les postes de salle informatique où l'on veut retrouver son travail après une fermeture de session.<br />
+https://sw.kovidgoyal.net/kitty/changelog/</p>
+<p><strong>Inkling 2 Small</strong> (Thinking Machines) — deuxième génération de modèle, mélange d'experts de 594 milliards de paramètres dont 17 milliards actifs, entrées d'images et effort de raisonnement variable ; 31 sur l'indice d'intelligence d'Artificial Analysis. <strong>Point important : les poids ne sont pas encore ouverts.</strong> Le modèle est d'abord servi par Tinker avec poids fermés, l'entreprise s'engageant à publier les poids complets sous licence Apache 2.0 « la semaine prochaine », après tests de sûreté externes — un engagement, pas un fait acquis. Sur Hacker News : 125 points, 52 commentaires.<br />
+https://thinkingmachines.ai/news/inkling-2-small/</p>
+<h2>Volume</h2>
+<p>87 entrées publiées dans l'intervalle, examinées et marquées comme traitées (4 fils Reddit, 78 de Hacker News, 2 du blog Hugging Face, 2 d'It's FOSS, 1 de Simon Willison) ; 13 retenues, 74 écartées. Le taux de rétention est faible parce que Hacker News, en fin de semaine américaine, est dominé par la politique et les marchés ; la plupart des entrées écartées sont des dépêches financières ou politiques sans rapport avec le logiciel. La dernière collecte Reddit (<code>meta.json</code>, 6 novembre 22 h 05 UTC) n'a signalé aucune erreur.</p>
+<footer>Édition du samedi 7 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
