@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille pédagogique — vendredi 6 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../pedagogique.xml" title="pédagogique et scientifique">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille pédagogique — vendredi 6 novembre 2026</h1>
+<h2>1. Informatique pédagogique / RUPN</h2>
+<ul>
+<li>
+<p><strong>CERT-FR / ANSSI — alerte CERTFR-2026-ALE-015 : contournement d'authentification dans OpenSSH (5 novembre 2026).</strong> Sur les systèmes Linux bâtis sur la bibliothèque musl, compilés sans PAM, un attaquant peut se connecter au SSH en fournissant un second mot de passe de longueur comprise entre 257 et 1023 caractères. Toutes les versions antérieures à 10.6p2 sont concernées (avis CERTFR-2026-AVI-1468) ; à défaut de correctif, désactiver l'authentification par mot de passe. À répercuter sur les serveurs du lycée. <a href="https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015">https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015</a></p>
+</li>
+<li>
+<p><strong>CERT-FR — quatre avis publiés le 5 novembre 2026 : produits Cisco (AVI-1467), Microsoft Edge (AVI-1466), OpenOffice (AVI-1463), MongoDB (AVI-1462).</strong> Les avis plus nombreux du 4 novembre (Mattermost, Symfony, Elastic, Ruby on Rails, NetApp, Google Chrome, HPE Aruba) avaient déjà été signalés. <a href="https://www.cert.ssi.gouv.fr/avis/">https://www.cert.ssi.gouv.fr/avis/</a></p>
+</li>
+<li>
+<p><strong>CNIL — recommandation sur les outils de rejeu de session (publiée le 5 novembre 2026).</strong> Ces outils enregistrent mouvements de souris, clics, défilements et parfois saisies de formulaires, puis reconstituent le parcours sous forme de vidéo ; ils sont fréquents sur les sites grand public et les plateformes de gestion de consentement. La CNIL fixe ce que les éditeurs doivent faire (information dédiée dès le premier niveau, paramétrage strict, données sensibles exclues) et publie une page grand public ; webinaire le 17 novembre. Utile pour la partie RGPD de la mission RUPN. <a href="https://www.cnil.fr/fr/rejeu-de-session-recommandation">https://www.cnil.fr/fr/rejeu-de-session-recommandation</a></p>
+</li>
+<li>
+<p><strong>Korben — botnet XCPE : 1,3 million de box et télévisions Android TV piégées dès le firmware (4 novembre 2026).</strong> L'implant, intégré en usine par le fabricant Videostrong, sous-louait la connexion des propriétaires à des proxys résidentiels ; Google, la police japonaise et plusieurs sociétés de sécurité ont coupé les serveurs de commande, mais l'implant reste et se réinstalle au redémarrage depuis la partition /oem. Les ordres circulent en MQTT non chiffré et les mises à jour en HTTP non signé ; 206 modèles sur plus de 170 pays, liste publiée par Synthient sur GitHub. Plume recommande un reset d'usine, Synthient la mise au rebut de l'appareil. <a href="https://korben.info/botnet-xcpe-videostrong-box-android-tv.html">https://korben.info/botnet-xcpe-videostrong-box-android-tv.html</a></p>
+</li>
+<li>
+<p><strong>Korben — l'App Store durcit sa classification par âge, même pour les compagnons IA (4 novembre 2026).</strong> À partir du 16 novembre, App Store Connect impose deux questions obligatoires : partage de la position réelle, et « rencontre » — Apple visant explicitement les relations « avec de vraies personnes et/ou un compagnon virtuel qui engage l'utilisateur dans du contenu sexuel ou romantique ». Cocher cette case déclenche automatiquement un classement 18 ans et plus, y compris sans contenu explicite ; tout le catalogue doit être en règle au 12 janvier 2027. Conséquence directe pour les mineurs : ces applications disparaissent quand les restrictions de contenu sont activées. <a href="https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html">https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html</a></p>
+</li>
+</ul>
+<h2>2. IA pour le développement</h2>
+<ul>
+<li>
+<p><strong>Korben — Revolut remplace Claude Code par GLM auto-hébergé et divise sa facture par dix (4 novembre 2026).</strong> La fintech britannique a fait basculer ses 2 000 ingénieurs de Gemini puis Claude Code vers GLM (modèle ouvert du chinois Z.ai, version 5.3), servi sur 56 cartes Nvidia B200 en interne : environ 0,30 dollar le million de jetons, soit dix fois moins que Claude Code ou Codex. Les gains les plus nets ne viennent pas de l'écriture de code mais du débogage et du traitement des tickets Jira/Confluence, avec un temps de codage annoncé en hausse de 60 %. <a href="https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html">https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html</a></p>
+</li>
+<li>
+<p><strong>Korben — GPT-6 Astra retouche directement les poids de Qwen3.5-0.8B (4 novembre 2026).</strong> Quatre chercheurs du MIT CSAIL ont modifié 131 072 poids sur 0,8 milliard, soit 0,016 % du modèle, sans descente de gradient : le score MATH-500 passe de 7,9 % à 48,1 %. Les auteurs eux-mêmes nuancent — la retouche corrige surtout des boucles de réflexion qui empêchaient le modèle de terminer ses réponses, et le même traitement n'apporte rien sur Gemma 3 270M. La manipulation des poids « à la main » mérite d'être connue : elle ouvre la voie à l'effacement ciblé de comportements. <a href="https://korben.info/gpt-6-astra-poids-qwen.html">https://korben.info/gpt-6-astra-poids-qwen.html</a> · Article : <a href="https://rikiyat.github.io/blog/weight-space-programming/">https://rikiyat.github.io/blog/weight-space-programming/</a></p>
+</li>
+<li>
+<p><strong>Korben — HatchZip : décompresser une archive énorme sur un disque plein (4 novembre 2026).</strong> Extracteur libre et gratuit (Windows, macOS, Linux), en interface graphique ou en ligne de commande : il vide l'archive par la fin au fur et à mesure de l'extraction, si bien qu'un ZIP de 180 Go n'occupe plus qu'environ 200 Go au total au lieu de 380. Gère la reprise après interruption et l'arrêt propre. Pratique pour les paquets de ressources volumineux ou les modèles locaux. <a href="https://github.com/xevrion/hatchzip">https://github.com/xevrion/hatchzip</a></p>
+</li>
+<li>
+<p><strong>Inde — l'IndiaAI Mission publie deux familles de modèles souverains, EKA-1 et Dhīr 2B/5B (3 novembre 2026).</strong> EKA-1 (Soket Labs) est un modèle à architecture hybride creuse couvrant l'anglais et les 22 langues officielles indiennes, destiné au code, au raisonnement et aux agents ; Dhīr 2B et 5B (ZenteiQ) visent l'automatisation documentaire et la recherche d'information hors ligne et tournent sur GPU, TPU ou téléphone, sans cloud. Diffusion par la plateforme AIKosh. Un cas d'école pour parler de souveraineté et d'usage hors ligne en NSI. <a href="https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743">https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743</a></p>
+</li>
+<li>
+<p><strong>Google — Android Studio accepte plus de 40 agents de codage tiers, et Android CLI devient plugin officiel de Claude Code et Codex (28 octobre 2026).</strong> La fonction « Bring Your Own Agent » est stable dans Android Studio Rabbit 2 : agents compatibles Agent Client Protocol installables depuis une place de marché intégrée, avec accès à la structure du projet, à la compilation, à l'émulateur et à Logcat. Android CLI (création de projets, émulateurs, base de connaissances Android) est proposé comme plugin officiel pour Claude Code et Codex ; Google annonce des tâches d'interface terminées 77 % plus vite avec jusqu'à trois fois moins de jetons dans ses tests internes. <a href="https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance">https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance</a></p>
+</li>
+</ul>
+<h2>3. IA et éducation</h2>
+<p><em>Source imposée (ActuIA, journal de veille) : aucune brève neuve du secteur éducation depuis le 3 novembre — les deux dernières (Google désactive l'IA par défaut sur les comptes élèves, Telangana/AWS) ont déjà été signalées hier. Je complète donc par des sources institutionnelles.</em></p>
+<ul>
+<li>
+<p><strong>Royaume-Uni — 800 000 livres du AI Upskilling Challenge Fund pour quatre projets de formation à l'IA à Barnsley (3 novembre 2026).</strong> Barnsley College déploie des unités mobiles de formation pour les personnels hospitaliers et de l'aide sociale (184 403 £) ; Atheni formera 140 personnes de 40 ans et plus dans six entreprises d'industrie, d'ingénierie et de construction (231 000 £) ; Fossu/Ignite AI vise 100 habitants dont des femmes revenant sur le marché du travail (195 188 £) ; Optimise Cyber Solutions accompagnera vingt petites entreprises (200 000 £). Annoncé par le gouvernement britannique comme pilote reproductible au titre de l'objectif de dix millions de travailleurs formés d'ici 2030. <a href="https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills">https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills</a></p>
+</li>
+<li>
+<p><strong>Microsoft et l'American Federation of Teachers — un standard contractuel de sécurité et de confidentialité pour l'IA à l'école, en vigueur depuis le 1er novembre 2026.</strong> Les districts scolaires américains peuvent adjoindre dix protections à un contrat Microsoft Education neuf ou existant, sans renégociation : interdiction d'utiliser les données des élèves et des enseignants pour entraîner les modèles, sauf exception étroite, engagement de transparence sur les changements de produit et sur les risques, recours en cas de manquement. Durée de deux ans renouvelable. Un précédent intéressant à citer quand on parle de clauses de protection dans les contrats d'outils numériques. <a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf">https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf</a></p>
+</li>
+<li>
+<p><strong>Réseau Canopé — précision sur le cycle de webinaires signalé le 3 novembre : « L'intelligence artificielle en mathématiques et en sciences », mercredi 25 novembre 2026.</strong> La session traite l'IA comme outil, objet d'étude et enjeu de société dans les classes de sciences et de mathématiques. Le même programme comporte « Agent conversationnel personnalisé au service de l'enseignement » (12 novembre) et une séance sur les IA et les émotions des jeunes (10 novembre). Gratuit. <a href="https://www.reseau-canope.fr/ia-et-education">https://www.reseau-canope.fr/ia-et-education</a></p>
+</li>
+<li>
+<p><strong>Corée du Sud — le ministère de l'Éducation veut porter de un à trois ans l'exclusion des tricheurs du Suneung (29 octobre 2026).</strong> Le ministère qualifie les fraudes aux lunettes connectées d'entrave délibérée à l'examen et recommande aux universités d'appliquer les mêmes sanctions dès cette année ; une personne chargée de détecter ces lunettes sera affectée à chaque centre d'examen dès l'épreuve du 19 novembre, et des détecteurs d'ondes radio sont à l'étude pour l'examen suivant. Un précédent utile pour l'argumentaire « intégrité académique » du lycée. <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe">https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe</a></p>
+</li>
+</ul>
+<h2>4. Python pour l'enseignement</h2>
+<ul>
+<li>
+<p><strong>Ruff 0.17.4 publiée le 5 novembre 2026 (PyPI).</strong> Le linter et formateur écrit en Rust, gratuit et open source, est livré avec des binaires Windows, macOS et Linux : installation en une commande, aucune dépendance Python. Version de maintenance à récupérer telle quelle. <a href="https://pypi.org/project/ruff/">https://pypi.org/project/ruff/</a></p>
+</li>
+<li>
+<p><strong>Django 6.1.3, 6.0.10 et 5.2.19 — trois versions correctives publiées le 3 novembre 2026 (six failles de sécurité).</strong> À mettre à jour sur tout projet Django, y compris les exercices d'atelier hébergés. <a href="https://www.djangoproject.com/weblog/2026/nov/">https://www.djangoproject.com/weblog/2026/nov/</a></p>
+</li>
+<li>
+<p><strong>matchify — convertir du <code>if</code>/<code>elif</code> en <code>match</code>, et pydantic-pint — des grandeurs physiques avec unités (signalés par PyCoder's Weekly n° 311).</strong> Le premier est un outil d'apprentissage idéal pour la nouvelle syntaxe <code>match</code> du programme de NSI : on écrit la version conditionnelle, l'outil montre la version structurelle. Le second vérifie l'homogénéité des unités dans du code Python, utile pour modéliser des mesures en SVT ou en enseignement scientifique. <a href="https://pycoders.com/issues">https://pycoders.com/issues</a></p>
+</li>
+<li>
+<p><strong>PyCon ES 2026 — 6 au 8 novembre 2026, Barcelone, et PyLadiesCon 2026 en décembre (en ligne, multilingue).</strong> Deux rendez-vous ouverts pour se former et pour alimenter des projets de classe (conférences enregistrées, supports publiés). <a href="https://es.pycon.org/">https://es.pycon.org/</a></p>
+</li>
+</ul>
+<p><em>4 nouveautés seulement cette semaine pour ce thème : la veille Python de novembre (Python 3.15, PEP 823/824, Tachyon, pytest 9.2) et Python 3.16.0a2 ont déjà été signalées.</em></p>
+<h2>5. Sciences</h2>
+<ul>
+<li>
+<p><strong>Pour la Science — « Une bactérie du microbiote intestinal ralentit le vieillissement » (5 novembre 2026).</strong> Article en accès partiel (fin réservée aux abonnés). <a href="https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php">https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php</a></p>
+</li>
+<li>
+<p><strong>Pour la Science — « Le mystère persistant de l'eau qui gèle » (2 novembre 2026).</strong> Retour sur l'anomalie de la glace dense et les deux phases liquides de l'eau : un très bon support pour l'enseignement scientifique et la notion de transition de phase. Accès partiel. <a href="https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php">https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php</a></p>
+</li>
+<li>
+<p><strong>ScienceDaily / revue à comité de lecture — des dents vieilles de 400 000 ans réécrivent un épisode de l'évolution humaine (5 novembre 2026).</strong> En extrayant les protéines d'énamels fossiles, les chercheurs montrent qu'une espèce humaine longtemps considérée comme un cul-de-sac évolutif a laissé des traces génétiques chez des populations actuelles. Exploitable en spé SVT (origines de l'Homme, apport de la paléoprotéomique). <a href="https://www.sciencedaily.com/releases/2026/11/261102202836.htm">https://www.sciencedaily.com/releases/2026/11/261102202836.htm</a></p>
+</li>
+<li>
+<p><strong>ScienceDaily — un mécanisme de défense cellulaire inconnu protège les cellules saines de l'inflammation (5 novembre 2026).</strong> Une énigme de trente ans résolue : les cellules saines se protègent de l'inflammation censée combattre les infections. Piste directe pour les chapitres immunité et réaction inflammatoire de 1re et de terminale. <a href="https://www.sciencedaily.com/releases/2026/11/261101010554.htm">https://www.sciencedaily.com/releases/2026/11/261101010554.htm</a></p>
+</li>
+<li>
+<p><strong>ScienceDaily — une énigme de cinquante ans sur la disparition des grenouilles brésiliennes élucidée (3 novembre 2026).</strong> Un champignon pathogène semble avoir balayé la région et décimé des populations vulnérables : un cas d'école sur les amphibiens et les maladies émergentes, à rapprocher de <em>Batrachochytrium dendrobatidis</em>. <a href="https://www.sciencedaily.com/releases/2026/11/261102202838.htm">https://www.sciencedaily.com/releases/2026/11/261102202838.htm</a></p>
+</li>
+<li>
+<p><strong>ScienceDaily — transformer des virus en armes contre les bactéries multirésistantes (4 novembre 2026).</strong> Une équipe internationale publie les premières lignes directrices coordonnées pour la phagothérapie personnalisée. Utile pour traiter l'antibiorésistance autrement que par le seul couple antibiotiques/hygiène. <a href="https://www.sciencedaily.com/releases/2026/11/261102202828.htm">https://www.sciencedaily.com/releases/2026/11/261102202828.htm</a></p>
+</li>
+</ul>
+<h2>À retenir</h2>
+<p>Une journée chargée côté sécurité : la faille OpenSSH à corriger sur tout serveur Linux, la recommandation CNIL sur le rejeu de session et le durcissement de la classification d'âge de l'App Store. Côté IA de développement, deux retours d'expérience très concrets — Revolut qui divise sa facture par dix en s'auto-hébergeant sur GLM, et la retouche directe des poids d'un petit modèle par GPT-6 Astra. Enfin, une bactérie intestinale qui ralentit le vieillissement et des dents de 400 000 ans qui déplacent une branche de notre arbre.</p>
+<footer>Édition du vendredi 6 novembre 2026 — <a href="https://opware2000.github.io/veille/pedagogique.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
