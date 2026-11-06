@@ -6,9 +6,140 @@
 <description>Veille quotidienne du subreddit r/vibecoding — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/vibecoding.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 05 Nov 2026 00:44:11 +0100</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 00:44:10 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/vibecoding — vendredi 6 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-06.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-06</guid>
+<pubDate>Fri, 06 Nov 2026 00:44:10 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — vendredi 6 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La journée est dominée par l'outillage d'agents de codage : cinq projets libres neufs (Stroq, Shelbi, Lmux, Goyangi, Vexus) répondent tous au même manque — voir et contrôler ce que fait l'agent dans le dépôt. Côté modèles, une voix de synthèse embarquée (Phonon) et une famille de modèles ouverts de simulation (Cosmos 3) sont publiées sous licences permissives. Les modèles de langage ouverts progressent encore avec l'annonce de Tencent Hy4, dont les poids ne sont pas encore déposés.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Stroq — auditer localement ce que l'agent a fait, et pourquoi</h3>
+<p>Outil en ligne de commande qui relit les sessions de Claude Code, Codex et Cursor à la recherche de secrets laissés en clair, puis installe des greffons locaux qui relient chaque commande risquée au contenu qui l'a dictée. Tout se passe sur la machine, sans télémétrie. C'est l'entrée la plus suivie de la journée (86 étoiles, 16 points sur Hacker News). Licence Apache 2.0, dernière mise à jour le 5 novembre. https://github.com/AGGIB/Stroq</p>
+<h3>Shelbi — orchestrateur d'agents pour le bureau et le terminal</h3>
+<p>Un seul binaire, plusieurs machines : Shelbi suit plusieurs sessions d'agents en parallèle, signale celles qui sont bloquées et range ses tâches en Markdown et ses flux de travail en YAML dans le dépôt, sans base de données ni service en ligne. Installation par Homebrew. Licence MIT. https://shelbi.dev/</p>
+<h3>Mooring — environnement de développement piloté par agent</h3>
+<p>Application macOS (système 26, Apple silicon uniquement) pour mener plusieurs sessions Claude Code de front, sur plusieurs branches, avec notes vocales et cartes de tâches ; elle arrête proprement le travail à la limite de forfait. Gratuite au téléchargement ; le site ne précise pas la licence. https://mooring.sh/</p>
+<h3>Lmux — terminal macOS natif pour agents</h3>
+<p>Terminal léger écrit en Swift, pensé pour passer la journée dans Claude Code et Codex. Licence MIT, 10 étoiles, dernière mise à jour le 5 novembre. https://github.com/sooftware/lmux</p>
+<h3>Zerg Client (ZTC) — agent de codage en terminal et sur bureau</h3>
+<p>Agent en ligne de commande (Node.js 20.19 ou 22.12 minimum) avec application de bureau macOS en bêta. Attention à la licence : le code est consultable mais l'usage commercial exige une licence payante, et l'usage des modèles est facturé à part. https://zergai.com/ztc</p>
+<h3>Tokenfund — financer un projet libre avec les jetons de son agent</h3>
+<p>Plateforme où l'on affecte à un projet libre non pas de l'argent mais un quota de jetons d'agent : l'agent tourne dans un bac à sable comme utilisateur distinct, prend les tâches ouvertes et propose des requêtes de fusion jusqu'à la limite fixée. Le dépassement de la dernière étape est possible. https://tokenfund.myclawn.com</p>
+<h3>Hellcraft — modification Minecraft « Enfer de Dante »</h3>
+<p>Modification gratuite pour Minecraft (sept cercles, boss propres à chaque cercle, fragments et cœurs de sang), formellement assumée comme très assistée par IA. Dépôt GitHub, licence MIT. https://github.com/The-small-things/hellcraft</p>
+<h3>Hexplorers — jeu de plateau 3D dans le navigateur</h3>
+<p>Alternative libre à Catan entièrement dans le navigateur, rendue en WebGPU. L'auteur annonce un projet open source mais ne fournit pas d'adresse de dépôt dans son message : l'affirmation n'est pas vérifiable en l'état. Gratuit. https://hexplorers.xyz</p>
+<h3>pcbang.io — café internet virtuel</h3>
+<p>Espace partagé dans le navigateur où l'on discute et joue à plusieurs dans une salle commune. Gratuit, aucune publication de code. https://pcbang.io</p>
+<h3>Rétro-ordinateur pour Android pliable</h3>
+<p>Application Android d'émulation rétro, gratuite et sans publicité, pensée pour les écrans pliables mais fonctionnant sur téléphone ordinaire. Aucun lien de dépôt fourni. Deux fils du subreddit en parlent.</p>
+<h3>Auto-clippeur 24 h/24 en local</h3>
+<p>Chaîne complète exécutée sur un PC Windows avec Node, ffmpeg, yt-dlp, Ollama (qwen2.5 7B et sa variante vision), whisper.cpp pour les sous-titres et Kokoro pour la voix : elle repère des extraits, les monte en format vertical, écrit les accroches et publie. Aucune interface payante. L'auteur ne donne pas de dépôt : à prendre comme une description de montage, pas comme un logiciel distribuable.</p>
+<h3>Application AR pour figurines 3D (Meshy et autres)</h3>
+<p>Application mobile encore en phase de conception : on pointe un dossier d'exportations 3D, on fait défiler les figurines et on les pose en réalité augmentée dans la pièce ou dans l'un des douze décors fournis, avec une animation d'attente et un regard qui suit l'utilisateur. Pas encore sur l'App Store. Auteur : u/timcorin.</p>
+<h3>AIRIS — jeu de stratégie gratuit dans le navigateur</h3>
+<p>Simulation 2026-2076 : on préside le Conseil mondial de l'IA ou l'on joue l'IA elle-même avec un objectif secret ; 37 fins, un scénario quotidien, sans inscription. Gratuit, partie sauvegardée dans le navigateur. https://vaigames.com/airis</p>
+<h3>Gestionnaire de sauvegarde GitHub (Windows)</h3>
+<p>Application de bureau Windows pour archiver ses dépôts avec une navigation proche de celle de GitHub. Gratuite à l'essai, mais la page de l'éditeur expose des « passes » payantes et ne précise pas la licence : à considérer comme un logiciel propriétaire à offres limitées. https://www.mmahingu.com/github-backup-manager/</p>
+<h3>qtiles — éditeur de pixels dans le navigateur</h3>
+<p>Éditeur de pixel art assez complet (calques, pochoirs, palettes, feuilles de sprites exportées avec un fichier JSON des pivots, assistants de relief et de caractères). Le site ne mentionne ni licence ni prix : à vérifier avant tout usage en classe. http://qtiles.app</p>
+<h3>Colshare — application de partage, code cryptographique publié</h3>
+<p>Application Android désormais sur Google Play, dont l'auteur a publié le code de chiffrement et des pages de lien sous licence AGPL 3.0, avec un contrôle quotidien comparant octet par octet ce que sert le site et ce que contient le dépôt. Les applications mobiles ne sont pas encore couvertes par ce contrôle, ce que l'auteur signale lui-même. https://github.com/dentracon-cell/colshare-crypto</p>
+<h3>Phonon TTS — voix de synthèse sur l'appareil</h3>
+<p>Gradium publie un modèle de synthèse vocale qui tourne sans serveur ni réseau, fondé sur la lignée Pocket TTS. Les poids sont ouverts : Phonon 31m est sous Apache 2.0 (usage commercial libre), les autres modèles sont en CC BY-NC, gratuit pour un usage non commercial. Cinq langues, clonage et conception de voix, premier à la « Open TTS Leaderboard » de Hugging Face selon l'éditeur. https://huggingface.co/blog/phonon-tts</p>
+<h3>NVIDIA Cosmos 3 — poids ouverts pour la simulation interactive</h3>
+<p>Quatre points de contrôle ouverts (16 milliards de paramètres entraînables, dérivés de Cosmos 3 Nano) pour la simulation de mondes interactifs et les scènes de conduite multi-capteurs. Licence OpenMDW 1.1, qui autorise l'usage commercial sous ses conditions. https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation</p>
+<h3>Dharma Field Extractor — extraction de champs en JSON</h3>
+<p>Modèle de 2 milliards de paramètres qui extrait des champs désignés d'un document quelconque et les rend en JSON structuré ; l'éditeur annonce de meilleurs résultats que les grands modèles d'API testés, pour un coût bien moindre. Le billet ne donne pas le détail de la licence : à vérifier sur la fiche du modèle avant usage. https://huggingface.co/blog/Dharma-AI/dharma-field-extractor</p>
+<h3>Tencent Hy4 — poids annoncés, pas encore déposés</h3>
+<p>Tencent annonce la quatrième génération de son modèle ouvert, avec compréhension visuelle et usage d'ordinateur (interface en ligne de commande et interface graphique) pour la première fois, et indique que les poids et les fiches seront publiés « dans les jours qui viennent ». Rien n'est donc encore téléchargeable : l'annonce n'engage que son auteur. https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>llm 0.37 puis 0.37.1</strong> (CLI et bibliothèque Python de Simon Willison) : ajout des modèles gpt-6.1-sol et gpt-6.1-terra, nouvelle commande <code>llm openai endpoint add</code> pour déclarer un point d'accès compatible OpenAI, changement de modèle par défaut au profit du moins cher, gestion de contenus binaires de types différents pour les plongements. Douze contributeurs sur cette version. https://simonwillison.net/2026/Nov/2/llm/</li>
+<li><strong>datasette-agent 0.5a0</strong> : apparition du « panneau », un agent qui reste ouvert à côté d'une page Datasette (table ou requête) et permet de faire naître une petite application puis de la modifier depuis la conversation. https://simonwillison.net/2026/Nov/3/datasette-agent/</li>
+<li><strong>datasette-apps 0.3a0</strong> : hébergement et édition d'applications HTML dans Datasette ; les applications se citent par <code>#</code> dans la conversation, l'agent gère les requêtes enregistrées qu'elles peuvent appeler, et l'écriture demande une approbation explicite. https://simonwillison.net/2026/Nov/4/datasette-apps/</li>
+<li><strong>datasette-llm 0.1a10</strong> : correctif ; la liste des modèles proposés est de nouveau limitée à ceux de la configuration. https://simonwillison.net/2026/Nov/4/datasette-llm/</li>
+<li><strong>Skip Dat</strong> (Hold Alt + défilement fait sortir la file d'attente musicale près du curseur) : nouvelle version avec cinq habillages et la possibilité d'écrire le sien (un dossier, un fichier skin.json, des images, rechargés à chaud), un mode performance qui désactive flous et animations (environ 80 % de processeur en moins), cinq présentations, tailles réglables, un historique « ce que j'écoutais » conservé sur la machine. Le dépôt n'annonce pas de licence. https://github.com/ffoouuaadd/skip-dat</li>
+<li><strong>transformers-mic</strong> (Hugging Face) : jeu de « contrats d'intégration » et de modèles-réductions qui rejouent les tests d'intégration des modèles Transformers sur processeur, afin de repérer les régressions avant qu'elles n'atteignent la branche principale — la faille de masquage causale d'UMT5 est restée près de deux mois sans être détectée faute de ce type de test. https://huggingface.co/blog/transformers-mic</li>
+<li>Pour mémoire, hors critère : le clavier <strong>Keychron F4 HE 8K Vibe Coding</strong> (matériel commercial) est l'entrée la plus votée du jour sur Hacker News avec 46 points ; ce n'est ni un logiciel ni un projet libre.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>Vexus</strong> — greffon local pour Claude Code qui, à partir d'un index sémantique et de graphe d'appels tenu sur la machine, ajoute à chaque invite quelques emplacements probables du code à consulter, avant que l'agent ne se mette à fouiller le dépôt. Écrit en Rust, licence MIT. https://github.com/faique43/vexus</li>
+<li><strong>Goyangi</strong> — panneau qui accompagne la conversation de Claude Code : étapes de chaque tour, outils employés, jetons consommés, coût, sous-agents, avec un chat ou un chien en pixels pour l'humeur. TypeScript, licence MIT. https://github.com/netil/goyangi</li>
+<li><strong>Watchdeck</strong> — journalise ce que chaque session de Claude Code a été empêchée de faire (commandes bloquées, accès refusés), en Go et sous licence Apache 2.0. https://github.com/Panda-Taps-LLC/watchdeck</li>
+</ul>
+<h2>Volume</h2>
+<p>142 entrées nouvelles examinées dans l'intervalle (journaux Reddit, relais de l'extension, Hacker News, Lobsters et les quatre flux complémentaires), 29 éléments retenus, 113 écartés — la plupart étant des récits d'expérience, des questions, des doublons de relais ou des annonces en anglais déjà connues. La collecte n'a signalé aucune erreur (<code>meta.json</code> vide).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — vendredi 6 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La journée est dominée par l'outillage d'agents de codage : cinq projets libres neufs (Stroq, Shelbi, Lmux, Goyangi, Vexus) répondent tous au même manque — voir et contrôler ce que fait l'agent dans le dépôt. Côté modèles, une voix de synthèse embarquée (Phonon) et une famille de modèles ouverts de simulation (Cosmos 3) sont publiées sous licences permissives. Les modèles de langage ouverts progressent encore avec l'annonce de Tencent Hy4, dont les poids ne sont pas encore déposés.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Stroq — auditer localement ce que l'agent a fait, et pourquoi</h3>
+<p>Outil en ligne de commande qui relit les sessions de Claude Code, Codex et Cursor à la recherche de secrets laissés en clair, puis installe des greffons locaux qui relient chaque commande risquée au contenu qui l'a dictée. Tout se passe sur la machine, sans télémétrie. C'est l'entrée la plus suivie de la journée (86 étoiles, 16 points sur Hacker News). Licence Apache 2.0, dernière mise à jour le 5 novembre. https://github.com/AGGIB/Stroq</p>
+<h3>Shelbi — orchestrateur d'agents pour le bureau et le terminal</h3>
+<p>Un seul binaire, plusieurs machines : Shelbi suit plusieurs sessions d'agents en parallèle, signale celles qui sont bloquées et range ses tâches en Markdown et ses flux de travail en YAML dans le dépôt, sans base de données ni service en ligne. Installation par Homebrew. Licence MIT. https://shelbi.dev/</p>
+<h3>Mooring — environnement de développement piloté par agent</h3>
+<p>Application macOS (système 26, Apple silicon uniquement) pour mener plusieurs sessions Claude Code de front, sur plusieurs branches, avec notes vocales et cartes de tâches ; elle arrête proprement le travail à la limite de forfait. Gratuite au téléchargement ; le site ne précise pas la licence. https://mooring.sh/</p>
+<h3>Lmux — terminal macOS natif pour agents</h3>
+<p>Terminal léger écrit en Swift, pensé pour passer la journée dans Claude Code et Codex. Licence MIT, 10 étoiles, dernière mise à jour le 5 novembre. https://github.com/sooftware/lmux</p>
+<h3>Zerg Client (ZTC) — agent de codage en terminal et sur bureau</h3>
+<p>Agent en ligne de commande (Node.js 20.19 ou 22.12 minimum) avec application de bureau macOS en bêta. Attention à la licence : le code est consultable mais l'usage commercial exige une licence payante, et l'usage des modèles est facturé à part. https://zergai.com/ztc</p>
+<h3>Tokenfund — financer un projet libre avec les jetons de son agent</h3>
+<p>Plateforme où l'on affecte à un projet libre non pas de l'argent mais un quota de jetons d'agent : l'agent tourne dans un bac à sable comme utilisateur distinct, prend les tâches ouvertes et propose des requêtes de fusion jusqu'à la limite fixée. Le dépassement de la dernière étape est possible. https://tokenfund.myclawn.com</p>
+<h3>Hellcraft — modification Minecraft « Enfer de Dante »</h3>
+<p>Modification gratuite pour Minecraft (sept cercles, boss propres à chaque cercle, fragments et cœurs de sang), formellement assumée comme très assistée par IA. Dépôt GitHub, licence MIT. https://github.com/The-small-things/hellcraft</p>
+<h3>Hexplorers — jeu de plateau 3D dans le navigateur</h3>
+<p>Alternative libre à Catan entièrement dans le navigateur, rendue en WebGPU. L'auteur annonce un projet open source mais ne fournit pas d'adresse de dépôt dans son message : l'affirmation n'est pas vérifiable en l'état. Gratuit. https://hexplorers.xyz</p>
+<h3>pcbang.io — café internet virtuel</h3>
+<p>Espace partagé dans le navigateur où l'on discute et joue à plusieurs dans une salle commune. Gratuit, aucune publication de code. https://pcbang.io</p>
+<h3>Rétro-ordinateur pour Android pliable</h3>
+<p>Application Android d'émulation rétro, gratuite et sans publicité, pensée pour les écrans pliables mais fonctionnant sur téléphone ordinaire. Aucun lien de dépôt fourni. Deux fils du subreddit en parlent.</p>
+<h3>Auto-clippeur 24 h/24 en local</h3>
+<p>Chaîne complète exécutée sur un PC Windows avec Node, ffmpeg, yt-dlp, Ollama (qwen2.5 7B et sa variante vision), whisper.cpp pour les sous-titres et Kokoro pour la voix : elle repère des extraits, les monte en format vertical, écrit les accroches et publie. Aucune interface payante. L'auteur ne donne pas de dépôt : à prendre comme une description de montage, pas comme un logiciel distribuable.</p>
+<h3>Application AR pour figurines 3D (Meshy et autres)</h3>
+<p>Application mobile encore en phase de conception : on pointe un dossier d'exportations 3D, on fait défiler les figurines et on les pose en réalité augmentée dans la pièce ou dans l'un des douze décors fournis, avec une animation d'attente et un regard qui suit l'utilisateur. Pas encore sur l'App Store. Auteur : u/timcorin.</p>
+<h3>AIRIS — jeu de stratégie gratuit dans le navigateur</h3>
+<p>Simulation 2026-2076 : on préside le Conseil mondial de l'IA ou l'on joue l'IA elle-même avec un objectif secret ; 37 fins, un scénario quotidien, sans inscription. Gratuit, partie sauvegardée dans le navigateur. https://vaigames.com/airis</p>
+<h3>Gestionnaire de sauvegarde GitHub (Windows)</h3>
+<p>Application de bureau Windows pour archiver ses dépôts avec une navigation proche de celle de GitHub. Gratuite à l'essai, mais la page de l'éditeur expose des « passes » payantes et ne précise pas la licence : à considérer comme un logiciel propriétaire à offres limitées. https://www.mmahingu.com/github-backup-manager/</p>
+<h3>qtiles — éditeur de pixels dans le navigateur</h3>
+<p>Éditeur de pixel art assez complet (calques, pochoirs, palettes, feuilles de sprites exportées avec un fichier JSON des pivots, assistants de relief et de caractères). Le site ne mentionne ni licence ni prix : à vérifier avant tout usage en classe. http://qtiles.app</p>
+<h3>Colshare — application de partage, code cryptographique publié</h3>
+<p>Application Android désormais sur Google Play, dont l'auteur a publié le code de chiffrement et des pages de lien sous licence AGPL 3.0, avec un contrôle quotidien comparant octet par octet ce que sert le site et ce que contient le dépôt. Les applications mobiles ne sont pas encore couvertes par ce contrôle, ce que l'auteur signale lui-même. https://github.com/dentracon-cell/colshare-crypto</p>
+<h3>Phonon TTS — voix de synthèse sur l'appareil</h3>
+<p>Gradium publie un modèle de synthèse vocale qui tourne sans serveur ni réseau, fondé sur la lignée Pocket TTS. Les poids sont ouverts : Phonon 31m est sous Apache 2.0 (usage commercial libre), les autres modèles sont en CC BY-NC, gratuit pour un usage non commercial. Cinq langues, clonage et conception de voix, premier à la « Open TTS Leaderboard » de Hugging Face selon l'éditeur. https://huggingface.co/blog/phonon-tts</p>
+<h3>NVIDIA Cosmos 3 — poids ouverts pour la simulation interactive</h3>
+<p>Quatre points de contrôle ouverts (16 milliards de paramètres entraînables, dérivés de Cosmos 3 Nano) pour la simulation de mondes interactifs et les scènes de conduite multi-capteurs. Licence OpenMDW 1.1, qui autorise l'usage commercial sous ses conditions. https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation</p>
+<h3>Dharma Field Extractor — extraction de champs en JSON</h3>
+<p>Modèle de 2 milliards de paramètres qui extrait des champs désignés d'un document quelconque et les rend en JSON structuré ; l'éditeur annonce de meilleurs résultats que les grands modèles d'API testés, pour un coût bien moindre. Le billet ne donne pas le détail de la licence : à vérifier sur la fiche du modèle avant usage. https://huggingface.co/blog/Dharma-AI/dharma-field-extractor</p>
+<h3>Tencent Hy4 — poids annoncés, pas encore déposés</h3>
+<p>Tencent annonce la quatrième génération de son modèle ouvert, avec compréhension visuelle et usage d'ordinateur (interface en ligne de commande et interface graphique) pour la première fois, et indique que les poids et les fiches seront publiés « dans les jours qui viennent ». Rien n'est donc encore téléchargeable : l'annonce n'engage que son auteur. https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>llm 0.37 puis 0.37.1</strong> (CLI et bibliothèque Python de Simon Willison) : ajout des modèles gpt-6.1-sol et gpt-6.1-terra, nouvelle commande <code>llm openai endpoint add</code> pour déclarer un point d'accès compatible OpenAI, changement de modèle par défaut au profit du moins cher, gestion de contenus binaires de types différents pour les plongements. Douze contributeurs sur cette version. https://simonwillison.net/2026/Nov/2/llm/</li>
+<li><strong>datasette-agent 0.5a0</strong> : apparition du « panneau », un agent qui reste ouvert à côté d'une page Datasette (table ou requête) et permet de faire naître une petite application puis de la modifier depuis la conversation. https://simonwillison.net/2026/Nov/3/datasette-agent/</li>
+<li><strong>datasette-apps 0.3a0</strong> : hébergement et édition d'applications HTML dans Datasette ; les applications se citent par <code>#</code> dans la conversation, l'agent gère les requêtes enregistrées qu'elles peuvent appeler, et l'écriture demande une approbation explicite. https://simonwillison.net/2026/Nov/4/datasette-apps/</li>
+<li><strong>datasette-llm 0.1a10</strong> : correctif ; la liste des modèles proposés est de nouveau limitée à ceux de la configuration. https://simonwillison.net/2026/Nov/4/datasette-llm/</li>
+<li><strong>Skip Dat</strong> (Hold Alt + défilement fait sortir la file d'attente musicale près du curseur) : nouvelle version avec cinq habillages et la possibilité d'écrire le sien (un dossier, un fichier skin.json, des images, rechargés à chaud), un mode performance qui désactive flous et animations (environ 80 % de processeur en moins), cinq présentations, tailles réglables, un historique « ce que j'écoutais » conservé sur la machine. Le dépôt n'annonce pas de licence. https://github.com/ffoouuaadd/skip-dat</li>
+<li><strong>transformers-mic</strong> (Hugging Face) : jeu de « contrats d'intégration » et de modèles-réductions qui rejouent les tests d'intégration des modèles Transformers sur processeur, afin de repérer les régressions avant qu'elles n'atteignent la branche principale — la faille de masquage causale d'UMT5 est restée près de deux mois sans être détectée faute de ce type de test. https://huggingface.co/blog/transformers-mic</li>
+<li>Pour mémoire, hors critère : le clavier <strong>Keychron F4 HE 8K Vibe Coding</strong> (matériel commercial) est l'entrée la plus votée du jour sur Hacker News avec 46 points ; ce n'est ni un logiciel ni un projet libre.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>Vexus</strong> — greffon local pour Claude Code qui, à partir d'un index sémantique et de graphe d'appels tenu sur la machine, ajoute à chaque invite quelques emplacements probables du code à consulter, avant que l'agent ne se mette à fouiller le dépôt. Écrit en Rust, licence MIT. https://github.com/faique43/vexus</li>
+<li><strong>Goyangi</strong> — panneau qui accompagne la conversation de Claude Code : étapes de chaque tour, outils employés, jetons consommés, coût, sous-agents, avec un chat ou un chien en pixels pour l'humeur. TypeScript, licence MIT. https://github.com/netil/goyangi</li>
+<li><strong>Watchdeck</strong> — journalise ce que chaque session de Claude Code a été empêchée de faire (commandes bloquées, accès refusés), en Go et sous licence Apache 2.0. https://github.com/Panda-Taps-LLC/watchdeck</li>
+</ul>
+<h2>Volume</h2>
+<p>142 entrées nouvelles examinées dans l'intervalle (journaux Reddit, relais de l'extension, Hacker News, Lobsters et les quatre flux complémentaires), 29 éléments retenus, 113 écartés — la plupart étant des récits d'expérience, des questions, des doublons de relais ou des annonces en anglais déjà connues. La collecte n'a signalé aucune erreur (<code>meta.json</code> vide).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — jeudi 5 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-05.html</link>
