@@ -6,9 +6,535 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 08 Nov 2026 00:13:52 +0100</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 00:35:00 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-08.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 00:35:00 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La matière utile vient toujours majoritairement de Hacker News (« Show HN ») et de Lobsters : le flux du subreddit a livré d'un coup une vingtaine de dépôts, dont plusieurs projets très connus, mais il répond encore (fermeture annoncée le 13 novembre).</li>
+<li>Trois découvertes sortent du lot : <strong>Retex</strong>, réimplémentation de LuaLaTeX en Rust annoncée deux à trois fois plus rapide (CC0), <strong>OpenNumLab</strong>, première version d'une alternative libre à Matlab, et <strong>Bong</strong>, qui permet d'auto-héberger les « bang » de DuckDuckGo.</li>
+<li><strong>Libghostty 1.0</strong>, la bibliothèque de terminal qui porte Ghostty, est la mise à jour la plus commentée de la journée.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Écriture, sciences et enseignement</h3>
+<ul>
+<li>
+<p><strong>Retex</strong> — réimplémentation « clean-room » de LuaLaTeX en Rust, utilisable en remplacement direct (mode compatibilité, deux à trois fois plus rapide) ou comme moteur plus moderne : bien meilleurs messages d'erreur, sorties SVG, ODP/ODT, PDF/X-1 et PDF/X-4 pour l'impression, téléchargement automatique des paquets manquants, liaisons Python. Licence CC0 (domaine public) ; dépôt GitLab. L'auteur signale que le code a été entièrement produit par un modèle de langage et n'a donc pas d'auteur au sens habituel. <a href="https://gitlab.com/severin-lemaignan/retex">https://gitlab.com/severin-lemaignan/retex</a></p>
+</li>
+<li>
+<p><strong>OpenNumLab</strong> — environnement de calcul scientifique libre, avec interface de bureau écrite en Rust et ligne de commande, première version publiée, présentée comme alternative ouverte à Matlab. MIT, 2 étoiles, dernière mise à jour le 7 novembre 2026. Le dépôt a été créé le 15 octobre : projet très jeune, à éprouver longuement avant tout usage devant des élèves. <a href="https://github.com/me-farza/opennumlab">https://github.com/me-farza/opennumlab</a></p>
+</li>
+<li>
+<p><strong>PPTist</strong> — application de présentation en ligne qui reproduit l'essentiel des fonctions de PowerPoint (édition, projection, aperçu des fichiers PPTX locaux), écrite en Vue 3 et TypeScript, sans bibliothèque de composants. AGPL-3.0, 9 469 étoiles, mise à jour le 6 novembre 2026. La licence AGPL mérite d'être connue pour un usage en établissement. <a href="https://github.com/pipipi-pikachu/PPTist">https://github.com/pipipi-pikachu/PPTist</a></p>
+</li>
+<li>
+<p><strong>labml.ai</strong> — plus de soixante implémentations PyTorch commentées d'articles de recherche, avec les notes en regard du code : transformateurs, LoRA, modèles de diffusion, réseaux antagonistes, apprentissage par renforcement, optimiseurs. MIT, 67 716 étoiles. <a href="https://github.com/labmlai/annotated_deep_learning_paper_implementations">https://github.com/labmlai/annotated_deep_learning_paper_implementations</a></p>
+</li>
+</ul>
+<h3>Agents et développement assisté par IA</h3>
+<ul>
+<li>
+<p><strong>Agent Manager</strong> — multiplexeur de terminal (interface tmux) pour piloter côte à côte plusieurs agents de codage (Claude Code, Codex, OpenCode, Gemini CLI), avec état en direct, espaces de travail git séparés et affichage des différences. Apache-2.0, 646 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wainmann/agent-manager">https://github.com/wainmann/agent-manager</a></p>
+</li>
+<li>
+<p><strong>Octomind</strong> — agent de codage et environnement d'exécution en un seul binaire Rust, compatible avec n'importe quel modèle et natif MCP ; s'utilise en terminal, en intégration continue ou comme démon, avec des « spécialistes » packagés (invite, modèle, serveurs MCP, permissions) installables depuis un dépôt. Apache-2.0, 603 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Muvon/octomind">https://github.com/Muvon/octomind</a></p>
+</li>
+<li>
+<p><strong>conducted</strong> — réimplémentation sous licence MIT de l'application Conductor (rachetée par Meta) : application de bureau locale pour faire tourner des agents de codage en parallèle, chacun dans son propre espace de travail git. L'auteur indique avoir fait reconstruire l'interface par des agents pour 170 dollars. MIT, 2 étoiles, dépôt créé le 4 novembre 2026 : à prendre comme une démonstration, pas comme un produit mûr. <a href="https://github.com/jahala/conducted">https://github.com/jahala/conducted</a></p>
+</li>
+<li>
+<p><strong>Rui</strong> — environnement d'exécution d'agents écrit en Zig avec SQLite : conversations réutilisables, approbations des commandes Bash, reprise après incident ; les sessions partagent un même hôte plutôt que d'être chacune un processus, ce qui permet à l'auteur d'annoncer cent agents orchestrés dans 2,5 Mo de mémoire. GitHub ne reconnaît aucune licence pour ce dépôt et les mesures citées viennent de l'auteur : 5 étoiles. <a href="https://github.com/DivyanshGolyan/rui">https://github.com/DivyanshGolyan/rui</a></p>
+</li>
+<li>
+<p><strong>Infinity</strong> — environnement d'exécution d'agents et protocole d'outils (RAP) pour la concurrence : les outils sont servis sur le réseau sans garder une connexion ouverte, les agents peuvent hiberner entièrement, et les serveurs MCP existants fonctionnent via une couche de compatibilité. Apache-2.0, 769 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hydro-project/infinity">https://github.com/hydro-project/infinity</a></p>
+</li>
+<li>
+<p><strong>Select</strong> — orchestration d'agents où l'autonomie se gagne par le travail vérifié, avec surveillance humaine. AGPL-3.0, 3 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/Kirby54/Select">https://github.com/Kirby54/Select</a></p>
+</li>
+<li>
+<p><strong>Ryph</strong> — agents de codage auto-hébergés pour une équipe d'astreinte : joignables dans la messagerie et sur le forge, déclenchés par les incidents. MIT, 14 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/ryph-hq/ryph">https://github.com/ryph-hq/ryph</a></p>
+</li>
+<li>
+<p><strong>promptcheckup</strong> — vérifie qu'une modification d'invite améliore réellement un agent, par rejeu apparié et intervalles de confiance à 95 %, au lieu de juger à l'œil. Apache-2.0, 1 étoile, dépôt créé le 1er novembre 2026. <a href="https://github.com/gael55x/promptcheckup">https://github.com/gael55x/promptcheckup</a></p>
+</li>
+<li>
+<p><strong>backendskills</strong> — jeu de compétences pour agents de codage, testé sur quinze tâches de développement serveur avec vérifications cachées, destiné à éviter le code qui passe la démonstration et casse en production. MIT, 42 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/globalmpc/backendskills">https://github.com/globalmpc/backendskills</a></p>
+</li>
+<li>
+<p><strong>Goethe</strong> — installation et service de modèles sur le matériel que vous contrôlez, présenté comme « Vercel, mais pour vos modèles » : l'outil détecte le matériel, place les modèles et expose une API utilisable par n'importe quel client. Apache-2.0, 51 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/meshapplied/Goethe">https://github.com/meshapplied/Goethe</a></p>
+</li>
+<li>
+<p><strong>trace-engine-cli</strong> — outil publié par l'équipe Chrome DevTools pour analyser les traces du navigateur avec des agents. Le dépôt ne comporte aucune description, la portée exacte reste donc à confirmer par la lecture du code. Apache-2.0, 5 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/ChromeDevTools/trace-engine-cli">https://github.com/ChromeDevTools/trace-engine-cli</a></p>
+</li>
+<li>
+<p><strong>AIVim</strong> — éditeur inspiré de Vim auquel est ajoutée une assistance par IA, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Le message Hacker News ne comporte aucun lien vers un dépôt ni licence : l'annonce n'est pas vérifiable en l'état. <a href="https://news.ycombinator.com/item?id=50405893">https://news.ycombinator.com/item?id=50405893</a></p>
+</li>
+</ul>
+<h3>Outils système, terminal et développement</h3>
+<ul>
+<li>
+<p><strong>Trout</strong> — client IRC en terminal inspiré de mIRC, avec menus, barre de canaux et fenêtres de pseudos, qui installe et configure lui-même son relais soju. MIT, 19 étoiles, dépôt créé le 28 octobre 2026. <a href="https://github.com/MaxRenaud/trout">https://github.com/MaxRenaud/trout</a></p>
+</li>
+<li>
+<p><strong>speedrunner</strong> — garde les outils en ligne de commande Python, Ruby, PHP et Node chargés en mémoire (aws, az, gcloud, ansible, eslint, rubocop, composer, et des centaines d'autres) pour diviser leur temps de démarrage ; l'auteur annonce un facteur 4,5. Apache-2.0, 11 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/anthonyGosme/speedrunner">https://github.com/anthonyGosme/speedrunner</a></p>
+</li>
+<li>
+<p><strong>webframe</strong> — exécute une page web comme un programme en ligne de commande, en s'appuyant sur la vue web déjà présente dans le système. MIT, 279 étoiles, mise à jour le 30 octobre 2026. <a href="https://github.com/tractordev/webframe">https://github.com/tractordev/webframe</a></p>
+</li>
+<li>
+<p><strong>Fels</strong> — petit langage système pour qui veut savoir ce que fait son code : mémoire organisée en zones dont le compilateur empêche l'échappement, erreurs comme valeurs, exécution de code à la compilation. GPL-3.0, 1 étoile, dépôt créé le 8 septembre 2026. <a href="https://github.com/fels-lang/fels">https://github.com/fels-lang/fels</a></p>
+</li>
+<li>
+<p><strong>Bobr</strong> — système de construction à adressage par contenu, sans privilèges, dans l'esprit de Nix ou Yocto, avec son propre bac à sable fondé sur les espaces de noms ; construit pour l'instant un système Linux exécutable dans QEMU. Apache-2.0, 1 étoile, dernière mise à jour le 2 novembre 2026. L'auteur le présente comme un projet personnel « vibe-codé » : à considérer comme une expérimentation. <a href="https://bobr.build/">https://bobr.build/</a></p>
+</li>
+<li>
+<p><strong>mdt</strong> — lecteur interactif de Markdown et de JSON en terminal. MIT, 3 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/VaibhavAcharya/mdt">https://github.com/VaibhavAcharya/mdt</a></p>
+</li>
+<li>
+<p><strong>MacGet</strong> — gestionnaire de téléchargement natif pour macOS, avec parallélisme adaptatif : détecte les serveurs qui limitent les téléchargeurs, apprend les limites par hôte et résiste à la mise en veille des applications. MIT, 2 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/Suryansh-Codes2209/Macget">https://github.com/Suryansh-Codes2209/Macget</a></p>
+</li>
+<li>
+<p><strong>Vitekube</strong> — exécute les tests Vitest sur de vrais clusters Kubernetes, sous forme d'extension de Vitest, pour remplacer les empilements de fichiers Docker Compose. MIT, 2 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/vitekube/vitekube">https://github.com/vitekube/vitekube</a></p>
+</li>
+<li>
+<p><strong>Enmetu</strong> — commits git automatiques qui conservent les conflits au lieu de les écraser, pour les résoudre après coup. Le dépôt est hébergé hors de GitHub (codefloe.com) et aucune licence n'est annoncée. <a href="https://codefloe.com/fluado/enmetu">https://codefloe.com/fluado/enmetu</a></p>
+</li>
+<li>
+<p><strong>uniform</strong> — outils pour construire des interfaces web avec mise en page WASM et rendu par GPU, l'exemple complet tenant en 280 Ko. MIT, 2 étoiles, mise à jour le 3 novembre 2026. <a href="https://github.com/rkaehn/uniform">https://github.com/rkaehn/uniform</a></p>
+</li>
+<li>
+<p><strong>Bong</strong> — alternative auto-hébergée aux « bang » de DuckDuckGo : vous tenez votre propre table de raccourcis de recherche au lieu de dépendre du service. Apache-2.0, 11 étoiles, mise à jour le 7 novembre 2026. <a href="https://bong.glendalab.com">https://bong.glendalab.com</a></p>
+</li>
+</ul>
+<h3>Réseau, auto-hébergement et sécurité</h3>
+<ul>
+<li>
+<p><strong>Servy</strong> — exécute n'importe quel programme comme un véritable service Windows, avec surveillance en temps réel et redémarrage automatique ; interface graphique, ligne de commande et module PowerShell. Utile pour garder vivants un serveur Node, un modèle local de type Ollama, un agent de compilation ou un script. MIT, 2 084 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/aelassas/servy">https://github.com/aelassas/servy</a></p>
+</li>
+<li>
+<p><strong>Coldframe</strong> — pot de miel qui se fait passer pour un régulateur de froid de supermarché (Danfoss AK-SM 800A, Dixell XWEB 500), en un seul fichier Python sans dépendance, inspiré des attaques récentes contre des installations frigorifiques industrielles ; l'auteur assure que ses faux équipements sont référencés comme réels sur Shodan. MIT, 30 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hedgerow-dev/coldframe">https://github.com/hedgerow-dev/coldframe</a></p>
+</li>
+<li>
+<p><strong>FoilGateway</strong> — passerelle pare-feu Linux sur deux cartes Ethernet, destinée aux réseaux domestiques et de bureau, avec blocage de la télémétrie. GitHub ne reconnaît aucune licence standard pour ce dépôt (2 étoiles, créé le 6 novembre 2026) : à vérifier avant réutilisation. <a href="https://github.com/iBgeek/FoilGateway-Network">https://github.com/iBgeek/FoilGateway-Network</a></p>
+</li>
+<li>
+<p><strong>S3mail</strong> — courriel personnel entièrement sans serveur de messagerie : SES, S3, DynamoDB et fonctions Go derrière une API JMAP, sur votre propre compte AWS, avec un agent de courrier facultatif. MIT, 2 étoiles, mise à jour le 19 octobre 2026. <a href="https://github.com/zero11-0203/s3mail">https://github.com/zero11-0203/s3mail</a></p>
+</li>
+<li>
+<p><strong>Postal</strong> — serveur d'envoi et de réception de courriel complet, présenté comme l'équivalent libre de Sendgrid, Mailgun ou Postmark, à installer sur ses propres serveurs. MIT, 16 932 étoiles, mise à jour le 4 novembre 2026. <a href="https://github.com/postalserver/postal">https://github.com/postalserver/postal</a></p>
+</li>
+<li>
+<p><strong>RustDesk Server</strong> — les deux binaires (hbbs pour l'identification, hbbr pour le relais) permettant d'héberger soi-même l'infrastructure de prise en main à distance RustDesk. AGPL-3.0, 10 697 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/rustdesk/rustdesk-server">https://github.com/rustdesk/rustdesk-server</a></p>
+</li>
+<li>
+<p><strong>Huginn</strong> — système d'agents qui surveillent et agissent à votre place : pages web, flux RSS, boîtes IMAP, webhooks, sujets MQTT, avec envoi par courriel, Telegram, Slack, SMS ou appel téléphonique, et détection de pics ou de trous dans un flux d'événements. MIT, 50 362 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/huginn/huginn">https://github.com/huginn/huginn</a></p>
+</li>
+</ul>
+<h3>Applications de bureau et vie quotidienne</h3>
+<ul>
+<li>
+<p><strong>OpenObserve</strong> — plateforme d'observabilité auto-hébergée (journaux, métriques, traces, surveillance web et mobile, relecture de session), en binaire unique, avec stockage Parquet et compatibilité OpenTelemetry ; se présente comme une alternative à Datadog, Splunk et Elasticsearch pour un coût de stockage très inférieur. AGPL-3.0, 22 882 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openobserve/openobserve">https://github.com/openobserve/openobserve</a></p>
+</li>
+<li>
+<p><strong>Sure</strong> — application de finances personnelles à installer soi-même (Docker) : comptes, budgets, suivi de patrimoine. AGPL-3.0, 10 832 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/we-promise/sure">https://github.com/we-promise/sure</a></p>
+</li>
+<li>
+<p><strong>Horizon</strong> — radar d'actualité personnel : rassemble RSS, Hacker News, Reddit, Telegram, X et GitHub, note les sujets selon des critères que vous définissez et produit un bulletin quotidien en anglais et en chinois. MIT, 13 018 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Thysrael/Horizon">https://github.com/Thysrael/Horizon</a></p>
+</li>
+<li>
+<p><strong>Halcyon Video</strong> — présente votre bibliothèque Jellyfin ou Plex comme un magasin de location de vidéocassettes des années 1990 que l'on parcourt à pied, avec télévisions suspendues et jaquettes au format réel ; à auto-héberger. GPL-3.0, 972 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/halcyon-video/halcyon-video">https://github.com/halcyon-video/halcyon-video</a></p>
+</li>
+<li>
+<p><strong>Kinrox</strong> — lecteur vidéo macOS minimal bâti sur libmpv, avec télécommande pour iPhone sur le réseau local ; l'auteur met en avant une lecture musicale dans 196 Mo de mémoire seulement. GPL-3.0, 15 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/awaik/Kinrox">https://github.com/awaik/Kinrox</a></p>
+</li>
+<li>
+<p><strong>Nook</strong> — navigateur macOS minimal à onglets verticaux, compilé pour Apple Silicon uniquement (l'organiseur d'onglets s'appuie sur MLX, sans version Intel). GPL-3.0, 2 045 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/nook-browser/Nook">https://github.com/nook-browser/Nook</a></p>
+</li>
+<li>
+<p><strong>WM Keyboard</strong> — clavier Android privé et hors ligne : prédiction qui apprend localement, correction que l'on peut contester, saisie par glissement, plus de 600 langues, thèmes et extensions. MIT, 764 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wasi-master/wmkeyboard">https://github.com/wasi-master/wmkeyboard</a></p>
+</li>
+<li>
+<p><strong>ExplorerPatcher</strong> — rétablit sur Windows 11 la barre des tâches, le menu Démarrer et l'Alt+Tab de Windows 10, entre autres réglages de l'environnement de travail. GPL-2.0, 34 247 étoiles, mise à jour le 29 octobre 2026. <a href="https://github.com/valinet/ExplorerPatcher">https://github.com/valinet/ExplorerPatcher</a></p>
+</li>
+<li>
+<p><strong>Aerial</strong> — économiseur d'écran reprenant les vues aériennes de l'Apple TV, désormais distribué comme extension d'application ; la version historique en <code>.saver</code> compte 21 209 étoiles et le dépôt actif seulement 651, ce qui explique l'écart avec l'annonce du fil — la dernière version publiée est la 3.6.3 du 12 août 2025. MIT. <a href="https://github.com/AerialScreensaver/Aerial">https://github.com/AerialScreensaver/Aerial</a></p>
+</li>
+<li>
+<p><strong>Tyler RSS</strong> — lecteur de flux RSS local pour macOS, Windows et Linux, présenté comme complet et respectueux de la vie privée. MIT, 1 étoile, mise à jour le 7 novembre 2026 (dépôt goodappsstore/tyler-rss). <a href="https://goodapps.store/tyler-rss/">https://goodapps.store/tyler-rss/</a></p>
+</li>
+<li>
+<p><strong>EyesRhythm</strong> — compagnon de bureau hors ligne qui aide à garder un rythme de clignement normal, écrit par un ingénieur en vision par ordinateur devenu sujet de sécheresse oculaire. Le site ne renvoie à aucun dépôt et n'annonce pas de licence : la gratuité et le caractère libre restent à vérifier. <a href="https://eyesrhythm.com/">https://eyesrhythm.com/</a></p>
+</li>
+</ul>
+<h3>Réseaux sociaux et données</h3>
+<ul>
+<li>
+<p><strong>TheySay</strong> — rassemble Twitter, Discord et Threads sur un seul tableau de bord. GitHub ne reconnaît pas la licence du dépôt (401 étoiles, mise à jour le 6 novembre 2026). <a href="https://github.com/laike9m/TheySay">https://github.com/laike9m/TheySay</a></p>
+</li>
+<li>
+<p><strong>Spring AI Alibaba</strong> — cadre d'agents pour développeurs Java : orchestration de plusieurs agents (séquentiel, parallèle, routage, boucle), entrées multimodales, agent vocal en WebSocket, politiques de gestion du contexte. Apache-2.0, 11 111 étoiles, mise à jour le 7 octobre 2026. <a href="https://github.com/alibaba/spring-ai-alibaba">https://github.com/alibaba/spring-ai-alibaba</a></p>
+</li>
+<li>
+<p><strong>Auto Ontology</strong> — cadre Python publié par NVIDIA pour bâtir une couche sémantique en graphe au-dessus de données relationnelles : questions en langage naturel traduites en SQL, catalogue, contrôle d'accès, interface web, déploiement Helm. Apache-2.0, 9 767 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/NVIDIA/auto-ontology">https://github.com/NVIDIA/auto-ontology</a></p>
+</li>
+<li>
+<p><strong>Sellbird</strong> — plateforme de prospection commerciale libre qui tourne sur votre abonnement Claude ou ChatGPT plutôt que sur une facture à l'usage : recherche d'entreprises, identification du responsable, vérification de l'adresse, séquences rédigées, brouillons de réponse, avec validation humaine avant tout envoi. AGPL-3.0, 4 790 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ethanplusai/sellbird">https://github.com/ethanplusai/sellbird</a></p>
+</li>
+<li>
+<p><strong>Open Generative AI</strong> — studio libre de génération d'images, de vidéos et d'audio, annoncé avec plus de 600 modèles et sans filtre de contenu, à installer soi-même. MIT, 33 024 étoiles, mise à jour le 6 novembre 2026. Réserve : la page du projet renvoie vers un service commercial (muapi.ai), la génération semble donc dépendre de fournisseurs externes plutôt que d'une installation entièrement locale. <a href="https://github.com/Anil-matcha/Open-Generative-AI">https://github.com/Anil-matcha/Open-Generative-AI</a></p>
+</li>
+<li>
+<p><strong>Open Interpreter</strong> — agent de codage orienté modèles ouverts (Kimi K3, GLM 5.3) : exécution en bac à sable natif sur macOS, Linux et Windows, changement de fournisseur depuis l'interface, agent conforme au protocole ACP pour les éditeurs, réutilisation des instructions AGENTS.md. Apache-2.0, 68 828 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openinterpreter/openinterpreter">https://github.com/openinterpreter/openinterpreter</a></p>
+</li>
+</ul>
+<h3>Modèles et calcul scientifique</h3>
+<ul>
+<li>
+<p><strong>Laplace's Scissors</strong> — outil pour modifier directement les poids d'un modèle de langue ouvert : diagnostiquer les directions de sortie faibles, réparer les réponses ratées et préserver les générations réussies. MIT, 6 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/Miyamoto-Renya/LaplacesScissors">https://github.com/Miyamoto-Renya/LaplacesScissors</a></p>
+</li>
+<li>
+<p><strong>Jacq</strong> — langage dédié et compilateur qui transforme la description d'un modèle et de ses noyaux en environnement d'inférence CUDA autonome, avec exportateur de poids Python ; nécessite un GPU NVIDIA pour l'inférence, la génération de code ne demandant que Rust. Apache-2.0, 2 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/ImpossibleComputing/jacq">https://github.com/ImpossibleComputing/jacq</a></p>
+</li>
+<li>
+<p><strong>HyperFlow H3 Flash</strong> — modèle vidéo et audio conjoint de 13,7 milliards de paramètres compressé en quatre à huit étapes, publié en INT8 et en GGUF, sous l'étiquette Video Rebirth. Apache-2.0, 82 étoiles, dépôt créé le 6 novembre 2026 ; les poids sont sur Hugging Face. <a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">https://github.com/Video-Rebirth/hyperflow-h3-flash</a></p>
+</li>
+<li>
+<p><strong>burst-superres</strong> — application de bureau gratuite (macOS, Windows, Linux) qui empile une rafale de photos en une image dite « 2x » : alignement des prises, comparaison et écart des images ratées. Licence non reconnue par GitHub, 2 étoiles, dépôt créé le 5 novembre 2026. <a href="https://github.com/skittleson/burst-superres">https://github.com/skittleson/burst-superres</a></p>
+</li>
+<li>
+<p><strong>Liquid Glass (Backdrop)</strong> — bibliothèque d'effet « verre liquide » pour Compose Multiplatform : boutons, interrupteurs, curseurs, barres d'onglets, utilisable sur Android et iOS. Apache-2.0, 4 548 étoiles, dernière version 2.0.1 du 26 août 2026. <a href="https://github.com/Kyant0/AndroidLiquidGlass">https://github.com/Kyant0/AndroidLiquidGlass</a></p>
+</li>
+<li>
+<p><strong>FastVM</strong> — micro-machines virtuelles qui s'endorment à l'inactivité et se réveillent à l'arrivée de paquets réseau. Aucune licence n'est indiquée et l'auteur écrit lui-même que le projet est « entièrement vibé » : lire l'idée, ignorer le code. 7 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/tuananh/fastvm">https://github.com/tuananh/fastvm</a></p>
+</li>
+<li>
+<p><strong>agterm</strong> — terminal organisé en espaces de travail nommés, doublé d'une API de contrôle locale (agtermctl) qui permet à un script ou à un agent de créer des sessions, d'y taper du texte, d'ouvrir un programme en surimpression et de notifier l'utilisateur depuis la session concernée. MIT, 730 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/umputun/agterm">https://github.com/umputun/agterm</a></p>
+</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Libghostty 1.0</strong> — la bibliothèque de terminal qui porte l'émulateur Ghostty atteint sa version 1.0 ; c'est l'entrée la plus commentée du jour sur Lobsters (20 points) et la nouvelle la plus reprise de ce thème. Note de l'auteur : <a href="https://mitchellh.com/writing/libghostty-1-0">https://mitchellh.com/writing/libghostty-1-0</a></p>
+</li>
+<li>
+<p><strong>Asahi Linux</strong> — rapport de progrès 7.3 (187 points et 143 commentaires sur Hacker News) : suite du travail de prise en charge des Mac à processeur Apple Silicon. <a href="https://asahilinux.org/2026/11/progress-report-7-3/">https://asahilinux.org/2026/11/progress-report-7-3/</a></p>
+</li>
+<li>
+<p><strong>CEF Python v147</strong> — reprise du projet qui permet d'intégrer Chromium dans des applications de bureau Python : infrastructure modernisée, chaînes d'intégration continues via GitHub Actions, système de construction CMake ; la version publiée est une version de test (v147.0.dev1264) et une publication sur PyPI est annoncée. Apache-2.0. <a href="https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264">https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264</a></p>
+</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li>
+<p><strong>Web Potions</strong> — extension Chrome qui retire, restyle et remodèle n'importe quel site, en laissant ChatGPT ou Claude écrire les règles à votre place. MIT, 1 étoile, dépôt créé le 28 octobre 2026. <a href="https://github.com/leofritsch/web-potions">https://github.com/leofritsch/web-potions</a></p>
+</li>
+<li>
+<p><strong>Windhawk Mods</strong> — collection officielle de greffons pour Windhawk, qui personnalisent Windows par modification ciblée des programmes ; les greffons sans licence déclarée sont soumis sous MIT. GitHub ne reconnaît pas de licence pour l'ensemble du dépôt, 1 104 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ramensoftware/windhawk-mods">https://github.com/ramensoftware/windhawk-mods</a></p>
+</li>
+<li>
+<p><strong>project5pi-midi-for-claude</strong> — donne une idée de chanson à Claude et récupère un projet FL Studio, un MP3 et un MIDI : l'outil écrit directement les fichiers <code>.flp</code>, effectue le rendu sans interface et vérifie le mixage. MIT, dépôt créé le 7 novembre 2026. <a href="https://github.com/ProjectFlowmar/project5pi-midi-for-claude">https://github.com/ProjectFlowmar/project5pi-midi-for-claude</a></p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>221 entrées parcourues dans l'intervalle (213 après dédoublonnage des adresses identiques — un même sujet signalé par deux sources ne comptant qu'une fois) : 64 retenues, 149 écartées.</p>
+<p>La collecte la plus récente s'est terminée normalement (dernier passage le 7 novembre à 21 h 51 UTC, 9 entrées nouvelles ; aucune erreur signalée dans <code>meta.json</code>). Une grande partie de ce qui a été écarté relève de l'actualité générale reprise par Hacker News (cybersécurité, marchés financiers, matériel), des billets de blog sans annonce d'outil, des questions et rétrospectives, ainsi que des services commerciaux sans code publié.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La matière utile vient toujours majoritairement de Hacker News (« Show HN ») et de Lobsters : le flux du subreddit a livré d'un coup une vingtaine de dépôts, dont plusieurs projets très connus, mais il répond encore (fermeture annoncée le 13 novembre).</li>
+<li>Trois découvertes sortent du lot : <strong>Retex</strong>, réimplémentation de LuaLaTeX en Rust annoncée deux à trois fois plus rapide (CC0), <strong>OpenNumLab</strong>, première version d'une alternative libre à Matlab, et <strong>Bong</strong>, qui permet d'auto-héberger les « bang » de DuckDuckGo.</li>
+<li><strong>Libghostty 1.0</strong>, la bibliothèque de terminal qui porte Ghostty, est la mise à jour la plus commentée de la journée.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Écriture, sciences et enseignement</h3>
+<ul>
+<li>
+<p><strong>Retex</strong> — réimplémentation « clean-room » de LuaLaTeX en Rust, utilisable en remplacement direct (mode compatibilité, deux à trois fois plus rapide) ou comme moteur plus moderne : bien meilleurs messages d'erreur, sorties SVG, ODP/ODT, PDF/X-1 et PDF/X-4 pour l'impression, téléchargement automatique des paquets manquants, liaisons Python. Licence CC0 (domaine public) ; dépôt GitLab. L'auteur signale que le code a été entièrement produit par un modèle de langage et n'a donc pas d'auteur au sens habituel. <a href="https://gitlab.com/severin-lemaignan/retex">https://gitlab.com/severin-lemaignan/retex</a></p>
+</li>
+<li>
+<p><strong>OpenNumLab</strong> — environnement de calcul scientifique libre, avec interface de bureau écrite en Rust et ligne de commande, première version publiée, présentée comme alternative ouverte à Matlab. MIT, 2 étoiles, dernière mise à jour le 7 novembre 2026. Le dépôt a été créé le 15 octobre : projet très jeune, à éprouver longuement avant tout usage devant des élèves. <a href="https://github.com/me-farza/opennumlab">https://github.com/me-farza/opennumlab</a></p>
+</li>
+<li>
+<p><strong>PPTist</strong> — application de présentation en ligne qui reproduit l'essentiel des fonctions de PowerPoint (édition, projection, aperçu des fichiers PPTX locaux), écrite en Vue 3 et TypeScript, sans bibliothèque de composants. AGPL-3.0, 9 469 étoiles, mise à jour le 6 novembre 2026. La licence AGPL mérite d'être connue pour un usage en établissement. <a href="https://github.com/pipipi-pikachu/PPTist">https://github.com/pipipi-pikachu/PPTist</a></p>
+</li>
+<li>
+<p><strong>labml.ai</strong> — plus de soixante implémentations PyTorch commentées d'articles de recherche, avec les notes en regard du code : transformateurs, LoRA, modèles de diffusion, réseaux antagonistes, apprentissage par renforcement, optimiseurs. MIT, 67 716 étoiles. <a href="https://github.com/labmlai/annotated_deep_learning_paper_implementations">https://github.com/labmlai/annotated_deep_learning_paper_implementations</a></p>
+</li>
+</ul>
+<h3>Agents et développement assisté par IA</h3>
+<ul>
+<li>
+<p><strong>Agent Manager</strong> — multiplexeur de terminal (interface tmux) pour piloter côte à côte plusieurs agents de codage (Claude Code, Codex, OpenCode, Gemini CLI), avec état en direct, espaces de travail git séparés et affichage des différences. Apache-2.0, 646 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wainmann/agent-manager">https://github.com/wainmann/agent-manager</a></p>
+</li>
+<li>
+<p><strong>Octomind</strong> — agent de codage et environnement d'exécution en un seul binaire Rust, compatible avec n'importe quel modèle et natif MCP ; s'utilise en terminal, en intégration continue ou comme démon, avec des « spécialistes » packagés (invite, modèle, serveurs MCP, permissions) installables depuis un dépôt. Apache-2.0, 603 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Muvon/octomind">https://github.com/Muvon/octomind</a></p>
+</li>
+<li>
+<p><strong>conducted</strong> — réimplémentation sous licence MIT de l'application Conductor (rachetée par Meta) : application de bureau locale pour faire tourner des agents de codage en parallèle, chacun dans son propre espace de travail git. L'auteur indique avoir fait reconstruire l'interface par des agents pour 170 dollars. MIT, 2 étoiles, dépôt créé le 4 novembre 2026 : à prendre comme une démonstration, pas comme un produit mûr. <a href="https://github.com/jahala/conducted">https://github.com/jahala/conducted</a></p>
+</li>
+<li>
+<p><strong>Rui</strong> — environnement d'exécution d'agents écrit en Zig avec SQLite : conversations réutilisables, approbations des commandes Bash, reprise après incident ; les sessions partagent un même hôte plutôt que d'être chacune un processus, ce qui permet à l'auteur d'annoncer cent agents orchestrés dans 2,5 Mo de mémoire. GitHub ne reconnaît aucune licence pour ce dépôt et les mesures citées viennent de l'auteur : 5 étoiles. <a href="https://github.com/DivyanshGolyan/rui">https://github.com/DivyanshGolyan/rui</a></p>
+</li>
+<li>
+<p><strong>Infinity</strong> — environnement d'exécution d'agents et protocole d'outils (RAP) pour la concurrence : les outils sont servis sur le réseau sans garder une connexion ouverte, les agents peuvent hiberner entièrement, et les serveurs MCP existants fonctionnent via une couche de compatibilité. Apache-2.0, 769 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hydro-project/infinity">https://github.com/hydro-project/infinity</a></p>
+</li>
+<li>
+<p><strong>Select</strong> — orchestration d'agents où l'autonomie se gagne par le travail vérifié, avec surveillance humaine. AGPL-3.0, 3 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/Kirby54/Select">https://github.com/Kirby54/Select</a></p>
+</li>
+<li>
+<p><strong>Ryph</strong> — agents de codage auto-hébergés pour une équipe d'astreinte : joignables dans la messagerie et sur le forge, déclenchés par les incidents. MIT, 14 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/ryph-hq/ryph">https://github.com/ryph-hq/ryph</a></p>
+</li>
+<li>
+<p><strong>promptcheckup</strong> — vérifie qu'une modification d'invite améliore réellement un agent, par rejeu apparié et intervalles de confiance à 95 %, au lieu de juger à l'œil. Apache-2.0, 1 étoile, dépôt créé le 1er novembre 2026. <a href="https://github.com/gael55x/promptcheckup">https://github.com/gael55x/promptcheckup</a></p>
+</li>
+<li>
+<p><strong>backendskills</strong> — jeu de compétences pour agents de codage, testé sur quinze tâches de développement serveur avec vérifications cachées, destiné à éviter le code qui passe la démonstration et casse en production. MIT, 42 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/globalmpc/backendskills">https://github.com/globalmpc/backendskills</a></p>
+</li>
+<li>
+<p><strong>Goethe</strong> — installation et service de modèles sur le matériel que vous contrôlez, présenté comme « Vercel, mais pour vos modèles » : l'outil détecte le matériel, place les modèles et expose une API utilisable par n'importe quel client. Apache-2.0, 51 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/meshapplied/Goethe">https://github.com/meshapplied/Goethe</a></p>
+</li>
+<li>
+<p><strong>trace-engine-cli</strong> — outil publié par l'équipe Chrome DevTools pour analyser les traces du navigateur avec des agents. Le dépôt ne comporte aucune description, la portée exacte reste donc à confirmer par la lecture du code. Apache-2.0, 5 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/ChromeDevTools/trace-engine-cli">https://github.com/ChromeDevTools/trace-engine-cli</a></p>
+</li>
+<li>
+<p><strong>AIVim</strong> — éditeur inspiré de Vim auquel est ajoutée une assistance par IA, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Le message Hacker News ne comporte aucun lien vers un dépôt ni licence : l'annonce n'est pas vérifiable en l'état. <a href="https://news.ycombinator.com/item?id=50405893">https://news.ycombinator.com/item?id=50405893</a></p>
+</li>
+</ul>
+<h3>Outils système, terminal et développement</h3>
+<ul>
+<li>
+<p><strong>Trout</strong> — client IRC en terminal inspiré de mIRC, avec menus, barre de canaux et fenêtres de pseudos, qui installe et configure lui-même son relais soju. MIT, 19 étoiles, dépôt créé le 28 octobre 2026. <a href="https://github.com/MaxRenaud/trout">https://github.com/MaxRenaud/trout</a></p>
+</li>
+<li>
+<p><strong>speedrunner</strong> — garde les outils en ligne de commande Python, Ruby, PHP et Node chargés en mémoire (aws, az, gcloud, ansible, eslint, rubocop, composer, et des centaines d'autres) pour diviser leur temps de démarrage ; l'auteur annonce un facteur 4,5. Apache-2.0, 11 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/anthonyGosme/speedrunner">https://github.com/anthonyGosme/speedrunner</a></p>
+</li>
+<li>
+<p><strong>webframe</strong> — exécute une page web comme un programme en ligne de commande, en s'appuyant sur la vue web déjà présente dans le système. MIT, 279 étoiles, mise à jour le 30 octobre 2026. <a href="https://github.com/tractordev/webframe">https://github.com/tractordev/webframe</a></p>
+</li>
+<li>
+<p><strong>Fels</strong> — petit langage système pour qui veut savoir ce que fait son code : mémoire organisée en zones dont le compilateur empêche l'échappement, erreurs comme valeurs, exécution de code à la compilation. GPL-3.0, 1 étoile, dépôt créé le 8 septembre 2026. <a href="https://github.com/fels-lang/fels">https://github.com/fels-lang/fels</a></p>
+</li>
+<li>
+<p><strong>Bobr</strong> — système de construction à adressage par contenu, sans privilèges, dans l'esprit de Nix ou Yocto, avec son propre bac à sable fondé sur les espaces de noms ; construit pour l'instant un système Linux exécutable dans QEMU. Apache-2.0, 1 étoile, dernière mise à jour le 2 novembre 2026. L'auteur le présente comme un projet personnel « vibe-codé » : à considérer comme une expérimentation. <a href="https://bobr.build/">https://bobr.build/</a></p>
+</li>
+<li>
+<p><strong>mdt</strong> — lecteur interactif de Markdown et de JSON en terminal. MIT, 3 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/VaibhavAcharya/mdt">https://github.com/VaibhavAcharya/mdt</a></p>
+</li>
+<li>
+<p><strong>MacGet</strong> — gestionnaire de téléchargement natif pour macOS, avec parallélisme adaptatif : détecte les serveurs qui limitent les téléchargeurs, apprend les limites par hôte et résiste à la mise en veille des applications. MIT, 2 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/Suryansh-Codes2209/Macget">https://github.com/Suryansh-Codes2209/Macget</a></p>
+</li>
+<li>
+<p><strong>Vitekube</strong> — exécute les tests Vitest sur de vrais clusters Kubernetes, sous forme d'extension de Vitest, pour remplacer les empilements de fichiers Docker Compose. MIT, 2 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/vitekube/vitekube">https://github.com/vitekube/vitekube</a></p>
+</li>
+<li>
+<p><strong>Enmetu</strong> — commits git automatiques qui conservent les conflits au lieu de les écraser, pour les résoudre après coup. Le dépôt est hébergé hors de GitHub (codefloe.com) et aucune licence n'est annoncée. <a href="https://codefloe.com/fluado/enmetu">https://codefloe.com/fluado/enmetu</a></p>
+</li>
+<li>
+<p><strong>uniform</strong> — outils pour construire des interfaces web avec mise en page WASM et rendu par GPU, l'exemple complet tenant en 280 Ko. MIT, 2 étoiles, mise à jour le 3 novembre 2026. <a href="https://github.com/rkaehn/uniform">https://github.com/rkaehn/uniform</a></p>
+</li>
+<li>
+<p><strong>Bong</strong> — alternative auto-hébergée aux « bang » de DuckDuckGo : vous tenez votre propre table de raccourcis de recherche au lieu de dépendre du service. Apache-2.0, 11 étoiles, mise à jour le 7 novembre 2026. <a href="https://bong.glendalab.com">https://bong.glendalab.com</a></p>
+</li>
+</ul>
+<h3>Réseau, auto-hébergement et sécurité</h3>
+<ul>
+<li>
+<p><strong>Servy</strong> — exécute n'importe quel programme comme un véritable service Windows, avec surveillance en temps réel et redémarrage automatique ; interface graphique, ligne de commande et module PowerShell. Utile pour garder vivants un serveur Node, un modèle local de type Ollama, un agent de compilation ou un script. MIT, 2 084 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/aelassas/servy">https://github.com/aelassas/servy</a></p>
+</li>
+<li>
+<p><strong>Coldframe</strong> — pot de miel qui se fait passer pour un régulateur de froid de supermarché (Danfoss AK-SM 800A, Dixell XWEB 500), en un seul fichier Python sans dépendance, inspiré des attaques récentes contre des installations frigorifiques industrielles ; l'auteur assure que ses faux équipements sont référencés comme réels sur Shodan. MIT, 30 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hedgerow-dev/coldframe">https://github.com/hedgerow-dev/coldframe</a></p>
+</li>
+<li>
+<p><strong>FoilGateway</strong> — passerelle pare-feu Linux sur deux cartes Ethernet, destinée aux réseaux domestiques et de bureau, avec blocage de la télémétrie. GitHub ne reconnaît aucune licence standard pour ce dépôt (2 étoiles, créé le 6 novembre 2026) : à vérifier avant réutilisation. <a href="https://github.com/iBgeek/FoilGateway-Network">https://github.com/iBgeek/FoilGateway-Network</a></p>
+</li>
+<li>
+<p><strong>S3mail</strong> — courriel personnel entièrement sans serveur de messagerie : SES, S3, DynamoDB et fonctions Go derrière une API JMAP, sur votre propre compte AWS, avec un agent de courrier facultatif. MIT, 2 étoiles, mise à jour le 19 octobre 2026. <a href="https://github.com/zero11-0203/s3mail">https://github.com/zero11-0203/s3mail</a></p>
+</li>
+<li>
+<p><strong>Postal</strong> — serveur d'envoi et de réception de courriel complet, présenté comme l'équivalent libre de Sendgrid, Mailgun ou Postmark, à installer sur ses propres serveurs. MIT, 16 932 étoiles, mise à jour le 4 novembre 2026. <a href="https://github.com/postalserver/postal">https://github.com/postalserver/postal</a></p>
+</li>
+<li>
+<p><strong>RustDesk Server</strong> — les deux binaires (hbbs pour l'identification, hbbr pour le relais) permettant d'héberger soi-même l'infrastructure de prise en main à distance RustDesk. AGPL-3.0, 10 697 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/rustdesk/rustdesk-server">https://github.com/rustdesk/rustdesk-server</a></p>
+</li>
+<li>
+<p><strong>Huginn</strong> — système d'agents qui surveillent et agissent à votre place : pages web, flux RSS, boîtes IMAP, webhooks, sujets MQTT, avec envoi par courriel, Telegram, Slack, SMS ou appel téléphonique, et détection de pics ou de trous dans un flux d'événements. MIT, 50 362 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/huginn/huginn">https://github.com/huginn/huginn</a></p>
+</li>
+</ul>
+<h3>Applications de bureau et vie quotidienne</h3>
+<ul>
+<li>
+<p><strong>OpenObserve</strong> — plateforme d'observabilité auto-hébergée (journaux, métriques, traces, surveillance web et mobile, relecture de session), en binaire unique, avec stockage Parquet et compatibilité OpenTelemetry ; se présente comme une alternative à Datadog, Splunk et Elasticsearch pour un coût de stockage très inférieur. AGPL-3.0, 22 882 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openobserve/openobserve">https://github.com/openobserve/openobserve</a></p>
+</li>
+<li>
+<p><strong>Sure</strong> — application de finances personnelles à installer soi-même (Docker) : comptes, budgets, suivi de patrimoine. AGPL-3.0, 10 832 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/we-promise/sure">https://github.com/we-promise/sure</a></p>
+</li>
+<li>
+<p><strong>Horizon</strong> — radar d'actualité personnel : rassemble RSS, Hacker News, Reddit, Telegram, X et GitHub, note les sujets selon des critères que vous définissez et produit un bulletin quotidien en anglais et en chinois. MIT, 13 018 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Thysrael/Horizon">https://github.com/Thysrael/Horizon</a></p>
+</li>
+<li>
+<p><strong>Halcyon Video</strong> — présente votre bibliothèque Jellyfin ou Plex comme un magasin de location de vidéocassettes des années 1990 que l'on parcourt à pied, avec télévisions suspendues et jaquettes au format réel ; à auto-héberger. GPL-3.0, 972 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/halcyon-video/halcyon-video">https://github.com/halcyon-video/halcyon-video</a></p>
+</li>
+<li>
+<p><strong>Kinrox</strong> — lecteur vidéo macOS minimal bâti sur libmpv, avec télécommande pour iPhone sur le réseau local ; l'auteur met en avant une lecture musicale dans 196 Mo de mémoire seulement. GPL-3.0, 15 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/awaik/Kinrox">https://github.com/awaik/Kinrox</a></p>
+</li>
+<li>
+<p><strong>Nook</strong> — navigateur macOS minimal à onglets verticaux, compilé pour Apple Silicon uniquement (l'organiseur d'onglets s'appuie sur MLX, sans version Intel). GPL-3.0, 2 045 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/nook-browser/Nook">https://github.com/nook-browser/Nook</a></p>
+</li>
+<li>
+<p><strong>WM Keyboard</strong> — clavier Android privé et hors ligne : prédiction qui apprend localement, correction que l'on peut contester, saisie par glissement, plus de 600 langues, thèmes et extensions. MIT, 764 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wasi-master/wmkeyboard">https://github.com/wasi-master/wmkeyboard</a></p>
+</li>
+<li>
+<p><strong>ExplorerPatcher</strong> — rétablit sur Windows 11 la barre des tâches, le menu Démarrer et l'Alt+Tab de Windows 10, entre autres réglages de l'environnement de travail. GPL-2.0, 34 247 étoiles, mise à jour le 29 octobre 2026. <a href="https://github.com/valinet/ExplorerPatcher">https://github.com/valinet/ExplorerPatcher</a></p>
+</li>
+<li>
+<p><strong>Aerial</strong> — économiseur d'écran reprenant les vues aériennes de l'Apple TV, désormais distribué comme extension d'application ; la version historique en <code>.saver</code> compte 21 209 étoiles et le dépôt actif seulement 651, ce qui explique l'écart avec l'annonce du fil — la dernière version publiée est la 3.6.3 du 12 août 2025. MIT. <a href="https://github.com/AerialScreensaver/Aerial">https://github.com/AerialScreensaver/Aerial</a></p>
+</li>
+<li>
+<p><strong>Tyler RSS</strong> — lecteur de flux RSS local pour macOS, Windows et Linux, présenté comme complet et respectueux de la vie privée. MIT, 1 étoile, mise à jour le 7 novembre 2026 (dépôt goodappsstore/tyler-rss). <a href="https://goodapps.store/tyler-rss/">https://goodapps.store/tyler-rss/</a></p>
+</li>
+<li>
+<p><strong>EyesRhythm</strong> — compagnon de bureau hors ligne qui aide à garder un rythme de clignement normal, écrit par un ingénieur en vision par ordinateur devenu sujet de sécheresse oculaire. Le site ne renvoie à aucun dépôt et n'annonce pas de licence : la gratuité et le caractère libre restent à vérifier. <a href="https://eyesrhythm.com/">https://eyesrhythm.com/</a></p>
+</li>
+</ul>
+<h3>Réseaux sociaux et données</h3>
+<ul>
+<li>
+<p><strong>TheySay</strong> — rassemble Twitter, Discord et Threads sur un seul tableau de bord. GitHub ne reconnaît pas la licence du dépôt (401 étoiles, mise à jour le 6 novembre 2026). <a href="https://github.com/laike9m/TheySay">https://github.com/laike9m/TheySay</a></p>
+</li>
+<li>
+<p><strong>Spring AI Alibaba</strong> — cadre d'agents pour développeurs Java : orchestration de plusieurs agents (séquentiel, parallèle, routage, boucle), entrées multimodales, agent vocal en WebSocket, politiques de gestion du contexte. Apache-2.0, 11 111 étoiles, mise à jour le 7 octobre 2026. <a href="https://github.com/alibaba/spring-ai-alibaba">https://github.com/alibaba/spring-ai-alibaba</a></p>
+</li>
+<li>
+<p><strong>Auto Ontology</strong> — cadre Python publié par NVIDIA pour bâtir une couche sémantique en graphe au-dessus de données relationnelles : questions en langage naturel traduites en SQL, catalogue, contrôle d'accès, interface web, déploiement Helm. Apache-2.0, 9 767 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/NVIDIA/auto-ontology">https://github.com/NVIDIA/auto-ontology</a></p>
+</li>
+<li>
+<p><strong>Sellbird</strong> — plateforme de prospection commerciale libre qui tourne sur votre abonnement Claude ou ChatGPT plutôt que sur une facture à l'usage : recherche d'entreprises, identification du responsable, vérification de l'adresse, séquences rédigées, brouillons de réponse, avec validation humaine avant tout envoi. AGPL-3.0, 4 790 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ethanplusai/sellbird">https://github.com/ethanplusai/sellbird</a></p>
+</li>
+<li>
+<p><strong>Open Generative AI</strong> — studio libre de génération d'images, de vidéos et d'audio, annoncé avec plus de 600 modèles et sans filtre de contenu, à installer soi-même. MIT, 33 024 étoiles, mise à jour le 6 novembre 2026. Réserve : la page du projet renvoie vers un service commercial (muapi.ai), la génération semble donc dépendre de fournisseurs externes plutôt que d'une installation entièrement locale. <a href="https://github.com/Anil-matcha/Open-Generative-AI">https://github.com/Anil-matcha/Open-Generative-AI</a></p>
+</li>
+<li>
+<p><strong>Open Interpreter</strong> — agent de codage orienté modèles ouverts (Kimi K3, GLM 5.3) : exécution en bac à sable natif sur macOS, Linux et Windows, changement de fournisseur depuis l'interface, agent conforme au protocole ACP pour les éditeurs, réutilisation des instructions AGENTS.md. Apache-2.0, 68 828 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openinterpreter/openinterpreter">https://github.com/openinterpreter/openinterpreter</a></p>
+</li>
+</ul>
+<h3>Modèles et calcul scientifique</h3>
+<ul>
+<li>
+<p><strong>Laplace's Scissors</strong> — outil pour modifier directement les poids d'un modèle de langue ouvert : diagnostiquer les directions de sortie faibles, réparer les réponses ratées et préserver les générations réussies. MIT, 6 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/Miyamoto-Renya/LaplacesScissors">https://github.com/Miyamoto-Renya/LaplacesScissors</a></p>
+</li>
+<li>
+<p><strong>Jacq</strong> — langage dédié et compilateur qui transforme la description d'un modèle et de ses noyaux en environnement d'inférence CUDA autonome, avec exportateur de poids Python ; nécessite un GPU NVIDIA pour l'inférence, la génération de code ne demandant que Rust. Apache-2.0, 2 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/ImpossibleComputing/jacq">https://github.com/ImpossibleComputing/jacq</a></p>
+</li>
+<li>
+<p><strong>HyperFlow H3 Flash</strong> — modèle vidéo et audio conjoint de 13,7 milliards de paramètres compressé en quatre à huit étapes, publié en INT8 et en GGUF, sous l'étiquette Video Rebirth. Apache-2.0, 82 étoiles, dépôt créé le 6 novembre 2026 ; les poids sont sur Hugging Face. <a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">https://github.com/Video-Rebirth/hyperflow-h3-flash</a></p>
+</li>
+<li>
+<p><strong>burst-superres</strong> — application de bureau gratuite (macOS, Windows, Linux) qui empile une rafale de photos en une image dite « 2x » : alignement des prises, comparaison et écart des images ratées. Licence non reconnue par GitHub, 2 étoiles, dépôt créé le 5 novembre 2026. <a href="https://github.com/skittleson/burst-superres">https://github.com/skittleson/burst-superres</a></p>
+</li>
+<li>
+<p><strong>Liquid Glass (Backdrop)</strong> — bibliothèque d'effet « verre liquide » pour Compose Multiplatform : boutons, interrupteurs, curseurs, barres d'onglets, utilisable sur Android et iOS. Apache-2.0, 4 548 étoiles, dernière version 2.0.1 du 26 août 2026. <a href="https://github.com/Kyant0/AndroidLiquidGlass">https://github.com/Kyant0/AndroidLiquidGlass</a></p>
+</li>
+<li>
+<p><strong>FastVM</strong> — micro-machines virtuelles qui s'endorment à l'inactivité et se réveillent à l'arrivée de paquets réseau. Aucune licence n'est indiquée et l'auteur écrit lui-même que le projet est « entièrement vibé » : lire l'idée, ignorer le code. 7 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/tuananh/fastvm">https://github.com/tuananh/fastvm</a></p>
+</li>
+<li>
+<p><strong>agterm</strong> — terminal organisé en espaces de travail nommés, doublé d'une API de contrôle locale (agtermctl) qui permet à un script ou à un agent de créer des sessions, d'y taper du texte, d'ouvrir un programme en surimpression et de notifier l'utilisateur depuis la session concernée. MIT, 730 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/umputun/agterm">https://github.com/umputun/agterm</a></p>
+</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Libghostty 1.0</strong> — la bibliothèque de terminal qui porte l'émulateur Ghostty atteint sa version 1.0 ; c'est l'entrée la plus commentée du jour sur Lobsters (20 points) et la nouvelle la plus reprise de ce thème. Note de l'auteur : <a href="https://mitchellh.com/writing/libghostty-1-0">https://mitchellh.com/writing/libghostty-1-0</a></p>
+</li>
+<li>
+<p><strong>Asahi Linux</strong> — rapport de progrès 7.3 (187 points et 143 commentaires sur Hacker News) : suite du travail de prise en charge des Mac à processeur Apple Silicon. <a href="https://asahilinux.org/2026/11/progress-report-7-3/">https://asahilinux.org/2026/11/progress-report-7-3/</a></p>
+</li>
+<li>
+<p><strong>CEF Python v147</strong> — reprise du projet qui permet d'intégrer Chromium dans des applications de bureau Python : infrastructure modernisée, chaînes d'intégration continues via GitHub Actions, système de construction CMake ; la version publiée est une version de test (v147.0.dev1264) et une publication sur PyPI est annoncée. Apache-2.0. <a href="https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264">https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264</a></p>
+</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li>
+<p><strong>Web Potions</strong> — extension Chrome qui retire, restyle et remodèle n'importe quel site, en laissant ChatGPT ou Claude écrire les règles à votre place. MIT, 1 étoile, dépôt créé le 28 octobre 2026. <a href="https://github.com/leofritsch/web-potions">https://github.com/leofritsch/web-potions</a></p>
+</li>
+<li>
+<p><strong>Windhawk Mods</strong> — collection officielle de greffons pour Windhawk, qui personnalisent Windows par modification ciblée des programmes ; les greffons sans licence déclarée sont soumis sous MIT. GitHub ne reconnaît pas de licence pour l'ensemble du dépôt, 1 104 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ramensoftware/windhawk-mods">https://github.com/ramensoftware/windhawk-mods</a></p>
+</li>
+<li>
+<p><strong>project5pi-midi-for-claude</strong> — donne une idée de chanson à Claude et récupère un projet FL Studio, un MP3 et un MIDI : l'outil écrit directement les fichiers <code>.flp</code>, effectue le rendu sans interface et vérifie le mixage. MIT, dépôt créé le 7 novembre 2026. <a href="https://github.com/ProjectFlowmar/project5pi-midi-for-claude">https://github.com/ProjectFlowmar/project5pi-midi-for-claude</a></p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>221 entrées parcourues dans l'intervalle (213 après dédoublonnage des adresses identiques — un même sujet signalé par deux sources ne comptant qu'une fois) : 64 retenues, 149 écartées.</p>
+<p>La collecte la plus récente s'est terminée normalement (dernier passage le 7 novembre à 21 h 51 UTC, 9 entrées nouvelles ; aucune erreur signalée dans <code>meta.json</code>). Une grande partie de ce qui a été écarté relève de l'actualité générale reprise par Hacker News (cybersécurité, marchés financiers, matériel), des billets de blog sans annonce d'outil, des questions et rétrospectives, ainsi que des services commerciaux sans code publié.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-08.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 00:22:51 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Sept entrées retenues, toutes issues de Hacker News ou du subreddit, les journaux de flux (blog Hugging Face, Simon Willison, It's FOSS) n'ayant rien publié dans l'intervalle. Le fait marquant est la sortie de libghostty-vt 1.0, la bibliothèque d'émulation de terminal extraite de Ghostty, désormais figée en ABI et déjà reprise par JetBrains, Neovim et plusieurs terminaux de nouvelle génération. Côté outils personnels : un serveur auto-hébergeable de raccourcis de recherche, un pot de miel libre pour automates frigorifiques, une bibliothèque React d'interface de discussion, deux utilitaires de gestion de modèles locaux (llama-sleep sur GPU NVIDIA, OMLX et TokiRecur côté réutilisation du pré-remplissage).</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>libghostty-vt 1.0 — bibliothèque d'émulation de terminal, licence MIT</h3>
+<p>Bibliothèque C portable extraite du cœur du terminal Ghostty, qui vient d'atteindre sa version 1.0 : la promesse de version sémantique et de compatibilité binaire (ABI) est désormais tenue et contrôlée automatiquement en intégration continue par libabigail sous Linux et des manifestes de types sous macOS et WebAssembly. L'intérêt est pratique : un programme tiers peut embarquer un émulateur de terminal complet en quelques centaines de lignes — l'auteur cite environ 1 500 lignes de C — au lieu de réécrire le décodage des séquences ANSI, du redimensionnement et de l'historique. L'écosystème est déjà réel : le terminal des environnements JetBrains (plus de 12,5 millions d'utilisateurs actifs selon le rapport annuel de l'éditeur), une demande d'intégration acceptée pour remplacer libvterm dans Neovim, une expérimentation de remplacement de Konsole côté KDE, le rendu TUI de Turborepo, le projet ghostel pour Emacs et une compilation WebAssembly. Le paquet est distribué avec ses propres archives signées, ses fichiers pkg-config et sa configuration CMake, ce qui le rend empaquetable par les distributions. Recoupement GitHub : MIT, dépôt de l'application Ghostty, 63 825 étoiles, dernière poussée le 7 novembre 2026. Sur Hacker News : 393 points, 64 commentaires.<br />
+https://lib.ghostty.org/ — https://mitchellh.com/writing/libghostty-1-0</p>
+<h3>Bong — serveur de raccourcis de recherche auto-hébergeable, licence Apache 2.0</h3>
+<p>Alternative aux « bangs » de DuckDuckGo que son auteur présente comme un service que l'on installe chez soi : au lieu de taper <code>!gh</code> pour atteindre un site, on tape un raccourci court (<code>.gh</code> pour GitHub, <code>.w</code> pour l'encyclopédie, <code>.lob</code> pour Lobsters, <code>.pypi</code>, <code>.man</code>, <code>.docsrs</code>…). Le jeu livré compte 61 raccourcis, dont une part notable de services coréens (portails, cartes, dictionnaires), ce qui trahit l'origine de l'auteur mais n'empêche pas de l'utiliser ailleurs — la page d'accueil ne documente pas la modification de cette liste, à vérifier avant de s'en remettre à lui. Utile en salle informatique comme sur un poste personnel, à condition d'accepter de faire transiter ses recherches par son propre serveur plutôt que par un tiers. Recoupement GitHub : Apache 2.0, écrit en Go, 11 étoiles, dépôt créé le 31 octobre 2026, dernière poussée le 7 novembre 2026. Sur Hacker News : 31 points, 6 commentaires. À noter, dans le même fil, un jeu de raccourcis ouvert maintenu par Kagi (<code>kagisearch/bangs</code>), réutilisable indépendamment de Bong.<br />
+https://bong.glendalab.com — https://github.com/glendalab/bong</p>
+<h3>Coldframe — pot de miel pour automates de froid commercial, licence MIT</h3>
+<p>Pot de miel à faible interaction qui se fait passer pour deux contrôleurs de froid de supermarché bien réels (Danfoss AK-SM 800A et Dixell XWEB 500), avec l'objectif de comprendre ce que les attaquants tentent contre ce type d'installation : l'auteur rapporte que ses deux personnages sont référencés par Shodan comme de vrais appareils. Un seul fichier Python utilisant uniquement la bibliothèque standard, ce qui le rend déployable sans dépendance. Le projet s'adresse aux équipes de sécurité et aux curieux, pas au grand public, mais il prolonge une série d'incidents récents sur des installations frigorifiques industrielles et la démarche — reconstituer fidèlement un appareil réel plutôt qu'un pot de miel générique — est réutilisable pour d'autres automates. Recoupement GitHub : MIT, 29 étoiles, dépôt créé le 5 novembre 2026, dernière poussée le 7 novembre 2026.<br />
+https://github.com/hedgerow-dev/coldframe</p>
+<h3>assistant-ui — bibliothèque React pour construire une interface de discussion avec un modèle</h3>
+<p>Bibliothèque TypeScript et React qui fournit les briques d'une interface de conversation : liste des messages, zone de saisie, édition d'une consigne et demande d'une réponse différente. Elle s'adresse aux développeurs qui veulent une interface d'agent dans leur application sans l'écrire eux-mêmes, et se branche sur les principaux fournisseurs comme sur un serveur local. Recoupement GitHub : MIT, 12 994 étoiles, dépôt créé en novembre 2023, dernière poussée le 7 novembre 2026 — c'est une bibliothèque établie, pas une nouveauté, et l'entrée du subreddit provient d'un compte qui recense des ressources communautaires, non de ses auteurs. Retenue ici pour ce qu'elle apporte à qui écrit un outil d'IA : elle évite de refaire une interface de discussion à chaque projet.<br />
+https://github.com/assistant-ui/assistant-ui</p>
+<h3>llama-sleep — garer un modèle dans la mémoire vive au lieu de l'arrêter</h3>
+<p>Programme en Go d'un peu moins de 7 Mo qui s'intercale entre llama-swap et llama-server de llama.cpp sur une machine à GPU NVIDIA. Quand on fait tourner deux modèles trop gros pour tenir ensemble sur la carte graphique, la permutation classique arrête l'un et recharge l'autre : 10,3 secondes mesurées, et le cache de la consigne système du modèle remplacé est perdu (ce qui ajoutait 6 à 7 secondes au premier mot d'un assistant vocal, chez l'auteur). llama-sleep appelle les fonctions de point de contrôle du pilote CUDA pour recopier la mémoire du modèle dans la mémoire vive et libérer la carte, retient les requêtes en attente jusqu'à ce que le modèle soit réveillé, et gare le modèle inactif en tâche de fond. Résultat annoncé : permutation ramenée à 2,1 secondes, et à 1,7 seconde avec les pages mémoire de tailles multiples du noyau Linux ; le cache de la consigne système survit à la permutation. Contraintes à connaître avant de s'engager : Linux et NVIDIA seulement (pilote 570 ou plus récent), un modèle garé occupe autant de mémoire vive qu'il occupait sur la carte, et l'inactivité doit correspondre au rythme des requêtes, faute de quoi la permutation s'allonge. Licence MIT, dépôt hébergé sur l'instance du propre auteur (<code>git.zaage.it</code>), donc moins pérenne qu'un dépôt GitHub. Sur Hacker News : 1 point, aucun commentaire — l'entrée est passée inaperçue, les chiffres proviennent du banc d'essai de l'auteur et non d'une mesure indépendante.<br />
+https://zaage.it/writing/llama-sleep/ — https://git.zaage.it/robert/llama-sleep</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>OMLX 0.7.4.dev1</strong> — serveur d'inférence pour puces Apple Silicon, piloté depuis la barre de menus de macOS, qui gère la mise en lots continue et la mise en cache sur disque des modèles. La note de version publiée sur Hacker News annonce qu'un second Mac employé comme calculateur accélère de 2,9 fois la phase de pré-remplissage d'un modèle local, c'est-à-dire le traitement de la consigne avant la génération. Recoupement GitHub : Apache 2.0, 23 445 étoiles, dernière poussée le 5 novembre 2026 ; la version 0.7.4.dev1 date du 4 novembre et porte un suffixe de développement (elle n'est pas marquée comme préliminaire sur GitHub, ce qui prête à confusion). Le facteur de 2,9 est avancé par les auteurs, sans mesure indépendante. Sur Hacker News : 1 point, aucun commentaire.<br />
+https://github.com/jundot/omlx/releases/tag/v0.7.4.dev1</p>
+<p><strong>TokiRecur 0.3.12</strong> — boîte à outils en ligne de commande qui exploite la réutilisation du pré-remplissage dans llama.cpp : mesure le gain (temps jusqu'au premier jeton, jetons économisés), route le cache de contexte en mémoire et tient un registre de modèles avec un serveur llama-server par configuration. Fonctionne sur ROCm, CUDA, Vulkan, Metal et processeur. Utile à qui fait tourner plusieurs modèles locaux et veut savoir ce que la réutilisation du contexte rapporte réellement sur sa machine. Recoupement GitHub : MIT, 7 étoiles, dépôt créé en août 2026, dernière poussée le 7 novembre 2026, version publiée le 7 novembre. Sur Hacker News : 3 points, aucun commentaire — nouveauté que personne n'a encore relevée.<br />
+https://github.com/lhadzic377-netizen/TokiRecur</p>
+<h2>Volume</h2>
+<p>69 entrées publiées depuis la précédente édition et non encore traitées (3 fils de Hacker News et 1 fil Reddit du journal du subreddit, 65 de la source HN filtrée à 10 points et plus) ; 7 retenues, 62 écartées. Les journaux du blog Hugging Face, de Simon Willison et d'It's FOSS n'ont rien publié dans l'intervalle de quatre jours — leur dernier article remonte respectivement au 22 octobre, au 1er novembre et au 1er novembre, ce qui n'est pas un incident de collecte : leur fichier de suivi ne signale aucune erreur et le flux a bien été relu. Le taux de rétention faible (10 %) s'explique par la source HN filtrée, dominée ce week-end par les marchés financiers, la politique américaine et l'actualité de Nvidia ; les dépêches, les analyses sans outil et les deux canulars du jour (<code>uploadyourram.org</code>, <code>nocveday.com</code>) ont été écartés. La dernière collecte Reddit (<code>meta.json</code>, 7 novembre 21 h 51 UTC) n'a signalé aucune erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Sept entrées retenues, toutes issues de Hacker News ou du subreddit, les journaux de flux (blog Hugging Face, Simon Willison, It's FOSS) n'ayant rien publié dans l'intervalle. Le fait marquant est la sortie de libghostty-vt 1.0, la bibliothèque d'émulation de terminal extraite de Ghostty, désormais figée en ABI et déjà reprise par JetBrains, Neovim et plusieurs terminaux de nouvelle génération. Côté outils personnels : un serveur auto-hébergeable de raccourcis de recherche, un pot de miel libre pour automates frigorifiques, une bibliothèque React d'interface de discussion, deux utilitaires de gestion de modèles locaux (llama-sleep sur GPU NVIDIA, OMLX et TokiRecur côté réutilisation du pré-remplissage).</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>libghostty-vt 1.0 — bibliothèque d'émulation de terminal, licence MIT</h3>
+<p>Bibliothèque C portable extraite du cœur du terminal Ghostty, qui vient d'atteindre sa version 1.0 : la promesse de version sémantique et de compatibilité binaire (ABI) est désormais tenue et contrôlée automatiquement en intégration continue par libabigail sous Linux et des manifestes de types sous macOS et WebAssembly. L'intérêt est pratique : un programme tiers peut embarquer un émulateur de terminal complet en quelques centaines de lignes — l'auteur cite environ 1 500 lignes de C — au lieu de réécrire le décodage des séquences ANSI, du redimensionnement et de l'historique. L'écosystème est déjà réel : le terminal des environnements JetBrains (plus de 12,5 millions d'utilisateurs actifs selon le rapport annuel de l'éditeur), une demande d'intégration acceptée pour remplacer libvterm dans Neovim, une expérimentation de remplacement de Konsole côté KDE, le rendu TUI de Turborepo, le projet ghostel pour Emacs et une compilation WebAssembly. Le paquet est distribué avec ses propres archives signées, ses fichiers pkg-config et sa configuration CMake, ce qui le rend empaquetable par les distributions. Recoupement GitHub : MIT, dépôt de l'application Ghostty, 63 825 étoiles, dernière poussée le 7 novembre 2026. Sur Hacker News : 393 points, 64 commentaires.<br />
+https://lib.ghostty.org/ — https://mitchellh.com/writing/libghostty-1-0</p>
+<h3>Bong — serveur de raccourcis de recherche auto-hébergeable, licence Apache 2.0</h3>
+<p>Alternative aux « bangs » de DuckDuckGo que son auteur présente comme un service que l'on installe chez soi : au lieu de taper <code>!gh</code> pour atteindre un site, on tape un raccourci court (<code>.gh</code> pour GitHub, <code>.w</code> pour l'encyclopédie, <code>.lob</code> pour Lobsters, <code>.pypi</code>, <code>.man</code>, <code>.docsrs</code>…). Le jeu livré compte 61 raccourcis, dont une part notable de services coréens (portails, cartes, dictionnaires), ce qui trahit l'origine de l'auteur mais n'empêche pas de l'utiliser ailleurs — la page d'accueil ne documente pas la modification de cette liste, à vérifier avant de s'en remettre à lui. Utile en salle informatique comme sur un poste personnel, à condition d'accepter de faire transiter ses recherches par son propre serveur plutôt que par un tiers. Recoupement GitHub : Apache 2.0, écrit en Go, 11 étoiles, dépôt créé le 31 octobre 2026, dernière poussée le 7 novembre 2026. Sur Hacker News : 31 points, 6 commentaires. À noter, dans le même fil, un jeu de raccourcis ouvert maintenu par Kagi (<code>kagisearch/bangs</code>), réutilisable indépendamment de Bong.<br />
+https://bong.glendalab.com — https://github.com/glendalab/bong</p>
+<h3>Coldframe — pot de miel pour automates de froid commercial, licence MIT</h3>
+<p>Pot de miel à faible interaction qui se fait passer pour deux contrôleurs de froid de supermarché bien réels (Danfoss AK-SM 800A et Dixell XWEB 500), avec l'objectif de comprendre ce que les attaquants tentent contre ce type d'installation : l'auteur rapporte que ses deux personnages sont référencés par Shodan comme de vrais appareils. Un seul fichier Python utilisant uniquement la bibliothèque standard, ce qui le rend déployable sans dépendance. Le projet s'adresse aux équipes de sécurité et aux curieux, pas au grand public, mais il prolonge une série d'incidents récents sur des installations frigorifiques industrielles et la démarche — reconstituer fidèlement un appareil réel plutôt qu'un pot de miel générique — est réutilisable pour d'autres automates. Recoupement GitHub : MIT, 29 étoiles, dépôt créé le 5 novembre 2026, dernière poussée le 7 novembre 2026.<br />
+https://github.com/hedgerow-dev/coldframe</p>
+<h3>assistant-ui — bibliothèque React pour construire une interface de discussion avec un modèle</h3>
+<p>Bibliothèque TypeScript et React qui fournit les briques d'une interface de conversation : liste des messages, zone de saisie, édition d'une consigne et demande d'une réponse différente. Elle s'adresse aux développeurs qui veulent une interface d'agent dans leur application sans l'écrire eux-mêmes, et se branche sur les principaux fournisseurs comme sur un serveur local. Recoupement GitHub : MIT, 12 994 étoiles, dépôt créé en novembre 2023, dernière poussée le 7 novembre 2026 — c'est une bibliothèque établie, pas une nouveauté, et l'entrée du subreddit provient d'un compte qui recense des ressources communautaires, non de ses auteurs. Retenue ici pour ce qu'elle apporte à qui écrit un outil d'IA : elle évite de refaire une interface de discussion à chaque projet.<br />
+https://github.com/assistant-ui/assistant-ui</p>
+<h3>llama-sleep — garer un modèle dans la mémoire vive au lieu de l'arrêter</h3>
+<p>Programme en Go d'un peu moins de 7 Mo qui s'intercale entre llama-swap et llama-server de llama.cpp sur une machine à GPU NVIDIA. Quand on fait tourner deux modèles trop gros pour tenir ensemble sur la carte graphique, la permutation classique arrête l'un et recharge l'autre : 10,3 secondes mesurées, et le cache de la consigne système du modèle remplacé est perdu (ce qui ajoutait 6 à 7 secondes au premier mot d'un assistant vocal, chez l'auteur). llama-sleep appelle les fonctions de point de contrôle du pilote CUDA pour recopier la mémoire du modèle dans la mémoire vive et libérer la carte, retient les requêtes en attente jusqu'à ce que le modèle soit réveillé, et gare le modèle inactif en tâche de fond. Résultat annoncé : permutation ramenée à 2,1 secondes, et à 1,7 seconde avec les pages mémoire de tailles multiples du noyau Linux ; le cache de la consigne système survit à la permutation. Contraintes à connaître avant de s'engager : Linux et NVIDIA seulement (pilote 570 ou plus récent), un modèle garé occupe autant de mémoire vive qu'il occupait sur la carte, et l'inactivité doit correspondre au rythme des requêtes, faute de quoi la permutation s'allonge. Licence MIT, dépôt hébergé sur l'instance du propre auteur (<code>git.zaage.it</code>), donc moins pérenne qu'un dépôt GitHub. Sur Hacker News : 1 point, aucun commentaire — l'entrée est passée inaperçue, les chiffres proviennent du banc d'essai de l'auteur et non d'une mesure indépendante.<br />
+https://zaage.it/writing/llama-sleep/ — https://git.zaage.it/robert/llama-sleep</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>OMLX 0.7.4.dev1</strong> — serveur d'inférence pour puces Apple Silicon, piloté depuis la barre de menus de macOS, qui gère la mise en lots continue et la mise en cache sur disque des modèles. La note de version publiée sur Hacker News annonce qu'un second Mac employé comme calculateur accélère de 2,9 fois la phase de pré-remplissage d'un modèle local, c'est-à-dire le traitement de la consigne avant la génération. Recoupement GitHub : Apache 2.0, 23 445 étoiles, dernière poussée le 5 novembre 2026 ; la version 0.7.4.dev1 date du 4 novembre et porte un suffixe de développement (elle n'est pas marquée comme préliminaire sur GitHub, ce qui prête à confusion). Le facteur de 2,9 est avancé par les auteurs, sans mesure indépendante. Sur Hacker News : 1 point, aucun commentaire.<br />
+https://github.com/jundot/omlx/releases/tag/v0.7.4.dev1</p>
+<p><strong>TokiRecur 0.3.12</strong> — boîte à outils en ligne de commande qui exploite la réutilisation du pré-remplissage dans llama.cpp : mesure le gain (temps jusqu'au premier jeton, jetons économisés), route le cache de contexte en mémoire et tient un registre de modèles avec un serveur llama-server par configuration. Fonctionne sur ROCm, CUDA, Vulkan, Metal et processeur. Utile à qui fait tourner plusieurs modèles locaux et veut savoir ce que la réutilisation du contexte rapporte réellement sur sa machine. Recoupement GitHub : MIT, 7 étoiles, dépôt créé en août 2026, dernière poussée le 7 novembre 2026, version publiée le 7 novembre. Sur Hacker News : 3 points, aucun commentaire — nouveauté que personne n'a encore relevée.<br />
+https://github.com/lhadzic377-netizen/TokiRecur</p>
+<h2>Volume</h2>
+<p>69 entrées publiées depuis la précédente édition et non encore traitées (3 fils de Hacker News et 1 fil Reddit du journal du subreddit, 65 de la source HN filtrée à 10 points et plus) ; 7 retenues, 62 écartées. Les journaux du blog Hugging Face, de Simon Willison et d'It's FOSS n'ont rien publié dans l'intervalle de quatre jours — leur dernier article remonte respectivement au 22 octobre, au 1er novembre et au 1er novembre, ce qui n'est pas un incident de collecte : leur fichier de suivi ne signale aucune erreur et le flux a bien été relu. Le taux de rétention faible (10 %) s'explique par la source HN filtrée, dominée ce week-end par les marchés financiers, la politique américaine et l'actualité de Nvidia ; les dépêches, les analyses sans outil et les deux canulars du jour (<code>uploadyourram.org</code>, <code>nocveday.com</code>) ont été écartés. La dernière collecte Reddit (<code>meta.json</code>, 7 novembre 21 h 51 UTC) n'a signalé aucune erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — dimanche 8 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-08.html</link>
@@ -5874,146 +6400,6 @@ Dépôt : https://github.com/PitKub/ProxyCraft (1 étoile, licence MIT, active l
 Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xn17no/pika_released_the_most_affordable_video_model/ — auteur u/videorouter.</p>
 <h2>Volume</h2>
 <p>23 posts parus dans l'intervalle (3 novembre, de 04 h 53 à 21 h 08 UTC), 6 retenus, 17 écartés. La dernière collecte s'est terminée le 3 novembre 2026 à 22 h 17 UTC sans erreur.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille Renaud Dékode — mardi 3 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/renaud/2026-11-03.html</link>
-<guid isPermaLink="false">renaud-2026-11-03</guid>
-<pubDate>Tue, 03 Nov 2026 22:16:34 +0100</pubDate>
-<category>Renaud Dékode</category>
-<description><![CDATA[<h1>Veille Renaud Dékode — mardi 3 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>La taxe au gigaoctet a été votée le 30 octobre à l'Assemblée (5,5 centimes par gigaoctet envoyé vers les abonnés français) : le paiement revient aux émetteurs, mais les premiers chiffrages publiés montrent que les acteurs français — OVHcloud, VideoLAN — sont ceux qui paieront le plus sûrement.</li>
-<li>Google place Gemini 4 Carbon en tête du classement d'Artificial Analysis, deux semaines après Argon ; le modèle reste fermé et réservé à la cyberdéfense.</li>
-<li>Kiro v4, l'agrégateur multi-IA gratuit de la communauté de la chaîne, ajoute un plan de travail complet (Canvas, artifact, développement) sans installation et sans serveur intermédiaire.</li>
-</ul>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Gemini 4 Carbon prend la première place — et reste fermé</strong> (chapitre 03:04)</p>
-<p>Annoncé le 28 octobre 2026, soit environ trois semaines après Gemini 4 Argon, Carbon est déclaré numéro un de l'Intelligence Index v5 d'Artificial Analysis avec 59 points, devant Claude Opus 5.5, et second de l'index des agents de code. Il prend un million de jetons de contexte et accepte texte, image, vidéo et parole en entrée. La chaîne annonce un tarif de 2 dollars par million de jetons en entrée et 10 dollars en sortie ; le tarif standard publié est en réalité de 4 et 20 dollars, identique à Argon, avec une remise de lancement de 50 % sans date de fin annoncée, et 0,20 dollar par million pour l'entrée mise en cache. Le modèle consomme environ 29 % de jetons de sortie en moins que la génération précédente. L'argument mis en avant est la cybersécurité défensive : tenir un très grand contexte sans s'y perdre, trouver une faille, la prouver, proposer le correctif, puis attaquer sa propre correction pour vérifier. Conséquence logique, et la chaîne la souligne (vers 09:38) : un modèle capable de défendre ainsi sait aussi attaquer, d'où un accès restreint aux cyberdéfenseurs et partenaires de confiance, sans date d'ouverture publique.</p>
-<p><strong>Genie 4 : un modèle du monde pilotable en direct</strong> (chapitre 12:42)</p>
-<p>Genie 4 n'est pas un générateur de vidéo : c'est un modèle du monde qui produit en temps réel l'état suivant en fonction de ce que l'utilisateur fait. On avance un personnage, on tourne la caméra, on écrit un prompt pendant que la scène tourne (« il se met à neiger »), et la scène se souvient de ce qui a été traversé. La version 4 ajoute le son généré et une meilleure compréhension de la physique — un objet lâché tombe, une pastèque éclate en morceaux sur un socle étroit. Les limites sont réelles : la mémoire ne tient pas huit heures de déambulation, le son reste irrégulier. L'intérêt principal n'est pas le jeu mais l'entraînement : combiné à Gemini 4 Argon, qui raisonne et donne les consignes, Genie 4 fournit un environnement simulé où les robots s'entraînent avant le monde réel. Accès : Aperçu de recherche pour testeurs de confiance, liste d'attente ouverte, arrivée annoncée pour les abonnés Google AI Ultra dans Project Genie et pour les partenaires en accès anticipé via l'API Gemini et AI Studio.</p>
-<p><strong>Mistral Large 4 : les poids sont publiés</strong> (chapitre 22:34)</p>
-<p>Le modèle annoncé le 6 octobre sous le nom de code « Le Chonk », jusqu'ici disponible seulement par l'API de Mistral, est désormais téléchargeable : 1 000 milliards de paramètres, architecture à mélange d'experts (environ 52 milliards de paramètres actifs par inférence), entrée multimodale. Deux variantes officielles sont publiées, FP8 et NVFP4, plus des GGUF réalisés par Unsloth et l'équipe de llama.cpp ; la distribution se fait sous « Mistral Ecosystem Open-Weight License », une licence propre à Mistral qui n'est pas une licence libre. Pour l'exécuter, la vidéo cite la recommandation officielle de huit cartes Nvidia H200, ou un Mac Studio 512 Go en version quantifiée avec une qualité dégradée. Trois semaines de renforcement supplémentaire ont suffi : 48 % à l'Artificial Analysis Coding Agent Index, à égalité avec GLM-5.3 mais avec 47 % de jetons en moins par tâche, 41 % à Terminal-Bench 4.0 (plus 13 points) et 19,7 % chez Cognition FrontierCode 2.0. Le tarif API annoncé est de 0,70 dollar par million de jetons en entrée, 0,07 en entrée mise en cache et 2,10 en sortie. L'enjeu mis en avant est la souveraineté : disposer d'un modèle performant que l'on héberge soi-même et que l'on ne peut pas se voir couper le jour où il faut se défendre. Sur Hugging Face, la variante NVFP4 a été créée le 15 octobre et comptait 847 téléchargements à l'heure de cette édition, le GGUF d'Unsloth 12 666 — les 1 239 téléchargements annoncés à l'oral sont donc dépassés, la progression est rapide.</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Kiro v4 : un poste de travail multi-IA gratuit, en local</strong> (tutoriel du 31 octobre, 58 minutes)</p>
-<p>Kiro n'est pas un logiciel à installer : on télécharge un fichier ZIP depuis la page de la chaîne, on le dézippe et on ouvre la page dans son navigateur. Aucun serveur intermédiaire ne reçoit les conversations, les fichiers ou les clés : tout est stocké dans la base locale du navigateur, et le code est fourni ouvert. Quatre fonctions justifient l'essai. D'abord le multi-modèles : on branche ses propres clés API (OpenAI, Anthropic, Google, Mistral, Perplexity, Grok, DeepSeek), une seule clé OpenRouter pour les modèles ouverts, ou un serveur local Ollama ou LM Studio — dans ce dernier cas tout est gratuit, seule l'électricité est payée. On peut changer de modèle au milieu d'une même conversation sans perdre le contexte, ce que ne permettent pas les interfaces d'origine. Ensuite la transparence du coût : chaque réponse affiche les jetons consommés, avec des alertes de budget mensuel et un avertissement avant une réponse coûteuse, plus des statistiques par modèle, par éditeur et par période. Troisièmement le plan de travail, nouveauté de la version 4, qui regroupe deux modes : le Canvas, où l'on écrit un document à quatre mains avec l'IA (import de Word, PDF ou Markdown, export en Markdown, HTML ou texte, historique de versions) et le mode artifact, qui produit une application complète (fichiers HTML, CSS, JavaScript visibles, fichiers verrouillables, modifications en direct sur l'aperçu). Enfin les rôles et les prompts enregistrés : une personnalité de conversation activable à la volée — un professeur qui ne donne jamais la réponse et relance la question, par exemple — et des fragments de prompt réutilisables, y compris pour améliorer automatiquement la formulation de la demande.</p>
-<p>Ce qu'il faut savoir avant de s'y lancer. L'utilisation est réservée à un usage personnel : pas de commerce, pas de déploiement partagé, et le partage passe par le lien de la page officielle, jamais par le fichier. Tout étant stocké dans le navigateur, vider l'ordinateur perd l'historique ; l'export sélectif de la version 4 sert précisément à cela. Les modèles commerciaux restent facturés à l'usage chez leur fournisseur : Kiro supprime l'abonnement, pas le coût. Détail à part, la page de téléchargement n'a pas pu être ouverte depuis ce serveur ; les caractéristiques décrites ici viennent de la vidéo et de sa description. Le mode artifact a servi à développer Kiro v4 lui-même, révélé au chapitre 48:37.</p>
-<h2>Sciences, santé, robotique, spatial</h2>
-<p><strong>Neuralink Blindsight : la vue annoncée, rien d'implanté</strong> (chapitre 18:59)</p>
-<p>Le dispositif inverse la logique habituelle de Neuralink, qui sort de l'information du cerveau : une caméra filme la scène et l'implant transmet les signaux directement à la zone cérébrale de la vision, en court-circuitant l'œil, la rétine et le nerf optique. L'objectif affiché est de rendre une forme de vision, y compris à des personnes aveugles de naissance. L'état réel est celui d'une promesse : aucune preuve clinique publiée, aucun implant posé chez l'humain à ce jour, un registre de patients ouvert et une annonce d'essais. Elon Musk présente le dispositif comme techniquement prêt et attend l'accord des autorités, ce que la chaîne qualifie de pression sur l'autorisation. Les attentes doivent être modestes : les premières images seraient interprétées à partir de signaux grossiers, et l'on ne sait pas comment un cerveau n'ayant jamais reçu de signal visuel les traitera. La vidéo soulève aussi la question de fond : réparation du handicap ou augmentation réservée à ceux qui peuvent payer.</p>
-<p><strong>Suncatcher : un TPU de centre de données en orbite</strong> (chapitre 24:59)</p>
-<p>Google a embarqué des puces d'inférence de centre de données dans un satellite en orbite basse, lancé par une fusée SpaceX, et a fait tourner le modèle ouvert Gemma 4 en orbite : la réponse, un haïku, est revenue à une station au sol de Svalbard. C'est la première fois qu'une puce de cette classe exécute une inférence dans l'espace. Les contraintes techniques expliquent la modestie du test : la chaleur doit être évacuée par caloducs et radiateurs puisqu'il n'y a pas d'air, et un seul des quatre TPU embarqués peut travailler à la fois sans mettre le système en défaut. La phase suivante, annoncée pour 2027, doit compacter plusieurs grappes de satellites communiquant par liaison optique. Les chiffres qui permettraient de juger — consommation réelle, dissipation obtenue, latence de liaison, coût — ne sont pas publiés. La condition de viabilité reste le prix du lancement, ce qui place Google dans la dépendance de son concurrent déclaré dans les centres de données spatiaux.</p>
-<p><strong>Gemini apprend un geste à un robot en regardant une vidéo</strong> (chapitre 30:53)</p>
-<p>Démonstration interne de Google DeepMind avec le robot humanoïde Apollo d'Apptronik : Gemini 4 Argon regarde une vidéo d'humain jouant au cornhole, en déduit un modèle physique de la scène et de la trajectoire, puis le robot exécute le geste. Sept lancers réussis ont été montrés. La nouveauté n'est pas la performance mais la chaîne : vidéo, simulation, geste réel, sans ingénierie manuelle du mouvement. Les limites sont assumées : le robot ne sait pas s'adapter à une planche plus rugueuse ou à un sac déjà posé, et la dextérité mécanique reste en retard sur les capacités de raisonnement. La chaîne en tire sa conclusion, que l'on partage ou non : après les métiers intellectuels, l'automatisation du geste manuel cesse d'être un sujet lointain.</p>
-<p><strong>Un agent Claude choisit un traitement et l'injecte dans un cerveau de souris</strong> (chapitre 38:34)</p>
-<p>La société Exin Therapeutics, fondée par Gabriel Ocana-Santero, a donné à Claude Sonnet 5 une liste de dix-neuf thérapies géniques, un modèle murin d'épilepsie et un bras chirurgical motorisé équipé de caméras, avec une seule consigne : réduire les crises. L'agent a analysé les crises, choisi la thérapie et la voie de signalisation à renforcer, déterminé la structure cérébrale cible, calculé la profondeur et les coordonnées d'injection, puis piloté l'injection stéréotaxique en vérifiant sa position à la caméra à plusieurs reprises — la vidéo cite trente-deux vérifications pendant cinq minutes d'injection. Le compte rendu publié confirme la séquence et précise que la souris s'est bien remise ; l'efficacité sur les crises n'est pas établie, les résultats ne sont pas revus par les pairs et un rapport technique est attendu. Le détail le plus instructif est le comportement des modèles : Claude Opus 5.5 a refusé d'emblée de toucher à un organisme vivant, Claude Opus 5 a accepté puis renoncé en raison du bouton d'arrêt confié au vétérinaire — un geste interrompu en plein milieu lui paraissait plus dangereux qu'un refus —, et Sonnet 5 a accepté avant de s'arrêter en cours de route sur une erreur de calibrage, corrigée à la main par l'humain. Le patron d'Exin indique ensuite que GPT 6.1 et Grok 4.7 ont eux aussi réalisé leur première intervention, sans publier de résultat. La chaîne insiste sur ce que cela ouvre : le matériel devient accessible, mais la décision médicale, elle, change de main.</p>
-<h2>Régulation et politique — ce qui change concrètement</h2>
-<p><strong>La taxe au gigaoctet, votée mais contestée</strong> (chapitre 02:11)</p>
-<p>L'amendement n° I-1358 au budget 2027, porté par le député socialiste Laurent Lhardit, a été adopté le 30 octobre 2026 par 11 voix contre 10, avec 35 votants dans l'hémicycle. Il crée une taxe de 0,055 euro par gigaoctet envoyé aux abonnés internet en France, due par l'émetteur des données, français ou étranger, et non par l'internaute. Ce sont les fournisseurs d'accès qui compteraient chaque trimestre les volumes par plateforme, sous contrôle de l'Arcep et du fisc. Le rendement attendu repose sur un ordre de grandeur d'environ 200 milliards de gigaoctets acheminés par an, soit près de 11 milliards d'euros au taux plein, et environ 10 milliards attendus par les auteurs.</p>
-<p>Le texte plafonne la taxe à 15 % du chiffre d'affaires réalisé en France ou 2 % du chiffre d'affaires mondial, et c'est là que le dispositif se retourne. OVHcloud chiffre la facture brute à 70 millions d'euros par an et, plafond appliqué, entre 23 et 70 millions, selon les explications d'Octave Klaba reprises par la presse spécialisée. VideoLAN, l'association derrière VLC, évalue la taxe à plus d'un million d'euros par an alors qu'elle ne réalise aucun chiffre d'affaires : le plafond ne la protège pas. La chaîne ajoute deux difficultés techniques que le texte ne règle pas : rien n'est prévu pour les VPN, et un réseau de diffusion de contenu comme Akamai serait taxé sur un trafic qu'il ne produit pas, puis se retournerait vers ses clients. Enfin, Xavier Niel a reconnu publiquement sur X une « erreur de bouton », tout en confirmant que la taxe fera payer les utilisateurs — ce que le texte, selon lui, ne prévoyait pas. Le gouvernement s'y oppose et le Sénat peut encore l'écarter. Ordre de grandeur à retenir pour un foyer : jusqu'à 580 euros par an pour une famille de quatre si la taxe est intégralement répercutée, selon le calcul des Numériques ; et environ 11 euros de plus sur une licence de jeu de 60 gigaoctets, calcul de la vidéo.</p>
-<p><strong>Les Pays-Bas misent sur l'IA pour réduire leur administration</strong></p>
-<p>Le gouvernement néerlandais a présenté le 26 octobre 2026 un plan de réorganisation de la fonction publique : moins 16 % d'effectifs d'ici 2035, soit 25 000 postes supprimés, hors police et armée, pour une économie de 900 millions d'euros dès 2027 et de 3,5 milliards par an à l'horizon 2035. L'IA est au cœur du dispositif, présentée comme le moyen de tenir le service public malgré la baisse des effectifs, accompagnée d'au moins 500 règles supprimées ou simplifiées par an et d'une réduction du nombre de commissions consultatives. Une feuille de route sur l'usage de l'IA dans l'administration centrale est attendue au premier trimestre 2027. La chaîne insiste sur le point qui distingue ce plan d'un simple remplacement : il s'agit d'optimisation d'ensemble — mutualisation des postes de travail, achats groupés, bâtiments vendus, échanges de données entre services — et non de « remplacer un agent par un agent IA ». Elle avance qu'un effectif public en hausse de 40 % depuis 2018 rend l'exercice nécessaire, et transpose le raisonnement à la France en estimant, à titre d'hypothèse non vérifiée, qu'un plan équivalent concernerait environ 400 000 agents et rapporterait de l'ordre de 50 à 60 milliards d'euros.</p>
-<p><strong>Musique et IA : le droit bouge plus vite que la rémunération</strong> (entretien du 29 octobre avec Céline Magnano)</p>
-<p>Sur le plan des règles, deux décisions concrètes encadrent désormais la production musicale française. Le SNEP exclut de ses classements officiels les titres entièrement générés par IA ; pour être éligible, un titre doit résulter d'une intervention humaine substantielle, signaler clairement le recours à l'IA et respecter les critères de transparence associés. Deezer reçoit environ 90 000 titres entièrement générés par IA par jour, ce qui a représenté plus de la moitié de ses livraisons quotidiennes au pic de juin 2026, et la plateforme étiquette désormais ces titres pour l'auditeur et retire ceux qui servent à la fraude aux écoutes ou qui n'ont pas été écoutés depuis six mois. Une étude Deezer et Ipsos citée par la chaîne indique que 97 % des auditeurs ne distinguent pas à l'oreille un titre humain d'un titre généré. Le marquage obligatoire change la pratique de terrain : l'invitée raconte avoir indiqué à un artiste utilisant des voix générées sur un EP qu'il devait le déclarer, et l'avoir laissé choisir entre assumer la mention ou enregistrer la voix autrement.</p>
-<p>Deux angles morts de rémunération sont décrits, et ils ne concernent pas l'IA. D'une part, la répartition des droits voisins s'appuie sur un panel d'écoute qui ne comptabilise pas les grandes radios de province : un duo passé sur ces antennes n'a touché que très peu de droits, alors que ces radios paient bien un pourcentage de leur chiffre d'affaires. D'autre part, un auteur qui n'écrit que les paroles et fait générer la musique déclare son texte — mais dès que le titre passe en radio, la radio paie une chanson et l'auteur est rémunéré comme auteur-compositeur. Ce point a été porté devant la Sacem, sans solution à ce jour. La piste évoquée, encore à l'état de recherche avec le CNRS, est un indicateur du degré d'apport humain — une sorte de « nutriscore » de la musique — plutôt qu'une mention binaire « fait avec IA ». Enfin, côté scène, le Théâtre de l'IA à Paris ouvre sa salle aux artistes, avec ou sans IA, avec des visuels et des jeux de lumière générés en direct à partir de la musique jouée.</p>
-<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
-<ul>
-<li>L'indice chinois STAR50, qui regroupe les valeurs de l'IA, des semi-conducteurs et de la robotique de Shanghai, a perdu environ 40 % depuis son sommet de juillet en moins de quatre mois, soit près de 480 milliards de dollars effacés. Unitree, fabricant de robots humanoïdes dont l'introduction en bourse a été souscrite 8 000 fois par les particuliers, a perdu la moitié de sa valeur depuis août.</li>
-<li>La lecture de la chaîne : ce n'est pas un krach subi mais un dégonflage en partie organisé — blocage de cotations, revente d'actions publiques — et une réorientation du financement vers les acteurs installés et l'infrastructure réelle. Elle cite, à l'oral et sans vérification indépendante, 15 milliards de dollars levés par dix grands acteurs chinois de l'IA et 2,3 milliards pour Huawei, destinés à du calcul.</li>
-<li>Le risque qu'elle place en tête reste la bulle américaine, alimentée par des circuits d'investissement circulaires, avec une nuance utile : sous la couche financière survit un socle de modèles ouverts utilisables gratuitement, qui ne disparaîtra pas si la valorisation se dégonfle. À prendre comme une opinion, non comme une analyse de marché.</li>
-</ul>
-<h2>À reprendre dans les autres veilles</h2>
-<ul>
-<li>Gemini 4 Carbon et Genie 4 : à verser aux veilles IA et développement, avec le tarif réel (remise de lancement, pas tarif de référence) et la restriction d'accès.</li>
-<li>Mistral Large 4 en poids ouverts : veille IA et veille pédagogique, pour la question de l'auto-hébergement et de la licence non libre — et pour la prouesse de codage à jetons réduits.</li>
-<li>Kiro v4 : veille pédagogique et RUPN, comme poste de travail local multi-modèles sans transmission de données, en rappelant la restriction d'usage personnel.</li>
-<li>Taxe au gigaoctet : veille RUPN, pour l'effet concret sur les coûts réseau et sur les acteurs français comme OVHcloud.</li>
-<li>Règles du SNEP, étiquetage Deezer, façonnage du droit d'auteur : veille pédagogique, comme cas d'école sur la traçabilité et la déclaration de l'usage de l'IA.</li>
-<li>Plan néerlandais : veille RUPN, comme exemple documenté d'IA dans l'administration publique.</li>
-<li>Blindsight, Suncatcher, apprentissage robotique par la vidéo, agent Claude en neurochirurgie murine : veille scientifique et pédagogique, avec un usage direct en SVT (système nerveux et vision, énergie et thermique en apesanteur, démarche expérimentale et évaluation non encore publiée).</li>
-</ul>
-<h2>Volume</h2>
-<p>Quinze entrées au journal : quatre vidéos longues traitées après retrait des neuf extraits et des deux directs, douze sujets retenus, onze entrées écartées (extraits, directs et promotions de la chaîne). Les quatre vidéos disposaient de leur transcription locale : l'édition s'appuie donc sur les paroles, non sur les descriptions. Elle remplace la première version publiée plus tôt dans la journée, qui reposait sur les seules descriptions ; seule l'édition enrichie ci-dessus fait foi. Aucun envoi par courrier, rien sur Telegram : la publication du flux est assurée par le job dédié.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille Renaud Dékode — mardi 3 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>La taxe au gigaoctet a été votée le 30 octobre à l'Assemblée (5,5 centimes par gigaoctet envoyé vers les abonnés français) : le paiement revient aux émetteurs, mais les premiers chiffrages publiés montrent que les acteurs français — OVHcloud, VideoLAN — sont ceux qui paieront le plus sûrement.</li>
-<li>Google place Gemini 4 Carbon en tête du classement d'Artificial Analysis, deux semaines après Argon ; le modèle reste fermé et réservé à la cyberdéfense.</li>
-<li>Kiro v4, l'agrégateur multi-IA gratuit de la communauté de la chaîne, ajoute un plan de travail complet (Canvas, artifact, développement) sans installation et sans serveur intermédiaire.</li>
-</ul>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Gemini 4 Carbon prend la première place — et reste fermé</strong> (chapitre 03:04)</p>
-<p>Annoncé le 28 octobre 2026, soit environ trois semaines après Gemini 4 Argon, Carbon est déclaré numéro un de l'Intelligence Index v5 d'Artificial Analysis avec 59 points, devant Claude Opus 5.5, et second de l'index des agents de code. Il prend un million de jetons de contexte et accepte texte, image, vidéo et parole en entrée. La chaîne annonce un tarif de 2 dollars par million de jetons en entrée et 10 dollars en sortie ; le tarif standard publié est en réalité de 4 et 20 dollars, identique à Argon, avec une remise de lancement de 50 % sans date de fin annoncée, et 0,20 dollar par million pour l'entrée mise en cache. Le modèle consomme environ 29 % de jetons de sortie en moins que la génération précédente. L'argument mis en avant est la cybersécurité défensive : tenir un très grand contexte sans s'y perdre, trouver une faille, la prouver, proposer le correctif, puis attaquer sa propre correction pour vérifier. Conséquence logique, et la chaîne la souligne (vers 09:38) : un modèle capable de défendre ainsi sait aussi attaquer, d'où un accès restreint aux cyberdéfenseurs et partenaires de confiance, sans date d'ouverture publique.</p>
-<p><strong>Genie 4 : un modèle du monde pilotable en direct</strong> (chapitre 12:42)</p>
-<p>Genie 4 n'est pas un générateur de vidéo : c'est un modèle du monde qui produit en temps réel l'état suivant en fonction de ce que l'utilisateur fait. On avance un personnage, on tourne la caméra, on écrit un prompt pendant que la scène tourne (« il se met à neiger »), et la scène se souvient de ce qui a été traversé. La version 4 ajoute le son généré et une meilleure compréhension de la physique — un objet lâché tombe, une pastèque éclate en morceaux sur un socle étroit. Les limites sont réelles : la mémoire ne tient pas huit heures de déambulation, le son reste irrégulier. L'intérêt principal n'est pas le jeu mais l'entraînement : combiné à Gemini 4 Argon, qui raisonne et donne les consignes, Genie 4 fournit un environnement simulé où les robots s'entraînent avant le monde réel. Accès : Aperçu de recherche pour testeurs de confiance, liste d'attente ouverte, arrivée annoncée pour les abonnés Google AI Ultra dans Project Genie et pour les partenaires en accès anticipé via l'API Gemini et AI Studio.</p>
-<p><strong>Mistral Large 4 : les poids sont publiés</strong> (chapitre 22:34)</p>
-<p>Le modèle annoncé le 6 octobre sous le nom de code « Le Chonk », jusqu'ici disponible seulement par l'API de Mistral, est désormais téléchargeable : 1 000 milliards de paramètres, architecture à mélange d'experts (environ 52 milliards de paramètres actifs par inférence), entrée multimodale. Deux variantes officielles sont publiées, FP8 et NVFP4, plus des GGUF réalisés par Unsloth et l'équipe de llama.cpp ; la distribution se fait sous « Mistral Ecosystem Open-Weight License », une licence propre à Mistral qui n'est pas une licence libre. Pour l'exécuter, la vidéo cite la recommandation officielle de huit cartes Nvidia H200, ou un Mac Studio 512 Go en version quantifiée avec une qualité dégradée. Trois semaines de renforcement supplémentaire ont suffi : 48 % à l'Artificial Analysis Coding Agent Index, à égalité avec GLM-5.3 mais avec 47 % de jetons en moins par tâche, 41 % à Terminal-Bench 4.0 (plus 13 points) et 19,7 % chez Cognition FrontierCode 2.0. Le tarif API annoncé est de 0,70 dollar par million de jetons en entrée, 0,07 en entrée mise en cache et 2,10 en sortie. L'enjeu mis en avant est la souveraineté : disposer d'un modèle performant que l'on héberge soi-même et que l'on ne peut pas se voir couper le jour où il faut se défendre. Sur Hugging Face, la variante NVFP4 a été créée le 15 octobre et comptait 847 téléchargements à l'heure de cette édition, le GGUF d'Unsloth 12 666 — les 1 239 téléchargements annoncés à l'oral sont donc dépassés, la progression est rapide.</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Kiro v4 : un poste de travail multi-IA gratuit, en local</strong> (tutoriel du 31 octobre, 58 minutes)</p>
-<p>Kiro n'est pas un logiciel à installer : on télécharge un fichier ZIP depuis la page de la chaîne, on le dézippe et on ouvre la page dans son navigateur. Aucun serveur intermédiaire ne reçoit les conversations, les fichiers ou les clés : tout est stocké dans la base locale du navigateur, et le code est fourni ouvert. Quatre fonctions justifient l'essai. D'abord le multi-modèles : on branche ses propres clés API (OpenAI, Anthropic, Google, Mistral, Perplexity, Grok, DeepSeek), une seule clé OpenRouter pour les modèles ouverts, ou un serveur local Ollama ou LM Studio — dans ce dernier cas tout est gratuit, seule l'électricité est payée. On peut changer de modèle au milieu d'une même conversation sans perdre le contexte, ce que ne permettent pas les interfaces d'origine. Ensuite la transparence du coût : chaque réponse affiche les jetons consommés, avec des alertes de budget mensuel et un avertissement avant une réponse coûteuse, plus des statistiques par modèle, par éditeur et par période. Troisièmement le plan de travail, nouveauté de la version 4, qui regroupe deux modes : le Canvas, où l'on écrit un document à quatre mains avec l'IA (import de Word, PDF ou Markdown, export en Markdown, HTML ou texte, historique de versions) et le mode artifact, qui produit une application complète (fichiers HTML, CSS, JavaScript visibles, fichiers verrouillables, modifications en direct sur l'aperçu). Enfin les rôles et les prompts enregistrés : une personnalité de conversation activable à la volée — un professeur qui ne donne jamais la réponse et relance la question, par exemple — et des fragments de prompt réutilisables, y compris pour améliorer automatiquement la formulation de la demande.</p>
-<p>Ce qu'il faut savoir avant de s'y lancer. L'utilisation est réservée à un usage personnel : pas de commerce, pas de déploiement partagé, et le partage passe par le lien de la page officielle, jamais par le fichier. Tout étant stocké dans le navigateur, vider l'ordinateur perd l'historique ; l'export sélectif de la version 4 sert précisément à cela. Les modèles commerciaux restent facturés à l'usage chez leur fournisseur : Kiro supprime l'abonnement, pas le coût. Détail à part, la page de téléchargement n'a pas pu être ouverte depuis ce serveur ; les caractéristiques décrites ici viennent de la vidéo et de sa description. Le mode artifact a servi à développer Kiro v4 lui-même, révélé au chapitre 48:37.</p>
-<h2>Sciences, santé, robotique, spatial</h2>
-<p><strong>Neuralink Blindsight : la vue annoncée, rien d'implanté</strong> (chapitre 18:59)</p>
-<p>Le dispositif inverse la logique habituelle de Neuralink, qui sort de l'information du cerveau : une caméra filme la scène et l'implant transmet les signaux directement à la zone cérébrale de la vision, en court-circuitant l'œil, la rétine et le nerf optique. L'objectif affiché est de rendre une forme de vision, y compris à des personnes aveugles de naissance. L'état réel est celui d'une promesse : aucune preuve clinique publiée, aucun implant posé chez l'humain à ce jour, un registre de patients ouvert et une annonce d'essais. Elon Musk présente le dispositif comme techniquement prêt et attend l'accord des autorités, ce que la chaîne qualifie de pression sur l'autorisation. Les attentes doivent être modestes : les premières images seraient interprétées à partir de signaux grossiers, et l'on ne sait pas comment un cerveau n'ayant jamais reçu de signal visuel les traitera. La vidéo soulève aussi la question de fond : réparation du handicap ou augmentation réservée à ceux qui peuvent payer.</p>
-<p><strong>Suncatcher : un TPU de centre de données en orbite</strong> (chapitre 24:59)</p>
-<p>Google a embarqué des puces d'inférence de centre de données dans un satellite en orbite basse, lancé par une fusée SpaceX, et a fait tourner le modèle ouvert Gemma 4 en orbite : la réponse, un haïku, est revenue à une station au sol de Svalbard. C'est la première fois qu'une puce de cette classe exécute une inférence dans l'espace. Les contraintes techniques expliquent la modestie du test : la chaleur doit être évacuée par caloducs et radiateurs puisqu'il n'y a pas d'air, et un seul des quatre TPU embarqués peut travailler à la fois sans mettre le système en défaut. La phase suivante, annoncée pour 2027, doit compacter plusieurs grappes de satellites communiquant par liaison optique. Les chiffres qui permettraient de juger — consommation réelle, dissipation obtenue, latence de liaison, coût — ne sont pas publiés. La condition de viabilité reste le prix du lancement, ce qui place Google dans la dépendance de son concurrent déclaré dans les centres de données spatiaux.</p>
-<p><strong>Gemini apprend un geste à un robot en regardant une vidéo</strong> (chapitre 30:53)</p>
-<p>Démonstration interne de Google DeepMind avec le robot humanoïde Apollo d'Apptronik : Gemini 4 Argon regarde une vidéo d'humain jouant au cornhole, en déduit un modèle physique de la scène et de la trajectoire, puis le robot exécute le geste. Sept lancers réussis ont été montrés. La nouveauté n'est pas la performance mais la chaîne : vidéo, simulation, geste réel, sans ingénierie manuelle du mouvement. Les limites sont assumées : le robot ne sait pas s'adapter à une planche plus rugueuse ou à un sac déjà posé, et la dextérité mécanique reste en retard sur les capacités de raisonnement. La chaîne en tire sa conclusion, que l'on partage ou non : après les métiers intellectuels, l'automatisation du geste manuel cesse d'être un sujet lointain.</p>
-<p><strong>Un agent Claude choisit un traitement et l'injecte dans un cerveau de souris</strong> (chapitre 38:34)</p>
-<p>La société Exin Therapeutics, fondée par Gabriel Ocana-Santero, a donné à Claude Sonnet 5 une liste de dix-neuf thérapies géniques, un modèle murin d'épilepsie et un bras chirurgical motorisé équipé de caméras, avec une seule consigne : réduire les crises. L'agent a analysé les crises, choisi la thérapie et la voie de signalisation à renforcer, déterminé la structure cérébrale cible, calculé la profondeur et les coordonnées d'injection, puis piloté l'injection stéréotaxique en vérifiant sa position à la caméra à plusieurs reprises — la vidéo cite trente-deux vérifications pendant cinq minutes d'injection. Le compte rendu publié confirme la séquence et précise que la souris s'est bien remise ; l'efficacité sur les crises n'est pas établie, les résultats ne sont pas revus par les pairs et un rapport technique est attendu. Le détail le plus instructif est le comportement des modèles : Claude Opus 5.5 a refusé d'emblée de toucher à un organisme vivant, Claude Opus 5 a accepté puis renoncé en raison du bouton d'arrêt confié au vétérinaire — un geste interrompu en plein milieu lui paraissait plus dangereux qu'un refus —, et Sonnet 5 a accepté avant de s'arrêter en cours de route sur une erreur de calibrage, corrigée à la main par l'humain. Le patron d'Exin indique ensuite que GPT 6.1 et Grok 4.7 ont eux aussi réalisé leur première intervention, sans publier de résultat. La chaîne insiste sur ce que cela ouvre : le matériel devient accessible, mais la décision médicale, elle, change de main.</p>
-<h2>Régulation et politique — ce qui change concrètement</h2>
-<p><strong>La taxe au gigaoctet, votée mais contestée</strong> (chapitre 02:11)</p>
-<p>L'amendement n° I-1358 au budget 2027, porté par le député socialiste Laurent Lhardit, a été adopté le 30 octobre 2026 par 11 voix contre 10, avec 35 votants dans l'hémicycle. Il crée une taxe de 0,055 euro par gigaoctet envoyé aux abonnés internet en France, due par l'émetteur des données, français ou étranger, et non par l'internaute. Ce sont les fournisseurs d'accès qui compteraient chaque trimestre les volumes par plateforme, sous contrôle de l'Arcep et du fisc. Le rendement attendu repose sur un ordre de grandeur d'environ 200 milliards de gigaoctets acheminés par an, soit près de 11 milliards d'euros au taux plein, et environ 10 milliards attendus par les auteurs.</p>
-<p>Le texte plafonne la taxe à 15 % du chiffre d'affaires réalisé en France ou 2 % du chiffre d'affaires mondial, et c'est là que le dispositif se retourne. OVHcloud chiffre la facture brute à 70 millions d'euros par an et, plafond appliqué, entre 23 et 70 millions, selon les explications d'Octave Klaba reprises par la presse spécialisée. VideoLAN, l'association derrière VLC, évalue la taxe à plus d'un million d'euros par an alors qu'elle ne réalise aucun chiffre d'affaires : le plafond ne la protège pas. La chaîne ajoute deux difficultés techniques que le texte ne règle pas : rien n'est prévu pour les VPN, et un réseau de diffusion de contenu comme Akamai serait taxé sur un trafic qu'il ne produit pas, puis se retournerait vers ses clients. Enfin, Xavier Niel a reconnu publiquement sur X une « erreur de bouton », tout en confirmant que la taxe fera payer les utilisateurs — ce que le texte, selon lui, ne prévoyait pas. Le gouvernement s'y oppose et le Sénat peut encore l'écarter. Ordre de grandeur à retenir pour un foyer : jusqu'à 580 euros par an pour une famille de quatre si la taxe est intégralement répercutée, selon le calcul des Numériques ; et environ 11 euros de plus sur une licence de jeu de 60 gigaoctets, calcul de la vidéo.</p>
-<p><strong>Les Pays-Bas misent sur l'IA pour réduire leur administration</strong></p>
-<p>Le gouvernement néerlandais a présenté le 26 octobre 2026 un plan de réorganisation de la fonction publique : moins 16 % d'effectifs d'ici 2035, soit 25 000 postes supprimés, hors police et armée, pour une économie de 900 millions d'euros dès 2027 et de 3,5 milliards par an à l'horizon 2035. L'IA est au cœur du dispositif, présentée comme le moyen de tenir le service public malgré la baisse des effectifs, accompagnée d'au moins 500 règles supprimées ou simplifiées par an et d'une réduction du nombre de commissions consultatives. Une feuille de route sur l'usage de l'IA dans l'administration centrale est attendue au premier trimestre 2027. La chaîne insiste sur le point qui distingue ce plan d'un simple remplacement : il s'agit d'optimisation d'ensemble — mutualisation des postes de travail, achats groupés, bâtiments vendus, échanges de données entre services — et non de « remplacer un agent par un agent IA ». Elle avance qu'un effectif public en hausse de 40 % depuis 2018 rend l'exercice nécessaire, et transpose le raisonnement à la France en estimant, à titre d'hypothèse non vérifiée, qu'un plan équivalent concernerait environ 400 000 agents et rapporterait de l'ordre de 50 à 60 milliards d'euros.</p>
-<p><strong>Musique et IA : le droit bouge plus vite que la rémunération</strong> (entretien du 29 octobre avec Céline Magnano)</p>
-<p>Sur le plan des règles, deux décisions concrètes encadrent désormais la production musicale française. Le SNEP exclut de ses classements officiels les titres entièrement générés par IA ; pour être éligible, un titre doit résulter d'une intervention humaine substantielle, signaler clairement le recours à l'IA et respecter les critères de transparence associés. Deezer reçoit environ 90 000 titres entièrement générés par IA par jour, ce qui a représenté plus de la moitié de ses livraisons quotidiennes au pic de juin 2026, et la plateforme étiquette désormais ces titres pour l'auditeur et retire ceux qui servent à la fraude aux écoutes ou qui n'ont pas été écoutés depuis six mois. Une étude Deezer et Ipsos citée par la chaîne indique que 97 % des auditeurs ne distinguent pas à l'oreille un titre humain d'un titre généré. Le marquage obligatoire change la pratique de terrain : l'invitée raconte avoir indiqué à un artiste utilisant des voix générées sur un EP qu'il devait le déclarer, et l'avoir laissé choisir entre assumer la mention ou enregistrer la voix autrement.</p>
-<p>Deux angles morts de rémunération sont décrits, et ils ne concernent pas l'IA. D'une part, la répartition des droits voisins s'appuie sur un panel d'écoute qui ne comptabilise pas les grandes radios de province : un duo passé sur ces antennes n'a touché que très peu de droits, alors que ces radios paient bien un pourcentage de leur chiffre d'affaires. D'autre part, un auteur qui n'écrit que les paroles et fait générer la musique déclare son texte — mais dès que le titre passe en radio, la radio paie une chanson et l'auteur est rémunéré comme auteur-compositeur. Ce point a été porté devant la Sacem, sans solution à ce jour. La piste évoquée, encore à l'état de recherche avec le CNRS, est un indicateur du degré d'apport humain — une sorte de « nutriscore » de la musique — plutôt qu'une mention binaire « fait avec IA ». Enfin, côté scène, le Théâtre de l'IA à Paris ouvre sa salle aux artistes, avec ou sans IA, avec des visuels et des jeux de lumière générés en direct à partir de la musique jouée.</p>
-<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
-<ul>
-<li>L'indice chinois STAR50, qui regroupe les valeurs de l'IA, des semi-conducteurs et de la robotique de Shanghai, a perdu environ 40 % depuis son sommet de juillet en moins de quatre mois, soit près de 480 milliards de dollars effacés. Unitree, fabricant de robots humanoïdes dont l'introduction en bourse a été souscrite 8 000 fois par les particuliers, a perdu la moitié de sa valeur depuis août.</li>
-<li>La lecture de la chaîne : ce n'est pas un krach subi mais un dégonflage en partie organisé — blocage de cotations, revente d'actions publiques — et une réorientation du financement vers les acteurs installés et l'infrastructure réelle. Elle cite, à l'oral et sans vérification indépendante, 15 milliards de dollars levés par dix grands acteurs chinois de l'IA et 2,3 milliards pour Huawei, destinés à du calcul.</li>
-<li>Le risque qu'elle place en tête reste la bulle américaine, alimentée par des circuits d'investissement circulaires, avec une nuance utile : sous la couche financière survit un socle de modèles ouverts utilisables gratuitement, qui ne disparaîtra pas si la valorisation se dégonfle. À prendre comme une opinion, non comme une analyse de marché.</li>
-</ul>
-<h2>À reprendre dans les autres veilles</h2>
-<ul>
-<li>Gemini 4 Carbon et Genie 4 : à verser aux veilles IA et développement, avec le tarif réel (remise de lancement, pas tarif de référence) et la restriction d'accès.</li>
-<li>Mistral Large 4 en poids ouverts : veille IA et veille pédagogique, pour la question de l'auto-hébergement et de la licence non libre — et pour la prouesse de codage à jetons réduits.</li>
-<li>Kiro v4 : veille pédagogique et RUPN, comme poste de travail local multi-modèles sans transmission de données, en rappelant la restriction d'usage personnel.</li>
-<li>Taxe au gigaoctet : veille RUPN, pour l'effet concret sur les coûts réseau et sur les acteurs français comme OVHcloud.</li>
-<li>Règles du SNEP, étiquetage Deezer, façonnage du droit d'auteur : veille pédagogique, comme cas d'école sur la traçabilité et la déclaration de l'usage de l'IA.</li>
-<li>Plan néerlandais : veille RUPN, comme exemple documenté d'IA dans l'administration publique.</li>
-<li>Blindsight, Suncatcher, apprentissage robotique par la vidéo, agent Claude en neurochirurgie murine : veille scientifique et pédagogique, avec un usage direct en SVT (système nerveux et vision, énergie et thermique en apesanteur, démarche expérimentale et évaluation non encore publiée).</li>
-</ul>
-<h2>Volume</h2>
-<p>Quinze entrées au journal : quatre vidéos longues traitées après retrait des neuf extraits et des deux directs, douze sujets retenus, onze entrées écartées (extraits, directs et promotions de la chaîne). Les quatre vidéos disposaient de leur transcription locale : l'édition s'appuie donc sur les paroles, non sur les descriptions. Elle remplace la première version publiée plus tôt dans la journée, qui reposait sur les seules descriptions ; seule l'édition enrichie ci-dessus fait foi. Aucun envoi par courrier, rien sur Telegram : la publication du flux est assurée par le job dédié.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LaTeX — mardi 3 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/latex/2026-11-03.html</link>
-<guid isPermaLink="false">latex-2026-11-03</guid>
-<pubDate>Tue, 03 Nov 2026 07:01:39 +0100</pubDate>
-<category>r/LaTeX</category>
-<description><![CDATA[<h1>Veille r/LaTeX — mardi 3 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Rien de nouveau qui mérite votre attention : un seul post non traité depuis la dernière édition, et il ne passe pas le filtre.</li>
-<li>Il s'agit de l'annonce d'une plateforme en ligne (FormuTex : conversion Word/PDF vers LaTeX, générateurs de matrices, équations et tableaux) qui n'est pas encore ouverte au public et qui ne donne aucune adresse : l'auteur demande surtout quels besoins couvrir. Aucun élément vérifiable, aucun outil utilisable aujourd'hui — je le signale plutôt que de le retenir à tort.</li>
-<li>La collecte n'a signalé aucune erreur (<code>meta.json</code> : <code>errors</code> vide, dernier passage le 3 novembre à 4 h 53 UTC).</li>
-</ul>
-<h2>Volume</h2>
-<p>1 post publié dans l'intervalle, 0 retenu, 1 écarté, soit un taux de rétention de 0 %. Sur un subreddit d'entraide comme r/LaTeX, dont le flux est fait pour l'essentiel de questions de dépannage ponctuelles, un taux très faible sur une seule journée est normal : il tient ici au hasard du calendrier (un unique post non traité entre deux éditions) et non à un filtre trop strict.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LaTeX — mardi 3 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Rien de nouveau qui mérite votre attention : un seul post non traité depuis la dernière édition, et il ne passe pas le filtre.</li>
-<li>Il s'agit de l'annonce d'une plateforme en ligne (FormuTex : conversion Word/PDF vers LaTeX, générateurs de matrices, équations et tableaux) qui n'est pas encore ouverte au public et qui ne donne aucune adresse : l'auteur demande surtout quels besoins couvrir. Aucun élément vérifiable, aucun outil utilisable aujourd'hui — je le signale plutôt que de le retenir à tort.</li>
-<li>La collecte n'a signalé aucune erreur (<code>meta.json</code> : <code>errors</code> vide, dernier passage le 3 novembre à 4 h 53 UTC).</li>
-</ul>
-<h2>Volume</h2>
-<p>1 post publié dans l'intervalle, 0 retenu, 1 écarté, soit un taux de rétention de 0 %. Sur un subreddit d'entraide comme r/LaTeX, dont le flux est fait pour l'essentiel de questions de dépannage ponctuelles, un taux très faible sur une seule journée est normal : il tient ici au hasard du calendrier (un unique post non traité entre deux éditions) et non à un filtre trop strict.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

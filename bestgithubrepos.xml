@@ -6,9 +6,476 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 07 Nov 2026 00:34:26 +0100</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 00:35:00 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-08.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 00:35:00 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La matière utile vient toujours majoritairement de Hacker News (« Show HN ») et de Lobsters : le flux du subreddit a livré d'un coup une vingtaine de dépôts, dont plusieurs projets très connus, mais il répond encore (fermeture annoncée le 13 novembre).</li>
+<li>Trois découvertes sortent du lot : <strong>Retex</strong>, réimplémentation de LuaLaTeX en Rust annoncée deux à trois fois plus rapide (CC0), <strong>OpenNumLab</strong>, première version d'une alternative libre à Matlab, et <strong>Bong</strong>, qui permet d'auto-héberger les « bang » de DuckDuckGo.</li>
+<li><strong>Libghostty 1.0</strong>, la bibliothèque de terminal qui porte Ghostty, est la mise à jour la plus commentée de la journée.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Écriture, sciences et enseignement</h3>
+<ul>
+<li>
+<p><strong>Retex</strong> — réimplémentation « clean-room » de LuaLaTeX en Rust, utilisable en remplacement direct (mode compatibilité, deux à trois fois plus rapide) ou comme moteur plus moderne : bien meilleurs messages d'erreur, sorties SVG, ODP/ODT, PDF/X-1 et PDF/X-4 pour l'impression, téléchargement automatique des paquets manquants, liaisons Python. Licence CC0 (domaine public) ; dépôt GitLab. L'auteur signale que le code a été entièrement produit par un modèle de langage et n'a donc pas d'auteur au sens habituel. <a href="https://gitlab.com/severin-lemaignan/retex">https://gitlab.com/severin-lemaignan/retex</a></p>
+</li>
+<li>
+<p><strong>OpenNumLab</strong> — environnement de calcul scientifique libre, avec interface de bureau écrite en Rust et ligne de commande, première version publiée, présentée comme alternative ouverte à Matlab. MIT, 2 étoiles, dernière mise à jour le 7 novembre 2026. Le dépôt a été créé le 15 octobre : projet très jeune, à éprouver longuement avant tout usage devant des élèves. <a href="https://github.com/me-farza/opennumlab">https://github.com/me-farza/opennumlab</a></p>
+</li>
+<li>
+<p><strong>PPTist</strong> — application de présentation en ligne qui reproduit l'essentiel des fonctions de PowerPoint (édition, projection, aperçu des fichiers PPTX locaux), écrite en Vue 3 et TypeScript, sans bibliothèque de composants. AGPL-3.0, 9 469 étoiles, mise à jour le 6 novembre 2026. La licence AGPL mérite d'être connue pour un usage en établissement. <a href="https://github.com/pipipi-pikachu/PPTist">https://github.com/pipipi-pikachu/PPTist</a></p>
+</li>
+<li>
+<p><strong>labml.ai</strong> — plus de soixante implémentations PyTorch commentées d'articles de recherche, avec les notes en regard du code : transformateurs, LoRA, modèles de diffusion, réseaux antagonistes, apprentissage par renforcement, optimiseurs. MIT, 67 716 étoiles. <a href="https://github.com/labmlai/annotated_deep_learning_paper_implementations">https://github.com/labmlai/annotated_deep_learning_paper_implementations</a></p>
+</li>
+</ul>
+<h3>Agents et développement assisté par IA</h3>
+<ul>
+<li>
+<p><strong>Agent Manager</strong> — multiplexeur de terminal (interface tmux) pour piloter côte à côte plusieurs agents de codage (Claude Code, Codex, OpenCode, Gemini CLI), avec état en direct, espaces de travail git séparés et affichage des différences. Apache-2.0, 646 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wainmann/agent-manager">https://github.com/wainmann/agent-manager</a></p>
+</li>
+<li>
+<p><strong>Octomind</strong> — agent de codage et environnement d'exécution en un seul binaire Rust, compatible avec n'importe quel modèle et natif MCP ; s'utilise en terminal, en intégration continue ou comme démon, avec des « spécialistes » packagés (invite, modèle, serveurs MCP, permissions) installables depuis un dépôt. Apache-2.0, 603 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Muvon/octomind">https://github.com/Muvon/octomind</a></p>
+</li>
+<li>
+<p><strong>conducted</strong> — réimplémentation sous licence MIT de l'application Conductor (rachetée par Meta) : application de bureau locale pour faire tourner des agents de codage en parallèle, chacun dans son propre espace de travail git. L'auteur indique avoir fait reconstruire l'interface par des agents pour 170 dollars. MIT, 2 étoiles, dépôt créé le 4 novembre 2026 : à prendre comme une démonstration, pas comme un produit mûr. <a href="https://github.com/jahala/conducted">https://github.com/jahala/conducted</a></p>
+</li>
+<li>
+<p><strong>Rui</strong> — environnement d'exécution d'agents écrit en Zig avec SQLite : conversations réutilisables, approbations des commandes Bash, reprise après incident ; les sessions partagent un même hôte plutôt que d'être chacune un processus, ce qui permet à l'auteur d'annoncer cent agents orchestrés dans 2,5 Mo de mémoire. GitHub ne reconnaît aucune licence pour ce dépôt et les mesures citées viennent de l'auteur : 5 étoiles. <a href="https://github.com/DivyanshGolyan/rui">https://github.com/DivyanshGolyan/rui</a></p>
+</li>
+<li>
+<p><strong>Infinity</strong> — environnement d'exécution d'agents et protocole d'outils (RAP) pour la concurrence : les outils sont servis sur le réseau sans garder une connexion ouverte, les agents peuvent hiberner entièrement, et les serveurs MCP existants fonctionnent via une couche de compatibilité. Apache-2.0, 769 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hydro-project/infinity">https://github.com/hydro-project/infinity</a></p>
+</li>
+<li>
+<p><strong>Select</strong> — orchestration d'agents où l'autonomie se gagne par le travail vérifié, avec surveillance humaine. AGPL-3.0, 3 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/Kirby54/Select">https://github.com/Kirby54/Select</a></p>
+</li>
+<li>
+<p><strong>Ryph</strong> — agents de codage auto-hébergés pour une équipe d'astreinte : joignables dans la messagerie et sur le forge, déclenchés par les incidents. MIT, 14 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/ryph-hq/ryph">https://github.com/ryph-hq/ryph</a></p>
+</li>
+<li>
+<p><strong>promptcheckup</strong> — vérifie qu'une modification d'invite améliore réellement un agent, par rejeu apparié et intervalles de confiance à 95 %, au lieu de juger à l'œil. Apache-2.0, 1 étoile, dépôt créé le 1er novembre 2026. <a href="https://github.com/gael55x/promptcheckup">https://github.com/gael55x/promptcheckup</a></p>
+</li>
+<li>
+<p><strong>backendskills</strong> — jeu de compétences pour agents de codage, testé sur quinze tâches de développement serveur avec vérifications cachées, destiné à éviter le code qui passe la démonstration et casse en production. MIT, 42 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/globalmpc/backendskills">https://github.com/globalmpc/backendskills</a></p>
+</li>
+<li>
+<p><strong>Goethe</strong> — installation et service de modèles sur le matériel que vous contrôlez, présenté comme « Vercel, mais pour vos modèles » : l'outil détecte le matériel, place les modèles et expose une API utilisable par n'importe quel client. Apache-2.0, 51 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/meshapplied/Goethe">https://github.com/meshapplied/Goethe</a></p>
+</li>
+<li>
+<p><strong>trace-engine-cli</strong> — outil publié par l'équipe Chrome DevTools pour analyser les traces du navigateur avec des agents. Le dépôt ne comporte aucune description, la portée exacte reste donc à confirmer par la lecture du code. Apache-2.0, 5 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/ChromeDevTools/trace-engine-cli">https://github.com/ChromeDevTools/trace-engine-cli</a></p>
+</li>
+<li>
+<p><strong>AIVim</strong> — éditeur inspiré de Vim auquel est ajoutée une assistance par IA, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Le message Hacker News ne comporte aucun lien vers un dépôt ni licence : l'annonce n'est pas vérifiable en l'état. <a href="https://news.ycombinator.com/item?id=50405893">https://news.ycombinator.com/item?id=50405893</a></p>
+</li>
+</ul>
+<h3>Outils système, terminal et développement</h3>
+<ul>
+<li>
+<p><strong>Trout</strong> — client IRC en terminal inspiré de mIRC, avec menus, barre de canaux et fenêtres de pseudos, qui installe et configure lui-même son relais soju. MIT, 19 étoiles, dépôt créé le 28 octobre 2026. <a href="https://github.com/MaxRenaud/trout">https://github.com/MaxRenaud/trout</a></p>
+</li>
+<li>
+<p><strong>speedrunner</strong> — garde les outils en ligne de commande Python, Ruby, PHP et Node chargés en mémoire (aws, az, gcloud, ansible, eslint, rubocop, composer, et des centaines d'autres) pour diviser leur temps de démarrage ; l'auteur annonce un facteur 4,5. Apache-2.0, 11 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/anthonyGosme/speedrunner">https://github.com/anthonyGosme/speedrunner</a></p>
+</li>
+<li>
+<p><strong>webframe</strong> — exécute une page web comme un programme en ligne de commande, en s'appuyant sur la vue web déjà présente dans le système. MIT, 279 étoiles, mise à jour le 30 octobre 2026. <a href="https://github.com/tractordev/webframe">https://github.com/tractordev/webframe</a></p>
+</li>
+<li>
+<p><strong>Fels</strong> — petit langage système pour qui veut savoir ce que fait son code : mémoire organisée en zones dont le compilateur empêche l'échappement, erreurs comme valeurs, exécution de code à la compilation. GPL-3.0, 1 étoile, dépôt créé le 8 septembre 2026. <a href="https://github.com/fels-lang/fels">https://github.com/fels-lang/fels</a></p>
+</li>
+<li>
+<p><strong>Bobr</strong> — système de construction à adressage par contenu, sans privilèges, dans l'esprit de Nix ou Yocto, avec son propre bac à sable fondé sur les espaces de noms ; construit pour l'instant un système Linux exécutable dans QEMU. Apache-2.0, 1 étoile, dernière mise à jour le 2 novembre 2026. L'auteur le présente comme un projet personnel « vibe-codé » : à considérer comme une expérimentation. <a href="https://bobr.build/">https://bobr.build/</a></p>
+</li>
+<li>
+<p><strong>mdt</strong> — lecteur interactif de Markdown et de JSON en terminal. MIT, 3 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/VaibhavAcharya/mdt">https://github.com/VaibhavAcharya/mdt</a></p>
+</li>
+<li>
+<p><strong>MacGet</strong> — gestionnaire de téléchargement natif pour macOS, avec parallélisme adaptatif : détecte les serveurs qui limitent les téléchargeurs, apprend les limites par hôte et résiste à la mise en veille des applications. MIT, 2 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/Suryansh-Codes2209/Macget">https://github.com/Suryansh-Codes2209/Macget</a></p>
+</li>
+<li>
+<p><strong>Vitekube</strong> — exécute les tests Vitest sur de vrais clusters Kubernetes, sous forme d'extension de Vitest, pour remplacer les empilements de fichiers Docker Compose. MIT, 2 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/vitekube/vitekube">https://github.com/vitekube/vitekube</a></p>
+</li>
+<li>
+<p><strong>Enmetu</strong> — commits git automatiques qui conservent les conflits au lieu de les écraser, pour les résoudre après coup. Le dépôt est hébergé hors de GitHub (codefloe.com) et aucune licence n'est annoncée. <a href="https://codefloe.com/fluado/enmetu">https://codefloe.com/fluado/enmetu</a></p>
+</li>
+<li>
+<p><strong>uniform</strong> — outils pour construire des interfaces web avec mise en page WASM et rendu par GPU, l'exemple complet tenant en 280 Ko. MIT, 2 étoiles, mise à jour le 3 novembre 2026. <a href="https://github.com/rkaehn/uniform">https://github.com/rkaehn/uniform</a></p>
+</li>
+<li>
+<p><strong>Bong</strong> — alternative auto-hébergée aux « bang » de DuckDuckGo : vous tenez votre propre table de raccourcis de recherche au lieu de dépendre du service. Apache-2.0, 11 étoiles, mise à jour le 7 novembre 2026. <a href="https://bong.glendalab.com">https://bong.glendalab.com</a></p>
+</li>
+</ul>
+<h3>Réseau, auto-hébergement et sécurité</h3>
+<ul>
+<li>
+<p><strong>Servy</strong> — exécute n'importe quel programme comme un véritable service Windows, avec surveillance en temps réel et redémarrage automatique ; interface graphique, ligne de commande et module PowerShell. Utile pour garder vivants un serveur Node, un modèle local de type Ollama, un agent de compilation ou un script. MIT, 2 084 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/aelassas/servy">https://github.com/aelassas/servy</a></p>
+</li>
+<li>
+<p><strong>Coldframe</strong> — pot de miel qui se fait passer pour un régulateur de froid de supermarché (Danfoss AK-SM 800A, Dixell XWEB 500), en un seul fichier Python sans dépendance, inspiré des attaques récentes contre des installations frigorifiques industrielles ; l'auteur assure que ses faux équipements sont référencés comme réels sur Shodan. MIT, 30 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hedgerow-dev/coldframe">https://github.com/hedgerow-dev/coldframe</a></p>
+</li>
+<li>
+<p><strong>FoilGateway</strong> — passerelle pare-feu Linux sur deux cartes Ethernet, destinée aux réseaux domestiques et de bureau, avec blocage de la télémétrie. GitHub ne reconnaît aucune licence standard pour ce dépôt (2 étoiles, créé le 6 novembre 2026) : à vérifier avant réutilisation. <a href="https://github.com/iBgeek/FoilGateway-Network">https://github.com/iBgeek/FoilGateway-Network</a></p>
+</li>
+<li>
+<p><strong>S3mail</strong> — courriel personnel entièrement sans serveur de messagerie : SES, S3, DynamoDB et fonctions Go derrière une API JMAP, sur votre propre compte AWS, avec un agent de courrier facultatif. MIT, 2 étoiles, mise à jour le 19 octobre 2026. <a href="https://github.com/zero11-0203/s3mail">https://github.com/zero11-0203/s3mail</a></p>
+</li>
+<li>
+<p><strong>Postal</strong> — serveur d'envoi et de réception de courriel complet, présenté comme l'équivalent libre de Sendgrid, Mailgun ou Postmark, à installer sur ses propres serveurs. MIT, 16 932 étoiles, mise à jour le 4 novembre 2026. <a href="https://github.com/postalserver/postal">https://github.com/postalserver/postal</a></p>
+</li>
+<li>
+<p><strong>RustDesk Server</strong> — les deux binaires (hbbs pour l'identification, hbbr pour le relais) permettant d'héberger soi-même l'infrastructure de prise en main à distance RustDesk. AGPL-3.0, 10 697 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/rustdesk/rustdesk-server">https://github.com/rustdesk/rustdesk-server</a></p>
+</li>
+<li>
+<p><strong>Huginn</strong> — système d'agents qui surveillent et agissent à votre place : pages web, flux RSS, boîtes IMAP, webhooks, sujets MQTT, avec envoi par courriel, Telegram, Slack, SMS ou appel téléphonique, et détection de pics ou de trous dans un flux d'événements. MIT, 50 362 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/huginn/huginn">https://github.com/huginn/huginn</a></p>
+</li>
+</ul>
+<h3>Applications de bureau et vie quotidienne</h3>
+<ul>
+<li>
+<p><strong>OpenObserve</strong> — plateforme d'observabilité auto-hébergée (journaux, métriques, traces, surveillance web et mobile, relecture de session), en binaire unique, avec stockage Parquet et compatibilité OpenTelemetry ; se présente comme une alternative à Datadog, Splunk et Elasticsearch pour un coût de stockage très inférieur. AGPL-3.0, 22 882 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openobserve/openobserve">https://github.com/openobserve/openobserve</a></p>
+</li>
+<li>
+<p><strong>Sure</strong> — application de finances personnelles à installer soi-même (Docker) : comptes, budgets, suivi de patrimoine. AGPL-3.0, 10 832 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/we-promise/sure">https://github.com/we-promise/sure</a></p>
+</li>
+<li>
+<p><strong>Horizon</strong> — radar d'actualité personnel : rassemble RSS, Hacker News, Reddit, Telegram, X et GitHub, note les sujets selon des critères que vous définissez et produit un bulletin quotidien en anglais et en chinois. MIT, 13 018 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Thysrael/Horizon">https://github.com/Thysrael/Horizon</a></p>
+</li>
+<li>
+<p><strong>Halcyon Video</strong> — présente votre bibliothèque Jellyfin ou Plex comme un magasin de location de vidéocassettes des années 1990 que l'on parcourt à pied, avec télévisions suspendues et jaquettes au format réel ; à auto-héberger. GPL-3.0, 972 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/halcyon-video/halcyon-video">https://github.com/halcyon-video/halcyon-video</a></p>
+</li>
+<li>
+<p><strong>Kinrox</strong> — lecteur vidéo macOS minimal bâti sur libmpv, avec télécommande pour iPhone sur le réseau local ; l'auteur met en avant une lecture musicale dans 196 Mo de mémoire seulement. GPL-3.0, 15 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/awaik/Kinrox">https://github.com/awaik/Kinrox</a></p>
+</li>
+<li>
+<p><strong>Nook</strong> — navigateur macOS minimal à onglets verticaux, compilé pour Apple Silicon uniquement (l'organiseur d'onglets s'appuie sur MLX, sans version Intel). GPL-3.0, 2 045 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/nook-browser/Nook">https://github.com/nook-browser/Nook</a></p>
+</li>
+<li>
+<p><strong>WM Keyboard</strong> — clavier Android privé et hors ligne : prédiction qui apprend localement, correction que l'on peut contester, saisie par glissement, plus de 600 langues, thèmes et extensions. MIT, 764 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wasi-master/wmkeyboard">https://github.com/wasi-master/wmkeyboard</a></p>
+</li>
+<li>
+<p><strong>ExplorerPatcher</strong> — rétablit sur Windows 11 la barre des tâches, le menu Démarrer et l'Alt+Tab de Windows 10, entre autres réglages de l'environnement de travail. GPL-2.0, 34 247 étoiles, mise à jour le 29 octobre 2026. <a href="https://github.com/valinet/ExplorerPatcher">https://github.com/valinet/ExplorerPatcher</a></p>
+</li>
+<li>
+<p><strong>Aerial</strong> — économiseur d'écran reprenant les vues aériennes de l'Apple TV, désormais distribué comme extension d'application ; la version historique en <code>.saver</code> compte 21 209 étoiles et le dépôt actif seulement 651, ce qui explique l'écart avec l'annonce du fil — la dernière version publiée est la 3.6.3 du 12 août 2025. MIT. <a href="https://github.com/AerialScreensaver/Aerial">https://github.com/AerialScreensaver/Aerial</a></p>
+</li>
+<li>
+<p><strong>Tyler RSS</strong> — lecteur de flux RSS local pour macOS, Windows et Linux, présenté comme complet et respectueux de la vie privée. MIT, 1 étoile, mise à jour le 7 novembre 2026 (dépôt goodappsstore/tyler-rss). <a href="https://goodapps.store/tyler-rss/">https://goodapps.store/tyler-rss/</a></p>
+</li>
+<li>
+<p><strong>EyesRhythm</strong> — compagnon de bureau hors ligne qui aide à garder un rythme de clignement normal, écrit par un ingénieur en vision par ordinateur devenu sujet de sécheresse oculaire. Le site ne renvoie à aucun dépôt et n'annonce pas de licence : la gratuité et le caractère libre restent à vérifier. <a href="https://eyesrhythm.com/">https://eyesrhythm.com/</a></p>
+</li>
+</ul>
+<h3>Réseaux sociaux et données</h3>
+<ul>
+<li>
+<p><strong>TheySay</strong> — rassemble Twitter, Discord et Threads sur un seul tableau de bord. GitHub ne reconnaît pas la licence du dépôt (401 étoiles, mise à jour le 6 novembre 2026). <a href="https://github.com/laike9m/TheySay">https://github.com/laike9m/TheySay</a></p>
+</li>
+<li>
+<p><strong>Spring AI Alibaba</strong> — cadre d'agents pour développeurs Java : orchestration de plusieurs agents (séquentiel, parallèle, routage, boucle), entrées multimodales, agent vocal en WebSocket, politiques de gestion du contexte. Apache-2.0, 11 111 étoiles, mise à jour le 7 octobre 2026. <a href="https://github.com/alibaba/spring-ai-alibaba">https://github.com/alibaba/spring-ai-alibaba</a></p>
+</li>
+<li>
+<p><strong>Auto Ontology</strong> — cadre Python publié par NVIDIA pour bâtir une couche sémantique en graphe au-dessus de données relationnelles : questions en langage naturel traduites en SQL, catalogue, contrôle d'accès, interface web, déploiement Helm. Apache-2.0, 9 767 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/NVIDIA/auto-ontology">https://github.com/NVIDIA/auto-ontology</a></p>
+</li>
+<li>
+<p><strong>Sellbird</strong> — plateforme de prospection commerciale libre qui tourne sur votre abonnement Claude ou ChatGPT plutôt que sur une facture à l'usage : recherche d'entreprises, identification du responsable, vérification de l'adresse, séquences rédigées, brouillons de réponse, avec validation humaine avant tout envoi. AGPL-3.0, 4 790 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ethanplusai/sellbird">https://github.com/ethanplusai/sellbird</a></p>
+</li>
+<li>
+<p><strong>Open Generative AI</strong> — studio libre de génération d'images, de vidéos et d'audio, annoncé avec plus de 600 modèles et sans filtre de contenu, à installer soi-même. MIT, 33 024 étoiles, mise à jour le 6 novembre 2026. Réserve : la page du projet renvoie vers un service commercial (muapi.ai), la génération semble donc dépendre de fournisseurs externes plutôt que d'une installation entièrement locale. <a href="https://github.com/Anil-matcha/Open-Generative-AI">https://github.com/Anil-matcha/Open-Generative-AI</a></p>
+</li>
+<li>
+<p><strong>Open Interpreter</strong> — agent de codage orienté modèles ouverts (Kimi K3, GLM 5.3) : exécution en bac à sable natif sur macOS, Linux et Windows, changement de fournisseur depuis l'interface, agent conforme au protocole ACP pour les éditeurs, réutilisation des instructions AGENTS.md. Apache-2.0, 68 828 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openinterpreter/openinterpreter">https://github.com/openinterpreter/openinterpreter</a></p>
+</li>
+</ul>
+<h3>Modèles et calcul scientifique</h3>
+<ul>
+<li>
+<p><strong>Laplace's Scissors</strong> — outil pour modifier directement les poids d'un modèle de langue ouvert : diagnostiquer les directions de sortie faibles, réparer les réponses ratées et préserver les générations réussies. MIT, 6 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/Miyamoto-Renya/LaplacesScissors">https://github.com/Miyamoto-Renya/LaplacesScissors</a></p>
+</li>
+<li>
+<p><strong>Jacq</strong> — langage dédié et compilateur qui transforme la description d'un modèle et de ses noyaux en environnement d'inférence CUDA autonome, avec exportateur de poids Python ; nécessite un GPU NVIDIA pour l'inférence, la génération de code ne demandant que Rust. Apache-2.0, 2 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/ImpossibleComputing/jacq">https://github.com/ImpossibleComputing/jacq</a></p>
+</li>
+<li>
+<p><strong>HyperFlow H3 Flash</strong> — modèle vidéo et audio conjoint de 13,7 milliards de paramètres compressé en quatre à huit étapes, publié en INT8 et en GGUF, sous l'étiquette Video Rebirth. Apache-2.0, 82 étoiles, dépôt créé le 6 novembre 2026 ; les poids sont sur Hugging Face. <a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">https://github.com/Video-Rebirth/hyperflow-h3-flash</a></p>
+</li>
+<li>
+<p><strong>burst-superres</strong> — application de bureau gratuite (macOS, Windows, Linux) qui empile une rafale de photos en une image dite « 2x » : alignement des prises, comparaison et écart des images ratées. Licence non reconnue par GitHub, 2 étoiles, dépôt créé le 5 novembre 2026. <a href="https://github.com/skittleson/burst-superres">https://github.com/skittleson/burst-superres</a></p>
+</li>
+<li>
+<p><strong>Liquid Glass (Backdrop)</strong> — bibliothèque d'effet « verre liquide » pour Compose Multiplatform : boutons, interrupteurs, curseurs, barres d'onglets, utilisable sur Android et iOS. Apache-2.0, 4 548 étoiles, dernière version 2.0.1 du 26 août 2026. <a href="https://github.com/Kyant0/AndroidLiquidGlass">https://github.com/Kyant0/AndroidLiquidGlass</a></p>
+</li>
+<li>
+<p><strong>FastVM</strong> — micro-machines virtuelles qui s'endorment à l'inactivité et se réveillent à l'arrivée de paquets réseau. Aucune licence n'est indiquée et l'auteur écrit lui-même que le projet est « entièrement vibé » : lire l'idée, ignorer le code. 7 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/tuananh/fastvm">https://github.com/tuananh/fastvm</a></p>
+</li>
+<li>
+<p><strong>agterm</strong> — terminal organisé en espaces de travail nommés, doublé d'une API de contrôle locale (agtermctl) qui permet à un script ou à un agent de créer des sessions, d'y taper du texte, d'ouvrir un programme en surimpression et de notifier l'utilisateur depuis la session concernée. MIT, 730 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/umputun/agterm">https://github.com/umputun/agterm</a></p>
+</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Libghostty 1.0</strong> — la bibliothèque de terminal qui porte l'émulateur Ghostty atteint sa version 1.0 ; c'est l'entrée la plus commentée du jour sur Lobsters (20 points) et la nouvelle la plus reprise de ce thème. Note de l'auteur : <a href="https://mitchellh.com/writing/libghostty-1-0">https://mitchellh.com/writing/libghostty-1-0</a></p>
+</li>
+<li>
+<p><strong>Asahi Linux</strong> — rapport de progrès 7.3 (187 points et 143 commentaires sur Hacker News) : suite du travail de prise en charge des Mac à processeur Apple Silicon. <a href="https://asahilinux.org/2026/11/progress-report-7-3/">https://asahilinux.org/2026/11/progress-report-7-3/</a></p>
+</li>
+<li>
+<p><strong>CEF Python v147</strong> — reprise du projet qui permet d'intégrer Chromium dans des applications de bureau Python : infrastructure modernisée, chaînes d'intégration continues via GitHub Actions, système de construction CMake ; la version publiée est une version de test (v147.0.dev1264) et une publication sur PyPI est annoncée. Apache-2.0. <a href="https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264">https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264</a></p>
+</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li>
+<p><strong>Web Potions</strong> — extension Chrome qui retire, restyle et remodèle n'importe quel site, en laissant ChatGPT ou Claude écrire les règles à votre place. MIT, 1 étoile, dépôt créé le 28 octobre 2026. <a href="https://github.com/leofritsch/web-potions">https://github.com/leofritsch/web-potions</a></p>
+</li>
+<li>
+<p><strong>Windhawk Mods</strong> — collection officielle de greffons pour Windhawk, qui personnalisent Windows par modification ciblée des programmes ; les greffons sans licence déclarée sont soumis sous MIT. GitHub ne reconnaît pas de licence pour l'ensemble du dépôt, 1 104 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ramensoftware/windhawk-mods">https://github.com/ramensoftware/windhawk-mods</a></p>
+</li>
+<li>
+<p><strong>project5pi-midi-for-claude</strong> — donne une idée de chanson à Claude et récupère un projet FL Studio, un MP3 et un MIDI : l'outil écrit directement les fichiers <code>.flp</code>, effectue le rendu sans interface et vérifie le mixage. MIT, dépôt créé le 7 novembre 2026. <a href="https://github.com/ProjectFlowmar/project5pi-midi-for-claude">https://github.com/ProjectFlowmar/project5pi-midi-for-claude</a></p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>221 entrées parcourues dans l'intervalle (213 après dédoublonnage des adresses identiques — un même sujet signalé par deux sources ne comptant qu'une fois) : 64 retenues, 149 écartées.</p>
+<p>La collecte la plus récente s'est terminée normalement (dernier passage le 7 novembre à 21 h 51 UTC, 9 entrées nouvelles ; aucune erreur signalée dans <code>meta.json</code>). Une grande partie de ce qui a été écarté relève de l'actualité générale reprise par Hacker News (cybersécurité, marchés financiers, matériel), des billets de blog sans annonce d'outil, des questions et rétrospectives, ainsi que des services commerciaux sans code publié.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La matière utile vient toujours majoritairement de Hacker News (« Show HN ») et de Lobsters : le flux du subreddit a livré d'un coup une vingtaine de dépôts, dont plusieurs projets très connus, mais il répond encore (fermeture annoncée le 13 novembre).</li>
+<li>Trois découvertes sortent du lot : <strong>Retex</strong>, réimplémentation de LuaLaTeX en Rust annoncée deux à trois fois plus rapide (CC0), <strong>OpenNumLab</strong>, première version d'une alternative libre à Matlab, et <strong>Bong</strong>, qui permet d'auto-héberger les « bang » de DuckDuckGo.</li>
+<li><strong>Libghostty 1.0</strong>, la bibliothèque de terminal qui porte Ghostty, est la mise à jour la plus commentée de la journée.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Écriture, sciences et enseignement</h3>
+<ul>
+<li>
+<p><strong>Retex</strong> — réimplémentation « clean-room » de LuaLaTeX en Rust, utilisable en remplacement direct (mode compatibilité, deux à trois fois plus rapide) ou comme moteur plus moderne : bien meilleurs messages d'erreur, sorties SVG, ODP/ODT, PDF/X-1 et PDF/X-4 pour l'impression, téléchargement automatique des paquets manquants, liaisons Python. Licence CC0 (domaine public) ; dépôt GitLab. L'auteur signale que le code a été entièrement produit par un modèle de langage et n'a donc pas d'auteur au sens habituel. <a href="https://gitlab.com/severin-lemaignan/retex">https://gitlab.com/severin-lemaignan/retex</a></p>
+</li>
+<li>
+<p><strong>OpenNumLab</strong> — environnement de calcul scientifique libre, avec interface de bureau écrite en Rust et ligne de commande, première version publiée, présentée comme alternative ouverte à Matlab. MIT, 2 étoiles, dernière mise à jour le 7 novembre 2026. Le dépôt a été créé le 15 octobre : projet très jeune, à éprouver longuement avant tout usage devant des élèves. <a href="https://github.com/me-farza/opennumlab">https://github.com/me-farza/opennumlab</a></p>
+</li>
+<li>
+<p><strong>PPTist</strong> — application de présentation en ligne qui reproduit l'essentiel des fonctions de PowerPoint (édition, projection, aperçu des fichiers PPTX locaux), écrite en Vue 3 et TypeScript, sans bibliothèque de composants. AGPL-3.0, 9 469 étoiles, mise à jour le 6 novembre 2026. La licence AGPL mérite d'être connue pour un usage en établissement. <a href="https://github.com/pipipi-pikachu/PPTist">https://github.com/pipipi-pikachu/PPTist</a></p>
+</li>
+<li>
+<p><strong>labml.ai</strong> — plus de soixante implémentations PyTorch commentées d'articles de recherche, avec les notes en regard du code : transformateurs, LoRA, modèles de diffusion, réseaux antagonistes, apprentissage par renforcement, optimiseurs. MIT, 67 716 étoiles. <a href="https://github.com/labmlai/annotated_deep_learning_paper_implementations">https://github.com/labmlai/annotated_deep_learning_paper_implementations</a></p>
+</li>
+</ul>
+<h3>Agents et développement assisté par IA</h3>
+<ul>
+<li>
+<p><strong>Agent Manager</strong> — multiplexeur de terminal (interface tmux) pour piloter côte à côte plusieurs agents de codage (Claude Code, Codex, OpenCode, Gemini CLI), avec état en direct, espaces de travail git séparés et affichage des différences. Apache-2.0, 646 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wainmann/agent-manager">https://github.com/wainmann/agent-manager</a></p>
+</li>
+<li>
+<p><strong>Octomind</strong> — agent de codage et environnement d'exécution en un seul binaire Rust, compatible avec n'importe quel modèle et natif MCP ; s'utilise en terminal, en intégration continue ou comme démon, avec des « spécialistes » packagés (invite, modèle, serveurs MCP, permissions) installables depuis un dépôt. Apache-2.0, 603 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Muvon/octomind">https://github.com/Muvon/octomind</a></p>
+</li>
+<li>
+<p><strong>conducted</strong> — réimplémentation sous licence MIT de l'application Conductor (rachetée par Meta) : application de bureau locale pour faire tourner des agents de codage en parallèle, chacun dans son propre espace de travail git. L'auteur indique avoir fait reconstruire l'interface par des agents pour 170 dollars. MIT, 2 étoiles, dépôt créé le 4 novembre 2026 : à prendre comme une démonstration, pas comme un produit mûr. <a href="https://github.com/jahala/conducted">https://github.com/jahala/conducted</a></p>
+</li>
+<li>
+<p><strong>Rui</strong> — environnement d'exécution d'agents écrit en Zig avec SQLite : conversations réutilisables, approbations des commandes Bash, reprise après incident ; les sessions partagent un même hôte plutôt que d'être chacune un processus, ce qui permet à l'auteur d'annoncer cent agents orchestrés dans 2,5 Mo de mémoire. GitHub ne reconnaît aucune licence pour ce dépôt et les mesures citées viennent de l'auteur : 5 étoiles. <a href="https://github.com/DivyanshGolyan/rui">https://github.com/DivyanshGolyan/rui</a></p>
+</li>
+<li>
+<p><strong>Infinity</strong> — environnement d'exécution d'agents et protocole d'outils (RAP) pour la concurrence : les outils sont servis sur le réseau sans garder une connexion ouverte, les agents peuvent hiberner entièrement, et les serveurs MCP existants fonctionnent via une couche de compatibilité. Apache-2.0, 769 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hydro-project/infinity">https://github.com/hydro-project/infinity</a></p>
+</li>
+<li>
+<p><strong>Select</strong> — orchestration d'agents où l'autonomie se gagne par le travail vérifié, avec surveillance humaine. AGPL-3.0, 3 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/Kirby54/Select">https://github.com/Kirby54/Select</a></p>
+</li>
+<li>
+<p><strong>Ryph</strong> — agents de codage auto-hébergés pour une équipe d'astreinte : joignables dans la messagerie et sur le forge, déclenchés par les incidents. MIT, 14 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/ryph-hq/ryph">https://github.com/ryph-hq/ryph</a></p>
+</li>
+<li>
+<p><strong>promptcheckup</strong> — vérifie qu'une modification d'invite améliore réellement un agent, par rejeu apparié et intervalles de confiance à 95 %, au lieu de juger à l'œil. Apache-2.0, 1 étoile, dépôt créé le 1er novembre 2026. <a href="https://github.com/gael55x/promptcheckup">https://github.com/gael55x/promptcheckup</a></p>
+</li>
+<li>
+<p><strong>backendskills</strong> — jeu de compétences pour agents de codage, testé sur quinze tâches de développement serveur avec vérifications cachées, destiné à éviter le code qui passe la démonstration et casse en production. MIT, 42 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/globalmpc/backendskills">https://github.com/globalmpc/backendskills</a></p>
+</li>
+<li>
+<p><strong>Goethe</strong> — installation et service de modèles sur le matériel que vous contrôlez, présenté comme « Vercel, mais pour vos modèles » : l'outil détecte le matériel, place les modèles et expose une API utilisable par n'importe quel client. Apache-2.0, 51 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/meshapplied/Goethe">https://github.com/meshapplied/Goethe</a></p>
+</li>
+<li>
+<p><strong>trace-engine-cli</strong> — outil publié par l'équipe Chrome DevTools pour analyser les traces du navigateur avec des agents. Le dépôt ne comporte aucune description, la portée exacte reste donc à confirmer par la lecture du code. Apache-2.0, 5 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/ChromeDevTools/trace-engine-cli">https://github.com/ChromeDevTools/trace-engine-cli</a></p>
+</li>
+<li>
+<p><strong>AIVim</strong> — éditeur inspiré de Vim auquel est ajoutée une assistance par IA, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Le message Hacker News ne comporte aucun lien vers un dépôt ni licence : l'annonce n'est pas vérifiable en l'état. <a href="https://news.ycombinator.com/item?id=50405893">https://news.ycombinator.com/item?id=50405893</a></p>
+</li>
+</ul>
+<h3>Outils système, terminal et développement</h3>
+<ul>
+<li>
+<p><strong>Trout</strong> — client IRC en terminal inspiré de mIRC, avec menus, barre de canaux et fenêtres de pseudos, qui installe et configure lui-même son relais soju. MIT, 19 étoiles, dépôt créé le 28 octobre 2026. <a href="https://github.com/MaxRenaud/trout">https://github.com/MaxRenaud/trout</a></p>
+</li>
+<li>
+<p><strong>speedrunner</strong> — garde les outils en ligne de commande Python, Ruby, PHP et Node chargés en mémoire (aws, az, gcloud, ansible, eslint, rubocop, composer, et des centaines d'autres) pour diviser leur temps de démarrage ; l'auteur annonce un facteur 4,5. Apache-2.0, 11 étoiles, dépôt créé le 29 octobre 2026. <a href="https://github.com/anthonyGosme/speedrunner">https://github.com/anthonyGosme/speedrunner</a></p>
+</li>
+<li>
+<p><strong>webframe</strong> — exécute une page web comme un programme en ligne de commande, en s'appuyant sur la vue web déjà présente dans le système. MIT, 279 étoiles, mise à jour le 30 octobre 2026. <a href="https://github.com/tractordev/webframe">https://github.com/tractordev/webframe</a></p>
+</li>
+<li>
+<p><strong>Fels</strong> — petit langage système pour qui veut savoir ce que fait son code : mémoire organisée en zones dont le compilateur empêche l'échappement, erreurs comme valeurs, exécution de code à la compilation. GPL-3.0, 1 étoile, dépôt créé le 8 septembre 2026. <a href="https://github.com/fels-lang/fels">https://github.com/fels-lang/fels</a></p>
+</li>
+<li>
+<p><strong>Bobr</strong> — système de construction à adressage par contenu, sans privilèges, dans l'esprit de Nix ou Yocto, avec son propre bac à sable fondé sur les espaces de noms ; construit pour l'instant un système Linux exécutable dans QEMU. Apache-2.0, 1 étoile, dernière mise à jour le 2 novembre 2026. L'auteur le présente comme un projet personnel « vibe-codé » : à considérer comme une expérimentation. <a href="https://bobr.build/">https://bobr.build/</a></p>
+</li>
+<li>
+<p><strong>mdt</strong> — lecteur interactif de Markdown et de JSON en terminal. MIT, 3 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/VaibhavAcharya/mdt">https://github.com/VaibhavAcharya/mdt</a></p>
+</li>
+<li>
+<p><strong>MacGet</strong> — gestionnaire de téléchargement natif pour macOS, avec parallélisme adaptatif : détecte les serveurs qui limitent les téléchargeurs, apprend les limites par hôte et résiste à la mise en veille des applications. MIT, 2 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/Suryansh-Codes2209/Macget">https://github.com/Suryansh-Codes2209/Macget</a></p>
+</li>
+<li>
+<p><strong>Vitekube</strong> — exécute les tests Vitest sur de vrais clusters Kubernetes, sous forme d'extension de Vitest, pour remplacer les empilements de fichiers Docker Compose. MIT, 2 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/vitekube/vitekube">https://github.com/vitekube/vitekube</a></p>
+</li>
+<li>
+<p><strong>Enmetu</strong> — commits git automatiques qui conservent les conflits au lieu de les écraser, pour les résoudre après coup. Le dépôt est hébergé hors de GitHub (codefloe.com) et aucune licence n'est annoncée. <a href="https://codefloe.com/fluado/enmetu">https://codefloe.com/fluado/enmetu</a></p>
+</li>
+<li>
+<p><strong>uniform</strong> — outils pour construire des interfaces web avec mise en page WASM et rendu par GPU, l'exemple complet tenant en 280 Ko. MIT, 2 étoiles, mise à jour le 3 novembre 2026. <a href="https://github.com/rkaehn/uniform">https://github.com/rkaehn/uniform</a></p>
+</li>
+<li>
+<p><strong>Bong</strong> — alternative auto-hébergée aux « bang » de DuckDuckGo : vous tenez votre propre table de raccourcis de recherche au lieu de dépendre du service. Apache-2.0, 11 étoiles, mise à jour le 7 novembre 2026. <a href="https://bong.glendalab.com">https://bong.glendalab.com</a></p>
+</li>
+</ul>
+<h3>Réseau, auto-hébergement et sécurité</h3>
+<ul>
+<li>
+<p><strong>Servy</strong> — exécute n'importe quel programme comme un véritable service Windows, avec surveillance en temps réel et redémarrage automatique ; interface graphique, ligne de commande et module PowerShell. Utile pour garder vivants un serveur Node, un modèle local de type Ollama, un agent de compilation ou un script. MIT, 2 084 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/aelassas/servy">https://github.com/aelassas/servy</a></p>
+</li>
+<li>
+<p><strong>Coldframe</strong> — pot de miel qui se fait passer pour un régulateur de froid de supermarché (Danfoss AK-SM 800A, Dixell XWEB 500), en un seul fichier Python sans dépendance, inspiré des attaques récentes contre des installations frigorifiques industrielles ; l'auteur assure que ses faux équipements sont référencés comme réels sur Shodan. MIT, 30 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/hedgerow-dev/coldframe">https://github.com/hedgerow-dev/coldframe</a></p>
+</li>
+<li>
+<p><strong>FoilGateway</strong> — passerelle pare-feu Linux sur deux cartes Ethernet, destinée aux réseaux domestiques et de bureau, avec blocage de la télémétrie. GitHub ne reconnaît aucune licence standard pour ce dépôt (2 étoiles, créé le 6 novembre 2026) : à vérifier avant réutilisation. <a href="https://github.com/iBgeek/FoilGateway-Network">https://github.com/iBgeek/FoilGateway-Network</a></p>
+</li>
+<li>
+<p><strong>S3mail</strong> — courriel personnel entièrement sans serveur de messagerie : SES, S3, DynamoDB et fonctions Go derrière une API JMAP, sur votre propre compte AWS, avec un agent de courrier facultatif. MIT, 2 étoiles, mise à jour le 19 octobre 2026. <a href="https://github.com/zero11-0203/s3mail">https://github.com/zero11-0203/s3mail</a></p>
+</li>
+<li>
+<p><strong>Postal</strong> — serveur d'envoi et de réception de courriel complet, présenté comme l'équivalent libre de Sendgrid, Mailgun ou Postmark, à installer sur ses propres serveurs. MIT, 16 932 étoiles, mise à jour le 4 novembre 2026. <a href="https://github.com/postalserver/postal">https://github.com/postalserver/postal</a></p>
+</li>
+<li>
+<p><strong>RustDesk Server</strong> — les deux binaires (hbbs pour l'identification, hbbr pour le relais) permettant d'héberger soi-même l'infrastructure de prise en main à distance RustDesk. AGPL-3.0, 10 697 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/rustdesk/rustdesk-server">https://github.com/rustdesk/rustdesk-server</a></p>
+</li>
+<li>
+<p><strong>Huginn</strong> — système d'agents qui surveillent et agissent à votre place : pages web, flux RSS, boîtes IMAP, webhooks, sujets MQTT, avec envoi par courriel, Telegram, Slack, SMS ou appel téléphonique, et détection de pics ou de trous dans un flux d'événements. MIT, 50 362 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/huginn/huginn">https://github.com/huginn/huginn</a></p>
+</li>
+</ul>
+<h3>Applications de bureau et vie quotidienne</h3>
+<ul>
+<li>
+<p><strong>OpenObserve</strong> — plateforme d'observabilité auto-hébergée (journaux, métriques, traces, surveillance web et mobile, relecture de session), en binaire unique, avec stockage Parquet et compatibilité OpenTelemetry ; se présente comme une alternative à Datadog, Splunk et Elasticsearch pour un coût de stockage très inférieur. AGPL-3.0, 22 882 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openobserve/openobserve">https://github.com/openobserve/openobserve</a></p>
+</li>
+<li>
+<p><strong>Sure</strong> — application de finances personnelles à installer soi-même (Docker) : comptes, budgets, suivi de patrimoine. AGPL-3.0, 10 832 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/we-promise/sure">https://github.com/we-promise/sure</a></p>
+</li>
+<li>
+<p><strong>Horizon</strong> — radar d'actualité personnel : rassemble RSS, Hacker News, Reddit, Telegram, X et GitHub, note les sujets selon des critères que vous définissez et produit un bulletin quotidien en anglais et en chinois. MIT, 13 018 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/Thysrael/Horizon">https://github.com/Thysrael/Horizon</a></p>
+</li>
+<li>
+<p><strong>Halcyon Video</strong> — présente votre bibliothèque Jellyfin ou Plex comme un magasin de location de vidéocassettes des années 1990 que l'on parcourt à pied, avec télévisions suspendues et jaquettes au format réel ; à auto-héberger. GPL-3.0, 972 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/halcyon-video/halcyon-video">https://github.com/halcyon-video/halcyon-video</a></p>
+</li>
+<li>
+<p><strong>Kinrox</strong> — lecteur vidéo macOS minimal bâti sur libmpv, avec télécommande pour iPhone sur le réseau local ; l'auteur met en avant une lecture musicale dans 196 Mo de mémoire seulement. GPL-3.0, 15 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/awaik/Kinrox">https://github.com/awaik/Kinrox</a></p>
+</li>
+<li>
+<p><strong>Nook</strong> — navigateur macOS minimal à onglets verticaux, compilé pour Apple Silicon uniquement (l'organiseur d'onglets s'appuie sur MLX, sans version Intel). GPL-3.0, 2 045 étoiles, mise à jour le 6 novembre 2026. <a href="https://github.com/nook-browser/Nook">https://github.com/nook-browser/Nook</a></p>
+</li>
+<li>
+<p><strong>WM Keyboard</strong> — clavier Android privé et hors ligne : prédiction qui apprend localement, correction que l'on peut contester, saisie par glissement, plus de 600 langues, thèmes et extensions. MIT, 764 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/wasi-master/wmkeyboard">https://github.com/wasi-master/wmkeyboard</a></p>
+</li>
+<li>
+<p><strong>ExplorerPatcher</strong> — rétablit sur Windows 11 la barre des tâches, le menu Démarrer et l'Alt+Tab de Windows 10, entre autres réglages de l'environnement de travail. GPL-2.0, 34 247 étoiles, mise à jour le 29 octobre 2026. <a href="https://github.com/valinet/ExplorerPatcher">https://github.com/valinet/ExplorerPatcher</a></p>
+</li>
+<li>
+<p><strong>Aerial</strong> — économiseur d'écran reprenant les vues aériennes de l'Apple TV, désormais distribué comme extension d'application ; la version historique en <code>.saver</code> compte 21 209 étoiles et le dépôt actif seulement 651, ce qui explique l'écart avec l'annonce du fil — la dernière version publiée est la 3.6.3 du 12 août 2025. MIT. <a href="https://github.com/AerialScreensaver/Aerial">https://github.com/AerialScreensaver/Aerial</a></p>
+</li>
+<li>
+<p><strong>Tyler RSS</strong> — lecteur de flux RSS local pour macOS, Windows et Linux, présenté comme complet et respectueux de la vie privée. MIT, 1 étoile, mise à jour le 7 novembre 2026 (dépôt goodappsstore/tyler-rss). <a href="https://goodapps.store/tyler-rss/">https://goodapps.store/tyler-rss/</a></p>
+</li>
+<li>
+<p><strong>EyesRhythm</strong> — compagnon de bureau hors ligne qui aide à garder un rythme de clignement normal, écrit par un ingénieur en vision par ordinateur devenu sujet de sécheresse oculaire. Le site ne renvoie à aucun dépôt et n'annonce pas de licence : la gratuité et le caractère libre restent à vérifier. <a href="https://eyesrhythm.com/">https://eyesrhythm.com/</a></p>
+</li>
+</ul>
+<h3>Réseaux sociaux et données</h3>
+<ul>
+<li>
+<p><strong>TheySay</strong> — rassemble Twitter, Discord et Threads sur un seul tableau de bord. GitHub ne reconnaît pas la licence du dépôt (401 étoiles, mise à jour le 6 novembre 2026). <a href="https://github.com/laike9m/TheySay">https://github.com/laike9m/TheySay</a></p>
+</li>
+<li>
+<p><strong>Spring AI Alibaba</strong> — cadre d'agents pour développeurs Java : orchestration de plusieurs agents (séquentiel, parallèle, routage, boucle), entrées multimodales, agent vocal en WebSocket, politiques de gestion du contexte. Apache-2.0, 11 111 étoiles, mise à jour le 7 octobre 2026. <a href="https://github.com/alibaba/spring-ai-alibaba">https://github.com/alibaba/spring-ai-alibaba</a></p>
+</li>
+<li>
+<p><strong>Auto Ontology</strong> — cadre Python publié par NVIDIA pour bâtir une couche sémantique en graphe au-dessus de données relationnelles : questions en langage naturel traduites en SQL, catalogue, contrôle d'accès, interface web, déploiement Helm. Apache-2.0, 9 767 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/NVIDIA/auto-ontology">https://github.com/NVIDIA/auto-ontology</a></p>
+</li>
+<li>
+<p><strong>Sellbird</strong> — plateforme de prospection commerciale libre qui tourne sur votre abonnement Claude ou ChatGPT plutôt que sur une facture à l'usage : recherche d'entreprises, identification du responsable, vérification de l'adresse, séquences rédigées, brouillons de réponse, avec validation humaine avant tout envoi. AGPL-3.0, 4 790 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ethanplusai/sellbird">https://github.com/ethanplusai/sellbird</a></p>
+</li>
+<li>
+<p><strong>Open Generative AI</strong> — studio libre de génération d'images, de vidéos et d'audio, annoncé avec plus de 600 modèles et sans filtre de contenu, à installer soi-même. MIT, 33 024 étoiles, mise à jour le 6 novembre 2026. Réserve : la page du projet renvoie vers un service commercial (muapi.ai), la génération semble donc dépendre de fournisseurs externes plutôt que d'une installation entièrement locale. <a href="https://github.com/Anil-matcha/Open-Generative-AI">https://github.com/Anil-matcha/Open-Generative-AI</a></p>
+</li>
+<li>
+<p><strong>Open Interpreter</strong> — agent de codage orienté modèles ouverts (Kimi K3, GLM 5.3) : exécution en bac à sable natif sur macOS, Linux et Windows, changement de fournisseur depuis l'interface, agent conforme au protocole ACP pour les éditeurs, réutilisation des instructions AGENTS.md. Apache-2.0, 68 828 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/openinterpreter/openinterpreter">https://github.com/openinterpreter/openinterpreter</a></p>
+</li>
+</ul>
+<h3>Modèles et calcul scientifique</h3>
+<ul>
+<li>
+<p><strong>Laplace's Scissors</strong> — outil pour modifier directement les poids d'un modèle de langue ouvert : diagnostiquer les directions de sortie faibles, réparer les réponses ratées et préserver les générations réussies. MIT, 6 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/Miyamoto-Renya/LaplacesScissors">https://github.com/Miyamoto-Renya/LaplacesScissors</a></p>
+</li>
+<li>
+<p><strong>Jacq</strong> — langage dédié et compilateur qui transforme la description d'un modèle et de ses noyaux en environnement d'inférence CUDA autonome, avec exportateur de poids Python ; nécessite un GPU NVIDIA pour l'inférence, la génération de code ne demandant que Rust. Apache-2.0, 2 étoiles, dépôt créé le 4 novembre 2026. <a href="https://github.com/ImpossibleComputing/jacq">https://github.com/ImpossibleComputing/jacq</a></p>
+</li>
+<li>
+<p><strong>HyperFlow H3 Flash</strong> — modèle vidéo et audio conjoint de 13,7 milliards de paramètres compressé en quatre à huit étapes, publié en INT8 et en GGUF, sous l'étiquette Video Rebirth. Apache-2.0, 82 étoiles, dépôt créé le 6 novembre 2026 ; les poids sont sur Hugging Face. <a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">https://github.com/Video-Rebirth/hyperflow-h3-flash</a></p>
+</li>
+<li>
+<p><strong>burst-superres</strong> — application de bureau gratuite (macOS, Windows, Linux) qui empile une rafale de photos en une image dite « 2x » : alignement des prises, comparaison et écart des images ratées. Licence non reconnue par GitHub, 2 étoiles, dépôt créé le 5 novembre 2026. <a href="https://github.com/skittleson/burst-superres">https://github.com/skittleson/burst-superres</a></p>
+</li>
+<li>
+<p><strong>Liquid Glass (Backdrop)</strong> — bibliothèque d'effet « verre liquide » pour Compose Multiplatform : boutons, interrupteurs, curseurs, barres d'onglets, utilisable sur Android et iOS. Apache-2.0, 4 548 étoiles, dernière version 2.0.1 du 26 août 2026. <a href="https://github.com/Kyant0/AndroidLiquidGlass">https://github.com/Kyant0/AndroidLiquidGlass</a></p>
+</li>
+<li>
+<p><strong>FastVM</strong> — micro-machines virtuelles qui s'endorment à l'inactivité et se réveillent à l'arrivée de paquets réseau. Aucune licence n'est indiquée et l'auteur écrit lui-même que le projet est « entièrement vibé » : lire l'idée, ignorer le code. 7 étoiles, dépôt créé le 7 novembre 2026. <a href="https://github.com/tuananh/fastvm">https://github.com/tuananh/fastvm</a></p>
+</li>
+<li>
+<p><strong>agterm</strong> — terminal organisé en espaces de travail nommés, doublé d'une API de contrôle locale (agtermctl) qui permet à un script ou à un agent de créer des sessions, d'y taper du texte, d'ouvrir un programme en surimpression et de notifier l'utilisateur depuis la session concernée. MIT, 730 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/umputun/agterm">https://github.com/umputun/agterm</a></p>
+</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Libghostty 1.0</strong> — la bibliothèque de terminal qui porte l'émulateur Ghostty atteint sa version 1.0 ; c'est l'entrée la plus commentée du jour sur Lobsters (20 points) et la nouvelle la plus reprise de ce thème. Note de l'auteur : <a href="https://mitchellh.com/writing/libghostty-1-0">https://mitchellh.com/writing/libghostty-1-0</a></p>
+</li>
+<li>
+<p><strong>Asahi Linux</strong> — rapport de progrès 7.3 (187 points et 143 commentaires sur Hacker News) : suite du travail de prise en charge des Mac à processeur Apple Silicon. <a href="https://asahilinux.org/2026/11/progress-report-7-3/">https://asahilinux.org/2026/11/progress-report-7-3/</a></p>
+</li>
+<li>
+<p><strong>CEF Python v147</strong> — reprise du projet qui permet d'intégrer Chromium dans des applications de bureau Python : infrastructure modernisée, chaînes d'intégration continues via GitHub Actions, système de construction CMake ; la version publiée est une version de test (v147.0.dev1264) et une publication sur PyPI est annoncée. Apache-2.0. <a href="https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264">https://github.com/cztomczak/cefpython/releases/tag/v147.0.dev1264</a></p>
+</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li>
+<p><strong>Web Potions</strong> — extension Chrome qui retire, restyle et remodèle n'importe quel site, en laissant ChatGPT ou Claude écrire les règles à votre place. MIT, 1 étoile, dépôt créé le 28 octobre 2026. <a href="https://github.com/leofritsch/web-potions">https://github.com/leofritsch/web-potions</a></p>
+</li>
+<li>
+<p><strong>Windhawk Mods</strong> — collection officielle de greffons pour Windhawk, qui personnalisent Windows par modification ciblée des programmes ; les greffons sans licence déclarée sont soumis sous MIT. GitHub ne reconnaît pas de licence pour l'ensemble du dépôt, 1 104 étoiles, mise à jour le 7 novembre 2026. <a href="https://github.com/ramensoftware/windhawk-mods">https://github.com/ramensoftware/windhawk-mods</a></p>
+</li>
+<li>
+<p><strong>project5pi-midi-for-claude</strong> — donne une idée de chanson à Claude et récupère un projet FL Studio, un MP3 et un MIDI : l'outil écrit directement les fichiers <code>.flp</code>, effectue le rendu sans interface et vérifie le mixage. MIT, dépôt créé le 7 novembre 2026. <a href="https://github.com/ProjectFlowmar/project5pi-midi-for-claude">https://github.com/ProjectFlowmar/project5pi-midi-for-claude</a></p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>221 entrées parcourues dans l'intervalle (213 après dédoublonnage des adresses identiques — un même sujet signalé par deux sources ne comptant qu'une fois) : 64 retenues, 149 écartées.</p>
+<p>La collecte la plus récente s'est terminée normalement (dernier passage le 7 novembre à 21 h 51 UTC, 9 entrées nouvelles ; aucune erreur signalée dans <code>meta.json</code>). Une grande partie de ce qui a été écarté relève de l'actualité générale reprise par Hacker News (cybersécurité, marchés financiers, matériel), des billets de blog sans annonce d'outil, des questions et rétrospectives, ainsi que des services commerciaux sans code publié.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — samedi 7 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-07.html</link>
