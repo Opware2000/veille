@@ -6,9 +6,162 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 07 Nov 2026 00:03:15 +0100</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 00:03:25 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-08.html</link>
+<guid isPermaLink="false">artcraft-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 00:03:25 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>ArtCraft publie sa première livraison Linux officielle et signée (v0.41.1), pour x86_64, aarch64 et riscv64.</li>
+<li>AniCraft, la réimplémentation d'Adobe Animate, apparaît sur le dépôt public de l'éditeur en alpha précoce, encore absente du lanceur et du site.</li>
+<li>Côté communauté : un fork iOS de LightCraft en PWA, un site d'outils gratuits pour EffectCraft, trois projets comparables (XarQ, MatLivre, Photostar) et une analyse critique de la communication autour d'ArtCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft v0.41.1 — première livraison Linux officielle</h3>
+<p>La version 0.41.1, publiée le 7 novembre à 2 h 49 UTC par le robot de publication du dépôt, contient <strong>45 fichiers</strong>, tous destinés à Linux : AppImage et son fichier zsync, paquets <code>.deb</code> et <code>.rpm</code>, paquet Arch, bundle Flatpak, image OCI et archive <code>.tar.gz</code>, pour <strong>x86_64, aarch64 et riscv64</strong>. Chaque fichier est accompagné d'une signature détachée (<code>.asc</code>, <code>.sig</code>). C'est un changement de nature : la version précédente, 0.41.0 du 26 septembre, ne proposait que macOS et Windows. À noter pour ne pas se méprendre : cette livraison ne contient aucun binaire macOS ni Windows, et le contenu de la version n'est pas détaillé dans la note de publication, qui se limite à « See the assets below ».</p>
+<p>Le même jour, un commit de dylanmtaylor (<code>4bf1b20</code>) a ajouté la matrice de publication Linux signée, l'intégration continue FreeBSD et un contrôle de conformité des paquets, en alignement sur les actions partagées <code>craft-common-actions</code>. Un second commit (<code>79d87b2</code>) corrige le paquet Flatpak : persistance du dossier de données <code>~/Artcraft</code> (réglages, jetons de fournisseurs, file d'attente SQLite) dans <code>~/.var/app/ai.artcraft.app/</code> au lieu d'être effacé à la fermeture, et maintien du rendu accéléré WebKitGTK. Le troisième commit de la période n'est qu'une montée de version d'actions GitHub par Dependabot, sans intérêt pour l'utilisateur.</p>
+<ul>
+<li>Version publiée : https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1</li>
+<li>Page éditeur sur les dépôts Linux : https://getartcraft.com/linux</li>
+</ul>
+<h3>AniCraft, le clone d'Adobe Animate, arrive sur le dépôt public</h3>
+<p>Le dépôt <code>storytold/AniCraft</code> annonce une station d'animation vectorielle 2D, réimplémentation propre d'Adobe Animate, écrite en Rust pur : timeline, calques, images clés, interpolations classiques et de formes, pelure d'oignon, scène egui. Le fichier de présentation annonce macOS, Windows, Linux, FreeBSD et le navigateur par WebAssembly, et se qualifie lui-même d'<strong>alpha précoce</strong>. Le dépôt existe depuis le 14 octobre 2026 (licence Apache-2.0, 105 étoiles à l'heure de la rédaction) mais <strong>aucune version n'est publiée</strong> : zéro release à l'API GitHub, et l'adresse <code>getartcraft.com/apps/anicraft</code> citée dans le fichier de présentation renvoie une erreur 404. Le post de FreddieThePebble dit exactement la même chose : présent sur GitHub, pas encore dans le lanceur ni sur le site. Le seul point de vigilance : à côté du dépôt officiel existe <code>soof-golan/anicraft</code>, un projet indépendant de 10 étoiles, sous BSD-3-Clause, qui revendique la compatibilité avec les formats Adobe Animate (XFL/FLA, SWF) — ce n'est pas le même projet, malgré le nom identique.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/AniCraft</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqf2q0/anicraft_adobe_aniamte_is_now_on_github/ — u/FreddieThePebble</li>
+</ul>
+<h3>PdfCraft v0.19.0 — la rastérisation des pages revue</h3>
+<p>Un utilisateur signale la fin du défaut qui l'empêchait d'utiliser PdfCraft comme lecteur : certains PDF, notamment des livres, s'affichaient de façon pixelisée. La version 0.19.0, publiée le 6 novembre, contient effectivement deux correctifs d'affichage : « size the whole-page raster allowance to the pages on screen » (PR 6065, par dotCooCoo) et un rendu anticipé des pages en vue continue, ainsi qu'un défilement aux roues plus régulier. L'attribution du symptôme précis (le rendu pixelisé) à cette modification reste une déduction : la note de version ne décrit pas le défaut en ces termes, elle parle de la mémoire allouée à la rastérisation d'une page entière.</p>
+<ul>
+<li>Version : https://github.com/storytold/pdfcraft/releases/tag/v0.19.0</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpv3fv/pdfcraft_team_finally_did_it/ — u/shahriar2005</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>LightCraft iOS — un fork mobile en application web installable</h3>
+<p>Un développeur indépendant a porté LightCraft sur iPhone et iPad en conservant le moteur de traitement d'image Rust d'ArtCraft et en retravaillant l'interface : commandes tactiles, zoom par pincement, édition côte à côte en paysage, stockage local des photos, export vers Photos d'Apple. C'est une <strong>application web progressive</strong> (aucun compte, aucun abonnement, installation sur l'écran d'accueil, fonctionnement hors ligne, ni sideload ni fichier <code>.ipa</code>). Le dépôt <code>hambonesoftware/lightcraft-iOS-pwa</code> est public, en Apache-2.0, créé le 3 novembre, et la page publiée répond. Deux remarques : le post donne un lien de dépôt erroné (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware</code> ; et il s'agit d'un fork non officiel, dont le dossier de présentation reprend d'ailleurs l'adresse de la fiche LightCraft officielle.</p>
+<ul>
+<li>Application : https://hambonesoftware.github.io/lightcraft-iOS-pwa</li>
+<li>Dépôt : https://github.com/hambonesoftware/lightcraft-iOS-pwa</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpvo24/ios_lightcraft/ — u/No-Fox-1400</li>
+</ul>
+<h3>ecscripts.com — outils gratuits annoncés pour EffectCraft</h3>
+<p>Un utilisateur, CCJXander, a mis en ligne un site rassemblant des outils pour EffectCraft et annonce qu'il y publiera gratuitement les équivalents des outils After Effects dès que <strong>le support des plugins sera disponible</strong>. À ce jour, c'est donc une annonce d'intention plus qu'un plugin utilisable : rien n'indique que EffectCraft accepte déjà des extensions communautaires. Le site répond.</p>
+<ul>
+<li>Site : https://ecscripts.com</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq2guj/free_tools_for_effectcraft/ — u/CCJXander</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>XarQ — un descendant libre de Xara Xtreme, en alpha</h3>
+<p>XarQ est une nouvelle application d'illustration vectorielle, de retouche photo et de mise en page, écrite en Qt6 et C++17, qui reprend la base GPL de Xara Xtreme / Xara LX publiée par Xara Group en 2006 — sans aucun code wxWidgets. Elle ouvre et enregistre les fichiers <code>.xar</code> natifs en conservant groupes, calques, dégradés et transparences comme objets modifiables, et lit SVG et PDF. L'auteur annonce une alpha pour Linux et Windows. Le dépôt <code>jonata/xarq</code> est public sous GPL-2.0 (créé le 18 juillet 2026, 2 étoiles) et un dépôt Homebrew dédié a été créé le jour même. C'est le concurrent direct de VectorCraft, et la même logique d'appropriation que defend ArtCraft.</p>
+<ul>
+<li>Dépôt : https://github.com/jonata/xarq</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpx5f8/xarq_a_free_opensource_design_app_that_descends/ — u/jonataloss</li>
+</ul>
+<h3>MatLivre — la même idée appliquée au calcul scientifique</h3>
+<p>MatLivre est un éditeur et un moteur d'exécution libre et compatible MATLAB (scripts <code>.mlx</code> et <code>.m</code>), écrit en Rust sous licence MIT. Le dépôt <code>campuslivre/matlivre</code> est public (29 étoiles, créé le 29 octobre 2026, activité le 7 novembre). Les arguments revendiqués sont ceux d'ArtCraft : le code de recherche ne doit pas dépendre d'une licence qui expire, le code doit être lisible et modifiable. Deux particularités annoncées : l'application expose un point d'accès MCP local, pour qu'un agent puisse y exécuter du code, et sa documentation est publiée en pages simples avec un fichier <code>llms.txt</code>. Prudence sur la qualité : l'auteur indique lui-même que les fiches de fonction ont été rédigées avec des agents et vérifiées par exécution des exemples, et que la version portugaise attend une relecture humaine.</p>
+<ul>
+<li>Dépôt : https://github.com/campuslivre/matlivre</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq40im/same_idea_as_artcraft_applied_to_scientific/ — u/XBLAH_</li>
+</ul>
+<h3>Photostar — un éditeur photo gratuit dans le navigateur</h3>
+<p>Un éditeur photo présenté comme gratuit, sans inscription ni filigrane, fonctionnant entièrement dans le navigateur, avec ouverture et enregistrement de fichiers PSD (calques, masques, calques de réglage, styles, objets dynamiques), détourage et effacement d'objets, formats Camera RAW, HEIC et 16 bits, et fonctionnement hors ligne une fois la page chargée. Le traitement se fait localement, sauf le remplissage par IA en nuage, qui prévient avant d'envoyer quoi que ce soit. <strong>Réserve importante</strong> : rien n'indique que le logiciel soit libre — le post ne parle ni de dépôt public, ni de licence, ni de code source. Il s'agit donc d'un concurrent gratuit, pas d'un projet open source, et son annonce est un message de promotion. Le site répond.</p>
+<ul>
+<li>Site : https://photostar.io</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq8o5w/7_years_a_lot_of_money_and_finally_a_free/ — u/KnowledgeNo3681</li>
+</ul>
+<h3>« Everyone is wrong about ArtCraft » — une analyse à retenir</h3>
+<p>Un membre du subreddit, grahamperrin, relaie une vidéo de Tom Delalande qui démonte les titres viraux annonçant qu'ArtCraft aurait décompilé et reconstruit toute la suite Adobe en Rust. Le propos, résumé par l'auteur du post et accueilli favorablement dans les commentaires, est le suivant : aucun code propriétaire n'a été décompilé, le procédé consiste à déduire le comportement depuis l'interface puis à générer du code neuf ; l'équipe travaille par boucle de « vibecoding » (repérer une fonction manquante, l'implémenter, la tester par ligne de commande) ; et malgré des milliers de commits, la plupart des clones plafonnent entre 40 et 60 % de parité fonctionnelle, sans la profondeur ni la gestion des cas limites des originaux. C'est la remise en perspective la plus utile parue cette semaine sur ce que vaut réellement la suite — le résumé ci-dessus provenant d'un résumé automatique relayé par le post, je le signale comme non vérifié à la source vidéo.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq9ama/everyone_is_wrong_about_artcraft_tom_delalande/ — u/grahamperrin</li>
+</ul>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Les dépôts de paquets Linux sont en aperçu non signé.</strong> La page officielle consacrée à Linux indique que, pendant la phase d'aperçu public, les dépôts utilisent des réglages non signés (<code>[trusted=yes]</code> pour APT, <code>gpgcheck=0</code> pour RPM/DNF) ; la signature cryptographique des index viendra avec la publication des clés GPG officielles. En revanche, les fichiers des versions publiées sur GitHub, eux, sont bien accompagnés de signatures détachées. Autrement dit : une installation par dépôt de paquets fait aujourd'hui davantage confiance au transport qu'à une clé de publication.</li>
+<li><strong>Le lien de dépôt du fork iOS est erroné dans le post</strong> (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware/lightcraft-iOS-pwa</code>. Sans conséquence, mais à corriger si vous citez ce projet.</li>
+<li>Aucun incident, aucune alerte de sécurité ni régression signalés dans les fils de la période.</li>
+</ul>
+<h2>Volume</h2>
+<p>27 entrées nouvelles examinées (23 posts Reddit, 3 commits du dépôt officiel, 1 version publiée), 11 retenues, 16 écartées. La collecte la plus récente s'est achevée le 7 novembre à 21 h 04 UTC sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>ArtCraft publie sa première livraison Linux officielle et signée (v0.41.1), pour x86_64, aarch64 et riscv64.</li>
+<li>AniCraft, la réimplémentation d'Adobe Animate, apparaît sur le dépôt public de l'éditeur en alpha précoce, encore absente du lanceur et du site.</li>
+<li>Côté communauté : un fork iOS de LightCraft en PWA, un site d'outils gratuits pour EffectCraft, trois projets comparables (XarQ, MatLivre, Photostar) et une analyse critique de la communication autour d'ArtCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft v0.41.1 — première livraison Linux officielle</h3>
+<p>La version 0.41.1, publiée le 7 novembre à 2 h 49 UTC par le robot de publication du dépôt, contient <strong>45 fichiers</strong>, tous destinés à Linux : AppImage et son fichier zsync, paquets <code>.deb</code> et <code>.rpm</code>, paquet Arch, bundle Flatpak, image OCI et archive <code>.tar.gz</code>, pour <strong>x86_64, aarch64 et riscv64</strong>. Chaque fichier est accompagné d'une signature détachée (<code>.asc</code>, <code>.sig</code>). C'est un changement de nature : la version précédente, 0.41.0 du 26 septembre, ne proposait que macOS et Windows. À noter pour ne pas se méprendre : cette livraison ne contient aucun binaire macOS ni Windows, et le contenu de la version n'est pas détaillé dans la note de publication, qui se limite à « See the assets below ».</p>
+<p>Le même jour, un commit de dylanmtaylor (<code>4bf1b20</code>) a ajouté la matrice de publication Linux signée, l'intégration continue FreeBSD et un contrôle de conformité des paquets, en alignement sur les actions partagées <code>craft-common-actions</code>. Un second commit (<code>79d87b2</code>) corrige le paquet Flatpak : persistance du dossier de données <code>~/Artcraft</code> (réglages, jetons de fournisseurs, file d'attente SQLite) dans <code>~/.var/app/ai.artcraft.app/</code> au lieu d'être effacé à la fermeture, et maintien du rendu accéléré WebKitGTK. Le troisième commit de la période n'est qu'une montée de version d'actions GitHub par Dependabot, sans intérêt pour l'utilisateur.</p>
+<ul>
+<li>Version publiée : https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1</li>
+<li>Page éditeur sur les dépôts Linux : https://getartcraft.com/linux</li>
+</ul>
+<h3>AniCraft, le clone d'Adobe Animate, arrive sur le dépôt public</h3>
+<p>Le dépôt <code>storytold/AniCraft</code> annonce une station d'animation vectorielle 2D, réimplémentation propre d'Adobe Animate, écrite en Rust pur : timeline, calques, images clés, interpolations classiques et de formes, pelure d'oignon, scène egui. Le fichier de présentation annonce macOS, Windows, Linux, FreeBSD et le navigateur par WebAssembly, et se qualifie lui-même d'<strong>alpha précoce</strong>. Le dépôt existe depuis le 14 octobre 2026 (licence Apache-2.0, 105 étoiles à l'heure de la rédaction) mais <strong>aucune version n'est publiée</strong> : zéro release à l'API GitHub, et l'adresse <code>getartcraft.com/apps/anicraft</code> citée dans le fichier de présentation renvoie une erreur 404. Le post de FreddieThePebble dit exactement la même chose : présent sur GitHub, pas encore dans le lanceur ni sur le site. Le seul point de vigilance : à côté du dépôt officiel existe <code>soof-golan/anicraft</code>, un projet indépendant de 10 étoiles, sous BSD-3-Clause, qui revendique la compatibilité avec les formats Adobe Animate (XFL/FLA, SWF) — ce n'est pas le même projet, malgré le nom identique.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/AniCraft</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqf2q0/anicraft_adobe_aniamte_is_now_on_github/ — u/FreddieThePebble</li>
+</ul>
+<h3>PdfCraft v0.19.0 — la rastérisation des pages revue</h3>
+<p>Un utilisateur signale la fin du défaut qui l'empêchait d'utiliser PdfCraft comme lecteur : certains PDF, notamment des livres, s'affichaient de façon pixelisée. La version 0.19.0, publiée le 6 novembre, contient effectivement deux correctifs d'affichage : « size the whole-page raster allowance to the pages on screen » (PR 6065, par dotCooCoo) et un rendu anticipé des pages en vue continue, ainsi qu'un défilement aux roues plus régulier. L'attribution du symptôme précis (le rendu pixelisé) à cette modification reste une déduction : la note de version ne décrit pas le défaut en ces termes, elle parle de la mémoire allouée à la rastérisation d'une page entière.</p>
+<ul>
+<li>Version : https://github.com/storytold/pdfcraft/releases/tag/v0.19.0</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpv3fv/pdfcraft_team_finally_did_it/ — u/shahriar2005</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>LightCraft iOS — un fork mobile en application web installable</h3>
+<p>Un développeur indépendant a porté LightCraft sur iPhone et iPad en conservant le moteur de traitement d'image Rust d'ArtCraft et en retravaillant l'interface : commandes tactiles, zoom par pincement, édition côte à côte en paysage, stockage local des photos, export vers Photos d'Apple. C'est une <strong>application web progressive</strong> (aucun compte, aucun abonnement, installation sur l'écran d'accueil, fonctionnement hors ligne, ni sideload ni fichier <code>.ipa</code>). Le dépôt <code>hambonesoftware/lightcraft-iOS-pwa</code> est public, en Apache-2.0, créé le 3 novembre, et la page publiée répond. Deux remarques : le post donne un lien de dépôt erroné (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware</code> ; et il s'agit d'un fork non officiel, dont le dossier de présentation reprend d'ailleurs l'adresse de la fiche LightCraft officielle.</p>
+<ul>
+<li>Application : https://hambonesoftware.github.io/lightcraft-iOS-pwa</li>
+<li>Dépôt : https://github.com/hambonesoftware/lightcraft-iOS-pwa</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpvo24/ios_lightcraft/ — u/No-Fox-1400</li>
+</ul>
+<h3>ecscripts.com — outils gratuits annoncés pour EffectCraft</h3>
+<p>Un utilisateur, CCJXander, a mis en ligne un site rassemblant des outils pour EffectCraft et annonce qu'il y publiera gratuitement les équivalents des outils After Effects dès que <strong>le support des plugins sera disponible</strong>. À ce jour, c'est donc une annonce d'intention plus qu'un plugin utilisable : rien n'indique que EffectCraft accepte déjà des extensions communautaires. Le site répond.</p>
+<ul>
+<li>Site : https://ecscripts.com</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq2guj/free_tools_for_effectcraft/ — u/CCJXander</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>XarQ — un descendant libre de Xara Xtreme, en alpha</h3>
+<p>XarQ est une nouvelle application d'illustration vectorielle, de retouche photo et de mise en page, écrite en Qt6 et C++17, qui reprend la base GPL de Xara Xtreme / Xara LX publiée par Xara Group en 2006 — sans aucun code wxWidgets. Elle ouvre et enregistre les fichiers <code>.xar</code> natifs en conservant groupes, calques, dégradés et transparences comme objets modifiables, et lit SVG et PDF. L'auteur annonce une alpha pour Linux et Windows. Le dépôt <code>jonata/xarq</code> est public sous GPL-2.0 (créé le 18 juillet 2026, 2 étoiles) et un dépôt Homebrew dédié a été créé le jour même. C'est le concurrent direct de VectorCraft, et la même logique d'appropriation que defend ArtCraft.</p>
+<ul>
+<li>Dépôt : https://github.com/jonata/xarq</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpx5f8/xarq_a_free_opensource_design_app_that_descends/ — u/jonataloss</li>
+</ul>
+<h3>MatLivre — la même idée appliquée au calcul scientifique</h3>
+<p>MatLivre est un éditeur et un moteur d'exécution libre et compatible MATLAB (scripts <code>.mlx</code> et <code>.m</code>), écrit en Rust sous licence MIT. Le dépôt <code>campuslivre/matlivre</code> est public (29 étoiles, créé le 29 octobre 2026, activité le 7 novembre). Les arguments revendiqués sont ceux d'ArtCraft : le code de recherche ne doit pas dépendre d'une licence qui expire, le code doit être lisible et modifiable. Deux particularités annoncées : l'application expose un point d'accès MCP local, pour qu'un agent puisse y exécuter du code, et sa documentation est publiée en pages simples avec un fichier <code>llms.txt</code>. Prudence sur la qualité : l'auteur indique lui-même que les fiches de fonction ont été rédigées avec des agents et vérifiées par exécution des exemples, et que la version portugaise attend une relecture humaine.</p>
+<ul>
+<li>Dépôt : https://github.com/campuslivre/matlivre</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq40im/same_idea_as_artcraft_applied_to_scientific/ — u/XBLAH_</li>
+</ul>
+<h3>Photostar — un éditeur photo gratuit dans le navigateur</h3>
+<p>Un éditeur photo présenté comme gratuit, sans inscription ni filigrane, fonctionnant entièrement dans le navigateur, avec ouverture et enregistrement de fichiers PSD (calques, masques, calques de réglage, styles, objets dynamiques), détourage et effacement d'objets, formats Camera RAW, HEIC et 16 bits, et fonctionnement hors ligne une fois la page chargée. Le traitement se fait localement, sauf le remplissage par IA en nuage, qui prévient avant d'envoyer quoi que ce soit. <strong>Réserve importante</strong> : rien n'indique que le logiciel soit libre — le post ne parle ni de dépôt public, ni de licence, ni de code source. Il s'agit donc d'un concurrent gratuit, pas d'un projet open source, et son annonce est un message de promotion. Le site répond.</p>
+<ul>
+<li>Site : https://photostar.io</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq8o5w/7_years_a_lot_of_money_and_finally_a_free/ — u/KnowledgeNo3681</li>
+</ul>
+<h3>« Everyone is wrong about ArtCraft » — une analyse à retenir</h3>
+<p>Un membre du subreddit, grahamperrin, relaie une vidéo de Tom Delalande qui démonte les titres viraux annonçant qu'ArtCraft aurait décompilé et reconstruit toute la suite Adobe en Rust. Le propos, résumé par l'auteur du post et accueilli favorablement dans les commentaires, est le suivant : aucun code propriétaire n'a été décompilé, le procédé consiste à déduire le comportement depuis l'interface puis à générer du code neuf ; l'équipe travaille par boucle de « vibecoding » (repérer une fonction manquante, l'implémenter, la tester par ligne de commande) ; et malgré des milliers de commits, la plupart des clones plafonnent entre 40 et 60 % de parité fonctionnelle, sans la profondeur ni la gestion des cas limites des originaux. C'est la remise en perspective la plus utile parue cette semaine sur ce que vaut réellement la suite — le résumé ci-dessus provenant d'un résumé automatique relayé par le post, je le signale comme non vérifié à la source vidéo.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq9ama/everyone_is_wrong_about_artcraft_tom_delalande/ — u/grahamperrin</li>
+</ul>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Les dépôts de paquets Linux sont en aperçu non signé.</strong> La page officielle consacrée à Linux indique que, pendant la phase d'aperçu public, les dépôts utilisent des réglages non signés (<code>[trusted=yes]</code> pour APT, <code>gpgcheck=0</code> pour RPM/DNF) ; la signature cryptographique des index viendra avec la publication des clés GPG officielles. En revanche, les fichiers des versions publiées sur GitHub, eux, sont bien accompagnés de signatures détachées. Autrement dit : une installation par dépôt de paquets fait aujourd'hui davantage confiance au transport qu'à une clé de publication.</li>
+<li><strong>Le lien de dépôt du fork iOS est erroné dans le post</strong> (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware/lightcraft-iOS-pwa</code>. Sans conséquence, mais à corriger si vous citez ce projet.</li>
+<li>Aucun incident, aucune alerte de sécurité ni régression signalés dans les fils de la période.</li>
+</ul>
+<h2>Volume</h2>
+<p>27 entrées nouvelles examinées (23 posts Reddit, 3 commits du dépôt officiel, 1 version publiée), 11 retenues, 16 écartées. La collecte la plus récente s'est achevée le 7 novembre à 21 h 04 UTC sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — samedi 7 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-07.html</link>
