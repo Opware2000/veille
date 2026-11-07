@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — samedi 7 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Journée très fournie en projets neufs : quatorze outils libres présentés pour la première fois, dont plusieurs sortis de la semaine dernière et encore peu vus. Côté mises à jour, OpenCV 5.1, Servo 0.7 et OneUptime 14.0 sont les plus substantielles. Aucune erreur de collecte signalée.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>SlideMarks</strong> — police de symboles libre pour PowerPoint et Word, avec une barre latérale de type table de caractères. Cent vingt symboles environ (Harvey Balls, flèches, coches, indicateurs d'état, flèches de tendance), insérés comme de vrais caractères et non comme des images : on les redimensionne avec la taille de police, on les colore et on les aligne dans un tableau sans bricolage. Un guide explique comment incorporer la police pour que le destinataire voie la même chose. L'auteur indique l'avoir rendue compatible avec les lecteurs d'écran, dans la mesure où une police le permet. Licence Apache-2.0, dépôt <code>pjaol/SlideMarks</code> (0 étoile, créé le 3 novembre 2026, dernière poussée le 5 novembre). https://pjaol.github.io/SlideMarks/</p>
+<p><strong>Moosik</strong> — lecteur de bureau pour YouTube Music, sous forme d'application native pour Mac Apple Silicon et Windows x64. Recherche dans l'historique d'écoute, thèmes, présence Discord. Licence GPL-3.0, dépôt <code>AtotheY/moosik</code> (15 étoiles, créé le 26 octobre 2026, poussée le 7 novembre). https://github.com/AtotheY/moosik</p>
+<p><strong>BeepGrid</strong> — infrastructure de communication entre agents et les personnes qui les emploient ; le projet se présente comme léger. Licence Apache-2.0, dépôt <code>beepgrid/beepgrid</code> (2 étoiles, créé le 31 octobre 2026). Très peu de recul à ce stade : l'annonce ne détaille pas le protocole. https://github.com/beepgrid/beepgrid</p>
+<p><strong>Chorono</strong> — éditeur d'animation 2D qui se pilote depuis Claude Code ou Codex par le protocole MCP, puis se retouche visuellement (calques, images clés). Licence MIT, dépôt <code>codie1982/chorono-editor</code> (3 étoiles, dépôt de mai 2026, dernière poussée le 6 novembre). https://github.com/codie1982/chorono-editor</p>
+<p><strong>Antidraw</strong> — canevas de prototypage et de conception de produit piloté par un agent de codage, et non par une maquette : l'agent travaille sur le code réel de n'importe quelle bibliothèque React. Licence MIT, dépôt <code>AntidrawHQ/antidraw</code> (30 étoiles, dépôt ouvert en décembre 2025, dernière poussée le 5 novembre). https://github.com/AntidrawHQ/antidraw</p>
+<p><strong>Wand Browser</strong> — navigateur iOS destiné aux développeurs : il expose WebBluetooth (BLE/GATT) et WebNFC aux pages web, ce qu'aucun navigateur courant ne fait. L'auteur l'a écrit pour tester son propre matériel sans passer par une application native ni un téléphone Android de rechange ; il annonce un mode d'isolation par site contre les scripts malveillants. Licence MIT, dépôt <code>hito-dev/wand-browser</code> (8 étoiles, créé le 21 octobre 2026). https://github.com/hito-dev/wand-browser</p>
+<p><strong>Ryph</strong> — agents de réponse aux incidents auto-hébergés : ils vivent dans le clavardage de l'équipe, sur la forge, et se déclenchent en astreinte. Licence MIT, dépôt <code>ryph-hq/ryph</code> (11 étoiles, créé le 4 novembre 2026 — projet très récent). https://github.com/ryph-hq/ryph</p>
+<p><strong>MrMetis</strong> — planificateur de budget personnel, hors ligne et chiffré. Licence GPL-3.0, dépôt <code>ro-mat/MrMetis</code> (3 étoiles). À signaler : le dépôt a été ouvert en mai 2023 et n'est remis en avant que ces jours-ci, il ne s'agit donc pas d'un projet neuf même s'il est présenté comme tel. https://github.com/ro-mat/MrMetis</p>
+<p><strong>Lunelle</strong> — suivi du cycle menstruel hors ligne, données chiffrées localement. Licence MIT, dépôt <code>keithmgoatley/lunelle</code> (0 étoile, créé le 16 octobre 2026, poussée le 6 novembre). Le dépôt n'a pas de description ; l'annonce ne précise pas la méthode de chiffrement. https://github.com/keithmgoatley/lunelle</p>
+<p><strong>Aspen</strong> — serveur Git auto-hébergeable conçu pour le trafic des agents de codage : les objets vont dans un stockage d'objets, l'historique par branche dans PostgreSQL. Les auteurs annoncent 567 poussées par seconde sur une machine à huit cœurs avec des clients Git ordinaires. Licence Apache-2.0, dépôt <code>reason-machines/aspen</code> (57 étoiles en deux jours, créé le 5 novembre 2026). Attention : le dépôt se déclare <strong>pré-alpha</strong>, ce n'est pas un outil de production. https://reasonmachines.com/blog/aspen</p>
+<p><strong>Piuma</strong> — barre d'état légère pour le gestionnaire de fenêtres Hyprland. Licence Apache-2.0, dépôt <code>logicheneurali/piuma</code> (0 étoile, créé le 8 octobre 2026, poussée le 6 novembre). https://github.com/logicheneurali/piuma</p>
+<p><strong>Glint</strong> — application de zone de notification pour Windows : éclairage RGB, contrôle des ventilateurs, surveillance des capteurs. Particularité intéressante : les pilotes de matériel et les effets sont des greffons JavaScript d'un seul fichier, exécutés en bac à sable et testés sur du matériel simulé avant tout accès réel ; un serveur MCP intégré permet à un agent d'IA de lire les capteurs ou d'écrire un greffon. Sans compte et sans télémétrie. Licence GPL-3.0, dépôt <code>jleeh/glint</code> (0 étoile, créé le 6 novembre 2026). https://github.com/jleeh/glint</p>
+<p><strong>Cup of Tea</strong> — bibliothèque de tableaux de données en colonnes pour Java 17 et au-delà : manipulation de données et jointures de type SQL, présentée comme rapide et légère face aux bibliothèques existantes. Licence Apache-2.0, dépôt <code>cupoftea-labs/cupoftea</code> (1 étoile ; le dépôt date d'août 2023, la bibliothèque vient d'être annoncée). https://github.com/cupoftea-labs/cupoftea</p>
+<p><strong>OpenRune</strong> — réimplémentation libre du jeu Rune, exécutée dans le navigateur, distribuée sur itch.io. La licence n'est pas indiquée sur la page de téléchargement : à vérifier avant tout usage, l'auteur ne précisant pas non plus l'état d'avancement. https://jarmitage99.itch.io/openrune</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>OpenCV 5.1</strong> — la bibliothèque de vision par ordinateur reçoit de nouvelles optimisations AVX-512 et une série de corrections, un peu plus de quatre mois après la 5.0 et son moteur d'apprentissage profond réécrit. https://www.phoronix.com/news/OpenCV-5.1-Released</p>
+<p><strong>Servo 0.7</strong> — version du moteur de navigateur, accompagnée du bilan de septembre : prise en charge de l'élément HTML <code>progress</code>, de l'arithmétique typée en CSS, de la propriété <code>font-width</code> et de la fonction <code>alpha()</code>, passage à SpiderMonkey 153.3 et Mozangle 0.7 avec correctifs de sécurité, meilleure conformité WebGL 2, sous-titres pour les vidéos HTML en progrès et API d'intégration étendue. La compatibilité progresse sur des sites réels, Candy Crush devenant jouable. Licence MPL-2.0, dépôt <code>servo/servo</code> (38 405 étoiles, poussée le 6 novembre). https://servo.org/blog/2026/11/05/september-in-servo/</p>
+<p><strong>OneUptime 14.0</strong> — la plate-forme d'observabilité libre ajoute l'observabilité des données. Dépôt <code>OneUptime/oneuptime</code> (7 798 étoiles, poussée le 6 novembre). Réserve : l'API GitHub ne reconnaît pas la licence du dépôt (elle la classe « Other »), je ne peux donc pas confirmer qu'il s'agit bien d'Apache-2.0 comme l'annonce le site. https://github.com/OneUptime/oneuptime</p>
+<p><strong>ReactOS</strong> — après des années de travail, le système « Windows libre » dispose d'une première pile de pilotes USB 3.0 ; c'est une étape concrète pour la compatibilité matérielle. https://www.phoronix.com/news/ReactOS-Initial-USB-3.0</p>
+<p><strong>FEX 2611</strong> — nouvelle version de l'émulateur qui fait tourner les applications et jeux x86 et x86-64 sur ARM, avec des améliorations du compilateur à la volée ; le projet attend maintenant du noyau Linux qu'il s'aligne sur la spécification AArch64 et sur le comportement de Windows on ARM et des Mac Apple Silicon pour l'usage d'un registre particulier. https://www.phoronix.com/news/FEX-2611-Released</p>
+<p><strong>Noyau Linux 7.4-rc2</strong> — une correction de la gestion du système de fichiers FAT32 apporte jusqu'à 162 fois de débit en plus ; c'est la deuxième optimisation importante sur FAT32 pour cette version. https://www.phoronix.com/news/Linux-7.4-rc2-FAT32</p>
+<h2>Volume</h2>
+<p>59 entrées nouvelles examinées dans l'intervalle (28 du journal principal Hacker News, Lobsters et Reddit, 31 des journaux de flux externes), 20 retenues, 39 écartées.</p>
+<p>Deux articles qui apparaissaient comme nouveaux dans le journal du Journal du Hacker redirigent vers des dépêches LinuxFr déjà traitées les jours précédents (Flus 3.0, Fedora Linux 45) : ils ont été écartés comme déjà publiés. Kitty 0.50, annoncé le 5 novembre, n'est pas repris ici, seule une dépêche plus détaillée étant parue depuis.</p>
+<footer>Édition du samedi 7 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
