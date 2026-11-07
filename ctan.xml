@@ -6,9 +6,44 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 06 Nov 2026 01:42:16 +0100</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 01:41:40 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — samedi 7 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-07.html</link>
+<guid isPermaLink="false">ctan-2026-11-07</guid>
+<pubDate>Sat, 07 Nov 2026 01:41:40 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux annonces seulement depuis l'édition d'hier, et aucune ne concerne les soixante et un paquets de votre classe : <code>ltx-talk</code> corrige quatre défauts de sa version 0.6.10 et <code>xint</code> passe à une version 2.0 de réécriture complète, huit fois plus rapide sur les fonctions transcendantes. Aucun nouveau paquet n'a été publié. La dernière collecte de la liste <code>ctan-ann</code> a échoué sur un délai dépassé, la journalisation s'arrête donc à la fin d'après-midi du 6 novembre.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune annonce de l'intervalle ne concerne un paquet de <code>packages_interet.txt</code>.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p>Aucun nouveau paquet annoncé dans l'intervalle.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>ltx-talk</strong> 0.6.11 (2026-11-05, LPPL 1.3c) : la classe de présentations accessibles de Joseph Wright corrige quatre défauts — marge gauche des listes imbriquées sur quatre niveaux ou plus, alignement vertical des titres de cadre lorsque l'étiquetage PDF est actif et que le fond est coloré, prise en compte intempestive des sections étoilées dans la numérotation, et espacement des sections numérotées dans la table des matières. Rien de nouveau en fonctionnalité : ce sont des correctifs, et aucun ne touche votre classe, qui ne charge pas <code>ltx-talk</code>. À retenir tout de même parce que le thème <code>beamertheme-tcolorbox</code> — signalé ici le 4 novembre — s'appuie sur cette classe, et parce que ses correctifs d'étiquetage vont dans le sens de la sortie PDF balisée. La classe exige LaTeX du 1er novembre 2025 ou plus récent. Lien : <a href="https://ctan.org/pkg/ltx-talk">https://ctan.org/pkg/ltx-talk</a></li>
+<li><strong>xint</strong> 2.0a1 (2026-11-01, LPPL 1.3c) : version majeure, les entrailles du moteur arithmétique sont entièrement réécrites pour la vitesse. <code>xintexpr</code> se scinde en deux paquets : <code>calx</code>, qui porte <code>\xintfloateval</code> et <code>\xintiieval</code> (et leurs alias <code>\calxeval</code> et <code>\calxinteval</code>), et <code>xintexpr</code> lui-même, qui charge <code>calx</code> et y ajoute <code>\xinteval</code> pour les fractions. Deux changements visibles : les fonctions trigonométriques, logarithmes, exponentielles et puissances sont environ huit fois plus rapides, et les fonctions hyperboliques et leurs réciproques sont ajoutées ; par ailleurs les erreurs de calcul produisent désormais par défaut <code>NaN</code>, <code>+Infinity</code> ou <code>-Infinity</code>, valeurs qui se propagent dans les calculs suivants — ce comportement ne concerne que les calculs <code>calx</code>, les macros héritées de <code>xintfrac</code> et <code>\xinteval</code> continuant de déclencher une erreur TeX. L'annonce indique que la plupart des documents utilisant <code>xintexpr</code> compilent sans modification. Ce paquet n'est ni dans votre liste ni chargé par votre classe ou vos documents : je l'ai vérifié dans le clone de <code>Opware2000/nBook3</code> au commit <code>9dff71b</code>, où aucune occurrence de <code>xint</code> ni de <code>xintexpr</code> n'apparaît. Il ne figure donc ici que comme nouvelle d'écosystème ; je n'ai pas établi quels paquets de votre chaîne l'appellent indirectement, la fiche CTAN ne publiant pas les dépendances. Lien : <a href="https://ctan.org/pkg/xint">https://ctan.org/pkg/xint</a></li>
+</ul>
+<h2>Volume</h2>
+<p>Deux annonces publiées dans l'intervalle, deux retenues (aucune concernant vos paquets), aucune écartée : il n'y avait ni nouveau paquet ni annonce hors sujet à trier. Incident : la dernière collecte s'est terminée sur un <code>TimeoutError</code> (champ <code>errors</code> de <code>meta.json</code>), de sorte que les annonces publiées après la fin d'après-midi du 6 novembre peuvent manquer ici et n'apparaîtront que dans l'édition de demain.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — samedi 7 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux annonces seulement depuis l'édition d'hier, et aucune ne concerne les soixante et un paquets de votre classe : <code>ltx-talk</code> corrige quatre défauts de sa version 0.6.10 et <code>xint</code> passe à une version 2.0 de réécriture complète, huit fois plus rapide sur les fonctions transcendantes. Aucun nouveau paquet n'a été publié. La dernière collecte de la liste <code>ctan-ann</code> a échoué sur un délai dépassé, la journalisation s'arrête donc à la fin d'après-midi du 6 novembre.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune annonce de l'intervalle ne concerne un paquet de <code>packages_interet.txt</code>.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p>Aucun nouveau paquet annoncé dans l'intervalle.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>ltx-talk</strong> 0.6.11 (2026-11-05, LPPL 1.3c) : la classe de présentations accessibles de Joseph Wright corrige quatre défauts — marge gauche des listes imbriquées sur quatre niveaux ou plus, alignement vertical des titres de cadre lorsque l'étiquetage PDF est actif et que le fond est coloré, prise en compte intempestive des sections étoilées dans la numérotation, et espacement des sections numérotées dans la table des matières. Rien de nouveau en fonctionnalité : ce sont des correctifs, et aucun ne touche votre classe, qui ne charge pas <code>ltx-talk</code>. À retenir tout de même parce que le thème <code>beamertheme-tcolorbox</code> — signalé ici le 4 novembre — s'appuie sur cette classe, et parce que ses correctifs d'étiquetage vont dans le sens de la sortie PDF balisée. La classe exige LaTeX du 1er novembre 2025 ou plus récent. Lien : <a href="https://ctan.org/pkg/ltx-talk">https://ctan.org/pkg/ltx-talk</a></li>
+<li><strong>xint</strong> 2.0a1 (2026-11-01, LPPL 1.3c) : version majeure, les entrailles du moteur arithmétique sont entièrement réécrites pour la vitesse. <code>xintexpr</code> se scinde en deux paquets : <code>calx</code>, qui porte <code>\xintfloateval</code> et <code>\xintiieval</code> (et leurs alias <code>\calxeval</code> et <code>\calxinteval</code>), et <code>xintexpr</code> lui-même, qui charge <code>calx</code> et y ajoute <code>\xinteval</code> pour les fractions. Deux changements visibles : les fonctions trigonométriques, logarithmes, exponentielles et puissances sont environ huit fois plus rapides, et les fonctions hyperboliques et leurs réciproques sont ajoutées ; par ailleurs les erreurs de calcul produisent désormais par défaut <code>NaN</code>, <code>+Infinity</code> ou <code>-Infinity</code>, valeurs qui se propagent dans les calculs suivants — ce comportement ne concerne que les calculs <code>calx</code>, les macros héritées de <code>xintfrac</code> et <code>\xinteval</code> continuant de déclencher une erreur TeX. L'annonce indique que la plupart des documents utilisant <code>xintexpr</code> compilent sans modification. Ce paquet n'est ni dans votre liste ni chargé par votre classe ou vos documents : je l'ai vérifié dans le clone de <code>Opware2000/nBook3</code> au commit <code>9dff71b</code>, où aucune occurrence de <code>xint</code> ni de <code>xintexpr</code> n'apparaît. Il ne figure donc ici que comme nouvelle d'écosystème ; je n'ai pas établi quels paquets de votre chaîne l'appellent indirectement, la fiche CTAN ne publiant pas les dépendances. Lien : <a href="https://ctan.org/pkg/xint">https://ctan.org/pkg/xint</a></li>
+</ul>
+<h2>Volume</h2>
+<p>Deux annonces publiées dans l'intervalle, deux retenues (aucune concernant vos paquets), aucune écartée : il n'y avait ni nouveau paquet ni annonce hors sujet à trier. Incident : la dernière collecte s'est terminée sur un <code>TimeoutError</code> (champ <code>errors</code> de <code>meta.json</code>), de sorte que les annonces publiées après la fin d'après-midi du 6 novembre peuvent manquer ici et n'apparaîtront que dans l'édition de demain.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — vendredi 6 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-06.html</link>
