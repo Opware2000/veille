@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois agents de codage libres à examiner : psi, un agent portable de 6,4 Mo écrit en C et en Lua ; Sentient, qui reconstitue depuis le noyau ce qu'un agent a réellement fait ; RepoMagpie, qui garde la mémoire des dépôts déjà essayés. Deux projets font tenir de gros modèles sur du matériel modeste : llama-modchip (DeepSeek 284B sur 64 Go de RAM, sans GPU) et MAPLE (élagage des MoE pour tourner sur 6 Go de carte graphique). Côté subreddit, beaucoup de jeux et de récits, mais deux trouvailles : un simulateur d'optique ondulatoire, directement utilisable en physique, et un framework Godot 4 de plateforme 3D avec son éditeur de quêtes.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>psi — un agent de codage portable de 6,4 Mo</h3>
+<p>Agent de codage en terminal écrit en C ANSI et Lua, distribué en un binaire portable de 6,4 Mo qui tourne sur Linux, macOS, Windows, Haiku et d'autres systèmes encore moins courants (constructions i686, x86_64, aarch64, riscv64). Le cœur en C reste petit, tout le comportement de haut niveau (boucle de l'agent, interface, outils, fournisseurs de modèles) vit en Lua et reste modifiable : on peut enregistrer une commande ou un outil en quelques lignes. Prend en charge Anthropic, OpenAI Codex, OpenRouter et les modèles locaux via Ollama, avec des sessions en JSONL réutilisables d'un fournisseur à l'autre. Licence MIT, 6 étoiles, dernière mise à jour le 8 novembre 2026.<br />
+Lien : https://psicode.ai/ — dépôt : https://github.com/siraben/psi</p>
+<h3>Sentient — l'agent de codage n'est plus une boîte noire</h3>
+<p>Outil Linux (binaires à venir) qui enregistre ce qu'un agent de codage fait réellement, au niveau du noyau, et non d'après son journal de conversation. Les événements de fichiers, de processus et de réseau sont capturés par eBPF via Tetragon ; l'agent tourne en utilisateur ordinaire et ne peut donc ni modifier ni éteindre le relevé. Les actions sont ensuite rattachées au prompt et à la session qui les ont déclenchées, avec les diffs de chaque fichier touché, y compris hors du dépôt, et un classement des opérations risquées (écritures hors dépôt, <code>sudo</code>, modification des profils de shell). Tableau de bord local sur <code>sen serve</code>, lecture seule, sans télémétrie. Utile si vous laissez travailler un agent seul sur un dépôt ou sur une machine. Licence MIT, 2 étoiles, dernière mise à jour le 8 novembre 2026 (projet très récent).<br />
+Lien : https://github.com/nosaka4i/sentient — présentation : https://nosaka.ai/sentient/</p>
+<h3>RepoMagpie — la mémoire des dépôts déjà essayés</h3>
+<p>Outil publié en paquet npm qui garde trace, pour un agent de codage, des dépôts, ressources et compétences déjà rencontrés et du jugement porté sur eux : au bout de quelques semaines on ne cherche plus deux fois le même paquet. L'auteur l'a écrit parce qu'il retrouvait sans cesse des dépôts qu'il avait déjà croisés. Licence MIT, 9 étoiles, dernière mise à jour le 7 novembre 2026, en TypeScript.<br />
+Lien : https://github.com/Varshavia/RepoMagpie</p>
+<h3>Recalc — un tableur dont chaque cellule peut être un agent</h3>
+<p>Tableur en Rust où chaque cellule contient une valeur, une formule, une commande de terminal ou une session Claude Code / Codex complète. Les cellules peuvent s'appeler entre elles par leur nom ou par un serveur MCP, ce qui permet de faire dialoguer plusieurs sessions d'agent et de maîtriser le contexte entre elles — l'auteur s'en sert pour construire des bancs d'évaluation. Encore expérimental, testé surtout sur macOS, Linux peu testé, Windows pas du tout. Licence Apache 2.0, 7 étoiles, dernière mise à jour le 8 novembre 2026.<br />
+Lien : https://github.com/sshah03/recalc</p>
+<h3>llama-modchip — DeepSeek 284B sur 64 Go de RAM, sans carte graphique</h3>
+<p>Recueil de recettes pour faire tourner des modèles Mixture-of-Experts très volumineux sur un processeur seul. D'après l'auteur : DeepSeek-V4-Flash 284B en moins de 59 Gio de RAM, 9 à 15 jetons par seconde en génération, et un contexte de 256k. Beaucoup plus rapide que le simple échange sur disque, qui est la limite habituelle de cette approche. Les chiffres viennent de l'auteur et varient beaucoup selon le processeur et la bande passante mémoire : à vérifier sur votre machine avant d'en attendre autant. Licence Apache 2.0, 467 étoiles, dernière mise à jour le 8 novembre 2026.<br />
+Lien : https://github.com/synchopate/llama-modchip</p>
+<h3>MAPLE — élaguer un MoE pour tenir sur 6 Go de carte graphique</h3>
+<p>Travail de recherche (pruning guidé par les activations, en python) qui descend un modèle MoE sous les deux bits par poids et fait tourner Gemma 4 26B à 45 jetons par seconde sur une carte de 6 Go. Le dense de 26B dans 6 Go de VRAM, c'est précisément la contrainte des machines modestes ; reste à voir la perte de qualité, que l'annonce ne chiffre pas. Projet créé le 7 novembre 2026, 31 étoiles, licence que GitHub n'identifie pas — à lire avant réutilisation.<br />
+Lien : https://github.com/AmSach/maple</p>
+<h3>StatCraft — réécrire un logiciel de statistiques en Rust sûr</h3>
+<p>Réécriture libre et moderne de l'ancêtre d'IBM SPSS Statistics, en Rust « safe », avec plus de quarante tests d'intégration et la même ergonomie de commandes qu'SPSS. Le projet vise les gros fichiers de données statistiques que les logiciels actuels traitent mal. Encore très jeune (29 étoiles, créé le 28 octobre 2026), donc à surveiller plutôt qu'à déployer en production. Licence Apache 2.0, dernière mise à jour le 8 novembre 2026.<br />
+Lien : https://github.com/kobaltgit/StatCraft</p>
+<h3>WaveDudeNext — simulateur d'optique ondulatoire</h3>
+<p>Simulateur 2D interactif : on charge n'importe quelle image qui devient un milieu réfringent, on ajoute des sources, et l'on voit les ondes se réfracter, diffracter et interférer, avec des sondes de mesure, des cartes d'intensité et l'export vidéo. C'est du matériel exploitable tel quel en enseignement scientifique ou en spécialité pour montrer fentes d'Young, diffraction et guidage. Licence GPL 3.0, 222 étoiles, dernière mise à jour le 6 novembre 2026, en C# (Windows ; le portage multi-plateforme n'est pas annoncé).<br />
+Lien : https://github.com/graealex/WaveDudeNext</p>
+<h3>MeccanicOS — une distribution Linux cohérente, clé USB en main</h3>
+<p>Système complet fondé sur NixOS mais conçu comme un ensemble, et non comme une collection d'outils : barre de commandes unique (Super+Espace), ouverture des fichiers par <code>open</code>, applications nommées par ce qu'elles font, coffres chiffrés LUKS2, sauvegardes à la Time Machine, assistant vocal local et lecture à voix haute hors ligne (Piper), et un mode « flotte » pour administrer plusieurs postes depuis un serveur. S'installe depuis une clé USB de 16 Go ou se teste en direct, avec un choix de modèle d'IA local (Qwen3 via Ollama) ou d'un service distant avec sa propre clé. Attention : le dépôt n'a pas bougé depuis le 28 octobre 2026 et sa licence est classée « Other » par GitHub — je ne peux donc pas confirmer qu'il s'agit d'une licence libre validée. 18 étoiles.<br />
+Lien : https://meccanicos.com/ — dépôt : https://github.com/unofficialtools/meccanicos</p>
+<h3>ZapFast — client WhatsApp natif en Rust</h3>
+<p>Client WhatsApp de bureau écrit en Rust avec egui, sans Electron : démarrage rapide et empreinte mémoire réduite par rapport au client web encapsulé. Licence MIT, 3 596 étoiles, dernière mise à jour le 8 novembre 2026. Repéré sur Hacker News, hors du thème du codage assisté mais dans la catégorie « application libre qui remplace un service lourd ».<br />
+Lien : https://github.com/crmne/zapfast</p>
+<h3>iSponsorBlockTV — SponsorBlock sur les téléviseurs</h3>
+<p>Client SponsorBlock pour les applications YouTube des téléviseurs et consoles : il saute automatiquement les passages sponsorisés, l'intro et les rappels d'abonnement. En Python, GPL 3.0, 6 902 étoiles ; le projet existe depuis 2022 mais reste activement suivi (dernière mise à jour le 8 novembre 2026). Signalé par Hacker News.<br />
+Lien : https://github.com/dmunozv04/isponsorblocktv</p>
+<h3>Meteor — numérisation de broderie, gratuit pendant la bêta</h3>
+<p>Application de création de motifs de broderie machine : elle transforme une image en points (couleurs de fil, remplissages, contours satin), propose un mode guidé et une baguette magique pour traiter une zone de couleur à la fois, 21 types de points, des polices de lettres sewn en satin, une vérification par rapport aux limites d'une machine Brother choisie, un simulateur de couture et l'export PES et DST. Fonctionne sous Windows 10/11, tablettes Android et Linux ; ni macOS ni iOS. Gratuit pendant la bêta, sans dépôt public ni licence annoncée — l'auteur prévient que le binaire n'est pas signé et que la suite sera payante. 0 étoile, aucun dépôt GitHub à vérifier.<br />
+Lien : https://beelito.github.io/meteor-embroidery-studio/</p>
+<h3>Jalura Framework — base de jeu de plateforme 3D pour Godot 4</h3>
+<p>Framework open source (MIT) pour Godot 4 : contrôleur de personnage à quinze états, caméra diorama ou orbitale inspirée de Captain Toad, systèmes modulaires d'interaction, d'inventaire et de sauvegarde en ressources natives <code>.tres</code>, et surtout Quest Studio, un greffon d'éditeur pour créer quêtes, objectifs, prérequis et graphes de dépendances avec un système de dialogues à quatre états. Écrit avec l'aide d'agents, mais l'auteur insiste : l'essentiel du temps est passé dans les tests. Très récent (créé le 5 novembre 2026, 0 étoile, dernière mise à jour le 6 novembre), à considérer comme un point de départ à éprouver. Dépôt : https://github.com/jaluraDEV/jalura-framework</p>
+<h3>NoDex — une autre façon de mixer sur mobile</h3>
+<p>Application de DJ pour iOS et Android qui abandonne la reproduction des platines et des boutons pour une interface tactile où l'on voit et touche les formes d'onde, avec des repères visuels pour caler les tempos, tout au pouce. Gratuite, avec deux morceaux de démonstration fournis, et l'auteur cherche des testeurs Android pour la sortie Play Store. L'application n'est pas encore publiée : le prix et la licence définitifs restent à confirmer à la sortie.<br />
+Lien : https://www.nodexdj.com</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>IV Studio 1.0</strong> : studio de cinéma assisté, libre (MIT) et gratuit, qui transforme un ComfyUI personnel en atelier de tournage pour MiniMax H3 — on écrit une idée, on chasse les prises, on termine celle qui convient, puis on monte un court métrage ; entraînement de ses propres « acteurs » et serveur MCP pour qu'un agent puisse diriger à côté. La version 1.0 ajoute un portage Linux en plus de Windows et macOS (sur Mac, le rendu se fait sur son propre compte cloud). Cette version a été refaite d'après les retours de la communauté. Licence MIT, 84 étoiles, dernière mise à jour le 8 novembre 2026. Dépôt : https://github.com/hollisorg/iv-studio</li>
+<li><strong>Dux Shell 2.0</strong> (ex-DankMaterialShell) : coquille de bureau pour Wayland (niri, Hyprland, Sway, MangoWC, labwc, MiracleWM) — tableau de bord, panneau de réglages rapides, widgets, gestionnaire de fichiers, surveillance système, agenda avec Google, Microsoft, CalDAV et iCloud, et thème propagé à GTK et Qt avec génération d'une palette de seize couleurs pour les terminaux. Gratuit et open source (MIT), 8 895 étoiles, dernière mise à jour le 8 novembre 2026. Lien : https://duxlabs.dev/ — dépôt : https://github.com/duxlabs-dev/dux-shell</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>mythical-agent-month</strong> : compétence pour Claude Code (et agents compatibles) qui corrige l'estimation délirante des agents — ceux qui annoncent cinq mois de travail pour une tâche terminée en trente-cinq heures. Les estimations sont calibrées sur des exécutions réelles. Licence MIT, 23 étoiles, dernière mise à jour le 3 novembre 2026. Dépôt : https://github.com/MedAdemBHA/mythical-agent-month</li>
+<li><strong>Générateur de ligne d'état pour Claude Code</strong> : outil web qui compose le bloc <code>settings.json</code> et le script Python de la ligne d'état (répertoire, dépôt, coût de la session, lignes ajoutées et retirées). Tout s'exécute dans le navigateur, sans compte ni connexion ; l'auteur vend à côté un pavé matériel, ce qui n'enlève rien à l'outil, gratuit. Lien : https://orbtile.com/tools/claude-code-statusline-builder</li>
+</ul>
+<h2>Volume</h2>
+<p>112 posts publiés dans l'intervalle (journal du subreddit et Hacker News / Lobsters, plus les journaux Simon Willison, Latent Space, Hugging Face et le flux Hacker News à partir de dix points), 18 retenus, 94 écartés. Le taux de rétention faible vient de la nature du subreddit : sur ces trois jours, l'essentiel des fils sont des jeux présentés par leurs auteurs, des récits d'expérience, des plaintes sur les limites d'abonnement et des questions — le thème « annonce d'un outil ou d'une capacité » y est minoritaire par construction. Aucune erreur de collecte signalée dans <code>meta.json</code> (dernière collecte le 8 novembre 2026 à 23 h 34 UTC).</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
