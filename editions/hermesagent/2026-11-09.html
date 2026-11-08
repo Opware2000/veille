@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux greffons neufs pour Hermes : un garde-fou qui lit le contenu réel des scripts avant de les laisser s'exécuter, et une intégration bancaire Plaid à dashboard. Côté modèles, deux projets font tourner de gros modèles à experts (MoE) sur du matériel modeste — 64 Gio de mémoire vive sans carte graphique, ou 6 Gio de mémoire vidéo.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>llama-modchip — faire tourner DeepSeek-V4-Flash (284 milliards de paramètres) sur 64 Gio de mémoire vive, sans GPU</h3>
+<p>Le dépôt fournit une méthode de quantification et d'exécution pour les modèles à experts mélangés sur processeur seul : DeepSeek-V4-Flash y tient en moins de 59 Gio de mémoire vive et rend 9 à 15 jetons par seconde en génération, avec un contexte de 256 000 jetons. Les modèles MoE de 30 milliards de paramètres atteignent 25 à 111 jetons par seconde. Le projet annonce aussi des briques annexes (SwiGLU-H2, un moteur d'échecs Stockfish-PVS, une restauration de session Claude Code en 13 ms) qui ressemblent davantage à des démonstrations qu'à des outils stabilisés.</p>
+<ul>
+<li>Licence Apache-2.0, 469 étoiles, dépôt créé le 29 octobre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/synchopate/llama-modchip</li>
+<li>Sur Hacker News : 175 points et 56 commentaires — l'intérêt est réel, ce n'est pas une annonce isolée.</li>
+</ul>
+<h3>Maple — élaguer les experts d'un MoE pour faire tenir Gemma 4 26B sur 6 Gio de mémoire vidéo</h3>
+<p>MAPLE (« Manifold-Activated Pruning of Latent Experts ») élague les experts d'un modèle MoE au-delà de deux bits par poids, ce qui permet d'exécuter Gemma 4 26B à 45 jetons par seconde sur une carte graphique de 6 Gio. L'approche intéresse donc les machines modestes, mais elle en est à ses débuts et n'a pas encore été éprouvée par d'autres que son auteur.</p>
+<ul>
+<li>Licence : GitHub ne sait pas l'identifier (« Other », sans assertion) — à vérifier avant tout usage sérieux.</li>
+<li>31 étoiles, dépôt créé le 7 novembre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/AmSach/maple</li>
+<li>Sur Hacker News : 10 points et 5 commentaires, publication du 8 novembre.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>command-reviewer — un greffon qui lit le code des scripts avant leur exécution</h3>
+<p>L'auteur part d'un constat simple : quand Hermes lance <code>python3 /tmp/thing.py</code>, le système d'approbation ne voit qu'un nom de fichier, jamais son contenu. Ce greffon s'accroche à chaque appel <code>terminal</code> et <code>execute_code</code> et juge le code lui-même. Il pose des règles dures et immédiates, sans appel à un modèle, pour les cas évidents (clés SSH, <code>.env</code>, <code>curl | sh</code>, décodage base64 avant exécution) ; un modèle juge le reste. Un script illisible est bloqué, une approbation mémorisée est rattachée à l'empreinte SHA-256 du fichier — un fichier modifié est donc réexaminé —, et le greffon démarre en mode observation avant de passer au blocage effectif.</p>
+<ul>
+<li>Licence MIT, deux fichiers, aucune dépendance ; 0 étoile et dépôt créé le 8 novembre 2026 — c'est une publication du jour, sans recul d'usage extérieur.</li>
+<li>Lien : https://github.com/spideysri2802/command-reviewer</li>
+</ul>
+<h3>hermes-finance — suivi de finances personnelles branché sur Hermes, via Plaid</h3>
+<p>L'auteur publie une intégration Plaid native pour Hermes, avec import CSV, OFX et QFX en secours, un serveur MCP et son propre tableau de bord ; l'agent peut commenter les dépenses et en suivre les postes. Une connexion bancaire passe par un compte d'essai Plaid gratuit, annoncé comme illimité dans la limite de dix banques simultanées. Des intégrations optionnelles existent pour les investissements (Alpaca) et l'estimation de patrimoine (véhicules et immobilier). Les outils de l'agent restent en lecture seule tant que l'utilisateur n'approuve pas une modification.</p>
+<ul>
+<li>Licence AGPL-3.0, 30 étoiles, dépôt créé le 24 octobre 2026, dernière mise à jour le 6 novembre 2026.</li>
+<li>Dépôt : https://github.com/apelabs-dev/hermes-finance — documentation du greffon : https://hermes-agent.nousresearch.com/docs/plugins/hermes-finance — démonstration interactive : https://financing.apelabs.dev/</li>
+<li>Réserve : la gratuité annoncée repose sur un compte d'essai Plaid, dont les conditions peuvent changer ; je n'ai pas de garantie de pérennité sur ce point.</li>
+</ul>
+<h2>Volume</h2>
+<p>95 entrées examinées depuis la précédente édition — 28 du journal hermesagent, 2 de Simon Willison, 2 de Latent Space, 63 de Hacker News ; 4 retenues, 91 écartées. La dernière collecte s'est déroulée sans erreur.</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

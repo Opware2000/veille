@@ -6,9 +6,86 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 09 Nov 2026 00:43:15 +0100</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 00:52:04 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — lundi 9 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-09.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:52:04 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux greffons neufs pour Hermes : un garde-fou qui lit le contenu réel des scripts avant de les laisser s'exécuter, et une intégration bancaire Plaid à dashboard. Côté modèles, deux projets font tourner de gros modèles à experts (MoE) sur du matériel modeste — 64 Gio de mémoire vive sans carte graphique, ou 6 Gio de mémoire vidéo.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>llama-modchip — faire tourner DeepSeek-V4-Flash (284 milliards de paramètres) sur 64 Gio de mémoire vive, sans GPU</h3>
+<p>Le dépôt fournit une méthode de quantification et d'exécution pour les modèles à experts mélangés sur processeur seul : DeepSeek-V4-Flash y tient en moins de 59 Gio de mémoire vive et rend 9 à 15 jetons par seconde en génération, avec un contexte de 256 000 jetons. Les modèles MoE de 30 milliards de paramètres atteignent 25 à 111 jetons par seconde. Le projet annonce aussi des briques annexes (SwiGLU-H2, un moteur d'échecs Stockfish-PVS, une restauration de session Claude Code en 13 ms) qui ressemblent davantage à des démonstrations qu'à des outils stabilisés.</p>
+<ul>
+<li>Licence Apache-2.0, 469 étoiles, dépôt créé le 29 octobre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/synchopate/llama-modchip</li>
+<li>Sur Hacker News : 175 points et 56 commentaires — l'intérêt est réel, ce n'est pas une annonce isolée.</li>
+</ul>
+<h3>Maple — élaguer les experts d'un MoE pour faire tenir Gemma 4 26B sur 6 Gio de mémoire vidéo</h3>
+<p>MAPLE (« Manifold-Activated Pruning of Latent Experts ») élague les experts d'un modèle MoE au-delà de deux bits par poids, ce qui permet d'exécuter Gemma 4 26B à 45 jetons par seconde sur une carte graphique de 6 Gio. L'approche intéresse donc les machines modestes, mais elle en est à ses débuts et n'a pas encore été éprouvée par d'autres que son auteur.</p>
+<ul>
+<li>Licence : GitHub ne sait pas l'identifier (« Other », sans assertion) — à vérifier avant tout usage sérieux.</li>
+<li>31 étoiles, dépôt créé le 7 novembre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/AmSach/maple</li>
+<li>Sur Hacker News : 10 points et 5 commentaires, publication du 8 novembre.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>command-reviewer — un greffon qui lit le code des scripts avant leur exécution</h3>
+<p>L'auteur part d'un constat simple : quand Hermes lance <code>python3 /tmp/thing.py</code>, le système d'approbation ne voit qu'un nom de fichier, jamais son contenu. Ce greffon s'accroche à chaque appel <code>terminal</code> et <code>execute_code</code> et juge le code lui-même. Il pose des règles dures et immédiates, sans appel à un modèle, pour les cas évidents (clés SSH, <code>.env</code>, <code>curl | sh</code>, décodage base64 avant exécution) ; un modèle juge le reste. Un script illisible est bloqué, une approbation mémorisée est rattachée à l'empreinte SHA-256 du fichier — un fichier modifié est donc réexaminé —, et le greffon démarre en mode observation avant de passer au blocage effectif.</p>
+<ul>
+<li>Licence MIT, deux fichiers, aucune dépendance ; 0 étoile et dépôt créé le 8 novembre 2026 — c'est une publication du jour, sans recul d'usage extérieur.</li>
+<li>Lien : https://github.com/spideysri2802/command-reviewer</li>
+</ul>
+<h3>hermes-finance — suivi de finances personnelles branché sur Hermes, via Plaid</h3>
+<p>L'auteur publie une intégration Plaid native pour Hermes, avec import CSV, OFX et QFX en secours, un serveur MCP et son propre tableau de bord ; l'agent peut commenter les dépenses et en suivre les postes. Une connexion bancaire passe par un compte d'essai Plaid gratuit, annoncé comme illimité dans la limite de dix banques simultanées. Des intégrations optionnelles existent pour les investissements (Alpaca) et l'estimation de patrimoine (véhicules et immobilier). Les outils de l'agent restent en lecture seule tant que l'utilisateur n'approuve pas une modification.</p>
+<ul>
+<li>Licence AGPL-3.0, 30 étoiles, dépôt créé le 24 octobre 2026, dernière mise à jour le 6 novembre 2026.</li>
+<li>Dépôt : https://github.com/apelabs-dev/hermes-finance — documentation du greffon : https://hermes-agent.nousresearch.com/docs/plugins/hermes-finance — démonstration interactive : https://financing.apelabs.dev/</li>
+<li>Réserve : la gratuité annoncée repose sur un compte d'essai Plaid, dont les conditions peuvent changer ; je n'ai pas de garantie de pérennité sur ce point.</li>
+</ul>
+<h2>Volume</h2>
+<p>95 entrées examinées depuis la précédente édition — 28 du journal hermesagent, 2 de Simon Willison, 2 de Latent Space, 63 de Hacker News ; 4 retenues, 91 écartées. La dernière collecte s'est déroulée sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux greffons neufs pour Hermes : un garde-fou qui lit le contenu réel des scripts avant de les laisser s'exécuter, et une intégration bancaire Plaid à dashboard. Côté modèles, deux projets font tourner de gros modèles à experts (MoE) sur du matériel modeste — 64 Gio de mémoire vive sans carte graphique, ou 6 Gio de mémoire vidéo.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>llama-modchip — faire tourner DeepSeek-V4-Flash (284 milliards de paramètres) sur 64 Gio de mémoire vive, sans GPU</h3>
+<p>Le dépôt fournit une méthode de quantification et d'exécution pour les modèles à experts mélangés sur processeur seul : DeepSeek-V4-Flash y tient en moins de 59 Gio de mémoire vive et rend 9 à 15 jetons par seconde en génération, avec un contexte de 256 000 jetons. Les modèles MoE de 30 milliards de paramètres atteignent 25 à 111 jetons par seconde. Le projet annonce aussi des briques annexes (SwiGLU-H2, un moteur d'échecs Stockfish-PVS, une restauration de session Claude Code en 13 ms) qui ressemblent davantage à des démonstrations qu'à des outils stabilisés.</p>
+<ul>
+<li>Licence Apache-2.0, 469 étoiles, dépôt créé le 29 octobre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/synchopate/llama-modchip</li>
+<li>Sur Hacker News : 175 points et 56 commentaires — l'intérêt est réel, ce n'est pas une annonce isolée.</li>
+</ul>
+<h3>Maple — élaguer les experts d'un MoE pour faire tenir Gemma 4 26B sur 6 Gio de mémoire vidéo</h3>
+<p>MAPLE (« Manifold-Activated Pruning of Latent Experts ») élague les experts d'un modèle MoE au-delà de deux bits par poids, ce qui permet d'exécuter Gemma 4 26B à 45 jetons par seconde sur une carte graphique de 6 Gio. L'approche intéresse donc les machines modestes, mais elle en est à ses débuts et n'a pas encore été éprouvée par d'autres que son auteur.</p>
+<ul>
+<li>Licence : GitHub ne sait pas l'identifier (« Other », sans assertion) — à vérifier avant tout usage sérieux.</li>
+<li>31 étoiles, dépôt créé le 7 novembre 2026, dernière mise à jour le 8 novembre 2026.</li>
+<li>Lien : https://github.com/AmSach/maple</li>
+<li>Sur Hacker News : 10 points et 5 commentaires, publication du 8 novembre.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>command-reviewer — un greffon qui lit le code des scripts avant leur exécution</h3>
+<p>L'auteur part d'un constat simple : quand Hermes lance <code>python3 /tmp/thing.py</code>, le système d'approbation ne voit qu'un nom de fichier, jamais son contenu. Ce greffon s'accroche à chaque appel <code>terminal</code> et <code>execute_code</code> et juge le code lui-même. Il pose des règles dures et immédiates, sans appel à un modèle, pour les cas évidents (clés SSH, <code>.env</code>, <code>curl | sh</code>, décodage base64 avant exécution) ; un modèle juge le reste. Un script illisible est bloqué, une approbation mémorisée est rattachée à l'empreinte SHA-256 du fichier — un fichier modifié est donc réexaminé —, et le greffon démarre en mode observation avant de passer au blocage effectif.</p>
+<ul>
+<li>Licence MIT, deux fichiers, aucune dépendance ; 0 étoile et dépôt créé le 8 novembre 2026 — c'est une publication du jour, sans recul d'usage extérieur.</li>
+<li>Lien : https://github.com/spideysri2802/command-reviewer</li>
+</ul>
+<h3>hermes-finance — suivi de finances personnelles branché sur Hermes, via Plaid</h3>
+<p>L'auteur publie une intégration Plaid native pour Hermes, avec import CSV, OFX et QFX en secours, un serveur MCP et son propre tableau de bord ; l'agent peut commenter les dépenses et en suivre les postes. Une connexion bancaire passe par un compte d'essai Plaid gratuit, annoncé comme illimité dans la limite de dix banques simultanées. Des intégrations optionnelles existent pour les investissements (Alpaca) et l'estimation de patrimoine (véhicules et immobilier). Les outils de l'agent restent en lecture seule tant que l'utilisateur n'approuve pas une modification.</p>
+<ul>
+<li>Licence AGPL-3.0, 30 étoiles, dépôt créé le 24 octobre 2026, dernière mise à jour le 6 novembre 2026.</li>
+<li>Dépôt : https://github.com/apelabs-dev/hermes-finance — documentation du greffon : https://hermes-agent.nousresearch.com/docs/plugins/hermes-finance — démonstration interactive : https://financing.apelabs.dev/</li>
+<li>Réserve : la gratuité annoncée repose sur un compte d'essai Plaid, dont les conditions peuvent changer ; je n'ai pas de garantie de pérennité sur ce point.</li>
+</ul>
+<h2>Volume</h2>
+<p>95 entrées examinées depuis la précédente édition — 28 du journal hermesagent, 2 de Simon Willison, 2 de Latent Space, 63 de Hacker News ; 4 retenues, 91 écartées. La dernière collecte s'est déroulée sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — lundi 9 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-09.html</link>
@@ -6329,65 +6406,6 @@ Réserve : l'identité visuelle est celle de la Fachhochschule Niederrhein, et v
 <h2>Volume</h2>
 <p>Vingt-deux posts publiés dans l'intervalle, quatorze retenus, huit écartés. Les huit écartés : deux questions posées sur Hacker News (une demande d'alternative ouverte à Claude Code, une demande de conseil matériel sous 2 500 dollars, qui sont des questions et non des annonces), le banc d'essai « BudHist » consacré à l'histoire bouddhique dans les modèles ouverts (mesure pointue, sans application), deux dépêches sur le passage de Revolut à GLM (11 et 2 points, même sujet, aucune annonce d'outil), un billet de recherche sur la programmation dans l'espace des poids, un message de pure promotion d'un compte sur le réseau X, et la seconde soumission du même modèle Ripple-65B.</p>
 <p>Sont signalés comme incertains : aucun. La collecte est saine — la dernière passe s'est terminée le 4 novembre 2026 à 22 h 48 UTC sans erreur dans le journal. Les entrées de Hacker News et Lobsters antérieures au 5 novembre n'avaient pas encore été dépouillées par cette veille : leur traitement commence avec cette édition.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — jeudi 5 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-05.html</link>
-<guid isPermaLink="false">artcraft-2026-11-05</guid>
-<pubDate>Thu, 05 Nov 2026 00:03:14 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — jeudi 5 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Trois versions correctives sont parues depuis la dernière édition : WordCraft 0.15.1 et PdfCraft 0.18.1 (4 novembre, 3 h 51 UTC), puis DesignCraft 0.17.1 dans la soirée — corrections de fond, sans nouvelle fonctionnalité majeure.</li>
-<li>Un utilisateur publie une méthode de contournement des lenteurs des applications sur Mac Intel, et l'éditeur d'une solution de stockage annonce l'intégration des outils ArtCraft côté serveur pour les équipes et les salles de classe.</li>
-<li>Le reste de l'intervalle est saturé de demandes d'applications et de questions d'assistance, écartées du tri.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>WordCraft 0.15.1, PdfCraft 0.18.1 et DesignCraft 0.17.1</h3>
-<p>Aucun des trois textes d'accompagnement n'annonce de fonctionnalité nouvelle : ce sont des correctifs et des travaux de robustesse. WordCraft 0.15.1 accélère la lecture à voix haute (recherche binaire des citations au lieu d'un balayage caractère par caractère), intègre 75 paquets linguistiques et la vérification orthographique fusionnée, coupe les noms de police lus dans la table du fichier à 128 caractères et refuse les collections WOFF2 aux répertoires reconstruits anormalement volumineux ; les touches Page précédente / Page suivante déplacent désormais d'une page complète en mode Plan, Brouillon et Affichage web. PdfCraft 0.18.1 corrige le blocage de la molette en bord de page en vue non continue, la perte de l'entrée /PCAdded lors de la réécriture d'un objet pour la censure, l'écriture en double de l'arbre de pages à la création d'un document, et l'optimisation des images placées sous un masque ; FormCalc n'imprime plus que quinze chiffres significatifs. DesignCraft 0.17.1 rend l'import de nombreux graphismes linéaire (indexation des fichiers par contenu), conserve les étiquettes et classes de styles à l'aller-retour IDML, et règle plusieurs défauts de l'interface (nuancier qui se rouvre sur le composant quitté, mise en page, relecture inutile des images liées à chaque cycle de contrôle).<br />
-Versions publiées respectivement les 4 novembre 2026 à 3 h 51 UTC (WordCraft et PdfCraft) et à 20 h 37 UTC (DesignCraft), sur les dépôts publics <code>storytold/wordcraft</code>, <code>storytold/pdfcraft</code> et <code>storytold/designcraft</code> (licence Apache-2.0).</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>napp-it : les applications web d'ArtCraft intégrées à une interface de serveur</h3>
-<p>L'éditeur de napp-it, interface web d'administration de serveurs ZFS et de leurs grappes, annonce la prise en charge des applications web d'ArtCraft : installation, mise à jour et service web optimisé, accessibles par un proxy unique sans installation locale, dans un navigateur. Le module complémentaire cs-team met en avant des usages collectifs — gestion de groupes, équipes multiculturelles ou classes d'une année sur l'autre, parcs informatiques mixtes — ainsi qu'un assistant d'aide indexé sur des sources et une alternative légère à Office 365 / Nextcloud pour le calcul et le texte en multijoueur. Le projet existe depuis dix-sept ans et se présente comme libre, fonctionnant sous Illumos/Solaris, FreeBSD, Linux, macOS ou Windows. Réserve : l'annonce est celle de l'éditeur du module, elle ne provient pas de l'équipe ArtCraft, et aucune contrepartie ou accord avec storytold n'est mentionné.<br />
-Site : https://www.napp-it.org/ (documentation : https://www.napp-it.org/pdf/cs-team_en.pdf, les deux répondent) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xnv83v/announcement_nappit_csteam_environment_for/ — auteur u/<em>gea</em>.</p>
-<h3>Lancer le binaire directement : parade aux lenteurs sur Mac Intel</h3>
-<p>Un utilisateur de Mac Pro 2013 (deux Xeons, 64 Go de mémoire, deux cartes graphiques, macOS Sequoia via OpenCore Legacy Patcher) publie une parade aux ralentissements des applications ArtCraft sur les Mac Intel : au lieu d'ouvrir l'application par son icône, il la lance depuis le Terminal — <code>bash /Applications/PhotoCraft.app/Contents/MacOS/PhotoCraft</code> —, ce qui court-circuite le cache de fenêtres de macOS et les fonctions de restauration sécurisée que le système impose au détriment des correctifs graphiques pour machines anciennes. L'avertissement « Secure coding » affiché dans le Terminal est attendu. Il s'agit d'un contournement de la communauté, non d'un correctif officiel : il ne s'applique qu'aux Mac Intel sous OpenCore, il faut garder la fenêtre du Terminal ouverte pendant le travail, et aucune mesure chiffrée n'accompagne le témoignage. À considérer comme une piste à tester, pas comme une solution validée.<br />
-Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xngkl6/fix_for_artcraft_photocraft_lag_on_intel_macs/ — auteur u/Surfella.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable dans l'intervalle : aucune actualité marquante relevée ces dernières vingt-quatre heures sur ComfyUI, InvokeAI, Krita AI Diffusion ni sur les autres interfaces de génération locale examinées. La presse spécialisée continue de relayer la suite ArtCraft comme alternative libre aux applications Adobe, sans annonce nouvelle.</p>
-<h2>À signaler</h2>
-<h3>LightCraft : lenteurs signalées après la mise à jour</h3>
-<p>Un utilisateur se plaint qu'après être passé à la dernière version de LightCraft, « tout ce qu'il fait » déclenche un rendu, ce qui rend le travail impossible, alors que le comportement était normal auparavant. Le signalement est isolé, sans capture ni journal, et aucun autre membre du subreddit ne le confirme dans le fil : il ne permet donc pas d'établir une régression généralisée de LightCraft 0.18.0 (publiée le 3 novembre), mais l'hypothèse mérite d'être surveillée dans les prochaines éditions.<br />
-Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xntoen/lightcraft_rendering/ — auteur u/Maximum-Grand-946.</p>
-<h2>Volume</h2>
-<p>33 posts parus dans l'intervalle (du 3 novembre à 22 h 25 au 4 novembre à 21 h 10 UTC), 3 retenus, 30 écartés. S'y ajoute la vérification directe des dépôts de l'éditeur, qui a révélé les trois versions correctives citées ci-dessus. La dernière collecte s'est terminée le 4 novembre 2026 à 22 h 29 UTC sans erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — jeudi 5 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Trois versions correctives sont parues depuis la dernière édition : WordCraft 0.15.1 et PdfCraft 0.18.1 (4 novembre, 3 h 51 UTC), puis DesignCraft 0.17.1 dans la soirée — corrections de fond, sans nouvelle fonctionnalité majeure.</li>
-<li>Un utilisateur publie une méthode de contournement des lenteurs des applications sur Mac Intel, et l'éditeur d'une solution de stockage annonce l'intégration des outils ArtCraft côté serveur pour les équipes et les salles de classe.</li>
-<li>Le reste de l'intervalle est saturé de demandes d'applications et de questions d'assistance, écartées du tri.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>WordCraft 0.15.1, PdfCraft 0.18.1 et DesignCraft 0.17.1</h3>
-<p>Aucun des trois textes d'accompagnement n'annonce de fonctionnalité nouvelle : ce sont des correctifs et des travaux de robustesse. WordCraft 0.15.1 accélère la lecture à voix haute (recherche binaire des citations au lieu d'un balayage caractère par caractère), intègre 75 paquets linguistiques et la vérification orthographique fusionnée, coupe les noms de police lus dans la table du fichier à 128 caractères et refuse les collections WOFF2 aux répertoires reconstruits anormalement volumineux ; les touches Page précédente / Page suivante déplacent désormais d'une page complète en mode Plan, Brouillon et Affichage web. PdfCraft 0.18.1 corrige le blocage de la molette en bord de page en vue non continue, la perte de l'entrée /PCAdded lors de la réécriture d'un objet pour la censure, l'écriture en double de l'arbre de pages à la création d'un document, et l'optimisation des images placées sous un masque ; FormCalc n'imprime plus que quinze chiffres significatifs. DesignCraft 0.17.1 rend l'import de nombreux graphismes linéaire (indexation des fichiers par contenu), conserve les étiquettes et classes de styles à l'aller-retour IDML, et règle plusieurs défauts de l'interface (nuancier qui se rouvre sur le composant quitté, mise en page, relecture inutile des images liées à chaque cycle de contrôle).<br />
-Versions publiées respectivement les 4 novembre 2026 à 3 h 51 UTC (WordCraft et PdfCraft) et à 20 h 37 UTC (DesignCraft), sur les dépôts publics <code>storytold/wordcraft</code>, <code>storytold/pdfcraft</code> et <code>storytold/designcraft</code> (licence Apache-2.0).</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>napp-it : les applications web d'ArtCraft intégrées à une interface de serveur</h3>
-<p>L'éditeur de napp-it, interface web d'administration de serveurs ZFS et de leurs grappes, annonce la prise en charge des applications web d'ArtCraft : installation, mise à jour et service web optimisé, accessibles par un proxy unique sans installation locale, dans un navigateur. Le module complémentaire cs-team met en avant des usages collectifs — gestion de groupes, équipes multiculturelles ou classes d'une année sur l'autre, parcs informatiques mixtes — ainsi qu'un assistant d'aide indexé sur des sources et une alternative légère à Office 365 / Nextcloud pour le calcul et le texte en multijoueur. Le projet existe depuis dix-sept ans et se présente comme libre, fonctionnant sous Illumos/Solaris, FreeBSD, Linux, macOS ou Windows. Réserve : l'annonce est celle de l'éditeur du module, elle ne provient pas de l'équipe ArtCraft, et aucune contrepartie ou accord avec storytold n'est mentionné.<br />
-Site : https://www.napp-it.org/ (documentation : https://www.napp-it.org/pdf/cs-team_en.pdf, les deux répondent) — Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xnv83v/announcement_nappit_csteam_environment_for/ — auteur u/<em>gea</em>.</p>
-<h3>Lancer le binaire directement : parade aux lenteurs sur Mac Intel</h3>
-<p>Un utilisateur de Mac Pro 2013 (deux Xeons, 64 Go de mémoire, deux cartes graphiques, macOS Sequoia via OpenCore Legacy Patcher) publie une parade aux ralentissements des applications ArtCraft sur les Mac Intel : au lieu d'ouvrir l'application par son icône, il la lance depuis le Terminal — <code>bash /Applications/PhotoCraft.app/Contents/MacOS/PhotoCraft</code> —, ce qui court-circuite le cache de fenêtres de macOS et les fonctions de restauration sécurisée que le système impose au détriment des correctifs graphiques pour machines anciennes. L'avertissement « Secure coding » affiché dans le Terminal est attendu. Il s'agit d'un contournement de la communauté, non d'un correctif officiel : il ne s'applique qu'aux Mac Intel sous OpenCore, il faut garder la fenêtre du Terminal ouverte pendant le travail, et aucune mesure chiffrée n'accompagne le témoignage. À considérer comme une piste à tester, pas comme une solution validée.<br />
-Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xngkl6/fix_for_artcraft_photocraft_lag_on_intel_macs/ — auteur u/Surfella.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable dans l'intervalle : aucune actualité marquante relevée ces dernières vingt-quatre heures sur ComfyUI, InvokeAI, Krita AI Diffusion ni sur les autres interfaces de génération locale examinées. La presse spécialisée continue de relayer la suite ArtCraft comme alternative libre aux applications Adobe, sans annonce nouvelle.</p>
-<h2>À signaler</h2>
-<h3>LightCraft : lenteurs signalées après la mise à jour</h3>
-<p>Un utilisateur se plaint qu'après être passé à la dernière version de LightCraft, « tout ce qu'il fait » déclenche un rendu, ce qui rend le travail impossible, alors que le comportement était normal auparavant. Le signalement est isolé, sans capture ni journal, et aucun autre membre du subreddit ne le confirme dans le fil : il ne permet donc pas d'établir une régression généralisée de LightCraft 0.18.0 (publiée le 3 novembre), mais l'hypothèse mérite d'être surveillée dans les prochaines éditions.<br />
-Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xntoen/lightcraft_rendering/ — auteur u/Maximum-Grand-946.</p>
-<h2>Volume</h2>
-<p>33 posts parus dans l'intervalle (du 3 novembre à 22 h 25 au 4 novembre à 21 h 10 UTC), 3 retenus, 30 écartés. S'y ajoute la vérification directe des dépôts de l'éditeur, qui a révélé les trois versions correctives citées ci-dessus. La dernière collecte s'est terminée le 4 novembre 2026 à 22 h 29 UTC sans erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
