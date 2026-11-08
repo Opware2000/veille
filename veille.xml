@@ -6,9 +6,223 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 08 Nov 2026 05:05:34 +0100</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 00:12:59 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — lundi 9 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-09.html</link>
+<guid isPermaLink="false">macapps-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:12:59 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source Reddit s'éteint mais tient encore : le subreddit a fourni onze sorties, dont huit outils neufs gratuits ou à achat unique modique, écrits par leurs auteurs.</li>
+<li>Le fil le plus utile de la journée : trois applications de traitement local du document et de l'audio (Bibliome, Roundnote, Feather Drive) qui font tout sur la machine, sans compte ni abonnement.</li>
+<li>Côté mises à jour, Homebrew a signalé vingt-quatre casks le 8 novembre ; le flux ne porte que le numéro de version, sans journal des changements.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Feather Drive — Google Drive et Dropbox montés comme un disque, sans téléchargement</h3>
+<p>Application native construite sur les extensions de système de fichiers introduites par macOS 26 : vos fichiers restent dans votre propre compte Google Drive ou Dropbox, Finder les affiche comme un disque, et une lecture ne rapatrie que les octets demandés par l'application. Un fichier de 92 Go s'ouvre sur un Mac disposant de 10 Go libres, et rien ne s'accumule sur le disque. Le chiffrement de bout en bout est facultatif, la connexion se fait directement chez l'hébergeur (rien ne passe par un serveur intermédiaire) et l'application demande la permission restreinte <code>drive.file</code>, qui ne lui donne pas accès au reste du compte.</p>
+<p>Prix : 19,99 $ à vie (trois Mac, mises à jour de la branche 1.x) ou 4,99 $ pour un mois, essai de trois jours sans limitation. Exige macOS 26 ou plus récent, Apple Silicon ou Intel selon la machine compatible Tahoe.<br />
+<a href="https://featherdrive.app/">https://featherdrive.app/</a></p>
+<h3>Folder Quick Look 2 — voir l'intérieur d'un dossier ou d'une archive sans l'ouvrir</h3>
+<p>Martin Lexow republie entièrement son extension de l'aperçu rapide : un dossier, une archive ou un fichier Markdown sélectionné et pressé avec la barre d'espace montre son contenu et son arborescence au lieu d'une icône vide. Markdown y apparaît mis en forme. La première version était déjà citée par John Gruber comme une fonction qui aurait dû être dans le Finder.</p>
+<p>Prix : 3,99 $ en achat unique, Mac App Store, distribution sandboxée uniquement. L'application est propriétaire, mais le tarif relève du achat modique sans abonnement.<br />
+<a href="https://apps.apple.com/app/folder-quick-look/id6753110395">https://apps.apple.com/app/folder-quick-look/id6753110395</a></p>
+<h3>Classycal — agenda minimaliste sans compte ni télémétrie</h3>
+<p>Agenda et gestionnaire de rappels Apple, où l'on saisit un rendez-vous en langage naturel (« déjeuner mardi 12 h 30 ») et où les rappels de l'application Rappels servent de vraies tâches. Pas de compte, pas de télémétrie, pas d'assistant greffé. Une barre de commandes s'ouvre depuis n'importe quelle application, Mac et iPhone partagent le même achat.</p>
+<p>Prix : la version gratuite est un agenda complet, y compris les fonctions propres au Mac. L'option Plus est en tarif de lancement jusqu'au 30 novembre à 10 $ par an ou 20 $ à vie (ensuite 20 $ par an et 60 $ à vie) ; essai de quatorze jours. À noter : c'est un abonnement pour la formule annuelle, avec une option perpétuelle.<br />
+<a href="https://classycal.app/">https://classycal.app/</a></p>
+<h3>Bibliome — des fiches de révision fabriquées à partir de vos propres PDF, en local</h3>
+<p>Bibliome Library range, cherche et interroge une bibliothèque de PDF avec un modèle qui tourne sur la machine. La nouveauté annoncée est la fabrication de fiches : on choisit un document et une plage de pages, l'application rédige des cartes question-réponse et des textes à trous construits sur de vraies phrases du document, chacune gardant le passage d'origine et un lien vers la page. Révision par répétition espacée (FSRS, quatre notes au clavier), export vers Anki, CSV ou feuille Markdown. L'indexation se fait sur place, sans déplacer ni renommer les fichiers ; la version iPhone et iPad est gratuite et lit la même bibliothèque par iCloud.</p>
+<p>Prix : 29,99 $ en achat unique sur le Mac App Store, sans abonnement. À vérifier tout de même : l'application est sortie ce mois-ci et son numéro de version (1.0.3 au moment de la recension ci-dessous) la désigne comme un produit jeune. Source : recension de Scoring Notes.<br />
+<a href="https://apps.apple.com/us/app/bibliome-library/id6786826590">https://apps.apple.com/us/app/bibliome-library/id6786826590</a></p>
+<h3>Roundnote — vos réunions interrogeables, sur votre Mac</h3>
+<p>Application néerlandaise qui enregistre et transcrit les réunions en local (Teams, Zoom, Webex, FaceTime, ou une réunion en salle), distingue les voix avec consentement, conserve chaque réunion et permet de poser des questions sur l'ensemble : « qu'avait-on convenu avec Acme jeudi dernier ? » — réponse par Gemma 4 sur la machine, avec renvoi au moment exact. Elle expose aussi un serveur MCP de seize outils, de sorte que Claude ou ChatGPT peuvent chercher dans vos réunions, mais seulement celles que vous autorisez, et chaque réunion indique ce qui a quitté le Mac. Transcription et reconnaissance des voix fonctionnent hors ligne ; le modèle Gemma 4 (4,4 Go) demande 16 Go de mémoire.</p>
+<p>Prix : cinq réunions gratuites, puis 29,99 € une fois (tarif de lancement, 39,99 € ensuite), via l'App Store. Exige macOS 26 et une puce Apple. La version iPhone, iPad et Apple Watch est en bêta publique TestFlight.<br />
+<a href="https://roundnote.eu/">https://roundnote.eu/</a></p>
+<h3>emcee — un remplaçant du Stage Manager</h3>
+<p>Stage Manager déplace les fenêtres entre les groupes de sa propre initiative et n'accepte pas leur réordonnancement ; emcee reprend la bande latérale familière en laissant faire l'inverse : nombre de groupes libre, ordre modifiable, glisser-déposer des applications d'un groupe à l'autre, nouvelle fenêtre qui s'ouvre dans le groupe courant, plusieurs bureaux et écrans, groupes conservés à la fermeture de session. L'auteur (Fuzzy Foundry) prévient qu'il s'agit d'un gestionnaire de fenêtres par groupes, pas d'un gestionnaire de pavage : AeroSpace reste préférable pour le pilotage au clavier, et il est libre et gratuit.</p>
+<p>Prix : 2,99 $ en achat unique, valable trois machines, essai de trois jours. Exige macOS 26, ainsi que les permissions d'accessibilité et d'enregistrement d'écran. Également annoncé sur Hacker News (un point, aucun commentaire au moment de la collecte).<br />
+<a href="https://fuzzyfoundry.com/emcee">https://fuzzyfoundry.com/emcee</a></p>
+<h3>PocketBar — des applications Android dans la barre de menus du Mac</h3>
+<p>Plutôt qu'un émulateur complet, PocketBar garde Android 11 à 16 en arrière-plan et ouvre chaque application Android dans sa propre petite fenêtre, lancée depuis la barre de menus (⌥ espace). Gestion des APK, de F-Droid, IzzyOnDroid et du magasin Aurora, variante avec les services Google Play pour YouTube ou TikTok, mémoire allouée réglable avec indicateur en direct, verrouillage par Touch ID, blocage des publicités. Les applications bancaires et de paiement ne fonctionnent en général pas.</p>
+<p>Prix : gratuit pour une application épinglée, Pro à 9,99 € en achat unique couvrant la branche 1.x, essai Pro de sept jours. Exige une puce Apple M1 ou plus récente, macOS 14 ou plus, et 2 à 3 Go pour l'image Android.<br />
+<a href="https://pocketbar.site">https://pocketbar.site</a></p>
+<h3>Glade — un canevas pour ce qu'on met de côté</h3>
+<p>Chaque collection est un « bosquet » : un canevas infini où liens, images, vidéos, notes et fichiers se posent côte à côte et se regroupent à la main. Pas de serveur ni de compte, synchronisation par votre propre iCloud, raccourci global, lecteur intégré qui garde le texte d'un article même si le lien meurt, recherche dans Spotlight, widgets. L'auteur compare honnêtement à Raindrop.io (meilleur si vous avez besoin du web et de Windows) et à mymind (Glade laisse placer et grouper soi-même).</p>
+<p>Prix : gratuit jusqu'à 100 éléments et trois bosquets ; au-delà, 1,99 $ par mois, 14,99 $ par an ou 24,99 $ à vie au tarif de lancement (jusqu'au 6 décembre, ensuite 49,99 $). La présence d'une formule par abonnement est à signaler, même si l'option perpétuelle existe.<br />
+<a href="https://apps.apple.com/app/id6823751824">https://apps.apple.com/app/id6823751824</a></p>
+<h3>Better Stickies — des pense-bêtes qui acceptent images, GIF et code</h3>
+<p>Pense-bêtes flottants ou latéraux, toujours au-dessus des autres fenêtres y compris en plein écran, avec collage intelligent : une capture d'écran, un dossier, un bloc de code ou un GIF collé dans une note y prend directement la bonne forme. Jusqu'à trois pages par note, rappels, recherche dans toutes les notes, notes stockées en JSON local, fonctionne hors ligne, sans Electron. Édité aussi pour Windows, Linux (Flathub, Snap) et prochainement le Mac App Store.</p>
+<p>Prix : version gratuite plafonnée à quatre notes, premium à 7,99 $ en achat unique valable cinq machines (moitié prix pour les enseignants, et l'auteur propose une licence gratuite sur demande). Version Mac réservée aux puces Apple, macOS 15 ou plus récent.<br />
+<a href="https://betterstickies.com/">https://betterstickies.com/</a></p>
+<h3>Geet — lecteur de musique YouTube dans la barre de menus, libre et gratuit</h3>
+<p>Petit lecteur natif qui tient une bibliothèque de mix, de listes de lecture et de radios YouTube, ouvre une fenêtre de navigation discrète et s'efface ensuite. Léger face à un onglet de navigateur, piloté par les touches multimédia, bibliothèque et historique conservés sur le Mac sans mesure d'audience ; la récupération des métadonnées passe par yt-dlp. Comparé par l'auteur à Lofi Space et Poolsuite FM, qu'il cite comme sources d'inspiration.</p>
+<p>Prix : gratuit et libre. Dépôt <code>ArsalanDotMe/geetapp</code> sous licence MIT, une étoile, dernière poussée le 8 novembre 2026 : le projet est tout neuf, à traiter comme tel.<br />
+<a href="https://github.com/ArsalanDotMe/geetapp/releases">https://github.com/ArsalanDotMe/geetapp/releases</a></p>
+<h3>Research Vault (eggnomic.com) — une capture d'écran, un dossier sur l'entreprise</h3>
+<p>Application Mac qui transforme une capture d'écran d'entreprise, de fonds ou de personne publique en fiche de renseignement, relie les gens entre eux (qui a fondé quoi, qui a financé qui) et remet chaque matin les captures de la veille pour décider quoi approfondir. Tout reste sur la machine. Réserves : l'application exige que Codex ou Claude Code soient installés et connectés, et son site n'affiche aucun prix à cette heure — l'annonce, parue sur Hacker News, n'a recueilli qu'un point et un commentaire.<br />
+<a href="https://eggnomic.com">https://eggnomic.com</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Le flux des casks Homebrew a signalé vingt-quatre versions d'applications macOS le 8 novembre. Il ne transporte que le numéro de version, jamais le journal des changements : ces lignes disent qu'une version est sortie, pas ce qu'elle apporte. Les voici, sans hiérarchie :</p>
+<p>alma 0.4.498 · artcraft-launcher 0.16.1 · clawd-on-desk 1.6.0 · codeburn-app 0.9.28 · cuadriver 0.43.2 · dbx 0.6.68 · magpie 0.1.3300 · mathcha-notebook 1.0.464 · motrix 2.4.0 · muesli 0.8.6 · multiviewer 2.16.0 · nostalgiapp 1.2.5.6 · nvalt 3.0.33 · openchamber 2.7.0 · openframe-console 1.0.213 · pastenow 2.37 · praat 7.0.03 · reader 0.1.3456 · remnote 1.29.8 · riverside-studio 1.34.1 · squirrelsql 5.2.0 · textus 1.3.11 · thelowtechguys-cling 3.5.1 · trilium-notes 0.107.0</p>
+<p>Quatre d'entre elles méritent une ligne de plus, pour la nature du logiciel :</p>
+<ul>
+<li><strong>praat 7.0.03</strong> — analyse phonétique et acoustique, gratuit et utilisé en enseignement comme en recherche ; utile pour toute exploitation de la voix en classe.</li>
+<li><strong>trilium-notes 0.107.0</strong> — base de connaissances locale et hiérarchique, licence AGPL-3.0, environ 38 700 étoiles sur GitHub, dépôt actif (dernière poussée le 8 novembre).</li>
+<li><strong>lagrange 2.0.1</strong> — navigateur pour le protocole Gemini, licence BSD-2, environ 1 500 étoiles, dépôt actif ; le passage à la branche 2.0 est un changement de version majeure, signalé par la fusion du cask et non par la liste ci-dessus.</li>
+<li><strong>motrix 2.4.0</strong> — gestionnaire de téléchargement libre (environ 58 000 étoiles), mais la licence n'est pas reconnue automatiquement par GitHub, ce qui mérite vérification avant de s'y fier.</li>
+</ul>
+<h2>Volume</h2>
+<p>Quatre-vingt-quatorze entrées publiées depuis le 5 novembre ont été examinées dans les neuf journaux de cette veille ; onze applications ou outils nouveaux sont retenus, vingt-quatre versions d'applications macOS le sont aussi au titre des mises à jour, cinquante-neuf entrées sont écartées (questions, demandes de support, actualité Apple sans logiciel annoncé, promotions d'applications par abonnement — c'est le cas de Tele, partage de fenêtres entre deux Mac, facturé 5,99 € par mois, 49 € par an ou 149 € à vie). Cent soixante-quinze entrées plus anciennes que l'horizon de quatre jours ont été marquées comme traitées sans être publiées. La dernière collecte s'est déroulée sans erreur, d'après <code>meta.json</code>.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source Reddit s'éteint mais tient encore : le subreddit a fourni onze sorties, dont huit outils neufs gratuits ou à achat unique modique, écrits par leurs auteurs.</li>
+<li>Le fil le plus utile de la journée : trois applications de traitement local du document et de l'audio (Bibliome, Roundnote, Feather Drive) qui font tout sur la machine, sans compte ni abonnement.</li>
+<li>Côté mises à jour, Homebrew a signalé vingt-quatre casks le 8 novembre ; le flux ne porte que le numéro de version, sans journal des changements.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Feather Drive — Google Drive et Dropbox montés comme un disque, sans téléchargement</h3>
+<p>Application native construite sur les extensions de système de fichiers introduites par macOS 26 : vos fichiers restent dans votre propre compte Google Drive ou Dropbox, Finder les affiche comme un disque, et une lecture ne rapatrie que les octets demandés par l'application. Un fichier de 92 Go s'ouvre sur un Mac disposant de 10 Go libres, et rien ne s'accumule sur le disque. Le chiffrement de bout en bout est facultatif, la connexion se fait directement chez l'hébergeur (rien ne passe par un serveur intermédiaire) et l'application demande la permission restreinte <code>drive.file</code>, qui ne lui donne pas accès au reste du compte.</p>
+<p>Prix : 19,99 $ à vie (trois Mac, mises à jour de la branche 1.x) ou 4,99 $ pour un mois, essai de trois jours sans limitation. Exige macOS 26 ou plus récent, Apple Silicon ou Intel selon la machine compatible Tahoe.<br />
+<a href="https://featherdrive.app/">https://featherdrive.app/</a></p>
+<h3>Folder Quick Look 2 — voir l'intérieur d'un dossier ou d'une archive sans l'ouvrir</h3>
+<p>Martin Lexow republie entièrement son extension de l'aperçu rapide : un dossier, une archive ou un fichier Markdown sélectionné et pressé avec la barre d'espace montre son contenu et son arborescence au lieu d'une icône vide. Markdown y apparaît mis en forme. La première version était déjà citée par John Gruber comme une fonction qui aurait dû être dans le Finder.</p>
+<p>Prix : 3,99 $ en achat unique, Mac App Store, distribution sandboxée uniquement. L'application est propriétaire, mais le tarif relève du achat modique sans abonnement.<br />
+<a href="https://apps.apple.com/app/folder-quick-look/id6753110395">https://apps.apple.com/app/folder-quick-look/id6753110395</a></p>
+<h3>Classycal — agenda minimaliste sans compte ni télémétrie</h3>
+<p>Agenda et gestionnaire de rappels Apple, où l'on saisit un rendez-vous en langage naturel (« déjeuner mardi 12 h 30 ») et où les rappels de l'application Rappels servent de vraies tâches. Pas de compte, pas de télémétrie, pas d'assistant greffé. Une barre de commandes s'ouvre depuis n'importe quelle application, Mac et iPhone partagent le même achat.</p>
+<p>Prix : la version gratuite est un agenda complet, y compris les fonctions propres au Mac. L'option Plus est en tarif de lancement jusqu'au 30 novembre à 10 $ par an ou 20 $ à vie (ensuite 20 $ par an et 60 $ à vie) ; essai de quatorze jours. À noter : c'est un abonnement pour la formule annuelle, avec une option perpétuelle.<br />
+<a href="https://classycal.app/">https://classycal.app/</a></p>
+<h3>Bibliome — des fiches de révision fabriquées à partir de vos propres PDF, en local</h3>
+<p>Bibliome Library range, cherche et interroge une bibliothèque de PDF avec un modèle qui tourne sur la machine. La nouveauté annoncée est la fabrication de fiches : on choisit un document et une plage de pages, l'application rédige des cartes question-réponse et des textes à trous construits sur de vraies phrases du document, chacune gardant le passage d'origine et un lien vers la page. Révision par répétition espacée (FSRS, quatre notes au clavier), export vers Anki, CSV ou feuille Markdown. L'indexation se fait sur place, sans déplacer ni renommer les fichiers ; la version iPhone et iPad est gratuite et lit la même bibliothèque par iCloud.</p>
+<p>Prix : 29,99 $ en achat unique sur le Mac App Store, sans abonnement. À vérifier tout de même : l'application est sortie ce mois-ci et son numéro de version (1.0.3 au moment de la recension ci-dessous) la désigne comme un produit jeune. Source : recension de Scoring Notes.<br />
+<a href="https://apps.apple.com/us/app/bibliome-library/id6786826590">https://apps.apple.com/us/app/bibliome-library/id6786826590</a></p>
+<h3>Roundnote — vos réunions interrogeables, sur votre Mac</h3>
+<p>Application néerlandaise qui enregistre et transcrit les réunions en local (Teams, Zoom, Webex, FaceTime, ou une réunion en salle), distingue les voix avec consentement, conserve chaque réunion et permet de poser des questions sur l'ensemble : « qu'avait-on convenu avec Acme jeudi dernier ? » — réponse par Gemma 4 sur la machine, avec renvoi au moment exact. Elle expose aussi un serveur MCP de seize outils, de sorte que Claude ou ChatGPT peuvent chercher dans vos réunions, mais seulement celles que vous autorisez, et chaque réunion indique ce qui a quitté le Mac. Transcription et reconnaissance des voix fonctionnent hors ligne ; le modèle Gemma 4 (4,4 Go) demande 16 Go de mémoire.</p>
+<p>Prix : cinq réunions gratuites, puis 29,99 € une fois (tarif de lancement, 39,99 € ensuite), via l'App Store. Exige macOS 26 et une puce Apple. La version iPhone, iPad et Apple Watch est en bêta publique TestFlight.<br />
+<a href="https://roundnote.eu/">https://roundnote.eu/</a></p>
+<h3>emcee — un remplaçant du Stage Manager</h3>
+<p>Stage Manager déplace les fenêtres entre les groupes de sa propre initiative et n'accepte pas leur réordonnancement ; emcee reprend la bande latérale familière en laissant faire l'inverse : nombre de groupes libre, ordre modifiable, glisser-déposer des applications d'un groupe à l'autre, nouvelle fenêtre qui s'ouvre dans le groupe courant, plusieurs bureaux et écrans, groupes conservés à la fermeture de session. L'auteur (Fuzzy Foundry) prévient qu'il s'agit d'un gestionnaire de fenêtres par groupes, pas d'un gestionnaire de pavage : AeroSpace reste préférable pour le pilotage au clavier, et il est libre et gratuit.</p>
+<p>Prix : 2,99 $ en achat unique, valable trois machines, essai de trois jours. Exige macOS 26, ainsi que les permissions d'accessibilité et d'enregistrement d'écran. Également annoncé sur Hacker News (un point, aucun commentaire au moment de la collecte).<br />
+<a href="https://fuzzyfoundry.com/emcee">https://fuzzyfoundry.com/emcee</a></p>
+<h3>PocketBar — des applications Android dans la barre de menus du Mac</h3>
+<p>Plutôt qu'un émulateur complet, PocketBar garde Android 11 à 16 en arrière-plan et ouvre chaque application Android dans sa propre petite fenêtre, lancée depuis la barre de menus (⌥ espace). Gestion des APK, de F-Droid, IzzyOnDroid et du magasin Aurora, variante avec les services Google Play pour YouTube ou TikTok, mémoire allouée réglable avec indicateur en direct, verrouillage par Touch ID, blocage des publicités. Les applications bancaires et de paiement ne fonctionnent en général pas.</p>
+<p>Prix : gratuit pour une application épinglée, Pro à 9,99 € en achat unique couvrant la branche 1.x, essai Pro de sept jours. Exige une puce Apple M1 ou plus récente, macOS 14 ou plus, et 2 à 3 Go pour l'image Android.<br />
+<a href="https://pocketbar.site">https://pocketbar.site</a></p>
+<h3>Glade — un canevas pour ce qu'on met de côté</h3>
+<p>Chaque collection est un « bosquet » : un canevas infini où liens, images, vidéos, notes et fichiers se posent côte à côte et se regroupent à la main. Pas de serveur ni de compte, synchronisation par votre propre iCloud, raccourci global, lecteur intégré qui garde le texte d'un article même si le lien meurt, recherche dans Spotlight, widgets. L'auteur compare honnêtement à Raindrop.io (meilleur si vous avez besoin du web et de Windows) et à mymind (Glade laisse placer et grouper soi-même).</p>
+<p>Prix : gratuit jusqu'à 100 éléments et trois bosquets ; au-delà, 1,99 $ par mois, 14,99 $ par an ou 24,99 $ à vie au tarif de lancement (jusqu'au 6 décembre, ensuite 49,99 $). La présence d'une formule par abonnement est à signaler, même si l'option perpétuelle existe.<br />
+<a href="https://apps.apple.com/app/id6823751824">https://apps.apple.com/app/id6823751824</a></p>
+<h3>Better Stickies — des pense-bêtes qui acceptent images, GIF et code</h3>
+<p>Pense-bêtes flottants ou latéraux, toujours au-dessus des autres fenêtres y compris en plein écran, avec collage intelligent : une capture d'écran, un dossier, un bloc de code ou un GIF collé dans une note y prend directement la bonne forme. Jusqu'à trois pages par note, rappels, recherche dans toutes les notes, notes stockées en JSON local, fonctionne hors ligne, sans Electron. Édité aussi pour Windows, Linux (Flathub, Snap) et prochainement le Mac App Store.</p>
+<p>Prix : version gratuite plafonnée à quatre notes, premium à 7,99 $ en achat unique valable cinq machines (moitié prix pour les enseignants, et l'auteur propose une licence gratuite sur demande). Version Mac réservée aux puces Apple, macOS 15 ou plus récent.<br />
+<a href="https://betterstickies.com/">https://betterstickies.com/</a></p>
+<h3>Geet — lecteur de musique YouTube dans la barre de menus, libre et gratuit</h3>
+<p>Petit lecteur natif qui tient une bibliothèque de mix, de listes de lecture et de radios YouTube, ouvre une fenêtre de navigation discrète et s'efface ensuite. Léger face à un onglet de navigateur, piloté par les touches multimédia, bibliothèque et historique conservés sur le Mac sans mesure d'audience ; la récupération des métadonnées passe par yt-dlp. Comparé par l'auteur à Lofi Space et Poolsuite FM, qu'il cite comme sources d'inspiration.</p>
+<p>Prix : gratuit et libre. Dépôt <code>ArsalanDotMe/geetapp</code> sous licence MIT, une étoile, dernière poussée le 8 novembre 2026 : le projet est tout neuf, à traiter comme tel.<br />
+<a href="https://github.com/ArsalanDotMe/geetapp/releases">https://github.com/ArsalanDotMe/geetapp/releases</a></p>
+<h3>Research Vault (eggnomic.com) — une capture d'écran, un dossier sur l'entreprise</h3>
+<p>Application Mac qui transforme une capture d'écran d'entreprise, de fonds ou de personne publique en fiche de renseignement, relie les gens entre eux (qui a fondé quoi, qui a financé qui) et remet chaque matin les captures de la veille pour décider quoi approfondir. Tout reste sur la machine. Réserves : l'application exige que Codex ou Claude Code soient installés et connectés, et son site n'affiche aucun prix à cette heure — l'annonce, parue sur Hacker News, n'a recueilli qu'un point et un commentaire.<br />
+<a href="https://eggnomic.com">https://eggnomic.com</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Le flux des casks Homebrew a signalé vingt-quatre versions d'applications macOS le 8 novembre. Il ne transporte que le numéro de version, jamais le journal des changements : ces lignes disent qu'une version est sortie, pas ce qu'elle apporte. Les voici, sans hiérarchie :</p>
+<p>alma 0.4.498 · artcraft-launcher 0.16.1 · clawd-on-desk 1.6.0 · codeburn-app 0.9.28 · cuadriver 0.43.2 · dbx 0.6.68 · magpie 0.1.3300 · mathcha-notebook 1.0.464 · motrix 2.4.0 · muesli 0.8.6 · multiviewer 2.16.0 · nostalgiapp 1.2.5.6 · nvalt 3.0.33 · openchamber 2.7.0 · openframe-console 1.0.213 · pastenow 2.37 · praat 7.0.03 · reader 0.1.3456 · remnote 1.29.8 · riverside-studio 1.34.1 · squirrelsql 5.2.0 · textus 1.3.11 · thelowtechguys-cling 3.5.1 · trilium-notes 0.107.0</p>
+<p>Quatre d'entre elles méritent une ligne de plus, pour la nature du logiciel :</p>
+<ul>
+<li><strong>praat 7.0.03</strong> — analyse phonétique et acoustique, gratuit et utilisé en enseignement comme en recherche ; utile pour toute exploitation de la voix en classe.</li>
+<li><strong>trilium-notes 0.107.0</strong> — base de connaissances locale et hiérarchique, licence AGPL-3.0, environ 38 700 étoiles sur GitHub, dépôt actif (dernière poussée le 8 novembre).</li>
+<li><strong>lagrange 2.0.1</strong> — navigateur pour le protocole Gemini, licence BSD-2, environ 1 500 étoiles, dépôt actif ; le passage à la branche 2.0 est un changement de version majeure, signalé par la fusion du cask et non par la liste ci-dessus.</li>
+<li><strong>motrix 2.4.0</strong> — gestionnaire de téléchargement libre (environ 58 000 étoiles), mais la licence n'est pas reconnue automatiquement par GitHub, ce qui mérite vérification avant de s'y fier.</li>
+</ul>
+<h2>Volume</h2>
+<p>Quatre-vingt-quatorze entrées publiées depuis le 5 novembre ont été examinées dans les neuf journaux de cette veille ; onze applications ou outils nouveaux sont retenus, vingt-quatre versions d'applications macOS le sont aussi au titre des mises à jour, cinquante-neuf entrées sont écartées (questions, demandes de support, actualité Apple sans logiciel annoncé, promotions d'applications par abonnement — c'est le cas de Tele, partage de fenêtres entre deux Mac, facturé 5,99 € par mois, 49 € par an ou 149 € à vie). Cent soixante-quinze entrées plus anciennes que l'horizon de quatre jours ont été marquées comme traitées sans être publiées. La dernière collecte s'est déroulée sans erreur, d'après <code>meta.json</code>.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille ArtCraft — lundi 9 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-09.html</link>
+<guid isPermaLink="false">artcraft-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:01:58 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le lanceur a ajouté ArtCraft Studio à son catalogue le 7 novembre (v0.16.0) puis l'en a retiré le lendemain (v0.16.1), sans motif publié : le studio n'est plus installable depuis le lanceur.</li>
+<li>NoteCraft, la réimplémentation libre de OneNote écrite en Rust, publie sa version 0.0.9, avec une première sortie Android.</li>
+<li>Des applications tierces commencent à proposer un bouton d'export vers les applications de la suite ; côté logiciels comparables, rien de daté ces dernières 24 heures.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft Studio ajouté puis retiré du lanceur — v0.16.0 et v0.16.1</h3>
+<p>C'est la nouvelle de la journée, et elle est vérifiable dans les notes de version du lanceur. La version <strong>0.16.0</strong>, publiée le 7 novembre à 5 h 21 UTC, a ajouté ArtCraft Studio au catalogue du lanceur, sous l'intitulé « Add ArtCraft Studio without a publisher badge » (PR 1290, par dylanmtaylor) ; une série de commits du 6 et du 7 novembre adapte le lanceur à cette entrée : analyse des étiquettes de version « Studio », prise en charge de ses fichiers de publication, traitement particulier de macOS, et exclusion d'ArtCraft sur FreeBSD. Puis la version <strong>0.16.1</strong>, publiée le 8 novembre à 1 h 49 UTC, fait exactement l'inverse : « chore(catalog): remove ArtCraft Studio from launcher suite » (PR 1318, même auteur). <strong>Aucun motif n'est donné</strong> dans la note de version, et le studio reste absent du lanceur à cette heure.</p>
+<p>Ce va-et-vient est ce que le post signale, en une phrase : « The git change does not explain why ». C'est une lecture juste. Ce qu'on peut dire avec certitude : l'ajout puis le retrait sont deux modifications volontaires, datées et séparées d'une journée, la première mentionnant explicitement l'absence de badge d'éditeur. On peut supposer un retrait lié à cette absence de badge ou à un problème de publication, mais c'est une hypothèse, pas une information. Pour l'utilisateur, la conséquence pratique est simple : ArtCraft Studio s'installe par téléchargement direct depuis le site, pas depuis le lanceur.</p>
+<ul>
+<li>Version 0.16.0 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.0</li>
+<li>Version 0.16.1 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.1</li>
+<li>Dépôt du lanceur : https://github.com/storytold/craft-launcher</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xr0xle/artcraft_studio_removed_from_launcher_in_latest/ — u/espero</li>
+</ul>
+<p>À signaler au passage, sans gravité : la page de téléchargement de l'éditeur annonce encore la version <strong>0.41.0</strong> alors que le dépôt a publié la 0.41.1 le 7 novembre. Simple retard de la page, sans effet sur les fichiers réellement servis.</p>
+<h3>Des applications tierces ajoutent un bouton « export vers ArtCraft »</h3>
+<p>Un utilisateur rapporte qu'une application de conception de mouvement permet de générer et de planifier une vidéo avec Claude — l'outil garde une trace des corrections faites image par image et en tire des préférences réutilisables — puis d'<strong>exporter le projet vers FilmCraft</strong>. C'est le signe d'une intégration par l'aval : ArtCraft n'ouvre pas d'interface d'extension pour l'instant, mais d'autres logiciels choisissent le format des applications de la suite comme cible d'export. Réserve importante : le post ne nomme ni l'application ni un lien, et l'auteur écrit « Film craft », sans confirmation de l'éditeur. À prendre comme un signal d'écosystème, pas comme une annonce vérifiée.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xquvfe/apps_are_now_building_export_to_artcraft_buttons/ — u/Texas-X-</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>NoteCraft v0.0.9 — première version Android</h3>
+<p>NoteCraft est un projet <strong>communautaire et non officiel</strong> : une réimplémentation propre de Microsoft OneNote en Rust pur, publiée par AlienTechSoftware sous Apache-2.0 (dépôt créé récemment, 147 étoiles, très actif — dernier envoi le 8 novembre au soir). Son nom suit la convention de la suite sans en faire partie, et il faut donc le distinguer des applications de l'éditeur.</p>
+<p>La version 0.0.9, publiée le 8 novembre à 4 h 06 UTC, apporte une <strong>première sortie Android</strong> (contribution de MostafaXS1), un canevas infini qui permet de dessiner en dehors des blocs de texte, une interface traduite en treize langues avec une aide utilisateur en français et en espagnol, une organisation des pages revue, une installation homogène d'une plateforme à l'autre et un carnet de démonstration fourni comme contenu utilisateur. Une version de démonstration est utilisable directement en ligne. La multiplication des « Craft » hors éditeur est un point de confusion à surveiller pour qui suit la suite officielle.</p>
+<ul>
+<li>Version : https://github.com/AlienTechSoftware/notecraft/releases/tag/v0.0.9</li>
+<li>Essai en ligne : https://notecraft.cloud/</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqpgg1/unofficial_notecraft_v009_prerelease/ — u/PassNarrow3128</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>Logiciels comparables — rien de notable</h3>
+<p>Les recherches du jour sur ComfyUI, InvokeAI, Krita AI Diffusion et SD.Next ne remontent aucune parution datée des dernières 24 heures : la dernière version notable de Krita AI Diffusion reste une pré-version 1.54.0-pre du 3 octobre, et les pages de comparaison consultées ne sont pas datées du jour. <strong>Rien de notable</strong>, donc, sans que cela garantisse l'absence de toute modification.</p>
+<h2>Volume</h2>
+<p>21 posts publiés dans l'intervalle (source principale), 3 retenus, 18 écartés. La collecte ArtCraft du 8 novembre à 21 h 16 UTC s'est terminée sans erreur (4 nouveaux posts) ; les journaux de flux (publications, commits, YouTube du dépôt officiel) ne contenaient aucune entrée non traitée, la dernière version publiée étant la 0.41.1 du 7 novembre, déjà couverte par l'édition de dimanche.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le lanceur a ajouté ArtCraft Studio à son catalogue le 7 novembre (v0.16.0) puis l'en a retiré le lendemain (v0.16.1), sans motif publié : le studio n'est plus installable depuis le lanceur.</li>
+<li>NoteCraft, la réimplémentation libre de OneNote écrite en Rust, publie sa version 0.0.9, avec une première sortie Android.</li>
+<li>Des applications tierces commencent à proposer un bouton d'export vers les applications de la suite ; côté logiciels comparables, rien de daté ces dernières 24 heures.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft Studio ajouté puis retiré du lanceur — v0.16.0 et v0.16.1</h3>
+<p>C'est la nouvelle de la journée, et elle est vérifiable dans les notes de version du lanceur. La version <strong>0.16.0</strong>, publiée le 7 novembre à 5 h 21 UTC, a ajouté ArtCraft Studio au catalogue du lanceur, sous l'intitulé « Add ArtCraft Studio without a publisher badge » (PR 1290, par dylanmtaylor) ; une série de commits du 6 et du 7 novembre adapte le lanceur à cette entrée : analyse des étiquettes de version « Studio », prise en charge de ses fichiers de publication, traitement particulier de macOS, et exclusion d'ArtCraft sur FreeBSD. Puis la version <strong>0.16.1</strong>, publiée le 8 novembre à 1 h 49 UTC, fait exactement l'inverse : « chore(catalog): remove ArtCraft Studio from launcher suite » (PR 1318, même auteur). <strong>Aucun motif n'est donné</strong> dans la note de version, et le studio reste absent du lanceur à cette heure.</p>
+<p>Ce va-et-vient est ce que le post signale, en une phrase : « The git change does not explain why ». C'est une lecture juste. Ce qu'on peut dire avec certitude : l'ajout puis le retrait sont deux modifications volontaires, datées et séparées d'une journée, la première mentionnant explicitement l'absence de badge d'éditeur. On peut supposer un retrait lié à cette absence de badge ou à un problème de publication, mais c'est une hypothèse, pas une information. Pour l'utilisateur, la conséquence pratique est simple : ArtCraft Studio s'installe par téléchargement direct depuis le site, pas depuis le lanceur.</p>
+<ul>
+<li>Version 0.16.0 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.0</li>
+<li>Version 0.16.1 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.1</li>
+<li>Dépôt du lanceur : https://github.com/storytold/craft-launcher</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xr0xle/artcraft_studio_removed_from_launcher_in_latest/ — u/espero</li>
+</ul>
+<p>À signaler au passage, sans gravité : la page de téléchargement de l'éditeur annonce encore la version <strong>0.41.0</strong> alors que le dépôt a publié la 0.41.1 le 7 novembre. Simple retard de la page, sans effet sur les fichiers réellement servis.</p>
+<h3>Des applications tierces ajoutent un bouton « export vers ArtCraft »</h3>
+<p>Un utilisateur rapporte qu'une application de conception de mouvement permet de générer et de planifier une vidéo avec Claude — l'outil garde une trace des corrections faites image par image et en tire des préférences réutilisables — puis d'<strong>exporter le projet vers FilmCraft</strong>. C'est le signe d'une intégration par l'aval : ArtCraft n'ouvre pas d'interface d'extension pour l'instant, mais d'autres logiciels choisissent le format des applications de la suite comme cible d'export. Réserve importante : le post ne nomme ni l'application ni un lien, et l'auteur écrit « Film craft », sans confirmation de l'éditeur. À prendre comme un signal d'écosystème, pas comme une annonce vérifiée.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xquvfe/apps_are_now_building_export_to_artcraft_buttons/ — u/Texas-X-</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>NoteCraft v0.0.9 — première version Android</h3>
+<p>NoteCraft est un projet <strong>communautaire et non officiel</strong> : une réimplémentation propre de Microsoft OneNote en Rust pur, publiée par AlienTechSoftware sous Apache-2.0 (dépôt créé récemment, 147 étoiles, très actif — dernier envoi le 8 novembre au soir). Son nom suit la convention de la suite sans en faire partie, et il faut donc le distinguer des applications de l'éditeur.</p>
+<p>La version 0.0.9, publiée le 8 novembre à 4 h 06 UTC, apporte une <strong>première sortie Android</strong> (contribution de MostafaXS1), un canevas infini qui permet de dessiner en dehors des blocs de texte, une interface traduite en treize langues avec une aide utilisateur en français et en espagnol, une organisation des pages revue, une installation homogène d'une plateforme à l'autre et un carnet de démonstration fourni comme contenu utilisateur. Une version de démonstration est utilisable directement en ligne. La multiplication des « Craft » hors éditeur est un point de confusion à surveiller pour qui suit la suite officielle.</p>
+<ul>
+<li>Version : https://github.com/AlienTechSoftware/notecraft/releases/tag/v0.0.9</li>
+<li>Essai en ligne : https://notecraft.cloud/</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqpgg1/unofficial_notecraft_v009_prerelease/ — u/PassNarrow3128</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>Logiciels comparables — rien de notable</h3>
+<p>Les recherches du jour sur ComfyUI, InvokeAI, Krita AI Diffusion et SD.Next ne remontent aucune parution datée des dernières 24 heures : la dernière version notable de Krita AI Diffusion reste une pré-version 1.54.0-pre du 3 octobre, et les pages de comparaison consultées ne sont pas datées du jour. <strong>Rien de notable</strong>, donc, sans que cela garantisse l'absence de toute modification.</p>
+<h2>Volume</h2>
+<p>21 posts publiés dans l'intervalle (source principale), 3 retenus, 18 écartés. La collecte ArtCraft du 8 novembre à 21 h 16 UTC s'est terminée sans erreur (4 nouveaux posts) ; les journaux de flux (publications, commits, YouTube du dépôt officiel) ne contenaient aucune entrée non traitée, la dernière version publiée étant la 0.41.1 du 7 novembre, déjà couverte par l'édition de dimanche.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille du dimanche 8 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-08.html</link>
@@ -6316,194 +6530,6 @@ Reddit : https://www.reddit.com/r/ArtCraftAI/comments/1xntoen/lightcraft_renderi
 <p><em>Note : « Pour la Science » n'a rien publié de neuf depuis le 26 octobre (flux vérifié) ; la rubrique 5 est donc alimentée par ScienceDaily et Nature, avec les dates de publication.</em></p>
 <h2>À retenir</h2>
 <p>Deux échéances à ne pas manquer : les avis CERT-FR du 3 novembre dont GLPI touche directement les établissements, et la fermeture des flux RSS de Reddit le 13 novembre. Côté Python, Tachyon (profileur livré avec 3.15) est la nouveauté la plus directement exploitable en NSI.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille Clément Mondary — mercredi 4 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/mondary/2026-11-04.html</link>
-<guid isPermaLink="false">mondary-2026-11-04</guid>
-<pubDate>Wed, 04 Nov 2026 01:54:19 +0100</pubDate>
-<category>Clément Mondary</category>
-<description><![CDATA[<h1>Veille Clément Mondary — mercredi 4 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix billets publiés les 2 et 3 novembre, huit retenus, deux écartés. Aucune édition n'a été écrite le 3 novembre : celle-ci couvre donc deux jours de billets, et le seul envoi manquant est celui-là.<br />
-Le fil dominant reste l'outillage des agents de code — orchestration d'équipes, supervision de sessions, pilotage à distance depuis le navigateur ou le téléphone. À côté : un enregistreur d'écran, un carnet de notes en dossiers, un atelier SSH dans le navigateur et un nettoyeur de Mac.<br />
-La dernière collecte (3 novembre, 22 h 43 UTC) s'est faite sans erreur.</p>
-<h2>Documents, notes et bureautique</h2>
-<h3>OPENSCREEN</h3>
-<p>Enregistreur d'écran open source conçu pour produire une démonstration propre sans montage. Il place un zoom sur les clics pendant la prise, permet de retoucher le curseur après coup, transcrit la voix en local avec whisper.cpp et exporte en MP4 ou en GIF. Licence MIT, sans filigrane ni compte à créer, sur macOS, Windows et Linux.</p>
-<p>L'intérêt pour un cours : capter une manipulation d'écran (une fonction de tableur, une commande de terminal) et la garder en vidéo courte ou en GIF, sans passer par un service en ligne ni payer un abonnement. C'est le type d'outil qui sert deux fois, à vous pour préparer et aux élèves pour réviser.<br />
-<a href="https://mondary.design/2026/11/openscreen-enregistreur-ecran-open-source/">OPENSCREEN</a></p>
-<h3>NOTEM</h3>
-<p>Carnet de notes natif macOS qui refuse la base de données : chaque note est un dossier ordinaire sur le disque, contenant un fichier Markdown, un fichier riche pour la mise en forme, des métadonnées et les pièces jointes. Ouvrir le dossier dans le Finder, lire le Markdown avec la ligne de commande, copier le tout sur un disque externe : rien ne disparaît si l'application est supprimée. Les catégories sont des sous-dossiers, des règles de classement déplacent les notes non classées, et la recherche « par sens » s'appuie sur un calcul local. La synchronisation par iCloud Drive reste optionnelle et le mode hors ligne fonctionne sans compte.</p>
-<p>Deux limites : l'application est réservée à macOS (version 26 ou plus récente) et l'export vers Obsidian est à sens unique, l'application n'écrasant jamais un fichier qu'elle n'a pas créé. Rien n'est annoncé sur le prix dans le billet.</p>
-<p>Licence MIT. Dépôt <code>mikagosz/NoteM</code> : 9 étoiles, dernière poussée le 17 octobre 2026, écrit en Swift. Projet jeune, à essayer plutôt qu'à confier des notes uniques.<br />
-<a href="https://mondary.design/2026/11/notem-vos-notes-dans-des-dossiers-que-vous-possedez/">NOTEM</a></p>
-<h2>Intelligence artificielle, agents et modèles locaux</h2>
-<h3>OPENRIG</h3>
-<p>Harnais multi-agents auto-hébergé : au lieu de lancer six terminaux et de coordonner à la main, on décrit son équipe dans un fichier YAML — des groupes, des sièges, des règles de continuité — puis <code>rig up</code> démarre les sessions tmux et les agents. Un agent pilote reçoit les demandes et délègue ; <code>rig send</code> interroge directement le spécialiste d'un domaine, <code>rig queue</code> crée une tâche nommée avec un responsable, et chaque siège garde la même adresse (<code>dev-owner@mon-projet</code>) même quand la conversation qui l'occupe change. Le contexte et les décisions survivent donc d'une session à l'autre, ce qui est exactement ce qui manque quand on enchaîne les tâches longues avec Claude Code ou Codex.</p>
-<p>Sous le capot : un démon local, une interface en ligne de commande, une interface texte et un serveur MCP, le tout sur tmux et SQLite ; <code>rig down --snapshot</code> fige l'état complet de l'équipe et <code>rig up</code> le restaure. Des équipes prêtes à l'emploi sont fournies, de deux à sept sièges, dont une qui passe le travail de la prise en charge à la relecture.</p>
-<p>À savoir avant d'installer : Node.js 22 ou 24, tmux, macOS ou Linux — pas de Windows natif, WSL2 non testé. Et l'outil écrit des crochets et des réglages de confiance dans les configurations de Claude Code et de Codex, ce que la documentation détaille longuement.</p>
-<p>Licence Apache 2.0. Dépôt <code>mvschwarz/openrig</code> : 8 591 étoiles et une poussée le 4 novembre 2026 (l'auteur annonçait 4,6 k étoiles à la rédaction du billet, la progression explique l'écart).<br />
-<a href="https://mondary.design/2026/11/openrig-equipe-agents-persistante/">OPENRIG</a></p>
-<h3>HERDR WEB UI</h3>
-<p>Client navigateur et téléphone pour <code>herdr</code>, le gestionnaire de panneaux d'agents : chaque panneau — Claude Code, Codex, pi et quelques autres — devient une conversation lisible, avec le vrai terminal à un clic et des alertes poussées quand un agent attend une réponse. L'application ne lance rien : elle se branche sur une session <code>herdr</code> déjà en marche et lit les fichiers de session natifs, si bien que le panneau continue de vivre dans le terminal.</p>
-<p>L'usage concret : vous quittez l'écran pendant qu'un agent travaille, une demande d'approbation arrive en notification, vous répondez depuis la carte — le serveur vérifie au passage que le menu proposé est toujours le bon, ce qui évite de valider une question périmée. On peut joindre une capture d'écran, mentionner des fichiers ou empiler des messages pendant que l'agent continue. L'installation tient en une ligne (herdr 0.9.0 ou plus, Bun 1.4, Node 18 au minimum, sans droits d'administrateur) et l'interface écoute sur <code>127.0.0.1:7317</code>.</p>
-<p>Deux réserves : le chat n'est fidèle que pour les agents dont le fichier de session est lisible (les autres n'ont que la vue terminal, et sous Windows elle reste un miroir), et l'accès depuis le téléphone exige HTTPS — Tailscale, tunnel SSH ou serveur inverse.</p>
-<p>Licence MIT. Le dépôt indiqué par l'auteur (<code>devswha/herdr-web-ui</code>) redirige désormais vers <code>devswha/ovis</code>, le projet ayant été renommé : 1 851 étoiles, poussée le 4 novembre 2026, licence MIT confirmée par l'API.<br />
-<a href="https://mondary.design/2026/11/herdr-web-ui-pilotez-claude-code-et-codex-depuis-votre-telephone/">HERDR WEB UI</a></p>
-<h3>AGENT MONITOR</h3>
-<p>Tableau de bord local qui rend lisibles les sessions d'agents de code empilées dans les dossiers de fichiers JSONL. Au lancement il scanne les emplacements par défaut de chaque fournisseur (<code>~/.codex/sessions</code>, <code>~/.claude/projects</code>, <code>~/.pi/agent/sessions</code>, <code>~/.hermes</code>) sans configuration, liste les exécutions dans une barre latérale, et affiche l'agent principal avec tous ses sous-agents sous forme de graphe : chaque nœud porte son état, son modèle et ses jetons entrants et sortants, et un clic ouvre la trace complète (conversation, appels d'outils, résultats) dans un onglet.</p>
-<p>La partie budgétaire est soignée : totaux par agent, jetons par minute, cumul dans le temps et bascule par modèle. L'outil calcule des équivalents de facturation d'API — cache et paliers de contexte compris — et signale les modèles inconnus comme non tarifés plutôt que d'inventer un montant. Tout reste sur la machine, la base de l'agent Hermes est ouverte en lecture seule.</p>
-<p>Réserves : projet jeune (créé en septembre 2026), constructions non signées et, au 4 novembre, <strong>aucune licence déclarée</strong> dans le dépôt — à surveiller avant de s'y appuyer. Il existe des versions macOS, Windows et Linux, ou une exécution depuis les sources avec Node.js 22.12 ou plus.</p>
-<p>Dépôt <code>donvito/agent-monitor</code> : 86 étoiles, dernière poussée le 21 septembre 2026, TypeScript.<br />
-<a href="https://mondary.design/2026/11/agent-monitor-agents-de-code/">AGENT MONITOR</a></p>
-<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
-<h3>TERNSSH</h3>
-<p>Atelier SSH complet derrière une interface web : terminal, transfert de fichiers par SFTP, supervision en temps réel et widgets déplaçables sur un tableau de bord. Deux façons de le déployer, sur Cloudflare Workers ou en conteneur Docker, ce qui le place du côté des machines personnelles et des petits parcs plutôt que de l'infrastructure lourde.</p>
-<p>Pour un RUPN, la valeur tient à l'accès depuis n'importe quel navigateur, y compris depuis un poste où rien n'est installé, avec un tableau de bord qui montre en un coup d'œil l'état des serveurs suivis. À condition d'accepter d'exposer une interface web devant SSH : le déploiement et l'authentification sont donc à soigner avant toute mise en ligne.</p>
-<p>Licence GPL-3.0, présenté comme open source par l'auteur.<br />
-<a href="https://mondary.design/2026/11/ternssh-pilotez-vos-serveurs-ssh-depuis-un-tableau-de-bord-web/">TERNSSH</a></p>
-<h3>CLEARSPACE</h3>
-<p>Nettoyeur et désinstalleur pour Mac, construit autour d'une idée simple : rien n'est supprimé sans qu'on l'ait vu. Quatre outils séparés — aperçu global, nettoyage, désinstalleur, analyse de l'espace — dans une application qui ne cherche pas à tout faire. Le désinstalleur liste les fichiers liés à une application choisie, en épargnant les données partagées avec d'autres, et affiche le poids exact avant validation. Le nettoyage balaie par catégories : caches, journaux, données de navigateurs, fichiers de développement, reliquats. La vue « Space Lens » donne l'occupation disque en arborescence, tailles et parts du total, ce qui suffit à repérer un dossier oublié sans ouvrir plusieurs fenêtres du Finder.</p>
-<p>La prudence est explicite : chemins protégés (système, documents, applications en cours d'exécution) jamais proposés, tout passe par la corbeille, donc réversible ; l'accès complet au disque est demandé une seule fois pour lire les dossiers que macOS protège. Aucun compte, aucune télémétrie, application signée et notarisée par Apple.</p>
-<p>Réserves : Mac uniquement, Apple Silicon (M1 et plus récent) sous macOS 14 Sonoma ou plus, et version 0.2.2 — jeune. Surtout, <strong>ni prix ni licence ne sont annoncés</strong> sur le site officiel : l'information manque, il faudra la vérifier au téléchargement plutôt que de la supposer.<br />
-<a href="https://mondary.design/2026/11/clearspace-liberer-lespace-de-son-mac-sans-compromis/">CLEARSPACE</a></p>
-<h2>Sciences, données et création graphique</h2>
-<h3>SPACE UI</h3>
-<p>Registre de composants React au format shadcn, avec une différence de fond : le code est copié dans votre dépôt (<code>components/ui/</code>) au lieu d'arriver dans <code>node_modules</code>. Soixante primitives et quatre-vingts crochets sont gratuits — de quoi monter une interface complète —, le reste est payant : cent quatorze composants interactifs, les blocs de page en WebGL, les shaders et vingt-deux gabarits, pour 99 dollars par an ou 129 dollars une fois, licence commerciale comprise. Le dépôt du site est en MIT, et le code copié vous appartient dans tous les cas.</p>
-<p>Le point notable n'est pas la bibliothèque mais ce qui est fait pour les agents : aucune dépendance à mettre à jour, un index de documentation en texte brut (<code>/llms.txt</code>, <code>/llms-full.txt</code>, n'importe quelle page en Markdown), et un serveur MCP — celui, officiel, de shadcn — pour que Claude Code ou Cursor trouvent et installent les pièces sans quitter la conversation.</p>
-<p>Hors de votre chaîne habituelle (Markdown et LaTeX), mais utile si vous faites produire des pages web pour l'SNT ou pour un projet de classe : les primitives gratuites se testent sans rien engager.<br />
-<a href="https://mondary.design/2026/11/space-ui-le-registre-react-que-vos-agents-installent-eux-memes/">SPACE UI</a></p>
-<h2>Volume</h2>
-<p>10 billets publiés dans l'intervalle, 8 retenus, 2 écartés. LONGCAT-VIDEO-AVATAR, modèle de génération d'avatar vidéo piloté par l'audio (poids sous licence MIT mais démonstrations non utilisables commercialement, 13,6 milliards de paramètres, PyTorch 2.6 et CUDA 12.4) : hors de portée d'un poste de lycée et sans application réaliste pour vos cours. OPENNOW, client de bureau pour GeForce NOW : du jeu vidéo en streaming, quelle que soit la qualité du client. Aucun billet n'a été écarté faute de réel contenu.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille Clément Mondary — mercredi 4 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix billets publiés les 2 et 3 novembre, huit retenus, deux écartés. Aucune édition n'a été écrite le 3 novembre : celle-ci couvre donc deux jours de billets, et le seul envoi manquant est celui-là.<br />
-Le fil dominant reste l'outillage des agents de code — orchestration d'équipes, supervision de sessions, pilotage à distance depuis le navigateur ou le téléphone. À côté : un enregistreur d'écran, un carnet de notes en dossiers, un atelier SSH dans le navigateur et un nettoyeur de Mac.<br />
-La dernière collecte (3 novembre, 22 h 43 UTC) s'est faite sans erreur.</p>
-<h2>Documents, notes et bureautique</h2>
-<h3>OPENSCREEN</h3>
-<p>Enregistreur d'écran open source conçu pour produire une démonstration propre sans montage. Il place un zoom sur les clics pendant la prise, permet de retoucher le curseur après coup, transcrit la voix en local avec whisper.cpp et exporte en MP4 ou en GIF. Licence MIT, sans filigrane ni compte à créer, sur macOS, Windows et Linux.</p>
-<p>L'intérêt pour un cours : capter une manipulation d'écran (une fonction de tableur, une commande de terminal) et la garder en vidéo courte ou en GIF, sans passer par un service en ligne ni payer un abonnement. C'est le type d'outil qui sert deux fois, à vous pour préparer et aux élèves pour réviser.<br />
-<a href="https://mondary.design/2026/11/openscreen-enregistreur-ecran-open-source/">OPENSCREEN</a></p>
-<h3>NOTEM</h3>
-<p>Carnet de notes natif macOS qui refuse la base de données : chaque note est un dossier ordinaire sur le disque, contenant un fichier Markdown, un fichier riche pour la mise en forme, des métadonnées et les pièces jointes. Ouvrir le dossier dans le Finder, lire le Markdown avec la ligne de commande, copier le tout sur un disque externe : rien ne disparaît si l'application est supprimée. Les catégories sont des sous-dossiers, des règles de classement déplacent les notes non classées, et la recherche « par sens » s'appuie sur un calcul local. La synchronisation par iCloud Drive reste optionnelle et le mode hors ligne fonctionne sans compte.</p>
-<p>Deux limites : l'application est réservée à macOS (version 26 ou plus récente) et l'export vers Obsidian est à sens unique, l'application n'écrasant jamais un fichier qu'elle n'a pas créé. Rien n'est annoncé sur le prix dans le billet.</p>
-<p>Licence MIT. Dépôt <code>mikagosz/NoteM</code> : 9 étoiles, dernière poussée le 17 octobre 2026, écrit en Swift. Projet jeune, à essayer plutôt qu'à confier des notes uniques.<br />
-<a href="https://mondary.design/2026/11/notem-vos-notes-dans-des-dossiers-que-vous-possedez/">NOTEM</a></p>
-<h2>Intelligence artificielle, agents et modèles locaux</h2>
-<h3>OPENRIG</h3>
-<p>Harnais multi-agents auto-hébergé : au lieu de lancer six terminaux et de coordonner à la main, on décrit son équipe dans un fichier YAML — des groupes, des sièges, des règles de continuité — puis <code>rig up</code> démarre les sessions tmux et les agents. Un agent pilote reçoit les demandes et délègue ; <code>rig send</code> interroge directement le spécialiste d'un domaine, <code>rig queue</code> crée une tâche nommée avec un responsable, et chaque siège garde la même adresse (<code>dev-owner@mon-projet</code>) même quand la conversation qui l'occupe change. Le contexte et les décisions survivent donc d'une session à l'autre, ce qui est exactement ce qui manque quand on enchaîne les tâches longues avec Claude Code ou Codex.</p>
-<p>Sous le capot : un démon local, une interface en ligne de commande, une interface texte et un serveur MCP, le tout sur tmux et SQLite ; <code>rig down --snapshot</code> fige l'état complet de l'équipe et <code>rig up</code> le restaure. Des équipes prêtes à l'emploi sont fournies, de deux à sept sièges, dont une qui passe le travail de la prise en charge à la relecture.</p>
-<p>À savoir avant d'installer : Node.js 22 ou 24, tmux, macOS ou Linux — pas de Windows natif, WSL2 non testé. Et l'outil écrit des crochets et des réglages de confiance dans les configurations de Claude Code et de Codex, ce que la documentation détaille longuement.</p>
-<p>Licence Apache 2.0. Dépôt <code>mvschwarz/openrig</code> : 8 591 étoiles et une poussée le 4 novembre 2026 (l'auteur annonçait 4,6 k étoiles à la rédaction du billet, la progression explique l'écart).<br />
-<a href="https://mondary.design/2026/11/openrig-equipe-agents-persistante/">OPENRIG</a></p>
-<h3>HERDR WEB UI</h3>
-<p>Client navigateur et téléphone pour <code>herdr</code>, le gestionnaire de panneaux d'agents : chaque panneau — Claude Code, Codex, pi et quelques autres — devient une conversation lisible, avec le vrai terminal à un clic et des alertes poussées quand un agent attend une réponse. L'application ne lance rien : elle se branche sur une session <code>herdr</code> déjà en marche et lit les fichiers de session natifs, si bien que le panneau continue de vivre dans le terminal.</p>
-<p>L'usage concret : vous quittez l'écran pendant qu'un agent travaille, une demande d'approbation arrive en notification, vous répondez depuis la carte — le serveur vérifie au passage que le menu proposé est toujours le bon, ce qui évite de valider une question périmée. On peut joindre une capture d'écran, mentionner des fichiers ou empiler des messages pendant que l'agent continue. L'installation tient en une ligne (herdr 0.9.0 ou plus, Bun 1.4, Node 18 au minimum, sans droits d'administrateur) et l'interface écoute sur <code>127.0.0.1:7317</code>.</p>
-<p>Deux réserves : le chat n'est fidèle que pour les agents dont le fichier de session est lisible (les autres n'ont que la vue terminal, et sous Windows elle reste un miroir), et l'accès depuis le téléphone exige HTTPS — Tailscale, tunnel SSH ou serveur inverse.</p>
-<p>Licence MIT. Le dépôt indiqué par l'auteur (<code>devswha/herdr-web-ui</code>) redirige désormais vers <code>devswha/ovis</code>, le projet ayant été renommé : 1 851 étoiles, poussée le 4 novembre 2026, licence MIT confirmée par l'API.<br />
-<a href="https://mondary.design/2026/11/herdr-web-ui-pilotez-claude-code-et-codex-depuis-votre-telephone/">HERDR WEB UI</a></p>
-<h3>AGENT MONITOR</h3>
-<p>Tableau de bord local qui rend lisibles les sessions d'agents de code empilées dans les dossiers de fichiers JSONL. Au lancement il scanne les emplacements par défaut de chaque fournisseur (<code>~/.codex/sessions</code>, <code>~/.claude/projects</code>, <code>~/.pi/agent/sessions</code>, <code>~/.hermes</code>) sans configuration, liste les exécutions dans une barre latérale, et affiche l'agent principal avec tous ses sous-agents sous forme de graphe : chaque nœud porte son état, son modèle et ses jetons entrants et sortants, et un clic ouvre la trace complète (conversation, appels d'outils, résultats) dans un onglet.</p>
-<p>La partie budgétaire est soignée : totaux par agent, jetons par minute, cumul dans le temps et bascule par modèle. L'outil calcule des équivalents de facturation d'API — cache et paliers de contexte compris — et signale les modèles inconnus comme non tarifés plutôt que d'inventer un montant. Tout reste sur la machine, la base de l'agent Hermes est ouverte en lecture seule.</p>
-<p>Réserves : projet jeune (créé en septembre 2026), constructions non signées et, au 4 novembre, <strong>aucune licence déclarée</strong> dans le dépôt — à surveiller avant de s'y appuyer. Il existe des versions macOS, Windows et Linux, ou une exécution depuis les sources avec Node.js 22.12 ou plus.</p>
-<p>Dépôt <code>donvito/agent-monitor</code> : 86 étoiles, dernière poussée le 21 septembre 2026, TypeScript.<br />
-<a href="https://mondary.design/2026/11/agent-monitor-agents-de-code/">AGENT MONITOR</a></p>
-<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
-<h3>TERNSSH</h3>
-<p>Atelier SSH complet derrière une interface web : terminal, transfert de fichiers par SFTP, supervision en temps réel et widgets déplaçables sur un tableau de bord. Deux façons de le déployer, sur Cloudflare Workers ou en conteneur Docker, ce qui le place du côté des machines personnelles et des petits parcs plutôt que de l'infrastructure lourde.</p>
-<p>Pour un RUPN, la valeur tient à l'accès depuis n'importe quel navigateur, y compris depuis un poste où rien n'est installé, avec un tableau de bord qui montre en un coup d'œil l'état des serveurs suivis. À condition d'accepter d'exposer une interface web devant SSH : le déploiement et l'authentification sont donc à soigner avant toute mise en ligne.</p>
-<p>Licence GPL-3.0, présenté comme open source par l'auteur.<br />
-<a href="https://mondary.design/2026/11/ternssh-pilotez-vos-serveurs-ssh-depuis-un-tableau-de-bord-web/">TERNSSH</a></p>
-<h3>CLEARSPACE</h3>
-<p>Nettoyeur et désinstalleur pour Mac, construit autour d'une idée simple : rien n'est supprimé sans qu'on l'ait vu. Quatre outils séparés — aperçu global, nettoyage, désinstalleur, analyse de l'espace — dans une application qui ne cherche pas à tout faire. Le désinstalleur liste les fichiers liés à une application choisie, en épargnant les données partagées avec d'autres, et affiche le poids exact avant validation. Le nettoyage balaie par catégories : caches, journaux, données de navigateurs, fichiers de développement, reliquats. La vue « Space Lens » donne l'occupation disque en arborescence, tailles et parts du total, ce qui suffit à repérer un dossier oublié sans ouvrir plusieurs fenêtres du Finder.</p>
-<p>La prudence est explicite : chemins protégés (système, documents, applications en cours d'exécution) jamais proposés, tout passe par la corbeille, donc réversible ; l'accès complet au disque est demandé une seule fois pour lire les dossiers que macOS protège. Aucun compte, aucune télémétrie, application signée et notarisée par Apple.</p>
-<p>Réserves : Mac uniquement, Apple Silicon (M1 et plus récent) sous macOS 14 Sonoma ou plus, et version 0.2.2 — jeune. Surtout, <strong>ni prix ni licence ne sont annoncés</strong> sur le site officiel : l'information manque, il faudra la vérifier au téléchargement plutôt que de la supposer.<br />
-<a href="https://mondary.design/2026/11/clearspace-liberer-lespace-de-son-mac-sans-compromis/">CLEARSPACE</a></p>
-<h2>Sciences, données et création graphique</h2>
-<h3>SPACE UI</h3>
-<p>Registre de composants React au format shadcn, avec une différence de fond : le code est copié dans votre dépôt (<code>components/ui/</code>) au lieu d'arriver dans <code>node_modules</code>. Soixante primitives et quatre-vingts crochets sont gratuits — de quoi monter une interface complète —, le reste est payant : cent quatorze composants interactifs, les blocs de page en WebGL, les shaders et vingt-deux gabarits, pour 99 dollars par an ou 129 dollars une fois, licence commerciale comprise. Le dépôt du site est en MIT, et le code copié vous appartient dans tous les cas.</p>
-<p>Le point notable n'est pas la bibliothèque mais ce qui est fait pour les agents : aucune dépendance à mettre à jour, un index de documentation en texte brut (<code>/llms.txt</code>, <code>/llms-full.txt</code>, n'importe quelle page en Markdown), et un serveur MCP — celui, officiel, de shadcn — pour que Claude Code ou Cursor trouvent et installent les pièces sans quitter la conversation.</p>
-<p>Hors de votre chaîne habituelle (Markdown et LaTeX), mais utile si vous faites produire des pages web pour l'SNT ou pour un projet de classe : les primitives gratuites se testent sans rien engager.<br />
-<a href="https://mondary.design/2026/11/space-ui-le-registre-react-que-vos-agents-installent-eux-memes/">SPACE UI</a></p>
-<h2>Volume</h2>
-<p>10 billets publiés dans l'intervalle, 8 retenus, 2 écartés. LONGCAT-VIDEO-AVATAR, modèle de génération d'avatar vidéo piloté par l'audio (poids sous licence MIT mais démonstrations non utilisables commercialement, 13,6 milliards de paramètres, PyTorch 2.6 et CUDA 12.4) : hors de portée d'un poste de lycée et sans application réaliste pour vos cours. OPENNOW, client de bureau pour GeForce NOW : du jeu vidéo en streaming, quelle que soit la qualité du client. Aucun billet n'a été écarté faute de réel contenu.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille CTAN — mercredi 4 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/ctan/2026-11-04.html</link>
-<guid isPermaLink="false">ctan-2026-11-04</guid>
-<pubDate>Wed, 04 Nov 2026 01:43:14 +0100</pubDate>
-<category>CTAN</category>
-<description><![CDATA[<h1>Veille CTAN — mercredi 4 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Deux annonces de la période touchent des paquets que charge votre classe : <code>siunitx</code> 3.6.5 (signes avec <code>lua-unicode-math</code>) et <code>babel-french</code>, qui change de méthode pour les documents balisés.</li>
-<li>Un nouveau venu : <code>rustfig</code>, un xfig réécrit en Rust qui exporte vers TikZ, encore en version bêta.</li>
-<li>Le reste est périphérique : neuf mises à jour notables (tkz-elements, tkz-graph, tkz-berge, nameref, mismath…) et douze annonces écartées, principalement des gabarits de revues et de thèses et des paquets propres à une langue.</li>
-</ul>
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<ul>
-<li>
-<p><strong>babel-french</strong> (version datée du 01/11/2026, LPPL 1.3c) — le support du français pour <code>babel</code>, donc le français de tous vos documents. La version exige le format LaTeX du 1er novembre 2026 pour les documents qui commencent par <code>\DocumentMetadata{...}</code>. Pour ces documents, <code>babel-french</code> ne redéfinit plus aucune commande ni aucun environnement interne de LaTeX, afin de préserver le balisage PDF ; la même personnalisation passe désormais par les nouveaux gabarits. Les documents sans <code>\DocumentMetadata</code> ne sont pas touchés et rien ne doit y changer visiblement.<br />
-  Ce que cela implique : au commit <code>d80015b</code> de son dépôt (14 octobre 2026), <code>nBook3</code> ne pose aucun <code>\DocumentMetadata</code> et n'active donc pas le balisage ; cette version reste sans effet pour vous aujourd'hui. Le jour où il passera à <code>tagging=on</code>, la composition française dépendra entièrement des gabarits du paquet — il faudra alors une distribution LaTeX à jour (format ≥ 2026-11-01) et vérifier la classe, qui redéfinit elle-même beaucoup de choses. L'API CTAN ne donne pas de numéro de version, seulement la date du 01/11/2026, conforme à l'annonce. https://ctan.org/pkg/babel-french</p>
-</li>
-<li>
-<p><strong>siunitx</strong> 3.6.5 (02/11/2026, LPPL 1.3c) — corrige la gestion des symboles de signe avec <code>lua-unicode-math</code> (ticket #896). C'est précisément votre configuration : <code>nBook3</code> charge <code>fontspec</code>, <code>unicode-math</code> et <code>siunitx</code>, donc une compilation LuaLaTeX avec le paquet de mathématiques Unicode. Si vos grandeurs physiques affichaient un signe mal composé, cette version le corrige ; version et date confirmées par l'API CTAN. https://ctan.org/pkg/siunitx</p>
-</li>
-</ul>
-<h2>Nouveaux paquets pertinents</h2>
-<ul>
-<li><strong>rustfig</strong> 0.9.0-beta.7 — réimplémentation d'<code>xfig</code>, le logiciel de dessin vectoriel historique, écrite en Rust. Il lit et écrit les fichiers Fig 1.3 à 3.2, se comporte comme xfig et fonctionne nativement sous macOS, Windows et Linux. Il exporte, par un portage Rust de <code>fig2dev</code>, vers PDF, EPS, SVG, pdfLaTeX/pstex, l'environnement <code>picture</code> de LaTeX, <code>pict2e</code>, TikZ, PSTricks, PICT, METAPOST et Asymptote. Ce n'est pas un paquet chargé dans un document mais un programme de dessin : la voie intéressante pour vous est de tracer une figure (coupe géologique, schéma de cellule, graphe) puis d'exporter le code TikZ à coller dans le document. Réserve : la version annoncée est une bêta, et l'API CTAN ne donne pas de date de version ; pour une figure définitive, un export TikZ ou SVG reste plus sûr. Licences MIT, Apache 2.0 et other-free. https://ctan.org/pkg/rustfig</li>
-</ul>
-<h2>Autres mises à jour notables</h2>
-<ul>
-<li><strong>nameref</strong> — l'annonce porte la version 2.59 datée du 31/10/2026, alors que l'API CTAN donne déjà 2.60 datée du 03/11/2026 : le catalogue est en avance sur l'annonce, et je signale l'écart plutôt que de trancher. Corrige <code>\nameref</code> appliqué aux légendes (ticket #433) ; à surveiller puisque vous chargez <code>hyperref</code> et <code>caption</code>. https://ctan.org/pkg/nameref</li>
-<li><strong>tocloft</strong> 3.0d (30/10/2026) — remplace la clé obsolète <code>final-code</code> par <code>placement-end-code</code> dans le contrôle des tables des matières ; correction interne du projet LaTeX, sans effet sauf si un réglage de votre table des matières employait l'ancienne clé.</li>
-<li><strong>moreverb</strong> 2.3b (26/10/2026) — corrige les environnements de listing étoilés avec les moteurs Unicode (LuaLaTeX, XeLaTeX). Vous compilez en Unicode à cause de <code>fontspec</code>, donc la correction concerne votre famille d'outils, même si <code>listings</code> reste votre paquet de verbatim.</li>
-<li><strong>mismath</strong> 3.4 (01/11/2026) — deux nouvelles macros (<code>\innerprodsep</code>, <code>\integerintsep</code>), un correctif (retour d'<code>iftex</code>), des changements internes sur les opérateurs d'une lettre — et un changement d'interface à connaître : <code>\integerint</code> prend désormais deux arguments et n'exige plus <code>stmaryrd</code>. Si une commande de ce genre traîne dans vos sources, l'appel est à corriger.</li>
-<li><strong>tkz-elements</strong> 6.10c (01/11/2026) — ajoute un module 3D expérimental, chargé par <code>\usepackage[3d]{tkz-elements}</code> (fichiers <code>tkz-elements-3d.sty</code> et <code>tkz_elements_3d.lua</code>) : cube nommé ABCDEFGH avec les noms des manuels, projections et distances sur une droite et sur un plan, intersections droite/droite, droite/plan, plan/plan, plan/sphère, section d'un polyèdre par un plan. Documentation dédiée (<code>tkz-elements-3d.pdf</code>, expérimentale). Nécessite LuaLaTeX, comme le reste du paquet. Licence LPPL 1.3c.</li>
-<li><strong>tkz-graph</strong> 2.30c (02/11/2026) — nouvelles options <code>lua</code> et <code>3d</code>, réservées à LuaLaTeX, sans conflit avec <code>tkz-berge</code> et <code>tkz-elements</code>. L'option <code>lua</code> confie les calculs de théorie des graphes à Lua et expose le résultat : ordre, taille, degrés entrant/sortant, séquence de degrés, plus court chemin de Dijkstra, coloriage de Welsh-Powell, composantes connexes, caractère eulérien et chemin ou cycle eulérien de Hierholzer, puissance de la matrice d'adjacence et nombre de chemins. L'option <code>3d</code> reporte les graphes dans l'espace via le module 3D de <code>tkz-elements</code>. Avec pdfLaTeX, l'option provoque une erreur et est ignorée.</li>
-<li><strong>tkz-berge</strong> 2.30c (02/11/2026) — mêmes options que <code>tkz-graph</code> (sa documentation se charge avec l'option <code>lua</code>), plus une nouvelle section « New graphs and a gallery » : <code>\grHypercube</code>, <code>\grTree</code> et une série d'exemples classiques (graphe de Kneser K(5,2), Ramsey R(3,3), fuseau de Moser, construction de Mycielski, graphe de de Bruijn B(2,3), graphe de Paley P13, hypercube Q4 comme treillis des parties, tour de Hanoï / graphe de Sierpinski S(4,3), graphe de Hoffman-Singleton, rose mystique K24, graphe de Coxeter).</li>
-<li><strong>ProfCollege</strong> 1.00-g (01/11/2026) — correctif de l'environnement <code>Tableur</code>. Le paquet n'est pas dans la liste extraite de <code>nBook3</code> et vise les professeurs de mathématiques ; il figure ici parce qu'il sert à produire des fiches et des tableaux de conversion, et qu'il est déjà apparu dans l'édition du 2 novembre.</li>
-</ul>
-<h2>Volume</h2>
-<p>Vingt-trois annonces publiées dans l'intervalle (2 novembre, 07h10 UTC, au 3 novembre, 20h20 UTC), onze retenues — dont deux concernant vos paquets (<code>babel-french</code> et <code>siunitx</code>) — et douze écartées : gabarits propres à une revue ou à une thèse (asmeconf, acmart, scientific-thesis-cover, academic-paper-abnt), langue non latine ou écriture bidirectionnelle (cjk-ko pour le coréen, BabelBidi, spanish-mathml-intent pour le balisage espagnol), cours et articles d'explication sans conséquence pratique (latex-via-exemplos en portugais, expose-expl3-dunkerque-2019), modèles de CV (Lucid CV), citations bibliques (scripture) et configuration de police expérimentale faisant double emploi avec <code>fontspec</code> (lua-font-config). Aucune édition n'a été déposée le 3 novembre : l'intervalle couvre donc deux jours d'annonces. La dernière collecte (3 novembre, 22h43 UTC) n'a signalé aucune erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille CTAN — mercredi 4 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Deux annonces de la période touchent des paquets que charge votre classe : <code>siunitx</code> 3.6.5 (signes avec <code>lua-unicode-math</code>) et <code>babel-french</code>, qui change de méthode pour les documents balisés.</li>
-<li>Un nouveau venu : <code>rustfig</code>, un xfig réécrit en Rust qui exporte vers TikZ, encore en version bêta.</li>
-<li>Le reste est périphérique : neuf mises à jour notables (tkz-elements, tkz-graph, tkz-berge, nameref, mismath…) et douze annonces écartées, principalement des gabarits de revues et de thèses et des paquets propres à une langue.</li>
-</ul>
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<ul>
-<li>
-<p><strong>babel-french</strong> (version datée du 01/11/2026, LPPL 1.3c) — le support du français pour <code>babel</code>, donc le français de tous vos documents. La version exige le format LaTeX du 1er novembre 2026 pour les documents qui commencent par <code>\DocumentMetadata{...}</code>. Pour ces documents, <code>babel-french</code> ne redéfinit plus aucune commande ni aucun environnement interne de LaTeX, afin de préserver le balisage PDF ; la même personnalisation passe désormais par les nouveaux gabarits. Les documents sans <code>\DocumentMetadata</code> ne sont pas touchés et rien ne doit y changer visiblement.<br />
-  Ce que cela implique : au commit <code>d80015b</code> de son dépôt (14 octobre 2026), <code>nBook3</code> ne pose aucun <code>\DocumentMetadata</code> et n'active donc pas le balisage ; cette version reste sans effet pour vous aujourd'hui. Le jour où il passera à <code>tagging=on</code>, la composition française dépendra entièrement des gabarits du paquet — il faudra alors une distribution LaTeX à jour (format ≥ 2026-11-01) et vérifier la classe, qui redéfinit elle-même beaucoup de choses. L'API CTAN ne donne pas de numéro de version, seulement la date du 01/11/2026, conforme à l'annonce. https://ctan.org/pkg/babel-french</p>
-</li>
-<li>
-<p><strong>siunitx</strong> 3.6.5 (02/11/2026, LPPL 1.3c) — corrige la gestion des symboles de signe avec <code>lua-unicode-math</code> (ticket #896). C'est précisément votre configuration : <code>nBook3</code> charge <code>fontspec</code>, <code>unicode-math</code> et <code>siunitx</code>, donc une compilation LuaLaTeX avec le paquet de mathématiques Unicode. Si vos grandeurs physiques affichaient un signe mal composé, cette version le corrige ; version et date confirmées par l'API CTAN. https://ctan.org/pkg/siunitx</p>
-</li>
-</ul>
-<h2>Nouveaux paquets pertinents</h2>
-<ul>
-<li><strong>rustfig</strong> 0.9.0-beta.7 — réimplémentation d'<code>xfig</code>, le logiciel de dessin vectoriel historique, écrite en Rust. Il lit et écrit les fichiers Fig 1.3 à 3.2, se comporte comme xfig et fonctionne nativement sous macOS, Windows et Linux. Il exporte, par un portage Rust de <code>fig2dev</code>, vers PDF, EPS, SVG, pdfLaTeX/pstex, l'environnement <code>picture</code> de LaTeX, <code>pict2e</code>, TikZ, PSTricks, PICT, METAPOST et Asymptote. Ce n'est pas un paquet chargé dans un document mais un programme de dessin : la voie intéressante pour vous est de tracer une figure (coupe géologique, schéma de cellule, graphe) puis d'exporter le code TikZ à coller dans le document. Réserve : la version annoncée est une bêta, et l'API CTAN ne donne pas de date de version ; pour une figure définitive, un export TikZ ou SVG reste plus sûr. Licences MIT, Apache 2.0 et other-free. https://ctan.org/pkg/rustfig</li>
-</ul>
-<h2>Autres mises à jour notables</h2>
-<ul>
-<li><strong>nameref</strong> — l'annonce porte la version 2.59 datée du 31/10/2026, alors que l'API CTAN donne déjà 2.60 datée du 03/11/2026 : le catalogue est en avance sur l'annonce, et je signale l'écart plutôt que de trancher. Corrige <code>\nameref</code> appliqué aux légendes (ticket #433) ; à surveiller puisque vous chargez <code>hyperref</code> et <code>caption</code>. https://ctan.org/pkg/nameref</li>
-<li><strong>tocloft</strong> 3.0d (30/10/2026) — remplace la clé obsolète <code>final-code</code> par <code>placement-end-code</code> dans le contrôle des tables des matières ; correction interne du projet LaTeX, sans effet sauf si un réglage de votre table des matières employait l'ancienne clé.</li>
-<li><strong>moreverb</strong> 2.3b (26/10/2026) — corrige les environnements de listing étoilés avec les moteurs Unicode (LuaLaTeX, XeLaTeX). Vous compilez en Unicode à cause de <code>fontspec</code>, donc la correction concerne votre famille d'outils, même si <code>listings</code> reste votre paquet de verbatim.</li>
-<li><strong>mismath</strong> 3.4 (01/11/2026) — deux nouvelles macros (<code>\innerprodsep</code>, <code>\integerintsep</code>), un correctif (retour d'<code>iftex</code>), des changements internes sur les opérateurs d'une lettre — et un changement d'interface à connaître : <code>\integerint</code> prend désormais deux arguments et n'exige plus <code>stmaryrd</code>. Si une commande de ce genre traîne dans vos sources, l'appel est à corriger.</li>
-<li><strong>tkz-elements</strong> 6.10c (01/11/2026) — ajoute un module 3D expérimental, chargé par <code>\usepackage[3d]{tkz-elements}</code> (fichiers <code>tkz-elements-3d.sty</code> et <code>tkz_elements_3d.lua</code>) : cube nommé ABCDEFGH avec les noms des manuels, projections et distances sur une droite et sur un plan, intersections droite/droite, droite/plan, plan/plan, plan/sphère, section d'un polyèdre par un plan. Documentation dédiée (<code>tkz-elements-3d.pdf</code>, expérimentale). Nécessite LuaLaTeX, comme le reste du paquet. Licence LPPL 1.3c.</li>
-<li><strong>tkz-graph</strong> 2.30c (02/11/2026) — nouvelles options <code>lua</code> et <code>3d</code>, réservées à LuaLaTeX, sans conflit avec <code>tkz-berge</code> et <code>tkz-elements</code>. L'option <code>lua</code> confie les calculs de théorie des graphes à Lua et expose le résultat : ordre, taille, degrés entrant/sortant, séquence de degrés, plus court chemin de Dijkstra, coloriage de Welsh-Powell, composantes connexes, caractère eulérien et chemin ou cycle eulérien de Hierholzer, puissance de la matrice d'adjacence et nombre de chemins. L'option <code>3d</code> reporte les graphes dans l'espace via le module 3D de <code>tkz-elements</code>. Avec pdfLaTeX, l'option provoque une erreur et est ignorée.</li>
-<li><strong>tkz-berge</strong> 2.30c (02/11/2026) — mêmes options que <code>tkz-graph</code> (sa documentation se charge avec l'option <code>lua</code>), plus une nouvelle section « New graphs and a gallery » : <code>\grHypercube</code>, <code>\grTree</code> et une série d'exemples classiques (graphe de Kneser K(5,2), Ramsey R(3,3), fuseau de Moser, construction de Mycielski, graphe de de Bruijn B(2,3), graphe de Paley P13, hypercube Q4 comme treillis des parties, tour de Hanoï / graphe de Sierpinski S(4,3), graphe de Hoffman-Singleton, rose mystique K24, graphe de Coxeter).</li>
-<li><strong>ProfCollege</strong> 1.00-g (01/11/2026) — correctif de l'environnement <code>Tableur</code>. Le paquet n'est pas dans la liste extraite de <code>nBook3</code> et vise les professeurs de mathématiques ; il figure ici parce qu'il sert à produire des fiches et des tableaux de conversion, et qu'il est déjà apparu dans l'édition du 2 novembre.</li>
-</ul>
-<h2>Volume</h2>
-<p>Vingt-trois annonces publiées dans l'intervalle (2 novembre, 07h10 UTC, au 3 novembre, 20h20 UTC), onze retenues — dont deux concernant vos paquets (<code>babel-french</code> et <code>siunitx</code>) — et douze écartées : gabarits propres à une revue ou à une thèse (asmeconf, acmart, scientific-thesis-cover, academic-paper-abnt), langue non latine ou écriture bidirectionnelle (cjk-ko pour le coréen, BabelBidi, spanish-mathml-intent pour le balisage espagnol), cours et articles d'explication sans conséquence pratique (latex-via-exemplos en portugais, expose-expl3-dunkerque-2019), modèles de CV (Lucid CV), citations bibliques (scripture) et configuration de police expérimentale faisant double emploi avec <code>fontspec</code> (lua-font-config). Aucune édition n'a été déposée le 3 novembre : l'intervalle couvre donc deux jours d'annonces. La dernière collecte (3 novembre, 22h43 UTC) n'a signalé aucune erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

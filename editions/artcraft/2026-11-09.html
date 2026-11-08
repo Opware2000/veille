@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le lanceur a ajouté ArtCraft Studio à son catalogue le 7 novembre (v0.16.0) puis l'en a retiré le lendemain (v0.16.1), sans motif publié : le studio n'est plus installable depuis le lanceur.</li>
+<li>NoteCraft, la réimplémentation libre de OneNote écrite en Rust, publie sa version 0.0.9, avec une première sortie Android.</li>
+<li>Des applications tierces commencent à proposer un bouton d'export vers les applications de la suite ; côté logiciels comparables, rien de daté ces dernières 24 heures.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft Studio ajouté puis retiré du lanceur — v0.16.0 et v0.16.1</h3>
+<p>C'est la nouvelle de la journée, et elle est vérifiable dans les notes de version du lanceur. La version <strong>0.16.0</strong>, publiée le 7 novembre à 5 h 21 UTC, a ajouté ArtCraft Studio au catalogue du lanceur, sous l'intitulé « Add ArtCraft Studio without a publisher badge » (PR 1290, par dylanmtaylor) ; une série de commits du 6 et du 7 novembre adapte le lanceur à cette entrée : analyse des étiquettes de version « Studio », prise en charge de ses fichiers de publication, traitement particulier de macOS, et exclusion d'ArtCraft sur FreeBSD. Puis la version <strong>0.16.1</strong>, publiée le 8 novembre à 1 h 49 UTC, fait exactement l'inverse : « chore(catalog): remove ArtCraft Studio from launcher suite » (PR 1318, même auteur). <strong>Aucun motif n'est donné</strong> dans la note de version, et le studio reste absent du lanceur à cette heure.</p>
+<p>Ce va-et-vient est ce que le post signale, en une phrase : « The git change does not explain why ». C'est une lecture juste. Ce qu'on peut dire avec certitude : l'ajout puis le retrait sont deux modifications volontaires, datées et séparées d'une journée, la première mentionnant explicitement l'absence de badge d'éditeur. On peut supposer un retrait lié à cette absence de badge ou à un problème de publication, mais c'est une hypothèse, pas une information. Pour l'utilisateur, la conséquence pratique est simple : ArtCraft Studio s'installe par téléchargement direct depuis le site, pas depuis le lanceur.</p>
+<ul>
+<li>Version 0.16.0 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.0</li>
+<li>Version 0.16.1 : https://github.com/storytold/craft-launcher/releases/tag/v0.16.1</li>
+<li>Dépôt du lanceur : https://github.com/storytold/craft-launcher</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xr0xle/artcraft_studio_removed_from_launcher_in_latest/ — u/espero</li>
+</ul>
+<p>À signaler au passage, sans gravité : la page de téléchargement de l'éditeur annonce encore la version <strong>0.41.0</strong> alors que le dépôt a publié la 0.41.1 le 7 novembre. Simple retard de la page, sans effet sur les fichiers réellement servis.</p>
+<h3>Des applications tierces ajoutent un bouton « export vers ArtCraft »</h3>
+<p>Un utilisateur rapporte qu'une application de conception de mouvement permet de générer et de planifier une vidéo avec Claude — l'outil garde une trace des corrections faites image par image et en tire des préférences réutilisables — puis d'<strong>exporter le projet vers FilmCraft</strong>. C'est le signe d'une intégration par l'aval : ArtCraft n'ouvre pas d'interface d'extension pour l'instant, mais d'autres logiciels choisissent le format des applications de la suite comme cible d'export. Réserve importante : le post ne nomme ni l'application ni un lien, et l'auteur écrit « Film craft », sans confirmation de l'éditeur. À prendre comme un signal d'écosystème, pas comme une annonce vérifiée.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xquvfe/apps_are_now_building_export_to_artcraft_buttons/ — u/Texas-X-</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>NoteCraft v0.0.9 — première version Android</h3>
+<p>NoteCraft est un projet <strong>communautaire et non officiel</strong> : une réimplémentation propre de Microsoft OneNote en Rust pur, publiée par AlienTechSoftware sous Apache-2.0 (dépôt créé récemment, 147 étoiles, très actif — dernier envoi le 8 novembre au soir). Son nom suit la convention de la suite sans en faire partie, et il faut donc le distinguer des applications de l'éditeur.</p>
+<p>La version 0.0.9, publiée le 8 novembre à 4 h 06 UTC, apporte une <strong>première sortie Android</strong> (contribution de MostafaXS1), un canevas infini qui permet de dessiner en dehors des blocs de texte, une interface traduite en treize langues avec une aide utilisateur en français et en espagnol, une organisation des pages revue, une installation homogène d'une plateforme à l'autre et un carnet de démonstration fourni comme contenu utilisateur. Une version de démonstration est utilisable directement en ligne. La multiplication des « Craft » hors éditeur est un point de confusion à surveiller pour qui suit la suite officielle.</p>
+<ul>
+<li>Version : https://github.com/AlienTechSoftware/notecraft/releases/tag/v0.0.9</li>
+<li>Essai en ligne : https://notecraft.cloud/</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqpgg1/unofficial_notecraft_v009_prerelease/ — u/PassNarrow3128</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>Logiciels comparables — rien de notable</h3>
+<p>Les recherches du jour sur ComfyUI, InvokeAI, Krita AI Diffusion et SD.Next ne remontent aucune parution datée des dernières 24 heures : la dernière version notable de Krita AI Diffusion reste une pré-version 1.54.0-pre du 3 octobre, et les pages de comparaison consultées ne sont pas datées du jour. <strong>Rien de notable</strong>, donc, sans que cela garantisse l'absence de toute modification.</p>
+<h2>Volume</h2>
+<p>21 posts publiés dans l'intervalle (source principale), 3 retenus, 18 écartés. La collecte ArtCraft du 8 novembre à 21 h 16 UTC s'est terminée sans erreur (4 nouveaux posts) ; les journaux de flux (publications, commits, YouTube du dépôt officiel) ne contenaient aucune entrée non traitée, la dernière version publiée étant la 0.41.1 du 7 novembre, déjà couverte par l'édition de dimanche.</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

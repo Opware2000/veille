@@ -6,9 +6,142 @@
 <description>Veille quotidienne du subreddit r/macapps — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/macapps.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 08 Nov 2026 00:13:52 +0100</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 00:12:59 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — lundi 9 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-09.html</link>
+<guid isPermaLink="false">macapps-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 00:12:59 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source Reddit s'éteint mais tient encore : le subreddit a fourni onze sorties, dont huit outils neufs gratuits ou à achat unique modique, écrits par leurs auteurs.</li>
+<li>Le fil le plus utile de la journée : trois applications de traitement local du document et de l'audio (Bibliome, Roundnote, Feather Drive) qui font tout sur la machine, sans compte ni abonnement.</li>
+<li>Côté mises à jour, Homebrew a signalé vingt-quatre casks le 8 novembre ; le flux ne porte que le numéro de version, sans journal des changements.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Feather Drive — Google Drive et Dropbox montés comme un disque, sans téléchargement</h3>
+<p>Application native construite sur les extensions de système de fichiers introduites par macOS 26 : vos fichiers restent dans votre propre compte Google Drive ou Dropbox, Finder les affiche comme un disque, et une lecture ne rapatrie que les octets demandés par l'application. Un fichier de 92 Go s'ouvre sur un Mac disposant de 10 Go libres, et rien ne s'accumule sur le disque. Le chiffrement de bout en bout est facultatif, la connexion se fait directement chez l'hébergeur (rien ne passe par un serveur intermédiaire) et l'application demande la permission restreinte <code>drive.file</code>, qui ne lui donne pas accès au reste du compte.</p>
+<p>Prix : 19,99 $ à vie (trois Mac, mises à jour de la branche 1.x) ou 4,99 $ pour un mois, essai de trois jours sans limitation. Exige macOS 26 ou plus récent, Apple Silicon ou Intel selon la machine compatible Tahoe.<br />
+<a href="https://featherdrive.app/">https://featherdrive.app/</a></p>
+<h3>Folder Quick Look 2 — voir l'intérieur d'un dossier ou d'une archive sans l'ouvrir</h3>
+<p>Martin Lexow republie entièrement son extension de l'aperçu rapide : un dossier, une archive ou un fichier Markdown sélectionné et pressé avec la barre d'espace montre son contenu et son arborescence au lieu d'une icône vide. Markdown y apparaît mis en forme. La première version était déjà citée par John Gruber comme une fonction qui aurait dû être dans le Finder.</p>
+<p>Prix : 3,99 $ en achat unique, Mac App Store, distribution sandboxée uniquement. L'application est propriétaire, mais le tarif relève du achat modique sans abonnement.<br />
+<a href="https://apps.apple.com/app/folder-quick-look/id6753110395">https://apps.apple.com/app/folder-quick-look/id6753110395</a></p>
+<h3>Classycal — agenda minimaliste sans compte ni télémétrie</h3>
+<p>Agenda et gestionnaire de rappels Apple, où l'on saisit un rendez-vous en langage naturel (« déjeuner mardi 12 h 30 ») et où les rappels de l'application Rappels servent de vraies tâches. Pas de compte, pas de télémétrie, pas d'assistant greffé. Une barre de commandes s'ouvre depuis n'importe quelle application, Mac et iPhone partagent le même achat.</p>
+<p>Prix : la version gratuite est un agenda complet, y compris les fonctions propres au Mac. L'option Plus est en tarif de lancement jusqu'au 30 novembre à 10 $ par an ou 20 $ à vie (ensuite 20 $ par an et 60 $ à vie) ; essai de quatorze jours. À noter : c'est un abonnement pour la formule annuelle, avec une option perpétuelle.<br />
+<a href="https://classycal.app/">https://classycal.app/</a></p>
+<h3>Bibliome — des fiches de révision fabriquées à partir de vos propres PDF, en local</h3>
+<p>Bibliome Library range, cherche et interroge une bibliothèque de PDF avec un modèle qui tourne sur la machine. La nouveauté annoncée est la fabrication de fiches : on choisit un document et une plage de pages, l'application rédige des cartes question-réponse et des textes à trous construits sur de vraies phrases du document, chacune gardant le passage d'origine et un lien vers la page. Révision par répétition espacée (FSRS, quatre notes au clavier), export vers Anki, CSV ou feuille Markdown. L'indexation se fait sur place, sans déplacer ni renommer les fichiers ; la version iPhone et iPad est gratuite et lit la même bibliothèque par iCloud.</p>
+<p>Prix : 29,99 $ en achat unique sur le Mac App Store, sans abonnement. À vérifier tout de même : l'application est sortie ce mois-ci et son numéro de version (1.0.3 au moment de la recension ci-dessous) la désigne comme un produit jeune. Source : recension de Scoring Notes.<br />
+<a href="https://apps.apple.com/us/app/bibliome-library/id6786826590">https://apps.apple.com/us/app/bibliome-library/id6786826590</a></p>
+<h3>Roundnote — vos réunions interrogeables, sur votre Mac</h3>
+<p>Application néerlandaise qui enregistre et transcrit les réunions en local (Teams, Zoom, Webex, FaceTime, ou une réunion en salle), distingue les voix avec consentement, conserve chaque réunion et permet de poser des questions sur l'ensemble : « qu'avait-on convenu avec Acme jeudi dernier ? » — réponse par Gemma 4 sur la machine, avec renvoi au moment exact. Elle expose aussi un serveur MCP de seize outils, de sorte que Claude ou ChatGPT peuvent chercher dans vos réunions, mais seulement celles que vous autorisez, et chaque réunion indique ce qui a quitté le Mac. Transcription et reconnaissance des voix fonctionnent hors ligne ; le modèle Gemma 4 (4,4 Go) demande 16 Go de mémoire.</p>
+<p>Prix : cinq réunions gratuites, puis 29,99 € une fois (tarif de lancement, 39,99 € ensuite), via l'App Store. Exige macOS 26 et une puce Apple. La version iPhone, iPad et Apple Watch est en bêta publique TestFlight.<br />
+<a href="https://roundnote.eu/">https://roundnote.eu/</a></p>
+<h3>emcee — un remplaçant du Stage Manager</h3>
+<p>Stage Manager déplace les fenêtres entre les groupes de sa propre initiative et n'accepte pas leur réordonnancement ; emcee reprend la bande latérale familière en laissant faire l'inverse : nombre de groupes libre, ordre modifiable, glisser-déposer des applications d'un groupe à l'autre, nouvelle fenêtre qui s'ouvre dans le groupe courant, plusieurs bureaux et écrans, groupes conservés à la fermeture de session. L'auteur (Fuzzy Foundry) prévient qu'il s'agit d'un gestionnaire de fenêtres par groupes, pas d'un gestionnaire de pavage : AeroSpace reste préférable pour le pilotage au clavier, et il est libre et gratuit.</p>
+<p>Prix : 2,99 $ en achat unique, valable trois machines, essai de trois jours. Exige macOS 26, ainsi que les permissions d'accessibilité et d'enregistrement d'écran. Également annoncé sur Hacker News (un point, aucun commentaire au moment de la collecte).<br />
+<a href="https://fuzzyfoundry.com/emcee">https://fuzzyfoundry.com/emcee</a></p>
+<h3>PocketBar — des applications Android dans la barre de menus du Mac</h3>
+<p>Plutôt qu'un émulateur complet, PocketBar garde Android 11 à 16 en arrière-plan et ouvre chaque application Android dans sa propre petite fenêtre, lancée depuis la barre de menus (⌥ espace). Gestion des APK, de F-Droid, IzzyOnDroid et du magasin Aurora, variante avec les services Google Play pour YouTube ou TikTok, mémoire allouée réglable avec indicateur en direct, verrouillage par Touch ID, blocage des publicités. Les applications bancaires et de paiement ne fonctionnent en général pas.</p>
+<p>Prix : gratuit pour une application épinglée, Pro à 9,99 € en achat unique couvrant la branche 1.x, essai Pro de sept jours. Exige une puce Apple M1 ou plus récente, macOS 14 ou plus, et 2 à 3 Go pour l'image Android.<br />
+<a href="https://pocketbar.site">https://pocketbar.site</a></p>
+<h3>Glade — un canevas pour ce qu'on met de côté</h3>
+<p>Chaque collection est un « bosquet » : un canevas infini où liens, images, vidéos, notes et fichiers se posent côte à côte et se regroupent à la main. Pas de serveur ni de compte, synchronisation par votre propre iCloud, raccourci global, lecteur intégré qui garde le texte d'un article même si le lien meurt, recherche dans Spotlight, widgets. L'auteur compare honnêtement à Raindrop.io (meilleur si vous avez besoin du web et de Windows) et à mymind (Glade laisse placer et grouper soi-même).</p>
+<p>Prix : gratuit jusqu'à 100 éléments et trois bosquets ; au-delà, 1,99 $ par mois, 14,99 $ par an ou 24,99 $ à vie au tarif de lancement (jusqu'au 6 décembre, ensuite 49,99 $). La présence d'une formule par abonnement est à signaler, même si l'option perpétuelle existe.<br />
+<a href="https://apps.apple.com/app/id6823751824">https://apps.apple.com/app/id6823751824</a></p>
+<h3>Better Stickies — des pense-bêtes qui acceptent images, GIF et code</h3>
+<p>Pense-bêtes flottants ou latéraux, toujours au-dessus des autres fenêtres y compris en plein écran, avec collage intelligent : une capture d'écran, un dossier, un bloc de code ou un GIF collé dans une note y prend directement la bonne forme. Jusqu'à trois pages par note, rappels, recherche dans toutes les notes, notes stockées en JSON local, fonctionne hors ligne, sans Electron. Édité aussi pour Windows, Linux (Flathub, Snap) et prochainement le Mac App Store.</p>
+<p>Prix : version gratuite plafonnée à quatre notes, premium à 7,99 $ en achat unique valable cinq machines (moitié prix pour les enseignants, et l'auteur propose une licence gratuite sur demande). Version Mac réservée aux puces Apple, macOS 15 ou plus récent.<br />
+<a href="https://betterstickies.com/">https://betterstickies.com/</a></p>
+<h3>Geet — lecteur de musique YouTube dans la barre de menus, libre et gratuit</h3>
+<p>Petit lecteur natif qui tient une bibliothèque de mix, de listes de lecture et de radios YouTube, ouvre une fenêtre de navigation discrète et s'efface ensuite. Léger face à un onglet de navigateur, piloté par les touches multimédia, bibliothèque et historique conservés sur le Mac sans mesure d'audience ; la récupération des métadonnées passe par yt-dlp. Comparé par l'auteur à Lofi Space et Poolsuite FM, qu'il cite comme sources d'inspiration.</p>
+<p>Prix : gratuit et libre. Dépôt <code>ArsalanDotMe/geetapp</code> sous licence MIT, une étoile, dernière poussée le 8 novembre 2026 : le projet est tout neuf, à traiter comme tel.<br />
+<a href="https://github.com/ArsalanDotMe/geetapp/releases">https://github.com/ArsalanDotMe/geetapp/releases</a></p>
+<h3>Research Vault (eggnomic.com) — une capture d'écran, un dossier sur l'entreprise</h3>
+<p>Application Mac qui transforme une capture d'écran d'entreprise, de fonds ou de personne publique en fiche de renseignement, relie les gens entre eux (qui a fondé quoi, qui a financé qui) et remet chaque matin les captures de la veille pour décider quoi approfondir. Tout reste sur la machine. Réserves : l'application exige que Codex ou Claude Code soient installés et connectés, et son site n'affiche aucun prix à cette heure — l'annonce, parue sur Hacker News, n'a recueilli qu'un point et un commentaire.<br />
+<a href="https://eggnomic.com">https://eggnomic.com</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Le flux des casks Homebrew a signalé vingt-quatre versions d'applications macOS le 8 novembre. Il ne transporte que le numéro de version, jamais le journal des changements : ces lignes disent qu'une version est sortie, pas ce qu'elle apporte. Les voici, sans hiérarchie :</p>
+<p>alma 0.4.498 · artcraft-launcher 0.16.1 · clawd-on-desk 1.6.0 · codeburn-app 0.9.28 · cuadriver 0.43.2 · dbx 0.6.68 · magpie 0.1.3300 · mathcha-notebook 1.0.464 · motrix 2.4.0 · muesli 0.8.6 · multiviewer 2.16.0 · nostalgiapp 1.2.5.6 · nvalt 3.0.33 · openchamber 2.7.0 · openframe-console 1.0.213 · pastenow 2.37 · praat 7.0.03 · reader 0.1.3456 · remnote 1.29.8 · riverside-studio 1.34.1 · squirrelsql 5.2.0 · textus 1.3.11 · thelowtechguys-cling 3.5.1 · trilium-notes 0.107.0</p>
+<p>Quatre d'entre elles méritent une ligne de plus, pour la nature du logiciel :</p>
+<ul>
+<li><strong>praat 7.0.03</strong> — analyse phonétique et acoustique, gratuit et utilisé en enseignement comme en recherche ; utile pour toute exploitation de la voix en classe.</li>
+<li><strong>trilium-notes 0.107.0</strong> — base de connaissances locale et hiérarchique, licence AGPL-3.0, environ 38 700 étoiles sur GitHub, dépôt actif (dernière poussée le 8 novembre).</li>
+<li><strong>lagrange 2.0.1</strong> — navigateur pour le protocole Gemini, licence BSD-2, environ 1 500 étoiles, dépôt actif ; le passage à la branche 2.0 est un changement de version majeure, signalé par la fusion du cask et non par la liste ci-dessus.</li>
+<li><strong>motrix 2.4.0</strong> — gestionnaire de téléchargement libre (environ 58 000 étoiles), mais la licence n'est pas reconnue automatiquement par GitHub, ce qui mérite vérification avant de s'y fier.</li>
+</ul>
+<h2>Volume</h2>
+<p>Quatre-vingt-quatorze entrées publiées depuis le 5 novembre ont été examinées dans les neuf journaux de cette veille ; onze applications ou outils nouveaux sont retenus, vingt-quatre versions d'applications macOS le sont aussi au titre des mises à jour, cinquante-neuf entrées sont écartées (questions, demandes de support, actualité Apple sans logiciel annoncé, promotions d'applications par abonnement — c'est le cas de Tele, partage de fenêtres entre deux Mac, facturé 5,99 € par mois, 49 € par an ou 149 € à vie). Cent soixante-quinze entrées plus anciennes que l'horizon de quatre jours ont été marquées comme traitées sans être publiées. La dernière collecte s'est déroulée sans erreur, d'après <code>meta.json</code>.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source Reddit s'éteint mais tient encore : le subreddit a fourni onze sorties, dont huit outils neufs gratuits ou à achat unique modique, écrits par leurs auteurs.</li>
+<li>Le fil le plus utile de la journée : trois applications de traitement local du document et de l'audio (Bibliome, Roundnote, Feather Drive) qui font tout sur la machine, sans compte ni abonnement.</li>
+<li>Côté mises à jour, Homebrew a signalé vingt-quatre casks le 8 novembre ; le flux ne porte que le numéro de version, sans journal des changements.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Feather Drive — Google Drive et Dropbox montés comme un disque, sans téléchargement</h3>
+<p>Application native construite sur les extensions de système de fichiers introduites par macOS 26 : vos fichiers restent dans votre propre compte Google Drive ou Dropbox, Finder les affiche comme un disque, et une lecture ne rapatrie que les octets demandés par l'application. Un fichier de 92 Go s'ouvre sur un Mac disposant de 10 Go libres, et rien ne s'accumule sur le disque. Le chiffrement de bout en bout est facultatif, la connexion se fait directement chez l'hébergeur (rien ne passe par un serveur intermédiaire) et l'application demande la permission restreinte <code>drive.file</code>, qui ne lui donne pas accès au reste du compte.</p>
+<p>Prix : 19,99 $ à vie (trois Mac, mises à jour de la branche 1.x) ou 4,99 $ pour un mois, essai de trois jours sans limitation. Exige macOS 26 ou plus récent, Apple Silicon ou Intel selon la machine compatible Tahoe.<br />
+<a href="https://featherdrive.app/">https://featherdrive.app/</a></p>
+<h3>Folder Quick Look 2 — voir l'intérieur d'un dossier ou d'une archive sans l'ouvrir</h3>
+<p>Martin Lexow republie entièrement son extension de l'aperçu rapide : un dossier, une archive ou un fichier Markdown sélectionné et pressé avec la barre d'espace montre son contenu et son arborescence au lieu d'une icône vide. Markdown y apparaît mis en forme. La première version était déjà citée par John Gruber comme une fonction qui aurait dû être dans le Finder.</p>
+<p>Prix : 3,99 $ en achat unique, Mac App Store, distribution sandboxée uniquement. L'application est propriétaire, mais le tarif relève du achat modique sans abonnement.<br />
+<a href="https://apps.apple.com/app/folder-quick-look/id6753110395">https://apps.apple.com/app/folder-quick-look/id6753110395</a></p>
+<h3>Classycal — agenda minimaliste sans compte ni télémétrie</h3>
+<p>Agenda et gestionnaire de rappels Apple, où l'on saisit un rendez-vous en langage naturel (« déjeuner mardi 12 h 30 ») et où les rappels de l'application Rappels servent de vraies tâches. Pas de compte, pas de télémétrie, pas d'assistant greffé. Une barre de commandes s'ouvre depuis n'importe quelle application, Mac et iPhone partagent le même achat.</p>
+<p>Prix : la version gratuite est un agenda complet, y compris les fonctions propres au Mac. L'option Plus est en tarif de lancement jusqu'au 30 novembre à 10 $ par an ou 20 $ à vie (ensuite 20 $ par an et 60 $ à vie) ; essai de quatorze jours. À noter : c'est un abonnement pour la formule annuelle, avec une option perpétuelle.<br />
+<a href="https://classycal.app/">https://classycal.app/</a></p>
+<h3>Bibliome — des fiches de révision fabriquées à partir de vos propres PDF, en local</h3>
+<p>Bibliome Library range, cherche et interroge une bibliothèque de PDF avec un modèle qui tourne sur la machine. La nouveauté annoncée est la fabrication de fiches : on choisit un document et une plage de pages, l'application rédige des cartes question-réponse et des textes à trous construits sur de vraies phrases du document, chacune gardant le passage d'origine et un lien vers la page. Révision par répétition espacée (FSRS, quatre notes au clavier), export vers Anki, CSV ou feuille Markdown. L'indexation se fait sur place, sans déplacer ni renommer les fichiers ; la version iPhone et iPad est gratuite et lit la même bibliothèque par iCloud.</p>
+<p>Prix : 29,99 $ en achat unique sur le Mac App Store, sans abonnement. À vérifier tout de même : l'application est sortie ce mois-ci et son numéro de version (1.0.3 au moment de la recension ci-dessous) la désigne comme un produit jeune. Source : recension de Scoring Notes.<br />
+<a href="https://apps.apple.com/us/app/bibliome-library/id6786826590">https://apps.apple.com/us/app/bibliome-library/id6786826590</a></p>
+<h3>Roundnote — vos réunions interrogeables, sur votre Mac</h3>
+<p>Application néerlandaise qui enregistre et transcrit les réunions en local (Teams, Zoom, Webex, FaceTime, ou une réunion en salle), distingue les voix avec consentement, conserve chaque réunion et permet de poser des questions sur l'ensemble : « qu'avait-on convenu avec Acme jeudi dernier ? » — réponse par Gemma 4 sur la machine, avec renvoi au moment exact. Elle expose aussi un serveur MCP de seize outils, de sorte que Claude ou ChatGPT peuvent chercher dans vos réunions, mais seulement celles que vous autorisez, et chaque réunion indique ce qui a quitté le Mac. Transcription et reconnaissance des voix fonctionnent hors ligne ; le modèle Gemma 4 (4,4 Go) demande 16 Go de mémoire.</p>
+<p>Prix : cinq réunions gratuites, puis 29,99 € une fois (tarif de lancement, 39,99 € ensuite), via l'App Store. Exige macOS 26 et une puce Apple. La version iPhone, iPad et Apple Watch est en bêta publique TestFlight.<br />
+<a href="https://roundnote.eu/">https://roundnote.eu/</a></p>
+<h3>emcee — un remplaçant du Stage Manager</h3>
+<p>Stage Manager déplace les fenêtres entre les groupes de sa propre initiative et n'accepte pas leur réordonnancement ; emcee reprend la bande latérale familière en laissant faire l'inverse : nombre de groupes libre, ordre modifiable, glisser-déposer des applications d'un groupe à l'autre, nouvelle fenêtre qui s'ouvre dans le groupe courant, plusieurs bureaux et écrans, groupes conservés à la fermeture de session. L'auteur (Fuzzy Foundry) prévient qu'il s'agit d'un gestionnaire de fenêtres par groupes, pas d'un gestionnaire de pavage : AeroSpace reste préférable pour le pilotage au clavier, et il est libre et gratuit.</p>
+<p>Prix : 2,99 $ en achat unique, valable trois machines, essai de trois jours. Exige macOS 26, ainsi que les permissions d'accessibilité et d'enregistrement d'écran. Également annoncé sur Hacker News (un point, aucun commentaire au moment de la collecte).<br />
+<a href="https://fuzzyfoundry.com/emcee">https://fuzzyfoundry.com/emcee</a></p>
+<h3>PocketBar — des applications Android dans la barre de menus du Mac</h3>
+<p>Plutôt qu'un émulateur complet, PocketBar garde Android 11 à 16 en arrière-plan et ouvre chaque application Android dans sa propre petite fenêtre, lancée depuis la barre de menus (⌥ espace). Gestion des APK, de F-Droid, IzzyOnDroid et du magasin Aurora, variante avec les services Google Play pour YouTube ou TikTok, mémoire allouée réglable avec indicateur en direct, verrouillage par Touch ID, blocage des publicités. Les applications bancaires et de paiement ne fonctionnent en général pas.</p>
+<p>Prix : gratuit pour une application épinglée, Pro à 9,99 € en achat unique couvrant la branche 1.x, essai Pro de sept jours. Exige une puce Apple M1 ou plus récente, macOS 14 ou plus, et 2 à 3 Go pour l'image Android.<br />
+<a href="https://pocketbar.site">https://pocketbar.site</a></p>
+<h3>Glade — un canevas pour ce qu'on met de côté</h3>
+<p>Chaque collection est un « bosquet » : un canevas infini où liens, images, vidéos, notes et fichiers se posent côte à côte et se regroupent à la main. Pas de serveur ni de compte, synchronisation par votre propre iCloud, raccourci global, lecteur intégré qui garde le texte d'un article même si le lien meurt, recherche dans Spotlight, widgets. L'auteur compare honnêtement à Raindrop.io (meilleur si vous avez besoin du web et de Windows) et à mymind (Glade laisse placer et grouper soi-même).</p>
+<p>Prix : gratuit jusqu'à 100 éléments et trois bosquets ; au-delà, 1,99 $ par mois, 14,99 $ par an ou 24,99 $ à vie au tarif de lancement (jusqu'au 6 décembre, ensuite 49,99 $). La présence d'une formule par abonnement est à signaler, même si l'option perpétuelle existe.<br />
+<a href="https://apps.apple.com/app/id6823751824">https://apps.apple.com/app/id6823751824</a></p>
+<h3>Better Stickies — des pense-bêtes qui acceptent images, GIF et code</h3>
+<p>Pense-bêtes flottants ou latéraux, toujours au-dessus des autres fenêtres y compris en plein écran, avec collage intelligent : une capture d'écran, un dossier, un bloc de code ou un GIF collé dans une note y prend directement la bonne forme. Jusqu'à trois pages par note, rappels, recherche dans toutes les notes, notes stockées en JSON local, fonctionne hors ligne, sans Electron. Édité aussi pour Windows, Linux (Flathub, Snap) et prochainement le Mac App Store.</p>
+<p>Prix : version gratuite plafonnée à quatre notes, premium à 7,99 $ en achat unique valable cinq machines (moitié prix pour les enseignants, et l'auteur propose une licence gratuite sur demande). Version Mac réservée aux puces Apple, macOS 15 ou plus récent.<br />
+<a href="https://betterstickies.com/">https://betterstickies.com/</a></p>
+<h3>Geet — lecteur de musique YouTube dans la barre de menus, libre et gratuit</h3>
+<p>Petit lecteur natif qui tient une bibliothèque de mix, de listes de lecture et de radios YouTube, ouvre une fenêtre de navigation discrète et s'efface ensuite. Léger face à un onglet de navigateur, piloté par les touches multimédia, bibliothèque et historique conservés sur le Mac sans mesure d'audience ; la récupération des métadonnées passe par yt-dlp. Comparé par l'auteur à Lofi Space et Poolsuite FM, qu'il cite comme sources d'inspiration.</p>
+<p>Prix : gratuit et libre. Dépôt <code>ArsalanDotMe/geetapp</code> sous licence MIT, une étoile, dernière poussée le 8 novembre 2026 : le projet est tout neuf, à traiter comme tel.<br />
+<a href="https://github.com/ArsalanDotMe/geetapp/releases">https://github.com/ArsalanDotMe/geetapp/releases</a></p>
+<h3>Research Vault (eggnomic.com) — une capture d'écran, un dossier sur l'entreprise</h3>
+<p>Application Mac qui transforme une capture d'écran d'entreprise, de fonds ou de personne publique en fiche de renseignement, relie les gens entre eux (qui a fondé quoi, qui a financé qui) et remet chaque matin les captures de la veille pour décider quoi approfondir. Tout reste sur la machine. Réserves : l'application exige que Codex ou Claude Code soient installés et connectés, et son site n'affiche aucun prix à cette heure — l'annonce, parue sur Hacker News, n'a recueilli qu'un point et un commentaire.<br />
+<a href="https://eggnomic.com">https://eggnomic.com</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Le flux des casks Homebrew a signalé vingt-quatre versions d'applications macOS le 8 novembre. Il ne transporte que le numéro de version, jamais le journal des changements : ces lignes disent qu'une version est sortie, pas ce qu'elle apporte. Les voici, sans hiérarchie :</p>
+<p>alma 0.4.498 · artcraft-launcher 0.16.1 · clawd-on-desk 1.6.0 · codeburn-app 0.9.28 · cuadriver 0.43.2 · dbx 0.6.68 · magpie 0.1.3300 · mathcha-notebook 1.0.464 · motrix 2.4.0 · muesli 0.8.6 · multiviewer 2.16.0 · nostalgiapp 1.2.5.6 · nvalt 3.0.33 · openchamber 2.7.0 · openframe-console 1.0.213 · pastenow 2.37 · praat 7.0.03 · reader 0.1.3456 · remnote 1.29.8 · riverside-studio 1.34.1 · squirrelsql 5.2.0 · textus 1.3.11 · thelowtechguys-cling 3.5.1 · trilium-notes 0.107.0</p>
+<p>Quatre d'entre elles méritent une ligne de plus, pour la nature du logiciel :</p>
+<ul>
+<li><strong>praat 7.0.03</strong> — analyse phonétique et acoustique, gratuit et utilisé en enseignement comme en recherche ; utile pour toute exploitation de la voix en classe.</li>
+<li><strong>trilium-notes 0.107.0</strong> — base de connaissances locale et hiérarchique, licence AGPL-3.0, environ 38 700 étoiles sur GitHub, dépôt actif (dernière poussée le 8 novembre).</li>
+<li><strong>lagrange 2.0.1</strong> — navigateur pour le protocole Gemini, licence BSD-2, environ 1 500 étoiles, dépôt actif ; le passage à la branche 2.0 est un changement de version majeure, signalé par la fusion du cask et non par la liste ci-dessus.</li>
+<li><strong>motrix 2.4.0</strong> — gestionnaire de téléchargement libre (environ 58 000 étoiles), mais la licence n'est pas reconnue automatiquement par GitHub, ce qui mérite vérification avant de s'y fier.</li>
+</ul>
+<h2>Volume</h2>
+<p>Quatre-vingt-quatorze entrées publiées depuis le 5 novembre ont été examinées dans les neuf journaux de cette veille ; onze applications ou outils nouveaux sont retenus, vingt-quatre versions d'applications macOS le sont aussi au titre des mises à jour, cinquante-neuf entrées sont écartées (questions, demandes de support, actualité Apple sans logiciel annoncé, promotions d'applications par abonnement — c'est le cas de Tele, partage de fenêtres entre deux Mac, facturé 5,99 € par mois, 49 € par an ou 149 € à vie). Cent soixante-quinze entrées plus anciennes que l'horizon de quatre jours ont été marquées comme traitées sans être publiées. La dernière collecte s'est déroulée sans erreur, d'après <code>meta.json</code>.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — dimanche 8 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-08.html</link>
