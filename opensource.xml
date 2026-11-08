@@ -6,9 +6,178 @@
 <description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 07 Nov 2026 01:04:24 +0100</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 01:02:24 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opensource — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-08.html</link>
+<guid isPermaLink="false">opensource-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 01:02:24 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée riche en outils neufs : une bibliothèque de terminal stabilisée (libghostty-vt 1.0, MIT, déjà adoptée par JetBrains et Neovim), un moteur de navigateur écrit en V, un compilateur C avec son IDE, un gestionnaire de téléchargements macOS et une alternative libre à Matlab.</li>
+<li>Les projets de systèmes suivent : récupération de noyau sans redémarrage (Kmorph), bureau Wayland sur FreeBSD (HyprBSD), et côté distributions FreeBSD 15.2 bêta, OpenIndiana 2026.10, Azure Linux 3.0.2022 et Automake 1.20.</li>
+<li>Dernière collecte sans incident (meta.json : aucun champ <code>errors</code>).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Libghostty-vt 1.0 — bibliothèque d'émulation de terminal, licence MIT.</strong><br />
+C'est le cœur de Ghostty extrait en bibliothèque C portable : la version 1.0 fige l'API et l'ABI, ce qui permet aux distributions d'empaqueter la bibliothèque séparément de l'application et aux développeurs de s'y lier sans crainte de rupture. L'adoption est déjà massive — le terminal des IDE JetBrains tourne dessus (plus de 12,5 millions d'utilisateurs actifs annoncés par l'éditeur), Neovim a une demande de fusion approuvée pour remplacer libvterm, KDE expérimente un remplaçant de Konsole, et il existe des liaisons pour une dizaine de langages. Elle ne dépend que de la libc à l'exécution et compile en WebAssembly sous le mégaoctet. Dépôt : <code>ghostty-org/ghostty</code> (MIT, ~63 800 étoiles, dernière activité le 7 novembre) ; documentation et téléchargements sur <code>lib.ghostty.org</code>.<br />
+https://lib.ghostty.org/</p>
+<p><strong>OpenNumLab — environnement de calcul scientifique, alternative libre à Matlab (première version).</strong><br />
+Bureau natif écrit en Rust avec une interface en ligne de commande. C'est la première publication : l'outil est encore très jeune (dépôt à 2 étoiles), à essayer plutôt qu'à mettre en production. Licence MIT. Dépôt : <code>me-farza/opennumlab</code> (MIT, 2 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/me-farza/opennumlab</p>
+<p><strong>Tyler RSS — lecteur de flux RSS de bureau, licence MIT.</strong><br />
+Lecteur complet pour RSS, Atom et JSON, avec extraction des articles complets pour la lecture hors connexion, bibliothèque de recherche locale, sauvegarde portative de la bibliothèque et des médias, et aucune télémétrie ni compte. Version 0.1.3, installateurs pour macOS 13.3 et plus, Windows et Ubuntu 24.04. Le projet est hébergé chez GoodApps, une maison d'édition de logiciels de bureau utiles ; dépôt <code>goodappsstore/tyler-rss</code> (MIT, 1 étoile, dernière activité le 7 novembre).<br />
+https://goodapps.store/tyler-rss/</p>
+<p><strong>Sonda — analyse statique et seuils de qualité auto-hébergés, licence MIT / Apache-2.0.</strong><br />
+Outil de la famille SonarQube, écrit en Rust : un binaire analyse JavaScript, TypeScript, Python, Java, C#, C/C++ et Rust sans exécuter le code, juge le code nouveau d'une modification, renvoie un rapport SARIF ou JSON et sort en erreur 1 quand le seuil échoue, ce qui arrête la chaîne d'intégration. Un serveur auto-hébergé (Docker Compose et PostgreSQL) conserve les analyses avec leur historique. Les règles progressent vers la parité avec SonarQube ; le projet se dit encore en route vers la 1.0. Dépôt : <code>lvaoliveira/sonda</code> (Apache-2.0, 8 étoiles, dernière activité le 7 novembre).<br />
+https://www.sonda.sh/</p>
+<p><strong>AARE — implémentation libre du côté téléphone d'Android Auto (proof of concept).</strong><br />
+Le projet vise à se passer de l'application propriétaire de Google pour afficher un écran de téléphone sur l'écran d'un véhicule compatible. C'est une preuve de concept, mais le dépôt est suivi (450 étoiles) et actif. Licence GPL-3.0. Dépôt : <code>prototux/AARE</code> (GPL-3.0, 450 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/prototux/AARE</p>
+<p><strong>code-copilot-team — harnais ouvert pour agents de codage, licence MIT.</strong><br />
+Encadre une équipe d'agents de codage avec un flux piloté par spécification, une relecture par les pairs entre fournisseurs différents et des garde-fous, sans dépendre d'un fournisseur de modèle. Annoncé par son auteur sur Hacker News, encore très peu vu (9 étoiles), mais l'approche « agents multiples avec relecture croisée » est exactement ce qui manque souvent aux outils du genre. Dépôt : <code>gosha70/code-copilot-team</code> (MIT, 9 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/gosha70/code-copilot-team</p>
+<p><strong>MacGet — gestionnaire de téléchargements pour macOS, licence MIT.</strong><br />
+Téléchargements à connexions multiples avec parallélisme adaptatif : l'outil détecte les serveurs qui brident les connexions, apprend les limites propres à chaque hôte et s'accommode du mode « App Nap » de macOS. Écrit en SwiftUI. Dépôt très récent (2 étoiles). Dépôt : <code>Suryansh-Codes2209/Macget</code> (MIT, 2 étoiles, dernière activité le 6 novembre).<br />
+https://github.com/Suryansh-Codes2209/Macget</p>
+<p><strong>Chatty — alternative libre à Zendesk et Intercom pour l'assistance par IA, licence MIT.</strong><br />
+Auto-hébergeable : bulle de discussion, boîte de réception partagée, voix en temps réel, interrogation de documents multimodale et protocole MCP. Pourra intéresser qui veut un support client sans abonnement ni données chez un tiers. Dépôt : <code>PersonaliAI/chatty</code> (MIT, 12 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/PersonaliAI/chatty</p>
+<p><strong>Flash C — compilateur C et IDE en mode texte pour Linux x86-64, licence MIT.</strong><br />
+Compile du C directement en exécutables natifs, avec sa propre bibliothèque standard, un débogueur au niveau du source et un environnement de type Turbo C dans le terminal. Pratique pour montrer la chaîne de compilation à des élèves sans installer de chaîne lourde. Dépôt : <code>dilshan/flash-c</code> (MIT, 66 étoiles, dernière activité le 27 octobre).<br />
+https://github.com/dilshan/flash-c</p>
+<p><strong>Vox — nouveau moteur de navigateur écrit entièrement en V (alpha).</strong><br />
+Moteur fondé sur une adaptation d'une base Ladybird de mars 2026, qui compile en moins de deux secondes, utilise V8 pour JavaScript, et revendique un rendu quatre fois plus rapide que Chrome et une mémoire quatre fois moindre que Firefox sur un banc d'essai JavaScript désactivé. Bloqueur de publicité intégré dérivé d'uBlock Origin, support visé des extensions Chrome, mode sans interface. Attention : c'est un alpha, et les chiffres annoncés viennent de l'éditeur lui-même, sans mesure indépendante ; le code source était annoncé pour le 8 novembre. Aucun dépôt public vérifié à l'heure de cette édition.<br />
+https://vox-browser.org/</p>
+<p><strong>Ace — outil de développement multi-agents en local, GitHub Next, licence MIT.</strong><br />
+Projet expérimental de GitHub Next pour travailler à plusieurs (humains et agents) sur sa propre machine : les « canaux » hébergent plusieurs conversations, chaque unité de travail occupe une copie de travail Git isolée et aboutit à une demande de fusion, et le partage entre coéquipiers passe par un réseau Tailscale plutôt que par un service central. Note de sécurité importante : les agents tournent avec les privilèges de l'utilisateur qui héberge le canal, et partager un canal permet à un collègue d'exécuter des commandes sur cette machine. Dépôt : <code>githubnext/ace</code> (MIT, 32 étoiles, dernières modifications fin octobre).<br />
+https://ace.githubnext.com/</p>
+<p><strong>AIVim — éditeur de texte inspiré de Vim avec assistance par IA, licence GPL-3.0.</strong><br />
+Éditeur autonome, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Revu récemment par son auteur ; le dépôt est neuf et sans étoile, donc à considérer comme une curiosité à tester plutôt qu'un outil établi. Dépôt : <code>danimoya/AIVim-Editor</code> (GPL-3.0, 0 étoile, dernière activité le 7 novembre).<br />
+https://github.com/danimoya/AIVim-Editor</p>
+<p><strong>Kmorph — récupération d'un noyau Linux planté sans redémarrage, licence Apache-2.0.</strong><br />
+Un second noyau, démarré à l'avance sur un processeur et une part de mémoire, surveille le noyau en service ; en cas de panique, il prend le relais en environ une seconde sans redémarrage ni intervention, reprend l'identité réseau et peut relancer en priorité des services critiques (deux secondes de coupure annoncées pour un serveur web). Le même mécanisme sert à changer de noyau à chaud. Limite de taille : tout repose sur le travail « multikernel », qui n'est pas dans le noyau principal — l'outil ne fonctionne donc pas sur un noyau standard aujourd'hui. Dépôt : <code>multikernel/kmorph</code> (Apache-2.0, 51 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/multikernel/kmorph</p>
+<p><strong>HyprBSD — bureau Wayland complet sur FreeBSD, jeu Steam compris.</strong><br />
+Assemblage d'un bureau fondé sur Hyprland par-dessus FreeBSD, avec la pile graphique et le jeu sous Steam fonctionnels. Intéressant surtout comme démonstration de ce que FreeBSD sait faire aujourd'hui sur du matériel récent. Source citée par Phoronix uniquement ; je n'ai pas trouvé de dépôt officiel à vérifier.<br />
+https://www.phoronix.com/news/HyprBSD</p>
+<p><strong>FM-1 Firmware Hub — firmwares libres pour le synthétiseur M-VAVE FM-1 (GPL-3.0).</strong><br />
+Quarante firmwares libres rassemblés en un seul endroit pour ce petit synthétiseur : boîtes à rythmes, instruments à cordes, nappes, machines à accords, et même une console Winamp transformée en instrument. L'installation se fait dans Chrome ou Edge par USB MIDI en une minute, chaque paquet est vérifié par empreinte et mis à jour automatiquement depuis le dépôt de son auteur ; un outil de secours (GPL-3.0, Linux) permet de rattraper un appareil bloqué. Seuls les firmwares réellement libres sont hébergés.<br />
+https://thefirmwarehub.com/</p>
+<p><strong>samenland — simulation de colonie médiévale, jeu en temps réel.</strong><br />
+Simulation déterministe dans une colonie du nord de l'Allemagne vers 1500, rendue sur toile isométrique. Le post annonce une licence MIT, mais l'API GitHub ne reconnaît pas de licence identifiée dans le dépôt (<code>NOASSERTION</code>) — écart à signaler, la licence n'est donc pas confirmée. Dépôt récent (2 étoiles). Dépôt : <code>retrogames23/samenland</code> (2 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/retrogames23/samenland</p>
+<p><strong>DLE — collection de jeux quotidiens libres (domaine public, CC0).</strong><br />
+Recueil de jeux de devinette quotidiens et de leurs ressources, publié sous CC0 : utile comme matière première si vous voulez fabriquer un jeu quotidien pour une classe sans repartir de zéro. C'est un dépôt de ressources, pas une application. Dépôt : <code>trizoza/dles</code> (CC0-1.0, 2 étoiles, dernière activité le 6 novembre).<br />
+https://github.com/trizoza/dles/blob/main/assets/daily-games/DLES.md</p>
+<p><strong>Good First Token — service en ligne qui oriente les jetons d'agent inutilisés vers des contributions libres.</strong><br />
+Le site recense des projets qui réclament de l'aide sur des tickets réservés aux nouveaux venus, puis fournit une invite à coller dans son agent, dont le travail peut être suivi et la demande de fusion relue. Ce n'est pas un logiciel à installer mais un intermédiaire, gratuit et sans compte à l'heure de la consultation ; 43 projets y étaient listés, aucune demande de fusion fusionnée cette semaine. Ni dépôt ni licence publique vérifiés.<br />
+https://goodfirsttoken.org/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Asahi Linux, rapport d'avancement pour Linux 7.3</strong> : progression sur le jeu et sur la remontée dans le noyau principal du support des puces Apple Silicon. Détail dans le rapport du projet et chez Phoronix.<br />
+  https://asahilinux.org/2026/11/progress-report-7-3/</li>
+<li><strong>GNU Automake 1.20</strong> : nouvelle option <code>--enable-jobserver</code>, passage à la licence GPLv3+ et ambition affichée de redevenir la référence des systèmes de construction. Version publiée le 7 novembre.<br />
+  https://www.phoronix.com/news/GNU-Automake-1.20</li>
+<li><strong>Vulkan 1.4.368</strong> : mise à jour hebdomadaire de la spécification, avec de nouvelles extensions proposées par Valve et NVIDIA. Uniquement des ajouts de spécification, aucune rupture.<br />
+  https://www.phoronix.com/news/Vulkan-1.4.368</li>
+<li><strong>FreeBSD 15.2 bêta 1</strong> : la bêta ouvre la préparation de FreeBSD 15.2 et permet, à titre expérimental, de construire les paquets de base depuis Linux ou macOS.<br />
+  https://www.phoronix.com/news/FreeBSD-15.2-Beta-1</li>
+<li><strong>OpenIndiana 2026.10</strong> : mise à jour semestrielle de la distribution issue d'Illumos, avec outils et compilateurs à jour et de nouvelles applications.<br />
+  https://www.phoronix.com/news/OpenIndiana-2026.10</li>
+<li><strong>Azure Linux 3.0.2022</strong> : version de la distribution interne de Microsoft, portant plus de 470 correctifs de sécurité accumulés depuis la version précédente.<br />
+  https://www.phoronix.com/news/Azure-Linux-3.0.2022</li>
+<li><strong>KDE Plasma 6.9 (en développement)</strong> : correction d'une fuite de mémoire déclenchée par le clic droit sur un fichier ou un dossier du bureau. Correctif à venir dans la 6.9, pas encore dans la 6.8.<br />
+  https://www.phoronix.com/news/KDE-Plasma-6.9-Leak-Desktop</li>
+</ul>
+<h2>Volume</h2>
+<p>48 entrées examinées (34 nouvelles depuis la dernière édition, 14 entrées Lobsters de 2015 restées hors déduplication et écartées par l'horizon de quatre jours), 25 retenues, 23 écartées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée riche en outils neufs : une bibliothèque de terminal stabilisée (libghostty-vt 1.0, MIT, déjà adoptée par JetBrains et Neovim), un moteur de navigateur écrit en V, un compilateur C avec son IDE, un gestionnaire de téléchargements macOS et une alternative libre à Matlab.</li>
+<li>Les projets de systèmes suivent : récupération de noyau sans redémarrage (Kmorph), bureau Wayland sur FreeBSD (HyprBSD), et côté distributions FreeBSD 15.2 bêta, OpenIndiana 2026.10, Azure Linux 3.0.2022 et Automake 1.20.</li>
+<li>Dernière collecte sans incident (meta.json : aucun champ <code>errors</code>).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Libghostty-vt 1.0 — bibliothèque d'émulation de terminal, licence MIT.</strong><br />
+C'est le cœur de Ghostty extrait en bibliothèque C portable : la version 1.0 fige l'API et l'ABI, ce qui permet aux distributions d'empaqueter la bibliothèque séparément de l'application et aux développeurs de s'y lier sans crainte de rupture. L'adoption est déjà massive — le terminal des IDE JetBrains tourne dessus (plus de 12,5 millions d'utilisateurs actifs annoncés par l'éditeur), Neovim a une demande de fusion approuvée pour remplacer libvterm, KDE expérimente un remplaçant de Konsole, et il existe des liaisons pour une dizaine de langages. Elle ne dépend que de la libc à l'exécution et compile en WebAssembly sous le mégaoctet. Dépôt : <code>ghostty-org/ghostty</code> (MIT, ~63 800 étoiles, dernière activité le 7 novembre) ; documentation et téléchargements sur <code>lib.ghostty.org</code>.<br />
+https://lib.ghostty.org/</p>
+<p><strong>OpenNumLab — environnement de calcul scientifique, alternative libre à Matlab (première version).</strong><br />
+Bureau natif écrit en Rust avec une interface en ligne de commande. C'est la première publication : l'outil est encore très jeune (dépôt à 2 étoiles), à essayer plutôt qu'à mettre en production. Licence MIT. Dépôt : <code>me-farza/opennumlab</code> (MIT, 2 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/me-farza/opennumlab</p>
+<p><strong>Tyler RSS — lecteur de flux RSS de bureau, licence MIT.</strong><br />
+Lecteur complet pour RSS, Atom et JSON, avec extraction des articles complets pour la lecture hors connexion, bibliothèque de recherche locale, sauvegarde portative de la bibliothèque et des médias, et aucune télémétrie ni compte. Version 0.1.3, installateurs pour macOS 13.3 et plus, Windows et Ubuntu 24.04. Le projet est hébergé chez GoodApps, une maison d'édition de logiciels de bureau utiles ; dépôt <code>goodappsstore/tyler-rss</code> (MIT, 1 étoile, dernière activité le 7 novembre).<br />
+https://goodapps.store/tyler-rss/</p>
+<p><strong>Sonda — analyse statique et seuils de qualité auto-hébergés, licence MIT / Apache-2.0.</strong><br />
+Outil de la famille SonarQube, écrit en Rust : un binaire analyse JavaScript, TypeScript, Python, Java, C#, C/C++ et Rust sans exécuter le code, juge le code nouveau d'une modification, renvoie un rapport SARIF ou JSON et sort en erreur 1 quand le seuil échoue, ce qui arrête la chaîne d'intégration. Un serveur auto-hébergé (Docker Compose et PostgreSQL) conserve les analyses avec leur historique. Les règles progressent vers la parité avec SonarQube ; le projet se dit encore en route vers la 1.0. Dépôt : <code>lvaoliveira/sonda</code> (Apache-2.0, 8 étoiles, dernière activité le 7 novembre).<br />
+https://www.sonda.sh/</p>
+<p><strong>AARE — implémentation libre du côté téléphone d'Android Auto (proof of concept).</strong><br />
+Le projet vise à se passer de l'application propriétaire de Google pour afficher un écran de téléphone sur l'écran d'un véhicule compatible. C'est une preuve de concept, mais le dépôt est suivi (450 étoiles) et actif. Licence GPL-3.0. Dépôt : <code>prototux/AARE</code> (GPL-3.0, 450 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/prototux/AARE</p>
+<p><strong>code-copilot-team — harnais ouvert pour agents de codage, licence MIT.</strong><br />
+Encadre une équipe d'agents de codage avec un flux piloté par spécification, une relecture par les pairs entre fournisseurs différents et des garde-fous, sans dépendre d'un fournisseur de modèle. Annoncé par son auteur sur Hacker News, encore très peu vu (9 étoiles), mais l'approche « agents multiples avec relecture croisée » est exactement ce qui manque souvent aux outils du genre. Dépôt : <code>gosha70/code-copilot-team</code> (MIT, 9 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/gosha70/code-copilot-team</p>
+<p><strong>MacGet — gestionnaire de téléchargements pour macOS, licence MIT.</strong><br />
+Téléchargements à connexions multiples avec parallélisme adaptatif : l'outil détecte les serveurs qui brident les connexions, apprend les limites propres à chaque hôte et s'accommode du mode « App Nap » de macOS. Écrit en SwiftUI. Dépôt très récent (2 étoiles). Dépôt : <code>Suryansh-Codes2209/Macget</code> (MIT, 2 étoiles, dernière activité le 6 novembre).<br />
+https://github.com/Suryansh-Codes2209/Macget</p>
+<p><strong>Chatty — alternative libre à Zendesk et Intercom pour l'assistance par IA, licence MIT.</strong><br />
+Auto-hébergeable : bulle de discussion, boîte de réception partagée, voix en temps réel, interrogation de documents multimodale et protocole MCP. Pourra intéresser qui veut un support client sans abonnement ni données chez un tiers. Dépôt : <code>PersonaliAI/chatty</code> (MIT, 12 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/PersonaliAI/chatty</p>
+<p><strong>Flash C — compilateur C et IDE en mode texte pour Linux x86-64, licence MIT.</strong><br />
+Compile du C directement en exécutables natifs, avec sa propre bibliothèque standard, un débogueur au niveau du source et un environnement de type Turbo C dans le terminal. Pratique pour montrer la chaîne de compilation à des élèves sans installer de chaîne lourde. Dépôt : <code>dilshan/flash-c</code> (MIT, 66 étoiles, dernière activité le 27 octobre).<br />
+https://github.com/dilshan/flash-c</p>
+<p><strong>Vox — nouveau moteur de navigateur écrit entièrement en V (alpha).</strong><br />
+Moteur fondé sur une adaptation d'une base Ladybird de mars 2026, qui compile en moins de deux secondes, utilise V8 pour JavaScript, et revendique un rendu quatre fois plus rapide que Chrome et une mémoire quatre fois moindre que Firefox sur un banc d'essai JavaScript désactivé. Bloqueur de publicité intégré dérivé d'uBlock Origin, support visé des extensions Chrome, mode sans interface. Attention : c'est un alpha, et les chiffres annoncés viennent de l'éditeur lui-même, sans mesure indépendante ; le code source était annoncé pour le 8 novembre. Aucun dépôt public vérifié à l'heure de cette édition.<br />
+https://vox-browser.org/</p>
+<p><strong>Ace — outil de développement multi-agents en local, GitHub Next, licence MIT.</strong><br />
+Projet expérimental de GitHub Next pour travailler à plusieurs (humains et agents) sur sa propre machine : les « canaux » hébergent plusieurs conversations, chaque unité de travail occupe une copie de travail Git isolée et aboutit à une demande de fusion, et le partage entre coéquipiers passe par un réseau Tailscale plutôt que par un service central. Note de sécurité importante : les agents tournent avec les privilèges de l'utilisateur qui héberge le canal, et partager un canal permet à un collègue d'exécuter des commandes sur cette machine. Dépôt : <code>githubnext/ace</code> (MIT, 32 étoiles, dernières modifications fin octobre).<br />
+https://ace.githubnext.com/</p>
+<p><strong>AIVim — éditeur de texte inspiré de Vim avec assistance par IA, licence GPL-3.0.</strong><br />
+Éditeur autonome, à essayer dans un environnement Python isolé, avec Ollama ou une API hébergée. Revu récemment par son auteur ; le dépôt est neuf et sans étoile, donc à considérer comme une curiosité à tester plutôt qu'un outil établi. Dépôt : <code>danimoya/AIVim-Editor</code> (GPL-3.0, 0 étoile, dernière activité le 7 novembre).<br />
+https://github.com/danimoya/AIVim-Editor</p>
+<p><strong>Kmorph — récupération d'un noyau Linux planté sans redémarrage, licence Apache-2.0.</strong><br />
+Un second noyau, démarré à l'avance sur un processeur et une part de mémoire, surveille le noyau en service ; en cas de panique, il prend le relais en environ une seconde sans redémarrage ni intervention, reprend l'identité réseau et peut relancer en priorité des services critiques (deux secondes de coupure annoncées pour un serveur web). Le même mécanisme sert à changer de noyau à chaud. Limite de taille : tout repose sur le travail « multikernel », qui n'est pas dans le noyau principal — l'outil ne fonctionne donc pas sur un noyau standard aujourd'hui. Dépôt : <code>multikernel/kmorph</code> (Apache-2.0, 51 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/multikernel/kmorph</p>
+<p><strong>HyprBSD — bureau Wayland complet sur FreeBSD, jeu Steam compris.</strong><br />
+Assemblage d'un bureau fondé sur Hyprland par-dessus FreeBSD, avec la pile graphique et le jeu sous Steam fonctionnels. Intéressant surtout comme démonstration de ce que FreeBSD sait faire aujourd'hui sur du matériel récent. Source citée par Phoronix uniquement ; je n'ai pas trouvé de dépôt officiel à vérifier.<br />
+https://www.phoronix.com/news/HyprBSD</p>
+<p><strong>FM-1 Firmware Hub — firmwares libres pour le synthétiseur M-VAVE FM-1 (GPL-3.0).</strong><br />
+Quarante firmwares libres rassemblés en un seul endroit pour ce petit synthétiseur : boîtes à rythmes, instruments à cordes, nappes, machines à accords, et même une console Winamp transformée en instrument. L'installation se fait dans Chrome ou Edge par USB MIDI en une minute, chaque paquet est vérifié par empreinte et mis à jour automatiquement depuis le dépôt de son auteur ; un outil de secours (GPL-3.0, Linux) permet de rattraper un appareil bloqué. Seuls les firmwares réellement libres sont hébergés.<br />
+https://thefirmwarehub.com/</p>
+<p><strong>samenland — simulation de colonie médiévale, jeu en temps réel.</strong><br />
+Simulation déterministe dans une colonie du nord de l'Allemagne vers 1500, rendue sur toile isométrique. Le post annonce une licence MIT, mais l'API GitHub ne reconnaît pas de licence identifiée dans le dépôt (<code>NOASSERTION</code>) — écart à signaler, la licence n'est donc pas confirmée. Dépôt récent (2 étoiles). Dépôt : <code>retrogames23/samenland</code> (2 étoiles, dernière activité le 7 novembre).<br />
+https://github.com/retrogames23/samenland</p>
+<p><strong>DLE — collection de jeux quotidiens libres (domaine public, CC0).</strong><br />
+Recueil de jeux de devinette quotidiens et de leurs ressources, publié sous CC0 : utile comme matière première si vous voulez fabriquer un jeu quotidien pour une classe sans repartir de zéro. C'est un dépôt de ressources, pas une application. Dépôt : <code>trizoza/dles</code> (CC0-1.0, 2 étoiles, dernière activité le 6 novembre).<br />
+https://github.com/trizoza/dles/blob/main/assets/daily-games/DLES.md</p>
+<p><strong>Good First Token — service en ligne qui oriente les jetons d'agent inutilisés vers des contributions libres.</strong><br />
+Le site recense des projets qui réclament de l'aide sur des tickets réservés aux nouveaux venus, puis fournit une invite à coller dans son agent, dont le travail peut être suivi et la demande de fusion relue. Ce n'est pas un logiciel à installer mais un intermédiaire, gratuit et sans compte à l'heure de la consultation ; 43 projets y étaient listés, aucune demande de fusion fusionnée cette semaine. Ni dépôt ni licence publique vérifiés.<br />
+https://goodfirsttoken.org/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Asahi Linux, rapport d'avancement pour Linux 7.3</strong> : progression sur le jeu et sur la remontée dans le noyau principal du support des puces Apple Silicon. Détail dans le rapport du projet et chez Phoronix.<br />
+  https://asahilinux.org/2026/11/progress-report-7-3/</li>
+<li><strong>GNU Automake 1.20</strong> : nouvelle option <code>--enable-jobserver</code>, passage à la licence GPLv3+ et ambition affichée de redevenir la référence des systèmes de construction. Version publiée le 7 novembre.<br />
+  https://www.phoronix.com/news/GNU-Automake-1.20</li>
+<li><strong>Vulkan 1.4.368</strong> : mise à jour hebdomadaire de la spécification, avec de nouvelles extensions proposées par Valve et NVIDIA. Uniquement des ajouts de spécification, aucune rupture.<br />
+  https://www.phoronix.com/news/Vulkan-1.4.368</li>
+<li><strong>FreeBSD 15.2 bêta 1</strong> : la bêta ouvre la préparation de FreeBSD 15.2 et permet, à titre expérimental, de construire les paquets de base depuis Linux ou macOS.<br />
+  https://www.phoronix.com/news/FreeBSD-15.2-Beta-1</li>
+<li><strong>OpenIndiana 2026.10</strong> : mise à jour semestrielle de la distribution issue d'Illumos, avec outils et compilateurs à jour et de nouvelles applications.<br />
+  https://www.phoronix.com/news/OpenIndiana-2026.10</li>
+<li><strong>Azure Linux 3.0.2022</strong> : version de la distribution interne de Microsoft, portant plus de 470 correctifs de sécurité accumulés depuis la version précédente.<br />
+  https://www.phoronix.com/news/Azure-Linux-3.0.2022</li>
+<li><strong>KDE Plasma 6.9 (en développement)</strong> : correction d'une fuite de mémoire déclenchée par le clic droit sur un fichier ou un dossier du bureau. Correctif à venir dans la 6.9, pas encore dans la 6.8.<br />
+  https://www.phoronix.com/news/KDE-Plasma-6.9-Leak-Desktop</li>
+</ul>
+<h2>Volume</h2>
+<p>48 entrées examinées (34 nouvelles depuis la dernière édition, 14 entrées Lobsters de 2015 restées hors déduplication et écartées par l'horizon de quatre jours), 25 retenues, 23 écartées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — samedi 7 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-07.html</link>
