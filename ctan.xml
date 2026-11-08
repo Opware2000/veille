@@ -6,9 +6,68 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 07 Nov 2026 01:41:40 +0100</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 01:41:37 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — dimanche 8 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-08.html</link>
+<guid isPermaLink="false">ctan-2026-11-08</guid>
+<pubDate>Sun, 08 Nov 2026 01:41:37 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><code>siunitx</code> est passé en 3.6.7 : correction de l'espacement des symboles de type mathématique en mode texte avec <code>lua-unicode-math</code> — encore la configuration de votre classe.</li>
+<li>Un nouveau paquet, <code>florilegium</code>, dessine des marges florales générées procéduralement (LuaLaTeX, ou bibliothèque TikZ pour pdfLaTeX) ; c'est décoratif, mais botanique et donc proche de votre matière.</li>
+<li>Aucune annonce ne demande d'adaptation urgente de <code>nBook3</code>.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<ul>
+<li><strong>siunitx</strong> — version <strong>3.6.7</strong> du 6 novembre 2026 (LPPL 1.3c) — https://ctan.org/pkg/siunitx<br />
+  Une seule correction annoncée : <strong>l'espacement des symboles de type mathématique en mode texte</strong> lorsque <code>lua-unicode-math</code> est chargé (ticket #898). Version et date confirmées par l'API JSON de CTAN, qui donne exactement 3.6.7 / 2026-11-06.<br />
+  C'est la troisième version en quatre jours, et deux d'entre elles visent la même zone : la 3.6.5, déjà signalée dans l'édition du 4 novembre, corrigeait la gestion des symboles de signe avec <code>lua-unicode-math</code> (#896) ; la 3.6.6 du 4 novembre, elle <strong>non annoncée séparément sur la liste ctan-ann</strong>, supprime le contrôle d'incertitude trop longue (#897) ; la 3.6.7 poursuit donc sur la composition des symboles. À retenir : votre classe charge <code>fontspec</code>, <code>unicode-math</code> et <code>siunitx</code>, soit précisément la combinaison visée — si vous composez des grandeurs physiques en LuaLaTeX avec une valeur en mode texte (« environ 3 m » plutôt que « $3\,\mathrm{m}$ »), la mise à jour vaut la synchronisation de votre distribution. Rien d'autre à modifier dans <code>nBook3</code> : les commandes et les options de <code>siunitx</code> ne changent pas.</li>
+</ul>
+<h2>Nouveaux paquets pertinents</h2>
+<ul>
+<li><strong>florilegium</strong> — version 2.0.1 (licences MIT et LPPL 1.3c) — https://ctan.org/pkg/florilegium<br />
+  Il fait pousser un jardin floral dans la marge de chaque page : aucun élément n'est une image, chaque pétale, feuille et tige est une courbe calculée en Lua pendant la compilation, peinte comme un lavis d'encre et écrite directement dans le PDF. Chaque plante est une espèce tirée d'un « génome » de caractères botaniques, et ses fleurs attirent des visiteurs cohérents (abeilles, papillons, coléoptères, escargots, oiseaux). Le jardin occupe l'espace que le texte laisse libre, peut placer une fleur à côté de chaque titre, vieillir du printemps à l'automne au fil du document, et le paquet fournit aussi des lettrines décorées, des ornements et deux thèmes alternatifs.<br />
+  Ce qu'il vous apporte : c'est un paquet de décoration, sans effet sur le contenu — mais son sujet est la botanique, ce qui le rend présentable sur une fiche ou un livret de SVT, et il sait faire vieillir un document au fil des saisons. Il est conçu pour <strong>LuaLaTeX</strong> ; une bibliothèque TikZ permet de tracer les mêmes plantes sous pdfLaTeX, en pur TikZ, donc plus lentement. Comme votre chaîne charge déjà <code>unicode-math</code> et <code>fontspec</code>, LuaLaTeX est vraisemblablement votre moteur de compilation : l'usage est alors direct. Attention toutefois à l'impression en noir et blanc et au volume de courbes ajoutées au PDF. Un bac à sable tourne dans le navigateur à l'adresse https://kevinraymond.github.io/florilegium/.<br />
+  Réserve : la fiche CTAN ne donne <strong>aucune date de version</strong> pour ce paquet (champ vide), la version 2.0.1 étant sa première publication sur CTAN ; je ne peux donc pas recouper la date annoncée.</li>
+</ul>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>xlistings</strong> 1.1.0 (LPPL 1.3c) — extensions « avec parti pris » de <code>listings</code>, le paquet que charge <code>nBookSlides.cls</code> : colorisation des nombres propre au langage (littéraux hexadécimaux, exposants, suffixes de type), un environnement <code>minted</code> de remplacement, des enveloppes par langage, des numéros de ligne non sélectionnables, des étiquettes de langage. La version 1.1.0 y ajoute <code>code-link</code>, qui collecte les définitions pendant la compilation et lie chaque occurrence dans les listings. Utile pour vos carnets Python et vos documents de SNT, mais c'est un <strong>autre</strong> habillage de <code>listings</code>, non un greffon : l'adopter suppose de reprendre vos propres styles de listing. https://ctan.org/pkg/xlistings</li>
+</ul>
+<h2>Volume</h2>
+<p>Neuf annonces publiées dans l'intervalle (du 6 novembre, 19h43 UTC, au 7 novembre, 18h53 UTC), trois retenues — dont une concernant vos paquets (<code>siunitx</code>) — et six écartées : trois gabarits institutionnels sans usage pour vous (<code>asmejour</code>, revue de mécanique ; <code>ugentdocs</code>, charte de l'université de Gand ; <code>udes-genie-these</code>, classe de thèse de l'université de Sherbrooke), un cours de LaTeX rédigé en portugais du Brésil (<code>latex-via-exemplos</code>, déjà écarté dans l'édition du 4 novembre pour le même motif), un paquet graphique de niche aux ajouts tournés vers la géométrie des polyèdres (<code>luadraw</code> 3.7) et une extension de documentation de sources dont le seul correctif annoncé concerne une démonstration en écriture chinoise (<code>docext</code> 0.2D). La dernière collecte (7 novembre, 23h03 UTC) n'a signalé aucune erreur ; le journal couvre 97 annonces et le fichier n'avait pas encore été dépouillé pour ces neuf entrées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — dimanche 8 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><code>siunitx</code> est passé en 3.6.7 : correction de l'espacement des symboles de type mathématique en mode texte avec <code>lua-unicode-math</code> — encore la configuration de votre classe.</li>
+<li>Un nouveau paquet, <code>florilegium</code>, dessine des marges florales générées procéduralement (LuaLaTeX, ou bibliothèque TikZ pour pdfLaTeX) ; c'est décoratif, mais botanique et donc proche de votre matière.</li>
+<li>Aucune annonce ne demande d'adaptation urgente de <code>nBook3</code>.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<ul>
+<li><strong>siunitx</strong> — version <strong>3.6.7</strong> du 6 novembre 2026 (LPPL 1.3c) — https://ctan.org/pkg/siunitx<br />
+  Une seule correction annoncée : <strong>l'espacement des symboles de type mathématique en mode texte</strong> lorsque <code>lua-unicode-math</code> est chargé (ticket #898). Version et date confirmées par l'API JSON de CTAN, qui donne exactement 3.6.7 / 2026-11-06.<br />
+  C'est la troisième version en quatre jours, et deux d'entre elles visent la même zone : la 3.6.5, déjà signalée dans l'édition du 4 novembre, corrigeait la gestion des symboles de signe avec <code>lua-unicode-math</code> (#896) ; la 3.6.6 du 4 novembre, elle <strong>non annoncée séparément sur la liste ctan-ann</strong>, supprime le contrôle d'incertitude trop longue (#897) ; la 3.6.7 poursuit donc sur la composition des symboles. À retenir : votre classe charge <code>fontspec</code>, <code>unicode-math</code> et <code>siunitx</code>, soit précisément la combinaison visée — si vous composez des grandeurs physiques en LuaLaTeX avec une valeur en mode texte (« environ 3 m » plutôt que « $3\,\mathrm{m}$ »), la mise à jour vaut la synchronisation de votre distribution. Rien d'autre à modifier dans <code>nBook3</code> : les commandes et les options de <code>siunitx</code> ne changent pas.</li>
+</ul>
+<h2>Nouveaux paquets pertinents</h2>
+<ul>
+<li><strong>florilegium</strong> — version 2.0.1 (licences MIT et LPPL 1.3c) — https://ctan.org/pkg/florilegium<br />
+  Il fait pousser un jardin floral dans la marge de chaque page : aucun élément n'est une image, chaque pétale, feuille et tige est une courbe calculée en Lua pendant la compilation, peinte comme un lavis d'encre et écrite directement dans le PDF. Chaque plante est une espèce tirée d'un « génome » de caractères botaniques, et ses fleurs attirent des visiteurs cohérents (abeilles, papillons, coléoptères, escargots, oiseaux). Le jardin occupe l'espace que le texte laisse libre, peut placer une fleur à côté de chaque titre, vieillir du printemps à l'automne au fil du document, et le paquet fournit aussi des lettrines décorées, des ornements et deux thèmes alternatifs.<br />
+  Ce qu'il vous apporte : c'est un paquet de décoration, sans effet sur le contenu — mais son sujet est la botanique, ce qui le rend présentable sur une fiche ou un livret de SVT, et il sait faire vieillir un document au fil des saisons. Il est conçu pour <strong>LuaLaTeX</strong> ; une bibliothèque TikZ permet de tracer les mêmes plantes sous pdfLaTeX, en pur TikZ, donc plus lentement. Comme votre chaîne charge déjà <code>unicode-math</code> et <code>fontspec</code>, LuaLaTeX est vraisemblablement votre moteur de compilation : l'usage est alors direct. Attention toutefois à l'impression en noir et blanc et au volume de courbes ajoutées au PDF. Un bac à sable tourne dans le navigateur à l'adresse https://kevinraymond.github.io/florilegium/.<br />
+  Réserve : la fiche CTAN ne donne <strong>aucune date de version</strong> pour ce paquet (champ vide), la version 2.0.1 étant sa première publication sur CTAN ; je ne peux donc pas recouper la date annoncée.</li>
+</ul>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>xlistings</strong> 1.1.0 (LPPL 1.3c) — extensions « avec parti pris » de <code>listings</code>, le paquet que charge <code>nBookSlides.cls</code> : colorisation des nombres propre au langage (littéraux hexadécimaux, exposants, suffixes de type), un environnement <code>minted</code> de remplacement, des enveloppes par langage, des numéros de ligne non sélectionnables, des étiquettes de langage. La version 1.1.0 y ajoute <code>code-link</code>, qui collecte les définitions pendant la compilation et lie chaque occurrence dans les listings. Utile pour vos carnets Python et vos documents de SNT, mais c'est un <strong>autre</strong> habillage de <code>listings</code>, non un greffon : l'adopter suppose de reprendre vos propres styles de listing. https://ctan.org/pkg/xlistings</li>
+</ul>
+<h2>Volume</h2>
+<p>Neuf annonces publiées dans l'intervalle (du 6 novembre, 19h43 UTC, au 7 novembre, 18h53 UTC), trois retenues — dont une concernant vos paquets (<code>siunitx</code>) — et six écartées : trois gabarits institutionnels sans usage pour vous (<code>asmejour</code>, revue de mécanique ; <code>ugentdocs</code>, charte de l'université de Gand ; <code>udes-genie-these</code>, classe de thèse de l'université de Sherbrooke), un cours de LaTeX rédigé en portugais du Brésil (<code>latex-via-exemplos</code>, déjà écarté dans l'édition du 4 novembre pour le même motif), un paquet graphique de niche aux ajouts tournés vers la géométrie des polyèdres (<code>luadraw</code> 3.7) et une extension de documentation de sources dont le seul correctif annoncé concerne une démonstration en écriture chinoise (<code>docext</code> 0.2D). La dernière collecte (7 novembre, 23h03 UTC) n'a signalé aucune erreur ; le journal couvre 97 annonces et le fichier n'avait pas encore été dépouillé pour ces neuf entrées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — samedi 7 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-07.html</link>
