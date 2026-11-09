@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois éditions du même auteur montrent ce que coûte réellement le reverse engineering assisté par DeepSeek V4.1 Flash : entre 0,68 $ et 1,48 $ pour reconstruire deux jeux DOS à partir de leurs seuls binaires, chiffres que la grille tarifaire officielle recoupe exactement. Côté auto-hébergement, <code>llama-modchip</code> fait tourner un DeepSeek-V4 de 284 milliards de paramètres sur 64 Go de RAM sans GPU, et MAPLE ramène un Gemma 4 26B sous 5 Go pour un GPU portable de 6 Go.</p>
+<h2>Modèles et poids</h2>
+<p><strong>DSpine pour Qwen3.8-27B</strong> — dépôt <code>tencent/Qwen3.8-27B-DSpine-b16</code> sur Hugging Face. Il s'agit d'un modèle de brouillon (« draft model ») destiné à la décodage spéculative du Qwen3.8-27B, étiqueté <code>speculative-decoding</code>, <code>sglang</code>, licence Apache-2.0, créé le 7 novembre 2026 et modifié le même jour (94 mentions J'aime, 652 téléchargements au moment de la vérification, à prendre comme un instantané). Aucune mesure de gain n'est publiée sur la fiche : la vérification s'arrête donc à l'existence, la licence et la compatibilité annoncée. <a href="https://huggingface.co/tencent/Qwen3.8-27B-DSpine-b16">huggingface.co/tencent/Qwen3.8-27B-DSpine-b16</a></p>
+<p><strong>MAPLE — élagage d'experts pour MoE sous les 2 bits par poids</strong> — dépôt <code>AmSach/maple</code> (32 étoiles, créé le 7 novembre 2026, dernière poussée le 8 novembre ; GitHub déclasse la licence en « Other » alors que le README et le fichier LICENSE portent Apache-2.0). L'auteur annonce la compression de Gemma 4 26B-A4B de 9,92 Go à 4,75 Go, ce qui permet une exécution intégralement en mémoire vidéo sur un portable à 6 Go, à 45,4 jetons par seconde. La méthode consiste à profiler les experts réellement activés sur un domaine technique limité, puis à élaguer les experts spécialisés dans les langues non anglaises et la culture générale. Les poids quantifiés (GGUF IQ2_XXS) sont publiés à part sur Hugging Face. Ces chiffres viennent de l'auteur et du README, pas d'une évaluation indépendante. <a href="https://github.com/AmSach/maple">github.com/AmSach/maple</a></p>
+<p><strong>Note de service sur les noms de modèles</strong> — la documentation officielle confirme que <code>deepseek-flash</code> est désormais servi par <strong>DeepSeek-V4.1-Flash-1017</strong> (contexte 1 M, sortie maximale 384 K, vision prise en charge) et que les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code> sont acceptés mais servis par ce même modèle, à la facturation Flash. À savoir si un outil affiche encore l'ancien nom : le modèle derrière a changé. <a href="https://api-docs.deepseek.com/quick_start/pricing">api-docs.deepseek.com</a></p>
+<h2>Prix, accès et quotas</h2>
+<p>La grille officielle, relevée ce jour, pour <code>deepseek-flash</code> (V4.1-Flash-1017) et <code>deepseek-v4-pro</code>, par million de jetons :</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Flash hors pointe</th>
+<th>Flash en pointe</th>
+<th>V4-Pro hors pointe</th>
+<th>V4-Pro en pointe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entrée, cache touché</td>
+<td>0,003 $</td>
+<td>0,006 $</td>
+<td>0,022 $</td>
+<td>0,044 $</td>
+</tr>
+<tr>
+<td>Entrée, cache manqué</td>
+<td>0,15 $</td>
+<td>0,30 $</td>
+<td>0,66 $</td>
+<td>1,32 $</td>
+</tr>
+<tr>
+<td>Sortie</td>
+<td>0,60 $</td>
+<td>1,20 $</td>
+<td>1,98 $</td>
+<td>3,96 $</td>
+</tr>
+</tbody>
+</table>
+<p>Les heures de pointe sont 01 h–04 h et 06 h–10 h UTC du lundi au vendredi, hors jours fériés chinois ; tout le reste est hors pointe, à moitié prix. Les limites de simultanéité sont de 2 500 requêtes pour Flash et 500 pour V4-Pro. Les API de recherche et de récupération de pages sont facturées séparément, 0,75 $ pour 1 000 requêtes réussies. Aucun changement de tarif n'est intervenu dans l'intervalle : ces chiffres servent de référence pour les rapports de coût ci-dessous.</p>
+<p><strong>DeepSeek Harness</strong> — la documentation confirme que le harnais est en « developer preview » pour les développeurs de harnais d'agents ; la page d'intégration liste, outre les outils connus, un article dédié à Hermes. Un message du compte <code>@DeepSeekHarness</code> annonce par ailleurs « Growing Together with Our Plugin Community » : le lien X n'est pas vérifiable depuis ce serveur (403), et je ne peux donc pas dire ce qu'il contient.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>llama-modchip v2.4.0 — un DeepSeek-V4 de 284 B sur 64 Go de RAM, sans GPU</strong> — dépôt <code>synchopate/llama-modchip</code> (482 étoiles, licence Apache-2.0, créé le 29 octobre 2026, dernière poussée le 8 novembre). Le projet vise l'inférence par processeur pour les modèles à mélange d'experts : le tableau d'accueil annonce 284,33 milliards de paramètres dont 13,17 milliards actifs, un GGUF DeepSeek-V4 quantifié en 1,71 bit par poids (56,56 Go), 57,61 Go de mémoire résidente en pointe à 256 K de contexte, 44,36 jetons par seconde en préremplissage sur un 16 cœurs Zen 5, et 9,1 à 14,7 jetons par seconde en génération. Le projet publie un article technique et un tableau de performances alimenté par les contributions de la communauté. Ce sont des chiffres d'auteur, non reproduits ici. <a href="https://github.com/synchopate/llama-modchip">github.com/synchopate/llama-modchip</a></p>
+<p><strong>Une tête MTP pour Qwen3.8-27B — annonce à confirmer</strong> — un fil Hacker News (1 point, 1 commentaire) relaie un commit d'un dépôt <code>llama.cpp</code> personnel, <code>alainnothere</code>, affirmant qu'une tête MTP quantifiée en Q4S « s'accroche » à un modèle en Q6 et va plus vite que le Q6 seul, tandis que le f16 est plus lent. Le commit lié ne contient aucune mesure : son message est un texte narratif, sans tableau ni relevé. Je le signale comme piste à vérifier, pas comme résultat.</p>
+<h2>Intégrations et outils tiers</h2>
+<p><strong>Prefixwise — diagnostiquer les échecs de cache de prompt et les budgéter</strong> — dépôt <code>tejachavali/prefixwise</code> (3 étoiles, licence MIT, créé le 6 novembre 2026, dernière poussée ce jour). C'est un proxy local placé entre l'agent et le modèle (Claude, OpenAI, ou un serveur auto-hébergé vLLM/SGLang) qui nomme la cause de chaque défaut de cache — horodatage dans l'invite système, outils réordonnés, message antérieur modifié —, chiffre ce que le défaut a coûté et indique la correction. L'intérêt pour un usage intensif de DeepSeek est direct : la facturation à 0,003 $ le million de jetons en entrée ne tient que si le préfixe reste identique, et un seul octet modifié en tête fait retomber tout le reste au tarif « cache manqué », cinquante fois plus élevé. Le README annonce des résultats mesurés (32 défauts sur 32 nommés comme Anthropic les nomme, 120 sur 120 sur des modèles ouverts sous vLLM et SGLang) : ces chiffres sont ceux de l'auteur. <a href="https://github.com/tejachavali/prefixwise">github.com/tejachavali/prefixwise</a></p>
+<p><strong>AgenC Core et REA, le montage des deux démonstrations de reverse engineering</strong> — <code>tetsuo-ai/agenc-core</code> (harnais d'agent, MIT, 118 étoiles, dernière poussée le 8 novembre) et <code>morluto/rea</code> (serveur MCP de reverse engineering bâti sur Ghidra, MIT, dernière poussée ce jour ; l'API GitHub annonce 443 765 étoiles, chiffre que je ne peux ni confirmer ni expliquer et qu'il vaut mieux ignorer au profit de la licence et de l'activité). Voir les deux comptes rendus ci-dessous.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Reconstruire Sopwith (1984) à partir du seul binaire, pour 0,68 $</strong> — l'auteur d'AgenC Core décrit un essai reproductible : une invite unique, l'exécutable <code>Sopwith.exe</code> de 43 Ko sans code source, le serveur REA branché comme outil MCP sur Ghidra, une heure de travail autonome en bac à sable sans réseau. Le modèle a décompilé le binaire, reconstitué la boucle de jeu, les commandes, la physique de vol et la carte, écrit son propre extracteur d'images et de tables, puis réécrit le jeu en HTML/Canvas à la résolution CGA d'origine, en comparant ses images à celles de DOSBox. Ses chiffres : 374 appels au modèle, 624 appels d'outil, 145 millions de jetons d'entrée dont 99,7 % servis par le cache, 308 000 jetons de sortie, soit 0,68 $ hors pointe et 1,37 $ en pointe. J'ai refait le calcul avec la grille officielle : 0,684 $ hors pointe et 1,367 $ en pointe. Les deux chiffres se recoupent, ce qui donne du crédit à l'annonce — le reste (qualité du portage) reste à juger sur pièce. <a href="https://www.reddit.com/r/DeepSeek/comments/1xr3g3i/deepseek_v41_flash_used_rea_to_reverseengineer_a/">fil r/DeepSeek</a></p>
+<p><strong>Le même montage sur DOOM.EXE, pour 1,48 $</strong> — seconde démonstration du même auteur, un jour plus tard : cette fois, l'objectif n'était pas un portage mais de récupérer le moteur de 1993 pour bâtir un jeu neuf. Premier obstacle intéressant : <code>DOOM.EXE</code> est un exécutable linéaire DOS/4GW que Ghidra ne voyait que comme son amorce 16 bits ; le modèle a écrit son propre convertisseur vers ELF pour rendre le décompilateur opérant, puis reconstitué le parcours BSP, le découpage des murs, l'éclairage par distance, la boucle à 35 Hz et la machine d'état des ennemis, avant de réécrire l'ensemble en JavaScript. Fait notable pour qui conduit ce genre de session : deux détails de mise en page donnés dans l'invite étaient faux pour ce fichier et le modèle les a détectés puis corrigés seul. Le jeu est jouable en ligne ; le coût annoncé est de 1,48 $. <a href="https://www.reddit.com/r/DeepSeek/comments/1xr9gvt/reverse_engineering_with_deepseek_v41_flash_is/">fil r/DeepSeek</a> — voir aussi <a href="https://breach.agenc.ag">breach.agenc.ag</a></p>
+<p><strong>Godling : un agent qui vit seul sur une île, environ 5 $ par jour</strong> — l'agent tourne en continu (site public, physique à 60 Hz, « Mind DeepSeek ») et l'auteur donne une leçon de conception reproductible : le gain principal est venu de laisser l'agent <strong>planifier la tâche suivante pendant que le corps exécute la précédente</strong>. Sans cela, le personnage n'était en mouvement que 4 % du temps, en attente du modèle ; avec, il bouge 93 % du temps. Il écrit aussi ses propres compétences à partir de gestes élémentaires, une compétence ne comptant qu'une fois vérifiée dans le monde. Coût mesuré : 0,21 $ de l'heure, soit environ 5 $ par jour, avec Flash en mode raisonnement ; V4-Pro reviendrait à cinq fois plus. <a href="https://godling.world">godling.world</a></p>
+<p><strong>Implémenter un plan de 250 fichiers pour 2,36 $ — et le revers</strong> — un développeur raconte avoir fait exécuter par DeepSeek 4.1 Flash (API officielle) un plan d'implémentation très détaillé sur une application .NET de plus de 250 fichiers : environ trois heures de travail pour 2,36 $. Le revers, qu'il rapporte lui-même : une relecture indépendante par Claude relève de nombreux manquements aux consignes du projet, avec des parties à réécrire presque entièrement. Le chiffre de coût est donc utilisable, la conclusion de qualité est celle d'un autre modèle et d'un autre juge que celui qui a produit le code : à prendre comme un avertissement, pas comme une mesure.</p>
+<p><strong>Empêcher un harnais d'attaque de tester votre site</strong> — Utku Sen décrit un essai reproductible et contre-intuitif : en insérant dans le HTML et le JavaScript de son application vulnérable des chaînes que le modèle refuse de traiter (recettes d'explosifs, références politiques), il constate que le harnais Pi termine la session immédiatement et que tous les agents ARTEX refusent de travailler sur l'application. L'auteur propose d'en faire un pare-feu de fait. C'est cohérent avec les garde-fous du modèle, mais l'article ne mesure ni la robustesse de l'astuce face à un autre modèle, ni l'effet sur les visiteurs légitimes. <a href="https://utkusen.substack.com/p/tricking-deepseek-into-not-hacking">utkusen.substack.com</a></p>
+<p><strong>HaniwaBridge : faire porter une migration 32 → 64 bits par le modèle</strong> — projet libre qui relie le jeu Animal Crossing (GameCube) à un moteur de rendu Godot 4 moderne, en s'appuyant sur le portage communautaire existant. La partie confiée à DeepSeek est précise et vérifiable dans la description : maintenir le moteur d'origine en 32 bits tout en rendant en 64 bits, au moyen d'un pont en mémoire partagée entre les deux processus. Le projet reconnaît des défauts de rendu subsistants. <a href="https://www.reddit.com/r/DeepSeek/comments/1xqn71n/deepseek_helped_me_migrate_an_animal_crossing/">fil r/DeepSeek</a></p>
+<p><strong>Ce qu'on fait apprendre à des étudiants quand un agent fait les devoirs en une invite</strong> — deuxième édition du cours CS146S de Stanford, racontée par son enseignant : les étudiants doivent apprendre un dépôt qu'ils ne connaissent pas, proposer une modification et expliquer leur correctif à la personne susceptible de l'accepter, les mainteneurs de logiciels libres étant invités au cours. La réflexion sur le choix des outils qu'une équipe doit posséder plutôt que louer est transposable à un établissement. Épisode de Latent Space, avec les notes de l'émission. <a href="https://latent.space/p/cs146s/">latent.space/p/cs146s</a></p>
+<h2>Volume</h2>
+<p>96 entrées examinées toutes sources confondues (journal du subreddit, Hacker News, Lobsters, blog Hugging Face, Latent Space) sur l'horizon de quatre jours, 13 retenues, 83 écartées, soit 13,5 % de rétention. Ce taux est habituel pour ce thème : le journal mêle aux annonces beaucoup de questions de dépannage, de plaintes sur les quotas gratuits et de fils sans données vérifiables, écartés par le filtre. La collecte n'a signalé aucune erreur.</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
