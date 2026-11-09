@@ -6,9 +6,34 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 08 Nov 2026 01:41:37 +0100</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 01:42:14 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — lundi 9 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-09.html</link>
+<guid isPermaLink="false">ctan-2026-11-09</guid>
+<pubDate>Mon, 09 Nov 2026 01:42:14 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces seulement depuis l'édition d'hier, et rien de nouveau qui mérite votre attention : aucune ne concerne les soixante et un paquets de <code>nBook3</code>, et les trois nouveaux paquets publiés sortent du champ de vos cours. La collecte de la liste <code>ctan-ann</code> s'est terminée sans erreur.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune annonce de l'intervalle ne concerne un paquet de <code>packages_interet.txt</code>. Les trois créations sont des paquets nouveaux, et la seule mise à jour publiée porte sur <code>string-diagrams</code>, qui ne figure ni dans votre liste ni dans les fichiers de votre classe.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p>Aucun des trois nouveaux paquets ne trouve d'emploi dans un cours de lycée ni dans la fabrication de documents pédagogiques ; le détail des exclusions, avec les motifs, figure dans la ligne de volume ci-dessous.</p>
+<h2>Volume</h2>
+<p>Quatre annonces publiées dans l'intervalle (du 7 novembre, 18 h 53 UTC, au 8 novembre, 18 h 35 UTC), aucune retenue, quatre écartées, soit un taux de rétention nul sur cet intervalle — il n'y avait presque rien à trier et rien qui vous concerne. Motifs d'exclusion : <code>persian-calendar</code> 0.78, conversion de dates du calendrier persan (Jalali) et calendriers TikZ associés — langue non latine, exclusion d'office ; <code>leanify</code> 0.3, article mathématique en LaTeX vérifié par l'assistant de preuve Lean — outil de recherche exigeant une chaîne Lean installée et l'échappement shell à la compilation, sans usage en classe ; <code>import-citation-cff</code> 0.3.0, import dans un document des métadonnées Citation File Format d'un dépôt de logiciel de recherche — cela sert à citer un logiciel dans un article, sans rapport avec l'enseignement ; <code>string-diagrams</code> 0.3.0, diagrammes de cordes (catégories monoïdales) en TikZ, paquet de niche dont la mise à jour ne touche pas votre chaîne. La dernière collecte (8 novembre, 23 h 10 UTC) n'a signalé aucune erreur, et le journal couvre bien l'intervalle sans trou.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces seulement depuis l'édition d'hier, et rien de nouveau qui mérite votre attention : aucune ne concerne les soixante et un paquets de <code>nBook3</code>, et les trois nouveaux paquets publiés sortent du champ de vos cours. La collecte de la liste <code>ctan-ann</code> s'est terminée sans erreur.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune annonce de l'intervalle ne concerne un paquet de <code>packages_interet.txt</code>. Les trois créations sont des paquets nouveaux, et la seule mise à jour publiée porte sur <code>string-diagrams</code>, qui ne figure ni dans votre liste ni dans les fichiers de votre classe.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p>Aucun des trois nouveaux paquets ne trouve d'emploi dans un cours de lycée ni dans la fabrication de documents pédagogiques ; le détail des exclusions, avec les motifs, figure dans la ligne de volume ci-dessous.</p>
+<h2>Volume</h2>
+<p>Quatre annonces publiées dans l'intervalle (du 7 novembre, 18 h 53 UTC, au 8 novembre, 18 h 35 UTC), aucune retenue, quatre écartées, soit un taux de rétention nul sur cet intervalle — il n'y avait presque rien à trier et rien qui vous concerne. Motifs d'exclusion : <code>persian-calendar</code> 0.78, conversion de dates du calendrier persan (Jalali) et calendriers TikZ associés — langue non latine, exclusion d'office ; <code>leanify</code> 0.3, article mathématique en LaTeX vérifié par l'assistant de preuve Lean — outil de recherche exigeant une chaîne Lean installée et l'échappement shell à la compilation, sans usage en classe ; <code>import-citation-cff</code> 0.3.0, import dans un document des métadonnées Citation File Format d'un dépôt de logiciel de recherche — cela sert à citer un logiciel dans un article, sans rapport avec l'enseignement ; <code>string-diagrams</code> 0.3.0, diagrammes de cordes (catégories monoïdales) en TikZ, paquet de niche dont la mise à jour ne touche pas votre chaîne. La dernière collecte (8 novembre, 23 h 10 UTC) n'a signalé aucune erreur, et le journal couvre bien l'intervalle sans trou.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — dimanche 8 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-08.html</link>
