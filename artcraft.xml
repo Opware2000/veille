@@ -6,9 +6,116 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 09 Nov 2026 00:01:58 +0100</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 00:03:04 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — mardi 10 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-10.html</link>
+<guid isPermaLink="false">artcraft-2026-11-10</guid>
+<pubDate>Tue, 10 Nov 2026 00:03:04 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>ShapeCraft, un modeleur CAO libre de type Shapr3D écrit en Rust, est rendu public par un contributeur de la communauté après un mois de développement.</li>
+<li>PhotoWagon, portage iOS de PhotoCraft sous Apache-2.0, est disponible sur l'App Store ; un éditeur vidéo Android nommé FilmCraft est en cours de développement.</li>
+<li>À signaler : MaterialCraft cassé pour au moins un utilisateur depuis la version 2.0, et des artefacts bleus constatés après l'ajout d'un « lens flare » dans LightCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel publie désormais ses paquets Flatpak vers Docker Hub</h3>
+<p>Deux commits seulement sur le dépôt <code>storytold/artcraft</code> dans l'intervalle, tous deux d'ordre pratique. Le premier (9 novembre, 1 h 22 UTC) duplique l'envoi des paquets OCI Flatpak vers Docker Hub (<code>docker.io/storytold/artcraft</code>) en plus de GHCR, dès que les identifiants <code>DOCKERHUB_USERNAME</code> et <code>DOCKERHUB_TOKEN</code> sont présents — utile à qui récupère l'application par conteneur, l'image étant ainsi disponible sur les deux registres. Le second (15 h 09 UTC) ajoute au fichier README le badge d'analyse automatique CodeRabbit, à côté de celui de SonarCloud. Rien d'autre à signaler côté versions : la dernière publication du dépôt reste la <strong>0.41.1</strong> du 7 novembre, et aucun utilisateur ne l'a commentée dans cette fenêtre.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft</li>
+<li>Commit Flatpak/Docker Hub : https://github.com/storytold/artcraft/commit/56b30909244e432784348f4346ec8074779c04b6</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>ShapeCraft — un modeleur CAO libre rendu public</h3>
+<p>Contributeur de la communauté, u/jackharvest publie ShapeCraft après environ un mois de travail. Il s'agit d'une <strong>implémentation propre</strong> (« clean room ») inspirée de Shapr3D, dans la même logique que la suite ArtCraft, et d'un projet <strong>distinct de l'éditeur</strong> : le dépôt <code>jackharvest/shapecraft</code> est sous Apache-2.0, ouvert le mois dernier et comptait 29 étoiles au moment de la vérification, avec des envois le 9 novembre en soirée. Il fonctionne sur macOS, Windows et Linux, et ouvre les formats STEP, IGES, STL, OBJ et <code>.shapr</code>. L'auteur annonce un support préliminaire de l'iPad par sessions sans écran servies depuis la machine personnelle (quatre au maximum), un essai sur iPhone prévu dans le week-end et un support des conteneurs Proxmox avec GPU en perspective. Il assume le caractère répétitif du paysage — « everyone's just about had enough craftware » — et demande des rapports de problème plutôt que des éloges.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs06yz/shapecraft_is_now_available_to_the_public/ — u/jackharvest</li>
+<li>Dépôt : https://github.com/jackharvest/shapecraft</li>
+</ul>
+<h3>PhotoWagon — PhotoCraft porté sur iOS</h3>
+<p>u/Aeomech a porté le cœur de PhotoCraft sur iOS et écrit par-dessus une interface SwiftUI. La motivation est explicite : les éditeurs mobiles courants enferment des outils comme le correcteur de tons directs derrière un abonnement, ou ne proposent pas de calques. L'application reprend presque toutes les fonctions de PhotoCraft dans une interface adaptée au mobile, sans publicité, sans suivi ni compte utilisateur. Elle utilise le moteur existant, mais reste un projet <strong>communautaire</strong> : le dépôt <code>BryanHaley/photowagon</code> (Apache-2.0, Rust, créé le 18 octobre, trois étoiles, dernier envoi le 9 novembre) est distinct du dépôt officiel de l'éditeur.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xrbkcv/ios_port_of_photocraft/ — u/Aeomech</li>
+<li>App Store : https://apps.apple.com/us/app/photowagon-image-editor/id6826343192</li>
+<li>Dépôt : https://github.com/BryanHaley/photowagon</li>
+</ul>
+<h3>FilmCraft — un éditeur vidéo Android en développement</h3>
+<p>u/L1234vene annonce travailler sur un éditeur vidéo Android nommé FilmCraft (nom provisoire), avec une interface inspirée des monteurs de bureau. Sont déjà en place : une ligne de temps multipiste, le déplacement de clips entre pistes, l'insertion magnétique sur la piste principale, la sélection et le déplacement de groupes de clips, les compositions, l'audio lié aux clips, l'édition de texte avec aperçu, le redimensionnement du cadre du projet selon les médias importés et une fonction d'annulation. Sont annoncés pour la suite : filtres, effets et transitions, étalonnage, polices personnalisées, sous-titres automatiques. <strong>Réserve</strong> : le post est en espagnol, aucun dépôt ni lien de téléchargement n'est fourni, et rien n'indique de lien avec l'éditeur — le homonyme avec FilmCraft de la suite ArtCraft doit être écarté. À suivre seulement si un dépôt apparaît.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xr9mj3/filmcraft_para_celular/ — u/L1234vene</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>Infinite Devices — poste de travail audiovisuel libre</h3>
+<p>u/WildResolution6065 présente <code>infinitedevices.org</code>, un poste de travail audiovisuel libre qu'il développe seul : un séquenceur modulaire, un patcheur visuel de type TouchDesigner et une vue 3D de type Blender sont réunis <strong>sur un même canevas de nœuds</strong>, le son, l'image et la 3D étant des nœuds reliés entre eux plutôt que des applications séparées. On peut y construire synthétiseurs, effets et séquences, produire des visuels génératifs pilotés par l'audio, importer de la 3D et la rendre, écrire ses propres formules, et l'utiliser comme greffon VST3/AU dans un séquenceur existant. Gratuit, sans compte ni période d'essai. Aucun lien avec ArtCraft — à ranger dans les outils libres de création comparables.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xro8xn/i_made_a_freeopen_source_modular_daw_touch/ — u/WildResolution6065</li>
+<li>Site : https://infinitedevices.org</li>
+</ul>
+<p>Côté logiciels strictement comparables (ComfyUI, InvokeAI, Krita AI Diffusion, Draw Things), rien de daté des dernières 24 heures n'a été trouvé de façon vérifiable : rien de notable.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>MaterialCraft cassé après la version 2.0.</strong> u/OSfrogs rapporte que la version 2.0 a rendu l'application inutilisable — la plupart des nœuds ont disparu et le chargement d'un projet enregistré produit une erreur — et qu'une mise à jour vers la <strong>3.0</strong> publiée une heure plus tard n'a rien corrigé, alors que la 2.0 était accompagnée d'une longue liste de correctifs. Le rapport est isolé et non confirmé par l'éditeur ; il vaut surtout comme signal de régression à surveiller si d'autres cas apparaissent.</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xrqu9t/materialcraft_broken_for_anyone/ — u/OSfrogs</li>
+<li><strong>LightCraft — artefacts bleus après un ajout de « lens flare ».</strong> u/ThisandThatYT, qui vient d'installer la dernière mise à jour de LightCraft, signale que ses photos portent depuis des artefacts bleus et demande comment s'en débarrasser ; le post ne précise pas la version, ni si le défaut vient du fichier de rendu du flare lui-même ou du moteur. <strong>Rapport isolé, non reproduit ici.</strong> À l'inverse, u/mb2m constate que la réduction du bruit par IA et les profils d'objectif fonctionnent sans réglage sur un MacBook Pro de 2018, ce qui reste une appréciation personnelle et non une information vérifiée.</li>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xrpkv4/request_for_help_with_lightcraft/ — u/ThisandThatYT ; https://www.reddit.com/r/ArtCraftAI/comments/1xs2v9i/what_is_going_on_with_lightcraft/ — u/mb2m</li>
+</ul>
+<h2>Volume</h2>
+<p>23 posts sur r/ArtCraftAI et 2 commits du dépôt officiel dans l'intervalle (8 novembre 21 h 27 → 9 novembre 21 h 22 UTC), 9 retenus, 16 écartés. La collecte s'est terminée sans erreur (<code>meta.json</code> du 9 novembre 21 h 28 UTC, aucune entrée dans <code>errors</code>).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>ShapeCraft, un modeleur CAO libre de type Shapr3D écrit en Rust, est rendu public par un contributeur de la communauté après un mois de développement.</li>
+<li>PhotoWagon, portage iOS de PhotoCraft sous Apache-2.0, est disponible sur l'App Store ; un éditeur vidéo Android nommé FilmCraft est en cours de développement.</li>
+<li>À signaler : MaterialCraft cassé pour au moins un utilisateur depuis la version 2.0, et des artefacts bleus constatés après l'ajout d'un « lens flare » dans LightCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel publie désormais ses paquets Flatpak vers Docker Hub</h3>
+<p>Deux commits seulement sur le dépôt <code>storytold/artcraft</code> dans l'intervalle, tous deux d'ordre pratique. Le premier (9 novembre, 1 h 22 UTC) duplique l'envoi des paquets OCI Flatpak vers Docker Hub (<code>docker.io/storytold/artcraft</code>) en plus de GHCR, dès que les identifiants <code>DOCKERHUB_USERNAME</code> et <code>DOCKERHUB_TOKEN</code> sont présents — utile à qui récupère l'application par conteneur, l'image étant ainsi disponible sur les deux registres. Le second (15 h 09 UTC) ajoute au fichier README le badge d'analyse automatique CodeRabbit, à côté de celui de SonarCloud. Rien d'autre à signaler côté versions : la dernière publication du dépôt reste la <strong>0.41.1</strong> du 7 novembre, et aucun utilisateur ne l'a commentée dans cette fenêtre.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft</li>
+<li>Commit Flatpak/Docker Hub : https://github.com/storytold/artcraft/commit/56b30909244e432784348f4346ec8074779c04b6</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>ShapeCraft — un modeleur CAO libre rendu public</h3>
+<p>Contributeur de la communauté, u/jackharvest publie ShapeCraft après environ un mois de travail. Il s'agit d'une <strong>implémentation propre</strong> (« clean room ») inspirée de Shapr3D, dans la même logique que la suite ArtCraft, et d'un projet <strong>distinct de l'éditeur</strong> : le dépôt <code>jackharvest/shapecraft</code> est sous Apache-2.0, ouvert le mois dernier et comptait 29 étoiles au moment de la vérification, avec des envois le 9 novembre en soirée. Il fonctionne sur macOS, Windows et Linux, et ouvre les formats STEP, IGES, STL, OBJ et <code>.shapr</code>. L'auteur annonce un support préliminaire de l'iPad par sessions sans écran servies depuis la machine personnelle (quatre au maximum), un essai sur iPhone prévu dans le week-end et un support des conteneurs Proxmox avec GPU en perspective. Il assume le caractère répétitif du paysage — « everyone's just about had enough craftware » — et demande des rapports de problème plutôt que des éloges.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs06yz/shapecraft_is_now_available_to_the_public/ — u/jackharvest</li>
+<li>Dépôt : https://github.com/jackharvest/shapecraft</li>
+</ul>
+<h3>PhotoWagon — PhotoCraft porté sur iOS</h3>
+<p>u/Aeomech a porté le cœur de PhotoCraft sur iOS et écrit par-dessus une interface SwiftUI. La motivation est explicite : les éditeurs mobiles courants enferment des outils comme le correcteur de tons directs derrière un abonnement, ou ne proposent pas de calques. L'application reprend presque toutes les fonctions de PhotoCraft dans une interface adaptée au mobile, sans publicité, sans suivi ni compte utilisateur. Elle utilise le moteur existant, mais reste un projet <strong>communautaire</strong> : le dépôt <code>BryanHaley/photowagon</code> (Apache-2.0, Rust, créé le 18 octobre, trois étoiles, dernier envoi le 9 novembre) est distinct du dépôt officiel de l'éditeur.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xrbkcv/ios_port_of_photocraft/ — u/Aeomech</li>
+<li>App Store : https://apps.apple.com/us/app/photowagon-image-editor/id6826343192</li>
+<li>Dépôt : https://github.com/BryanHaley/photowagon</li>
+</ul>
+<h3>FilmCraft — un éditeur vidéo Android en développement</h3>
+<p>u/L1234vene annonce travailler sur un éditeur vidéo Android nommé FilmCraft (nom provisoire), avec une interface inspirée des monteurs de bureau. Sont déjà en place : une ligne de temps multipiste, le déplacement de clips entre pistes, l'insertion magnétique sur la piste principale, la sélection et le déplacement de groupes de clips, les compositions, l'audio lié aux clips, l'édition de texte avec aperçu, le redimensionnement du cadre du projet selon les médias importés et une fonction d'annulation. Sont annoncés pour la suite : filtres, effets et transitions, étalonnage, polices personnalisées, sous-titres automatiques. <strong>Réserve</strong> : le post est en espagnol, aucun dépôt ni lien de téléchargement n'est fourni, et rien n'indique de lien avec l'éditeur — le homonyme avec FilmCraft de la suite ArtCraft doit être écarté. À suivre seulement si un dépôt apparaît.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xr9mj3/filmcraft_para_celular/ — u/L1234vene</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>Infinite Devices — poste de travail audiovisuel libre</h3>
+<p>u/WildResolution6065 présente <code>infinitedevices.org</code>, un poste de travail audiovisuel libre qu'il développe seul : un séquenceur modulaire, un patcheur visuel de type TouchDesigner et une vue 3D de type Blender sont réunis <strong>sur un même canevas de nœuds</strong>, le son, l'image et la 3D étant des nœuds reliés entre eux plutôt que des applications séparées. On peut y construire synthétiseurs, effets et séquences, produire des visuels génératifs pilotés par l'audio, importer de la 3D et la rendre, écrire ses propres formules, et l'utiliser comme greffon VST3/AU dans un séquenceur existant. Gratuit, sans compte ni période d'essai. Aucun lien avec ArtCraft — à ranger dans les outils libres de création comparables.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xro8xn/i_made_a_freeopen_source_modular_daw_touch/ — u/WildResolution6065</li>
+<li>Site : https://infinitedevices.org</li>
+</ul>
+<p>Côté logiciels strictement comparables (ComfyUI, InvokeAI, Krita AI Diffusion, Draw Things), rien de daté des dernières 24 heures n'a été trouvé de façon vérifiable : rien de notable.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>MaterialCraft cassé après la version 2.0.</strong> u/OSfrogs rapporte que la version 2.0 a rendu l'application inutilisable — la plupart des nœuds ont disparu et le chargement d'un projet enregistré produit une erreur — et qu'une mise à jour vers la <strong>3.0</strong> publiée une heure plus tard n'a rien corrigé, alors que la 2.0 était accompagnée d'une longue liste de correctifs. Le rapport est isolé et non confirmé par l'éditeur ; il vaut surtout comme signal de régression à surveiller si d'autres cas apparaissent.</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xrqu9t/materialcraft_broken_for_anyone/ — u/OSfrogs</li>
+<li><strong>LightCraft — artefacts bleus après un ajout de « lens flare ».</strong> u/ThisandThatYT, qui vient d'installer la dernière mise à jour de LightCraft, signale que ses photos portent depuis des artefacts bleus et demande comment s'en débarrasser ; le post ne précise pas la version, ni si le défaut vient du fichier de rendu du flare lui-même ou du moteur. <strong>Rapport isolé, non reproduit ici.</strong> À l'inverse, u/mb2m constate que la réduction du bruit par IA et les profils d'objectif fonctionnent sans réglage sur un MacBook Pro de 2018, ce qui reste une appréciation personnelle et non une information vérifiée.</li>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xrpkv4/request_for_help_with_lightcraft/ — u/ThisandThatYT ; https://www.reddit.com/r/ArtCraftAI/comments/1xs2v9i/what_is_going_on_with_lightcraft/ — u/mb2m</li>
+</ul>
+<h2>Volume</h2>
+<p>23 posts sur r/ArtCraftAI et 2 commits du dépôt officiel dans l'intervalle (8 novembre 21 h 27 → 9 novembre 21 h 22 UTC), 9 retenus, 16 écartés. La collecte s'est terminée sans erreur (<code>meta.json</code> du 9 novembre 21 h 28 UTC, aucune entrée dans <code>errors</code>).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — lundi 9 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-09.html</link>
