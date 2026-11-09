@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — lundi 9 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux éditeurs LaTeX annoncés coup sur coup, aux antipodes : <strong>LeafForge</strong>, éditeur de bureau ouvert le jour même sous licence MIT mais encore à l'état d'ébauche, et <strong>Latexify</strong>, service commercial dans le navigateur dont l'argument est la conversion de notes manuscrites en LaTeX.</li>
+<li>Aucun paquet, aucune classe, aucun gabarit et aucune version de distribution ou de moteur dans l'intervalle : rien non plus du côté des journaux de flux (blog et forum Typst, blog Overleaf).</li>
+<li>Les deux seules entrées techniques de la fenêtre (un avertissement pgfplots sur une valeur précise, des hyperliens croisés entre exercice et figure) restent du dépannage sur un fichier donné, sans technique générale à en tirer.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>LeafForge — un éditeur de bureau collaboratif, local d'abord, s'appuyant sur GitHub et le pair à pair</h3>
+<p><strong>Ce que c'est.</strong> Un éditeur LaTeX de bureau annoncé le 8 novembre sur r/LaTeX par son auteur : les fichiers restent sur la machine, GitHub assure le suivi de version, et la collaboration en temps réel passe par un échange direct entre postes plutôt que par un serveur central. Le projet n'est pas un simple habillage : il est construit sur Tauri v2, avec l'éditeur CodeMirror 6, le compilateur Tectonic embarqué (donc sans installation de TeX Live à prévoir), <code>libgit2</code> pour le dépôt local et des documents partagés chiffrés de bout en bout. Compilation et suivi de version se font ainsi hors ligne, le réseau ne servant qu'à la synchronisation.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> C'est exactement la combinaison que réclament ceux qui quittent Overleaf sans vouloir perdre l'édition à plusieurs : le confort d'un aperçu et d'une compilation gérés par l'outil, la sécurité d'un dossier local doublé d'un dépôt Git, et pas d'abonnement ni de compte à ouvrir. L'usage de Tectonic évite le point de friction habituel du premier lancement (téléchargement d'une distribution complète).</p>
+<p><strong>Vérifications et réserves.</strong> Dépôt <code>Abdo30004/LeafForge</code> : licence <strong>MIT</strong>, <strong>2 étoiles</strong>, aucun embranchement, créé le 8 novembre 2026 à 02 h 16 UTC et dernière poussée le même jour à 19 h 42 UTC, page d'accueil non renseignée. Le projet a donc <strong>moins d'une journée d'existence</strong> au moment de cette veille : c'est une annonce, pas encore un outil sur lequel poser un cours. L'auteur reconnaît lui-même, en modification de son message, n'avoir découvert qu'après coup le nombre d'éditeurs semblables déjà présentés sur le forum.</p>
+<p>Dépôt : https://github.com/Abdo30004/LeafForge</p>
+<h3>Latexify — convertir la photo de notes manuscrites en LaTeX, dans le navigateur</h3>
+<p><strong>Ce que c'est.</strong> Un service en ligne (latexify.ai) qui rassemble dans une même fenêtre un éditeur de code LaTeX, un aperçu PDF et un assistant conversationnel, et dont l'argument principal est la conversion de notes manuscrites, d'images et de PDF scannés en LaTeX — y compris en TikZ. L'auteur raconte avoir commencé par une chaîne de traitement pour ses propres notes avant d'en faire un éditeur, et annonce pour la suite des fonctions d'échange avec des agents (compatibilité MCP), un « module de mémoire » des préférences de rédaction et un réglage de « température du document » censé fixer ce que l'assistant peut modifier.</p>
+<p><strong>Ce que ça apporte concrètement.</strong> La transcription d'une pile de notes de cours ou de tableau blanc manuscrits vers un source LaTeX propre est un vrai gain de temps, et le rendu des formules est le point que les concurrents de ce créneau ratent le plus souvent. Le service est hébergé dans l'Union européenne, sans limitation du nombre de collaborateurs sur les projets.</p>
+<p><strong>Vérifications et réserves.</strong> Le site répond (code 200) et affiche une grille tarifaire explicite : offre gratuite limitée à <strong>5 pages au total</strong>, puis 4, 15, 29 et 89 dollars par mois selon le volume (100 à 2 500 pages). Le message Reddit annonce « un tas d'essais gratuits d'une semaine » : c'est un écart avec la page des tarifs, qui ne mentionne aucun essai mais un quota gratuit définitif de 5 pages — à vérifier avant de s'engager. Le service est <strong>propriétaire et sans dépôt public</strong> : rien à inspecter, et les notes confiées sortent de la machine. C'est un choix à faire en conscience pour des documents de cours, même si l'hébergement annoncé est européen.</p>
+<p>Site : https://latexify.ai/</p>
+<h2>Volume</h2>
+<p>Six entrées publiées dans la fenêtre des quatre derniers jours ont été examinées — trois du subreddit, deux de LaTeX Stack Exchange et une du forum Typst —, dont <strong>deux retenues</strong> et quatre écartées, soit un taux de rétention de <strong>33 %</strong>. Ce taux élevé tient au petit nombre d'entrées : sur r/LaTeX, l'écrasante majorité des fils est du dépannage fichier par fichier, et le printemps des éditeurs LaTeX en cours (l'auteur de LeafForge le relève lui-même, un fil ironisait le 6 novembre sur le compteur de jours « depuis le dernier éditeur LaTeX annoncé ») en fait passer plusieurs par semaine. Parmi les écartées : une demande de comparaison LetX contre Overleaf, sans élément vérifiable ; un avertissement pgfplots déclenché par une valeur commençant par 55, cas particulier sans portée générale ; une question sur les hyperliens croisés entre exercice et figure, sans réponse réutilisable à l'heure de la collecte ; et le traducteur « Trust » (forum Typst, dépôt <code>liquidhelium/trust</code>, 10 étoiles, sans licence renseignée, créé le 8 novembre), qui compile un fichier Typst en programme Rust autonome — annonce technique intéressante, mais qui ne concerne pas LaTeX et n'apporte rien à un document de cours. Vingt-deux entrées plus anciennes, toutes des questions de LaTeX Stack Exchange remontées par le flux et datées de 2010 à 2025, sont hors de la fenêtre et n'ont pas été traitées. Le journal de collecte ne signale <strong>aucune erreur</strong>, son dernier passage datant du 8 novembre 2026 à 23 h 51 UTC ; Hacker News et Lobsters n'ont rien apporté de neuf dans l'intervalle, les trois fils du subreddit étant, eux, toujours arrivés par le flux Reddit, qui répond encore avant sa fermeture annoncée au 13 novembre.</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
