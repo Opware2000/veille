@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille pédagogique — lundi 9 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../pedagogique.xml" title="pédagogique et scientifique">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille pédagogique — lundi 9 novembre 2026</h1>
+<h2>1. Informatique pédagogique / RUPN</h2>
+<ul>
+<li><strong>Sur l'espace RUPN de ton ENT (Jura, 2 nov.)</strong> — le planning des formations au PRAF pour le deuxième trimestre est publié ; l'article renvoie au document d'offre. À croiser avec les formations cybersécurité déjà signalées. <a href="https://region-academique.eclat-bfc.fr/rupn/rupn-colleges-lycees-39/planning-des-formations-au-praf-pour-le-second-trimestre-6568.htm">https://region-academique.eclat-bfc.fr/rupn/rupn-colleges-lycees-39/planning-des-formations-au-praf-pour-le-second-trimestre-6568.htm</a></li>
+<li><strong>Éduscol — Veille éducation numérique, édition de novembre 2026</strong> : elle met en avant « L'Agence Privacy, tome 2 », la bande dessinée pédagogique de la CNIL, directement exploitable en EMI. <a href="https://eduscol.education.gouv.fr/6684/veille-education-numerique-2026-2027">https://eduscol.education.gouv.fr/6684/veille-education-numerique-2026-2027</a></li>
+<li><strong>Éduscol STI — cycle Cybermois 2026</strong> (Plan national de formation) : quatre webinaires de sensibilisation à la cybersécurité, dont le dernier le <strong>mardi 16 novembre, 14 h 30-16 h</strong>, « Qui va protéger notre monde numérique ? » — gratuit, inscription en ligne. <a href="https://sti.eduscol.education.fr/actualites/cybermois-2026">https://sti.eduscol.education.fr/actualites/cybermois-2026</a></li>
+<li><strong>CERT-FR — bulletin d'actualité CERTFR-2026-ACT-046 (2 nov.)</strong> : synthèse des vulnérabilités significatives de la semaine, à parcourir avant de prioriser les correctifs. Aucun nouvel avis publié depuis les dix du 6 novembre. <a href="https://www.cert.ssi.gouv.fr/actualite/CERTFR-2026-ACT-046/">https://www.cert.ssi.gouv.fr/actualite/CERTFR-2026-ACT-046/</a></li>
+</ul>
+<p>Note : rien de neuf côté « DRNE PIX » (aucun message dans le journal) ni côté Korben (aucun article utile depuis le 6 novembre) ; l'espace RUPN de l'ENT n'a rien publié d'autre depuis le 2 novembre. <strong>4 nouveautés seulement.</strong></p>
+<h2>2. IA pour le développement</h2>
+<ul>
+<li><strong>Clover-35B-A3B-Preview (DiffuSpace, 28 oct.)</strong> — premier modèle de langage <strong>à diffusion</strong> open-weight : architecture MoE de 35 Md de paramètres avec ~3 Md actifs par token, 128 k de contexte, licence Apache 2.0, poids sur Hugging Face (GGUF prévus pour llama.cpp). Une piste pour tester une génération non autorégressive. <a href="https://huggingface.co/blog/Diffuspace/clover-35b-a3b-preview">https://huggingface.co/blog/Diffuspace/clover-35b-a3b-preview</a></li>
+<li><strong>NVIDIA Cosmos 3 — modèles ouverts de simulation de monde (6-7 nov.)</strong> : quatre variantes « Nano » post-entraînées pour simuler navigation, manipulation robotique et conduite multi-caméras ; poids téléchargeables, pensés pour générer des données synthétiques. <a href="https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai">https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai</a></li>
+<li><strong>Blog Hugging Face — « A Closer Look at Phonon TTS »</strong> : le moteur de synthèse vocale embarqué que tu utilises déjà (Phonon, exécution locale, qualité annoncée en tête des benchmarks). <a href="https://huggingface.co/blog">https://huggingface.co/blog</a></li>
+<li><strong>Blog Hugging Face — « The Sleeper in the Weights »</strong> : démonstration d'une porte dérobée implantée volontairement dans un agent, et détectée uniquement par le noyau — à lire pour la sécurité des agents qu'on branche sur des outils. <a href="https://huggingface.co/blog">https://huggingface.co/blog</a></li>
+<li><strong>Simon Willison — « parse_number() as a SQLite extension: C vs Rust » (8 nov.)</strong> : comparaison concrète d'une même extension SQLite écrite en C (14 Ko) et en Rust (~300 Ko) ; le Rust est plus rapide au départ, le C le rattrape après optimisation. Bon support de TP sur les extensions natives. <a href="https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/">https://simonwillison.net/2026/Nov/8/sqlite-parse-number-c-vs-rust/</a></li>
+<li><strong>opencode — changelog</strong> : suivi des quotas de la Console via <code>/usage</code>, tunnels d'accès distant via proxy HTTP, libération des sessions d'arrière-plan. Toujours gratuit et open source (MIT), macOS/Linux/Windows. <a href="https://opencode.ai/changelog">https://opencode.ai/changelog</a></li>
+<li><strong>Blog Hugging Face — SuperCLUE novembre 2026</strong> : classement par catégories de 19 modèles (benchmark chinois). <a href="https://huggingface.co/blog">https://huggingface.co/blog</a></li>
+</ul>
+<h2>3. IA et éducation</h2>
+<ul>
+<li><strong>Sénat — rapport « IA et éducation »</strong> (délégation à la prospective, 30 oct.) : il recommande d'intégrer l'IA à la formation initiale <strong>et</strong> continue des enseignants, d'en faire le sixième domaine du certificat de compétences numériques Pix, et de garantir une évaluation indépendante des outils déployés. <a href="https://www.publicsenat.fr/actualites/education/intelligence-artificielle-un-rapport-du-senat-recommande-un-cadre-dusage-pour-mettre-lia-au-service-de-lecole">https://www.publicsenat.fr/actualites/education/intelligence-artificielle-un-rapport-du-senat-recommande-un-cadre-dusage-pour-mettre-lia-au-service-de-lecole</a></li>
+<li><strong>DRANE Lyon — formations 2026-2027 mises à jour le 5 nov.</strong>, dont le parcours « Intelligence artificielle et enseignement : comprendre, encadrer, intégrer ». <a href="https://drane.ac-lyon.fr/spip/Formations-proposees-par-la-DRANE">https://drane.ac-lyon.fr/spip/Formations-proposees-par-la-DRANE</a></li>
+<li><strong>Réseau Canopé — « L'IA en mathématiques et en sciences », le 25 novembre 2026</strong> : atelier pour traiter l'IA à la fois comme outil et comme objet d'étude en sciences ; gratuit, via les Ateliers Canopé. <a href="https://www.reseau-canope.fr/ia-et-education">https://www.reseau-canope.fr/ia-et-education</a></li>
+<li><strong>DataIA — « BrevetAI », formation pour enseignantes et enseignants, 24 novembre 2026.</strong> <a href="https://www.dataia.eu/listes-agenda">https://www.dataia.eu/listes-agenda</a></li>
+</ul>
+<p>Note : la source imposée <strong>ActuIA n'a publié aucune brève éducation/emploi depuis le 4 novembre</strong> → <strong>4 nouveautés seulement</strong> dans cette rubrique.</p>
+<h2>4. Python pour l'enseignement (liste Capytale)</h2>
+<ul>
+<li><strong>p5 de nouveau en panne dans les nouvelles activités (8 nov.)</strong> : un notebook important <code>p5</code> n'affiche plus rien (ni canvas, ni animation) — seule une icône « plein écran » apparaît. Piste donnée par un collègue : regarder si l'URL contient <code>kernel=python3-legacy</code> et tester en retirant <code>-legacy</code>. (liste Capytale)</li>
+<li><strong>Rappel utile du même fil</strong> : la mise à jour de Basthon (18 oct.) annonçait justement le retour de p5 — événements <code>mousePressed</code>/<code>keyPressed</code> pris en charge, animations plus fluides, <code>loadImage</code> disponible.</li>
+<li><strong>Pyxel Studio — relance (8 nov.)</strong> : le dysfonctionnement persiste, y compris avec un code minimal (<code>import pyxel</code>) ; l'erreur porte sur le chargement de Pyodide depuis <code>kitao.dev</code>, donc sur une ressource externe, pas sur le notebook. (liste Capytale)</li>
+<li><strong>Filius ne sera pas intégré à Capytale</strong> : l'intégration demanderait de tout recoder. En revanche, Capytale prend déjà en charge <strong>45 modèles de cartes et robots</strong> via son partenariat avec Vittascience ; Tinkercad et Ardublock restent des demandes ouvertes. (liste Capytale)</li>
+<li><strong>ENT Ardèche absent de la liste des ENT (8 nov.)</strong> : un collègue signale que l'Ardèche n'apparaît pas dans la page de choix de l'ENT quand on partage un lien Capytale. (liste Capytale)</li>
+<li><strong>Folium / fonds OpenStreetMap — le contournement se précise (8 nov.)</strong> : les tuiles s'affichent sous Firefox quand <code>network.http.sendRefererHeader</code> est réglé sur 2 ; le blocage vient des réglages de confidentialité ou des anti-trackers qui suppriment l'en-tête <code>Referer</code>. (liste Capytale)</li>
+</ul>
+<h2>5. Sciences</h2>
+<p><em>Pour la Science</em> n'a rien publié de nouveau depuis le 5 novembre (article déjà signalé) : la rubrique s'appuie donc cette fois sur des communiqués relayés par ScienceDaily, avec les liens.</p>
+<ul>
+<li><strong>Un jeûne de 24 heures déclenche une réponse de réparation inattendue dans l'intestin.</strong> <a href="https://www.sciencedaily.com/releases/2026/11/261104084024.htm">https://www.sciencedaily.com/releases/2026/11/261104084024.htm</a></li>
+<li><strong>Les troubles du sommeil s'accompagnent de modifications structurelles de régions cérébrales</strong> liées à l'attention, à la décision et aux émotions — une explication possible de leurs effets sur la cognition au quotidien. <a href="https://www.sciencedaily.com/releases/2026/11/261104012303.htm">https://www.sciencedaily.com/releases/2026/11/261104012303.htm</a></li>
+<li><strong>Des flashs X records de 300 attosecondes</strong>, concentrés sur une zone minuscule : une nouvelle façon d'observer les électrons, voire de les piloter. <a href="https://www.sciencedaily.com/releases/2026/11/261104012329.htm">https://www.sciencedaily.com/releases/2026/11/261104012329.htm</a></li>
+<li><strong>Vaccin antigrippal renforcé : environ 55 % de risque d'Alzheimer en moins</strong> chez les 65 ans et plus (près de 200 000 personnes suivies, UTHealth Houston). <a href="https://www.sciencedaily.com/releases/2026/11/261105224609.htm">https://www.sciencedaily.com/releases/2026/11/261105224609.htm</a></li>
+<li><strong>Une limite cachée de l'espace et du temps</strong> empêcherait de suivre les électrons avec une précision illimitée ; sa maîtrise pourrait accélérer l'électronique d'un facteur 100 000. <a href="https://www.sciencedaily.com/releases/2026/11/261106174537.htm">https://www.sciencedaily.com/releases/2026/11/261106174537.htm</a></li>
+<li><strong>Des fuites de gaz suggèrent que Mars est peut-être encore volcaniquement active.</strong> <a href="https://www.sciencedaily.com/news/space_time/">https://www.sciencedaily.com/news/space_time/</a></li>
+<li><strong>Un ADN de 30 000 ans montre des Européens de l'âge glaciaire bien plus connectés qu'on ne le pensait.</strong> <a href="https://www.sciencedaily.com/news/top/science/">https://www.sciencedaily.com/news/top/science/</a></li>
+<li><strong>Le MIT reprogramme des cellules immunitaires en tueuses de cancer directement dans l'organisme</strong> : chez la souris, des nanoparticules éliminent des tumeurs et inversent des lésions hépatiques. <a href="https://www.sciencedaily.com/news/top/science/">https://www.sciencedaily.com/news/top/science/</a></li>
+</ul>
+<h2>À retenir</h2>
+<p>Semaine calme côté annonces : la matière neuve vient surtout de la <strong>liste Capytale</strong> (p5 reparti en panne, Pyxel toujours HS, Filius écarté) et de la <strong>ScienceDaily</strong> ; côté institutionnel, le <strong>rapport du Sénat sur l'IA et l'éducation</strong> (6ᵉ domaine Pix, formation des enseignants) est l'élément à retenir.</p>
+<footer>Édition du lundi 9 novembre 2026 — <a href="https://opware2000.github.io/veille/pedagogique.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
