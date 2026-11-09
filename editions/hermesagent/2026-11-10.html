@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — mardi 10 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Neuf éléments cette fois, presque tous annoncés par leurs auteurs : agentring fait sonner un téléphone Android depuis l'agent sans Twilio, Leafi transforme une suite d'étapes en automate réutilisable, SafeScript fournit un langage sûr pour exécuter du code non fiable, et trois clients mobiles se partagent la vedette — Petasos, Hermit et Hermes Conduit 2.3.0 avec son « Bot Mode ». S'y ajoutent un greffon de compactage du contexte, le bilan hebdomadaire du cœur d'Hermes (969 demandes fusionnées) et deux annonces de modèles relevées sur Hacker News.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>agentring — faire sonner votre téléphone depuis l'agent, sans numéro ni service tiers</h3>
+<p>L'auteur présente un moyen libre pour qu'un agent appelle un téléphone Android à travers Internet : l'appareil sonne comme lors d'un véritable appel, même verrouillé, une voix synthétique parle pour l'agent, et la transcription de l'échange revient à Hermes — qui peut aussi se contenter d'envoyer un message et d'attendre la réponse. L'installation tient en une commande (<code>agentring connect hermes</code>, ou l'installation d'une compétence), qui ajoute un serveur MCP à la configuration en portant le délai d'expiration de l'outil à trente minutes, le temps d'un appel bloquant l'outil jusqu'au raccrochage. C'est la première fois qu'une capacité de ce genre est proposée librement dans cet écosystème : les solutions habituelles passent par Twilio et un numéro payant.</p>
+<ul>
+<li>Licence Apache-2.0, gratuit ; l'auteur annonce aussi une version hébergée à côté de l'auto-hébergement.</li>
+<li>Dépôt vérifié : github.com/mutonby/agentring — Apache-2.0, 320 étoiles, créé le 23 octobre 2026, dernière poussée le 9 novembre 2026. La popularité relative du dépôt (320 étoiles) suggère un intérêt réel au-delà du fil.</li>
+<li>Réserves : Android uniquement pour l'instant. L'auteur raconte deux difficultés réelles qu'il a rencontrées avec Hermes 0.22 — un décalage de version de protocole MCP corrigé depuis, et un refus initial de la compétence par le garde-fou des compétences, également corrigé.</li>
+</ul>
+<h3>Leafi — enchaîner des automatisations multi-étapes que l'agent construit lui-même</h3>
+<p>Il s'agit d'un outil qui s'ajoute à Hermes pour lui faire écrire, tester et optimiser des enchaînements de type LangChain, puis les réutiliser tels quels lorsqu'il doit refaire le travail. L'auteur, qui l'a éprouvé sur ses propres flux, annonce une réduction de 70 % du coût d'un de ses flux d'extraction web — chiffre donné par lui, non reproduit ici.</p>
+<ul>
+<li>Licence MIT, dépôt vérifié : github.com/Bruce-Hopkins/Leafi — MIT, 3 étoiles, créé le 23 octobre 2026, dernière poussée le 9 novembre 2026.</li>
+<li>Site : https://leafi.app/hermes/</li>
+<li>Réserve : le projet est très jeune (3 étoiles) et aucune évaluation extérieure n'existe encore ; le gain annoncé reste une assertion de l'auteur.</li>
+</ul>
+<h3>Petasos : Agent Command — une console mobile, pas une fenêtre de conversation</h3>
+<p>Application iPhone et iPad (utilisable aussi sur Mac à processeur Arm) qui se présente comme une console de commandement pour un agent que l'on héberge soi-même, organisée en quatre onglets : l'état de l'hôte, les sessions — y compris celles des tâches planifiées et des autres canaux —, les tâches, et la machine. La version 1.0.1, publiée le jour du message, apporte les cartes d'appel, les tuiles de statistiques et les cartes de fichiers dans les réponses.</p>
+<ul>
+<li>Prix : gratuit, vérifié sur la fiche (offre à 0 dollar relevée dans les données de la page). Aucun dépôt public : application à code fermé.</li>
+<li>Fiche : https://apps.apple.com/app/id6826896652 — discussion : https://www.reddit.com/r/hermesagent/comments/1xrwc2p/petasos_is_on_the_app_store_and_101_just_landed/</li>
+<li>Remarque : le billet cite pêle-mêle les clients concurrents déjà annoncés ici (Hermex, Vory, Conduit, Paper Harness, Winglet, l'application mobile officielle en bêta). La liste des fonctions annoncées vient de l'auteur ; je n'ai vérifié que la fiche et son prix.</li>
+</ul>
+<h3>Hermit — chaque profil Hermes devient un contact, dans une seule boîte de réception</h3>
+<p>Application iPhone et iPad qui rassemble tous les profils d'Hermes dans une boîte de réception unique, à la manière d'une messagerie où chaque contact est un agent : on voit d'un coup d'œil lequel travaille, lequel a répondu, lequel attend une décision. Les approbations, brouillons et questions remontent sous forme de cartes à boutons ; on peut intervenir pendant une tâche en choisissant de mettre en attente, d'infléchir ou d'interrompre ; dictée, lecture à voix haute et conversation vocale sont prévues, ainsi que les notifications et l'affichage de l'avancement sur l'écran verrouillé. L'application n'a ni compte ni serveur intermédiaire : elle parle directement au Mac par Tailscale.</p>
+<ul>
+<li>Prix : non annoncé dans le billet ; l'auteur indique seulement la gratuité du « cadeau » et je n'ai pas trouvé de fiche publique.</li>
+<li>Contraintes : Hermes sous macOS uniquement, Tailscale des deux côtés, iOS 18 minimum. Distribution par TestFlight (bêta) ; le lien d'inscription figure dans le fil, il n'est pas repris dans le journal collecté.</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xs4juy/hermit_a_bot_focused_experience_for_hermes/</li>
+<li>Réserve : bêta, sans dépôt ni licence publiés.</li>
+</ul>
+<h3>SafeScript — un sous-ensemble sûr de JavaScript pour exécuter du code non fiable</h3>
+<p>Repéré sur Hacker News (11 points, 10 commentaires), il s'agit d'un sous-ensemble de JavaScript conçu pour être embarqué partout où l'on doit exécuter du code que l'on ne contrôle pas. Le sujet intéresse directement cette veille : c'est le même problème que celui posé par les greffons de bac à sable et de relecture de commandes pour un agent qui écrit et exécute du code.</p>
+<ul>
+<li>Licence MIT, dépôt vérifié : github.com/SafeScript/safescript — MIT, 22 étoiles, créé le 23 octobre 2026, dernière poussée le 26 octobre 2026.</li>
+<li>Réserve : rien ne montre encore son intégration à un agent ; c'est une brique, pas un outil prêt à l'emploi.</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Hermes Conduit 2.3.0 — « Bot Mode » : les bots coordonnent eux-mêmes leurs sessions</h3>
+<p>Le client iOS de référence pour Hermes (déjà annoncé ici en 2.2.1 avec « Pulse ») remplace son mode « bots » par une organisation où chaque bot devient un coordonnateur : on confie un objectif, le bot ouvre et suit ses propres sessions Hermes persistantes au lieu d'empiler tout le travail dans une seule conversation, et le panneau « Work » montre ce qui avance, ce qui est terminé et ce qui attend une décision. Un bot peut en déléguer un autre, chaque bot gérant ses propres sessions ; les sessions étant de vraies sessions Hermes, le travail peut être repris plus tard.</p>
+<ul>
+<li>Distribué sur l'App Store ; le billet ne donne pas le prix et je ne l'ai pas vérifié.</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xrwfzk/hermes_conduit_230_update_ask_once_let_your_bots/</li>
+<li>Réserve : annonce d'auteur, sans détail sur les changements de la 2.3.0 en dehors du mode « bots ».</li>
+</ul>
+<h3>Le cœur d'Hermes : 969 demandes fusionnées entre le 2 et le 9 novembre</h3>
+<p>Un récapitulatif hebdomadaire recense 969 demandes fusionnées dans Hermes Agent, dont 32 classées en sécurité. Les points lisibles renvoient à l'isolement et au masquage : <code>bubblewrap</code> 1.3.0 place les outils de fichiers dans le bac à sable, <code>airlock</code> passe en 0.3.0 (correctif Windows), la règle sur les téléversements de justificatifs ne compte plus que les envois par <code>curl</code> ou <code>wget</code>, les secrets collés dans une ligne de commande, une chaîne de connexion ou une URL n'atteignent plus les journaux en clair, et les écritures de témoins de navigation marquées comme provenant d'une autre page sont refusées. La version majeure 0.23.0 « Hearth », publiée le 5 novembre, a été traitée dans l'édition du 6.</p>
+<ul>
+<li>Source : https://www.reddit.com/r/hermesagent/comments/1xrzl28/this_week_in_hermes_agent_nov_2nov_9_969_prs/ — publication d'un compte de résumé, pas de l'équipe.</li>
+<li>Réserve : la copie de ce message dans le journal est tronquée en pleine liste ; le décompte de 969 et le classement par thème viennent de l'auteur, je ne les ai pas recomptés.</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>hermes-context-review-plugin — compacter la conversation avec l'accord de l'utilisateur</h3>
+<p>L'auteur s'appuie sur un constat répandu chez les utilisateurs d'agents : au-delà de 200 000 à 300 000 jetons, le contexte devient confus, et l'on relance au lieu de faire le ménage. Son greffon propose, vers cette taille, de reprendre la conversation : il détermine ce qui compte encore, signale les changements de direction et les points laissés en suspens — en posant une question à la fois —, puis montre ce qu'il compte garder avant de compacter.</p>
+<ul>
+<li>Dépôt vérifié : github.com/izzie-iz/hermes-context-review-plugin — aucune licence identifiée par GitHub, 0 étoile, créé le 9 novembre 2026, dernière poussée le même jour.</li>
+<li>Discussion : https://www.reddit.com/r/hermesagent/comments/1xrt79a/context_compaction_agent/</li>
+<li>Réserve : dépôt du jour, aucune licence déclarée — à lire avant d'installer ; l'auteur annonce une période d'essai de deux semaines avant de conclure à l'utilité.</li>
+</ul>
+<h2>Modèles</h2>
+<p>Deux annonces relevées sur le fil généraliste de Hacker News, à prendre comme telles : un nouveau modèle, Claude Fable 5.2, avec sa variante « Mythos 5.2 », est annoncé (fil à 214 points pour la note de 65 sur Artificial Analysis, présentée comme la plus haute à ce jour — je n'ai pas vérifié ce chiffre indépendamment), et un fil intitulé « A flood of reports of Opus 5.5 being nerfed » rassemble des utilisateurs constatant une dégradation depuis le 3 novembre. Le second point n'est pas une annonce mais un faisceau de témoignages : à traiter comme une rumeur, pas comme un fait établi.</p>
+<h2>Volume</h2>
+<p>101 entrées distinctes examinées depuis la précédente édition — 25 du journal r/hermesagent, 3 de Simon Willison, 2 de Latent Space et 71 du flux Hacker News généraliste — 9 retenues, 92 écartées, soit un taux de rétention d'environ 9 %. Le journal principal était composé presque entièrement de questions et de retours d'expérience : choix de modèle et de fournisseur, accès à la messagerie professionnelle protégée par un second facteur, hébergement sur un Raspberry Pi, mémoire partagée entre agents, usage du tableau Kanban, migration d'un abonnement à l'autre — rien de tout cela n'annonce un outil. Le flux Hacker News généraliste, comme d'habitude, a apporté beaucoup de bruit hors sujet (politique américaine, marchés, faits divers) ; deux de ses entrées seulement ont été retenues, et deux trouvailles hors écosystème sont signalées ci-dessous. La dernière collecte, le 9 novembre à 23 h 13 UTC, s'est déroulée sans erreur.</p>
+<h2>Note de méthode</h2>
+<p>Trois contenus écartés méritent d'être signalés plutôt que passés sous silence. « buddybot » décrit un montage personnel complet et cohérent (suivi du temps de travail en JSONL, plugin de barre de menus SwiftBar, synthèse du soir par un modèle local, rendez-vous du matin) mais sans dépôt ni paquet publié : c'est un récit de montage, pas un outil installable. L'interface personnelle inspirée du thème JetBrains Islands annonce explicitement qu'elle n'est pas encore publiée. Quant à la recette consistant à faire configurer ses profils par un assistant de code, elle relève de la méthode et non d'un logiciel distribué.</p>
+<p>Deux trouvailles du flux Hacker News sortent du thème de cette veille mais pourraient vous intéresser directement, tant elles touchent au logiciel libre et gratuit : KetchUp (ketchup3d.github.io/app/), alternative libre à SketchUp écrite en Rust et WebGPU, 323 points et 89 commentaires, et Flide (github.com/OmniJev/Flide), moteur d'inférence Apache-2.0 pour modèles de décision, 271 étoiles, installation par <code>pip</code>. Un autre sujet signalé ailleurs — un agent de bureau qui transmet l'agent SSH de la machine aux machines distantes, relevé sur le dépôt d'OpenAI Codex — concerne la sécurité des assistants de code plutôt que Hermes, mais la question vaut d'être connue.</p>
+<footer>Édition du mardi 10 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

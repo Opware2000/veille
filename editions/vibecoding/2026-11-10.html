@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — mardi 10 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une journée riche en outillages libres pour le codage assisté : KetchUp, un SketchUp libre écrit en Rust pour la conception d'objets et de meubles ; office-engine, qui affiche et modifie DOCX, XLSX et PPTX dans le navigateur ; Slopie, qui relit toutes vos sessions d'agents en local et en tire un bilan chiffré. Trois outils de coordination d'agents arrivent en même temps — toolshed pour installer les serveurs MCP dans Claude Code et Codex, Thrum pour la messagerie persistante entre agents, Attentry pour relire chaque modification faite par Claude Code. Côté Reddit, peu de nouveautés exploitables, mais LogoLight et SkySaver animent proprement macOS.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>KetchUp — un SketchUp libre pour la conception d'objets</h3>
+<p>Application de modélisation 3D pour l'ameublement et la menuiserie : on dessine des lignes, rectangles et cercles, on extrude avec l'outil « Push/Pull », on cote au millimètre, on organise par groupes, composants et étiquettes. Elle importe la géométrie SketchUp et exporte en OBJ ; les projets sont enregistrés en local, sans compte ni nuage. Fonctionne dans un navigateur de bureau avec WebGPU ou WebGL2, ou en application native Windows, macOS et Linux. Licence MIT, 619 étoiles, dernière mise à jour le 9 novembre 2026, écrite en Rust. Remarque : le dépôt est renommé depuis peu, l'adresse <code>Ketchup3D/app</code> redirige aujourd'hui vers <code>BenchUp3D/editor</code>.<br />
+Lien : https://ketchup3d.github.io/app/ — dépôt : https://github.com/Ketchup3D/app</p>
+<h3>office-engine — la bureautique dans le navigateur, sans conversion</h3>
+<p>Bibliothèque libre qui ouvre et modifie les fichiers Word, Excel et PowerPoint directement dans le navigateur, avec un chargement progressif (requêtes Range, analyse XML dans un fil de travail) pour ne jamais bloquer l'interface. Formules de tableur (134 fonctions), styles, images, tableaux, diaporama, export PDF et HTML, édition collaborative en temps réel, et enregistrement dans le format d'origine sans réécrire les parties non touchées. S'embarque dans une ligne en React, en composant web ou en HTML simple ; l'application reste purement locale, aucun service tiers n'est requis. Licence MIT, 108 étoiles, dernière mise à jour le 9 novembre 2026.<br />
+Lien : https://github.com/p10node/office-engine</p>
+<h3>Slopie — le bilan chiffré de vos sessions d'agents</h3>
+<p>Outil en ligne de commande (<code>npx slopie audit</code>) qui relit l'historique que Claude Code, Codex, Cursor, OpenCode et pi laissent déjà sur le disque et en tire un résumé de votre année : modèles utilisés, dépense estimée aux tarifs d'API, modèles les plus remerciés et les plus injuriés, avec une affiche finale à partager. Tout se calcule sur la machine — aucun envoi, aucune clé d'API ; l'option <code>--online</code> ne transmet que des agrégats à un modèle gratuit, et un avertissement précède chaque requête. Il garde aussi un index consultable de vos anciennes sessions, qu'un agent peut interroger par MCP. Nécessite Node 22 au minimum. Licence MIT, paquet npm <code>slopie</code> en version 1.9.0 ; dépôt très récent et peu étoilé.<br />
+Lien : https://github.com/HulkInTherapy/slopie</p>
+<h3>toolshed — installer un serveur MCP dans Claude Code et Codex</h3>
+<p>Interface en terminal et commande unique pour ajouter n'importe quel serveur MCP aux deux agents à la fois : paquet npm ou Python, exécutable qui parle MCP, ou adresse distante. Il démarre le serveur et liste ses outils avant que l'agent ne l'utilise, importe la configuration existante pour sortir les jetons des fichiers en clair, et stocke ces jetons dans le trousseau macOS ou le Secret Service Linux plutôt que dans un fichier de configuration. Les serveurs retenus sont décrits dans un petit fichier YAML, donc partageables dans un dépôt. Licence MIT, 0 étoile, version 0.2.2, écrit en Go, macOS et Linux.<br />
+Lien : https://toolshed.run — dépôt : https://github.com/bartdegoede/toolshed</p>
+<h3>Thrum — une messagerie persistante entre agents</h3>
+<p>Couche de messagerie pour agents : les messages survivent au compactage du contexte, au redémarrage de session et au changement de machine, et les agents gardent leur identité entre plusieurs copies de travail. S'appuie sur un dépôt git dédié pour l'historique, sans base de données externe, avec un démon local, une interface web intégrée, la synchronisation entre machines par Tailscale signée en Ed25519, et un pont Telegram pour recevoir les messages d'un agent sur son téléphone. Fonctionne en ligne de commande et en serveur MCP pour les agents Claude Code. Licence MIT, 28 étoiles, dernière mise à jour du dépôt le 5 novembre 2026 (le site annonce une version plus récente), écrit en Go.<br />
+Lien : https://thrum.team/ — dépôt : https://github.com/leonletto/thrum</p>
+<h3>Attentry — relire ce que Claude Code vient d'écrire</h3>
+<p>Vérificateur local qui examine chaque modification produite par Claude Code avant qu'elle ne s'installe. Projet très récent et encore peu étoilé (0 étoile), en TypeScript, licence MIT, dernière mise à jour le 9 novembre 2026 : à essayer plus qu'à déployer.<br />
+Lien : https://github.com/Aarv-1o/Attentry</p>
+<h3>reset-rune — ne plus perdre ses remises à zéro Codex</h3>
+<p>Petite application macOS qui surveille les remises à zéro (« resets ») offertes avec l'abonnement Codex et les consomme automatiquement avant leur expiration, en les conservant sous forme de réserves. Écrite en Swift, licence MIT, 0 étoile, dernière mise à jour le 8 novembre 2026. À manier avec prudence : l'outil va à l'encontre de l'intention d'un mécanisme de quota, et rien ne garantit que l'éditeur ne le bloque pas.<br />
+Lien : https://github.com/sufferfml/reset-rune</p>
+<h3>Flide — moteur d'inférence pour modèles de décision</h3>
+<p>Moteur d'inférence présenté comme jusqu'à 9,5 fois plus rapide que l'implémentation de référence des modèles de décision de type Jev. Écrit en Python, licence Apache 2.0, 270 étoiles, dernière mise à jour le 9 novembre 2026. Le domaine reste étroit et la comparaison vient de l'auteur : à éprouver sur ses propres données.<br />
+Lien : https://github.com/OmniJev/Flide — présentation : https://flide.org</p>
+<h3>e-means — un k-means plus rapide à qualité égale</h3>
+<p>Nouvelle règle d'optimisation pour le problème des k-moyennes, publiée dans la bibliothèque Faiss de Meta : réglages automatiques, initialisation et réactivation de grappes mortes revues. D'après les auteurs, la perte de référence est atteinte en un dixième des itérations, soit un gain de temps de 8 à 15 fois sur processeur et de 10 à 45 fois sur carte graphique. Intégré à Faiss (licence MIT, dernière mise à jour le 9 novembre 2026) et accompagné d'un article ; les mesures viennent de l'équipe elle-même. Utile à qui regroupe de gros volumes de vecteurs — documents, images, données scientifiques.<br />
+Lien : https://e-means.github.io/ — code : https://github.com/facebookresearch/faiss/tree/main/contrib/e_means</p>
+<h3>Zebkit — un moteur de navigateur embarquable</h3>
+<p>Moteur de navigateur compact et multiplateforme, utilisable comme bibliothèque dans une application de bureau : on embarque le rendu web sans installer un navigateur complet. Écrit en C++, licence LGPL 2.1, 171 étoiles, projet créé le 10 octobre 2026 et mis à jour le 9 novembre. Utile pour afficher une interface HTML dans un outil natif, par exemple une documentation ou un tableau de bord.<br />
+Lien : https://github.com/ikey4u/zebkit</p>
+<h3>CUI — composants d'interface natifs pour le langage C</h3>
+<p>Bibliothèque d'environ 150 composants d'interface natifs pour le C — fenêtres, listes, champs, animations à ressort, navigation complète au clavier — sans aucune dépendance externe, sous Windows, macOS et Linux. Licence MIT, 663 étoiles, dernière mise à jour le 9 novembre 2026, en C. Rare aujourd'hui : une boîte à outils d'interface graphique moderne qui ne demande ni C++ ni cadriciel.<br />
+Lien : https://github.com/yappologistic/CUI — présentation : https://yappologistic.github.io/CUI/</p>
+<h3>SafeScript — exécuter du JavaScript non fiable sans risque</h3>
+<p>Sous-ensemble de JavaScript conçu pour être embarqué et exécuté sans danger dans un environnement que l'on ne maîtrise pas : greffons de tiers, code généré par un agent, extraits fournis par un utilisateur. Écrit en JavaScript, licence MIT, 22 étoiles ; projet lancé le 23 octobre 2026 et non modifié depuis le 26 octobre — à regarder de près avant de s'y appuyer.<br />
+Lien : https://github.com/SafeScript/safescript</p>
+<h3>LogoLight — piloter le logo lumineux du MacBook Pro</h3>
+<p>Application de barre de menus pour le MacBook Pro à écran PROLED XDR, seul modèle dont le logo s'allume : allumage et extinction, gradation, effets (respiration, pulsation, battement), clignotement en morse, maintien de l'éclairage capot fermé et affichage du niveau de batterie sur le logo. Elle passe normalement par une commande d'administration en terminal ; l'application se substitue à elle et s'ajoute au centre de contrôle sans demander de mot de passe. Gratuite, licence MIT, 17 étoiles, dernière mise à jour le 9 novembre 2026. Elle utilise un mécanisme privé de macOS et ne sera donc jamais publiée sur l'App Store.<br />
+Lien : https://logolight.app — dépôt : https://github.com/Ark0N/LogoLight</p>
+<h3>SkySaver — un fond d'écran qui suit le ciel réel</h3>
+<p>Fond d'écran animé pour macOS qui affiche le ciel correspondant à l'heure et à la météo réelles : herbe qui ondule et eau qui ondule au passage du curseur, cycle jour-nuit synchronisé ou réglable, pluie, nuages, chants d'oiseaux et grondement du tonnerre. Application de barre de menus, gratuite, en téléchargement direct chez l'auteur. Attention : le binaire n'est pas signé et macOS le refuse au premier lancement — il faut passer par « Ouvrir quand même » ou par le script d'installation fourni. L'auteur est le même que pour la précédente veille, avec un projet distinct.<br />
+Lien : https://thoufik.space/skysaver</p>
+<h3>Someone Was Here — savoir qui a utilisé votre Mac</h3>
+<p>Application macOS gratuite qui photographie la personne qui s'assoit devant la machine après une période d'inactivité, avec l'heure et la façon dont elle est entrée ; la reconnaissance faciale tourne en local et évite les alertes inutiles quand c'est vous. Rien n'est envoyé à l'éditeur, la lumière de la caméra s'allume visiblement, et l'application se déclare explicitement comme un outil de protection de son propre poste (prévenez ceux qui partagent l'espace). Gratuite sur l'App Store, application iPhone incluse ; les alertes instantanées sur téléphone coûtent 4,99 dollars en achat unique. Ce n'est pas un logiciel libre, contrairement à la plupart des entrées ci-dessus.<br />
+Lien : https://someonewashere.app/</p>
+<h3>Tokei Zukan — un catalogue de montres à sa taille de poignet</h3>
+<p>Catalogue illustré de montres dessinées en SVG à l'échelle des dimensions réelles du fabricant : on règle son tour de poignet, on voit chaque modèle dessus, on en compare plusieurs côte à côte et l'on garde sa liste. Gratuit, sans inscription, sans dépôt public identifié — l'auteur annonce du code ouvert et un guide pour faire dessiner les montres par un modèle, mais je n'ai pas pu retrouver le dépôt pour vérifier licence et étoiles : à confirmer sur place.<br />
+Lien : https://tokeizukan.com</p>
+<h3>NFL-TCKR — bandeau de scores NFL pour Windows</h3>
+<p>Bandeau défilant en haut de l'écran pour Windows, sur le modèle des afficheurs à diodes : logos des équipes, noms colorés, scores, distance à parcourir, dernière action, statistiques du quart-arrière et position sur le terrain, alimentés par l'interface publique d'ESPN. Écrit en Python, 2 étoiles, binaires publiés le 8 novembre 2026 ; GitHub ne lui reconnaît aucune licence, donc à considérer comme non réutilisable en l'état. Même auteur qu'un bandeau de baseball.<br />
+Lien : https://github.com/krypdoh/NFL-TCKR</p>
+<h3>GitHub Backup Manager — archiver ses dépôts et les parcourir</h3>
+<p>Outil local qui sauvegarde des dépôts GitHub en conservant l'historique et les branches, les sous-modules récursifs, les objets Git LFS, les publications et leurs binaires, les journaux de modifications, les tickets et leurs pièces jointes, les wikis et les avis de sécurité, avec des instantanés successifs. La sauvegarde s'effectue par un moteur local et les archives restent chez vous ; la consultation reprend une présentation proche de GitHub. Aucun lien vers un dépôt n'est donné dans l'annonce, je n'ai donc pas pu vérifier licence ni prix — à demander à l'auteur.<br />
+Annonce : https://www.reddit.com/r/vibecoding/comments/1xqwenk/</p>
+<h3>Scorchball TV — un championnat fictif qui tourne en continu</h3>
+<p>Projet de divertissement publié sous licence MIT : un faux championnat, huit clubs inventés, un flux en continu en pixel art avec ralentis, plateau, commentaires générés et podcast du soir — 65 000 lignes de JavaScript sans cadriciel ni étape de compilation. L'intérêt ici n'est pas le sport mais le code et la documentation livrés avec (le dépôt contient un fichier d'instructions pour agent et un récit de construction), à consulter si vous voulez voir jusqu'où va un projet assisté par agent.<br />
+Dépôt : https://github.com/savenor14/scorchball-tv — direct : https://scorchball.tv</p>
+<h3>Codex allégé — retirer télémétrie et publicités</h3>
+<p>Un développeur annonce avoir retiré de Codex la télémétrie, les publicités, le mode travail, les diapositives, les « animaux de compagnie », la documentation et les fenêtres de promotion, avec un gain de vitesse qu'il décrit comme important. Aucun dépôt ni binaire n'est indiqué dans le message (le collecteur n'a pas conservé le corps), donc rien n'est vérifiable : à suivre si l'auteur publie de quoi l'essayer.<br />
+Annonce : https://www.reddit.com/r/vibecoding/comments/1xr998e/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Claude Fable 5.2 et Mythos 5.2</strong> : nouvelle version des modèles d'Anthropic, annoncée le 9 novembre et citée par plusieurs sources du flux Hacker News, avec une note de 65 sur Artificial Analysis — présentée comme la plus haute à ce jour. Modèles propriétaires et payants, mais c'est l'événement de la journée pour qui utilise Claude Code : l'offre de lancement et le changement de modèle peuvent modifier les coûts d'une séance. Lien : https://www.anthropic.com/claude-fable-and-mythos-5-2</li>
+<li><strong>moe-inference-engine</strong> (prototype) : l'auteur fait tourner gpt-oss-120b et Qwen3.5-122B-A10B sur un MacBook Pro M1 Max de 32 Go en gardant l'essentiel du modèle sur le disque et en plafonnant la mémoire du processus à 16 Gio — 7,84 jetons par seconde contre 5,78 pour le moteur de référence, et surtout une machine qui reste réactive. Les mesures, la méthode et les erreurs corrigées sont détaillées, mais <strong>le code du moteur n'est pas publié</strong> : c'est un résultat à lire, pas un outil à installer. À suivre s'il se décide à ouvrir le projet. Lien : https://mitln.github.io/moe-inference-engine/</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>claude-bulkhead</strong> : jeu de greffons sans dépendance pour faire tourner plusieurs sessions de Claude Code sur une même machine sans qu'elles se gênent — plus de serveurs de développement tués, de ports en conflit, de mémoire saturée ou de validations mélangées. Il permet aussi de relire les journaux d'une session pour compter les collisions entre sessions parallèles. Licence MIT, 25 étoiles, dernière mise à jour le 8 novembre 2026. Dépôt : https://github.com/dooly6276/claude-bulkhead</li>
+<li><strong>FixMyPrompt</strong> (fmp-plugins) : greffon pour Claude Code qui ajoute des mémoires de projet et un « Agent Doctor » qui vérifie et répare les fichiers d'instructions <code>CLAUDE.md</code> et <code>AGENTS.md</code>. Licence Apache 2.0, 1 étoile, dernière mise à jour le 6 novembre 2026, en JavaScript. Dépôt : https://github.com/GDM-Digital-Media-Group/fmp-plugins</li>
+</ul>
+<h2>Volume</h2>
+<p>155 entrées nouvelles examinées (journal du subreddit alimenté par Reddit, l'extension du Mac, Hacker News et Lobsters, plus les journaux Simon Willison, Latent Space, Hugging Face et le flux Hacker News à partir de dix points), 23 retenues, 132 écartées. Vingt-deux entrées plus anciennes ont été écartées d'office : l'extension Reddit a déposé le 31 octobre un lot de fils qui n'avaient jamais été collectés, et ils tombent hors de l'horizon de quatre jours. Le taux de rétention reste faible pour la même raison que d'habitude — cette période est dominée par les jeux présentés par leurs auteurs, les récits d'expérience et les questions sur les abonnements. Hacker News a fourni l'essentiel des outils retenus. Aucune erreur de collecte dans <code>meta.json</code> (dernière collecte le 9 novembre 2026 à 23 h 12 UTC).</p>
+<footer>Édition du mardi 10 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
