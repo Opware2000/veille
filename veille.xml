@@ -6,9 +6,134 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 10 Nov 2026 05:04:54 +0100</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 00:02:37 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — mercredi 11 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-11.html</link>
+<guid isPermaLink="false">artcraft-2026-11-11</guid>
+<pubDate>Wed, 11 Nov 2026 00:02:37 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>GenGate, l'extension d'intelligence artificielle de PhotoCraft, annonce une intégration complète avec ComfyUI : workflows personnels, nœuds d'entrée et de sortie dédiés, sans export de fichier JSON à chaque réglage.</li>
+<li>MailCraft, client de messagerie, d'agenda et de contacts écrit en Rust, apparaît dans le lanceur d'ArtCraft sous macOS ; le projet est en alpha précoce mais déjà très suivi.</li>
+<li>Des scripts communautaires permettent de piloter les applications ArtCraft avec un modèle local (Ollama) ; côté dépôt officiel, sept commits d'entretien et aucune nouvelle version depuis la 0.41.1.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel : sept commits d'entretien, aucune version depuis la 0.41.1</h3>
+<p>Entre le 9 novembre 20 h et le 10 novembre 21 h 40 UTC, le dépôt <code>storytold/artcraft</code> n'a reçu que des commits d'entretien, signés FredApps (six) et AxylumRust (un). Deux d'entre eux seulement étaient visibles dans le flux du dépôt au moment de la rédaction : la mise en conformité de <code>url_utils</code> avec les lints « Clippy pedantic » et une modification de l'intégration continue qui n'autorise plus qu'une construction de version macOS et une construction Windows par branche à la fois, avec des limites de temps par tâche. Les cinq autres, publiés le 10 novembre entre 17 h 36 et 20 h 35 UTC, n'étaient pas encore collectés : ils remplacent des opérations de fichier bloquantes par <code>tokio::fs</code> dans le bureau (entrées et sorties de fichiers pour Sora et Midjourney) et dans les clients d'API, et appliquent trois nettoyages issus de l'analyse SonarCloud (marquage <code>void</code> des promesses sans attente dans l'application et dans les briques Tauri, exclusion de TypeScript et JavaScript de la couverture Sonar). Rien de visible pour l'utilisateur, et aucune publication depuis la <strong>0.41.1</strong> du 7 novembre.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft — 40 494 étoiles, 699 tickets ouverts au moment de la vérification</li>
+<li>Commit « Clippy » : https://github.com/storytold/artcraft/commit/1510abf5639393fc7dbda01fc17ff59792cbc885</li>
+<li>Commit « builds de version » : https://github.com/storytold/artcraft/commit/1b99c184efed01ba1202475a3f20e7bf18ebbc76</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>GenGate — tout ComfyUI depuis PhotoCraft</h3>
+<p>u/LemonySniket donne des nouvelles, deux semaines après sa première présentation, de GenGate, son extension d'intelligence artificielle pour PhotoCraft. La nouveauté principale est une intégration complète de ComfyUI, jusqu'ici expérimentale : des nœuds GenGate d'entrée et de sortie transmettent invites, images, masques, références et paramètres de génération entre PhotoCraft et ComfyUI, et GenGate Studio exécute le graphe actuellement ouvert dans ComfyUI, modifications non enregistrées comprises — plus besoin d'exporter un fichier JSON après chaque ajustement. Les fonctions de remplissage et de retouche par IA peuvent employer leurs propres graphes, et l'utilisateur n'est plus limité aux modèles préréglés de GenGate : tout modèle que ComfyUI sait faire tourner devient utilisable depuis PhotoCraft. L'auteur résume l'intérêt : la souplesse de ComfyUI avec le confort des outils d'édition de PhotoCraft. Il signale aussi que suivre le développement très rapide de PhotoCraft est un travail en soi. <strong>Réserve</strong> : le corps du post est tronqué dans le journal de collecte ; les autres changements annoncés en fin de message n'ont pas pu être lus.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsuxml/gengate_updates_and_more/ — u/LemonySniket</li>
+</ul>
+<h3>MailCraft — un client de courrier libre rejoint le lanceur</h3>
+<p>u/Jellygator0 signale l'apparition de MailCraft dans le lanceur d'ArtCraft sous macOS, où il n'est pas encore activable. L'application n'est pas de l'éditeur : elle vient du dépôt <code>UCS-Care-Group/mailcraft</code>, sous Apache-2.0, écrite en Rust, décrite par ses auteurs comme une réécriture propre (clean room) d'un client de courrier, d'agenda et de contacts pour Microsoft 365, Outlook.com et IMAP ; elle est annoncée en alpha précoce. Le dépôt, créé le 12 octobre, compte 315 étoiles, 53 copies et 176 tickets ouverts, avec un dernier envoi le 10 novembre à 21 h 52 UTC. Ce que le post apporte surtout, c'est le critère de choix de son auteur : la validation par l'équipe ArtCraft avant l'acceptation dans le lanceur est ce qui le rassure sur le risque d'abandon, parmi les nombreuses applications « Craft » disponibles. Sa présence effective dans le lanceur n'a pas pu être vérifiée depuis ce serveur.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsxba3/mailcraft_is_here/ — u/Jellygator0</li>
+<li>Dépôt : https://github.com/UCS-Care-Group/mailcraft</li>
+</ul>
+<h3>Artcraft-Ollama-Scripts — conduire les applications avec un modèle local</h3>
+<p>u/Typing-Cat publie <code>nscreated/Artcraft-Ollama-Scripts</code> (licence MIT, scripts Shell), créé le jour même de son message. Il refuse de payer pour une intelligence artificielle en ligne : il installe Ollama et le modèle Qwen3.6:35b-a3b sur un ancien ordinateur de jeu exposé au réseau, puis lance les scripts depuis une machine Linux où les applications ArtCraft sont installées <strong>en paquets système</strong> — ni AppImage ni Flatpak, afin que les binaires <code>-cli</code> soient accessibles. Les applications se lancent ensuite par une commande du type <code>kit-photocraft</code>, la fenêtre graphique et le terminal restant liés, le modèle pilotant l'application depuis le terminal. Il donne lui-même la mesure du résultat : « c'est amusant, c'est lent et plutôt bête, mais c'est amusant ». <strong>Réserve</strong> : dépôt sans description, sans étoile, publié le jour du message — une expérimentation personnelle, pas un outil suivi.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbc4n/helper_scripts_to_use_artcraft_apps_with_local_ai/ — u/Typing-Cat</li>
+<li>Dépôt : https://github.com/nscreated/Artcraft-Ollama-Scripts</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>SUE — peinture, bande dessinée et animation dans un seul programme</h3>
+<p>u/Kilo_Metric, à la recherche d'un équivalent de Clip Studio Paint capable de tourner sous Linux, présente ce qu'il décrit comme le plus proche comparable, capable d'ouvrir les fichiers <code>.clip</code>. C'est u/Pixelsmithing4life qui donne le lien dans un second fil : <code>MagiGun/sue</code>, que son auteur présente comme « Singular Unified Engine », un environnement unique pour la peinture, la bande dessinée, l'animation, l'écriture, le son et davantage (le message de Reddit écrit pour sa part « Single Unified Environment » — les deux formulations circulent, la source exacte n'a pas été vérifiée sur le site). Le dépôt, écrit en Rust, compte 24 étoiles, trois copies, a été créé le 29 octobre et a reçu son dernier envoi le 9 novembre ; GitHub n'identifie pas la licence (« Other ») — le point est à vérifier avant tout usage sérieux. Rien n'indique de lien avec l'éditeur ArtCraft : à ranger avec les outils libres de création comparables. Pixelsmithing4life indique l'avoir installé sur son Mac et que cela « semble bien fonctionner » ; c'est une appréciation d'utilisateur, non un essai fait ici.</p>
+<ul>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xsmhjt/i_was_looking_for_clip_studio_paint_clone/ — u/Kilo_Metric ; https://www.reddit.com/r/ArtCraftAI/comments/1xsnvdb/shout_out_to_ukilo_metric_for_this_one_clip/ — u/Pixelsmithing4life</li>
+<li>Projet : https://github.com/MagiGun/sue</li>
+</ul>
+<h3>Vectopen 0.2.3 — mise à jour annoncée sans détail</h3>
+<p>u/Critical_Carpet6832 annonce la version 0.2.3 de Vectopen, éditeur vectoriel libre et indépendant de la suite ArtCraft. La version précédente, 0.2.2, avait été présentée sur r/scribus avec 106 améliorations, l'import des fichiers Affinity, une refonte de l'interface et dix langues. <strong>Incertitude</strong> : ce message est rédigé en espagnol, sans corps ni lien dans le journal, et je n'ai trouvé ni dépôt ni page officielle permettant de dire ce qu'apporte la 0.2.3 — le contenu de cette version reste donc inconnu. À suivre si l'auteur détaille ; en l'état, l'annonce ne renseigne pas.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs5m7l/nueva_versi%C3%B3n_vectopen_023/ — u/Critical_Carpet6832</li>
+</ul>
+<h3>Seedream 5.5 — nouveau modèle d'image de ByteDance</h3>
+<p>Le fil de u/videorouter n'apprend rien : message sans corps, publié par un compte de fournisseur d'accès aux modèles. Le fait, lui, est réel et daté : ByteDance a annoncé le 9 novembre Seedream 5.5, modèle de génération et d'édition d'images, avec sortie native en transparence (canal alpha), conservation des zones non retouchées sur une centaine de passes d'édition successives, rendu de texte plus fiable en une quinzaine de langues et une définition allant jusqu'à 4K. Le déploiement commence par les applications de ByteDance (Doubao, Jimeng, Dreamina, CapCut) et la plateforme Volcengine ; les avantages annoncés sont ceux de ByteDance, non recoupés par un essai indépendant. Aucune intégration à ArtCraft n'est annoncée à ce jour ; un fork communautaire de PhotoCraft accepte déjà Seedream par clé d'API.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbgzm/introducing_seedream_55/ — u/videorouter</li>
+</ul>
+<h3>Logiciels strictement comparables</h3>
+<p>ComfyUI revient dans cette édition par le biais de GenGate, mais comme brique d'intégration plutôt que comme actualité propre. Pour InvokeAI, Krita AI Diffusion et Draw Things, rien de daté des dernières 24 heures n'a été trouvé de façon vérifiable : rien de notable.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Gridcraft — bugs à répétition selon un utilisateur.</strong> u/Possible_Answer_1187 décrit une application qui reste inutilisable pour un travail simple : la boîte de dialogue « Enregistrer sous » ignore le passage au format xlsx — il faut forcer le format, et l'enregistrement échoue souvent malgré tout —, la sélection des tableaux et des colonnes reste incomplète et le dépôt dans une cellule demande une zone de réaction plus large. Le message ne précise aucune version et n'est confirmé par personne d'autre : rapport isolé, à mettre à côté des cas MaterialCraft et LightCraft signalés dans l'édition précédente, sans conclusion possible à ce stade.</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs55wf/me_again_gridcraft/ — u/Possible_Answer_1187</li>
+</ul>
+<h2>Volume</h2>
+<p>23 éléments examinés dans le journal (21 posts de r/ArtCraftAI, 2 commits du dépôt officiel), plus cinq commits publiés le 10 novembre en soirée que le flux du dépôt n'avait pas encore relevés : 9 retenus, 14 écartés. Le taux de rétention est élevé parce que la communauté a publié ce jour-là trois outils (GenGate, MailCraft, les scripts Ollama) et deux applications comparables. La collecte s'est terminée sans erreur (<code>meta.json</code> du 10 novembre 21 h 40 UTC, aucune entrée dans <code>errors</code>).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>GenGate, l'extension d'intelligence artificielle de PhotoCraft, annonce une intégration complète avec ComfyUI : workflows personnels, nœuds d'entrée et de sortie dédiés, sans export de fichier JSON à chaque réglage.</li>
+<li>MailCraft, client de messagerie, d'agenda et de contacts écrit en Rust, apparaît dans le lanceur d'ArtCraft sous macOS ; le projet est en alpha précoce mais déjà très suivi.</li>
+<li>Des scripts communautaires permettent de piloter les applications ArtCraft avec un modèle local (Ollama) ; côté dépôt officiel, sept commits d'entretien et aucune nouvelle version depuis la 0.41.1.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel : sept commits d'entretien, aucune version depuis la 0.41.1</h3>
+<p>Entre le 9 novembre 20 h et le 10 novembre 21 h 40 UTC, le dépôt <code>storytold/artcraft</code> n'a reçu que des commits d'entretien, signés FredApps (six) et AxylumRust (un). Deux d'entre eux seulement étaient visibles dans le flux du dépôt au moment de la rédaction : la mise en conformité de <code>url_utils</code> avec les lints « Clippy pedantic » et une modification de l'intégration continue qui n'autorise plus qu'une construction de version macOS et une construction Windows par branche à la fois, avec des limites de temps par tâche. Les cinq autres, publiés le 10 novembre entre 17 h 36 et 20 h 35 UTC, n'étaient pas encore collectés : ils remplacent des opérations de fichier bloquantes par <code>tokio::fs</code> dans le bureau (entrées et sorties de fichiers pour Sora et Midjourney) et dans les clients d'API, et appliquent trois nettoyages issus de l'analyse SonarCloud (marquage <code>void</code> des promesses sans attente dans l'application et dans les briques Tauri, exclusion de TypeScript et JavaScript de la couverture Sonar). Rien de visible pour l'utilisateur, et aucune publication depuis la <strong>0.41.1</strong> du 7 novembre.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft — 40 494 étoiles, 699 tickets ouverts au moment de la vérification</li>
+<li>Commit « Clippy » : https://github.com/storytold/artcraft/commit/1510abf5639393fc7dbda01fc17ff59792cbc885</li>
+<li>Commit « builds de version » : https://github.com/storytold/artcraft/commit/1b99c184efed01ba1202475a3f20e7bf18ebbc76</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>GenGate — tout ComfyUI depuis PhotoCraft</h3>
+<p>u/LemonySniket donne des nouvelles, deux semaines après sa première présentation, de GenGate, son extension d'intelligence artificielle pour PhotoCraft. La nouveauté principale est une intégration complète de ComfyUI, jusqu'ici expérimentale : des nœuds GenGate d'entrée et de sortie transmettent invites, images, masques, références et paramètres de génération entre PhotoCraft et ComfyUI, et GenGate Studio exécute le graphe actuellement ouvert dans ComfyUI, modifications non enregistrées comprises — plus besoin d'exporter un fichier JSON après chaque ajustement. Les fonctions de remplissage et de retouche par IA peuvent employer leurs propres graphes, et l'utilisateur n'est plus limité aux modèles préréglés de GenGate : tout modèle que ComfyUI sait faire tourner devient utilisable depuis PhotoCraft. L'auteur résume l'intérêt : la souplesse de ComfyUI avec le confort des outils d'édition de PhotoCraft. Il signale aussi que suivre le développement très rapide de PhotoCraft est un travail en soi. <strong>Réserve</strong> : le corps du post est tronqué dans le journal de collecte ; les autres changements annoncés en fin de message n'ont pas pu être lus.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsuxml/gengate_updates_and_more/ — u/LemonySniket</li>
+</ul>
+<h3>MailCraft — un client de courrier libre rejoint le lanceur</h3>
+<p>u/Jellygator0 signale l'apparition de MailCraft dans le lanceur d'ArtCraft sous macOS, où il n'est pas encore activable. L'application n'est pas de l'éditeur : elle vient du dépôt <code>UCS-Care-Group/mailcraft</code>, sous Apache-2.0, écrite en Rust, décrite par ses auteurs comme une réécriture propre (clean room) d'un client de courrier, d'agenda et de contacts pour Microsoft 365, Outlook.com et IMAP ; elle est annoncée en alpha précoce. Le dépôt, créé le 12 octobre, compte 315 étoiles, 53 copies et 176 tickets ouverts, avec un dernier envoi le 10 novembre à 21 h 52 UTC. Ce que le post apporte surtout, c'est le critère de choix de son auteur : la validation par l'équipe ArtCraft avant l'acceptation dans le lanceur est ce qui le rassure sur le risque d'abandon, parmi les nombreuses applications « Craft » disponibles. Sa présence effective dans le lanceur n'a pas pu être vérifiée depuis ce serveur.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsxba3/mailcraft_is_here/ — u/Jellygator0</li>
+<li>Dépôt : https://github.com/UCS-Care-Group/mailcraft</li>
+</ul>
+<h3>Artcraft-Ollama-Scripts — conduire les applications avec un modèle local</h3>
+<p>u/Typing-Cat publie <code>nscreated/Artcraft-Ollama-Scripts</code> (licence MIT, scripts Shell), créé le jour même de son message. Il refuse de payer pour une intelligence artificielle en ligne : il installe Ollama et le modèle Qwen3.6:35b-a3b sur un ancien ordinateur de jeu exposé au réseau, puis lance les scripts depuis une machine Linux où les applications ArtCraft sont installées <strong>en paquets système</strong> — ni AppImage ni Flatpak, afin que les binaires <code>-cli</code> soient accessibles. Les applications se lancent ensuite par une commande du type <code>kit-photocraft</code>, la fenêtre graphique et le terminal restant liés, le modèle pilotant l'application depuis le terminal. Il donne lui-même la mesure du résultat : « c'est amusant, c'est lent et plutôt bête, mais c'est amusant ». <strong>Réserve</strong> : dépôt sans description, sans étoile, publié le jour du message — une expérimentation personnelle, pas un outil suivi.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbc4n/helper_scripts_to_use_artcraft_apps_with_local_ai/ — u/Typing-Cat</li>
+<li>Dépôt : https://github.com/nscreated/Artcraft-Ollama-Scripts</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>SUE — peinture, bande dessinée et animation dans un seul programme</h3>
+<p>u/Kilo_Metric, à la recherche d'un équivalent de Clip Studio Paint capable de tourner sous Linux, présente ce qu'il décrit comme le plus proche comparable, capable d'ouvrir les fichiers <code>.clip</code>. C'est u/Pixelsmithing4life qui donne le lien dans un second fil : <code>MagiGun/sue</code>, que son auteur présente comme « Singular Unified Engine », un environnement unique pour la peinture, la bande dessinée, l'animation, l'écriture, le son et davantage (le message de Reddit écrit pour sa part « Single Unified Environment » — les deux formulations circulent, la source exacte n'a pas été vérifiée sur le site). Le dépôt, écrit en Rust, compte 24 étoiles, trois copies, a été créé le 29 octobre et a reçu son dernier envoi le 9 novembre ; GitHub n'identifie pas la licence (« Other ») — le point est à vérifier avant tout usage sérieux. Rien n'indique de lien avec l'éditeur ArtCraft : à ranger avec les outils libres de création comparables. Pixelsmithing4life indique l'avoir installé sur son Mac et que cela « semble bien fonctionner » ; c'est une appréciation d'utilisateur, non un essai fait ici.</p>
+<ul>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xsmhjt/i_was_looking_for_clip_studio_paint_clone/ — u/Kilo_Metric ; https://www.reddit.com/r/ArtCraftAI/comments/1xsnvdb/shout_out_to_ukilo_metric_for_this_one_clip/ — u/Pixelsmithing4life</li>
+<li>Projet : https://github.com/MagiGun/sue</li>
+</ul>
+<h3>Vectopen 0.2.3 — mise à jour annoncée sans détail</h3>
+<p>u/Critical_Carpet6832 annonce la version 0.2.3 de Vectopen, éditeur vectoriel libre et indépendant de la suite ArtCraft. La version précédente, 0.2.2, avait été présentée sur r/scribus avec 106 améliorations, l'import des fichiers Affinity, une refonte de l'interface et dix langues. <strong>Incertitude</strong> : ce message est rédigé en espagnol, sans corps ni lien dans le journal, et je n'ai trouvé ni dépôt ni page officielle permettant de dire ce qu'apporte la 0.2.3 — le contenu de cette version reste donc inconnu. À suivre si l'auteur détaille ; en l'état, l'annonce ne renseigne pas.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs5m7l/nueva_versi%C3%B3n_vectopen_023/ — u/Critical_Carpet6832</li>
+</ul>
+<h3>Seedream 5.5 — nouveau modèle d'image de ByteDance</h3>
+<p>Le fil de u/videorouter n'apprend rien : message sans corps, publié par un compte de fournisseur d'accès aux modèles. Le fait, lui, est réel et daté : ByteDance a annoncé le 9 novembre Seedream 5.5, modèle de génération et d'édition d'images, avec sortie native en transparence (canal alpha), conservation des zones non retouchées sur une centaine de passes d'édition successives, rendu de texte plus fiable en une quinzaine de langues et une définition allant jusqu'à 4K. Le déploiement commence par les applications de ByteDance (Doubao, Jimeng, Dreamina, CapCut) et la plateforme Volcengine ; les avantages annoncés sont ceux de ByteDance, non recoupés par un essai indépendant. Aucune intégration à ArtCraft n'est annoncée à ce jour ; un fork communautaire de PhotoCraft accepte déjà Seedream par clé d'API.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbgzm/introducing_seedream_55/ — u/videorouter</li>
+</ul>
+<h3>Logiciels strictement comparables</h3>
+<p>ComfyUI revient dans cette édition par le biais de GenGate, mais comme brique d'intégration plutôt que comme actualité propre. Pour InvokeAI, Krita AI Diffusion et Draw Things, rien de daté des dernières 24 heures n'a été trouvé de façon vérifiable : rien de notable.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Gridcraft — bugs à répétition selon un utilisateur.</strong> u/Possible_Answer_1187 décrit une application qui reste inutilisable pour un travail simple : la boîte de dialogue « Enregistrer sous » ignore le passage au format xlsx — il faut forcer le format, et l'enregistrement échoue souvent malgré tout —, la sélection des tableaux et des colonnes reste incomplète et le dépôt dans une cellule demande une zone de réaction plus large. Le message ne précise aucune version et n'est confirmé par personne d'autre : rapport isolé, à mettre à côté des cas MaterialCraft et LightCraft signalés dans l'édition précédente, sans conclusion possible à ce stade.</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs55wf/me_again_gridcraft/ — u/Possible_Answer_1187</li>
+</ul>
+<h2>Volume</h2>
+<p>23 éléments examinés dans le journal (21 posts de r/ArtCraftAI, 2 commits du dépôt officiel), plus cinq commits publiés le 10 novembre en soirée que le flux du dépôt n'avait pas encore relevés : 9 retenus, 14 écartés. Le taux de rétention est élevé parce que la communauté a publié ce jour-là trois outils (GenGate, MailCraft, les scripts Ollama) et deux applications comparables. La collecte s'est terminée sans erreur (<code>meta.json</code> du 10 novembre 21 h 40 UTC, aucune entrée dans <code>errors</code>).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique — 10 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-10.html</link>
@@ -6219,197 +6344,6 @@ https://thinkingmachines.ai/news/inkling-2-small/</p>
 </ul>
 <h2>Volume</h2>
 <p>35 posts publiés dans l'intervalle (r/ArtCraftAI), 7 retenus, 28 écartés ; plus un commit du dépôt principal et le contrôle des versions publiées sur les dépôts d'applications. Aucune nouvelle entrée de version ni vidéo dans les journaux complémentaires. Taux de rétention d'environ 20 %, conforme à la nature du subreddit, partagé entre annonces et questions de support : les demandes de fonctionnalités, questions d'installation, retours d'expérience et rapports de bug isolés constituent l'essentiel des posts écartés.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille pédagogique — vendredi 6 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-06.html</link>
-<guid isPermaLink="false">pedagogique-2026-11-06</guid>
-<pubDate>Fri, 06 Nov 2026 05:05:03 +0100</pubDate>
-<category>pédagogique et scientifique</category>
-<description><![CDATA[<h1>Veille pédagogique — vendredi 6 novembre 2026</h1>
-<h2>1. Informatique pédagogique / RUPN</h2>
-<ul>
-<li>
-<p><strong>CERT-FR / ANSSI — alerte CERTFR-2026-ALE-015 : contournement d'authentification dans OpenSSH (5 novembre 2026).</strong> Sur les systèmes Linux bâtis sur la bibliothèque musl, compilés sans PAM, un attaquant peut se connecter au SSH en fournissant un second mot de passe de longueur comprise entre 257 et 1023 caractères. Toutes les versions antérieures à 10.6p2 sont concernées (avis CERTFR-2026-AVI-1468) ; à défaut de correctif, désactiver l'authentification par mot de passe. À répercuter sur les serveurs du lycée. <a href="https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015">https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015</a></p>
-</li>
-<li>
-<p><strong>CERT-FR — quatre avis publiés le 5 novembre 2026 : produits Cisco (AVI-1467), Microsoft Edge (AVI-1466), OpenOffice (AVI-1463), MongoDB (AVI-1462).</strong> Les avis plus nombreux du 4 novembre (Mattermost, Symfony, Elastic, Ruby on Rails, NetApp, Google Chrome, HPE Aruba) avaient déjà été signalés. <a href="https://www.cert.ssi.gouv.fr/avis/">https://www.cert.ssi.gouv.fr/avis/</a></p>
-</li>
-<li>
-<p><strong>CNIL — recommandation sur les outils de rejeu de session (publiée le 5 novembre 2026).</strong> Ces outils enregistrent mouvements de souris, clics, défilements et parfois saisies de formulaires, puis reconstituent le parcours sous forme de vidéo ; ils sont fréquents sur les sites grand public et les plateformes de gestion de consentement. La CNIL fixe ce que les éditeurs doivent faire (information dédiée dès le premier niveau, paramétrage strict, données sensibles exclues) et publie une page grand public ; webinaire le 17 novembre. Utile pour la partie RGPD de la mission RUPN. <a href="https://www.cnil.fr/fr/rejeu-de-session-recommandation">https://www.cnil.fr/fr/rejeu-de-session-recommandation</a></p>
-</li>
-<li>
-<p><strong>Korben — botnet XCPE : 1,3 million de box et télévisions Android TV piégées dès le firmware (4 novembre 2026).</strong> L'implant, intégré en usine par le fabricant Videostrong, sous-louait la connexion des propriétaires à des proxys résidentiels ; Google, la police japonaise et plusieurs sociétés de sécurité ont coupé les serveurs de commande, mais l'implant reste et se réinstalle au redémarrage depuis la partition /oem. Les ordres circulent en MQTT non chiffré et les mises à jour en HTTP non signé ; 206 modèles sur plus de 170 pays, liste publiée par Synthient sur GitHub. Plume recommande un reset d'usine, Synthient la mise au rebut de l'appareil. <a href="https://korben.info/botnet-xcpe-videostrong-box-android-tv.html">https://korben.info/botnet-xcpe-videostrong-box-android-tv.html</a></p>
-</li>
-<li>
-<p><strong>Korben — l'App Store durcit sa classification par âge, même pour les compagnons IA (4 novembre 2026).</strong> À partir du 16 novembre, App Store Connect impose deux questions obligatoires : partage de la position réelle, et « rencontre » — Apple visant explicitement les relations « avec de vraies personnes et/ou un compagnon virtuel qui engage l'utilisateur dans du contenu sexuel ou romantique ». Cocher cette case déclenche automatiquement un classement 18 ans et plus, y compris sans contenu explicite ; tout le catalogue doit être en règle au 12 janvier 2027. Conséquence directe pour les mineurs : ces applications disparaissent quand les restrictions de contenu sont activées. <a href="https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html">https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html</a></p>
-</li>
-</ul>
-<h2>2. IA pour le développement</h2>
-<ul>
-<li>
-<p><strong>Korben — Revolut remplace Claude Code par GLM auto-hébergé et divise sa facture par dix (4 novembre 2026).</strong> La fintech britannique a fait basculer ses 2 000 ingénieurs de Gemini puis Claude Code vers GLM (modèle ouvert du chinois Z.ai, version 5.3), servi sur 56 cartes Nvidia B200 en interne : environ 0,30 dollar le million de jetons, soit dix fois moins que Claude Code ou Codex. Les gains les plus nets ne viennent pas de l'écriture de code mais du débogage et du traitement des tickets Jira/Confluence, avec un temps de codage annoncé en hausse de 60 %. <a href="https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html">https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html</a></p>
-</li>
-<li>
-<p><strong>Korben — GPT-6 Astra retouche directement les poids de Qwen3.5-0.8B (4 novembre 2026).</strong> Quatre chercheurs du MIT CSAIL ont modifié 131 072 poids sur 0,8 milliard, soit 0,016 % du modèle, sans descente de gradient : le score MATH-500 passe de 7,9 % à 48,1 %. Les auteurs eux-mêmes nuancent — la retouche corrige surtout des boucles de réflexion qui empêchaient le modèle de terminer ses réponses, et le même traitement n'apporte rien sur Gemma 3 270M. La manipulation des poids « à la main » mérite d'être connue : elle ouvre la voie à l'effacement ciblé de comportements. <a href="https://korben.info/gpt-6-astra-poids-qwen.html">https://korben.info/gpt-6-astra-poids-qwen.html</a> · Article : <a href="https://rikiyat.github.io/blog/weight-space-programming/">https://rikiyat.github.io/blog/weight-space-programming/</a></p>
-</li>
-<li>
-<p><strong>Korben — HatchZip : décompresser une archive énorme sur un disque plein (4 novembre 2026).</strong> Extracteur libre et gratuit (Windows, macOS, Linux), en interface graphique ou en ligne de commande : il vide l'archive par la fin au fur et à mesure de l'extraction, si bien qu'un ZIP de 180 Go n'occupe plus qu'environ 200 Go au total au lieu de 380. Gère la reprise après interruption et l'arrêt propre. Pratique pour les paquets de ressources volumineux ou les modèles locaux. <a href="https://github.com/xevrion/hatchzip">https://github.com/xevrion/hatchzip</a></p>
-</li>
-<li>
-<p><strong>Inde — l'IndiaAI Mission publie deux familles de modèles souverains, EKA-1 et Dhīr 2B/5B (3 novembre 2026).</strong> EKA-1 (Soket Labs) est un modèle à architecture hybride creuse couvrant l'anglais et les 22 langues officielles indiennes, destiné au code, au raisonnement et aux agents ; Dhīr 2B et 5B (ZenteiQ) visent l'automatisation documentaire et la recherche d'information hors ligne et tournent sur GPU, TPU ou téléphone, sans cloud. Diffusion par la plateforme AIKosh. Un cas d'école pour parler de souveraineté et d'usage hors ligne en NSI. <a href="https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743">https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743</a></p>
-</li>
-<li>
-<p><strong>Google — Android Studio accepte plus de 40 agents de codage tiers, et Android CLI devient plugin officiel de Claude Code et Codex (28 octobre 2026).</strong> La fonction « Bring Your Own Agent » est stable dans Android Studio Rabbit 2 : agents compatibles Agent Client Protocol installables depuis une place de marché intégrée, avec accès à la structure du projet, à la compilation, à l'émulateur et à Logcat. Android CLI (création de projets, émulateurs, base de connaissances Android) est proposé comme plugin officiel pour Claude Code et Codex ; Google annonce des tâches d'interface terminées 77 % plus vite avec jusqu'à trois fois moins de jetons dans ses tests internes. <a href="https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance">https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance</a></p>
-</li>
-</ul>
-<h2>3. IA et éducation</h2>
-<p><em>Source imposée (ActuIA, journal de veille) : aucune brève neuve du secteur éducation depuis le 3 novembre — les deux dernières (Google désactive l'IA par défaut sur les comptes élèves, Telangana/AWS) ont déjà été signalées hier. Je complète donc par des sources institutionnelles.</em></p>
-<ul>
-<li>
-<p><strong>Royaume-Uni — 800 000 livres du AI Upskilling Challenge Fund pour quatre projets de formation à l'IA à Barnsley (3 novembre 2026).</strong> Barnsley College déploie des unités mobiles de formation pour les personnels hospitaliers et de l'aide sociale (184 403 £) ; Atheni formera 140 personnes de 40 ans et plus dans six entreprises d'industrie, d'ingénierie et de construction (231 000 £) ; Fossu/Ignite AI vise 100 habitants dont des femmes revenant sur le marché du travail (195 188 £) ; Optimise Cyber Solutions accompagnera vingt petites entreprises (200 000 £). Annoncé par le gouvernement britannique comme pilote reproductible au titre de l'objectif de dix millions de travailleurs formés d'ici 2030. <a href="https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills">https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills</a></p>
-</li>
-<li>
-<p><strong>Microsoft et l'American Federation of Teachers — un standard contractuel de sécurité et de confidentialité pour l'IA à l'école, en vigueur depuis le 1er novembre 2026.</strong> Les districts scolaires américains peuvent adjoindre dix protections à un contrat Microsoft Education neuf ou existant, sans renégociation : interdiction d'utiliser les données des élèves et des enseignants pour entraîner les modèles, sauf exception étroite, engagement de transparence sur les changements de produit et sur les risques, recours en cas de manquement. Durée de deux ans renouvelable. Un précédent intéressant à citer quand on parle de clauses de protection dans les contrats d'outils numériques. <a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf">https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf</a></p>
-</li>
-<li>
-<p><strong>Réseau Canopé — précision sur le cycle de webinaires signalé le 3 novembre : « L'intelligence artificielle en mathématiques et en sciences », mercredi 25 novembre 2026.</strong> La session traite l'IA comme outil, objet d'étude et enjeu de société dans les classes de sciences et de mathématiques. Le même programme comporte « Agent conversationnel personnalisé au service de l'enseignement » (12 novembre) et une séance sur les IA et les émotions des jeunes (10 novembre). Gratuit. <a href="https://www.reseau-canope.fr/ia-et-education">https://www.reseau-canope.fr/ia-et-education</a></p>
-</li>
-<li>
-<p><strong>Corée du Sud — le ministère de l'Éducation veut porter de un à trois ans l'exclusion des tricheurs du Suneung (29 octobre 2026).</strong> Le ministère qualifie les fraudes aux lunettes connectées d'entrave délibérée à l'examen et recommande aux universités d'appliquer les mêmes sanctions dès cette année ; une personne chargée de détecter ces lunettes sera affectée à chaque centre d'examen dès l'épreuve du 19 novembre, et des détecteurs d'ondes radio sont à l'étude pour l'examen suivant. Un précédent utile pour l'argumentaire « intégrité académique » du lycée. <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe">https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe</a></p>
-</li>
-</ul>
-<h2>4. Python pour l'enseignement</h2>
-<ul>
-<li>
-<p><strong>Ruff 0.17.4 publiée le 5 novembre 2026 (PyPI).</strong> Le linter et formateur écrit en Rust, gratuit et open source, est livré avec des binaires Windows, macOS et Linux : installation en une commande, aucune dépendance Python. Version de maintenance à récupérer telle quelle. <a href="https://pypi.org/project/ruff/">https://pypi.org/project/ruff/</a></p>
-</li>
-<li>
-<p><strong>Django 6.1.3, 6.0.10 et 5.2.19 — trois versions correctives publiées le 3 novembre 2026 (six failles de sécurité).</strong> À mettre à jour sur tout projet Django, y compris les exercices d'atelier hébergés. <a href="https://www.djangoproject.com/weblog/2026/nov/">https://www.djangoproject.com/weblog/2026/nov/</a></p>
-</li>
-<li>
-<p><strong>matchify — convertir du <code>if</code>/<code>elif</code> en <code>match</code>, et pydantic-pint — des grandeurs physiques avec unités (signalés par PyCoder's Weekly n° 311).</strong> Le premier est un outil d'apprentissage idéal pour la nouvelle syntaxe <code>match</code> du programme de NSI : on écrit la version conditionnelle, l'outil montre la version structurelle. Le second vérifie l'homogénéité des unités dans du code Python, utile pour modéliser des mesures en SVT ou en enseignement scientifique. <a href="https://pycoders.com/issues">https://pycoders.com/issues</a></p>
-</li>
-<li>
-<p><strong>PyCon ES 2026 — 6 au 8 novembre 2026, Barcelone, et PyLadiesCon 2026 en décembre (en ligne, multilingue).</strong> Deux rendez-vous ouverts pour se former et pour alimenter des projets de classe (conférences enregistrées, supports publiés). <a href="https://es.pycon.org/">https://es.pycon.org/</a></p>
-</li>
-</ul>
-<p><em>4 nouveautés seulement cette semaine pour ce thème : la veille Python de novembre (Python 3.15, PEP 823/824, Tachyon, pytest 9.2) et Python 3.16.0a2 ont déjà été signalées.</em></p>
-<h2>5. Sciences</h2>
-<ul>
-<li>
-<p><strong>Pour la Science — « Une bactérie du microbiote intestinal ralentit le vieillissement » (5 novembre 2026).</strong> Article en accès partiel (fin réservée aux abonnés). <a href="https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php">https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php</a></p>
-</li>
-<li>
-<p><strong>Pour la Science — « Le mystère persistant de l'eau qui gèle » (2 novembre 2026).</strong> Retour sur l'anomalie de la glace dense et les deux phases liquides de l'eau : un très bon support pour l'enseignement scientifique et la notion de transition de phase. Accès partiel. <a href="https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php">https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily / revue à comité de lecture — des dents vieilles de 400 000 ans réécrivent un épisode de l'évolution humaine (5 novembre 2026).</strong> En extrayant les protéines d'énamels fossiles, les chercheurs montrent qu'une espèce humaine longtemps considérée comme un cul-de-sac évolutif a laissé des traces génétiques chez des populations actuelles. Exploitable en spé SVT (origines de l'Homme, apport de la paléoprotéomique). <a href="https://www.sciencedaily.com/releases/2026/11/261102202836.htm">https://www.sciencedaily.com/releases/2026/11/261102202836.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — un mécanisme de défense cellulaire inconnu protège les cellules saines de l'inflammation (5 novembre 2026).</strong> Une énigme de trente ans résolue : les cellules saines se protègent de l'inflammation censée combattre les infections. Piste directe pour les chapitres immunité et réaction inflammatoire de 1re et de terminale. <a href="https://www.sciencedaily.com/releases/2026/11/261101010554.htm">https://www.sciencedaily.com/releases/2026/11/261101010554.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — une énigme de cinquante ans sur la disparition des grenouilles brésiliennes élucidée (3 novembre 2026).</strong> Un champignon pathogène semble avoir balayé la région et décimé des populations vulnérables : un cas d'école sur les amphibiens et les maladies émergentes, à rapprocher de <em>Batrachochytrium dendrobatidis</em>. <a href="https://www.sciencedaily.com/releases/2026/11/261102202838.htm">https://www.sciencedaily.com/releases/2026/11/261102202838.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — transformer des virus en armes contre les bactéries multirésistantes (4 novembre 2026).</strong> Une équipe internationale publie les premières lignes directrices coordonnées pour la phagothérapie personnalisée. Utile pour traiter l'antibiorésistance autrement que par le seul couple antibiotiques/hygiène. <a href="https://www.sciencedaily.com/releases/2026/11/261102202828.htm">https://www.sciencedaily.com/releases/2026/11/261102202828.htm</a></p>
-</li>
-</ul>
-<h2>À retenir</h2>
-<p>Une journée chargée côté sécurité : la faille OpenSSH à corriger sur tout serveur Linux, la recommandation CNIL sur le rejeu de session et le durcissement de la classification d'âge de l'App Store. Côté IA de développement, deux retours d'expérience très concrets — Revolut qui divise sa facture par dix en s'auto-hébergeant sur GLM, et la retouche directe des poids d'un petit modèle par GPT-6 Astra. Enfin, une bactérie intestinale qui ralentit le vieillissement et des dents de 400 000 ans qui déplacent une branche de notre arbre.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille pédagogique — vendredi 6 novembre 2026</h1>
-<h2>1. Informatique pédagogique / RUPN</h2>
-<ul>
-<li>
-<p><strong>CERT-FR / ANSSI — alerte CERTFR-2026-ALE-015 : contournement d'authentification dans OpenSSH (5 novembre 2026).</strong> Sur les systèmes Linux bâtis sur la bibliothèque musl, compilés sans PAM, un attaquant peut se connecter au SSH en fournissant un second mot de passe de longueur comprise entre 257 et 1023 caractères. Toutes les versions antérieures à 10.6p2 sont concernées (avis CERTFR-2026-AVI-1468) ; à défaut de correctif, désactiver l'authentification par mot de passe. À répercuter sur les serveurs du lycée. <a href="https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015">https://www.cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-015</a></p>
-</li>
-<li>
-<p><strong>CERT-FR — quatre avis publiés le 5 novembre 2026 : produits Cisco (AVI-1467), Microsoft Edge (AVI-1466), OpenOffice (AVI-1463), MongoDB (AVI-1462).</strong> Les avis plus nombreux du 4 novembre (Mattermost, Symfony, Elastic, Ruby on Rails, NetApp, Google Chrome, HPE Aruba) avaient déjà été signalés. <a href="https://www.cert.ssi.gouv.fr/avis/">https://www.cert.ssi.gouv.fr/avis/</a></p>
-</li>
-<li>
-<p><strong>CNIL — recommandation sur les outils de rejeu de session (publiée le 5 novembre 2026).</strong> Ces outils enregistrent mouvements de souris, clics, défilements et parfois saisies de formulaires, puis reconstituent le parcours sous forme de vidéo ; ils sont fréquents sur les sites grand public et les plateformes de gestion de consentement. La CNIL fixe ce que les éditeurs doivent faire (information dédiée dès le premier niveau, paramétrage strict, données sensibles exclues) et publie une page grand public ; webinaire le 17 novembre. Utile pour la partie RGPD de la mission RUPN. <a href="https://www.cnil.fr/fr/rejeu-de-session-recommandation">https://www.cnil.fr/fr/rejeu-de-session-recommandation</a></p>
-</li>
-<li>
-<p><strong>Korben — botnet XCPE : 1,3 million de box et télévisions Android TV piégées dès le firmware (4 novembre 2026).</strong> L'implant, intégré en usine par le fabricant Videostrong, sous-louait la connexion des propriétaires à des proxys résidentiels ; Google, la police japonaise et plusieurs sociétés de sécurité ont coupé les serveurs de commande, mais l'implant reste et se réinstalle au redémarrage depuis la partition /oem. Les ordres circulent en MQTT non chiffré et les mises à jour en HTTP non signé ; 206 modèles sur plus de 170 pays, liste publiée par Synthient sur GitHub. Plume recommande un reset d'usine, Synthient la mise au rebut de l'appareil. <a href="https://korben.info/botnet-xcpe-videostrong-box-android-tv.html">https://korben.info/botnet-xcpe-videostrong-box-android-tv.html</a></p>
-</li>
-<li>
-<p><strong>Korben — l'App Store durcit sa classification par âge, même pour les compagnons IA (4 novembre 2026).</strong> À partir du 16 novembre, App Store Connect impose deux questions obligatoires : partage de la position réelle, et « rencontre » — Apple visant explicitement les relations « avec de vraies personnes et/ou un compagnon virtuel qui engage l'utilisateur dans du contenu sexuel ou romantique ». Cocher cette case déclenche automatiquement un classement 18 ans et plus, y compris sans contenu explicite ; tout le catalogue doit être en règle au 12 janvier 2027. Conséquence directe pour les mineurs : ces applications disparaissent quand les restrictions de contenu sont activées. <a href="https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html">https://korben.info/il-faudra-etre-majeur-pour-flirter-sur-lapp-store-meme-avec-une-ia.html</a></p>
-</li>
-</ul>
-<h2>2. IA pour le développement</h2>
-<ul>
-<li>
-<p><strong>Korben — Revolut remplace Claude Code par GLM auto-hébergé et divise sa facture par dix (4 novembre 2026).</strong> La fintech britannique a fait basculer ses 2 000 ingénieurs de Gemini puis Claude Code vers GLM (modèle ouvert du chinois Z.ai, version 5.3), servi sur 56 cartes Nvidia B200 en interne : environ 0,30 dollar le million de jetons, soit dix fois moins que Claude Code ou Codex. Les gains les plus nets ne viennent pas de l'écriture de code mais du débogage et du traitement des tickets Jira/Confluence, avec un temps de codage annoncé en hausse de 60 %. <a href="https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html">https://korben.info/revolut-vire-claude-code-pour-une-ia-chinoise-et-divise-ses-couts-par-dix.html</a></p>
-</li>
-<li>
-<p><strong>Korben — GPT-6 Astra retouche directement les poids de Qwen3.5-0.8B (4 novembre 2026).</strong> Quatre chercheurs du MIT CSAIL ont modifié 131 072 poids sur 0,8 milliard, soit 0,016 % du modèle, sans descente de gradient : le score MATH-500 passe de 7,9 % à 48,1 %. Les auteurs eux-mêmes nuancent — la retouche corrige surtout des boucles de réflexion qui empêchaient le modèle de terminer ses réponses, et le même traitement n'apporte rien sur Gemma 3 270M. La manipulation des poids « à la main » mérite d'être connue : elle ouvre la voie à l'effacement ciblé de comportements. <a href="https://korben.info/gpt-6-astra-poids-qwen.html">https://korben.info/gpt-6-astra-poids-qwen.html</a> · Article : <a href="https://rikiyat.github.io/blog/weight-space-programming/">https://rikiyat.github.io/blog/weight-space-programming/</a></p>
-</li>
-<li>
-<p><strong>Korben — HatchZip : décompresser une archive énorme sur un disque plein (4 novembre 2026).</strong> Extracteur libre et gratuit (Windows, macOS, Linux), en interface graphique ou en ligne de commande : il vide l'archive par la fin au fur et à mesure de l'extraction, si bien qu'un ZIP de 180 Go n'occupe plus qu'environ 200 Go au total au lieu de 380. Gère la reprise après interruption et l'arrêt propre. Pratique pour les paquets de ressources volumineux ou les modèles locaux. <a href="https://github.com/xevrion/hatchzip">https://github.com/xevrion/hatchzip</a></p>
-</li>
-<li>
-<p><strong>Inde — l'IndiaAI Mission publie deux familles de modèles souverains, EKA-1 et Dhīr 2B/5B (3 novembre 2026).</strong> EKA-1 (Soket Labs) est un modèle à architecture hybride creuse couvrant l'anglais et les 22 langues officielles indiennes, destiné au code, au raisonnement et aux agents ; Dhīr 2B et 5B (ZenteiQ) visent l'automatisation documentaire et la recherche d'information hors ligne et tournent sur GPU, TPU ou téléphone, sans cloud. Diffusion par la plateforme AIKosh. Un cas d'école pour parler de souveraineté et d'usage hors ligne en NSI. <a href="https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743">https://ianslive.in/indiaai-mission-releases-2-indigenous-ai-foundation-models--20261104090743</a></p>
-</li>
-<li>
-<p><strong>Google — Android Studio accepte plus de 40 agents de codage tiers, et Android CLI devient plugin officiel de Claude Code et Codex (28 octobre 2026).</strong> La fonction « Bring Your Own Agent » est stable dans Android Studio Rabbit 2 : agents compatibles Agent Client Protocol installables depuis une place de marché intégrée, avec accès à la structure du projet, à la compilation, à l'émulateur et à Logcat. Android CLI (création de projets, émulateurs, base de connaissances Android) est proposé comme plugin officiel pour Claude Code et Codex ; Google annonce des tâches d'interface terminées 77 % plus vite avec jusqu'à trois fois moins de jetons dans ses tests internes. <a href="https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance">https://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance</a></p>
-</li>
-</ul>
-<h2>3. IA et éducation</h2>
-<p><em>Source imposée (ActuIA, journal de veille) : aucune brève neuve du secteur éducation depuis le 3 novembre — les deux dernières (Google désactive l'IA par défaut sur les comptes élèves, Telangana/AWS) ont déjà été signalées hier. Je complète donc par des sources institutionnelles.</em></p>
-<ul>
-<li>
-<p><strong>Royaume-Uni — 800 000 livres du AI Upskilling Challenge Fund pour quatre projets de formation à l'IA à Barnsley (3 novembre 2026).</strong> Barnsley College déploie des unités mobiles de formation pour les personnels hospitaliers et de l'aide sociale (184 403 £) ; Atheni formera 140 personnes de 40 ans et plus dans six entreprises d'industrie, d'ingénierie et de construction (231 000 £) ; Fossu/Ignite AI vise 100 habitants dont des femmes revenant sur le marché du travail (195 188 £) ; Optimise Cyber Solutions accompagnera vingt petites entreprises (200 000 £). Annoncé par le gouvernement britannique comme pilote reproductible au titre de l'objectif de dix millions de travailleurs formés d'ici 2030. <a href="https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills">https://www.gov.uk/government/news/care-workers-women-returning-to-employment-and-builders-to-gain-practical-ai-skills</a></p>
-</li>
-<li>
-<p><strong>Microsoft et l'American Federation of Teachers — un standard contractuel de sécurité et de confidentialité pour l'IA à l'école, en vigueur depuis le 1er novembre 2026.</strong> Les districts scolaires américains peuvent adjoindre dix protections à un contrat Microsoft Education neuf ou existant, sans renégociation : interdiction d'utiliser les données des élèves et des enseignants pour entraîner les modèles, sauf exception étroite, engagement de transparence sur les changements de produit et sur les risques, recours en cas de manquement. Durée de deux ans renouvelable. Un précédent intéressant à citer quand on parle de clauses de protection dans les contrats d'outils numériques. <a href="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf">https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/AI-Safety-and-Privacy-Standard-Fact-Sheet.pdf</a></p>
-</li>
-<li>
-<p><strong>Réseau Canopé — précision sur le cycle de webinaires signalé le 3 novembre : « L'intelligence artificielle en mathématiques et en sciences », mercredi 25 novembre 2026.</strong> La session traite l'IA comme outil, objet d'étude et enjeu de société dans les classes de sciences et de mathématiques. Le même programme comporte « Agent conversationnel personnalisé au service de l'enseignement » (12 novembre) et une séance sur les IA et les émotions des jeunes (10 novembre). Gratuit. <a href="https://www.reseau-canope.fr/ia-et-education">https://www.reseau-canope.fr/ia-et-education</a></p>
-</li>
-<li>
-<p><strong>Corée du Sud — le ministère de l'Éducation veut porter de un à trois ans l'exclusion des tricheurs du Suneung (29 octobre 2026).</strong> Le ministère qualifie les fraudes aux lunettes connectées d'entrave délibérée à l'examen et recommande aux universités d'appliquer les mêmes sanctions dès cette année ; une personne chargée de détecter ces lunettes sera affectée à chaque centre d'examen dès l'épreuve du 19 novembre, et des détecteurs d'ondes radio sont à l'étude pour l'examen suivant. Un précédent utile pour l'argumentaire « intégrité académique » du lycée. <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe">https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=107520&amp;lev=0&amp;m=020402&amp;s=moe</a></p>
-</li>
-</ul>
-<h2>4. Python pour l'enseignement</h2>
-<ul>
-<li>
-<p><strong>Ruff 0.17.4 publiée le 5 novembre 2026 (PyPI).</strong> Le linter et formateur écrit en Rust, gratuit et open source, est livré avec des binaires Windows, macOS et Linux : installation en une commande, aucune dépendance Python. Version de maintenance à récupérer telle quelle. <a href="https://pypi.org/project/ruff/">https://pypi.org/project/ruff/</a></p>
-</li>
-<li>
-<p><strong>Django 6.1.3, 6.0.10 et 5.2.19 — trois versions correctives publiées le 3 novembre 2026 (six failles de sécurité).</strong> À mettre à jour sur tout projet Django, y compris les exercices d'atelier hébergés. <a href="https://www.djangoproject.com/weblog/2026/nov/">https://www.djangoproject.com/weblog/2026/nov/</a></p>
-</li>
-<li>
-<p><strong>matchify — convertir du <code>if</code>/<code>elif</code> en <code>match</code>, et pydantic-pint — des grandeurs physiques avec unités (signalés par PyCoder's Weekly n° 311).</strong> Le premier est un outil d'apprentissage idéal pour la nouvelle syntaxe <code>match</code> du programme de NSI : on écrit la version conditionnelle, l'outil montre la version structurelle. Le second vérifie l'homogénéité des unités dans du code Python, utile pour modéliser des mesures en SVT ou en enseignement scientifique. <a href="https://pycoders.com/issues">https://pycoders.com/issues</a></p>
-</li>
-<li>
-<p><strong>PyCon ES 2026 — 6 au 8 novembre 2026, Barcelone, et PyLadiesCon 2026 en décembre (en ligne, multilingue).</strong> Deux rendez-vous ouverts pour se former et pour alimenter des projets de classe (conférences enregistrées, supports publiés). <a href="https://es.pycon.org/">https://es.pycon.org/</a></p>
-</li>
-</ul>
-<p><em>4 nouveautés seulement cette semaine pour ce thème : la veille Python de novembre (Python 3.15, PEP 823/824, Tachyon, pytest 9.2) et Python 3.16.0a2 ont déjà été signalées.</em></p>
-<h2>5. Sciences</h2>
-<ul>
-<li>
-<p><strong>Pour la Science — « Une bactérie du microbiote intestinal ralentit le vieillissement » (5 novembre 2026).</strong> Article en accès partiel (fin réservée aux abonnés). <a href="https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php">https://www.pourlascience.fr/sd/biologie/une-bacterie-du-microbiote-intestinal-ralentit-le-vieillissement-29748.php</a></p>
-</li>
-<li>
-<p><strong>Pour la Science — « Le mystère persistant de l'eau qui gèle » (2 novembre 2026).</strong> Retour sur l'anomalie de la glace dense et les deux phases liquides de l'eau : un très bon support pour l'enseignement scientifique et la notion de transition de phase. Accès partiel. <a href="https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php">https://www.pourlascience.fr/sd/physique/le-mystere-persistant-de-l-eau-qui-gele-29738.php</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily / revue à comité de lecture — des dents vieilles de 400 000 ans réécrivent un épisode de l'évolution humaine (5 novembre 2026).</strong> En extrayant les protéines d'énamels fossiles, les chercheurs montrent qu'une espèce humaine longtemps considérée comme un cul-de-sac évolutif a laissé des traces génétiques chez des populations actuelles. Exploitable en spé SVT (origines de l'Homme, apport de la paléoprotéomique). <a href="https://www.sciencedaily.com/releases/2026/11/261102202836.htm">https://www.sciencedaily.com/releases/2026/11/261102202836.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — un mécanisme de défense cellulaire inconnu protège les cellules saines de l'inflammation (5 novembre 2026).</strong> Une énigme de trente ans résolue : les cellules saines se protègent de l'inflammation censée combattre les infections. Piste directe pour les chapitres immunité et réaction inflammatoire de 1re et de terminale. <a href="https://www.sciencedaily.com/releases/2026/11/261101010554.htm">https://www.sciencedaily.com/releases/2026/11/261101010554.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — une énigme de cinquante ans sur la disparition des grenouilles brésiliennes élucidée (3 novembre 2026).</strong> Un champignon pathogène semble avoir balayé la région et décimé des populations vulnérables : un cas d'école sur les amphibiens et les maladies émergentes, à rapprocher de <em>Batrachochytrium dendrobatidis</em>. <a href="https://www.sciencedaily.com/releases/2026/11/261102202838.htm">https://www.sciencedaily.com/releases/2026/11/261102202838.htm</a></p>
-</li>
-<li>
-<p><strong>ScienceDaily — transformer des virus en armes contre les bactéries multirésistantes (4 novembre 2026).</strong> Une équipe internationale publie les premières lignes directrices coordonnées pour la phagothérapie personnalisée. Utile pour traiter l'antibiorésistance autrement que par le seul couple antibiotiques/hygiène. <a href="https://www.sciencedaily.com/releases/2026/11/261102202828.htm">https://www.sciencedaily.com/releases/2026/11/261102202828.htm</a></p>
-</li>
-</ul>
-<h2>À retenir</h2>
-<p>Une journée chargée côté sécurité : la faille OpenSSH à corriger sur tout serveur Linux, la recommandation CNIL sur le rejeu de session et le durcissement de la classification d'âge de l'App Store. Côté IA de développement, deux retours d'expérience très concrets — Revolut qui divise sa facture par dix en s'auto-hébergeant sur GLM, et la retouche directe des poids d'un petit modèle par GPT-6 Astra. Enfin, une bactérie intestinale qui ralentit le vieillissement et des dents de 400 000 ans qui déplacent une branche de notre arbre.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

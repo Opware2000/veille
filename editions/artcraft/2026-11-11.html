@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — mercredi 11 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>GenGate, l'extension d'intelligence artificielle de PhotoCraft, annonce une intégration complète avec ComfyUI : workflows personnels, nœuds d'entrée et de sortie dédiés, sans export de fichier JSON à chaque réglage.</li>
+<li>MailCraft, client de messagerie, d'agenda et de contacts écrit en Rust, apparaît dans le lanceur d'ArtCraft sous macOS ; le projet est en alpha précoce mais déjà très suivi.</li>
+<li>Des scripts communautaires permettent de piloter les applications ArtCraft avec un modèle local (Ollama) ; côté dépôt officiel, sept commits d'entretien et aucune nouvelle version depuis la 0.41.1.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel : sept commits d'entretien, aucune version depuis la 0.41.1</h3>
+<p>Entre le 9 novembre 20 h et le 10 novembre 21 h 40 UTC, le dépôt <code>storytold/artcraft</code> n'a reçu que des commits d'entretien, signés FredApps (six) et AxylumRust (un). Deux d'entre eux seulement étaient visibles dans le flux du dépôt au moment de la rédaction : la mise en conformité de <code>url_utils</code> avec les lints « Clippy pedantic » et une modification de l'intégration continue qui n'autorise plus qu'une construction de version macOS et une construction Windows par branche à la fois, avec des limites de temps par tâche. Les cinq autres, publiés le 10 novembre entre 17 h 36 et 20 h 35 UTC, n'étaient pas encore collectés : ils remplacent des opérations de fichier bloquantes par <code>tokio::fs</code> dans le bureau (entrées et sorties de fichiers pour Sora et Midjourney) et dans les clients d'API, et appliquent trois nettoyages issus de l'analyse SonarCloud (marquage <code>void</code> des promesses sans attente dans l'application et dans les briques Tauri, exclusion de TypeScript et JavaScript de la couverture Sonar). Rien de visible pour l'utilisateur, et aucune publication depuis la <strong>0.41.1</strong> du 7 novembre.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft — 40 494 étoiles, 699 tickets ouverts au moment de la vérification</li>
+<li>Commit « Clippy » : https://github.com/storytold/artcraft/commit/1510abf5639393fc7dbda01fc17ff59792cbc885</li>
+<li>Commit « builds de version » : https://github.com/storytold/artcraft/commit/1b99c184efed01ba1202475a3f20e7bf18ebbc76</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>GenGate — tout ComfyUI depuis PhotoCraft</h3>
+<p>u/LemonySniket donne des nouvelles, deux semaines après sa première présentation, de GenGate, son extension d'intelligence artificielle pour PhotoCraft. La nouveauté principale est une intégration complète de ComfyUI, jusqu'ici expérimentale : des nœuds GenGate d'entrée et de sortie transmettent invites, images, masques, références et paramètres de génération entre PhotoCraft et ComfyUI, et GenGate Studio exécute le graphe actuellement ouvert dans ComfyUI, modifications non enregistrées comprises — plus besoin d'exporter un fichier JSON après chaque ajustement. Les fonctions de remplissage et de retouche par IA peuvent employer leurs propres graphes, et l'utilisateur n'est plus limité aux modèles préréglés de GenGate : tout modèle que ComfyUI sait faire tourner devient utilisable depuis PhotoCraft. L'auteur résume l'intérêt : la souplesse de ComfyUI avec le confort des outils d'édition de PhotoCraft. Il signale aussi que suivre le développement très rapide de PhotoCraft est un travail en soi. <strong>Réserve</strong> : le corps du post est tronqué dans le journal de collecte ; les autres changements annoncés en fin de message n'ont pas pu être lus.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsuxml/gengate_updates_and_more/ — u/LemonySniket</li>
+</ul>
+<h3>MailCraft — un client de courrier libre rejoint le lanceur</h3>
+<p>u/Jellygator0 signale l'apparition de MailCraft dans le lanceur d'ArtCraft sous macOS, où il n'est pas encore activable. L'application n'est pas de l'éditeur : elle vient du dépôt <code>UCS-Care-Group/mailcraft</code>, sous Apache-2.0, écrite en Rust, décrite par ses auteurs comme une réécriture propre (clean room) d'un client de courrier, d'agenda et de contacts pour Microsoft 365, Outlook.com et IMAP ; elle est annoncée en alpha précoce. Le dépôt, créé le 12 octobre, compte 315 étoiles, 53 copies et 176 tickets ouverts, avec un dernier envoi le 10 novembre à 21 h 52 UTC. Ce que le post apporte surtout, c'est le critère de choix de son auteur : la validation par l'équipe ArtCraft avant l'acceptation dans le lanceur est ce qui le rassure sur le risque d'abandon, parmi les nombreuses applications « Craft » disponibles. Sa présence effective dans le lanceur n'a pas pu être vérifiée depuis ce serveur.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsxba3/mailcraft_is_here/ — u/Jellygator0</li>
+<li>Dépôt : https://github.com/UCS-Care-Group/mailcraft</li>
+</ul>
+<h3>Artcraft-Ollama-Scripts — conduire les applications avec un modèle local</h3>
+<p>u/Typing-Cat publie <code>nscreated/Artcraft-Ollama-Scripts</code> (licence MIT, scripts Shell), créé le jour même de son message. Il refuse de payer pour une intelligence artificielle en ligne : il installe Ollama et le modèle Qwen3.6:35b-a3b sur un ancien ordinateur de jeu exposé au réseau, puis lance les scripts depuis une machine Linux où les applications ArtCraft sont installées <strong>en paquets système</strong> — ni AppImage ni Flatpak, afin que les binaires <code>-cli</code> soient accessibles. Les applications se lancent ensuite par une commande du type <code>kit-photocraft</code>, la fenêtre graphique et le terminal restant liés, le modèle pilotant l'application depuis le terminal. Il donne lui-même la mesure du résultat : « c'est amusant, c'est lent et plutôt bête, mais c'est amusant ». <strong>Réserve</strong> : dépôt sans description, sans étoile, publié le jour du message — une expérimentation personnelle, pas un outil suivi.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbc4n/helper_scripts_to_use_artcraft_apps_with_local_ai/ — u/Typing-Cat</li>
+<li>Dépôt : https://github.com/nscreated/Artcraft-Ollama-Scripts</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>SUE — peinture, bande dessinée et animation dans un seul programme</h3>
+<p>u/Kilo_Metric, à la recherche d'un équivalent de Clip Studio Paint capable de tourner sous Linux, présente ce qu'il décrit comme le plus proche comparable, capable d'ouvrir les fichiers <code>.clip</code>. C'est u/Pixelsmithing4life qui donne le lien dans un second fil : <code>MagiGun/sue</code>, que son auteur présente comme « Singular Unified Engine », un environnement unique pour la peinture, la bande dessinée, l'animation, l'écriture, le son et davantage (le message de Reddit écrit pour sa part « Single Unified Environment » — les deux formulations circulent, la source exacte n'a pas été vérifiée sur le site). Le dépôt, écrit en Rust, compte 24 étoiles, trois copies, a été créé le 29 octobre et a reçu son dernier envoi le 9 novembre ; GitHub n'identifie pas la licence (« Other ») — le point est à vérifier avant tout usage sérieux. Rien n'indique de lien avec l'éditeur ArtCraft : à ranger avec les outils libres de création comparables. Pixelsmithing4life indique l'avoir installé sur son Mac et que cela « semble bien fonctionner » ; c'est une appréciation d'utilisateur, non un essai fait ici.</p>
+<ul>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xsmhjt/i_was_looking_for_clip_studio_paint_clone/ — u/Kilo_Metric ; https://www.reddit.com/r/ArtCraftAI/comments/1xsnvdb/shout_out_to_ukilo_metric_for_this_one_clip/ — u/Pixelsmithing4life</li>
+<li>Projet : https://github.com/MagiGun/sue</li>
+</ul>
+<h3>Vectopen 0.2.3 — mise à jour annoncée sans détail</h3>
+<p>u/Critical_Carpet6832 annonce la version 0.2.3 de Vectopen, éditeur vectoriel libre et indépendant de la suite ArtCraft. La version précédente, 0.2.2, avait été présentée sur r/scribus avec 106 améliorations, l'import des fichiers Affinity, une refonte de l'interface et dix langues. <strong>Incertitude</strong> : ce message est rédigé en espagnol, sans corps ni lien dans le journal, et je n'ai trouvé ni dépôt ni page officielle permettant de dire ce qu'apporte la 0.2.3 — le contenu de cette version reste donc inconnu. À suivre si l'auteur détaille ; en l'état, l'annonce ne renseigne pas.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs5m7l/nueva_versi%C3%B3n_vectopen_023/ — u/Critical_Carpet6832</li>
+</ul>
+<h3>Seedream 5.5 — nouveau modèle d'image de ByteDance</h3>
+<p>Le fil de u/videorouter n'apprend rien : message sans corps, publié par un compte de fournisseur d'accès aux modèles. Le fait, lui, est réel et daté : ByteDance a annoncé le 9 novembre Seedream 5.5, modèle de génération et d'édition d'images, avec sortie native en transparence (canal alpha), conservation des zones non retouchées sur une centaine de passes d'édition successives, rendu de texte plus fiable en une quinzaine de langues et une définition allant jusqu'à 4K. Le déploiement commence par les applications de ByteDance (Doubao, Jimeng, Dreamina, CapCut) et la plateforme Volcengine ; les avantages annoncés sont ceux de ByteDance, non recoupés par un essai indépendant. Aucune intégration à ArtCraft n'est annoncée à ce jour ; un fork communautaire de PhotoCraft accepte déjà Seedream par clé d'API.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xsbgzm/introducing_seedream_55/ — u/videorouter</li>
+</ul>
+<h3>Logiciels strictement comparables</h3>
+<p>ComfyUI revient dans cette édition par le biais de GenGate, mais comme brique d'intégration plutôt que comme actualité propre. Pour InvokeAI, Krita AI Diffusion et Draw Things, rien de daté des dernières 24 heures n'a été trouvé de façon vérifiable : rien de notable.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Gridcraft — bugs à répétition selon un utilisateur.</strong> u/Possible_Answer_1187 décrit une application qui reste inutilisable pour un travail simple : la boîte de dialogue « Enregistrer sous » ignore le passage au format xlsx — il faut forcer le format, et l'enregistrement échoue souvent malgré tout —, la sélection des tableaux et des colonnes reste incomplète et le dépôt dans une cellule demande une zone de réaction plus large. Le message ne précise aucune version et n'est confirmé par personne d'autre : rapport isolé, à mettre à côté des cas MaterialCraft et LightCraft signalés dans l'édition précédente, sans conclusion possible à ce stade.</li>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xs55wf/me_again_gridcraft/ — u/Possible_Answer_1187</li>
+</ul>
+<h2>Volume</h2>
+<p>23 éléments examinés dans le journal (21 posts de r/ArtCraftAI, 2 commits du dépôt officiel), plus cinq commits publiés le 10 novembre en soirée que le flux du dépôt n'avait pas encore relevés : 9 retenus, 14 écartés. Le taux de rétention est élevé parce que la communauté a publié ce jour-là trois outils (GenGate, MailCraft, les scripts Ollama) et deux applications comparables. La collecte s'est terminée sans erreur (<code>meta.json</code> du 10 novembre 21 h 40 UTC, aucune entrée dans <code>errors</code>).</p>
+<footer>Édition du mercredi 11 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
