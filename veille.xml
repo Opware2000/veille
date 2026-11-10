@@ -6,14 +6,14 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 11 Nov 2026 00:34:02 +0100</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 00:35:23 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
 <item>
 <title>Veille r/BestGitHubRepos — mercredi 11 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-11.html</link>
 <guid isPermaLink="false">bestgithubrepos-2026-11-11</guid>
-<pubDate>Wed, 11 Nov 2026 00:34:02 +0100</pubDate>
+<pubDate>Wed, 11 Nov 2026 00:35:23 +0100</pubDate>
 <category>r/BestGitHubRepos</category>
 <description><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 11 novembre 2026</h1>
 <h2>En bref</h2>
@@ -108,7 +108,7 @@
 <li><strong>USB+</strong> — format unique de compétence d'agent, jouable sur plusieurs exécuteurs, avec une couche de confiance pour les serveurs MCP tiers. Licence MIT, 9 étoiles. https://github.com/PeepSick/usbplus</li>
 </ul>
 <h2>Volume</h2>
-<p>365 entrées examinées — 251 dans le journal du thème (157 Hacker News, 52 fils Reddit, 1 Lobsters), 58 dans le flux Hacker News à 10 points et plus, 31 sur Product Hunt, 17 chez Developpez, 4 sur le Journal du hacker, 4 chez It's FOSS — 68 retenues, 297 écartées (taux de rétention d'environ 19 %, dans la fourchette basse de ce subreddit). Les écarts se rangent en quatre familles : les recopies automatiques de README de dépôts déjà connus (la quasi-totalité des 52 fils Reddit : Vikunja, EspoCRM, Slint, Bazzite, WLED, MNN, Quickemu, Maigret, Synfig, Hi.Events, kagent, LIBERO…), les brèves d'actualité sans logiciel (cours boursier, IPO d'Anthropic, hack de Fireworks AI, Starlink Mini 2), les jeux et pages de démonstration sans usage pratique, et les billets de blog sans annonce concrète. Aucune erreur de collecte signalée dans <code>meta.json</code> à la dernière passe (10 novembre, 22 h 49 UTC).</p>]]></description>
+<p>365 entrées examinées — 251 dans le journal du thème (157 Hacker News, 52 fils Reddit, 1 Lobsters), 58 dans le flux Hacker News à 10 points et plus, 31 sur Product Hunt, 17 chez Developpez, 4 sur le Journal du hacker, 4 chez It's FOSS — 64 retenues (60 applications et outils, 4 extensions), 301 écartées (taux de rétention d'environ 18 %, dans la fourchette basse de ce subreddit). Les écarts se rangent en quatre familles : les recopies automatiques de README de dépôts déjà connus (la quasi-totalité des 52 fils Reddit : Vikunja, EspoCRM, Slint, Bazzite, WLED, MNN, Quickemu, Maigret, Synfig, Hi.Events, kagent, LIBERO…), les brèves d'actualité sans logiciel (cours boursier, IPO d'Anthropic, hack de Fireworks AI, Starlink Mini 2), les jeux et pages de démonstration sans usage pratique, et les billets de blog sans annonce concrète. Aucune erreur de collecte signalée dans <code>meta.json</code> à la dernière passe (10 novembre, 22 h 49 UTC).</p>]]></description>
 <content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 11 novembre 2026</h1>
 <h2>En bref</h2>
 <ul>
@@ -202,7 +202,7 @@
 <li><strong>USB+</strong> — format unique de compétence d'agent, jouable sur plusieurs exécuteurs, avec une couche de confiance pour les serveurs MCP tiers. Licence MIT, 9 étoiles. https://github.com/PeepSick/usbplus</li>
 </ul>
 <h2>Volume</h2>
-<p>365 entrées examinées — 251 dans le journal du thème (157 Hacker News, 52 fils Reddit, 1 Lobsters), 58 dans le flux Hacker News à 10 points et plus, 31 sur Product Hunt, 17 chez Developpez, 4 sur le Journal du hacker, 4 chez It's FOSS — 68 retenues, 297 écartées (taux de rétention d'environ 19 %, dans la fourchette basse de ce subreddit). Les écarts se rangent en quatre familles : les recopies automatiques de README de dépôts déjà connus (la quasi-totalité des 52 fils Reddit : Vikunja, EspoCRM, Slint, Bazzite, WLED, MNN, Quickemu, Maigret, Synfig, Hi.Events, kagent, LIBERO…), les brèves d'actualité sans logiciel (cours boursier, IPO d'Anthropic, hack de Fireworks AI, Starlink Mini 2), les jeux et pages de démonstration sans usage pratique, et les billets de blog sans annonce concrète. Aucune erreur de collecte signalée dans <code>meta.json</code> à la dernière passe (10 novembre, 22 h 49 UTC).</p>]]></content:encoded>
+<p>365 entrées examinées — 251 dans le journal du thème (157 Hacker News, 52 fils Reddit, 1 Lobsters), 58 dans le flux Hacker News à 10 points et plus, 31 sur Product Hunt, 17 chez Developpez, 4 sur le Journal du hacker, 4 chez It's FOSS — 64 retenues (60 applications et outils, 4 extensions), 301 écartées (taux de rétention d'environ 18 %, dans la fourchette basse de ce subreddit). Les écarts se rangent en quatre familles : les recopies automatiques de README de dépôts déjà connus (la quasi-totalité des 52 fils Reddit : Vikunja, EspoCRM, Slint, Bazzite, WLED, MNN, Quickemu, Maigret, Synfig, Hi.Events, kagent, LIBERO…), les brèves d'actualité sans logiciel (cours boursier, IPO d'Anthropic, hack de Fireworks AI, Starlink Mini 2), les jeux et pages de démonstration sans usage pratique, et les billets de blog sans annonce concrète. Aucune erreur de collecte signalée dans <code>meta.json</code> à la dernière passe (10 novembre, 22 h 49 UTC).</p>]]></content:encoded>
 </item>
 <item>
 <title>Veille r/LovingOpenSourceAI — mercredi 11 novembre 2026</title>
