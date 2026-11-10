@@ -6,9 +6,58 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 09 Nov 2026 01:42:14 +0100</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 01:41:46 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — mardi 10 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-10.html</link>
+<guid isPermaLink="false">ctan-2026-11-10</guid>
+<pubDate>Tue, 10 Nov 2026 01:41:46 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><strong>chemfig passe en 1.83</strong> : vous l'utilisez pour les formules développées en chimie ; c'est la seule annonce qui touche votre liste de paquets, et la correction porte sur les jonctions de liaisons en représentation de Cram.</li>
+<li><strong>Nouveau paquet <code>kanban-board</code></strong> : des tableaux de suivi de tâches en colonnes, directement dans un document LaTeX — utile pour un planning de projet ou un tableau de progression de classe.</li>
+<li>Le reste des annonces du week-end est écarté : directionnalité arabe/hébreu, outil d'auto-documentation du code source, et mise à jour d'une police sans usage courant.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>chemfig — version 1.83 (7 novembre 2026)</h3>
+<p>Vous appelez <code>chemfig</code> (avec <code>mhchem</code> et <code>chemarrow</code>) pour les formules et les schémas réactionnels. Christian Tellechea publie la version 1.83, sous licence LPPL 1.3c ; la version annoncée correspond bien à celle que renvoie l'API CTAN (1.83, datée du 7 novembre 2026), donc le dépôt est à jour au moment où j'écris.</p>
+<p>Le contenu annoncé porte sur les <strong>jonctions de liaisons</strong> : avec l'option <code>bond join=true</code>, le joint entre deux liaisons de type Cram-Cram est corrigé. C'est un cas de coin de la représentation en perspective (les liaisons Cram servent à figurer un substituant qui sort du plan), donc un dessin que vous ne produisez que de temps en temps ; la correction améliore le rendu quand plusieurs liaisons Cram se suivent sur un atome.</p>
+<p>Deux réserves, à prendre comme telles. D'abord, <strong>le texte de l'annonce est tronqué à la source</strong> (le flux CTAN coupe après la première puce), et la documentation française du paquet n'était pas exploitable ici : je ne peux donc pas affirmer que le reste du journal des modifications ne touche pas d'autres commandes — vérifiez la note de version en tête de <code>chemfig-fr.pdf</code> si vous voulez le détail complet. Ensuite, l'API CTAN classe <code>chemfig</code> dans la catégorie « <strong>tagged-pdf-incompatible</strong> » : c'est une information à garder en tête si vous activez un jour l'étiquetage PDF dans <code>nBook3</code> (ce n'est pas le cas aujourd'hui, le dépôt ne contient aucun <code>\DocumentMetadata</code>).</p>
+<p><strong>Conséquence pratique pour votre classe :</strong> rien à modifier, la syntaxe est stable à ce niveau de version. Une mise à jour de TeX Live ou une réinstallation du paquet suffit ; si un schéma existant se dessine étrangement, rechargez-le avant de chercher ailleurs.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>kanban-board — version 1.0.0</h3>
+<p>Nouveau paquet d'Andreas Willibald Weber, licence LPPL 1.3c, publié sans date de version dans l'API CTAN. Il produit de vrais <strong>tableaux de type Kanban</strong> : des colonnes nommées, et dans chaque colonne des cartes de tâches portant une priorité, un auteur, une échéance, une case d'achèvement et éventuellement un fond coloré.</p>
+<p>Ce qui le rend intéressant au-delà du gadget : les échéances sont <strong>validées et classées</strong> (en retard, à échoir, à venir), y compris en mois de projet calculés depuis une date de départ, et le classement peut se faire soit à la date de compilation, soit par rapport à une date de référence fixe — ce second mode est ce qui permet un document reproductible, dont la sortie ne change pas selon le jour où on compile. Deux dispositions sont fournies (plateau à hauteur de colonnes égale, ou plateau découpable entre pages, appuyé sur <code>paracol</code>), avec modes clair et sombre, palettes livrées ou personnelles, et des points d'accroche vers vos styles <code>tcolorbox</code>.</p>
+<p>Cela fonctionne avec pdfTeX, LuaTeX et XeTeX et exige LaTeX 2020-10-01 ou plus récent : votre installation actuelle est largement au-dessus. L'usage que j'y vois pour vous est un <strong>planning de chapitre ou de projet d'élèves</strong>, ou un tableau de progression d'une séquence, dans un document destiné à être imprimé ou affiché — pas dans une évaluation, où il n'apporte rien. Je n'ai pas testé le paquet : les points de compatibilité avec <code>tabularray</code> et <code>tcolorbox</code> (que vous chargez déjà) ne sont pas documentés dans l'annonce, donc à éprouver sur un document à part avant de l'intégrer à <code>nBook3</code>.</p>
+<p>Lien : https://ctan.org/pkg/kanban-board</p>
+<h2>Volume</h2>
+<p>5 annonces publiées dans l'intervalle, <strong>2 retenues</strong> (dont <strong>1 concernant vos paquets</strong>), 3 écartées — motifs dominants : prise en charge de l'écriture bidirectionnelle (arabe/hébreu), extension d'auto-documentation de sources LaTeX à usage étroit, et police Geist dont l'usage ne dépasse pas les documents de la maison Vercel. Aucune erreur signalée par la dernière collecte (<code>meta.json</code> du 9 novembre 2026, 32 entrées au flux, aucune erreur).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><strong>chemfig passe en 1.83</strong> : vous l'utilisez pour les formules développées en chimie ; c'est la seule annonce qui touche votre liste de paquets, et la correction porte sur les jonctions de liaisons en représentation de Cram.</li>
+<li><strong>Nouveau paquet <code>kanban-board</code></strong> : des tableaux de suivi de tâches en colonnes, directement dans un document LaTeX — utile pour un planning de projet ou un tableau de progression de classe.</li>
+<li>Le reste des annonces du week-end est écarté : directionnalité arabe/hébreu, outil d'auto-documentation du code source, et mise à jour d'une police sans usage courant.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>chemfig — version 1.83 (7 novembre 2026)</h3>
+<p>Vous appelez <code>chemfig</code> (avec <code>mhchem</code> et <code>chemarrow</code>) pour les formules et les schémas réactionnels. Christian Tellechea publie la version 1.83, sous licence LPPL 1.3c ; la version annoncée correspond bien à celle que renvoie l'API CTAN (1.83, datée du 7 novembre 2026), donc le dépôt est à jour au moment où j'écris.</p>
+<p>Le contenu annoncé porte sur les <strong>jonctions de liaisons</strong> : avec l'option <code>bond join=true</code>, le joint entre deux liaisons de type Cram-Cram est corrigé. C'est un cas de coin de la représentation en perspective (les liaisons Cram servent à figurer un substituant qui sort du plan), donc un dessin que vous ne produisez que de temps en temps ; la correction améliore le rendu quand plusieurs liaisons Cram se suivent sur un atome.</p>
+<p>Deux réserves, à prendre comme telles. D'abord, <strong>le texte de l'annonce est tronqué à la source</strong> (le flux CTAN coupe après la première puce), et la documentation française du paquet n'était pas exploitable ici : je ne peux donc pas affirmer que le reste du journal des modifications ne touche pas d'autres commandes — vérifiez la note de version en tête de <code>chemfig-fr.pdf</code> si vous voulez le détail complet. Ensuite, l'API CTAN classe <code>chemfig</code> dans la catégorie « <strong>tagged-pdf-incompatible</strong> » : c'est une information à garder en tête si vous activez un jour l'étiquetage PDF dans <code>nBook3</code> (ce n'est pas le cas aujourd'hui, le dépôt ne contient aucun <code>\DocumentMetadata</code>).</p>
+<p><strong>Conséquence pratique pour votre classe :</strong> rien à modifier, la syntaxe est stable à ce niveau de version. Une mise à jour de TeX Live ou une réinstallation du paquet suffit ; si un schéma existant se dessine étrangement, rechargez-le avant de chercher ailleurs.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>kanban-board — version 1.0.0</h3>
+<p>Nouveau paquet d'Andreas Willibald Weber, licence LPPL 1.3c, publié sans date de version dans l'API CTAN. Il produit de vrais <strong>tableaux de type Kanban</strong> : des colonnes nommées, et dans chaque colonne des cartes de tâches portant une priorité, un auteur, une échéance, une case d'achèvement et éventuellement un fond coloré.</p>
+<p>Ce qui le rend intéressant au-delà du gadget : les échéances sont <strong>validées et classées</strong> (en retard, à échoir, à venir), y compris en mois de projet calculés depuis une date de départ, et le classement peut se faire soit à la date de compilation, soit par rapport à une date de référence fixe — ce second mode est ce qui permet un document reproductible, dont la sortie ne change pas selon le jour où on compile. Deux dispositions sont fournies (plateau à hauteur de colonnes égale, ou plateau découpable entre pages, appuyé sur <code>paracol</code>), avec modes clair et sombre, palettes livrées ou personnelles, et des points d'accroche vers vos styles <code>tcolorbox</code>.</p>
+<p>Cela fonctionne avec pdfTeX, LuaTeX et XeTeX et exige LaTeX 2020-10-01 ou plus récent : votre installation actuelle est largement au-dessus. L'usage que j'y vois pour vous est un <strong>planning de chapitre ou de projet d'élèves</strong>, ou un tableau de progression d'une séquence, dans un document destiné à être imprimé ou affiché — pas dans une évaluation, où il n'apporte rien. Je n'ai pas testé le paquet : les points de compatibilité avec <code>tabularray</code> et <code>tcolorbox</code> (que vous chargez déjà) ne sont pas documentés dans l'annonce, donc à éprouver sur un document à part avant de l'intégrer à <code>nBook3</code>.</p>
+<p>Lien : https://ctan.org/pkg/kanban-board</p>
+<h2>Volume</h2>
+<p>5 annonces publiées dans l'intervalle, <strong>2 retenues</strong> (dont <strong>1 concernant vos paquets</strong>), 3 écartées — motifs dominants : prise en charge de l'écriture bidirectionnelle (arabe/hébreu), extension d'auto-documentation de sources LaTeX à usage étroit, et police Geist dont l'usage ne dépasse pas les documents de la maison Vercel. Aucune erreur signalée par la dernière collecte (<code>meta.json</code> du 9 novembre 2026, 32 entrées au flux, aucune erreur).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — lundi 9 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-09.html</link>
