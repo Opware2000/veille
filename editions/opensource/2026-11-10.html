@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — mardi 10 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux projets solides : SoundCraft, station audionumérique libre écrite en Rust (4 200 étoiles), et DBDelve, client de bases de données natif qui met en avant ses performances (852 étoiles).</li>
+<li>Beaucoup d'outils de bureau et d'usage quotidien : GerGit (interface Git pour Linux), TimeScroll (remplacement libre de Rewind sur Mac), Just File Share (échange pair à pair sans limite de taille), NekoTrail (seize agents de codage en parallèle).</li>
+<li>Côté mises à jour : Arti 2.8, version candidate de Daylight GNU/Linux 5, aperçu de Linux Mint 27.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>SoundCraft — station audionumérique libre en Rust</h3>
+<p>Station audionumérique complète, présentée comme développée « en salle blanche », c'est-à-dire sans reprendre le code ni les spécifications internes d'un logiciel comparable. Écrite entièrement en Rust. Dépôt <code>storytold/soundcraft</code> : licence Apache-2.0, 4 200 étoiles, dépôt créé le 7 octobre 2026 et mis à jour le 9 novembre 2026. Gratuit. À noter : l'organisation <code>storytold</code> est celle qui publie ArtCraft. https://github.com/storytold/soundcraft</p>
+<h3>DBDelve — client de bases de données natif</h3>
+<p>Client de bases de données écrit en Rust au-dessus de la bibliothèque d'interface GPUI (celle de l'éditeur Zed), présenté au départ par son auteur comme une réponse aux lourdeurs de DBeaver. Entrée la mieux notée de la journée sur Hacker News (12 points). Les mesures publiées par l'auteur, à prendre comme des chiffres d'auteur et non comme un test indépendant, annoncent un lancement en 1,1 s contre 5,2 s pour DBeaver et 133 Mo de mémoire au repos contre 606 Mo. Dépôt <code>ShayanAbbas1/dbdelve</code> : licence GPL-3.0, 852 étoiles, créé le 17 août 2026, mis à jour le 9 novembre 2026. https://github.com/ShayanAbbas1/dbdelve</p>
+<h3>GerGit — interface Git graphique pour Linux</h3>
+<p>Client Git graphique natif pour Linux, inspiré de Fork : graphe des commits, indexation ligne à ligne, diff côte à côte, rebasage interactif, résolution de conflits. Écrit en C# selon l'API GitHub. Dépôt <code>IcaruzSoftware/GerGit</code> : licence GPL-3.0, 4 étoiles, dernière mise à jour le 9 novembre 2026. Gratuit. https://github.com/IcaruzSoftware/GerGit</p>
+<h3>TimeScroll — remplacement libre de Rewind sur Mac</h3>
+<p>Application macOS qui enregistre l'écran en continu pour permettre de remonter dans sa journée et de retrouver ce qu'on a vu. Son intérêt : au lieu de passer chaque capture à la reconnaissance de caractères, elle lit le texte dans les applications par l'API d'accessibilité, ce qui donne un texte exact et coûte beaucoup moins de processeur ; le stockage passe par du HEVC, et des résumés d'activité peuvent être produits par un modèle local servi par Ollama. Dépôt <code>XInTheDark/TimeScrollApp</code> : licence GPL-3.0, 146 étoiles, dernière mise à jour le 9 novembre 2026. Gratuit. https://github.com/XInTheDark/TimeScrollApp</p>
+<h3>NekoTrail — orchestrer seize agents de codage</h3>
+<p>Outil qui lance Claude Code, Codex et quatorze autres agents en parallèle, chacun dans sa propre copie de travail git, avec les identifiants personnels de l'utilisateur. Dépôt <code>Harshil-Jani/nekotrail</code> : licence MIT, 5 étoiles, dernière mise à jour le 8 novembre 2026. Gratuit. https://github.com/Harshil-Jani/nekotrail</p>
+<h3>Desk — espace de travail macOS pour agents en ligne de commande</h3>
+<p>Petit environnement macOS destiné à regrouper les agents de codage en terminal. Dépôt <code>s-nish/desk</code> : licence MIT, 1 étoile, dernière mise à jour le 9 novembre 2026. Le projet est très récent et sans description ; à regarder avant de s'y fier. https://github.com/s-nish/desk</p>
+<h3>iphone-use-app — un modèle de langage aux commandes du téléphone</h3>
+<p>Application iPhone dans laquelle un modèle de langage pilote le téléphone sur lequel elle tourne, sans ordinateur Mac après l'installation. Dépôt <code>EliotAndres/iphone-use-app</code> : licence AGPL-3.0, 35 étoiles, dernière mise à jour le 9 novembre 2026. https://github.com/EliotAndres/iphone-use-app</p>
+<h3>Just Dashboard — tableau de bord de serveur privé</h3>
+<p>Tableau de bord libre de gestion d'un serveur privé (VPS), écrit en Go. Dépôt <code>JustDashboard/Just-Dashboard</code> : licence AGPL-3.0, 23 étoiles, dernière mise à jour le 9 novembre 2026. Gratuit. https://github.com/JustDashboard/Just-Dashboard</p>
+<h3>Just File Share — échange de fichiers pair à pair</h3>
+<p>Partage de fichiers sans limite de taille, sans inscription et sans bande passante facturée : la connexion se fait de poste à poste, avec un serveur de secours optionnel pour l'appairage, et les transferts reprennent après une coupure. Le logiciel tient en un seul fichier HTML, hébergeable n'importe où, accompagné d'un serveur minimal en Flask ; il gère aussi les dossiers entiers et leur montage dans le navigateur. Dépôt <code>Matszwe02/JFShare</code> : licence GPL-2.0 selon l'API GitHub, 1 étoile, dernière mise à jour le 9 novembre 2026. L'auteur signale lui-même un recours important à l'IA dans l'écriture du code. https://github.com/Matszwe02/JFShare</p>
+<h3>AetherScope — analyse statique de sécurité</h3>
+<p>Outil d'analyse statique de sécurité (SAST) écrit en Rust, couvrant plus de 150 motifs de faiblesses logicielles, avec une interface 3D en WebGL et un serveur MCP pour les agents de codage. <strong>Incertitude</strong> : GitHub n'identifie pas la licence du dépôt, et le projet ne compte que 2 étoiles — la licence et la solidité restent à vérifier. https://github.com/maxxwwim/AetherScope-SAST-150-CWE-MCP</p>
+<h3>PeachQ — une implémentation libre du langage q</h3>
+<p>Implémentation ouverte du langage q, appuyée sur le moteur en mémoire Rayforce, avec un stockage fondé sur DuckDB annoncé pour les versions suivantes. Préversion assumée : l'éditeur prévient que les interfaces et la compatibilité évoluent vite. Licence MIT, dépôt GitHub indiqué sur le site. https://peachq.org/</p>
+<h3>Mwmbl — moteur de recherche libre et à but non lucratif</h3>
+<p>Moteur de recherche dont l'index est construit par la communauté, sans publicité ni société commerciale derrière. Dépôt <code>mwmbl/mwmbl</code> : licence AGPL-3.0, 1 890 étoiles, projet démarré en décembre 2021, dernière mise à jour le 9 novembre 2026. Il ne s'agit donc pas d'une nouveauté, mais d'un projet remis en avant sur Hacker News. https://github.com/mwmbl/mwmbl</p>
+<h3>Anarlog — alternative libre à Granola</h3>
+<p>Compte rendu de réunions assisté par un modèle de langage, présenté comme l'alternative libre à Granola. Dépôt <code>fastrepl/anarlog</code> : licence MIT, 9 838 étoiles, dernière mise à jour le 6 novembre 2026 ; le dépôt existe depuis décembre 2024, il est ici remis en avant plutôt que créé. https://github.com/fastrepl/anarlog</p>
+<h3>Simple Prayer — horaires de prière et qibla, hors ligne</h3>
+<p>Application gratuite pour iOS, Android et montres : horaires de prière calculés sur le téléphone, direction de la qibla, sans publicité, sans compte et sans journalisation. Licence MIT annoncée. <strong>Incertitude</strong> : le message ne donne aucune adresse de dépôt, donc la licence MIT est à vérifier avant de s'appuyer dessus. https://www.reddit.com/r/opensource/comments/1xrfjyz/simple_prayer_a_free_opensource_mit_prayer_times/</p>
+<h3>Ultimate File Manager Pro — gestionnaire de fichiers Android et Android TV</h3>
+<p>Gestionnaire de fichiers pour téléphone, tablette et boîtier TV Android, avec deux panneaux de dossiers, navigation par onglets, accès aux partages SMB, NFS, WebDAV, FTP et SFTP, aux services de stockage en ligne (Google Drive, OneDrive, Dropbox, Amazon S3) et à RClone ; l'accès aux dossiers applicatifs protégés passe par Shizuku, sans root. Un serveur web intégré et de petites applications de bureau permettent de déposer un fichier depuis un ordinateur. Dépôt <code>Kilowatch/ultimate-file-manager-pro</code> : licence GPL-3.0, 318 étoiles, créé le 10 juin 2026, dernière mise à jour le 9 novembre 2026 ; une version autonome libre existe à côté de celle du magasin d'applications. https://github.com/Kilowatch/ultimate-file-manager-pro</p>
+<h3>nowPlayingDesktops — la lecture en cours sur le fond d'écran</h3>
+<p>Affiche une tuile « en cours de lecture » de Spotify (pochette, titre, artiste) directement sur le fond d'écran du bureau. Licence MIT, 2 étoiles, projet en chantier de son propre aveu. https://github.com/hippi345/nowPlayingDesktops</p>
+<h3>Radioso — agents conversationnels pour la relation client</h3>
+<p>Plateforme libre pour concevoir des agents conversationnels destinés aux visiteurs et aux clients d'un service, dans n'importe quel canal : recherche documentaire, piste d'audit, boîte de réception du service client et intégrations (Slack, courriel) sont fournies, contrairement aux briques isolées de la concurrence. Déployable soi-même ou dans l'offre de l'éditeur. Licence Apache-2.0 annoncée par l'auteur, mais GitHub ne reconnaît pas la licence automatiquement ; l'auteur précise que seule la couche multi-locataires de son propre service reste sous licence entreprise. Code en TypeScript avec PostgreSQL. Dépôt <code>radioso-ai/radioso</code> : 6 étoiles, dernière mise à jour le 9 novembre 2026. https://github.com/radioso-ai/radioso</p>
+<h3>La France en Débat — plateforme de débat public</h3>
+<p>Plateforme de débat public présentée sur Hacker News comme libre, organisée en débats, propositions et scrutins consultatifs, avec une charte de paix et une méthode de débat affichées. <strong>Incertitude</strong> : aucune adresse de dépôt n'apparaît sur le site, donc le caractère libre reste invérifiable en l'état. https://lafranceendebat.fr/</p>
+<h3>Stationhouse — plateforme de collaboration en recherche ouverte</h3>
+<p>Plateforme destinée à faire travailler ensemble des contributeurs sur des projets de modèles ouverts : bancs d'essai (croyances des modèles, attribution de soi, exploration des neurones d'un modèle de 32 milliards de paramètres), avec du calcul offert annoncé. Le code est publié sur l'organisation GitHub Station-House. Entrée encore peu commentée (1 point) : à suivre plutôt qu'à installer. https://station-house.net/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Arti 2.8 — le client Tor en Rust</h3>
+<p>Le projet Tor publie la version 2.8 de son client de nouvelle génération écrit en Rust. Elle ne se limite plus au rôle de client : Arti se positionne pour remplacer entièrement l'implémentation d'origine en langage C, y compris comme relais et comme autorité. Aucune action n'est requise pour qui utilise le Tor Browser, qui embarque son propre client. https://rust.developpez.com/actu/388864/Le-projet-Tor-annonce-la-sortie-d-Arti-2-8-la-derniere-version-de-son-client-Tor-de-nouvelle-generation-ecrit-en-Rust-ce-qui-rapproche-ce-client-d-une-reecriture-complete-en-Rust/</p>
+<h3>Daylight GNU/Linux 5 — un bureau Fluxbox pour Raspberry Pi OS</h3>
+<p>Le projet suisse Daylight publie la version candidate 5.0.0-rc.2 : au lieu d'une image système complète, il ajoute à un Raspberry Pi OS 64 bits existant, par APT, un environnement de bureau Fluxbox et une série d'outils écrits en Rust. On peut n'installer que les outils, pour une machine sans interface graphique ; la session X11 reste séparée de la session existante. Cible : Debian 12 ou 13 en ARM 64 bits, sachant que l'ARM 32 bits n'est pas pris en charge et que le cœur n'a été éprouvé que sur Raspberry Pi 4. Licence GPLv3. Il s'agit d'une version candidate, pas d'une version stable. https://linuxfr.org/news/daylight-gnu-linux-5-un-bureau-fluxbox-ajoute-a-raspberry-pi-os</p>
+<h3>Linux Mint 27 « Adrien » — aperçu avant Noël</h3>
+<p>It's FOSS rassemble les changements annoncés au fil des mois pour la prochaine version, prévue à Noël : la session Wayland de Cinnamon quitte le statut expérimental et les deux modes sont pleinement pris en charge, la base est Ubuntu 26.04 LTS avec cinq ans de support, et le rythme passe à une version majeure par an, sans version intermédiaire. Ce ne sont encore que des annonces : les détails peuvent changer avant la publication. https://feed.itsfoss.com/link/24361/17518528/linux-mint-27-features</p>
+<h2>Volume</h2>
+<p>62 entrées publiées dans l'intervalle (21 renvois Hacker News, 7 fils r/opensource, 2 Lobsters, 15 articles Developpez, 8 articles Phoronix, 3 dépêches LinuxFr, 3 liens Journal du hacker, 2 articles It's FOSS, 1 billet Framablog), 22 retenues, 40 écartées.<br />
+Écartées pour l'essentiel : actualité d'entreprise et de modèles propriétaires (OpenAI, Gartner, Nvidia, Amazon), actualité du noyau et des pilotes sans outil installable (Phoronix), billets d'opinion et d'expérience (avenir du génie logiciel, ancien zélote du GPL, valeur de l'open source, 6 000 € de crédits d'IA), questions techniques et appels à contributions, revues de presse et sélections de journaux, tutoriels d'installation, plateformes et articles sans rapport avec le logiciel.<br />
+Deux doublons écartés : l'affaire Synaptics contre le pilote DisplayLink libre (déjà traitée dans l'édition du 5 novembre) et les fils r/opensource déjà parus, redéposés par la passerelle du Mac sous un identifiant différent.<br />
+Le journal de collecte ne signale aucune erreur au dernier passage, et les six journaux de flux ont tous répondu.</p>
+<footer>Édition du mardi 10 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
