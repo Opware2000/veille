@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — mardi 10 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — mardi 10 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucun nouveau modèle DeepSeek : la publication la plus récente du compte <code>deepseek-ai</code> sur Hugging Face reste <strong>DeepSeek-V4.1-Flash-1017</strong> (17 octobre), et la rumeur d'une « mise à jour silencieuse » qui circule sur le forum n'est corroborée par aucune source.<br />
+La documentation officielle explique en revanche la confusion générale du forum : le nom d'appel <code>deepseek-flash</code> est désormais servi par V4.1-Flash-1017 et les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code> ont été retirés, tout en restant facturés au tarif Flash.<br />
+Trois projets d'inférence locale, dont deux mesurés par leurs auteurs, montrent qu'un modèle de cette taille commence à tenir sur du matériel de joueur.</p>
+<h2>Modèles et poids</h2>
+<p><strong>Rien de nouveau côté dépôt officiel, et c'est le fait vérifié de la journée.</strong> L'API Hugging Face, interrogée par date de création décroissante sur le compte <code>deepseek-ai</code>, ne remonte aucune publication postérieure au 17 octobre 2026. La fiche DeepSeek-V4.1-Flash-1017 porte la licence MIT, une quantification fp8, environ 510 Go de fichiers, 5 391 mentions d'intérêt et 312 293 téléchargements. Détail à ne pas confondre avec les chiffres avancés sur le forum : l'index des fichiers safetensors annonce <strong>763,2 milliards de paramètres au total</strong>, dont 557,2 milliards comptabilisés en entier 8 bits et 204 milliards en virgule flottante 8 bits. Les messages qui parlent de « 552 B » (voir plus bas) sont donc en écart avec l'index officiel.</p>
+<p>Les deux fils qui demandent si un nouveau modèle est sorti dans la nuit — « Deeepseek new model ? » et « What's going on with DeepSeek Flash inside DSH », qui compare deux captures d'écran de versions différentes — ne donnent aucun élément vérifiable : écarter des rumeurs plutôt que de les relayer.</p>
+<p><strong>Compression annoncée par Tileward, non vérifiée.</strong> Un fil annonce que le format TWX3 de Tileward compresse DeepSeek-V4 de 24 % pour un score MMLU à 0,4 point de l'original. La publication ne renvoie à aucun dépôt public ni à un article : l'organisation <code>Tileward-com</code> existe bien sur GitHub, mais elle n'expose que deux outils périphériques (<code>tileward-cli</code>, sous licence MIT, et une liste de tarifs de GPU à l'heure), sans code de compression. À prendre comme une annonce commerciale, en aucun cas comme un résultat reproductible.<br />
+Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1xrvwr1/we_shrank_deepseekv4pro_by_24_within_half_a_point/">https://www.reddit.com/r/DeepSeek/comments/1xrvwr1/we_shrank_deepseekv4pro_by_24_within_half_a_point/</a></p>
+<p><strong>Un jeu de données, pas des poids.</strong> Le fil « A redacted DeepSeek conversation archive » renvoie à un jeu de données Hugging Face effectivement en ligne : <code>PINUS8/deepseek-long-thread-redacted</code>, créé le 6 novembre, 172 téléchargements, licence déclarée « other ». Il contient plus de 500 000 mots répartis sur 742 échanges, mais ne comporte ni poids ni méthode d'entraînement.<br />
+Source : <a href="https://huggingface.co/datasets/PINUS8/deepseek-long-thread-redacted">https://huggingface.co/datasets/PINUS8/deepseek-long-thread-redacted</a></p>
+<h2>Prix, accès et quotas</h2>
+<p><strong>La confusion des noms est tranchée par la documentation officielle.</strong> La page « Models &amp; Pricing » indique que <code>deepseek-flash</code> est le nom à utiliser, qu'il est désormais servi par DeepSeek-V4.1-Flash-1017, et que les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code> sont encore acceptés mais correspondent à des modèles retirés : leurs requêtes sont servies par V4.1-Flash-1017 et facturées au tarif Flash. C'est l'explication la plus probable des fils où des utilisateurs constatent que le même nom d'appel ne donne plus le même modèle selon la version de leur harnais.<br />
+Source : <a href="https://api-docs.deepseek.com/quick_start/pricing">https://api-docs.deepseek.com/quick_start/pricing</a></p>
+<p>Grille officielle, en dollars par million de jetons, avec les deux régimes horaires :</p>
+<table>
+<thead>
+<tr>
+<th>Modèle</th>
+<th>Entrée (cache atteint)</th>
+<th>Entrée (cache manqué)</th>
+<th>Sortie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>deepseek-flash (V4.1-Flash-1017)</td>
+<td>0,003 creux / 0,006 plein</td>
+<td>0,15 creux / 0,30 plein</td>
+<td>0,60 creux / 1,20 plein</td>
+</tr>
+<tr>
+<td>deepseek-v4-pro (V4-Pro-0813)</td>
+<td>0,022 creux / 0,044 plein</td>
+<td>0,66 creux / 1,32 plein</td>
+<td>1,98 creux / 3,96 plein</td>
+</tr>
+</tbody>
+</table>
+<p>Les heures pleines restent 01 h–04 h et 06 h–10 h UTC du lundi au vendredi, hors jours fériés chinois ; tout le reste est en tarif creux, soit la moitié. Contexte annoncé d'un million de jetons, sortie maximale de 384 000 jetons, et limites de concurrence de 2 500 requêtes simultanées pour Flash contre 500 pour V4-Pro. Le modèle Flash accepte les images, V4-Pro non.</p>
+<p><strong>Nouveau poste de facturation : la recherche et la lecture de pages.</strong> La même page décrit deux interfaces autonomes, Search et Fetch, facturées 0,75 dollar les 1 000 requêtes réussies, et la bannière du site annonce leur disponibilité. Aucun fil du forum n'en parle : c'est une lecture de la documentation, utile si l'on branche un agent sur l'API officielle.</p>
+<p><strong>Deux rapports d'accès, écartés.</strong> Le message d'un utilisateur dont le compte a été suspendu moins d'une minute après son inscription, et celui qui signale une API perturbée alors que la page d'état annonce 100 % de disponibilité, relèvent de l'incident individuel sans élément généralisable.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>DeepSeek V4.1-Flash sur une Arc A770 de 16 Go, 45 jetons/s en préremplissage et 5 en génération.</strong> L'auteur explique passer par un portage SYCL du moteur Strata, qui répartit un gros modèle à experts entre mémoire vidéo, mémoire vive et disque NVMe, parce que le moteur ne gère en standard que CUDA, HIP et Metal. Les mesures sont celles de l'auteur et le portage n'est pas publié : à considérer comme une piste technique, pas comme une recette reproductible.<br />
+Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1xrj74q/deepseek_v41flash_running_on_a_single_arc_a770/">https://www.reddit.com/r/DeepSeek/comments/1xrj74q/deepseek_v41flash_running_on_a_single_arc_a770/</a></p>
+<p><strong>RustingStrata contre llama.cpp sur une RTX 3060 de 12 Go.</strong> Fil le plus documenté de la journée pour ce thème : le moteur charge le modèle en quantification IQ2_XXS (249 Go), les experts sont lus depuis le disque via le cache de pages et un cache LRU de 9 Go en mémoire vidéo retient ceux qui resservent. Les chiffres annoncés, face à llama.cpp b12116 avec <code>--cpu-moe</code> : 2 à 3,6 jetons/s en décodage contre 0,3 à 1,5, environ 2 jetons/s de préremplissage sur invites courtes contre 0,5 à 0,9, et un accord au premier rang de 189 réponses sur 192 en forçage par le professeur. Deux réserves : le dépôt <code>RustingStudio/RustingStrata</code> (170 étoiles, dernier envoi le 9 novembre, licence que GitHub n'identifie pas) se présente comme un moteur pour modèles Qwen, ce qui ne recoupe pas l'annonce faite pour DeepSeek ; et la licence non identifiée mérite un contrôle avant tout usage professionnel.<br />
+Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1xs0q7b/rustingstrata_vs_llamaccp_running/">https://www.reddit.com/r/DeepSeek/comments/1xs0q7b/rustingstrata_vs_llamaccp_running/</a> et <a href="https://github.com/RustingStudio/RustingStrata">https://github.com/RustingStudio/RustingStrata</a></p>
+<p><strong>Le même terrain, hors du journal :</strong> le dépôt <code>Indras-Mirror/Xolotl</code> (licence MIT, 498 étoiles, dernier envoi le 9 novembre) annonce exécuter DeepSeek-V4.1-Flash complet, 552 milliards de paramètres, sur une RTX 4090 et 110 Go de mémoire vive, à environ 33 jetons/s sur des tâches d'agent. Trouvé en vérifiant les dépôts de ce thème, donc absent des journaux de la veille ; à recouper si le sujet vous intéresse.</p>
+<p><strong>Deux moteurs pour Apple Silicon, hors DeepSeek mais de même mécanique.</strong> Le fil Hacker News « M4 Pro vs. M5 Pro : Qwen 3.8 Flash Next à 374 jetons/s en préremplissage » renvoie au dépôt <code>davide-troiani/moeshift</code> (licence MIT, 55 étoiles, dernier envoi le 4 novembre), un moteur d'inférence pour modèles à experts optimisé pour la mémoire unifiée d'Apple Silicon. Et un article de blog, « I ran 120B MoE models on my 32GB M1 Max using under 16 GB », décrit la même approche — ne garder en mémoire vidéo que les experts utiles — sur une machine de 32 Go. Aucun des deux ne porte sur un modèle DeepSeek.</p>
+<h2>Intégrations et outils tiers</h2>
+<p><strong>Prefixwise 0.10.0 — mesurer ce que coûtent les ratés du cache.</strong> Le projet se place entre un agent et le modèle, ou dans vLLM, nomme la cause de chaque défaut de cache, la chiffre et empêche les régressions en intégration continue. Il ne conserve que des empreintes et des compteurs, jamais le texte des invites. Le dépôt <code>tejachavali/prefixwise</code> est public, sous licence MIT, avec 8 étoiles et un envoi le 10 novembre ; il a été créé le 6 novembre. L'intérêt dans notre contexte est direct : sur DeepSeek, un jeton d'entrée en cache atteint coûte 0,003 dollar contre 0,15 en cache manqué, soit cinquante fois moins. Deux fils du forum présentent le même projet, qui ne compte donc que pour une entrée.<br />
+Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1xrq4u7/prefixwise_v0100_mit_identify_fix_and_prevent_llm/">https://www.reddit.com/r/DeepSeek/comments/1xrq4u7/prefixwise_v0100_mit_identify_fix_and_prevent_llm/</a> et <a href="https://github.com/tejachavali/prefixwise">https://github.com/tejachavali/prefixwise</a></p>
+<p><strong>dsh-Go — le harnais dans le téléphone.</strong> Deux fils (dont un intitulé « No api No account Free AI Agents on your Mobile ») renvoient au dépôt <code>ccch1mneyyy/dsh-Go</code>, sous licence AGPL 3.0, 17 553 étoiles, créé le 25 octobre et mis à jour le 9 novembre : il fait tourner DeepSeek Harness sur le téléphone et permet aussi de piloter son ordinateur à distance. Le nombre d'étoiles élevé pour un projet d'un mois indique un vrai engouement ; le projet est un tiers, sans lien officiel avec DeepSeek.<br />
+Source : <a href="https://github.com/ccch1mneyyy/dsh-Go">https://github.com/ccch1mneyyy/dsh-Go</a></p>
+<p><strong>Codex Pacer — voir avancer une tâche d'agent.</strong> Un traceur de progression en temps réel, alimenté par l'estimation que l'agent donne lui-même de son avancement plutôt que par le temps écoulé, présenté sous forme de bandeau dynamique. Dépôt <code>RyanZhangNTU/codex-pacer</code>, licence MIT, 112 étoiles, dernier envoi le 9 novembre ; il surveille Codex et Claude Code en plus du harnais DeepSeek.<br />
+Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1xrrqjq/a_realtime_progress_tracker_for_deepseek_no_more/">https://www.reddit.com/r/DeepSeek/comments/1xrrqjq/a_realtime_progress_tracker_for_deepseek_no_more/</a> et <a href="https://github.com/RyanZhangNTU/codex-pacer">https://github.com/RyanZhangNTU/codex-pacer</a></p>
+<p><strong>OpenGhost — mise à jour avec vue partagée.</strong> L'agent de bureau libre passe à un affichage à deux panneaux, avec jusqu'à quatre agents simultanés, un navigateur distinct par agent et un suivi des fichiers, dossiers et ports occupés pour éviter les collisions. Dépôt <code>ANDRETRIPOL/OpenGhost</code>, licence MIT, 291 étoiles, dernier envoi le 9 novembre.<br />
+Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1xs38oe/openghost_update_split_view_mode/">https://www.reddit.com/r/DeepSeek/comments/1xs38oe/openghost_update_split_view_mode/</a> et <a href="https://github.com/ANDRETRIPOL/OpenGhost">https://github.com/ANDRETRIPOL/OpenGhost</a></p>
+<p><strong>Deux projets à signaler sans les vérifier.</strong> Le fil « Motion Lab » décrit un outil libre qui fait produire à DeepSeek V4.1 Flash une spécification et une chronologie React/GSAP, rendues ensuite image par image par Remotion, au lieu de passer par un modèle vidéo ; aucun dépôt n'est retrouvé, donc rien de vérifiable. Le fil « Show HN: Dependency free RSS reader », un lecteur de flux sans dépendance écrit avec DeepSeek, renvoie à <code>bipinKrishnan/rss_feed</code>, licence Apache 2.0, 4 étoiles, créé le 7 novembre : minuscule mais réel, et son intérêt tient surtout à la méthode employée.</p>
+<p><strong>Appauvrir un modèle à experts sans le casser.</strong> Le blog Hugging Face publie une méthode d'élagage des experts d'un modèle à mélange d'experts en tenant compte du fait qu'ils travaillent par paires — utile pour alléger un DeepSeek servi en local, mais le billet ne porte pas sur DeepSeek.<br />
+Source : <a href="https://huggingface.co/blog/amazon/higher-order-pruning-experts">https://huggingface.co/blog/amazon/higher-order-pruning-experts</a></p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Faire attendre le modèle plutôt que le corps.</strong> L'auteur d'un agent de survie dans un monde 3D explique que la clé n'a pas été le modèle mais l'ordonnancement : en laissant le modèle planifier l'action suivante pendant que la précédente s'exécute, le corps est passé d'occupé 4 % du temps à 93 %. Le cerveau est <code>deepseek-flash</code> avec le raisonnement activé, pour un coût annoncé de 5 dollars par jour. Le principe est transposable à n'importe quel agent avec outils.<br />
+Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1xrbjmc/cast_away_but_its_deepseekflash_and_it_costs_5_a/">https://www.reddit.com/r/DeepSeek/comments/1xrbjmc/cast_away_but_its_deepseekflash_and_it_costs_5_a/</a></p>
+<p><strong>Trois ordres de grandeur de coût, rapportés par des utilisateurs.</strong> 2,36 dollars pour appliquer en trois heures un plan détaillé touchant plus de 250 fichiers d'une application .NET, avec Flash par l'API officielle ; 0,68 dollar pour rétro-concevoir un jeu DOS de 1984 avec V4.1 Flash ; 1,48 dollar pour la même famille de travail sur le moteur de DOOM. Ce sont des témoignages, non reproduits ici, mais ils situent le coût d'un après-midi d'agent.</p>
+<p><strong>Accès distant à l'interface du harnais : la documentation existe.</strong> Un billet propose de lier directement l'interface de DeepSeek Harness à l'adresse privée Tailscale, plutôt que de passer par une redirection de port ou un module tiers. La documentation officielle du harnais couvre ce cas avec une page dédiée, « Publier l'interface web derrière un proxy inverse » : deux options, <code>--public-url</code> et <code>--trusted-host</code>, et trois obligations pour le mandataire — conserver l'en-tête <code>Host</code> du navigateur, retirer le préfixe de montage avant de transmettre, et laisser passer les mises à niveau de connexion. Le billet du forum garde son intérêt pour un accès sans mandataire, mais la page officielle est la référence.<br />
+Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1xqr1f0/guide_deepseek_harness_gui_remote_control_with/">https://www.reddit.com/r/DeepSeek/comments/1xqr1f0/guide_deepseek_harness_gui_remote_control_with/</a> et <a href="https://deepseek-harness.github.io/deepseek-harness/en/guide/public-deployments.md">https://deepseek-harness.github.io/deepseek-harness/en/guide/public-deployments.md</a></p>
+<p><strong>Écrire un moteur d'inférence pour comprendre l'inférence.</strong> Le dépôt <code>samir-sarwar/samir-vllm</code> réunit un petit moteur écrit de zéro, six heures de vidéo et 85 pages de notes manuscrites ; 154 étoiles, dernier envoi le 3 novembre, licence que GitHub n'identifie pas. C'est un support d'apprentissage, pas un outil de production.<br />
+Source : <a href="https://github.com/samir-sarwar/samir-vllm">https://github.com/samir-sarwar/samir-vllm</a></p>
+<h2>Volume</h2>
+<p>161 entrées récentes examinées (86 du journal DeepSeek, 71 du flux Hacker News à 10 points et plus, 2 du blog Hugging Face, 2 de Latent Space), 19 retenues, 142 écartées, soit un taux de rétention d'environ 12 %. S'y ajoutent 892 entrées du blog Hugging Face plus anciennes que l'horizon de quatre jours, écartées d'office : c'est le premier passage de ce journal dans cette veille. Le taux faible tient à la nature du forum, partagé entre questions de dépannage, plaintes et messages en boucle, et ne signale pas un filtre défaillant.<br />
+Dernière collecte du journal DeepSeek : 9 novembre à 23 h 52 UTC, sans aucune erreur signalée.</p>
+<footer>Édition du mardi 10 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
