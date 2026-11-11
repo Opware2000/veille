@@ -6,9 +6,54 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 10 Nov 2026 01:41:46 +0100</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 01:41:43 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — mercredi 11 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-11.html</link>
+<guid isPermaLink="false">ctan-2026-11-11</guid>
+<pubDate>Wed, 11 Nov 2026 01:41:43 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><strong>babel-french</strong> renomme une option introduite la semaine dernière : « KernFootnotes » remplace « SwapFootnotes » — c'est l'unique annonce qui touche de près votre liste de paquets, et elle se solde par une correction de nom à faire le jour où vous adopterez l'option.</li>
+<li><strong>latexmk 4.89</strong> ouvre la compilation parallèle (annoncée comme expérimentale) et cesse de relancer inutilement <code>*latex</code> avec biblatex ; <strong>nicematrix 7.13</strong> ajoute des clés de contrôle de la boîte englobante et de la hauteur des lignes.</li>
+<li>Cinq annonces écartées : papeterie décorative, calendrier lituanien des prénoms, figures destinées à l'école élémentaire, style bibliographique ISO 690 et outil d'import de métadonnées de citation.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>babel-french — version du 8 novembre 2026 (annoncée le 10)</h3>
+<p>Votre liste porte <code>babel</code>, et c'est ici le module français que babel charge automatiquement dès que la langue est déclarée : il commande la typographie française de vos documents (ponctuation, césures, listes, notes). Daniel Flipo en publie une version datée du 8 novembre 2026, sous licence LPPL 1.3c. L'API CTAN est cohérente avec l'annonce pour la date, mais <strong>ne renseigne aucun numéro de version</strong> pour ce paquet : la version se lit donc à la date, pas à un numéro.</p>
+<p>Deux changements, tous deux annoncés en une ligne. D'abord, <strong>l'option <code>KernFootnotes</code> remplace <code>SwapFootnotes</code></strong> — ce dernier nom n'avait donc vécu que quelques jours, la mise à jour du 2 novembre l'ayant introduit. Ensuite, une <strong>correction de syntaxe dans l'instance de gabarit « part »</strong> : la clé erronée (<code>prefix</code>) devient <code>text</code>. Vous n'avez rien à faire dans l'immédiat, puisque aucune de vos sources n'appelle cette option ; en revanche, si vous l'avez essayée ou notée depuis le 2 novembre, remplacez le nom avant la prochaine compilation, sans quoi l'option sera ignorée avec un avertissement.</p>
+<p><strong>Conséquence pratique pour votre classe :</strong> rien à modifier. La mise à jour arrive avec la prochaine synchronisation de TeX Live. Le point à retenir est le renommage, si l'option vous intéressait pour la mise en page des notes de bas de page.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>latexmk — 4.89</strong> (GPL 2) : la compilation parallèle des documents et des règles parallélisables arrive, mais John Collins la présente comme <strong>expérimentale</strong> — à ne pas activer par défaut dans votre chaîne de production. Le reste est plus utile au quotidien : moins de passes <code>*latex</code> superflues avec biblatex (deux variables de réglage ajoutées), de nouveaux points d'accroche <code>compile_begin</code> et <code>compile_end</code> avec une variable <code>$compile_status</code>, et des corrections de noms de fichiers sous Windows et des caches de polices LuaTeX en compilation parallèle. Rien de spécifique à votre classe.</li>
+<li><strong>nicematrix — 7.13</strong> (LPPL 1.3) : trois ajouts. La clé <code>overlap=false</code> fait entrer les éléments graphiques posés par <code>\CodeAfter</code> dans le calcul de la boîte englobante de l'environnement — c'est ce qui évite qu'un trait ou une accolade déborde ou soit rogné. La clé <code>xdots/number-of-dots</code> règle le nombre de points des lignes de pointillés continues. Enfin <code>columns-width=row-height</code> permet des cellules réellement carrées, ce qui sert aux tableaux de grille. Utile si vous composez un tableau de points ou une grille de résultats ; sans effet sur <code>tabularray</code>, que votre classe utilise par ailleurs.</li>
+</ul>
+<h2>Volume</h2>
+<p>8 annonces publiées dans l'intervalle (du 10 novembre 07 h 55 à 21 h 00 UTC), <strong>3 retenues</strong> (dont <strong>1 concernant vos paquets</strong>), 5 écartées — motifs dominants : papeterie décorative (<code>seasonalletters</code>), calendrier national des fêtes de prénoms (<code>vardadieniai</code>), figures conçues pour l'école élémentaire (<code>figchild</code>), style bibliographique normatif à usage universitaire (<code>biblatex-iso690</code>) et outil d'import de métadonnées de citation hors enseignement (<code>Import citation CFF</code>). Aucune erreur signalée par la dernière collecte (<code>meta.json</code> : 32 entrées au flux, aucune erreur, dernier passage le 10 novembre à 23 h 18 UTC).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li><strong>babel-french</strong> renomme une option introduite la semaine dernière : « KernFootnotes » remplace « SwapFootnotes » — c'est l'unique annonce qui touche de près votre liste de paquets, et elle se solde par une correction de nom à faire le jour où vous adopterez l'option.</li>
+<li><strong>latexmk 4.89</strong> ouvre la compilation parallèle (annoncée comme expérimentale) et cesse de relancer inutilement <code>*latex</code> avec biblatex ; <strong>nicematrix 7.13</strong> ajoute des clés de contrôle de la boîte englobante et de la hauteur des lignes.</li>
+<li>Cinq annonces écartées : papeterie décorative, calendrier lituanien des prénoms, figures destinées à l'école élémentaire, style bibliographique ISO 690 et outil d'import de métadonnées de citation.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>babel-french — version du 8 novembre 2026 (annoncée le 10)</h3>
+<p>Votre liste porte <code>babel</code>, et c'est ici le module français que babel charge automatiquement dès que la langue est déclarée : il commande la typographie française de vos documents (ponctuation, césures, listes, notes). Daniel Flipo en publie une version datée du 8 novembre 2026, sous licence LPPL 1.3c. L'API CTAN est cohérente avec l'annonce pour la date, mais <strong>ne renseigne aucun numéro de version</strong> pour ce paquet : la version se lit donc à la date, pas à un numéro.</p>
+<p>Deux changements, tous deux annoncés en une ligne. D'abord, <strong>l'option <code>KernFootnotes</code> remplace <code>SwapFootnotes</code></strong> — ce dernier nom n'avait donc vécu que quelques jours, la mise à jour du 2 novembre l'ayant introduit. Ensuite, une <strong>correction de syntaxe dans l'instance de gabarit « part »</strong> : la clé erronée (<code>prefix</code>) devient <code>text</code>. Vous n'avez rien à faire dans l'immédiat, puisque aucune de vos sources n'appelle cette option ; en revanche, si vous l'avez essayée ou notée depuis le 2 novembre, remplacez le nom avant la prochaine compilation, sans quoi l'option sera ignorée avec un avertissement.</p>
+<p><strong>Conséquence pratique pour votre classe :</strong> rien à modifier. La mise à jour arrive avec la prochaine synchronisation de TeX Live. Le point à retenir est le renommage, si l'option vous intéressait pour la mise en page des notes de bas de page.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>latexmk — 4.89</strong> (GPL 2) : la compilation parallèle des documents et des règles parallélisables arrive, mais John Collins la présente comme <strong>expérimentale</strong> — à ne pas activer par défaut dans votre chaîne de production. Le reste est plus utile au quotidien : moins de passes <code>*latex</code> superflues avec biblatex (deux variables de réglage ajoutées), de nouveaux points d'accroche <code>compile_begin</code> et <code>compile_end</code> avec une variable <code>$compile_status</code>, et des corrections de noms de fichiers sous Windows et des caches de polices LuaTeX en compilation parallèle. Rien de spécifique à votre classe.</li>
+<li><strong>nicematrix — 7.13</strong> (LPPL 1.3) : trois ajouts. La clé <code>overlap=false</code> fait entrer les éléments graphiques posés par <code>\CodeAfter</code> dans le calcul de la boîte englobante de l'environnement — c'est ce qui évite qu'un trait ou une accolade déborde ou soit rogné. La clé <code>xdots/number-of-dots</code> règle le nombre de points des lignes de pointillés continues. Enfin <code>columns-width=row-height</code> permet des cellules réellement carrées, ce qui sert aux tableaux de grille. Utile si vous composez un tableau de points ou une grille de résultats ; sans effet sur <code>tabularray</code>, que votre classe utilise par ailleurs.</li>
+</ul>
+<h2>Volume</h2>
+<p>8 annonces publiées dans l'intervalle (du 10 novembre 07 h 55 à 21 h 00 UTC), <strong>3 retenues</strong> (dont <strong>1 concernant vos paquets</strong>), 5 écartées — motifs dominants : papeterie décorative (<code>seasonalletters</code>), calendrier national des fêtes de prénoms (<code>vardadieniai</code>), figures conçues pour l'école élémentaire (<code>figchild</code>), style bibliographique normatif à usage universitaire (<code>biblatex-iso690</code>) et outil d'import de métadonnées de citation hors enseignement (<code>Import citation CFF</code>). Aucune erreur signalée par la dernière collecte (<code>meta.json</code> : 32 entrées au flux, aucune erreur, dernier passage le 10 novembre à 23 h 18 UTC).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — mardi 10 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-10.html</link>
