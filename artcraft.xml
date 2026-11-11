@@ -6,9 +6,134 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 11 Nov 2026 00:02:37 +0100</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 00:02:27 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — jeudi 12 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-12.html</link>
+<guid isPermaLink="false">artcraft-2026-11-12</guid>
+<pubDate>Thu, 12 Nov 2026 00:02:27 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>AniCraft, l'éditeur d'animation vectorielle 2D de l'équipe ArtCraft, est publié : deux versions (0.1.0 et 0.2.0) ont été mises en ligne le 11 novembre et l'application s'installe depuis le lanceur, aux côtés des seize autres.</li>
+<li>Nick Saporito, connu pour ses tutoriels Inkscape et GIMP sous le nom « Logos By Nick », a ouvert une chaîne YouTube consacrée aux applications ArtCraft ; sa première leçon porte sur VectorCraft.</li>
+<li>Côté dépôt officiel, neuf commits d'entretien (nettoyages SonarCloud, en-têtes de sécurité de l'intégration continue) et aucune nouvelle version depuis la 0.41.1.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>AniCraft est disponible, en version 0.1.0 puis 0.2.0 le même jour</h3>
+<p>u/Jellygator0 annonce la sortie d'AniCraft — « et il s'installe directement depuis le lanceur ». L'application est bien celle de l'équipe ArtCraft : dépôt <code>storytold/anicraft</code>, décrit comme un éditeur d'animation 2D écrit intégralement en Rust, sous Apache-2.0. Le dépôt a été créé le 14 octobre 2026 et totalise 246 étoiles, 58 copies et 74 tickets ouverts au moment de la vérification ; le site de l'éditeur le présente comme la septième de ses dix-sept applications, en « alpha précoce », avec des installateurs pour macOS, Windows, Linux et une version web.</p>
+<p>Deux versions ont effectivement été publiées le 11 novembre : la <strong>0.1.0</strong> à 1 h 03 UTC (export d'images au format SVG, import de dessins SVG sur la scène, interpolations de formes) puis la <strong>0.2.0</strong> à 16 h 08 UTC, qui apporte les marqueurs de pelure d'oignon, la teinte et les contours, l'édition simultanée de plusieurs images, ainsi que les extrémités et jointures de trait avec limite d'onglet et lignes pointillées. Le message du subreddit précède la 0.2.0 de quelques heures : c'est la 0.1.0 qu'il annonce, la seconde version étant arrivée dans la journée. Pour un utilisateur, cela reste un outil jeune — aucune des applications de la suite n'est stable — mais c'est la première fois qu'ArtCraft couvre l'animation vectorielle sous forme d'un éditeur autonome avec ligne de temps. Une réserve : une page <code>anicraft.app</code> se présente comme un site de référence mais indique elle-même n'être pas officielle et annonce encore une sortie à venir ; ne pas s'y fier pour l'état du projet.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt83u9/anicraft_is_out_today_is_a_good_day_d/ — u/Jellygator0</li>
+<li>Dépôt : https://github.com/storytold/anicraft — page officielle : https://getartcraft.com/apps/anicraft</li>
+</ul>
+<h3>Dépôt officiel : neuf commits d'entretien, aucune version depuis la 0.41.1</h3>
+<p>Entre le 10 novembre 22 h 20 et le 11 novembre 17 h 10 UTC, le dépôt <code>storytold/artcraft</code> a reçu neuf commits visibles, tous d'entretien et rien qui change l'aspect ou le comportement des applications. Le gros du lot consiste à vider les avertissements de SonarCloud accumulés dans le front : promesses sans attente explicite, éléments cliquables sans rôle ni accès clavier, identifiants locaux tirés de <code>Math.random</code> remplacés par <code>uuidv4</code>, conversion des <code>parseFloat</code>/<code>parseInt</code> en méthodes de <code>Number</code>, normalisation des expressions régulières et des branches identiques. La partie Rust suit, avec le passage à <code>tokio::fs</code> dans les fonctions asynchrones et la sortie d'un jeton de rafraîchissement du code source. Un dernier commit installe l'action Harden-Runner en première étape de chaque tâche d'intégration continue, afin de tracer les connexions sortantes des chaînes de construction. Aucune publication depuis la <strong>0.41.1</strong> du 7 novembre ; le dépôt compte 40 668 étoiles et 705 tickets ouverts au moment de la vérification.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>BunchaPrompts — un navigateur d'invites pour modèles d'image, dans le navigateur</h3>
+<p>u/Stable2go, lassé de fouiller des pages d'invites pour en copier une seule, publie <code>bunchaprompts.com</code> : un site qui présente les invites comme un fil d'actualité, avec copie en un clic, recherche par texte, étiquettes (styles artistiques, personnages, effets, cinématique, 3D, rétro) et filtres par modèle. Le service est gratuit, sans installation, et disponible en plusieurs langues dont le français ; le post cite Flux et MiniMax, la page d'accueil affichant aussi Flux 2, SDXL, SD 1.5, Illustrious et Pony. Il n'accompagne pas sa publication d'un dépôt, et rien n'indique que le code soit libre : à prendre comme un service en ligne, pas comme un outil à installer chez soi. C'est néanmoins le genre de ressource qui manque pour comparer des invites avant de générer.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt8ywg/i_made_a_flux_prompt_browser_with_oneclick_copy/ — u/Stable2go</li>
+<li>Site : https://bunchaprompts.com</li>
+</ul>
+<h3>feathcraft — une application de dessin 3D pour Android, sans lien avec la suite ArtCraft</h3>
+<p>u/ayer4xx signale deux fois le même projet, <code>kipzitox/feathcraft</code>, présenté comme une alternative de dessin 3D pour Android, les utilisateurs d'iOS disposant selon lui d'un équivalent. Le dépôt le décrit comme une application de carnet de croquis hors ligne (Tauri 2 et Three.js, interface Material Design 3). Il faut être clair sur la nature du projet : il ne s'agit pas d'un portage d'une application du lanceur ArtCraft et il n'y figure pas — c'est un projet indépendant, avec deux étoiles, aucune copie et une licence que GitHub ne sait pas identifier, créé le 21 août et touché pour la dernière fois le 9 novembre. La seconde publication demande des collaborateurs. Rien à installer dans la suite pour l'instant, mais cela montre qu'une demande de dessin 3D sur Android existe.</p>
+<ul>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xtbl8t/feather_3d/ et https://www.reddit.com/r/ArtCraftAI/comments/1xtbt9c/feather_3d_para_android/ — u/ayer4xx</li>
+<li>Dépôt : https://github.com/kipzitox/feathcraft</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>« Learn ArtCraft » — la chaîne de tutoriels de Nick Saporito</h3>
+<p>u/SenioritaHerbia note que Nick Saporito, connu pour ses années de tutoriels Inkscape et GIMP sur la chaîne « Logos By Nick », a ouvert une chaîne dédiée à ArtCraft. Vérification faite : la chaîne <strong>Learn ArtCraft</strong> existe et sa description annonce des tutoriels pour VectorCraft et PhotoCraft, précisant être animée par Nick Saporito, graphiste spécialiste des identités visuelles. La première série publiée est un guide de prise en main de VectorCraft, découpé en chapitres (introduction, création d'un document, présentation de l'interface, fonctions de base, exercice, conclusion). La chaîne est en anglais, mais structurée et produite par quelqu'un qui connaît les logiciels libres de graphisme depuis longtemps ; c'est aussi un signe que la suite ArtCraft commence à être prise au sérieux par des formateurs indépendants. Je n'ai pas pu relever le nombre d'abonnés depuis ce serveur : la chaîne est très jeune, ne pas y voir une audience établie.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtb2ra/nick_saporito_the_goat_of_inkscape_and_gimp/ — u/SenioritaHerbia</li>
+<li>Chaîne : https://www.youtube.com/channel/UCBQNNVLjqOoB1PHJKkRogvw</li>
+</ul>
+<h3>ImageFlow — un éditeur d'images « classe Photoshop » exécuté dans le navigateur</h3>
+<p>u/theguymatter publie un lien vers <code>imageflow.dev</code> en rapportant qu'un tiers a jugé PhotoCraft « mauvais » sur X — critique sans contenu, qui n'apprend rien et sur laquelle je ne m'appuie pas. Le lien lui-même mérite en revanche un coup d'œil : ImageFlow se présente comme un éditeur d'images complet fonctionnant entièrement dans le navigateur, avec calques, masques, modes de fusion, calques de réglage, objets dynamiques, texte et filtres, et surtout import comme export au format PSD. La page ne dit rien de la licence ni du modèle économique, et le traitement restant local, il faut vérifier ce qu'il advient des projets avant de s'y engager. À suivre comme concurrent direct de PhotoCraft sur le terrain de la compatibilité Photoshop.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtad8j/photoshop_alternative/ — u/theguymatter</li>
+<li>Site : https://imageflow.dev</li>
+</ul>
+<h2>À signaler</h2>
+<h3>GridCraft — des pertes signalées au passage vers Excel</h3>
+<p>u/Tight-Kaleidoscope32 rapporte qu'à l'ouverture d'un classeur GridCraft dans Excel il a perdu « toutes les images » et une partie de la mise en forme. Le site de GridCraft annonce pourtant lire et écrire le format <code>.xlsx</code>, avec tableaux dynamiques, tableaux croisés et graphiques : la compatibilité revendiquée rend ce retour d'autant plus gênant. Il s'agit d'un signalement isolé, dont je n'ai pas pu vérifier les conditions (version de GridCraft, d'Excel, fichier concerné) ; à confirmer avant d'en tirer une conclusion, mais mieux vaut ne pas se reposer uniquement sur l'export Excel pour archiver un classeur.</p>
+<ul>
+<li>
+<p>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt0rf3/compatibility_between_excel_and_grid/ — u/Tight-Kaleidoscope32</p>
+</li>
+<li>
+<p>Collecte : dernière passe du collecteur le 11 novembre à 21 h 52 UTC, sans erreur signalée dans <code>meta.json</code>.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>35 publications examinées dans l'intervalle (26 du subreddit r/ArtCraftAI, 9 commits du dépôt officiel, aucune nouveauté de version ni de vidéo), 16 retenues, 19 écartées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>AniCraft, l'éditeur d'animation vectorielle 2D de l'équipe ArtCraft, est publié : deux versions (0.1.0 et 0.2.0) ont été mises en ligne le 11 novembre et l'application s'installe depuis le lanceur, aux côtés des seize autres.</li>
+<li>Nick Saporito, connu pour ses tutoriels Inkscape et GIMP sous le nom « Logos By Nick », a ouvert une chaîne YouTube consacrée aux applications ArtCraft ; sa première leçon porte sur VectorCraft.</li>
+<li>Côté dépôt officiel, neuf commits d'entretien (nettoyages SonarCloud, en-têtes de sécurité de l'intégration continue) et aucune nouvelle version depuis la 0.41.1.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>AniCraft est disponible, en version 0.1.0 puis 0.2.0 le même jour</h3>
+<p>u/Jellygator0 annonce la sortie d'AniCraft — « et il s'installe directement depuis le lanceur ». L'application est bien celle de l'équipe ArtCraft : dépôt <code>storytold/anicraft</code>, décrit comme un éditeur d'animation 2D écrit intégralement en Rust, sous Apache-2.0. Le dépôt a été créé le 14 octobre 2026 et totalise 246 étoiles, 58 copies et 74 tickets ouverts au moment de la vérification ; le site de l'éditeur le présente comme la septième de ses dix-sept applications, en « alpha précoce », avec des installateurs pour macOS, Windows, Linux et une version web.</p>
+<p>Deux versions ont effectivement été publiées le 11 novembre : la <strong>0.1.0</strong> à 1 h 03 UTC (export d'images au format SVG, import de dessins SVG sur la scène, interpolations de formes) puis la <strong>0.2.0</strong> à 16 h 08 UTC, qui apporte les marqueurs de pelure d'oignon, la teinte et les contours, l'édition simultanée de plusieurs images, ainsi que les extrémités et jointures de trait avec limite d'onglet et lignes pointillées. Le message du subreddit précède la 0.2.0 de quelques heures : c'est la 0.1.0 qu'il annonce, la seconde version étant arrivée dans la journée. Pour un utilisateur, cela reste un outil jeune — aucune des applications de la suite n'est stable — mais c'est la première fois qu'ArtCraft couvre l'animation vectorielle sous forme d'un éditeur autonome avec ligne de temps. Une réserve : une page <code>anicraft.app</code> se présente comme un site de référence mais indique elle-même n'être pas officielle et annonce encore une sortie à venir ; ne pas s'y fier pour l'état du projet.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt83u9/anicraft_is_out_today_is_a_good_day_d/ — u/Jellygator0</li>
+<li>Dépôt : https://github.com/storytold/anicraft — page officielle : https://getartcraft.com/apps/anicraft</li>
+</ul>
+<h3>Dépôt officiel : neuf commits d'entretien, aucune version depuis la 0.41.1</h3>
+<p>Entre le 10 novembre 22 h 20 et le 11 novembre 17 h 10 UTC, le dépôt <code>storytold/artcraft</code> a reçu neuf commits visibles, tous d'entretien et rien qui change l'aspect ou le comportement des applications. Le gros du lot consiste à vider les avertissements de SonarCloud accumulés dans le front : promesses sans attente explicite, éléments cliquables sans rôle ni accès clavier, identifiants locaux tirés de <code>Math.random</code> remplacés par <code>uuidv4</code>, conversion des <code>parseFloat</code>/<code>parseInt</code> en méthodes de <code>Number</code>, normalisation des expressions régulières et des branches identiques. La partie Rust suit, avec le passage à <code>tokio::fs</code> dans les fonctions asynchrones et la sortie d'un jeton de rafraîchissement du code source. Un dernier commit installe l'action Harden-Runner en première étape de chaque tâche d'intégration continue, afin de tracer les connexions sortantes des chaînes de construction. Aucune publication depuis la <strong>0.41.1</strong> du 7 novembre ; le dépôt compte 40 668 étoiles et 705 tickets ouverts au moment de la vérification.</p>
+<ul>
+<li>Dépôt : https://github.com/storytold/artcraft</li>
+</ul>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>BunchaPrompts — un navigateur d'invites pour modèles d'image, dans le navigateur</h3>
+<p>u/Stable2go, lassé de fouiller des pages d'invites pour en copier une seule, publie <code>bunchaprompts.com</code> : un site qui présente les invites comme un fil d'actualité, avec copie en un clic, recherche par texte, étiquettes (styles artistiques, personnages, effets, cinématique, 3D, rétro) et filtres par modèle. Le service est gratuit, sans installation, et disponible en plusieurs langues dont le français ; le post cite Flux et MiniMax, la page d'accueil affichant aussi Flux 2, SDXL, SD 1.5, Illustrious et Pony. Il n'accompagne pas sa publication d'un dépôt, et rien n'indique que le code soit libre : à prendre comme un service en ligne, pas comme un outil à installer chez soi. C'est néanmoins le genre de ressource qui manque pour comparer des invites avant de générer.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt8ywg/i_made_a_flux_prompt_browser_with_oneclick_copy/ — u/Stable2go</li>
+<li>Site : https://bunchaprompts.com</li>
+</ul>
+<h3>feathcraft — une application de dessin 3D pour Android, sans lien avec la suite ArtCraft</h3>
+<p>u/ayer4xx signale deux fois le même projet, <code>kipzitox/feathcraft</code>, présenté comme une alternative de dessin 3D pour Android, les utilisateurs d'iOS disposant selon lui d'un équivalent. Le dépôt le décrit comme une application de carnet de croquis hors ligne (Tauri 2 et Three.js, interface Material Design 3). Il faut être clair sur la nature du projet : il ne s'agit pas d'un portage d'une application du lanceur ArtCraft et il n'y figure pas — c'est un projet indépendant, avec deux étoiles, aucune copie et une licence que GitHub ne sait pas identifier, créé le 21 août et touché pour la dernière fois le 9 novembre. La seconde publication demande des collaborateurs. Rien à installer dans la suite pour l'instant, mais cela montre qu'une demande de dessin 3D sur Android existe.</p>
+<ul>
+<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xtbl8t/feather_3d/ et https://www.reddit.com/r/ArtCraftAI/comments/1xtbt9c/feather_3d_para_android/ — u/ayer4xx</li>
+<li>Dépôt : https://github.com/kipzitox/feathcraft</li>
+</ul>
+<h2>Autour d'ArtCraft</h2>
+<h3>« Learn ArtCraft » — la chaîne de tutoriels de Nick Saporito</h3>
+<p>u/SenioritaHerbia note que Nick Saporito, connu pour ses années de tutoriels Inkscape et GIMP sur la chaîne « Logos By Nick », a ouvert une chaîne dédiée à ArtCraft. Vérification faite : la chaîne <strong>Learn ArtCraft</strong> existe et sa description annonce des tutoriels pour VectorCraft et PhotoCraft, précisant être animée par Nick Saporito, graphiste spécialiste des identités visuelles. La première série publiée est un guide de prise en main de VectorCraft, découpé en chapitres (introduction, création d'un document, présentation de l'interface, fonctions de base, exercice, conclusion). La chaîne est en anglais, mais structurée et produite par quelqu'un qui connaît les logiciels libres de graphisme depuis longtemps ; c'est aussi un signe que la suite ArtCraft commence à être prise au sérieux par des formateurs indépendants. Je n'ai pas pu relever le nombre d'abonnés depuis ce serveur : la chaîne est très jeune, ne pas y voir une audience établie.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtb2ra/nick_saporito_the_goat_of_inkscape_and_gimp/ — u/SenioritaHerbia</li>
+<li>Chaîne : https://www.youtube.com/channel/UCBQNNVLjqOoB1PHJKkRogvw</li>
+</ul>
+<h3>ImageFlow — un éditeur d'images « classe Photoshop » exécuté dans le navigateur</h3>
+<p>u/theguymatter publie un lien vers <code>imageflow.dev</code> en rapportant qu'un tiers a jugé PhotoCraft « mauvais » sur X — critique sans contenu, qui n'apprend rien et sur laquelle je ne m'appuie pas. Le lien lui-même mérite en revanche un coup d'œil : ImageFlow se présente comme un éditeur d'images complet fonctionnant entièrement dans le navigateur, avec calques, masques, modes de fusion, calques de réglage, objets dynamiques, texte et filtres, et surtout import comme export au format PSD. La page ne dit rien de la licence ni du modèle économique, et le traitement restant local, il faut vérifier ce qu'il advient des projets avant de s'y engager. À suivre comme concurrent direct de PhotoCraft sur le terrain de la compatibilité Photoshop.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtad8j/photoshop_alternative/ — u/theguymatter</li>
+<li>Site : https://imageflow.dev</li>
+</ul>
+<h2>À signaler</h2>
+<h3>GridCraft — des pertes signalées au passage vers Excel</h3>
+<p>u/Tight-Kaleidoscope32 rapporte qu'à l'ouverture d'un classeur GridCraft dans Excel il a perdu « toutes les images » et une partie de la mise en forme. Le site de GridCraft annonce pourtant lire et écrire le format <code>.xlsx</code>, avec tableaux dynamiques, tableaux croisés et graphiques : la compatibilité revendiquée rend ce retour d'autant plus gênant. Il s'agit d'un signalement isolé, dont je n'ai pas pu vérifier les conditions (version de GridCraft, d'Excel, fichier concerné) ; à confirmer avant d'en tirer une conclusion, mais mieux vaut ne pas se reposer uniquement sur l'export Excel pour archiver un classeur.</p>
+<ul>
+<li>
+<p>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt0rf3/compatibility_between_excel_and_grid/ — u/Tight-Kaleidoscope32</p>
+</li>
+<li>
+<p>Collecte : dernière passe du collecteur le 11 novembre à 21 h 52 UTC, sans erreur signalée dans <code>meta.json</code>.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>35 publications examinées dans l'intervalle (26 du subreddit r/ArtCraftAI, 9 commits du dépôt officiel, aucune nouveauté de version ni de vidéo), 16 retenues, 19 écartées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — mercredi 11 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-11.html</link>
