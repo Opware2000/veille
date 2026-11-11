@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — mercredi 11 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>PenCast, application libre en bêta pour projeter des diapositives Beamer avec leurs vidéos sur iPad et Mac, et annoter les diapositives au stylet.</li>
+<li>TeXpresso, rendu LaTeX en direct, remonte sur Hacker News : peu de monde l'a encore vu, mais l'outil est établi (814 étoiles).</li>
+<li>Un conteneur de développement Typst et Pandoc pour des compilations reproductibles, à regarder si la chaîne Markdown vers PDF vous intéresse.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>PenCast — projeter un Beamer avec ses vidéos, et écrire dessus</h3>
+<p>Un doctorant en génie aérospatial, dont les diapositives sont pleines de vidéos et d'animations, a écrit l'application qui lui manquait. PenCast lit les vidéos et les animations déjà intégrées au PDF Beamer (media9, <code>\movie</code>, <code>animate</code>) sans conversion ni macro particulière ; il permet d'écrire au stylet directement sur la diapositive, y compris par-dessus une vidéo en cours de lecture, les annotations survivant aux <code>\pause</code> ; il envoie l'image propre au vidéoprojecteur par HDMI ou AirPlay pendant que la tablette garde les outils, le minuteur et les notes de l'orateur ; il exporte enfin les diapositives annotées en document à distribuer. Sur Mac, le document est rechargé automatiquement à chaque recompilation. La cible est iPadOS 17 et macOS 14 au minimum, avec une version Linux également annoncée.</p>
+<p>C'est une bêta récente, et il faut le dire : le dépôt a été créé le 9 novembre 2026, il compte une étoile et aucun ticket ouvert — aucun retour extérieur n'existe donc encore, et l'auteur précise lui-même avoir fait appel à un agent de codage (Claude Code) pour mener le projet à terme. L'application pour iPad n'est pas encore sur l'App Store (frais de compte non réglés, selon l'auteur) : elle se compile depuis les sources, le binaire Mac est téléchargeable en bêta. Licence GPL-3.0. Dépôt : <a href="https://github.com/e1ind/pencast">https://github.com/e1ind/pencast</a> ; discussion : <a href="https://www.reddit.com/r/LaTeX/comments/1xs74hh/i_built_a_free_opensource_ipad_and_macos_app_that/">https://www.reddit.com/r/LaTeX/comments/1xs74hh/i_built_a_free_opensource_ipad_and_macos_app_that/</a></p>
+<h3>TeXpresso — le rendu LaTeX en direct</h3>
+<p>Soumis sur Hacker News avec un point et aucun commentaire au moment de la collecte : la nouveauté de l'entrée ne dit rien de la maturité de l'outil, qui est établi. TeXpresso affiche le PDF au fil de la frappe et remonte les erreurs de compilation sans repasser par le cycle complet à chaque modification. Dépôt écrit en C, licence MIT, 814 étoiles, 51 duplications, dernier envoi de code le 1er novembre 2026, projet ouvert depuis avril 2023. Aucune version n'est publiée dans les versions du dépôt : la distribution se fait par les sources. Dépôt : <a href="https://github.com/let-def/texpresso">https://github.com/let-def/texpresso</a> ; fil : <a href="https://news.ycombinator.com/item?id=50434612">https://news.ycombinator.com/item?id=50434612</a></p>
+<h3>typst-dev-container — Typst et Pandoc dans un conteneur reproductible</h3>
+<p>Un conteneur de développement (Docker, VS Code Dev Containers, GitHub Codespaces) qui rassemble Typst et Pandoc pour produire des PDF de façon reproductible, sur n'importe quelle machine. L'intérêt ici est le second outil : Pandoc est le moteur d'une chaîne Markdown vers LaTeX ou PDF, et figer l'environnement évite les écarts de version d'une machine à l'autre. Licence MIT, 4 étoiles, dépôt créé en mai 2025, dernier envoi de code le 2 novembre 2026, un ticket ouvert. Dépôt : <a href="https://github.com/1solomonwakhungu/typst-dev-container">https://github.com/1solomonwakhungu/typst-dev-container</a> ; fil : <a href="https://news.ycombinator.com/item?id=50441369">https://news.ycombinator.com/item?id=50441369</a></p>
+<h2>Volume</h2>
+<p>Dix entrées candidates depuis la dernière édition — six dans le journal r/LaTeX (dont un même fil arrivé deux fois, par le flux du subreddit et par le relais de l'extension, tous deux dédoublonnés par adresse), une de TeX–LaTeX Stack Exchange, trois du forum Typst —, soit neuf sujets distincts examinés : trois retenus, six écartés, un taux de rétention de 33 %. Les écartés sont des questions de dépannage ponctuelles (une question sur le nouveau paquet <code>hawkdraw</code> pour les diagrammes commutatifs, trois fils du forum Typst sur l'écriture d'un tableau, la synchronisation Git et la coloration syntaxique), un sondage sur les fonctionnalités souhaitées pour présenter des diapositives Beamer, et un billet technique sur la génération d'images de prévisualisation avec Astro et Typst, sans rapport avec la rédaction de documents scientifiques. Sur un forum d'entraide, un taux de rétention de cet ordre est normal : l'essentiel du trafic est du dépannage ponctuel. La dernière collecte s'est terminée sans erreur signalée dans <code>meta.json</code>.</p>
+<footer>Édition du mercredi 11 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
