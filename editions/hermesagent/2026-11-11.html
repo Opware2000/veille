@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — mercredi 11 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre projets libres méritent un détour : craft-anything, qui apprend à l'agent à reconstruire une application à partir de son fonctionnement (26 000 étoiles en dix jours), hermes-kanban-lanes, qui ajoute une vérification automatique du travail rendu, un projet qui transforme un Echo Show d'occasion en caméra locale pour l'agent, et modern-web-guidance de Google, une compétence prête à l'emploi pour remettre les agents de code au goût du jour. Trois modèles petits et bon marché arrivent par ailleurs sur le marché.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>craft-anything — reconstruire une application à partir de son fonctionnement</h3>
+<p>Le dépôt de l'équipe à l'origine des clones d'Adobe : l'outil observe une application existante pour en comprendre le fonctionnement, puis sert de base pour en reconstruire une. Un utilisateur du sous-forum l'a installé comme compétence d'Hermes et a fait cloner une application payante (60 dollars par an) en versions web et Android : versions fonctionnelles en une douzaine de minutes, 0,62 dollar de jetons annoncés avec DeepSeek Flash. Le chiffre est celui de l'auteur du message, pas reproduit ici.</p>
+<ul>
+<li>Dépôt vérifié : github.com/storytold/craft-anything — Apache-2.0, 26 210 étoiles, créé le 31 octobre 2026, dernière poussée le 10 novembre 2026. Gratuit.</li>
+<li>Réserve : l'outil fait ce que son nom annonce — cloner une application qui ne vous appartient pas peut poser un problème de droit, la question n'est pas abordée dans le fil.</li>
+</ul>
+<h3>hermes-kanban-lanes — un reçu de ce qui a réellement tourné, au lieu d'une promesse d'agent</h3>
+<p>Des outils en ligne de commande pour le tableau Kanban d'Hermes : chaque carte dit ce qu'il faut faire et quels fichiers l'agent de code a le droit de toucher, la voie lance l'agent dans sa propre copie du projet, puis une liste de contrôle fixe s'exécute — les fichiers autorisés ont-ils été respectés, les tests passent-ils, le projet compile-t-il, les fichiers annoncés existent-ils. En cas d'échec la carte revient pour un nouveau tour, avec une limite pour éviter la boucle infinie ; en cas de succès seule une version relue est fusionnée. L'auteur s'en sert pour brancher Claude Code et Codex derrière le Kanban d'Hermes.</p>
+<ul>
+<li>Licence MIT, version 0.2.0, macOS ou Linux, installation depuis les sources. Dépôt vérifié : github.com/AceJY/hermes-kanban-lanes — MIT, 1 étoile, créé le 9 novembre 2026, dernière poussée le 10 novembre 2026. Gratuit.</li>
+<li>Réserve : dépôt ouvert depuis la veille du message, aucune évaluation extérieure ; le projet répond à un manque réel (vérifier le travail d'un agent) mais n'est pas encore éprouvé par d'autres.</li>
+</ul>
+<h3>Un Echo Show d'occasion transformé en paire d'yeux pour l'agent (vision locale)</h3>
+<p>Projet libre qui remplace Alexa sur les anciens appareils Echo par un agent personnel, ici Hermes tournant sur un Mac. La dernière version utilise la caméra d'un Echo Show 5 pour donner à l'agent une mémoire de ce qui se trouve sur son bureau : il journalise ce qu'il voit, ce qui permet de lui demander où un objet a été vu pour la dernière fois ou si quelque chose a bougé en son absence. Le modèle de vision tourne en local (Qwen 3.6 35B par Ollama), donc les images ne quittent pas le réseau domestique, l'appareil d'occasion coûte une vingtaine de dollars et il n'y a plus d'abonnement. Les personnes sont volontairement ignorées, seuls les objets sont suivis.</p>
+<ul>
+<li>Incertitude à signaler : le champ de texte collecté est tronqué avant l'adresse du dépôt et je n'ai pas pu identifier celui-ci de façon certaine (les recherches par mots-clés sur GitHub ne donnent rien de concluant). Le dépôt et la licence restent donc à confirmer — adresse à retrouver dans la discussion : https://www.reddit.com/r/hermesagent/comments/1xsot78/a_20_used_echo_show_can_now_be_a_pair_of_eyes_for/</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Muse Ember, le petit modèle de Meta pour les tâches répétitives des agents</h3>
+<p>Meta a publié sa réponse au créneau occupé par Claude Haiku et GPT-6 Luna : un petit modèle taillé pour ce qu'un agent refait toute la journée — appels d'outils, sous-tâches de code, routage, extraction, lecture de longs documents. Tarif identique à ses deux concurrents sur les prompts courts (0,10 dollar par million de jetons d'entrée, 0,50 en sortie), mais moins cher à la lecture du cache (0,004 dollar contre 0,01) et plus cher au-delà du seuil de contexte. Simon Willison le situe sur la frontière d'efficacité du classement Artificial Analysis. Prix relevés dans son billet, non recoupés auprès de Meta.</p>
+<ul>
+<li>Billet : https://simonwillison.net/2026/Nov/10/muse-ember/ — annonce d'origine : https://research.meta.ai/blog/muse-ember</li>
+</ul>
+<h3>Naive-N0.5-Flash — un modèle ouvert de code qui vise le débit</h3>
+<p>Modèle à poids ouverts (309 milliards de paramètres, 15,5 milliards actifs) annoncé pour la génération de code et la recherche en IA, entraîné pour produire un maximum de jetons par seconde : le site qui le présente avance 2 100 jetons par seconde avec son moteur d'inférence maison, NaiveRT, lequel demande huit cartes Blackwell — matériel que Nicolas n'a pas. Le modèle descend de MiMo-V2.5 de Xiaomi et l'ambition affichée par ses auteurs est l'amélioration de soi récursive.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/NaiveAI-Labs/Naive-N0.5-Flash — MIT, 466 étoiles, créé le 27 septembre 2026 ; github.com/NaiveAI-Labs/NaiveRT — Apache-2.0, 137 étoiles, même date.</li>
+<li>Réserve : les 2 100 jetons par seconde sont une promesse commerciale de l'éditeur, pas une mesure reproduite ; l'article de Latent Space qui les reprend ne teste que la qualité du code.</li>
+</ul>
+<h3>LongCat 2.5, gratuit sur le portail Nous</h3>
+<p>Un utilisateur signale que le modèle LongCat 2.5 est accessible sans frais depuis le portail Nous en ce moment, et l'a fait travailler trente heures d'affilée sur un jeu libre (sous-agents, correction de bogues laissés par d'autres modèles), en le trouvant un peu lent. L'information vient du fil, sans confirmation officielle : à vérifier dans la liste des modèles du portail avant de s'y fier pour un travail suivi.</p>
+<h2>Extensions et greffons</h2>
+<h3>Agentic Kingdoms — un jeu de stratégie dans le navigateur, joué par l'agent</h3>
+<p>Greffon désormais inscrit au catalogue d'Hermes : <code>hermes plugins install agentic-kingdoms</code>, puis « Play Agentic Kingdoms ». Il branche l'agent sur le serveur MCP du jeu et charge la compétence correspondante, sans autre réglage. En deux minutes de démonstration, le modèle fourni a attaqué un camp de bandits, lu le rapport de bataille, fait monter son hôtel de ville, mené une recherche, rejoint une alliance et posé un bouclier de paix. Les agents portent une étiquette visible et jouent dans les mêmes royaumes que les humains.</p>
+<ul>
+<li>Gratuit, jouable dans le navigateur, sans compte obligatoire (mode invité) : https://agentickingdoms.com — en bêta, mais les constructions sont conservées.</li>
+<li>C'est un loisir, pas un outil de travail : à signaler comme curiosité, l'intérêt est de voir un agent tenir une session de jeu réelle sur plusieurs jours.</li>
+</ul>
+<h3>modern-web-guidance — remettre les agents de code au niveau des navigateurs actuels</h3>
+<p>Projet de l'équipe Chrome, en collaboration avec Firefox, MDN et Edge : plus de 200 guides de bonnes pratiques web rassemblés en une compétence et un outil en ligne de commande, pour que les agents de code cessent d'écrire du JavaScript d'il y a sept ans là où le navigateur sait faire nativement (surbrillance de texte, boîtes de dialogue, champs qui s'agrandissent seuls). Le tout est accompagné d'un détecteur de motifs anciens, entraîné sur 30 000 dépôts, qui propose la modernisation.</p>
+<ul>
+<li>Dépôt vérifié : github.com/GoogleChrome/modern-web-guidance — Apache-2.0, 3 144 étoiles, créé le 23 mars 2026, dernière poussée le 10 novembre 2026. Gratuit, version 1.0 publiée le jour de l'annonce (85 points et 38 commentaires sur Hacker News).</li>
+</ul>
+<h3>usbplus — un format de compétence unique et un contrôle de confiance pour les serveurs MCP</h3>
+<p>Outil en ligne de commande sans dépendance qui convertit une compétence d'agent vers seize environnements cibles (529 compétences fournies), et qui ajoute une couche de confiance : analyse de sécurité des compétences et sonde de serveurs MCP, avec un serveur MCP en HTTP. Le besoin est réel — rien n'empêche aujourd'hui une compétence récupérée sur un dépôt d'exécuter n'importe quoi.</p>
+<ul>
+<li>Dépôt vérifié : github.com/PeepSick/usbplus — MIT, 9 étoiles, créé le 15 octobre 2026, dernière poussée le 9 novembre 2026. Gratuit ; site : https://usbplus.peepsicklabs.com</li>
+<li>Réserve : 10 points et 2 commentaires sur Hacker News seulement, très peu d'usage observé.</li>
+</ul>
+<h3>moeshift — accélérer l'inférence des grands modèles sur Mac</h3>
+<p>Moteur d'inférence économe en mémoire pour les modèles à mélange d'experts sur puces Apple : l'auteur annonce 374 jetons par seconde en pré-remplissage avec Qwen 3.8 Flash Next sur un M5 Pro de 24 Go. Utile à qui fait tourner un modèle en local sur un Mac plutôt que sur le serveur de Nicolas.</p>
+<ul>
+<li>Dépôt vérifié : github.com/davide-troiani/moeshift — MIT, 83 étoiles, créé le 21 octobre 2026, dernière poussée le 4 novembre 2026. Gratuit.</li>
+</ul>
+<h3>llm-anthropic 0.31 et llm-gemini 0.36 — les greffons de Simon Willison suivent les nouveaux modèles</h3>
+<p>Deux mises à jour du même auteur, qui tiennent à jour ses greffons pour l'outil en ligne de commande <code>llm</code> : la version 0.31 d'<code>llm-anthropic</code> ouvre Fable 5.2 et Mythos 5.2, la version 0.36 d'<code>llm-gemini</code> ouvre Gemini 4 Carbon, désormais accessible à tous et non plus aux seuls défenseurs retenus par Google. À noter pour le budget : Gemini 4 Carbon est facturé 2 dollars par million de jetons d'entrée et 10 en sortie, mais ce tarif doit doubler au 1er décembre.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/simonw/llm-anthropic — Apache-2.0, 252 étoiles, poussée le 9 novembre 2026 ; github.com/simonw/llm-gemini — Apache-2.0, 465 étoiles, poussée le 10 novembre 2026. Gratuits (le modèle, lui, reste payant).</li>
+<li>Billet : https://simonwillison.net/2026/Nov/9/llm-anthropic/ et https://simonwillison.net/2026/Nov/10/llm-gemini/</li>
+</ul>
+<h3>BoxHub — un réseau où les agents se louent entre eux</h3>
+<p>Protocole ouvert (et greffon à l'origine) par lequel un agent se publie comme prestataire et se fait engager par d'autres agents, avec paiement à la tâche, exécution dans une boîte scellée et reçu signé ; 1 % prélevé par le réseau, sans abonnement ni jeton. Tout fonctionne en mode test, les paiements réels n'ayant pas commencé.</p>
+<ul>
+<li>Gratuit à l'essai, mais c'est une place de marché commerciale et aucun code n'est publié sous licence libre à ce jour : à considérer avec prudence, le lien n'apparaît pas dans le texte collecté (tronqué).</li>
+</ul>
+<h2>Volume</h2>
+<p>99 entrées examinées depuis la précédente édition (32 fils du sous-forum r/hermesagent, dont les doublons du relais de l'extension, et 67 entrées de Hacker News, Lobsters, Simon Willison et Latent Space), 13 retenues, 86 écartées. Le tri est sévère parce que la période est dominée par les questions d'installation, les retours d'expérience et les comparaisons de fournisseurs : le flux de Hacker News, très large, ne fournit presque rien qui touche l'écosystème de l'agent, et seule une poignée de fils du sous-forum annonce réellement un outil. Les deux collecteurs n'ont signalé aucune erreur.</p>
+<footer>Édition du mercredi 11 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
