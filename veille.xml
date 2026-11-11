@@ -6,9 +6,164 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 12 Nov 2026 00:02:27 +0100</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 00:13:41 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — jeudi 12 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-12.html</link>
+<guid isPermaLink="false">macapps-2026-11-12</guid>
+<pubDate>Thu, 12 Nov 2026 00:13:41 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois projets libres et gratuits dominent cette édition : QuickPass, l'accès rapide aux mots de passe déjà rangés dans Apple Passwords, StableBar, une barre de menus configurable qui se pose en alternative libre à SketchyBar, et Vespertine, un lecteur audio qui bascule le convertisseur au format natif de chaque fichier. Deux utilitaires gratuits au téléchargement complètent le lot, Bigshot pour les captures d'écran destinées aux agents de codage et Shutterbug pour les photos prises en rafale. Le reste est à achat unique, de 5 à 20 dollars, sauf un : la correction orthographique d'Ortly se paie par abonnement, sa version gratuite restant utilisable.</p>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li>
+<p><strong>QuickPass</strong> — retrouver un mot de passe sans ouvrir l'application Mots de passe d'Apple. Un raccourci (Contrôle-Option-Espace) fait apparaître un champ de recherche par-dessus l'application en cours ; ⌘C copie l'identifiant, ⇧⌘C le mot de passe, ⌥⌘C le code à deux facteurs, ⌘↩ remplit le formulaire de l'application d'où l'on vient, ⌘G et ⌘N créent un mot de passe ou enregistrent un nouvel identifiant. Gratuit, sans abonnement, sans version payante : c'est exactement le confort de l'accès rapide de 1Password (35,88 $ par an) appliqué au trousseau d'Apple. Deux réserves : l'auteur annonce une licence MIT quand l'API de GitHub déclare GPL-3.0 (l'écart reste à clarifier avant toute réutilisation du code), et l'application pilote Mots de passe par l'API d'accessibilité, faute d'API publique — une mise à jour de macOS peut donc la casser jusqu'à correction. Dépôt créé le 11 novembre 2026, 11 étoiles, dernière modification le même jour ; exige macOS 26 ou plus récent : https://github.com/jessekhach/QuickPass</p>
+</li>
+<li>
+<p><strong>StableBar</strong> — une barre de menus que l'on configure dans une fenêtre de réglages ou dans un seul fichier JSON, au lieu d'écrire des scripts shell comme le fait SketchyBar. Thèmes, widgets, fenêtres surgissantes, et prise en charge des espaces de travail d'AeroSpace, yabai ou OmniWM. Gratuit, licence MIT, 48 étoiles, dépôt créé le 15 octobre 2026 et modifié le 11 novembre ; présenté sur Product Hunt le 10 novembre : https://github.com/Seb-GRAF/StableBar</p>
+</li>
+<li>
+<p><strong>Vespertine 1.0.1</strong> — un lecteur de musique pour ses propres fichiers, pas pour les services de diffusion. Il lit FLAC, ALAC, WAV et AIFF jusqu'à 32 bits et 768 kHz, le DSD de DSD64 à DSD512, les images SACD et DVD-Vidéo, le Dolby Atmos, le TrueHD et le DTS, avec les listes de pistes CUE ; il bascule le convertisseur externe au format natif de chaque piste, affiche le chemin du signal tel que Core Audio le renvoie, mesure la pièce par microphone USB pour fabriquer ses filtres de correction, et rend le multicanal en audio spatial sur les AirPods. Gratuit, sans palier payant, licence GPL-3.0 ou ultérieure, 15 étoiles, dépôt créé le 27 septembre 2026, version 1.0.1 publiée le 11 novembre. Ses limites sont dites par l'auteur : pas de diffusion en réseau ni de télécommande, pas de greffons Audio Unit : https://github.com/szeremeta1/Vespertine</p>
+</li>
+<li>
+<p><strong>filetree.app</strong> — un explorateur de fichiers de remplacement du Finder, écrit avec la bibliothèque d'interface GPUI en Rust. Le projet est à ses débuts, comme le reconnaît son auteur, et n'est pas encore documenté : à suivre plutôt qu'à adopter. Licence AGPL-3.0, 2 étoiles, dépôt créé le 10 novembre 2026 : https://github.com/Graham-04/filetree.app</p>
+</li>
+<li>
+<p><strong>Shutterbug</strong> — une galerie photo pour ceux qui déclenchent trop. L'application regroupe elle-même les prises de vue similaires en piles et fait de la comparaison une partie du parcours, sans écran de comparaison séparé : on passe d'une photo à l'autre en effleurant les bords de l'écran, et l'on met à la corbeille au fil de la lecture, l'effacement n'étant définitif qu'après confirmation et les photos supprimées restant récupérables trente jours dans Photos. Elle lit la photothèque d'Apple Photos, synchronise par iCloud et traite tout sur l'appareil. Gratuit, sans publicité, sans abonnement ni suivi, disponible sur iPhone, iPad et Mac ; version 1.0.1 publiée il y a cinq jours. C'est la seule entrée de cette édition dont le lien n'était pas lisible dans le journal (le corps du message est tronqué à sa moitié) : je l'ai retrouvée par recherche, en vérifiant qu'il s'agit bien de l'application de Jake Zien et non d'un homonyme — un premier résultat pointait vers une place de marché de photographes portant le même nom : https://apps.apple.com/us/app/shutterbug-photo-stacks/id6446296940</p>
+</li>
+<li>
+<p><strong>Nameshot</strong> — renommer automatiquement les captures d'écran, sur la machine et sans réseau. L'utilitaire se tient dans la barre de menus, renomme la capture quelques secondes après qu'elle a été prise en s'appuyant sur l'intelligence embarquée d'Apple, apprend des corrections que l'on fait à la main et accepte aussi des lots d'images ou de PDF déposés sur son icône. L'application ne dispose d'aucun droit d'accès au réseau et pèse environ 4 Mo ; elle exige un Mac à processeur Apple et macOS 27. Essai gratuit de sept jours, puis 4,99 $ une fois au lancement (9,99 $ ensuite), sans abonnement. Réserve honnête de son auteur, qui le compare à Tidyshot et Keep It Shot : Nameshot ne fait que nommer, quand ses concurrents cherchent dans le texte, trient, annotent ou masquent ; Keep It Shot, lui, passe par le nuage : https://apps.apple.com/app/id6821602866</p>
+</li>
+<li>
+<p><strong>Bigshot</strong> — un outil de capture d'écran pensé pour ceux qui font travailler des agents de codage. Il vit dans l'encoche du MacBook : on l'effleure pour retrouver la dernière capture, on clique pour parcourir l'historique, changer de projet ou d'étiquette et glisser une image directement dans l'agent. Il sait aussi retrouver le fichier et la ligne de code qui produisent l'élément sélectionné dans une application en cours d'exécution (l'auteur annonce 20 piles testées), exposer ses captures et ce code à l'agent par un serveur MCP, ou lancer une tâche d'agent depuis la capture, chaque agent travaillant sur sa propre branche sans jamais pousser ni fusionner. Tout se fait sur la machine. Téléchargement gratuit, version Pro à 19 $ une fois : https://www.bigshot.pics/</p>
+</li>
+<li>
+<p><strong>fswitcher</strong> — corriger le sélecteur d'applications du système pour ceux qui travaillent sur plusieurs écrans. Chaque écran garde son propre sélecteur et ne montre que ses fenêtres, les fenêtres multiples d'une même application apparaissent comme des tuiles distinctes, les applications inutilisées sont rangées sur une ligne à part, et l'on peut prévisualiser chaque fenêtre en vignette ou en plein écran. Essai de sept jours, puis 14,99 $ une fois pour trois Macs, sans abonnement ; exige macOS 26 ou plus récent : https://fswitcher.app/</p>
+</li>
+<li>
+<p><strong>Cue</strong> — écrire un scénario, l'équivalent Mac d'une feuille de scénario qui se met en forme toute seule : la tabulation et la touche Retour passent du titre de scène à l'action, aux personnages et au dialogue, les scènes et les personnages restent dans un panneau latéral, l'on ajoute une note en sélectionnant des mots, et des pense-bêtes et des images épinglées accompagnent la page. Il importe les PDF de scénario et les fichiers Fountain, et exporte dans les deux formats. 6,99 $, sans publicité ni abonnement. Manquent encore, d'après son auteur : l'import du format d'échange .fdx de Final Draft, la synchronisation iCloud et le dialogue à deux colonnes. Le fil du subreddit porte le détail : https://www.reddit.com/r/macapps/comments/1xto0h2/cue_the_most_beautiful_place_to_write_a/</p>
+</li>
+<li>
+<p><strong>ScreenSky</strong> — associer le rappel de pause à la liste des tâches : à intervalles réglables (trente minutes par défaut), l'application propose de s'éloigner de l'écran en affichant ce qui reste à faire, de sorte qu'on sache où reprendre en revenant. Développée en SwiftUI, elle fonctionne localement. 10 $ une fois, moitié prix au lancement pour les lecteurs du subreddit — c'est le premier lancement de son auteur, donc peu de recul : https://www.reddit.com/r/macapps/comments/1xt673c/built_screensky_a_macos_app_to_help_you_stay/</p>
+</li>
+<li>
+<p><strong>Ortly</strong> — corriger en temps réel les fautes d'orthographe phonétique, celles que commettent les personnes dyslexiques, dans toutes les applications du Mac. Le programme apprend les erreurs propres à son utilisateur, vérifie aussi la grammaire, est signé et notarié, et exige macOS 26 ou plus récent. La version gratuite corrige sans limite et sans compte, mais lentement, par l'intelligence embarquée d'Apple ; la version personnelle coûte 6,99 $ par mois ou 59 $ par an après sept jours d'essai sans carte bancaire — c'est le seul abonnement de cette édition, et l'auteur ne cache pas que Grammarly reste meilleur sur la grammaire générale et LanguageTool sur le contrôle multilingue : https://ortly.appetix.art</p>
+</li>
+<li>
+<p><strong>Solas</strong> — un étang de carpes koï animé derrière les icônes du bureau, écrit en Swift avec rendu Metal direct, avec pierres, plantes et nénuphars à disposer soi-même, saison au choix ou suivant le calendrier, et mise en pause automatique quand le bureau est recouvert ou que le Mac fonctionne sur batterie. Sur une mesure faite par l'auteur sur un MacBook Air M4, l'animation consomme environ 251 Mo de mémoire et 10 à 12 % d'un cœur de processeur. L'auteur ne cache pas que l'application ne résout aucun problème : elle décore. Le prix n'est pas annoncé dans le fil de discussion, à vérifier avant de télécharger : https://www.reddit.com/r/macapps/comments/1xtl91i/solas_a_living_koi_pond_for_your_mac_desktop/</p>
+</li>
+</ul>
+<p>Repérés sur Product Hunt, tous pour le Mac mais annoncés sans prix ni licence, donc à vérifier avant d'installer : <strong>Padrail</strong> (transformer les bords du pavé tactile du MacBook en commandes), <strong>Binqo</strong> (un petit compagnon dans l'encoche) et <strong>RigSpark</strong> (savoir quel modèle d'intelligence artificielle faire tourner sur sa propre machine).</p>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>PermissionGuide</strong> — une bibliothèque Swift pour développeurs : elle ouvre le bon volet des Réglages Système, met en évidence la liste concernée et donne l'icône de l'application à glisser dedans, au lieu de laisser l'utilisateur chercher où accorder un droit d'accès. Licence MIT, 3 étoiles, dépôt créé le 11 novembre 2026 et modifié le même jour : https://github.com/fcjr/PermissionGuide</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>visualOS 1.7</strong> — le tableau infini qui range ses tableaux en fichiers réels (tableaux devenus dossiers, documents en Markdown, images et PDF ordinaires, sans compte et hors ligne) gagne des grilles de colonnes et de lignes, des cadres aux formats de papier et d'écran, un export en PNG, JPG ou PDF — sélection, vue courante, canevas entier ou chaque cadre — et un détachement d'arrière-plan qui reste sur la machine, par le cadre Vision d'Apple. Gratuit dans le navigateur, achat unique pour Mac et iOS : https://www.reddit.com/r/macapps/comments/1xte9f3/visualos_17_now_with_grids_frames_and_an_ondevice/</p>
+</li>
+<li>
+<p><strong>Tracer 2.0</strong> — l'outil de capture gagne un historique consultable, dont la recherche retrouve le texte présent dans 100 000 images en moins d'une dixième de seconde ; il capture image ou vidéo, enregistre le défilement jusqu'à 100 000 pixels de haut, traduit un texte sélectionné, détache un sujet de son arrière-plan, extrait le texte d'une image, fabrique un GIF et relève les couleurs à l'écran. Gratuit sur le Mac App Store, fonctions avancées à 10 $ une fois, sans abonnement : https://www.reddit.com/r/macapps/comments/1xthi57/tracer_20_a_fast_smooth_screenshot_tool_now_with/</p>
+</li>
+<li>
+<p><strong>OrbitRing</strong> — le lanceur radial fête ses deux ans de mises à jour continues. 5,99 $ une fois, sans abonnement, sur le Mac App Store ou directement chez l'auteur : https://www.reddit.com/r/macapps/comments/1xtmht6/update_orbitring_a_radial_launcher_two_years_in/</p>
+</li>
+<li>
+<p><strong>Chunk 3.6</strong> — le planificateur de journée par blocs ajoute les étiquettes (filtrables, colorant les blocs du calendrier, avec un total par étiquette), une boîte de capture depuis n'importe quelle application même en plein écran, les dates écrites dans le titre d'une tâche, et la fonction « Queue and fit » qui loge les tâches retenues dans les trous libres de la journée. Les données restent sur la machine, l'achat est unique là où Sunsama et Akiflow demandent 15 à 20 $ par mois ; l'application reste réservée au Mac : https://www.reddit.com/r/macapps/comments/1xto8xx/chunk_36_tags_quick_capture_from_any_app_and/</p>
+</li>
+<li>
+<p><strong>« Harbor », une application d'Apple pour servir des modèles d'intelligence artificielle sur ses propres Macs</strong> — la filiale Claris d'Apple teste une application qui transforme un Mac à processeur Apple en serveur d'inférence privé, avec téléchargement des modèles libres depuis l'application et mise en commun de la mémoire unifiée de plusieurs Mac reliés en Thunderbolt 5. Elle est en accès anticipé et n'est pas publique ; sa fiche sur l'App Store a été retirée et le prix n'est pas connu, tandis que la page d'inscription demande un nom d'entreprise, signe d'une visée professionnelle. Il existe déjà des équivalents gratuits pour qui veut faire tourner des modèles en local, Exo pour la grappe de Macs et LM Studio pour un seul : https://www.macrumors.com/2026/11/10/apple-claris-harbor-app/ — rapporté aussi par 9to5Mac : https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/</p>
+</li>
+<li>
+<p><strong>libghostty 1.0</strong> — la bibliothèque qui sert de moteur au terminal Ghostty atteint sa version 1.0 et stabilise son interface binaire en langage C : c'est ce qui permet à d'autres applications d'embarquer un terminal sans dépendre des versions internes de Ghostty : https://alternativeto.net/news/2026/11/libghostty-1-0-brings-a-stable-c-abi-for-terminals/</p>
+</li>
+<li>
+<p><strong>Homebrew — les cask mis à jour</strong> : <strong>LibreWolf 160.0</strong>, <strong>Jami 2.43</strong>, <strong>RustDesk 1.5.3</strong>, <strong>TablePlus 27.3.0</strong>, <strong>Snagit 2027.0.0</strong> (nouvelle année de version), <strong>OwlOCR 7.25.0</strong>, <strong>Surge 6.11.0</strong>, <strong>Opera 140.0.6074.18</strong> et <strong>Opera GX 139.0.6053.63</strong>, <strong>Telegram</strong> en version bêta 13.2.0, <strong>SmoothCSV 3.26.3</strong>, <strong>plus42 1.5.3</strong>, <strong>picview 5.2.2</strong>, <strong>petal 0.9.37</strong>, <strong>only-switch 3.6.0</strong>, <strong>Crest Browser 0.9.0</strong>, <strong>FreeLLMAPI 0.16.26</strong>, <strong>token-monitor 0.91.0</strong>, <strong>t3-code</strong> en version nocturne, ainsi que <strong>Firefox</strong> bêta 161.0b2. Aucune de ces entrées n'annonce de fonctionnalité : ce sont des montées de version.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>192 entrées publiées dans l'intervalle des quatre derniers jours ont été examinées : 35 du journal r/macapps (18 fils Reddit, 11 doublons du relais de l'extension — un même fil y figure deux fois, sous son identifiant Reddit et sous le préfixe <code>t3_</code> avec un titre traduit — et 6 de Hacker News) et 157 des huit journaux de flux complémentaires (80 commits du dépôt Homebrew, 25 brèves de 9to5Mac, 22 lancements de Product Hunt, 17 de MacRumors, 10 d'AlternativeTo, 3 de The Eclectic Light Company, et rien de neuf chez MacStories ni chez Michael Tsai). 22 entrées sont retenues et 170 écartées ; la ligne Homebrew des mises à jour résume à elle seule une vingtaine de versions. Quatre lancements de Product Hunt plus anciens que l'horizon de quatre jours ont été enregistrés comme traités sans être publiés. La collecte n'a signalé aucune erreur (<code>meta.json</code> : liste <code>errors</code> vide, dernière collecte le 11 novembre à 22 h 26 UTC).</p>
+<p>Le déchet vient des mêmes sources que les jours précédents. 9to5Mac et MacRumors vivent de matériel, de rumeurs et de promotions : ont été écartés, entre autres, les soldes du Black Friday chez Apple, Samsung et Amazon, la fermeture annoncée du forum d'entraide d'Apple le 20 novembre, les mises à jour de micrologiciel des AirPods et des systèmes, le déballage du MacBook Pro à écran tactile, la panne d'iCloud, le suivi des trente-deux téléphones d'un test d'autonomie, le défi étudiant Swift d'Apple et le classement de dix applications gratuites pour l'iPhone Duo, qui ne concerne pas le Mac. Les commits Homebrew sont presque tous des montées de version sans conséquence. Product Hunt ne vise le Mac que dans une minorité de cas, le reste étant des agents d'intelligence artificielle et des services en ligne. Chez AlternativeTo, rien ne touchait le logiciel du Mac : comptes adolescents d'Instagram, alertes aux cyclistes de Waze, interprétation en langue des signes sur Apple TV, tableaux et feuilles de Claude, support SteamOS du lanceur d'Epic, interface classique de Trakt, refonte de Spotube et facturation à l'usage des fonctions d'Apple Intelligence. Ont également été écartés : la page de comparaison de compilation d'applications iOS de Bitrise (un tableau de mesures, pas un logiciel), la question posée sur Hacker News à propos du lancement d'un outil réservé au macOS (une question, pas une annonce), le journal de développement d'un portage de Tomb Raider sur Saturn, la demande d'avis sur le lot d'applications de BundleHunt (une promotion), la question sur l'emplacement des icônes matérielles de macOS 27, <strong>Ascope</strong>, application Mac native de suivi des classements de mots clés dans les magasins d'applications mais facturée 69 $ à vie, et <strong>1Helm</strong>, assistant personnel qui exécute ses propres machines virtuelles et se paie 10 $ par mois même en apportant sa propre clé d'accès aux modèles.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois projets libres et gratuits dominent cette édition : QuickPass, l'accès rapide aux mots de passe déjà rangés dans Apple Passwords, StableBar, une barre de menus configurable qui se pose en alternative libre à SketchyBar, et Vespertine, un lecteur audio qui bascule le convertisseur au format natif de chaque fichier. Deux utilitaires gratuits au téléchargement complètent le lot, Bigshot pour les captures d'écran destinées aux agents de codage et Shutterbug pour les photos prises en rafale. Le reste est à achat unique, de 5 à 20 dollars, sauf un : la correction orthographique d'Ortly se paie par abonnement, sa version gratuite restant utilisable.</p>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li>
+<p><strong>QuickPass</strong> — retrouver un mot de passe sans ouvrir l'application Mots de passe d'Apple. Un raccourci (Contrôle-Option-Espace) fait apparaître un champ de recherche par-dessus l'application en cours ; ⌘C copie l'identifiant, ⇧⌘C le mot de passe, ⌥⌘C le code à deux facteurs, ⌘↩ remplit le formulaire de l'application d'où l'on vient, ⌘G et ⌘N créent un mot de passe ou enregistrent un nouvel identifiant. Gratuit, sans abonnement, sans version payante : c'est exactement le confort de l'accès rapide de 1Password (35,88 $ par an) appliqué au trousseau d'Apple. Deux réserves : l'auteur annonce une licence MIT quand l'API de GitHub déclare GPL-3.0 (l'écart reste à clarifier avant toute réutilisation du code), et l'application pilote Mots de passe par l'API d'accessibilité, faute d'API publique — une mise à jour de macOS peut donc la casser jusqu'à correction. Dépôt créé le 11 novembre 2026, 11 étoiles, dernière modification le même jour ; exige macOS 26 ou plus récent : https://github.com/jessekhach/QuickPass</p>
+</li>
+<li>
+<p><strong>StableBar</strong> — une barre de menus que l'on configure dans une fenêtre de réglages ou dans un seul fichier JSON, au lieu d'écrire des scripts shell comme le fait SketchyBar. Thèmes, widgets, fenêtres surgissantes, et prise en charge des espaces de travail d'AeroSpace, yabai ou OmniWM. Gratuit, licence MIT, 48 étoiles, dépôt créé le 15 octobre 2026 et modifié le 11 novembre ; présenté sur Product Hunt le 10 novembre : https://github.com/Seb-GRAF/StableBar</p>
+</li>
+<li>
+<p><strong>Vespertine 1.0.1</strong> — un lecteur de musique pour ses propres fichiers, pas pour les services de diffusion. Il lit FLAC, ALAC, WAV et AIFF jusqu'à 32 bits et 768 kHz, le DSD de DSD64 à DSD512, les images SACD et DVD-Vidéo, le Dolby Atmos, le TrueHD et le DTS, avec les listes de pistes CUE ; il bascule le convertisseur externe au format natif de chaque piste, affiche le chemin du signal tel que Core Audio le renvoie, mesure la pièce par microphone USB pour fabriquer ses filtres de correction, et rend le multicanal en audio spatial sur les AirPods. Gratuit, sans palier payant, licence GPL-3.0 ou ultérieure, 15 étoiles, dépôt créé le 27 septembre 2026, version 1.0.1 publiée le 11 novembre. Ses limites sont dites par l'auteur : pas de diffusion en réseau ni de télécommande, pas de greffons Audio Unit : https://github.com/szeremeta1/Vespertine</p>
+</li>
+<li>
+<p><strong>filetree.app</strong> — un explorateur de fichiers de remplacement du Finder, écrit avec la bibliothèque d'interface GPUI en Rust. Le projet est à ses débuts, comme le reconnaît son auteur, et n'est pas encore documenté : à suivre plutôt qu'à adopter. Licence AGPL-3.0, 2 étoiles, dépôt créé le 10 novembre 2026 : https://github.com/Graham-04/filetree.app</p>
+</li>
+<li>
+<p><strong>Shutterbug</strong> — une galerie photo pour ceux qui déclenchent trop. L'application regroupe elle-même les prises de vue similaires en piles et fait de la comparaison une partie du parcours, sans écran de comparaison séparé : on passe d'une photo à l'autre en effleurant les bords de l'écran, et l'on met à la corbeille au fil de la lecture, l'effacement n'étant définitif qu'après confirmation et les photos supprimées restant récupérables trente jours dans Photos. Elle lit la photothèque d'Apple Photos, synchronise par iCloud et traite tout sur l'appareil. Gratuit, sans publicité, sans abonnement ni suivi, disponible sur iPhone, iPad et Mac ; version 1.0.1 publiée il y a cinq jours. C'est la seule entrée de cette édition dont le lien n'était pas lisible dans le journal (le corps du message est tronqué à sa moitié) : je l'ai retrouvée par recherche, en vérifiant qu'il s'agit bien de l'application de Jake Zien et non d'un homonyme — un premier résultat pointait vers une place de marché de photographes portant le même nom : https://apps.apple.com/us/app/shutterbug-photo-stacks/id6446296940</p>
+</li>
+<li>
+<p><strong>Nameshot</strong> — renommer automatiquement les captures d'écran, sur la machine et sans réseau. L'utilitaire se tient dans la barre de menus, renomme la capture quelques secondes après qu'elle a été prise en s'appuyant sur l'intelligence embarquée d'Apple, apprend des corrections que l'on fait à la main et accepte aussi des lots d'images ou de PDF déposés sur son icône. L'application ne dispose d'aucun droit d'accès au réseau et pèse environ 4 Mo ; elle exige un Mac à processeur Apple et macOS 27. Essai gratuit de sept jours, puis 4,99 $ une fois au lancement (9,99 $ ensuite), sans abonnement. Réserve honnête de son auteur, qui le compare à Tidyshot et Keep It Shot : Nameshot ne fait que nommer, quand ses concurrents cherchent dans le texte, trient, annotent ou masquent ; Keep It Shot, lui, passe par le nuage : https://apps.apple.com/app/id6821602866</p>
+</li>
+<li>
+<p><strong>Bigshot</strong> — un outil de capture d'écran pensé pour ceux qui font travailler des agents de codage. Il vit dans l'encoche du MacBook : on l'effleure pour retrouver la dernière capture, on clique pour parcourir l'historique, changer de projet ou d'étiquette et glisser une image directement dans l'agent. Il sait aussi retrouver le fichier et la ligne de code qui produisent l'élément sélectionné dans une application en cours d'exécution (l'auteur annonce 20 piles testées), exposer ses captures et ce code à l'agent par un serveur MCP, ou lancer une tâche d'agent depuis la capture, chaque agent travaillant sur sa propre branche sans jamais pousser ni fusionner. Tout se fait sur la machine. Téléchargement gratuit, version Pro à 19 $ une fois : https://www.bigshot.pics/</p>
+</li>
+<li>
+<p><strong>fswitcher</strong> — corriger le sélecteur d'applications du système pour ceux qui travaillent sur plusieurs écrans. Chaque écran garde son propre sélecteur et ne montre que ses fenêtres, les fenêtres multiples d'une même application apparaissent comme des tuiles distinctes, les applications inutilisées sont rangées sur une ligne à part, et l'on peut prévisualiser chaque fenêtre en vignette ou en plein écran. Essai de sept jours, puis 14,99 $ une fois pour trois Macs, sans abonnement ; exige macOS 26 ou plus récent : https://fswitcher.app/</p>
+</li>
+<li>
+<p><strong>Cue</strong> — écrire un scénario, l'équivalent Mac d'une feuille de scénario qui se met en forme toute seule : la tabulation et la touche Retour passent du titre de scène à l'action, aux personnages et au dialogue, les scènes et les personnages restent dans un panneau latéral, l'on ajoute une note en sélectionnant des mots, et des pense-bêtes et des images épinglées accompagnent la page. Il importe les PDF de scénario et les fichiers Fountain, et exporte dans les deux formats. 6,99 $, sans publicité ni abonnement. Manquent encore, d'après son auteur : l'import du format d'échange .fdx de Final Draft, la synchronisation iCloud et le dialogue à deux colonnes. Le fil du subreddit porte le détail : https://www.reddit.com/r/macapps/comments/1xto0h2/cue_the_most_beautiful_place_to_write_a/</p>
+</li>
+<li>
+<p><strong>ScreenSky</strong> — associer le rappel de pause à la liste des tâches : à intervalles réglables (trente minutes par défaut), l'application propose de s'éloigner de l'écran en affichant ce qui reste à faire, de sorte qu'on sache où reprendre en revenant. Développée en SwiftUI, elle fonctionne localement. 10 $ une fois, moitié prix au lancement pour les lecteurs du subreddit — c'est le premier lancement de son auteur, donc peu de recul : https://www.reddit.com/r/macapps/comments/1xt673c/built_screensky_a_macos_app_to_help_you_stay/</p>
+</li>
+<li>
+<p><strong>Ortly</strong> — corriger en temps réel les fautes d'orthographe phonétique, celles que commettent les personnes dyslexiques, dans toutes les applications du Mac. Le programme apprend les erreurs propres à son utilisateur, vérifie aussi la grammaire, est signé et notarié, et exige macOS 26 ou plus récent. La version gratuite corrige sans limite et sans compte, mais lentement, par l'intelligence embarquée d'Apple ; la version personnelle coûte 6,99 $ par mois ou 59 $ par an après sept jours d'essai sans carte bancaire — c'est le seul abonnement de cette édition, et l'auteur ne cache pas que Grammarly reste meilleur sur la grammaire générale et LanguageTool sur le contrôle multilingue : https://ortly.appetix.art</p>
+</li>
+<li>
+<p><strong>Solas</strong> — un étang de carpes koï animé derrière les icônes du bureau, écrit en Swift avec rendu Metal direct, avec pierres, plantes et nénuphars à disposer soi-même, saison au choix ou suivant le calendrier, et mise en pause automatique quand le bureau est recouvert ou que le Mac fonctionne sur batterie. Sur une mesure faite par l'auteur sur un MacBook Air M4, l'animation consomme environ 251 Mo de mémoire et 10 à 12 % d'un cœur de processeur. L'auteur ne cache pas que l'application ne résout aucun problème : elle décore. Le prix n'est pas annoncé dans le fil de discussion, à vérifier avant de télécharger : https://www.reddit.com/r/macapps/comments/1xtl91i/solas_a_living_koi_pond_for_your_mac_desktop/</p>
+</li>
+</ul>
+<p>Repérés sur Product Hunt, tous pour le Mac mais annoncés sans prix ni licence, donc à vérifier avant d'installer : <strong>Padrail</strong> (transformer les bords du pavé tactile du MacBook en commandes), <strong>Binqo</strong> (un petit compagnon dans l'encoche) et <strong>RigSpark</strong> (savoir quel modèle d'intelligence artificielle faire tourner sur sa propre machine).</p>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>PermissionGuide</strong> — une bibliothèque Swift pour développeurs : elle ouvre le bon volet des Réglages Système, met en évidence la liste concernée et donne l'icône de l'application à glisser dedans, au lieu de laisser l'utilisateur chercher où accorder un droit d'accès. Licence MIT, 3 étoiles, dépôt créé le 11 novembre 2026 et modifié le même jour : https://github.com/fcjr/PermissionGuide</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>visualOS 1.7</strong> — le tableau infini qui range ses tableaux en fichiers réels (tableaux devenus dossiers, documents en Markdown, images et PDF ordinaires, sans compte et hors ligne) gagne des grilles de colonnes et de lignes, des cadres aux formats de papier et d'écran, un export en PNG, JPG ou PDF — sélection, vue courante, canevas entier ou chaque cadre — et un détachement d'arrière-plan qui reste sur la machine, par le cadre Vision d'Apple. Gratuit dans le navigateur, achat unique pour Mac et iOS : https://www.reddit.com/r/macapps/comments/1xte9f3/visualos_17_now_with_grids_frames_and_an_ondevice/</p>
+</li>
+<li>
+<p><strong>Tracer 2.0</strong> — l'outil de capture gagne un historique consultable, dont la recherche retrouve le texte présent dans 100 000 images en moins d'une dixième de seconde ; il capture image ou vidéo, enregistre le défilement jusqu'à 100 000 pixels de haut, traduit un texte sélectionné, détache un sujet de son arrière-plan, extrait le texte d'une image, fabrique un GIF et relève les couleurs à l'écran. Gratuit sur le Mac App Store, fonctions avancées à 10 $ une fois, sans abonnement : https://www.reddit.com/r/macapps/comments/1xthi57/tracer_20_a_fast_smooth_screenshot_tool_now_with/</p>
+</li>
+<li>
+<p><strong>OrbitRing</strong> — le lanceur radial fête ses deux ans de mises à jour continues. 5,99 $ une fois, sans abonnement, sur le Mac App Store ou directement chez l'auteur : https://www.reddit.com/r/macapps/comments/1xtmht6/update_orbitring_a_radial_launcher_two_years_in/</p>
+</li>
+<li>
+<p><strong>Chunk 3.6</strong> — le planificateur de journée par blocs ajoute les étiquettes (filtrables, colorant les blocs du calendrier, avec un total par étiquette), une boîte de capture depuis n'importe quelle application même en plein écran, les dates écrites dans le titre d'une tâche, et la fonction « Queue and fit » qui loge les tâches retenues dans les trous libres de la journée. Les données restent sur la machine, l'achat est unique là où Sunsama et Akiflow demandent 15 à 20 $ par mois ; l'application reste réservée au Mac : https://www.reddit.com/r/macapps/comments/1xto8xx/chunk_36_tags_quick_capture_from_any_app_and/</p>
+</li>
+<li>
+<p><strong>« Harbor », une application d'Apple pour servir des modèles d'intelligence artificielle sur ses propres Macs</strong> — la filiale Claris d'Apple teste une application qui transforme un Mac à processeur Apple en serveur d'inférence privé, avec téléchargement des modèles libres depuis l'application et mise en commun de la mémoire unifiée de plusieurs Mac reliés en Thunderbolt 5. Elle est en accès anticipé et n'est pas publique ; sa fiche sur l'App Store a été retirée et le prix n'est pas connu, tandis que la page d'inscription demande un nom d'entreprise, signe d'une visée professionnelle. Il existe déjà des équivalents gratuits pour qui veut faire tourner des modèles en local, Exo pour la grappe de Macs et LM Studio pour un seul : https://www.macrumors.com/2026/11/10/apple-claris-harbor-app/ — rapporté aussi par 9to5Mac : https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/</p>
+</li>
+<li>
+<p><strong>libghostty 1.0</strong> — la bibliothèque qui sert de moteur au terminal Ghostty atteint sa version 1.0 et stabilise son interface binaire en langage C : c'est ce qui permet à d'autres applications d'embarquer un terminal sans dépendre des versions internes de Ghostty : https://alternativeto.net/news/2026/11/libghostty-1-0-brings-a-stable-c-abi-for-terminals/</p>
+</li>
+<li>
+<p><strong>Homebrew — les cask mis à jour</strong> : <strong>LibreWolf 160.0</strong>, <strong>Jami 2.43</strong>, <strong>RustDesk 1.5.3</strong>, <strong>TablePlus 27.3.0</strong>, <strong>Snagit 2027.0.0</strong> (nouvelle année de version), <strong>OwlOCR 7.25.0</strong>, <strong>Surge 6.11.0</strong>, <strong>Opera 140.0.6074.18</strong> et <strong>Opera GX 139.0.6053.63</strong>, <strong>Telegram</strong> en version bêta 13.2.0, <strong>SmoothCSV 3.26.3</strong>, <strong>plus42 1.5.3</strong>, <strong>picview 5.2.2</strong>, <strong>petal 0.9.37</strong>, <strong>only-switch 3.6.0</strong>, <strong>Crest Browser 0.9.0</strong>, <strong>FreeLLMAPI 0.16.26</strong>, <strong>token-monitor 0.91.0</strong>, <strong>t3-code</strong> en version nocturne, ainsi que <strong>Firefox</strong> bêta 161.0b2. Aucune de ces entrées n'annonce de fonctionnalité : ce sont des montées de version.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>192 entrées publiées dans l'intervalle des quatre derniers jours ont été examinées : 35 du journal r/macapps (18 fils Reddit, 11 doublons du relais de l'extension — un même fil y figure deux fois, sous son identifiant Reddit et sous le préfixe <code>t3_</code> avec un titre traduit — et 6 de Hacker News) et 157 des huit journaux de flux complémentaires (80 commits du dépôt Homebrew, 25 brèves de 9to5Mac, 22 lancements de Product Hunt, 17 de MacRumors, 10 d'AlternativeTo, 3 de The Eclectic Light Company, et rien de neuf chez MacStories ni chez Michael Tsai). 22 entrées sont retenues et 170 écartées ; la ligne Homebrew des mises à jour résume à elle seule une vingtaine de versions. Quatre lancements de Product Hunt plus anciens que l'horizon de quatre jours ont été enregistrés comme traités sans être publiés. La collecte n'a signalé aucune erreur (<code>meta.json</code> : liste <code>errors</code> vide, dernière collecte le 11 novembre à 22 h 26 UTC).</p>
+<p>Le déchet vient des mêmes sources que les jours précédents. 9to5Mac et MacRumors vivent de matériel, de rumeurs et de promotions : ont été écartés, entre autres, les soldes du Black Friday chez Apple, Samsung et Amazon, la fermeture annoncée du forum d'entraide d'Apple le 20 novembre, les mises à jour de micrologiciel des AirPods et des systèmes, le déballage du MacBook Pro à écran tactile, la panne d'iCloud, le suivi des trente-deux téléphones d'un test d'autonomie, le défi étudiant Swift d'Apple et le classement de dix applications gratuites pour l'iPhone Duo, qui ne concerne pas le Mac. Les commits Homebrew sont presque tous des montées de version sans conséquence. Product Hunt ne vise le Mac que dans une minorité de cas, le reste étant des agents d'intelligence artificielle et des services en ligne. Chez AlternativeTo, rien ne touchait le logiciel du Mac : comptes adolescents d'Instagram, alertes aux cyclistes de Waze, interprétation en langue des signes sur Apple TV, tableaux et feuilles de Claude, support SteamOS du lanceur d'Epic, interface classique de Trakt, refonte de Spotube et facturation à l'usage des fonctions d'Apple Intelligence. Ont également été écartés : la page de comparaison de compilation d'applications iOS de Bitrise (un tableau de mesures, pas un logiciel), la question posée sur Hacker News à propos du lancement d'un outil réservé au macOS (une question, pas une annonce), le journal de développement d'un portage de Tomb Raider sur Saturn, la demande d'avis sur le lot d'applications de BundleHunt (une promotion), la question sur l'emplacement des icônes matérielles de macOS 27, <strong>Ascope</strong>, application Mac native de suivi des classements de mots clés dans les magasins d'applications mais facturée 69 $ à vie, et <strong>1Helm</strong>, assistant personnel qui exécute ses propres machines virtuelles et se paie 10 $ par mois même en apportant sa propre clé d'accès aux modèles.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — jeudi 12 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-12.html</link>
@@ -6335,159 +6490,6 @@ https://github.com/lhadzic377-netizen/TokiRecur</p>
 <h2>Volume</h2>
 <p>131 entrées ont été examinées — toutes celles publiées dans l'intervalle des quatre derniers jours et non encore traitées : 80 validations du dépôt Homebrew, 12 lancements de Product Hunt, 11 entrées du journal r/macapps (9 anciens fils Reddit, 1 de Hacker News, 1 de Lobsters), 11 brèves de 9to5Mac, 7 d'AlternativeTo, 4 de MacRumors, 3 de The Eclectic Light Company et 3 de Michael Tsai. 21 entrées sont retenues et 110 écartées.</p>
 <p>Le déchet reste concentré sur les mêmes sources. Les 80 validations Homebrew sont presque toutes des montées de version d'applications commerciales ou des fusions automatiques ; j'en retiens trois casques utiles aux agents et deux logiciels libres. 9to5Mac et MacRumors vivent de rumeurs matérielles, de promotions (Black Friday), de résultats financiers et de contenus parrainés : la seule application macOS nouvelle y est Backglow. Product Hunt vise rarement le Mac — sur douze lancements, six sont des services de modèles ou de détourage en ligne, sans rapport avec le poste de travail. Sont notamment écartés ChatGPT Images 2.6, Google Omni 1.2 Flash et GPT-6 Cyber (services, pas applications), Muse Realtime Avatar et Pangram (détection d'images générées, en ligne), plusieurs billets d'analyse d'Howard Oakley et de Michael Tsai sans annonce d'outil, et un fil de discussion sur le sort des développeurs isolés à l'heure de l'assistance par IA. Aucun contenu de type question, sondage ou remerciement n'a été retenu. Le fichier <code>meta.json</code> du journal r/macapps ne signale aucune erreur de collecte.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — dimanche 8 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-08.html</link>
-<guid isPermaLink="false">artcraft-2026-11-08</guid>
-<pubDate>Sun, 08 Nov 2026 00:03:25 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — dimanche 8 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>ArtCraft publie sa première livraison Linux officielle et signée (v0.41.1), pour x86_64, aarch64 et riscv64.</li>
-<li>AniCraft, la réimplémentation d'Adobe Animate, apparaît sur le dépôt public de l'éditeur en alpha précoce, encore absente du lanceur et du site.</li>
-<li>Côté communauté : un fork iOS de LightCraft en PWA, un site d'outils gratuits pour EffectCraft, trois projets comparables (XarQ, MatLivre, Photostar) et une analyse critique de la communication autour d'ArtCraft.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>ArtCraft v0.41.1 — première livraison Linux officielle</h3>
-<p>La version 0.41.1, publiée le 7 novembre à 2 h 49 UTC par le robot de publication du dépôt, contient <strong>45 fichiers</strong>, tous destinés à Linux : AppImage et son fichier zsync, paquets <code>.deb</code> et <code>.rpm</code>, paquet Arch, bundle Flatpak, image OCI et archive <code>.tar.gz</code>, pour <strong>x86_64, aarch64 et riscv64</strong>. Chaque fichier est accompagné d'une signature détachée (<code>.asc</code>, <code>.sig</code>). C'est un changement de nature : la version précédente, 0.41.0 du 26 septembre, ne proposait que macOS et Windows. À noter pour ne pas se méprendre : cette livraison ne contient aucun binaire macOS ni Windows, et le contenu de la version n'est pas détaillé dans la note de publication, qui se limite à « See the assets below ».</p>
-<p>Le même jour, un commit de dylanmtaylor (<code>4bf1b20</code>) a ajouté la matrice de publication Linux signée, l'intégration continue FreeBSD et un contrôle de conformité des paquets, en alignement sur les actions partagées <code>craft-common-actions</code>. Un second commit (<code>79d87b2</code>) corrige le paquet Flatpak : persistance du dossier de données <code>~/Artcraft</code> (réglages, jetons de fournisseurs, file d'attente SQLite) dans <code>~/.var/app/ai.artcraft.app/</code> au lieu d'être effacé à la fermeture, et maintien du rendu accéléré WebKitGTK. Le troisième commit de la période n'est qu'une montée de version d'actions GitHub par Dependabot, sans intérêt pour l'utilisateur.</p>
-<ul>
-<li>Version publiée : https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1</li>
-<li>Page éditeur sur les dépôts Linux : https://getartcraft.com/linux</li>
-</ul>
-<h3>AniCraft, le clone d'Adobe Animate, arrive sur le dépôt public</h3>
-<p>Le dépôt <code>storytold/AniCraft</code> annonce une station d'animation vectorielle 2D, réimplémentation propre d'Adobe Animate, écrite en Rust pur : timeline, calques, images clés, interpolations classiques et de formes, pelure d'oignon, scène egui. Le fichier de présentation annonce macOS, Windows, Linux, FreeBSD et le navigateur par WebAssembly, et se qualifie lui-même d'<strong>alpha précoce</strong>. Le dépôt existe depuis le 14 octobre 2026 (licence Apache-2.0, 105 étoiles à l'heure de la rédaction) mais <strong>aucune version n'est publiée</strong> : zéro release à l'API GitHub, et l'adresse <code>getartcraft.com/apps/anicraft</code> citée dans le fichier de présentation renvoie une erreur 404. Le post de FreddieThePebble dit exactement la même chose : présent sur GitHub, pas encore dans le lanceur ni sur le site. Le seul point de vigilance : à côté du dépôt officiel existe <code>soof-golan/anicraft</code>, un projet indépendant de 10 étoiles, sous BSD-3-Clause, qui revendique la compatibilité avec les formats Adobe Animate (XFL/FLA, SWF) — ce n'est pas le même projet, malgré le nom identique.</p>
-<ul>
-<li>Dépôt : https://github.com/storytold/AniCraft</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqf2q0/anicraft_adobe_aniamte_is_now_on_github/ — u/FreddieThePebble</li>
-</ul>
-<h3>PdfCraft v0.19.0 — la rastérisation des pages revue</h3>
-<p>Un utilisateur signale la fin du défaut qui l'empêchait d'utiliser PdfCraft comme lecteur : certains PDF, notamment des livres, s'affichaient de façon pixelisée. La version 0.19.0, publiée le 6 novembre, contient effectivement deux correctifs d'affichage : « size the whole-page raster allowance to the pages on screen » (PR 6065, par dotCooCoo) et un rendu anticipé des pages en vue continue, ainsi qu'un défilement aux roues plus régulier. L'attribution du symptôme précis (le rendu pixelisé) à cette modification reste une déduction : la note de version ne décrit pas le défaut en ces termes, elle parle de la mémoire allouée à la rastérisation d'une page entière.</p>
-<ul>
-<li>Version : https://github.com/storytold/pdfcraft/releases/tag/v0.19.0</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpv3fv/pdfcraft_team_finally_did_it/ — u/shahriar2005</li>
-</ul>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>LightCraft iOS — un fork mobile en application web installable</h3>
-<p>Un développeur indépendant a porté LightCraft sur iPhone et iPad en conservant le moteur de traitement d'image Rust d'ArtCraft et en retravaillant l'interface : commandes tactiles, zoom par pincement, édition côte à côte en paysage, stockage local des photos, export vers Photos d'Apple. C'est une <strong>application web progressive</strong> (aucun compte, aucun abonnement, installation sur l'écran d'accueil, fonctionnement hors ligne, ni sideload ni fichier <code>.ipa</code>). Le dépôt <code>hambonesoftware/lightcraft-iOS-pwa</code> est public, en Apache-2.0, créé le 3 novembre, et la page publiée répond. Deux remarques : le post donne un lien de dépôt erroné (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware</code> ; et il s'agit d'un fork non officiel, dont le dossier de présentation reprend d'ailleurs l'adresse de la fiche LightCraft officielle.</p>
-<ul>
-<li>Application : https://hambonesoftware.github.io/lightcraft-iOS-pwa</li>
-<li>Dépôt : https://github.com/hambonesoftware/lightcraft-iOS-pwa</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpvo24/ios_lightcraft/ — u/No-Fox-1400</li>
-</ul>
-<h3>ecscripts.com — outils gratuits annoncés pour EffectCraft</h3>
-<p>Un utilisateur, CCJXander, a mis en ligne un site rassemblant des outils pour EffectCraft et annonce qu'il y publiera gratuitement les équivalents des outils After Effects dès que <strong>le support des plugins sera disponible</strong>. À ce jour, c'est donc une annonce d'intention plus qu'un plugin utilisable : rien n'indique que EffectCraft accepte déjà des extensions communautaires. Le site répond.</p>
-<ul>
-<li>Site : https://ecscripts.com</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq2guj/free_tools_for_effectcraft/ — u/CCJXander</li>
-</ul>
-<h2>Autour d'ArtCraft</h2>
-<h3>XarQ — un descendant libre de Xara Xtreme, en alpha</h3>
-<p>XarQ est une nouvelle application d'illustration vectorielle, de retouche photo et de mise en page, écrite en Qt6 et C++17, qui reprend la base GPL de Xara Xtreme / Xara LX publiée par Xara Group en 2006 — sans aucun code wxWidgets. Elle ouvre et enregistre les fichiers <code>.xar</code> natifs en conservant groupes, calques, dégradés et transparences comme objets modifiables, et lit SVG et PDF. L'auteur annonce une alpha pour Linux et Windows. Le dépôt <code>jonata/xarq</code> est public sous GPL-2.0 (créé le 18 juillet 2026, 2 étoiles) et un dépôt Homebrew dédié a été créé le jour même. C'est le concurrent direct de VectorCraft, et la même logique d'appropriation que defend ArtCraft.</p>
-<ul>
-<li>Dépôt : https://github.com/jonata/xarq</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpx5f8/xarq_a_free_opensource_design_app_that_descends/ — u/jonataloss</li>
-</ul>
-<h3>MatLivre — la même idée appliquée au calcul scientifique</h3>
-<p>MatLivre est un éditeur et un moteur d'exécution libre et compatible MATLAB (scripts <code>.mlx</code> et <code>.m</code>), écrit en Rust sous licence MIT. Le dépôt <code>campuslivre/matlivre</code> est public (29 étoiles, créé le 29 octobre 2026, activité le 7 novembre). Les arguments revendiqués sont ceux d'ArtCraft : le code de recherche ne doit pas dépendre d'une licence qui expire, le code doit être lisible et modifiable. Deux particularités annoncées : l'application expose un point d'accès MCP local, pour qu'un agent puisse y exécuter du code, et sa documentation est publiée en pages simples avec un fichier <code>llms.txt</code>. Prudence sur la qualité : l'auteur indique lui-même que les fiches de fonction ont été rédigées avec des agents et vérifiées par exécution des exemples, et que la version portugaise attend une relecture humaine.</p>
-<ul>
-<li>Dépôt : https://github.com/campuslivre/matlivre</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq40im/same_idea_as_artcraft_applied_to_scientific/ — u/XBLAH_</li>
-</ul>
-<h3>Photostar — un éditeur photo gratuit dans le navigateur</h3>
-<p>Un éditeur photo présenté comme gratuit, sans inscription ni filigrane, fonctionnant entièrement dans le navigateur, avec ouverture et enregistrement de fichiers PSD (calques, masques, calques de réglage, styles, objets dynamiques), détourage et effacement d'objets, formats Camera RAW, HEIC et 16 bits, et fonctionnement hors ligne une fois la page chargée. Le traitement se fait localement, sauf le remplissage par IA en nuage, qui prévient avant d'envoyer quoi que ce soit. <strong>Réserve importante</strong> : rien n'indique que le logiciel soit libre — le post ne parle ni de dépôt public, ni de licence, ni de code source. Il s'agit donc d'un concurrent gratuit, pas d'un projet open source, et son annonce est un message de promotion. Le site répond.</p>
-<ul>
-<li>Site : https://photostar.io</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq8o5w/7_years_a_lot_of_money_and_finally_a_free/ — u/KnowledgeNo3681</li>
-</ul>
-<h3>« Everyone is wrong about ArtCraft » — une analyse à retenir</h3>
-<p>Un membre du subreddit, grahamperrin, relaie une vidéo de Tom Delalande qui démonte les titres viraux annonçant qu'ArtCraft aurait décompilé et reconstruit toute la suite Adobe en Rust. Le propos, résumé par l'auteur du post et accueilli favorablement dans les commentaires, est le suivant : aucun code propriétaire n'a été décompilé, le procédé consiste à déduire le comportement depuis l'interface puis à générer du code neuf ; l'équipe travaille par boucle de « vibecoding » (repérer une fonction manquante, l'implémenter, la tester par ligne de commande) ; et malgré des milliers de commits, la plupart des clones plafonnent entre 40 et 60 % de parité fonctionnelle, sans la profondeur ni la gestion des cas limites des originaux. C'est la remise en perspective la plus utile parue cette semaine sur ce que vaut réellement la suite — le résumé ci-dessus provenant d'un résumé automatique relayé par le post, je le signale comme non vérifié à la source vidéo.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq9ama/everyone_is_wrong_about_artcraft_tom_delalande/ — u/grahamperrin</li>
-</ul>
-<h2>À signaler</h2>
-<ul>
-<li><strong>Les dépôts de paquets Linux sont en aperçu non signé.</strong> La page officielle consacrée à Linux indique que, pendant la phase d'aperçu public, les dépôts utilisent des réglages non signés (<code>[trusted=yes]</code> pour APT, <code>gpgcheck=0</code> pour RPM/DNF) ; la signature cryptographique des index viendra avec la publication des clés GPG officielles. En revanche, les fichiers des versions publiées sur GitHub, eux, sont bien accompagnés de signatures détachées. Autrement dit : une installation par dépôt de paquets fait aujourd'hui davantage confiance au transport qu'à une clé de publication.</li>
-<li><strong>Le lien de dépôt du fork iOS est erroné dans le post</strong> (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware/lightcraft-iOS-pwa</code>. Sans conséquence, mais à corriger si vous citez ce projet.</li>
-<li>Aucun incident, aucune alerte de sécurité ni régression signalés dans les fils de la période.</li>
-</ul>
-<h2>Volume</h2>
-<p>27 entrées nouvelles examinées (23 posts Reddit, 3 commits du dépôt officiel, 1 version publiée), 11 retenues, 16 écartées. La collecte la plus récente s'est achevée le 7 novembre à 21 h 04 UTC sans erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — dimanche 8 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>ArtCraft publie sa première livraison Linux officielle et signée (v0.41.1), pour x86_64, aarch64 et riscv64.</li>
-<li>AniCraft, la réimplémentation d'Adobe Animate, apparaît sur le dépôt public de l'éditeur en alpha précoce, encore absente du lanceur et du site.</li>
-<li>Côté communauté : un fork iOS de LightCraft en PWA, un site d'outils gratuits pour EffectCraft, trois projets comparables (XarQ, MatLivre, Photostar) et une analyse critique de la communication autour d'ArtCraft.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>ArtCraft v0.41.1 — première livraison Linux officielle</h3>
-<p>La version 0.41.1, publiée le 7 novembre à 2 h 49 UTC par le robot de publication du dépôt, contient <strong>45 fichiers</strong>, tous destinés à Linux : AppImage et son fichier zsync, paquets <code>.deb</code> et <code>.rpm</code>, paquet Arch, bundle Flatpak, image OCI et archive <code>.tar.gz</code>, pour <strong>x86_64, aarch64 et riscv64</strong>. Chaque fichier est accompagné d'une signature détachée (<code>.asc</code>, <code>.sig</code>). C'est un changement de nature : la version précédente, 0.41.0 du 26 septembre, ne proposait que macOS et Windows. À noter pour ne pas se méprendre : cette livraison ne contient aucun binaire macOS ni Windows, et le contenu de la version n'est pas détaillé dans la note de publication, qui se limite à « See the assets below ».</p>
-<p>Le même jour, un commit de dylanmtaylor (<code>4bf1b20</code>) a ajouté la matrice de publication Linux signée, l'intégration continue FreeBSD et un contrôle de conformité des paquets, en alignement sur les actions partagées <code>craft-common-actions</code>. Un second commit (<code>79d87b2</code>) corrige le paquet Flatpak : persistance du dossier de données <code>~/Artcraft</code> (réglages, jetons de fournisseurs, file d'attente SQLite) dans <code>~/.var/app/ai.artcraft.app/</code> au lieu d'être effacé à la fermeture, et maintien du rendu accéléré WebKitGTK. Le troisième commit de la période n'est qu'une montée de version d'actions GitHub par Dependabot, sans intérêt pour l'utilisateur.</p>
-<ul>
-<li>Version publiée : https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1</li>
-<li>Page éditeur sur les dépôts Linux : https://getartcraft.com/linux</li>
-</ul>
-<h3>AniCraft, le clone d'Adobe Animate, arrive sur le dépôt public</h3>
-<p>Le dépôt <code>storytold/AniCraft</code> annonce une station d'animation vectorielle 2D, réimplémentation propre d'Adobe Animate, écrite en Rust pur : timeline, calques, images clés, interpolations classiques et de formes, pelure d'oignon, scène egui. Le fichier de présentation annonce macOS, Windows, Linux, FreeBSD et le navigateur par WebAssembly, et se qualifie lui-même d'<strong>alpha précoce</strong>. Le dépôt existe depuis le 14 octobre 2026 (licence Apache-2.0, 105 étoiles à l'heure de la rédaction) mais <strong>aucune version n'est publiée</strong> : zéro release à l'API GitHub, et l'adresse <code>getartcraft.com/apps/anicraft</code> citée dans le fichier de présentation renvoie une erreur 404. Le post de FreddieThePebble dit exactement la même chose : présent sur GitHub, pas encore dans le lanceur ni sur le site. Le seul point de vigilance : à côté du dépôt officiel existe <code>soof-golan/anicraft</code>, un projet indépendant de 10 étoiles, sous BSD-3-Clause, qui revendique la compatibilité avec les formats Adobe Animate (XFL/FLA, SWF) — ce n'est pas le même projet, malgré le nom identique.</p>
-<ul>
-<li>Dépôt : https://github.com/storytold/AniCraft</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xqf2q0/anicraft_adobe_aniamte_is_now_on_github/ — u/FreddieThePebble</li>
-</ul>
-<h3>PdfCraft v0.19.0 — la rastérisation des pages revue</h3>
-<p>Un utilisateur signale la fin du défaut qui l'empêchait d'utiliser PdfCraft comme lecteur : certains PDF, notamment des livres, s'affichaient de façon pixelisée. La version 0.19.0, publiée le 6 novembre, contient effectivement deux correctifs d'affichage : « size the whole-page raster allowance to the pages on screen » (PR 6065, par dotCooCoo) et un rendu anticipé des pages en vue continue, ainsi qu'un défilement aux roues plus régulier. L'attribution du symptôme précis (le rendu pixelisé) à cette modification reste une déduction : la note de version ne décrit pas le défaut en ces termes, elle parle de la mémoire allouée à la rastérisation d'une page entière.</p>
-<ul>
-<li>Version : https://github.com/storytold/pdfcraft/releases/tag/v0.19.0</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpv3fv/pdfcraft_team_finally_did_it/ — u/shahriar2005</li>
-</ul>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>LightCraft iOS — un fork mobile en application web installable</h3>
-<p>Un développeur indépendant a porté LightCraft sur iPhone et iPad en conservant le moteur de traitement d'image Rust d'ArtCraft et en retravaillant l'interface : commandes tactiles, zoom par pincement, édition côte à côte en paysage, stockage local des photos, export vers Photos d'Apple. C'est une <strong>application web progressive</strong> (aucun compte, aucun abonnement, installation sur l'écran d'accueil, fonctionnement hors ligne, ni sideload ni fichier <code>.ipa</code>). Le dépôt <code>hambonesoftware/lightcraft-iOS-pwa</code> est public, en Apache-2.0, créé le 3 novembre, et la page publiée répond. Deux remarques : le post donne un lien de dépôt erroné (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware</code> ; et il s'agit d'un fork non officiel, dont le dossier de présentation reprend d'ailleurs l'adresse de la fiche LightCraft officielle.</p>
-<ul>
-<li>Application : https://hambonesoftware.github.io/lightcraft-iOS-pwa</li>
-<li>Dépôt : https://github.com/hambonesoftware/lightcraft-iOS-pwa</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpvo24/ios_lightcraft/ — u/No-Fox-1400</li>
-</ul>
-<h3>ecscripts.com — outils gratuits annoncés pour EffectCraft</h3>
-<p>Un utilisateur, CCJXander, a mis en ligne un site rassemblant des outils pour EffectCraft et annonce qu'il y publiera gratuitement les équivalents des outils After Effects dès que <strong>le support des plugins sera disponible</strong>. À ce jour, c'est donc une annonce d'intention plus qu'un plugin utilisable : rien n'indique que EffectCraft accepte déjà des extensions communautaires. Le site répond.</p>
-<ul>
-<li>Site : https://ecscripts.com</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq2guj/free_tools_for_effectcraft/ — u/CCJXander</li>
-</ul>
-<h2>Autour d'ArtCraft</h2>
-<h3>XarQ — un descendant libre de Xara Xtreme, en alpha</h3>
-<p>XarQ est une nouvelle application d'illustration vectorielle, de retouche photo et de mise en page, écrite en Qt6 et C++17, qui reprend la base GPL de Xara Xtreme / Xara LX publiée par Xara Group en 2006 — sans aucun code wxWidgets. Elle ouvre et enregistre les fichiers <code>.xar</code> natifs en conservant groupes, calques, dégradés et transparences comme objets modifiables, et lit SVG et PDF. L'auteur annonce une alpha pour Linux et Windows. Le dépôt <code>jonata/xarq</code> est public sous GPL-2.0 (créé le 18 juillet 2026, 2 étoiles) et un dépôt Homebrew dédié a été créé le jour même. C'est le concurrent direct de VectorCraft, et la même logique d'appropriation que defend ArtCraft.</p>
-<ul>
-<li>Dépôt : https://github.com/jonata/xarq</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xpx5f8/xarq_a_free_opensource_design_app_that_descends/ — u/jonataloss</li>
-</ul>
-<h3>MatLivre — la même idée appliquée au calcul scientifique</h3>
-<p>MatLivre est un éditeur et un moteur d'exécution libre et compatible MATLAB (scripts <code>.mlx</code> et <code>.m</code>), écrit en Rust sous licence MIT. Le dépôt <code>campuslivre/matlivre</code> est public (29 étoiles, créé le 29 octobre 2026, activité le 7 novembre). Les arguments revendiqués sont ceux d'ArtCraft : le code de recherche ne doit pas dépendre d'une licence qui expire, le code doit être lisible et modifiable. Deux particularités annoncées : l'application expose un point d'accès MCP local, pour qu'un agent puisse y exécuter du code, et sa documentation est publiée en pages simples avec un fichier <code>llms.txt</code>. Prudence sur la qualité : l'auteur indique lui-même que les fiches de fonction ont été rédigées avec des agents et vérifiées par exécution des exemples, et que la version portugaise attend une relecture humaine.</p>
-<ul>
-<li>Dépôt : https://github.com/campuslivre/matlivre</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq40im/same_idea_as_artcraft_applied_to_scientific/ — u/XBLAH_</li>
-</ul>
-<h3>Photostar — un éditeur photo gratuit dans le navigateur</h3>
-<p>Un éditeur photo présenté comme gratuit, sans inscription ni filigrane, fonctionnant entièrement dans le navigateur, avec ouverture et enregistrement de fichiers PSD (calques, masques, calques de réglage, styles, objets dynamiques), détourage et effacement d'objets, formats Camera RAW, HEIC et 16 bits, et fonctionnement hors ligne une fois la page chargée. Le traitement se fait localement, sauf le remplissage par IA en nuage, qui prévient avant d'envoyer quoi que ce soit. <strong>Réserve importante</strong> : rien n'indique que le logiciel soit libre — le post ne parle ni de dépôt public, ni de licence, ni de code source. Il s'agit donc d'un concurrent gratuit, pas d'un projet open source, et son annonce est un message de promotion. Le site répond.</p>
-<ul>
-<li>Site : https://photostar.io</li>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq8o5w/7_years_a_lot_of_money_and_finally_a_free/ — u/KnowledgeNo3681</li>
-</ul>
-<h3>« Everyone is wrong about ArtCraft » — une analyse à retenir</h3>
-<p>Un membre du subreddit, grahamperrin, relaie une vidéo de Tom Delalande qui démonte les titres viraux annonçant qu'ArtCraft aurait décompilé et reconstruit toute la suite Adobe en Rust. Le propos, résumé par l'auteur du post et accueilli favorablement dans les commentaires, est le suivant : aucun code propriétaire n'a été décompilé, le procédé consiste à déduire le comportement depuis l'interface puis à générer du code neuf ; l'équipe travaille par boucle de « vibecoding » (repérer une fonction manquante, l'implémenter, la tester par ligne de commande) ; et malgré des milliers de commits, la plupart des clones plafonnent entre 40 et 60 % de parité fonctionnelle, sans la profondeur ni la gestion des cas limites des originaux. C'est la remise en perspective la plus utile parue cette semaine sur ce que vaut réellement la suite — le résumé ci-dessus provenant d'un résumé automatique relayé par le post, je le signale comme non vérifié à la source vidéo.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xq9ama/everyone_is_wrong_about_artcraft_tom_delalande/ — u/grahamperrin</li>
-</ul>
-<h2>À signaler</h2>
-<ul>
-<li><strong>Les dépôts de paquets Linux sont en aperçu non signé.</strong> La page officielle consacrée à Linux indique que, pendant la phase d'aperçu public, les dépôts utilisent des réglages non signés (<code>[trusted=yes]</code> pour APT, <code>gpgcheck=0</code> pour RPM/DNF) ; la signature cryptographique des index viendra avec la publication des clés GPG officielles. En revanche, les fichiers des versions publiées sur GitHub, eux, sont bien accompagnés de signatures détachées. Autrement dit : une installation par dépôt de paquets fait aujourd'hui davantage confiance au transport qu'à une clé de publication.</li>
-<li><strong>Le lien de dépôt du fork iOS est erroné dans le post</strong> (<code>fhambonesoftware</code>), l'adresse réelle étant <code>hambonesoftware/lightcraft-iOS-pwa</code>. Sans conséquence, mais à corriger si vous citez ce projet.</li>
-<li>Aucun incident, aucune alerte de sécurité ni régression signalés dans les fils de la période.</li>
-</ul>
-<h2>Volume</h2>
-<p>27 entrées nouvelles examinées (23 posts Reddit, 3 commits du dépôt officiel, 1 version publiée), 11 retenues, 16 écartées. La collecte la plus récente s'est achevée le 7 novembre à 21 h 04 UTC sans erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
