@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — mercredi 11 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — mercredi 11 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Journée très riche en projets neufs : une trentaine d'outils libres annoncés en vingt-quatre heures, dont un lecteur de disques vinyle auto-hébergeable, un moteur d'inférence Metal pour Mac, un dictionnaire de notes vocales hors ligne et un langage de modélisation 3D publié en open source.<br />
+Côté logiciels connus : Blender 5.3, Firefox 160, Mesa 26.3, .NET 11 et OpenProject 18.0 ; Asahi Linux abandonne la licence MIT au profit de la GPLv2.<br />
+Aucune erreur de collecte signalée dans les journaux (<code>meta.json</code> vide d'incidents).</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Open Record — lecteur de musique en salle d'écoute vinyle</h3>
+<p>Un lecteur multiplateforme (navigateur, installateurs Linux et Windows, APK Android) présenté comme une « salle d'écoute » : on importe ses propres fichiers, on les range en bacs, on les joue sur une platine virtuelle. Pas de service de streaming ni de bibliothèque louée : la collection reste sur l'appareil, et l'application peut être auto-hébergée (serveur de liens de flux à monter soi-même). Préchargement des pistes suivantes, fondu enchaîné de 1 à 12 secondes, pas de compte ni de traçage.<br />
+Licence MIT. Dépôt : https://github.com/ahnafone/open-record (MIT, 0 étoile, dernière poussée le 10 novembre 2026 — projet à ses débuts) ; site : https://ahnafone.github.io/open-record/</p>
+<h3>TeXpresso — rendu LaTeX en direct</h3>
+<p>Outil de rendu continu et de remontée d'erreurs pour LaTeX, présenté sur Hacker News comme un « vrai WYSIWYG » pour une conception LaTeX libre. Il affiche le document au fil de la frappe, sans attendre des compilations complètes.<br />
+Licence MIT. Dépôt : https://github.com/let-def/texpresso (814 étoiles, dernière poussée le 1er novembre 2026). Compte tenu de son usage de LaTeX, c'est probablement l'élément le plus directement utile de cette édition.</p>
+<h3>Groundwork Finance — finances personnelles hors ligne avec assistant local</h3>
+<p>Remplacement libre de Quicken et Rocket Money : suivi de budget et de comptes exécuté sur l'ordinateur de l'utilisateur, avec un assistant IA local, sans télémétrie ni abonnement. Le post annonce la dernière grosse mise à jour du projet, porté par le père de l'auteur.<br />
+Licence GPLv3. Dépôt : https://github.com/lhamons-a11y/groundwork-finance (0 étoile, dernière poussée le 10 novembre 2026) ; site : http://www.groundworkfinance.app — projet très récent, à considérer comme non éprouvé.</p>
+<h3>Gostman — client d'API libre</h3>
+<p>Alternative à Postman couvrant REST, GraphQL, gRPC, WebSocket et MCP, avec collections stockées en fichiers YAML dans Git et valeurs secrètes tenues hors de ces fichiers. Se présente comme sans compte et sans palier payant, avec import depuis Postman, Insomnia, Bruno, OpenAPI et curl.<br />
+Licence MIT. Dépôt : https://github.com/kunalgoesbyken/gostman (78 étoiles, dernière poussée le 10 novembre 2026) ; site : https://gostman.com/</p>
+<h3>Willder — couche de contexte partagée entre applications et agents</h3>
+<p>Projet qui synchronise le contexte entre applications, agents et équipes, avec contrôle d'accès à chaque appel et coordination en temps réel. Utile pour faire travailler plusieurs agents sur une même base de connaissance sans se recopier des documents à la main.<br />
+Licence MIT. Dépôt : https://github.com/willderai/willder-core (8 étoiles, dernière poussée le 4 novembre 2026). Jeune projet, à surveiller plutôt qu'à adopter tout de suite.</p>
+<h3>cybershelf — étagères de livres et clubs de lecture asynchrones</h3>
+<p>Espace personnel pour ranger ses livres, tenir des étagères publiques ou privées et lire à plusieurs, sans dépendre d'un réseau social commercial. L'inscription est facultative pour essayer.<br />
+Site : https://cybershelf.io — le post annonce un projet libre, mais je n'ai pas trouvé de dépôt ni de licence publique : à considérer comme une annonce non vérifiable sur ce point.</p>
+<h3>Tokspur — moteur d'inférence Metal pour Mac</h3>
+<p>Moteur d'inférence écrit pour les puces Apple (Metal) avec prédiction multi-jetons native, présenté comme trois fois plus rapide que les moteurs habituels pour du travail local en 128 Go de mémoire, avec une API compatible OpenAI. Les auteurs indiquent l'avoir testé uniquement chez eux et sollicitent des essais.<br />
+Licence Apache 2.0. Dépôt : https://github.com/san-digital/tokspur (13 étoiles, dernière poussée le 9 novembre 2026).</p>
+<h3>Cosh — orchestrateur d'agents en Rust</h3>
+<p>Environnement unique réunissant plusieurs agents (Codex, Goose, etc.) dans une interface en terminal, écrit en Rust, pour lancer et coordonner des tâches parallèles.<br />
+Licence Apache 2.0. Dépôt : https://github.com/DiegoZaluski/co-sh (9 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>VoxaDub — doublage vidéo local</h3>
+<p>Chaîne complète de doublage automatique exécutée en local : transcription et alignement (Whisper/WhisperX), identification des locuteurs, traduction contextuelle (Hy-MT2) et synthèse vocale conservant la voix des intervenants (VoxCPM2). Le point soigné est l'adaptation de la durée du doublage à la durée de parole disponible, qui évite les décalages. Un doublage en direct pour YouTube est annoncé comme expérimental, via une extension Chrome.<br />
+Licence MIT. Dépôt : https://github.com/kadirb4rut/voxadub (23 étoiles, dernière poussée le 10 novembre 2026). Aucune API externe n'est nécessaire une fois les modèles téléchargés.</p>
+<h3>Rambler — journal personnel local en C++</h3>
+<p>Journal d'écriture libre, exécuté localement, présenté comme un outil pour suivre le fil de sa pensée.<br />
+Le dépôt ne déclare pas de licence reconnue par GitHub (« Other », sans identifiant SPDX) — c'est un point à vérifier avant tout usage sérieux. Dépôt : https://github.com/eoind08/Rambler (2 étoiles, dernière poussée le 3 novembre 2026).</p>
+<h3>Relinos — navigateur programmable qui transforme un site en API</h3>
+<p>Navigateur exécuté en local qui expose une API REST indépendante du langage : actions (cliquer, saisir, défiler), rendu Chromium ou requêtes HTTP simples, cache des résultats, proxys par requête, conversion HTML vers Markdown ou vers JSON structuré, routines réutilisables avec paramètres. Le post annonce aussi que l'outil passe Cloudflare et reCAPTCHA v3 — un point à prendre avec prudence, car ces mécanismes sont précisément faits pour décourager ce type d'automatisation.<br />
+Licence MIT. Dépôt : https://github.com/realsirjoe/relinos (44 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>Taskman — tableau de bord pour sessions d'agents en parallèle</h3>
+<p>Interface en terminal (Rust) qui rassemble, pour chaque tâche, la session d'agent, le ticket et la demande de fusion correspondants : utile quand on fait tourner plusieurs Claude Code ou Codex en parallèle.<br />
+Licence Apache 2.0. Dépôt : https://github.com/sanagnos/taskman (5 étoiles, dernière poussée le 9 novembre 2026).</p>
+<h3>Silos — bac à sable local pour agents</h3>
+<p>Orchestrateur en ligne de commande qui exécute des agents dans un bac à sable local, pour les isoler des fichiers et périphériques de la machine.<br />
+Site : https://siloslabs.com/ — présenté comme libre, sans dépôt mis en avant dans le post : licence et code non vérifiables en l'état.</p>
+<h3>Satori — notes vocales hors ligne sur Android</h3>
+<p>Application Android qui exécute toute la chaîne sur le téléphone : reconnaissance vocale hors ligne (sherpa-onnx, Parakeet v3 pour l'anglais et l'allemand, IndicConformer pour le malayalam), puis un petit modèle local via llama.cpp (Gemma 3 1B ou Qwen 0.8B) qui produit un titre et un résumé, relie les notes entre elles par sujet et place des rappels à partir des expressions de temps relatif (« demain matin à 9 h »). Ni compte, ni télémétrie, ni serveur ; seule connexion, le téléchargement des modèles (1,5 à 2 Go) au premier lancement.<br />
+Licence Apache 2.0, version 0.8.0. Dépôt : https://github.com/TinkeringDao/satori (3 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>Omnara — alternative libre aux agents managés de Claude</h3>
+<p>API unique pour déployer et exécuter des agents pour une équipe ou pour ses utilisateurs, quel que soit le modèle, la machine ou le nuage. Se présente comme l'équivalent libre de l'offre « Managed Agents » d'Anthropic ; le site mentionne un accompagnement par un incubateur et un palier payant à côté du code ouvert.<br />
+Site : https://www.omnara.com/ — dépôt et licence non indiqués dans le post, à vérifier avant de s'engager.</p>
+<h3>Lumtub — client YouTube avec recommandations calculées en local</h3>
+<p>Client GPL-3.0 pour Windows, macOS, Linux et Android (aperçu) : pas de compte, abonnements et historique conservés sur l'appareil, fil « Pour vous » calculé sur la machine avec la raison affichée pour chaque vidéo, lecture native par libmpv (donc économe en processeur et en batterie), proxys et DNS chiffré en option, SponsorBlock et DeArrow désactivés par défaut. Le README détaille ce qui sort de l'ordinateur. L'auteur signale honnêtement que YouTube voit toujours l'adresse IP sans proxy, et que le code a été largement écrit avec une assistance IA (conception, tests et relecture de son côté).<br />
+Le post annonce la licence GPL-3.0, mais l'API GitHub ne reconnaît pas de licence SPDX sur le dépôt : à confirmer. Dépôt : https://github.com/0x696c757a696f/lumtub (31 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>Umless — dictée locale</h3>
+<p>Dictée hors ligne « qui écrit ce que vous vouliez dire » : reconnaissance Parakeet ou Whisper suivie d'un petit modèle Qwen affiné par LoRA pour nettoyer le texte, écrit en Rust. Tout reste sur l'appareil.<br />
+Licence Apache 2.0. Dépôt : https://github.com/jatinbishla/Umless (2 étoiles, dernière poussée le 7 novembre 2026).</p>
+<h3>Magpie — passerelle de modèles pour agents de codage</h3>
+<p>Passerelle qui place au même endroit tous les modèles utilisés par les agents de codage, depuis la barre de menus : Codex sur DeepSeek, Claude Code sur Kimi, et ainsi de suite. C'est le projet le plus établi de cette sélection (plus de 33 000 étoiles).<br />
+Licence MIT. Dépôt : https://github.com/yetone/magpie (33 867 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>Timegrapher — mesure de montres mécaniques</h3>
+<p>Application libre de chronocomparateur, avec analyse battement par battement, pour mesurer la marche d'une montre mécanique.<br />
+Licence GPL-3.0. Dépôt : https://github.com/peterhudson/timegrapher (7 étoiles, dernière poussée le 10 novembre 2026).</p>
+<h3>DSATube — lecteur YouTube limité aux algorithmes et structures de données</h3>
+<p>Site libre qui ne présente que des vidéos et listes de lecture d'algorithmique (plus de 10 000 vidéos annoncées), sans contenu parasite : utile pour orienter des élèves vers une ressource cadrée. Aucune licence déclarée sur le dépôt — point à clarifier avant réutilisation du code.<br />
+Dépôt : https://github.com/aadesh121/DSATube (5 étoiles, dernière poussée le 10 novembre 2026) ; site : https://dsatube.pages.dev</p>
+<h3>MbSCADA — supervision Modbus en Rust</h3>
+<p>Client Modbus et petite supervision écrite en Rust avec Tauri 2 : Modbus TCP, RTU et ASCII, aller-retour fidèle sur les fichiers .mbp/.mbw, règles par ligne, schémas synoptiques, mini-graphiques et journal CSV.<br />
+Licence MIT. Dépôt : https://github.com/kostyk348/mbscada-rs (5 étoiles, dernière poussée le 8 novembre 2026). La description du dépôt est en russe.</p>
+<h3>Téléchargeur YouTube en Python</h3>
+<p>Script Python qui télécharge vidéos et listes de lecture en suivant les invites du terminal. Rien de neuf dans le principe (yt-dlp fait la même chose), mais le projet est actif et accessible à qui veut un exemple de code simple.<br />
+Licence MIT. Dépôt : https://github.com/pH-7/Download-Simply-Videos-From-YouTube (406 étoiles, dernière poussée le 31 octobre 2026).</p>
+<h3>nowPlayingDesktops — vignette « lecture en cours » sur le fond d'écran</h3>
+<p>Carrelage de style verre dépoli affichant la pochette et le titre en cours de lecture sur le fond d'écran du bureau, pour Spotify ou un lecteur local. Annoncé MIT, en cours de développement.<br />
+Le post ne donne aucun dépôt ni lien : je n'ai pas pu vérifier le code. Le même auteur décrit le projet comme « codé à la vibe » avec Cursor.</p>
+<h3>Outil libre de capture et d'archivage de PDF</h3>
+<p>Le fil annonce un outil qui reconstruit des PDF interrogeables à partir de documents verrouillés en lecture seule ou en export, en capturant le rendu affiché.<br />
+Le post ne contient ni description, ni nom, ni lien vers un dépôt : l'annonce est invérifiable en l'état, je la signale pour mémoire.</p>
+<h3>TimeNet — infrastructure de données pour modèles temporels</h3>
+<p>Infrastructure libre pour télécharger et explorer des jeux de séries temporelles dans un format standardisé, destinée aux modèles de fondation temporels.<br />
+Licence MIT. Dépôt : https://github.com/OpenTSLM/TimeNet (38 étoiles, dernière poussée le 10 novembre 2026). Projet de recherche : utile si vous manipulez des séries de mesures, mais sans interface grand public.</p>
+<h3>Composez vos propres agents d'ordinateur</h3>
+<p>Dépôt de base pour construire des agents capables de piloter une interface graphique, annoncé comme entièrement libre et gratuit.<br />
+Licence MIT. Dépôt : https://github.com/openlybuilt/computer-use (3 étoiles, dernière poussée le 7 novembre 2026). Le dépôt ressemble pour l'instant à un ensemble de bases de travail plutôt qu'à un produit fini.</p>
+<h3>PPSCAD — langage de modélisation 3D désormais ouvert</h3>
+<p>Le langage qui décrit les modèles paramétriques de PrintParams (pièces imprimables, bacs Gridfinity) reçoit une spécification publique, une suite de tests de conformité et un interpréteur publié sous licences ouvertes. Un programme déclare ses paramètres et construit un solide à partir de primitives, de booléens et de transformations ; le site transforme chaque paramètre en contrôle d'interface.<br />
+Annonce : https://printparams.com/blog/ppscad-open-source/ — l'auteur cite des « licences ouvertes » sans les nommer, et les modèles restent liés à la plateforme : c'est le langage qui est ouvert, pas l'atelier.</p>
+<h3>Clé de sécurité FIDO2 auto-construite</h3>
+<p>Projet de clé matérielle libre compatible FIDO2, annoncé pour environ 30 yuans de pièces. Intéressant comme exercice d'électronique et de sécurité, à condition de savoir souder et de ne pas confier ses comptes critiques au montage.<br />
+Lien : https://blog.lyc8503.net/en/post/diy-fido-key/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Blender 5.3</strong> : nouvelle version stable du logiciel de modélisation 3D, avec reconstruction de rayons DLSS 4.5 côté NVIDIA et Vulkan désormais par défaut. https://www.phoronix.com/news/Blender-5.3-Released</li>
+<li><strong>.NET 11</strong> annoncé : nouvelle version majeure de la plateforme libre de Microsoft. https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/</li>
+<li><strong>Firefox 160</strong> : reconnaissance vocale intégrée, lecture des fichiers MKV contenant de l'audio FLAC, MP3 ou PCM, et arrivée d'une « mini-fenêtre » (fonctionnalité encore en développement). https://www.phoronix.com/news/Firefox-160-Released ; présentation de la mini-fenêtre : https://feed.itsfoss.com/link/24361/17521432/firefox-mini-window</li>
+<li><strong>Mesa 26.3</strong> : version publiée avec l'extension VK_AMD_anti_lag pour le pilote RADV et de nombreuses améliorations Vulkan. https://www.phoronix.com/news/Mesa-26.3-Released</li>
+<li><strong>exfatprogs 1.4.4</strong> : accélération de la création de systèmes de fichiers exFAT. https://www.phoronix.com/news/exfatprogs-1.4.4</li>
+<li><strong>openSUSE Tumbleweed</strong> bascule sur l'installateur Agama. https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agama</li>
+<li><strong>OpenProject 18.0</strong> : nouvelle version du logiciel libre de gestion de projet, centrée sur l'accessibilité (gestion des couleurs, accès à l'information), avec diagrammes de Gantt et tableaux Scrum et Kanban. https://alm.developpez.com/actu/388928/La-version-18-0-du-logiciel-de-gestion-de-projet-OpenProject-vient-d-etre-lancee-rendant-la-gestion-de-projet-plus-accessible-avec-diagrammes-de-Gantt-tableaux-Scrum-et-Kanban/</li>
+<li><strong>ONLYOFFICE 10.0</strong> : la suite bureautique corrige 44 vulnérabilités et renforce le contrôle des outils d'IA ainsi que les réglages de sécurité par défaut. https://onlyoffice.developpez.com/actu/388897/La-derniere-version-de-la-suite-bureautique-en-ligne-ONLYOFFICE-10-0-corrige-44-vulnerabilites-et-renforce-le-controle-des-outils-d-IA-et-les-parametres-de-securite-par-defaut/</li>
+<li><strong>Asahi Linux abandonne la licence MIT pour la GPLv2 ou ultérieure</strong> sur l'ensemble de ses dépôts, après avoir constaté un « blanchiment de licence » assisté par IA. À noter comme précédent dans l'usage des contributions générées. https://linux.developpez.com/actu/388921/Asahi-Linux-abandonne-MIT-et-adopte-pleinement-la-licence-GPL-apres-avoir-detecte-un-blanchiment-de-licence-assiste-par-IA-L-annonce-survient-apres-la-sortie-d-Omarchy-4-5-qui-s-appuie-sur-l-installateur-Asahi/</li>
+<li><strong>KORA OS</strong> : distribution de bureau Linux annoncée par les auteurs de GameOS, articulée autour d'« espaces de travail neuronaux », avec AppArmor pour le cloisonnement. Un élément majeur n'est pas open source, et le système n'est pas encore disponible : annonce à suivre, pas à installer. https://www.phoronix.com/news/KORA-OS</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>AgentMon Live</strong> (Codenotary) : greffon pour Claude Code qui affiche en direct ce que font les agents sur la machine (actions, modèles, coûts). Annoncé gratuit et libre, s'installe par <code>/plugin install agentmon-live --marketplace codenotary/agentmon-live</code>. https://codenotary.com/agentmon — l'éditeur vend par ailleurs une offre d'entreprise : la gratuité annoncée porte sur le greffon.</li>
+</ul>
+<h2>Volume</h2>
+<p>86 entrées examinées (45 dans le journal principal, complété par LinuxFr, Journal du hacker, Framablog, Phoronix, It's FOSS et Developpez.com), 39 retenues, 47 écartées. Le taux élevé de rejet tient à la nature de la journée : beaucoup de billets d'opinion et de brèves d'actualité (dérive du code généré par IA, fuites de licences, actualité boursière) sans annonce de logiciel utilisable. Les journaux Phoronix et Developpez.com ne retiennent presque rien : ils couvrent surtout du matériel, du noyau et de l'actualité d'entreprise.</p>
+<footer>Édition du mercredi 11 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
