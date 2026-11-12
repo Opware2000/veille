@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/macapps — vendredi 13 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../macapps.xml" title="r/macapps">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/macapps — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Édition très libre et très locale : six projets gratuits et ouverts dont deux qui font tourner un modèle sur la machine (Yogurt pour les comptes rendus de réunion, Ghostwriter pour l'autocomplétion), un téléprompteur et un terminal natif. Le reste est à achat unique, de 5 à 15 dollars, et c'est le prix de trois d'entre eux qui fait la différence : Haptiker à 4,99 $, Scrub Before Send à 7,99 $ jusqu'à la fin novembre, Snaggy à 9 $. Quatre nouveautés propriétaires sont écartées, faute de tarif public ou parce qu'elles coûtent trop cher.</p>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li>
+<p><strong>Yogurt</strong> — prendre des notes de réunion sans envoyer ses appels à un nuage. L'application tourne en arrière-plan, ne rejoint jamais la visioconférence, transcrit, résume et répond aux questions sur la réunion avec des modèles embarqués ; rien ne quitte le Mac, et un serveur MCP local permet de confier à un modèle de frontière ce qu'on veut bien lui donner. C'est l'alternative libre et gratuite à Granola, avec les réserves que son auteur annonce lui-même : Granola reste meilleur sur la qualité de résumé des modèles distants, le partage en équipe et l'application mobile, Otter pour la collaboration en direct. Gratuit, sans palier payant, licence MIT, 924 étoiles, dépôt actif (dernière modification le 12 novembre 2026) ; le disque d'installation est signé et notarié : https://github.com/FrigadeHQ/yogurt</p>
+</li>
+<li>
+<p><strong>Procopticon</strong> — remplacer le Moniteur d'activité par un vrai gestionnaire de processus. Il ajoute un arbre des processus, une centaine de colonnes, des filtres par expression régulière ou en JavaScript, des filtres enregistrés, de la mise en évidence et des alertes, et pour chaque processus les fils d'exécution, les fichiers ouverts, les prises réseau, les modules chargés, les régions mémoire, les variables d'environnement et les détails de signature de code ; il gère aussi les tâches launchd et les éléments d'ouverture. Gratuit, licence MIT, aucune version payante ni achat intégré, 18 étoiles, dernière modification le 12 novembre 2026. Deux réserves à connaître : l'application exige macOS 26 ou plus récent, et son auteur déclare franchement que la quasi-totalité du code a été écrite par une intelligence artificielle (le fichier AI-POLICY.md du dépôt donne le détail — c'est une information de confiance, pas un défaut en soi) : https://github.com/nicholas-ochoa/Procopticon</p>
+</li>
+<li>
+<p><strong>Infinity Terminal</strong> — un terminal natif pour ceux qui font tourner dix sessions à la fois. Sa grille fait toujours deux rangées de haut et autant de colonnes qu'on veut : chaque volet garde sa taille pleine et l'on se déplace latéralement, avec une mini-carte, des volets nommés et colorés (l'auteur garde le rouge pour la production), une couleur stable par hôte SSH et la restauration de la disposition après redémarrage. Quelques détails pensés pour les agents : la sélection à la souris fonctionne dans Claude Code malgré sa capture du pointeur, et ⌥⌘C recolle en une ligne une commande que Claude Code a coupée. Écrit en Swift et AppKit sur SwiftTerm, signé et notarié, licence MIT, gratuit, 17 étoiles, dépôt modifié le 12 novembre 2026 ; installation par <code>brew install --cask bujna94/tap/infinity-terminal</code>, démonstration interactive sur le site : https://github.com/bujna94/infinityTerminal</p>
+</li>
+<li>
+<p><strong>Captain's Log</strong> — dicter ses pensées et les retrouver en Markdown. L'application enregistre la voix, la transcrit avec Whisper puis la met en forme avec un modèle local (Qwen) : elle corrige les erreurs de transcription, ajoute les paragraphes, rétablit les noms d'après une liste personnelle et range les notes en catégories. Tout se passe sur le Mac, et les notes sont des fichiers Markdown avec métadonnées, donc lisibles dans Obsidian. Gratuit et ouvert, publié par Koen van Gilst le 10 novembre 2026 ; installation par <code>brew install --cask vnglst/tap/captainslog</code>. Deux réserves : l'auteur n'a pas payé les frais de développeur Apple, la version Homebrew n'est donc <strong>pas notariée</strong>, et l'API de GitHub ne reconnaît pas la licence du dépôt (licence non identifiée, à lire avant réutilisation). Le dépôt est github.com/vnglst/CaptainsLog, le billet de présentation est plus lisible que le dépôt : https://koenvangilst.nl/lab/captains-log</p>
+</li>
+<li>
+<p><strong>Ghostwriter</strong> — l'autocomplétion dans toutes les applications du Mac, avec un modèle qui tourne sur la machine. Les mots suivants apparaissent en gris au curseur (Mail, Messages, Notes, Slack, navigateurs), la tabulation accepte un mot et la touche au-dessus accepte la suite ; le modèle est Gemma servi par llama.cpp, sans compte ni mesure d'audience, et les données d'apprentissage restent dans un fichier local effaçable. Il corrige aussi les fautes en place et reformule, raccourcit ou traduit le passage sélectionné. Gratuit, licence GPL-3.0, 14 étoiles, dernière modification le 12 novembre 2026. À noter : le même projet existe sous deux dépôts (mshll et wormadev) — j'ai retenu le plus actif, mais je ne peux pas dire lequel est la source d'origine. Son auteur reconnaît que Cotypist est plus mûr et mieux testé (mais limité à 100 mots par jour puis par abonnement) : https://github.com/mshll/ghostwriter</p>
+</li>
+<li>
+<p><strong>NotchPrompter</strong> — un téléprompteur qui se glisse sous l'encoche du MacBook et suit la voix. Le script défile au rythme de la lecture, les mots déjà dits s'effacent, une phrase sautée est retrouvée, un « euh » ne fait pas déraper le texte ; la reconnaissance vocale tourne par défaut sur le Mac (les serveurs d'Apple ne sont sollicités que si on l'autorise). Il enregistre la caméra, l'écran ou les deux avec un fichier de sous-titres .srt par prise, propose un éclairage d'appoint en blanc ou en noir, se cache du partage d'écran, et lit des scripts Markdown synchronisés par iCloud. Gratuit et ouvert, 680 étoiles sur le dépôt, dernière modification le 7 octobre 2026 ; exige macOS 15 ou plus récent. La licence n'est pas identifiée par l'API de GitHub alors que le site annonce de l'open source — à vérifier avant réutilisation. Son auteur le compare lui-même à Notchie (29,99 $ sur le Mac App Store, incluse dans Setapp) : https://github.com/jpomykala/NotchPrompter</p>
+</li>
+<li>
+<p><strong>ChargeWatt</strong> — savoir à quelle vitesse le MacBook charge réellement, dans la barre de menus. L'application lit le contrôleur de batterie et affiche la puissance mesurée (et non estimée), la tension et le courant, la répartition de la puissance de l'adaptateur entre l'ordinateur et la batterie, et conserve chaque charge pour comparer adaptateurs et câbles. Gratuit sans abonnement ; l'option Pro à 4,99 $ une fois (sur Mac, iPhone, iPad et Apple Watch d'un même achat) ajoute les widgets de bureau, la comparaison des chargeurs et des réglages de barre de menus. Complémentaire de coconutBattery (meilleur sur l'état de santé de la batterie) et d'AlDente (qui limite la charge, ce que ChargeWatt ne fait pas) : https://apps.apple.com/app/id6820282553</p>
+</li>
+<li>
+<p><strong>Haptiker</strong> — changer le volume, la luminosité ou le rétroéclairage du clavier en glissant un doigt sur les bords du pavé tactile. Le bord gauche règle la luminosité de l'écran sous le curseur, <strong>y compris un écran externe</strong> par DDC/CI sur Mac Apple Silicon, le bord haut le rétroéclairage, le bord bas permet de changer d'application. Fonctionne sur Mac Intel comme Apple Silicon, à partir de macOS 12. 4,99 $ une fois (prix habituel 7,99 $), sans abonnement ni compte, toutes les fonctions gratuites sept jours sans carte, une licence pour trois Macs, application signée et notariée, aucun suivi. Face à SLIDR (gratuit et ouvert, donc imbattable sur le prix) et TrackEdge : c'est la gestion des écrans externes qui distingue Haptiker : https://haptiker.app</p>
+</li>
+<li>
+<p><strong>Seek</strong> — retrouver un fichier par ce qu'il contient, pas par son nom. Recherche en langage courant, recherche photo sur l'appareil (un modèle d'environ 375 Mo est téléchargé à l'installation, puis tout reste local), reconnaissance du texte dans les captures d'écran et les PDF scannés, détection des doublons stricts, regroupement des téléchargements par provenance, nettoyage proposé avec confirmation et annulation. Achat unique sans abonnement : 9 $ pour un Mac, 18 $ pour trois, 29 $ pour cinq ; téléchargement direct, exige macOS 14 ou plus récent. Face à Path Finder (plus personnalisable) et ForkLift (meilleur pour le travail sur serveurs distants), Seek vise la recherche et le rangement local : https://useseek.app</p>
+</li>
+<li>
+<p><strong>Snaggy</strong> — faire de ⌘D le même geste dans tous les navigateurs et ranger les liens automatiquement. Le raccourci est capté seulement quand un navigateur est au premier plan, dans quinze navigateurs (Safari, Chrome, Arc, Firefox, Zen, Dia, Brave, Edge, Orion, Vivaldi, Opera…) ; l'application lit la page et la classe elle-même, l'opération se faisant sur le Mac par l'intelligence embarquée d'Apple (macOS 26 requis ; sur Sonoma, Sequoia et Mac Intel, le classement se fait par site). Elle importe les signets et les onglets épinglés d'Arc avec leurs dossiers, propose un lecteur intégré sans publicité, et expose un serveur MCP pour que Claude, Codex ou Cursor cherchent dans les liens. 9 $ une fois, sans abonnement, paiement unique au lieu de l'abonnement de Raindrop.io : https://www.reddit.com/r/macapps/comments/1xuk3hu/snaggy_turn_d_in_every_browser_into_one_bookmark/</p>
+</li>
+<li>
+<p><strong>Scrub Before Send</strong> — nettoyer une image avant de l'envoyer. L'application repère dans une photo ou une capture les éléments personnels (adresses de courriel, numéros de téléphone, visages, coordonnées GPS cachées dans les métadonnées) et aide à les effacer, sans rien téléverser. 7,99 $ jusqu'à la fin novembre (12,99 $ ensuite), achat unique, partage familial, un seul achat pour Mac, iPhone et iPad. Son auteur reconnaît qu'ExifCleaner, gratuit et ouvert, suffit si l'on ne veut que retirer les métadonnées, et que CleanShot X reste meilleur pour capturer et annoter : https://apps.apple.com/us/app/scrub-before-send/id6807475333</p>
+</li>
+<li>
+<p><strong>ThreeSweep</strong> — changer de fenêtre sur macOS en un seul geste. Trois doigts vers la gauche ouvrent Mission Control et le relâchement sélectionne la fenêtre sous le curseur, sans clic séparé ; le nombre de doigts est réglable pour ne pas voler le geste des espaces, et la distance de déclenchement se règle. Sept jours gratuits sans carte, puis 10 $ une fois. Réserves : exige macOS 27 et un Mac Apple Silicon avec pavé tactile multi-touch, et l'application demande l'accès « Contrôle des appareils et accès aux données » — elle précise ne pas enregistrer l'écran ni les frappes. Le gain annoncé (2,6 fois plus rapide qu'un balayage suivi d'un clic) vient de ses propres mesures, trente essais par méthode, à prendre comme telles : https://nonnontrivial.tech/three-sweep/</p>
+</li>
+<li>
+<p><strong>Hoy 1.0</strong> — déposer un fichier, un enregistrement d'écran ou une note vocale sur le visage d'une personne dans la barre de menus, et le tour est joué. Tout passe par CloudKit, donc par l'iCloud de chacun : aucun compte, aucun serveur intermédiaire. La version 1.0 apporte des dizaines de fonctions et des centaines de corrections depuis la pré-version, et les versions iPhone et iPad entrent en test le 16 novembre. La version gratuite suffit à l'usage de base ; les fonctions « Pro » sont payantes, avec une remise de 30 % au lancement sur Product Hunt — le message ne donne pas le tarif, à vérifier avant d'acheter : https://www.producthunt.com/products/hoy-for-mac</p>
+</li>
+<li>
+<p><strong>TrustMe</strong> (bibliothèque) — une bibliothèque Swift qui remplace la fenêtre brutale « autoriser l'accès au microphone ? » par un panneau flottant sous les Réglages système, du type de celui de l'intégration de Codex : on y glisse l'application dans la liste, puis la validation passe par le mot de passe ou Touch ID. Utile à qui développe un outil Mac qui demande une autorisation. Gratuit, licence MIT, dépôt récent (dernière modification le 6 novembre 2026) et encore peu suivi (1 étoile) : https://github.com/piercefreeman/trustme</p>
+</li>
+</ul>
+<p>Nouveautés propriétaires écartées à cause du prix, faute d'entrer dans le filtre : <strong>Outbound</strong>, coupe-feu par application, 39 $ une fois pour deux Macs sans essai — l'auteur y voit l'alternative à Little Snitch, qui coûte environ 59 € ; <strong>ProMax Display</strong>, qui étend les applications en plein écran dans la bande à côté de l'encoche, sans tarif publié sur son site et au prix d'une désactivation partielle de la protection SIP ; <strong>Folia Files</strong>, gestionnaire de fichiers à volets multiples et opérations annulables, marqué « achat unique » mais sans prix publié ; <strong>Summa</strong>, qui explique les allusions littéraires pendant la lecture, sans tarif lisible dans le message (le corps des publications est tronqué par le collecteur).</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li>
+<p><strong>Shottr 1.10</strong> — la capture de zone avancée est refaite : l'écran se fige pendant la sélection, une loupe (touche L) et un zoom plein écran ×10 (touche Z) facilitent le travail au pixel, le curseur ralentit avec ⌘, les flèches ou WASD déplacent au clavier et ⇧ force un carré. « Restaurer la capture précédente » évite de perdre un réglage d'un instant à l'autre, l'ancien comportement restant accessible dans les préférences. L'utilitaire reste gratuit : https://alternativeto.net/software/shottr/about/</p>
+</li>
+<li>
+<p><strong>Viable 1.1 build 100</strong> — l'application gratuite de Howard Oakley pour virtualiser macOS sur Mac Apple Silicon reçoit son guide d'aide complet et un garde-fou contre le lancement deux fois de la même machine virtuelle. L'auteur a poussé ses essais jusqu'à faire tourner deux machines virtuelles en parallèle depuis une seule instance, ce qui demande au moins trois cœurs et 12 Go de mémoire à chacune : https://eclecticlight.co/2026/11/12/viable-1-1-build-100-has-a-new-help-book-and-tweaks/</p>
+</li>
+<li>
+<p><strong>Firefox 160</strong> — le lecteur d'image dans l'image gagne un réglage de vitesse (0,25 à 2 fois), les « mini-fenêtres » détachent un onglet ou une portion de page dans une fenêtre toujours au premier plan, et les entrées d'historique se glissent directement depuis le panneau latéral vers la barre d'onglets : https://alternativeto.net/news/2026/11/firefox-160-adds-mini-windows-feature-mailto-blocking-option-and-pip-playback-speed-control/</p>
+</li>
+<li>
+<p><strong>Homebrew</strong> — deux cask nouveaux dans la fenêtre examinée. <strong>KiwiDesk 4.2.1</strong>, gestionnaire de fenêtres en mosaïque natif, sept dispositions, réglages, Lua et interface en ligne de commande, qui n'utilise que l'accessibilité et <strong>ne désactive jamais SIP</strong> (source disponible plutôt que licence libre reconnue, 246 étoiles, dépôt modifié le 12 novembre 2026) : https://github.com/kiwicanopy/kiwidesk. <strong>DevTools 2.11.0</strong>, une boîte à outils de développeur en application de bureau (317 étoiles, dépôt modifié le 11 novembre 2026) dont l'API de GitHub ne reconnaît pas la licence : https://github.com/me-shaon/devtools</p>
+</li>
+<li>
+<p><strong>Mises à jour d'applications suivies</strong> — iTerm2 3.7 (version nocturne du 12 novembre), Obsidian 1.15.1, My TouchBar My Rules 0.28, Proton Drive 3.1.1, Simple Comic 1.12.0, Passepartout 3.12.5, Viable 11a. Le reste du lot Homebrew est de l'entretien courant (navigateurs en version nocturne, outils commerciaux, jeux) que je ne détaille pas : sur les 80 entrées du flux Homebrew de la fenêtre, sept sont retenues ci-dessus.</p>
+</li>
+</ul>
+<h2>Volume</h2>
+<p>203 entrées examinées, toutes nouvelles pour la veille (31 du journal r/macapps — Reddit, Hacker News et Lobsters confondus — et 172 des huit journaux complémentaires), 24 retenues, 179 écartées. Le taux de rétention très bas des journaux complémentaires est normal : Product Hunt et les flux généralistes Apple (9to5Mac, MacRumors) publient surtout des brèves, des promotions et des résultats financiers, et le journal Hacker News / Lobsters de cette veille ne contient que des nouveautés Mac ; Homebrew ne produit presque que des rafales de versions. La dernière collecte n'a signalé aucune erreur (meta.json vide).</p>
+<footer>Édition du vendredi 13 novembre 2026 — <a href="https://opware2000.github.io/veille/macapps.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

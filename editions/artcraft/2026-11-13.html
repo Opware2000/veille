@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — vendredi 13 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le dépôt officiel prépare la <strong>0.42.1</strong>, qui ajoute enfin un contrôle de mise à jour dans l'application (menu Aide → Rechercher les mises à jour) : la version reste toutefois annoncée au dépôt, aucune publication n'est encore sortie.</li>
+<li>Une journée pauvre côté subreddit : vingt-cinq messages, essentiellement des demandes de fonctionnalités (Power BI, gestionnaire de polices, équivalent d'Adobe Bridge, planification de projet) et des questions de support, sans réalisation ni information nouvelle.</li>
+<li>Les seuls éléments retenus hors version sont un rapport de bogues détaillé sur les applications macOS et la limite d'import ODS de GridCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft préparerait une 0.42.1 avec contrôle de mise à jour intégré</h3>
+<p>Le dépôt <code>storytold/artcraft</code> a reçu le 12 novembre à 2 h 36 UTC un commit qui ajoute <strong>Aide → Rechercher les mises à jour…</strong> et relève le numéro de version à <strong>0.42.1</strong>. Le message de la modification explique le manque : le menu Aide ne portait que des actualités, sans moyen de vérifier l'existence d'une version plus récente, et la version Flatpak ne peut pas invoquer le mécanisme de mise à jour de l'hôte. La nouvelle fonction couvre donc les vérifications en arrière-plan, l'affichage de la version courante et de la version disponible, un bouton explicite pour mettre à jour et redémarrer, l'état d'avancement et les cas d'échec, avec un repli vers la page des publications ; les utilisateurs de la version web se voient proposer un rechargement. Un commit correctif, une demi-heure plus tard, aligne le fichier de configuration de la version macOS sur la 0.42.1 — sans lui, la construction macOS aurait annoncé la version précédente.</p>
+<p><strong>Réserve importante</strong> : il s'agit du code poussé sur la branche principale, pas d'une version publiée. La dernière publication reste la <strong>0.41.1 du 7 novembre</strong> (l'API GitHub ne liste, en releases comme en étiquettes, rien de plus récent), et le launcher continue donc de distribuer la 0.41.1. À vérifier dans les jours qui viennent : la 0.42.1 devrait apparaître côté launcher et site de l'éditeur, avec le contrôle de mise à jour côté application de bureau.</p>
+<ul>
+<li>Commit : https://github.com/storytold/artcraft/commit/4ecd4b7eea0e5e5e516ce6b99247d5b22aff75f0 (<a href="https://github.com/storytold/artcraft/pull/2835">https://github.com/storytold/artcraft/pull/2835</a>) et correctif macOS <a href="https://github.com/storytold/artcraft/pull/2836">https://github.com/storytold/artcraft/pull/2836</a></li>
+<li>Dépôt : https://github.com/storytold/artcraft — 40 825 étoiles et 715 tickets ouverts au moment de la vérification</li>
+</ul>
+<h3>Le reste du dépôt : entretien courant</h3>
+<p>Les quatre autres commits neufs de l'intervalle sont de l'entretien, sans effet visible pour l'utilisateur : passage des actions d'intégration continue aux actions maintenues par StepSecurity, exécution de Harden-Runner sur chaque tâche, et un nettoyage d'un dernier avertissement SonarCloud (<code>setActiveTab</code> renvoyait systématiquement <code>true</code> sans que personne ne lise le résultat). Rien à signaler de ce côté.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p>Rien de nouveau dans l'intervalle. Les messages de la journée portent tous sur des applications <strong>à créer</strong> — Power BI et Power Query, un gestionnaire de polices, un équivalent d'Adobe Bridge pour parcourir les images, un clone de MS Project ou Primavera, un outil de logigrammes, un « Eletric Craft » calqué sur Eplan — sans qu'aucun ne renvoie à un projet existant, à un greffon ou à un dépôt. Il en va de même pour la proposition d'u/Hoangduong314 de fusionner PhotoCraft, VectorCraft et DesignCraft dans un espace de travail unique à la manière de StudioLink d'Affinity, et pour celle d'u/rswwalker de découper la suite en modules réutilisables : ce sont des orientations souhaitées, sans réponse de l'équipe ni engagement.</p>
+<p>À noter tout de même, parce que la question revient souvent : la publication d'u/Born_In_Peace « Crafting Apps: seventeen open-source creative apps from ArtCraft » n'annonce rien de nouveau — le lien pointe vers la page <code>getartcraft.com/apps</code>, déjà connue.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable. Aucune actualité marquante des logiciels comparables (ComfyUI, InvokeAI, Krita AI Diffusion) dans les dernières vingt-quatre heures : les résultats remontés sont des pages de référence et des comparatifs, pas des publications.</p>
+<h2>À signaler</h2>
+<h3>Bogues signalés sur les applications macOS</h3>
+<p>u/plugsnpixels, qui dit installer toutes les applications chaque jour, détaille plusieurs désagréments sur les versions macOS. Dans <strong>PhotoCraft</strong>, avec plusieurs images ouvertes en même temps pour un montage, l'interface se confond : le glisser-déposer d'une image sur une autre fait permuter les fenêtres et disparaître des fenêtres flottantes, l'image sélectionnée apparaît aussi en onglet en arrière-plan (fermer l'onglet ferme la fenêtre, même avec l'option « ouvrir les documents en onglets » décochée), et les boîtes de dialogue s'affichent derrière la fenêtre active. Dans <strong>AniCraft</strong>, il ne trouve aucune commande d'enregistrement du projet dans l'interface, le raccourci Cmd-S fonctionnant seul. Dans <strong>WordCraft</strong>, le curseur reste parfois bloqué dans la zone d'en-tête selon le type de document créé, sans moyen évident d'en sortir. Ce sont des retours d'utilisateur, non reproduits ici ni confirmés par l'équipe ; ils n'en restent pas moins les premiers signalements portant sur AniCraft depuis sa sortie, ce qui a son intérêt pour qui voudrait l'essayer maintenant.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xuj0hr/random_issues_and_odd_behavior/ — u/plugsnpixels</li>
+</ul>
+<h3>GridCraft — l'import ODS reste partiel</h3>
+<p>u/Huntakillaz rapporte avoir tenté d'ouvrir un classeur LibreOffice Calc dans <strong>GridCraft</strong> et cite le message de l'application : « import ODS des données seules : les formules deviennent leur résultat enregistré et ne sont pas recalculées ; la mise en forme d'origine, les graphiques, les images et les autres fonctions ne sont pas importés ; enregistrer un nouveau fichier .xlsx ; l'enregistrement en ODS n'est pas pris en charge ». Autrement dit, le format ouvert d'OpenDocument ne sert aujourd'hui que de porte d'entrée en lecture de valeurs, et il faut passer par le format de Microsoft pour enregistrer. C'est une limite fonctionnelle réelle, pas un défaut d'affichage — utile à savoir avant de compter sur GridCraft pour travailler en ODF. Sa question sur l'ajout éventuel de l'ODF en écriture reste sans réponse à cette heure.</p>
+<ul>
+<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xucpmq/will_artcrafts_version_of_wordexcel_etc_be/ — u/Huntakillaz</li>
+</ul>
+<h2>Volume</h2>
+<p>29 entrées examinées (25 messages du subreddit entre le 11 novembre 22 h 29 et le 12 novembre 21 h 31 UTC, 4 commits du dépôt officiel ; aucun élément neuf dans les journaux des publications et de la chaîne YouTube du fondateur), <strong>3 retenues</strong> (une nouveauté annoncée dans le dépôt, deux points « À signaler »), 26 écartées — soit un taux de rétention d'environ 10 %, conforme à la nature du subreddit ces derniers jours, où dominent demandes de fonctionnalités et questions de support. La collecte du 12 novembre à 22 h 04 UTC s'est terminée sans erreur.</p>
+<footer>Édition du vendredi 13 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
