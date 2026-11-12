@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — jeudi 12 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Vingt-cinq éléments retenus, dominés par l'outillage d'agents et d'IA locale : trois projets de ce lot faisaient déjà plus de 5 000 étoiles.</li>
+<li>Les deux plus directement utiles pour vous sont <strong>FilmCraft</strong> (monteur vidéo libre en Rust, 18 000 étoiles, encore en alpha) et <strong>ZeGrapher v4</strong> (traceur de courbes réécrit, export PDF/SVG à la taille physique).</li>
+<li>La dernière collecte s'est terminée sans erreur. Phoronix et Developpez n'ont rien apporté de retenable (noyau, pilotes, microcode, actualité financière de l'IA).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>FilmCraft — monteur vidéo non linéaire, écrit de zéro en Rust.</strong><br />
+Un logiciel de montage complet (piste chronologique, effets, export) présenté comme une alternative libre à Premiere, distribué en version 0.19.0 alpha. Le dépôt est <code>storytold/filmcraft</code> — la même organisation que l'éditeur d'ArtCraft, ce qui n'est pas un hasard : c'est une équipe qui sait mener un logiciel graphique. Licence Apache-2.0, gratuit, 18 077 étoiles, dernière activité le 11 novembre. À essayer mais à ne pas confier à un usage critique : le projet n'a que six semaines et la version annoncée est une alpha.<br />
+Source : https://github.com/storytold/filmcraft — page de téléchargement : https://filmcraft.tech/ (site tiers, l'amont reste le dépôt GitHub).</p>
+<p><strong>Dawarich — historique de déplacement auto-hébergé, alternative à Google Timeline.</strong><br />
+L'auteur, développeur Ruby, présente après deux ans et demi de travail un suivi de localisation qui tourne sur votre serveur : import de l'export Google Takeout, des traces OwnTracks, GPX, GeoJSON, KML et Foursquare, puis consultation jour par jour. Licence AGPL-3.0, gratuit, 10 933 étoiles, dernière activité le 9 novembre.<br />
+Source : https://github.com/Freika/dawarich</p>
+<p><strong>VibeOffice — suite bureautique dans le navigateur, fichiers .docx, .xlsx et .pptx.</strong><br />
+Rien à installer, aucun compte, aucun serveur : les documents restent sur la machine et l'interface assume une esthétique année 2000. Apache-2.0, gratuit, 1 320 étoiles, dernière activité le 9 novembre. Réserve : la page du projet est servie en HTTP simple, et l'auteur signale lui-même que certaines fonctions du navigateur (collage, chiffrement des fichiers) en sont désactivées.<br />
+Source : https://github.com/tcchen2026/VibeOffice — application : https://vibeoffice.work/</p>
+<p><strong>Whisperstream — dictée vocale entièrement locale, Windows et macOS.</strong><br />
+L'application transcrit à la voix et nettoie le texte (un petit modèle affiné sur Qwen retire les hésitations et applique les corrections dictées), sans jamais envoyer d'audio dans le nuage. Elle sait aussi lire à voix haute les réponses de Claude Code ou Codex. Licence GPL-3.0, gratuit. Incertitude à signaler : le dépôt ne porte que 22 étoiles et sa dernière poussée date du 29 octobre, alors que le site annonce une prise en charge macOS que le code ne montre pas encore clairement — le rythme du dépôt est en retard sur le discours commercial.<br />
+Source : https://github.com/lanreal-io/whisperstream — site : https://whisperstream.io</p>
+<p><strong>Nib — correcteur d'orthographe et de grammaire hors ligne pour macOS.</strong><br />
+Une application de barre de menus plus une extension de navigateur, qui propose des corrections sans envoyer le texte à un service distant. Licence MIT, gratuit ; dépôt créé le 11 novembre, donc tout jeune (1 étoile). À suivre plutôt qu'à adopter tout de suite.<br />
+Source : https://github.com/demirelo/nib</p>
+<p><strong>Yogurt — comptes rendus de réunion privés, alternative libre à Granola.</strong><br />
+L'application écoute en arrière-plan sans rejoindre l'appel, transcrit et résume avec des modèles locaux ; les enregistrements ne quittent pas la machine, et un serveur MCP local permet de confier volontairement une note à un modèle frontalier. Licence MIT, gratuit, 374 étoiles, dernière activité le 11 novembre.<br />
+Source : https://github.com/FrigadeHQ/yogurt</p>
+<p><strong>Pots — un « collègue » IA qui vit dans le canal de discussion de l'équipe.</strong><br />
+Alternative libre à Grok Bot : il lit les canaux Slack, Discord ou Telegram, décide de ce qui mérite une réponse et agit, sur une machine que vous lui donnez, avec le modèle que vous choisissez. Licence MIT, 37 étoiles, dernière activité le 11 novembre.<br />
+Source : https://github.com/Crokily/pi-durable-bot</p>
+<p><strong>Nod — agent personnel avec son propre ordinateur (n8n labs).</strong><br />
+Un agent en avant-première de recherche, qui manipule de vrais sites pour mener à bien des tâches administratives, en demandant l'autorisation avant d'agir. macOS 14 et Windows 11, Apache-2.0, gratuit hors clé de modèle (fonctionne avec un abonnement ChatGPT ou n'importe quelle clé d'API), 449 étoiles. C'est un projet d'éditeur commercial : vérifier la pérennité du volet gratuit avant d'en dépendre.<br />
+Source : https://github.com/n8n-io/nod — présentation : https://nod.n8n.io/</p>
+<p><strong>Strands Box — bac à sable d'exécution pour agents, Linux et macOS.</strong><br />
+Il combine l'isolement du système et une politique d'accès pour limiter ce qu'un agent peut exécuter, lire, écrire et joindre sur le réseau ; la nouveauté de cette édition est l'arrivée sur Linux. Apache-2.0, gratuit, 533 étoiles, dernière activité le 11 novembre. Issu de l'équipe Strands Agents (AWS).<br />
+Source : https://github.com/strands-agents/box — annonce : https://strandsagents.com/blog/strands-box-linux-sandbox/</p>
+<p><strong>Friday — faire travailler Claude Code, Codex et Cursor en équipe.</strong><br />
+Un orchestrateur libre qui fait dialoguer seize agents de codage entre eux et se répartir le travail. Licence MIT, 62 étoiles, dernière activité le 11 novembre. Le principe est séduisant, la maturité à éprouver.<br />
+Source : https://github.com/splashxmoon/friday</p>
+<p><strong>Openshorts — générateur de clips courts auto-hébergé, alternative à OpusClip.</strong><br />
+Il découpe une longue vidéo en extraits verticaux en détectant les moments intéressants et en suivant les visages. Licence MIT, gratuit, 7 762 étoiles, dernière activité le 11 novembre — c'est le projet le plus populaire de cette sélection.<br />
+Source : https://github.com/mutonby/openshorts</p>
+<p><strong>Tellyscope — piloter et désencombrer un téléviseur Android depuis le téléphone.</strong><br />
+Installation d'applications, navigation dans les fichiers, transfert et suppression des logiciels imposés par le constructeur, en 3 Mo et sans traqueur. Licence GPL-3.0, gratuit, 1 924 étoiles, dernière activité le 6 novembre.<br />
+Source : https://github.com/man15h/tellyscope</p>
+<p><strong>Lettercamp — cadre de blog statique libre.</strong><br />
+Un générateur de site pour publier un blog moderne sans base de données et sans dépendre d'un CMS tiers : le contenu reste en Markdown dans le dépôt. Licence MIT, gratuit, dépôt créé le 14 octobre (1 étoile). Encore très jeune.<br />
+Source : https://github.com/lettercamp/lettercamp</p>
+<p><strong>Zensical — générateur de site statique de l'équipe Material for MkDocs.</strong><br />
+Signalé par un article du Journal du Hacker : on écrit un site, un blog ou un wiki en Markdown et on le publie. Licence MIT, 6 147 étoiles, dernière activité le 11 novembre — c'est le successeur technique de Material for MkDocs, dont l'équipe a cessé le développement. Une piste sérieuse si un de vos dépôts de cours doit devenir un site.<br />
+Source : https://github.com/zensical/zensical — prise en main en français : https://blog.zarisse.fr/Billets2Blog/VracsLinux/Logiciel_Zensical/</p>
+<p><strong>Satura Space — outil de bureau pour travailler avec des agents sur un projet Unity.</strong><br />
+Quand l'agent doit faire valider une valeur, il ouvre un mini-éditeur Unity sur le seul objet concerné, avec le véritable inspecteur ; trois clones peuvent tourner en parallèle pour tester le multijoueur. Application gratuite, sans compte ni télémétrie, licence Apache-2.0 sauf le relais téléphonique (licence Elastic 2.0, donc non libre) ; macOS Apple Silicon et Windows, 4 étoiles, dépôt créé le 7 novembre. Réservé à un usage de développement Unity.<br />
+Source : https://github.com/saturadev/satura-space</p>
+<p><strong>filetree.app — explorateur de fichiers pour macOS, écrit en Rust.</strong><br />
+Une alternative au Finder construit sur GPUI, en tout début de vie. Licence AGPL-3.0, gratuit, 2 étoiles, dépôt créé le 10 novembre. L'auteur cherche des retours : à regarder, pas encore à installer.<br />
+Source : https://github.com/Graham-04/filetree.app</p>
+<p><strong>MoofPort — pilote Ethernet libre pour le Wi-Fi des Mac 68k.</strong><br />
+Un pilote qui donne un accès réseau Ethernet aux Mac de la génération 68k équipés d'un module Wi-Fi BlueSCSI v2, sous System 6, et se montre plus rapide que DaynaPORT. Licence MIT, gratuit, 10 étoiles, dernière activité le 11 novembre. Intérêt matériel et patrimonial plutôt que pratique.<br />
+Source : https://github.com/matthewmrichter/moofport</p>
+<p><strong>QNet — machine à états post-quantique en Rust.</strong><br />
+Un projet de réseau décentralisé résistant à l'informatique quantique, en Rust. GitHub ne parvient pas à identifier la licence (<code>NOASSERTION</code>), ce qui invite à lire le fichier de licence avant tout usage ; 11 étoiles, dernière activité le 3 novembre.<br />
+Source : https://github.com/AIQnetLab/QNet-Blockchain</p>
+<p><strong>BasicOboe — pont audio Android autour de la bibliothèque Oboe de Google.</strong><br />
+Un auteur présente une petite bibliothèque qui expose l'entrée et la sortie audio brutes en duplex, sans moteur d'effets ni générateur : utile à qui veut capter un flux multicanal sur Android. Le projet est en alpha et l'auteur annonce chercher des testeurs ; aucune licence ni dépôt n'est indiqué dans l'annonce, seul le fil Reddit porte la présentation.<br />
+Source : https://www.reddit.com/r/opensource/comments/1xt9m2d/basicoboe_a_basic_android_interface_for_sending/</p>
+<p><strong>ODC Explorer — annuaire du web lu localement via IPFS.</strong><br />
+Un client de bureau en Python pur, avec son propre pair IPFS intégré, pour parcourir le « Open Domain Catalog », qui classe les sites par numéros d'appel comme une bibliothèque : pas de moteur de recherche, pas de passerelle HTTP, pas de traceur, et une politique de sécurité de contenu qui interdit à la page de charger quoi que ce soit d'extérieur. L'auteur ne cite pas de dépôt public dans son annonce, la licence n'est donc pas vérifiable à cette heure.<br />
+Source : https://www.reddit.com/r/opensource/comments/1xtm8xg/introducing_odc_explorer/</p>
+<p><strong>Deux annuaires, pas des applications.</strong> <code>Open Source Alternatives</code> recense 1 201 projets libres classés en 21 catégories pour remplacer un logiciel payant (https://www.opensourcealternatives.to), et <code>SilentStars</code> suit 423 projets libres peu médiatisés, à moins de 500 étoiles, choisis pour leur activité réelle — 390 d'entre eux sont encore développés (https://silentstars.dev/). Le second est le plus intéressant pour dénicher un outil ignoré des grands classements ; aucun des deux n'est un logiciel à installer.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>ZeGrapher v4 — traceur de courbes réécrit, désormais inspiré de Desmos.</strong><br />
+Le logiciel existe depuis 2011 ; cette version 4 est une réécriture presque complète de l'interface. Ce qu'elle apporte concrètement : courbes de fonctions, suites définies par récurrence, équations paramétriques et données ; export SVG et PDF « à la taille physique » en centimètres, c'est-à-dire à l'échelle exacte de ce qu'on voit à l'écran ; et des constantes « multi-valeurs » qui tracent d'un coup toutes les courbes d'une famille, chacune d'une couleur de la même gamme. Gère aussi de gros fichiers CSV (plusieurs millions de lignes). Licence AGPL-3.0, gratuit, 81 étoiles, dernière activité le 8 novembre. C'est l'outil de cette édition le plus transposable en classe, pour tracer proprement des courbes et obtenir un PDF à l'échelle pour un sujet d'exercice.<br />
+Source : https://github.com/AdelKS/ZeGrapher — site : https://zegrapher.com/en/</p>
+<p><strong>DCTS 1.4.0.9 — correctifs et améliorations de confort.</strong><br />
+La plateforme de discussion décentralisée (licence AGPL-3.0, 641 étoiles) publie une version de correctifs et de refactorisations, annoncée explicitement « sans IA ». Rien de fonctionnellement nouveau à signaler.<br />
+Source : https://github.com/hackthedev/dcts-shipping</p>
+<h2>Extensions et greffons</h2>
+<p><strong>OpenHighlights — surligneur de pages web et de PDF pour Chrome.</strong><br />
+Une extension de navigateur qui permet de surligner et d'annoter aussi bien une page qu'un PDF, pour garder une trace de lecture. Licence MIT, gratuit ; le dépôt existe depuis le 17 juillet mais n'a encore aucune étoile et n'a pas de description, ce qui la rend difficile à évaluer.<br />
+Source : https://github.com/dev-kleo/OpenHighlights</p>
+<h2>Volume</h2>
+<p>65 entrées examinées dans l'intervalle (44 dans le journal principal — dont quatre publications présentes en double, une fois par le flux du subreddit et une fois par le relais de l'extension — et 21 dans les journaux complémentaires), 25 éléments retenus, 36 entrées écartées. Taux de rétention d'environ 38 %, cohérent avec la nature du thème : il s'agit d'annonces d'outils, où le tri écarte surtout les questions, les retours d'expérience et les billets sans logiciel. Phoronix n'a rien apporté (9 billets : noyau, pilotes Mesa, microcode Intel, rapport trimestriel de FreeBSD), It's FOSS non plus (une infolettre et un litige juridique autour d'un pilote DisplayLink), ni Developpez.com (7 billets d'actualité financière sur Anthropic et Nvidia, et une version de WebStorm, logiciel propriétaire). Dernière collecte terminée sans erreur.</p>
+<footer>Édition du jeudi 12 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
