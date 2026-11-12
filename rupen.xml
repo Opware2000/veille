@@ -6,9 +6,308 @@
 <description>Veille quotidienne — numérique éducatif et RUPN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/rupen.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 09 Nov 2026 05:10:50 +0100</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 13:41:48 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille RUPN — semaine du 9 au 15 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/rupen/2026-11-12.html</link>
+<guid isPermaLink="false">rupen-2026-11-12</guid>
+<pubDate>Thu, 12 Nov 2026 13:41:48 +0100</pubDate>
+<category>numérique éducatif et RUPN</category>
+<description><![CDATA[<h1>Veille RUPN — semaine du 9 au 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le forum professionnel consacre la semaine à la charge cognitive et à la délégation à l'intelligence artificielle ; deux ressources prêtes à l'emploi en sortent, dont une plateforme d'activités critiques et une méthode d'interaction en neuf étapes.</li>
+<li>Une expérimentation de sensibilisation à l'IA cherche des binômes enseignant de SVT et enseignant de technologie dans un même établissement : c'est exactement votre configuration.</li>
+<li>Les deux sources entrées cette semaine, la Ressourcerie et les projets actifs de la Forge des communs numériques éducatifs, livrent une cinquantaine d'outils pour la classe et l'établissement, dont plusieurs directement transposables en SVT et en SNT.</li>
+</ul>
+<h2>À noter cette semaine</h2>
+<ul>
+<li><strong>22 novembre 2026</strong> : premières échéances d'inscription aux formations du deuxième trimestre 2026-2027 du numérique éducatif, annoncées dans les espaces RUPN de l'ECLAT-BFC (DRANE et EAFC de l'académie de Besançon), sessions de janvier à mars 2027. Vérifiez si un programme équivalent est ouvert côté académie de Dijon, cette annonce étant portée par l'académie voisine.</li>
+<li><strong>Expérimentation IA Vittascience / UMPV</strong> : recherche d'un binôme enseignant de SVT et enseignant de technologie, sur trois semaines, deux séances sur ordinateur puis un questionnaire. Contact : camille.miele@umpv.fr (également camille@vittascience.com).</li>
+</ul>
+<h2>ÉTAPE 0 — Forum professionnel (liste « Communauté de Réflexion et de pratiques en Education autour de l'Intelligence Artificielle »)</h2>
+<p>Treize messages nouveaux (9 au 11 novembre), répartis en deux discussions.</p>
+<p><strong>1. « IA générative et formation des futurs enseignants : alléger la charge cognitive, mais à quel prix ? »</strong> — neuf messages, la discussion la plus nourrie de la semaine. Le fil part d'une étude et d'une question simple : gagner du temps et de la charge mentale grâce à l'IA, à quel prix intellectuel ? Mickael Bertrand déplace le débat du produit fini vers le travail de conception, de cadrage et de vérification ; Myriam Zarjevski relie le besoin de dialogue avec l'IA au manque d'espaces de réflexion collective entre collègues, en s'appuyant sur les travaux de Wenger sur les communautés de pratique et sur l'enquête TALIS de l'OCDE ; Daniel Pappalardo, formateur académique, demande que la « littératie de l'IA » (comprendre ce que ces systèmes sont et ne sont pas, savoir les interroger, évaluer leurs réponses, repérer leurs limites) devienne l'objectif, et rappelle que les questions de données personnelles, de RGPD et de responsabilité conditionnent la légitimité des usages. Stéphane Fontaine insiste sur les collectifs apprenants construits institutionnellement. Deux ressources concrètes circulent :</p>
+<ul>
+<li><strong>« Et si Socrate était le meilleur allié des enseignants face à l'intelligence artificielle ? »</strong>, article de The Conversation signalé par Gaël Plantin : https://theconversation.com/et-si-socrate-etait-le-meilleur-allie-des-enseignants-face-a-lintelligence-artificielle-294543</li>
+<li><strong>Le MOOC « Transformer son métier avec l'IA »</strong> sur FUN-MOOC, même expéditeur : https://www.fun-mooc.fr/fr/cours/transformer-son-metier-avec-lia/</li>
+<li><strong>Supercharged Human ? Mettre l'IA en questions</strong> — plateforme multilingue de l'association Savoir Devenir, adossée à la chaire Unesco (Sorbonne Nouvelle), dans la suite du projet Algowatch.eu. Quatre thématiques : esprit critique, qualité de l'information, connaissance des systèmes, agentivité. Plus de soixante-dix ressources (jeux, quiz, affiches, ateliers) organisées en listes de lecture que l'on peut aussi composer soi-même et partager. Page en français : https://superchargedhuman.org/fr (vérifiée : répond 200)</li>
+<li><strong>La « boucle supervisée »</strong> proposée par Jérôme Sacard, démarche d'interaction avec l'IA en neuf étapes (compréhension, friction, hypothèses, exemples, validation, production, audit, révision, arrêt) qui place des temps de questionnement et de validation humaine avant la production. Page de présentation et d'expérimentation : https://webjeje.com/bs/ (une « skill » est proposée au téléchargement pour qui veut la tester dans son propre agent). L'auteur précise lui-même qu'il s'agit d'une proposition méthodologique dont l'efficacité pédagogique n'est pas démontrée.</li>
+</ul>
+<p><em>Usage possible : la plateforme Supercharged Human et la boucle supervisée sont deux supports immédiatement présentables en conseil pédagogique ou en formation interne, sans dépendre d'un compte ni d'un abonnement.</em></p>
+<p><strong>2. « Expérimentation de sensibilisation à l'IA »</strong> — quatre messages, une proposition concrète portée par Camille Miele (Université de Montpellier, partenaire de Vittascience) et relayée par un professeur de technologie chargé de projet à la DRANE de Lyon. Le protocole : trois semaines, un binôme enseignant de SVT et enseignant de technologie dans le même établissement, une heure de séquence en semaine 1, une heure en semaine 2, sur ordinateur, puis un questionnaire de moins de trente minutes en semaine 3. Les séquences s'inscrivent dans les programmes : en SVT, le corps humain et la santé, le rôle du cerveau et le fonctionnement du système nerveux ; en technologie, l'éco-conception inspirée du vivant. Contact : camille.miele@umpv.fr, avec la mention que certains détails de mise en œuvre méritent un échange de vive voix.</p>
+<p><em>Ce qui appelle une action : c'est le seul élément de la semaine qui sollicite une décision de votre part. Le thème de la séquence SVT recoupe l'enseignement scientifique et la spécialité ; engager le binôme suppose l'accord d'un collègue de technologie et un créneau sur deux semaines.</em></p>
+<h2>ÉTAPE 0 bis — Espaces RUPN de l'ENT ECLAT-BFC</h2>
+<p>Cinq éléments nouveaux, tous du 9 novembre, tous portés par la DRANE et l'EAFC de l'académie de Besançon.</p>
+<ul>
+<li><strong>Formations du deuxième trimestre 2026-2027 : inscriptions ouvertes</strong> (espaces « RUPN général », « Collèges-Lycées 25 », « 70 » et « 90 » — la même annonce publiée dans quatre espaces). Cinq formations consacrées à l'intelligence artificielle (« L'IA avec les élèves », « IA et construire un agent conversationnel », « La sécurité numérique à l'ère de l'IA », « Développer l'esprit critique face à l'IA », « Faire découvrir l'IA aux élèves par le jeu »), plus des parcours Éléa de niveaux 1 et 2, la création et le partage de ressources numériques, la vidéo et la sécurité numérique. Sessions de janvier à mars 2027, en webinaire ou à distance, via Magistère et l'inscription sur SOFIA FMO. <strong>Premières échéances d'inscription le 22 novembre 2026.</strong> Annonce : https://region-academique.eclat-bfc.fr/rupn/rupn-general-non-accessible-rupn-/numerique-educatif-les-formations-du-2-trimestre-2026-2027-sont-ouvertes-aux-inscriptions--6571.htm<br />
+<em>Réserve : ces formations relèvent de l'académie de Besançon. Votre académie de rattachement est Dijon ; le programme équivalent est à vérifier sur votre propre espace, mais la liste des cinq formations sur l'IA donne une bonne idée de ce qui circule dans la région.</em></li>
+<li><strong>Accès au PIA et à la messagerie depuis ÉCLAT</strong> (forum de l'espace « Collèges-Lycées 25 », cinq réponses au 9 novembre). Après la mise en place du nouveau PIA, les raccourcis ont cessé de fonctionner. Stéphane Fontaine, administrateur ÉCLAT-BFC, donne les adresses à paramétrer dans les services : PIA <code>https://arenb.ac-besancon.fr/pia-dsfr/</code>, cloud académique <code>https://cloud-aca.ac-besancon.fr</code>, webmail académique <code>https://convergences.ac-besancon.fr</code> — en précisant ne pas avoir encore trouvé l'adresse du webmail qui évite la ressaisie du mot de passe. Carole Gallet confirme que le PIA fonctionne après recréation d'un service, Yoann Panier a ouvert un ticket Cépages (Skolengo ne reproduit pas le problème), Philippe Robert constate aussi la perte de la bascule automatique. Discussion : https://region-academique.eclat-bfc.fr/rupn/rupn-colleges-lycees-25/sg.do?PROC=FORUM&amp;ACTION=VISUALISER_FORUM&amp;ID_FORUM=347<br />
+<em>À vérifier chez vous : si vos raccourcis ÉCLAT vers le PIA ou la messagerie ne fonctionnent plus, c'est un incident signalé et non un problème local. Les adresses citées sont celles de l'académie de Besançon ; celles de Dijon sont à récupérer auprès de votre DRANE.</em></li>
+</ul>
+<h2>Intelligence artificielle et cadre d'usage</h2>
+<p><em>Ressourcerie de la Forge des communs numériques éducatifs :</em></p>
+<ul>
+<li><strong>IAGentiviT</strong> — ressources pédagogiques pour aider les élèves à identifier, choisir et réguler leurs usages de l'IA. C'est l'outil le plus directement utile au volet « esprit critique » d'une charte d'usage. https://damiengiustiniani.forge.apps.education.fr/iagentivit/</li>
+<li><strong>Triche Or Not Triche</strong> — jeu-débat sur l'usage de l'IA pour le travail personnel : aide utile, triche ou travail à refaire ? Format prêt à projeter pour une heure de vie de classe ou une séance d'EMC. https://tricheornottriche.forge.apps.education.fr/</li>
+<li><strong>Labo_Séquence</strong> — conception de séquences pédagogiques avec une planification structurée assistée par l'IA, guide pratique inclus. https://chedotalnicole.forge.apps.education.fr/labo-sequence/</li>
+<li><strong>GenBOT</strong> — concevoir, tester et exporter des agents conversationnels scénarisés pour un usage éducatif. https://pyg-biomicrobio.forge.apps.education.fr/GenBot2/</li>
+<li><strong>Protéa</strong> — concevoir un chatbot personnalisé, le distribuer aux élèves par code d'accès et suivre les conversations en temps réel. https://protea.forge.apps.education.fr/</li>
+<li><strong>Scribéo Mail et Scribéo Classe</strong> — rédaction de courriels et travail de l'oral et de la lecture avec l'IA souveraine Albert (reformuler, corriger, dicter, traduire). Deux entrées du même atelier, utiles pour montrer ce qu'est une IA hébergée en France. https://scribeo.forge.apps.education.fr/scribeo-mail/ et https://scribeo.forge.apps.education.fr/scribeo-classe/</li>
+</ul>
+<p><em>Projets actifs de La Forge :</em></p>
+<ul>
+<li><strong>Dans la tête d'une IA</strong> — projet de Jérémy Carton, sans description pour l'instant ; le titre seul indique un support de médiation sur le fonctionnement des modèles. https://forge.apps.education.fr/cartonjeremy/dans-la-tete-d-une-ia</li>
+<li><strong>appreciatix</strong> — aide à la rédaction des appréciations de bulletin par matière, à partir d'un modèle de langage, d'éléments d'appréciation et des résultats de l'élève. À regarder de près avant tout usage : la question du traitement des données d'élèves se pose immédiatement. https://forge.apps.education.fr/clement.lefevre/appreciatix</li>
+<li><strong>qcm-md</strong> — production d'un QCM simple à partir d'un document rédigé en Markdown ; commode si vous rédigez déjà vos cours en Markdown. https://forge.apps.education.fr/lmdbt/qcm-md</li>
+<li><strong>Le coin des cafés numériques</strong> — cartes d'activités en trois paliers et tutoriels avec captures d'écran, prêtes à imprimer en A4 recto verso, pour animer des cafés numériques entre collègues (Éléa, IA, quiz, évaluations). C'est un matériau de RUPN autant que d'enseignant. https://gaunardemmanuel.forge.apps.education.fr/cafe-numerique/</li>
+<li><strong>Appli-Maths-Sciences</strong> (groupe de travail IA mathématiques-physique-chimie) et <strong>Physique chimie App</strong> de Gaëtan Portier — applications disciplinaires développées avec l'aide d'une IA et sous supervision humaine. https://forge.apps.education.fr/gportier/app-physique-chimie</li>
+<li><strong>Scribéo</strong> — transcription de la voix par une IA qui fonctionne localement sur l'ordinateur, transcription d'un fichier audio et transcription en temps réel d'une discussion à deux interlocuteurs. Cinq étoiles, l'un des projets les plus suivis du moment. https://forge.apps.education.fr/scribeo/scribeo.forge.apps.education.fr</li>
+</ul>
+<h2>Cybersécurité et protection des données</h2>
+<ul>
+<li><strong>Le jeu des ombres</strong> — bande dessinée interactive où l'élève accompagne Roxane et Guillaume dans deux enquêtes mêlant investigation, logique et cybersécurité. Livré avec un <strong>kit enseignant</strong> séparé (communiquer le projet, préparer une séance). C'est la ressource la plus aboutie de la semaine pour aborder la sécurité numérique avec des élèves. https://le-jeu-des-ombres.forge.apps.education.fr et https://jdo-kit.forge.apps.education.fr/</li>
+<li><strong>Pixelle</strong> — édition d'images en ligne avec floutage des visages et assistant facultatif. Utile pour préparer des documents à partir de photos prises en classe ou lors d'une sortie, en respectant le droit à l'image. https://pixelle.forge.apps.education.fr/</li>
+<li><strong>Rappel du forum</strong> (Daniel Pappalardo) : quels documents d'élèves saisit-on dans une interface conversationnelle, où sont hébergés les outils, avec quels engagements ? La question est posée comme la condition de légitimité des usages, pas comme une formalité administrative. À reprendre tel quel si une charte d'usage de l'IA est à écrire ou à réviser dans l'établissement.</li>
+</ul>
+<h2>Outils, plateformes et ressources pour la classe</h2>
+<h3>SVT, sciences et mathématiques (Ressourcerie)</h3>
+<ul>
+<li><strong>Allô l'ISS ?</strong> — suivre et entrer en contact avec la Station spatiale internationale en temps réel depuis l'établissement (programme ARISS). Le dispositif le plus marquant de la rentrée pour une classe de sciences. https://bo.forge.apps.education.fr/ariss-allo-iss/</li>
+<li><strong>Le Sniffleur</strong> — recherche de passages dans un ensemble de fichiers PDF (articles, annales, dossiers) selon deux modes. Pratique pour bâtir des corpus documentaires. https://pyg-biomicrobio.forge.apps.education.fr/Classifieur/</li>
+<li><strong>AudioMark et AudioCutter</strong> — écoute, analyse et annotation précise d'un fichier audio, et découpe-export dans le navigateur. Transposable à l'analyse de signaux en SVT et en physique. https://edmu.forge.apps.education.fr/audiomark et https://edmu.forge.apps.education.fr/audiocutter</li>
+<li><strong>Faire des maths</strong> — cours, méthodes, exemples corrigés, fiches d'exercices et corrigés au lycée, en pédagogie explicite. https://faire-des-maths.forge.apps.education.fr/</li>
+<li><strong>À main levée</strong> — génération de figures géométriques au style crayon à partir d'une photo, avec export en image <strong>ou en code LaTeX</strong>. Compte tenu de votre chaîne LaTeX, c'est l'outil de la rentrée. https://louaildamien.forge.apps.education.fr/a-main-levee/</li>
+</ul>
+<h3>SNT, NSI, Python et algorithmique</h3>
+<ul>
+<li><strong>Visualiseur de code</strong> — visualisation immédiate de code HTML, CSS, JavaScript, SVG ou Markdown. https://bidouiage.forge.apps.education.fr/outils/visualiseur-code/</li>
+<li><strong>CapyCode</strong> — apprendre Python et Git dans un environnement de développement web inspiré de VSCodium. https://vscapytale2.ac-paris.fr/p/capycode/</li>
+<li><strong>Abassign</strong> — découvrir les affectations en programmation à travers un jeu inspiré de l'abaque. https://abassign.forge.apps.education.fr/</li>
+<li><strong>Print.py</strong> — assembler le programme Python qui affiche exactement le texte demandé avec la seule fonction <code>print()</code>. Excellent exercice d'entrée en SNT. https://print.forge.apps.education.fr/</li>
+<li><strong>Site modèle de QCM</strong> — QCM interactifs en ligne, sans inscription, à dupliquer sur la Forge. https://projets-qcm.forge.apps.education.fr/modele-site-qcm/</li>
+<li><strong>Convertisseur de bases</strong> — conversion décimal, binaire, hexadécimal ou base personnalisée. https://evoluscope.fr/convertisseur/index.html</li>
+</ul>
+<h3>Outils transversaux pour la classe et pour l'établissement</h3>
+<ul>
+<li><strong>Nuage Express</strong> — envoi de gros fichiers depuis Thunderbird : la pièce jointe part dans le Nuage Apps et un lien la remplace. Utile dès qu'un document dépasse la taille acceptée par les messageries. https://nuage-express.forge.apps.education.fr/</li>
+<li><strong>Papillote</strong> — création de courtes formations mobiles au format ePoc, testables dans le lecteur, partageables par QR code ou en SCORM. https://papillote.forge.apps.education.fr/</li>
+<li><strong>RealR</strong> — fiches et images interactives en réalité augmentée (texte enrichi, vidéo, image). https://pyg-biomicrobio.forge.apps.education.fr/RealR/</li>
+<li><strong>Diap'HTML, ClasseurMD, Visionneuse de fiches</strong> — diaporamas exportables en un fichier HTML, classement de notes CodiMD par niveau et rubrique, et consultation d'un tableur sous forme de fiches. Trois outils de préparation et d'organisation des cours. https://edulab.forge.apps.education.fr/diap-html/ · https://sagniel.forge.apps.education.fr/classeurmd/espace-prof/ · https://outils-administratifs.forge.apps.education.fr/fiches-excel/</li>
+<li><strong>CompagnonPP et EDU PILOTE</strong> — suivi des élèves, rendez-vous, documents et tâches du professeur principal ; et portail de vingt services pour les personnels de direction et d'éducation. Deux outils d'établissement à faire connaître. https://compagnonpp.forge.apps.education.fr/ · https://edu-pilote.forge.apps.education.fr/</li>
+<li><strong>Tiresias</strong> — création et gestion des emplois du temps en dispositif ULIS, avec synthèses. https://circe.forge.apps.education.fr/tiresias</li>
+<li><strong>Carte des IPS</strong> — consultation des indices de position sociale des écoles de France en cartes interactives. https://ips-ecoles.forge.apps.education.fr/carte-interactive/</li>
+<li><strong>Cocciquiz</strong> — QCM papier créés à la main ou avec l'IA, copies nominatives imprimées puis corrigées à la caméra ou au scan. Le plus spectaculaire des outils d'auto-correction vus cette semaine. https://cocciquiz.forge.apps.education.fr/</li>
+<li><strong>Alfred Résa</strong> — gestion de la réservation des ressources d'un établissement (matériel, salles, livres). https://toolboxes.forge.apps.education.fr/alfred-resa/</li>
+<li><strong>Serious Escape Cards</strong> — création d'un escape game pédagogique avec des cartes et une application web. https://app.escapecards.fr</li>
+<li><strong>PédagoQuiz</strong> — tester ses conceptions pédagogiques pour vérifier si elles sont soutenues par la recherche. https://evoluscope.fr/pedagoquiz/index.html</li>
+<li><strong>QR Studio et Écoute QR</strong> — génération de codes QR personnalisés et écoute immédiate du son auquel un code renvoie (fichier audio ou liste de lecture). https://pyg-biomicrobio.forge.apps.education.fr/F-QRcode/ · https://gauliermarion.forge.apps.education.fr/ecoute-qr/</li>
+<li><strong>ShowTime et ChromaGo</strong> — studio d'enregistrement vidéo enrichi (téléprompteur, fond vert, décors, montage) et transformation d'un téléphone en caméra-micro sans fil pour une régie. https://showtime.forge.apps.education.fr/ · https://chromago.forge.apps.education.fr/</li>
+<li><strong>Grammatelier et Lexicorpus</strong> — révision de la grammaire du CM1 au lycée et en FLE, et génération de séances de vocabulaire et de jeux à partir d'un corpus travaillé en classe. https://grammatelier.forge.apps.education.fr/ · https://mn56.forge.apps.education.fr/lexicorpus/</li>
+<li><strong>Clic and Go</strong> — prise en main progressive de l'ordinateur par une série d'activités interactives ; à garder pour l'accompagnement personnalisé et la préparation de Pix. https://moutonemmanuel.forge.apps.education.fr/clic-and-go</li>
+<li><strong>MonApp et PDFextract</strong> — création d'une application mobile (vitrine d'établissement, sortie scolaire, chasse au trésor) et extraction, modification et assemblage des images d'un fichier PDF dans le navigateur. https://monapp.forge.apps.education.fr · https://pyg-biomicrobio.forge.apps.education.fr/PDF-extract/</li>
+<li><strong>CollabQuiz</strong> — quiz coopératif où un seul élève détient la bonne réponse à chaque question. https://collabquiz.forge.apps.education.fr/</li>
+</ul>
+<h3>Forge des communs : explorer, publier, mutualiser</h3>
+<ul>
+<li><strong>Explorer la Forge</strong> — moteur de recherche des projets publics de la Forge, avec filtres par discipline, niveau et type. Le premier outil à montrer à un collègue qui cherche une ressource. https://explorer-la-forge.forge.apps.education.fr/</li>
+<li><strong>PassREL Forges</strong> — exploration ergonomique des dépôts GitLab de la Forge. https://passrel.forge.apps.education.fr/</li>
+<li><strong>ForgeEditor</strong> — interface d'accès à la Forge portée par le GTnum (les dépôts <code>gtnum/forgeEditor</code> et <code>passrel/…</code> référencent la même application). https://gtnum.forge.apps.education.fr/forgeeditor</li>
+<li><strong>Petite doc GitLab de la Forge</strong> — documentation collaborative pour découvrir GitLab et mener un projet sur la Forge, issue des échanges du salon Tchap AideTech. https://forge.apps.education.fr/petite-doc-gitlab-de-la/petite-doc-gitlab-de-la.forge.apps.education.fr</li>
+<li><strong>TickéTest, TickéSite, TickéPad, TickéBlog</strong> — quatre modèles qui détournent les tickets GitLab pour créer une activité interactive, un site web, un mur de partage ou un blog, sans écrire de code. https://ticketest.forge.apps.education.fr/ · https://tickesite.forge.apps.education.fr/ · https://tickepad.forge.apps.education.fr/ · https://tickeblog.forge.apps.education.fr/</li>
+<li><strong>Forgeathon</strong> — présentation de l'événement de contribution à la Forge des communs numériques éducatifs. https://forge.apps.education.fr/forgeathon/forgeathon.forge.apps.education.fr</li>
+</ul>
+<h3>Projets de collègues en lycée (Forge)</h3>
+<ul>
+<li><strong>LDM - SNT</strong> — modèle de site web avec Python et un SQL interactif, à cloner ; rendu consultable. Directement réutilisable en SNT. https://forge.apps.education.fr/LDM_terminale/ldm-snt (rendu : https://docs.forge.apps.education.fr/modeles/pyodide-mkdocs-theme-review/)</li>
+<li><strong>activités terminale SVT</strong> — dépôt de Nicolas Maillard, sans description, à regarder : le titre correspond exactement à votre niveau de terminale. https://forge.apps.education.fr/nicolasmaillard1/activites-terminale-svt</li>
+<li><strong>ProgrammeCycle4</strong> (compte <code>svt1</code>) et <strong>paysagecollege</strong> — ressources de SVT du collège : programme de cycle 4 d'un côté, un projet de terrain de l'autre (paysage et êtres vivants autour du collège, croquis, motte de terre à la loupe, photos aériennes, placette et mare en monde virtuel 3D, capteurs), intéressant aussi pour la liaison collège-lycée. https://forge.apps.education.fr/svt1/programmeCycle4 · https://forge.apps.education.fr/vazeuxbruno/paysagecollege</li>
+<li><strong>Libressi</strong> — tableur-grapheur libre pour la physique-chimie. https://libressi.forge.apps.education.fr</li>
+<li><strong>physique chimie</strong> (Fabien Goudemand) — ressources gratuites de physique-chimie (seconde, première et terminale spécialité) <strong>et de SNT</strong> : cours animés, questions rapides, fiches de révision, activités, travaux pratiques, exercices animés, annales et podcasts, sous forme de pages HTML autonomes utilisables hors ligne et dans un ENT en SCORM 1.2, sans cookie ni traceur. https://forge.apps.education.fr/fabiengoudemand/physique-chimie</li>
+<li><strong>a2</strong> (automatismes, première) et <strong>Fabunia</strong> (progression, chapitres, séances et évaluations prêts à imprimer, mathématiques 6e) — deux projets d'ingénierie pédagogique outillée. https://forge.apps.education.fr/a2/a2.forge.apps.education.fr · https://forge.apps.education.fr/fabunia/fabunia.forge.apps.education.fr</li>
+<li><strong>NeoBureau</strong> — un ordinateur d'entraînement dans le navigateur (fichiers, fenêtres, réglages, session) augmenté d'activités qui guident l'élève, reconnaissent ses erreurs et l'aident, sans compte ni traçage. Adossé au cadre de compétences numériques (CRCN) : c'est l'outil à connaître pour préparer Pix. https://forge.apps.education.fr/neosuite/neobureau</li>
+<li><strong>QCMCam2</strong> — interroger la classe sur des QCM projetés, à l'aide de cartes scannées par une webcam ou un smartphone (onze étoiles, le projet le plus suivi du lot). https://forge.apps.education.fr/qcmcam/qcmcam2</li>
+<li><strong>Maitrize</strong> — application libre pour Mac et Windows : préparer sa classe, tenir son cahier journal, fabriquer ses feuilles, suivre ses élèves, faite par un enseignant pour ses collègues. https://forge.apps.education.fr/s.barreto/maitrize</li>
+<li><strong>labirinto</strong> — projet Python de création et de résolution de labyrinthes à visée éducative, support à l'apprentissage de la programmation et de l'algorithmique. https://forge.apps.education.fr/romain.casati/labirinto</li>
+<li><strong>Plugins Moodle</strong> (<code>moodle-ai-plugins</code>) — un type de question Gantt pour Moodle et un plugin de gestion de projet. https://forge.apps.education.fr/moodle-ai-plugins/qtype_gantt</li>
+<li><strong>Ritumo</strong> — rituel de réactivation de trois à cinq minutes en début de cours de langue, projeté pour la classe, sans compte ni IA et sans que les données quittent le navigateur de l'enseignant. https://forge.apps.education.fr/ritumo/ritumo.forge.apps.education.fr</li>
+<li><strong>Pilotage Phare</strong> (widget Grist de suivi des situations de harcèlement, méthode de la préoccupation partagée et protocole SECURE, publié par la DRANE de Grenoble) et <strong>FormationPhare</strong> (animation de la formation pHARe au collège Jean Ferrat). https://forge.apps.education.fr/drane-grenoble/pilotage-phare · https://forge.apps.education.fr/gaunardemmanuel/formationphare</li>
+</ul>
+<h3>OutilsTice (blog de Fidel Navamuel)</h3>
+<p>Le journal de cette source n'avait pas encore de marqueur de dédoublonnage : les neuf articles publiés depuis le 1er octobre sont donc traités ici pour la première fois.</p>
+<ul>
+<li><strong>Woodword</strong> — Scrabble en ligne gratuit et sans inscription ni publicité, parties multijoueurs et défi quotidien, utilisable en français comme en langues vivantes (12 novembre). https://outilstice.com/woodword-scrabble-en-ligne-sans-inscription/</li>
+<li><strong>IA et élèves DYS : un guide pratique pour adapter vos supports sans y passer la soirée</strong> (1er octobre) — exactement le besoin qui remonte quand un PAP arrive dans le casier. https://outilstice.com/adapter-supports-eleves-dys-ia/</li>
+<li><strong>Stancz</strong> — application de chorégraphie gratuite pour travailler l'espace en EPS, testée par l'auteur avec une classe de seconde (4 novembre). https://outilstice.com/stancz-application-choregraphie-gratuite/</li>
+<li><strong>Matiko</strong> — exercices de mathématiques corrigés, gratuits et sans inscription, de la cinquième à la terminale (16 octobre). https://outilstice.com/matiko-exercices-maths-corriges-gratuits/</li>
+<li><strong>GridPrint</strong> — impression d'une image à taille réelle, au centimètre près, avec une simple imprimante A4 (7 octobre). Utile pour les échelles, les cartes et les coupes anatomiques. https://outilstice.com/gridprint-imprimer-image-taille-reelle/</li>
+</ul>
+<h2>Vie du réseau et de l'établissement</h2>
+<ul>
+<li>Les <strong>inscriptions aux formations du deuxième trimestre</strong> du numérique éducatif sont ouvertes dans l'ECLAT-BFC, avec une première échéance le 22 novembre 2026 (voir « À noter cette semaine » et l'étape 0 bis).</li>
+<li>L'<strong>incident d'accès au PIA et à la messagerie depuis ÉCLAT</strong> est documenté sur le forum de l'espace 25, avec les adresses de reparamétrage et deux tickets ouverts ; à rapprocher de ce que vous constatez dans l'Yonne.</li>
+<li>La <strong>question des usages de l'IA</strong> occupe tout le forum professionnel cette semaine, entre littératie, RGPD et place du collectif. Si un temps de concertation sur une charte d'usage est prévu dans l'établissement, la plateforme Supercharged Human et le jeu-débat Triche Or Not Triche sont les deux supports les plus faciles à mobiliser.</li>
+</ul>
+<h2>Volume</h2>
+<p>Sources examinées cette semaine : les deux sources historiques de la veille — DRANE de Bourgogne-Franche-Comté et DANE de Versailles — ne publient rien de nouveau (dix et douze articles déjà traités, aucune erreur de collecte dans leurs fichiers d'état). Le reste de la matière vient de six sources.</p>
+<ul>
+<li><strong>Forum CRIA</strong> : 13 messages reçus entre le 9 et le 11 novembre, tous retenus, regroupés en deux discussions.</li>
+<li><strong>ECLAT-BFC</strong> : 5 éléments nouveaux, tous du 9 novembre, retenus (quatre publications de la même annonce de formations dans des espaces différents, un fil de forum).</li>
+<li><strong>Ressourcerie de la Forge</strong> : 71 entrées récentes examinées sur un journal de 687, <strong>51 retenues</strong>, 20 écartées parce qu'elles visent l'école ou le collège (lexique et vocabulaire du premier degré, outils de cycle 2 et 3, jeux de mathématiques du collège) ou une discipline unique sans usage transposable.</li>
+<li><strong>Projets actifs de La Forge</strong> : 61 projets relevés au premier passage, <strong>33 retenus</strong>, 28 écartés : une vingtaine n'ont aucune description exploitable (le relevé porte sur l'activité Git, pas sur un contenu éditorial), les autres relèvent du collège, d'une discipline éloignée, ou sont des doublons de modèles.</li>
+<li><strong>OutilsTice</strong> : 9 articles examinés (premier passage, aucun marqueur de dédoublonnage), <strong>5 retenus</strong>, 4 écartés (école primaire et collège).</li>
+</ul>
+<p>Aucune source injoignable cette semaine : les six collecteurs ont rendu un journal sans erreur.</p>
+<p><em>Toutes les ressources de la Forge et de la Ressourcerie sont des productions de collègues déposées sur une forge publique ; le lien indiqué renvoie au service en ligne ou au dépôt, et les projets sans description sont signalés comme tels.</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille RUPN — semaine du 9 au 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Le forum professionnel consacre la semaine à la charge cognitive et à la délégation à l'intelligence artificielle ; deux ressources prêtes à l'emploi en sortent, dont une plateforme d'activités critiques et une méthode d'interaction en neuf étapes.</li>
+<li>Une expérimentation de sensibilisation à l'IA cherche des binômes enseignant de SVT et enseignant de technologie dans un même établissement : c'est exactement votre configuration.</li>
+<li>Les deux sources entrées cette semaine, la Ressourcerie et les projets actifs de la Forge des communs numériques éducatifs, livrent une cinquantaine d'outils pour la classe et l'établissement, dont plusieurs directement transposables en SVT et en SNT.</li>
+</ul>
+<h2>À noter cette semaine</h2>
+<ul>
+<li><strong>22 novembre 2026</strong> : premières échéances d'inscription aux formations du deuxième trimestre 2026-2027 du numérique éducatif, annoncées dans les espaces RUPN de l'ECLAT-BFC (DRANE et EAFC de l'académie de Besançon), sessions de janvier à mars 2027. Vérifiez si un programme équivalent est ouvert côté académie de Dijon, cette annonce étant portée par l'académie voisine.</li>
+<li><strong>Expérimentation IA Vittascience / UMPV</strong> : recherche d'un binôme enseignant de SVT et enseignant de technologie, sur trois semaines, deux séances sur ordinateur puis un questionnaire. Contact : camille.miele@umpv.fr (également camille@vittascience.com).</li>
+</ul>
+<h2>ÉTAPE 0 — Forum professionnel (liste « Communauté de Réflexion et de pratiques en Education autour de l'Intelligence Artificielle »)</h2>
+<p>Treize messages nouveaux (9 au 11 novembre), répartis en deux discussions.</p>
+<p><strong>1. « IA générative et formation des futurs enseignants : alléger la charge cognitive, mais à quel prix ? »</strong> — neuf messages, la discussion la plus nourrie de la semaine. Le fil part d'une étude et d'une question simple : gagner du temps et de la charge mentale grâce à l'IA, à quel prix intellectuel ? Mickael Bertrand déplace le débat du produit fini vers le travail de conception, de cadrage et de vérification ; Myriam Zarjevski relie le besoin de dialogue avec l'IA au manque d'espaces de réflexion collective entre collègues, en s'appuyant sur les travaux de Wenger sur les communautés de pratique et sur l'enquête TALIS de l'OCDE ; Daniel Pappalardo, formateur académique, demande que la « littératie de l'IA » (comprendre ce que ces systèmes sont et ne sont pas, savoir les interroger, évaluer leurs réponses, repérer leurs limites) devienne l'objectif, et rappelle que les questions de données personnelles, de RGPD et de responsabilité conditionnent la légitimité des usages. Stéphane Fontaine insiste sur les collectifs apprenants construits institutionnellement. Deux ressources concrètes circulent :</p>
+<ul>
+<li><strong>« Et si Socrate était le meilleur allié des enseignants face à l'intelligence artificielle ? »</strong>, article de The Conversation signalé par Gaël Plantin : https://theconversation.com/et-si-socrate-etait-le-meilleur-allie-des-enseignants-face-a-lintelligence-artificielle-294543</li>
+<li><strong>Le MOOC « Transformer son métier avec l'IA »</strong> sur FUN-MOOC, même expéditeur : https://www.fun-mooc.fr/fr/cours/transformer-son-metier-avec-lia/</li>
+<li><strong>Supercharged Human ? Mettre l'IA en questions</strong> — plateforme multilingue de l'association Savoir Devenir, adossée à la chaire Unesco (Sorbonne Nouvelle), dans la suite du projet Algowatch.eu. Quatre thématiques : esprit critique, qualité de l'information, connaissance des systèmes, agentivité. Plus de soixante-dix ressources (jeux, quiz, affiches, ateliers) organisées en listes de lecture que l'on peut aussi composer soi-même et partager. Page en français : https://superchargedhuman.org/fr (vérifiée : répond 200)</li>
+<li><strong>La « boucle supervisée »</strong> proposée par Jérôme Sacard, démarche d'interaction avec l'IA en neuf étapes (compréhension, friction, hypothèses, exemples, validation, production, audit, révision, arrêt) qui place des temps de questionnement et de validation humaine avant la production. Page de présentation et d'expérimentation : https://webjeje.com/bs/ (une « skill » est proposée au téléchargement pour qui veut la tester dans son propre agent). L'auteur précise lui-même qu'il s'agit d'une proposition méthodologique dont l'efficacité pédagogique n'est pas démontrée.</li>
+</ul>
+<p><em>Usage possible : la plateforme Supercharged Human et la boucle supervisée sont deux supports immédiatement présentables en conseil pédagogique ou en formation interne, sans dépendre d'un compte ni d'un abonnement.</em></p>
+<p><strong>2. « Expérimentation de sensibilisation à l'IA »</strong> — quatre messages, une proposition concrète portée par Camille Miele (Université de Montpellier, partenaire de Vittascience) et relayée par un professeur de technologie chargé de projet à la DRANE de Lyon. Le protocole : trois semaines, un binôme enseignant de SVT et enseignant de technologie dans le même établissement, une heure de séquence en semaine 1, une heure en semaine 2, sur ordinateur, puis un questionnaire de moins de trente minutes en semaine 3. Les séquences s'inscrivent dans les programmes : en SVT, le corps humain et la santé, le rôle du cerveau et le fonctionnement du système nerveux ; en technologie, l'éco-conception inspirée du vivant. Contact : camille.miele@umpv.fr, avec la mention que certains détails de mise en œuvre méritent un échange de vive voix.</p>
+<p><em>Ce qui appelle une action : c'est le seul élément de la semaine qui sollicite une décision de votre part. Le thème de la séquence SVT recoupe l'enseignement scientifique et la spécialité ; engager le binôme suppose l'accord d'un collègue de technologie et un créneau sur deux semaines.</em></p>
+<h2>ÉTAPE 0 bis — Espaces RUPN de l'ENT ECLAT-BFC</h2>
+<p>Cinq éléments nouveaux, tous du 9 novembre, tous portés par la DRANE et l'EAFC de l'académie de Besançon.</p>
+<ul>
+<li><strong>Formations du deuxième trimestre 2026-2027 : inscriptions ouvertes</strong> (espaces « RUPN général », « Collèges-Lycées 25 », « 70 » et « 90 » — la même annonce publiée dans quatre espaces). Cinq formations consacrées à l'intelligence artificielle (« L'IA avec les élèves », « IA et construire un agent conversationnel », « La sécurité numérique à l'ère de l'IA », « Développer l'esprit critique face à l'IA », « Faire découvrir l'IA aux élèves par le jeu »), plus des parcours Éléa de niveaux 1 et 2, la création et le partage de ressources numériques, la vidéo et la sécurité numérique. Sessions de janvier à mars 2027, en webinaire ou à distance, via Magistère et l'inscription sur SOFIA FMO. <strong>Premières échéances d'inscription le 22 novembre 2026.</strong> Annonce : https://region-academique.eclat-bfc.fr/rupn/rupn-general-non-accessible-rupn-/numerique-educatif-les-formations-du-2-trimestre-2026-2027-sont-ouvertes-aux-inscriptions--6571.htm<br />
+<em>Réserve : ces formations relèvent de l'académie de Besançon. Votre académie de rattachement est Dijon ; le programme équivalent est à vérifier sur votre propre espace, mais la liste des cinq formations sur l'IA donne une bonne idée de ce qui circule dans la région.</em></li>
+<li><strong>Accès au PIA et à la messagerie depuis ÉCLAT</strong> (forum de l'espace « Collèges-Lycées 25 », cinq réponses au 9 novembre). Après la mise en place du nouveau PIA, les raccourcis ont cessé de fonctionner. Stéphane Fontaine, administrateur ÉCLAT-BFC, donne les adresses à paramétrer dans les services : PIA <code>https://arenb.ac-besancon.fr/pia-dsfr/</code>, cloud académique <code>https://cloud-aca.ac-besancon.fr</code>, webmail académique <code>https://convergences.ac-besancon.fr</code> — en précisant ne pas avoir encore trouvé l'adresse du webmail qui évite la ressaisie du mot de passe. Carole Gallet confirme que le PIA fonctionne après recréation d'un service, Yoann Panier a ouvert un ticket Cépages (Skolengo ne reproduit pas le problème), Philippe Robert constate aussi la perte de la bascule automatique. Discussion : https://region-academique.eclat-bfc.fr/rupn/rupn-colleges-lycees-25/sg.do?PROC=FORUM&amp;ACTION=VISUALISER_FORUM&amp;ID_FORUM=347<br />
+<em>À vérifier chez vous : si vos raccourcis ÉCLAT vers le PIA ou la messagerie ne fonctionnent plus, c'est un incident signalé et non un problème local. Les adresses citées sont celles de l'académie de Besançon ; celles de Dijon sont à récupérer auprès de votre DRANE.</em></li>
+</ul>
+<h2>Intelligence artificielle et cadre d'usage</h2>
+<p><em>Ressourcerie de la Forge des communs numériques éducatifs :</em></p>
+<ul>
+<li><strong>IAGentiviT</strong> — ressources pédagogiques pour aider les élèves à identifier, choisir et réguler leurs usages de l'IA. C'est l'outil le plus directement utile au volet « esprit critique » d'une charte d'usage. https://damiengiustiniani.forge.apps.education.fr/iagentivit/</li>
+<li><strong>Triche Or Not Triche</strong> — jeu-débat sur l'usage de l'IA pour le travail personnel : aide utile, triche ou travail à refaire ? Format prêt à projeter pour une heure de vie de classe ou une séance d'EMC. https://tricheornottriche.forge.apps.education.fr/</li>
+<li><strong>Labo_Séquence</strong> — conception de séquences pédagogiques avec une planification structurée assistée par l'IA, guide pratique inclus. https://chedotalnicole.forge.apps.education.fr/labo-sequence/</li>
+<li><strong>GenBOT</strong> — concevoir, tester et exporter des agents conversationnels scénarisés pour un usage éducatif. https://pyg-biomicrobio.forge.apps.education.fr/GenBot2/</li>
+<li><strong>Protéa</strong> — concevoir un chatbot personnalisé, le distribuer aux élèves par code d'accès et suivre les conversations en temps réel. https://protea.forge.apps.education.fr/</li>
+<li><strong>Scribéo Mail et Scribéo Classe</strong> — rédaction de courriels et travail de l'oral et de la lecture avec l'IA souveraine Albert (reformuler, corriger, dicter, traduire). Deux entrées du même atelier, utiles pour montrer ce qu'est une IA hébergée en France. https://scribeo.forge.apps.education.fr/scribeo-mail/ et https://scribeo.forge.apps.education.fr/scribeo-classe/</li>
+</ul>
+<p><em>Projets actifs de La Forge :</em></p>
+<ul>
+<li><strong>Dans la tête d'une IA</strong> — projet de Jérémy Carton, sans description pour l'instant ; le titre seul indique un support de médiation sur le fonctionnement des modèles. https://forge.apps.education.fr/cartonjeremy/dans-la-tete-d-une-ia</li>
+<li><strong>appreciatix</strong> — aide à la rédaction des appréciations de bulletin par matière, à partir d'un modèle de langage, d'éléments d'appréciation et des résultats de l'élève. À regarder de près avant tout usage : la question du traitement des données d'élèves se pose immédiatement. https://forge.apps.education.fr/clement.lefevre/appreciatix</li>
+<li><strong>qcm-md</strong> — production d'un QCM simple à partir d'un document rédigé en Markdown ; commode si vous rédigez déjà vos cours en Markdown. https://forge.apps.education.fr/lmdbt/qcm-md</li>
+<li><strong>Le coin des cafés numériques</strong> — cartes d'activités en trois paliers et tutoriels avec captures d'écran, prêtes à imprimer en A4 recto verso, pour animer des cafés numériques entre collègues (Éléa, IA, quiz, évaluations). C'est un matériau de RUPN autant que d'enseignant. https://gaunardemmanuel.forge.apps.education.fr/cafe-numerique/</li>
+<li><strong>Appli-Maths-Sciences</strong> (groupe de travail IA mathématiques-physique-chimie) et <strong>Physique chimie App</strong> de Gaëtan Portier — applications disciplinaires développées avec l'aide d'une IA et sous supervision humaine. https://forge.apps.education.fr/gportier/app-physique-chimie</li>
+<li><strong>Scribéo</strong> — transcription de la voix par une IA qui fonctionne localement sur l'ordinateur, transcription d'un fichier audio et transcription en temps réel d'une discussion à deux interlocuteurs. Cinq étoiles, l'un des projets les plus suivis du moment. https://forge.apps.education.fr/scribeo/scribeo.forge.apps.education.fr</li>
+</ul>
+<h2>Cybersécurité et protection des données</h2>
+<ul>
+<li><strong>Le jeu des ombres</strong> — bande dessinée interactive où l'élève accompagne Roxane et Guillaume dans deux enquêtes mêlant investigation, logique et cybersécurité. Livré avec un <strong>kit enseignant</strong> séparé (communiquer le projet, préparer une séance). C'est la ressource la plus aboutie de la semaine pour aborder la sécurité numérique avec des élèves. https://le-jeu-des-ombres.forge.apps.education.fr et https://jdo-kit.forge.apps.education.fr/</li>
+<li><strong>Pixelle</strong> — édition d'images en ligne avec floutage des visages et assistant facultatif. Utile pour préparer des documents à partir de photos prises en classe ou lors d'une sortie, en respectant le droit à l'image. https://pixelle.forge.apps.education.fr/</li>
+<li><strong>Rappel du forum</strong> (Daniel Pappalardo) : quels documents d'élèves saisit-on dans une interface conversationnelle, où sont hébergés les outils, avec quels engagements ? La question est posée comme la condition de légitimité des usages, pas comme une formalité administrative. À reprendre tel quel si une charte d'usage de l'IA est à écrire ou à réviser dans l'établissement.</li>
+</ul>
+<h2>Outils, plateformes et ressources pour la classe</h2>
+<h3>SVT, sciences et mathématiques (Ressourcerie)</h3>
+<ul>
+<li><strong>Allô l'ISS ?</strong> — suivre et entrer en contact avec la Station spatiale internationale en temps réel depuis l'établissement (programme ARISS). Le dispositif le plus marquant de la rentrée pour une classe de sciences. https://bo.forge.apps.education.fr/ariss-allo-iss/</li>
+<li><strong>Le Sniffleur</strong> — recherche de passages dans un ensemble de fichiers PDF (articles, annales, dossiers) selon deux modes. Pratique pour bâtir des corpus documentaires. https://pyg-biomicrobio.forge.apps.education.fr/Classifieur/</li>
+<li><strong>AudioMark et AudioCutter</strong> — écoute, analyse et annotation précise d'un fichier audio, et découpe-export dans le navigateur. Transposable à l'analyse de signaux en SVT et en physique. https://edmu.forge.apps.education.fr/audiomark et https://edmu.forge.apps.education.fr/audiocutter</li>
+<li><strong>Faire des maths</strong> — cours, méthodes, exemples corrigés, fiches d'exercices et corrigés au lycée, en pédagogie explicite. https://faire-des-maths.forge.apps.education.fr/</li>
+<li><strong>À main levée</strong> — génération de figures géométriques au style crayon à partir d'une photo, avec export en image <strong>ou en code LaTeX</strong>. Compte tenu de votre chaîne LaTeX, c'est l'outil de la rentrée. https://louaildamien.forge.apps.education.fr/a-main-levee/</li>
+</ul>
+<h3>SNT, NSI, Python et algorithmique</h3>
+<ul>
+<li><strong>Visualiseur de code</strong> — visualisation immédiate de code HTML, CSS, JavaScript, SVG ou Markdown. https://bidouiage.forge.apps.education.fr/outils/visualiseur-code/</li>
+<li><strong>CapyCode</strong> — apprendre Python et Git dans un environnement de développement web inspiré de VSCodium. https://vscapytale2.ac-paris.fr/p/capycode/</li>
+<li><strong>Abassign</strong> — découvrir les affectations en programmation à travers un jeu inspiré de l'abaque. https://abassign.forge.apps.education.fr/</li>
+<li><strong>Print.py</strong> — assembler le programme Python qui affiche exactement le texte demandé avec la seule fonction <code>print()</code>. Excellent exercice d'entrée en SNT. https://print.forge.apps.education.fr/</li>
+<li><strong>Site modèle de QCM</strong> — QCM interactifs en ligne, sans inscription, à dupliquer sur la Forge. https://projets-qcm.forge.apps.education.fr/modele-site-qcm/</li>
+<li><strong>Convertisseur de bases</strong> — conversion décimal, binaire, hexadécimal ou base personnalisée. https://evoluscope.fr/convertisseur/index.html</li>
+</ul>
+<h3>Outils transversaux pour la classe et pour l'établissement</h3>
+<ul>
+<li><strong>Nuage Express</strong> — envoi de gros fichiers depuis Thunderbird : la pièce jointe part dans le Nuage Apps et un lien la remplace. Utile dès qu'un document dépasse la taille acceptée par les messageries. https://nuage-express.forge.apps.education.fr/</li>
+<li><strong>Papillote</strong> — création de courtes formations mobiles au format ePoc, testables dans le lecteur, partageables par QR code ou en SCORM. https://papillote.forge.apps.education.fr/</li>
+<li><strong>RealR</strong> — fiches et images interactives en réalité augmentée (texte enrichi, vidéo, image). https://pyg-biomicrobio.forge.apps.education.fr/RealR/</li>
+<li><strong>Diap'HTML, ClasseurMD, Visionneuse de fiches</strong> — diaporamas exportables en un fichier HTML, classement de notes CodiMD par niveau et rubrique, et consultation d'un tableur sous forme de fiches. Trois outils de préparation et d'organisation des cours. https://edulab.forge.apps.education.fr/diap-html/ · https://sagniel.forge.apps.education.fr/classeurmd/espace-prof/ · https://outils-administratifs.forge.apps.education.fr/fiches-excel/</li>
+<li><strong>CompagnonPP et EDU PILOTE</strong> — suivi des élèves, rendez-vous, documents et tâches du professeur principal ; et portail de vingt services pour les personnels de direction et d'éducation. Deux outils d'établissement à faire connaître. https://compagnonpp.forge.apps.education.fr/ · https://edu-pilote.forge.apps.education.fr/</li>
+<li><strong>Tiresias</strong> — création et gestion des emplois du temps en dispositif ULIS, avec synthèses. https://circe.forge.apps.education.fr/tiresias</li>
+<li><strong>Carte des IPS</strong> — consultation des indices de position sociale des écoles de France en cartes interactives. https://ips-ecoles.forge.apps.education.fr/carte-interactive/</li>
+<li><strong>Cocciquiz</strong> — QCM papier créés à la main ou avec l'IA, copies nominatives imprimées puis corrigées à la caméra ou au scan. Le plus spectaculaire des outils d'auto-correction vus cette semaine. https://cocciquiz.forge.apps.education.fr/</li>
+<li><strong>Alfred Résa</strong> — gestion de la réservation des ressources d'un établissement (matériel, salles, livres). https://toolboxes.forge.apps.education.fr/alfred-resa/</li>
+<li><strong>Serious Escape Cards</strong> — création d'un escape game pédagogique avec des cartes et une application web. https://app.escapecards.fr</li>
+<li><strong>PédagoQuiz</strong> — tester ses conceptions pédagogiques pour vérifier si elles sont soutenues par la recherche. https://evoluscope.fr/pedagoquiz/index.html</li>
+<li><strong>QR Studio et Écoute QR</strong> — génération de codes QR personnalisés et écoute immédiate du son auquel un code renvoie (fichier audio ou liste de lecture). https://pyg-biomicrobio.forge.apps.education.fr/F-QRcode/ · https://gauliermarion.forge.apps.education.fr/ecoute-qr/</li>
+<li><strong>ShowTime et ChromaGo</strong> — studio d'enregistrement vidéo enrichi (téléprompteur, fond vert, décors, montage) et transformation d'un téléphone en caméra-micro sans fil pour une régie. https://showtime.forge.apps.education.fr/ · https://chromago.forge.apps.education.fr/</li>
+<li><strong>Grammatelier et Lexicorpus</strong> — révision de la grammaire du CM1 au lycée et en FLE, et génération de séances de vocabulaire et de jeux à partir d'un corpus travaillé en classe. https://grammatelier.forge.apps.education.fr/ · https://mn56.forge.apps.education.fr/lexicorpus/</li>
+<li><strong>Clic and Go</strong> — prise en main progressive de l'ordinateur par une série d'activités interactives ; à garder pour l'accompagnement personnalisé et la préparation de Pix. https://moutonemmanuel.forge.apps.education.fr/clic-and-go</li>
+<li><strong>MonApp et PDFextract</strong> — création d'une application mobile (vitrine d'établissement, sortie scolaire, chasse au trésor) et extraction, modification et assemblage des images d'un fichier PDF dans le navigateur. https://monapp.forge.apps.education.fr · https://pyg-biomicrobio.forge.apps.education.fr/PDF-extract/</li>
+<li><strong>CollabQuiz</strong> — quiz coopératif où un seul élève détient la bonne réponse à chaque question. https://collabquiz.forge.apps.education.fr/</li>
+</ul>
+<h3>Forge des communs : explorer, publier, mutualiser</h3>
+<ul>
+<li><strong>Explorer la Forge</strong> — moteur de recherche des projets publics de la Forge, avec filtres par discipline, niveau et type. Le premier outil à montrer à un collègue qui cherche une ressource. https://explorer-la-forge.forge.apps.education.fr/</li>
+<li><strong>PassREL Forges</strong> — exploration ergonomique des dépôts GitLab de la Forge. https://passrel.forge.apps.education.fr/</li>
+<li><strong>ForgeEditor</strong> — interface d'accès à la Forge portée par le GTnum (les dépôts <code>gtnum/forgeEditor</code> et <code>passrel/…</code> référencent la même application). https://gtnum.forge.apps.education.fr/forgeeditor</li>
+<li><strong>Petite doc GitLab de la Forge</strong> — documentation collaborative pour découvrir GitLab et mener un projet sur la Forge, issue des échanges du salon Tchap AideTech. https://forge.apps.education.fr/petite-doc-gitlab-de-la/petite-doc-gitlab-de-la.forge.apps.education.fr</li>
+<li><strong>TickéTest, TickéSite, TickéPad, TickéBlog</strong> — quatre modèles qui détournent les tickets GitLab pour créer une activité interactive, un site web, un mur de partage ou un blog, sans écrire de code. https://ticketest.forge.apps.education.fr/ · https://tickesite.forge.apps.education.fr/ · https://tickepad.forge.apps.education.fr/ · https://tickeblog.forge.apps.education.fr/</li>
+<li><strong>Forgeathon</strong> — présentation de l'événement de contribution à la Forge des communs numériques éducatifs. https://forge.apps.education.fr/forgeathon/forgeathon.forge.apps.education.fr</li>
+</ul>
+<h3>Projets de collègues en lycée (Forge)</h3>
+<ul>
+<li><strong>LDM - SNT</strong> — modèle de site web avec Python et un SQL interactif, à cloner ; rendu consultable. Directement réutilisable en SNT. https://forge.apps.education.fr/LDM_terminale/ldm-snt (rendu : https://docs.forge.apps.education.fr/modeles/pyodide-mkdocs-theme-review/)</li>
+<li><strong>activités terminale SVT</strong> — dépôt de Nicolas Maillard, sans description, à regarder : le titre correspond exactement à votre niveau de terminale. https://forge.apps.education.fr/nicolasmaillard1/activites-terminale-svt</li>
+<li><strong>ProgrammeCycle4</strong> (compte <code>svt1</code>) et <strong>paysagecollege</strong> — ressources de SVT du collège : programme de cycle 4 d'un côté, un projet de terrain de l'autre (paysage et êtres vivants autour du collège, croquis, motte de terre à la loupe, photos aériennes, placette et mare en monde virtuel 3D, capteurs), intéressant aussi pour la liaison collège-lycée. https://forge.apps.education.fr/svt1/programmeCycle4 · https://forge.apps.education.fr/vazeuxbruno/paysagecollege</li>
+<li><strong>Libressi</strong> — tableur-grapheur libre pour la physique-chimie. https://libressi.forge.apps.education.fr</li>
+<li><strong>physique chimie</strong> (Fabien Goudemand) — ressources gratuites de physique-chimie (seconde, première et terminale spécialité) <strong>et de SNT</strong> : cours animés, questions rapides, fiches de révision, activités, travaux pratiques, exercices animés, annales et podcasts, sous forme de pages HTML autonomes utilisables hors ligne et dans un ENT en SCORM 1.2, sans cookie ni traceur. https://forge.apps.education.fr/fabiengoudemand/physique-chimie</li>
+<li><strong>a2</strong> (automatismes, première) et <strong>Fabunia</strong> (progression, chapitres, séances et évaluations prêts à imprimer, mathématiques 6e) — deux projets d'ingénierie pédagogique outillée. https://forge.apps.education.fr/a2/a2.forge.apps.education.fr · https://forge.apps.education.fr/fabunia/fabunia.forge.apps.education.fr</li>
+<li><strong>NeoBureau</strong> — un ordinateur d'entraînement dans le navigateur (fichiers, fenêtres, réglages, session) augmenté d'activités qui guident l'élève, reconnaissent ses erreurs et l'aident, sans compte ni traçage. Adossé au cadre de compétences numériques (CRCN) : c'est l'outil à connaître pour préparer Pix. https://forge.apps.education.fr/neosuite/neobureau</li>
+<li><strong>QCMCam2</strong> — interroger la classe sur des QCM projetés, à l'aide de cartes scannées par une webcam ou un smartphone (onze étoiles, le projet le plus suivi du lot). https://forge.apps.education.fr/qcmcam/qcmcam2</li>
+<li><strong>Maitrize</strong> — application libre pour Mac et Windows : préparer sa classe, tenir son cahier journal, fabriquer ses feuilles, suivre ses élèves, faite par un enseignant pour ses collègues. https://forge.apps.education.fr/s.barreto/maitrize</li>
+<li><strong>labirinto</strong> — projet Python de création et de résolution de labyrinthes à visée éducative, support à l'apprentissage de la programmation et de l'algorithmique. https://forge.apps.education.fr/romain.casati/labirinto</li>
+<li><strong>Plugins Moodle</strong> (<code>moodle-ai-plugins</code>) — un type de question Gantt pour Moodle et un plugin de gestion de projet. https://forge.apps.education.fr/moodle-ai-plugins/qtype_gantt</li>
+<li><strong>Ritumo</strong> — rituel de réactivation de trois à cinq minutes en début de cours de langue, projeté pour la classe, sans compte ni IA et sans que les données quittent le navigateur de l'enseignant. https://forge.apps.education.fr/ritumo/ritumo.forge.apps.education.fr</li>
+<li><strong>Pilotage Phare</strong> (widget Grist de suivi des situations de harcèlement, méthode de la préoccupation partagée et protocole SECURE, publié par la DRANE de Grenoble) et <strong>FormationPhare</strong> (animation de la formation pHARe au collège Jean Ferrat). https://forge.apps.education.fr/drane-grenoble/pilotage-phare · https://forge.apps.education.fr/gaunardemmanuel/formationphare</li>
+</ul>
+<h3>OutilsTice (blog de Fidel Navamuel)</h3>
+<p>Le journal de cette source n'avait pas encore de marqueur de dédoublonnage : les neuf articles publiés depuis le 1er octobre sont donc traités ici pour la première fois.</p>
+<ul>
+<li><strong>Woodword</strong> — Scrabble en ligne gratuit et sans inscription ni publicité, parties multijoueurs et défi quotidien, utilisable en français comme en langues vivantes (12 novembre). https://outilstice.com/woodword-scrabble-en-ligne-sans-inscription/</li>
+<li><strong>IA et élèves DYS : un guide pratique pour adapter vos supports sans y passer la soirée</strong> (1er octobre) — exactement le besoin qui remonte quand un PAP arrive dans le casier. https://outilstice.com/adapter-supports-eleves-dys-ia/</li>
+<li><strong>Stancz</strong> — application de chorégraphie gratuite pour travailler l'espace en EPS, testée par l'auteur avec une classe de seconde (4 novembre). https://outilstice.com/stancz-application-choregraphie-gratuite/</li>
+<li><strong>Matiko</strong> — exercices de mathématiques corrigés, gratuits et sans inscription, de la cinquième à la terminale (16 octobre). https://outilstice.com/matiko-exercices-maths-corriges-gratuits/</li>
+<li><strong>GridPrint</strong> — impression d'une image à taille réelle, au centimètre près, avec une simple imprimante A4 (7 octobre). Utile pour les échelles, les cartes et les coupes anatomiques. https://outilstice.com/gridprint-imprimer-image-taille-reelle/</li>
+</ul>
+<h2>Vie du réseau et de l'établissement</h2>
+<ul>
+<li>Les <strong>inscriptions aux formations du deuxième trimestre</strong> du numérique éducatif sont ouvertes dans l'ECLAT-BFC, avec une première échéance le 22 novembre 2026 (voir « À noter cette semaine » et l'étape 0 bis).</li>
+<li>L'<strong>incident d'accès au PIA et à la messagerie depuis ÉCLAT</strong> est documenté sur le forum de l'espace 25, avec les adresses de reparamétrage et deux tickets ouverts ; à rapprocher de ce que vous constatez dans l'Yonne.</li>
+<li>La <strong>question des usages de l'IA</strong> occupe tout le forum professionnel cette semaine, entre littératie, RGPD et place du collectif. Si un temps de concertation sur une charte d'usage est prévu dans l'établissement, la plateforme Supercharged Human et le jeu-débat Triche Or Not Triche sont les deux supports les plus faciles à mobiliser.</li>
+</ul>
+<h2>Volume</h2>
+<p>Sources examinées cette semaine : les deux sources historiques de la veille — DRANE de Bourgogne-Franche-Comté et DANE de Versailles — ne publient rien de nouveau (dix et douze articles déjà traités, aucune erreur de collecte dans leurs fichiers d'état). Le reste de la matière vient de six sources.</p>
+<ul>
+<li><strong>Forum CRIA</strong> : 13 messages reçus entre le 9 et le 11 novembre, tous retenus, regroupés en deux discussions.</li>
+<li><strong>ECLAT-BFC</strong> : 5 éléments nouveaux, tous du 9 novembre, retenus (quatre publications de la même annonce de formations dans des espaces différents, un fil de forum).</li>
+<li><strong>Ressourcerie de la Forge</strong> : 71 entrées récentes examinées sur un journal de 687, <strong>51 retenues</strong>, 20 écartées parce qu'elles visent l'école ou le collège (lexique et vocabulaire du premier degré, outils de cycle 2 et 3, jeux de mathématiques du collège) ou une discipline unique sans usage transposable.</li>
+<li><strong>Projets actifs de La Forge</strong> : 61 projets relevés au premier passage, <strong>33 retenus</strong>, 28 écartés : une vingtaine n'ont aucune description exploitable (le relevé porte sur l'activité Git, pas sur un contenu éditorial), les autres relèvent du collège, d'une discipline éloignée, ou sont des doublons de modèles.</li>
+<li><strong>OutilsTice</strong> : 9 articles examinés (premier passage, aucun marqueur de dédoublonnage), <strong>5 retenus</strong>, 4 écartés (école primaire et collège).</li>
+</ul>
+<p>Aucune source injoignable cette semaine : les six collecteurs ont rendu un journal sans erreur.</p>
+<p><em>Toutes les ressources de la Forge et de la Ressourcerie sont des productions de collègues déposées sur une forge publique ; le lien indiqué renvoie au service en ligne ou au dépôt, et les projets sans description sont signalés comme tels.</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille RUPN — semaine du 9 au 15 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/rupen/2026-11-09.html</link>
