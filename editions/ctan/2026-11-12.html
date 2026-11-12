@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — jeudi 12 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trente-deux annonces depuis la précédente édition (11 novembre, 06 h 13 à 20 h 02 UTC) : l'essentiel est une vaste vague de maintenance du projet LaTeX, sans effet visible en classe.</li>
+<li>Une seule annonce concerne un paquet que charge nBook3 : <strong>babel 26.16</strong>, dont les nouveautés ne touchent pas les documents français.</li>
+<li>Aucune nouvelle version du noyau LaTeX (<code>latex-base</code>) dans l'intervalle ; seule la pré-version de développement du cœur (<code>l3kernel-dev</code>) a bougé.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>babel — version 26.16 (10 novembre 2026), licence LPPL 1.3, mainteneur Javier Bezos López.</strong><br />
+La nouveauté de cette version est l'option <code>mathdigits</code> : elle permet, dans un document multilingue, d'afficher en mode mathématique les chiffres propres à l'écriture d'une langue (devanagari, arabe, thaï, chinois…), sans paquet supplémentaire, via <code>\babelprovide[mathdigits]{…}</code>. S'y ajoutent l'extension du fichier de locale du frison occidental par Erik Nijenhuis, des améliorations des locales roumaine (Mihai Pește) et kazakhe (Berik I. Tuleuov), et deux correctifs de fond : la combinaison <code>\DocumentMetadata</code> + <code>babel</code> + <code>newtxmath</code> provoquait un dépassement de capacité de TeX, et <code>\babel@save</code> ne fonctionnait plus correctement avec les commandes protégées construites sur <code>\protect</code> (l'implémentation par <code>\let</code> est remplacée par <code>\DeclareCommandCopy</code>).<br />
+Ce que cela implique pour vous : rien à adapter. Vos documents sont en français, écriture latine — l'option <code>mathdigits</code> ne les concerne pas, et les locales corrigées ne sont pas les vôtres. La seconde correction mérite d'être connue si une classe ou un paquet maison redéfinit des commandes protégées, mais ce n'est pas le cas de nBook3. Le numéro et la date annoncés correspondent à la fiche de l'archive (26.16, 2026-11-10). Fiche : https://ctan.org/pkg/babel, note de version : https://latex3.github.io/babel/news/whats-new-in-babel-26.16.html</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>etoc 1.2f</strong> : le paquet des tables des matières entièrement personnalisables devient partiellement compatible avec l'étiquetage PDF, ce qui devrait bien se passer dans les documents qui ne l'emploient que pour <code>\localtableofcontents</code>. Sans effet chez vous pour l'instant : nBook3 n'active pas l'étiquetage (aucun <code>\DocumentMetadata</code>) et ne charge pas etoc. https://ctan.org/pkg/etoc</li>
+<li><strong>l3kernel-dev, version 2026-11-10</strong> : la pré-version de développement du cœur LaTeX ajoute le « support symbolique des comparaisons » (l'annonce est tronquée par le collecteur, je ne peux pas en dire plus). C'est un paquet de pré-test, pas celui de votre installation TeX Live : rien à faire, mais c'est le signal de ce qui arrivera au noyau. https://ctan.org/pkg/l3kernel-dev</li>
+<li><strong>anonchap 1.2c et tocbibind 1.5n</strong> : adaptation aux nouveaux gabarits de titre du noyau LaTeX daté du 1er novembre 2026, et remplacement de clés de gabarit dépréciées. Vous n'êtes pas concerné : nBook3 charge <strong>memoir</strong> (<code>\LoadClass[a4paper]{memoir}</code>) et définit son style de chapitre par <code>\makechapterstyle{nBook}</code>, qui ne passe pas par les gabarits de titre du noyau — vérifié sur votre dépôt au commit 9bc9e7b du 11 novembre.</li>
+<li><strong>layouts 2.6f</strong> : ajout de <code>\marginparwidth</code> à <code>\pagevalues</code> et meilleure précision des longueurs imprimées — utile pour diagnostiquer une mise en page, sans conséquence sur la compilation. https://ctan.org/pkg/layouts</li>
+<li><strong>xtab 2.4</strong> : correction de compatibilité avec le paquet <strong>array</strong>, que nBook3 charge ; xtab lui-même ne fait pas partie de vos dépendances, la correction ne vous atteint donc qu'indirectement. https://ctan.org/pkg/xtab</li>
+<li><strong>verse 2.5b</strong> : correction de <code>\@vsptitle</code> et niveau déclaré dans l'instance de titre des poèmes. https://ctan.org/pkg/verse</li>
+<li><strong>chngcntr 1.1b</strong> : la documentation indique désormais que le paquet est <strong>obsolète</strong> (ses commandes <code>\counterwithin</code> et <code>\counterwithout</code> sont depuis longtemps dans le noyau). À ne pas reprendre si vous retouchez la numérotation de vos compteurs. https://ctan.org/pkg/chngcntr</li>
+<li><strong>hanging 1.2c</strong> : protection de l'apostrophe en mode mathématique, en plus du changement de mainteneur. https://ctan.org/pkg/hanging</li>
+<li><strong>Vague de maintenance du projet LaTeX</strong> (21 annonces) : <code>abstract</code>, <code>bez123</code>, <code>booklet</code>, <code>ccaption</code>, <code>combine</code>, <code>docmfp</code>, <code>epigraph</code>, <code>fonttable</code>, <code>hyphenat</code>, <code>ifmtarg</code>, <code>makecmds</code>, <code>needspace</code>, <code>newfile</code>, <code>pagenote</code>, <code>romannum</code>, <code>stdclsdv</code>, <code>titling</code>, <code>tocvsec2</code>, <code>vertbars</code>, <code>nextpage</code>, <code>midpage</code> reçoivent toutes la même mise à jour de forme — étiquetage de la documentation et reprise du maintien par le projet LaTeX, avec deux corrections ponctuelles de plus (romannum, numéros romains, et hanging ci-dessus). Aucune n'annonce de changement de comportement pour l'utilisateur.</li>
+</ul>
+<h2>Volume</h2>
+<p>32 annonces publiées dans l'intervalle, 10 retenues individuellement (dont 1 concernant un paquet que vous utilisez, babel) — auxquelles s'ajoutent 21 mises à jour de maintenance du projet LaTeX regroupées en une seule ligne —, 1 écartée : <code>ltsaskaita</code>, une classe de facturation en lituanien, hors de votre usage. Motif dominant des traitements groupés : documentation étiquetée et changement de mainteneur, sans conséquence pratique. Aucune annonce <code>New on CTAN</code> utile à un professeur de lycée cette fois-ci. La dernière collecte s'est terminée sans erreur.</p>
+<footer>Édition du jeudi 12 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
