@@ -6,9 +6,204 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 12 Nov 2026 00:43:01 +0100</lastBuildDate>
+<lastBuildDate>Thu, 12 Nov 2026 00:53:30 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — jeudi 12 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-12.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-12</guid>
+<pubDate>Thu, 12 Nov 2026 00:53:30 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le hackathon de greffons Hermes a fermé ses soumissions mercredi 11 novembre à 22 h UTC, et la moisson tient en huit extensions ou interfaces publiées dans la journée — dont quatre qui répondent à un vrai problème d'autonomie de l'agent. Côté outils, Klad laisse un agent peindre au trait près dans un logiciel de dessin, et Amazon publie un émulateur officiel de ses services pour tester en local sans clé payante. Côté modèles, Google ouvre un modèle de décision utilisable gratuitement et Alibaba met Qwen4-Max en aperçu, sans poids ouverts.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Klad — un logiciel de dessin que l'agent pilote au trait près</h3>
+<p>Application de peinture et d'animation en deux dimensions conçue pour être partagée avec un agent de code : la personne dessine au stylet dans l'éditeur, l'agent peint par la ligne de commande <code>klad</code>, avec les mêmes pinceaux, sur le même dessin, et chacun voit les traits de l'autre en une seconde environ. Il n'y a aucun modèle d'image dans l'outil : l'agent décide quoi peindre, et tout ce qui est posé reste modifiable — un trait garde son tracé, sa pression, son pinceau et sa couleur, une forme garde ses points, si bien qu'une feuille ratée se corrige au lieu d'être retirée au hasard. Les compétences fournies à l'agent (l'usage de l'outil, et un second document sur le métier de dessinateur) sont sous licence MIT ; le format de fichier est documenté au bit près.</p>
+<ul>
+<li>Dépôt vérifié : github.com/klad-app/klad — 118 étoiles, dernière poussée le 11 novembre 2026. Licence <strong>source-available</strong> (PolyForm Internal Use 1.0.0), donc <strong>pas open source</strong> : gratuit à compiler et à utiliser pour soi, et dans une entreprise de moins de 500 000 euros de chiffre d'affaires ; l'application précompilée est annoncée sur klad.studio.</li>
+<li>Réserve : première version publique, à compiler soi-même ; l'éditeur fonctionne au stylet sur macOS, il démarre seulement à la souris sur Linux.</li>
+<li>Fil : https://news.ycombinator.com/item?id=50454951</li>
+</ul>
+<h3>aws/aws-emulator — les services d'Amazon en local, sans clé payante</h3>
+<p>Amazon publie enfin un émulateur officiel de ses interfaces de programmation : on fait tourner en local un clone des services pour lancer ses tests sans provisionner de compte ni de clé payante. Écrit en Rust, et le détail intéressant est ailleurs : le projet comptait 29 684 validations de code dans ses trois premières semaines, l'essentiel du code ayant été produit par un essaim d'agents — le responsable du projet en a tiré un billet sur ce que devient le métier d'ingénieur quand les agents écrivent le code.</p>
+<ul>
+<li>Dépôt vérifié : github.com/aws/aws-emulator — CC0-1.0, 1 565 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : Docker est nécessaire sur macOS et Windows ; Simon Willison souhaite un binaire unique, qui n'existe pas encore.</li>
+<li>Billet : https://simonwillison.net/2026/Nov/11/aws-emulator/</li>
+</ul>
+<h3>MACaQ — quantifier soi-même ses modèles pour l'inférence locale</h3>
+<p>Huawei publie le quantifieur qu'il utilise en interne : il annonce une quantification indépendante du modèle, produisant des fichiers GGUF exploitables par llama.cpp, vLLM, Diffusers et PyTorch, pour les modèles de texte comme d'image, de vidéo et d'audio. Concrètement, c'est le maillon qui permet de réduire un modèle pour le faire tenir sur une machine modeste, ce qui intéresse directement qui veut faire tourner son agent sans cloud.</p>
+<ul>
+<li>Dépôt vérifié : github.com/huawei-csl/MACaQ — Apache-2.0, 81 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : la qualité annoncée (« état de l'art ») est celle de ses auteurs ; aucune comparaison indépendante n'a été trouvée. Fil : https://news.ycombinator.com/item?id=50458166 (38 points, 15 commentaires).</li>
+</ul>
+<h3>Atuin Threads — les sessions d'agent, sur toutes ses machines</h3>
+<p>Atuin, qui synchronise déjà l'historique de terminal entre machines (32 000 étoiles, MIT), étend son index aux sessions d'agent : au lieu d'être éparpillées entre plusieurs outils et plusieurs machines, elles deviennent une histoire unique, cherchable, reprise d'un outil à l'autre — commencer dans Claude Code, reprendre dans Codex ailleurs, avec le contexte intact, par la commande <code>atuin resume</code>.</p>
+<ul>
+<li>Dépôt vérifié : github.com/atuinsh/atuin — MIT, 32 294 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : l'article ne cite que Claude Code et Codex ; la reprise d'une session Hermes n'est pas documentée. L'article est daté du 27 octobre et a été remonté sur Hacker News le 11 novembre (95 points, 34 commentaires) : https://blog.atuin.sh/threads-agent-sessions/</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Console 1.4.0 — Hermes sur Android, avec navigateur partagé et espace de travail</h3>
+<p>Application Android libre pour piloter son propre agent Hermes depuis le téléphone, indépendante de Nous et gratuite. La version 1.4.0 ajoute le suivi des sous-agents en direct (activité en cours, enfants imbriqués, ouverture de leur conversation), l'accès au bureau du serveur pour les profils « bot » (expérimental, demande la prise en charge côté serveur), un navigateur intégré partagé avec l'agent — Hermes ouvre une page, la lit et y agit pendant qu'on la regarde depuis le téléphone — et un espace de travail accolé à la conversation pour relire les différences git, indexer ou désindexer des fichiers et valider en local, sans pousser.</p>
+<ul>
+<li>Dépôt vérifié : github.com/xP3ta/hermes-console — GPL-3.0, 128 étoiles, dernière poussée le 11 novembre 2026 ; version 1.4.0 publiée, également sur Google Play. Gratuit.</li>
+</ul>
+<h3>llm 0.37.2 — un correctif de sécurité pour l'outil en ligne de commande de Simon Willison</h3>
+<p>La version corrige deux manières d'envoyer par accident la clé d'interface de programmation OpenAI configurée vers un fournisseur tiers compatible : lorsque la clé nommée n'avait jamais été enregistrée, et lorsqu'un modèle déclaré <code>responses: true</code> était lancé avec l'option de compatibilité <code>chat_completions</code>. Le défaut concernait la configuration <code>extra-openai-models.yaml</code>. Qui utilise <code>llm</code> avec un point d'accès compatible tiers a intérêt à mettre à jour.</p>
+<ul>
+<li>Dépôt vérifié : github.com/simonw/llm — Apache-2.0, 12 754 étoiles, dernière poussée le 11 novembre 2026. Billet : https://simonwillison.net/2026/Nov/11/llm/</li>
+</ul>
+<h3>Gemini Decision 1 — un modèle de décision, gratuit dans AI Studio</h3>
+<p>Google rejoint Jev et GPT-6 Luna sur le créneau du « modèle de décision », qui ne rédige pas mais répond à trois types de questions : oui ou non, choix multiple, et notation sur grille. Particularité utile : là où Jev ne traite que du texte et GPT-6 Luna du texte et de l'image, Gemini Decision 1 accepte texte, images, audio, vidéo et PDF. Le tarif relevé est de 0,10 dollar par million de jetons d'entrée, la sortie étant gratuite ; Jev reste le moins cher, à 0,042 dollar.</p>
+<ul>
+<li>Réserve : la gratuité sur Google AI Studio provient du titre de l'entrée Hacker News, elle n'a pas été confirmée sur la page de Google ; les tarifs proviennent du billet de Simon Willison et n'ont pas été recoupés chez l'éditeur. Billet : https://simonwillison.net/2026/Nov/11/gemini-decisions-api/</li>
+</ul>
+<h3>Qwen4-Max en aperçu — un million de jetons, aucun poids ouvert</h3>
+<p>Alibaba a ouvert le 11 novembre un aperçu de Qwen4-Max sur son offre par abonnement Token Plan (à partir de 3 dollars par mois) et dans Qwen Chat, avec une fenêtre de contexte annoncée d'un million de jetons et un aperçu qui se termine le 25 novembre. Aucune carte de modèle définitive, aucun tarif au jeton et <strong>aucun poids ouvert</strong> à ce stade : ce n'est donc pas un modèle à essayer en local, seulement une capacité à suivre pour la suite.</p>
+<ul>
+<li>Réserve : les dépêches techniques concordent (TechNode, YottaLabs), mais je n'ai pas lu l'annonce d'Alibaba elle-même ; la page consultée du Token Plan met en avant « Qwen3.8-Max », nom différent de celui des articles — écart signalé, non résolu. Fil : https://news.ycombinator.com/item?id=50449130</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Dress Rehearsal — répéter avant d'exécuter, puis n'exécuter que ce qui a été validé</h3>
+<p>Greffon d'entrée au hackathon, dont le principe répond à une inquiétude concrète : confier à l'agent des accès réels (fichiers, serveurs, messages). Activé, il laisse les lectures se faire réellement mais enregistre chaque modification au lieu de l'exécuter ; la commande <code>/rehearse</code> affiche le script exact des changements, avec les différences et les marqueurs de risque ; <code>/rehearse drop 4-5</code> retire les étapes refusées ; <code>/rehearse go</code> exécute exactement ce qui a été approuvé, sans modèle dans la boucle, et refuse tout fichier modifié depuis la répétition. Dans la démonstration, l'agent avait inventé un appel Telegram avec un faux jeton, et la répétition l'a arrêté avant exécution. L'auteur indique que le greffon est fusionné dans le catalogue officiel (<code>hermes plugins install dress-rehearsal</code>).</p>
+<ul>
+<li>Dépôt vérifié : github.com/kawsthingz/hermes-dress-rehearsal — MIT, 0 étoile, dernière poussée le 10 novembre 2026. Gratuit. Réserve : dépôt ouvert la veille du message, aucune évaluation extérieure.</li>
+</ul>
+<h3>Tenure — une confiance qui se reprend après une erreur, par type d'action</h3>
+<p>Autre entrée du hackathon, sous licence Apache-2.0. Le constat de départ : Hermes interroge sur une courte liste de commandes risquées et laisse passer le reste, sans rien changer après une erreur. Tenure s'interpose entre « tout demander » et « tout confier ». Le travail courant ne demande rien de plus, mais chaque changement est enregistré d'abord, et <code>/tenure undo</code> restaure l'état pendant 24 heures ; une seule erreur (une annulation, un signalement, un refus) met <strong>ce type d'action seulement</strong> à l'épreuve : le fichier supprimé par erreur fait redemander les suppressions, les écritures gardant leur confiance. L'autonomie se regagne par les approbations, avec des contrôles ponctuels aléatoires ; les envois de code, déploiements, téléversements et paiements demandent toujours. Tout passe par les points d'ancrage d'Hermes, sans appel réseau ni modèle, sous Linux, macOS et Windows.</p>
+<ul>
+<li>Dépôt vérifié : github.com/otsoa-dubief/tenure — Apache-2.0, 2 étoiles, dernière poussée le 11 novembre 2026. Gratuit. Réserve : le dépôt n'est pas nommé dans le message (retrouvé par recherche GitHub) ; la règle de regains d'autonomie s'appuie sur une étude que l'auteur dit avoir préenregistrée sur OSF, que je n'ai pas examinée.</li>
+</ul>
+<h3>Cardlake — un seul fil pour ce qu'on veut garder de ses conversations</h3>
+<p>Greffon qui constitue, à la demande, un fil de type réseau social mais tourné vers la productivité, à partir de ce qu'on fait enregistrer à Hermes : le greffon écrit dans un service Cardlake dans une mise en forme soignée, et le fil se consulte en ligne ou depuis Telegram. Claude, ChatGPT et n'importe quel assistant compatible MCP peuvent alimenter le même fil. Installation depuis la place de marché : <code>hermes plugins install cardlake --enable</code>.</p>
+<ul>
+<li>Dépôt vérifié : github.com/cardleforall/cardlake-hermes — AGPL-3.0, 1 étoile, dernière poussée le 10 novembre 2026. Le greffon est libre ; le service en ligne, lui, ne l'est pas — un compte gratuit (connexion Google) est nécessaire et ses conditions n'ont pas été examinées.</li>
+</ul>
+<h3>Stoa — un CRM léger, piloté à la voix dans Hermes</h3>
+<p>Greffon MIT qui transforme Hermes en outil de suivi commercial : le registre de vérité est une petite base SQLite que le greffon possède, si bien que les changements d'étape, les journaux et l'import de listes sont déterministes et ne consomment pas de modèle ; l'agent lit et écrit autour. Il ajoute neuf outils, des cartes Slack dont les boutons font avancer une étape, une page et un volet vivant dans l'application de bureau et l'application web (tunnel de conversion, tableau à glisser-déposer, zone où parler ou dicter, dépôt de fichiers CSV), des automatisations et des guides d'action. C'est la reconstruction généralisée d'un dispositif qu'une agence de recrutement utilise tous les jours. Peu utile pour un professeur, mais bon exemple de ce qu'un greffon Hermes peut porter seul.</p>
+<ul>
+<li>Dépôt vérifié : github.com/jarrett-del/hermes-stoa — MIT, 2 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+</ul>
+<h3>ShipStatic — demander à Hermes de mettre une page en ligne et récupérer un lien</h3>
+<p>Greffon entré au catalogue officiel (<code>hermes plugins install ship</code>) : Hermes rédige une page HTML ou un rapport, le publie et renvoie un lien. Aucun compte n'est nécessaire, le site reste en ligne trois jours, et le lien de revendication le conserve. Trois usages annoncés : partager un rapport de recherche ou une synthèse hebdomadaire en une adresse, protéger la page par mot de passe, publier le résultat d'un site construit par ailleurs (Astro, Hugo, Eleventy) sous forme d'instantanés qui ne s'écrasent pas. Un réglage <code>trust: full</code> permet aux tâches planifiées de publier sans approbation.</p>
+<ul>
+<li>Réserve : le greffon est bien au catalogue (page vérifiée : https://hermes-agent.nousresearch.com/marketplace/ship), mais il s'appuie sur un serveur MCP hébergé dont la licence n'est pas annoncée, et la reprise après trois jours dépend d'un « lien de revendication » non détaillé. La place du message est celle de l'éditeur du service.</li>
+</ul>
+<h3>Voice Unleashed — une interface vocale pour Hermes, dans le navigateur</h3>
+<p>Interface vocale utilisable depuis n'importe quel appareil doté d'un navigateur, d'un haut-parleur et d'un microphone : elle gère les dialogues à choix et les confirmations d'approbation, permet de reprendre une session existante ou d'en ouvrir une nouvelle, et s'appuie sur VoiceManager pour la parole en local (reconnaissance vocale en flux à faible latence, mode par lots compris). L'auteur a travaillé la prise de tour de parole et l'interruption de l'agent.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/TacoTakumi/hermes-voice-unleashed — MIT, 5 étoiles, poussée le 11 novembre 2026 ; github.com/TacoTakumi/VoiceManager — MIT, 37 étoiles, poussée le 11 novembre 2026, décrit comme un serveur de reconnaissance vocale à faible latence pour ajouter la voix à un modèle. Gratuit.</li>
+</ul>
+<h3>Borrowed Hands — prêter le Xcode de son Mac à un agent hébergé ailleurs</h3>
+<p>Greffon de hackathon qui permet à un agent tournant dans le cloud de se servir de Xcode sur le Mac, sans SSH, sans réseau privé virtuel et sans ouvrir de port entrant : le Mac se connecte vers l'extérieur et n'autorise la compilation que pour les dépôts et configurations explicitement autorisés, chaque compilation s'exécutant sous un utilisateur caché, dans un bac à sable sans réseau. L'auteur l'a éprouvé en faisant produire par l'agent une application de calcul puis une application météo pour iPhone, compilées sur son Mac et proposées en modification.</p>
+<ul>
+<li>Dépôt vérifié : github.com/alext8900/borrowed-hands — MIT, 0 étoile, créé le 9 novembre 2026, dernière poussée le 11 novembre 2026. Gratuit. Réserve : l'adresse n'est pas donnée dans le message (retrouvée par recherche GitHub) et le projet n'a aucune évaluation extérieure.</li>
+</ul>
+<h3>AssemblyForNeovim — le compilateur dans une fenêtre flottante de Neovim</h3>
+<p>Petit script Lua qui affiche l'assembleur en ligne dans Neovim, en marge du code C, C++ ou Rust, en s'appuyant sur le compilateur installé localement : aucune connexion extérieure, le rôle de godbolt.org tenu dans l'éditeur. Présenté sur Hacker News le 11 novembre (48 points).</p>
+<ul>
+<li>Dépôt vérifié : github.com/0xdeadf1sh/AssemblyForNeovim — Unlicense (domaine public), 176 étoiles, dernière poussée le 9 octobre 2026. Gratuit.</li>
+</ul>
+<h2>Volume</h2>
+<p>109 entrées examinées dans l'intervalle : 35 du journal r/hermesagent après dédoublonnage par adresse (le même fil y entre deux fois, une fois par le relais avec un identifiant préfixé et un titre traduit, une fois par le flux du sous-forum), et 74 des sources complémentaires (5 Simon Willison, 2 Latent Space, 67 Hacker News à dix points et plus) — 16 retenues, 93 écartées. Le journal Hacker News généraliste explique l'essentiel des rejets : sur ses 67 entrées, cinq touchaient ce thème. La dernière collecte, le 11 novembre à 22 h 30 UTC, n'a signalé aucune erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — jeudi 12 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le hackathon de greffons Hermes a fermé ses soumissions mercredi 11 novembre à 22 h UTC, et la moisson tient en huit extensions ou interfaces publiées dans la journée — dont quatre qui répondent à un vrai problème d'autonomie de l'agent. Côté outils, Klad laisse un agent peindre au trait près dans un logiciel de dessin, et Amazon publie un émulateur officiel de ses services pour tester en local sans clé payante. Côté modèles, Google ouvre un modèle de décision utilisable gratuitement et Alibaba met Qwen4-Max en aperçu, sans poids ouverts.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Klad — un logiciel de dessin que l'agent pilote au trait près</h3>
+<p>Application de peinture et d'animation en deux dimensions conçue pour être partagée avec un agent de code : la personne dessine au stylet dans l'éditeur, l'agent peint par la ligne de commande <code>klad</code>, avec les mêmes pinceaux, sur le même dessin, et chacun voit les traits de l'autre en une seconde environ. Il n'y a aucun modèle d'image dans l'outil : l'agent décide quoi peindre, et tout ce qui est posé reste modifiable — un trait garde son tracé, sa pression, son pinceau et sa couleur, une forme garde ses points, si bien qu'une feuille ratée se corrige au lieu d'être retirée au hasard. Les compétences fournies à l'agent (l'usage de l'outil, et un second document sur le métier de dessinateur) sont sous licence MIT ; le format de fichier est documenté au bit près.</p>
+<ul>
+<li>Dépôt vérifié : github.com/klad-app/klad — 118 étoiles, dernière poussée le 11 novembre 2026. Licence <strong>source-available</strong> (PolyForm Internal Use 1.0.0), donc <strong>pas open source</strong> : gratuit à compiler et à utiliser pour soi, et dans une entreprise de moins de 500 000 euros de chiffre d'affaires ; l'application précompilée est annoncée sur klad.studio.</li>
+<li>Réserve : première version publique, à compiler soi-même ; l'éditeur fonctionne au stylet sur macOS, il démarre seulement à la souris sur Linux.</li>
+<li>Fil : https://news.ycombinator.com/item?id=50454951</li>
+</ul>
+<h3>aws/aws-emulator — les services d'Amazon en local, sans clé payante</h3>
+<p>Amazon publie enfin un émulateur officiel de ses interfaces de programmation : on fait tourner en local un clone des services pour lancer ses tests sans provisionner de compte ni de clé payante. Écrit en Rust, et le détail intéressant est ailleurs : le projet comptait 29 684 validations de code dans ses trois premières semaines, l'essentiel du code ayant été produit par un essaim d'agents — le responsable du projet en a tiré un billet sur ce que devient le métier d'ingénieur quand les agents écrivent le code.</p>
+<ul>
+<li>Dépôt vérifié : github.com/aws/aws-emulator — CC0-1.0, 1 565 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : Docker est nécessaire sur macOS et Windows ; Simon Willison souhaite un binaire unique, qui n'existe pas encore.</li>
+<li>Billet : https://simonwillison.net/2026/Nov/11/aws-emulator/</li>
+</ul>
+<h3>MACaQ — quantifier soi-même ses modèles pour l'inférence locale</h3>
+<p>Huawei publie le quantifieur qu'il utilise en interne : il annonce une quantification indépendante du modèle, produisant des fichiers GGUF exploitables par llama.cpp, vLLM, Diffusers et PyTorch, pour les modèles de texte comme d'image, de vidéo et d'audio. Concrètement, c'est le maillon qui permet de réduire un modèle pour le faire tenir sur une machine modeste, ce qui intéresse directement qui veut faire tourner son agent sans cloud.</p>
+<ul>
+<li>Dépôt vérifié : github.com/huawei-csl/MACaQ — Apache-2.0, 81 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : la qualité annoncée (« état de l'art ») est celle de ses auteurs ; aucune comparaison indépendante n'a été trouvée. Fil : https://news.ycombinator.com/item?id=50458166 (38 points, 15 commentaires).</li>
+</ul>
+<h3>Atuin Threads — les sessions d'agent, sur toutes ses machines</h3>
+<p>Atuin, qui synchronise déjà l'historique de terminal entre machines (32 000 étoiles, MIT), étend son index aux sessions d'agent : au lieu d'être éparpillées entre plusieurs outils et plusieurs machines, elles deviennent une histoire unique, cherchable, reprise d'un outil à l'autre — commencer dans Claude Code, reprendre dans Codex ailleurs, avec le contexte intact, par la commande <code>atuin resume</code>.</p>
+<ul>
+<li>Dépôt vérifié : github.com/atuinsh/atuin — MIT, 32 294 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+<li>Réserve : l'article ne cite que Claude Code et Codex ; la reprise d'une session Hermes n'est pas documentée. L'article est daté du 27 octobre et a été remonté sur Hacker News le 11 novembre (95 points, 34 commentaires) : https://blog.atuin.sh/threads-agent-sessions/</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Console 1.4.0 — Hermes sur Android, avec navigateur partagé et espace de travail</h3>
+<p>Application Android libre pour piloter son propre agent Hermes depuis le téléphone, indépendante de Nous et gratuite. La version 1.4.0 ajoute le suivi des sous-agents en direct (activité en cours, enfants imbriqués, ouverture de leur conversation), l'accès au bureau du serveur pour les profils « bot » (expérimental, demande la prise en charge côté serveur), un navigateur intégré partagé avec l'agent — Hermes ouvre une page, la lit et y agit pendant qu'on la regarde depuis le téléphone — et un espace de travail accolé à la conversation pour relire les différences git, indexer ou désindexer des fichiers et valider en local, sans pousser.</p>
+<ul>
+<li>Dépôt vérifié : github.com/xP3ta/hermes-console — GPL-3.0, 128 étoiles, dernière poussée le 11 novembre 2026 ; version 1.4.0 publiée, également sur Google Play. Gratuit.</li>
+</ul>
+<h3>llm 0.37.2 — un correctif de sécurité pour l'outil en ligne de commande de Simon Willison</h3>
+<p>La version corrige deux manières d'envoyer par accident la clé d'interface de programmation OpenAI configurée vers un fournisseur tiers compatible : lorsque la clé nommée n'avait jamais été enregistrée, et lorsqu'un modèle déclaré <code>responses: true</code> était lancé avec l'option de compatibilité <code>chat_completions</code>. Le défaut concernait la configuration <code>extra-openai-models.yaml</code>. Qui utilise <code>llm</code> avec un point d'accès compatible tiers a intérêt à mettre à jour.</p>
+<ul>
+<li>Dépôt vérifié : github.com/simonw/llm — Apache-2.0, 12 754 étoiles, dernière poussée le 11 novembre 2026. Billet : https://simonwillison.net/2026/Nov/11/llm/</li>
+</ul>
+<h3>Gemini Decision 1 — un modèle de décision, gratuit dans AI Studio</h3>
+<p>Google rejoint Jev et GPT-6 Luna sur le créneau du « modèle de décision », qui ne rédige pas mais répond à trois types de questions : oui ou non, choix multiple, et notation sur grille. Particularité utile : là où Jev ne traite que du texte et GPT-6 Luna du texte et de l'image, Gemini Decision 1 accepte texte, images, audio, vidéo et PDF. Le tarif relevé est de 0,10 dollar par million de jetons d'entrée, la sortie étant gratuite ; Jev reste le moins cher, à 0,042 dollar.</p>
+<ul>
+<li>Réserve : la gratuité sur Google AI Studio provient du titre de l'entrée Hacker News, elle n'a pas été confirmée sur la page de Google ; les tarifs proviennent du billet de Simon Willison et n'ont pas été recoupés chez l'éditeur. Billet : https://simonwillison.net/2026/Nov/11/gemini-decisions-api/</li>
+</ul>
+<h3>Qwen4-Max en aperçu — un million de jetons, aucun poids ouvert</h3>
+<p>Alibaba a ouvert le 11 novembre un aperçu de Qwen4-Max sur son offre par abonnement Token Plan (à partir de 3 dollars par mois) et dans Qwen Chat, avec une fenêtre de contexte annoncée d'un million de jetons et un aperçu qui se termine le 25 novembre. Aucune carte de modèle définitive, aucun tarif au jeton et <strong>aucun poids ouvert</strong> à ce stade : ce n'est donc pas un modèle à essayer en local, seulement une capacité à suivre pour la suite.</p>
+<ul>
+<li>Réserve : les dépêches techniques concordent (TechNode, YottaLabs), mais je n'ai pas lu l'annonce d'Alibaba elle-même ; la page consultée du Token Plan met en avant « Qwen3.8-Max », nom différent de celui des articles — écart signalé, non résolu. Fil : https://news.ycombinator.com/item?id=50449130</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Dress Rehearsal — répéter avant d'exécuter, puis n'exécuter que ce qui a été validé</h3>
+<p>Greffon d'entrée au hackathon, dont le principe répond à une inquiétude concrète : confier à l'agent des accès réels (fichiers, serveurs, messages). Activé, il laisse les lectures se faire réellement mais enregistre chaque modification au lieu de l'exécuter ; la commande <code>/rehearse</code> affiche le script exact des changements, avec les différences et les marqueurs de risque ; <code>/rehearse drop 4-5</code> retire les étapes refusées ; <code>/rehearse go</code> exécute exactement ce qui a été approuvé, sans modèle dans la boucle, et refuse tout fichier modifié depuis la répétition. Dans la démonstration, l'agent avait inventé un appel Telegram avec un faux jeton, et la répétition l'a arrêté avant exécution. L'auteur indique que le greffon est fusionné dans le catalogue officiel (<code>hermes plugins install dress-rehearsal</code>).</p>
+<ul>
+<li>Dépôt vérifié : github.com/kawsthingz/hermes-dress-rehearsal — MIT, 0 étoile, dernière poussée le 10 novembre 2026. Gratuit. Réserve : dépôt ouvert la veille du message, aucune évaluation extérieure.</li>
+</ul>
+<h3>Tenure — une confiance qui se reprend après une erreur, par type d'action</h3>
+<p>Autre entrée du hackathon, sous licence Apache-2.0. Le constat de départ : Hermes interroge sur une courte liste de commandes risquées et laisse passer le reste, sans rien changer après une erreur. Tenure s'interpose entre « tout demander » et « tout confier ». Le travail courant ne demande rien de plus, mais chaque changement est enregistré d'abord, et <code>/tenure undo</code> restaure l'état pendant 24 heures ; une seule erreur (une annulation, un signalement, un refus) met <strong>ce type d'action seulement</strong> à l'épreuve : le fichier supprimé par erreur fait redemander les suppressions, les écritures gardant leur confiance. L'autonomie se regagne par les approbations, avec des contrôles ponctuels aléatoires ; les envois de code, déploiements, téléversements et paiements demandent toujours. Tout passe par les points d'ancrage d'Hermes, sans appel réseau ni modèle, sous Linux, macOS et Windows.</p>
+<ul>
+<li>Dépôt vérifié : github.com/otsoa-dubief/tenure — Apache-2.0, 2 étoiles, dernière poussée le 11 novembre 2026. Gratuit. Réserve : le dépôt n'est pas nommé dans le message (retrouvé par recherche GitHub) ; la règle de regains d'autonomie s'appuie sur une étude que l'auteur dit avoir préenregistrée sur OSF, que je n'ai pas examinée.</li>
+</ul>
+<h3>Cardlake — un seul fil pour ce qu'on veut garder de ses conversations</h3>
+<p>Greffon qui constitue, à la demande, un fil de type réseau social mais tourné vers la productivité, à partir de ce qu'on fait enregistrer à Hermes : le greffon écrit dans un service Cardlake dans une mise en forme soignée, et le fil se consulte en ligne ou depuis Telegram. Claude, ChatGPT et n'importe quel assistant compatible MCP peuvent alimenter le même fil. Installation depuis la place de marché : <code>hermes plugins install cardlake --enable</code>.</p>
+<ul>
+<li>Dépôt vérifié : github.com/cardleforall/cardlake-hermes — AGPL-3.0, 1 étoile, dernière poussée le 10 novembre 2026. Le greffon est libre ; le service en ligne, lui, ne l'est pas — un compte gratuit (connexion Google) est nécessaire et ses conditions n'ont pas été examinées.</li>
+</ul>
+<h3>Stoa — un CRM léger, piloté à la voix dans Hermes</h3>
+<p>Greffon MIT qui transforme Hermes en outil de suivi commercial : le registre de vérité est une petite base SQLite que le greffon possède, si bien que les changements d'étape, les journaux et l'import de listes sont déterministes et ne consomment pas de modèle ; l'agent lit et écrit autour. Il ajoute neuf outils, des cartes Slack dont les boutons font avancer une étape, une page et un volet vivant dans l'application de bureau et l'application web (tunnel de conversion, tableau à glisser-déposer, zone où parler ou dicter, dépôt de fichiers CSV), des automatisations et des guides d'action. C'est la reconstruction généralisée d'un dispositif qu'une agence de recrutement utilise tous les jours. Peu utile pour un professeur, mais bon exemple de ce qu'un greffon Hermes peut porter seul.</p>
+<ul>
+<li>Dépôt vérifié : github.com/jarrett-del/hermes-stoa — MIT, 2 étoiles, dernière poussée le 11 novembre 2026. Gratuit.</li>
+</ul>
+<h3>ShipStatic — demander à Hermes de mettre une page en ligne et récupérer un lien</h3>
+<p>Greffon entré au catalogue officiel (<code>hermes plugins install ship</code>) : Hermes rédige une page HTML ou un rapport, le publie et renvoie un lien. Aucun compte n'est nécessaire, le site reste en ligne trois jours, et le lien de revendication le conserve. Trois usages annoncés : partager un rapport de recherche ou une synthèse hebdomadaire en une adresse, protéger la page par mot de passe, publier le résultat d'un site construit par ailleurs (Astro, Hugo, Eleventy) sous forme d'instantanés qui ne s'écrasent pas. Un réglage <code>trust: full</code> permet aux tâches planifiées de publier sans approbation.</p>
+<ul>
+<li>Réserve : le greffon est bien au catalogue (page vérifiée : https://hermes-agent.nousresearch.com/marketplace/ship), mais il s'appuie sur un serveur MCP hébergé dont la licence n'est pas annoncée, et la reprise après trois jours dépend d'un « lien de revendication » non détaillé. La place du message est celle de l'éditeur du service.</li>
+</ul>
+<h3>Voice Unleashed — une interface vocale pour Hermes, dans le navigateur</h3>
+<p>Interface vocale utilisable depuis n'importe quel appareil doté d'un navigateur, d'un haut-parleur et d'un microphone : elle gère les dialogues à choix et les confirmations d'approbation, permet de reprendre une session existante ou d'en ouvrir une nouvelle, et s'appuie sur VoiceManager pour la parole en local (reconnaissance vocale en flux à faible latence, mode par lots compris). L'auteur a travaillé la prise de tour de parole et l'interruption de l'agent.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/TacoTakumi/hermes-voice-unleashed — MIT, 5 étoiles, poussée le 11 novembre 2026 ; github.com/TacoTakumi/VoiceManager — MIT, 37 étoiles, poussée le 11 novembre 2026, décrit comme un serveur de reconnaissance vocale à faible latence pour ajouter la voix à un modèle. Gratuit.</li>
+</ul>
+<h3>Borrowed Hands — prêter le Xcode de son Mac à un agent hébergé ailleurs</h3>
+<p>Greffon de hackathon qui permet à un agent tournant dans le cloud de se servir de Xcode sur le Mac, sans SSH, sans réseau privé virtuel et sans ouvrir de port entrant : le Mac se connecte vers l'extérieur et n'autorise la compilation que pour les dépôts et configurations explicitement autorisés, chaque compilation s'exécutant sous un utilisateur caché, dans un bac à sable sans réseau. L'auteur l'a éprouvé en faisant produire par l'agent une application de calcul puis une application météo pour iPhone, compilées sur son Mac et proposées en modification.</p>
+<ul>
+<li>Dépôt vérifié : github.com/alext8900/borrowed-hands — MIT, 0 étoile, créé le 9 novembre 2026, dernière poussée le 11 novembre 2026. Gratuit. Réserve : l'adresse n'est pas donnée dans le message (retrouvée par recherche GitHub) et le projet n'a aucune évaluation extérieure.</li>
+</ul>
+<h3>AssemblyForNeovim — le compilateur dans une fenêtre flottante de Neovim</h3>
+<p>Petit script Lua qui affiche l'assembleur en ligne dans Neovim, en marge du code C, C++ ou Rust, en s'appuyant sur le compilateur installé localement : aucune connexion extérieure, le rôle de godbolt.org tenu dans l'éditeur. Présenté sur Hacker News le 11 novembre (48 points).</p>
+<ul>
+<li>Dépôt vérifié : github.com/0xdeadf1sh/AssemblyForNeovim — Unlicense (domaine public), 176 étoiles, dernière poussée le 9 octobre 2026. Gratuit.</li>
+</ul>
+<h2>Volume</h2>
+<p>109 entrées examinées dans l'intervalle : 35 du journal r/hermesagent après dédoublonnage par adresse (le même fil y entre deux fois, une fois par le relais avec un identifiant préfixé et un titre traduit, une fois par le flux du sous-forum), et 74 des sources complémentaires (5 Simon Willison, 2 Latent Space, 67 Hacker News à dix points et plus) — 16 retenues, 93 écartées. Le journal Hacker News généraliste explique l'essentiel des rejets : sur ses 67 entrées, cinq touchaient ce thème. La dernière collecte, le 11 novembre à 22 h 30 UTC, n'a signalé aucune erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — jeudi 12 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-12.html</link>
@@ -6223,69 +6418,6 @@ https://goodfirsttoken.org/</p>
 </ul>
 <h2>Volume</h2>
 <p>48 entrées examinées (34 nouvelles depuis la dernière édition, 14 entrées Lobsters de 2015 restées hors déduplication et écartées par l'horizon de quatre jours), 25 retenues, 23 écartées.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/hermesagent — dimanche 8 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-08.html</link>
-<guid isPermaLink="false">hermesagent-2026-11-08</guid>
-<pubDate>Sun, 08 Nov 2026 00:52:43 +0100</pubDate>
-<category>r/hermesagent</category>
-<description><![CDATA[<h1>Veille r/hermesagent — dimanche 8 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Trois outils libres signés par leurs auteurs : LEEBKIT, qui fabrique des vidéos verticales hors ligne, Bong, qui remplace les raccourcis de DuckDuckGo en auto-hébergé, et Coldframe, un pot de miel pour automates de froid.</li>
-<li>Côté écosystème Hermes : un greffon de relecture de maquettes (hermes-mock-review) et un serveur MCP qui expose la surface de contrôle de Hermes à des clients distants (hermcp) ; un service gratuit de second avis entre agents (pact0) ouvre ses premiers échanges publics.</li>
-<li>La bibliothèque d'émulation de terminal qui sert de cœur à Ghostty passe en version 1.0.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>LEEBKIT — des vidéos promo verticales, entièrement hors ligne</h3>
-<p>L'auteur voulait un clip de quinze secondes sans s'abonner à un service de montage : LEEBKIT transforme une à dix images et vos textes en vidéo 9:16 (format Reels, Shorts, TikTok) dont les légendes s'animent mot à mot, avec panneaux, pastilles, cartes d'appel à l'action et transitions. Tout tient dans Python et Pillow : ni ffmpeg à installer, ni carte graphique, ni clé d'interface, ni compte ; on ouvre un serveur local dans le navigateur, et une vidéo de trente secondes se rend en une minute environ sur un ordinateur ordinaire. Licence AGPL-3.0, gratuit. Dépôt <code>github.com/leeblaab/leebkit</code> (1 étoile, créé le 6 novembre, dernier commit le 7 novembre à 14 h 29 UTC) : le projet est très jeune, l'auteur reconnaît des aspérités et se limite pour l'instant au format 9:16. Version 1.1.</p>
-<h3>Bong — les raccourcis de recherche, en auto-hébergé</h3>
-<p>Soixante et un raccourcis courts tapés dans la barre d'adresse (<code>.gh</code> pour GitHub, <code>.mdn</code> pour la documentation MDN, <code>.pypi</code>, <code>.w</code> pour Wikipédia, <code>.hn</code>…) qui remplacent les « bang » de DuckDuckGo, mais chez soi : le logiciel s'installe sur son propre serveur et l'on y ajoute ses propres raccourcis. Licence Apache 2.0. Code sur <code>github.com/glendalab/bong</code> (11 étoiles, créé le 31 octobre, dernier commit le 7 novembre à 13 h 05 UTC) ; une instance publique est proposée à <code>bong.glendalab.com</code>. Repéré sur Hacker News (21 points, 6 commentaires).</p>
-<h3>Coldframe — un pot de miel qui imite les automates de réfrigération</h3>
-<p>Un honeypot basse interaction qui se fait passer pour un contrôleur de froid de supermarché : les deux personnages imitent fidèlement les interfaces Danfoss AK-SM 800A et Dixell XWEB 500 (ordre des en-têtes, titres de pages, certificats, versions de TLS), au point d'être reconnus comme de vrais appareils par Shodan. Il reconnaît les tentatives d'exploitation, dont la faille CVE-2025-41450 et le contournement de connexion par « code du jour », et journalise les essais. Un seul fichier Python, uniquement la bibliothèque standard. Licence MIT, gratuit. Dépôt <code>github.com/hedgerow-dev/coldframe</code> (30 étoiles, créé le 5 novembre, dernier commit le 7 novembre à 21 h 37 UTC). Ce sujet sort du périmètre habituel de cette veille — il s'agit de sécurité industrielle et non d'agents — mais c'est un outil libre neuf et concret, d'où sa présence ici.</p>
-<h3>EyesRhythm — un compagnon de bureau qui surveille le rythme des clignements</h3>
-<p>Un logiciel pour macOS et Windows qui se sert de la webcam pour compter les clignements, mesurer leur régularité et calculer un indice de rythme oculaire de 0 à 100, avec un rappel visuel ou sonore et un suivi des directions dans lesquelles la tête a tourné, afin de soulager nuque et épaules. Applications identiques sur les deux systèmes, aucune image ne quitte la machine, pas de compte ni de clé de licence. Gratuit (93 Mo pour macOS, 84 Mo pour Windows), mais <strong>logiciel fermé sans dépôt public</strong> : la gratuité n'est vérifiable que sur son site, <code>eyesrhythm.com</code>, et la version citée est la 1.5.0. Repéré sur Hacker News ; l'auteur précise qu'il ne s'agit pas d'un dispositif médical.</p>
-<h3>pact0 — demander un second avis à un autre agent</h3>
-<p>Un serveur MCP qui permet à un agent de déposer une demande, de la faire traiter par un autre agent puis de récupérer la réponse, de l'approuver ou de demander une correction. Les requêtes et les réponses sont publiques et les demandes gratuites sont ouvertes (les travaux payants sont en pause). Connexion à <code>pact0.com/mcp</code>. <strong>Service hébergé, sans dépôt public</strong> : ce n'est pas un logiciel libre, et rien ne garantit qu'un autre agent prenne la demande — l'agent demandeur doit revenir chercher la réponse. L'exemple mis en avant par l'auteur (une page d'offre jugée crédible ou non) est une illustration, pas une mesure.</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>Libghostty 1.0 — le cœur de terminal de Ghostty devient une bibliothèque réutilisable</h3>
-<p>La partie qui émule le terminal dans Ghostty est publiée en version 1.0 sous forme de bibliothèque : elle peut désormais être intégrée dans une autre application pour lui donner un terminal complet, sans réécrire l'émulation. Licence MIT. Dépôt <code>github.com/ghostty-org/ghostty</code> (63 825 étoiles, dernier commit le 7 novembre à 17 h 57 UTC). L'annonce de Mitchell Hashimoto a réuni 393 points et 64 commentaires sur Hacker News.</p>
-<h2>Extensions et greffons</h2>
-<h3>hermes-mock-review — un tableau de relecture de maquettes pour Hermes</h3>
-<p>Ce greffon reprend le principe des artefacts de Claude Code : à chaque nouveau projet, l'agent propose plusieurs maquettes d'interface, vous choisissez la meilleure et la corrigez en posant des épingles ou des commentaires, puis vous renvoyez le tout — l'agent se réveille avec votre retour. La page de relecture fonctionne en local, via Tailscale ou via ici.now, protégée par un mot de passe. Licence MIT. Dépôt <code>github.com/apelabs-dev/hermes-mock-review</code> (20 étoiles, dernier commit le 6 novembre à 23 h 24 UTC) ; documentation dans les pages de greffons de Hermes (<code>hermes-agent.nousresearch.com/docs/plugins/mock-review</code>).</p>
-<h3>H.E.R.MCP (hermcp) — piloter une installation Hermes depuis n'importe quel client MCP</h3>
-<p>Le greffon expose la surface de contrôle de Hermes comme serveur MCP distant, avec des clés à portées limitées : une clé ne parle qu'à un profil, une autre ne fait que lire les sessions, une troisième ne gère que le tableau de suivi, et tout ce qu'une clé fait reste consultable dans un journal d'audit. On peut ainsi piloter une installation Hermes depuis Claude Desktop, Codex, Cursor ou un téléphone, connexions OAuth aux fournisseurs comprises. Il s'appuie uniquement sur la CLI publique, les modules Python et l'API de Hermes — projet communautaire, non affilié à Nous Research. Licence MIT. Dépôt <code>github.com/HearthCore/hermcp</code> (2 étoiles, créé le 3 novembre, dernier commit le 7 novembre à 16 h 48 UTC).</p>
-<h2>Volume</h2>
-<p>90 entrées nouvelles examinées dans l'intervalle (24 du subreddit r/hermesagent, 65 du flux Hacker News à 10 points et plus, 1 de Latent Space), 8 retenues, 82 écartées. La collecte n'a signalé aucun échec (<code>state/reddit/hermesagent/meta.json</code>, dernier passage le 7 novembre à 21 h 51 UTC). Le flux généraliste de Hacker News fournit l'essentiel des écartées — finance, politique, rétro-informatique : le taux de rétention élevé de cette édition (environ 9 %) traduit la nature de la source, pas un filtre resserré, et la veille par sous-thème reste portée par le subreddit.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/hermesagent — dimanche 8 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Trois outils libres signés par leurs auteurs : LEEBKIT, qui fabrique des vidéos verticales hors ligne, Bong, qui remplace les raccourcis de DuckDuckGo en auto-hébergé, et Coldframe, un pot de miel pour automates de froid.</li>
-<li>Côté écosystème Hermes : un greffon de relecture de maquettes (hermes-mock-review) et un serveur MCP qui expose la surface de contrôle de Hermes à des clients distants (hermcp) ; un service gratuit de second avis entre agents (pact0) ouvre ses premiers échanges publics.</li>
-<li>La bibliothèque d'émulation de terminal qui sert de cœur à Ghostty passe en version 1.0.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>LEEBKIT — des vidéos promo verticales, entièrement hors ligne</h3>
-<p>L'auteur voulait un clip de quinze secondes sans s'abonner à un service de montage : LEEBKIT transforme une à dix images et vos textes en vidéo 9:16 (format Reels, Shorts, TikTok) dont les légendes s'animent mot à mot, avec panneaux, pastilles, cartes d'appel à l'action et transitions. Tout tient dans Python et Pillow : ni ffmpeg à installer, ni carte graphique, ni clé d'interface, ni compte ; on ouvre un serveur local dans le navigateur, et une vidéo de trente secondes se rend en une minute environ sur un ordinateur ordinaire. Licence AGPL-3.0, gratuit. Dépôt <code>github.com/leeblaab/leebkit</code> (1 étoile, créé le 6 novembre, dernier commit le 7 novembre à 14 h 29 UTC) : le projet est très jeune, l'auteur reconnaît des aspérités et se limite pour l'instant au format 9:16. Version 1.1.</p>
-<h3>Bong — les raccourcis de recherche, en auto-hébergé</h3>
-<p>Soixante et un raccourcis courts tapés dans la barre d'adresse (<code>.gh</code> pour GitHub, <code>.mdn</code> pour la documentation MDN, <code>.pypi</code>, <code>.w</code> pour Wikipédia, <code>.hn</code>…) qui remplacent les « bang » de DuckDuckGo, mais chez soi : le logiciel s'installe sur son propre serveur et l'on y ajoute ses propres raccourcis. Licence Apache 2.0. Code sur <code>github.com/glendalab/bong</code> (11 étoiles, créé le 31 octobre, dernier commit le 7 novembre à 13 h 05 UTC) ; une instance publique est proposée à <code>bong.glendalab.com</code>. Repéré sur Hacker News (21 points, 6 commentaires).</p>
-<h3>Coldframe — un pot de miel qui imite les automates de réfrigération</h3>
-<p>Un honeypot basse interaction qui se fait passer pour un contrôleur de froid de supermarché : les deux personnages imitent fidèlement les interfaces Danfoss AK-SM 800A et Dixell XWEB 500 (ordre des en-têtes, titres de pages, certificats, versions de TLS), au point d'être reconnus comme de vrais appareils par Shodan. Il reconnaît les tentatives d'exploitation, dont la faille CVE-2025-41450 et le contournement de connexion par « code du jour », et journalise les essais. Un seul fichier Python, uniquement la bibliothèque standard. Licence MIT, gratuit. Dépôt <code>github.com/hedgerow-dev/coldframe</code> (30 étoiles, créé le 5 novembre, dernier commit le 7 novembre à 21 h 37 UTC). Ce sujet sort du périmètre habituel de cette veille — il s'agit de sécurité industrielle et non d'agents — mais c'est un outil libre neuf et concret, d'où sa présence ici.</p>
-<h3>EyesRhythm — un compagnon de bureau qui surveille le rythme des clignements</h3>
-<p>Un logiciel pour macOS et Windows qui se sert de la webcam pour compter les clignements, mesurer leur régularité et calculer un indice de rythme oculaire de 0 à 100, avec un rappel visuel ou sonore et un suivi des directions dans lesquelles la tête a tourné, afin de soulager nuque et épaules. Applications identiques sur les deux systèmes, aucune image ne quitte la machine, pas de compte ni de clé de licence. Gratuit (93 Mo pour macOS, 84 Mo pour Windows), mais <strong>logiciel fermé sans dépôt public</strong> : la gratuité n'est vérifiable que sur son site, <code>eyesrhythm.com</code>, et la version citée est la 1.5.0. Repéré sur Hacker News ; l'auteur précise qu'il ne s'agit pas d'un dispositif médical.</p>
-<h3>pact0 — demander un second avis à un autre agent</h3>
-<p>Un serveur MCP qui permet à un agent de déposer une demande, de la faire traiter par un autre agent puis de récupérer la réponse, de l'approuver ou de demander une correction. Les requêtes et les réponses sont publiques et les demandes gratuites sont ouvertes (les travaux payants sont en pause). Connexion à <code>pact0.com/mcp</code>. <strong>Service hébergé, sans dépôt public</strong> : ce n'est pas un logiciel libre, et rien ne garantit qu'un autre agent prenne la demande — l'agent demandeur doit revenir chercher la réponse. L'exemple mis en avant par l'auteur (une page d'offre jugée crédible ou non) est une illustration, pas une mesure.</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>Libghostty 1.0 — le cœur de terminal de Ghostty devient une bibliothèque réutilisable</h3>
-<p>La partie qui émule le terminal dans Ghostty est publiée en version 1.0 sous forme de bibliothèque : elle peut désormais être intégrée dans une autre application pour lui donner un terminal complet, sans réécrire l'émulation. Licence MIT. Dépôt <code>github.com/ghostty-org/ghostty</code> (63 825 étoiles, dernier commit le 7 novembre à 17 h 57 UTC). L'annonce de Mitchell Hashimoto a réuni 393 points et 64 commentaires sur Hacker News.</p>
-<h2>Extensions et greffons</h2>
-<h3>hermes-mock-review — un tableau de relecture de maquettes pour Hermes</h3>
-<p>Ce greffon reprend le principe des artefacts de Claude Code : à chaque nouveau projet, l'agent propose plusieurs maquettes d'interface, vous choisissez la meilleure et la corrigez en posant des épingles ou des commentaires, puis vous renvoyez le tout — l'agent se réveille avec votre retour. La page de relecture fonctionne en local, via Tailscale ou via ici.now, protégée par un mot de passe. Licence MIT. Dépôt <code>github.com/apelabs-dev/hermes-mock-review</code> (20 étoiles, dernier commit le 6 novembre à 23 h 24 UTC) ; documentation dans les pages de greffons de Hermes (<code>hermes-agent.nousresearch.com/docs/plugins/mock-review</code>).</p>
-<h3>H.E.R.MCP (hermcp) — piloter une installation Hermes depuis n'importe quel client MCP</h3>
-<p>Le greffon expose la surface de contrôle de Hermes comme serveur MCP distant, avec des clés à portées limitées : une clé ne parle qu'à un profil, une autre ne fait que lire les sessions, une troisième ne gère que le tableau de suivi, et tout ce qu'une clé fait reste consultable dans un journal d'audit. On peut ainsi piloter une installation Hermes depuis Claude Desktop, Codex, Cursor ou un téléphone, connexions OAuth aux fournisseurs comprises. Il s'appuie uniquement sur la CLI publique, les modules Python et l'API de Hermes — projet communautaire, non affilié à Nous Research. Licence MIT. Dépôt <code>github.com/HearthCore/hermcp</code> (2 étoiles, créé le 3 novembre, dernier commit le 7 novembre à 16 h 48 UTC).</p>
-<h2>Volume</h2>
-<p>90 entrées nouvelles examinées dans l'intervalle (24 du subreddit r/hermesagent, 65 du flux Hacker News à 10 points et plus, 1 de Latent Space), 8 retenues, 82 écartées. La collecte n'a signalé aucun échec (<code>state/reddit/hermesagent/meta.json</code>, dernier passage le 7 novembre à 21 h 51 UTC). Le flux généraliste de Hacker News fournit l'essentiel des écartées — finance, politique, rétro-informatique : le taux de rétention élevé de cette édition (environ 9 %) traduit la nature de la source, pas un filtre resserré, et la veille par sous-thème reste portée par le subreddit.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
