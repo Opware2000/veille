@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — vendredi 13 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Journée mince : deux projets libres notables (une couche Apple Silicon pour PC x86-64, une base de graphes embarquée conçue pour les agents), deux briques ouvertes par Google pour faire passer les agents de l'écran de texte à l'interface (A2UI 1.0 et les guides web de Chrome), et quatre greffons Hermes signés d'un même auteur. Le reste du flux est fait de questions, de plaintes et de retours d'expérience, sans annonce utilisable. Côté coût, le fournisseur Relace a multiplié par vingt le prix d'entrée de DeepSeek V4.1 Flash, sans conséquence pour les fournisseurs épinglés ici.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Stela — des binaires Apple Silicon sur un PC x86-64</h3>
+<p>Programme d'amorçage UEFI qui traduit le code arm64e en x86-64 (compilation anticipée et à la volée, plus de trois mille encodages d'instructions AArch64 couverts) et fournit un pilote Metal pour cartes NVIDIA, en se présentant au système comme un Mac mini M2. Le projet vise à exécuter macOS sur du matériel Intel ou AMD ordinaire, là où les solutions existantes demandaient soit du matériel Apple, soit une machine virtuelle. Encore en développement, assumé comme lent par ses auteurs, et la carte Wi-Fi comme l'audio ne sont pas pris en charge.</p>
+<ul>
+<li>Dépôt vérifié : github.com/tylertms/Stela — GPL-2.0, 1 380 étoiles, créé le 12 octobre 2026, dernière poussée le 12 novembre 2026. Gratuit.</li>
+<li>Réserve : les auteurs demandent d'envoyer les journaux d'amorçage en cas d'échec, ce qui indique un état instable ; aucune évaluation extérieure trouvée. Fil : https://news.ycombinator.com/item?id=50460154 (83 points, 34 commentaires).</li>
+</ul>
+<h3>Relate — une base de graphes dans un seul binaire, pensée pour les agents</h3>
+<p>Base de graphes de propriétés embarquée, écrite en Rust, interrogeable en Cypher 25, tenant dans un fichier <code>.rl</code> ou en mémoire pure, avec un journal d'écriture et des points de reprise Parquet pour la durabilité. Le même moteur alimente l'outil en ligne de commande, des paquets Python, Node et navigateur (WASM), une caisse Rust, et un serveur facultatif qui parle Bolt, HTTP et MCP — donc directement branchable sur un agent. C'est une réponse concrète au problème de mémoire structurée d'un agent, sans serveur à administrer.</p>
+<ul>
+<li>Dépôt vérifié : github.com/relatedb/relate — Apache-2.0, 203 étoiles, créé le 4 novembre 2026, dernière poussée le 12 novembre 2026. Gratuit.</li>
+<li>Réserve : projet de laboratoire Neo4j, explicitement hors de la gamme supportée de l'éditeur, et la documentation liste elle-même ce qui manque encore. Fil : https://news.ycombinator.com/item?id=50472738 (15 points, 8 commentaires).</li>
+</ul>
+<h3>Modern Web Guidance 1.0 — les bonnes pratiques du web, injectées dans l'agent de code</h3>
+<p>Ensemble de compétences qui installe dans un agent de codage l'expertise de la plateforme web : pratiques actuelles, données de compatibilité des navigateurs, et détection des motifs périmés à moderniser. Porté par les équipes Chrome, Edge, Firefox et MDN, sous licence Apache-2.0 ; l'installation se fait en une commande, et les guides sont consultables sans installation (recherche par requête, extraction par identifiant, balayage d'un dépôt à la recherche de code à moderniser). La version 1.0 est la première stable.</p>
+<ul>
+<li>Dépôt vérifié : github.com/GoogleChrome/modern-web-guidance — Apache-2.0, 7 268 étoiles, dernière poussée le 10 novembre 2026 (code source des guides : github.com/GoogleChrome/modern-web-guidance-src, 2 860 étoiles). Gratuit.</li>
+<li>Fil : https://news.ycombinator.com/item?id=50460398 (28 points, 5 commentaires).</li>
+</ul>
+<h3>A2UI 1.0 — l'agent répond par une interface au lieu d'un mur de texte</h3>
+<p>Première version stable d'un protocole ouvert de « génération d'interfaces » : l'agent décrit ce qu'il veut montrer (un formulaire à confirmer, un graphique, une liste à arbitrer) et l'application dessine avec ses propres composants, à sa vitesse, sans que le modèle rédige du texte ni touche aux valeurs sensibles, qui restent liées côté serveur. Des kits de rendu libres sont fournis pour le web, Android et iOS, et des kits d'agent pour Python, TypeScript et Dart ; les modèles de décision peuvent choisir les composants au lieu de composer du texte.</p>
+<ul>
+<li>Dépôt vérifié : github.com/google/a2ui (déplacé vers github.com/a2ui-project/a2ui) — Apache-2.0, 17 208 étoiles, dernière poussée le 12 novembre 2026. Gratuit.</li>
+<li>Réserve : plusieurs grandes entreprises sont annoncées comme utilisatrices, ce qui vient de l'annonce de l'éditeur et n'a pas été recoupé. Annonce : https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/ ; fil : https://news.ycombinator.com/item?id=50461919 (24 points, 6 commentaires).</li>
+</ul>
+<h3>Lean Grimoire — la logique propositionnelle en jeu, avec la preuve Lean à l'écran</h3>
+<p>Terence Tao a repris son manuel interactif de 2018 (« QED »), qui enseignait la logique propositionnelle et du premier ordre sous forme de jeu d'artisanat : on applique des règles à des hypothèses pour atteindre une conclusion. La version reconstruite avec un agent de codage ajoute l'affichage d'une preuve Lean en cours de partie, et un mode fantaisiste qui habille les énoncés en potions et les expressions en parchemins. L'auteur cherche des essais pour en faire un outil utile à l'apprentissage des preuves logiques.</p>
+<ul>
+<li>Application en ligne : https://teorth.github.io/tao-web/apps/grimoire.html (gratuite, dans le navigateur) ; source : github.com/teorth/tao-web — GitHub n'identifie aucune licence pour ce dépôt, la réutilisation du code n'est donc pas claire, même si l'application se joue librement.</li>
+<li>Fil : https://news.ycombinator.com/item?id=50462375 (17 points, 3 commentaires).</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Relace — le prix d'entrée de DeepSeek V4.1 Flash multiplié par vingt</h3>
+<p>Un utilisateur signale que le fournisseur Relace facturait l'entrée de DeepSeek V4.1 Flash 0,006 dollar par million de jetons et la facture désormais 0,12 dollar, soit vingt fois plus, et conseille de changer de fournisseur si l'on a épinglé le sien pour stabiliser les prix. Vérification faite sur le catalogue d'OpenRouter : Relace est bien à 0,12 dollar par million de jetons d'entrée (0,50 en sortie), la hausse annoncée est donc cohérente avec le tarif en vigueur ; l'ancien prix de 0,006 dollar n'est en revanche attesté par aucune source consultée. À titre de comparaison, au même moment le même modèle est listé à 0,112 dollar chez DeepInfra, 0,147 chez StreamLake et 0,022 chez Morph.</p>
+<ul>
+<li>Sans conséquence sur les fournisseurs épinglés dans cette installation (DeepInfra, StreamLake, DeepSeek) : Relace n'y figure pas. Fil : https://www.reddit.com/r/hermesagent/comments/1xu9zsl/openrouter_relace_prices_increased/</li>
+</ul>
+<h3>Darling — mise à jour trimestrielle : ARM64 et une politique sur les contributions assistées par IA</h3>
+<p>Le projet qui fait tourner des binaires macOS sur Linux publie son bilan du trimestre : prise en charge initiale d'ARM64, et surtout une politique encadrant les contributions assistées par un modèle — le fondateur assume ce choix en expliquant que la surface de macOS (464 cadres publics et 2 754 privés dans macOS 27, contre 273 et 878 en 10.14) dépasse de toute façon la capacité d'une poignée de bénévoles, là où Wine s'appuie sur les composants redistribuables de Microsoft. Utile à lire pour quiconque doit trancher la même question dans un projet libre.</p>
+<ul>
+<li>Dépôt vérifié : github.com/darlinghq/darling — GPL-3.0, 13 755 étoiles, dernière poussée le 12 novembre 2026. Billet : https://blog.darlinghq.org/2026/11/08/development-update-q4-2026/ ; fil : https://news.ycombinator.com/item?id=50463103 (27 points, 6 commentaires).</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Sidecar et Workbench — Hermes dans une barre latérale d'Excel, Word et PowerPoint</h3>
+<p>Soumission au hackathon de Nous : Sidecar donne à l'agent sa propre barre latérale dans les applications de bureau Excel, Word et PowerPoint, sur le profil principal ou sur un profil dédié pour des réponses plus rapides ; Workbench, le projet compagnon, ouvre les versions web d'Excel, Word, PowerPoint, Outlook et OneNote dans le volet d'aperçu du bureau Hermes, l'agent lisant et modifiant à côté. L'auteur indique que Sidecar est entré au catalogue et que Workbench attend des corrections mineures ; seule la version macOS a été éprouvée, Windows restant à confirmer.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/AtlasOmnia/sidecar — Apache-2.0, 1 étoile, créé le 11 novembre 2026 ; github.com/AtlasOmnia/workbench — Apache-2.0, 0 étoile, même date. Gratuits.</li>
+<li>Réserve : dépôts ouverts la veille du message, aucune évaluation extérieure, et la capacité annoncée (« plus complet que la vidéo ») vient de l'auteur. Fil : https://www.reddit.com/r/hermesagent/comments/1xunbdy/title_sidecar_for_excel_word_and_powerpoint/</li>
+</ul>
+<h3>Quatre greffons Hermes d'un même auteur — signets X, assistant d'appel, téléphone, planification</h3>
+<p>Un participant du hackathon publie d'un bloc quatre greffons libres (licence MIT, tous en Python) : <code>hermes-x-bookmarks</code> range les signets X dans un tableau Kanban Notion, un document Google, Obsidian ou localement, et sait transformer un signet en tâche ou en compétence de l'agent ; <code>hermes-ghost-call</code> écoute une conversation et souffle des conseils en une ligne, sans jamais se joindre à la ligne ; <code>hermes-phone</code> donne un numéro à l'agent pour qu'il prenne des rendez-vous à votre place ; <code>hermes-blueprint</code> transforme une idée brute en plan réalisable, avec recherche sourcée, critique qui ne cède pas et passage à un tableau Kanban.</p>
+<ul>
+<li>Dépôts vérifiés : github.com/winchxyz/hermes-x-bookmarks — MIT, 34 étoiles, dernière poussée le 9 novembre 2026 ; github.com/winchxyz/hermes-ghost-call — MIT, 5 étoiles, poussée le 7 novembre 2026 ; github.com/winchxyz/hermes-phone — MIT, 10 étoiles, poussée le 5 novembre 2026 (aucune description) ; github.com/winchxyz/hermes-blueprint — MIT, 1 étoile, poussée le 9 novembre 2026. Gratuits.</li>
+<li>Réserve : la clé d'interface de programmation de X est nécessaire pour les signets, et le fonctionnement du téléphone dépend d'un service tiers que le message ne détaille pas. Fil : https://www.reddit.com/r/hermesagent/comments/1xu61ky/my_first_hermes_plugins/</li>
+</ul>
+<h2>Volume</h2>
+<p>76 entrées examinées dans l'intervalle : 32 du journal r/hermesagent après dédoublonnage par adresse (le même fil y entre deux fois, une fois par le relais avec un identifiant préfixé et un titre traduit, une fois par le flux du sous-forum), 2 de Latent Space et 42 de Hacker News à dix points et plus — 9 retenues, 67 écartées. La dernière collecte, le 12 novembre à 22 h 09 UTC, n'a signalé aucune erreur.</p>
+<footer>Édition du vendredi 13 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
