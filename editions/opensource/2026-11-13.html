@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — vendredi 13 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Vingt et un éléments retenus, très marqués par l'outillage d'agents : trois projets (Lynx, Silos, AgentRun) servent à faire tourner des agents de codage sur sa propre machine, et c'est là que se concentre l'activité du moment.</li>
+<li>Le plus solide du lot est <strong>AgentRun</strong> (Apache-2.0, 580 étoiles en six semaines, 32 points sur Hacker News) ; le plus léger à installer est <strong>Nudge</strong>, une application Android de confort publiée hier.</li>
+<li>Pour vous, deux éléments de fond hors outillage : la chaîne éditoriale <strong>Scenari</strong> publie ses versions de novembre et consacre son mini-webinaire du 16 novembre à la diffusion de cours par LTI, et PostgreSQL corrige 52 failles de sécurité d'un coup.</li>
+<li>La dernière collecte s'est terminée sans erreur.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>AgentRun — plateforme d'agents auto-améliorants, auto-hébergeable (Parcha / GREP.AI, YC F26).</strong><br />
+C'est la publication la mieux reçue de l'intervalle (32 points, 2 commentaires sur Hacker News). La plateforme ajoute à un agent existant ce que les harnais de codage n'ont pas : exécution durable, environnements isolés, journalisation détaillée du comportement des agents et mécanisme d'auto-amélioration. Elle accepte n'importe quel harnais compatible ACP — Pi, Claude Code, Codex, OpenCode — et s'installe soi-même avec une clé OpenRouter (installation en un clic sur Render) ou se teste en version hébergée. Licence Apache-2.0, gratuit, 580 étoiles, dernière activité aujourd'hui même.<br />
+Source : https://github.com/Parcha-ai/agentrun</p>
+<p><strong>Lynx — espace de travail visuel pour agents, entièrement local.</strong><br />
+L'auteur a construit un atelier où l'on assemble à la souris des interfaces reliées à ses propres sources de données (MCP ou API), chaque bouton pouvant déclencher un agent local — Claude Code ou Codex. Un outil de sélection permet de demander une modification d'interface en langage naturel, et l'agent la réécrit en direct. Tout reste sur la machine. Licence MIT, gratuit, 11 étoiles, dépôt créé le 4 novembre, dernière activité le 9 novembre. C'est jeune, mais le principe répond à un vrai problème : gérer plusieurs fils d'agents dans une seule fenêtre au lieu d'une pile de conversations.<br />
+Source : https://github.com/yakkomajuri/lynx — présentation : https://lynx.railcode.dev</p>
+<p><strong>Silos — bac à sable en ligne de commande pour agents non fiables.</strong><br />
+L'outil construit et gère des conteneurs Docker durcis dans lesquels fait tourner un agent local : sortie réseau contrôlée, accès aux services externes par identifiants gérés, et piste d'audit de toutes les inférences. Autrement dit, il répond à la question « qu'est-ce qui empêche cet agent de faire n'importe quoi sur ma machine ». Licence MIT, gratuit, 8 étoiles, dépôt créé le 28 octobre, dernière activité le 2 novembre — dix jours de silence, à surveiller avant de s'y appuyer.<br />
+Source : https://github.com/SilosLabs/silo-cli</p>
+<p><strong>Jarvis Live — assistant vocal local avec avatar animé.</strong><br />
+Un assistant à commande vocale qui tourne sur son propre ordinateur, avec un avatar réaliste animé en direct, et qui délègue le travail effectif à Claude Code, Codex, Gemini ou à un modèle local servi par Ollama. Licence MIT, gratuit, 4 étoiles, dernière activité le 10 novembre. Le projet est très récent (dépôt du 5 octobre) et l'annonce ne fournit aucune mesure de qualité : à voir comme une démonstration, pas comme un outil installé.<br />
+Source : https://github.com/samukbg/Jarvis-Live — présentation : https://jarvis-live.xyz</p>
+<p><strong>Nudge — boutons de volume Android redessinés et « edge pops ».</strong><br />
+Une application Android publiée hier qui remplace l'affichage du volume par un contrôleur personnalisable et ajoute une animation de bordure au pression des boutons de volume ou d'alimentation : taille, position et largeur réglables séparément pour chaque bouton, choix du nombre de crans (1 à 10), mode paysage, retour haptique, thème clair et mixeur audio accessible en appuyant sur l'icône du son. Licence MIT, gratuit, 51 étoiles en une journée, dépôt créé le 12 novembre. Outil de confort, sans prétention technique, mais bien fini d'après la présentation de son auteur.<br />
+Source : https://github.com/DarkAspect1/Nudge</p>
+<p><strong>Easy Dashcam — application Android libre pour caméras embarquées bon marché en Wi-Fi.</strong><br />
+Son auteur l'a écrite pour remplacer l'application d'origine de sa « Reddot Dashcam », trop lente, qui réclamait la géolocalisation et interdisait le téléchargement en arrière-plan. La sienne montre la vidéo en direct, parcourt et télécharge les enregistrements, les relit et modifie les réglages de la caméra ; le protocole (GPSOCKET) a été rétro-conçu, faute de documentation. Licence GPL-3.0, gratuit, aucune étoile, dernière activité le 9 novembre. L'auteur cherche des propriétaires d'autres modèles chinois pour étendre la prise en charge : c'est un projet à un seul modèle aujourd'hui.<br />
+Source : https://github.com/juanmespina/EasyDashcam</p>
+<p><strong>Stay in sight — prospection et infolettres par courriel, chez soi, sous Cloudflare.</strong><br />
+Une application libre qui envoie courriels de prospection, infolettres et séquences automatiques depuis sa propre boîte Gmail ou Amazon SES, avec contacts, messages et réponses dans sa propre base de données ; un agent peut la piloter. Déploiement annoncé en trente minutes sur l'offre gratuite de Cloudflare Workers pour de petits volumes, sans siège ni tarif au contact. Licence MIT, gratuit, dépôt créé le 12 novembre (donc aucune étoile et aucun recul). Précision : c'est un outil de démarchage commercial avant d'être un outil d'usage courant.<br />
+Source : https://github.com/yusufnb/stay-in-sight — présentation : https://stayinsight.sleeksite.ai/</p>
+<p><strong>LibreAGI — conserver les modèles ouverts même quand leur hébergeur disparaît.</strong><br />
+Ce n'est pas un logiciel mais un service : un traqueur BitTorrent privé où les membres gardent chacun une copie des modèles ouverts les plus menacés, tout format (safetensors, GGUF, ONNX) et licences reconnues (Apache-2.0, MIT, Qwen). L'accès se demande ; la rétribution du partage croît avec la rareté du modèle. L'idée répond à un vrai risque — un poids libre peut disparaître du jour au lendemain — mais je n'ai pas pu vérifier le sérieux de la gouvernance depuis l'annonce seule.<br />
+Source : https://libreagi.com/</p>
+<p><strong>LightnerX — bibliothèque réseau C++ pour jeux multijoueurs, à un stade très précoce.</strong><br />
+Elle s'appuie sur GameNetworkingSockets de Valve et propose un modèle d'échange de messages (Intention, Notification, Événement, Réponse) destiné à simplifier les échanges client-serveur. Auteur : un développeur qui présente son propre projet, encore en développement et en cours d'audit technique. À signaler comme incertitude : l'annonce ne donne <strong>ni dépôt ni licence</strong>, seulement le fil de discussion — impossible de vérifier le code.<br />
+Source : https://www.reddit.com/r/opensource/comments/1xtw3z8/lightnerx_a_lightweight_c_networking_library_for/</p>
+<p><strong>PocketBase Community Edition — une bifurcation du populaire serveur tout-en-un.</strong><br />
+PocketBase réunit base de données, authentification et interface d'administration dans un seul binaire ; cette édition communautaire, non affiliée, veut rouvrir la voie aux contributions tout en suivant le projet d'origine. Elle y ajoute des extensions « cœur » : applications multi-pages, restauration à un instant précis (PITR) par Litestream, serveur MCP, TLS automatique ; et des extensions facultatives (conteneurs en processus, gestion de parc, multi-locataire). Licence MIT, gratuit, 12 étoiles, dernière activité le 12 novembre. Réserve : la promesse de parité avec l'amont dépend entièrement de la vitalité du fork, qui est pour l'instant confidentiel.<br />
+Source : https://github.com/pockethost/pocketbase</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Scenari — versions de novembre de la chaîne éditoriale, et un webinaire LTI le 16 novembre.</strong><br />
+La suite libre française de production documentaire (écrire une fois, publier en site, PDF, OpenDocument, diaporama ou paquet SCORM) publie son point mensuel : MyScenari 6.5.5, Opale 26.0.4 (accessibilité web et PDF, score de passage SCORM, notes formateur dans la télécommande), Dokiel 26.0.4, Topaze 26.0.1, Parcours 26.0.2 et OptimOffice 26.0.4. Le mini-webinaire du <strong>lundi 16 novembre, 17 h–18 h</strong> est consacré à la diffusion de publications Scenari dans une plateforme d'apprentissage par LTI : ressources protégées, mise à jour simplifiée, remontée des notes — c'est le point qui vous concerne directement si vous envisagez de publier vos cours autrement qu'en PDF.<br />
+Source : https://linuxfr.org/news/nouveautes-de-novembre-2026-de-la-communaute-scenari</p>
+<p><strong>Rust 1.100.0 — le type « never » devient enfin stable.</strong><br />
+Version symbolique du langage, avec la stabilisation du type <code>!</code> utilisé pour les fonctions qui ne rendent jamais la main. Signalée à la fois par la blogosphère du langage (18 points, 2 commentaires sur Lobsters) et par Phoronix.<br />
+Source : https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/</p>
+<p><strong>PostgreSQL — six versions publiées d'un coup pour 52 failles de sécurité.</strong><br />
+PostgreSQL 18.7, 17.12, 16.16, 15.20, 14.25 et la candidate 19 RC2 corrigent 52 problèmes de sécurité et plus de 140 bogues. Si vous auto-hébergez une base PostgreSQL, c'est la mise à jour à faire sans attendre.<br />
+Source : https://www.phoronix.com/news/PostgreSQL-52-CVEs</p>
+<p><strong>Pilote NVIDIA sous Linux — deux failles publiées, vingt-cinq annoncées.</strong><br />
+Les vulnérabilités ForgePtr et NvRoot sont documentées ; le journaliste signale qu'elles sont particulièrement sensibles pour qui loue des fractions de GPU dans le nuage, et que vingt-trois autres suivront. À suivre si une machine de votre établissement ou de votre domicile dépend du pilote propriétaire NVIDIA.<br />
+Source : https://www.phoronix.com/news/NVIDIA-NvRoot-ForgePtr</p>
+<p><strong>Polo 1.0 — un compositeur Wayland pour le bureau MATE.</strong><br />
+Le bureau MATE, héritier de GNOME 2, obtient enfin une voie native vers Wayland : Polo 1.0 est un compositeur Wayland indépendant conçu pour lui. Nouveau projet, donc à essayer sur une machine secondaire plutôt que sur un poste de travail principal.<br />
+Source : https://www.phoronix.com/news/Polo-Wayland-Compositor-MATE</p>
+<p><strong>ReactOS — support des disquettes, accélération 3D sous VMware et progrès du multiprocesseur.</strong><br />
+Le système libre qui vise la compatibilité avec les pilotes et les logiciels Windows annonce une année 2026 productive, après deux « hackfests » : prise en charge fonctionnelle des disquettes, accélération 3D dans VMware et avancées sur le multiprocesseur. Ce n'est pas encore un système à installer au quotidien, mais le projet continue de progresser plus vite que par le passé.<br />
+Source : https://www.phoronix.com/news/ReactOS-Floppy-Disk-2026</p>
+<p><strong>PowerShell 7.7 — version de support long terme, durcissement du mode de langage restreint.</strong><br />
+Version généralement disponible, fondée sur le framework .NET 11, avec de nouvelles commandes, des modules mis à jour et un renforcement de sécurité portant sur le « Constrained Language Mode », les fonctions distantes et la gestion des identifiants. Licence MIT, gratuit.<br />
+Source : https://dotnet.developpez.com/actu/389017/</p>
+<p><strong>.NET 11 — C# 15, ASP.NET Core, MAUI et outillage Windows assisté par IA.</strong><br />
+Microsoft publie la nouvelle version de son framework libre (licence MIT). Ce qui importe à un non-spécialiste : la plateforme est la base de PowerShell 7.7 et de la nouvelle version LTSC de Visual Studio, et la prise en charge est de deux ans pour ce canal.<br />
+Source : https://dotnet.developpez.com/actu/388988/</p>
+<p><strong>Visual Studio Code 1.145 — sessions d'agents distantes et tâches planifiées localement.</strong><br />
+La fenêtre « Agents » permet désormais de prévisualiser des applications et d'utiliser des canevas interactifs hébergés sur un hôte distant, et l'éditeur ajoute des planifications de type cron pour automatiser localement les tâches des agents. L'éditeur reste libre et gratuit ; l'intérêt ici est le pas de plus vers l'écriture d'agents planifiés sans quitter l'atelier de code.<br />
+Source : https://visualstudio.developpez.com/actu/389012/</p>
+<p><strong>Firefox — VPN intégré en volume illimité et sans abonnement jusqu'au 31 janvier 2027.</strong><br />
+Mozilla a supprimé la limite mensuelle de 50 Go du VPN intégré au navigateur : depuis le 10 novembre et jusqu'au 31 janvier 2027, l'offre est illimitée et gratuite, sans abonnement requis. Deux réserves : c'est un <strong>service</strong> et non un logiciel libre (seul le navigateur l'est), et la gratuité est annoncée comme temporaire — à ne pas intégrer dans un usage pérenne sans relire les conditions après janvier.<br />
+Source : https://web.developpez.com/actu/388989/</p>
+<p><strong>En vrac du FOSS Weekly d'It's FOSS — quatre mouvements à retenir sur des logiciels connus.</strong><br />
+Asahi Linux, le projet qui porte Linux sur les Mac Apple Silicon, transfère tous ses dépôts de la licence MIT vers GPL v2 ou ultérieure : l'équipe explique que du code non publié était repris et réécrit avec de l'IA pour masquer son origine (fait rapporté par It's FOSS, non vérifié dépôt par dépôt ici). Firefox 160 sait envoyer un onglet entier, ou un cadre dessiné sur une page, dans une « Mini Window » flottante. Kitty 0.50 sait sauvegarder fenêtres, onglets et historique au moment de quitter et tout restaurer au lancement suivant, sur option. Et « Domicile », compositeur Wayland en Rust, dessine tout le bureau comme une page web via Chromium modifié — curiosité technique réservée au x86_64. Linux Mint 27 « Adrien » est attendu autour de Noël.<br />
+Source : https://feed.itsfoss.com/link/24361/17522825/foss-weekly-26-46</p>
+<h2>Extensions et greffons</h2>
+<p><strong>ONLYOFFICE — connecteurs mis à jour pour Nextcloud, ownCloud, Mattermost, Confluence, Jira et Moodle.</strong><br />
+La suite bureautique libre publie une nouvelle version de ses connecteurs d'intégration. Ce sont eux qui permettent d'éditer un document hébergé dans Nextcloud ou de le déposer dans un cours Moodle sans quitter la plateforme — l'intérêt pratique, quand on fait travailler des élèves sur des documents partagés, se joue entièrement là.<br />
+Source : https://onlyoffice.developpez.com/actu/389005/</p>
+<h2>Volume</h2>
+<p>65 entrées examinées dans l'intervalle (29 dans le journal principal — 24 de Hacker News, 2 de Lobsters, 3 du subreddit — et 36 dans les journaux complémentaires : 18 de Developpez.com, 11 de Phoronix, 3 d'It's FOSS, 3 du Journal du Hacker, 1 de LinuxFr), 21 éléments retenus, 44 écartés, soit un taux de rétention d'environ 32 %. Les écarts portent surtout sur de l'actualité financière et industrielle de l'IA (rachats, puces, démissions), sur des questions de forum, sur des jeux, et sur une bonne part du flux Phoronix (noyau, pilotes Mesa, microcode, test du Zen 6). Deux précautions : le fait « Rust 1.100 » figurait dans deux journaux, il n'est compté qu'une fois ; et le FOSS Weekly d'It's FOSS est une infolettre, dont les trois premières nouvelles citées restent à vérifier à la source primaire. Dernière collecte terminée sans erreur (<code>meta.json</code> ne porte aucun champ <code>errors</code>).</p>
+<footer>Édition du vendredi 13 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
