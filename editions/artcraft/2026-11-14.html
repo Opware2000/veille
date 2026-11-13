@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — samedi 14 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — samedi 14 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>AniCraft passe en <strong>0.2.1</strong> : publication d'un projet, recherche et remplacement, explorateur de séquence, effets de couleur complets et contrôle de mise à jour — c'est la première version de l'animateur qui laisse produire quelque chose de bout en bout.</li>
+<li>Le <strong>lanceur</strong> suit en 0.19.1 puis 0.19.2 : catalogue d'applications téléchargé et signé avec repli hors ligne, verrous de version visibles, et retour possible à une version antérieure.</li>
+<li>Journée pauvre côté subreddit (six messages sans information nouvelle) ; deux points « À signaler », une installation de MailCraft refusée par Gatekeeper et deux manques d'AniCraft.</li>
+</ul>
+<h2>Nouveautés et annonces</h2>
+<h3>AniCraft 0.2.1 — publier, chercher, mixer, mettre à jour</h3>
+<p>L'éditeur d'animation 2D de l'équipe a publié la version <strong>0.2.1 le 12 novembre à 1 h 41 UTC</strong>, six heures après la 0.2.0 et une journée après la 0.1.0 — trois publications en deux jours, ce qui donne la mesure du rythme de ce projet. Elle corrige et complète surtout les fonctions qui manquaient pour sortir un travail fini :</p>
+<ul>
+<li><strong>Publier</strong> : une fenêtre de réglages de publication et une commande de publication, qui produisent une sortie diffusable (c'est, avec la recherche, le changement le plus important) ;</li>
+<li><strong>Recherche et remplacement</strong>, plus un <strong>explorateur de séquence</strong> pour parcourir les symboles et les images d'un projet ;</li>
+<li><strong>Effets de couleur</strong> désormais complets — tous les styles passent par une transformation de couleur exacte ;</li>
+<li><strong>Mise à l'échelle en neuf tranches</strong> sur les symboles, le procédé qui évite de déformer un cadre quand on le redimensionne ;</li>
+<li><strong>Actions</strong> : premières constructions de logique — variables, expressions, boucles, lecture de propriétés, entrée d'image et touches ;</li>
+<li><strong>Sons sur les images de bouton</strong> et édition de la zone sensible d'un bouton ;</li>
+<li><strong>Accueil</strong> : dépôt de fichiers sur la fenêtre, « Ouvrir récent » et écran de démarrage ;</li>
+<li><strong>Aide → Rechercher les mises à jour</strong>, la fonction que l'application de base ArtCraft avait reçue la veille.</li>
+</ul>
+<p>Les notes de version complètes, avec les demandes de fusion correspondantes : <a href="https://github.com/storytold/anicraft/releases/tag/v0.2.1">https://github.com/storytold/anicraft/releases/tag/v0.2.1</a></p>
+<p><strong>Pourquoi cette actualité arrive aujourd'hui</strong> : le journal des publications du dépôt officiel (<code>state/feed/artcraft_releases</code>) ne suit que <code>storytold/artcraft</code>, encore arrêté à la 0.41.1 du 7 novembre — les versions d'AniCraft et du lanceur ne passent donc par aucune collecte automatique et doivent être interrogées à l'API GitHub. Vérification faite ce matin : aucune nouvelle publication du cœur depuis le 7 novembre, mais une 0.42.1 est prête sur la branche principale, comme signalé dans l'édition du 13.</p>
+<h3>Le lanceur 0.19.1 puis 0.19.2 — catalogue signé et retour en arrière</h3>
+<p>Deux publications du <strong>lanceur</strong> le 12 novembre, à 0 h 16 et 1 h 41 UTC :</p>
+<ul>
+<li><strong>0.19.1</strong> charge le catalogue d'applications depuis un fichier hébergé et <strong>signé</strong>, avec un repli sur la version embarquée quand le réseau manque ; elle affiche des <strong>cadenas</strong> sur les applications dont la version est figée par l'utilisateur, avec déverrouillage confirmé ; elle échange au passage l'ordre d'affichage de SoundCraft et WordCraft.</li>
+<li><strong>0.19.2</strong> autorise <strong>le retour à une version antérieure</strong> d'une application, y compris par-dessus le lanceur lui-même installé en Flatpak — la limitation qui poussait à réinstaller à la main est levée.</li>
+</ul>
+<p>Notes de version : <a href="https://github.com/storytold/craft-launcher/releases/tag/v0.19.1">https://github.com/storytold/craft-launcher/releases/tag/v0.19.1</a> et <a href="https://github.com/storytold/craft-launcher/releases/tag/v0.19.2">https://github.com/storytold/craft-launcher/releases/tag/v0.19.2</a></p>
+<p>Le catalogue signé explique probablement l'apparition d'applications <strong>hors des dix-sept officielles</strong> dans le lanceur (voir MailCraft ci-dessous) : le contenu affiché ne vient plus du binaire mais d'un fichier hébergé.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>artcraft-skills — les surfaces CLI et MCP écrites une fois pour les agents de codage</h3>
+<p>Le message d'u/midasmatterhorn (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1xuqnqa/i_kept_reexplaining_artcrafts_cli_to_my_coding/">https://www.reddit.com/r/ArtCraftAI/comments/1xuqnqa/i_kept_reexplaining_artcrafts_cli_to_my_coding/</a>) annonce la mise en public de ses notes d'emploi de la ligne de commande d'ArtCraft, rédigées pour ne plus les répéter à son agent de codage. Le dépôt correspondant est <strong><code>midasmatterhorn/artcraft-skills</code></strong> (<a href="https://github.com/midasmatterhorn/artcraft-skills">https://github.com/midasmatterhorn/artcraft-skills</a>) : des fichiers <code>SKILL.md</code> qui décrivent les surfaces CLI et MCP de la suite pour Claude Code, Codex et OpenCode, sous licence MIT. Le dépôt a été créé le 14 octobre et totalise <strong>82 étoiles</strong> au moment de la vérification, avec un dernier envoi le 12 novembre à 22 h 18 UTC, cinq minutes avant le message. C'est exactement le genre d'outil que la suite appelle : les applications sont conçues pour être pilotées par une ligne de commande, un canal JSON ou un serveur MCP, mais la documentation de ces surfaces manquait.</p>
+<p>Deux réponses au fil, à retenir comme signal : u/zasff regrette que la ligne de commande ne soit pas installée par défaut et qu'on ne puisse pas demander d'un coup « l'application, sa ligne de commande et le serveur MCP activé » ; u/leon-ivkovic indique de son côté se passer de ces notes parce que son agent s'en sort seul. Incertitude à signaler : le message est un renvoi vers un fil plus ancien (<code>1x6l9ga</code>), dont le texte n'a pas pu être lu — Reddit a répondu 429 au moment de la vérification —, d'où le détail tiré du dépôt plutôt que du billet.</p>
+<h3>cs-team — un socle auto-hébergé pour les versions web des applications</h3>
+<p>u/<em>gea</em> (Günther Alka, l'auteur de napp-it) présente <strong><code>cs-team</code></strong> (<a href="https://github.com/guenther-alka/cs-team">https://github.com/guenther-alka/cs-team</a>, message : <a href="https://www.reddit.com/r/ArtCraftAI/comments/1xvdeal/cloudcraft_or_teamcraft/">https://www.reddit.com/r/ArtCraftAI/comments/1xvdeal/cloudcraft_or_teamcraft/</a>), un <strong>binaire unique en Go</strong> sous licence BSD-2-Clause qui se veut un « Nextcloud léger » d'entreprise : agenda CalDAV, tableur, traitement de texte, fichiers WebDAV, tâches, discussion, avec annuaire LDAP pour gérer les comptes d'un groupe de travail ou d'une classe sans Active Directory, bascule entre système actif et système de secours par instantanés ZFS, et service web pour faire tourner <strong>dans un navigateur les applications ArtCraft compilées en WebAssembly</strong>. Le projet est actif — la version 0.70.0 est sortie le 13 novembre — mais reste confidentiel : quatre étoiles, dépôt créé le 30 septembre.</p>
+<p>Réserves, à lire avant d'y consacrer du temps : ce n'est <strong>pas</strong> un projet de l'équipe ni de son écosystème, son auteur l'annonce lui-même ; il a renoncé au nom « TeamCraft » pour éviter la confusion et parce que sa base est en Go, non en Rust ; aucune compatibilité avec les applications web d'ArtCraft n'est démontrée dans le message, seulement promise.</p>
+<h3>Note — deux dépôts Homebrew pour les lignes de commande</h3>
+<p>Trouvé en interrogeant l'API GitHub pour vérifier autre chose, et <strong>signalé par aucun message du subreddit</strong> : deux dépôts, <code>01Joseph-Hwang10/homebrew-artcraft</code> (Apache-2.0, dernier envoi le 12 novembre) et <code>egildo/homebrew-artcraft</code>, tous deux créés fin octobre, publient les CLI de la suite sous forme de formules Homebrew, le second s'appuyant sur les paquets officiels de Homebrew. Aucun n'a d'étoile et rien ne dit qu'ils suivent les versions de près : à considérer comme une piste à surveiller, pas comme un outil établi.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable. Aucune publication des logiciels comparables dans les dernières vingt-quatre heures : les dernières versions de ComfyUI (0.45.0, le 10 novembre), d'InvokeAI (7.0.0-bêta.1, le 9 novembre) et de Krita AI Diffusion (1.53.0, en août) sont plus anciennes, et l'activité de ComfyUI relevée le 13 au soir relève du correctif de routine. Les résultats de recherche remontent surtout des pages de référence et des comparatifs d'outils auto-hébergés, sans actualité datée.</p>
+<h2>À signaler</h2>
+<h3>MailCraft refusé par Gatekeeper à l'installation</h3>
+<p>u/mcdannyj (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1xvkm8u/mailcraft_not_installing_gatekeeper_rejection/">https://www.reddit.com/r/ArtCraftAI/comments/1xvkm8u/mailcraft_not_installing_gatekeeper_rejection/</a>) rapporte que sur son Mac Studio sous macOS Sequoia 15.8.3, l'installation de <strong>MailCraft</strong> depuis le gestionnaire d'applications du lanceur échoue à la dernière étape : le système rejette la signature de l'application. Le blocage est d'autant plus gênant qu'il se produit avant la fin de l'installation, ce qui empêche de contourner la quarantaine à la main dans le Terminal — l'application n'existe pas encore sur le disque. Il demande si d'autres rencontrent le problème. Aucune réponse de l'équipe à cette heure, et le défaut n'a pas pu être reproduit depuis ce serveur.</p>
+<p>Deux précisions utiles : MailCraft <strong>ne figure pas</strong> parmi les dix-sept applications officielles listées sur <code>getartcraft.com/apps</code> (vérifié ce matin), et le dépôt tiers <code>UCS-Care-Group/mailcraft</code> (Apache-2.0, Rust, alpha précoce, 624 étoiles, dernier envoi le 13 novembre à 22 h 56 UTC) reste très actif. Un rejet de signature sur une application distribuée par un catalogue hébergé est donc plausible sans engager la responsabilité de l'équipe ArtCraft — mais c'est bien le lanceur qui distribue.</p>
+<h3>AniCraft — points de pivot introuvables, pas d'import depuis VectorCraft</h3>
+<p>u/Jaded-Ad-4034 (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1xvbhsy/anicraft_pivot_points/">https://www.reddit.com/r/ArtCraftAI/comments/1xvbhsy/anicraft_pivot_points/</a>), qui vient d'installer AniCraft après avoir perdu l'accès à Adobe Animate à la fin de son semestre, signale deux manques : il <strong>ne trouve aucune commande pour déplacer le point de pivot</strong> d'un symbole ou d'un objet, ce qui l'empêche d'animer proprement, et il constate qu'<strong>aucun import depuis VectorCraft</strong> n'est encore possible, alors qu'il l'espérait. C'est un retour d'utilisateur non confirmé — il peut s'agir d'une fonction absente de cette version comme d'une manipulation qui lui échappe —, mais ces deux points concernent la toute nouvelle version et méritent d'être connus de qui voudrait l'essayer maintenant.</p>
+<h2>Volume</h2>
+<p><strong>10 entrées examinées</strong> dans le subreddit entre le 12 novembre 22 h 23 et le 13 novembre 21 h 40 UTC, <strong>6 retenues</strong> (deux nouveautés, deux outils tiers, deux points à signaler), quatre écartées — cinq demandes de fonctionnalités ou questions de support (clone de Grammarly, clone de Mainstage, réglage du zoom à la molette dans PhotoCraft, sous-titres automatiques dans FilmCraft, un NoteCraft pour remplacer GoodNotes) et un dessin d'auteur inspiré de la suite. Aucun élément neuf dans les trois journaux complémentaires : le dépôt officiel n'a rien publié depuis le 7 novembre, ses commits étaient déjà traités, et la chaîne du fondateur n'a rien diffusé. Deux vérifications ont été faites à l'API GitHub pour couvrir ce que les journaux ne suivent pas — les publications d'AniCraft et du lanceur, et l'état de MailCraft. La collecte s'est terminée sans erreur (<code>meta.json</code> du 13 novembre 22 h 16 UTC, <code>errors</code> vide). Le taux de rétention élevé de cette édition tient à deux publications de version et à deux outils : hors ces quatre éléments, la journée ne portait aucune information.</p>
+<footer>Édition du samedi 14 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
