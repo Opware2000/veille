@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — samedi 14 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — samedi 14 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>PINE, un harnais d'agents événementiel du collectif pmndrs (licence MIT, publié le 10 novembre) : les agents se réveillent sur un fichier, un message Telegram, un sujet MQTT ou un webhook au lieu d'attendre une question dans le chat.</li>
+<li>LEEBKIT 1.4 fabrique hors ligne des vidéos promo verticales à partir de quelques images, avec textes animés et voix de synthèse — ni API, ni abonnement, Python et ffmpeg suffisent.</li>
+<li>Edge0 ouvre un modèle de 145 milliards de paramètres qui tient dans 29 Go de mémoire, et llama.cpp franchit la version 1.0.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>PINE — des agents qui se réveillent sur événements plutôt que sur question</h3>
+<p>Le collectif pmndrs, connu pour l'écosystème React Three Fiber, a publié le 10 novembre PINE, un démon multi-agents en ligne de commande sous licence MIT (178 étoiles, dernière activité le 13 novembre). Sa particularité est le déclenchement : un agent se réveille sur un nouvel événement — fichier déposé, message Telegram, sujet MQTT, webhook — ou sur une planification, et non uniquement sur une question posée dans une fenêtre de conversation. Les agents tournent dans un bac à sable du système, peuvent appeler des serveurs MCP, des compétences et des sous-agents, et fonctionnent avec le modèle de son choix : abonnement Anthropic, OpenAI ou OpenCode Go, ou serveur <code>llama-server</code> local. C'est gratuit, mais encore en version 0.x, avec des ruptures de compatibilité entre versions et une communauté naissante — à essayer en parallèle, pas à confier une tâche critique.</p>
+<p>Dépôt : https://github.com/pmndrs/pine</p>
+<p>Réserve de méthode : Reddit refuse toute lecture depuis ce serveur (403 « network policy »), le lien exact du fil n'a donc pas pu être suivi ; l'identification repose sur le dépôt (nom, date de création, licence) et sur une fiche de revue indépendante qui décrit le même projet.</p>
+<h3>LEEBKIT 1.4 — des vidéos promo montées entièrement hors ligne</h3>
+<p>LEEBKIT est un outil Python qui transforme une à dix images avec leurs légendes en une vidéo promo terminée, au format vertical 9:16 (ou carré et 16:9 depuis la 1.2) : mouvement lent sur les images, texte animé, transitions, voix de synthèse et fond musical avec atténuation automatique. Tout se calcule sur la machine, sans appel à une API, sans offre cloud et sans abonnement ; il faut Python 3.11 ou plus récent et ffmpeg, aucune carte graphique. La version 1.4, publiée le 13 novembre, ajoute huit types de sous-titres animés, un calque de composition par plan, sept presets de style, un sélecteur de musiques libres de droits, et des teasers GIF ou WebP depuis la ligne de commande. L'auteur annonce 17 secondes de calcul pour une vidéo de 12 secondes sur un portable sans GPU, chiffre mesuré sur sa machine et non sur la vôtre.</p>
+<p>Licence AGPL-3.0, dépôt créé le 6 novembre, 10 étoiles, dernière modification le 13 novembre. Le fichier de présentation du dépôt porte encore l'état de la version 1.3 : c'est un retard de documentation, pas une contradiction sur la version publiée.</p>
+<p>Dépôt : https://github.com/leeblaab/leebkit</p>
+<h3>Edge0-145B — un modèle de 145 milliards de paramètres sur un portable</h3>
+<p>Edge0 a mis en ligne le 12 novembre les poids d'Edge0-145B et d'Edge0-120B, avec son moteur d'inférence (edge0, écrit en C++, Apache-2.0). L'éditeur annonce 29 Go de mémoire de pointe, plus de 80 jetons par seconde en génération, un contexte de 128 000 à 256 000 jetons, et des performances de codage et de raisonnement comparables à certains modèles hébergés — dans sa propre comparaison. L'intérêt pour un agent local est réel : un modèle de cette taille qui tourne sans serveur ni frais de jetons change l'équation du hors-ligne.</p>
+<p>Deux réserves : les poids ne sont pas placés sous une licence standard (la fiche Hugging Face indique « other »), donc l'annonce d'« ouverture » demande à être lue de près avant tout usage professionnel ; et les chiffres de performance sont ceux de l'éditeur, non recoupés.</p>
+<p>Annonce : https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer</p>
+<h3>Herm — une application macOS native pour Hermes Agent</h3>
+<p>Un développeur présente Herm, une façade macOS pour l'agent que l'on fait déjà tourner : une encoche qui montre l'activité des agents et le quota restant des fournisseurs, un mode vocal où l'on coupe la parole à l'agent en cours de réponse, un navigateur partagé avec curseur visible, des onglets simulateur iOS et émulateur Android pour annoter une interface et envoyer captures et journaux dans la conversation, des réponses sous forme de graphiques, tableaux et petits formulaires, la relecture des différences Git, l'approbation depuis une notification avec Touch ID, l'envoi du texte sélectionné depuis n'importe quelle application, des colonnes de sessions côte à côte et des thèmes. L'auteur précise qu'il ne s'agit que d'un client qui se connecte à l'agent existant.</p>
+<p>Ni dépôt public ni tarif n'apparaissent dans le fil : je ne peux donc pas dire si l'application est libre, gratuite ou payante — c'est une information à demander à son auteur avant de s'y engager.</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xvdw67/herm_a_native_macos_app_for_hermes_agent/</p>
+<h3>Ling-3.2-flash — un modèle multimodal à coût nul pendant quelques jours</h3>
+<p>Ant Ling a mis à jour son guide d'installation de Hermes pour utiliser Ling-3.2-flash comme moteur : le chemin documenté est <code>hermes model</code>, puis « More providers », puis « Custom endpoint », avec l'adresse <code>api.ant-ling.com/v1</code>, une clé Ant Ling et le nom du modèle. Le modèle accepte nativement le texte, l'image et la vidéo, et son interface compatible OpenAI documente l'appel de fonctions — trois qualités qui comptent pour une utilisation par un agent.</p>
+<p>Attention à la fenêtre : la page de tarifs officielle indique que Ling-3.2-flash est gratuit pendant les <strong>deux semaines suivant son lancement du 5 novembre</strong>, soit jusque vers le 19 novembre, puis facturé à l'usage ; il faut aussi lier un compte Alipay et activer le service avant le premier appel. Comme moteur d'agent, ce n'est donc pas une gratuité durable, c'est un essai.</p>
+<p>Guide : https://www.reddit.com/r/hermesagent/comments/1xv9egx/ant_ling_has_published_a_hermes_setup_guide_using/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Onyx — un client Android open source qui sonne comme un appel</h3>
+<p>Onyx, client Android natif pour un agent Hermes auto-hébergé, reçoit une mise à jour substantielle. Le changement principal concerne les interruptions : quand l'agent se met en attente d'une approbation ou d'une question, le téléphone sonne comme un vrai appel pour qu'on traite le point au lieu de laisser la tâche s'arrêter, avec des heures silencieuses. S'y ajoutent la vision du navigateur de l'agent en direct, avec reprise au doigt — le toucher n'est transmis que si l'image a moins de deux secondes, ce qui évite de cliquer sur un écran périmé —, des salons où plusieurs profils de robots dialoguent pendant qu'on intervient, des lecteurs audio et fichiers intégrés, et la prise en charge de Wear OS et d'Android Auto.</p>
+<p>Licence MIT, aucune télémétrie, ni Play Services ni Firebase : la connexion va directement au serveur que l'on héberge. Dépôt créé le 26 octobre, 10 étoiles, dernière activité le 13 novembre. Si la version 1.0 avait été installée, il faut la désinstaller avant, la clé de signature ayant changé.</p>
+<p>Dépôt : https://github.com/JemaOS/hermes-onyx</p>
+<h3>llama.cpp passe en version 1.0.0</h3>
+<p>Le moteur d'inférence local llama.cpp et sa bibliothèque de tenseurs ggml sont publiés en 1.0.0 (13 novembre). Le changement tient moins aux performances qu'à la stabilité promise : les ruptures d'interface C seront désormais signalées par un saut de version majeure, ce qui sécurise les logiciels qui s'appuient dessus — LM Studio, Ollama et une bonne part de l'outillage local. La distribution s'élargit (Docker, Debian, Homebrew, conda-forge, MacPorts, Winget, XCFramework). C'est la brique sous-jacente des modèles que l'on fait tourner chez soi, et elle reste libre et gratuite.</p>
+<p>Annonce : https://huggingface.co/blog/ggml-org/llama-cpp-v1</p>
+<h2>Extensions et greffons</h2>
+<h3>hermes-genui — l'interface générative arrive aussi dans la Webapp</h3>
+<p>Le greffon hermes-genui, qui permet à l'agent de répondre par une interface interactive — graphiques, tableaux, plans, calculateurs, explications — plutôt que par un mur de texte, fonctionne désormais dans la Webapp livrée avec Hermes 0.23 et plus seulement dans l'application de bureau. Un piège a coûté du temps à son auteur et vaut d'être connu : chaque navigateur conserve ses propres interrupteurs de greffons, et le greffon est désactivé par défaut ; tant qu'on ne l'active pas là où l'on regarde, la réponse affiche la ligne brute <code>::blocks{...}</code> au lieu du dessin. Le chemin est « Capabilities » puis « Plugins », choix du profil, hermes-genui, interrupteur « Desktop », une fois par navigateur et par appareil. Un défaut connu empêche d'y accéder sur Safari et sur iPhone ou iPad — la page plante avec « Can't find variable: requestIdleCallback » (rapport hermes-agent#148538) —, le fichier de présentation du dépôt donnant un contournement en attendant.</p>
+<p>Licence MIT, 43 étoiles, dépôt créé le 3 novembre, dernière modification le 13 novembre.</p>
+<p>Dépôt : https://github.com/sagarmainkar/hermes-genui</p>
+<h2>Volume</h2>
+<p>101 entrées examinées (dont 42 dans le journal du subreddit et 59 dans les journaux complémentaires — Simon Willison, Latent Space, flux Hacker News à 10 points et plus), soit 83 publications distinctes après fusion des doublons du relais Reddit ; 8 retenues, 75 écartées. La dernière collecte s'est terminée sans erreur (journal d'état du 13 novembre à 21 h 51 UTC).</p>
+<footer>Édition du samedi 14 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
