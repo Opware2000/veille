@@ -6,9 +6,62 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 12 Nov 2026 01:13:19 +0100</lastBuildDate>
+<lastBuildDate>Fri, 13 Nov 2026 01:12:17 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — vendredi 13 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-13.html</link>
+<guid isPermaLink="false">latex-2026-11-13</guid>
+<pubDate>Fri, 13 Nov 2026 01:12:17 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un nouvel éditeur LaTeX de bureau, RabTex, arrive en version d'aperçu (Windows, macOS, Android) ; son auteur en parle sur le forum en annonçant que « tout est gratuit », ce que la page du produit dément en partie.</li>
+<li>Le forum débat d'une migration des polices 8 bits — dont celle de TIPA, très utilisée en phonétique — vers des paquets Unicode ; la voie existe déjà avec <code>tipauni</code>, mais sous un nom qui ne suit pas la convention proposée.</li>
+<li>Journée pauvre en contenu réutilisable : sur onze entrées nouvelles, neuf sont des questions ponctuelles de dépannage.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>RabTex — un éditeur LaTeX hors ligne pour Windows, macOS et Android</h3>
+<p>Un chercheur annonce sur le forum un éditeur qu'il a écrit lui-même, après avoir rencontré des difficultés avec plusieurs applications existantes. RabTex se présente comme un espace de travail local : les sources et les images restent sur la machine, la compilation se fait hors ligne et le document s'affiche à côté du code, avec diagnostics et historique de texte local. Une « boîte à outils » y ajoute un canevas d'équations exportable en SVG ou PNG, un constructeur de tableaux qui montre le rendu LaTeX avant export, un atelier de figures qui lit un fichier CSV et produit du PGFPlots, un éditeur de figures de chimie, un convertisseur de références en BibTeX et des conversions entre Word, tableur, Markdown, HTML et LaTeX (l'éditeur signale lui-même que ces conversions ne sont pas garanties exactes).</p>
+<p>Deux réserves, vérifiées le 13 novembre 2026 sur <code>https://myrab.pro/releases/</code> et sur la page du produit :</p>
+<ul>
+<li>l'annonce « Everything is free » est inexacte. Le cœur de l'éditeur est gratuit, mais la boîte à outils est un achat unique de 9,99 € après trente jours d'essai, et les achats ne sont pas encore ouverts — le logiciel est en aperçu. La version relevée est 0.1.7 (Windows et macOS ; un paquet Android existe aussi) ;</li>
+<li>aucun dépôt public ni licence publiée n'a été trouvé : c'est un logiciel fermé, ce qui compte si vous confiez vos sources à l'application. À noter aussi que la version macOS est annoncée par l'auteur comme non officielle et provisoire.</li>
+</ul>
+<p>Page de téléchargement : https://myrab.pro/releases/ — discussion : https://www.reddit.com/r/LaTeX/comments/1xu7zrn/one_more_latex_app/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Migrer les polices 8 bits vers Unicode — une proposition, pas encore un changement</h3>
+<p>Un fil du forum propose de commencer à migrer les paquets de polices encore en codage 8 bits vers des paquets Unicode, en réservant aux seconds un nouveau nom de la forme <code>[paquet]-unicode</code>. L'argument est concret : <code>tipa</code>, le paquet de référence pour l'alphabet phonétique international, utilise l'encodage T3, qui n'est pas de l'Unicode. Le copier-coller d'un symbole tel que ɣ ne rend que « G », et les lecteurs d'écran ne peuvent pas lire ces caractères — un problème d'accessibilité, pas seulement de confort.</p>
+<p>Ce qu'il faut savoir avant de s'y fier : la proposition n'est accompagnée d'aucun paquet et n'est pas appliquée. La page CTAN de TIPA confirme l'état des lieux (TIPA 1.3, licence LPPL 1.2, encodage standard T3). La voie Unicode existe en revanche déjà pour cet usage précis : <code>tipauni</code> (« Producing Unicode characters with TIPA commands », version 0.7a du 13 février 2023, licences FDL et GPL 3 ou ultérieure) redéfinit la plupart des commandes de TIPA pour produire des caractères Unicode ; il ne suit simplement pas la convention de nommage proposée. La discussion a donc surtout une valeur de repère : si vous composez de la phonétique, <code>tipauni</code> est la solution actuelle, et un éventuel <code>tipa-unicode</code> n'existe pas.</p>
+<p>Discussion : https://www.reddit.com/r/LaTeX/comments/1xu0c9i/we_should_work_on_migrating_8bit_font_packages_to/</p>
+<h2>Volume</h2>
+<p>Onze entrées nouvelles examinées dans l'intervalle (trois du journal r/LaTeX / Hacker News / Lobsters, sept de TeX — LaTeX Stack Exchange, une du forum Typst) : deux retenues, neuf écartées, soit un taux de rétention d'environ 18 %. Sur un forum d'entraide comme r/LaTeX, où les questions ponctuelles et leurs réponses dominent, ce taux est normal. Aucune erreur de collecte n'est à signaler : la dernière passe s'est terminée normalement.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — vendredi 13 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un nouvel éditeur LaTeX de bureau, RabTex, arrive en version d'aperçu (Windows, macOS, Android) ; son auteur en parle sur le forum en annonçant que « tout est gratuit », ce que la page du produit dément en partie.</li>
+<li>Le forum débat d'une migration des polices 8 bits — dont celle de TIPA, très utilisée en phonétique — vers des paquets Unicode ; la voie existe déjà avec <code>tipauni</code>, mais sous un nom qui ne suit pas la convention proposée.</li>
+<li>Journée pauvre en contenu réutilisable : sur onze entrées nouvelles, neuf sont des questions ponctuelles de dépannage.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>RabTex — un éditeur LaTeX hors ligne pour Windows, macOS et Android</h3>
+<p>Un chercheur annonce sur le forum un éditeur qu'il a écrit lui-même, après avoir rencontré des difficultés avec plusieurs applications existantes. RabTex se présente comme un espace de travail local : les sources et les images restent sur la machine, la compilation se fait hors ligne et le document s'affiche à côté du code, avec diagnostics et historique de texte local. Une « boîte à outils » y ajoute un canevas d'équations exportable en SVG ou PNG, un constructeur de tableaux qui montre le rendu LaTeX avant export, un atelier de figures qui lit un fichier CSV et produit du PGFPlots, un éditeur de figures de chimie, un convertisseur de références en BibTeX et des conversions entre Word, tableur, Markdown, HTML et LaTeX (l'éditeur signale lui-même que ces conversions ne sont pas garanties exactes).</p>
+<p>Deux réserves, vérifiées le 13 novembre 2026 sur <code>https://myrab.pro/releases/</code> et sur la page du produit :</p>
+<ul>
+<li>l'annonce « Everything is free » est inexacte. Le cœur de l'éditeur est gratuit, mais la boîte à outils est un achat unique de 9,99 € après trente jours d'essai, et les achats ne sont pas encore ouverts — le logiciel est en aperçu. La version relevée est 0.1.7 (Windows et macOS ; un paquet Android existe aussi) ;</li>
+<li>aucun dépôt public ni licence publiée n'a été trouvé : c'est un logiciel fermé, ce qui compte si vous confiez vos sources à l'application. À noter aussi que la version macOS est annoncée par l'auteur comme non officielle et provisoire.</li>
+</ul>
+<p>Page de téléchargement : https://myrab.pro/releases/ — discussion : https://www.reddit.com/r/LaTeX/comments/1xu7zrn/one_more_latex_app/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Migrer les polices 8 bits vers Unicode — une proposition, pas encore un changement</h3>
+<p>Un fil du forum propose de commencer à migrer les paquets de polices encore en codage 8 bits vers des paquets Unicode, en réservant aux seconds un nouveau nom de la forme <code>[paquet]-unicode</code>. L'argument est concret : <code>tipa</code>, le paquet de référence pour l'alphabet phonétique international, utilise l'encodage T3, qui n'est pas de l'Unicode. Le copier-coller d'un symbole tel que ɣ ne rend que « G », et les lecteurs d'écran ne peuvent pas lire ces caractères — un problème d'accessibilité, pas seulement de confort.</p>
+<p>Ce qu'il faut savoir avant de s'y fier : la proposition n'est accompagnée d'aucun paquet et n'est pas appliquée. La page CTAN de TIPA confirme l'état des lieux (TIPA 1.3, licence LPPL 1.2, encodage standard T3). La voie Unicode existe en revanche déjà pour cet usage précis : <code>tipauni</code> (« Producing Unicode characters with TIPA commands », version 0.7a du 13 février 2023, licences FDL et GPL 3 ou ultérieure) redéfinit la plupart des commandes de TIPA pour produire des caractères Unicode ; il ne suit simplement pas la convention de nommage proposée. La discussion a donc surtout une valeur de repère : si vous composez de la phonétique, <code>tipauni</code> est la solution actuelle, et un éventuel <code>tipa-unicode</code> n'existe pas.</p>
+<p>Discussion : https://www.reddit.com/r/LaTeX/comments/1xu0c9i/we_should_work_on_migrating_8bit_font_packages_to/</p>
+<h2>Volume</h2>
+<p>Onze entrées nouvelles examinées dans l'intervalle (trois du journal r/LaTeX / Hacker News / Lobsters, sept de TeX — LaTeX Stack Exchange, une du forum Typst) : deux retenues, neuf écartées, soit un taux de rétention d'environ 18 %. Sur un forum d'entraide comme r/LaTeX, où les questions ponctuelles et leurs réponses dominent, ce taux est normal. Aucune erreur de collecte n'est à signaler : la dernière passe s'est terminée normalement.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — jeudi 12 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-12.html</link>
