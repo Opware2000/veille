@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — samedi 14 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — samedi 14 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois outils se présentent cette semaine : un convertisseur LaTeX → Word qui conserve la numérotation des équations et les <code>\ref</code>, le terminal macOS MathTerm, et l'éditeur en ligne Texter.</li>
+<li>Deux paquets npm permettent d'épingler et de piloter Typst depuis Node.js.</li>
+<li>Une proposition de fond circule sur le forum : scinder les paquets de polices 8 bits en variantes Unicode, avec un suffixe <code>-unicode</code>, pour l'accessibilité et le copier-coller.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Convertisseur LaTeX → Word conservant numérotation et renvois</h3>
+<p>Un développeur présente un convertisseur LaTeX vers <code>.docx</code> destiné au cas classique du coauteur ou de la revue qui exige un fichier Word : la conversion gratuite habituelle ramène le texte et l'essentiel des formules, mais perd les numéros d'équation, les <code>\ref</code>, les numéros de théorème et les citations. Son outil les conserve sous forme de numérotation Word vivante (les numéros continuent de se mettre à jour si le fichier est édité), les équations restant des équations Word modifiables. Il annonce des mesures sur 144 articles arXiv, comparées aux numéros produits par LaTeX : 94 % des numéros d'équation (contre 0 % pour la voie gratuite habituelle), 90 % des références (18 %) et 84 % des citations (5 %). <strong>Réserve importante : l'outil n'est pas publié</strong>, aucune démonstration libre n'est accessible et aucun dépôt n'est indiqué — les chiffres sont donc ceux de l'auteur, invérifiables pour l'instant. La page de présentation répond (<code>https://mathsystem.dev/blog/en/posts/latex-to-word-document-coming/</code>, code 200) ; le fil est sur <code>https://www.reddit.com/r/LaTeX/comments/1xuwemc/i_made_a_latex_word_converter_that_keeps_equation/</code>.</p>
+<h3>MathTerm — rendre les maths affichées dans un terminal (macOS)</h3>
+<p>Petit utilitaire macOS qui repère les formules LaTeX écrites dans la sortie d'un programme et les compose sur place avec KaTeX : utile quand un assistant (Claude Code, par exemple) répond en <code>$…$</code> ou quand on relit des notes Markdown contenant des maths. Il se désactive volontairement sur les fichiers <code>.tex</code>, l'auteur précisant que ce n'est pas un éditeur et qu'il ne sert pas à rédiger. Dépôt <code>davidlai3/MathTerm</code> : licence MIT, 3 étoiles, créé le 12 novembre 2026 et dernière poussée le 13 novembre 2026 — projet de deux jours, à considérer comme une curiosité jeune. Lien : <code>https://github.com/davidlai3/MathTerm</code>.</p>
+<h3>Texter — éditeur LaTeX en ligne avec compilation incrémentale</h3>
+<p>L'auteur annonce un éditeur LaTeX compilé en WebAssembly (portage de pdfTeX), avec compilation incrémentale : seules les parties modifiées seraient recompilées, ce qui donnerait des temps de compilation inférieurs à la seconde sur les documents longs, la première compilation restant plus lente que le pdfTeX natif. Il cite aussi une intégration Zotero et Mendeley, un fonctionnement hors ligne (application web progressive), l'absence de compte et de téléversement des documents, une collaboration en temps réel et un serveur MCP. Le projet aurait reçu une subvention publique allemande en 2023. <strong>Aucune adresse n'est donnée dans le message</strong> : ni site, ni dépôt, ni licence, donc rien de tout cela n'est vérifiable pour l'instant — à suivre plutôt qu'à essayer. Fil : <code>https://www.reddit.com/r/LaTeX/comments/1xvlwr0/yet_another_one_texter/</code>.</p>
+<h3>Typst piloté depuis Node.js — deux paquets npm</h3>
+<p>Pour ceux qui génèrent des documents depuis un script, deux paquets publiés sur npm embarquent la chaîne Typst dans un projet JavaScript. <code>@flukxr/typst-cli</code> fournit les binaires officiels de Typst comme dépendance npm : la version exacte est épinglée dans <code>package.json</code>, seule la plateforme courante est installée, sans script de post-installation ni téléchargement à l'exécution, et toutes les versions stables depuis 0.1.0 sont disponibles (dernière étiquette <code>latest</code> : 0.15.1). <code>@flukxr/typst-api</code> (version 1.0.0) expose une API Node.js typée au-dessus de cette ligne de commande : <code>compile</code>, <code>pdf</code>, <code>query</code>, <code>jsonInput</code>, <code>source</code>, avec des erreurs typées et sans passer par le shell, ce qui met les chemins exotiques à l'abri. Présentation : <code>https://forum.typst.app/t/typst-cli-typst-api-pin-and-drive-typst-from-node-js/10243</code>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Proposition : dédoubler les paquets de polices 8 bits en variantes Unicode.</strong> Une discussion du forum propose d'engager la migration des paquets de polices historiques vers de nouveaux paquets fondés sur Unicode, en distinguant les nouveaux par un suffixe <code>-unicode</code> dans leur nom. L'exemple donné est <code>tipa</code>, très utilisé pour les transcriptions en alphabet phonétique international : ses polices 8 bits utilisent des encodages non Unicode, si bien qu'un caractère comme ɣ copié depuis le PDF ressort en « G » — c'est le mappage d'origine de la police qui est en cause —, et, plus gênant, les lecteurs d'écran ne peuvent pas restituer correctement un texte ainsi encodé. C'est une proposition d'organisation, pas une décision prise, ni une annonce de CTAN : rien n'est encore publié sous cette convention. Le raisonnement est néanmoins solide et rejoint l'actualité de l'étiquetage PDF et de l'accessibilité. Fil : <code>https://www.reddit.com/r/LaTeX/comments/1xu0c9i/we_should_work_on_migrating_8bit_font_packages_to/</code>.</p>
+<h2>Volume</h2>
+<p>14 sujets examinés (16 entrées, deux fils du relais Reddit figurant sous deux identifiants différents), 5 retenus, 9 écartés, soit un taux de rétention d'environ 36 %. Les écartés sont des questions de dépannage ponctuelles venues de TeX Stack Exchange (« pourquoi mon document ne compile pas », erreur d'encodage <code>TS1</code>, <code>\part</code> absent de <code>ltx-talk</code>, étoiles TikZ en nombre trop grand), une question sur les paquets par projet dans l'application web Typst, et deux fils de discussion sans contenu réutilisable. Un taux faible est normal sur un forum d'entraide de ce genre : la matière utile y est rare et souvent déjà connue. Aucune erreur de collecte n'est signalée dans <code>meta.json</code> (dernier passage le 13 novembre à 23 h 59 UTC).</p>
+<footer>Édition du samedi 14 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

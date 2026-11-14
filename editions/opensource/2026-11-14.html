@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — samedi 14 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — samedi 14 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée dense : Cloudflare ouvre <strong>Kitesurf</strong>, son navigateur pour agents (Apache-2.0, 514 étoiles), et <strong>Bryntum</strong> passe ses composants d'interface (Gantt, planificateur, agenda) sous licence MIT après dix-sept ans de licence commerciale.</li>
+<li><strong>ZigZag</strong>, éditeur libre de broderie machine (Apache-2.0, 607 étoiles), transforme un dessin SVG en points de couture et les envoie en Bluetooth ; c'est la trouvaille la plus utile du lot pour qui a une brodeuse.</li>
+<li>Côté Android, deux applications libres complètes : <strong>Cinnamon</strong> (Messages, Contacts, Téléphone, GPL-3.0) et <strong>Nudge</strong> (curseur de volume animé, MIT).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Kitesurf — le navigateur que Cloudflare destine aux agents</h3>
+<p>Cloudflare a ouvert le 13 novembre le code de Kitesurf, un moteur de navigateur expérimental qui s'exécute sur sa plateforme Workers et vise les agents plutôt que les humains. Écrit en Rust avec l'interface Dioxus Blitz, il est publié sous Apache-2.0 (514 étoiles, dernière modification le 13 novembre 2026) : un navigateur complet, mais dont la cible première est le pilotage automatique. Annonce reprise par Phoronix. https://github.com/cloudflare/kitesurf</p>
+<h3>ZigZag — la broderie machine sans abonnement</h3>
+<p>Un développeur dont la brodeuse Brother à 300 dollars exigeait un abonnement a écrit son propre éditeur. ZigZag transforme un dessin SVG en points de broderie, exporte cinq formats de fichiers et envoie les motifs par Bluetooth vers la machine. macOS et Windows, Apache-2.0, 607 étoiles, dernière modification le 13 novembre 2026. À signaler : l'auteure, Kathy Korevec, indique avoir construit toute l'application avec ChatGPT — un serveur MCP est intégré pour laisser un agent dessiner dans la même fenêtre. https://github.com/simpsoka/zigzag</p>
+<h3>Cinnamon — Messages, Contacts et Téléphone réunis, en libre</h3>
+<p>Application Android qui remplace les trois applications Google d'un coup, avec une présentation Material 3. Messagerie SMS et MMS (groupes, envois programmés, messages épinglés, fonds et couleurs par conversation), composeur T9 avec bulle d'appel flottante, gestion des contacts avec affiches. Le RCS n'est pas pris en charge, seule limite notable. GPL-3.0, 73 étoiles, dernière modification le 13 novembre 2026. https://github.com/sosauce/Cinnamon</p>
+<h3>Nudge — curseur de volume et animation de bord sur Android</h3>
+<p>Application Android qui habille le son : un curseur de volume personnalisable et animé apparaît sur le bord de l'écran, avec réglages de largeur, de hauteur, de position et de nombre de crans ; une animation accompagne aussi l'appui sur les boutons latéraux. Un mélangeur audio s'ouvre en appuyant sur l'icône du son. MIT, 91 étoiles, créée le 12 novembre 2026. https://github.com/DarkAspect1/Nudge</p>
+<h3>PocketBase Community Edition — un fork communautaire</h3>
+<p>Fork non affilié de PocketBase, né du constat que le projet d'origine freine les contributions extérieures. La version 0.0.1 vise la parité avec l'amont tout en ajoutant des extensions dites « cœur » : applications multipages, sauvegardes continues par Litestream, serveur MCP, TLS automatique ; des extensions optionnelles ajoutent la conteneurisation en cours de processus et la gestion de parc. MIT, 12 étoiles, dernière modification le 13 novembre 2026. https://github.com/pockethost/pocketbase</p>
+<h3>LightnerX — bibliothèque réseau C++26 pour jeux multijoueurs</h3>
+<p>Première bêta publique d'une bibliothèque de mise en réseau pour jeux, appuyée sur GameNetworkingSockets et le protocole INER. L'auteur a fait auditer son code avant la sortie : quatorze problèmes corrigés, neuf tests automatisés au vert, dont une passe sous AddressSanitizer. L'annonce cite une licence MIT, mais l'API GitHub ne reconnaît aucune licence sur le dépôt — l'écart mérite d'être signalé. 9 étoiles ; tests menés surtout sous Linux. https://github.com/pietroth/LightnerX</p>
+<h3>Woolly — emporter la mémoire de ses assistants d'IA</h3>
+<p>Outil local qui rassemble en un seul endroit la mémoire éparpillée entre plusieurs assistants — Claude, Cursor, Ollama et toute application compatible MCP — pour la conserver chez soi. MIT, 12 étoiles, dépôt créé le 10 novembre 2026. https://github.com/rjcuff/woolly</p>
+<h3>Talgent Workbench — des agents d'IA que l'on héberge soi-même</h3>
+<p>Plateforme d'agents gérés auto-hébergée : chaque tâche s'exécute dans son propre bac à sable, sur l'infrastructure de l'utilisateur. Apache-2.0, 5 étoiles, dépôt créé le 6 novembre 2026. https://github.com/talgent-work/workbench</p>
+<h3>Reflota — récupérer les données d'un disque NTFS ou FAT abîmé</h3>
+<p>Utilitaire de récupération de données pour disques NTFS et FAT, qui copie par phases afin de sauver d'abord les secteurs les plus sains. MIT, 15 étoiles, dépôt créé le 13 novembre 2026 — donc très jeune, à manier avec prudence sur des données irremplaçables. https://github.com/Christ10-8/reflota</p>
+<h3>Dodaisos — un « superagent » de bureau</h3>
+<p>Agent de bureau libre qui orchestre tous les autres agents installés sur la machine (anciennement Personal Jarvis). Apache-2.0, 372 étoiles, dernière modification le 13 novembre 2026. https://github.com/Dodaios/Dodaios</p>
+<h3>Altar — suivre le lancement d'un projet</h3>
+<p>« Centre de commandement » local pour développeurs indépendants : suivi du lancement et de la croissance sur les réseaux. MIT, 2 étoiles, dépôt créé le 13 novembre 2026 — projet à son premier jour. https://github.com/iampal/altar</p>
+<h3>Zipzi — alternative libre à Live2D</h3>
+<p>Éditeur de modèles et d'animations 2D, présenté comme une alternative à Live2D avec édition assistée par un agent d'IA. GPL-3.0, 9 étoiles, dépôt créé le 24 octobre 2026. https://github.com/getzipzi/zipzi-2d</p>
+<h3>AgentLeak — mesurer ce que les agents d'IA laissent fuiter entre eux</h3>
+<p>Banc d'essai pour la confidentialité des systèmes multi-agents : mille scénarios, sept canaux d'échange et plusieurs modèles, avec un serveur MCP fourni. L'annonce affirme que les messages échangés entre agents laissent fuiter bien plus d'information sensible que la réponse finale, et qu'un audit limité à la sortie passe à côté d'une grande partie du problème. 40 étoiles, mais dernière modification le 5 octobre 2026 et licence non identifiée par GitHub. https://github.com/Privatris/AgentLeak</p>
+<h3>OpenDashboards — des tableaux de bord sur ses propres données</h3>
+<p>Application libre qui interroge à la fois, en langage naturel, des bases de données et des services (PostgreSQL, Stripe, PostHog, serveurs MCP) et en compose des tableaux de bord tenus à jour. Présentée comme l'alternative libre aux « dashboards Claude ». MIT, 56 étoiles, dernière modification le 13 novembre 2026. https://github.com/thesysdev/opendashboards</p>
+<h3>QuAIA — des agents d'IA pour toute la chaîne de test</h3>
+<p>Équipe d'agents qui prend en charge le processus de test logiciel, du cahier des charges au rapport final, connectée aux outils de suivi et exécutée dans l'infrastructure du client. Publiée sous AGPL-3.0, code sur GitHub. Attention : l'éditeur indique lui-même que les fonctions marquées « prototype » demandent encore des essais en conditions réelles. https://quaia.dev</p>
+<h3>Chromedrop — AirDrop natif sur ChromeOS</h3>
+<p>Un développeur a réussi à faire fonctionner AirDrop, dans les deux sens, sur un Chromebook en mode développeur, sans passer par une machine virtuelle. Le programme s'appuie sur la bibliothèque <strong>owly</strong> (MIT, 3 340 étoiles), qui rétro-conçoit le protocole d'Apple : elle gère la découverte, la connexion et le transfert, ainsi que l'interface sans fil AWDL. L'interface est une application web installée, le reste tourne en Python avec les droits d'administrateur. MIT, 3 étoiles, dépôt créé le 11 novembre 2026. https://github.com/NellowTCS/chromedrop</p>
+<h3>Un micrologiciel libre pour une enceinte de 2011</h3>
+<p>Microprogramme libre pour la Bowers &amp; Wilkins Zeppelin Air, qui ajoute AirPlay 2 et Snapcast sur le matériel d'origine. MIT, 1 étoile, dépôt créé le 3 novembre 2026. https://github.com/pawlowskialex/zd1</p>
+<h3>PyroNear — détection précoce des feux de forêt</h3>
+<p>Projet libre de surveillance des départs de feu à partir de caméras et de modèles de vision, cité sur Hacker News. Le dépôt de recherche (Apache-2.0, 27 étoiles) n'a pas été mis à jour depuis août 2024 : le site du projet reste actif, mais l'activité sur le code mérite vérification. https://pyronear.org</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Bryntum passe à l'open source</strong> : après dix-sept ans de licence commerciale, l'éditeur publie une édition MIT de l'ensemble de ses composants — Gantt, planificateur, agenda, grille, tableau de tâches. C'est la nouvelle la plus lourde de conséquences du jour (11 points sur Hacker News). https://bryntum.com/blog/whats-new-in-v8/</li>
+<li><strong>XRAID</strong> : première publication publique d'une nouvelle implémentation RAID par parité, déclustérée et intégrée au système de fichiers XFS, portée par Christoph Hellwig. Elle vise d'abord les disques zonés (SMR) et cherche une parité rapide sans défaut d'intégrité inhérent. https://www.phoronix.com/news/XRAID-XFS-RAID</li>
+<li><strong>KDE Frameworks 6.32</strong> : mise à jour mensuelle, qui corrige enfin un bug vieux de quinze ans sur les notifications de copie vers une clé USB — l'annonce de fin signalait la copie vers le cache local, pas la fin réelle de l'écriture. https://www.phoronix.com/news/KDE-Frameworks-6.32</li>
+<li><strong>Rust 1.100.0</strong> : type « never » enfin stabilisé, stabilisation de l'API Allocator et de <code>DropGuard</code>. https://rust.developpez.com/actu/389089/</li>
+<li><strong>Apache corrige une faille critique</strong> dans HTTP/2, permettant l'exécution de code à distance sur les serveurs web. Toute instance exposée doit être mise à jour. https://web.developpez.com/actu/389058/</li>
+<li><strong>Slax revient</strong> : la distribution portable tient sa première version depuis octobre 2023, fondée sur Debian 13, noyau 6.12, et peut démarrer avec Secure Boot activé. https://feed.itsfoss.com/link/24361/17523951/slax-linux-returns</li>
+<li><strong>Nil-3B</strong> : modèle de trois milliards de paramètres au format GGUF présenté comme « IA souveraine », fenêtre de 131 072 jetons. La traction est pour l'instant très faible (65 téléchargements, aucun « j'aime » depuis le 4 novembre) : annonce à suivre, pas encore un outil éprouvé. https://huggingface.co/nioncorp/nil-3b-gguf</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>Langfuse AI Gateway</strong> : passerelle écrite en Rust, ouverte, qui trace chaque appel à un modèle de langue dans un système multi-agents. Elle rejoint le projet Langfuse (Apache-2.0 selon les cas, 37 400 étoiles), et se présente comme une brique à poser devant ses agents plutôt qu'un service à part. https://github.com/langfuse/langfuse/tree/main/ai-gateway</li>
+</ul>
+<h2>Volume</h2>
+<p>72 entrées lues — 41 du journal principal (Reddit, Hacker News, Lobsters) et 31 de LinuxFr, du Journal du hacker, de Phoronix, d'It's FOSS et de Developpez.com — pour 26 sujets retenus ; le reste écarté (questions, appels à contributeurs, analyses et billets de blog sans annonce d'outil). Aucune erreur de collecte signalée dans <code>meta.json</code>. Plusieurs entrées reprenaient la même actualité — Kitesurf vu sur Hacker News et Phoronix, PocketBase en version française et anglaise, Chromedrop et sa bibliothèque owly : elles ont été regroupées en une seule synthèse chacune. Le taux de rétention élevé tient à la nature du thème : r/opensource annonce surtout des projets, et Hacker News y ajoute chaque jour une série de « Show HN » qui sont exactement ce que cette veille cherche.</p>
+<footer>Édition du samedi 14 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
