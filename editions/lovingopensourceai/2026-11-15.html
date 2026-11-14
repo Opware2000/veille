@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — dimanche 15 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux projets d'agents et d'outils locaux tout neufs : Loft, qui répond à des questions sur ses propres fichiers sans connexion en citant ses sources, et Agweb, un navigateur conçu pour les agents plutôt que pour les humains.</li>
+<li>Meta ouvre dans FAISS son e-means, un k-means environ dix fois plus rapide à perte égale, et DeepSeek V3 se laisse réimplémenter en 190 lignes de JAX sur un MacBook Air.</li>
+<li>À signaler sans pouvoir le vérifier moi-même : un ancien ingénieur d'OpenAI affirme avoir retrouvé dans les poids publiés de six modèles chinois la signature des processeurs Blackwell interdits à l'export.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Loft — interroger ses propres fichiers hors ligne, avec citations</h3>
+<p>Loft répond à des questions posées en langage naturel sur le contenu d'un dossier local et rend pour chaque réponse la référence du passage utilisé. L'application s'appuie sur llama.cpp, donc aucune requête ne sort de la machine, et elle est écrite en Rust avec Tauri et Svelte. Vérification du dépôt <code>nwaoga/loft</code> : MIT, zéro étoile, créé et modifié le 14 novembre 2026 — le projet a été déposé il y a quelques heures et n'a aucun antécédent : la promesse est celle de son auteur, rien n'a encore été éprouvé par des utilisateurs. Son fil « Show HN » n'avait qu'un point au moment de la collecte, ce qui est le signe d'une nouveauté que personne n'a encore vue plutôt que d'un outil installé.</p>
+<p>Lien : https://github.com/nwaoga/loft</p>
+<h3>Agweb — un navigateur qui ne prend jamais le focus</h3>
+<p>Agweb part d'un constat simple : quand un agent pilote un navigateur classique, les fenêtres s'ouvrent au premier plan et le travail de l'utilisateur est interrompu. Ce navigateur, construit pour être commandé par un programme, rassemble tous les onglets dans une seule vue, ne vole pas le focus et se contente d'une empreinte mémoire réduite. Le fil de présentation sur Hacker News a réuni 83 points et 21 commentaires en une journée, ce qui en fait l'un des projets les plus discutés de l'intervalle. Vérification du dépôt <code>paul-nameless/agweb</code> : MIT, 164 étoiles, créé le 11 novembre 2026 et modifié le 14.</p>
+<p>Lien : https://github.com/paul-nameless/agweb</p>
+<h3>deepseek-v3-jax — DeepSeek V3 en 190 lignes de JAX, entraîné sur un MacBook Air</h3>
+<p>Ce dépôt réimplémente l'architecture complète de DeepSeek V3 — attention latente multi-têtes, mélange d'experts, équilibrage sans perte auxiliaire, prédiction multi-jetons — en 190 lignes de JAX pur, et l'auteur indique l'avoir entraîné sur un MacBook Air. Il ne s'agit pas d'un outil à installer mais d'un objet pédagogique : c'est probablement la façon la plus rapide de voir, en lisant, comment un grand modèle à poids ouverts est réellement construit. Vérification du dépôt <code>Vaibhaav-Tiwari/deepseek-v3-jax</code> : MIT, 84 étoiles, créé le 13 novembre 2026 ; le fil Hacker News a atteint 137 points avec sept commentaires. Aucune reproduction locale de l'entraînement n'a été faite ici : les chiffres annoncés sont ceux de l'auteur.</p>
+<p>Lien : https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax — note d'accompagnement : https://vaibhaav.in/writing/deepseek-v3-jax</p>
+<h3>e-means — le k-means de Meta, dix fois plus rapide, publié dans FAISS</h3>
+<p>Le k-means est l'algorithme de regroupement le plus utilisé en analyse de données et en apprentissage automatique ; e-means, développé chez Meta FAIR, remplace l'algorithme de Lloyd et atteint une perte inférieure en un dixième des époques. Les auteurs mesurent un facteur de 10 à 45 sur le temps de calcul réel sur GPU et de 8 à 15 sur processeur, par rapport aux implémentations de référence. Le code n'est pas un dépôt isolé : il est intégré à FAISS, sous <code>faiss/contrib/e_means</code>, avec une démonstration exécutable dans le navigateur et un article déposé sur arXiv. Vérification du dépôt <code>facebookresearch/faiss</code> : MIT, 41 668 étoiles, modifié le 14 novembre 2026. Le fil Lobsters qui l'a signalé totalisait cinq points et aucun commentaire : la publication est passée presque inaperçue, alors que le gain annoncé est important.</p>
+<p>Lien : https://e-means.github.io/ — code : https://github.com/facebookresearch/faiss/tree/main/contrib/e_means</p>
+<h3>Ember — piloter la diode de charge du MacBook</h3>
+<p>Ember est un petit utilitaire macOS libre qui prend la main sur la diode de statut du chargeur du MacBook, à la place du comportement imposé par le système. C'est hors du champ de l'intelligence artificielle, mais c'est exactement le type d'application nouvelle, gratuite et libre que cette veille retient : le dépôt <code>Getterbetter/ember</code> est publié sous MIT, comptait 13 étoiles le 14 novembre 2026 et sa version 1.0.1 est sortie le 12 novembre. Le fil Hacker News a réuni 18 points et dix commentaires.</p>
+<p>Lien : https://github.com/Getterbetter/ember/releases/tag/v1.0.1</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Llama.app — l'application de bureau, oubliée dans la note d'hier</h3>
+<p>L'édition d'hier a annoncé le passage de llama.cpp et de ggml en version 1.0.0 ; trois nouvelles entrées reprennent la même publication et ne sont pas répétées ici. Reste un point que la note d'hier n'avait pas nommé : le projet dispose d'une application de bureau, Llama, dans sa barre de menus — Mac et Windows, un mégaoctet, gratuite, libre et fonctionnant hors ligne. Elle liste les modèles déjà installés, en recommande un adapté à la machine, et expose les modèles sous une interface locale que d'autres applications peuvent utiliser. Sous Linux, l'installation passe par la ligne de commande. Vérification des dépôts : <code>ggml-org/Llama-macOS</code> en MIT, 1 820 étoiles, créé le 30 juin 2025 ; <code>ggml-org/Llama-Windows</code> en MIT, 437 étoiles, créé le 29 juin 2026. L'application n'est donc pas une nouveauté — c'est le point d'entrée grand public du projet, et l'annonce de la version 1.0 en a fait son site officiel.</p>
+<p>Lien : https://llama.app</p>
+<h3>GLM-5.3 en NVFP4 — servir 753 milliards de paramètres, et ce que cela coûte</h3>
+<p>NVIDIA détaille dans une note technique la mise en service de GLM-5.3 en quantification NVFP4 sur deux stations DGX reliées par RDMA, avec vLLM et un parallélisme de tenseurs sur deux cartes. Le modèle compte 753 milliards de paramètres dont 40 milliards activés par jeton, et ses poids réclament environ 464 Go de mémoire graphique — au-delà des 252 Go d'une seule carte GB300. La mesure de débit annoncée atteint 607,8 jetons par seconde en sortie, mais elle chute à 385 jetons par seconde dès que la concurrence double, avec une latence moyenne de 453 secondes par requête. C'est le fil le plus commenté de la période sur cette veille (50 points, 27 commentaires), et il faut le lire pour ce qu'il est : une recette de déploiement, pas une nouveauté utilisable chez soi. Les poids de GLM-5.3 sont publiés depuis le 25 août 2026 ; c'est la méthode de service qui est décrite ici. Je n'ai pas vérifié la licence de ces poids — celle de la variante Flash est MIT, celle de GLM-5.3 complet est déclarée « autre » par Hugging Face, donc à examiner avant tout usage.</p>
+<p>Lien : https://developer.nvidia.com/blog/when-one-gpu-isnt-enough-serving-glm-5-3-across-two-nvidia-dgx-stations-with-vllm/</p>
+<h3>Signature de GPU dans les poids ouverts — une affirmation relayée, non vérifiée ici</h3>
+<p>Un ancien ingénieur d'OpenAI, Will DePue, aujourd'hui à la tête d'un cabinet de recherche, affirme avoir retrouvé dans les poids publiés de six modèles chinois la signature d'un matériel précis : en rejouant l'initialisation des poids pour différents processeurs, un seul compte de processeurs fait coïncider les valeurs, et sur DeepSeek-V4-Flash il s'agit de 148 processeurs, c'est-à-dire du Blackwell. Les modèles concernés seraient ceux de DeepSeek, Moonshot AI, MiniMax et Ant Group, ce qui suggérerait un accès à du matériel soumis aux contrôles d'exportation américains. L'affirmation a été relayée par The Register le 13 novembre 2026 et par plusieurs autres sites. Je n'ai pas reproduit la méthode — elle suppose de rejouer des initialisations sur du matériel que je n'ai pas — et cette veille la rapporte donc comme une affirmation étayée et diffusée, pas comme un fait établi. Elle intéressera quiconque suit les modèles à poids ouverts et la question de leur provenance réelle.</p>
+<p>Lien : https://www.theregister.com/ai-and-ml/2026/11/13/chinese-ai-labs-are-training-models-on-nvidias-blackwell-despite-export-controls-says-ex-openai-engineer/</p>
+<h2>Extensions et greffons</h2>
+<h3>datasette-leaflet 0.3 et datasette-cluster-map 0.19</h3>
+<p>Deux greffons libres de Datasette, l'outil de publication de données de Simon Willison, ont été mis à jour le 13 novembre 2026. <code>datasette-leaflet</code> embarque la bibliothèque de cartographie et corrige un manquement de politesse envers OpenStreetMap : les requêtes de tuiles envoyées par les pages Datasette ne transmettaient pas l'en-tête de provenance attendu par le serveur de tuiles. <code>datasette-cluster-map</code> affiche une carte pour toute table contenant des colonnes de latitude et de longitude, et devient compatible avec Datasette 1.0a42 tout en s'appuyant sur le greffon précédent. Ces deux greffons ne relèvent pas de l'intelligence artificielle ; ils sont retenus parce qu'ils satisfont le même critère — un outil libre qui apporte une capacité concrète. Vérification des dépôts : <code>simonw/datasette-leaflet</code> Apache 2.0, 9 étoiles, modifié le 13 novembre 2026 ; <code>simonw/datasette-cluster-map</code> Apache 2.0, 102 étoiles, modifié le 13 novembre 2026.</p>
+<p>Lien : https://simonwillison.net/2026/Nov/13/datasette-cluster-map/</p>
+<h2>Volume</h2>
+<p>77 entrées lues dans l'intervalle de quatre jours sur les cinq journaux (le journal du sous-reddit, alimenté par Reddit, Hacker News, Lobsters et le relais de l'extension, plus les quatre flux complémentaires), 9 sujets retenus, 68 entrées écartées. Le taux de rétention est bas, autour de 12 %, et cela vient du flux généraliste de Hacker News : sur 65 entrées de ce seul journal, l'essentiel portait sur la panne nationale du trafic aérien américain, les affaires financières de Nvidia ou des billets d'opinion, tous hors sujet. Le regroupement n'a porté que sur une actualité, llama.cpp 1.0.0, revue trois fois et déjà publiée hier ; un doublon de la même publication a par ailleurs été écarté, entre le fil du sous-reddit et son dépôt par l'extension du Mac, qui portent le même identifiant de publication sous deux formes. La collecte s'est déroulée sans erreur signalée.</p>
+<footer>Édition du dimanche 15 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
