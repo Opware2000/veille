@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — samedi 14 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — samedi 14 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Huit annonces dans l'intervalle (13 novembre, 07 h 51 à 19 h 05 UTC) : aucune ne concerne un paquet que charge nBook3.</li>
+<li>Trois mises à jour à connaître : <strong>pdftexcmds 0.34</strong>, l'utilitaire de bas niveau qui passe sous la responsabilité de l'équipe LaTeX, <strong>footnotehyper 2.0</strong>, la version majeure du paquet de notes de bas de page compatible <code>hyperref</code>, et <strong>Light LaTeX Make (llmk) 1.3.0</strong>, l'outil de compilation qui gagne deux options de ligne de commande.</li>
+<li>Les cinq autres annonces sont écartées (paquet de linguistique, diagrammes de cordes, écritures bidirectionnelles, classe de présentations expérimentale, polices runiques).</li>
+</ul>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>pdftexcmds 0.34</strong> — version datée du <strong>28 octobre 2026</strong> mais annoncée seulement le 13 novembre, licence LPPL 1.3c. C'est le complément qui redonne à LuaTeX les fonctions utilitaires que pdfTeX fournit en propre (la fiche CTAN : « Il tente de combler la lacune et implémente quelques primitives manquantes en Lua »). Il ne s'utilise pas directement : d'autres paquets l'appellent. Deux changements à l'annonce, tous deux de portée générale : l'ajout de <code>\pdf@filedump</code> pour XeTeX, et le passage de la maintenance à l'équipe LaTeX — la fiche du paquet porte désormais les deux auteurs, <code>latex</code> et <code>oberdiek</code>, tous deux marqués actifs. Rien à modifier dans votre classe, mais c'est exactement le genre de fichier qu'il ne faut pas figer en version ancienne dans une arborescence locale : une correction y a des effets dans toute la chaîne en aval. https://ctan.org/pkg/pdftexcmds</li>
+<li><strong>footnotehyper 2.0</strong> — 12 novembre 2026, licence LPPL 1.3c, auteur Jean-François Burnol (seul paquet de cette édition dont l'auteur n'est pas anonyme dans le journal). Il fournit un environnement de note de bas de page qui accepte le matériel verbatim, et un environnement <code>savenotes</code> qui recueille les notes prises dans les environnements difficiles — <code>tabular</code>, <code>minipage</code>, contenus encadrés — pour les livrer plus loin, compatible <code>hyperref</code>, <code>color</code>, <code>xcolor</code> et <code>babel-french</code> (la fiche le présente comme le successeur du paquet <code>footnote</code> de Mark Wooding, qui posait des problèmes de compatibilité). Vous ne le chargez pas, mais le cas qu'il traite est celui de vos documents mêlant <code>mdframed</code>, <code>tabularray</code> et notes de bas de page : si une note doit tomber sous un tableau ou dans un encadré, c'est le paquet à essayer. La version 2.0 ne dit pas ce qui change dans l'annonce, seulement que le numéro passe en majeur. https://ctan.org/pkg/footnotehyper</li>
+<li><strong>Light LaTeX Make (llmk) 1.3.0</strong> — licence MIT, auteur Takuto Asakura, date de version non renseignée dans la fiche JSON. Outil de compilation qui décrit l'enchaînement des traitements dans un fichier <code>llmk.toml</code> ou sous forme de commentaires placés dans le source, et qui se repose uniquement sur <code>texlua</code>. Cette version ajoute deux options de ligne de commande — <code>--temporary</code> / <code>-T</code> et <code>--source</code> — qui permettent de remplacer ponctuellement l'entrée <code>source</code> du <code>llmk.toml</code>, et crée désormais le dossier de sortie s'il n'existe pas. Utile pour un dépôt qui compile des documents à plusieurs dossiers ; sans rapport avec votre chaîne actuelle (<code>latexmk</code>), mais c'est un remplaçant possible le jour où un enchaînement de compilation devient pénible à décrire. https://ctan.org/pkg/light-latex-make</li>
+</ul>
+<h2>Volume</h2>
+<p>Huit annonces publiées dans l'intervalle (13 novembre 2026, 07 h 51 à 19 h 05 UTC), trois retenues — dont <strong>aucune</strong> concernant un paquet que charge nBook3 —, cinq écartées : <strong>covington 2.17</strong> est un correctif de fin d'exemples dans un paquet de linguistique, <strong>string-diagrams 0.4.0</strong> dessine des diagrammes de cordes (théorie des catégories), <strong>BabelBidi 1.0.0</strong> étend le support bidirectionnel de <code>babel</code> pour des écritures non latines — sa fiche JSON porte déjà la version 1.0.1 du 13 novembre, donc en avance sur l'annonce —, <strong>ltx-talk 0.6.12</strong> est une classe de présentations expérimentale dont l'annonce se réduit à un intitulé « Fixed », et <strong>allrunes 2.1.2</strong> renomme une commande interne dans une collection de polices runiques. La dernière collecte s'est terminée sans erreur (32 entrées dans le flux, une nouvelle, 160 annonces au journal, dernière passe le 13 novembre à 23 h 33 UTC).</p>
+<footer>Édition du samedi 14 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
