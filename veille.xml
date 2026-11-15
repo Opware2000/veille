@@ -6,9 +6,60 @@
 <description>Toutes les veilles quotidiennes réunies : Reddit, logiciel libre, IA, LaTeX.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 16 Nov 2026 00:35:47 +0100</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 00:37:02 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Renaud Dékode — lundi 16 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/renaud/2026-11-16.html</link>
+<guid isPermaLink="false">renaud-2026-11-16</guid>
+<pubDate>Mon, 16 Nov 2026 00:37:02 +0100</pubDate>
+<category>Renaud Dékode</category>
+<description><![CDATA[<h1>Veille Renaud Dékode — lundi 16 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum, les sujets les plus utiles d'abord.</h2>
+<ul>
+<li>Le connecteur Hostinger officiel transforme Claude Code en administrateur système : déploiement d'une application, création du sous-domaine, des DNS et du HTTPS, sans ouvrir une console ni le panneau d'hébergement.</li>
+<li>Le tutoriel mesure ce que cela coûte : un VPS Hostinger KVM 2 (2 cœurs, 8 Go de mémoire, 100 Go NVMe) à 7,79 € par mois en promotion, renouvellement à 14,99 €, un nom de domaine gratuit la première année et trente jours pour se faire rembourser.</li>
+<li>La démonstration est une publicité assumée : lien affilié, code de réduction et partenariat annoncé à l'antenne ; le reste — la méthode de prompt et le déploiement guidé — tient debout tout seul.</li>
+</ul>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Une application fonctionnelle produite en une seule demande, en une vingtaine de minutes.</strong> L'auteur a demandé à Fable 5.2 de lui écrire un traducteur de conversation en temps réel, en un seul prompt et sans reprise : le modèle a développé l'application, l'a lancée lui-même dans son navigateur, a testé le micro et les listes de langues, puis a rendu un compte rendu de ce qu'il avait fait (00:19:42 à 00:23:26). Il précise que Opus 5.5 aurait fait le même travail, Fable 5.2 n'étant utilisé que parce qu'il était encore compris dans son abonnement : c'est un argument de praticien, pas une mesure comparative, et aucune évaluation chiffrée n'est donnée. Le seul repère de temps annoncé est « une vingtaine de minutes », à prendre comme une impression de séance et non comme un banc d'essai.</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Le connecteur Hostinger pour Claude Code : un serveur MCP distant, officiel, qui vaut un administrateur système.</strong> C'est le sujet central du tutoriel. Deux gestes : activer l'extension Hostinger dans les greffons de Claude, puis ajouter le connecteur du même nom par la commande <code>/mcp</code> — l'extension seule ne voit rien, et l'auteur le montre sur un échange réel où Claude répond qu'il ne peut pas lire les domaines du compte (00:11:44 à 00:13:57). Le catalogue de Claude décrit ce connecteur comme un serveur MCP distant avec connexion par navigateur (OAuth), sans rien à installer localement, et il porte la mention « vérifié par Anthropic » (claude.com/marketplace/plugins/hostinger) : c'est un produit co-signé par les deux sociétés, pas un bricolage de la communauté. Les fonctions annoncées couvrent le déploiement de sites statiques, d'applications Node.js et de sites WordPress, la recherche et l'enregistrement de domaines, la modification des enregistrements DNS, les journaux de construction, les boîtes mail, les boutiques et, pour un VPS, le pare-feu, les instantanés et la surveillance. Autrement dit : l'administrateur système devient une conversation, ce qui est exactement le cap que l'auteur dit vouloir faire sauter.</p>
+<p><strong>Ce que la démonstration a fait concrètement, avec le serveur déjà en production.</strong> Sur un VPS qu'il utilise déjà pour n8n, un CMS et plusieurs sites, Claude a pris un nom de domaine encore non réclamé dans son compte, l'a enregistré à sa place (le point org étant refusé, un point tech a été retenu), fait pointer la racine de ce domaine vers le site existant, puis créé le sous-domaine de l'application : enregistrement DNS, certificat HTTPS, mise en ligne, après avoir présenté un plan et demandé validation (00:15:42 à 00:17:00, puis 00:26:49 à 00:28:13). Deux points que l'auteur souligne lui-même : le modèle a inventé une clé SSH temporaire pour piloter la machine, et il a mis en place un point de retour arrière avant de toucher au serveur. Un mot de prudence, en revanche, n'est pas dit : enregistrer un domaine depuis une conversation engage de l'argent sur le compte de l'utilisateur, et un modèle qui manipule DNS et pare-feu d'un serveur en production a les moyens de couper les sites qui y tournent.</p>
+<p><strong>La méthode de prompt en cinq parties, réutilisable au-delà de ce tutoriel.</strong> Objectif final formulé en situation réelle (« un interprète dans ma poche pour un déplacement à San Francisco »), fonctionnalités attendues, expérience voulue, contraintes techniques, livrables et compte rendu (00:19:00 à 00:22:50). L'auteur insiste sur un point contre-intuitif : donner l'objectif final plutôt que la liste des fonctions, pour que le modèle recadre une demande mal formulée — dans son cas, des boutons partout alors qu'une application à tenir d'une main au téléphone n'en veut presque aucun. Ce découpage n'est pas propre à Hostinger et s'applique tel quel à un projet hors ligne.</p>
+<p><strong>La clé d'interface de programmation rangée dans le navigateur, pas sur le serveur.</strong> L'application de traduction démarre en demandant la clé du service de traduction, l'enregistre dans le téléphone et ne la réaffiche plus (00:28:57 et 00:31:17). L'intention est juste — un secret qui n'est pas sur un serveur ne peut pas fuir avec lui — et c'est un choix défendable pour un usage personnel, à condition de comprendre ce que cela signifie : la clé voyage alors dans chaque appareil où l'application est ouverte, et le code du serveur reste, lui, à auditer.</p>
+<p><strong>Le coût du montage, chiffres vérifiés.</strong> L'auteur annonce environ 7 € par mois après application de son code de réduction. La page des offres VPS de Hostinger au moment du contrôle donne pour l'offre qu'il recommande, la KVM 2 : 2 cœurs, 8 Go de mémoire, 100 Go NVMe, 8 To de trafic, à 7,79 € par mois si l'on paie 186,96 € pour vingt-quatre mois d'avance, le renouvellement se faisant ensuite à 14,99 € par mois. La garantie satisfait ou remboursé de trente jours et le nom de domaine gratuit la première année sont bien annoncés sur le site lui-même. Deux écarts à signaler : le prix de 7 € suppose la remise du code de parrainage, que le contrôle ne peut pas valider, et le tarif doux n'existe que contre un engagement de deux ans payé d'avance — sans engagement, l'affaire change de nature. Le domaine et le sous-domaine cités dans la vidéo ne répondent pas à la résolution de noms depuis ce serveur, y compris l'adresse principale de la chaîne : je n'ai donc pas pu vérifier que l'application est réellement en ligne. Le présent paragraphe rapporte des tarifs constatés, sans recommandation.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><em>Connecteur Hostinger pour Claude Code</em> — un serveur MCP distant qui pilote un VPS, les DNS et les certificats depuis la conversation : matière à un usage en salle informatique ou pour héberger un service de classe, et sujet de fond sur ce qu'on laisse faire à un agent.</li>
+<li><em>Méthode de prompt en cinq parties</em> — à verser à la veille pédagogique et scientifique comme trame de rédaction d'une demande à un modèle, utilisable avec des élèves.</li>
+</ul>
+<h2>Volume — une ligne : X vidéos examinées, Y sujets retenus, Z écartés, état des transcriptions.</h2>
+<p>1 vidéo examinée, 4 sujets retenus, 0 écarté, transcription disponible et utilisée pour toute la matière parlée ; aucun extrait court ni direct dans la sélection du jour. Le tutoriel est un partenariat commercial annoncé par l'auteur lui-même, mention conservée dans le corps du texte.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Renaud Dékode — lundi 16 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum, les sujets les plus utiles d'abord.</h2>
+<ul>
+<li>Le connecteur Hostinger officiel transforme Claude Code en administrateur système : déploiement d'une application, création du sous-domaine, des DNS et du HTTPS, sans ouvrir une console ni le panneau d'hébergement.</li>
+<li>Le tutoriel mesure ce que cela coûte : un VPS Hostinger KVM 2 (2 cœurs, 8 Go de mémoire, 100 Go NVMe) à 7,79 € par mois en promotion, renouvellement à 14,99 €, un nom de domaine gratuit la première année et trente jours pour se faire rembourser.</li>
+<li>La démonstration est une publicité assumée : lien affilié, code de réduction et partenariat annoncé à l'antenne ; le reste — la méthode de prompt et le déploiement guidé — tient debout tout seul.</li>
+</ul>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Une application fonctionnelle produite en une seule demande, en une vingtaine de minutes.</strong> L'auteur a demandé à Fable 5.2 de lui écrire un traducteur de conversation en temps réel, en un seul prompt et sans reprise : le modèle a développé l'application, l'a lancée lui-même dans son navigateur, a testé le micro et les listes de langues, puis a rendu un compte rendu de ce qu'il avait fait (00:19:42 à 00:23:26). Il précise que Opus 5.5 aurait fait le même travail, Fable 5.2 n'étant utilisé que parce qu'il était encore compris dans son abonnement : c'est un argument de praticien, pas une mesure comparative, et aucune évaluation chiffrée n'est donnée. Le seul repère de temps annoncé est « une vingtaine de minutes », à prendre comme une impression de séance et non comme un banc d'essai.</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Le connecteur Hostinger pour Claude Code : un serveur MCP distant, officiel, qui vaut un administrateur système.</strong> C'est le sujet central du tutoriel. Deux gestes : activer l'extension Hostinger dans les greffons de Claude, puis ajouter le connecteur du même nom par la commande <code>/mcp</code> — l'extension seule ne voit rien, et l'auteur le montre sur un échange réel où Claude répond qu'il ne peut pas lire les domaines du compte (00:11:44 à 00:13:57). Le catalogue de Claude décrit ce connecteur comme un serveur MCP distant avec connexion par navigateur (OAuth), sans rien à installer localement, et il porte la mention « vérifié par Anthropic » (claude.com/marketplace/plugins/hostinger) : c'est un produit co-signé par les deux sociétés, pas un bricolage de la communauté. Les fonctions annoncées couvrent le déploiement de sites statiques, d'applications Node.js et de sites WordPress, la recherche et l'enregistrement de domaines, la modification des enregistrements DNS, les journaux de construction, les boîtes mail, les boutiques et, pour un VPS, le pare-feu, les instantanés et la surveillance. Autrement dit : l'administrateur système devient une conversation, ce qui est exactement le cap que l'auteur dit vouloir faire sauter.</p>
+<p><strong>Ce que la démonstration a fait concrètement, avec le serveur déjà en production.</strong> Sur un VPS qu'il utilise déjà pour n8n, un CMS et plusieurs sites, Claude a pris un nom de domaine encore non réclamé dans son compte, l'a enregistré à sa place (le point org étant refusé, un point tech a été retenu), fait pointer la racine de ce domaine vers le site existant, puis créé le sous-domaine de l'application : enregistrement DNS, certificat HTTPS, mise en ligne, après avoir présenté un plan et demandé validation (00:15:42 à 00:17:00, puis 00:26:49 à 00:28:13). Deux points que l'auteur souligne lui-même : le modèle a inventé une clé SSH temporaire pour piloter la machine, et il a mis en place un point de retour arrière avant de toucher au serveur. Un mot de prudence, en revanche, n'est pas dit : enregistrer un domaine depuis une conversation engage de l'argent sur le compte de l'utilisateur, et un modèle qui manipule DNS et pare-feu d'un serveur en production a les moyens de couper les sites qui y tournent.</p>
+<p><strong>La méthode de prompt en cinq parties, réutilisable au-delà de ce tutoriel.</strong> Objectif final formulé en situation réelle (« un interprète dans ma poche pour un déplacement à San Francisco »), fonctionnalités attendues, expérience voulue, contraintes techniques, livrables et compte rendu (00:19:00 à 00:22:50). L'auteur insiste sur un point contre-intuitif : donner l'objectif final plutôt que la liste des fonctions, pour que le modèle recadre une demande mal formulée — dans son cas, des boutons partout alors qu'une application à tenir d'une main au téléphone n'en veut presque aucun. Ce découpage n'est pas propre à Hostinger et s'applique tel quel à un projet hors ligne.</p>
+<p><strong>La clé d'interface de programmation rangée dans le navigateur, pas sur le serveur.</strong> L'application de traduction démarre en demandant la clé du service de traduction, l'enregistre dans le téléphone et ne la réaffiche plus (00:28:57 et 00:31:17). L'intention est juste — un secret qui n'est pas sur un serveur ne peut pas fuir avec lui — et c'est un choix défendable pour un usage personnel, à condition de comprendre ce que cela signifie : la clé voyage alors dans chaque appareil où l'application est ouverte, et le code du serveur reste, lui, à auditer.</p>
+<p><strong>Le coût du montage, chiffres vérifiés.</strong> L'auteur annonce environ 7 € par mois après application de son code de réduction. La page des offres VPS de Hostinger au moment du contrôle donne pour l'offre qu'il recommande, la KVM 2 : 2 cœurs, 8 Go de mémoire, 100 Go NVMe, 8 To de trafic, à 7,79 € par mois si l'on paie 186,96 € pour vingt-quatre mois d'avance, le renouvellement se faisant ensuite à 14,99 € par mois. La garantie satisfait ou remboursé de trente jours et le nom de domaine gratuit la première année sont bien annoncés sur le site lui-même. Deux écarts à signaler : le prix de 7 € suppose la remise du code de parrainage, que le contrôle ne peut pas valider, et le tarif doux n'existe que contre un engagement de deux ans payé d'avance — sans engagement, l'affaire change de nature. Le domaine et le sous-domaine cités dans la vidéo ne répondent pas à la résolution de noms depuis ce serveur, y compris l'adresse principale de la chaîne : je n'ai donc pas pu vérifier que l'application est réellement en ligne. Le présent paragraphe rapporte des tarifs constatés, sans recommandation.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><em>Connecteur Hostinger pour Claude Code</em> — un serveur MCP distant qui pilote un VPS, les DNS et les certificats depuis la conversation : matière à un usage en salle informatique ou pour héberger un service de classe, et sujet de fond sur ce qu'on laisse faire à un agent.</li>
+<li><em>Méthode de prompt en cinq parties</em> — à verser à la veille pédagogique et scientifique comme trame de rédaction d'une demande à un modèle, utilisable avec des élèves.</li>
+</ul>
+<h2>Volume — une ligne : X vidéos examinées, Y sujets retenus, Z écartés, état des transcriptions.</h2>
+<p>1 vidéo examinée, 4 sujets retenus, 0 écarté, transcription disponible et utilisée pour toute la matière parlée ; aucun extrait court ni direct dans la sélection du jour. Le tutoriel est un partenariat commercial annoncé par l'auteur lui-même, mention conservée dans le corps du texte.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — lundi 16 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-16.html</link>
@@ -5911,131 +5962,6 @@ https://www.firefox.com/en-US/firefox/160.0/releasenotes/ — entrée : https://
 <h2>Volume</h2>
 <p>192 entrées publiées dans l'intervalle des quatre derniers jours ont été examinées : 35 du journal r/macapps (18 fils Reddit, 11 doublons du relais de l'extension — un même fil y figure deux fois, sous son identifiant Reddit et sous le préfixe <code>t3_</code> avec un titre traduit — et 6 de Hacker News) et 157 des huit journaux de flux complémentaires (80 commits du dépôt Homebrew, 25 brèves de 9to5Mac, 22 lancements de Product Hunt, 17 de MacRumors, 10 d'AlternativeTo, 3 de The Eclectic Light Company, et rien de neuf chez MacStories ni chez Michael Tsai). 22 entrées sont retenues et 170 écartées ; la ligne Homebrew des mises à jour résume à elle seule une vingtaine de versions. Quatre lancements de Product Hunt plus anciens que l'horizon de quatre jours ont été enregistrés comme traités sans être publiés. La collecte n'a signalé aucune erreur (<code>meta.json</code> : liste <code>errors</code> vide, dernière collecte le 11 novembre à 22 h 26 UTC).</p>
 <p>Le déchet vient des mêmes sources que les jours précédents. 9to5Mac et MacRumors vivent de matériel, de rumeurs et de promotions : ont été écartés, entre autres, les soldes du Black Friday chez Apple, Samsung et Amazon, la fermeture annoncée du forum d'entraide d'Apple le 20 novembre, les mises à jour de micrologiciel des AirPods et des systèmes, le déballage du MacBook Pro à écran tactile, la panne d'iCloud, le suivi des trente-deux téléphones d'un test d'autonomie, le défi étudiant Swift d'Apple et le classement de dix applications gratuites pour l'iPhone Duo, qui ne concerne pas le Mac. Les commits Homebrew sont presque tous des montées de version sans conséquence. Product Hunt ne vise le Mac que dans une minorité de cas, le reste étant des agents d'intelligence artificielle et des services en ligne. Chez AlternativeTo, rien ne touchait le logiciel du Mac : comptes adolescents d'Instagram, alertes aux cyclistes de Waze, interprétation en langue des signes sur Apple TV, tableaux et feuilles de Claude, support SteamOS du lanceur d'Epic, interface classique de Trakt, refonte de Spotube et facturation à l'usage des fonctions d'Apple Intelligence. Ont également été écartés : la page de comparaison de compilation d'applications iOS de Bitrise (un tableau de mesures, pas un logiciel), la question posée sur Hacker News à propos du lancement d'un outil réservé au macOS (une question, pas une annonce), le journal de développement d'un portage de Tomb Raider sur Saturn, la demande d'avis sur le lot d'applications de BundleHunt (une promotion), la question sur l'emplacement des icônes matérielles de macOS 27, <strong>Ascope</strong>, application Mac native de suivi des classements de mots clés dans les magasins d'applications mais facturée 69 $ à vie, et <strong>1Helm</strong>, assistant personnel qui exécute ses propres machines virtuelles et se paie 10 $ par mois même en apportant sa propre clé d'accès aux modèles.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — jeudi 12 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-12.html</link>
-<guid isPermaLink="false">artcraft-2026-11-12</guid>
-<pubDate>Thu, 12 Nov 2026 00:02:27 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — jeudi 12 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>AniCraft, l'éditeur d'animation vectorielle 2D de l'équipe ArtCraft, est publié : deux versions (0.1.0 et 0.2.0) ont été mises en ligne le 11 novembre et l'application s'installe depuis le lanceur, aux côtés des seize autres.</li>
-<li>Nick Saporito, connu pour ses tutoriels Inkscape et GIMP sous le nom « Logos By Nick », a ouvert une chaîne YouTube consacrée aux applications ArtCraft ; sa première leçon porte sur VectorCraft.</li>
-<li>Côté dépôt officiel, neuf commits d'entretien (nettoyages SonarCloud, en-têtes de sécurité de l'intégration continue) et aucune nouvelle version depuis la 0.41.1.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>AniCraft est disponible, en version 0.1.0 puis 0.2.0 le même jour</h3>
-<p>u/Jellygator0 annonce la sortie d'AniCraft — « et il s'installe directement depuis le lanceur ». L'application est bien celle de l'équipe ArtCraft : dépôt <code>storytold/anicraft</code>, décrit comme un éditeur d'animation 2D écrit intégralement en Rust, sous Apache-2.0. Le dépôt a été créé le 14 octobre 2026 et totalise 246 étoiles, 58 copies et 74 tickets ouverts au moment de la vérification ; le site de l'éditeur le présente comme la septième de ses dix-sept applications, en « alpha précoce », avec des installateurs pour macOS, Windows, Linux et une version web.</p>
-<p>Deux versions ont effectivement été publiées le 11 novembre : la <strong>0.1.0</strong> à 1 h 03 UTC (export d'images au format SVG, import de dessins SVG sur la scène, interpolations de formes) puis la <strong>0.2.0</strong> à 16 h 08 UTC, qui apporte les marqueurs de pelure d'oignon, la teinte et les contours, l'édition simultanée de plusieurs images, ainsi que les extrémités et jointures de trait avec limite d'onglet et lignes pointillées. Le message du subreddit précède la 0.2.0 de quelques heures : c'est la 0.1.0 qu'il annonce, la seconde version étant arrivée dans la journée. Pour un utilisateur, cela reste un outil jeune — aucune des applications de la suite n'est stable — mais c'est la première fois qu'ArtCraft couvre l'animation vectorielle sous forme d'un éditeur autonome avec ligne de temps. Une réserve : une page <code>anicraft.app</code> se présente comme un site de référence mais indique elle-même n'être pas officielle et annonce encore une sortie à venir ; ne pas s'y fier pour l'état du projet.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt83u9/anicraft_is_out_today_is_a_good_day_d/ — u/Jellygator0</li>
-<li>Dépôt : https://github.com/storytold/anicraft — page officielle : https://getartcraft.com/apps/anicraft</li>
-</ul>
-<h3>Dépôt officiel : neuf commits d'entretien, aucune version depuis la 0.41.1</h3>
-<p>Entre le 10 novembre 22 h 20 et le 11 novembre 17 h 10 UTC, le dépôt <code>storytold/artcraft</code> a reçu neuf commits visibles, tous d'entretien et rien qui change l'aspect ou le comportement des applications. Le gros du lot consiste à vider les avertissements de SonarCloud accumulés dans le front : promesses sans attente explicite, éléments cliquables sans rôle ni accès clavier, identifiants locaux tirés de <code>Math.random</code> remplacés par <code>uuidv4</code>, conversion des <code>parseFloat</code>/<code>parseInt</code> en méthodes de <code>Number</code>, normalisation des expressions régulières et des branches identiques. La partie Rust suit, avec le passage à <code>tokio::fs</code> dans les fonctions asynchrones et la sortie d'un jeton de rafraîchissement du code source. Un dernier commit installe l'action Harden-Runner en première étape de chaque tâche d'intégration continue, afin de tracer les connexions sortantes des chaînes de construction. Aucune publication depuis la <strong>0.41.1</strong> du 7 novembre ; le dépôt compte 40 668 étoiles et 705 tickets ouverts au moment de la vérification.</p>
-<ul>
-<li>Dépôt : https://github.com/storytold/artcraft</li>
-</ul>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>BunchaPrompts — un navigateur d'invites pour modèles d'image, dans le navigateur</h3>
-<p>u/Stable2go, lassé de fouiller des pages d'invites pour en copier une seule, publie <code>bunchaprompts.com</code> : un site qui présente les invites comme un fil d'actualité, avec copie en un clic, recherche par texte, étiquettes (styles artistiques, personnages, effets, cinématique, 3D, rétro) et filtres par modèle. Le service est gratuit, sans installation, et disponible en plusieurs langues dont le français ; le post cite Flux et MiniMax, la page d'accueil affichant aussi Flux 2, SDXL, SD 1.5, Illustrious et Pony. Il n'accompagne pas sa publication d'un dépôt, et rien n'indique que le code soit libre : à prendre comme un service en ligne, pas comme un outil à installer chez soi. C'est néanmoins le genre de ressource qui manque pour comparer des invites avant de générer.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt8ywg/i_made_a_flux_prompt_browser_with_oneclick_copy/ — u/Stable2go</li>
-<li>Site : https://bunchaprompts.com</li>
-</ul>
-<h3>feathcraft — une application de dessin 3D pour Android, sans lien avec la suite ArtCraft</h3>
-<p>u/ayer4xx signale deux fois le même projet, <code>kipzitox/feathcraft</code>, présenté comme une alternative de dessin 3D pour Android, les utilisateurs d'iOS disposant selon lui d'un équivalent. Le dépôt le décrit comme une application de carnet de croquis hors ligne (Tauri 2 et Three.js, interface Material Design 3). Il faut être clair sur la nature du projet : il ne s'agit pas d'un portage d'une application du lanceur ArtCraft et il n'y figure pas — c'est un projet indépendant, avec deux étoiles, aucune copie et une licence que GitHub ne sait pas identifier, créé le 21 août et touché pour la dernière fois le 9 novembre. La seconde publication demande des collaborateurs. Rien à installer dans la suite pour l'instant, mais cela montre qu'une demande de dessin 3D sur Android existe.</p>
-<ul>
-<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xtbl8t/feather_3d/ et https://www.reddit.com/r/ArtCraftAI/comments/1xtbt9c/feather_3d_para_android/ — u/ayer4xx</li>
-<li>Dépôt : https://github.com/kipzitox/feathcraft</li>
-</ul>
-<h2>Autour d'ArtCraft</h2>
-<h3>« Learn ArtCraft » — la chaîne de tutoriels de Nick Saporito</h3>
-<p>u/SenioritaHerbia note que Nick Saporito, connu pour ses années de tutoriels Inkscape et GIMP sur la chaîne « Logos By Nick », a ouvert une chaîne dédiée à ArtCraft. Vérification faite : la chaîne <strong>Learn ArtCraft</strong> existe et sa description annonce des tutoriels pour VectorCraft et PhotoCraft, précisant être animée par Nick Saporito, graphiste spécialiste des identités visuelles. La première série publiée est un guide de prise en main de VectorCraft, découpé en chapitres (introduction, création d'un document, présentation de l'interface, fonctions de base, exercice, conclusion). La chaîne est en anglais, mais structurée et produite par quelqu'un qui connaît les logiciels libres de graphisme depuis longtemps ; c'est aussi un signe que la suite ArtCraft commence à être prise au sérieux par des formateurs indépendants. Je n'ai pas pu relever le nombre d'abonnés depuis ce serveur : la chaîne est très jeune, ne pas y voir une audience établie.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtb2ra/nick_saporito_the_goat_of_inkscape_and_gimp/ — u/SenioritaHerbia</li>
-<li>Chaîne : https://www.youtube.com/channel/UCBQNNVLjqOoB1PHJKkRogvw</li>
-</ul>
-<h3>ImageFlow — un éditeur d'images « classe Photoshop » exécuté dans le navigateur</h3>
-<p>u/theguymatter publie un lien vers <code>imageflow.dev</code> en rapportant qu'un tiers a jugé PhotoCraft « mauvais » sur X — critique sans contenu, qui n'apprend rien et sur laquelle je ne m'appuie pas. Le lien lui-même mérite en revanche un coup d'œil : ImageFlow se présente comme un éditeur d'images complet fonctionnant entièrement dans le navigateur, avec calques, masques, modes de fusion, calques de réglage, objets dynamiques, texte et filtres, et surtout import comme export au format PSD. La page ne dit rien de la licence ni du modèle économique, et le traitement restant local, il faut vérifier ce qu'il advient des projets avant de s'y engager. À suivre comme concurrent direct de PhotoCraft sur le terrain de la compatibilité Photoshop.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtad8j/photoshop_alternative/ — u/theguymatter</li>
-<li>Site : https://imageflow.dev</li>
-</ul>
-<h2>À signaler</h2>
-<h3>GridCraft — des pertes signalées au passage vers Excel</h3>
-<p>u/Tight-Kaleidoscope32 rapporte qu'à l'ouverture d'un classeur GridCraft dans Excel il a perdu « toutes les images » et une partie de la mise en forme. Le site de GridCraft annonce pourtant lire et écrire le format <code>.xlsx</code>, avec tableaux dynamiques, tableaux croisés et graphiques : la compatibilité revendiquée rend ce retour d'autant plus gênant. Il s'agit d'un signalement isolé, dont je n'ai pas pu vérifier les conditions (version de GridCraft, d'Excel, fichier concerné) ; à confirmer avant d'en tirer une conclusion, mais mieux vaut ne pas se reposer uniquement sur l'export Excel pour archiver un classeur.</p>
-<ul>
-<li>
-<p>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt0rf3/compatibility_between_excel_and_grid/ — u/Tight-Kaleidoscope32</p>
-</li>
-<li>
-<p>Collecte : dernière passe du collecteur le 11 novembre à 21 h 52 UTC, sans erreur signalée dans <code>meta.json</code>.</p>
-</li>
-</ul>
-<h2>Volume</h2>
-<p>35 publications examinées dans l'intervalle (26 du subreddit r/ArtCraftAI, 9 commits du dépôt officiel, aucune nouveauté de version ni de vidéo), 16 retenues, 19 écartées.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — jeudi 12 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>AniCraft, l'éditeur d'animation vectorielle 2D de l'équipe ArtCraft, est publié : deux versions (0.1.0 et 0.2.0) ont été mises en ligne le 11 novembre et l'application s'installe depuis le lanceur, aux côtés des seize autres.</li>
-<li>Nick Saporito, connu pour ses tutoriels Inkscape et GIMP sous le nom « Logos By Nick », a ouvert une chaîne YouTube consacrée aux applications ArtCraft ; sa première leçon porte sur VectorCraft.</li>
-<li>Côté dépôt officiel, neuf commits d'entretien (nettoyages SonarCloud, en-têtes de sécurité de l'intégration continue) et aucune nouvelle version depuis la 0.41.1.</li>
-</ul>
-<h2>Nouveautés et annonces</h2>
-<h3>AniCraft est disponible, en version 0.1.0 puis 0.2.0 le même jour</h3>
-<p>u/Jellygator0 annonce la sortie d'AniCraft — « et il s'installe directement depuis le lanceur ». L'application est bien celle de l'équipe ArtCraft : dépôt <code>storytold/anicraft</code>, décrit comme un éditeur d'animation 2D écrit intégralement en Rust, sous Apache-2.0. Le dépôt a été créé le 14 octobre 2026 et totalise 246 étoiles, 58 copies et 74 tickets ouverts au moment de la vérification ; le site de l'éditeur le présente comme la septième de ses dix-sept applications, en « alpha précoce », avec des installateurs pour macOS, Windows, Linux et une version web.</p>
-<p>Deux versions ont effectivement été publiées le 11 novembre : la <strong>0.1.0</strong> à 1 h 03 UTC (export d'images au format SVG, import de dessins SVG sur la scène, interpolations de formes) puis la <strong>0.2.0</strong> à 16 h 08 UTC, qui apporte les marqueurs de pelure d'oignon, la teinte et les contours, l'édition simultanée de plusieurs images, ainsi que les extrémités et jointures de trait avec limite d'onglet et lignes pointillées. Le message du subreddit précède la 0.2.0 de quelques heures : c'est la 0.1.0 qu'il annonce, la seconde version étant arrivée dans la journée. Pour un utilisateur, cela reste un outil jeune — aucune des applications de la suite n'est stable — mais c'est la première fois qu'ArtCraft couvre l'animation vectorielle sous forme d'un éditeur autonome avec ligne de temps. Une réserve : une page <code>anicraft.app</code> se présente comme un site de référence mais indique elle-même n'être pas officielle et annonce encore une sortie à venir ; ne pas s'y fier pour l'état du projet.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt83u9/anicraft_is_out_today_is_a_good_day_d/ — u/Jellygator0</li>
-<li>Dépôt : https://github.com/storytold/anicraft — page officielle : https://getartcraft.com/apps/anicraft</li>
-</ul>
-<h3>Dépôt officiel : neuf commits d'entretien, aucune version depuis la 0.41.1</h3>
-<p>Entre le 10 novembre 22 h 20 et le 11 novembre 17 h 10 UTC, le dépôt <code>storytold/artcraft</code> a reçu neuf commits visibles, tous d'entretien et rien qui change l'aspect ou le comportement des applications. Le gros du lot consiste à vider les avertissements de SonarCloud accumulés dans le front : promesses sans attente explicite, éléments cliquables sans rôle ni accès clavier, identifiants locaux tirés de <code>Math.random</code> remplacés par <code>uuidv4</code>, conversion des <code>parseFloat</code>/<code>parseInt</code> en méthodes de <code>Number</code>, normalisation des expressions régulières et des branches identiques. La partie Rust suit, avec le passage à <code>tokio::fs</code> dans les fonctions asynchrones et la sortie d'un jeton de rafraîchissement du code source. Un dernier commit installe l'action Harden-Runner en première étape de chaque tâche d'intégration continue, afin de tracer les connexions sortantes des chaînes de construction. Aucune publication depuis la <strong>0.41.1</strong> du 7 novembre ; le dépôt compte 40 668 étoiles et 705 tickets ouverts au moment de la vérification.</p>
-<ul>
-<li>Dépôt : https://github.com/storytold/artcraft</li>
-</ul>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>BunchaPrompts — un navigateur d'invites pour modèles d'image, dans le navigateur</h3>
-<p>u/Stable2go, lassé de fouiller des pages d'invites pour en copier une seule, publie <code>bunchaprompts.com</code> : un site qui présente les invites comme un fil d'actualité, avec copie en un clic, recherche par texte, étiquettes (styles artistiques, personnages, effets, cinématique, 3D, rétro) et filtres par modèle. Le service est gratuit, sans installation, et disponible en plusieurs langues dont le français ; le post cite Flux et MiniMax, la page d'accueil affichant aussi Flux 2, SDXL, SD 1.5, Illustrious et Pony. Il n'accompagne pas sa publication d'un dépôt, et rien n'indique que le code soit libre : à prendre comme un service en ligne, pas comme un outil à installer chez soi. C'est néanmoins le genre de ressource qui manque pour comparer des invites avant de générer.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt8ywg/i_made_a_flux_prompt_browser_with_oneclick_copy/ — u/Stable2go</li>
-<li>Site : https://bunchaprompts.com</li>
-</ul>
-<h3>feathcraft — une application de dessin 3D pour Android, sans lien avec la suite ArtCraft</h3>
-<p>u/ayer4xx signale deux fois le même projet, <code>kipzitox/feathcraft</code>, présenté comme une alternative de dessin 3D pour Android, les utilisateurs d'iOS disposant selon lui d'un équivalent. Le dépôt le décrit comme une application de carnet de croquis hors ligne (Tauri 2 et Three.js, interface Material Design 3). Il faut être clair sur la nature du projet : il ne s'agit pas d'un portage d'une application du lanceur ArtCraft et il n'y figure pas — c'est un projet indépendant, avec deux étoiles, aucune copie et une licence que GitHub ne sait pas identifier, créé le 21 août et touché pour la dernière fois le 9 novembre. La seconde publication demande des collaborateurs. Rien à installer dans la suite pour l'instant, mais cela montre qu'une demande de dessin 3D sur Android existe.</p>
-<ul>
-<li>Posts : https://www.reddit.com/r/ArtCraftAI/comments/1xtbl8t/feather_3d/ et https://www.reddit.com/r/ArtCraftAI/comments/1xtbt9c/feather_3d_para_android/ — u/ayer4xx</li>
-<li>Dépôt : https://github.com/kipzitox/feathcraft</li>
-</ul>
-<h2>Autour d'ArtCraft</h2>
-<h3>« Learn ArtCraft » — la chaîne de tutoriels de Nick Saporito</h3>
-<p>u/SenioritaHerbia note que Nick Saporito, connu pour ses années de tutoriels Inkscape et GIMP sur la chaîne « Logos By Nick », a ouvert une chaîne dédiée à ArtCraft. Vérification faite : la chaîne <strong>Learn ArtCraft</strong> existe et sa description annonce des tutoriels pour VectorCraft et PhotoCraft, précisant être animée par Nick Saporito, graphiste spécialiste des identités visuelles. La première série publiée est un guide de prise en main de VectorCraft, découpé en chapitres (introduction, création d'un document, présentation de l'interface, fonctions de base, exercice, conclusion). La chaîne est en anglais, mais structurée et produite par quelqu'un qui connaît les logiciels libres de graphisme depuis longtemps ; c'est aussi un signe que la suite ArtCraft commence à être prise au sérieux par des formateurs indépendants. Je n'ai pas pu relever le nombre d'abonnés depuis ce serveur : la chaîne est très jeune, ne pas y voir une audience établie.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtb2ra/nick_saporito_the_goat_of_inkscape_and_gimp/ — u/SenioritaHerbia</li>
-<li>Chaîne : https://www.youtube.com/channel/UCBQNNVLjqOoB1PHJKkRogvw</li>
-</ul>
-<h3>ImageFlow — un éditeur d'images « classe Photoshop » exécuté dans le navigateur</h3>
-<p>u/theguymatter publie un lien vers <code>imageflow.dev</code> en rapportant qu'un tiers a jugé PhotoCraft « mauvais » sur X — critique sans contenu, qui n'apprend rien et sur laquelle je ne m'appuie pas. Le lien lui-même mérite en revanche un coup d'œil : ImageFlow se présente comme un éditeur d'images complet fonctionnant entièrement dans le navigateur, avec calques, masques, modes de fusion, calques de réglage, objets dynamiques, texte et filtres, et surtout import comme export au format PSD. La page ne dit rien de la licence ni du modèle économique, et le traitement restant local, il faut vérifier ce qu'il advient des projets avant de s'y engager. À suivre comme concurrent direct de PhotoCraft sur le terrain de la compatibilité Photoshop.</p>
-<ul>
-<li>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xtad8j/photoshop_alternative/ — u/theguymatter</li>
-<li>Site : https://imageflow.dev</li>
-</ul>
-<h2>À signaler</h2>
-<h3>GridCraft — des pertes signalées au passage vers Excel</h3>
-<p>u/Tight-Kaleidoscope32 rapporte qu'à l'ouverture d'un classeur GridCraft dans Excel il a perdu « toutes les images » et une partie de la mise en forme. Le site de GridCraft annonce pourtant lire et écrire le format <code>.xlsx</code>, avec tableaux dynamiques, tableaux croisés et graphiques : la compatibilité revendiquée rend ce retour d'autant plus gênant. Il s'agit d'un signalement isolé, dont je n'ai pas pu vérifier les conditions (version de GridCraft, d'Excel, fichier concerné) ; à confirmer avant d'en tirer une conclusion, mais mieux vaut ne pas se reposer uniquement sur l'export Excel pour archiver un classeur.</p>
-<ul>
-<li>
-<p>Post : https://www.reddit.com/r/ArtCraftAI/comments/1xt0rf3/compatibility_between_excel_and_grid/ — u/Tight-Kaleidoscope32</p>
-</li>
-<li>
-<p>Collecte : dernière passe du collecteur le 11 novembre à 21 h 52 UTC, sans erreur signalée dans <code>meta.json</code>.</p>
-</li>
-</ul>
-<h2>Volume</h2>
-<p>35 publications examinées dans l'intervalle (26 du subreddit r/ArtCraftAI, 9 commits du dépôt officiel, aucune nouveauté de version ni de vidéo), 16 retenues, 19 écartées.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

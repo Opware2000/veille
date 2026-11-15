@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Renaud Dékode — lundi 16 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../renaud.xml" title="Renaud Dékode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Renaud Dékode — lundi 16 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum, les sujets les plus utiles d'abord.</h2>
+<ul>
+<li>Le connecteur Hostinger officiel transforme Claude Code en administrateur système : déploiement d'une application, création du sous-domaine, des DNS et du HTTPS, sans ouvrir une console ni le panneau d'hébergement.</li>
+<li>Le tutoriel mesure ce que cela coûte : un VPS Hostinger KVM 2 (2 cœurs, 8 Go de mémoire, 100 Go NVMe) à 7,79 € par mois en promotion, renouvellement à 14,99 €, un nom de domaine gratuit la première année et trente jours pour se faire rembourser.</li>
+<li>La démonstration est une publicité assumée : lien affilié, code de réduction et partenariat annoncé à l'antenne ; le reste — la méthode de prompt et le déploiement guidé — tient debout tout seul.</li>
+</ul>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Une application fonctionnelle produite en une seule demande, en une vingtaine de minutes.</strong> L'auteur a demandé à Fable 5.2 de lui écrire un traducteur de conversation en temps réel, en un seul prompt et sans reprise : le modèle a développé l'application, l'a lancée lui-même dans son navigateur, a testé le micro et les listes de langues, puis a rendu un compte rendu de ce qu'il avait fait (00:19:42 à 00:23:26). Il précise que Opus 5.5 aurait fait le même travail, Fable 5.2 n'étant utilisé que parce qu'il était encore compris dans son abonnement : c'est un argument de praticien, pas une mesure comparative, et aucune évaluation chiffrée n'est donnée. Le seul repère de temps annoncé est « une vingtaine de minutes », à prendre comme une impression de séance et non comme un banc d'essai.</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Le connecteur Hostinger pour Claude Code : un serveur MCP distant, officiel, qui vaut un administrateur système.</strong> C'est le sujet central du tutoriel. Deux gestes : activer l'extension Hostinger dans les greffons de Claude, puis ajouter le connecteur du même nom par la commande <code>/mcp</code> — l'extension seule ne voit rien, et l'auteur le montre sur un échange réel où Claude répond qu'il ne peut pas lire les domaines du compte (00:11:44 à 00:13:57). Le catalogue de Claude décrit ce connecteur comme un serveur MCP distant avec connexion par navigateur (OAuth), sans rien à installer localement, et il porte la mention « vérifié par Anthropic » (claude.com/marketplace/plugins/hostinger) : c'est un produit co-signé par les deux sociétés, pas un bricolage de la communauté. Les fonctions annoncées couvrent le déploiement de sites statiques, d'applications Node.js et de sites WordPress, la recherche et l'enregistrement de domaines, la modification des enregistrements DNS, les journaux de construction, les boîtes mail, les boutiques et, pour un VPS, le pare-feu, les instantanés et la surveillance. Autrement dit : l'administrateur système devient une conversation, ce qui est exactement le cap que l'auteur dit vouloir faire sauter.</p>
+<p><strong>Ce que la démonstration a fait concrètement, avec le serveur déjà en production.</strong> Sur un VPS qu'il utilise déjà pour n8n, un CMS et plusieurs sites, Claude a pris un nom de domaine encore non réclamé dans son compte, l'a enregistré à sa place (le point org étant refusé, un point tech a été retenu), fait pointer la racine de ce domaine vers le site existant, puis créé le sous-domaine de l'application : enregistrement DNS, certificat HTTPS, mise en ligne, après avoir présenté un plan et demandé validation (00:15:42 à 00:17:00, puis 00:26:49 à 00:28:13). Deux points que l'auteur souligne lui-même : le modèle a inventé une clé SSH temporaire pour piloter la machine, et il a mis en place un point de retour arrière avant de toucher au serveur. Un mot de prudence, en revanche, n'est pas dit : enregistrer un domaine depuis une conversation engage de l'argent sur le compte de l'utilisateur, et un modèle qui manipule DNS et pare-feu d'un serveur en production a les moyens de couper les sites qui y tournent.</p>
+<p><strong>La méthode de prompt en cinq parties, réutilisable au-delà de ce tutoriel.</strong> Objectif final formulé en situation réelle (« un interprète dans ma poche pour un déplacement à San Francisco »), fonctionnalités attendues, expérience voulue, contraintes techniques, livrables et compte rendu (00:19:00 à 00:22:50). L'auteur insiste sur un point contre-intuitif : donner l'objectif final plutôt que la liste des fonctions, pour que le modèle recadre une demande mal formulée — dans son cas, des boutons partout alors qu'une application à tenir d'une main au téléphone n'en veut presque aucun. Ce découpage n'est pas propre à Hostinger et s'applique tel quel à un projet hors ligne.</p>
+<p><strong>La clé d'interface de programmation rangée dans le navigateur, pas sur le serveur.</strong> L'application de traduction démarre en demandant la clé du service de traduction, l'enregistre dans le téléphone et ne la réaffiche plus (00:28:57 et 00:31:17). L'intention est juste — un secret qui n'est pas sur un serveur ne peut pas fuir avec lui — et c'est un choix défendable pour un usage personnel, à condition de comprendre ce que cela signifie : la clé voyage alors dans chaque appareil où l'application est ouverte, et le code du serveur reste, lui, à auditer.</p>
+<p><strong>Le coût du montage, chiffres vérifiés.</strong> L'auteur annonce environ 7 € par mois après application de son code de réduction. La page des offres VPS de Hostinger au moment du contrôle donne pour l'offre qu'il recommande, la KVM 2 : 2 cœurs, 8 Go de mémoire, 100 Go NVMe, 8 To de trafic, à 7,79 € par mois si l'on paie 186,96 € pour vingt-quatre mois d'avance, le renouvellement se faisant ensuite à 14,99 € par mois. La garantie satisfait ou remboursé de trente jours et le nom de domaine gratuit la première année sont bien annoncés sur le site lui-même. Deux écarts à signaler : le prix de 7 € suppose la remise du code de parrainage, que le contrôle ne peut pas valider, et le tarif doux n'existe que contre un engagement de deux ans payé d'avance — sans engagement, l'affaire change de nature. Le domaine et le sous-domaine cités dans la vidéo ne répondent pas à la résolution de noms depuis ce serveur, y compris l'adresse principale de la chaîne : je n'ai donc pas pu vérifier que l'application est réellement en ligne. Le présent paragraphe rapporte des tarifs constatés, sans recommandation.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><em>Connecteur Hostinger pour Claude Code</em> — un serveur MCP distant qui pilote un VPS, les DNS et les certificats depuis la conversation : matière à un usage en salle informatique ou pour héberger un service de classe, et sujet de fond sur ce qu'on laisse faire à un agent.</li>
+<li><em>Méthode de prompt en cinq parties</em> — à verser à la veille pédagogique et scientifique comme trame de rédaction d'une demande à un modèle, utilisable avec des élèves.</li>
+</ul>
+<h2>Volume — une ligne : X vidéos examinées, Y sujets retenus, Z écartés, état des transcriptions.</h2>
+<p>1 vidéo examinée, 4 sujets retenus, 0 écarté, transcription disponible et utilisée pour toute la matière parlée ; aucun extrait court ni direct dans la sélection du jour. Le tutoriel est un partenariat commercial annoncé par l'auteur lui-même, mention conservée dans le corps du texte.</p>
+<footer>Édition du lundi 16 novembre 2026 — <a href="https://opware2000.github.io/veille/renaud.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
