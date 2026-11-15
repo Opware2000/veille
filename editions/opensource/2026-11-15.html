@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — dimanche 15 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La publication la mieux reçue de l'intervalle est <strong>Timon</strong> (AGPL-3.0, 379 étoiles) : une équipe d'agents d'IA qui travaille sur votre machine en passant par les abonnements en ligne de commande que vous payez déjà.</li>
+<li>Deux outils qui font une seule chose, bien : <strong>Ember</strong>, qui éteint la petite lumière du chargeur MagSafe des MacBook au moment du coucher, et <strong>GigChain Keys</strong>, qui remplace MainStage pour un clavier de scène.</li>
+<li>Côté écosystème : <strong>Wine 11.22</strong> émule AVX sur ARM64, <strong>KDE Plasma 6.9</strong> pourra lancer XWayland à la demande, et <strong>Redox OS</strong> fait tourner Go et y a porté GIMP.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Timon — une équipe d'agents d'IA sur sa propre machine</h3>
+<p>Présenté pour ce qu'il est : un groupe d'agents qui vivent sur votre ordinateur, travaillent à travers les abonnements en ligne de commande que vous payez déjà (Claude Code, Codex et leurs semblables), ne livrent que du code relu et demandent votre accord avant toute action qui compte. Windows, macOS et Linux sont pris en charge. Licence AGPL-3.0, gratuit, 379 étoiles, dépôt créé le 6 novembre 2026 et dernière modification le jour même de cette veille. C'est de loin le projet le plus suivi de l'intervalle, même si le fil Hacker News qui le relaie n'a recueilli que 3 points. https://github.com/ai-timon/timon</p>
+<h3>Ember — éteindre la lumière du chargeur MagSafe</h3>
+<p>La petite diode orange puis verte du câble MagSafe est charmante sur un bureau et beaucoup moins à deux heures du matin. Ember la coupe quand vous dormez ou que vous êtes en mode Concentration, et la rend à macOS le reste du temps : il se place dans la barre de menus, suit les modes de concentration, propose des réglages éveillé/coucher et sait faire clignoter la vraie lumière pour retrouver le câble dans le noir. macOS 26 minimum, Apple Silicon, MagSafe 3. Licence MIT, gratuit, 13 étoiles, dépôt créé le 12 novembre 2026, dernière modification le 13. C'est la publication la plus commentée de l'intervalle sur Hacker News (6 points, 6 commentaires). https://github.com/Getterbetter/ember</p>
+<h3>Aris — un agent logé dans l'encoche du MacBook</h3>
+<p>Agent de bureau qui s'installe dans l'encoche du MacBook et se présente comme un assistant pour tout ce qui se fait sur la machine. Réservé à macOS 14 ou plus récent sur puce Apple, version 1.2.0 publiée, site de présentation sur arismac.app. Licence Apache-2.0, gratuit, 2 étoiles, dépôt créé le 12 novembre 2026, dernière activité le 14. Projet très jeune, sans retour d'usage encore : à considérer comme une démonstration à suivre plutôt qu'un outil éprouvé. https://github.com/LumenJSN/Aris</p>
+<h3>GigChain Keys — la scène d'un claviériste sans MainStage</h3>
+<p>Application de scène pour clavier : elle charge vos sons VST3, affiche la liste des morceaux et les grilles d'accords, suit une chronologie de morceau avec des commandes de direct, et propose un mode scène et un mode répétition. C'est l'alternative gratuite à MainStage, qui n'existe que sur Mac et reste lié à l'écosystème d'Apple. Windows 10 et 11, macOS Apple Silicon, Linux (AppImage et paquet Debian). Licence GPL-3.0, gratuit, 19 étoiles, dépôt créé le 24 septembre 2026, dernière modification le 13 novembre. À signaler : l'auteur annonce lui-même un stade d'alpha publique. https://github.com/xDarkzx/GigChain-Keys</p>
+<h3>NitroLite — se débarrasser de NitroSense sur un portable Acer</h3>
+<p>NitroSense est une grosse application pour une petite tâche ; NitroLite vit dans la zone de notification avec environ 74 Mo de mémoire et 0,6 % d'un cœur, sans Electron, sans télémétrie et sans installateur. Il parle aux mêmes services locaux Acer que l'outil officiel, donc les modes d'alimentation, les courbes de ventilateur, le multiplexeur graphique et la limite de charge à 80 % se comportent pareil. Il ajoute ce que NitroSense ne fait pas : des profils par jeu appliqués automatiquement, des courbes de ventilateur dessinées à la main avec hystérésis, et une purge de la mémoire en veille. Licence MIT, gratuit, C#/.NET, Windows, dépôt créé le 6 novembre 2026, dernière activité le 14, aucune étoile pour l'instant et 1 089 tests automatisés à chaque envoi. Réserve honnête : il a été développé sur un Acer Nitro 16 AN16-41 et n'a été essayé que là, même s'il interroge le matériel à l'exécution. https://github.com/canerztk8/NitroLite</p>
+<h3>LinkSense — une alternative libre à ChatGPT Enterprise</h3>
+<p>Plateforme interne de conversation et d'agents, annoncée par son éditeur comme l'alternative libre à WorkBuddy et à ChatGPT Enterprise, construite sur le moteur Codex. Documentation et démonstration en ligne disponibles ; la pile est JavaScript (Node 24, TypeScript). Licence CPAL-1.0 d'après le dépôt, gratuit, 294 étoiles, dépôt créé le 31 août 2026, dernière modification le 13 novembre. À préciser : l'API GitHub ne reconnaît pas la licence automatiquement et le dépôt porte une licence maison dans le fichier <code>LICENSE</code> — les conditions exactes d'usage commercial demandent donc une lecture attentive avant un déploiement. https://github.com/LingX-AI/LinkSense</p>
+<h3>HealthLog — le dossier de santé sur son propre serveur</h3>
+<p>Application web auto-hébergeable qui rassemble sur une seule chronologie ce que les appareils, les médecins et l'utilisateur notent : poids, tension, glycémie, sommeil, humeur, traitements, cycle. Déploiement par un <code>docker compose</code>, PostgreSQL dans un seul volume, sauvegardes chiffrées vers n'importe quel compartiment S3, chiffrement AES-256-GCM des notes et documents, clés d'accès, double authentification et OpenID Connect, interface de programmation REST documentée, export et lecture FHIR R4, serveur MCP pour les agents. 307 étoiles, dernière activité le 14 novembre 2026. <strong>Réserve importante : ce n'est pas un logiciel libre au sens strict.</strong> Le projet se dit « source disponible » sous licence PolyForm Noncommercial, qui interdit l'usage commercial : le code est lisible, mais ce n'est ni du MIT ni du GPL. https://healthlog.dev — dépôt : https://github.com/MBombeck/HealthLog</p>
+<h3>OpenCyclone — transformer son téléphone Android en « téléphone IA »</h3>
+<p>Version libre d'un concept d'appareil où l'IA sert d'interface : plutôt que d'acheter un téléphone neuf, le projet installe son logiciel sur l'Android que l'on possède déjà et exécute des tâches dans les applications, en demandant confirmation avant d'agir. Licence Apache-2.0, gratuit, 5 étoiles, dépôt créé le 13 novembre 2026 — deux jours d'existence. L'annonce insiste sur le fait que le projet n'est adossé à aucune société : c'est un point d'honnêteté, pas une garantie de suivi. https://github.com/Exorust/opencyclone — présentation : https://opencyclone.vercel.app/</p>
+<h3>kitr — un cadre React complet, sous licence MIT</h3>
+<p>Cadre de travail pour React qui prétend supprimer les heures de choix répétés en début de projet : 45 paquets, une commande par brique (<code>kitr add auth</code>, <code>kitr add forms</code>), bâti sur TanStack, Zustand et React Hook Form, avec génération de pages et de contrôleurs, cibles web en rendu serveur ou application à page unique, bureau par Electron et mobile par Capacitor, le tout sous licence MIT. Le code reste celui de l'utilisateur et chaque paquet peut être retiré. 1 étoile, dépôt créé le 7 novembre 2026, dernière modification le 10 ; l'auteur annonce lui-même la version 0.9, donc un stade précoce. https://github.com/kitrjs/kitr — présentation : https://kitr.dev</p>
+<h3>Whiteboard — tableau blanc libre face à Miro (à vérifier)</h3>
+<p>Annoncé sur Hacker News comme une alternative libre à Miro, sous forme d'application hébergée par la plateforme Puter. Le site répond, mais je n'ai trouvé aucun dépôt propre à cette application ni mention de licence : Puter lui-même est libre, l'application ne le prouve pas. À prendre comme une annonce, pas comme un outil dont on connaît les conditions. https://whiteboard.puter.com/ (1 point, aucun commentaire)</p>
+<h3>Le Guide de Souveraineté Numérique — 89 fiches pratiques sous CC BY-SA</h3>
+<p>Ce n'est pas un logiciel, c'est un document libre, mais il mérite une place ici. 89 fiches construites sur le même plan — le problème, les solutions comparées, une liste de contrôle, un pas-à-pas avec « ce que vous devez voir », un tableau de dépannage, un défi de sept jours et des références vérifiées — organisées en parcours par vagues, du vocabulaire de base jusqu'à l'auto-hébergement avec YunoHost, avec un glossaire et un quiz en ligne. L'auteur, informaticien à la retraite, anime aussi des ateliers en petit groupe dans les Bauges et partage gratuitement les supports sur demande. Publié sous licence CC BY-SA, en format ouvert. https://linuxfr.org/news/un-guide-libre-de-souverainete-numerique-en-89-fiches-pratiques-et-des-ateliers-dans-les-bauges-en-savoie</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Wine 11.22</strong> : cette version de développement introduit l'émulation des instructions x86 AVX sur ARM64, au moment où la branche se rapproche des préparatifs de la version stable 12.0. https://www.phoronix.com/news/Wine-11.22-Released</li>
+<li><strong>KDE Plasma 6.9</strong> : XWayland pourra être lancé à la demande au lieu de démarrer systématiquement dans la session Wayland, et de nouveaux réglages prêts à l'emploi habillent les « fenêtres qui oscillent ». https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand</li>
+<li><strong>FreeBSD 15.2 bêta 2</strong> : OpenSSL à jour et corrections de bogues ; la bêta 1 avait apporté l'amélioration du support matériel des portables et postes de bureau, la compilation croisée des paquets de base depuis Linux et macOS, ainsi que la mise à jour de LLVM/Clang et d'OpenZFS. https://www.phoronix.com/news/FreeBSD-15.2-Beta-2</li>
+<li><strong>Redox OS</strong> : le système d'exploitation écrit en Rust fait fonctionner Go, a porté GIMP, progresse sur NUMA et a simplifié sa politique d'usage de l'intelligence artificielle. https://www.phoronix.com/news/Redox-OS-Golang-GIMP</li>
+<li><strong>Apple M5</strong> : la prise en charge de base de cette puce est attendue dans le noyau Linux 7.5, la branche <code>apple-soc/dt-7.5</code> l'ayant prise en charge. Cela ne concerne que ceux qui suivent Linux sur Mac Apple Silicon, mais cela veut dire que la puce la plus récente n'attendra pas des années. https://www.phoronix.com/news/Apple-M5-For-Linux-7.5</li>
+</ul>
+<h2>Volume</h2>
+<p>46 entrées lues — 29 du journal principal (Reddit, Hacker News, Lobsters) et 17 de LinuxFr, du Journal du hacker, de Phoronix, d'It's FOSS et de Developpez.com — pour 16 sujets retenus ; le reste écarté : questions et demandes d'avis, analyses et billets de blog sans annonce d'outil, avis de sécurité, travaux sur le noyau et le matériel sans logiciel installable, mise en avant de logiciels propriétaires, et le parcours de documentation du noyau. Trois recoupements ont été fondus en une seule entrée : NitroLite (vu sur Reddit et par le dépôt relayé depuis le Mac de Nicolas), la gestion mémoire des machines virtuelles QEMU (Phoronix et Hacker News), et les nouveautés de la chaîne Scenari annoncées par le Journal du hacker alors qu'elles avaient déjà paru dans l'édition du 13 novembre. Aucune erreur de collecte signalée dans <code>meta.json</code> (dernier passage réussi le 14 novembre à 23 h 51 UTC).</p>
+<footer>Édition du dimanche 15 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
