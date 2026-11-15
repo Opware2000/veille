@@ -6,9 +6,98 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 14 Nov 2026 00:53:39 +0100</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 00:52:39 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — dimanche 15 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-15.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-15</guid>
+<pubDate>Sun, 15 Nov 2026 00:52:39 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Hermit, application gratuite pour iPhone, iPad et Mac, range Hermes en boîte de réception par robot — approbations, brouillons de courrier et appels vocaux — et son pont, publié sous licence MIT, garde les clés d'API sur votre machine.</li>
+<li>Agweb, navigateur conçu pour les agents (MIT, 166 étoiles), et Kitesurf, moteur de navigateur sans état de Cloudflare désormais sous Apache 2.0 : deux manières d'ouvrir le Web à un agent sans lui confier un Chrome complet.</li>
+<li>Pix, client multi-plateformes fermé et commercial, est signalé pour mémoire, avec ses réserves.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermit — une boîte de réception par robot, gratuite sur l'App Store</h3>
+<p>Un développeur présente Hermit, un client pour Hermes qui reprend l'idée des robots personnalisés : chaque robot a sa personnalité, ses compétences, sa mémoire et son modèle, et l'application les réunit dans une seule boîte de réception avec, pour chacun, une ligne d'état en direct (« en train de faire… ») et une file « Waiting on you » qui rassemble tout ce qui attend une décision — approbation de commande, question, brouillon de courrier à valider, ajout d'événement ou de rappel.</p>
+<p>S'y ajoutent des appels téléphoniques à un robot, qui reprend le fil de la conversation en cours (voix temps réel d'OpenAI ou voix et modèle tournant sur votre propre machine), la dictée par la reconnaissance vocale d'Apple, Whisper sur l'appareil ou votre ordinateur, un fil de suggestions tiré uniquement des conversations que vous autorisez, la recherche dans les échanges, des notifications à l'effigie du robot, des widgets, et l'édition depuis l'interface de l'âme, de la mémoire, des compétences, du modèle, des routines, des outils et des connecteurs de chaque robot.</p>
+<p>L'auteur annonce l'application comme gratuite sur l'App Store ; le prix de la version Mac n'apparaît pas dans le fil, je ne peux donc pas l'affirmer. Le point important pour qui hésite à installer : <strong>l'application elle-même est fermée, mais le pont qui la relie à votre agent est open source</strong> (voir la rubrique suivante), et les clés d'API restent sur votre machine.</p>
+<p>Application (iPhone et iPad) : https://apps.apple.com/app/id6832404596</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xvmx8p/hermit_a_botforward_experience_for_hermes_free_on/</p>
+<h3>Agweb — un navigateur qui laisse le clavier à l'agent</h3>
+<p>Projet présenté sur Hacker News il y a quelques heures : Agweb est un navigateur écrit en Swift, pensé pour être piloté par un agent plutôt que par une main humaine. La promesse tient en trois points — il ne vole pas le foyer de saisie (l'agent peut travailler pendant que vous continuez ailleurs), il est léger, et il présente tous ses onglets dans une seule vue, ce qui évite au modèle de chercher quelle fenêtre est active. C'est le genre de brique qui manque quand on fait naviguer un agent localement : on n'a pas besoin d'un navigateur grand public, on a besoin d'une surface prévisible.</p>
+<p>Licence MIT, 166 étoiles, dépôt créé le 11 novembre et modifié le 14 novembre — le projet est donc tout jeune, malgré un intérêt déjà marqué.</p>
+<p>Dépôt : https://github.com/paul-nameless/agweb</p>
+<h3>Kitesurf — Cloudflare ouvre son moteur de navigateur pour agents</h3>
+<p>Cloudflare a publié le 13 novembre le code de Kitesurf, le moteur de navigateur sans état qu'elle fait tourner au-dessus de ses Workers : il analyse le HTML, applique le CSS, exécute le JavaScript de la page et produit des captures d'écran sans conteneur de navigateur, en consommant nettement moins de processeur et de mémoire qu'un Chromium complet, et se déploie à la demande sur le réseau mondial de l'entreprise. Il parle le protocole de débogage de Chrome (CDP), donc les clients existants comme Puppeteer peuvent s'y connecter.</p>
+<p>L'intérêt de l'ouverture est double : le moteur peut être lancé localement — la compilation du cœur en Rust demande un peu de temps au premier lancement, puis <code>http://127.0.0.1:8787</code> sert de serveur de développement — ou déployé sur son propre compte Cloudflare. Deux réserves honnêtes : l'auto-hébergement déplace la responsabilité de sécurité sur celui qui l'installe, comme le note la presse spécialisée ; et Kitesurf n'est pas un navigateur généraliste, il vise le rendu et l'automatisation par un agent.</p>
+<p>Licence Apache 2.0, 1 239 étoiles, dépôt créé le 30 septembre, dernière modification le 14 novembre.</p>
+<p>Dépôt : https://github.com/cloudflare/kitesurf — annonce : https://blog.cloudflare.com/kitesurf-open-source/</p>
+<h3>Pix — client multi-plateformes fermé, à réserver</h3>
+<p>Un éditeur présente Pix, un client natif pour Android, iOS, Windows, Linux et macOS qui transforme un Hermes sans interface en application grand public. Côté technique, il n'a pas touché à Hermes lui-même : le serveur tourne sur la branche principale officielle, chaque utilisateur est enfermé dans un chemin isolé sans accès aux fichiers de configuration ni aux interfaces internes, une passerelle unique en fait l'authentification, et les secrets comme les connexions OAuth passent par des intermédiaires (Composio, Pipedream, Nango) pour que l'agent atteigne Gmail, Facebook ou Instagram sans réglage manuel.</p>
+<p>Le point qui intéressera ceux qui hébergent déjà leur agent : en tapant sept fois sur le logo de l'application Windows ou de la version Play Store, on débloque le mode « serveur personnalisé » et l'on peut pointer vers son instance locale. Reste que, contrairement à ce que Nicolas recherche d'ordinaire, <strong>il s'agit d'un produit commercial et fermé, sans tarif annoncé dans le message</strong> — je le signale plutôt que de l'écarter, mais il ne remplit pas le critère « libre et gratuit ». Le fil sert aussi de recherche de contributeurs.</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xw147q/i_built_pix_a_crossplatform_client_to_make_hermes/</p>
+<h3>Un lanceur Android avec le chat intégré</h3>
+<p>Un développeur a construit un lanceur Android qui intègre la conversation avec Hermes, et y a branché la remontée des notifications de ses autres objets connectés : l'écran d'accueil indique d'un coup d'œil si son bébé dort, est réveillé ou pleure. Le message ne donne ni dépôt, ni lien, ni licence — je ne peux donc rien vérifier, mais l'idée d'un lanceur qui affiche un état utile plutôt que des icônes mérite d'être notée.</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xvqobe/hermes_project_android_launcher_with_hermes_chat/</p>
+<h2>Extensions et greffons</h2>
+<h3>hermit-bridge — le pont de Hermit, libre et sans clés sur le serveur</h3>
+<p>Le pont qui relie l'application Hermit à un agent Hermes est un petit greffon qui tourne à côté de Hermes sur votre Mac ou votre machine Linux : <strong>vos clés d'API restent là</strong>, et chaque appareil reçoit sa propre clé que l'on peut révoquer séparément — un point qui compte pour un téléphone qu'on peut perdre. C'est la partie du projet que l'on peut lire et adapter, l'application elle-même restant fermée.</p>
+<p>Licence MIT, 7 étoiles, dépôt créé le 9 novembre, dernière modification le 14 novembre.</p>
+<p>Dépôt : https://github.com/ellingtonsp/hermit-bridge</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Datasette — deux greffons de cartographie remis à niveau</h3>
+<p>Simon Willison a publié le 13 novembre deux mises à jour liées, sans nouvelle fonctionnalité spectaculaire : <strong>datasette-leaflet 0.3</strong> (licence Apache 2.0, 9 étoiles) fait porter aux requêtes de tuiles l'en-tête de provenance que la politique d'OpenStreetMap exige, que les pages de Datasette cassaient en annonçant « no-referrer » ; <strong>datasette-cluster-map 0.19</strong> (Apache 2.0, 102 étoiles) devient compatible avec Datasette 1.0a42 et s'appuie sur le premier. Ce sont des correctifs de conformité et de compatibilité, à retenir seulement si vous publiez des données géographiques avec Datasette.</p>
+<p>Billets : https://simonwillison.net/2026/Nov/13/datasette-leaflet/ et https://simonwillison.net/2026/Nov/13/datasette-cluster-map/</p>
+<h2>Volume</h2>
+<p>121 entrées examinées — 53 dans le journal du subreddit (dont 22 doublons du relais Reddit, la même publication entrant sous identifiant nu et sous identifiant préfixé <code>t3_</code> avec un titre traduit), et 68 dans les journaux complémentaires (Simon Willison, Latent Space, flux Hacker News à 10 points et plus) —, soit 103 publications distinctes ; 6 sujets retenus, 97 écartés. La moitié du journal complémentaire Hacker News est de l'actualité générale (aérien, Nvidia, Italie et Meta, Starship) sans rapport avec l'écosystème d'agents, d'où le taux de rétention faible de cette source. Aucune entrée Hacker News ou Lobsters propre au thème n'est arrivée dans ce créneau ; la matière vient de Reddit. La dernière collecte s'est terminée sans erreur (journal d'état du 14 novembre à 23 h 36 UTC), et le doublon d'identifiant du relais a été traité par recoupement des adresses.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Hermit, application gratuite pour iPhone, iPad et Mac, range Hermes en boîte de réception par robot — approbations, brouillons de courrier et appels vocaux — et son pont, publié sous licence MIT, garde les clés d'API sur votre machine.</li>
+<li>Agweb, navigateur conçu pour les agents (MIT, 166 étoiles), et Kitesurf, moteur de navigateur sans état de Cloudflare désormais sous Apache 2.0 : deux manières d'ouvrir le Web à un agent sans lui confier un Chrome complet.</li>
+<li>Pix, client multi-plateformes fermé et commercial, est signalé pour mémoire, avec ses réserves.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Hermit — une boîte de réception par robot, gratuite sur l'App Store</h3>
+<p>Un développeur présente Hermit, un client pour Hermes qui reprend l'idée des robots personnalisés : chaque robot a sa personnalité, ses compétences, sa mémoire et son modèle, et l'application les réunit dans une seule boîte de réception avec, pour chacun, une ligne d'état en direct (« en train de faire… ») et une file « Waiting on you » qui rassemble tout ce qui attend une décision — approbation de commande, question, brouillon de courrier à valider, ajout d'événement ou de rappel.</p>
+<p>S'y ajoutent des appels téléphoniques à un robot, qui reprend le fil de la conversation en cours (voix temps réel d'OpenAI ou voix et modèle tournant sur votre propre machine), la dictée par la reconnaissance vocale d'Apple, Whisper sur l'appareil ou votre ordinateur, un fil de suggestions tiré uniquement des conversations que vous autorisez, la recherche dans les échanges, des notifications à l'effigie du robot, des widgets, et l'édition depuis l'interface de l'âme, de la mémoire, des compétences, du modèle, des routines, des outils et des connecteurs de chaque robot.</p>
+<p>L'auteur annonce l'application comme gratuite sur l'App Store ; le prix de la version Mac n'apparaît pas dans le fil, je ne peux donc pas l'affirmer. Le point important pour qui hésite à installer : <strong>l'application elle-même est fermée, mais le pont qui la relie à votre agent est open source</strong> (voir la rubrique suivante), et les clés d'API restent sur votre machine.</p>
+<p>Application (iPhone et iPad) : https://apps.apple.com/app/id6832404596</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xvmx8p/hermit_a_botforward_experience_for_hermes_free_on/</p>
+<h3>Agweb — un navigateur qui laisse le clavier à l'agent</h3>
+<p>Projet présenté sur Hacker News il y a quelques heures : Agweb est un navigateur écrit en Swift, pensé pour être piloté par un agent plutôt que par une main humaine. La promesse tient en trois points — il ne vole pas le foyer de saisie (l'agent peut travailler pendant que vous continuez ailleurs), il est léger, et il présente tous ses onglets dans une seule vue, ce qui évite au modèle de chercher quelle fenêtre est active. C'est le genre de brique qui manque quand on fait naviguer un agent localement : on n'a pas besoin d'un navigateur grand public, on a besoin d'une surface prévisible.</p>
+<p>Licence MIT, 166 étoiles, dépôt créé le 11 novembre et modifié le 14 novembre — le projet est donc tout jeune, malgré un intérêt déjà marqué.</p>
+<p>Dépôt : https://github.com/paul-nameless/agweb</p>
+<h3>Kitesurf — Cloudflare ouvre son moteur de navigateur pour agents</h3>
+<p>Cloudflare a publié le 13 novembre le code de Kitesurf, le moteur de navigateur sans état qu'elle fait tourner au-dessus de ses Workers : il analyse le HTML, applique le CSS, exécute le JavaScript de la page et produit des captures d'écran sans conteneur de navigateur, en consommant nettement moins de processeur et de mémoire qu'un Chromium complet, et se déploie à la demande sur le réseau mondial de l'entreprise. Il parle le protocole de débogage de Chrome (CDP), donc les clients existants comme Puppeteer peuvent s'y connecter.</p>
+<p>L'intérêt de l'ouverture est double : le moteur peut être lancé localement — la compilation du cœur en Rust demande un peu de temps au premier lancement, puis <code>http://127.0.0.1:8787</code> sert de serveur de développement — ou déployé sur son propre compte Cloudflare. Deux réserves honnêtes : l'auto-hébergement déplace la responsabilité de sécurité sur celui qui l'installe, comme le note la presse spécialisée ; et Kitesurf n'est pas un navigateur généraliste, il vise le rendu et l'automatisation par un agent.</p>
+<p>Licence Apache 2.0, 1 239 étoiles, dépôt créé le 30 septembre, dernière modification le 14 novembre.</p>
+<p>Dépôt : https://github.com/cloudflare/kitesurf — annonce : https://blog.cloudflare.com/kitesurf-open-source/</p>
+<h3>Pix — client multi-plateformes fermé, à réserver</h3>
+<p>Un éditeur présente Pix, un client natif pour Android, iOS, Windows, Linux et macOS qui transforme un Hermes sans interface en application grand public. Côté technique, il n'a pas touché à Hermes lui-même : le serveur tourne sur la branche principale officielle, chaque utilisateur est enfermé dans un chemin isolé sans accès aux fichiers de configuration ni aux interfaces internes, une passerelle unique en fait l'authentification, et les secrets comme les connexions OAuth passent par des intermédiaires (Composio, Pipedream, Nango) pour que l'agent atteigne Gmail, Facebook ou Instagram sans réglage manuel.</p>
+<p>Le point qui intéressera ceux qui hébergent déjà leur agent : en tapant sept fois sur le logo de l'application Windows ou de la version Play Store, on débloque le mode « serveur personnalisé » et l'on peut pointer vers son instance locale. Reste que, contrairement à ce que Nicolas recherche d'ordinaire, <strong>il s'agit d'un produit commercial et fermé, sans tarif annoncé dans le message</strong> — je le signale plutôt que de l'écarter, mais il ne remplit pas le critère « libre et gratuit ». Le fil sert aussi de recherche de contributeurs.</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xw147q/i_built_pix_a_crossplatform_client_to_make_hermes/</p>
+<h3>Un lanceur Android avec le chat intégré</h3>
+<p>Un développeur a construit un lanceur Android qui intègre la conversation avec Hermes, et y a branché la remontée des notifications de ses autres objets connectés : l'écran d'accueil indique d'un coup d'œil si son bébé dort, est réveillé ou pleure. Le message ne donne ni dépôt, ni lien, ni licence — je ne peux donc rien vérifier, mais l'idée d'un lanceur qui affiche un état utile plutôt que des icônes mérite d'être notée.</p>
+<p>Fil : https://www.reddit.com/r/hermesagent/comments/1xvqobe/hermes_project_android_launcher_with_hermes_chat/</p>
+<h2>Extensions et greffons</h2>
+<h3>hermit-bridge — le pont de Hermit, libre et sans clés sur le serveur</h3>
+<p>Le pont qui relie l'application Hermit à un agent Hermes est un petit greffon qui tourne à côté de Hermes sur votre Mac ou votre machine Linux : <strong>vos clés d'API restent là</strong>, et chaque appareil reçoit sa propre clé que l'on peut révoquer séparément — un point qui compte pour un téléphone qu'on peut perdre. C'est la partie du projet que l'on peut lire et adapter, l'application elle-même restant fermée.</p>
+<p>Licence MIT, 7 étoiles, dépôt créé le 9 novembre, dernière modification le 14 novembre.</p>
+<p>Dépôt : https://github.com/ellingtonsp/hermit-bridge</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Datasette — deux greffons de cartographie remis à niveau</h3>
+<p>Simon Willison a publié le 13 novembre deux mises à jour liées, sans nouvelle fonctionnalité spectaculaire : <strong>datasette-leaflet 0.3</strong> (licence Apache 2.0, 9 étoiles) fait porter aux requêtes de tuiles l'en-tête de provenance que la politique d'OpenStreetMap exige, que les pages de Datasette cassaient en annonçant « no-referrer » ; <strong>datasette-cluster-map 0.19</strong> (Apache 2.0, 102 étoiles) devient compatible avec Datasette 1.0a42 et s'appuie sur le premier. Ce sont des correctifs de conformité et de compatibilité, à retenir seulement si vous publiez des données géographiques avec Datasette.</p>
+<p>Billets : https://simonwillison.net/2026/Nov/13/datasette-leaflet/ et https://simonwillison.net/2026/Nov/13/datasette-cluster-map/</p>
+<h2>Volume</h2>
+<p>121 entrées examinées — 53 dans le journal du subreddit (dont 22 doublons du relais Reddit, la même publication entrant sous identifiant nu et sous identifiant préfixé <code>t3_</code> avec un titre traduit), et 68 dans les journaux complémentaires (Simon Willison, Latent Space, flux Hacker News à 10 points et plus) —, soit 103 publications distinctes ; 6 sujets retenus, 97 écartés. La moitié du journal complémentaire Hacker News est de l'actualité générale (aérien, Nvidia, Italie et Meta, Starship) sans rapport avec l'écosystème d'agents, d'où le taux de rétention faible de cette source. Aucune entrée Hacker News ou Lobsters propre au thème n'est arrivée dans ce créneau ; la matière vient de Reddit. La dernière collecte s'est terminée sans erreur (journal d'état du 14 novembre à 23 h 36 UTC), et le doublon d'identifiant du relais a été traité par recoupement des adresses.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — samedi 14 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-14.html</link>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — dimanche 15 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La journée est dominée par les outils greffés sur les agents de codage : une mémoire persistante pour Claude Code, Cursor et Codex, un tableau de bord auto-hébergé pour plusieurs agents, et un garde-fou de sécurité qui refuse de s'exécuter plutôt que de laisser passer une commande risquée.</li>
+<li>Deux nouveautés de fond côté modèles locaux : llama.cpp et ggml passent en version 1.0, premier engagement public sur la stabilité de leurs interfaces.</li>
+<li>En marge du développement, une trouvaille utile pour le cours de SVT : Aaron's Archive, boîte à outils de biologie moléculaire gratuite dans le navigateur (BLAST, arbres phylogénétiques, amorces, guide CRISPR).</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Aaron's Archive — analyse de séquences ADN, ARN et protéines</h3>
+<p>Site gratuit, sans compte, qui réunit dans une seule page ce qu'on cherche d'ordinaire sur dix sites : contenu en GC, recherche de cadres ouverts de lecture, cartographie des sites de restriction, dessin d'amorces, alignement de séquences, interrogation de BLAST chez le NCBI, construction d'arbres phylogénétiques, visualisation de structures 3D, simulateur de mutations et propositions de guides CRISPR. C'est un projet personnel présenté par son auteur sur le subreddit, qui dit fonctionner mieux sur ordinateur.</p>
+<p>Deux réserves à connaître avant de s'en servir en classe : le site n'affiche ni dépôt public ni licence, donc rien ne garantit sa pérennité ni son ouverture ; et le résumé automatique proposé en complément est facultatif — il exige une clé personnelle gratuite (Groq ou Gemini) et, si on l'active, la séquence transite par le serveur du site avant d'être envoyée au fournisseur choisi.</p>
+<p><a href="https://aarons-archive-seven.vercel.app/">https://aarons-archive-seven.vercel.app/</a> (annoncé sur r/vibecoding)</p>
+<h3>Auto Digger — client Discogs libre pour fouiller les bacs</h3>
+<p>Application Electron sous licence MIT qui sert de client à Discogs : parcours du catalogue par l'API, constitution de bacs et de filtres réutilisables (« deep techno de 2000 à 2004 »), écoute des références repérées. Elle intègre aussi un serveur MCP, autrement dit une prise pour que votre agent de codage pilote directement la recherche de disques. Un premier dépôt, très peu étoilé à ce jour (dépôt mis à jour le 13 novembre 2026).</p>
+<p>Le point à savoir : le téléchargement de l'audio passe par YouTube ou par Soulseek (via <code>slskd</code>), une pratique juridiquement douteuse en France pour les œuvres protégées ; le reste de l'application — fouille, classement, écoute — ne pose pas ce problème.</p>
+<p><a href="https://github.com/alexanderwanyoike/auto-digger">https://github.com/alexanderwanyoike/auto-digger</a></p>
+<h3>αtmos — composer des paysages sonores dans le navigateur</h3>
+<p>Application web qui associe des sons (pluie sur une vitre, vent, voix dans la pièce voisine, cloche lointaine) en leur donnant à chacun une place dans la scène : plus ou moins fort, à gauche ou à droite, continu ou intermittent, derrière une fenêtre ou sous une voûte. Chaque composition est enregistrée dans un dossier de votre ordinateur, sans compte et sans rien téléverser.</p>
+<p>Licence MIT (dépôt <a href="https://github.com/ErnestoCampese/atmos">ErnestoCampese/atmos</a>), mais attention aux prérequis : l'enregistrement dans un dossier local n'est permis qu'à Chrome et Edge sur ordinateur ; Firefox, Safari et les téléphones n'y arrivent pas.</p>
+<p><a href="https://ernestocampese.github.io/atmos/">https://ernestocampese.github.io/atmos/</a></p>
+<h3>SigMap — cartographier la couverture Wi-Fi</h3>
+<p>Utilitaire iOS gratuit (catégorie Utilitaires), sorti le 12 novembre 2026, qui dresse une carte de chaleur de la couverture Wi-Fi d'un logement ou d'une salle. L'auteur a voulu comprendre pourquoi le signal était moins bon à son bureau qu'à quelques pas de là. Aucun prix, aucune version open source annoncée : c'est le seul élément propriétaire de cette édition, signalé comme tel.</p>
+<p><a href="https://apps.apple.com/app/sigmap-wifi-heatmap/id6819154750">https://apps.apple.com/app/sigmap-wifi-heatmap/id6819154750</a></p>
+<h3>OpenOrange — exécuter des Workers Cloudflare ailleurs que chez Cloudflare</h3>
+<p>Projet de Rivet qui rejoue l'environnement des Workers Cloudflare sur AWS, Google Cloud, Azure ou vos propres serveurs, avec la même expérience de développement mais, selon l'éditeur, environ 4,8 fois moins cher en calcul et 8,7 fois moins cher en stockage. La version auto-hébergée est ouverte (Apache 2.0). Ces chiffres d'économie viennent de la page du produit, pas d'une mesure indépendante : à prendre pour ce qu'ils sont.</p>
+<p><a href="https://openorange.dev/">https://openorange.dev/</a></p>
+<h3>Kryptonite UI — 85 composants React animés, gratuits</h3>
+<p>Bibliothèque d'environ 85 composants animés bâtis sur shadcn et Tailwind v4 : boutons, cartes, arrière-plans, formulaires, et quelques pièces inhabituelles comme une corde à tirer ou un bouton à déchirer. Le principe est celui d'une collection à copier : on installe les dépendances, on copie le composant dans son projet, on le modifie. Gratuit, mais l'auteur ne publie ni licence ni dépôt — c'est une collection à recopier, pas un paquet installable.</p>
+<p><a href="https://kryptonite-ui.vercel.app">https://kryptonite-ui.vercel.app</a></p>
+<h3>Agweb — un navigateur conçu pour être piloté par un agent</h3>
+<p>Navigateur volontairement discret : pas de vol de focus, empreinte mémoire réduite, onglets organisés pour permettre à un agent de travailler pendant qu'on continue ailleurs. Licence MIT, 165 étoiles, dernière mise à jour le 14 novembre 2026 — le projet le plus suivi de cette sélection.</p>
+<p><a href="https://github.com/paul-nameless/agweb">https://github.com/paul-nameless/agweb</a></p>
+<h3>LinkSense — alternative libre aux offres d'entreprise, sur le moteur Codex</h3>
+<p>Présenté comme l'alternative open source à WorkBuddy et ChatGPT Enterprise, bâti sur le moteur d'exécution de Codex. 294 étoiles, dernière mise à jour le 13 novembre 2026. Réserve : GitHub ne parvient pas à identifier la licence du dépôt, l'affirmation « open source » n'est donc pas vérifiable par l'API — à contrôler dans les fichiers du dépôt avant tout usage professionnel.</p>
+<p><a href="https://github.com/LingX-AI/LinkSense">https://github.com/LingX-AI/LinkSense</a></p>
+<h3>Cowork — file de tâches et tableau de bord auto-hébergés pour vos agents</h3>
+<p>File de tâches et tableau de bord à installer chez soi pour orchestrer plusieurs agents (Claude, Codex, autres) : on y suit ce qui tourne, ce qui attend et ce qui a échoué, en s'appuyant sur MCP. Licence MIT, dépôt récent (3 étoiles, mis à jour le 14 novembre 2026). C'est l'outil à regarder si vous finissez par lancer plusieurs agents en parallèle.</p>
+<p><a href="https://github.com/slashman413/cowork">https://github.com/slashman413/cowork</a></p>
+<h3>CodeRelay — interface graphique et partage de travail entre agents</h3>
+<p>Interface graphique pour agent de codage doublée d'un espace d'équipe permettant de déléguer une tâche à l'agent d'un collègue. Licence MIT, encore très jeune (2 étoiles, 13 novembre 2026).</p>
+<p><a href="https://github.com/AymanAhsan/CodeRelay">https://github.com/AymanAhsan/CodeRelay</a></p>
+<h3>AI Time Estimator — estimer la durée d'une tâche avant de la lancer</h3>
+<p>Greffon qui demande à Claude Code combien de temps prendra une tâche et répond « en temps d'IA » à partir de vos propres journaux d'exécution. Licence MIT, 3 étoiles, 14 novembre 2026. La mesure ne vaut que pour votre machine et vos habitudes, mais elle est honnête sur sa méthode.</p>
+<p><a href="https://github.com/noambrand/ai-time-estimator">https://github.com/noambrand/ai-time-estimator</a></p>
+<h3>thinkspace — voir un modèle de langage penser, en 3D</h3>
+<p>Visualiseur qui représente les 36 864 neurones du perceptron multicouche de GPT-2 petit, disposés par similarité de leurs poids, avec les poids d'attention réels entre jetons et les dix probabilités suivantes. L'auteur a construit une suite de tests qui recalcule les activations d'une seconde façon pour vérifier que l'affichage ne ment pas, ce qui est rare et mérite d'être dit. Limites assumées : GPT-2 petit uniquement, valeurs transmises en float16 (environ trois chiffres significatifs), aucune carte graphique requise. Pas de licence identifiée par GitHub, 2 étoiles.</p>
+<p><a href="https://github.com/lak7/thinkspace">https://github.com/lak7/thinkspace</a></p>
+<h3>Ember — éteindre la lumière du chargeur du MacBook</h3>
+<p>Utilitaire libre qui contrôle la diode de statut du chargeur des MacBook : extinction permanente, allumage permanent, ou automatisation selon l'heure et l'état de concentration. Version 1.0.1 publiée, dépôt mis à jour le 13 novembre 2026. Détail de confort, mais la lumière d'une chambre la nuit est une vraie nuisance.</p>
+<p><a href="https://github.com/Getterbetter/ember/releases/tag/v1.0.1">https://github.com/Getterbetter/ember/releases/tag/v1.0.1</a></p>
+<h3>orchestrator — un bureau 3D où vos sessions Claude Code travaillent</h3>
+<p>Représentation en trois dimensions où chaque session Claude Code en cours occupe un poste de travail, façon salle de bureaux virtuelle. Amusant, encore embryonnaire (1 étoile, mise à jour du 14 novembre 2026, licence non identifiée). Retenu pour l'idée de suivi visuel de plusieurs agents simultanés, pas pour sa maturité.</p>
+<p><a href="https://github.com/brstic/orchestrator">https://github.com/brstic/orchestrator</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>llama.cpp et ggml passent en version 1.0</h3>
+<p>C'est l'annonce la plus lourde de conséquences de la journée, vue sur Hacker News (109 points et 18 commentaires pour la publication de ggml, 13 pour celle de llama.cpp). Les deux bibliothèques du projet ggml-org — llama.cpp pour l'inférence de modèles de langage en C/C++ et ggml pour la couche de tenseurs — atteignent leur version 1.0 : l'éditeur s'engage publiquement sur ses interfaces, toute rupture d'API ou d'ABI déclenchant désormais un changement de version majeure. Les règles de versionnement sémantique sont explicitées dans les notes de version.</p>
+<p>ggml 1.0.0 supprime l'API publique obsolète et les anciennes opérations de masque de diagnostic, ajoute le support FP8 et un réglage du tronquage YaRN, et apporte des gains de performance sur toutes les plateformes : multiplications quantifiées et fusion de mélanges d'experts sur CUDA et Metal, chemin d'attention rapide pour le préremplissage en Vulkan, ordonnanceur de mélanges d'experts côté appareil en SYCL, nouveaux noyaux WebGPU, couverture d'opérations étendue pour Hexagon. Côté llama.cpp, la version 1.0 s'accompagne d'une application native pour macOS — l'installation de modèles locaux devient accessible sans ligne de commande. Le dépôt ggml totalise 15 787 étoiles (licence MIT), mis à jour le 13 novembre 2026.</p>
+<p><a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">https://huggingface.co/blog/ggml-org/llama-cpp-v1</a> — notes de version : <a href="https://github.com/ggml-org/ggml/releases/tag/v1.0.0">https://github.com/ggml-org/ggml/releases/tag/v1.0.0</a></p>
+<h3>Claude Code : les projets peuvent désormais lancer plusieurs agents en parallèle</h3>
+<p>Anthropic a réorganisé les « Projets » de Claude Code pour y faire travailler plusieurs agents simultanément, sans intervention, au lieu d'une seule session séquentielle (72 points et 68 commentaires sur Hacker News). C'est l'évolution d'interface du mois pour qui fait tourner des agents en continu ; les outils de suivi apparaissent d'ailleurs en nombre dans cette édition, ce qui n'est pas un hasard.</p>
+<p><a href="https://claude.com/resources/articles/projects-redesigned">https://claude.com/resources/articles/projects-redesigned</a></p>
+<h3>Antigravity : la fonction /teamwork documentée par Google</h3>
+<p>Google détaille une fonction de travail en équipe entre agents dans son environnement de développement Antigravity, présentée comme un moyen d'avancer sur des projets scientifiques et d'ingénierie (67 points). Antigravity est un produit de Google, gratuit en accès anticipé mais fermé : à retenir comme repère concurrentiel des outils libres ci-dessus, pas comme une solution à installer.</p>
+<p><a href="https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/">https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/</a></p>
+<h3>DeepSeek V4 Pro 0813 : lien ancien, pas nouveauté</h3>
+<p>Une entrée sur Hacker News renvoie vers le dépôt de poids DeepSeek V4 Pro 0813 (18 points, aucun commentaire). Vérification faite auprès de l'API Hugging Face : ce dépôt a été créé le 13 août 2026 — ce n'est donc pas une sortie du week-end, mais un lien ancien revenu en tête de liste. Rien de neuf à en tirer.</p>
+<h2>Extensions et greffons</h2>
+<h3>Bright Lines — un garde-fou qui refuse de laisser passer, pour Claude Code</h3>
+<p>Ensemble de règles de sécurité « à fermeture par défaut » : en cas de doute, le crochet bloque l'action au lieu de l'autoriser, et laisse une trace supervisable. Licence MIT, projet très récent (aucune étoile, dépôt du 13 novembre 2026). À essayer si vous laissez un agent exécuter des commandes sans surveiller — c'est exactement le trou dans lequel on tombe après avoir vu un agent supprimer des fichiers.</p>
+<p><a href="https://github.com/LeriderTechnologies/bright-lines">https://github.com/LeriderTechnologies/bright-lines</a></p>
+<h3>tvclaude — Claude Code dans des fenêtres façon Turbo Vision</h3>
+<p>Greffon qui ouvre les sessions Claude Code dans un bureau de type Turbo Vision, l'interface à fenêtres bleues de MS-DOS, pour qui veut retrouver plusieurs sessions sur un même écran (licence MIT, 4 étoiles, mise à jour du 14 novembre 2026). Un parent du projet tvterm.</p>
+<p><a href="https://github.com/runvnc/tvclaude">https://github.com/runvnc/tvclaude</a></p>
+<h3>Tessera — 25 thèmes pour Claude Code</h3>
+<p>Collection de 25 thèmes pour Claude Code, chacun avec ses couleurs, son image de fond, ses mots d'attente et ses sons. L'auteur explique l'avoir écrite le jour où les modifications d'interface (« mods ») de Claude Code sont sorties. Le site ne dit rien d'une licence ou d'un dépôt : c'est une collection gratuite à récupérer, sans garantie d'ouverture.</p>
+<p><a href="https://tessera.shiptiffin.app/">https://tessera.shiptiffin.app/</a></p>
+<h3>Memro — mémoire persistante pour Claude Code, Cursor et Codex</h3>
+<p>Couche de mémoire persistante pour les agents de codage : un serveur, des kits de développement par langage, un serveur MCP et des intégrations, afin qu'un agent retrouve le contexte d'un projet d'une session à l'autre. 16 étoiles, dépôt mis à jour le 14 novembre 2026 ; GitHub n'identifie pas la licence.</p>
+<p><a href="https://github.com/memrohq/memro">https://github.com/memrohq/memro</a></p>
+<h3>Customer Intelligence Toolkit — recherche client assistée dans Claude Code</h3>
+<p>Boîte à outils pour Claude Code centrée sur la recherche client : exploration de personas synthétiques, validation de produit, traçabilité des éléments probants. Licence MIT, 2 étoiles, 13 novembre 2026. Utile surtout à qui développe un produit ; sans rapport avec l'enseignement.</p>
+<p><a href="https://github.com/Satvik-jain/customer-intelligence-toolkit">https://github.com/Satvik-jain/customer-intelligence-toolkit</a></p>
+<h3>Deux greffons Datasette : cartes géographiques et cartes en grappes</h3>
+<p>Simon Willison a publié le même jour deux extensions de son outil Datasette : <code>datasette-leaflet</code> 0.3 et <code>datasette-cluster-map</code> 0.19, qui ajoutent respectivement la cartographie en ligne et le regroupement de points sur une même carte. Greffons libres, gratuits, du même auteur que leurs outils d'origine.</p>
+<p><a href="https://simonwillison.net/2026/Nov/13/datasette-leaflet/">https://simonwillison.net/2026/Nov/13/datasette-leaflet/</a> — <a href="https://simonwillison.net/2026/Nov/13/datasette-cluster-map/">https://simonwillison.net/2026/Nov/13/datasette-cluster-map/</a></p>
+<h3>Le fil des « compétences » Claude de la semaine</h3>
+<p>Un fil du subreddit rassemble les compétences (« skills ») préférées de ses participants : ingénierie inverse d'applications et de binaires, vocabulaire de conception d'agent pour Paul Bakaus, construction de bancs d'essai, relecture de code façon ingénieur, anti-détection d'écriture générée, référencement, et OpenMontage, présenté comme un système de production vidéo agentique libre avec douze chaînes de production. Intérêt limité par la forme : le fil donne des noms sans liens, il faut retrouver chaque compétence soi-même. Le dépôt public de compétences d'agents d'Anthropic (Academy Guide) y est cité et vaut le détour.</p>
+<p><a href="https://www.reddit.com/r/vibecoding/comments/1xvibpr/my_favorite_claude_skills_this_week_drop_yours_in/">https://www.reddit.com/r/vibecoding/comments/1xvibpr/my_favorite_claude_skills_this_week_drop_yours_in/</a></p>
+<h2>Volume</h2>
+<p>130 entrées examinées dans l'intervalle (journal r/vibecoding et relais de l'extension : 62 ; journaux Hacker News, Lobsters, Simon Willison, Latent Space, blog Hugging Face et flux Hacker News filtré : 68), soit 129 sujets distincts après regroupement, 25 retenus et 104 écartés — le taux de rétention d'environ 19 % est celui habituel de ce subreddit, où les récits d'expérience et les questions dominent largement les annonces d'outils. Aucune erreur de collecte à signaler : le fichier d'état du collecteur ne relève aucun échec, et les journaux complémentaires ont répondu normalement.</p>
+<footer>Édition du dimanche 15 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
