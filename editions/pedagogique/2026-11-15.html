@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille pédagogique et scientifique — dimanche 15 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../pedagogique.xml" title="pédagogique et scientifique">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille pédagogique et scientifique — dimanche 15 novembre 2026</h1>
+<h2>Informatique pédagogique et RUPN</h2>
+<ul>
+<li>
+<p><strong>Cocciquiz, nouvelle « pépite de la Forge » (sur l'espace RUPN de ton ENT, 14 novembre).</strong> Un outil libre qui fait remplir des QCM sur papier — ni écran ni compte pour les élèves — puis corrige en photographiant la grille de réponses au smartphone ou à la tablette après scan du QR du corrigé. Il génère un QCM complet, sait n'imprimer qu'une grille pour un sujet déjà rédigé, importe un cours PDF pour produire des questions, gère plusieurs versions en mélangeant l'ordre, et corrige un paquet de copies scanné au photocopieur ; le bilan de classe donne moyenne, médiane, questions à retravailler et erreur la plus fréquente, avec export PDF, CSV pour la vie scolaire ou détail par question. <a href="https://region-academique.eclat-bfc.fr/rupn/rupn-general-non-accessible-rupn-/les-pepites-de-la-forge-cocciquiz-6576.htm">La présentation sur ton espace RUPN</a></p>
+</li>
+<li>
+<p><strong>Grok Build : 35 578 applications du service accessibles sans authentification (14 novembre).</strong> L'enquête de la société Claroc, relevée par Developpez.com, a trouvé ces applications publiques sur 37 571 projets actifs analysés, certaines liées à des données de SpaceX. Même série que les fuites de Muse ou d'autres assistants de codage : quand un agent écrit et déploie du code, les secrets qu'il manipule (jetons, adresses, données internes) partent avec. À garder pour la sensibilisation des collègues et des élèves. <a href="https://intelligence-artificielle.developpez.com/actu/389094/L-agent-de-codage-Grok-Build-divulgue-une-multitude-d-informations-confidentielles-dont-certaines-appartiennent-a-SpaceX-Un-chercheur-decouvre-35-000-applications-Grok-Build-accessibles-a-tous/">Developpez.com</a></p>
+</li>
+<li>
+<p><strong>Panne mondiale de Microsoft 365 (13 novembre).</strong> Outlook, Teams et Copilot ont été indisponibles une partie de la journée, Microsoft décrivant des serveurs « déconnectés de manière inattendue » et une reprise d'abord partielle. Rappel utile pour les établissements qui ont basé leur organisation sur ces services. <a href="https://microsoft.developpez.com/actu/389061/Une-panne-massive-de-Microsoft-365-perturbe-Outlook-Teams-et-Copilot-dans-le-monde-entier-Microsoft-indique-que-ses-serveurs-se-sont-deconnectes-de-maniere-inattendue-perturbant-ces-services/">Developpez.com</a></p>
+</li>
+</ul>
+<p>Trois nouveautés seulement cette semaine sur ce thème : l'espace RUPN de l'ENT n'a rien publié d'autre depuis le 9 novembre, la DRNE n'a envoyé aucun message Pix, ta liste d'inspection SVT est muette et le portail du CDI est inchangé depuis le 8 novembre.</p>
+<h2>IA pour le développement</h2>
+<ul>
+<li>
+<p><strong>llama.cpp et ggml passent en 1.0, avec une application macOS native (14 novembre).</strong> Les deux briques qui font tourner les modèles ouverts en local atteignent leur première version stable : ggml supprime 35 fonctions dépréciées de l'en-tête public de llama.cpp et la publication est accompagnée d'une application macOS. Pour faire tourner un modèle en local sur le Mac sans dépendre d'un service en ligne. <a href="https://huggingface.co/blog/ggml-org/llama-cpp-v1">Blog Hugging Face</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>Gemini 4 Hydrogen déployé le 12 novembre, pris en charge dès le lendemain dans llm-gemini 0.37.</strong> Google présente ce modèle comme plus rapide pour le code et les tâches d'agents (à ne pas confondre avec Gemini 4 Carbon, sorti fin octobre) ; Simon Willison a mis à jour son greffon le 12 novembre, ce qui permet de l'appeler depuis la ligne de commande <code>llm</code>. <a href="https://simonwillison.net/2026/Nov/12/llm-gemini/">Notes llm-gemini</a> — le modèle est payant à l'usage, l'outil est gratuit.</p>
+</li>
+<li>
+<p><strong>agent-desktop (Vercel Labs, 13 novembre).</strong> Pour piloter des applications, il lit l'arbre d'accessibilité du système et envoie un rendu JSON à l'agent, au lieu de faire cliquer l'IA sur une capture d'écran comme le « computer use » d'Anthropic : chaque bouton ou champ porte une référence, les actions passent par l'API d'accessibilité et la souris reste disponible. <a href="https://github.com/vercel-labs/agent-desktop">Le dépôt</a> — gratuit.</p>
+</li>
+<li>
+<p><strong>Stela : macOS sur un PC x86 (14 novembre).</strong> Un programme de démarrage UEFI qui présente à macOS une machine Apple simulée (un Mac mini M2) et traduit le code ARM64 en x86-64, avec un pilote Metal compilé vers NIR. Il faut une carte NVIDIA des séries 20 à 50, un processeur x86-64-v2 et 8 Go de mémoire ; c'est le retour du Hackintosh au moment où macOS Tahoe devait être la dernière version pour les Mac Intel. Licence non vérifiée à la source, à considérer comme une curiosité. <a href="https://korben.info/stela-macos-pc-x86-hackintosh.html">Korben</a></p>
+</li>
+<li>
+<p><strong>Nylon : un réseau WireGuard maille qui trouve seul son chemin (10 novembre).</strong> Chaque machine relaie le trafic des autres sans serveur central, avec le protocole de routage Babel par-dessus wireguard-go, et bascule en moins de dix secondes quand un lien tombe. Utile si tu veux relier le serveur Coolify, la maison et le portable sans dépendre d'un service tiers. <a href="https://nylon.jq.ax/">Le projet</a> — gratuit, binaire unique.</p>
+</li>
+</ul>
+<h2>IA et éducation</h2>
+<ul>
+<li>
+<p><strong>Café pédagogique, revue de l'actualité du 9 au 13 novembre (14 novembre).</strong> Mobilisation lycéenne qui ne faiblit pas face à des réponses institutionnelles qui se durcissent (convocation d'une enseignante au rectorat, menaces de sanctions contre des élèves, retenues sur salaire, réquisitions de trombinoscopes), et une réforme de Parcoursup qui déçoit. C'est un point de vue signé du média, pas une consigne. <a href="https://www.cafepedagogique.net/2026/11/14/actualite-de-leducation-du-9-au-13-novembre-2026/">L'article</a></p>
+</li>
+<li>
+<p><strong>Café pédagogique : quatorze ressources mises en avant cette semaine (14 novembre).</strong> La sélection hebdomadaire du média, autour de l'interdisciplinarité en lycée professionnel, des projets qui relient les collégiens et des enquêtes historiques. <a href="https://www.cafepedagogique.net/2026/11/14/14-ressources-mises-en-avant-par-le-cafe-pedagogique-3/">L'article</a></p>
+</li>
+<li>
+<p><strong>Manuella Bénard-Hoarau : enquêter sur la place des femmes au Paléolithique (13 novembre).</strong> Une professeure d'histoire-géographie de La Réunion fait confronter à ses sixièmes leurs représentations aux découvertes archéologiques récentes, par une enquête documentaire — transposable à d'autres sujets où les connaissances bougent, en SVT notamment. <a href="https://www.cafepedagogique.net/2026/11/13/manuella-benard-hoarau-enqueter-sur-la-place-des-femmes-au-paleolithique/">L'entretien</a></p>
+</li>
+</ul>
+<p>ActuIA n'a publié aucune brève du secteur « éducation » depuis le 4 novembre, et aucune du secteur « emploi » depuis la même date : le thème tient cette semaine aux seules sources françaises généralistes.</p>
+<h2>Python pour l'enseignement</h2>
+<p>Aucune nouveauté. La section Python de Developpez.com n'a rien publié depuis le 12 octobre, Human Coders News depuis le 13 octobre, l'étiquette Python du Journal du hacker depuis le 29 août ; la liste Capytale est muette depuis le 8 novembre (dernier message traité : la relance sur le dysfonctionnement de Pyxel Studio).</p>
+<h2>Sciences</h2>
+<ul>
+<li><strong>Comment les créatures des abysses ont inspiré l'Art nouveau (14 novembre).</strong> Une exposition au musée de la Marine montre comment l'exploration scientifique des océans à la fin du XIXe siècle a nourri les artistes : un angle art et science utilisable pour parler biodiversité marine et histoire des sciences. <a href="https://www.pourlascience.fr/sr/art-science/comment-les-creatures-des-abysses-ont-inspire-l-art-nouveau-29773.php">Pour la Science</a></li>
+</ul>
+<p>Un seul article neuf : Pour la Science n'a rien publié d'autre depuis le 11 novembre (l'endométriose, le paysage martien, le monde quantique macroscopique et la revue de presse sur le climat étaient dans les éditions précédentes), et Bio-Tremplins est muet depuis son billet du 12 novembre, déjà signalé.</p>
+<h2>À retenir</h2>
+<p>Cocciquiz, la pépite libre de la Forge, rend les QCM papier corrigeables au smartphone ; llama.cpp et ggml passent en 1.0 avec une application macOS pour faire tourner les modèles en local ; et la semaine est pauvre ailleurs — rien de neuf en Python, un seul article scientifique.</p>
+<footer>Édition du dimanche 15 novembre 2026 — <a href="https://opware2000.github.io/veille/pedagogique.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
