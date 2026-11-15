@@ -6,9 +6,68 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 14 Nov 2026 01:41:47 +0100</lastBuildDate>
+<lastBuildDate>Sun, 15 Nov 2026 01:41:56 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — dimanche 15 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-15.html</link>
+<guid isPermaLink="false">ctan-2026-11-15</guid>
+<pubDate>Sun, 15 Nov 2026 01:41:56 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une seule annonce touche un paquet que vous utilisez : <strong>mathtools 1.32</strong>, qui corrige l'option <code>centercolon</code> sous <code>unicode-math</code> et un espacement parasite autour des environnements de type <code>align</code>.</li>
+<li>Un nouveau paquet mérite votre attention : <strong>beamer2html</strong>, qui transforme une présentation beamer en diaporama HTML autonome à partir des mêmes sources que le PDF.</li>
+<li>Les huit autres annonces sont sans effet sur vos documents : langues non latines, domaines très étroits ou outils réservés aux auteurs de paquets.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>mathtools 1.32 (version du 12 novembre 2026, annonce du 14)</strong> — licence LPPL 1.3c, maintenu par l'équipe du projet LaTeX. La version précédente datait d'octobre 2024. Trois corrections annoncées :</p>
+<ul>
+<li>l'option <code>centercolon</code> fonctionne de nouveau correctement en régime <code>unicode-math</code> — c'est la correction qui vous concerne directement, puisque nBook3 charge <code>unicode-math</code> ; si vous employez <code>\coloneqq</code> ou l'option <code>centercolon</code> dans vos cours, le double-point est désormais centré comme il doit l'être. Mettez votre distribution à jour avant de juger un rendu bizarre : c'est le rendu ancien qui était fautif, pas vos sources ;</li>
+<li>les environnements <code>cases</code> étoilés (<code>dcases*</code>, <code>rcases*</code>…) ignorent à nouveau les espaces avant la fin de l'environnement, ce qui supprime un blanc parasite en fin de ligne ;</li>
+<li>correction d'un espace supplémentaire introduit lorsque l'environnement contient un environnement de type <code>align</code>.</li>
+</ul>
+<p>Aucune adaptation de votre classe n'est nécessaire : mathtools conserve son interface et il est improbable que vos documents dépendent des espacements fautifs. La page du paquet contient le détail : https://ctan.org/pkg/mathtools</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>beamer2html 1.0</strong> (première version, licence triple LPPL 1.3c / Apache 2 / GFDL) — https://ctan.org/pkg/beamer2html</p>
+<p>Le paquet a deux parties : <code>beamer2html.sty</code>, une extension pour vos sources beamer (pages de titre, barre de titre et pied de page, disposition en lignes et colonnes, tableaux, frise de progression, listes de publications et de bibliographie, formes posées sur les figures, vidéos, tracés <code>pgfplots</code>, animations à partir de séquences d'images, styles d'organigrammes TikZ), et <code>beamer2html</code>, un programme Python 3 qui écrit <code>slides.html</code> à partir de ces mêmes sources. Le diaporama HTML obtenu est autonome et fonctionne hors ligne dans un navigateur : les recouvrements (<code>\pause</code>, <code>&lt;2-&gt;</code>, <code>\only</code>, <code>\uncover</code>) se comportent comme dans beamer, les tracés <code>pgfplots</code> deviennent interactifs (valeurs sous le curseur, zoom, masquage de courbes), les TikZ sont compilés par LaTeX pour rester identiques au PDF, et une vue présentateur affiche les notes, la diapositive suivante et un chronomètre. L'option <code>--pack</code> produit une archive zip contenant exactement les fichiers utilisés, avec conversion facultative des images en WebP ; <code>--watch</code> reconstruit à chaque enregistrement.</p>
+<p>L'intérêt est double pour vous : vos diapositives restent écrites en beamer — donc compatibles avec nBookSlides — mais vos élèves peuvent les ouvrir dans un navigateur, sans lecteur PDF, avec des animations et des tracés manipulables. Le vrai PDF continue d'être produit par les mêmes sources. Le programme Python 3 est une dépendance à installer sur votre poste, ce que je n'ai pas vérifié ici ; je n'ai pas non plus testé la conversion sur une présentation existante.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>colorframed 1.0</strong> et <strong>hawkdraw 0.11.2</strong> : deux corrections du même ordre, la compatibilité avec le PDF étiqueté — colorframed (cadres colorés du paquet <code>framed</code>) devient utilisable sous <code>\DocumentMetadata</code>, et hawkdraw (dessin vectoriel sur <code>l3draw</code>) corrige la boîte englobante des groupes étiquetés. Vos documents n'emploient pas <code>\DocumentMetadata</code>, leur sortie est donc inchangée ; c'est à noter si vous activez un jour <code>tagging=on</code>.</li>
+</ul>
+<h2>Volume</h2>
+<p>Dix annonces publiées dans l'intervalle (les dix annonces du 14 novembre qui n'avaient pas encore été traitées), quatre retenues dont une concernant vos paquets, six écartées : deux paquets de langues non latines (kanruby pour le kanbun chinois classique, BabelBidi pour l'écriture bidirectionnelle arabe et hébraïque), deux paquets d'un domaine très étroit (acousticintervals, tables acoustiques pondérées par la durée ; Lua Hyperbolic, géométrie hyperbolique dans le disque de Poincaré), un outil réservé aux auteurs de paquets (pkgcheck, vérificateur de paquets CTAN) et une mise à jour purement technique d'un paquet que vous n'utilisez pas (TikZ-UMLD 1.0.1, diagrammes UML).</p>
+<p>La collecte n'a signalé aucune erreur : trente-deux entrées dans le flux, quatre nouvelles, cent soixante-dix annonces journalisées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Une seule annonce touche un paquet que vous utilisez : <strong>mathtools 1.32</strong>, qui corrige l'option <code>centercolon</code> sous <code>unicode-math</code> et un espacement parasite autour des environnements de type <code>align</code>.</li>
+<li>Un nouveau paquet mérite votre attention : <strong>beamer2html</strong>, qui transforme une présentation beamer en diaporama HTML autonome à partir des mêmes sources que le PDF.</li>
+<li>Les huit autres annonces sont sans effet sur vos documents : langues non latines, domaines très étroits ou outils réservés aux auteurs de paquets.</li>
+</ul>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>mathtools 1.32 (version du 12 novembre 2026, annonce du 14)</strong> — licence LPPL 1.3c, maintenu par l'équipe du projet LaTeX. La version précédente datait d'octobre 2024. Trois corrections annoncées :</p>
+<ul>
+<li>l'option <code>centercolon</code> fonctionne de nouveau correctement en régime <code>unicode-math</code> — c'est la correction qui vous concerne directement, puisque nBook3 charge <code>unicode-math</code> ; si vous employez <code>\coloneqq</code> ou l'option <code>centercolon</code> dans vos cours, le double-point est désormais centré comme il doit l'être. Mettez votre distribution à jour avant de juger un rendu bizarre : c'est le rendu ancien qui était fautif, pas vos sources ;</li>
+<li>les environnements <code>cases</code> étoilés (<code>dcases*</code>, <code>rcases*</code>…) ignorent à nouveau les espaces avant la fin de l'environnement, ce qui supprime un blanc parasite en fin de ligne ;</li>
+<li>correction d'un espace supplémentaire introduit lorsque l'environnement contient un environnement de type <code>align</code>.</li>
+</ul>
+<p>Aucune adaptation de votre classe n'est nécessaire : mathtools conserve son interface et il est improbable que vos documents dépendent des espacements fautifs. La page du paquet contient le détail : https://ctan.org/pkg/mathtools</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>beamer2html 1.0</strong> (première version, licence triple LPPL 1.3c / Apache 2 / GFDL) — https://ctan.org/pkg/beamer2html</p>
+<p>Le paquet a deux parties : <code>beamer2html.sty</code>, une extension pour vos sources beamer (pages de titre, barre de titre et pied de page, disposition en lignes et colonnes, tableaux, frise de progression, listes de publications et de bibliographie, formes posées sur les figures, vidéos, tracés <code>pgfplots</code>, animations à partir de séquences d'images, styles d'organigrammes TikZ), et <code>beamer2html</code>, un programme Python 3 qui écrit <code>slides.html</code> à partir de ces mêmes sources. Le diaporama HTML obtenu est autonome et fonctionne hors ligne dans un navigateur : les recouvrements (<code>\pause</code>, <code>&lt;2-&gt;</code>, <code>\only</code>, <code>\uncover</code>) se comportent comme dans beamer, les tracés <code>pgfplots</code> deviennent interactifs (valeurs sous le curseur, zoom, masquage de courbes), les TikZ sont compilés par LaTeX pour rester identiques au PDF, et une vue présentateur affiche les notes, la diapositive suivante et un chronomètre. L'option <code>--pack</code> produit une archive zip contenant exactement les fichiers utilisés, avec conversion facultative des images en WebP ; <code>--watch</code> reconstruit à chaque enregistrement.</p>
+<p>L'intérêt est double pour vous : vos diapositives restent écrites en beamer — donc compatibles avec nBookSlides — mais vos élèves peuvent les ouvrir dans un navigateur, sans lecteur PDF, avec des animations et des tracés manipulables. Le vrai PDF continue d'être produit par les mêmes sources. Le programme Python 3 est une dépendance à installer sur votre poste, ce que je n'ai pas vérifié ici ; je n'ai pas non plus testé la conversion sur une présentation existante.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>colorframed 1.0</strong> et <strong>hawkdraw 0.11.2</strong> : deux corrections du même ordre, la compatibilité avec le PDF étiqueté — colorframed (cadres colorés du paquet <code>framed</code>) devient utilisable sous <code>\DocumentMetadata</code>, et hawkdraw (dessin vectoriel sur <code>l3draw</code>) corrige la boîte englobante des groupes étiquetés. Vos documents n'emploient pas <code>\DocumentMetadata</code>, leur sortie est donc inchangée ; c'est à noter si vous activez un jour <code>tagging=on</code>.</li>
+</ul>
+<h2>Volume</h2>
+<p>Dix annonces publiées dans l'intervalle (les dix annonces du 14 novembre qui n'avaient pas encore été traitées), quatre retenues dont une concernant vos paquets, six écartées : deux paquets de langues non latines (kanruby pour le kanbun chinois classique, BabelBidi pour l'écriture bidirectionnelle arabe et hébraïque), deux paquets d'un domaine très étroit (acousticintervals, tables acoustiques pondérées par la durée ; Lua Hyperbolic, géométrie hyperbolique dans le disque de Poincaré), un outil réservé aux auteurs de paquets (pkgcheck, vérificateur de paquets CTAN) et une mise à jour purement technique d'un paquet que vous n'utilisez pas (TikZ-UMLD 1.0.1, diagrammes UML).</p>
+<p>La collecte n'a signalé aucune erreur : trente-deux entrées dans le flux, quatre nouvelles, cent soixante-dix annonces journalisées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — samedi 14 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-14.html</link>
