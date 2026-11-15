@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — dimanche 15 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — dimanche 15 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Journée très creuse : deux fils seulement passent le filtre, tous deux issus de TeX Stack Exchange.</li>
+<li>Une mise au point utile : pdfLaTeX et LuaLaTeX ne produisent pas le même PDF, et l'écart peut aller jusqu'à la pagination — ce n'est pas un bogue mais la conséquence normale de polices et de césures différentes.</li>
+<li>Une technique pour régler l'espacement autour d'un bloc imbriqué avec la nouvelle implémentation de bloc du noyau LaTeX (version 2026-11-01), à vérifier avant usage.</li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>pdfLaTeX et LuaLaTeX ne produisent pas le même PDF — et c'est normal</h3>
+<p>Denis Bitouzé, qui maintient la classe de thèse <code>yathesis</code>, signale un écart qu'il pensait impossible : sur le spécimen livré avec sa classe, les PDF produits par pdfLaTeX d'un côté et par LuaLaTeX de l'autre ne se ressemblent pas, jusqu'à donner un nombre de pages différent. Il demande si ce comportement est désormais accepté.</p>
+<p>David Carlisle répond (réponse acceptée, 13 points) en corrigeant la prémisse : les deux moteurs n'emploient ni les mêmes polices par défaut ni exactement les mêmes algorithmes de césure. Des coupures de ligne légèrement différentes suffisent, et dans un long document une seule coupure qui change se propage aux sauts de page puis au placement des flottants — l'écart final peut donc devenir arbitrairement grand. Autrement dit, « les sorties sont virtuellement identiques » est faux, et il ne faut pas chercher une erreur de sa part quand on constate un décalage.</p>
+<p>Conséquence pratique pour un document long : ne pas compiler alternativement les deux moteurs en cours de rédaction, choisir l'un et s'y tenir, et si l'on doit passer de l'un à l'autre, refaire les vérifications de pagination, de table des matières et de placement des figures sur la version cible. Question score 4, 165 vues au moment de la lecture. Lien : <code>https://tex.stackexchange.com/questions/767965/significant-differences-between-pdflatex-and-lualatex-pdfs</code></p>
+<h3>Espacement d'un bloc imbriqué premier ou dernier enfant, avec le noyau LaTeX 2026-11-01</h3>
+<p>La nouvelle implémentation des environnements de bloc — celle qui accompagne l'étiquetage PDF — est plus souple que l'ancienne option <code>\list</code>, mais elle ne sait pas encore décider seule de l'espacement d'un bloc intérieur selon sa position. La demande de David Purton : un bloc intérieur dont l'espace d'entrée et l'espace de sortie valent 0 pt lorsqu'il est respectivement la première ou la dernière chose à l'intérieur de son bloc extérieur, et une valeur normale sinon, le tout fonctionnant avec et sans <code>tagging=on</code>.</p>
+<p>La réponse donnée (score 2, <strong>non acceptée</strong>) propose de <strong>différer l'espace de fin du bloc intérieur</strong> au lieu de l'appliquer : le bloc intérieur garde un espace de fin réel nul et met l'espace demandé en attente ; si quelque chose suit, l'espace est consommé, et si le bloc extérieur se termine avant, il est abandonné. Le premier cas (bloc en tête) est réglé en mémorisant si du contenu a déjà commencé. La solution ne couvre que du contenu fait de paragraphes ordinaires et d'environnements de bloc : tout autre matériel vertical demande une notification explicite.</p>
+<p><strong>Réserve</strong> : cette réponse a été explicitement rédigée avec l'aide d'un assistant (« chatgpt sol 6.1 »), elle n'a que 2 points et n'est pas acceptée. Elle indique avoir été testée avec LaTeX 2026-11-01, étiquetage actif et inactif, mais il faut l'essayer sur son propre document avant de l'adopter. Lien : <code>https://tex.stackexchange.com/questions/767968/inner-block-vspace-depending-on-whether-first-or-last-child-of-outer-block</code></p>
+<h2>Volume</h2>
+<p>56 entrées examinées, 54 sujets (deux fils du relais Reddit figurant sous deux identifiants, l'un sous son identifiant Reddit et l'autre sous le préfixe <code>t3_</code>), 2 retenus, 52 écartés, soit un taux de rétention d'environ 4 %. Les écartés sont : quarante-six questions anciennes de TeX Stack Exchange (de 2010 à juin 2026) remontées par le flux d'activité du site et hors de l'horizon de quatre jours ; des questions de dépannage ponctuelles (<code>authortype</code> de biblatex, <code>mtpro2</code> avec <code>cases</code> sous LuaLaTeX, export epub pour tinymist, changement de police du titre d'une image <code>frame-it</code>, espacement parasite sous Overleaf) ; un fil d'opinion demandant à quoi sert LaTeX (22 commentaires, rien de vérifiable) ; une discussion sur l'utilisation d'un navigateur comme lecteur PDF et sur JavaScript dans les PDF ; et le doublon du relais pour l'éditeur Texter, déjà présenté dans l'édition du 14 novembre. Aucune erreur de collecte n'est signalée dans <code>meta.json</code> (dernier passage le 14 novembre à 23 h 51 UTC, aucun nouvel élément).</p>
+<footer>Édition du dimanche 15 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
