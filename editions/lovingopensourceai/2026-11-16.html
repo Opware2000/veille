@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — lundi 16 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — lundi 16 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Un client Git en terminal écrit en Zig, un vérificateur de types Python, un émulateur NES : trois projets libres neufs et aboutis, tous vérifiés à la source.</li>
+<li>Le moteur de conteneurs Kiri, déjà signalé le 7 novembre, publie sa version 0.2.1 avec trente-huit langues et la récupération d'images depuis GitHub et Amazon.</li>
+<li>Côté greffons, Datasette sait désormais adresser un modèle local : le greffon <code>datasette-llm</code> accepte les points d'accès compatibles OpenAI, donc LM Studio, Ollama ou llama.cpp.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ziggity — un client Git en terminal, en un seul binaire</h3>
+<p>Ziggity est une interface Git en terminal, entièrement pilotée au clavier, écrite en Zig. Ses deux arguments sont la légèreté — un binaire statique de quelques mégaoctets, qui s'appuie sur le Git déjà installé plutôt que d'embarquer une bibliothèque — et la réactivité : les opérations lentes (récupération, tirage, envoi) sont sorties de l'interface, si bien que l'on continue à parcourir un dépôt, lire un diff ou relire un commit pendant qu'elles s'exécutent. Le projet publie ses propres mesures comparatives face à lazygit dans son dépôt ; elles sont celles de l'auteur, et le site d'It's FOSS qui le fait connaître signale lui-même que ces chiffres dépendent de la machine et du dépôt. La version 0.62.0 est sortie le 15 novembre 2026, avec un correctif sur le positionnement du curseur dans les messages de commit contenant des caractères larges. Licence MIT, gratuit.</p>
+<p>Vérification du dépôt <code>simoarpe/ziggity</code> : MIT, 330 étoiles, créé le 5 juin 2026, dernière poussée le 15 novembre 2026.</p>
+<p>Lien : https://github.com/simoarpe/ziggity — présentation : https://feed.itsfoss.com/link/24361/17524990/ziggity-git-client (vu sur It's FOSS)</p>
+<h3>Gawain — exiger les annotations de type partout en Python</h3>
+<p>Les vérificateurs de types Python (mypy, Pyright, ty, pyrefly) déduisent le type d'une variable qu'on n'a pas annotée ; les règles <code>ANN</code> de ruff et <code>flake8-annotations</code> ne réclament des annotations que sur les fonctions. Gawain réclame les annotations sur les variables et les attributs de classe, puis lance ty ou pyrefly pour vérifier que les types déclarés sont justes. C'est un outil d'auteur, présenté franchement comme tel — son auteur explique qu'il l'a écrit parce qu'il ne supporte plus les <code>dict[str, Any]</code> — et il ne se substitue à rien : il ajoute une exigence que les autres laissent passer. Utile à qui enseigne Python et veut montrer l'intérêt de typer ses variables, ou à qui veut resserrer un dépôt existant. Le dépôt est tout neuf : aucune antériorité d'usage, et le fil de présentation n'avait qu'un commentaire au moment de la collecte, ce qui en fait une nouveauté que presque personne n'a encore vue. Licence MIT, gratuit.</p>
+<p>Vérification du dépôt <code>matheuzgomes/gawain</code> : MIT, 41 étoiles, créé le 12 novembre 2026, dernière poussée le 15 novembre 2026.</p>
+<p>Lien : https://github.com/matheuzgomes/gawain (Show HN à 14 points : https://news.ycombinator.com/item?id=50504072)</p>
+<h3>lucyNES — un émulateur NES complet, écrit en Odin</h3>
+<p>Cet émulateur de Nintendo NES a été écrit en Odin par une développeuse, seul et en sept mois de travail, et son niveau d'exactitude revendiqué lui permet de faire tourner <em>Battletoads</em> — le jeu que l'on cite toujours comme le test le plus dur, parce qu'il exploite des comportements non documentés de la machine. Il gère les principaux circuits de cartouche (NROM, MMC1, UxROM, CNROM, MMC3, GxROM, AxROM), propose une vue de débogage, des sauvegardes d'état, la prise en charge des manettes, un son partiel et un rendu cathodique optionnel. Ce n'est pas un logiciel d'intelligence artificielle, et le dépôt n'a pas bougé depuis mai 2026 : le fil Hacker News du 15 novembre est une remontée d'un projet terminé, pas une nouveauté de la semaine. Il est retenu parce que le code est libre, disponible et exemplaire — pour qui veut montrer à des élèves ce qu'est un émulateur, ou apprendre le langage Odin sur un vrai cas d'usage. Licence MIT, gratuit.</p>
+<p>Vérification du dépôt <code>lucypero/lucynes</code> : MIT, 82 étoiles, créé le 29 avril 2024, dernière poussée le 14 mai 2026.</p>
+<p>Lien : https://github.com/lucypero/lucynes — présentation : https://lucypero.com/lucynes.html</p>
+<h3>DKIM2 — la signature du courrier repensée, avec du code déjà disponible</h3>
+<p>Le projet DKIM2 ne livre pas une application : il propose un standard en cours d'écriture à l'IETF, qui signe l'enveloppe SMTP dans le message lui-même. Quatre problèmes actuels en découlent directement — le transfert, les listes de diffusion, les copies cachées et les signatures rejouées — et DKIM2 y répond en imposant à chaque intermédiaire d'enregistrer ses propres modifications, ce qui rend chaque changement attribuable à celui qui l'a fait. Le point intéressant pour qui héberge son propre serveur de courrier : ce n'est pas une théorie. Quatre implémentations indépendantes, en Python, Perl, Go et C, interopèrent déjà dans le dépôt du groupe de travail, un démon et un filtre pour Postfix sont publiés, un <code>local_scan</code> pour Exim également, ainsi que des outils en ligne de commande (<code>dkim2sign</code>, <code>dkim2verify</code>) et deux guides d'installation pour Postfix, avec et sans Mailman. Un serveur de démonstration fait signer de vraies listes de diffusion. Il faut le dire clairement : c'est un brouillon de travail, pas une norme achevée, et ses détails peuvent encore changer.</p>
+<p>Vérification du dépôt d'interopérabilité <code>dkim2wg/interop</code> : BSD-3-Clause, 10 étoiles, dernière poussée le 15 novembre 2026. Implémentations citées : <code>croessner/dkim2</code> (Go, Apache-2.0) et <code>go.turscar.ie/dkim2</code> (Go, BSD-2-Clause).</p>
+<p>Lien : https://dkim2.com/ — implémentations : https://dkim2.com/implementations/</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Kiri 0.2.1 — trente-huit langues et la récupération depuis GitHub</h3>
+<p>Kiri, le moteur de conteneurs léger déjà présenté dans cette veille le 7 novembre 2026, poursuit un rythme de publication rapide : la version 0.2.1 est sortie le 15 novembre, après la 0.2.0 du 10. Cette dernière a apporté le passage des périphériques USB aux conteneurs en bêta — un adaptateur série, une clé Zigbee — avec la ligne <code>--device</code> à recopier, et l'interface en quinze langues. La 0.2.1 porte l'interface à trente-huit langues, dont l'arabe, sa première langue s'écrivant de droite à gauche, et permet de tirer les images depuis GitHub et Amazon ECR en s'authentifiant auprès de chaque registre. Le projet est Apache-2.0 et gratuit. Deux réserves déjà signalées demeurent : les mesures de vitesse face à Docker Desktop, Colima et OrbStack sont celles de l'éditeur, et la fonction de partage d'un conteneur par un lien public passe par son nuage, ce qui suppose de lui confier le trafic exposé.</p>
+<p>Vérification du dépôt <code>libracoder/kiri</code> : Apache-2.0, 6 258 étoiles, créé le 2 novembre 2026, dernière poussée le 15 novembre 2026.</p>
+<p>Lien : https://github.com/libracoder/kiri — notes de version : https://github.com/libracoder/kiri/releases/tag/v0.2.1</p>
+<h2>Extensions et greffons</h2>
+<h3>datasette-llm 0.1a11 — adosser Datasette à un modèle local</h3>
+<p><code>datasette-llm</code> est le greffon intermédiaire de Datasette qui sert aux autres greffons à configurer un modèle de langue. Cette version ajoute la prise en charge des points d'accès compatibles avec l'interface d'OpenAI, ce qui revient à pouvoir brancher n'importe quel serveur local parlant ce protocole : LM Studio, Ollama ou llama.cpp — ce dernier étant passé en version 1.0.0 le 13 novembre, fait déjà relevé dans cette veille. Concrètement, quelques arguments suffisent désormais à lancer un agent Datasette alimenté par un modèle tournant sur sa propre machine, sans clé ni abonnement : la commande publiée par l'auteur installe le greffon avec <code>uvx</code> et pointe vers un serveur local sur le port 1234. C'est un exemple utile de la même idée que celle portée par ce sous-reddit — un modèle chez soi, servi à un outil du quotidien. Licence Apache-2.0, gratuit.</p>
+<p>Vérification du dépôt <code>datasette/datasette-llm</code> : Apache-2.0, 20 étoiles, dernière poussée le 14 novembre 2026.</p>
+<p>Lien : https://simonwillison.net/2026/Nov/14/datasette-llm/ — code : https://github.com/datasette/datasette-llm/releases/tag/0.1a11</p>
+<h3>datasette-vega 0.7 — le plus ancien greffon de Datasette réactivé</h3>
+<p><code>datasette-vega</code> dessine des graphiques — courbes, barres, nuages de points — sur les données d'une table ou d'une requête, en s'appuyant sur la bibliothèque Vega-Lite. Sa dernière publication datait de juillet 2018 : la version 0.7 lui rend la compatibilité avec les versions récentes de Datasette et la fait fonctionner avec Datasette Lite, cette variante qui s'exécute entièrement dans le navigateur. Pour un usage enseignant, c'est un moyen direct de faire produire un graphique à partir d'un jeu de données sans installer quoi que ce soit, puisque la démonstration publiée dans le fichier de présentation tourne dans le navigateur. Licence Apache-2.0, gratuit.</p>
+<p>Vérification du dépôt <code>simonw/datasette-vega</code> : Apache-2.0, 65 étoiles, dernière poussée le 14 novembre 2026.</p>
+<p>Lien : https://simonwillison.net/2026/Nov/14/datasette-vega/</p>
+<h2>Volume</h2>
+<p>60 entrées lues dans l'intervalle (le journal du sous-reddit, alimenté par Reddit, Hacker News, Lobsters et le relais de l'extension, plus les quatre flux complémentaires — blog de Hugging Face, Simon Willison, Hacker News à dix points, It's FOSS), 7 sujets retenus, 53 entrées écartées. Le taux de rétention est bas, environ 12 %, et la cause est la même que la veille : sur les 54 entrées du flux généraliste de Hacker News, l'essentiel portait sur la panne du trafic aérien américain, les affaires financières de Nvidia, la politique américaine ou des billets d'opinion, tous hors sujet. Une fusion a été opérée : la même publication du sous-reddit sur les directives web de Google est arrivée deux fois, sous son identifiant nu et sous celui du relais de l'extension du Mac, et elle a été écartée dans les deux cas — le dépôt <code>GoogleChrome/modern-web-guidance</code> a déjà été présenté dans les éditions du 11 et du 13 novembre, avec sa version 1.0 ; rien de nouveau n'y figure. Les scores Hacker News ont joué leur rôle : Ziggity, Gawain et lucyNES sont peu ou pas commentés, mais ce sont des dépôts neufs et vérifiés, alors que les sujets très commentés de la période (l'émulateur NES excepté) n'annonçaient aucun outil. La collecte s'est déroulée sans erreur signalée dans <code>meta.json</code>.</p>
+<footer>Édition du lundi 16 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
