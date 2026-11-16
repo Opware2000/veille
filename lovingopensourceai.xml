@@ -6,9 +6,70 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 16 Nov 2026 00:23:12 +0100</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 00:22:17 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — mardi 17 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-17.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-17</guid>
+<pubDate>Tue, 17 Nov 2026 00:22:17 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Quatre outils libres à retenir : json-render (interfaces générées à partir de consignes, Apache-2.0), Chandra OCR 2 (reconnaissance de texte OpenRAIL), Coral (passerelle d'agents auto-hébergée, Apache-2.0) et OpenTodo (gestionnaire de tâches local-first, AGPL-3.0).</li>
+<li>Hugging Face bascule ses fournisseurs d'inférence sur le routeur d'OpenRouter : tout modèle à poids ouverts de la plateforme devient appelable avec le même jeton.</li>
+<li>Le renseignement de la semaine vaut surtout par les dépôts : très peu de nouveautés propres au sous-forum, l'essentiel venant de Hacker News et du journal de Simon Willison. Trois articles de fond et une annonce de modèle fermé ont été écartés.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>json-render — des interfaces dessinées par le modèle, sans code improvisé</h3>
+<p>Bibliothèque de rendu génératif : à partir d'une consigne, une application d'IA compose une interface à partir de composants prédéfinis, ce qui évite au modèle d'inventer du HTML ou du JavaScript à chaque réponse et rend le résultat reproductible. Bibliothèque Apache-2.0, développée par vercel-labs, dépôt très suivi (≈ 19 700 étoiles), dernière activité le 16 novembre 2026. Documentation sur json-render.dev, code sur https://github.com/vercel-labs/json-render.</p>
+<h3>Chandra OCR 2 — reconnaissance de texte et de mise en page</h3>
+<p>Modèle de reconnaissance optique signé Datalab, qui transforme images et PDF en markdown, HTML ou JSON en conservant la mise en page : tableaux, formules, cases à cocher, légendes d'images, plus de 90 langues, et une bonne tenue sur l'écriture manuscrite. Il se présente comme le meilleur score sur la référence olmOCR (85,8 %) et gagne 12 % sur le multilingue par rapport à la première version. Installable et exécutable en local (<code>pip install chandra-ocr</code>, avec vLLM ou Transformers) ; licence OpenRAIL, c'est-à-dire libre d'usage mais assortie de restrictions d'usage (à ne pas confondre avec une licence strictement libre). Fiche du modèle : https://huggingface.co/datalab-to/chandra-ocr-2 — 1,3 million de téléchargements, 609 mentions « j'aime », dernière modification du dépôt le 26 juin 2026.</p>
+<h3>Coral — les agents écrivent leurs propres outils</h3>
+<p>Passerelle auto-hébergée à placer entre ses agents et les systèmes qu'ils manipulent : au lieu d'appeler un catalogue fixe d'outils, l'agent écrit de courts programmes TypeScript, peut les enregistrer comme outils réutilisables et les partager avec d'autres agents. C'est présenté comme un moyen de donner des permissions précises et de réduire le volume de jetons consommé. Apache-2.0, ≈ 5 000 étoiles, code actif (dernière poussée le 16 novembre 2026). Présenté par ses auteurs sur Hacker News : https://github.com/withcoral/coral.</p>
+<h3>OpenTodo — gestionnaire de tâches que l'on héberge soi-même</h3>
+<p>Application de gestion de tâches « local-first », livrée en un seul binaire Go, pensée pour tourner sur son propre serveur, sans abonnement ni dépendance à un service tiers. Licence AGPL-3.0, ≈ 490 étoiles, dépôt créé le 10 octobre 2026 et actif le jour même de cette veille. https://github.com/OpenTodoApp/OpenTodo</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Hugging Face confie son routage à OpenRouter</h3>
+<p>Depuis le 16 novembre, les fournisseurs d'inférence de Hugging Face ne passent plus par le routeur maison mais par celui d'OpenRouter, qui choisit l'hébergeur le mieux placé (prix, vitesse, fiabilité mesurés en direct) et bascule vers un autre en cas d'échec. Conséquence pour l'utilisateur : tout modèle à poids ouverts publié sur le carnet Hugging Face et servi par un hébergeur s'appelle avec le même jeton Hugging Face, via une API compatible OpenAI, Anthropic ou Responses, sans changer de code. Les guides couvrent Claude Code, Codex, OpenCode, Pi et Hermes Agent. La note rappelle qu'en septembre 2026 les modèles à poids ouverts représentaient 71,7 % des jetons servis sur OpenRouter, contre 26,8 % un an plus tôt, et coûtent en moyenne environ quatre fois moins cher. https://huggingface.co/blog/openrouter</p>
+<h3>Datasette 1.0a43 et 0.65.6</h3>
+<p>La version de développement 1.0a43 apporte la diffusion en continu des exportations (CSV et TSV comprises), une brique dont la version 1.0 approche de la moitié de son jalon. Deux correctifs de sécurité l'accompagnent, dont un qui touchait l'accès à des requêtes enregistrées privées. Datasette 0.65.6 reprend le même correctif pour la branche stable. Les deux versions sont publiées sous licence Apache-2.0. https://simonwillison.net/2026/Nov/15/datasette/</p>
+<h3>Datasette Agent 0.6a0 et Datasette Apps 0.4a0</h3>
+<p>Le greffon d'agent gagne un champ de conversation directement sur la page d'accueil de Datasette, avec mention des tables et requêtes par dièse. Datasette Apps 0.4a0 permet désormais à une application créée dans Datasette de lire et d'utiliser des fragments d'URL (<code>#...</code>), ce qui permet de relier deux applications entre elles — l'une qui cherche un enregistrement, l'autre qui l'affiche. Ces applications ressemblent à des « artefacts » générés par un modèle, mais exécutent des requêtes SQL sur ses propres données. https://simonwillison.net/2026/Nov/15/datasette-agent/ et https://simonwillison.net/2026/Nov/15/datasette-apps/</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-maplibre 0.1a0</strong> — premier greffon cartographique publié depuis longtemps pour Datasette : il associe la bibliothèque MapLibre GL au serveur de tuiles vectorielles libres OpenFreeMap, ce qui donne des cartes de fond sans service commercial. Version initiale, donc à considérer comme expérimentale. https://simonwillison.net/2026/Nov/15/datasette-maplibre/</p>
+<h2>Volume</h2>
+<p>77 entrées lues dans l'intervalle, 13 retenues, regroupées en 8 sujets, 64 écartées (dont deux articles de fond, un récit de blog, une promotion de fournisseur commercial, une annonce de modèle sans poids ouverts, un comparatif de matériel et plusieurs doublons du relais anglophone/francophone). La dernière collecte du journal Reddit s'est terminée sans erreur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Quatre outils libres à retenir : json-render (interfaces générées à partir de consignes, Apache-2.0), Chandra OCR 2 (reconnaissance de texte OpenRAIL), Coral (passerelle d'agents auto-hébergée, Apache-2.0) et OpenTodo (gestionnaire de tâches local-first, AGPL-3.0).</li>
+<li>Hugging Face bascule ses fournisseurs d'inférence sur le routeur d'OpenRouter : tout modèle à poids ouverts de la plateforme devient appelable avec le même jeton.</li>
+<li>Le renseignement de la semaine vaut surtout par les dépôts : très peu de nouveautés propres au sous-forum, l'essentiel venant de Hacker News et du journal de Simon Willison. Trois articles de fond et une annonce de modèle fermé ont été écartés.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>json-render — des interfaces dessinées par le modèle, sans code improvisé</h3>
+<p>Bibliothèque de rendu génératif : à partir d'une consigne, une application d'IA compose une interface à partir de composants prédéfinis, ce qui évite au modèle d'inventer du HTML ou du JavaScript à chaque réponse et rend le résultat reproductible. Bibliothèque Apache-2.0, développée par vercel-labs, dépôt très suivi (≈ 19 700 étoiles), dernière activité le 16 novembre 2026. Documentation sur json-render.dev, code sur https://github.com/vercel-labs/json-render.</p>
+<h3>Chandra OCR 2 — reconnaissance de texte et de mise en page</h3>
+<p>Modèle de reconnaissance optique signé Datalab, qui transforme images et PDF en markdown, HTML ou JSON en conservant la mise en page : tableaux, formules, cases à cocher, légendes d'images, plus de 90 langues, et une bonne tenue sur l'écriture manuscrite. Il se présente comme le meilleur score sur la référence olmOCR (85,8 %) et gagne 12 % sur le multilingue par rapport à la première version. Installable et exécutable en local (<code>pip install chandra-ocr</code>, avec vLLM ou Transformers) ; licence OpenRAIL, c'est-à-dire libre d'usage mais assortie de restrictions d'usage (à ne pas confondre avec une licence strictement libre). Fiche du modèle : https://huggingface.co/datalab-to/chandra-ocr-2 — 1,3 million de téléchargements, 609 mentions « j'aime », dernière modification du dépôt le 26 juin 2026.</p>
+<h3>Coral — les agents écrivent leurs propres outils</h3>
+<p>Passerelle auto-hébergée à placer entre ses agents et les systèmes qu'ils manipulent : au lieu d'appeler un catalogue fixe d'outils, l'agent écrit de courts programmes TypeScript, peut les enregistrer comme outils réutilisables et les partager avec d'autres agents. C'est présenté comme un moyen de donner des permissions précises et de réduire le volume de jetons consommé. Apache-2.0, ≈ 5 000 étoiles, code actif (dernière poussée le 16 novembre 2026). Présenté par ses auteurs sur Hacker News : https://github.com/withcoral/coral.</p>
+<h3>OpenTodo — gestionnaire de tâches que l'on héberge soi-même</h3>
+<p>Application de gestion de tâches « local-first », livrée en un seul binaire Go, pensée pour tourner sur son propre serveur, sans abonnement ni dépendance à un service tiers. Licence AGPL-3.0, ≈ 490 étoiles, dépôt créé le 10 octobre 2026 et actif le jour même de cette veille. https://github.com/OpenTodoApp/OpenTodo</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Hugging Face confie son routage à OpenRouter</h3>
+<p>Depuis le 16 novembre, les fournisseurs d'inférence de Hugging Face ne passent plus par le routeur maison mais par celui d'OpenRouter, qui choisit l'hébergeur le mieux placé (prix, vitesse, fiabilité mesurés en direct) et bascule vers un autre en cas d'échec. Conséquence pour l'utilisateur : tout modèle à poids ouverts publié sur le carnet Hugging Face et servi par un hébergeur s'appelle avec le même jeton Hugging Face, via une API compatible OpenAI, Anthropic ou Responses, sans changer de code. Les guides couvrent Claude Code, Codex, OpenCode, Pi et Hermes Agent. La note rappelle qu'en septembre 2026 les modèles à poids ouverts représentaient 71,7 % des jetons servis sur OpenRouter, contre 26,8 % un an plus tôt, et coûtent en moyenne environ quatre fois moins cher. https://huggingface.co/blog/openrouter</p>
+<h3>Datasette 1.0a43 et 0.65.6</h3>
+<p>La version de développement 1.0a43 apporte la diffusion en continu des exportations (CSV et TSV comprises), une brique dont la version 1.0 approche de la moitié de son jalon. Deux correctifs de sécurité l'accompagnent, dont un qui touchait l'accès à des requêtes enregistrées privées. Datasette 0.65.6 reprend le même correctif pour la branche stable. Les deux versions sont publiées sous licence Apache-2.0. https://simonwillison.net/2026/Nov/15/datasette/</p>
+<h3>Datasette Agent 0.6a0 et Datasette Apps 0.4a0</h3>
+<p>Le greffon d'agent gagne un champ de conversation directement sur la page d'accueil de Datasette, avec mention des tables et requêtes par dièse. Datasette Apps 0.4a0 permet désormais à une application créée dans Datasette de lire et d'utiliser des fragments d'URL (<code>#...</code>), ce qui permet de relier deux applications entre elles — l'une qui cherche un enregistrement, l'autre qui l'affiche. Ces applications ressemblent à des « artefacts » générés par un modèle, mais exécutent des requêtes SQL sur ses propres données. https://simonwillison.net/2026/Nov/15/datasette-agent/ et https://simonwillison.net/2026/Nov/15/datasette-apps/</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-maplibre 0.1a0</strong> — premier greffon cartographique publié depuis longtemps pour Datasette : il associe la bibliothèque MapLibre GL au serveur de tuiles vectorielles libres OpenFreeMap, ce qui donne des cartes de fond sans service commercial. Version initiale, donc à considérer comme expérimentale. https://simonwillison.net/2026/Nov/15/datasette-maplibre/</p>
+<h2>Volume</h2>
+<p>77 entrées lues dans l'intervalle, 13 retenues, regroupées en 8 sujets, 64 écartées (dont deux articles de fond, un récit de blog, une promotion de fournisseur commercial, une annonce de modèle sans poids ouverts, un comparatif de matériel et plusieurs doublons du relais anglophone/francophone). La dernière collecte du journal Reddit s'est terminée sans erreur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — lundi 16 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-16.html</link>
