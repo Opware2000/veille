@@ -6,9 +6,142 @@
 <description>Veille quotidienne — pédagogique et scientifique — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/pedagogique.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 15 Nov 2026 05:05:23 +0100</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 05:05:30 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille pédagogique et scientifique — lundi 16 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-16.html</link>
+<guid isPermaLink="false">pedagogique-2026-11-16</guid>
+<pubDate>Mon, 16 Nov 2026 05:05:30 +0100</pubDate>
+<category>pédagogique et scientifique</category>
+<description><![CDATA[<h1>Veille pédagogique et scientifique — lundi 16 novembre 2026</h1>
+<h2>Informatique pédagogique et RUPN</h2>
+<ul>
+<li>
+<p><strong>CERT-FR : huit avis de sécurité publiés le vendredi 13 novembre (références AVI-1532 à AVI-1539).</strong> Ils couvrent les noyaux Linux de Debian, Ubuntu, Red Hat et SUSE, des produits IBM, les produits Axis, Progress Telerik et le navigateur Opera Neon. Rien d'extraordinaire, mais la série est là : si un serveur ou un poste de l'établissement tourne sous Debian, Ubuntu ou SUSE, c'est le moment de la mise à jour. <a href="https://www.cert.ssi.gouv.fr/">La liste des avis sur le site du CERT-FR</a></p>
+</li>
+<li>
+<p><strong>ANSSI — opération REACTIV, point de situation d'octobre (12 novembre).</strong> Après l'intensification des attaques par violation de données touchant les services de l'État, le Premier ministre a demandé le 1er septembre une capacité de réaction renforcée : l'ANSSI peut désormais imposer aux ministères, dans des délais contraints, des mesures d'urgence, et centralise la communication technique de crise. Deuxième point de situation, les chiffres sont révisables — c'est un document d'investigation en cours. <a href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2026-CTI-010/">CERTFR-2026-CTI-010</a></p>
+</li>
+<li>
+<p><strong>CNIL / CEPD : Corée du Sud, règles d'entreprise contraignantes, et recrutement par IA (12 novembre).</strong> Le Comité européen de la protection des données a adopté le 10 novembre une déclaration sur l'adéquation de la Corée du Sud, les versions finales des règles d'entreprise contraignantes applicables aux sous-traitants, et lancera en 2027 une action coordonnée sur les décisions automatisées dans le recrutement. Le sujet — un algorithme qui trie des candidatures, y compris des dossiers d'élèves en stage ou en apprentissage — est directement transposable à ce que tu expliques en SNT et en enseignement scientifique. <a href="https://www.cnil.fr/fr/actualite-du-cepd-adequation-de-la-coree-du-sud-versions-finales-des-bcr-st-et-action-coordonnee-sur">L'actualité sur le site de la CNIL</a></p>
+</li>
+</ul>
+<p>Rien de neuf côté ENT et Pix : l'espace RUPN n'a rien publié depuis le 14 novembre (dernier élément, Cocciquiz, signalé hier), la DRNE n'a envoyé aucun message Pix, la liste d'inspection SVT est toujours muette et le portail du CDI est inchangé depuis le 8 novembre.</p>
+<h2>IA pour le développement</h2>
+<ul>
+<li>
+<p><strong>opencode v2.3.0 (13 novembre).</strong> Trois changements visibles dans la note de version : les sous-agents tournent désormais en arrière-plan par défaut et reviennent quand ils deviennent inactifs ; l'interface replie chaque série d'appels d'outils dans une seule ligne dépliable (réglage « verbosity » pour tout revoir) ; et un « Jump to message » permet de retrouver un prompt antérieur dans la session. Côté technique, support expérimental des événements MCP, prise en charge de LM Studio comme modèle de décision, et certificat client pour les passerelles en TLS mutuel. <a href="https://github.com/anomalyco/opencode/releases/tag/v2.3.0">La note de version</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>OpenAI lance Daybreak, deux services de sécurité offensive et défensive (15 novembre, Korben).</strong> « Red Team » fait attaquer une copie isolée de tes applications par une flotte d'agents qui fouillent le code source ; « Defense Factory » remonte chaque faille jusqu'à la ligne fautive et dépose une demande de fusion avec un test qui prouve le correctif. Tout tourne sur GPT-6 Cyber, un modèle spécialisé sorti début novembre, avec validation humaine avant mise en production. À suivre, mais le discours — « l'IA qui attaque pour mieux défendre » — est exactement ce qu'on entend en classe. <a href="https://korben.info/openai-lance-daybreak-des-agents-ia-qui-piratent-vos-applis-pour-les-securiser.html">Korben</a></p>
+</li>
+<li>
+<p><strong>ZONOS3-Mini : clonage de voix et synthèse vocale temps réel, 100 millions de paramètres actifs (Zyphra, 10 novembre).</strong> Un modèle de synthèse vocale multilingue, publié en Apache 2.0, qui fait du clonage de voix en temps réel sur un budget de calcul minuscule — le genre de modèle qui peut se comparer au tien, en local, sans dépendre d'un service. <a href="https://huggingface.co/blog/Zyphra/zonos3-mini">Le billet de Zyphra sur le blog Hugging Face</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>LLMON, un langage de balisage pensé pour les modèles, désormais dans Granite 4.1 (IBM, 12 novembre).</strong> La sortie est double : un format qui communique explicitement la structure et les instructions au modèle, et des modèles 3 et 8 milliards de paramètres en version préliminaire pour l'exploiter. Intéressant si tu veux expérimenter un format de sortie contraint sans passer par du JSON bricolé à la main. <a href="https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite">Le billet IBM Granite</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>« Ton agent choisira le plus bricolable » (Geoff Stearns, 15 novembre, discuté sur Hacker News).</strong> L'auteur part d'un synthétiseur à 70 dollars dont les propriétaires ont réécrit le micrologiciel en quelques semaines avec des outils d'IA, avant que le fabricant ne publie le sien en GPLv3. Son pari : quand le logiciel coûte cher à écrire, le matériel devient une plateforme, et un agent qui conseille un achat privilégiera l'appareil que l'on peut modifier. Un argument à garder pour les discussions sur l'obsolescence et le libre. <a href="https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/">Le billet</a> · <a href="https://news.ycombinator.com/item?id=50510799">la discussion</a></p>
+</li>
+</ul>
+<h2>IA et éducation</h2>
+<ul>
+<li><strong>Alpha School, l'école sans professeurs propulsée par l'IA, n'atteint pas ses propres objectifs (Fortune, 14 novembre).</strong> Le réseau privé, jusqu'à 75 000 dollars par an et soutenu jusque dans l'administration américaine, promet à ses élèves d'apprendre deux fois plus vite en deux heures de matinée sur son application d'apprentissage ; ses propres données, révélées par le New York Times, montrent que seuls 42 % des élèves atteignent ce rythme en mathématiques <strong>et</strong> en lecture, qu'environ la moitié échoue l'objectif de mathématiques, et que ceux qui partaient en difficulté s'en sortent le moins bien. Le réseau s'installe maintenant dans l'école publique. À lire comme un contrepoint chiffré au discours « l'IA va accélérer les apprentissages ». <a href="https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/">Fortune</a></li>
+</ul>
+<p>Le thème ne tient qu'à cet article : ActuIA est toujours gelé (le collecteur passe toutes les six heures et ne remonte plus rien depuis le 4 novembre), et le Café pédagogique n'a rien publié depuis le 14 novembre.</p>
+<h2>Python pour l'enseignement</h2>
+<ul>
+<li><strong>Datasette 1.0a43 et un nouveau greffon cartographique, datasette-maplibre 0.1a0 (Simon Willison, 15 novembre).</strong> La version 1.0a43 apporte l'export en flux continu pour les rendus TSV et CSV (plus de fichier entier en mémoire) et corrige une faille signalée par avis GitHub : des requêtes enregistrées comme privées pouvaient exposer leur titre et leur SQL. Le greffon, lui, associe MapLibre GL et le serveur de cartes vectorielles libres OpenFreeMap, avec une démonstration qui tourne dans le navigateur grâce à Pyodide ; le rendu ne charge la carte qu'au moment où elle entre dans l'écran. Utile si tu veux faire manipuler des données géographiques en classe sans installer quoi que ce soit. <a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">Le billet sur le greffon</a> · <a href="https://simonwillison.net/">les deux billets sur son blog</a> — gratuit, open source.</li>
+</ul>
+<p>Aucune nouveauté dans les journaux suivis : la section Python de Developpez.com est muette depuis le 12 octobre, Human Coders News depuis le 13 octobre, l'étiquette Python du Journal du hacker depuis le 29 août, et la liste Capytale depuis le 8 novembre.</p>
+<h2>Sciences</h2>
+<ul>
+<li>
+<p><strong>L'El Niño de 2026 pourrait dépasser celui de 1997 (NASA, 14-15 novembre).</strong> Les relevés satellitaires montrent un épisode en intensification rapide, susceptible d'égaler ou de dépasser le phénomène de 1997-1998 et ses extrêmes météorologiques. Un support direct pour le chapitre climat et pour la différence entre variabilité naturelle et tendance de fond. <a href="https://www.sciencedaily.com/releases/2026/11/261114202227.htm">ScienceDaily, communiqué de la NASA</a></p>
+</li>
+<li>
+<p><strong>Des dinosaures côtiers mangeaient des algues il y a plus de 100 millions d'années (14 novembre).</strong> Les signatures chimiques conservées dans des dents fossilisées suggèrent que des apports marins nourrissaient des animaux terrestres — un bon exemple de ce qu'une mesure géochimique permet de déduire d'un régime alimentaire disparu. <a href="https://www.sciencedaily.com/releases/2026/11/261112230502.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Deux populations voisines de manchots à crête, deux destins opposés (14 novembre).</strong> Un recensement par drone montre qu'une population est stable depuis des décennies quand l'autre a perdu plus de 40 %, sous l'effet combiné de prédateurs, de tempêtes plus dures et d'un océan qui change. Illustration parfaite de l'effet d'un suivi global qui masque des situations locales très différentes. <a href="https://www.sciencedaily.com/releases/2026/11/261112230458.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Vitamine C et composés nitrosés dans l'estomac (14-15 novembre).</strong> Un modèle mathématique suggère que la vitamine C empêcherait la formation de composés potentiellement cancérigènes après ingestion de nitrates et de nitrites — donc du lien direct avec le programme d'alimentation et de santé. À présenter comme une modélisation, pas comme un résultat clinique. <a href="https://www.sciencedaily.com/releases/2026/11/261114202236.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Un acide aminé courant, l'arginine, et l'efficacité des défenses immunitaires (13-15 novembre).</strong> Chez la souris, un apport insuffisant en arginine gêne la reconnaissance des cellules dangereuses par le système immunitaire ; un régime enrichi s'accompagne de moins de tumeurs coliques et d'infections virales plus bénignes. Un angle concret pour l'immunologie, en gardant le statut expérimental bien visible. <a href="https://www.sciencedaily.com/releases/2026/11/261113232000.htm">ScienceDaily, travaux de l'université Rockefeller</a></p>
+</li>
+</ul>
+<p>Cinq articles scientifiques nouveaux, tous relayés depuis des communiqués de recherche (ScienceDaily) : Pour la Science n'a rien publié depuis le 14 novembre et Bio-Tremplins depuis son billet du 12 novembre, déjà signalé hier.</p>
+<h2>À retenir</h2>
+<p>Journée pauvre en sources institutionnelles, riche en revanche côté sciences et outillage. À retenir : l'El Niño de 2026 pourrait dépasser celui de 1997, deux populations de manchots à crête divergentes, opencode passe en 2.3.0 avec les sous-agents en arrière-plan, et l'école « tout IA » Alpha n'atteint pas ses propres objectifs — 42 % de ses élèves au rythme promis. Le CERT-FR a par ailleurs publié huit avis vendredi, dont les noyaux Linux.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille pédagogique et scientifique — lundi 16 novembre 2026</h1>
+<h2>Informatique pédagogique et RUPN</h2>
+<ul>
+<li>
+<p><strong>CERT-FR : huit avis de sécurité publiés le vendredi 13 novembre (références AVI-1532 à AVI-1539).</strong> Ils couvrent les noyaux Linux de Debian, Ubuntu, Red Hat et SUSE, des produits IBM, les produits Axis, Progress Telerik et le navigateur Opera Neon. Rien d'extraordinaire, mais la série est là : si un serveur ou un poste de l'établissement tourne sous Debian, Ubuntu ou SUSE, c'est le moment de la mise à jour. <a href="https://www.cert.ssi.gouv.fr/">La liste des avis sur le site du CERT-FR</a></p>
+</li>
+<li>
+<p><strong>ANSSI — opération REACTIV, point de situation d'octobre (12 novembre).</strong> Après l'intensification des attaques par violation de données touchant les services de l'État, le Premier ministre a demandé le 1er septembre une capacité de réaction renforcée : l'ANSSI peut désormais imposer aux ministères, dans des délais contraints, des mesures d'urgence, et centralise la communication technique de crise. Deuxième point de situation, les chiffres sont révisables — c'est un document d'investigation en cours. <a href="https://www.cert.ssi.gouv.fr/cti/CERTFR-2026-CTI-010/">CERTFR-2026-CTI-010</a></p>
+</li>
+<li>
+<p><strong>CNIL / CEPD : Corée du Sud, règles d'entreprise contraignantes, et recrutement par IA (12 novembre).</strong> Le Comité européen de la protection des données a adopté le 10 novembre une déclaration sur l'adéquation de la Corée du Sud, les versions finales des règles d'entreprise contraignantes applicables aux sous-traitants, et lancera en 2027 une action coordonnée sur les décisions automatisées dans le recrutement. Le sujet — un algorithme qui trie des candidatures, y compris des dossiers d'élèves en stage ou en apprentissage — est directement transposable à ce que tu expliques en SNT et en enseignement scientifique. <a href="https://www.cnil.fr/fr/actualite-du-cepd-adequation-de-la-coree-du-sud-versions-finales-des-bcr-st-et-action-coordonnee-sur">L'actualité sur le site de la CNIL</a></p>
+</li>
+</ul>
+<p>Rien de neuf côté ENT et Pix : l'espace RUPN n'a rien publié depuis le 14 novembre (dernier élément, Cocciquiz, signalé hier), la DRNE n'a envoyé aucun message Pix, la liste d'inspection SVT est toujours muette et le portail du CDI est inchangé depuis le 8 novembre.</p>
+<h2>IA pour le développement</h2>
+<ul>
+<li>
+<p><strong>opencode v2.3.0 (13 novembre).</strong> Trois changements visibles dans la note de version : les sous-agents tournent désormais en arrière-plan par défaut et reviennent quand ils deviennent inactifs ; l'interface replie chaque série d'appels d'outils dans une seule ligne dépliable (réglage « verbosity » pour tout revoir) ; et un « Jump to message » permet de retrouver un prompt antérieur dans la session. Côté technique, support expérimental des événements MCP, prise en charge de LM Studio comme modèle de décision, et certificat client pour les passerelles en TLS mutuel. <a href="https://github.com/anomalyco/opencode/releases/tag/v2.3.0">La note de version</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>OpenAI lance Daybreak, deux services de sécurité offensive et défensive (15 novembre, Korben).</strong> « Red Team » fait attaquer une copie isolée de tes applications par une flotte d'agents qui fouillent le code source ; « Defense Factory » remonte chaque faille jusqu'à la ligne fautive et dépose une demande de fusion avec un test qui prouve le correctif. Tout tourne sur GPT-6 Cyber, un modèle spécialisé sorti début novembre, avec validation humaine avant mise en production. À suivre, mais le discours — « l'IA qui attaque pour mieux défendre » — est exactement ce qu'on entend en classe. <a href="https://korben.info/openai-lance-daybreak-des-agents-ia-qui-piratent-vos-applis-pour-les-securiser.html">Korben</a></p>
+</li>
+<li>
+<p><strong>ZONOS3-Mini : clonage de voix et synthèse vocale temps réel, 100 millions de paramètres actifs (Zyphra, 10 novembre).</strong> Un modèle de synthèse vocale multilingue, publié en Apache 2.0, qui fait du clonage de voix en temps réel sur un budget de calcul minuscule — le genre de modèle qui peut se comparer au tien, en local, sans dépendre d'un service. <a href="https://huggingface.co/blog/Zyphra/zonos3-mini">Le billet de Zyphra sur le blog Hugging Face</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>LLMON, un langage de balisage pensé pour les modèles, désormais dans Granite 4.1 (IBM, 12 novembre).</strong> La sortie est double : un format qui communique explicitement la structure et les instructions au modèle, et des modèles 3 et 8 milliards de paramètres en version préliminaire pour l'exploiter. Intéressant si tu veux expérimenter un format de sortie contraint sans passer par du JSON bricolé à la main. <a href="https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite">Le billet IBM Granite</a> — gratuit, open source.</p>
+</li>
+<li>
+<p><strong>« Ton agent choisira le plus bricolable » (Geoff Stearns, 15 novembre, discuté sur Hacker News).</strong> L'auteur part d'un synthétiseur à 70 dollars dont les propriétaires ont réécrit le micrologiciel en quelques semaines avec des outils d'IA, avant que le fabricant ne publie le sien en GPLv3. Son pari : quand le logiciel coûte cher à écrire, le matériel devient une plateforme, et un agent qui conseille un achat privilégiera l'appareil que l'on peut modifier. Un argument à garder pour les discussions sur l'obsolescence et le libre. <a href="https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/">Le billet</a> · <a href="https://news.ycombinator.com/item?id=50510799">la discussion</a></p>
+</li>
+</ul>
+<h2>IA et éducation</h2>
+<ul>
+<li><strong>Alpha School, l'école sans professeurs propulsée par l'IA, n'atteint pas ses propres objectifs (Fortune, 14 novembre).</strong> Le réseau privé, jusqu'à 75 000 dollars par an et soutenu jusque dans l'administration américaine, promet à ses élèves d'apprendre deux fois plus vite en deux heures de matinée sur son application d'apprentissage ; ses propres données, révélées par le New York Times, montrent que seuls 42 % des élèves atteignent ce rythme en mathématiques <strong>et</strong> en lecture, qu'environ la moitié échoue l'objectif de mathématiques, et que ceux qui partaient en difficulté s'en sortent le moins bien. Le réseau s'installe maintenant dans l'école publique. À lire comme un contrepoint chiffré au discours « l'IA va accélérer les apprentissages ». <a href="https://fortune.com/2026/11/14/alpha-school-ai-students-tuition-learning-goals/">Fortune</a></li>
+</ul>
+<p>Le thème ne tient qu'à cet article : ActuIA est toujours gelé (le collecteur passe toutes les six heures et ne remonte plus rien depuis le 4 novembre), et le Café pédagogique n'a rien publié depuis le 14 novembre.</p>
+<h2>Python pour l'enseignement</h2>
+<ul>
+<li><strong>Datasette 1.0a43 et un nouveau greffon cartographique, datasette-maplibre 0.1a0 (Simon Willison, 15 novembre).</strong> La version 1.0a43 apporte l'export en flux continu pour les rendus TSV et CSV (plus de fichier entier en mémoire) et corrige une faille signalée par avis GitHub : des requêtes enregistrées comme privées pouvaient exposer leur titre et leur SQL. Le greffon, lui, associe MapLibre GL et le serveur de cartes vectorielles libres OpenFreeMap, avec une démonstration qui tourne dans le navigateur grâce à Pyodide ; le rendu ne charge la carte qu'au moment où elle entre dans l'écran. Utile si tu veux faire manipuler des données géographiques en classe sans installer quoi que ce soit. <a href="https://simonwillison.net/2026/Nov/15/datasette-maplibre/">Le billet sur le greffon</a> · <a href="https://simonwillison.net/">les deux billets sur son blog</a> — gratuit, open source.</li>
+</ul>
+<p>Aucune nouveauté dans les journaux suivis : la section Python de Developpez.com est muette depuis le 12 octobre, Human Coders News depuis le 13 octobre, l'étiquette Python du Journal du hacker depuis le 29 août, et la liste Capytale depuis le 8 novembre.</p>
+<h2>Sciences</h2>
+<ul>
+<li>
+<p><strong>L'El Niño de 2026 pourrait dépasser celui de 1997 (NASA, 14-15 novembre).</strong> Les relevés satellitaires montrent un épisode en intensification rapide, susceptible d'égaler ou de dépasser le phénomène de 1997-1998 et ses extrêmes météorologiques. Un support direct pour le chapitre climat et pour la différence entre variabilité naturelle et tendance de fond. <a href="https://www.sciencedaily.com/releases/2026/11/261114202227.htm">ScienceDaily, communiqué de la NASA</a></p>
+</li>
+<li>
+<p><strong>Des dinosaures côtiers mangeaient des algues il y a plus de 100 millions d'années (14 novembre).</strong> Les signatures chimiques conservées dans des dents fossilisées suggèrent que des apports marins nourrissaient des animaux terrestres — un bon exemple de ce qu'une mesure géochimique permet de déduire d'un régime alimentaire disparu. <a href="https://www.sciencedaily.com/releases/2026/11/261112230502.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Deux populations voisines de manchots à crête, deux destins opposés (14 novembre).</strong> Un recensement par drone montre qu'une population est stable depuis des décennies quand l'autre a perdu plus de 40 %, sous l'effet combiné de prédateurs, de tempêtes plus dures et d'un océan qui change. Illustration parfaite de l'effet d'un suivi global qui masque des situations locales très différentes. <a href="https://www.sciencedaily.com/releases/2026/11/261112230458.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Vitamine C et composés nitrosés dans l'estomac (14-15 novembre).</strong> Un modèle mathématique suggère que la vitamine C empêcherait la formation de composés potentiellement cancérigènes après ingestion de nitrates et de nitrites — donc du lien direct avec le programme d'alimentation et de santé. À présenter comme une modélisation, pas comme un résultat clinique. <a href="https://www.sciencedaily.com/releases/2026/11/261114202236.htm">ScienceDaily</a></p>
+</li>
+<li>
+<p><strong>Un acide aminé courant, l'arginine, et l'efficacité des défenses immunitaires (13-15 novembre).</strong> Chez la souris, un apport insuffisant en arginine gêne la reconnaissance des cellules dangereuses par le système immunitaire ; un régime enrichi s'accompagne de moins de tumeurs coliques et d'infections virales plus bénignes. Un angle concret pour l'immunologie, en gardant le statut expérimental bien visible. <a href="https://www.sciencedaily.com/releases/2026/11/261113232000.htm">ScienceDaily, travaux de l'université Rockefeller</a></p>
+</li>
+</ul>
+<p>Cinq articles scientifiques nouveaux, tous relayés depuis des communiqués de recherche (ScienceDaily) : Pour la Science n'a rien publié depuis le 14 novembre et Bio-Tremplins depuis son billet du 12 novembre, déjà signalé hier.</p>
+<h2>À retenir</h2>
+<p>Journée pauvre en sources institutionnelles, riche en revanche côté sciences et outillage. À retenir : l'El Niño de 2026 pourrait dépasser celui de 1997, deux populations de manchots à crête divergentes, opencode passe en 2.3.0 avec les sous-agents en arrière-plan, et l'école « tout IA » Alpha n'atteint pas ses propres objectifs — 42 % de ses élèves au rythme promis. Le CERT-FR a par ailleurs publié huit avis vendredi, dont les noyaux Linux.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique et scientifique — dimanche 15 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-15.html</link>
