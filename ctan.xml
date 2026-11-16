@@ -6,9 +6,48 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 15 Nov 2026 01:41:56 +0100</lastBuildDate>
+<lastBuildDate>Mon, 16 Nov 2026 01:41:26 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — lundi 16 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-16.html</link>
+<guid isPermaLink="false">ctan-2026-11-16</guid>
+<pubDate>Mon, 16 Nov 2026 01:41:26 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — lundi 16 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Vingt et une annonces parues le 15 novembre. Un seul paquet de votre liste a bougé, chemfig 1.84, et ses changements ne portent que sur la documentation. Deux mises à jour notables à côté (asymptote 3.16, tcbpagefootnote 1.1) et un nouveau paquet inattendu, cacography.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>chemfig 1.84</strong> — 14 novembre 2026, LPPL 1.3c — https://ctan.org/pkg/chemfig</p>
+<p>Le manuel anglais est de nouveau disponible, la traduction ayant été refaite par Evys Ancede Gallardo, et quelques erreurs y ont été corrigées. Le code du paquet n'est pas touché par cette version : rien à adapter dans nBook3, la mise à jour se limite à la documentation. À savoir, la version 1.83 parue le 7 novembre — déjà traitée par une édition précédente — portait les corrections de fond, dont les raccords de liaisons entre deux carbones asymétriques avec <code>bond join=true</code>. Vos figures de chimie restent donc dessinées par le même code, sans risque de régression.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>cacography 0.14.0b1</strong> — LPPL 1.3c — https://ctan.org/pkg/cacography</p>
+<p>Un paquet inhabituel : on continue d'écrire ses notes en LaTeX, et le rendu produit des photos de notes manuscrites comme si elles avaient été prises au téléphone, avec le texte composé laissé dessous de façon que le PDF reste cherchable. LuaLaTeX met en page le document à des proportions d'écriture manuscrite et enregistre chaque page ; un moteur séparé, installé hors du monde TeX (<code>pip install cacography</code>), écrit ensuite chaque page à la main et la photographie sur un bureau, puis la place dans le PDF. C'est une première bêta (version 0.14.0b1) et elle exige LuaLaTeX, donc pas votre chaîne pdfLaTeX habituelle. Je le signale parce qu'il ouvre une piste pour produire des documents qui n'aient pas l'air composés par une machine, mais je ne le présente pas comme un outil utilisable avant qu'il ait été essayé.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>asymptote 3.16</strong> (LGPL 3) — https://ctan.org/pkg/asymptote — le langage de dessin vectoriel qui accompagne TeX reçoit une fonction <code>write()</code> hétérogène (tableaux de structures, arguments restants et nommés, diagnostics améliorés) et la coloration des surfaces sommet par sommet (<code>vertexPen</code>, <code>cornerPen</code>). Le catalogue CTAN ne donne pas de date pour cette version.</li>
+<li><strong>tcbpagefootnote 1.1</strong> (LPPL 1.3c, 14 novembre) — https://ctan.org/pkg/tcbpagefootnote — correctif pour les notes de bas de page appelées depuis l'intérieur d'un <code>tcolorbox</code> : avec hyperref, un <code>\footnotetext</code> placé après la boîte ne rejoignait pas la numérotation des notes de la page. C'est un paquet compagnon de tcolorbox, que vous utilisez, mais sans effet si vous n'appelez pas sa clé <code>page footnote</code>.</li>
+</ul>
+<h2>Volume</h2>
+<p>21 annonces parues le 15 novembre (de 7 h 13 à 20 h 09 UTC), 4 retenues, dont 1 concernant un paquet de votre liste ; 17 écartées. Motifs d'exclusion dominants : la grappe HEP, treize annonces du bundle de physique des hautes énergies (HEP-acronym, HEP-Bibliography, HEP-CV, HEP-float, HEP-font, HEP-graphic, hep-math, HEP-math-font, HEP-Paper, HEP-reference, HEP-Text, hep-title et HEP-talk), trois paquets d'écritures non latines ou de mise en page de droite à gauche (beamer-rl et BabelBidi pour le RTL, LuaCJK pour le chinois), et un gabarit de rapports techniques propres à une université brésilienne (gmap-ufrgs).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — lundi 16 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Vingt et une annonces parues le 15 novembre. Un seul paquet de votre liste a bougé, chemfig 1.84, et ses changements ne portent que sur la documentation. Deux mises à jour notables à côté (asymptote 3.16, tcbpagefootnote 1.1) et un nouveau paquet inattendu, cacography.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>chemfig 1.84</strong> — 14 novembre 2026, LPPL 1.3c — https://ctan.org/pkg/chemfig</p>
+<p>Le manuel anglais est de nouveau disponible, la traduction ayant été refaite par Evys Ancede Gallardo, et quelques erreurs y ont été corrigées. Le code du paquet n'est pas touché par cette version : rien à adapter dans nBook3, la mise à jour se limite à la documentation. À savoir, la version 1.83 parue le 7 novembre — déjà traitée par une édition précédente — portait les corrections de fond, dont les raccords de liaisons entre deux carbones asymétriques avec <code>bond join=true</code>. Vos figures de chimie restent donc dessinées par le même code, sans risque de régression.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>cacography 0.14.0b1</strong> — LPPL 1.3c — https://ctan.org/pkg/cacography</p>
+<p>Un paquet inhabituel : on continue d'écrire ses notes en LaTeX, et le rendu produit des photos de notes manuscrites comme si elles avaient été prises au téléphone, avec le texte composé laissé dessous de façon que le PDF reste cherchable. LuaLaTeX met en page le document à des proportions d'écriture manuscrite et enregistre chaque page ; un moteur séparé, installé hors du monde TeX (<code>pip install cacography</code>), écrit ensuite chaque page à la main et la photographie sur un bureau, puis la place dans le PDF. C'est une première bêta (version 0.14.0b1) et elle exige LuaLaTeX, donc pas votre chaîne pdfLaTeX habituelle. Je le signale parce qu'il ouvre une piste pour produire des documents qui n'aient pas l'air composés par une machine, mais je ne le présente pas comme un outil utilisable avant qu'il ait été essayé.</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>asymptote 3.16</strong> (LGPL 3) — https://ctan.org/pkg/asymptote — le langage de dessin vectoriel qui accompagne TeX reçoit une fonction <code>write()</code> hétérogène (tableaux de structures, arguments restants et nommés, diagnostics améliorés) et la coloration des surfaces sommet par sommet (<code>vertexPen</code>, <code>cornerPen</code>). Le catalogue CTAN ne donne pas de date pour cette version.</li>
+<li><strong>tcbpagefootnote 1.1</strong> (LPPL 1.3c, 14 novembre) — https://ctan.org/pkg/tcbpagefootnote — correctif pour les notes de bas de page appelées depuis l'intérieur d'un <code>tcolorbox</code> : avec hyperref, un <code>\footnotetext</code> placé après la boîte ne rejoignait pas la numérotation des notes de la page. C'est un paquet compagnon de tcolorbox, que vous utilisez, mais sans effet si vous n'appelez pas sa clé <code>page footnote</code>.</li>
+</ul>
+<h2>Volume</h2>
+<p>21 annonces parues le 15 novembre (de 7 h 13 à 20 h 09 UTC), 4 retenues, dont 1 concernant un paquet de votre liste ; 17 écartées. Motifs d'exclusion dominants : la grappe HEP, treize annonces du bundle de physique des hautes énergies (HEP-acronym, HEP-Bibliography, HEP-CV, HEP-float, HEP-font, HEP-graphic, hep-math, HEP-math-font, HEP-Paper, HEP-reference, HEP-Text, hep-title et HEP-talk), trois paquets d'écritures non latines ou de mise en page de droite à gauche (beamer-rl et BabelBidi pour le RTL, LuaCJK pour le chinois), et un gabarit de rapports techniques propres à une université brésilienne (gmap-ufrgs).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — dimanche 15 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-15.html</link>
