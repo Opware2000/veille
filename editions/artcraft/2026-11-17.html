@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — mardi 17 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un projet communautaire de modeleur 3D pousse/pousse-tire, écrit en Rust sous licence MIT, cherche à s'interfacer avec l'étape 3D d'ArtCraft ; un tableau de bord libre pour piloter les serveurs MCP de la suite fait aussi son apparition. Côté officiel, l'équipe ouvre le débat sur un format de fichier natif pour PhotoCraft, et le dépôt fait évoluer la détection des types de fichiers. La collecte du subreddit a échoué une fois dans la nuit (limite de débit), sans conséquence sur cette édition.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>Le dépôt officiel détecte les types de fichiers avec sa propre table de signatures</h3>
+<p>Un commit mergé dans <code>storytold/artcraft</code> (auteur : FredApps) remplace la bibliothèque tierce <code>infer</code> et les détections locales GLB/FBX/PLY par <code>craft-sniff</code>, une table de signatures maison partagée entre les applications. Conséquences visibles : les fichiers WAV et FLAC sont désormais reconnus comme <code>audio/wav</code> et <code>audio/flac</code>, ce qui débloque les conversions de format existantes ; en revanche, les polices et les documents bureautiques ressortent maintenant en « type inconnu », la nouvelle table n'ayant pas de signature pour eux. Les fonctions publiques ne changent pas, il s'agit donc d'un travail de fond plutôt que d'une nouveauté visible.<br />
+Lien : https://github.com/storytold/artcraft/commit/69f53c2f0358a91a5e35e5a7b3a91677320c3112</p>
+<h3>PhotoCraft : format de fichier natif ou tout-en-PSD ?</h3>
+<p>Un intervenant qui se présente comme membre de l'équipe de développement de PhotoCraft (pseudonyme Hoangduong314) expose un dilemme d'architecture pour les prochaines versions : créer un format de fichier propre à chaque application de la suite, ou tout bâtir sur le <code>.psd</code>. Le support du PSD reste non négociable pour l'interopérabilité, mais y loger des fonctions que Photoshop ne connaît pas risque la corruption de fichier ou la perte de données d'une application à l'autre ; un format propriétaire est aussi, dans les grandes suites, ce qui permet de faire tenir un écosystème cohérent. L'auteur demande aux utilisateurs s'ils accepteraient de travailler dans un format natif ArtCraft et de n'exporter en PSD qu'au besoin. Rien n'est décidé : il s'agit d'une consultation, mais elle annonce la direction technique des prochains mois.<br />
+Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxckyj/thoughts_on_native_file_formats_vs_sticking/</p>
+<h3>« Let's Open Source the World » — intervention de Brandon Thomas</h3>
+<p>Le fondateur d'ArtCraft apparaît dans une publication partagée sur le subreddit par aliendude5300, intitulée « Let's Open Source the World ». Le post ne contient aucun texte ni description dans le journal collecté : il s'agit d'un lien vers une intervention, vraisemblablement une conférence ou une émission, dont je n'ai pas pu vérifier le contenu depuis la collecte (Reddit refuse l'accès direct depuis le serveur). À confirmer donc, mais le signal mérite d'être suivi si la vidéo est retrouvée.<br />
+Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxtk2h/lets_open_source_the_world_brandon_thomas_artcraft/</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>SketchCraft — modeleur 3D libre en Rust, aligné sur l'esprit des Craft</h3>
+<p>Développé par un membre de la communauté (pseudonyme Apprehensive_Fly_493), SketchCraft est un modeleur 3D par poussée/tirage publié sous licence MIT, écrit en Rust avec une interface Tauri et React. Il ouvre les fichiers SketchUp, DWG/DXF et IFC, convertit les plans de bâtiment en murs, gère les plans cotés, les études d'ensoleillement et le rendu photoréaliste, et toutes ses actions sont pilotables par MCP. L'auteur propose de le brancher sur l'étape 3D d'ArtCraft — modéliser un décor et une caméra d'un côté, générer de l'autre — et se dit prêt à changer de nom si « Craft » gêne la marque. Version courante : 0.3.4. Projet indépendant, sans lien officiel avec ArtCraft à ce stade.<br />
+Lien : https://github.com/jasonsutter87/sketchcraft — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxidl1/sketchcraft_an_opensource_mit_pushpull_3d_modeler/</p>
+<h3>craft-mcp-hub — un tableau de bord pour les serveurs MCP de la suite</h3>
+<p>Signé FaitaRyuu (dépôt sous le compte AndrianLeah), cet outil libre rassemble en une seule fenêtre la gestion des serveurs MCP des applications ArtCraft : il les maintient actifs en arrière-plan sans avoir à garder les applications ouvertes, permet de les activer ou de les couper, de changer les ports et de voir pourquoi une connexion échoue. Il configure aussi automatiquement Claude Code, Cursor, VS Code et quelques autres clients. L'auteur n'a testé que la version Windows ; des versions macOS et Linux existent sans garantie de fonctionnement. Outil communautaire non officiel, donc à essayer avec prudence.<br />
+Lien : https://github.com/AndrianLeah/craft-mcp-hub — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxnfqt/made_a_small_dashboard_for_the_artcraft_mcp/</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Une recherche sur les logiciels comparables (ComfyUI, InvokeAI, Krita AI Diffusion, alternatives libres à la suite Adobe) ne remonte rien de notable publié dans les dernières 24 heures ; les résultats datent d'octobre ou début novembre.</p>
+<p>À l'inverse, un signal interne au subreddit : un utilisateur (pseudonyme JarlBallnuts) rapporte que GridCraft traite correctement l'empilement des règles de mise en forme conditionnelle, là où LibreOffice Calc s'arrête à la première règle satisfaite et ignore les suivantes — un défaut ancien de Calc qu'il documente par deux fils du subreddit LibreOffice datant de 2024 et 2025 et par des captures d'écran. Il en fait son futur tableur quotidien. C'est un retour d'utilisateur, non vérifié de mon côté, mais il porte sur un comportement précis et mesurable plutôt que sur une impression.<br />
+Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxsler/gridcraft_finally_fixed_libreoffice_calcs_borked/</p>
+<h2>À signaler</h2>
+<p>La collecte du subreddit a échoué lors de sa dernière passe (16 novembre à 23 h 51 UTC) avec une erreur 429 « Too Many Requests » de Reddit, et aucun nouveau post n'a été enregistré à ce moment-là. Les posts de la journée avaient toutefois été collectés plus tôt : cette édition n'est pas amputée, mais une édition future pourrait l'être si la limite de débit se répète.</p>
+<p>Un utilisateur (pseudonyme SpikeNotMike) demande par ailleurs s'il y a une explication à l'absence de nouvelle publication du dépôt GitHub ; aucune réponse officielle dans le journal. La dernière version publiée reste ArtCraft v0.41.1, datée du 7 novembre 2026 — l'intervalle est court, mais l'activité du dépôt se poursuit sur la branche principale.</p>
+<h2>Volume</h2>
+<p>17 entrées examinées (16 posts du subreddit, 1 commit du dépôt officiel), 6 retenues, 11 écartées.</p>
+<footer>Édition du mardi 17 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
