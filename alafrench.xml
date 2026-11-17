@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Veille À la French 💻 (YouTube)</title>
+<link>https://opware2000.github.io/veille/index.html</link>
+<description>Veille hebdomadaire — À la French 💻 (YouTube) — éditions rédigées pour Nicolas.</description>
+<language>fr-fr</language>
+<atom:link href="https://opware2000.github.io/veille/alafrench.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Tue, 17 Nov 2026 18:30:16 +0100</lastBuildDate>
+<generator>Hermes Agent — veille_rss.py</generator>
+<ttl>15</ttl>
+<item>
+<title>À la French 💻 — semaine du mardi 17 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/alafrench/2026-11-17.html</link>
+<guid isPermaLink="false">alafrench-2026-11-17</guid>
+<pubDate>Tue, 17 Nov 2026 18:30:16 +0100</pubDate>
+<category>À la French 💻 (YouTube)</category>
+<description><![CDATA[<h1>À la French 💻 — semaine du mardi 17 novembre 2026</h1>
+<p>14 vidéos nouvelles sur la chaîne YouTube « À la French 💻 » (@alafrench) : un épisode long et 13 extraits courts, tous tirés des épisodes récents. Résumés établis à partir des transcriptions françaises automatiques (chaque section porte sa réserve).</p>
+<p>Édition reconstituée depuis les résumés produits le 17 novembre 2026, avant la bascule de la veille vers le flux RSS.</p>
+<h2>PHP, Linux, SSL : l’IA trouve toutes les failles et pourquoi ça va continuer</h2>
+<p>Lien : https://youtu.be/ay-1QZZjlFU — durée 1:20:38 — transcription française AUTOMATIQUE (non révisée).</p>
+<p>RÉSUMÉ GÉNÉRAL<br />
+Épisode enregistré le jour de sa publication (17 novembre 2026) sur la « vulnapocalypse » : les failles de sécurité découvertes en masse depuis que les agents de code se sont généralisés. L’invité est ingénieur sécurité à la Fondation PHP, CTO de la coopérative où il travaille et mainteneur du framework Symfony ; il est arrivé à la Fondation en juillet. Pour lui, ce qui a changé début 2026, ce n’est pas le nombre de failles mais leur exploitabilité : là où un chercheur humain enchaînait une trentaine d’étapes, un agent en enchaîne 250 sans se lasser, ce qui rend critiques des failles jugées mineures. Il raconte de l’intérieur la coordination du patch de la faille « PHP2Shell » (deux failles permettant l’exécution de code à distance), trouvée par Quarkslab en 2024, redécouverte en août 2026 avec une preuve de concept par des IA, dont la sortie a été avancée au 21 octobre après des fuites et une rupture d’embargo. Il décrit aussi l’écosystème PHP (WordPress, Symfony, Laravel, Composer, FrankenPHP), une Fondation financée à 100 % par les dons avec environ un million de dollars par an et 4 à 5 personnes pour la sécurité d’un langage qui fait tourner une grande partie du web. Il conclut que les failles les plus dangereuses du moment ne sont pas PHP2Shell (difficile à exploiter) mais la faille SSH d’Alpine Linux et la RCE MPTCP du noyau Linux, et appelle à « arrêter de chercher, commencer à patcher ».</p>
+<p>SECTIONS THÉMATIQUES ET HORODATAGES</p>
+<p>00:00 – Introduction : « vulnapocalypse »<br />
+Jusqu’à 70 % du web menacé par une faille critique ; des sites de gouvernements arrêtés ; annonce de la conférence À la French du 3 décembre.</p>
+<p>04:01 – L’invité et son parcours<br />
+CTO de la coopérative, ingénieur sécurité à la Fondation PHP depuis juillet, mainteneur de Symfony. Il dit avoir senti monter le sujet via Symfony, puis « l’explosion » des agents en début d’année 2026 : « un carnage total ».</p>
+<p>07:00 – Ce que les agents d’IA changent<br />
+Rappel des techniques anciennes (return-oriented programming, contournement de l’ASLR, side channels, differencing de binaires) qui demandaient une trentaine d’étapes humaines ; avec les agents, des chaînes de 250 étapes. Conséquence : des failles « pas importantes » deviennent exploitables quand on les combine.</p>
+<p>09:34 – Comment on devient responsable sécurité d’un projet open source<br />
+La confiance d’abord : des centaines de contributions, des rencontres en conférence, le souvenir de XZ. La Fondation lance une équipe sécurité financée notamment par la Fondation Linux et son initiative Alpha-Omega ; un modèle d’IA très puissant, banni par le gouvernement américain, est mis à disposition d’organismes autorisés. Il propose son aide, est finalement rémunéré pour traiter les rapports.</p>
+<p>13:35 – Le déficit de temps humain<br />
+Les rapports ont « peut-être x 10 » depuis la médiatisation : plusieurs dizaines par jour. Pour le langage qui fait tourner 70 % du web mesurable : « on va dire quatre ou cinq à devoir tout gérer ». Il développe un outil interne, open source, intégré à GitHub, qui pré-analyse, déduplique et priorise les rapports, faute d’outil existant.</p>
+<p>17:00 – L’écosystème PHP<br />
+WordPress autour de 43-45 % du web et 60 % des blogs ; PrestaShop environ la moitié du e-commerce ; Symfony et Laravel comme « mastodontes », Drupal et Joomla ; historique du langage (1994-95, PHP 3/4/5, l’hiver de PHP, PHP 6 sauté par vote de RFC, PHP 7 avec AST et compilateur JIT) ; FrankenPHP : PHP avec serveur web intégré dans un seul binaire, basé sur Caddy, dépôt déplacé sous l’organisation PHP.</p>
+<p>26:40 – La Fondation PHP<br />
+Créée en 2021-2022 dans l’orbite d’Open Collective, à l’initiative notamment d’une personne de JetBrains, après le départ d’un des plus gros contributeurs, Nikita Popov ; budget d’environ un million de dollars par an, financé à 100 % par les dons ; aucune autorité sur le projet PHP lui-même, qui garde son processus de RFC.</p>
+<p>30:05 – Composer et Packagist<br />
+Un seul gestionnaire de dépendances réputé efficace, une seule registre, environ 300 000 paquets.</p>
+<p>34:15 – PHP2Shell, de l’intérieur<br />
+Deux failles permettant l’exécution de code à distance (RCE), trouvées par Quarkslab en 2024 lors d’un audit financé par le Sovereign Tech Fund (l’Allemagne utilise beaucoup PHP pour ses sites gouvernementaux) ; à l’époque impossible à exploiter. 1er août 2026 : des modèles d’OpenAI et de Calif retrouvent la même chose et apportent une preuve de concept. Le patch : environ 10 000 lignes de C, quasi entièrement écrites à la main ; trois personnes y travaillent à plein temps. Fuite des identifiants CVE sur Hacker News (annoncés à 10/10, en réalité 9,3), vidéo de la preuve de concept publiée par erreur par une entreprise de sécurité, puis rupture unilatérale de l’embargo par Chainguard qui déploie ses binaires patchés environ vingt heures avant l’échéance — ce qui rend possible le « différentiel binaire » par LLM pour deviner ce qui a été corrigé. La sortie est avancée du 22 au 21 octobre.</p>
+<p>54:00 – Après le patch<br />
+Un seul exploit connu publiquement au départ (un défi Bitcoin d’environ 2000 dollars, apparemment récupérés) ; beaucoup de prétentions d’exploitation en local non confirmées sur le réseau ; le communiqué de la Fondation reste prudent (« on espère avoir tout patché »). Un tweet de la NSA conseille de passer hors ligne si l’on n’a pas patché sous 24 heures. Le retentissement vient de la formulation « 70 % du web », comprise hors du monde technique. Côté VideoLAN : forum et wiki coupés, mise à jour compliquée, problème de référencement du générateur de site statique ; réception d’une poignée d’e-mails par jour de ministères (Intérieur, allemand, américain) ; une application désactivée sur un parc Android.</p>
+<p>1:02:30 – Les failles plus préoccupantes, selon l’invité<br />
+SSH d’Alpine Linux : pour un utilisateur sans mot de passe, toute chaîne de plus de 256 caractères est acceptée comme mot de passe valide. Noyau Linux : une release affichant 1500 CVE ; une IA aurait fait tourner un modèle pour l’équivalent d’environ 1,2 million de dollars de calcul et corrigé 960 failles. La RCE de la pile MPTCP : une option activée quasiment partout (téléphones, téléviseurs récents, objets connectés), un paquet forgé suffit — des centaines de millions de machines potentiellement concernées et, pour beaucoup, plus maintenues (kernels liés aux puces, forsqués, fin de mises à jour après deux ou trois ans).</p>
+<p>1:08:45 – L’IA côté défense<br />
+Accès à des modèles sans garde-fous via des partenariats, avec clé de sécurité, sur le dépôt PHP uniquement et sous surveillance. Outil interne open source de triage et de déduplication ; usage des modèles pour chercher tous les points d’entrée d’une vulnérabilité.</p>
+<p>1:11:30 – Bug bounties, maintenance, événements<br />
+Fin du programme de prime : la trouvaille est devenue bon marché, mais personne n’envoie de patch ; le « vrai » travail est de comprendre la cause racine. Initiatives pour aider à patcher ; outil « Scrutinier » pour industrialiser la recherche autorisée de failles dans plusieurs écosystèmes ; Ubuntu trois semaines sans correctif MPTCP. Enfin l’appel de l’association française des utilisateurs de PHP, signé par plus de 80 organisateurs d’événements : les conférences indépendantes et associatives meurent faute de financement, le forum annuel à Disneyland (600 à 800 personnes) pourrait disparaître, et « quatre conférences sur dix » ne seront peut-être plus là l’an prochain ; un rendez-vous est prévu le 3 décembre.</p>
+<p>CITATIONS CLÉS (transcription automatique, à prendre comme des propos reconstitués)<br />
+- « Tu avais une trentaine d’étapes… Là, tu arrives, il y a 250 étapes, l’agent il s’en fiche, lui, il a un but. »<br />
+- « C’est très difficile de gérer un influx de faille de sécurité parce que tu sais pas où en mettre de la tête. »<br />
+- « Le langage qui fait tourner 70 % du web mesurable… on va dire quatre ou cinq à devoir tout gérer. »<br />
+- « Arrêtez de chercher, commencez à patcher. »<br />
+- « Il y en a pas un seul qui t’envoie un patch. »</p>
+<p>CONCLUSION<br />
+L’IA n’a pas créé les failles : elle les a rendues exploitées. La réponse tenable, telle que défendue dans l’épisode, est humaine et structurelle — du temps, de la confiance, des relais sur la maintenance, du financement des écosystèmes et des communautés, et un tri sévère entre le bruit médiatique et les failles réellement dangereuses.</p>
+<p>RÉSERVE<br />
+Transcription automatique : les noms propres sont systématiquement déformés ou approximatifs (l’invité est orthographié « Dobois/Debois » à l’écoute ; les modèles, entreprises et outils cités sont rendus phonétiquement). Vérifier tout nom ou chiffre directement sur la fiche de la vidéo avant de réutiliser ce résumé.</p>
+<p>(Éléments de contexte repris de la fiche officielle de la vidéo : invité Alexandre Daubois, ingénieur sécurité à la Fondation PHP, CTO de la coopérative Les-Tilleuls.coop, mainteneur du framework Symfony.)</p>
+<h2>La mi-temps qui fait trembler le réseau électrique anglais ☕️⚽️</h2>
+<p>Lien : https://youtu.be/KyENcGgoUy8 — extrait de 47 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait consacré aux effets des grands matchs de football sur le réseau : la mi-temps en Angleterre est le moment où tout le monde met sa bouilloire en route (« tout le monde va mettre sa théière »), un appel de puissance massif qu’il faut anticiper — ce sont les gestionnaires du réseau qui doivent prévoir des térawattheures, et les prolongations (si match nul) compliquent la prévision. L’extrait décrit ensuite ce qui se passe en salle de contrôle : un gros match est signalé comme « événement » dans le centre opérationnel. Un second exemple est donné : en Serbie-Kosovo, un dérèglement du réseau a fait dériver la fréquence, et les horloges de la région ont pris jusqu’à six minutes de retard. Le commentaire précise que peu d’horloges fonctionnent encore sur la fréquence du réseau — surtout les fours à micro-ondes — et que l’intervenant regarde justement l’heure de son micro-ondes pour savoir quand sortir de chez lui.</p>
+<p>CITATION<br />
+« Attention match de foot… là on a dans notre NOC, dans notre centrale, on dit bah là il y a événement. »</p>
+<p>RÉSERVE<br />
+Transcription automatique et dialogues entrecroisés : passage très lacunaire par endroits, plusieurs phrases sont inachevées. Aucun élément extérieur à la transcription n’a été ajouté.</p>
+<h2>Ce disque en verre vous dit la tension d'une ligne haute tension</h2>
+<p>Lien : https://youtu.be/NH2zITly54I — extrait de 52 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+On présente un objet en verre, « qui permet de faire un beau presse-papier » : un isolateur. Il porte un petit crochet qui permet de chaîner plusieurs isolateurs entre eux, et c’est exactement ce qui est installé pour isoler le câble du pylône — un câble posé directement sur le pylône serait mis à la terre et provoquerait un court-circuit. Chaque élément isole entre 15 et 20 kilovolts, alors que la ligne évoquée est à 400 000 volts, ce qui explique qu’on voie des chaînes entières d’isolateurs. Un moyen pratique de le vérifier, plaisante l’extrait : faire du covoiturage avec des gens qui travaillent chez RTE, qui comptent les éléments et vous disent « là il y en a 20, c’est du 400 000 ».</p>
+<p>CITATION<br />
+« Ça isole entre 15 et 20 kilovolts. Sachant que là on est à 400 000. »</p>
+<p>RÉSERVE<br />
+Transcription automatique imparfaite (répétitions, mots tronqués). Aucun élément extérieur n’a été ajouté.</p>
+<h2>Ton entraînement d'IA plante : pour le réseau électrique, c'est un non-événement</h2>
+<p>Lien : https://youtu.be/u4eksAoUiDo — extrait de 50 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur la résilience instantanée du réseau électrique. Exemple donné : un entraînement de modèle d’IA qui consomme beaucoup puis plante, la consommation s’effondrant brutalement — de 100 mégawatts à 30, par exemple. Pour le gestionnaire, c’est un « non-événement » : si de la consommation en mégawatts disparaît, une apparition équivalente se produit ailleurs, à proximité dans le temps, et tout se compense naturellement. La comparaison est faite avec une bouilloire domestique, qui démarre 2000 watts instantanément — une puissance qu’on ne pourrait évidemment pas produire avec son corps. En revanche, l’ordre de grandeur qui change tout est le gigawatt : quand un gigawatt de production arrive ou disparaît soudainement, là il y a un à-coup sur le réseau.</p>
+<p>CITATION<br />
+« Ils sont responsables un peu quand même… Évidemment, mais pour vous c’est un non-événement. » (propos entrecoupés, deux interlocuteurs)</p>
+<p>RÉSERVE<br />
+Transcription automatique : les chiffres prononcés à l’oral sont parfois approximatifs (« j’ai mis 60 millions de kW »). Aucun élément extérieur n’a été ajouté.</p>
+<h2>100 000 GPU B300 = 100 MW, soit 10 TGV qui roulent en permanence</h2>
+<p>Lien : https://youtu.be/iZo3r1t0Qfc — extrait de 55 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Exercice d’ordre de grandeur : construire un data center « hypothétique » avec 100 000 accélérateurs B300 demande environ 100 mégawatts, ce qui place quasi certainement le site sur le réseau de transport. Sur les quelque 300 data centers en service en France, une partie seulement est aujourd’hui raccordée au réseau de transport. La conversation distingue ensuite les data centers des « électrons intensifs », c’est-à-dire les procédés industriels : un TGV consomme unitairement 10 mégawatts tout au long de son parcours (20 s’il y en a deux attelés), et certains fours à arcs électriques atteignent 200 mégawatts pièce. C’est, dit l’extrait, ce qui rend ce calcul intéressant.</p>
+<p>RÉSERVE<br />
+Transcription automatique : un chiffre concernant le nombre de data centers sur le réseau de transport est inaudible dans la transcription et n’a donc pas été repris. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Les câbles haute tension sont nus : c'est l'air qui les isole</h2>
+<p>Lien : https://youtu.be/mSe4w__FUro — extrait de 50 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Dans l’air, c’est l’air qui isole — donc les câbles sont nus, y compris aux plus hauts niveaux de tension, la distance et la hauteur assurant l’isolation. L’extrait s’appuie sur une section de câble apportée en studio : un câble « Power Link », dont l’âme est en cuivre ; autour, on voit des couches d’isolation, et par endroits de l’aluminium qui sert au blindage — nécessaire parce qu’il s’agit d’un câble sous-marin, qui doit résister s’il « fait un câlin » avec l’ancre d’un bateau. La section est sans commune mesure avec ce qu’on trouve dans une habitation, et l’extrait ironise : ce n’est « clairement pas avec un domino » qu’on relie ce genre de câble.</p>
+<p>CITATION<br />
+« Vous aurez pas les outils pour manipuler ça. »</p>
+<p>RÉSERVE<br />
+Transcription automatique imparfaite. Aucun élément extérieur n’a été ajouté.</p>
+<h2>120 milliards d'euros d'énergies fossiles : pourquoi il faut électrifier</h2>
+<p>Lien : https://youtu.be/fonGfF2wcE8 — extrait de 58 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur le coût des importations d’énergie fossile : au pic de l’année 2022-2023, 120 milliards d’euros ont été dépensés dans la balance commerciale pour acheter des énergies fossiles à l’extérieur des frontières. Le reste du temps, le système électrique montre sa capacité à accueillir de nouveaux besoins et à se dimensionner pour en accueillir davantage, afin de transférer les 2000 térawattheures annuels consommés — aujourd’hui avec une part importante d’énergies fossiles — vers l’électrification : voitures électriques, pompes à chaleur. Un intervenant raconte que sa prise de conscience date de son séjour à San Francisco, où l’électricité ne fonctionnait pas correctement : pour lui, c’était un acquis, « et là, ça ne marchait pas ».</p>
+<p>CITATION<br />
+« Heureusement qu’il y a pas que des influenceurs… heureusement qu’il y a des mecs qui bossent. »</p>
+<p>RÉSERVE<br />
+Transcription automatique ; certaines phrases sont inachevées. Aucun élément extérieur n’a été ajouté.</p>
+<h2>50 Hz : le chiffre qui dit si le réseau électrique va bien</h2>
+<p>Lien : https://youtu.be/SlP0SG3zcxo — extrait de 42 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Pour le gestionnaire de réseau, « le talon c’est la fréquence » : c’est le témoin, le proxy de la stabilité et de la qualité de l’électricité. La précision de la fréquence se joue en dixièmes de hertz, avec une tolérance sur les oscillations. L’extrait explique pourquoi la fréquence est une mesure de la production : les alternateurs et leurs aimants produisent une sinusoïde, dont la fréquence de rotation indique l’équilibre du système ; si l’on tire trop de puissance sur les turbines, elles tournent moins vite, et c’est ce que l’on mesure.</p>
+<p>CITATION<br />
+« Ce qui est témoin, le proxy de la stabilité et la qualité de l’électricité, c’est la fréquence. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : quelques passages sont bredouillés ou tronqués. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Le système le plus complexe jamais créé par l'humain ?</h2>
+<p>Lien : https://youtu.be/n66X7p8E2Rc — extrait de 41 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Description d’échelle : le réseau électrique est décrit comme « le système le plus complexe que nous avons créé à l’échelle humaine ». Le réseau de transport français compte environ 3000 postes électriques, soit globalement 7000 nœuds. Le réseau de transport européen, et plus encore si l’on y ajoute les réseaux de distribution, représente des millions de kilomètres de lignes et de nœuds. Les phénomènes se mesurent à la microseconde — soit un million de fois par seconde — même si le centre opérationnel, lui, travaille sur une abstraction de cet ensemble.</p>
+<p>CITATION<br />
+« La donnée est dispo à la microseconde. Ça veut dire que on parle quand même de 1 million de fois par seconde. »</p>
+<p>RÉSERVE<br />
+Transcription automatique (répétitions, mots tronqués). Aucun élément extérieur n’a été ajouté.</p>
+<h2>300 km en voiture pour reconfigurer un boîtier : comment SEAPATH change tout</h2>
+<p>Lien : https://youtu.be/jk3BmwI6Zrg — extrait de 55 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+L’exemple donné est celui de la configuration des protections : pour reconfigurer un petit boîtier automate, il fallait se déplacer — port RS232, boutons tactiles en façade — ce qui suppose d’envoyer une personne qualifiée sur place, parfois à 200 ou 300 kilomètres en voiture. L’extrait explique ensuite la démarche : ces éléments livrés sous forme d’appliances physiques installées dans les racks sont distribués via une plateforme de virtualisation « infra as code ». Résultat : la reconfiguration se fait à distance depuis les centres opérationnels ouverts 24 h sur 24, par virtualisation de l’équipement.</p>
+<p>CITATION<br />
+« C’est la virtualisation effectivement de l’équipement. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : le nom de la plateforme (SEAPATH, présent dans le titre) n’est pas intelligible dans la transcription, ainsi que plusieurs mots techniques. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Des agents d'IA pour piloter le réseau électrique ? Voici Grid2Op</h2>
+<p>Lien : https://youtu.be/bxCHslfs1AY — extrait de 54 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Présentation d’une plateforme construite pour évaluer les agents d’IA chargés de l’exploitation du système électrique. Il s’agit de recherche académique, mais projetable dans un futur plus ou moins lointain, et les agents développés sont open source : toute l’académie mondiale peut utiliser ces plateformes. Des challenges d’abord franco-français ont été étendus au monde entier, et la plateforme a été présentée dans de grandes conférences internationales d’IA. Concrètement, elle permet de soumettre les agents à des scénarios avec des paramètres d’entrée et des événements choisis, d’analyser leurs décisions séquentielles, de voir comment ils se comportent et comment ils sont récompensés — pour distinguer ceux qui convergent vers du mieux de ceux qui divergent.</p>
+<p>RÉSERVE<br />
+Transcription automatique : le nom de la plateforme est entendu « Grid To Web » alors que le titre de la vidéo écrit « Grid2Op ». Aucun élément extérieur n’a été ajouté.</p>
+<h2>Piloter le réseau électrique par le logiciel ? Kempf contre Kempf</h2>
+<p>Lien : https://youtu.be/R1XwUD-UJS0 — extrait de 53 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Format « contre soi-même » : deux positions opposées sont défendues successivement. Première thèse : « Software Defined Grid » et tout faire par informatique serait une déshumanisation, on n’aurait plus que des robots et des IA, et il vaudrait mieux que des gens prennent leur voiture et se déplacent partout sur le réseau français pour s’occuper de la grille. Seconde thèse : il est aujourd’hui impossible de faire sans l’informatique, quand chacun peut installer un panneau solaire ou une éolienne dans son jardin ; on ne pourra pas continuer à se déplacer en permanence pour le moindre geste si l’on veut de la micro-optimisation partout sur le réseau — et surtout, cela ne fonctionne que si c’est bien fait, donc si c’est open source.</p>
+<p>CITATION<br />
+« Software Defined Grid open source, c’est obligatoire. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : le passage commence au milieu d’une phrase et le nom du format est déformé à l’écoute. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Le CO2 de l'électricité en Europe : ceux qui parlent et ceux qui font</h2>
+<p>Lien : https://youtu.be/Uxe-tiYseTQ — extrait de 42 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur les émissions de carbone de l’électricité, illustré par un outil de cartographie en temps réel. Au moment où l’échange a lieu, la moyenne européenne est donnée autour de 20 grammes de CO2 par kilowattheure émis, et l’outil donne une vision européenne, désormais presque mondiale. En passant une frontière, on voit des facteurs de 10 à 100 : l’Allemagne est citée autour de 300, avec un intervenant qui estime que « ça monte à 800 », et la Pologne autour de 700 — affichée dans les tons marron foncé. D’où la formule de l’extrait : l’outil permet de distinguer « ceux qui parlent beaucoup » de « ceux qui font ».</p>
+<p>RÉSERVE<br />
+Transcription automatique : un pourcentage prononcé juste après (sans sujet clair) n’a pas été repris, et les chiffres cités à l’oral divergent d’une phrase à l’autre. Aucun élément extérieur n’a été ajouté.</p>
+<h2>On enregistre À la French en direct à Tech.rocks le 30 novembre 🎙️</h2>
+<p>Lien : https://youtu.be/EzDG60e5mfs — annonce de 19 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Annonce : un épisode sera enregistré en public lors de la conférence qui fête ses 10 ans, et l’achat d’un billet donne aussi accès à la soirée des 10 ans, où l’équipe sera présente ; l’invitation renvoie à la page de la conférence. Rendez-vous annoncé : le 30 novembre.</p>
+<p>RÉSERVE<br />
+Transcription automatique très courte (annonce lue sur fond musical), le nom exact de la conférence est déformé à l’écoute. Aucun élément extérieur n’a été ajouté.</p>]]></description>
+<content:encoded><![CDATA[<h1>À la French 💻 — semaine du mardi 17 novembre 2026</h1>
+<p>14 vidéos nouvelles sur la chaîne YouTube « À la French 💻 » (@alafrench) : un épisode long et 13 extraits courts, tous tirés des épisodes récents. Résumés établis à partir des transcriptions françaises automatiques (chaque section porte sa réserve).</p>
+<p>Édition reconstituée depuis les résumés produits le 17 novembre 2026, avant la bascule de la veille vers le flux RSS.</p>
+<h2>PHP, Linux, SSL : l’IA trouve toutes les failles et pourquoi ça va continuer</h2>
+<p>Lien : https://youtu.be/ay-1QZZjlFU — durée 1:20:38 — transcription française AUTOMATIQUE (non révisée).</p>
+<p>RÉSUMÉ GÉNÉRAL<br />
+Épisode enregistré le jour de sa publication (17 novembre 2026) sur la « vulnapocalypse » : les failles de sécurité découvertes en masse depuis que les agents de code se sont généralisés. L’invité est ingénieur sécurité à la Fondation PHP, CTO de la coopérative où il travaille et mainteneur du framework Symfony ; il est arrivé à la Fondation en juillet. Pour lui, ce qui a changé début 2026, ce n’est pas le nombre de failles mais leur exploitabilité : là où un chercheur humain enchaînait une trentaine d’étapes, un agent en enchaîne 250 sans se lasser, ce qui rend critiques des failles jugées mineures. Il raconte de l’intérieur la coordination du patch de la faille « PHP2Shell » (deux failles permettant l’exécution de code à distance), trouvée par Quarkslab en 2024, redécouverte en août 2026 avec une preuve de concept par des IA, dont la sortie a été avancée au 21 octobre après des fuites et une rupture d’embargo. Il décrit aussi l’écosystème PHP (WordPress, Symfony, Laravel, Composer, FrankenPHP), une Fondation financée à 100 % par les dons avec environ un million de dollars par an et 4 à 5 personnes pour la sécurité d’un langage qui fait tourner une grande partie du web. Il conclut que les failles les plus dangereuses du moment ne sont pas PHP2Shell (difficile à exploiter) mais la faille SSH d’Alpine Linux et la RCE MPTCP du noyau Linux, et appelle à « arrêter de chercher, commencer à patcher ».</p>
+<p>SECTIONS THÉMATIQUES ET HORODATAGES</p>
+<p>00:00 – Introduction : « vulnapocalypse »<br />
+Jusqu’à 70 % du web menacé par une faille critique ; des sites de gouvernements arrêtés ; annonce de la conférence À la French du 3 décembre.</p>
+<p>04:01 – L’invité et son parcours<br />
+CTO de la coopérative, ingénieur sécurité à la Fondation PHP depuis juillet, mainteneur de Symfony. Il dit avoir senti monter le sujet via Symfony, puis « l’explosion » des agents en début d’année 2026 : « un carnage total ».</p>
+<p>07:00 – Ce que les agents d’IA changent<br />
+Rappel des techniques anciennes (return-oriented programming, contournement de l’ASLR, side channels, differencing de binaires) qui demandaient une trentaine d’étapes humaines ; avec les agents, des chaînes de 250 étapes. Conséquence : des failles « pas importantes » deviennent exploitables quand on les combine.</p>
+<p>09:34 – Comment on devient responsable sécurité d’un projet open source<br />
+La confiance d’abord : des centaines de contributions, des rencontres en conférence, le souvenir de XZ. La Fondation lance une équipe sécurité financée notamment par la Fondation Linux et son initiative Alpha-Omega ; un modèle d’IA très puissant, banni par le gouvernement américain, est mis à disposition d’organismes autorisés. Il propose son aide, est finalement rémunéré pour traiter les rapports.</p>
+<p>13:35 – Le déficit de temps humain<br />
+Les rapports ont « peut-être x 10 » depuis la médiatisation : plusieurs dizaines par jour. Pour le langage qui fait tourner 70 % du web mesurable : « on va dire quatre ou cinq à devoir tout gérer ». Il développe un outil interne, open source, intégré à GitHub, qui pré-analyse, déduplique et priorise les rapports, faute d’outil existant.</p>
+<p>17:00 – L’écosystème PHP<br />
+WordPress autour de 43-45 % du web et 60 % des blogs ; PrestaShop environ la moitié du e-commerce ; Symfony et Laravel comme « mastodontes », Drupal et Joomla ; historique du langage (1994-95, PHP 3/4/5, l’hiver de PHP, PHP 6 sauté par vote de RFC, PHP 7 avec AST et compilateur JIT) ; FrankenPHP : PHP avec serveur web intégré dans un seul binaire, basé sur Caddy, dépôt déplacé sous l’organisation PHP.</p>
+<p>26:40 – La Fondation PHP<br />
+Créée en 2021-2022 dans l’orbite d’Open Collective, à l’initiative notamment d’une personne de JetBrains, après le départ d’un des plus gros contributeurs, Nikita Popov ; budget d’environ un million de dollars par an, financé à 100 % par les dons ; aucune autorité sur le projet PHP lui-même, qui garde son processus de RFC.</p>
+<p>30:05 – Composer et Packagist<br />
+Un seul gestionnaire de dépendances réputé efficace, une seule registre, environ 300 000 paquets.</p>
+<p>34:15 – PHP2Shell, de l’intérieur<br />
+Deux failles permettant l’exécution de code à distance (RCE), trouvées par Quarkslab en 2024 lors d’un audit financé par le Sovereign Tech Fund (l’Allemagne utilise beaucoup PHP pour ses sites gouvernementaux) ; à l’époque impossible à exploiter. 1er août 2026 : des modèles d’OpenAI et de Calif retrouvent la même chose et apportent une preuve de concept. Le patch : environ 10 000 lignes de C, quasi entièrement écrites à la main ; trois personnes y travaillent à plein temps. Fuite des identifiants CVE sur Hacker News (annoncés à 10/10, en réalité 9,3), vidéo de la preuve de concept publiée par erreur par une entreprise de sécurité, puis rupture unilatérale de l’embargo par Chainguard qui déploie ses binaires patchés environ vingt heures avant l’échéance — ce qui rend possible le « différentiel binaire » par LLM pour deviner ce qui a été corrigé. La sortie est avancée du 22 au 21 octobre.</p>
+<p>54:00 – Après le patch<br />
+Un seul exploit connu publiquement au départ (un défi Bitcoin d’environ 2000 dollars, apparemment récupérés) ; beaucoup de prétentions d’exploitation en local non confirmées sur le réseau ; le communiqué de la Fondation reste prudent (« on espère avoir tout patché »). Un tweet de la NSA conseille de passer hors ligne si l’on n’a pas patché sous 24 heures. Le retentissement vient de la formulation « 70 % du web », comprise hors du monde technique. Côté VideoLAN : forum et wiki coupés, mise à jour compliquée, problème de référencement du générateur de site statique ; réception d’une poignée d’e-mails par jour de ministères (Intérieur, allemand, américain) ; une application désactivée sur un parc Android.</p>
+<p>1:02:30 – Les failles plus préoccupantes, selon l’invité<br />
+SSH d’Alpine Linux : pour un utilisateur sans mot de passe, toute chaîne de plus de 256 caractères est acceptée comme mot de passe valide. Noyau Linux : une release affichant 1500 CVE ; une IA aurait fait tourner un modèle pour l’équivalent d’environ 1,2 million de dollars de calcul et corrigé 960 failles. La RCE de la pile MPTCP : une option activée quasiment partout (téléphones, téléviseurs récents, objets connectés), un paquet forgé suffit — des centaines de millions de machines potentiellement concernées et, pour beaucoup, plus maintenues (kernels liés aux puces, forsqués, fin de mises à jour après deux ou trois ans).</p>
+<p>1:08:45 – L’IA côté défense<br />
+Accès à des modèles sans garde-fous via des partenariats, avec clé de sécurité, sur le dépôt PHP uniquement et sous surveillance. Outil interne open source de triage et de déduplication ; usage des modèles pour chercher tous les points d’entrée d’une vulnérabilité.</p>
+<p>1:11:30 – Bug bounties, maintenance, événements<br />
+Fin du programme de prime : la trouvaille est devenue bon marché, mais personne n’envoie de patch ; le « vrai » travail est de comprendre la cause racine. Initiatives pour aider à patcher ; outil « Scrutinier » pour industrialiser la recherche autorisée de failles dans plusieurs écosystèmes ; Ubuntu trois semaines sans correctif MPTCP. Enfin l’appel de l’association française des utilisateurs de PHP, signé par plus de 80 organisateurs d’événements : les conférences indépendantes et associatives meurent faute de financement, le forum annuel à Disneyland (600 à 800 personnes) pourrait disparaître, et « quatre conférences sur dix » ne seront peut-être plus là l’an prochain ; un rendez-vous est prévu le 3 décembre.</p>
+<p>CITATIONS CLÉS (transcription automatique, à prendre comme des propos reconstitués)<br />
+- « Tu avais une trentaine d’étapes… Là, tu arrives, il y a 250 étapes, l’agent il s’en fiche, lui, il a un but. »<br />
+- « C’est très difficile de gérer un influx de faille de sécurité parce que tu sais pas où en mettre de la tête. »<br />
+- « Le langage qui fait tourner 70 % du web mesurable… on va dire quatre ou cinq à devoir tout gérer. »<br />
+- « Arrêtez de chercher, commencez à patcher. »<br />
+- « Il y en a pas un seul qui t’envoie un patch. »</p>
+<p>CONCLUSION<br />
+L’IA n’a pas créé les failles : elle les a rendues exploitées. La réponse tenable, telle que défendue dans l’épisode, est humaine et structurelle — du temps, de la confiance, des relais sur la maintenance, du financement des écosystèmes et des communautés, et un tri sévère entre le bruit médiatique et les failles réellement dangereuses.</p>
+<p>RÉSERVE<br />
+Transcription automatique : les noms propres sont systématiquement déformés ou approximatifs (l’invité est orthographié « Dobois/Debois » à l’écoute ; les modèles, entreprises et outils cités sont rendus phonétiquement). Vérifier tout nom ou chiffre directement sur la fiche de la vidéo avant de réutiliser ce résumé.</p>
+<p>(Éléments de contexte repris de la fiche officielle de la vidéo : invité Alexandre Daubois, ingénieur sécurité à la Fondation PHP, CTO de la coopérative Les-Tilleuls.coop, mainteneur du framework Symfony.)</p>
+<h2>La mi-temps qui fait trembler le réseau électrique anglais ☕️⚽️</h2>
+<p>Lien : https://youtu.be/KyENcGgoUy8 — extrait de 47 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait consacré aux effets des grands matchs de football sur le réseau : la mi-temps en Angleterre est le moment où tout le monde met sa bouilloire en route (« tout le monde va mettre sa théière »), un appel de puissance massif qu’il faut anticiper — ce sont les gestionnaires du réseau qui doivent prévoir des térawattheures, et les prolongations (si match nul) compliquent la prévision. L’extrait décrit ensuite ce qui se passe en salle de contrôle : un gros match est signalé comme « événement » dans le centre opérationnel. Un second exemple est donné : en Serbie-Kosovo, un dérèglement du réseau a fait dériver la fréquence, et les horloges de la région ont pris jusqu’à six minutes de retard. Le commentaire précise que peu d’horloges fonctionnent encore sur la fréquence du réseau — surtout les fours à micro-ondes — et que l’intervenant regarde justement l’heure de son micro-ondes pour savoir quand sortir de chez lui.</p>
+<p>CITATION<br />
+« Attention match de foot… là on a dans notre NOC, dans notre centrale, on dit bah là il y a événement. »</p>
+<p>RÉSERVE<br />
+Transcription automatique et dialogues entrecroisés : passage très lacunaire par endroits, plusieurs phrases sont inachevées. Aucun élément extérieur à la transcription n’a été ajouté.</p>
+<h2>Ce disque en verre vous dit la tension d'une ligne haute tension</h2>
+<p>Lien : https://youtu.be/NH2zITly54I — extrait de 52 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+On présente un objet en verre, « qui permet de faire un beau presse-papier » : un isolateur. Il porte un petit crochet qui permet de chaîner plusieurs isolateurs entre eux, et c’est exactement ce qui est installé pour isoler le câble du pylône — un câble posé directement sur le pylône serait mis à la terre et provoquerait un court-circuit. Chaque élément isole entre 15 et 20 kilovolts, alors que la ligne évoquée est à 400 000 volts, ce qui explique qu’on voie des chaînes entières d’isolateurs. Un moyen pratique de le vérifier, plaisante l’extrait : faire du covoiturage avec des gens qui travaillent chez RTE, qui comptent les éléments et vous disent « là il y en a 20, c’est du 400 000 ».</p>
+<p>CITATION<br />
+« Ça isole entre 15 et 20 kilovolts. Sachant que là on est à 400 000. »</p>
+<p>RÉSERVE<br />
+Transcription automatique imparfaite (répétitions, mots tronqués). Aucun élément extérieur n’a été ajouté.</p>
+<h2>Ton entraînement d'IA plante : pour le réseau électrique, c'est un non-événement</h2>
+<p>Lien : https://youtu.be/u4eksAoUiDo — extrait de 50 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur la résilience instantanée du réseau électrique. Exemple donné : un entraînement de modèle d’IA qui consomme beaucoup puis plante, la consommation s’effondrant brutalement — de 100 mégawatts à 30, par exemple. Pour le gestionnaire, c’est un « non-événement » : si de la consommation en mégawatts disparaît, une apparition équivalente se produit ailleurs, à proximité dans le temps, et tout se compense naturellement. La comparaison est faite avec une bouilloire domestique, qui démarre 2000 watts instantanément — une puissance qu’on ne pourrait évidemment pas produire avec son corps. En revanche, l’ordre de grandeur qui change tout est le gigawatt : quand un gigawatt de production arrive ou disparaît soudainement, là il y a un à-coup sur le réseau.</p>
+<p>CITATION<br />
+« Ils sont responsables un peu quand même… Évidemment, mais pour vous c’est un non-événement. » (propos entrecoupés, deux interlocuteurs)</p>
+<p>RÉSERVE<br />
+Transcription automatique : les chiffres prononcés à l’oral sont parfois approximatifs (« j’ai mis 60 millions de kW »). Aucun élément extérieur n’a été ajouté.</p>
+<h2>100 000 GPU B300 = 100 MW, soit 10 TGV qui roulent en permanence</h2>
+<p>Lien : https://youtu.be/iZo3r1t0Qfc — extrait de 55 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Exercice d’ordre de grandeur : construire un data center « hypothétique » avec 100 000 accélérateurs B300 demande environ 100 mégawatts, ce qui place quasi certainement le site sur le réseau de transport. Sur les quelque 300 data centers en service en France, une partie seulement est aujourd’hui raccordée au réseau de transport. La conversation distingue ensuite les data centers des « électrons intensifs », c’est-à-dire les procédés industriels : un TGV consomme unitairement 10 mégawatts tout au long de son parcours (20 s’il y en a deux attelés), et certains fours à arcs électriques atteignent 200 mégawatts pièce. C’est, dit l’extrait, ce qui rend ce calcul intéressant.</p>
+<p>RÉSERVE<br />
+Transcription automatique : un chiffre concernant le nombre de data centers sur le réseau de transport est inaudible dans la transcription et n’a donc pas été repris. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Les câbles haute tension sont nus : c'est l'air qui les isole</h2>
+<p>Lien : https://youtu.be/mSe4w__FUro — extrait de 50 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Dans l’air, c’est l’air qui isole — donc les câbles sont nus, y compris aux plus hauts niveaux de tension, la distance et la hauteur assurant l’isolation. L’extrait s’appuie sur une section de câble apportée en studio : un câble « Power Link », dont l’âme est en cuivre ; autour, on voit des couches d’isolation, et par endroits de l’aluminium qui sert au blindage — nécessaire parce qu’il s’agit d’un câble sous-marin, qui doit résister s’il « fait un câlin » avec l’ancre d’un bateau. La section est sans commune mesure avec ce qu’on trouve dans une habitation, et l’extrait ironise : ce n’est « clairement pas avec un domino » qu’on relie ce genre de câble.</p>
+<p>CITATION<br />
+« Vous aurez pas les outils pour manipuler ça. »</p>
+<p>RÉSERVE<br />
+Transcription automatique imparfaite. Aucun élément extérieur n’a été ajouté.</p>
+<h2>120 milliards d'euros d'énergies fossiles : pourquoi il faut électrifier</h2>
+<p>Lien : https://youtu.be/fonGfF2wcE8 — extrait de 58 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur le coût des importations d’énergie fossile : au pic de l’année 2022-2023, 120 milliards d’euros ont été dépensés dans la balance commerciale pour acheter des énergies fossiles à l’extérieur des frontières. Le reste du temps, le système électrique montre sa capacité à accueillir de nouveaux besoins et à se dimensionner pour en accueillir davantage, afin de transférer les 2000 térawattheures annuels consommés — aujourd’hui avec une part importante d’énergies fossiles — vers l’électrification : voitures électriques, pompes à chaleur. Un intervenant raconte que sa prise de conscience date de son séjour à San Francisco, où l’électricité ne fonctionnait pas correctement : pour lui, c’était un acquis, « et là, ça ne marchait pas ».</p>
+<p>CITATION<br />
+« Heureusement qu’il y a pas que des influenceurs… heureusement qu’il y a des mecs qui bossent. »</p>
+<p>RÉSERVE<br />
+Transcription automatique ; certaines phrases sont inachevées. Aucun élément extérieur n’a été ajouté.</p>
+<h2>50 Hz : le chiffre qui dit si le réseau électrique va bien</h2>
+<p>Lien : https://youtu.be/SlP0SG3zcxo — extrait de 42 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Pour le gestionnaire de réseau, « le talon c’est la fréquence » : c’est le témoin, le proxy de la stabilité et de la qualité de l’électricité. La précision de la fréquence se joue en dixièmes de hertz, avec une tolérance sur les oscillations. L’extrait explique pourquoi la fréquence est une mesure de la production : les alternateurs et leurs aimants produisent une sinusoïde, dont la fréquence de rotation indique l’équilibre du système ; si l’on tire trop de puissance sur les turbines, elles tournent moins vite, et c’est ce que l’on mesure.</p>
+<p>CITATION<br />
+« Ce qui est témoin, le proxy de la stabilité et la qualité de l’électricité, c’est la fréquence. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : quelques passages sont bredouillés ou tronqués. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Le système le plus complexe jamais créé par l'humain ?</h2>
+<p>Lien : https://youtu.be/n66X7p8E2Rc — extrait de 41 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Description d’échelle : le réseau électrique est décrit comme « le système le plus complexe que nous avons créé à l’échelle humaine ». Le réseau de transport français compte environ 3000 postes électriques, soit globalement 7000 nœuds. Le réseau de transport européen, et plus encore si l’on y ajoute les réseaux de distribution, représente des millions de kilomètres de lignes et de nœuds. Les phénomènes se mesurent à la microseconde — soit un million de fois par seconde — même si le centre opérationnel, lui, travaille sur une abstraction de cet ensemble.</p>
+<p>CITATION<br />
+« La donnée est dispo à la microseconde. Ça veut dire que on parle quand même de 1 million de fois par seconde. »</p>
+<p>RÉSERVE<br />
+Transcription automatique (répétitions, mots tronqués). Aucun élément extérieur n’a été ajouté.</p>
+<h2>300 km en voiture pour reconfigurer un boîtier : comment SEAPATH change tout</h2>
+<p>Lien : https://youtu.be/jk3BmwI6Zrg — extrait de 55 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+L’exemple donné est celui de la configuration des protections : pour reconfigurer un petit boîtier automate, il fallait se déplacer — port RS232, boutons tactiles en façade — ce qui suppose d’envoyer une personne qualifiée sur place, parfois à 200 ou 300 kilomètres en voiture. L’extrait explique ensuite la démarche : ces éléments livrés sous forme d’appliances physiques installées dans les racks sont distribués via une plateforme de virtualisation « infra as code ». Résultat : la reconfiguration se fait à distance depuis les centres opérationnels ouverts 24 h sur 24, par virtualisation de l’équipement.</p>
+<p>CITATION<br />
+« C’est la virtualisation effectivement de l’équipement. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : le nom de la plateforme (SEAPATH, présent dans le titre) n’est pas intelligible dans la transcription, ainsi que plusieurs mots techniques. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Des agents d'IA pour piloter le réseau électrique ? Voici Grid2Op</h2>
+<p>Lien : https://youtu.be/bxCHslfs1AY — extrait de 54 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Présentation d’une plateforme construite pour évaluer les agents d’IA chargés de l’exploitation du système électrique. Il s’agit de recherche académique, mais projetable dans un futur plus ou moins lointain, et les agents développés sont open source : toute l’académie mondiale peut utiliser ces plateformes. Des challenges d’abord franco-français ont été étendus au monde entier, et la plateforme a été présentée dans de grandes conférences internationales d’IA. Concrètement, elle permet de soumettre les agents à des scénarios avec des paramètres d’entrée et des événements choisis, d’analyser leurs décisions séquentielles, de voir comment ils se comportent et comment ils sont récompensés — pour distinguer ceux qui convergent vers du mieux de ceux qui divergent.</p>
+<p>RÉSERVE<br />
+Transcription automatique : le nom de la plateforme est entendu « Grid To Web » alors que le titre de la vidéo écrit « Grid2Op ». Aucun élément extérieur n’a été ajouté.</p>
+<h2>Piloter le réseau électrique par le logiciel ? Kempf contre Kempf</h2>
+<p>Lien : https://youtu.be/R1XwUD-UJS0 — extrait de 53 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Format « contre soi-même » : deux positions opposées sont défendues successivement. Première thèse : « Software Defined Grid » et tout faire par informatique serait une déshumanisation, on n’aurait plus que des robots et des IA, et il vaudrait mieux que des gens prennent leur voiture et se déplacent partout sur le réseau français pour s’occuper de la grille. Seconde thèse : il est aujourd’hui impossible de faire sans l’informatique, quand chacun peut installer un panneau solaire ou une éolienne dans son jardin ; on ne pourra pas continuer à se déplacer en permanence pour le moindre geste si l’on veut de la micro-optimisation partout sur le réseau — et surtout, cela ne fonctionne que si c’est bien fait, donc si c’est open source.</p>
+<p>CITATION<br />
+« Software Defined Grid open source, c’est obligatoire. »</p>
+<p>RÉSERVE<br />
+Transcription automatique : le passage commence au milieu d’une phrase et le nom du format est déformé à l’écoute. Aucun élément extérieur n’a été ajouté.</p>
+<h2>Le CO2 de l'électricité en Europe : ceux qui parlent et ceux qui font</h2>
+<p>Lien : https://youtu.be/Uxe-tiYseTQ — extrait de 42 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Extrait sur les émissions de carbone de l’électricité, illustré par un outil de cartographie en temps réel. Au moment où l’échange a lieu, la moyenne européenne est donnée autour de 20 grammes de CO2 par kilowattheure émis, et l’outil donne une vision européenne, désormais presque mondiale. En passant une frontière, on voit des facteurs de 10 à 100 : l’Allemagne est citée autour de 300, avec un intervenant qui estime que « ça monte à 800 », et la Pologne autour de 700 — affichée dans les tons marron foncé. D’où la formule de l’extrait : l’outil permet de distinguer « ceux qui parlent beaucoup » de « ceux qui font ».</p>
+<p>RÉSERVE<br />
+Transcription automatique : un pourcentage prononcé juste après (sans sujet clair) n’a pas été repris, et les chiffres cités à l’oral divergent d’une phrase à l’autre. Aucun élément extérieur n’a été ajouté.</p>
+<h2>On enregistre À la French en direct à Tech.rocks le 30 novembre 🎙️</h2>
+<p>Lien : https://youtu.be/EzDG60e5mfs — annonce de 19 secondes — transcription française automatique.</p>
+<p>CONTENU<br />
+Annonce : un épisode sera enregistré en public lors de la conférence qui fête ses 10 ans, et l’achat d’un billet donne aussi accès à la soirée des 10 ans, où l’équipe sera présente ; l’invitation renvoie à la page de la conférence. Rendez-vous annoncé : le 30 novembre.</p>
+<p>RÉSERVE<br />
+Transcription automatique très courte (annonce lue sur fond musical), le nom exact de la conférence est déformé à l’écoute. Aucun élément extérieur n’a été ajouté.</p>]]></content:encoded>
+</item>
+</channel>
+</rss>

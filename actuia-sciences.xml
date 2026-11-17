@@ -3,7 +3,7 @@
 <channel>
 <title>Veille IA, sciences et société (ActuIA)</title>
 <link>https://opware2000.github.io/veille/index.html</link>
-<description>Veille quotidienne — IA, sciences et société (ActuIA) — éditions rédigées pour Nicolas.</description>
+<description>Veille hebdomadaire — IA, sciences et société (ActuIA) — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/actuia-sciences.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Mon, 16 Nov 2026 05:56:45 +0100</lastBuildDate>

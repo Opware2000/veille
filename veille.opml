@@ -22,4 +22,5 @@
     <outline text="Veille IA et éducation (ActuIA)" title="Veille IA et éducation (ActuIA)" type="rss" xmlUrl="https://opware2000.github.io/veille/actuia.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille IA, sciences et société (ActuIA)" title="Veille IA, sciences et société (ActuIA)" type="rss" xmlUrl="https://opware2000.github.io/veille/actuia-sciences.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
     <outline text="Veille Le labo, c'est vous — pratiques SVT (Digipad)" title="Veille Le labo, c'est vous — pratiques SVT (Digipad)" type="rss" xmlUrl="https://opware2000.github.io/veille/labo-svt.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
+    <outline text="Veille À la French 💻 (YouTube)" title="Veille À la French 💻 (YouTube)" type="rss" xmlUrl="https://opware2000.github.io/veille/alafrench.xml" htmlUrl="https://opware2000.github.io/veille/index.html"/>
   </body></opml>

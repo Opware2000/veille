@@ -3,7 +3,7 @@
 <channel>
 <title>Veille IA et éducation (ActuIA)</title>
 <link>https://opware2000.github.io/veille/index.html</link>
-<description>Veille quotidienne — IA et éducation (ActuIA) — éditions rédigées pour Nicolas.</description>
+<description>Veille hebdomadaire — IA et éducation (ActuIA) — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/actuia.xml" rel="self" type="application/rss+xml"/>
 <lastBuildDate>Wed, 04 Nov 2026 15:28:34 +0100</lastBuildDate>
