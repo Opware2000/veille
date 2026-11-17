@@ -6,9 +6,206 @@
 <description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 16 Nov 2026 01:03:28 +0100</lastBuildDate>
+<lastBuildDate>Tue, 17 Nov 2026 01:03:21 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opensource — mardi 17 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-17.html</link>
+<guid isPermaLink="false">opensource-2026-11-17</guid>
+<pubDate>Tue, 17 Nov 2026 01:03:21 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source principale est désormais Hacker News et Lobsters : les fils Reddit n'ont plus fourni que quelques billets exploitables, et le subreddit reste surtout le lieu des questions et des avis.</li>
+<li>Journée dense en outils d'agents et de développement : Coral (passerelle d'agents auto-hébergée, près de 5 000 étoiles), Doop (alternative libre à Paper.design, 2 000 étoiles), et une quinzaine de dépôts mis en avant par le collecteur Open Source Projects.</li>
+<li>Côté systèmes : Gawk 5.4.2, fwupd 2.1.10, AlmaLinux 10.3, et la mise à jour de sécurité majeure de PostgreSQL Anonymizer 3.3.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Coral — une passerelle où les agents écrivent leurs propres outils</h3>
+<p>Passerelle auto-hébergée qui s'intercale entre un agent et les systèmes sur lesquels il travaille : au lieu d'enchaîner des appels d'outils génériques, l'agent écrit de courts programmes TypeScript qu'il enregistre comme outils réutilisables, partageables au sein d'une équipe. L'intérêt est double : l'agent ne redécouvre pas la même procédure à chaque session, et les droits se contrôlent par outil plutôt que globalement. Le bruit sur Hacker News (43 points le jour même) en fait l'annonce la plus remarquée de la journée. Licence Apache-2.0, gratuit, 4 997 étoiles, dernière mise à jour le 16 novembre. <a href="https://github.com/withcoral/coral">https://github.com/withcoral/coral</a></p>
+<h3>Doop — alternative libre à Paper.design</h3>
+<p>Éditeur de conception d'interfaces présenté comme un équivalent libre de Paper.design. 2 081 étoiles, licence AGPL-3.0, mise à jour le 16 novembre. <a href="https://github.com/kgoedecke/doop">https://github.com/kgoedecke/doop</a></p>
+<h3>Pliable — CAO 3D en modélisation directe</h3>
+<p>Application de conception assistée par ordinateur en modélisation directe, bâtie sur le noyau géométrique Open Cascade, avec un cœur Python et une interface en TypeScript empaquetée par Tauri. Son objectif est d'éditer vite des fichiers STEP importés — un usage courant pour l'impression 3D — là où l'offre libre était rare. Version alpha 0.4.3 annoncée comme utilisable pour des pièces mécaniques simples ; l'auteur cherche des testeurs sous macOS et Linux. Licence AGPL-3.0, gratuit, 18 étoiles, mise à jour le 16 novembre. <a href="https://github.com/DesignWeaver3D/Pliable">https://github.com/DesignWeaver3D/Pliable</a></p>
+<h3>Anchor — tableau de bord pour applications auto-hébergées</h3>
+<p>Annonce d'un tableau de bord simple destiné à rassembler les applications auto-hébergées. Le billet ne donne ni dépôt ni licence vérifiable, l'information reste donc à confirmer. <a href="https://www.reddit.com/r/opensource/comments/1xxbzy9/anchor_a_simple_dashboard_for_your_selfhosted_apps/">https://www.reddit.com/r/opensource/comments/1xxbzy9/anchor_a_simple_dashboard_for_your_selfhosted_apps/</a></p>
+<h3>Cubepals — hébergement de serveurs Minecraft, endormis jusqu'à la connexion d'un joueur</h3>
+<p>Service d'hébergement de serveurs Minecraft (Java et Bedrock, mondes vanilla ou moddés) dont les serveurs se mettent en veille quand personne ne joue : les heures ne sont décomptées que pendant le fonctionnement. Le code est ouvert et le monde reste téléchargeable. 20 heures gratuites sans carte bancaire. <a href="https://cubepals.com">https://cubepals.com</a></p>
+<h3>Acutis Firewall — contrôle parental libre pour Android</h3>
+<p>Pare-feu parental qui filtre le DNS directement sur le téléphone, via l'API VpnService standard : pas de root, pas de compte, aucun serveur tiers. Il bloque contenus adultes, logiciels malveillants, jeux d'argent et réseaux sociaux dans toutes les applications, pas seulement dans le navigateur, et permet des plages horaires et un verrouillage par code. C'est l'annonce la plus directement utile de la journée pour un parent. Licence MIT, gratuit, financé par dons. <a href="https://acutis.castillo.sh/">https://acutis.castillo.sh/</a></p>
+<h3>VioLens — proxy d'inspection HTTPS</h3>
+<p>Proxy d'interception HTTPS présenté comme une alternative libre à Fiddler Classic, pour inspecter le trafic de ses propres applications. Licence MIT, gratuit, 10 étoiles, dernière mise à jour le 6 novembre. <a href="https://github.com/MarkSPowell/VioLens">https://github.com/MarkSPowell/VioLens</a></p>
+<h3>Grapim — revue de code par IA sur sa propre clé de modèle</h3>
+<p>Outil de revue de code assistée par un modèle de langage, qui s'exécute avec la clé d'API de l'utilisateur et non via un service tiers. Licence Apache-2.0, gratuit, 4 étoiles, mise à jour le 16 novembre. <a href="https://github.com/grapim/grapim">https://github.com/grapim/grapim</a></p>
+<h3>CoderBaba — agent de codage en ligne de commande</h3>
+<p>Agent de codage en terminal : il lit le dépôt, planifie la modification, édite les fichiers, lance les tests, et ne valide rien sans diff approuvé par l'utilisateur. Chaque tâche tourne dans son propre worktree Git, ce qui permet de mener plusieurs tâches en parallèle sans qu'elles se recouvrent. Fonctionne avec un modèle libre local ou via un service en ligne gratuit. Gratuit et libre. <a href="https://coderbaba.si">https://coderbaba.si</a></p>
+<h3>SignuDoc — signature de documents</h3>
+<p>Plateforme auto-hébergeable de signature électronique de documents. 570 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/NYLLON-SOFTWARE/signudoc">https://github.com/NYLLON-SOFTWARE/signudoc</a></p>
+<h3>Stromboli — agent d'astreinte</h3>
+<p>Agent d'exploitation (SRE) destiné à la mitigation rapide d'incidents. Encore jeune et confidentiel : 5 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/openstatusHQ/stromboli">https://github.com/openstatusHQ/stromboli</a></p>
+<h3>tamserve — suivi d'objets en temps réel sur caméras</h3>
+<p>Service de suivi d'objets sur flux vidéo en direct : il s'appuie sur SAM 3 pour détecter, et sur un suiveur léger pour combler les images intermédiaires, en partageant une seule copie des modèles entre toutes les caméras. L'auteur annonce, sur une RTX 4090, 16 caméras simultanées pour le suivi des personnes, quatre fois plus rapide que le suiveur d'origine, et une mémoire stable là où celui-ci épuisait la mémoire vidéo. Installation par <code>pip install "tamserve[sam3]"</code>. Licence Apache-2.0, gratuit, 21 étoiles, mise à jour le 16 novembre. <a href="https://github.com/aryamandarda/tamserve">https://github.com/aryamandarda/tamserve</a></p>
+<h3>Rakazo — alternative libre à un agent conversationnel commercial</h3>
+<p>Présenté comme une alternative ouverte à un agent commercial. 8 838 étoiles, licence Apache-2.0, mise à jour le 17 novembre. <a href="https://github.com/elie222/rakazo">https://github.com/elie222/rakazo</a></p>
+<h3>Guru — cadre d'agents « auto-évolutif »</h3>
+<p>Cadre d'agents présenté comme non censuré et respectueux de la vie privée. L'annonce reste très généraliste, à examiner avant tout usage sérieux. Licence AGPL-3.0, 14 étoiles, mise à jour le 16 novembre. <a href="https://github.com/GuruProduction/GURUbyUnusLumen">https://github.com/GuruProduction/GURUbyUnusLumen</a></p>
+<h3>The Scribe — éditeur de texte en binaire unique</h3>
+<p>Éditeur de texte distribué en un seul binaire statique, sans dépendance externe, sans appel réseau, et capable d'exporter en PDF, DOCX, ODT, LaTeX ou texte brut. Version 0.1.0, donc très jeune. Licence MIT, gratuit, 1 étoile. <a href="https://github.com/ENMEICORP/The-Scribe">https://github.com/ENMEICORP/The-Scribe</a></p>
+<h3>BooruRamen — navigateur d'images personnalisé</h3>
+<p>Navigateur pour galeries d'images qui apprend les goûts de l'utilisateur par un algorithme de recommandation exécuté côté client : tout ce qui est appris reste sur l'appareil. Versions Android et Windows publiées, version web compilable depuis les sources. Licence GPL-3.0, gratuit, 12 étoiles, mise à jour le 16 novembre. Le sujet est très particulier ; l'outil est mentionné pour mémoire. <a href="https://github.com/SoupDevs/BooruRamen">https://github.com/SoupDevs/BooruRamen</a></p>
+<h3>Giveback — mesurer ce qu'une entreprise rend à l'open source</h3>
+<p>Outil de mesure de la contribution d'une organisation à l'open source, publié par Michelin. Licence Apache-2.0, gratuit, 2 étoiles, dernière mise à jour le 5 novembre. <a href="https://github.com/michelin/giveback">https://github.com/michelin/giveback</a></p>
+<h3>gammarips — harnais et jeu de données MCP pour le trading d'options</h3>
+<p>Harnais de test et jeu de données destinés à faire travailler des agents IA sur des stratégies d'options. Usage très spécialisé, mentionné pour mémoire. Licence MIT, 1 étoile, mise à jour le 16 novembre. <a href="https://github.com/DevDizzle/gammarips-harness">https://github.com/DevDizzle/gammarips-harness</a></p>
+<h3>tapflow — émulateurs mobiles dans le navigateur</h3>
+<p>Alternative auto-hébergée à Appetize : fait tourner des simulateurs mobiles dans le navigateur, pour qu'un designer ou un chef de produit n'ait plus à passer par le poste d'un développeur disposant de Xcode. 2 075 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/jo-duchan/tapflow">https://github.com/jo-duchan/tapflow</a></p>
+<h3>Defuddle — extraction de contenu de page web</h3>
+<p>Alternative à Mozilla Readability qui conserve davantage d'éléments de la page (notes de bas de page, blocs de code, formules mathématiques). 10 058 étoiles, licence MIT, dernière mise à jour le 25 octobre. Projet déjà établi, remis en avant par le collecteur. <a href="https://github.com/kepano/defuddle">https://github.com/kepano/defuddle</a></p>
+<h3>FluidX3D — mécanique des fluides par la méthode de Boltzmann sur réseau</h3>
+<p>Logiciel de simulation d'écoulements fondé sur la méthode de Boltzmann sur réseau, fonctionnant par OpenCL sur cartes graphiques comme sur processeurs, ce qui évite de dépendre de CUDA. 5 372 étoiles, licence non reconnue automatiquement par l'API GitHub (à vérifier avant usage), mise à jour le 15 novembre. Remis en avant par le collecteur, projet déjà établi. <a href="https://github.com/projectphysx/fluidx3d">https://github.com/projectphysx/fluidx3d</a></p>
+<h3>Abyssal Garden — un monde sous-marin dans une seule page</h3>
+<p>Démonstration de rendu 3D tenant dans un unique fichier HTML d'environ 96 kilo-octets, sans aucune ressource externe. Intérêt surtout pédagogique : le fichier se lit et s'ouvre sans installation. 1 689 étoiles, licence MIT, mise à jour le 14 novembre. <a href="https://github.com/noniv/abyssal-garden">https://github.com/noniv/abyssal-garden</a></p>
+<h3>Iosevka — police à chasse fixe</h3>
+<p>Famille de polices à chasse fixe destinée au code, aux terminaux et aux documents techniques, paramétrable et extensible. 23 260 étoiles, licence OFL-1.1, dernière mise à jour le 11 novembre. Projet bien établi, remis en avant par le collecteur. <a href="https://github.com/be5invis/iosevka">https://github.com/be5invis/iosevka</a></p>
+<h3>Driver.js — visites guidées dans une page web</h3>
+<p>Bibliothèque sans dépendance pour créer des visites guidées, mises en évidence et infobulles dans une interface web. 27 073 étoiles, licence MIT, mise à jour le 14 novembre. Projet bien établi, remis en avant par le collecteur. <a href="https://github.com/nilbuild/driver.js">https://github.com/nilbuild/driver.js</a></p>
+<h3>Mosquitto — courtier MQTT</h3>
+<p>Courtier de messages MQTT, avec bibliothèques clientes C/C++ et utilitaires de publication-abonnement. 11 454 étoiles, licence signalée comme non standard par l'API GitHub (le projet combine EPL et EDL), dernière mise à jour le 6 novembre. Projet très ancien et très répandu, remis en avant par le collecteur. <a href="https://github.com/eclipse-mosquitto/mosquitto">https://github.com/eclipse-mosquitto/mosquitto</a></p>
+<h3>TokenEconomizer — réduire le coût des agents de codage</h3>
+<p>Outil de Microsoft qui apprend du dépôt pour éviter à l'agent de redécouvrir à chaque session comment lancer les tests ou dans quel ordre construire le projet, et donc de réduire les jetons consommés. 7 145 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/microsoft/tokeneconomizer">https://github.com/microsoft/tokeneconomizer</a></p>
+<h3>chat-demo — démonstration d'interface de discussion sans serveur</h3>
+<p>Interface de discussion statique proposée par DeepSeek, où le navigateur s'adresse directement au service d'API configuré, sans application dorsale à héberger. 4 053 étoiles, licence MIT, mise à jour le 13 novembre. <a href="https://github.com/deepseek-ai/chat-demo">https://github.com/deepseek-ai/chat-demo</a></p>
+<h3>Hegel-clj — tests génératifs pour Clojure</h3>
+<p>Interface Clojure pour la bibliothèque de tests génératifs Hegel, écrite par Kyle Kingsbury (aphyr). Son intérêt réside dans la réduction des cas d'échec : là où le classique test.check s'enlise parfois dans la simplification, Hegel-clj produit des contre-exemples plus courts, illustrés dans le billet d'annonce par un exemple parlant. Licence non déclarée par l'API GitHub, 33 étoiles, mise à jour le 12 novembre. <a href="https://github.com/aphyr/hegel-clj">https://github.com/aphyr/hegel-clj</a></p>
+<h3>Artex — cadre de tests d'intrusion, utilisé aussi pour de vraies intrusions</h3>
+<p>Cadre de tests d'intrusion assisté par un modèle de langage, auto-hébergeable, qui exige de chaque constat une preuve reproductible afin d'écarter les vulnérabilités inventées par le modèle. L'outil est aussi devenu un sujet de préoccupation : TechCrunch rapporte que le FBI l'a vu employé pour franchir des réseaux en moins de trois heures.<br />
+Licence AGPL-3.0, 4 812 étoiles, mise à jour le 16 novembre. Vu sur Open Source Projects, le blog d'Ostorlab et TechCrunch. <a href="https://github.com/baarai/artex">https://github.com/baarai/artex</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Danube 0.17.0 — messagerie et plan de contrôle MCP dans un seul binaire Rust</h3>
+<p>Nouvelle version du courtier de messages Danube, qui ajoute l'exposition d'un plan de contrôle MCP destiné aux agents IA, sans fichier YAML à écrire au démarrage. Licence Apache-2.0, 184 étoiles, mise à jour le 16 novembre. <a href="https://github.com/danube-messaging/danube">https://github.com/danube-messaging/danube</a></p>
+<h3>Nudge 2.0 — personnalisation des panneaux système Android</h3>
+<p>Version 2.0 de cette application Android qui redessine le curseur de volume, les panneaux de modes et d'actions, et les animations de bord déclenchées par les boutons latéraux ; les modes choisis sont transmis aux applications d'automatisation par une notification silencieuse ou une diffusion. L'annonce ne donne ni dépôt ni licence, l'information reste à confirmer. <a href="https://www.reddit.com/r/opensource/comments/1xxzyzh/nudge_v20_is_out_a_simple_app_but_aesthetically/">https://www.reddit.com/r/opensource/comments/1xxzyzh/nudge_v20_is_out_a_simple_app_but_aesthetically/</a></p>
+<h3>PostgreSQL Anonymizer 3.3 — mise à jour de sécurité majeure</h3>
+<p>L'extension d'anonymisation de bases PostgreSQL publie une version 3.3 décrite par ses auteurs comme une mise à jour de sécurité majeure : à appliquer si l'extension est en service. <a href="https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html">https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html</a></p>
+<h3>fwupd 2.1.10</h3>
+<p>Nouvelle version de l'utilitaire de mise à jour de micrologiciels sous Linux : corrections diverses et prise en charge d'un pavé tactile Synaptics supplémentaire. <a href="https://www.phoronix.com/news/Fwupd-2.1.10-Released">https://www.phoronix.com/news/Fwupd-2.1.10-Released</a></p>
+<h3>GNU Gawk 5.4.2</h3>
+<p>Nouvelle version de l'implémentation GNU d'AWK, avec un gain de performance présenté comme important. <a href="https://www.phoronix.com/news/GNU-Gawk-5.4.2">https://www.phoronix.com/news/GNU-Gawk-5.4.2</a></p>
+<h3>AlmaLinux 10.3</h3>
+<p>Nouvelle version mineure de la distribution AlmaLinux, qui rétablit notamment ModSecurity. <a href="https://www.phoronix.com/news/AlmaLinux-10.3-Released">https://www.phoronix.com/news/AlmaLinux-10.3-Released</a></p>
+<h3>Librem 5 v2 — un téléphone libriste à processeur RISC-V</h3>
+<p>Purism annonce vouloir livrer une nouvelle version de son téléphone Librem 5, cette fois avec un système sur puce RISC-V. Aucune date ni prix ne sont donnés ; il s'agit d'une intention, pas d'un produit disponible. <a href="https://www.phoronix.com/news/Librem-5-v2-Announced">https://www.phoronix.com/news/Librem-5-v2-Announced</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Greffon MCP et espace de discussion IA dans Blender</h3>
+<p>Greffon qui installe un serveur MCP et un espace de discussion directement dans Blender, afin que l'assistant voie la scène et puisse agir sur les objets au lieu de répondre à l'aveugle dans une fenêtre séparée. 2 181 étoiles, licence MIT, dernière mise à jour le 12 novembre. <a href="https://github.com/hitkeeen/blender-ai-mcp-addon">https://github.com/hitkeeen/blender-ai-mcp-addon</a></p>
+<h3>Google publie ses compétences d'agent</h3>
+<p>Dépôt rassemblant les compétences (skills) destinées aux agents de codage pour les produits Google, installables par une commande <code>npx</code>. 24 368 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/google/skills">https://github.com/google/skills</a></p>
+<h3>Stitch Skills — compétences pour Google Stitch</h3>
+<p>Collection de compétences et de greffons pour l'outil de conception Google Stitch, installables dans plusieurs agents de codage. 9 728 étoiles, licence Apache-2.0, mais dernière mise à jour le 17 août : le dépôt semble peu suivi depuis. <a href="https://github.com/google-labs-code/stitch-skills">https://github.com/google-labs-code/stitch-skills</a></p>
+<h3>Compétences Claude pour structurer des décisions de trading</h3>
+<p>Ensemble de compétences destinées à outiller une méthode de décision plutôt qu'à dicter des choix d'investissement. 6 296 étoiles, licence MIT, mise à jour le 16 novembre. Usage très spécialisé. <a href="https://github.com/tradermonty/claude-trading-skills">https://github.com/tradermonty/claude-trading-skills</a></p>
+<h3>SkillEvaluator — mesurer l'effet réel d'une compétence d'agent</h3>
+<p>Outil de NVIDIA qui évalue si une compétence ajoutée à un agent améliore réellement les résultats, au lieu de simplement rendre ses réponses plus assurées. 2 669 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/nvidia/skillevaluator">https://github.com/nvidia/skillevaluator</a></p>
+<h2>Volume</h2>
+<p>91 entrées examinées (Reddit, Hacker News, Lobsters et les six journaux de flux), 42 retenues et regroupées en 40 sujets, 49 écartées. Aucune erreur de collecte signalée : la dernière passe date du 16 novembre à 23 h 51 UTC.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La source principale est désormais Hacker News et Lobsters : les fils Reddit n'ont plus fourni que quelques billets exploitables, et le subreddit reste surtout le lieu des questions et des avis.</li>
+<li>Journée dense en outils d'agents et de développement : Coral (passerelle d'agents auto-hébergée, près de 5 000 étoiles), Doop (alternative libre à Paper.design, 2 000 étoiles), et une quinzaine de dépôts mis en avant par le collecteur Open Source Projects.</li>
+<li>Côté systèmes : Gawk 5.4.2, fwupd 2.1.10, AlmaLinux 10.3, et la mise à jour de sécurité majeure de PostgreSQL Anonymizer 3.3.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Coral — une passerelle où les agents écrivent leurs propres outils</h3>
+<p>Passerelle auto-hébergée qui s'intercale entre un agent et les systèmes sur lesquels il travaille : au lieu d'enchaîner des appels d'outils génériques, l'agent écrit de courts programmes TypeScript qu'il enregistre comme outils réutilisables, partageables au sein d'une équipe. L'intérêt est double : l'agent ne redécouvre pas la même procédure à chaque session, et les droits se contrôlent par outil plutôt que globalement. Le bruit sur Hacker News (43 points le jour même) en fait l'annonce la plus remarquée de la journée. Licence Apache-2.0, gratuit, 4 997 étoiles, dernière mise à jour le 16 novembre. <a href="https://github.com/withcoral/coral">https://github.com/withcoral/coral</a></p>
+<h3>Doop — alternative libre à Paper.design</h3>
+<p>Éditeur de conception d'interfaces présenté comme un équivalent libre de Paper.design. 2 081 étoiles, licence AGPL-3.0, mise à jour le 16 novembre. <a href="https://github.com/kgoedecke/doop">https://github.com/kgoedecke/doop</a></p>
+<h3>Pliable — CAO 3D en modélisation directe</h3>
+<p>Application de conception assistée par ordinateur en modélisation directe, bâtie sur le noyau géométrique Open Cascade, avec un cœur Python et une interface en TypeScript empaquetée par Tauri. Son objectif est d'éditer vite des fichiers STEP importés — un usage courant pour l'impression 3D — là où l'offre libre était rare. Version alpha 0.4.3 annoncée comme utilisable pour des pièces mécaniques simples ; l'auteur cherche des testeurs sous macOS et Linux. Licence AGPL-3.0, gratuit, 18 étoiles, mise à jour le 16 novembre. <a href="https://github.com/DesignWeaver3D/Pliable">https://github.com/DesignWeaver3D/Pliable</a></p>
+<h3>Anchor — tableau de bord pour applications auto-hébergées</h3>
+<p>Annonce d'un tableau de bord simple destiné à rassembler les applications auto-hébergées. Le billet ne donne ni dépôt ni licence vérifiable, l'information reste donc à confirmer. <a href="https://www.reddit.com/r/opensource/comments/1xxbzy9/anchor_a_simple_dashboard_for_your_selfhosted_apps/">https://www.reddit.com/r/opensource/comments/1xxbzy9/anchor_a_simple_dashboard_for_your_selfhosted_apps/</a></p>
+<h3>Cubepals — hébergement de serveurs Minecraft, endormis jusqu'à la connexion d'un joueur</h3>
+<p>Service d'hébergement de serveurs Minecraft (Java et Bedrock, mondes vanilla ou moddés) dont les serveurs se mettent en veille quand personne ne joue : les heures ne sont décomptées que pendant le fonctionnement. Le code est ouvert et le monde reste téléchargeable. 20 heures gratuites sans carte bancaire. <a href="https://cubepals.com">https://cubepals.com</a></p>
+<h3>Acutis Firewall — contrôle parental libre pour Android</h3>
+<p>Pare-feu parental qui filtre le DNS directement sur le téléphone, via l'API VpnService standard : pas de root, pas de compte, aucun serveur tiers. Il bloque contenus adultes, logiciels malveillants, jeux d'argent et réseaux sociaux dans toutes les applications, pas seulement dans le navigateur, et permet des plages horaires et un verrouillage par code. C'est l'annonce la plus directement utile de la journée pour un parent. Licence MIT, gratuit, financé par dons. <a href="https://acutis.castillo.sh/">https://acutis.castillo.sh/</a></p>
+<h3>VioLens — proxy d'inspection HTTPS</h3>
+<p>Proxy d'interception HTTPS présenté comme une alternative libre à Fiddler Classic, pour inspecter le trafic de ses propres applications. Licence MIT, gratuit, 10 étoiles, dernière mise à jour le 6 novembre. <a href="https://github.com/MarkSPowell/VioLens">https://github.com/MarkSPowell/VioLens</a></p>
+<h3>Grapim — revue de code par IA sur sa propre clé de modèle</h3>
+<p>Outil de revue de code assistée par un modèle de langage, qui s'exécute avec la clé d'API de l'utilisateur et non via un service tiers. Licence Apache-2.0, gratuit, 4 étoiles, mise à jour le 16 novembre. <a href="https://github.com/grapim/grapim">https://github.com/grapim/grapim</a></p>
+<h3>CoderBaba — agent de codage en ligne de commande</h3>
+<p>Agent de codage en terminal : il lit le dépôt, planifie la modification, édite les fichiers, lance les tests, et ne valide rien sans diff approuvé par l'utilisateur. Chaque tâche tourne dans son propre worktree Git, ce qui permet de mener plusieurs tâches en parallèle sans qu'elles se recouvrent. Fonctionne avec un modèle libre local ou via un service en ligne gratuit. Gratuit et libre. <a href="https://coderbaba.si">https://coderbaba.si</a></p>
+<h3>SignuDoc — signature de documents</h3>
+<p>Plateforme auto-hébergeable de signature électronique de documents. 570 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/NYLLON-SOFTWARE/signudoc">https://github.com/NYLLON-SOFTWARE/signudoc</a></p>
+<h3>Stromboli — agent d'astreinte</h3>
+<p>Agent d'exploitation (SRE) destiné à la mitigation rapide d'incidents. Encore jeune et confidentiel : 5 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/openstatusHQ/stromboli">https://github.com/openstatusHQ/stromboli</a></p>
+<h3>tamserve — suivi d'objets en temps réel sur caméras</h3>
+<p>Service de suivi d'objets sur flux vidéo en direct : il s'appuie sur SAM 3 pour détecter, et sur un suiveur léger pour combler les images intermédiaires, en partageant une seule copie des modèles entre toutes les caméras. L'auteur annonce, sur une RTX 4090, 16 caméras simultanées pour le suivi des personnes, quatre fois plus rapide que le suiveur d'origine, et une mémoire stable là où celui-ci épuisait la mémoire vidéo. Installation par <code>pip install "tamserve[sam3]"</code>. Licence Apache-2.0, gratuit, 21 étoiles, mise à jour le 16 novembre. <a href="https://github.com/aryamandarda/tamserve">https://github.com/aryamandarda/tamserve</a></p>
+<h3>Rakazo — alternative libre à un agent conversationnel commercial</h3>
+<p>Présenté comme une alternative ouverte à un agent commercial. 8 838 étoiles, licence Apache-2.0, mise à jour le 17 novembre. <a href="https://github.com/elie222/rakazo">https://github.com/elie222/rakazo</a></p>
+<h3>Guru — cadre d'agents « auto-évolutif »</h3>
+<p>Cadre d'agents présenté comme non censuré et respectueux de la vie privée. L'annonce reste très généraliste, à examiner avant tout usage sérieux. Licence AGPL-3.0, 14 étoiles, mise à jour le 16 novembre. <a href="https://github.com/GuruProduction/GURUbyUnusLumen">https://github.com/GuruProduction/GURUbyUnusLumen</a></p>
+<h3>The Scribe — éditeur de texte en binaire unique</h3>
+<p>Éditeur de texte distribué en un seul binaire statique, sans dépendance externe, sans appel réseau, et capable d'exporter en PDF, DOCX, ODT, LaTeX ou texte brut. Version 0.1.0, donc très jeune. Licence MIT, gratuit, 1 étoile. <a href="https://github.com/ENMEICORP/The-Scribe">https://github.com/ENMEICORP/The-Scribe</a></p>
+<h3>BooruRamen — navigateur d'images personnalisé</h3>
+<p>Navigateur pour galeries d'images qui apprend les goûts de l'utilisateur par un algorithme de recommandation exécuté côté client : tout ce qui est appris reste sur l'appareil. Versions Android et Windows publiées, version web compilable depuis les sources. Licence GPL-3.0, gratuit, 12 étoiles, mise à jour le 16 novembre. Le sujet est très particulier ; l'outil est mentionné pour mémoire. <a href="https://github.com/SoupDevs/BooruRamen">https://github.com/SoupDevs/BooruRamen</a></p>
+<h3>Giveback — mesurer ce qu'une entreprise rend à l'open source</h3>
+<p>Outil de mesure de la contribution d'une organisation à l'open source, publié par Michelin. Licence Apache-2.0, gratuit, 2 étoiles, dernière mise à jour le 5 novembre. <a href="https://github.com/michelin/giveback">https://github.com/michelin/giveback</a></p>
+<h3>gammarips — harnais et jeu de données MCP pour le trading d'options</h3>
+<p>Harnais de test et jeu de données destinés à faire travailler des agents IA sur des stratégies d'options. Usage très spécialisé, mentionné pour mémoire. Licence MIT, 1 étoile, mise à jour le 16 novembre. <a href="https://github.com/DevDizzle/gammarips-harness">https://github.com/DevDizzle/gammarips-harness</a></p>
+<h3>tapflow — émulateurs mobiles dans le navigateur</h3>
+<p>Alternative auto-hébergée à Appetize : fait tourner des simulateurs mobiles dans le navigateur, pour qu'un designer ou un chef de produit n'ait plus à passer par le poste d'un développeur disposant de Xcode. 2 075 étoiles, licence MIT, mise à jour le 16 novembre. <a href="https://github.com/jo-duchan/tapflow">https://github.com/jo-duchan/tapflow</a></p>
+<h3>Defuddle — extraction de contenu de page web</h3>
+<p>Alternative à Mozilla Readability qui conserve davantage d'éléments de la page (notes de bas de page, blocs de code, formules mathématiques). 10 058 étoiles, licence MIT, dernière mise à jour le 25 octobre. Projet déjà établi, remis en avant par le collecteur. <a href="https://github.com/kepano/defuddle">https://github.com/kepano/defuddle</a></p>
+<h3>FluidX3D — mécanique des fluides par la méthode de Boltzmann sur réseau</h3>
+<p>Logiciel de simulation d'écoulements fondé sur la méthode de Boltzmann sur réseau, fonctionnant par OpenCL sur cartes graphiques comme sur processeurs, ce qui évite de dépendre de CUDA. 5 372 étoiles, licence non reconnue automatiquement par l'API GitHub (à vérifier avant usage), mise à jour le 15 novembre. Remis en avant par le collecteur, projet déjà établi. <a href="https://github.com/projectphysx/fluidx3d">https://github.com/projectphysx/fluidx3d</a></p>
+<h3>Abyssal Garden — un monde sous-marin dans une seule page</h3>
+<p>Démonstration de rendu 3D tenant dans un unique fichier HTML d'environ 96 kilo-octets, sans aucune ressource externe. Intérêt surtout pédagogique : le fichier se lit et s'ouvre sans installation. 1 689 étoiles, licence MIT, mise à jour le 14 novembre. <a href="https://github.com/noniv/abyssal-garden">https://github.com/noniv/abyssal-garden</a></p>
+<h3>Iosevka — police à chasse fixe</h3>
+<p>Famille de polices à chasse fixe destinée au code, aux terminaux et aux documents techniques, paramétrable et extensible. 23 260 étoiles, licence OFL-1.1, dernière mise à jour le 11 novembre. Projet bien établi, remis en avant par le collecteur. <a href="https://github.com/be5invis/iosevka">https://github.com/be5invis/iosevka</a></p>
+<h3>Driver.js — visites guidées dans une page web</h3>
+<p>Bibliothèque sans dépendance pour créer des visites guidées, mises en évidence et infobulles dans une interface web. 27 073 étoiles, licence MIT, mise à jour le 14 novembre. Projet bien établi, remis en avant par le collecteur. <a href="https://github.com/nilbuild/driver.js">https://github.com/nilbuild/driver.js</a></p>
+<h3>Mosquitto — courtier MQTT</h3>
+<p>Courtier de messages MQTT, avec bibliothèques clientes C/C++ et utilitaires de publication-abonnement. 11 454 étoiles, licence signalée comme non standard par l'API GitHub (le projet combine EPL et EDL), dernière mise à jour le 6 novembre. Projet très ancien et très répandu, remis en avant par le collecteur. <a href="https://github.com/eclipse-mosquitto/mosquitto">https://github.com/eclipse-mosquitto/mosquitto</a></p>
+<h3>TokenEconomizer — réduire le coût des agents de codage</h3>
+<p>Outil de Microsoft qui apprend du dépôt pour éviter à l'agent de redécouvrir à chaque session comment lancer les tests ou dans quel ordre construire le projet, et donc de réduire les jetons consommés. 7 145 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/microsoft/tokeneconomizer">https://github.com/microsoft/tokeneconomizer</a></p>
+<h3>chat-demo — démonstration d'interface de discussion sans serveur</h3>
+<p>Interface de discussion statique proposée par DeepSeek, où le navigateur s'adresse directement au service d'API configuré, sans application dorsale à héberger. 4 053 étoiles, licence MIT, mise à jour le 13 novembre. <a href="https://github.com/deepseek-ai/chat-demo">https://github.com/deepseek-ai/chat-demo</a></p>
+<h3>Hegel-clj — tests génératifs pour Clojure</h3>
+<p>Interface Clojure pour la bibliothèque de tests génératifs Hegel, écrite par Kyle Kingsbury (aphyr). Son intérêt réside dans la réduction des cas d'échec : là où le classique test.check s'enlise parfois dans la simplification, Hegel-clj produit des contre-exemples plus courts, illustrés dans le billet d'annonce par un exemple parlant. Licence non déclarée par l'API GitHub, 33 étoiles, mise à jour le 12 novembre. <a href="https://github.com/aphyr/hegel-clj">https://github.com/aphyr/hegel-clj</a></p>
+<h3>Artex — cadre de tests d'intrusion, utilisé aussi pour de vraies intrusions</h3>
+<p>Cadre de tests d'intrusion assisté par un modèle de langage, auto-hébergeable, qui exige de chaque constat une preuve reproductible afin d'écarter les vulnérabilités inventées par le modèle. L'outil est aussi devenu un sujet de préoccupation : TechCrunch rapporte que le FBI l'a vu employé pour franchir des réseaux en moins de trois heures.<br />
+Licence AGPL-3.0, 4 812 étoiles, mise à jour le 16 novembre. Vu sur Open Source Projects, le blog d'Ostorlab et TechCrunch. <a href="https://github.com/baarai/artex">https://github.com/baarai/artex</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Danube 0.17.0 — messagerie et plan de contrôle MCP dans un seul binaire Rust</h3>
+<p>Nouvelle version du courtier de messages Danube, qui ajoute l'exposition d'un plan de contrôle MCP destiné aux agents IA, sans fichier YAML à écrire au démarrage. Licence Apache-2.0, 184 étoiles, mise à jour le 16 novembre. <a href="https://github.com/danube-messaging/danube">https://github.com/danube-messaging/danube</a></p>
+<h3>Nudge 2.0 — personnalisation des panneaux système Android</h3>
+<p>Version 2.0 de cette application Android qui redessine le curseur de volume, les panneaux de modes et d'actions, et les animations de bord déclenchées par les boutons latéraux ; les modes choisis sont transmis aux applications d'automatisation par une notification silencieuse ou une diffusion. L'annonce ne donne ni dépôt ni licence, l'information reste à confirmer. <a href="https://www.reddit.com/r/opensource/comments/1xxzyzh/nudge_v20_is_out_a_simple_app_but_aesthetically/">https://www.reddit.com/r/opensource/comments/1xxzyzh/nudge_v20_is_out_a_simple_app_but_aesthetically/</a></p>
+<h3>PostgreSQL Anonymizer 3.3 — mise à jour de sécurité majeure</h3>
+<p>L'extension d'anonymisation de bases PostgreSQL publie une version 3.3 décrite par ses auteurs comme une mise à jour de sécurité majeure : à appliquer si l'extension est en service. <a href="https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html">https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html</a></p>
+<h3>fwupd 2.1.10</h3>
+<p>Nouvelle version de l'utilitaire de mise à jour de micrologiciels sous Linux : corrections diverses et prise en charge d'un pavé tactile Synaptics supplémentaire. <a href="https://www.phoronix.com/news/Fwupd-2.1.10-Released">https://www.phoronix.com/news/Fwupd-2.1.10-Released</a></p>
+<h3>GNU Gawk 5.4.2</h3>
+<p>Nouvelle version de l'implémentation GNU d'AWK, avec un gain de performance présenté comme important. <a href="https://www.phoronix.com/news/GNU-Gawk-5.4.2">https://www.phoronix.com/news/GNU-Gawk-5.4.2</a></p>
+<h3>AlmaLinux 10.3</h3>
+<p>Nouvelle version mineure de la distribution AlmaLinux, qui rétablit notamment ModSecurity. <a href="https://www.phoronix.com/news/AlmaLinux-10.3-Released">https://www.phoronix.com/news/AlmaLinux-10.3-Released</a></p>
+<h3>Librem 5 v2 — un téléphone libriste à processeur RISC-V</h3>
+<p>Purism annonce vouloir livrer une nouvelle version de son téléphone Librem 5, cette fois avec un système sur puce RISC-V. Aucune date ni prix ne sont donnés ; il s'agit d'une intention, pas d'un produit disponible. <a href="https://www.phoronix.com/news/Librem-5-v2-Announced">https://www.phoronix.com/news/Librem-5-v2-Announced</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Greffon MCP et espace de discussion IA dans Blender</h3>
+<p>Greffon qui installe un serveur MCP et un espace de discussion directement dans Blender, afin que l'assistant voie la scène et puisse agir sur les objets au lieu de répondre à l'aveugle dans une fenêtre séparée. 2 181 étoiles, licence MIT, dernière mise à jour le 12 novembre. <a href="https://github.com/hitkeeen/blender-ai-mcp-addon">https://github.com/hitkeeen/blender-ai-mcp-addon</a></p>
+<h3>Google publie ses compétences d'agent</h3>
+<p>Dépôt rassemblant les compétences (skills) destinées aux agents de codage pour les produits Google, installables par une commande <code>npx</code>. 24 368 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/google/skills">https://github.com/google/skills</a></p>
+<h3>Stitch Skills — compétences pour Google Stitch</h3>
+<p>Collection de compétences et de greffons pour l'outil de conception Google Stitch, installables dans plusieurs agents de codage. 9 728 étoiles, licence Apache-2.0, mais dernière mise à jour le 17 août : le dépôt semble peu suivi depuis. <a href="https://github.com/google-labs-code/stitch-skills">https://github.com/google-labs-code/stitch-skills</a></p>
+<h3>Compétences Claude pour structurer des décisions de trading</h3>
+<p>Ensemble de compétences destinées à outiller une méthode de décision plutôt qu'à dicter des choix d'investissement. 6 296 étoiles, licence MIT, mise à jour le 16 novembre. Usage très spécialisé. <a href="https://github.com/tradermonty/claude-trading-skills">https://github.com/tradermonty/claude-trading-skills</a></p>
+<h3>SkillEvaluator — mesurer l'effet réel d'une compétence d'agent</h3>
+<p>Outil de NVIDIA qui évalue si une compétence ajoutée à un agent améliore réellement les résultats, au lieu de simplement rendre ses réponses plus assurées. 2 669 étoiles, licence Apache-2.0, mise à jour le 16 novembre. <a href="https://github.com/nvidia/skillevaluator">https://github.com/nvidia/skillevaluator</a></p>
+<h2>Volume</h2>
+<p>91 entrées examinées (Reddit, Hacker News, Lobsters et les six journaux de flux), 42 retenues et regroupées en 40 sujets, 49 écartées. Aucune erreur de collecte signalée : la dernière passe date du 16 novembre à 23 h 51 UTC.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — lundi 16 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-16.html</link>
