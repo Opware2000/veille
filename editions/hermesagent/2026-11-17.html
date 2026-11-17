@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — mardi 17 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — mardi 17 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Reddit fermant ses flux, cette édition s'appuie largement sur Hacker News et sur les journaux de flux : un méta-fournisseur de mémoire pour Hermes, une passerelle qui laisse les agents écrire leurs propres outils, un gestionnaire de tâches auto-hébergé et un client iPhone, plus deux modèles nouveaux (Qwen4-Max, FLUX 3). Côté greffons, ArtCraft passe en 0.2.0, AutoRAG arrive sur la place de marché et OpenCode publie un accès au navigateur réel pour les agents.</p>
+<h2>Applications et outils nouveaux</h2>
+<ul>
+<li><strong>Comemo — mémoire composite pour Hermes.</strong> Hermes n'accepte qu'un seul fournisseur de mémoire externe ; Comemo occupe cette place et répartit les écritures vers plusieurs moteurs (Mem0, Honcho, Supermemory), interroge ceux qui sont actifs, fusionne les résultats et supprime les doublons. Publié en « Show HN » et encore très peu vu (1 point, aucun commentaire). Aucune licence n'est déclarée sur le dépôt, 2 étoiles, dernière modification le 13 novembre 2026. https://github.com/andausman/comemo</li>
+<li><strong>Coral — passerelle open source où les agents écrivent leurs propres outils.</strong> Un service auto-hébergé qui s'interpose entre l'agent et les systèmes qu'il pilote : l'agent écrit de courts programmes TypeScript qu'il enregistre comme outils réutilisables, partageables entre agents, chaque programme s'exécutant dans une isolat V8 sans réseau ni identifiants. Écrit en Rust, lançable en application de bureau ou en serveur partagé ; licence Apache 2.0, environ 5 000 étoiles, dernière modification le 16 novembre 2026. Le développeur annonce 29 % de temps gagné et 31 % de coût en moins sur ses propres tâches (chiffres de l'auteur, non reproduits ici). https://github.com/withcoral/coral</li>
+<li><strong>OpenTodo — gestionnaire de tâches auto-hébergé, un seul binaire Go.</strong> Annoncé en « Show HN » (19 points, 18 commentaires) comme une alternative locale d'abord, sans abonnement ni enfermement propriétaire. Licence AGPL 3.0, 489 étoiles, dernière modification le 16 novembre 2026. https://github.com/OpenTodoApp/OpenTodo</li>
+<li><strong>datasette-maplibre — cartographie dans Datasette.</strong> Premier greffon géospatial publié depuis longtemps par Simon Willison : il affiche les données géographiques d'une base Datasette avec MapLibre GL et le fonds de carte vectoriel libre OpenFreeMap, et n'ouvre l'aperçu WebGL qu'à l'entrée dans la fenêtre. Version 0.1a0, licence Apache 2.0, 1 étoile, écrit le 15 novembre 2026. https://github.com/datasette/datasette-maplibre</li>
+<li><strong>H3rm35 — client iPhone et iPad pour Hermes (bêta publique gratuite).</strong> Son développeur, indépendant de Nous Research, ouvre une bêta TestFlight gratuite : l'application se connecte à l'installation Hermes existante pour dialoguer, répondre aux questions de l'agent, approuver ses actions et suivre les tâches depuis le téléphone ; Hermes continue de tourner sur la machine locale et les identifiants restent dans le trousseau de l'appareil. Le code est fermé, ce qui la distingue des autres entrées de cette rubrique ; l'auteur annonce l'anglais et l'allemand, et une notification poussée facultative passant par un relais configuré séparément. https://www.reddit.com/r/hermesagent/comments/1xwwdri/h3rm35_my_iphoneipad_client_for_hermes_is_now_in/</li>
+</ul>
+<h2>Modèles et capacités nouvelles</h2>
+<ul>
+<li><strong>Qwen4-Max.</strong> Nouveau modèle de la famille Qwen, annoncé sur le blog de l'éditeur et très discuté sur Hacker News (580 points, 243 commentaires) ; le billet n'a pas été ouvert ici, seule l'annonce est signalée. https://qwen.ai/blog?id=qwen4-max</li>
+<li><strong>FLUX 3.</strong> Black Forest Labs présente dans un entretien Latent Space un modèle d'image entraîné conjointement sur l'image, la vidéo et le son, l'argument étant qu'une vidéo décrit le mouvement là où une image fixe ne montre qu'une position. https://bfl.ai/blog/flux-3 — entretien : https://latent.space/p/bfl/</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Datasette.</strong> Une série de publications du 15 novembre : 1.0a43 ajoute l'export en flux continu pour les greffons et corrige une faille (requêtes enregistrées privées dont le titre et le SQL pouvaient être exposés), 0.65.6 est la branche stable équivalente, datasette-agent 0.6a0 place une invite d'agent directement sur la page d'accueil de Datasette avec mention des tables et des requêtes, et datasette-apps passe en 0.4a0. https://simonwillison.net/2026/Nov/15/datasette/</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>ArtCraft for Hermes 0.2.0.</strong> Greffon et serveur MCP autonome qui relie Hermes aux applications ArtCraft (PhotoCraft, LightCraft, FilmCraft, SoundCraft) sans jamais modifier les fichiers d'origine : refus des écrasements sur place, empreintes SHA-256 avant et après, comparaison par différence de pixels, et recettes de traitement exportables en archives contrôlées. Licence MIT, 2 étoiles, dernière modification le 16 novembre 2026. https://github.com/wspotter/hermes-artcraft-plugin</li>
+<li><strong>AutoRAG.</strong> Greffon accepté sur la place de marché Hermes : il indexe le contenu des fichiers locaux, des messages Discord, Slack, WhatsApp ou Telegram, des courriels et de l'historique de navigation, puis recherche par voie lexicale ou vectorielle, plus vite qu'une recherche classique de fichiers. Le dépôt (Apache 2.0, environ 5 900 étoiles, actif) est un projet existant que le greffon vient brancher sur Hermes ; l'indexation demande du temps selon le volume. https://github.com/Marker-Inc-Korea/AutoRAG</li>
+<li><strong>hermes-connection-kit.</strong> Petit ensemble open source (licence MIT) pour envoyer une tâche à une installation Hermes depuis ChatGPT Work et récupérer le résultat dans la même conversation, en passant par MCP et les webhooks de Work. Encore en aperçu, testé sur une machine Ubuntu neuve, 0 étoile, dernière modification le 15 novembre 2026. https://github.com/martindell/hermes-connection-kit</li>
+<li><strong>OpenCode Browse.</strong> Serveur MCP et extension Chromium qui donnent aux agents le navigateur réel de l'utilisateur, avec ses onglets, ses sessions ouvertes et ses extensions : ouverture d'onglets en arrière-plan, lecture, clics, saisie, captures d'écran et enregistrement d'onglet, avec reprise de la main pour un identifiant, une validation en deux étapes ou un paiement. Fonctionne avec OpenCode, Claude Code, Cursor, Codex ou Zed. Licence MIT, 688 étoiles, dernière modification le 16 novembre 2026. https://github.com/anomalyco/browse (page produit : https://opencode.ai/product/browse)</li>
+</ul>
+<h2>Volume</h2>
+<p>138 entrées lues dans l'intervalle (72 du journal r/hermesagent, 5 de Simon Willison, 1 de Latent Space, 60 de Hacker News), 12 retenues, 126 écartées. La collecte n'a signalé aucune erreur (dernier passage le 16 novembre 2026 à 22h47 UTC).</p>
+<p>Deux points de méthode. Le canari Hermes du 15 novembre figurait de nouveau dans le journal, mais il a déjà été décrit dans l'édition du 16 novembre : il n'est pas répété ici. Un fil très commenté reste hors édition faute de contenu exploitable : « Votre abonnement Gemini ne sera plus inutile » (61 commentaires) n'a pas de texte dans le journal collecté, impossible de dire quelle solution il annonce ; à réexaminer s'il est republié avec son contenu.</p>
+<footer>Édition du mardi 17 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
