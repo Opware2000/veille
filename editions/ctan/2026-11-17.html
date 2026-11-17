@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — mardi 17 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — mardi 17 novembre 2026</h1>
+<h2>En bref — Sept annonces publiées depuis hier, aucune ne concerne vos soixante et un paquets. Quatre nouveaux paquets méritent votre attention : tblnotes pour les notes dans les tableaux, moepTikZ pour dessiner des réseaux en TikZ, uprightsubs pour les indices en caractères droits, beamer-textbox-emph pour vos diaporamas. Deux mises à jour notables par ailleurs (enumext, tagpdf).</h2>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>tblnotes</strong> — Une note de bas de page placée dans un tableau perdait son texte : c'est le manque que comble ce paquet. Il recueille les notes du tableau englobant (tabular, tabular* ou longtable) et les place soit sous le tableau, dans sa largeur, numérotées à nouveau pour chaque tableau (mode par défaut), soit en bas de page, numérotées avec les notes courantes du document. Utile dès que vos tableaux de données (SVT, SNT) appellent une précision en note plutôt qu'une colonne supplémentaire. Licence LPPL 1.3c ; l'annonce porte la version 1.0 du 14 novembre, l'API CTAN indique déjà la version 1.1 datée du 16 novembre — la correction a suivi de près. https://ctan.org/pkg/tblnotes</p>
+<p><strong>moepTikZ</strong> — Formes TikZ pour dessiner des réseaux informatiques : concentrateurs, commutateurs (y compris multicouche), routeurs, pare-feu, points d'accès, modems, clients, portables, téléphones, serveurs, baies, bases de données, Internet en nuage, utilisateurs, messages ouverts et fermés, clés et serrures, plus un style de tracé pour les liaisons sans fil. Les formes portent des points d'ancrage sur leur contour et aux angles, acceptent des couleurs personnalisées et fonctionnent avec les recouvrements de Beamer. C'est l'outil le plus directement utile de la journée pour vos séances de SNT sur les réseaux : les schémas se composent alors en TikZ, avec la même police et les mêmes couleurs que le reste du document, au lieu d'être importés en image. L'auteur l'emploie dans ses supports de cours depuis 2012 ; c'est sa première publication sur CTAN. Licence LPPL 1.3c, version 1.1. https://ctan.org/pkg/moeptikz</p>
+<p><strong>uprightsubs</strong> — Simplifie la saisie des indices descriptifs en caractères droits en mathématiques : <code>E_{!kin}</code> produit un <code>\mathrm</code>, tandis que <code>E_{!!cinétique}</code> emploie un <code>\textnormal</code>, nécessaire dès que l'indice contient des lettres accentuées ; les indices ordinaires gardent leur mise en forme habituelle. Cela répond à une notation que vous pratiquez en SVT comme en physique (grandeurs indexées, énergies cinétiques, vitesses). Licence LPPL 1.3c, version 0.1.0 — un paquet jeune, à tester avant de l'intégrer à nBook3. https://ctan.org/pkg/uprightsubs</p>
+<p><strong>beamer-textbox-emph</strong> — Environnements de blocs de texte pour Beamer, destinés à mettre discrètement en valeur un point important et à alléger la mise en page des diapositives. La finalité est proche de ce que vous faites déjà avec tcolorbox dans nBookSlides, mais l'approche est plus légère ; à regarder seulement si vous cherchez une variante pour les diapositives. Licence Creative Commons BY-SA 4.0 — inhabituelle pour un paquet LaTeX, elle entraîne le partage à l'identique des documents qui l'emploient, ce qui mérite réflexion avant un usage en classe. Version 1.0. https://ctan.org/pkg/beamer-textbox-emph</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>enumext 2.5</strong> (14 novembre) — listes énumérées compatibles PDF balisé pour composer des fiches d'exercices et des questionnaires à choix multiples, réponses conservées en mémoire : prise en charge de footnotehyper 2.0 ; sans lui, les notes de <code>enumext*</code> et <code>keyans*</code> sont désormais traitées à l'intérieur de l'élément.</li>
+<li><strong>tagpdf 1.0j</strong> (15 novembre) — code de balisage et d'accessibilité utilisé par le noyau LaTeX (projet Tagged PDF) : identifiant fixe pour l'espace de noms utilisateur au lieu de nombres aléatoires, et plus d'inclusion des fichiers CSS lorsque la norme d'accessibilité l'interdit.</li>
+</ul>
+<h2>Volume — 7 annonces publiées dans l'intervalle, 6 retenues (dont 0 concernant vos paquets), 1 écartée : katibmath, notation mathématique arabe, écarté comme toute production liée à une langue non latine. Journal consulté : 198 lignes, dont 191 déjà traitées lors des passages précédents.</h2>
+<footer>Édition du mardi 17 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
