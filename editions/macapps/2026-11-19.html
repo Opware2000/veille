@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/macapps — jeudi 19 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../macapps.xml" title="r/macapps">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/macapps — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Journée pauvre du côté des fils Reddit — le subreddit ne vit plus que par intermittence — mais deux projets libres de Hacker News méritent le détour (SetShot pour comparer les réglages du système, SiliconForest pour faire démarrer Darwin sur Apple silicon), aux côtés de canfit, qui aide à libérer de la mémoire avant de charger un modèle local. Le reste du volume est fait d'actualité Apple et de promotions, écartées comme d'habitude.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>SetShot</strong> — application macOS en Swift qui prend un instantané des réglages du système et compare deux instantanés pour montrer, ligne par ligne, ce qui a changé. L'intérêt est concret : savoir ce qu'un utilitaire a modifié dans les préférences, sans le deviner. Licence MIT, 96 étoiles, dernière mise à jour le 17 novembre 2026. Présenté sur Hacker News (2 points, aucun commentaire).<br />
+https://github.com/adamengst/setshot-app</p>
+<p><strong>SiliconForest</strong> — projet libre qui fait démarrer Darwin/XNU, le cœur de macOS, nativement sur Apple silicon, avec un bureau graphique et le support d'applications Mac ; l'auteur annonce un démarrage réussi sur un MacBook Pro M1. Licence MIT, 190 étoiles, dépôt créé le 18 octobre et mis à jour le 18 novembre 2026. C'est un travail de fond plus qu'un outil du quotidien, mais il documente ce qui se passe sous le système.<br />
+https://github.com/chriskearney/siliconforest</p>
+<p><strong>Spillway</strong> — application macOS native pour les tests de charge HTTP, présentée comme l'alternative visuelle à JMeter, k6 et Gatling : plans de test composés à la souris (sans YAML ni script), deux modèles de charge (utilisateurs virtuels ou débit d'arrivée), courbes en direct pour le débit, les erreurs et les centiles p50/p90/p99, extraction de valeurs entre requêtes, comparaison de deux campagnes. Le cœur du produit est gratuit sans limite de durée ; l'authentification avancée (OAuth 2.0, signatures AWS, GCP, Azure) et la comparaison de campagnes sont facturées 49,99 $ par an.<br />
+https://spillwayapp.com/</p>
+<p><strong>canfit</strong> — utilitaire en ligne de commande écrit en Rust, décrit comme « le top pour ceux qui font tourner des modèles locaux » : il liste les applications et processus qu'on peut fermer sans toucher au système, ce qui aide à libérer de la mémoire avant de charger un modèle. Sans télémétrie, présenté pour macOS, Windows et Linux. Licence MIT, 8 étoiles, dernière poussée le 11 novembre 2026.<br />
+https://github.com/federicolaterra/canfit</p>
+<p><strong>Botmap</strong> — application Mac qui range les conversations de Claude Code et de Codex dans une carte mentale organisée par projet, avec quatre vues (Mindmap, Swipe, Bubbles, Matrix), importe les conversations déjà présentes sur le disque, signale les agents en attente de réponse et permet de répondre à la voix. Gratuit pour un usage personnel et jusqu'à cinq personnes, 50 $ par mois pour toute l'organisation au-delà. Apple silicon, macOS 12 ou plus, Claude Code ou la CLI Codex installés.<br />
+Incertitude : le message Reddit porte l'étiquette « open source », mais l'éditeur ne publie ni licence ni dépôt — seule la gratuité personnelle est affichée. Le projet est à considérer comme gratuit, pas comme libre.<br />
+https://trybotmap.com/</p>
+<p><strong>Pluely</strong> — petite fenêtre flottante qui écoute une réunion sur le Mac (Zoom, Meet, Teams, Slack), la transcrit en direct avec les locuteurs, propose des réponses et des questions de suivi pendant que l'appel dure, et envoie un résumé à la fin ; aucun bot ne rejoint la réunion et la fenêtre est exclue du partage d'écran. Fonctionne avec ses propres clés d'API (OpenAI, Anthropic, Google, OpenRouter, Groq) ou des modèles locaux (Ollama, LM Studio), les données restant sur le Mac ; gratuit avec ses clés, offres hébergées à partir de 15 $ par mois. Code public (environ 2 800 étoiles sur GitHub).<br />
+https://pluely.com/</p>
+<p><strong>popCalendar</strong> — calendrier de barre de menus qui affiche un mois, une année ou deux années d'un seul tenant, sélectionne une plage pour en compter les jours et les jours ouvrés, enregistre ces plages en couleurs, épingle un compte à rebours et exporte le tout en PNG ou en PDF ; une fenêtre peut aussi servir de calendrier transparent posé sur le bureau. Achat unique sur l'App Store pour Mac, iPhone et iPad, sans abonnement — l'application figure également au catalogue de Setapp. Le dépôt GitHub correspondant ne porte ni licence ni étoile, l'application étant distribuée par l'App Store.<br />
+https://popcalendar.app/</p>
+<p><strong>dusk bot</strong> — une « équipe d'assistants » qui s'appuie sur les comptes ChatGPT, Claude, Gemini ou Grok déjà utilisés, chaque assistant disposant de son propre ordinateur et de sa mémoire. Application pour macOS, Windows et Linux, gratuite pour un usage personnel, avec la possibilité de brancher ses propres modèles ; l'éditeur renvoie à un dépôt GitHub, mais je n'ai pas pu vérifier la licence. Vu sur Product Hunt.<br />
+https://dusk.bot/</p>
+<p><strong>Lumo (Proton)</strong> — le client de bureau de l'assistant de Proton est désormais publié pour macOS, ainsi que Windows et Linux : il sait se connecter aux applications et aux fichiers de la machine, exécuter des tâches programmées et utiliser des « compétences », et son code est public. Utilisable avec un compte Proton (offre gratuite comprise).<br />
+https://alternativeto.net/news/2026/11/proton-launches-lumo-desktop-on-windows-macos-linux-with-connectors-schedules-and-skills/</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Organic Maps</strong> — mise à jour substantielle de l'application de navigation libre : relief en trois dimensions et altitudes partout sur la carte, profondeur des océans, courbes de niveau graduées, import de fichiers KML, KMZ et GeoJSON affichés en zones colorées, et itinéraires revus. Gratuit et libre.<br />
+https://alternativeto.net/news/2026/11/organic-maps-rolls-out-3d-terrain-ocean-depths-imported-areas-improved-routing-and-more/</p>
+<p><strong>ForkLift 4.7.8</strong> — le gestionnaire de fichiers à achat unique améliore la suppression d'applications et la prise en charge des dossiers Google Drive.<br />
+https://alternativeto.net/news/2026/11/forklift-4-7-8-improves-app-deleter-and-google-drive-folders/</p>
+<p><strong>Moonlock</strong> — l'application antiphishing de MacPaw, déjà connue sur Mac, arrive sur iPhone : elle analyse messages, captures, liens et QR codes suspects et explique pourquoi ils le sont. Vu chez 9to5Mac et MacRumors.<br />
+https://macrumors.com/2026/11/18/macpaws-moonlock-cybersecurity-app-iphone/</p>
+<p><strong>Stremio</strong> — la version de bureau pour macOS reçoit une configuration mpv personnalisable, des correctifs de lecture propres à la plateforme et un serveur de diffusion 4.22.6.<br />
+https://alternativeto.net/news/2026/11/stremio-updates-web-interface-profiles-and-desktop-playback/</p>
+<h2>Volume</h2>
+<p>216 entrées lues dans les seize journaux de la veille (dont une majorité de simples montées de version du journal Homebrew), 13 retenues, 203 écartées. Les actualités Apple du jour — rumeurs sur l'iPhone 18 et l'iPhone Duo, mises à jour de macOS 27.3, promotions du Black Friday, mise à jour de la suite Creator Studio — sont apparues chez MacG, iGeneration, 9to5Mac et MacRumors sous plusieurs formes le même jour : elles ont été regroupées pour être écartées d'un seul tenant, pas annoncées quatre fois. Aucune erreur signalée par la dernière collecte.</p>
+<footer>Édition du jeudi 19 novembre 2026 — <a href="https://opware2000.github.io/veille/macapps.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
