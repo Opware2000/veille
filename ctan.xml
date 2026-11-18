@@ -6,9 +6,54 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 17 Nov 2026 01:41:35 +0100</lastBuildDate>
+<lastBuildDate>Wed, 18 Nov 2026 01:41:44 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — mercredi 18 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-18.html</link>
+<guid isPermaLink="false">ctan-2026-11-18</guid>
+<pubDate>Wed, 18 Nov 2026 01:41:44 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — mercredi 18 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune mise à jour ne concerne les 61 paquets externes de nBook3 : la section principale est vide cette fois.<br />
+Deux nouveaux paquets ont été annoncés, un seul est retenu (« unicodehat », pour les lettres accentuées en mathématiques).<br />
+Quatre mises à jour notables : subcaptionlite (qui gagne <code>\ContinuedFloat</code>), tblnotes, ltx-talk et l3kernel-dev.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>unicodehat — v1.0.0</h3>
+<p>Le paquet convertit en mathématiques toute lettre latine Unicode précomposée portant un seul accent circonflexe en la lettre surmontée d'un chapeau correspondante : « Ĥ » devient « \hat{H} » en mode mathématique, alors que le caractère d'origine est conservé en mode texte. Il vise l'écriture directe de la notation des opérateurs en mécanique quantique. Il demande une entrée en UTF-8 avec LuaLaTeX ou XeLaTeX et s'appuie sur <code>newunicodechar</code>. Licence LPPL 1.3c.<br />
+Pertinence : c'est une commodité de frappe en typographie mathématique ; elle ne sert que si l'on saisit directement les lettres accentuées circonflexes, ce qui n'est pas la convention habituelle (on écrit <code>\hat{H}</code>). À connaître, sans urgence.<br />
+https://ctan.org/pkg/unicodehat</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>subcaptionlite 1.1</strong> (13 novembre 2026) — ajoute <code>\ContinuedFloat</code>, comme dans le paquet <code>caption</code> : placée au début d'un flottant, la commande lui fait poursuivre le flottant précédent du même type, en gardant son numéro et en continuant la numérotation des sous-figures ou sous-tableaux, (c) puis (d)… Ce paquet est le compagnon de <code>subcaption</code>, que votre classe charge : il fournit les mêmes environnements <code>subfigure</code> et <code>subtable</code> sans redéfinir <code>\@makecaption</code>, donc sans perturber un classe dont les légendes ont leur propre mise en forme — exactement la situation de nBook3. À garder en tête si l'installation de <code>subcaption</code> venait à poser problème. https://ctan.org/pkg/subcaptionlite</li>
+<li><strong>tblnotes 1.1</strong> (16 novembre 2026) — notes de bas de page dans les tableaux, rendues sous le tableau dans sa largeur ou en bas de page. La version 1.1 ajoute le support du PDF balisé (<code>\DocumentMetadata{tagging=on}</code>, LuaLaTeX et pdfLaTeX) : chaque appel de note dans un tableau et son texte se référencent désormais mutuellement, dans les notes de tableau comme dans les notes de page. Le texte collecté de l'annonce s'arrête là, la fin du message n'a pas été reprise par le flux. Le paquet refuse d'être chargé avec <code>threeparttable</code> ou <code>tablefootnote</code>. Utile lorsque vous citez des sources directement sous un tableau sans alourdir le bas de page. https://ctan.org/pkg/tblnotes</li>
+<li><strong>ltx-talk 0.6.13</strong> (16 novembre 2026) — classe expérimentale de présentation du projet LaTeX, proche de <code>beamer</code> par la syntaxe mais conçue d'emblée pour produire un PDF balisé (accessible), réutilisable dans d'autres formats. Cette version corrige des défauts ; le texte collecté de l'annonce s'arrête après le titre « Fixed », les correctifs précis ne sont donc pas connus. La classe est déclarée expérimentale et demande LaTeX 2025-11-01 ou plus récent ; elle n'a d'intérêt pour vous que si vous envisagez un jour de quitter beamer et son thème maison. https://ctan.org/pkg/ltx-talk</li>
+<li><strong>l3kernel-dev</strong> (pré-version du 16 novembre 2026) — version de développement préliminaire de <code>l3kernel</code>, livrée avec le noyau de pré-test <code>latex-base-dev</code> et destinée aux utilisateurs avertis ; <code>l3backend-dev</code> y est désormais intégré. Le seul élément de liste repris par le flux est la conservation du <code>+=</code> lors de l'enregistrement de clés inconnues relatives à une racine. Sans effet sur votre classe, qui utilise la version stable ; à ne pas installer par inadvertance. https://ctan.org/pkg/l3kernel-dev</li>
+</ul>
+<h2>Volume</h2>
+<p>8 annonces publiées dans l'intervalle (17 novembre 2026), 5 retenues, dont 0 concernant vos paquets, et 3 écartées : paquet de programmation bas niveau non destiné aux documents ordinaires (<code>luaalignstate</code>), correctif d'un paquet que vous n'utilisez pas (<code>colorframed</code>, qui répare la perte de couleur des environnements de <code>framed</code>), correction de mise en page trop étroite dont l'annonce ne dit rien d'exploitable (<code>footnotenosplit</code>). Une remarque sur la collecte : pour ces huit annonces, le texte repris dans le journal est le résumé court du flux et non le message complet ; les mises à jour ltx-talk et tblnotes sont donc décrites à partir de ce seul résumé, sans invention. La dernière collecte s'est terminée sans erreur (<code>meta.json</code>, <code>errors</code> vide).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — mercredi 18 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune mise à jour ne concerne les 61 paquets externes de nBook3 : la section principale est vide cette fois.<br />
+Deux nouveaux paquets ont été annoncés, un seul est retenu (« unicodehat », pour les lettres accentuées en mathématiques).<br />
+Quatre mises à jour notables : subcaptionlite (qui gagne <code>\ContinuedFloat</code>), tblnotes, ltx-talk et l3kernel-dev.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>unicodehat — v1.0.0</h3>
+<p>Le paquet convertit en mathématiques toute lettre latine Unicode précomposée portant un seul accent circonflexe en la lettre surmontée d'un chapeau correspondante : « Ĥ » devient « \hat{H} » en mode mathématique, alors que le caractère d'origine est conservé en mode texte. Il vise l'écriture directe de la notation des opérateurs en mécanique quantique. Il demande une entrée en UTF-8 avec LuaLaTeX ou XeLaTeX et s'appuie sur <code>newunicodechar</code>. Licence LPPL 1.3c.<br />
+Pertinence : c'est une commodité de frappe en typographie mathématique ; elle ne sert que si l'on saisit directement les lettres accentuées circonflexes, ce qui n'est pas la convention habituelle (on écrit <code>\hat{H}</code>). À connaître, sans urgence.<br />
+https://ctan.org/pkg/unicodehat</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>subcaptionlite 1.1</strong> (13 novembre 2026) — ajoute <code>\ContinuedFloat</code>, comme dans le paquet <code>caption</code> : placée au début d'un flottant, la commande lui fait poursuivre le flottant précédent du même type, en gardant son numéro et en continuant la numérotation des sous-figures ou sous-tableaux, (c) puis (d)… Ce paquet est le compagnon de <code>subcaption</code>, que votre classe charge : il fournit les mêmes environnements <code>subfigure</code> et <code>subtable</code> sans redéfinir <code>\@makecaption</code>, donc sans perturber un classe dont les légendes ont leur propre mise en forme — exactement la situation de nBook3. À garder en tête si l'installation de <code>subcaption</code> venait à poser problème. https://ctan.org/pkg/subcaptionlite</li>
+<li><strong>tblnotes 1.1</strong> (16 novembre 2026) — notes de bas de page dans les tableaux, rendues sous le tableau dans sa largeur ou en bas de page. La version 1.1 ajoute le support du PDF balisé (<code>\DocumentMetadata{tagging=on}</code>, LuaLaTeX et pdfLaTeX) : chaque appel de note dans un tableau et son texte se référencent désormais mutuellement, dans les notes de tableau comme dans les notes de page. Le texte collecté de l'annonce s'arrête là, la fin du message n'a pas été reprise par le flux. Le paquet refuse d'être chargé avec <code>threeparttable</code> ou <code>tablefootnote</code>. Utile lorsque vous citez des sources directement sous un tableau sans alourdir le bas de page. https://ctan.org/pkg/tblnotes</li>
+<li><strong>ltx-talk 0.6.13</strong> (16 novembre 2026) — classe expérimentale de présentation du projet LaTeX, proche de <code>beamer</code> par la syntaxe mais conçue d'emblée pour produire un PDF balisé (accessible), réutilisable dans d'autres formats. Cette version corrige des défauts ; le texte collecté de l'annonce s'arrête après le titre « Fixed », les correctifs précis ne sont donc pas connus. La classe est déclarée expérimentale et demande LaTeX 2025-11-01 ou plus récent ; elle n'a d'intérêt pour vous que si vous envisagez un jour de quitter beamer et son thème maison. https://ctan.org/pkg/ltx-talk</li>
+<li><strong>l3kernel-dev</strong> (pré-version du 16 novembre 2026) — version de développement préliminaire de <code>l3kernel</code>, livrée avec le noyau de pré-test <code>latex-base-dev</code> et destinée aux utilisateurs avertis ; <code>l3backend-dev</code> y est désormais intégré. Le seul élément de liste repris par le flux est la conservation du <code>+=</code> lors de l'enregistrement de clés inconnues relatives à une racine. Sans effet sur votre classe, qui utilise la version stable ; à ne pas installer par inadvertance. https://ctan.org/pkg/l3kernel-dev</li>
+</ul>
+<h2>Volume</h2>
+<p>8 annonces publiées dans l'intervalle (17 novembre 2026), 5 retenues, dont 0 concernant vos paquets, et 3 écartées : paquet de programmation bas niveau non destiné aux documents ordinaires (<code>luaalignstate</code>), correctif d'un paquet que vous n'utilisez pas (<code>colorframed</code>, qui répare la perte de couleur des environnements de <code>framed</code>), correction de mise en page trop étroite dont l'annonce ne dit rien d'exploitable (<code>footnotenosplit</code>). Une remarque sur la collecte : pour ces huit annonces, le texte repris dans le journal est le résumé court du flux et non le message complet ; les mises à jour ltx-talk et tblnotes sont donc décrites à partir de ce seul résumé, sans invention. La dernière collecte s'est terminée sans erreur (<code>meta.json</code>, <code>errors</code> vide).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — mardi 17 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-17.html</link>
