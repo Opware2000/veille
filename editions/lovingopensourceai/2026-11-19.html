@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — jeudi 19 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux projets neufs à regarder de près : Hex, la dictée vocale locale libre, et la compétence d'optimisation de serveur LLM local de sybil-solutions, déjà à plus de mille étoiles.</li>
+<li>Rumble-2-Flash apporte un modèle de reconnaissance vocale libre de 0,5 milliard de paramètres qui tient dans Transformers et vLLM sans code spécifique ; Tencent ouvre de son côté les poids de Hy4 Flash.</li>
+<li>Pour sortir des grandes plateformes, ExitPath cartographie les remplacements libres, et Prime Radiant publie des bacs à sable externes pour agents de codage.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Hex — dictée vocale locale.</strong> Application de dictée qui fonctionne hors ligne sur macOS, Windows et Linux : on maintient une touche, on parle, le texte est inséré à l'endroit du curseur. Aucun envoi de la voix à un serveur. Gratuit, licence MIT, dépôt <code>github.com/anomalyco/hex</code> — 7 455 étoiles, dernière mise à jour le 18 novembre 2026. Lien : https://anoma.ly/hex/</p>
+<p><strong>Rumble-2-Flash — reconnaissance vocale libre de 0,5 milliard de paramètres.</strong> Modèle de transcription couvrant plus de quarante langues avec détection automatique, publié sous licence Apache 2.0 et pris en charge nativement par Transformers et vLLM (pas de code maison à intégrer). Ses auteurs annoncent une heure d'audio traitée en une demi-seconde sur de gros lots, et une précision comparable à un modèle NVIDIA de 30 milliards de paramètres sur un corpus de trois cents heures d'appels téléphoniques. Poids sur Hugging Face (<code>Reson8/Rumble-2-Flash</code>, 70 mentions d'intérêt). Lien : https://huggingface.co/blog/rumble-2-flash</p>
+<p><strong>Compétence d'optimisation d'un serveur LLM local.</strong> Le dépôt sybil-solutions publie une « compétence » destinée aux agents de codage : elle guide la recherche du meilleur débit d'un serveur de modèles local (décodage spéculatif, préremplissage, cache KV, démarrage, temps jusqu'au premier jeton), quel que soit le matériel et la quantification. Licence MIT, 1 102 étoiles, créé et mis à jour le 16 novembre 2026 — un succès immédiat, mais le dépôt est récent et je n'ai pas d'expérience d'usage à citer. Lien : https://github.com/sybil-solutions/inference-optimisation-skill</p>
+<p><strong>Tencent Hy4 Flash — poids ouverts.</strong> Modèle multimodal de 220 milliards de paramètres dont 12 actifs, contexte d'un million de jetons, publié en poids ouverts le 17 novembre (229 mentions d'intérêt sur Hugging Face). Attention à la licence : elle est propre à Tencent et exclut, d'après les commentaires de la communauté, les organisations dépassant cinquante millions de dollars de revenus — à vérifier avant tout usage institutionnel. Lien : https://huggingface.co/tencent/Hy4-flash</p>
+<p><strong>ExitPath — sortir des grandes plateformes.</strong> Grille comparant seize outils propriétaires (Google Workspace, Microsoft 365, Slack, Notion, Zoom, Dropbox, 1Password, GitHub…) à des remplacements libres, avec une note de difficulté de migration sur cent et des listes d'étapes. Gratuit et sans compte. Je n'ai pas trouvé le dépôt du site lui-même : la mention « open source » porte au minimum sur les logiciels de remplacement recommandés, pas nécessairement sur le guide. Lien : https://exitpath-ruddy.vercel.app/</p>
+<p><strong>Bacs à sable externes pour agents de codage.</strong> Prime Radiant, avec Simon Willison, publie trois prototypes qui enferment les commandes exécutées par Claude Code, Codex ou Pi dans un bac à sable Linux ne voyant que les dossiers et les hôtes autorisés, sans accès réseau par défaut et avec substitution des clés d'API hors du bac à sable. Licence Apache 2.0 ; paquets npm <code>external-sandbox-v86</code> (0.4.0) et <code>external-sandbox-pi</code> (0.1.0), code sur <code>github.com/prime-radiant-inc</code>. Lien : https://blog.primeradiant.com/external-sandboxes-for-coding-agents/</p>
+<p><strong>Recueil de décodage contraint pour vLLM.</strong> Dépôt <code>grfdsasdvef/vllm-constrained-decoding-cookbook</code> : recettes et mesures pour la génération structurée avec xgrammar dans vLLM (masquage des logits, schémas JSON). Licence MIT, mais dépôt presque inconnu (2 étoiles) et dernière mise à jour le 29 octobre 2026 ; les chiffres de performance affichés sont ceux de l'auteur et n'ont pas été reproduits. Lien : https://github.com/grfdsasdvef/vllm-constrained-decoding-cookbook</p>
+<p><strong>Lumo, client de bureau.</strong> Proton publie un client de bureau multiplateforme pour son assistant Lumo ; l'enveloppe est logicielle libre (GPL-3.0, <code>github.com/ProtonLumo/lumo-desktop</code>), l'assistant lui-même restant un service propriétaire. Lien : https://proton.me/blog/lumo-desktop-features</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>LLM 0.38.</strong> L'outil en ligne de commande de Simon Willison prend en charge les nouveaux modèles GPT-6.2 Astra et Sol, propriétaires, avec une baisse de tarif par rapport à la génération précédente ($8 et $40 par million de jetons en entrée et en sortie pour Astra). Lien : https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/</p>
+<h2>Volume</h2>
+<p>92 entrées examinées dans l'intervalle (fils du subreddit, Hacker News, Lobsters, blog Hugging Face, Simon Willison, It's FOSS), 8 retenues, 84 écartées. Aucune erreur de collecte signalée dans <code>meta.json</code>.</p>
+<footer>Édition du jeudi 19 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
