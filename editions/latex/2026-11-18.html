@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — mercredi 18 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — mercredi 18 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Quatre entrées seulement passent le filtre : deux techniques réutilisables (imposer une autre police à un seul symbole mathématique ; présenter en page continue plutôt qu'en diapositives) et deux outils nouveaux, l'un pour Typst, l'autre un éditeur multi-formats qui annonce toucher aussi aux fichiers LaTeX.</li>
+<li>Le reste des entrées lues est du dépannage ponctuel ou des demandes de fonctionnalité, sans contenu réutilisable.</li>
+<li>Aucune erreur de collecte à signaler ce jour.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>typwire 0.2.0 — échange de données typé entre Typst et ses greffons</h3>
+<p>Bibliothèque destinée aux auteurs d'extensions Typst écrites en Rust et compilées en WASM. Elle transporte des valeurs Typst — longueurs, couleurs, dégradés, dates, dictionnaires — jusqu'au greffon et les rend au document sous leur type d'origine, ce qu'un passage par une chaîne de caractères ne permet pas. Une structure de données définie côté Rust avec les dérivations Serde et Typwire arrive ainsi côté Typst sous forme de dictionnaire, et un champ de type <code>Length</code> revient comme une vraie longueur (<code>12.0 * scale</code> donne <code>18pt</code>) et non comme un texte à reconvertir. Installation par <code>#import "@preview/typwire:0.2.0"</code> (le greffon Rust se déclare avec <code>cargo add typwire</code>), dépôt <a href="https://github.com/T1mVo/typwire">github.com/T1mVo/typwire</a>, licence Apache 2.0, 3 étoiles, dernière poussée le 16 novembre 2026, paquet publié sur Typst Universe et crate sur crates.io. L'intérêt est limité à qui écrit des greffons pour Typst : pour un auteur de documents, il n'y a rien à en attendre directement.</p>
+<h3>Rewrite — un éditeur qui réécrit du texte et modifie Word, LaTeX et PDF</h3>
+<p>Annoncé sur Hacker News par son auteur (3 points, 0 commentaire : personne ne s'est encore penché dessus, l'annonce est donc à prendre pour ce qu'elle est). Selon la description du dépôt, l'application réécrit un texte, corrige la grammaire et surtout modifie directement des fichiers Word, LaTeX et PDF, sans compte ni limite de mots — c'est cette dernière partie qui la rendrait intéressante ici, puisqu'elle prétend écrire dans un fichier <code>.tex</code>. Le dépôt <a href="https://github.com/SamratDuttaOfficial/Rewrite">github.com/SamratDuttaOfficial/Rewrite</a> affiche 7 étoiles, une dernière poussée le 14 novembre 2026 et une création le 12 octobre 2026. Réserve à signaler : GitHub n'identifie pas la licence (mention « Other », aucun identifiant SPDX reconnu), donc la gratuité annoncée ne s'accompagne d'aucun texte de licence lisible par l'API ; la qualité du traitement des fichiers LaTeX n'est vérifiable ni par l'annonce ni par le dépôt, aucun essai public n'étant disponible.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>Imposer une autre police à un seul symbole mathématique</h3>
+<p>Parti d'un rapport écrit avec <code>newtxmath</code>, où il n'aimait ni le symbole d'union ni celui de sommation, un utilisateur demandait comment reprendre les glyphes de Computer Modern pour ces seuls caractères (<a href="https://tex.stackexchange.com/questions/768029/how-to-have-a-cup-symbol-different-from-the-other-symbols">question 768029 sur TeX Stack Exchange</a>). La réponse acceptée donne une méthode générale, qui vaut avec n'importe quelle police mathématique : déclarer une police de symboles supplémentaire à partir des fichiers d'origine (cmsy en codage OMS pour les petits symboles, cmex en OMX pour les grands opérateurs), puis redéfinir les commandes voulues avec <code>\DeclareMathSymbol</code> et le numéro de glyphe. Exemple tel qu'il fonctionne, avec <code>newtxtext,newtxmath</code> chargés avant :</p>
+<pre><code class="language-latex">\DeclareSymbolFont{CMsymbols}{OMS}{cmsy}{m}{n}
+\SetSymbolFont{CMsymbols}{bold}{OMS}{cmsy}{b}{n}
+\DeclareMathSymbol{\cup}{\mathbin}{CMsymbols}{&quot;5B}
+\DeclareMathSymbol{\cap}{\mathbin}{CMsymbols}{&quot;5C}
+
+\DeclareSymbolFont{CMlargesymbols}{OMX}{cmex}{m}{n}
+\DeclareMathSymbol{\bigcupop}{\mathop}{CMlargesymbols}{&quot;53}
+\DeclareMathSymbol{\bigcapop}{\mathop}{CMlargesymbols}{&quot;54}
+\DeclareMathSymbol{\sumop}{\mathop}{CMlargesymbols}{&quot;50}
+</code></pre>
+<p>Deux points à retenir au-delà du cas particulier : les petits symboles et les grands opérateurs vivent dans deux fichiers différents, il faut donc deux déclarations de police ; et pour les grands opérateurs on redéfinit les noms internes de la classe (<code>\bigcupop</code>, <code>\sumop</code>), ce qui préserve la gestion des bornes et des points de suite auxquels la police courante ajoutait son comportement. Le même schéma permet d'aller chercher une flèche, un opérateur ou un délimiteur dans une autre police sans changer le reste du document.</p>
+<h3>Présenter sans diapositives : une page unique très longue</h3>
+<p>Un fil de r/LaTeX (auteur citizen556, 2 points, 8 commentaires, étiqueté « Présentations numériques au XXIe siècle ») défend une autre façon de faire une présentation avec LaTeX : renoncer aux diapositives de beamer et poser tout le contenu sur une seule page très haute, que l'on fait défiler pendant qu'on parle ; les idées voisines restent visibles en même temps, et l'on se déplace dans la page au lieu de changer de vue. Le fil n'est pas qu'une opinion : il donne le code. On règle <code>geometry</code> avec une largeur normale mais une <code>paperheight</code> de 500 cm (environ 5 m, la limite que LaTeX gère), <code>\pagestyle{empty}</code>, puis on écrit le contenu ; <code>\the\pagetotal</code> en fin de document affiche la hauteur réellement utilisée, qui sert à fixer la hauteur définitive en ajoutant une marge, après quoi on retire cette commande. L'auteur reconnaît trois limites : rien de tout cela n'est imprimable, il faut pouvoir utiliser une souris ou une molette en parlant, et le procédé suppose qu'aucune règle de l'établissement n'impose le format diaporama. Les figures TikZ et les mises en parallèle, qui se placent mal dans une diapositive, y trouvent leur place ; pour une séance de classe, cette souplesse reste toutefois à confronter au fait que le public doit suivre ce défilement.</p>
+<h2>Volume</h2>
+<p>9 entrées lues dans l'intervalle — 4 lignes du journal r/LaTeX, dont deux lignes correspondant au même fil relayé, et 5 entrées des flux complémentaires (TeX — LaTeX Stack Exchange, forum Typst) —, 4 retenues, 5 écartées, soit un taux de rétention d'environ 44 %. Écartées : une question de dépannage sur des lignes parasites entre deux paragraphes, un rapport de bug lualatex/<code>unicode-math</code> sur l'épaisseur du radical, une demande de fonctionnalité pour l'analyse du Markdown directement dans Typst, et une question sur des paramètres de page différents après un saut de page. Ce taux correspond au fonctionnement ordinaire d'un forum d'entraide, la majorité des fils étant des questions ponctuelles sans portée générale.</p>
+<footer>Édition du mercredi 18 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
