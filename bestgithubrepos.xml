@@ -6,9 +6,134 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 19 Nov 2026 00:39:51 +0100</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 00:34:05 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-20.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-20</guid>
+<pubDate>Fri, 20 Nov 2026 00:34:05 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une trentaine de nouveaux outils open source repérés cette semaine, avec plusieurs pépites : Lumio (alternative à Spotlight avec OCR), Phonebox (transformer un vieil Android en panneau de contrôle), Filee (convertisseur 263 formats hors ligne) et GitDiagram (visualisation interactive de n'importe quel dépôt GitHub). Côté vidéo, l'offre open source continue de s'étoffer avec Concat, FilmCraft et HyperFrames.</p>
+<p>Le collecteur du subreddit Reddit est en échec (HTTP 404 depuis le 19 novembre). Les entrées proviennent de Hacker News, Lobsters, Product Hunt, gitmanual.com et des flux de veille complémentaires.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Lumio</strong> — Lanceur macOS open source qui remplace Spotlight ou Raycast. Il propose une recherche OCR dans les images et l'historique du presse-papier, et peut lancer des applications, ouvrir des fichiers ou exécuter des raccourcis. Licence GPL-3.0, gratuit. 57 étoiles. Dernière mise à jour : 19 novembre 2026. (github.com/cavaldos/Lumio)</p>
+<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste qui supporte les extensions Chrome. Conçu pour être léger et rapide, il conserve la compatibilité avec l'écosystème d'extensions du marché. Gratuit. (searchbrowser.app)</p>
+<p><strong>Retriever</strong> — Moteur de recherche hors ligne pour photos, documents et vidéos sur votre téléphone. Il décrit le contenu des fichiers et permet de les retrouver par description, le tout sur l'appareil sans envoi vers le cloud. Licence Apache-2.0, gratuit. 4 étoiles. (github.com/dhruv2295/Retriever)</p>
+<p><strong>Filee</strong> — Convertisseur de fichiers libre et hors ligne. Il prend en charge 263 formats : images, PDF, Word, Excel, PowerPoint, vidéo, audio, livres électroniques et archives. Glisser-déposer, aucun téléversement ni suite bureautique requis. Licence MIT, gratuit. 29 080 étoiles. (github.com/KnifeLemon/Filee)</p>
+<p><strong>Phonebox</strong> — Transformez un vieux téléphone Android en panneau de contrôle personnalisable pour Windows, Linux et macOS. 124 widgets et 30 modèles pour les statistiques système, le codage IA, le contrôle multimédia et l'automatisation. Connexion USB ou Wi-Fi, aucun cloud nécessaire. Licence MIT, gratuit. 3 836 étoiles. (github.com/ersinkoc/phonebox)</p>
+<p><strong>GitDiagram</strong> — Visualisez n'importe quelle codebase GitHub sous forme de diagrammes d'architecture interactifs. Remplacez « hub » par « diagram » dans l'URL d'un dépôt pour obtenir un schéma en une minute, avec une vidéo d'explication. Licence MIT, gratuit. 19 012 étoiles. (github.com/ahmedkhaleel2004/gitdiagram)</p>
+<p><strong>Gitcraft</strong> — Client Git visuel, léger, rapide et sans fonctionnalités superflues. Licence Apache-2.0, gratuit. 245 étoiles. (github.com/Vancete/gitcraft)</p>
+<p><strong>Winhance</strong> — Application Windows d'optimisation, de personnalisation et de débloat. Permet de supprimer les logiciels préinstallés inutiles et d'ajuster les paramètres système. Gratuit. 14 988 étoiles. (github.com/memstechtips/Winhance)</p>
+<p><strong>Recordly</strong> — Créez des vidéos de démonstration soignées sans compétences de montage. Fonctionne sur Mac, Windows et Linux. Licence AGPL-3.0, gratuit. 37 100 étoiles. (github.com/webadderallorg/Recordly)</p>
+<p><strong>Coucou</strong> — Un petit compagnon dans le notch du Mac (et sur iPhone) qui surveille vos agents de codage IA : Claude Code, Codex, Cursor, Gemini CLI, Antigravity et autres. Permet d'approuver des actions depuis le notch ou l'écran de verrouillage. Licence MIT, gratuit. 7 353 étoiles. (github.com/Louis-CFM/coucou)</p>
+<p><strong>DCIM</strong> — Application de photos auto-hébergée pour l'Indie Web. Téléversez des photos depuis le navigateur et intégrez-les en HTML ou Markdown. Fonctionne sur Cloudflare (10 Go de stockage gratuit) ou tout bucket S3. Licence MIT, gratuit. 5 étoiles. (github.com/aspizu/dcim)</p>
+<p><strong>Screen-relay</strong> — Stream et contrôle de n'importe quel bureau à 120 images par seconde depuis un navigateur ou une CLI. Conçu pour les agents IA et l'accès à distance. Licence Apache-2.0, gratuit. 220 étoiles. (github.com/vercel-labs/screen-relay)</p>
+<p><strong>Skyfind</strong> — Identifie les satellites dans les vidéos time-lapse du ciel nocturne et détermine la position du photographe au sol. Utilise les données orbitales de space-track.org. Interface en ligne de commande, Qt ou compétence Claude. Licence NONE, gratuit. 1 étoile. (github.com/dmead/skyfind)</p>
+<p><strong>Purple Flow</strong> — Alternative à n8n écrite en Elixir, conçue pour les workflows d'agents IA. Supporte le streaming, les connexions multi-bases de données et l'exécution de workflows sur 512 Mo de RAM. Licence MIT, gratuit. 3 étoiles. (github.com/leetheguy/purple_flow)</p>
+<p><strong>Kibi</strong> — Cadre d'exigences pour agents de codage IA. Définit des contraintes que l'agent doit respecter (règles de projet, conventions de code, dépendances) et vérifie la conformité. Licence AGPL-3.0, gratuit. 13 étoiles. (github.com/looted/kibi)</p>
+<p><strong>Globus</strong> — Application iOS qui place l'actualité mondiale sur un globe interactif. Une édition quotidienne de 20 à 30 articles, positionnés géographiquement. Gratuit. (globus.earth)</p>
+<p><strong>Brief</strong> — Parlez d'un bug devant l'écran, Brief rédige et soumet le ticket automatiquement (Linear, Jira, GitHub Issues). Licence MIT, gratuit. 18 étoiles. (github.com/razi2001/brief)</p>
+<p><strong>Ruscal</strong> — Transpileur Turbo Pascal vers Rust, suffisamment complet et testé pour exécuter d'anciens programmes Pascal sur des machines modernes. Supporte le mélange Rust et Pascal, les graphismes et la tortue graphique. Licence MIT, gratuit. 9 étoiles. (github.com/jjinux/ruscal)</p>
+<p><strong>FailTrace</strong> — Reproduisez localement un échec de GitHub Actions à partir de son URL. Plus besoin de deviner pourquoi la CI a cassé. Licence MIT, gratuit. 29 étoiles. (github.com/Ri4dH/failtrace)</p>
+<p><strong>Pitot</strong> — Plateforme d'observabilité OpenTelemetry en un seul binaire. Ingère OTLP, stocke en Parquet, interroge avec DuckDB et expose un serveur MCP. Licence Apache-2.0, gratuit. 147 étoiles. (github.com/labstack/pitot)</p>
+<p><strong>HyCanvas</strong> — Alternative open source à Canva que vous pouvez héberger vous-même. Graphismes, diapositives, vidéo, tableaux blancs. Licence AGPL-3.0, gratuit. 305 étoiles. (github.com/hyscaler/HyCanvas)</p>
+<p><strong>Starquix</strong> — Constructeur de sites Astro visuel et local. Éditez votre site Astro dans une interface visuelle, le code reste un vrai projet Astro. Licence MIT, gratuit. 24 étoiles. (github.com/Mayhopar/Starquix)</p>
+<p><strong>Phrack-TUI</strong> — Lecteur terminal pour les archives Phrack. Navigation au clavier (touches vim), recherche live, marque-pages, extraits, sauts de référence croisée, thèmes et effets CRT. Licence MIT, gratuit. 2 étoiles. (github.com/krmbzds/phrack-tui)</p>
+<p><strong>Agent Hive</strong> — Application Mac open source qui orchestre des équipes d'agents IA (Claude Code, Codex, Gemini CLI, etc.) avec une reine et plusieurs abeilles. Licence MIT, gratuit. 4 étoiles. (github.com/ericwang915/agent-hive)</p>
+<p><strong>Lazycow Studio</strong> — Transforme vos rushs vidéo en réels et films de voyage, localement sur votre machine. Licence Apache-2.0, gratuit. 3 étoiles. (github.com/kensaurus/lazycow-studio)</p>
+<p><strong>Psudo</strong> — Modèle de codage 2-bit de 47 Mo avec IR à préfixe polonais et transpileur Rust. Léger, conçu pour l'exécution locale. Licence MIT, gratuit. 1 étoile. (github.com/steveSujo/psudo)</p>
+<p><strong>Motion Wallpaper</strong> — Fonds d'écran animés (vidéo et GIF) sur plusieurs écrans sous Linux (X11 uniquement pour l'instant). Licence LGPL-2.1, gratuit. 1 étoile. (github.com/sozipp/motion-wallpaper)</p>
+<p><strong>Archiver</strong> — Outil de compression et d'extraction dans le navigateur, utilisant WebAssembly. Rien n'est téléversé, tout est traité localement, fonctionne hors ligne. Gratuit. (archiver.scryer.media)</p>
+<p><strong>Svetoviz</strong> — Débogueur visuel pour grands modèles de langage. Fonctionne avec les modules PyTorch, les modèles Hugging Face et les jeux de données. Gratuit. 0 étoiles. (github.com/PiotrGryko/svetoviz)</p>
+<p><strong>VPNDetection</strong> — API de détection VPN et proxy sans clé. Un simple <code>curl</code> vers l'API indique si une adresse IP est un VPN, un nœud Tor ou un relais. Gratuit. (vpndetection.io)</p>
+<p><strong>Foolscap</strong> — Application d'écriture qui lit votre livre et ne rédige jamais à votre place. Conçue pour les auteurs qui veulent un retour sur leur texte sans que l'IA n'écrive à leur place. Gratuit. 4 étoiles. (foolscap.works)</p>
+<p><strong>Pritunl</strong> — Client OpenVPN et WireGuard gratuit et open source, multiplateforme. Gratuit. 1 481 étoiles. (github.com/pritunl/pritunl-client)</p>
+<p><strong>Archiver (WebAssembly)</strong> — Outil de compression/extraction entièrement local dans le navigateur. Utilise des bibliothèques Rust compilées en WebAssembly. Rien n'est téléversé. Gratuit. (archiver.scryer.media)</p>
+<p><strong>Holding Pattern</strong> — Jeu de programmation où vous écrivez le code d'un contrôleur aérien. Le trafic arrive, vous devez gérer les vols avec votre code. Licence MIT, gratuit. 1 étoile. (github.com/shawnzam/holding-pattern)</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Concat</strong> — Éditeur vidéo open source, local et multiplateforme, désormais scriptable via une API JSON-RPC et MCP. 18 957 étoiles, licence AGPL-3.0. (github.com/jub0t/Concat)</p>
+<p><strong>FilmCraft</strong> — Éditeur vidéo non linéaire écrit en Rust, récemment publié. 18 640 étoiles, licence Apache-2.0. (github.com/storytold/filmcraft)</p>
+<p><strong>VideoLingo</strong> — Outil de sous-titrage, traduction, alignement et doublage automatisé par IA. 19 324 étoiles, licence Apache-2.0. (github.com/Huanshere/VideoLingo)</p>
+<p><strong>HyperFrames (HeyGen)</strong> — Éditeur vidéo IA open source. Décrivez une vidéo, obtenez un projet éditable image par image. 87 032 étoiles, licence Apache-2.0. (github.com/heygen-com/hyperframes)</p>
+<p><strong>Remotion</strong> — Créez des vidéos programmatiquement avec React. 74 352 étoiles. (github.com/remotion-dev/remotion)</p>
+<p><strong>Manim</strong> — Moteur d'animation pour vidéos mathématiques explicatives (créé par 3Blue1Brown). 96 684 étoiles, licence MIT. (github.com/3b1b/manim)</p>
+<p><strong>InvokeAI</strong> — Moteur de génération d'images et de vidéos par IA, avec interface applicative. 29 127 étoiles, licence Apache-2.0. (github.com/invoke-ai/InvokeAI)</p>
+<p><strong>Lossless-cut</strong> — Couteau suisse du montage vidéo/audio sans perte. 46 211 étoiles, licence GPL-2.0. (github.com/mifi/lossless-cut)</p>
+<p><strong>Video2x</strong> — Suréchantillonnage vidéo par apprentissage automatique et interpolation d'images. 22 813 étoiles, licence AGPL-3.0. (github.com/k4yt3x/video2x)</p>
+<p><strong>Seal</strong> — Téléchargeur vidéo/audio pour Android basé sur yt-dlp. 30 842 étoiles, licence GPL-3.0. (github.com/JunkFood02/Seal)</p>
+<p><strong>Onlook</strong> — Outil de développement open source pour designers : une interface visuelle par-dessus votre codebase réelle, avec agent IA. 27 387 étoiles, licence Apache-2.0. (github.com/onlook-dev/onlook)</p>
+<p><strong>Slax</strong> — Distribution Linux relancée après trois ans d'absence, désormais basée sur Debian 13 avec un installateur graphique USB/dual-boot et une aide IA. (itsfoss.com)</p>
+<p><strong>ToolJet 4.0</strong> — Constructeur d'applications internes open source, désormais compatible avec le vibe-coding. (tooljet.com)</p>
+<p><strong>ZXC 1.0</strong> — Codec de compression asymétrique en C, intégré dans ClickHouse. 541 étoiles, licence BSD-3-Clause. (github.com/hellobertrand/zxc)</p>
+<h2>Extensions et greffons</h2>
+<p>Aucun greffon ou extension notable cette semaine.</p>
+<h2>Volume</h2>
+<p>383 entrées lues dans la shortlist (dont 83 tronquées car antérieures à la fenêtre de 4 jours), 52 retenues, 331 écartées.</p>
+<p>Le collecteur Reddit r/BestGitHubRepos est en échec (HTTP 404). Les entrées proviennent de Hacker News, Lobsters, gitmanual.com, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com et It's FOSS.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une trentaine de nouveaux outils open source repérés cette semaine, avec plusieurs pépites : Lumio (alternative à Spotlight avec OCR), Phonebox (transformer un vieil Android en panneau de contrôle), Filee (convertisseur 263 formats hors ligne) et GitDiagram (visualisation interactive de n'importe quel dépôt GitHub). Côté vidéo, l'offre open source continue de s'étoffer avec Concat, FilmCraft et HyperFrames.</p>
+<p>Le collecteur du subreddit Reddit est en échec (HTTP 404 depuis le 19 novembre). Les entrées proviennent de Hacker News, Lobsters, Product Hunt, gitmanual.com et des flux de veille complémentaires.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Lumio</strong> — Lanceur macOS open source qui remplace Spotlight ou Raycast. Il propose une recherche OCR dans les images et l'historique du presse-papier, et peut lancer des applications, ouvrir des fichiers ou exécuter des raccourcis. Licence GPL-3.0, gratuit. 57 étoiles. Dernière mise à jour : 19 novembre 2026. (github.com/cavaldos/Lumio)</p>
+<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste qui supporte les extensions Chrome. Conçu pour être léger et rapide, il conserve la compatibilité avec l'écosystème d'extensions du marché. Gratuit. (searchbrowser.app)</p>
+<p><strong>Retriever</strong> — Moteur de recherche hors ligne pour photos, documents et vidéos sur votre téléphone. Il décrit le contenu des fichiers et permet de les retrouver par description, le tout sur l'appareil sans envoi vers le cloud. Licence Apache-2.0, gratuit. 4 étoiles. (github.com/dhruv2295/Retriever)</p>
+<p><strong>Filee</strong> — Convertisseur de fichiers libre et hors ligne. Il prend en charge 263 formats : images, PDF, Word, Excel, PowerPoint, vidéo, audio, livres électroniques et archives. Glisser-déposer, aucun téléversement ni suite bureautique requis. Licence MIT, gratuit. 29 080 étoiles. (github.com/KnifeLemon/Filee)</p>
+<p><strong>Phonebox</strong> — Transformez un vieux téléphone Android en panneau de contrôle personnalisable pour Windows, Linux et macOS. 124 widgets et 30 modèles pour les statistiques système, le codage IA, le contrôle multimédia et l'automatisation. Connexion USB ou Wi-Fi, aucun cloud nécessaire. Licence MIT, gratuit. 3 836 étoiles. (github.com/ersinkoc/phonebox)</p>
+<p><strong>GitDiagram</strong> — Visualisez n'importe quelle codebase GitHub sous forme de diagrammes d'architecture interactifs. Remplacez « hub » par « diagram » dans l'URL d'un dépôt pour obtenir un schéma en une minute, avec une vidéo d'explication. Licence MIT, gratuit. 19 012 étoiles. (github.com/ahmedkhaleel2004/gitdiagram)</p>
+<p><strong>Gitcraft</strong> — Client Git visuel, léger, rapide et sans fonctionnalités superflues. Licence Apache-2.0, gratuit. 245 étoiles. (github.com/Vancete/gitcraft)</p>
+<p><strong>Winhance</strong> — Application Windows d'optimisation, de personnalisation et de débloat. Permet de supprimer les logiciels préinstallés inutiles et d'ajuster les paramètres système. Gratuit. 14 988 étoiles. (github.com/memstechtips/Winhance)</p>
+<p><strong>Recordly</strong> — Créez des vidéos de démonstration soignées sans compétences de montage. Fonctionne sur Mac, Windows et Linux. Licence AGPL-3.0, gratuit. 37 100 étoiles. (github.com/webadderallorg/Recordly)</p>
+<p><strong>Coucou</strong> — Un petit compagnon dans le notch du Mac (et sur iPhone) qui surveille vos agents de codage IA : Claude Code, Codex, Cursor, Gemini CLI, Antigravity et autres. Permet d'approuver des actions depuis le notch ou l'écran de verrouillage. Licence MIT, gratuit. 7 353 étoiles. (github.com/Louis-CFM/coucou)</p>
+<p><strong>DCIM</strong> — Application de photos auto-hébergée pour l'Indie Web. Téléversez des photos depuis le navigateur et intégrez-les en HTML ou Markdown. Fonctionne sur Cloudflare (10 Go de stockage gratuit) ou tout bucket S3. Licence MIT, gratuit. 5 étoiles. (github.com/aspizu/dcim)</p>
+<p><strong>Screen-relay</strong> — Stream et contrôle de n'importe quel bureau à 120 images par seconde depuis un navigateur ou une CLI. Conçu pour les agents IA et l'accès à distance. Licence Apache-2.0, gratuit. 220 étoiles. (github.com/vercel-labs/screen-relay)</p>
+<p><strong>Skyfind</strong> — Identifie les satellites dans les vidéos time-lapse du ciel nocturne et détermine la position du photographe au sol. Utilise les données orbitales de space-track.org. Interface en ligne de commande, Qt ou compétence Claude. Licence NONE, gratuit. 1 étoile. (github.com/dmead/skyfind)</p>
+<p><strong>Purple Flow</strong> — Alternative à n8n écrite en Elixir, conçue pour les workflows d'agents IA. Supporte le streaming, les connexions multi-bases de données et l'exécution de workflows sur 512 Mo de RAM. Licence MIT, gratuit. 3 étoiles. (github.com/leetheguy/purple_flow)</p>
+<p><strong>Kibi</strong> — Cadre d'exigences pour agents de codage IA. Définit des contraintes que l'agent doit respecter (règles de projet, conventions de code, dépendances) et vérifie la conformité. Licence AGPL-3.0, gratuit. 13 étoiles. (github.com/looted/kibi)</p>
+<p><strong>Globus</strong> — Application iOS qui place l'actualité mondiale sur un globe interactif. Une édition quotidienne de 20 à 30 articles, positionnés géographiquement. Gratuit. (globus.earth)</p>
+<p><strong>Brief</strong> — Parlez d'un bug devant l'écran, Brief rédige et soumet le ticket automatiquement (Linear, Jira, GitHub Issues). Licence MIT, gratuit. 18 étoiles. (github.com/razi2001/brief)</p>
+<p><strong>Ruscal</strong> — Transpileur Turbo Pascal vers Rust, suffisamment complet et testé pour exécuter d'anciens programmes Pascal sur des machines modernes. Supporte le mélange Rust et Pascal, les graphismes et la tortue graphique. Licence MIT, gratuit. 9 étoiles. (github.com/jjinux/ruscal)</p>
+<p><strong>FailTrace</strong> — Reproduisez localement un échec de GitHub Actions à partir de son URL. Plus besoin de deviner pourquoi la CI a cassé. Licence MIT, gratuit. 29 étoiles. (github.com/Ri4dH/failtrace)</p>
+<p><strong>Pitot</strong> — Plateforme d'observabilité OpenTelemetry en un seul binaire. Ingère OTLP, stocke en Parquet, interroge avec DuckDB et expose un serveur MCP. Licence Apache-2.0, gratuit. 147 étoiles. (github.com/labstack/pitot)</p>
+<p><strong>HyCanvas</strong> — Alternative open source à Canva que vous pouvez héberger vous-même. Graphismes, diapositives, vidéo, tableaux blancs. Licence AGPL-3.0, gratuit. 305 étoiles. (github.com/hyscaler/HyCanvas)</p>
+<p><strong>Starquix</strong> — Constructeur de sites Astro visuel et local. Éditez votre site Astro dans une interface visuelle, le code reste un vrai projet Astro. Licence MIT, gratuit. 24 étoiles. (github.com/Mayhopar/Starquix)</p>
+<p><strong>Phrack-TUI</strong> — Lecteur terminal pour les archives Phrack. Navigation au clavier (touches vim), recherche live, marque-pages, extraits, sauts de référence croisée, thèmes et effets CRT. Licence MIT, gratuit. 2 étoiles. (github.com/krmbzds/phrack-tui)</p>
+<p><strong>Agent Hive</strong> — Application Mac open source qui orchestre des équipes d'agents IA (Claude Code, Codex, Gemini CLI, etc.) avec une reine et plusieurs abeilles. Licence MIT, gratuit. 4 étoiles. (github.com/ericwang915/agent-hive)</p>
+<p><strong>Lazycow Studio</strong> — Transforme vos rushs vidéo en réels et films de voyage, localement sur votre machine. Licence Apache-2.0, gratuit. 3 étoiles. (github.com/kensaurus/lazycow-studio)</p>
+<p><strong>Psudo</strong> — Modèle de codage 2-bit de 47 Mo avec IR à préfixe polonais et transpileur Rust. Léger, conçu pour l'exécution locale. Licence MIT, gratuit. 1 étoile. (github.com/steveSujo/psudo)</p>
+<p><strong>Motion Wallpaper</strong> — Fonds d'écran animés (vidéo et GIF) sur plusieurs écrans sous Linux (X11 uniquement pour l'instant). Licence LGPL-2.1, gratuit. 1 étoile. (github.com/sozipp/motion-wallpaper)</p>
+<p><strong>Archiver</strong> — Outil de compression et d'extraction dans le navigateur, utilisant WebAssembly. Rien n'est téléversé, tout est traité localement, fonctionne hors ligne. Gratuit. (archiver.scryer.media)</p>
+<p><strong>Svetoviz</strong> — Débogueur visuel pour grands modèles de langage. Fonctionne avec les modules PyTorch, les modèles Hugging Face et les jeux de données. Gratuit. 0 étoiles. (github.com/PiotrGryko/svetoviz)</p>
+<p><strong>VPNDetection</strong> — API de détection VPN et proxy sans clé. Un simple <code>curl</code> vers l'API indique si une adresse IP est un VPN, un nœud Tor ou un relais. Gratuit. (vpndetection.io)</p>
+<p><strong>Foolscap</strong> — Application d'écriture qui lit votre livre et ne rédige jamais à votre place. Conçue pour les auteurs qui veulent un retour sur leur texte sans que l'IA n'écrive à leur place. Gratuit. 4 étoiles. (foolscap.works)</p>
+<p><strong>Pritunl</strong> — Client OpenVPN et WireGuard gratuit et open source, multiplateforme. Gratuit. 1 481 étoiles. (github.com/pritunl/pritunl-client)</p>
+<p><strong>Archiver (WebAssembly)</strong> — Outil de compression/extraction entièrement local dans le navigateur. Utilise des bibliothèques Rust compilées en WebAssembly. Rien n'est téléversé. Gratuit. (archiver.scryer.media)</p>
+<p><strong>Holding Pattern</strong> — Jeu de programmation où vous écrivez le code d'un contrôleur aérien. Le trafic arrive, vous devez gérer les vols avec votre code. Licence MIT, gratuit. 1 étoile. (github.com/shawnzam/holding-pattern)</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Concat</strong> — Éditeur vidéo open source, local et multiplateforme, désormais scriptable via une API JSON-RPC et MCP. 18 957 étoiles, licence AGPL-3.0. (github.com/jub0t/Concat)</p>
+<p><strong>FilmCraft</strong> — Éditeur vidéo non linéaire écrit en Rust, récemment publié. 18 640 étoiles, licence Apache-2.0. (github.com/storytold/filmcraft)</p>
+<p><strong>VideoLingo</strong> — Outil de sous-titrage, traduction, alignement et doublage automatisé par IA. 19 324 étoiles, licence Apache-2.0. (github.com/Huanshere/VideoLingo)</p>
+<p><strong>HyperFrames (HeyGen)</strong> — Éditeur vidéo IA open source. Décrivez une vidéo, obtenez un projet éditable image par image. 87 032 étoiles, licence Apache-2.0. (github.com/heygen-com/hyperframes)</p>
+<p><strong>Remotion</strong> — Créez des vidéos programmatiquement avec React. 74 352 étoiles. (github.com/remotion-dev/remotion)</p>
+<p><strong>Manim</strong> — Moteur d'animation pour vidéos mathématiques explicatives (créé par 3Blue1Brown). 96 684 étoiles, licence MIT. (github.com/3b1b/manim)</p>
+<p><strong>InvokeAI</strong> — Moteur de génération d'images et de vidéos par IA, avec interface applicative. 29 127 étoiles, licence Apache-2.0. (github.com/invoke-ai/InvokeAI)</p>
+<p><strong>Lossless-cut</strong> — Couteau suisse du montage vidéo/audio sans perte. 46 211 étoiles, licence GPL-2.0. (github.com/mifi/lossless-cut)</p>
+<p><strong>Video2x</strong> — Suréchantillonnage vidéo par apprentissage automatique et interpolation d'images. 22 813 étoiles, licence AGPL-3.0. (github.com/k4yt3x/video2x)</p>
+<p><strong>Seal</strong> — Téléchargeur vidéo/audio pour Android basé sur yt-dlp. 30 842 étoiles, licence GPL-3.0. (github.com/JunkFood02/Seal)</p>
+<p><strong>Onlook</strong> — Outil de développement open source pour designers : une interface visuelle par-dessus votre codebase réelle, avec agent IA. 27 387 étoiles, licence Apache-2.0. (github.com/onlook-dev/onlook)</p>
+<p><strong>Slax</strong> — Distribution Linux relancée après trois ans d'absence, désormais basée sur Debian 13 avec un installateur graphique USB/dual-boot et une aide IA. (itsfoss.com)</p>
+<p><strong>ToolJet 4.0</strong> — Constructeur d'applications internes open source, désormais compatible avec le vibe-coding. (tooljet.com)</p>
+<p><strong>ZXC 1.0</strong> — Codec de compression asymétrique en C, intégré dans ClickHouse. 541 étoiles, licence BSD-3-Clause. (github.com/hellobertrand/zxc)</p>
+<h2>Extensions et greffons</h2>
+<p>Aucun greffon ou extension notable cette semaine.</p>
+<h2>Volume</h2>
+<p>383 entrées lues dans la shortlist (dont 83 tronquées car antérieures à la fenêtre de 4 jours), 52 retenues, 331 écartées.</p>
+<p>Le collecteur Reddit r/BestGitHubRepos est en échec (HTTP 404). Les entrées proviennent de Hacker News, Lobsters, gitmanual.com, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com et It's FOSS.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — jeudi 19 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-19.html</link>

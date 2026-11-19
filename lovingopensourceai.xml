@@ -6,9 +6,88 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 19 Nov 2026 00:28:47 +0100</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 00:23:02 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-20.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-20</guid>
+<pubDate>Fri, 20 Nov 2026 00:23:02 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</h1>
+<p><strong>Note : la source Reddit r/LovingOpenSourceAI a retourné une erreur HTTP 404 lors de la dernière collecte (19 novembre). Les entrées de ce subreddit peuvent donc être incomplètes. La collecte via Hacker News et Lobsters fonctionne normalement.</strong></p>
+<h2>En bref</h2>
+<p>Une journée riche en annonces de modèles ouverts et d'outils d'IA locale : Cloudflare publie les poids de ses modèles d'extraction Clairic, DeepMind ouvre un plugin de robotique agentique, et un nouveau modèle d'agent DaisyRose-27B atteint des scores remarquables sur Terminal-Bench. Côté outils, JunctionBox AI permet de faire travailler ensemble Claude Code, Codex et des modèles locaux sur sa propre machine, tandis que Tiger Guard apporte une modération de contenu exécutable localement.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Onlook — un outil de conception open source piloté par l'IA</h3>
+<p>Onlook est une application de bureau qui superpose une toile visuelle sur votre code source, permettant de concevoir et d'éditer l'interface directement dans le code, avec l'agent d'IA de votre choix. Le projet compte plus de 27 000 étoiles et a été deux fois numéro un des tendances GitHub. Licence Apache-2.0, gratuit et open source.<br />
+→ <a href="https://github.com/onlook-dev/onlook">github.com/onlook-dev/onlook</a> (Apache-2.0, 27 385 ★, mis à jour le 19 novembre 2026)</p>
+<h3>JunctionBox AI — une plateforme d'agents IA locale</h3>
+<p>JunctionBox AI permet d'exécuter Claude Code, Codex, Grok et des modèles locaux (via Ollama) comme une équipe d'agents sur votre propre ordinateur, sans abonnement mensuel. La version Core est gratuite pour deux agents actifs ; la version Pro coûte 49 $ par an. Une fonctionnalité originale permet de piloter ses agents depuis un téléviseur connecté (Roku, Fire TV, Android TV). Le projet publie ses binaires sur GitHub.<br />
+→ <a href="https://junctionboxai.com/">junctionboxai.com</a> (gratuit pour deux agents, Pro 49 $/an)</p>
+<h3>Tiger Guard — un modèle de modération local et ouvert</h3>
+<p>Casdo Labs a publié Tiger Guard et Tiger Guard Small, deux classifieurs de modération de contenu pour l'anglais et l'allemand (308 M et 141 M paramètres). Ils acceptent un commentaire, une invite ou une réponse et retournent un score SAFE/UNSAFE. Les poids sont sous licence Apache-2.0, avec support Transformers, exports ONNX et code d'inférence. Le modèle Small pèse 105 Mo une fois quantifié, et son exécution ne nécessite aucun service distant.<br />
+→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation">huggingface.co/patronus-studio/tiger-guard-content-moderation</a> (Apache-2.0, 308 M paramètres)<br />
+→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation-small">huggingface.co/patronus-studio/tiger-guard-content-moderation-small</a> (Apache-2.0, 141 M paramètres)</p>
+<h3>Transformers.js — l'IA dans le navigateur, sans serveur</h3>
+<p>La bibliothèque JavaScript de Hugging Face permet d'exécuter des modèles d'IA compatibles directement dans une page web, sans infrastructure serveur. Les modèles tournent dans le navigateur de l'utilisateur, ce qui préserve la confidentialité des données et supprime les coûts d'hébergement. Le dépôt principal et la documentation sont sur GitHub.<br />
+→ <a href="https://github.com/huggingface/transformers.js">github.com/huggingface/transformers.js</a> (Apache-2.0, open source)</p>
+<h3>GMBasic — un BASIC moderne avec IA intégrée</h3>
+<p>GMBasic est un environnement BASIC compilé, open source depuis le 19 novembre, qui intègre nativement l'appel à des modèles d'IA locaux. Il propose quatre moteurs d'exécution (machine virtuelle P-Code en C#, IL .NET, VM C, transpileur C99) et six bases de données embarquées dont SQLite et une base vectorielle. Le projet est très récent (1 étoile) et encore en phase de découverte.<br />
+→ <a href="https://github.com/c-vision/GMBasic">github.com/c-vision/GMBasic</a> (1 ★, très récent)</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>DaisyRose-27B — un modèle d'agent open weight performant</h3>
+<p>RadixArk a publié DaisyRose-27B, construit sur Qwen3.8-27B et entraîné par apprentissage par renforcement sur des tâches d'agent de longue durée (sessions jusqu'à 1 million de tokens). Le modèle passe de 5,6 % à 12,0 % sur Terminal-Bench 4.1 pass@1, et progresse sur tous les autres benchmarks (DeepSWE, SWE-Bench Pro, GPQA Diamond). Les poids sont disponibles en BF16, FP8 et NVFP4 sous licence Apache-2.0.<br />
+→ <a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">huggingface.co/blog/RadixArk/daisyrose-27b</a> (Apache-2.0)</p>
+<h3>Clairic et Clairic-flash passent en open weight</h3>
+<p>Cloudflare a publié les poids complets de ses modèles d'extraction Clairic (version améliorée) et Clairic-flash (9 milliards de paramètres). Le nouveau Clairic excelle dans l'extraction à partir de documents complexes : images, PDF, tableaux et listes. Les deux modèles sont hébergés sur Workers AI et disponibles sur Hugging Face.<br />
+→ <a href="https://blog.cloudflare.com/open-clairic/">blog.cloudflare.com/open-clairic</a> (poids ouverts sur Hugging Face)</p>
+<h3>Plugin de robotique agentique de DeepMind (Vibe Robotics)</h3>
+<p>DeepMind a publié un plugin open source permettant de piloter des robots par agents d'IA, en simulation (MuJoCo) ou sur un vrai robot. Le plugin inclut des compétences pré-écrites qui orientent le modèle vers les bonnes pratiques. Le code est sous licence Apache-2.0.<br />
+→ <a href="https://github.com/google-deepmind/robotics-antigravity-plugin">github.com/google-deepmind/robotics-antigravity-plugin</a> (Apache-2.0, 133 ★)</p>
+<h3>llm-gemini 0.38 — support de Gemini 4 Neon</h3>
+<p>Simon Willison a mis à jour le plugin llm-gemini pour le CLI <code>llm</code>, ajoutant le support du nouveau modèle Gemini 4 Neon de Google (sorti le 18 novembre). Le plugin permet d'interroger les modèles Gemini depuis le terminal.<br />
+→ <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">simonwillison.net/2026/Nov/18/llm-gemini</a></p>
+<h2>Volume</h2>
+<p>88 entrées publiées dans l'intervalle, 9 retenues, 79 écartées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</h1>
+<p><strong>Note : la source Reddit r/LovingOpenSourceAI a retourné une erreur HTTP 404 lors de la dernière collecte (19 novembre). Les entrées de ce subreddit peuvent donc être incomplètes. La collecte via Hacker News et Lobsters fonctionne normalement.</strong></p>
+<h2>En bref</h2>
+<p>Une journée riche en annonces de modèles ouverts et d'outils d'IA locale : Cloudflare publie les poids de ses modèles d'extraction Clairic, DeepMind ouvre un plugin de robotique agentique, et un nouveau modèle d'agent DaisyRose-27B atteint des scores remarquables sur Terminal-Bench. Côté outils, JunctionBox AI permet de faire travailler ensemble Claude Code, Codex et des modèles locaux sur sa propre machine, tandis que Tiger Guard apporte une modération de contenu exécutable localement.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Onlook — un outil de conception open source piloté par l'IA</h3>
+<p>Onlook est une application de bureau qui superpose une toile visuelle sur votre code source, permettant de concevoir et d'éditer l'interface directement dans le code, avec l'agent d'IA de votre choix. Le projet compte plus de 27 000 étoiles et a été deux fois numéro un des tendances GitHub. Licence Apache-2.0, gratuit et open source.<br />
+→ <a href="https://github.com/onlook-dev/onlook">github.com/onlook-dev/onlook</a> (Apache-2.0, 27 385 ★, mis à jour le 19 novembre 2026)</p>
+<h3>JunctionBox AI — une plateforme d'agents IA locale</h3>
+<p>JunctionBox AI permet d'exécuter Claude Code, Codex, Grok et des modèles locaux (via Ollama) comme une équipe d'agents sur votre propre ordinateur, sans abonnement mensuel. La version Core est gratuite pour deux agents actifs ; la version Pro coûte 49 $ par an. Une fonctionnalité originale permet de piloter ses agents depuis un téléviseur connecté (Roku, Fire TV, Android TV). Le projet publie ses binaires sur GitHub.<br />
+→ <a href="https://junctionboxai.com/">junctionboxai.com</a> (gratuit pour deux agents, Pro 49 $/an)</p>
+<h3>Tiger Guard — un modèle de modération local et ouvert</h3>
+<p>Casdo Labs a publié Tiger Guard et Tiger Guard Small, deux classifieurs de modération de contenu pour l'anglais et l'allemand (308 M et 141 M paramètres). Ils acceptent un commentaire, une invite ou une réponse et retournent un score SAFE/UNSAFE. Les poids sont sous licence Apache-2.0, avec support Transformers, exports ONNX et code d'inférence. Le modèle Small pèse 105 Mo une fois quantifié, et son exécution ne nécessite aucun service distant.<br />
+→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation">huggingface.co/patronus-studio/tiger-guard-content-moderation</a> (Apache-2.0, 308 M paramètres)<br />
+→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation-small">huggingface.co/patronus-studio/tiger-guard-content-moderation-small</a> (Apache-2.0, 141 M paramètres)</p>
+<h3>Transformers.js — l'IA dans le navigateur, sans serveur</h3>
+<p>La bibliothèque JavaScript de Hugging Face permet d'exécuter des modèles d'IA compatibles directement dans une page web, sans infrastructure serveur. Les modèles tournent dans le navigateur de l'utilisateur, ce qui préserve la confidentialité des données et supprime les coûts d'hébergement. Le dépôt principal et la documentation sont sur GitHub.<br />
+→ <a href="https://github.com/huggingface/transformers.js">github.com/huggingface/transformers.js</a> (Apache-2.0, open source)</p>
+<h3>GMBasic — un BASIC moderne avec IA intégrée</h3>
+<p>GMBasic est un environnement BASIC compilé, open source depuis le 19 novembre, qui intègre nativement l'appel à des modèles d'IA locaux. Il propose quatre moteurs d'exécution (machine virtuelle P-Code en C#, IL .NET, VM C, transpileur C99) et six bases de données embarquées dont SQLite et une base vectorielle. Le projet est très récent (1 étoile) et encore en phase de découverte.<br />
+→ <a href="https://github.com/c-vision/GMBasic">github.com/c-vision/GMBasic</a> (1 ★, très récent)</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>DaisyRose-27B — un modèle d'agent open weight performant</h3>
+<p>RadixArk a publié DaisyRose-27B, construit sur Qwen3.8-27B et entraîné par apprentissage par renforcement sur des tâches d'agent de longue durée (sessions jusqu'à 1 million de tokens). Le modèle passe de 5,6 % à 12,0 % sur Terminal-Bench 4.1 pass@1, et progresse sur tous les autres benchmarks (DeepSWE, SWE-Bench Pro, GPQA Diamond). Les poids sont disponibles en BF16, FP8 et NVFP4 sous licence Apache-2.0.<br />
+→ <a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">huggingface.co/blog/RadixArk/daisyrose-27b</a> (Apache-2.0)</p>
+<h3>Clairic et Clairic-flash passent en open weight</h3>
+<p>Cloudflare a publié les poids complets de ses modèles d'extraction Clairic (version améliorée) et Clairic-flash (9 milliards de paramètres). Le nouveau Clairic excelle dans l'extraction à partir de documents complexes : images, PDF, tableaux et listes. Les deux modèles sont hébergés sur Workers AI et disponibles sur Hugging Face.<br />
+→ <a href="https://blog.cloudflare.com/open-clairic/">blog.cloudflare.com/open-clairic</a> (poids ouverts sur Hugging Face)</p>
+<h3>Plugin de robotique agentique de DeepMind (Vibe Robotics)</h3>
+<p>DeepMind a publié un plugin open source permettant de piloter des robots par agents d'IA, en simulation (MuJoCo) ou sur un vrai robot. Le plugin inclut des compétences pré-écrites qui orientent le modèle vers les bonnes pratiques. Le code est sous licence Apache-2.0.<br />
+→ <a href="https://github.com/google-deepmind/robotics-antigravity-plugin">github.com/google-deepmind/robotics-antigravity-plugin</a> (Apache-2.0, 133 ★)</p>
+<h3>llm-gemini 0.38 — support de Gemini 4 Neon</h3>
+<p>Simon Willison a mis à jour le plugin llm-gemini pour le CLI <code>llm</code>, ajoutant le support du nouveau modèle Gemini 4 Neon de Google (sorti le 18 novembre). Le plugin permet d'interroger les modèles Gemini depuis le terminal.<br />
+→ <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">simonwillison.net/2026/Nov/18/llm-gemini</a></p>
+<h2>Volume</h2>
+<p>88 entrées publiées dans l'intervalle, 9 retenues, 79 écartées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — jeudi 19 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-19.html</link>
