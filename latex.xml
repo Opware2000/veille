@@ -6,9 +6,64 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 18 Nov 2026 01:12:03 +0100</lastBuildDate>
+<lastBuildDate>Thu, 19 Nov 2026 01:12:00 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — jeudi 19 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-19.html</link>
+<guid isPermaLink="false">latex-2026-11-19</guid>
+<pubDate>Thu, 19 Nov 2026 01:12:00 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois propositions d'outillage seulement cette nuit : un espace de travail documentaire auto-hébergeable avec Zotero, un éditeur LaTeX en ligne à compilation incrémentale, et un assistant d'écriture qui rend le LaTeX à la volée. Aucune n'a encore d'audience, aucune ne vient de CTAN.</li>
+<li>Côté paquets, distributions et moteurs, rien de nouveau : les entrées des flux TeX–LaTeX Stack Exchange et du forum Typst de la période sont des questions de dépannage ponctuelles.</li>
+<li>La collecte du subreddit a échoué une fois dans la période (<code>LaTeX: HTTP 404</code>) ; les entrées Reddit reçues sont passées par le relais, le reste venant de Hacker News et des flux Typst et Overleaf.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>DocWizard — espace de travail documentaire auto-hébergeable, avec Zotero intégré</h3>
+<p><strong>Ce que c'est</strong> : un espace d'édition de documents dans l'esprit d'Overleaf ou de HedgeDoc, publié sous licence GPL. On y écrit en Markdown et en TeX, on convertit vers HTML et PDF, et le travail à plusieurs personnes est prévu. Son auteur le présente comme la suite de son convertisseur de fichiers FileWizard.</p>
+<p><strong>Ce que ça apporte</strong> : c'est la seule des trois annonces de la nuit qui vise un usage scientifique installable chez soi, et la seule à mettre en avant une intégration Zotero native — de quoi éviter d'exporter un fichier <code>.bib</code> à la main à chaque modification de la bibliographie. À vérifier avant de s'engager : le dépôt a été créé le 13 novembre 2026 et ne contient ni description ni page d'accueil renseignée, un point à contrôler avant de lui confier des documents de cours.</p>
+<p><strong>Vérification</strong> (API GitHub) : dépôt <code>LoredCast/DocWizard</code> — licence GPL-3.0 reconnue, 5 étoiles, 0 fork, 1 issue ouverte, dernier envoi le 18 novembre 2026, langage principal Python. L'annonce cite « quelques centaines d'étoiles » pour FileWizard, l'outil précédent de l'auteur, et non pour DocWizard.</p>
+<p>Lien : https://github.com/LoredCast/DocWizard</p>
+<h3>Texter — éditeur LaTeX en ligne à compilation incrémentale</h3>
+<p><strong>Ce que c'est</strong> : un éditeur LaTeX qui tourne dans le navigateur, présenté sur Hacker News par son auteur (zackchen). La compilation incrémentale fait que le temps de compilation ne dépend plus de la longueur du document ; l'interface reprend celle de VS Code, l'application est utilisable hors ligne en PWA, et la collaboration en temps réel est annoncée.</p>
+<p><strong>Ce que ça apporte</strong> : c'est l'argument d'Overleaf — n'installer aucune distribution — avec la vitesse de compilation comme différence. Cela peut servir pour montrer un document à des élèves ou à des collègues sans rien installer sur leurs machines. Deux réserves : l'auteur dit lui-même l'outil en alpha, et la page ne dit rien de l'hébergement des documents ni de la façon de les récupérer ; aucun dépôt public, aucune licence affichée.</p>
+<p><strong>Vérification</strong> : la page https://app.texter.website répond (code 200) et charge l'éditeur. L'entrée Hacker News a 1 point et 1 commentaire : c'est une nouveauté que personne n'a encore examinée, à présenter brièvement comme telle.</p>
+<p>Lien : https://app.texter.website</p>
+<h3>Foolscap — assistant d'écriture avec rendu LaTeX immédiat (pertinence à confirmer)</h3>
+<p><strong>Ce que c'est</strong> : une application d'écriture assistée par IA dans laquelle le LaTeX saisi s'affiche immédiatement après avoir cliqué hors du champ. Son auteur insiste sur le fait que l'outil n'écrit pas à la place de l'utilisateur, qu'il peut chercher des théorèmes ou des travaux voisins, et qu'il n'a pas encore d'intégration LEAN.</p>
+<p><strong>Ce que ça apporte</strong> : peu pour des cours. L'outil est présenté d'abord pour la fiction et la recherche littéraire, et son intérêt ici se limite au rendu instantané des mathématiques. Incertitude signalée plutôt que masquée : la page d'accueil ne parle que de roman, ne mentionne ni LaTeX ni format d'export, et n'annonce ni licence ni dépôt public ; c'est un service hébergé et fermé, dont je n'ai pas pu vérifier les affirmations du message. À réserver aux curieux.</p>
+<p>Lien : https://foolscap.works</p>
+<h2>Volume</h2>
+<p>11 entrées nouvelles examinées (17–18 novembre), 3 retenues, 8 écartées, soit un taux de rétention de 27 % — normal pour une source d'entraide où dominent les dépannages ponctuels. Incident de collecte : <code>meta.json</code> signale <code>LaTeX: HTTP 404</code> à la dernière passe, ce qui confirme la fermeture du flux du subreddit ; l'édition s'appuie donc surtout sur Hacker News et les flux Typst et Overleaf.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Trois propositions d'outillage seulement cette nuit : un espace de travail documentaire auto-hébergeable avec Zotero, un éditeur LaTeX en ligne à compilation incrémentale, et un assistant d'écriture qui rend le LaTeX à la volée. Aucune n'a encore d'audience, aucune ne vient de CTAN.</li>
+<li>Côté paquets, distributions et moteurs, rien de nouveau : les entrées des flux TeX–LaTeX Stack Exchange et du forum Typst de la période sont des questions de dépannage ponctuelles.</li>
+<li>La collecte du subreddit a échoué une fois dans la période (<code>LaTeX: HTTP 404</code>) ; les entrées Reddit reçues sont passées par le relais, le reste venant de Hacker News et des flux Typst et Overleaf.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>DocWizard — espace de travail documentaire auto-hébergeable, avec Zotero intégré</h3>
+<p><strong>Ce que c'est</strong> : un espace d'édition de documents dans l'esprit d'Overleaf ou de HedgeDoc, publié sous licence GPL. On y écrit en Markdown et en TeX, on convertit vers HTML et PDF, et le travail à plusieurs personnes est prévu. Son auteur le présente comme la suite de son convertisseur de fichiers FileWizard.</p>
+<p><strong>Ce que ça apporte</strong> : c'est la seule des trois annonces de la nuit qui vise un usage scientifique installable chez soi, et la seule à mettre en avant une intégration Zotero native — de quoi éviter d'exporter un fichier <code>.bib</code> à la main à chaque modification de la bibliographie. À vérifier avant de s'engager : le dépôt a été créé le 13 novembre 2026 et ne contient ni description ni page d'accueil renseignée, un point à contrôler avant de lui confier des documents de cours.</p>
+<p><strong>Vérification</strong> (API GitHub) : dépôt <code>LoredCast/DocWizard</code> — licence GPL-3.0 reconnue, 5 étoiles, 0 fork, 1 issue ouverte, dernier envoi le 18 novembre 2026, langage principal Python. L'annonce cite « quelques centaines d'étoiles » pour FileWizard, l'outil précédent de l'auteur, et non pour DocWizard.</p>
+<p>Lien : https://github.com/LoredCast/DocWizard</p>
+<h3>Texter — éditeur LaTeX en ligne à compilation incrémentale</h3>
+<p><strong>Ce que c'est</strong> : un éditeur LaTeX qui tourne dans le navigateur, présenté sur Hacker News par son auteur (zackchen). La compilation incrémentale fait que le temps de compilation ne dépend plus de la longueur du document ; l'interface reprend celle de VS Code, l'application est utilisable hors ligne en PWA, et la collaboration en temps réel est annoncée.</p>
+<p><strong>Ce que ça apporte</strong> : c'est l'argument d'Overleaf — n'installer aucune distribution — avec la vitesse de compilation comme différence. Cela peut servir pour montrer un document à des élèves ou à des collègues sans rien installer sur leurs machines. Deux réserves : l'auteur dit lui-même l'outil en alpha, et la page ne dit rien de l'hébergement des documents ni de la façon de les récupérer ; aucun dépôt public, aucune licence affichée.</p>
+<p><strong>Vérification</strong> : la page https://app.texter.website répond (code 200) et charge l'éditeur. L'entrée Hacker News a 1 point et 1 commentaire : c'est une nouveauté que personne n'a encore examinée, à présenter brièvement comme telle.</p>
+<p>Lien : https://app.texter.website</p>
+<h3>Foolscap — assistant d'écriture avec rendu LaTeX immédiat (pertinence à confirmer)</h3>
+<p><strong>Ce que c'est</strong> : une application d'écriture assistée par IA dans laquelle le LaTeX saisi s'affiche immédiatement après avoir cliqué hors du champ. Son auteur insiste sur le fait que l'outil n'écrit pas à la place de l'utilisateur, qu'il peut chercher des théorèmes ou des travaux voisins, et qu'il n'a pas encore d'intégration LEAN.</p>
+<p><strong>Ce que ça apporte</strong> : peu pour des cours. L'outil est présenté d'abord pour la fiction et la recherche littéraire, et son intérêt ici se limite au rendu instantané des mathématiques. Incertitude signalée plutôt que masquée : la page d'accueil ne parle que de roman, ne mentionne ni LaTeX ni format d'export, et n'annonce ni licence ni dépôt public ; c'est un service hébergé et fermé, dont je n'ai pas pu vérifier les affirmations du message. À réserver aux curieux.</p>
+<p>Lien : https://foolscap.works</p>
+<h2>Volume</h2>
+<p>11 entrées nouvelles examinées (17–18 novembre), 3 retenues, 8 écartées, soit un taux de rétention de 27 % — normal pour une source d'entraide où dominent les dépannages ponctuels. Incident de collecte : <code>meta.json</code> signale <code>LaTeX: HTTP 404</code> à la dernière passe, ce qui confirme la fermeture du flux du subreddit ; l'édition s'appuie donc surtout sur Hacker News et les flux Typst et Overleaf.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — mercredi 18 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-18.html</link>
