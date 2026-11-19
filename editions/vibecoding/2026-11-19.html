@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — jeudi 19 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>La collecte Reddit ne remonte que deux messages exploitables sur la période : le gros du volume vient de Hacker News, de Lobsters et des journaux de flux (Simon Willison, Latent Space, Hugging Face).</li>
+<li>Plusieurs outils libres nouveaux ou fraîchement publiés : un client de discussion pour agents en ligne de commande, une mémoire persistante pour agents MCP, un terminal multi-agents, un surveillant de déploiements Vercel et trois bacs à sable isolés pour exécuter le code d'un agent.</li>
+<li>Côté modèles : GPT-6.2 Astra et Sol moins chers que leurs prédécesseurs, poids ouverts pour Tencent Hy4 Flash, et un modèle vocal de 0,5 milliard de paramètres sous licence Apache 2.0.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>TaroBird — les agents en ligne de commande réunis dans une messagerie</h3>
+<p>TaroBird présente les agents d'interface en ligne de commande (Codex, Claude Code, DeepSeek et autres) comme des correspondants dans une messagerie unique, sur ordinateur et sur téléphone ; il permet notamment de reprendre une session de terminal depuis un mobile, là où il fallait jusque-là plusieurs applications. Publié sous AGPL-3.0, 34 étoiles, dernière mise à jour le 17 novembre.<br />
+https://github.com/cloveric/tarobird</p>
+<h3>Terminess — un terminal qui fait tourner les CLI officiels des agents</h3>
+<p>Terminess est un terminal et un harnais Swift (Mac, serveur, iPhone) qui exécute les CLI officiels de Claude Code et de Codex signés avec ses propres abonnements, sans lire, stocker ni relayer les jetons de connexion. L'auteur explique l'avoir écrit après que les abonnements Claude ont cessé de fonctionner dans les harnais tiers en février, en se tenant aux conditions d'utilisation. Licence Apache-2.0, projet créé le 18 novembre, 2 étoiles : c'est une publication du jour, pas encore éprouvée.<br />
+https://github.com/Terminess/terminess</p>
+<h3>OmniMem — mémoire persistante pour agents MCP</h3>
+<p>OmniMem est un serveur de mémoire auto-hébergé, servi par le protocole MCP, qui donne à Claude Code, Codex, Cursor ou tout autre agent compatible une mémoire conservée d'une session et d'un projet à l'autre : préférences, connaissances, et une « fosse » des approches abandonnées pour éviter de les retenter. Distribution en binaire (macOS, Windows, Linux, Docker), gratuit, licence MIT, 100 étoiles. L'éditeur annonce une baisse mesurée de 26 % des jetons sur une tâche répétée vingt fois ; ce chiffre vient de ses propres essais, pas d'une évaluation indépendante.<br />
+https://github.com/richarvey/omnimem</p>
+<h3>Spooky Particles — les pannes de production envoyées à l'agent</h3>
+<p>Ce service surveille une application Vercel (échec de déploiement, site qui ne répond plus, tâche planifiée qui s'arrête, secret exposé) et transmet la cause à l'agent de développement, Claude Code ou Codex, qui peut corriger dans une tâche GitHub lancée même en l'absence de l'utilisateur. Gratuit, scripts d'installation publiés sous licence MIT ; ne fonctionne que sur Vercel et ne fait aucune écriture autre que le lancement de la correction.<br />
+https://spookyparticles.com — dépôt : https://github.com/banana-intelligence-dot-ai/spookyparticles</p>
+<h3>Hex — dictée vocale locale</h3>
+<p>Hex transcrit la parole directement sur la machine et l'insère dans l'application active (maintien de la touche Option sur Mac), sans passer par un service distant. Versions macOS 15 ou plus récent, Windows et Linux, installation par Homebrew, paquet Debian, Nix ou AUR. Licence MIT, 7 455 étoiles, mise à jour le 18 novembre.<br />
+https://anoma.ly/hex/</p>
+<h3>Bacs à sable externes pour agents de codage</h3>
+<p>Simon Willison et le laboratoire Prime Radiant publient trois implémentations d'un même motif : le code exécuté par l'agent tourne dans un bac à sable distinct, l'agent restant à l'extérieur. L'une s'appuie sur v86 et Alpine Linux compilé en WebAssembly, une autre sur les conteneurs Apple, la troisième sur la bibliothèque Quicksand de Microsoft qui embarque QEMU et Alpine dans un paquet Python. Les trois exposent la même interface locale et se configurent depuis Pi, Claude Code ou Codex, avec un mandataire à liste blanche de domaines et un mécanisme de remplacement des identifiants pour ne pas confier de secret à l'agent. Licence Apache-2.0, 35 étoiles pour le dépôt principal.<br />
+https://github.com/prime-radiant-inc/external-sandbox</p>
+<h3>Benteveo — pilote pour une imprimante HP abandonnée, écrit avec un agent</h3>
+<p>L'auteur a réimplémenté en C++20 le pilote de l'imprimante HP LaserJet 1005 pour Windows 11 en 64 bits, qu'HP ne prend plus en charge depuis l'époque Windows XP, en travaillant avec Codex. Licence GPL-2.0, mise à jour le 18 novembre, aucune étoile à ce jour : projet neuf, à considérer comme une piste plutôt qu'une solution établie.<br />
+https://github.com/hernandp/OpenHPZJS1005-x64-drv</p>
+<h3>Une usine logicielle pilotée par agent publie trente bibliothèques</h3>
+<p>Kurtis Welch raconte que l'usine logicielle qu'il fait tourner seul a produit trente bibliothèques .NET publiées gratuitement sous licence MIT ou Apache-2.0 (vérifié sur le paquet OneLite, la licence variant d'un paquet à l'autre) : moteur de base de données compatible SQLite, lecture et écriture de Word, Excel et PowerPoint, moteur de jeu à physique déterministe, pile graphique avec son compilateur de nuanceurs. Vingt-huit ont atteint la version 1.0 entre octobre et novembre, pour près de 1,9 million de lignes. Le billet décrit le résultat, pas l'outil qui le produit.<br />
+https://recursiveai.org/blog/what-my-software-factory-built/</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>GPT-6.2 Astra et GPT-6.2 Sol</strong> — OpenAI remplace la gamme 6 par deux modèles : Astra pour les tâches lourdes, Sol pour l'usage courant, à 8 et 40 dollars le million de jetons en entrée et en sortie pour Astra (contre 10 et 50 pour le 6 Astra), et 2 et 10 dollars pour Sol ; le prix du cache tombe à 0,40 dollar le million pour Astra, ce qui compte sur les longues sessions d'agent. Simon Willison, qui a publié la prise en charge dans LLM 0.38, rapporte des avis mitigés : Astra reste en retrait de Claude Fable 5.2 sur plusieurs évaluations et son style de réponse déroute. Vu chez Simon Willison et Latent Space.<br />
+  https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/</li>
+<li><strong>Qwen3.8-27B-pi</strong> — ajustement de Qwen3.8-27B destiné au harnais Pi, pour que les niveaux d'effort demandés soient réellement ordonnés, avec à la clé environ 41 % de jetons de sortie en moins à performance égale sur Terminal-Bench 2.1. Poids en BF16, en FP8 (environ 30 Go) et en dix-sept variantes GGUF de 9 à 29 Go. Pi lui-même est un agent de terminal libre sous licence MIT.<br />
+  https://huggingface.co/blog/bytkim/qwen38-27b-pi</li>
+<li><strong>Tencent Hy4 Flash</strong> — Hy4 Flash, sa variante FP8 et le modèle de base pré-entraîné sont publiés en poids ouverts sur Hugging Face, sous licence maison Tencent Hy (poids téléchargeables et utilisables localement, mais ce n'est pas une licence reconnue par l'OSI). Environ 220 milliards de paramètres, architecture à experts, entrée multimodale.<br />
+  https://huggingface.co/tencent/Hy4-flash</li>
+<li><strong>Rumble-2-Flash</strong> — modèle de reconnaissance vocale de 0,5 milliard de paramètres publié sous licence Apache 2.0, couvrant plus de quarante langues avec détection automatique, annoncé comme capable de transcrire une heure d'audio en une demi-seconde environ et fonctionnant sans code spécifique dans Transformers ou vLLM.<br />
+  https://huggingface.co/blog/rumble-2-flash</li>
+<li><strong>Faire tenir un modèle à experts de 180 milliards de paramètres dans 32 Go de mémoire</strong> — Hugging Face documente, code à l'appui, la diffusion des experts depuis le disque plutôt que depuis la mémoire vive, en comparant le comportement de Transformers, de llama.cpp et de vLLM ; il ne s'agit pas d'une application mais d'une méthode utilisable telle quelle pour faire tourner ces modèles sur une machine modeste.<br />
+  https://huggingface.co/blog/moe-expert-streaming</li>
+</ul>
+<h2>Extensions et greffons</h2>
+<ul>
+<li><strong>skill-finder</strong> — un paragraphe à ajouter au fichier CLAUDE.md et un petit script de recherche qui amènent Claude Code à consulter ses compétences avant de travailler, plutôt qu'à les découvrir au hasard. Expérience évaluée sur Haiku, Sonnet et Opus. Licence MIT, 0 étoile, projet d'octobre : c'est un test documenté, pas un outil installable.<br />
+  https://github.com/ydmitry/skill-finder</li>
+<li><strong>Compétence « Video Polish » pour Hyperframes</strong> — son auteur la partage pour retoucher en une seule passe les vidéos animées produites avec Hyperframes et éviter les allers-retours de corrections mineures. Le corps du message n'est pas récupérable par notre collecte, le contenu de la compétence n'a donc pas été vérifié.<br />
+  https://www.reddit.com/r/vibecoding/comments/1xzntt7/i_built_a_video_polish_skill_for_hyperframes_you/</li>
+</ul>
+<h2>Volume</h2>
+<p>103 entrées lues sur l'intervalle (18 du journal r/vibecoding, 85 des journaux de flux), 15 retenues, 88 écartées ; 1 sujet regroupé en une seule entrée (GPT-6.2, vu chez Simon Willison et Latent Space). Aucun incident de collecte : les journaux de flux ne signalent aucune erreur.</p>
+<footer>Édition du jeudi 19 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
