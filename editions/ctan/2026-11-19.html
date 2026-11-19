@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — jeudi 19 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — jeudi 19 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Huit annonces depuis le dernier passage, aucune ne concerne les soixante et un paquets que votre classe nBook3 appelle : cette édition ne signale donc aucune mise à jour à faire chez vous. Trois entrées sont retenues comme nouveauté ou information utile (un paquet de matrices, la bibliothèque Markdown, l'extension de notes de bas de page pour tcolorbox), cinq sont écartées. Aucun incident de collecte.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune. Aucune des annonces de l'intervalle ne porte sur un paquet de la liste extraite de nBook3 (xcolor, fontspec, tabularray, tcolorbox, tikz, siunitx, mhchem, enumitem, hyperref, microtype, etc.).</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>lt3matrix</strong> — version 0.1 du 16 novembre 2026, licence LPPL 1.3c.<br />
+Ce paquet fournit un type « matrice » léger, bâti sur expl3 et l3fparray, avec les opérations courantes : création, modification, opérations terme à terme, opérations entre matrices, application d'une fonction aux éléments et composition typographique. Il vise explicitement les démonstrations de matrices, les exemples numériques et les transformations géométriques dans un document TeX.<br />
+Ce qu'il apporte : une façon d'écrire un calcul matriciel et de le montrer étape par étape sans passer par un langage de calcul externe. Sa portée reste étroite — le contenu du programme de lycée n'appelle guère de calcul matriciel — et je ne le classe ici que parce qu'il touche à la typographie des mathématiques que vous pratiquez déjà avec mathtools et siunitx ; à vous de juger s'il mérite une place.<br />
+https://ctan.org/pkg/lt3matrix</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>markdown</strong> 3.16.3 (17 novembre 2026) — la bibliothèque qui convertit et compose du Markdown à l'intérieur de TeX. Elle suppose désormais <code>enumitem</code> toujours chargé lorsque le balisage de structure (<em>tagging</em>) est actif, ce qui évite un conflit avec les interfaces qu'emule LaTeX2e depuis sa version de juin 2026. Changement interne sans effet visible sur vos conversions actuelles, mais à connaître si vous repassez un jour par ce paquet pour du Markdown → LaTeX.</li>
+<li><strong>tcbpagefootnote</strong> 1.3 (17 novembre 2026) — l'extension qui fait remonter au bas de la page, et non au bas du cadre, les notes de bas de page saisies dans un <code>tcolorbox</code> (clé <code>page footnote</code>). Cette version range correctement ces notes dans l'arbre de structure d'un PDF balisé (<code>\DocumentMetadata{tagging=on}</code>) et documente son emploi en écriture verticale japonaise, sans intérêt pour vous. À considérer seulement si vous ajoutez un jour des notes de bas de page dans vos encadrés tcolorbox.</li>
+</ul>
+<h2>Volume</h2>
+<p>8 annonces publiées dans l'intervalle (18 novembre 2026), 3 retenues (dont 0 concernant vos paquets), 5 écartées — motifs dominants : adaptation d'un gabarit à une université précise (ou-tma), jeu de société (weiqi), prise en charge de langues non latines et de l'écriture bidirectionnelle (BabelBidi), style bibliographique propre à l'économie et aux références japonaises (ua-jecon), correctif de niche sans conséquence en classe (drawmgr).</p>
+<footer>Édition du jeudi 19 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
