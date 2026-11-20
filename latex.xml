@@ -6,9 +6,38 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 19 Nov 2026 01:12:00 +0100</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 01:11:57 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — vendredi 20 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-20.html</link>
+<guid isPermaLink="false">latex-2026-11-20</guid>
+<pubDate>Fri, 20 Nov 2026 01:11:57 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention dans les dernières 24 heures : les quatre entrées publiées sur TeX Stack Exchange sont toutes des questions de dépannage ponctuelles (signatures électroniques avec eforms/Acrobat, affichage de code LaTeX en verbatim, alignement d'un souligné ondulé avec lua-ul, et une régression de fonte avec babel en lualatex). Aucune annonce de paquet, d'outil, de version ou de gabarit.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<p><em>(aucun)</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<p><em>(aucune)</em></p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p><em>(aucun)</em></p>
+<h2>Volume</h2>
+<p>4 posts publiés dans l'intervalle (TeX Stack Exchange), 0 retenus, 4 écartés — taux de rétention 0 %. Sur un forum d'entraide comme TeX SE, un taux nul est normal et ne signale pas un filtre défaillant.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention dans les dernières 24 heures : les quatre entrées publiées sur TeX Stack Exchange sont toutes des questions de dépannage ponctuelles (signatures électroniques avec eforms/Acrobat, affichage de code LaTeX en verbatim, alignement d'un souligné ondulé avec lua-ul, et une régression de fonte avec babel en lualatex). Aucune annonce de paquet, d'outil, de version ou de gabarit.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<p><em>(aucun)</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<p><em>(aucune)</em></p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p><em>(aucun)</em></p>
+<h2>Volume</h2>
+<p>4 posts publiés dans l'intervalle (TeX Stack Exchange), 0 retenus, 4 écartés — taux de rétention 0 %. Sur un forum d'entraide comme TeX SE, un taux nul est normal et ne signale pas un filtre défaillant.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — jeudi 19 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-19.html</link>
