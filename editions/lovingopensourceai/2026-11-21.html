@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un benchmark de modèles TTS ouverts sur CPU, une technique d'adaptation par RL pour les harnais d'agents, et un nouveau plugin de détection de mot-clé vocal pour remplacer openWakeWord.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Small TTS Bench — classement des modèles de synthèse vocale ouverts sur CPU.</strong> Eren Gölge publie un banc d'essai de 21 modèles TTS à poids ouverts, mesurés sur un seul thread CPU : latence de première audio, vitesse (× temps réel), mémoire, taux d'erreur et naturalité (UTMOS). Phonon 31m (Apache-2.0, via le moteur ptts) se distingue comme meilleur compromis : 82 ms de première audio, 4× temps réel, 363 Mo, 1,6 % WER, 4,43 UTMOS. PiVo-1.4M (Apache-2.0) offre la plus faible latence (5 ms) pour 147 Mo. Tous les échantillons audio et le classement sont en ligne. Lien : <a href="https://erogol.com/small_tts_bench/">https://erogol.com/small_tts_bench/</a></p>
+<p><strong>Harness adapters — des adaptateurs LoRA entraînés par RL pour chaque harnais d'agent.</strong> Hugging Face publie une recette reproductible pour entraîner, par RL dans le harnais cible, un adaptateur LoRA qui spécialise un modèle (Qwen3.8-27B) sur un harnais particulier (pi, Hermes Agent, OpenCode). Résultat : jusqu'à 55 % pass@1 sur Terminal-Bench (contre 39 % sans), avec une consommation de tokens réduite de moitié (1 500 au lieu de 2 900 par tâche). Les trois adaptateurs sont fusionnables en un super-adaptateur unique. Tous les artéfacts (LoRA, GGUF, tâches RL) sont publiés sur le Hub sous licence ouverte. Lien : <a href="https://huggingface.co/blog/harness-adapters-at-scale">https://huggingface.co/blog/harness-adapters-at-scale</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Platypush — assistant vocal local : migration vers microWakeWord.</strong> Fabio Manganiello remplace le plugin openWakeWord (abandonné, modèles de 2023) par <code>assistant.microwakeword</code>, basé sur microWakeWord — le moteur utilisé par ESPHome et Home Assistant Voice. Les modèles intégrés (<code>okay_nabu</code>, <code>hey_jarvis</code>, <code>alexa</code>) sont livrés avec le paquet, plus robustes et mieux entretenus. Le nouveau plugin expose la même API que l'ancien : la migration se fait en changeant le nom du plugin dans la configuration. microWakeWord : dépôt GitHub (39 ★, Apache-2.0). Lien : <a href="https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline">https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline</a></p>
+<h2>Volume</h2>
+<p>79 posts publiés dans l'intervalle, 3 retenus, 76 écartés. Le flux Reddit du subreddit LovingOpenSourceAI est inaccessible (HTTP 404) ; la collecte se poursuit via Hacker News et Lobsters.</p>
+<footer>Édition du samedi 21 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
