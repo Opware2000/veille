@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — vendredi 20 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux annonces retenues sur quatre : une mise à jour corrective d'<strong>iftex</strong> (un de vos paquets) et un nouveau paquet <strong>wrapblock</strong> pour habiller du texte autour d'une image. Deux nouvelles entrées écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence).</p>
+<hr />
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<h3>iftex — version 1.0h (17 novembre 2026)</h3>
+<p>Le noyau LaTeX a publié une mise à jour corrective d'<strong>iftex</strong>, le paquet qui détecte le moteur de compilation (pdfTeX, XeTeX ou LuaTeX). Le correctif garantit que <code>\ifpdftex</code> vaut <code>false</code> sous LuaTeX, même lorsque des noms de compatibilité pdfTeX sont définis. Sans ce correctif, un document compilé avec LuaTeX pouvait se voir répondre « oui » à la question « es-tu sous pdfTeX ? » dans certaines configurations, ce qui aurait pu faire basculer des branchements conditionnels vers le mauvais chemin.</p>
+<p><strong>Pour votre classe nBook3</strong> : si vous compilez en LuaLaTeX (ce que vous faites avec <code>fontspec</code> et <code>unicode-math</code>), la macro <code>\ifpdftex</code> est désormais fiable dans tous les cas. Aucune adaptation de votre classe n'est nécessaire — le correctif est transparent.</p>
+<hr />
+<h2>Nouveaux paquets pertinents</h2>
+<h3>wrapblock — version 0.1.4 (licence LPPL 1.3c)</h3>
+<p>Antonin Marchand a publié <strong>wrapblock</strong>, un nouvel environnement qui place une image à côté d'un bloc de texte « fermé » : le texte est rétréci le long de l'image, puis reprend toute la largeur en dessous. Contrairement à <code>wrapfig</code>, l'environnement gère correctement les listes (de n'importe quelle profondeur) et les équations hors-texte, et ne coupe jamais l'image ni les lignes qui lui font face en travers d'un saut de page. Il fonctionne avec pdfLaTeX et LuaLaTeX, préserve la structure d'un PDF tagué, et nécessite un noyau LaTeX de juin 2023 ou ultérieur.</p>
+<p>Utile pour vos documents pédagogiques où une figure doit côtoyer une énumération ou un calcul sans que la mise en page ne parte en travers.</p>
+<p>Lien : https://ctan.org/pkg/wrapblock</p>
+<hr />
+<h2>Volume</h2>
+<p>4 annonces publiées dans l'intervalle, 2 retenues (dont 1 concernant vos paquets), 2 écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence pratique).</p>
+<footer>Édition du vendredi 20 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Clément Mondary — vendredi 20 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../mondary.xml" title="Clément Mondary">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Clément Mondary — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés le 19 novembre, tous retenus : trois outils autour des agents IA (Beautiful Rust, UNSLOP, Agent Desktop), un client Git natif (1GIT) et un téléchargeur vidéo/audio multiplateforme (Downbit). La collecte s'est déroulée sans incident.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>Beautiful Rust</strong> — Plugin pour Claude Code (compatible Codex, Copilot, Cursor, Gemini CLI) qui empaquette les règles d'écriture Rust idiomatique sous forme d'Agent Skills. Il distille cinq références reconnues (Google Rust Style Guide, Rust API Guidelines, Effective Rust, Rust Design Patterns, Microsoft Pragmatic Rust Guidelines) en fichiers consultables par l'agent, qui peut ainsi produire du code Rust idiomatique sans qu'on ait à le lui rappeler dans le prompt. Chaque skill inclut des exemples compilables sur Rust stable et les digests des sources, ce qui permet à l'agent de remonter à la raison derrière une règle. Le code est ouvert sur GitHub (morganlinton/BeautifulRust). Si Nicolas travaille avec des agents de code et du Rust, c'est une façon propre de spécialiser son agent sans alourdir ses prompts. <em>(plugin, compatible tout agent supportant le format Agent Skills, open source)</em></p>
+<p><strong>UNSLOP</strong> — Skill pour Claude Code et Codex qui transforme une interface « vibecodée » (dégradés par défaut, emojis dans les titres, espacements approximatifs) en une interface dessinée avec un caractère propre. Elle commence par un inventaire des signes de slop, propose une direction graphique tirée du produit, puis applique neuf passes de correction ordonnées (espacement, couleur, icônes, texte, typographie, mise en page, détails, visuels, mouvement). Rien n'est modifié avant validation de l'utilisateur. Sous licence CC BY 4.0 (usage commercial possible avec crédit). Nécessite Claude Code ou Codex et Playwright avec Chromium pour les captures. Pertinent si Nicolas peaufine des interfaces générées par agent — la méthode de revue systématique est aussi applicable à la main. <em>(skill, nécessite Claude Code/Codex, CC BY 4.0)</em></p>
+<p><strong>Agent Desktop</strong> — Outil open source (Apache 2.0) développé par Vercel Labs qui permet aux agents IA d'interagir avec les applications de bureau sans capture d'écran : il utilise les API d'accessibilité du système (macOS, Windows, Linux) pour lire la structure des fenêtres, cliquer, saisir du texte et naviguer. Livré en CLI et en serveur MCP, compatible avec tout agent. L'installation se fait via npm ou Homebrew. Nicolas pourrait l'utiliser pour faire piloter par Hermes des applications de son poste — traitement de documents, automatisation de gestes répétitifs — sans passer par des coordonnées de pixels fragiles. <em>(CLI/MCP, open source Apache 2.0, macOS/Windows/Linux)</em></p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>1GIT</strong> — Client Git natif pour macOS, développé avec GPUI et rendu par Metal (pas d'Electron). Il rassemble tous les dépôts locaux et distants dans une seule fenêtre avec un onglet par dépôt et des espaces de travail (Work / Personal). La vue Changes affiche les diffs texte et image avec sélection par fichier ou par ligne. L'historique inclut le graphe des commits, les branches, les tags et les stashes multiples. Un assistant IA optionnel (OpenCode, ChatGPT, Claude Code, Codex) peut proposer des messages de commit — désactivé par défaut, les changements envoyés sont choisis par l'utilisateur. Les dépôts distants sont accessibles en SSH sans rapatrier les clés sur le poste local. Actuellement en bêta. Nicolas, qui utilise GitHub quotidiennement, pourrait y trouver un complément au terminal pour visualiser ses dépôts et composer ses commits. <em>(macOS natif, bêta, IA optionnelle)</em></p>
+<p><strong>Downbit</strong> — Application native (macOS, Windows, Linux) et CLI pour télécharger des vidéos et de l'audio depuis YouTube, Vimeo, TikTok et d'autres sites. On colle une URL, l'aperçu montre la vignette, le titre, la durée et les formats disponibles (1080p, 720p, audio seul). Le téléchargement se lance d'une touche. La version gratuite est pleinement fonctionnelle : deux téléchargements simultanés, quatre connexions chacun, MP4 et M4A, reprise après interruption. La version Pro (19 $, trois machines, mises à jour incluses) débloque des formats supplémentaires, la découpe sans réencodage, le saut des passages sponsorisés, l'enregistrement des lives et huit téléchargements simultanés. Le DRM (Netflix, Disney+, Spotify) reste hors de portée. Utile pour constituer une bibliothèque de vidéos pédagogiques sans dépendre de la disponibilité en ligne. <em>(gratuit fonctionnel, Pro 19 $, macOS/Windows/Linux)</em></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 5 retenus, 0 écartés — l'édition du 19 novembre était entièrement composée d'outils utiles pour Nicolas (agents IA, développement, vidéo).</p>
+<footer>Édition du vendredi 20 novembre 2026 — <a href="https://opware2000.github.io/veille/mondary.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
