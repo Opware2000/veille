@@ -6,9 +6,46 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 20 Nov 2026 00:01:49 +0100</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 00:02:32 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-21.html</link>
+<guid isPermaLink="false">artcraft-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 00:02:32 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La migration du pipeline raster legacy vers les codecs natifs Rust est achevée pour la branche principale, avec l'amélioration de la précision des vignettes 16 bits. PhotoCraft 0.23.1 a été publié, et FigCraft ajoute la gestion de page d'ouverture partagée. Le collecteur Reddit (r/ArtCraftAI) est en erreur 404 — aucun nouveau post du subreddit n'a pu être lu depuis le 17 novembre.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Précision des vignettes 16 bits et fin de la migration raster</strong> — Dylan Taylor a fusionné plusieurs séries de correctifs qui closent le dernier lot de la « native/legacy raster parity » (#2913, #2921). D'une part, les images 16 bits de grande taille bénéficient désormais d'un prévisualisation par moyennage en précision u64 avant conversion, évitant les débordements et les artefacts de quantification. D'autre part, l'ensemble du pipeline raster (decodage des vignettes, flip, redimensionnement, export PNG/WebP) a été basculé des décodeurs Tauri legacy vers la bibliothèque <code>craft-image-codecs</code>, avec des tests de parité statiques et animés. Une régression de compilation sur main (#2913 → #2915) a été corrigée le jour même. Le ticket storytold/craft-libs#778, qui couvre l'ensemble de ce chantier, est désormais clos pour le périmètre raster. Dylan Taylor est l'auteur des sept commits concernés.</p>
+<p><strong>PhotoCraft v0.23.1</strong> — Publié le 12 novembre, PhotoCraft 0.23.1 apporte des améliorations aux outils de dessin et d'édition (contrôles de zoom, comportement affiné du stylo et des points d'ancrage, meilleurs réglages par défaut pour les outils ligne et polygone), ainsi que de nombreuses corrections de fiabilité et de sécurité dans le traitement des images et l'export. Source : dépôt officiel storytold/photocraft.</p>
+<p><strong>FigCraft — commande « Set as opening page »</strong> — La branche principale de FigCraft (l'alternative à Figma de la suite Craft) a intégré une commande qui permet de définir la page affichée à l'ouverture d'un document partagé. Les collaborateurs conservent leur propre page pendant l'édition. Changement sur main, pas encore dans une version publiée.</p>
+<p><strong>ArtCraft Launcher — file d'attente de téléchargement</strong> — Le lanceur de la suite Craft (qui gère l'installation et la mise à jour des applications) intègre désormais une file d'attente : les téléchargements s'effectuent un par un par défaut, avec un paramètre pour autoriser plusieurs téléchargements simultanés. Changement sur main.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p>Rien de notable cette semaine.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable.</p>
+<h2>Volume</h2>
+<p>7 commits publiés dans l'intervalle, 3 retenus (16-bit thumbnail precision, raster parity closure, PhotoCraft v0.23.1), 4 écartés (mises à jour de dépendances et correctifs de compilation internes).</p>
+<p><em>Note : le collecteur r/ArtCraftAI est en erreur 404 depuis le 20 novembre — les posts du subreddit n'ont pas été collectés. Seules les sources GitHub et YouTube étaient disponibles.</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La migration du pipeline raster legacy vers les codecs natifs Rust est achevée pour la branche principale, avec l'amélioration de la précision des vignettes 16 bits. PhotoCraft 0.23.1 a été publié, et FigCraft ajoute la gestion de page d'ouverture partagée. Le collecteur Reddit (r/ArtCraftAI) est en erreur 404 — aucun nouveau post du subreddit n'a pu être lu depuis le 17 novembre.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Précision des vignettes 16 bits et fin de la migration raster</strong> — Dylan Taylor a fusionné plusieurs séries de correctifs qui closent le dernier lot de la « native/legacy raster parity » (#2913, #2921). D'une part, les images 16 bits de grande taille bénéficient désormais d'un prévisualisation par moyennage en précision u64 avant conversion, évitant les débordements et les artefacts de quantification. D'autre part, l'ensemble du pipeline raster (decodage des vignettes, flip, redimensionnement, export PNG/WebP) a été basculé des décodeurs Tauri legacy vers la bibliothèque <code>craft-image-codecs</code>, avec des tests de parité statiques et animés. Une régression de compilation sur main (#2913 → #2915) a été corrigée le jour même. Le ticket storytold/craft-libs#778, qui couvre l'ensemble de ce chantier, est désormais clos pour le périmètre raster. Dylan Taylor est l'auteur des sept commits concernés.</p>
+<p><strong>PhotoCraft v0.23.1</strong> — Publié le 12 novembre, PhotoCraft 0.23.1 apporte des améliorations aux outils de dessin et d'édition (contrôles de zoom, comportement affiné du stylo et des points d'ancrage, meilleurs réglages par défaut pour les outils ligne et polygone), ainsi que de nombreuses corrections de fiabilité et de sécurité dans le traitement des images et l'export. Source : dépôt officiel storytold/photocraft.</p>
+<p><strong>FigCraft — commande « Set as opening page »</strong> — La branche principale de FigCraft (l'alternative à Figma de la suite Craft) a intégré une commande qui permet de définir la page affichée à l'ouverture d'un document partagé. Les collaborateurs conservent leur propre page pendant l'édition. Changement sur main, pas encore dans une version publiée.</p>
+<p><strong>ArtCraft Launcher — file d'attente de téléchargement</strong> — Le lanceur de la suite Craft (qui gère l'installation et la mise à jour des applications) intègre désormais une file d'attente : les téléchargements s'effectuent un par un par défaut, avec un paramètre pour autoriser plusieurs téléchargements simultanés. Changement sur main.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p>Rien de notable cette semaine.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Rien de notable.</p>
+<h2>Volume</h2>
+<p>7 commits publiés dans l'intervalle, 3 retenus (16-bit thumbnail precision, raster parity closure, PhotoCraft v0.23.1), 4 écartés (mises à jour de dépendances et correctifs de compilation internes).</p>
+<p><em>Note : le collecteur r/ArtCraftAI est en erreur 404 depuis le 20 novembre — les posts du subreddit n'ont pas été collectés. Seules les sources GitHub et YouTube étaient disponibles.</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — vendredi 20 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-20.html</link>
