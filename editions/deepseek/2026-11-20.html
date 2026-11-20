@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — vendredi 20 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>DeepSeek a imposé pour la première fois des limites d'usage sur son service gratuit, plafonnant à 40 000 caractères par échange et instaurant un quota quotidien. Un attaquant a réussi à remplacer le modèle DeepSeek V4.1 Flash chez l'hébergeur Prime Intellect pendant 53 heures, substituant des poids modifiés qui ne refusaient presque plus rien. Côté pratique, un benchmark maison compare 22 modèles locaux exécutables sur PC de jeu, et un index recense 383 environnements de codage agentique.</p>
+<h2>Prix, accès et quotas</h2>
+<p><strong>DeepSeek limite le service gratuit pour la première fois.</strong> Invoquant une pénurie de ressources de calcul, DeepSeek a réduit la limite par échange à environ 40 000 caractères sur son application et son site web. Les conversations entamées il y a plus de sept jours et sans interaction récente sont interrompues, et un plafond quotidien a été instauré. L'entreprise a subi 57 interruptions de service cette année, et la consommation croissante des services agentiques (Tencent WorkBuddy est cité) aggrave la tension sur l'infrastructure. L'API payante pour développeurs n'est pas concernée par ces restrictions. L'information a été rapportée par Huaer Jie Jianwen le 17 novembre, reprise par BigGo Finance ; DeepSeek n'a pas publié de communication officielle. Source : <a href="https://finance.biggo.com/news/3ddf7191-bd44-4073-b849-a2167ecb7b55">BigGo Finance</a>, via r/DeepSeek.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>SpiruxBench : 22 modèles locaux passés au crible.</strong> Spiros Evangelatos a construit un benchmark de codage pour évaluer des LLMs tournant sur PC de jeu (16 Go de VRAM). Son harnais isole chaque modèle dans un conteneur Podman, lui donne 100 000 tokens de contexte et le teste sur des défis algorithmiques, du débogage et des mini-projets (implémentation d'un mini-SQL, d'un BigInt, reverse engineering). L'ensemble des 22 modèles — Qwen 3.6, Gemma 4, MiMO, et leurs fine-tunes — a été testé en quantification réaliste (GGUF). L'auteur cherchait notamment un successeur local au Qwen 3.8 35B qui n'est jamais sorti, et partage ses recommandations par usage (codage agentique, exploration interactive, résumé). Source : <a href="https://sevangelatos.github.io/spiruxbench-results/blog/">SpiruxBench</a>, via r/DeepSeek.</p>
+<h2>Intégrations et outils tiers</h2>
+<p><strong>ADE Index : 383 environnements de codage agentique référencés et classés.</strong> L'ADE Index (Agentic Development Environment Index) recense les applications où l'on exécute, observe et dirige des agents de codage. Il classe 121 environnements sur 383, avec un score basé sur les discussions Hacker News des 90 derniers jours. On y trouve en tête Herdr TUI (65), Paseo (52), DeepSeek Harness (52), T3 Code (48), cmux (42). L'index couvre aussi les CLI agents (237), les éditeurs (28), les extensions IDE (62), les agents cloud (35) et les constructeurs d'applications (35). Les fiches incluent prix, licence, étoiles GitHub et date de dernière mise à jour. Source : <a href="https://adeindex.com">ADE Index</a>, via Hacker News.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Prime Intellect : un attaquant a remplacé DeepSeek V4.1 Flash pendant 53 heures.</strong> Entre le 8 novembre à 01 h 24 UTC et le 10 novembre à 06 h 35 UTC, un tiers non autorisé a substitué le modèle servant l'endpoint <code>deepseek/deepseek-v4.1-flash</code> de Prime Intellect par des poids publics modifiés pour supprimer les refus. Les scores de capacité sont restés inchangés sur GPQA Diamond et τ-bench, mais les refus sont passés de 98 à 1 sur JailbreakBench, de 304 à 2 sur StrongREJECT, et de 198 à 0 sur HarmBench. Prime Intellect affirme n'avoir trouvé aucune preuve d'accès aux requêtes ou aux réponses des clients, ni de compromission des autres modèles, clés ou infrastructure. L'enquête est en cours, et la méthode employée pour la substitution n'a pas été divulguée. Source : <a href="https://superpowerdaily.com/posts/prime-intellect-discloses-unauthorized-deepseek-model-swap-that-sharply-reduced-refusals">Superpower Daily</a>, via Hacker News et r/DeepSeek.</p>
+<p><strong>Pete Warden : l'IA locale est plus capable qu'on ne le croit.</strong> Dans un podcast (The Data Exchange), Pete Warden (co-créateur de Moonshine Voice) discute de l'état de l'IA locale : les modèles ouverts progressent vite, la quantification les rend exécutables sur un laptop, et l'inférence en navigateur devient réaliste. Il aborde aussi l'économie de l'IA locale (plus de coût par requête API), l'architecture du hardware (Flash haute bande passante contre GPU), et la voix comme interface à faible latence. Source : <a href="https://thedataexchange.media/pete-warden-moonshine/">The Data Exchange</a>, via Hacker News.</p>
+<h2>Volume</h2>
+<p>56 entrées lues dans la shortlist (52 de Hacker News, 3 de r/DeepSeek, 1 de Latent Space) + 1 entrée supplémentaire de r/DeepSeek postérieure à la shortlist, 5 retenues (9 % de rétention). Les entrées écartées concernaient des sujets généraux (sécurité, politique, matériel) sans rapport avec les modèles ou leur usage.</p>
+<footer>Édition du vendredi 20 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

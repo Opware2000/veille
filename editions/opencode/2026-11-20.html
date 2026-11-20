@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opencode — vendredi 20 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opencode.xml" title="r/opencode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opencode — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Google dévoile Gemini 4 Neon, un modèle intermédiaire qui rivalise avec Opus 5.5 sur certains benchmarks, tandis que l'écosystème des outils agents s'enrichit : Vercel lance Board, un tableau de bord partagé pour flottes d'agents, HubSpot publie le récit de construction d'Aviator, son harness agent interne, et l'ADE Index recense 383 espaces de travail agents avec leur compatibilité OpenCode. Côté plugins, Dynobox permet de tester ses workflows agents de manière déterministe entre plusieurs harness, IceShore documente l'architecture des systèmes pour les agents, et Google DeepMind ouvre un plugin robotique pour Antigravity.</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p><strong>Gemini 4 Neon.</strong> Google DeepMind a dévoilé le 18 novembre Gemini 4 Neon, quatrième modèle de la gamme Gemini 4 en sept semaines. Neon se positionne entre Hydrogen (entrée de gamme) et Carbon (haut de gamme), mais la grille tarifaire est trompeuse : Neon coûte 3 $/million de tokens en entrée et 15 $/million en sortie, soit plus cher que Carbon qui bénéficie encore d'un tarif de lancement à 2 $/10 $ (qui doublera au 1er décembre). Les premiers tests de Simon Willison placent Neon au-dessus d'Hydrogen et en dessous de Carbon, tandis que certains observateurs le comparent à Opus 5.5 d'Anthropic (vu sur Hacker News, Latent Space et Simon Willison). La version 0.38 du plugin llm-gemini ajoute le support de Neon. Les noms des modèles (Hydrogen, Carbon, Neon, Argon) continuent de semer la confusion — Argon, lancé il y a six semaines, a déjà été retiré sans être mentionné dans l'annonce de Neon.</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>ADE Index.</strong> Un index collaboratif qui recense et classe 383 espaces de travail agents (agent workspaces) par leur activité sur Hacker News. On y trouve Herdr (65 pts), Paseo (52), T3 Code (48), ainsi que des centaines d'autres, avec une compatibilité notée pour OpenCode, Claude Code, Codex et Gemini CLI. Chaque fiche indique licence, prix, étoiles GitHub et date de mise à jour. L'index est tenu par l'équipe ADE et n'inclut pas de placement payant. → <a href="https://adeindex.com">adeindex.com</a></p>
+<p><strong>Vercel Board.</strong> Vercel a publié Board, un tableau de bord headless pour la coordination de multiples agents. Board permet à des flottes d'agents — Claude Code, Codex, OpenCode, Pi, Mastra, LangChain — de partager des tâches, suivre leur avancement et remonter des logs via CLI ou SDK JavaScript. Les agents peuvent réclamer une tâche, publier un compte rendu, renouveler un bail, et marquer le travail comme terminé avec un lien vers la PR. Vercel l'utilise en interne pour ses agents de sécurité et sa software factory v0 (qui fusionne 50 % des PR via Board). Le skill s'installe par <code>npx skills add vercel/board</code>. → <a href="https://vercel.com/blog/introducing-vercel-board">vercel.com/blog/introducing-vercel-board</a></p>
+<p><strong>Aviator : le harness agent de HubSpot.</strong> L'équipe engineering de HubSpot a raconté la construction d'Aviator, son harness agent interne. Conçu pour être indépendant du fournisseur de modèle (le « Switzerland of Models »), il standardise le prompt caching, le tool calling et la gestion de contexte à l'échelle de centaines d'équipes. Il s'appuie sur CHIRP, le framework RPC interne de HubSpot, pour exposer les outils existants via MCP sans réécriture. → <a href="https://hubspot.engineering/blog/aviator-hubspots-agent-harness/">hubspot.engineering/blog/aviator-hubspots-agent-harness/</a></p>
+<p><strong>Dynobox.</strong> Framework de test cross-harness pour workflows agents. Dynobox permet d'écrire des scénarios de test déterministes (TypeScript, JavaScript ou YAML) qui s'exécutent sur Claude Code, OpenAI Codex, OpenCode, Pi, Cursor CLI et Google Antigravity CLI. Il capture les appels d'outils, les commandes, les fichiers modifiés, les requêtes HTTP et les réponses finales — sans qu'un modèle juge un autre. Les tests s'exécutent dans des répertoires de travail temporaires et peuvent être répétés pour détecter les comportements instables. Apache-2.0, 12 étoiles. → <a href="https://github.com/dynobox/dynobox">github.com/dynobox/dynobox</a></p>
+<p><strong>IceShore.</strong> Serveur MCP qui aide les agents à comprendre l'impact d'un changement système. IceShore lit l'IaC (Terraform, etc.) et la documentation, génère un diagramme d'architecture, associe les cas d'utilisation aux composants, et permet à l'agent de répondre à des questions comme « qui est affecté si on arrête cette API ? ». → <a href="https://iceshore.ai">iceshore.ai</a></p>
+<p><strong>AgentMall.</strong> API unifiée (REST et MCP) qui permet à un agent de rechercher des produits, construire un panier et passer commande chez des marchands comme Walmart, Target, Kroger, Best Buy, sans gérer les anti-bot ni les OTP. Chaque achat est approuvé par l'utilisateur sur un panier exact, et la confirmation revient à l'agent. → <a href="https://getagentmall.com">getagentmall.com</a></p>
+<p><strong>Onlook.</strong> Application de bureau open-source qui superpose un canvas visuel au-dessus d'une codebase réelle, permettant de designer directement dans le code avec l'agent de son choix (Claude Code, Codex, etc.). Compatible MCP pour connecter d'autres outils. 27 385 étoiles, Apache-2.0. → <a href="https://github.com/onlook-dev/onlook">github.com/onlook-dev/onlook</a></p>
+<p><strong>Plugin robotique Google DeepMind (Vibe Robotics).</strong> Un plugin pour Google Antigravity qui permet aux agents d'écrire des contrôleurs robotiques en langage naturel, de les tester en simulation MuJoCo et de les exécuter sur un vrai bras robotique — le tout avec le même code. Idéal pour le prototypage rapide en robotique. Apache-2.0, 131 étoiles. → <a href="https://github.com/google-deepmind/robotics-antigravity-plugin">github.com/google-deepmind/robotics-antigravity-plugin</a></p>
+<p><strong>Panda Federation Tools.</strong> Serveur MCP open-source qui donne accès à des outils de recherche et données publiques facturés à l'usage (pay-per-result). MIT. → <a href="https://github.com/pandadad0214/panda-federation-tools">github.com/pandadad0214/panda-federation-tools</a></p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Construire un harness agent à l'échelle d'une entreprise.</strong> Le retour de HubSpot sur Aviator est instructif pour quiconque conçoit une infrastructure agent : ils ont choisi la neutralité de modèle (le harness ne dépend d'aucun fournisseur), misé sur MCP comme couche d'intégration, et centralisé le tool calling, le prompt caching et la gestion de contexte pour éviter que chaque équipe réinvente la roue. Leur framework RPC interne (CHIRP) permet d'exposer n'importe quel service existant comme un outil agent sans développement spécifique — une approche qui pourrait inspirer la conception de skills ou plugins pour OpenCode.</p>
+<h2>Volume</h2>
+<p>59 entrées lues dans les sources (4 du subreddit r/opencode, 52 de Hacker News, 1 de Latent Space, 2 de Simon Willison), 10 retenues, 49 écartées — soit 17 % de rétention, un taux attendu pour un subreddit orienté entraide et dépannage.</p>
+<footer>Édition du vendredi 20 novembre 2026 — <a href="https://opware2000.github.io/veille/opencode.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
