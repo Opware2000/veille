@@ -6,9 +6,44 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 19 Nov 2026 00:58:56 +0100</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 00:52:24 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — vendredi 20 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-20.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-20</guid>
+<pubDate>Fri, 20 Nov 2026 00:52:24 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq nouveautés cette semaine : Onlook, un outil de conception visuelle open source qui traduit les modifications en code réel ; FailTrace, qui reproduit localement un échec d'action GitHub à partir de son URL ; l'ADE Index, un répertoire librement accessible de plus de 380 outils de codage agentique ; et deux mises à jour dans l'écosystème Datasette (plugin d'export Arrow) et LLM (support de Gemini 4 Neon). Le collecteur du subreddit r/hermesagent reste indisponible (HTTP 404) — la veille s'appuie sur Hacker News et les flux complémentaires.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Onlook</strong> — Un outil de bureau open source qui superpose une toile visuelle sur votre codebase réel, permettant de concevoir l'interface directement dans le code avec l'agent de votre choix. Le projet a été le dépôt le plus en vue de GitHub à deux reprises, compte plus de 25 000 utilisateurs et 100 contributeurs. Licence Apache-2.0, gratuit. Dépôt : github.com/onlook-dev/onlook (27 400 étoiles, mis à jour le 19 novembre 2026, TypeScript).</p>
+<p><strong>FailTrace</strong> — Un utilitaire en Go qui reproduit localement un échec d'action GitHub Actions à partir de la seule URL de l'action. Plus besoin de fouiller les journaux distants : on donne le lien, FailTrace rejoue l'étape qui a échoué dans l'environnement local. Licence MIT, gratuit. Dépôt : github.com/Ri4dH/failtrace (29 étoiles, mis à jour le 19 novembre 2026).</p>
+<p><strong>ADE Index</strong> — Un index librement accessible de 383 espaces de travail et outils de développement agentiques, classés par le volume de discussion qu'ils suscitent sur Hacker News sur les 90 derniers jours. Chaque outil est sourcé, noté et comparé. Le site référence aussi 237 agents CLI, 113 orchestrateurs, 62 extensions IDE et 35 agents cloud. Accès libre sans inscription sur adeindex.com.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>llm-gemini 0.38</strong> — La nouvelle version du plugin qui ajoute le support de Gemini 4 Neon (le dernier modèle de Google DeepMind) à l'outil en ligne de commande <code>llm</code> de Simon Willison. Le modèle Neon est présenté comme un concurrent direct d'Opus 5.5 à un coût inférieur.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-arrows 0.1a0</strong> — Un nouveau plugin pour Datasette (version alpha) qui ajoute un format d'export streaming en Apache Arrow. Tirant parti du crochet <code>register_output_renderer()</code> introduit dans Datasette 1.0a43, il permet d'exporter de très gros volumes de données sans les charger en mémoire, au même titre que les exportations CSV et TSV streamées déjà supportées par le cœur.</p>
+<h2>Volume</h2>
+<p>58 posts publiés dans l'intervalle (dont 52 de Hacker News, 3 du subreddit, 2 de Simon Willison, 1 de Latent Space), 5 retenus, 53 écartés.</p>
+<p><em>Incident de collecte</em> : le collecteur Reddit a retourné une erreur HTTP 404 lors de la dernière exécution (flux RSS de r/hermesagent définitivement fermé par Reddit le 13 novembre 2026). Les entrées de ce subreddit encore visibles sont celles collectées avant la fermeture. Les sources Hacker News, Simon Willison et Latent Space fonctionnent normalement.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — vendredi 20 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq nouveautés cette semaine : Onlook, un outil de conception visuelle open source qui traduit les modifications en code réel ; FailTrace, qui reproduit localement un échec d'action GitHub à partir de son URL ; l'ADE Index, un répertoire librement accessible de plus de 380 outils de codage agentique ; et deux mises à jour dans l'écosystème Datasette (plugin d'export Arrow) et LLM (support de Gemini 4 Neon). Le collecteur du subreddit r/hermesagent reste indisponible (HTTP 404) — la veille s'appuie sur Hacker News et les flux complémentaires.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Onlook</strong> — Un outil de bureau open source qui superpose une toile visuelle sur votre codebase réel, permettant de concevoir l'interface directement dans le code avec l'agent de votre choix. Le projet a été le dépôt le plus en vue de GitHub à deux reprises, compte plus de 25 000 utilisateurs et 100 contributeurs. Licence Apache-2.0, gratuit. Dépôt : github.com/onlook-dev/onlook (27 400 étoiles, mis à jour le 19 novembre 2026, TypeScript).</p>
+<p><strong>FailTrace</strong> — Un utilitaire en Go qui reproduit localement un échec d'action GitHub Actions à partir de la seule URL de l'action. Plus besoin de fouiller les journaux distants : on donne le lien, FailTrace rejoue l'étape qui a échoué dans l'environnement local. Licence MIT, gratuit. Dépôt : github.com/Ri4dH/failtrace (29 étoiles, mis à jour le 19 novembre 2026).</p>
+<p><strong>ADE Index</strong> — Un index librement accessible de 383 espaces de travail et outils de développement agentiques, classés par le volume de discussion qu'ils suscitent sur Hacker News sur les 90 derniers jours. Chaque outil est sourcé, noté et comparé. Le site référence aussi 237 agents CLI, 113 orchestrateurs, 62 extensions IDE et 35 agents cloud. Accès libre sans inscription sur adeindex.com.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>llm-gemini 0.38</strong> — La nouvelle version du plugin qui ajoute le support de Gemini 4 Neon (le dernier modèle de Google DeepMind) à l'outil en ligne de commande <code>llm</code> de Simon Willison. Le modèle Neon est présenté comme un concurrent direct d'Opus 5.5 à un coût inférieur.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-arrows 0.1a0</strong> — Un nouveau plugin pour Datasette (version alpha) qui ajoute un format d'export streaming en Apache Arrow. Tirant parti du crochet <code>register_output_renderer()</code> introduit dans Datasette 1.0a43, il permet d'exporter de très gros volumes de données sans les charger en mémoire, au même titre que les exportations CSV et TSV streamées déjà supportées par le cœur.</p>
+<h2>Volume</h2>
+<p>58 posts publiés dans l'intervalle (dont 52 de Hacker News, 3 du subreddit, 2 de Simon Willison, 1 de Latent Space), 5 retenus, 53 écartés.</p>
+<p><em>Incident de collecte</em> : le collecteur Reddit a retourné une erreur HTTP 404 lors de la dernière exécution (flux RSS de r/hermesagent définitivement fermé par Reddit le 13 novembre 2026). Les entrées de ce subreddit encore visibles sont celles collectées avant la fermeture. Les sources Hacker News, Simon Willison et Latent Space fonctionnent normalement.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — jeudi 19 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-19.html</link>
