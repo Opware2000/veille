@@ -6,9 +6,132 @@
 <description>Veille quotidienne du subreddit r/macapps — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/macapps.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 00:12:20 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 00:14:22 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-22.html</link>
+<guid isPermaLink="false">macapps-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 00:14:22 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une quinzaine d'applications et outils macOS nouveaux, presque tous gratuits ou open source, dans des registres variés : gestion de fenêtres, conteneurs Linux, bac à sable, lanceur, email, écriture, audio et quelques utilitaires de bureau. Côté mises à jour, Cloak 2.2 ajoute le déverrouillage facial et Apple Watch.</p>
+<p><strong>Note :</strong> la collecte Reddit directe est en échec (HTTP 404) — les entrées de cette veille viennent de Hacker News, Lobsters et des flux de veille complémentaires (MacGeneration, iGeneration, 9to5Mac, MacRumors, Product Hunt, AlternativeTo, etc.).</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>HyprMac — gestionnaire de fenêtres en tuiles piloté au clavier</h3>
+<p>Gestionnaire de fenêtres en tuiles (disposition BSP/dwindle) inspiré de Hyprland sous Linux. Les fenêtres s'organisent automatiquement sans souris : focus, échange, redimensionnement et dix espaces de travail au clavier. Compatible macOS 13+, SIP reste activé. Gratuit et open source.<br />
+→ <a href="https://hyprmac.app/">hyprmac.app</a></p>
+<h3>Katamaran — conteneurs Docker et machines Linux pour Apple Silicon</h3>
+<p>Moteur de conteneurs et machines Linux natif pour Apple Silicon, basé sur Hypervisor.framework (libkrun). Un seul invité Linux gère tous les conteneurs avec montages rapides (virtio-fs + hypercalls), redirection de ports automatique et récupération de mémoire inutilisée. Application macOS native (Swift/AppKit) + CLI <code>kat</code>. Open source.<br />
+→ <a href="https://katamaran.rs/">katamaran.rs</a> (GitHub : nklmilojevic/katamaran)</p>
+<h3>Boxling — bac à sable macOS pour code non fiable et agents IA</h3>
+<p>Exécute des agents de codage IA et des paquets npm non fiables dans des espaces de travail Debian isolés sur le Mac. Chaque accès est approuvé par Touch ID ou mot de passe. Open source.<br />
+→ <a href="https://boxling.app/">boxling.app</a> (GitHub : janpmz/boxling)</p>
+<h3>Openspot — lanceur d'outils jetables</h3>
+<p>Lanceur macOS léger qui génère des outils (coding agent) pour la tâche en cours : on les garde s'ils sont utiles, on les jette sinon. Open source (MIT, 5 étoiles).<br />
+→ <a href="https://github.com/celishq/openspot">github.com/celishq/openspot</a></p>
+<h3>Zwitch — commutateur d'applications clavier</h3>
+<p>Alternative gratuite à ⌘-Tab : double-appui sur une touche de commande, puis une lettre pour sauter vers l'application. Vit dans la barre de menus.<br />
+→ <a href="https://zwitch.net/">zwitch.net</a></p>
+<h3>AbcTab — commutateur d'applications par première lettre</h3>
+<p>Commutateur d'applications et de fenêtres en Swift 6 natif (AppKit). Permet de sauter à une application par sa première lettre (anglais ou pinyin), liste les fenêtres multiples et les onglets de terminal. Ne nécessite pas l'autorisation d'enregistrement d'écran. Gratuit.<br />
+→ <a href="https://solocraft.app/abctab">solocraft.app/abctab</a></p>
+<h3>Peek — vue instantanée par superposition</h3>
+<p>Application macOS native : maintenir une touche (Fn par défaut) affiche sites web et widgets en superposition ; relâcher pour revenir à ce qu'on faisait. Pratique pour consulter des infos sans changer d'application.<br />
+→ <a href="https://peek.zone/">peek.zone</a></p>
+<h3>Glassmail — client email natif Mac avec IA privée</h3>
+<p>Client email natif pour Gmail, iCloud, Outlook, Yahoo et tout compte IMAP. L'assistant IA (résumés, écriture, recherche en langage naturel) tourne entièrement sur la machine (Apple Intelligence ou modèle téléchargé). Les mots de passe restent dans le trousseau. Paiement unique : 29 $ (prix de lancement, puis 49 $), jusqu'à 3 Mac. Essai gratuit 14 jours.<br />
+→ <a href="https://glassmail.app/">glassmail.app</a></p>
+<h3>Smorza — volume par application sur Mac</h3>
+<p>Permet de régler le volume et l'audio de sortie pour chaque application macOS indépendamment.<br />
+→ <a href="https://www.producthunt.com/products/smorza">producthunt.com/products/smorza</a></p>
+<h3>Fenêtre d'humidité — suivi humidité, point de rosée et CO₂</h3>
+<p>Application macOS qui affiche l'humidité intérieure et extérieure, le point de rosée et des graphiques de CO₂. Données issues de capteurs compatibles. Idéal pour surveiller la qualité de l'air — pertinente pour un professeur de SVT.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1tope/humidity_window_indoor_vs_outdoor_humidity_dew/">reddit.com/r/macapps</a></p>
+<h3>Meboki — sous-titres de style Grammarly hors ligne</h3>
+<p>Ajoute des soulignements (orthographe, grammaire, style) dans n'importe quelle application Mac, sans envoyer les données sur le réseau. Le traitement est entièrement local.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1s8fm/os_meboki_grammarlystyle_underlines_in_any_mac/">reddit.com/r/macapps</a></p>
+<h3>Inkrail — application d'écriture minimale et gratuite</h3>
+<p>Application d'écriture conçue pour le travail en profondeur : minimaliste, entièrement hors ligne et gratuite.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1s5ly/os_inkrail_offline_minimal_app_for_writing_built/">reddit.com/r/macapps</a></p>
+<h3>DynoCap — machines Linux jetables pour agents sur macOS</h3>
+<p>Crée des machines virtuelles Linux éphémères et hors ligne via Apple Virtualization.framework, destinées à exécuter des agents de codage ou du code non fiable en isolation. Open source (Apache 2.0).<br />
+→ <a href="https://github.com/baires/dynocap">github.com/baires/dynocap</a></p>
+<h3>Poker Trainer — jeu de poker gratuit dans la barre de menus</h3>
+<p>Jeu de poker free-to-play conçu pour s'améliorer en jouant, directement accessible depuis la barre de menus. Gratuit.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y203a9/i_wanted_a_poker_game_for_my_downtime_that_would/">reddit.com/r/macapps</a></p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Cloak 2.2 — déverrouillage facial et Apple Watch</h3>
+<p>L'utilitaire de protection de la vie privée Cloak passe en version 2.2 avec le déverrouillage par reconnaissance faciale, le déverrouillage par Apple Watch, un code d'urgence et des profils de confidentialité.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1w73v/cloak_22_is_here_face_unlock_apple_watch_unlock/">reddit.com/r/macapps</a></p>
+<h3>Mises à jour Homebrew (casks)</h3>
+<p>Quelques mises à jour notables parmi les casks Homebrew : <strong>Super Productivity</strong> 20.1.0 (gestion de tâches), <strong>The Commander</strong> 1.13.0 (gestionnaire de fichiers), <strong>Token Monitor</strong> 0.95.1 (surveillance de jetons), <strong>Nook</strong> 1.6.1 (gestionnaire de liseuse), <strong>OpenCodex</strong> 2.100.8 et l'ajout d'un nouveau cask <strong>SmartGit@preview</strong> 26.2.024.</p>
+<hr />
+<h2>Volume</h2>
+<p>15 entrées lues dans la shortlist (hors homebrew cask), 14 retenues, 1 écartée (décorative, sans utilité pratique). La collecte Reddit est en erreur (404) — les entrées proviennent des autres sources.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une quinzaine d'applications et outils macOS nouveaux, presque tous gratuits ou open source, dans des registres variés : gestion de fenêtres, conteneurs Linux, bac à sable, lanceur, email, écriture, audio et quelques utilitaires de bureau. Côté mises à jour, Cloak 2.2 ajoute le déverrouillage facial et Apple Watch.</p>
+<p><strong>Note :</strong> la collecte Reddit directe est en échec (HTTP 404) — les entrées de cette veille viennent de Hacker News, Lobsters et des flux de veille complémentaires (MacGeneration, iGeneration, 9to5Mac, MacRumors, Product Hunt, AlternativeTo, etc.).</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>HyprMac — gestionnaire de fenêtres en tuiles piloté au clavier</h3>
+<p>Gestionnaire de fenêtres en tuiles (disposition BSP/dwindle) inspiré de Hyprland sous Linux. Les fenêtres s'organisent automatiquement sans souris : focus, échange, redimensionnement et dix espaces de travail au clavier. Compatible macOS 13+, SIP reste activé. Gratuit et open source.<br />
+→ <a href="https://hyprmac.app/">hyprmac.app</a></p>
+<h3>Katamaran — conteneurs Docker et machines Linux pour Apple Silicon</h3>
+<p>Moteur de conteneurs et machines Linux natif pour Apple Silicon, basé sur Hypervisor.framework (libkrun). Un seul invité Linux gère tous les conteneurs avec montages rapides (virtio-fs + hypercalls), redirection de ports automatique et récupération de mémoire inutilisée. Application macOS native (Swift/AppKit) + CLI <code>kat</code>. Open source.<br />
+→ <a href="https://katamaran.rs/">katamaran.rs</a> (GitHub : nklmilojevic/katamaran)</p>
+<h3>Boxling — bac à sable macOS pour code non fiable et agents IA</h3>
+<p>Exécute des agents de codage IA et des paquets npm non fiables dans des espaces de travail Debian isolés sur le Mac. Chaque accès est approuvé par Touch ID ou mot de passe. Open source.<br />
+→ <a href="https://boxling.app/">boxling.app</a> (GitHub : janpmz/boxling)</p>
+<h3>Openspot — lanceur d'outils jetables</h3>
+<p>Lanceur macOS léger qui génère des outils (coding agent) pour la tâche en cours : on les garde s'ils sont utiles, on les jette sinon. Open source (MIT, 5 étoiles).<br />
+→ <a href="https://github.com/celishq/openspot">github.com/celishq/openspot</a></p>
+<h3>Zwitch — commutateur d'applications clavier</h3>
+<p>Alternative gratuite à ⌘-Tab : double-appui sur une touche de commande, puis une lettre pour sauter vers l'application. Vit dans la barre de menus.<br />
+→ <a href="https://zwitch.net/">zwitch.net</a></p>
+<h3>AbcTab — commutateur d'applications par première lettre</h3>
+<p>Commutateur d'applications et de fenêtres en Swift 6 natif (AppKit). Permet de sauter à une application par sa première lettre (anglais ou pinyin), liste les fenêtres multiples et les onglets de terminal. Ne nécessite pas l'autorisation d'enregistrement d'écran. Gratuit.<br />
+→ <a href="https://solocraft.app/abctab">solocraft.app/abctab</a></p>
+<h3>Peek — vue instantanée par superposition</h3>
+<p>Application macOS native : maintenir une touche (Fn par défaut) affiche sites web et widgets en superposition ; relâcher pour revenir à ce qu'on faisait. Pratique pour consulter des infos sans changer d'application.<br />
+→ <a href="https://peek.zone/">peek.zone</a></p>
+<h3>Glassmail — client email natif Mac avec IA privée</h3>
+<p>Client email natif pour Gmail, iCloud, Outlook, Yahoo et tout compte IMAP. L'assistant IA (résumés, écriture, recherche en langage naturel) tourne entièrement sur la machine (Apple Intelligence ou modèle téléchargé). Les mots de passe restent dans le trousseau. Paiement unique : 29 $ (prix de lancement, puis 49 $), jusqu'à 3 Mac. Essai gratuit 14 jours.<br />
+→ <a href="https://glassmail.app/">glassmail.app</a></p>
+<h3>Smorza — volume par application sur Mac</h3>
+<p>Permet de régler le volume et l'audio de sortie pour chaque application macOS indépendamment.<br />
+→ <a href="https://www.producthunt.com/products/smorza">producthunt.com/products/smorza</a></p>
+<h3>Fenêtre d'humidité — suivi humidité, point de rosée et CO₂</h3>
+<p>Application macOS qui affiche l'humidité intérieure et extérieure, le point de rosée et des graphiques de CO₂. Données issues de capteurs compatibles. Idéal pour surveiller la qualité de l'air — pertinente pour un professeur de SVT.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1tope/humidity_window_indoor_vs_outdoor_humidity_dew/">reddit.com/r/macapps</a></p>
+<h3>Meboki — sous-titres de style Grammarly hors ligne</h3>
+<p>Ajoute des soulignements (orthographe, grammaire, style) dans n'importe quelle application Mac, sans envoyer les données sur le réseau. Le traitement est entièrement local.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1s8fm/os_meboki_grammarlystyle_underlines_in_any_mac/">reddit.com/r/macapps</a></p>
+<h3>Inkrail — application d'écriture minimale et gratuite</h3>
+<p>Application d'écriture conçue pour le travail en profondeur : minimaliste, entièrement hors ligne et gratuite.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1s5ly/os_inkrail_offline_minimal_app_for_writing_built/">reddit.com/r/macapps</a></p>
+<h3>DynoCap — machines Linux jetables pour agents sur macOS</h3>
+<p>Crée des machines virtuelles Linux éphémères et hors ligne via Apple Virtualization.framework, destinées à exécuter des agents de codage ou du code non fiable en isolation. Open source (Apache 2.0).<br />
+→ <a href="https://github.com/baires/dynocap">github.com/baires/dynocap</a></p>
+<h3>Poker Trainer — jeu de poker gratuit dans la barre de menus</h3>
+<p>Jeu de poker free-to-play conçu pour s'améliorer en jouant, directement accessible depuis la barre de menus. Gratuit.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y203a9/i_wanted_a_poker_game_for_my_downtime_that_would/">reddit.com/r/macapps</a></p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Cloak 2.2 — déverrouillage facial et Apple Watch</h3>
+<p>L'utilitaire de protection de la vie privée Cloak passe en version 2.2 avec le déverrouillage par reconnaissance faciale, le déverrouillage par Apple Watch, un code d'urgence et des profils de confidentialité.<br />
+→ <a href="https://www.reddit.com/r/macapps/comments/1y1w73v/cloak_22_is_here_face_unlock_apple_watch_unlock/">reddit.com/r/macapps</a></p>
+<h3>Mises à jour Homebrew (casks)</h3>
+<p>Quelques mises à jour notables parmi les casks Homebrew : <strong>Super Productivity</strong> 20.1.0 (gestion de tâches), <strong>The Commander</strong> 1.13.0 (gestionnaire de fichiers), <strong>Token Monitor</strong> 0.95.1 (surveillance de jetons), <strong>Nook</strong> 1.6.1 (gestionnaire de liseuse), <strong>OpenCodex</strong> 2.100.8 et l'ajout d'un nouveau cask <strong>SmartGit@preview</strong> 26.2.024.</p>
+<hr />
+<h2>Volume</h2>
+<p>15 entrées lues dans la shortlist (hors homebrew cask), 14 retenues, 1 écartée (décorative, sans utilité pratique). La collecte Reddit est en erreur (404) — les entrées proviennent des autres sources.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-21.html</link>
