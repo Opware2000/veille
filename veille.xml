@@ -6,9 +6,69 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 00:32:45 +0100</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 00:52:13 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-21.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 00:52:13 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux versions majeures d'outils fondamentaux cette nuit : FFmpeg 9.1 « Gauss » apporte des encodeurs matériels et le support du protocole libcurl, tandis que PostgreSQL 19 introduit la réorganisation en ligne des tables et la cohérence en lecture sur les réplicas. Le flux du subreddit r/hermesagent est toujours inaccessible (erreur HTTP 404) — les entrées viennent de Hacker News, Simon Willison et Latent Space.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia libre (licence LGPL/GPL). Au menu : encodage et décodage ASTC via libastcenc avec les contenus .astc et KTX 1.0 ; encodeur AAC considérablement amélioré ; encodeur APV Vulkan ; support du protocole libcurl pour les flux HTTP avancés ; filtre d'interpolation accéléré par NVIDIA Optical Flow (vf_fruc_vulkan) ; encodage xHE-AAC via libfdk-xhe-aac ; inférence DirectML zéro-copie via D3D12 pour le backend ONNX Runtime. Une mise à jour qui concerne tous ceux qui manipulent de l'audio ou de la vidéo en ligne de commande. <a href="https://ffmpeg.org/download.html#release_9.1">ffmpeg.org</a> (288 points sur HN, 35 commentaires)</p>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure de la base de données libre (licence PostgreSQL). Fonctionnalités phares : commande <code>REPACK CONCURRENTLY</code> pour réorganiser les tables et récupérer de l'espace disque sans bloquer les accès ; réplication logique des séquences ; commande <code>WAIT FOR LSN</code> qui garantit la cohérence « lecture après écriture » sur les réplicas en lecture ; extension <code>pg_plan_advice</code> pour contrôler les décisions du planificateur de requêtes ; JIT désactivé par défaut (son impact sur les performances était jugé trop imprévisible). <a href="https://www.postgresql.org/docs/release/19.0/">postgresql.org</a> (339 points sur HN, 21 commentaires)</p>
+<h2>Volume</h2>
+<p>74 posts publiés dans l'intervalle (0 de r/hermesagent — flux en erreur 404, 69 de Hacker News, 3 de Simon Willison, 2 de Latent Space), 2 retenus, 72 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux versions majeures d'outils fondamentaux cette nuit : FFmpeg 9.1 « Gauss » apporte des encodeurs matériels et le support du protocole libcurl, tandis que PostgreSQL 19 introduit la réorganisation en ligne des tables et la cohérence en lecture sur les réplicas. Le flux du subreddit r/hermesagent est toujours inaccessible (erreur HTTP 404) — les entrées viennent de Hacker News, Simon Willison et Latent Space.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia libre (licence LGPL/GPL). Au menu : encodage et décodage ASTC via libastcenc avec les contenus .astc et KTX 1.0 ; encodeur AAC considérablement amélioré ; encodeur APV Vulkan ; support du protocole libcurl pour les flux HTTP avancés ; filtre d'interpolation accéléré par NVIDIA Optical Flow (vf_fruc_vulkan) ; encodage xHE-AAC via libfdk-xhe-aac ; inférence DirectML zéro-copie via D3D12 pour le backend ONNX Runtime. Une mise à jour qui concerne tous ceux qui manipulent de l'audio ou de la vidéo en ligne de commande. <a href="https://ffmpeg.org/download.html#release_9.1">ffmpeg.org</a> (288 points sur HN, 35 commentaires)</p>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure de la base de données libre (licence PostgreSQL). Fonctionnalités phares : commande <code>REPACK CONCURRENTLY</code> pour réorganiser les tables et récupérer de l'espace disque sans bloquer les accès ; réplication logique des séquences ; commande <code>WAIT FOR LSN</code> qui garantit la cohérence « lecture après écriture » sur les réplicas en lecture ; extension <code>pg_plan_advice</code> pour contrôler les décisions du planificateur de requêtes ; JIT désactivé par défaut (son impact sur les performances était jugé trop imprévisible). <a href="https://www.postgresql.org/docs/release/19.0/">postgresql.org</a> (339 points sur HN, 21 commentaires)</p>
+<h2>Volume</h2>
+<p>74 posts publiés dans l'intervalle (0 de r/hermesagent — flux en erreur 404, 69 de Hacker News, 3 de Simon Willison, 2 de Latent Space), 2 retenus, 72 écartés.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/vibecoding — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-21.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 00:43:03 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une édition plutôt riche en outils cette semaine : deux nouveaux dépôts GitHub pour optimiser les agents de codage, un nouvel outil Hugging Face pour adapter un modèle à son harnais d'agent, et des nouvelles de Cursor qui envisage de se passer des modèles chinois. Côté versions majeures, FFmpeg 9.1 et PostgreSQL 19 sont sortis.</p>
+<p><em>Note : le subreddit r/vibecoding a retourné une erreur 404 lors de la collecte. Cette édition s'appuie sur Hacker News, Lobsters et les flux complémentaires.</em></p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Muscle-memory</strong> — Plugin pour Claude Code (compatible Codex, Gemini CLI et Cursor) qui permet d'enregistrer une tâche répétée une fois, puis de la rejouer sans consommer le moindre token. Le développeur exécute la tâche normalement, le plugin capture les étapes et les transforme en script. Une fois le script approuvé, les exécutions suivantes se font à coût zéro. Le dépôt est sous licence MIT, aucune étoile pour l'instant (projet du 19 novembre). <em>Lien : github.com/kabirshah4/muscle-memory</em></p>
+<p><strong>Codex local log audit</strong> — Outil d'audit forensique en lecture seule pour les logs locaux d'OpenAI Codex (dossier <code>~/.codex</code>). Il détecte les chutes de tokens de raisonnement, les coupures à 516 tokens, les changements de résumé, et vérifie la conformité des stockages SQLite et GDPR. Sous licence MIT, 2 étoiles, dernière mise à jour le 20 novembre. <em>Lien : github.com/NeHumorist/codex-local-audit</em></p>
+<p><strong>Harness adapters (Hugging Face)</strong> — Hugging Face publie une recette reproductible pour entraîner des adaptateurs LoRA par apprentissage par renforcement, adaptés à un harnais d'agent spécifique (Pi, OpenCode, Hermes Agent). Sur Qwen3.8-27B, l'adaptateur passe de 39 % à 55 % de pass@1 sur Terminal-Bench 2.1, avec une consommation de tokens réduite de moitié (1 500 tokens par tâche contre 2 900). Les trois adaptateurs sont également fusionnés en un seul « super adaptateur » qui fonctionne sur les trois harnais. <em>Lien : huggingface.co/blog/harness-adapters-at-scale</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Cursor envisage de retirer les modèles chinois</strong> — D'après un rapport de la commission parlementaire américaine que CNBC a pu consulter, Cursor (éditeur de l'IDE de codage assisté par IA, racheté par SpaceX en août) étudie le retrait des modèles open-weight chinois de sa plateforme pour des raisons de risque géopolitique. Le modèle Composer 2 de Cursor est construit sur Kimi K2.5 de Moonshot AI. Le rapport cite le coût, la personnalisation et des performances proches de l'état de l'art comme raisons de l'adoption des modèles chinois, et recommande une « initiative nationale américaine de modèles open-weight ».</p>
+<p><strong>Gemini 4 Neon numéro 1 au Models Engineering Index</strong> — Le modèle de Google prend la tête du MEI (score 68,4), devant OpenAI 6.2 Astra (67,1) et Anthropic Fable 5.2 (66,7). L'indice composite agrège 16 benchmarks de codage. Gemini 4 Neon est 2,1 fois plus cher que la moyenne des modèles classés mais n'utilise que 0,8 fois leurs tokens. Le précédent leader était Opus 5.5 d'Anthropic. <em>Lien : git-aarvin.github.io/mei/</em></p>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia open source. Les notes de version détaillent de nombreuses corrections et améliorations depuis la branche 9.0. <em>Lien : ffmpeg.org</em></p>
+<p><strong>PostgreSQL 19</strong> — Sortie le 19 novembre, avec plusieurs nouveautés notables : la commande <code>REPACK</code> pour récupérer de l'espace disque et réorganiser les tables sans bloquer les lectures et écrits (mode <code>CONCURRENTLY</code>) ; les extensions <code>pg_plan_advice</code> et <code>pg_stash_advice</code> pour contrôler et appliquer automatiquement les décisions du planner ; la réplication logique activable sans redémarrage ; la commande <code>WAIT</code> pour la cohérence « read-your-writes » sur les standbys ; et le vacuum automatique parallélisé des index. <em>Lien : postgresql.org/docs/release/19.0/</em></p>
+<h2>Volume</h2>
+<p>88 entrées lues dans la shortlist, 7 sujets retenus (3 outils nouveaux, 4 actualités et versions), 81 écartés (hors sujet, opinions, questions, doublons, blogs sans annonce concrète).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une édition plutôt riche en outils cette semaine : deux nouveaux dépôts GitHub pour optimiser les agents de codage, un nouvel outil Hugging Face pour adapter un modèle à son harnais d'agent, et des nouvelles de Cursor qui envisage de se passer des modèles chinois. Côté versions majeures, FFmpeg 9.1 et PostgreSQL 19 sont sortis.</p>
+<p><em>Note : le subreddit r/vibecoding a retourné une erreur 404 lors de la collecte. Cette édition s'appuie sur Hacker News, Lobsters et les flux complémentaires.</em></p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Muscle-memory</strong> — Plugin pour Claude Code (compatible Codex, Gemini CLI et Cursor) qui permet d'enregistrer une tâche répétée une fois, puis de la rejouer sans consommer le moindre token. Le développeur exécute la tâche normalement, le plugin capture les étapes et les transforme en script. Une fois le script approuvé, les exécutions suivantes se font à coût zéro. Le dépôt est sous licence MIT, aucune étoile pour l'instant (projet du 19 novembre). <em>Lien : github.com/kabirshah4/muscle-memory</em></p>
+<p><strong>Codex local log audit</strong> — Outil d'audit forensique en lecture seule pour les logs locaux d'OpenAI Codex (dossier <code>~/.codex</code>). Il détecte les chutes de tokens de raisonnement, les coupures à 516 tokens, les changements de résumé, et vérifie la conformité des stockages SQLite et GDPR. Sous licence MIT, 2 étoiles, dernière mise à jour le 20 novembre. <em>Lien : github.com/NeHumorist/codex-local-audit</em></p>
+<p><strong>Harness adapters (Hugging Face)</strong> — Hugging Face publie une recette reproductible pour entraîner des adaptateurs LoRA par apprentissage par renforcement, adaptés à un harnais d'agent spécifique (Pi, OpenCode, Hermes Agent). Sur Qwen3.8-27B, l'adaptateur passe de 39 % à 55 % de pass@1 sur Terminal-Bench 2.1, avec une consommation de tokens réduite de moitié (1 500 tokens par tâche contre 2 900). Les trois adaptateurs sont également fusionnés en un seul « super adaptateur » qui fonctionne sur les trois harnais. <em>Lien : huggingface.co/blog/harness-adapters-at-scale</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Cursor envisage de retirer les modèles chinois</strong> — D'après un rapport de la commission parlementaire américaine que CNBC a pu consulter, Cursor (éditeur de l'IDE de codage assisté par IA, racheté par SpaceX en août) étudie le retrait des modèles open-weight chinois de sa plateforme pour des raisons de risque géopolitique. Le modèle Composer 2 de Cursor est construit sur Kimi K2.5 de Moonshot AI. Le rapport cite le coût, la personnalisation et des performances proches de l'état de l'art comme raisons de l'adoption des modèles chinois, et recommande une « initiative nationale américaine de modèles open-weight ».</p>
+<p><strong>Gemini 4 Neon numéro 1 au Models Engineering Index</strong> — Le modèle de Google prend la tête du MEI (score 68,4), devant OpenAI 6.2 Astra (67,1) et Anthropic Fable 5.2 (66,7). L'indice composite agrège 16 benchmarks de codage. Gemini 4 Neon est 2,1 fois plus cher que la moyenne des modèles classés mais n'utilise que 0,8 fois leurs tokens. Le précédent leader était Opus 5.5 d'Anthropic. <em>Lien : git-aarvin.github.io/mei/</em></p>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia open source. Les notes de version détaillent de nombreuses corrections et améliorations depuis la branche 9.0. <em>Lien : ffmpeg.org</em></p>
+<p><strong>PostgreSQL 19</strong> — Sortie le 19 novembre, avec plusieurs nouveautés notables : la commande <code>REPACK</code> pour récupérer de l'espace disque et réorganiser les tables sans bloquer les lectures et écrits (mode <code>CONCURRENTLY</code>) ; les extensions <code>pg_plan_advice</code> et <code>pg_stash_advice</code> pour contrôler et appliquer automatiquement les décisions du planner ; la réplication logique activable sans redémarrage ; la commande <code>WAIT</code> pour la cohérence « read-your-writes » sur les standbys ; et le vacuum automatique parallélisé des index. <em>Lien : postgresql.org/docs/release/19.0/</em></p>
+<h2>Volume</h2>
+<p>88 entrées lues dans la shortlist, 7 sujets retenus (3 outils nouveaux, 4 actualités et versions), 81 écartés (hors sujet, opinions, questions, doublons, blogs sans annonce concrète).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-21.html</link>
@@ -4556,102 +4616,6 @@ Mises à jour : <strong>XDM</strong> (torrents et yt-dlp), <strong>Sping 1.9.0</
 </ul>
 <h2>Volume</h2>
 <p>215 entrées publiées dans l'intervalle (80 montées de version Homebrew, 44 billets de r/macapps, 52 dépêches Apple et Mac, 22 fiches Product Hunt, 7 dépêches AlternativeTo, 5 fils du forum MacGeneration, 2 lettres Setapp, 3 articles de The Eclectic Light Company), 38 sujets retenus, 177 écartés. Chaque billet de r/macapps figure deux fois dans le journal — l'original anglais et une copie traduite automatiquement — ; ces paires ont été comptées une seule fois et rédigées en une seule entrée. Les récapitulatifs mensuels, les questions d'entraide, les avis subjectifs, les demandes de recommandation pour le Black Friday et les plaintes sur les boîtes de dialogue d'autorisation de macOS 27 ont été écartés. La collecte n'a remonté aucune erreur (<code>state/reddit/macapps/meta.json</code>, dernier passage le 16 novembre à 22 h 43 UTC).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — mardi 17 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-17.html</link>
-<guid isPermaLink="false">artcraft-2026-11-17</guid>
-<pubDate>Tue, 17 Nov 2026 00:01:49 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — mardi 17 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Un projet communautaire de modeleur 3D pousse/pousse-tire, écrit en Rust sous licence MIT, cherche à s'interfacer avec l'étape 3D d'ArtCraft ; un tableau de bord libre pour piloter les serveurs MCP de la suite fait aussi son apparition. Côté officiel, l'équipe ouvre le débat sur un format de fichier natif pour PhotoCraft, et le dépôt fait évoluer la détection des types de fichiers. La collecte du subreddit a échoué une fois dans la nuit (limite de débit), sans conséquence sur cette édition.</p>
-<h2>Nouveautés et annonces</h2>
-<h3>Le dépôt officiel détecte les types de fichiers avec sa propre table de signatures</h3>
-<p>Un commit mergé dans <code>storytold/artcraft</code> (auteur : FredApps) remplace la bibliothèque tierce <code>infer</code> et les détections locales GLB/FBX/PLY par <code>craft-sniff</code>, une table de signatures maison partagée entre les applications. Conséquences visibles : les fichiers WAV et FLAC sont désormais reconnus comme <code>audio/wav</code> et <code>audio/flac</code>, ce qui débloque les conversions de format existantes ; en revanche, les polices et les documents bureautiques ressortent maintenant en « type inconnu », la nouvelle table n'ayant pas de signature pour eux. Les fonctions publiques ne changent pas, il s'agit donc d'un travail de fond plutôt que d'une nouveauté visible.<br />
-Lien : https://github.com/storytold/artcraft/commit/69f53c2f0358a91a5e35e5a7b3a91677320c3112</p>
-<h3>PhotoCraft : format de fichier natif ou tout-en-PSD ?</h3>
-<p>Un intervenant qui se présente comme membre de l'équipe de développement de PhotoCraft (pseudonyme Hoangduong314) expose un dilemme d'architecture pour les prochaines versions : créer un format de fichier propre à chaque application de la suite, ou tout bâtir sur le <code>.psd</code>. Le support du PSD reste non négociable pour l'interopérabilité, mais y loger des fonctions que Photoshop ne connaît pas risque la corruption de fichier ou la perte de données d'une application à l'autre ; un format propriétaire est aussi, dans les grandes suites, ce qui permet de faire tenir un écosystème cohérent. L'auteur demande aux utilisateurs s'ils accepteraient de travailler dans un format natif ArtCraft et de n'exporter en PSD qu'au besoin. Rien n'est décidé : il s'agit d'une consultation, mais elle annonce la direction technique des prochains mois.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxckyj/thoughts_on_native_file_formats_vs_sticking/</p>
-<h3>« Let's Open Source the World » — intervention de Brandon Thomas</h3>
-<p>Le fondateur d'ArtCraft apparaît dans une publication partagée sur le subreddit par aliendude5300, intitulée « Let's Open Source the World ». Le post ne contient aucun texte ni description dans le journal collecté : il s'agit d'un lien vers une intervention, vraisemblablement une conférence ou une émission, dont je n'ai pas pu vérifier le contenu depuis la collecte (Reddit refuse l'accès direct depuis le serveur). À confirmer donc, mais le signal mérite d'être suivi si la vidéo est retrouvée.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxtk2h/lets_open_source_the_world_brandon_thomas_artcraft/</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>SketchCraft — modeleur 3D libre en Rust, aligné sur l'esprit des Craft</h3>
-<p>Développé par un membre de la communauté (pseudonyme Apprehensive_Fly_493), SketchCraft est un modeleur 3D par poussée/tirage publié sous licence MIT, écrit en Rust avec une interface Tauri et React. Il ouvre les fichiers SketchUp, DWG/DXF et IFC, convertit les plans de bâtiment en murs, gère les plans cotés, les études d'ensoleillement et le rendu photoréaliste, et toutes ses actions sont pilotables par MCP. L'auteur propose de le brancher sur l'étape 3D d'ArtCraft — modéliser un décor et une caméra d'un côté, générer de l'autre — et se dit prêt à changer de nom si « Craft » gêne la marque. Version courante : 0.3.4. Projet indépendant, sans lien officiel avec ArtCraft à ce stade.<br />
-Lien : https://github.com/jasonsutter87/sketchcraft — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxidl1/sketchcraft_an_opensource_mit_pushpull_3d_modeler/</p>
-<h3>craft-mcp-hub — un tableau de bord pour les serveurs MCP de la suite</h3>
-<p>Signé FaitaRyuu (dépôt sous le compte AndrianLeah), cet outil libre rassemble en une seule fenêtre la gestion des serveurs MCP des applications ArtCraft : il les maintient actifs en arrière-plan sans avoir à garder les applications ouvertes, permet de les activer ou de les couper, de changer les ports et de voir pourquoi une connexion échoue. Il configure aussi automatiquement Claude Code, Cursor, VS Code et quelques autres clients. L'auteur n'a testé que la version Windows ; des versions macOS et Linux existent sans garantie de fonctionnement. Outil communautaire non officiel, donc à essayer avec prudence.<br />
-Lien : https://github.com/AndrianLeah/craft-mcp-hub — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxnfqt/made_a_small_dashboard_for_the_artcraft_mcp/</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Une recherche sur les logiciels comparables (ComfyUI, InvokeAI, Krita AI Diffusion, alternatives libres à la suite Adobe) ne remonte rien de notable publié dans les dernières 24 heures ; les résultats datent d'octobre ou début novembre.</p>
-<p>À l'inverse, un signal interne au subreddit : un utilisateur (pseudonyme JarlBallnuts) rapporte que GridCraft traite correctement l'empilement des règles de mise en forme conditionnelle, là où LibreOffice Calc s'arrête à la première règle satisfaite et ignore les suivantes — un défaut ancien de Calc qu'il documente par deux fils du subreddit LibreOffice datant de 2024 et 2025 et par des captures d'écran. Il en fait son futur tableur quotidien. C'est un retour d'utilisateur, non vérifié de mon côté, mais il porte sur un comportement précis et mesurable plutôt que sur une impression.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxsler/gridcraft_finally_fixed_libreoffice_calcs_borked/</p>
-<h2>À signaler</h2>
-<p>La collecte du subreddit a échoué lors de sa dernière passe (16 novembre à 23 h 51 UTC) avec une erreur 429 « Too Many Requests » de Reddit, et aucun nouveau post n'a été enregistré à ce moment-là. Les posts de la journée avaient toutefois été collectés plus tôt : cette édition n'est pas amputée, mais une édition future pourrait l'être si la limite de débit se répète.</p>
-<p>Un utilisateur (pseudonyme SpikeNotMike) demande par ailleurs s'il y a une explication à l'absence de nouvelle publication du dépôt GitHub ; aucune réponse officielle dans le journal. La dernière version publiée reste ArtCraft v0.41.1, datée du 7 novembre 2026 — l'intervalle est court, mais l'activité du dépôt se poursuit sur la branche principale.</p>
-<h2>Volume</h2>
-<p>17 entrées examinées (16 posts du subreddit, 1 commit du dépôt officiel), 6 retenues, 11 écartées.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — mardi 17 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Un projet communautaire de modeleur 3D pousse/pousse-tire, écrit en Rust sous licence MIT, cherche à s'interfacer avec l'étape 3D d'ArtCraft ; un tableau de bord libre pour piloter les serveurs MCP de la suite fait aussi son apparition. Côté officiel, l'équipe ouvre le débat sur un format de fichier natif pour PhotoCraft, et le dépôt fait évoluer la détection des types de fichiers. La collecte du subreddit a échoué une fois dans la nuit (limite de débit), sans conséquence sur cette édition.</p>
-<h2>Nouveautés et annonces</h2>
-<h3>Le dépôt officiel détecte les types de fichiers avec sa propre table de signatures</h3>
-<p>Un commit mergé dans <code>storytold/artcraft</code> (auteur : FredApps) remplace la bibliothèque tierce <code>infer</code> et les détections locales GLB/FBX/PLY par <code>craft-sniff</code>, une table de signatures maison partagée entre les applications. Conséquences visibles : les fichiers WAV et FLAC sont désormais reconnus comme <code>audio/wav</code> et <code>audio/flac</code>, ce qui débloque les conversions de format existantes ; en revanche, les polices et les documents bureautiques ressortent maintenant en « type inconnu », la nouvelle table n'ayant pas de signature pour eux. Les fonctions publiques ne changent pas, il s'agit donc d'un travail de fond plutôt que d'une nouveauté visible.<br />
-Lien : https://github.com/storytold/artcraft/commit/69f53c2f0358a91a5e35e5a7b3a91677320c3112</p>
-<h3>PhotoCraft : format de fichier natif ou tout-en-PSD ?</h3>
-<p>Un intervenant qui se présente comme membre de l'équipe de développement de PhotoCraft (pseudonyme Hoangduong314) expose un dilemme d'architecture pour les prochaines versions : créer un format de fichier propre à chaque application de la suite, ou tout bâtir sur le <code>.psd</code>. Le support du PSD reste non négociable pour l'interopérabilité, mais y loger des fonctions que Photoshop ne connaît pas risque la corruption de fichier ou la perte de données d'une application à l'autre ; un format propriétaire est aussi, dans les grandes suites, ce qui permet de faire tenir un écosystème cohérent. L'auteur demande aux utilisateurs s'ils accepteraient de travailler dans un format natif ArtCraft et de n'exporter en PSD qu'au besoin. Rien n'est décidé : il s'agit d'une consultation, mais elle annonce la direction technique des prochains mois.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxckyj/thoughts_on_native_file_formats_vs_sticking/</p>
-<h3>« Let's Open Source the World » — intervention de Brandon Thomas</h3>
-<p>Le fondateur d'ArtCraft apparaît dans une publication partagée sur le subreddit par aliendude5300, intitulée « Let's Open Source the World ». Le post ne contient aucun texte ni description dans le journal collecté : il s'agit d'un lien vers une intervention, vraisemblablement une conférence ou une émission, dont je n'ai pas pu vérifier le contenu depuis la collecte (Reddit refuse l'accès direct depuis le serveur). À confirmer donc, mais le signal mérite d'être suivi si la vidéo est retrouvée.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxtk2h/lets_open_source_the_world_brandon_thomas_artcraft/</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>SketchCraft — modeleur 3D libre en Rust, aligné sur l'esprit des Craft</h3>
-<p>Développé par un membre de la communauté (pseudonyme Apprehensive_Fly_493), SketchCraft est un modeleur 3D par poussée/tirage publié sous licence MIT, écrit en Rust avec une interface Tauri et React. Il ouvre les fichiers SketchUp, DWG/DXF et IFC, convertit les plans de bâtiment en murs, gère les plans cotés, les études d'ensoleillement et le rendu photoréaliste, et toutes ses actions sont pilotables par MCP. L'auteur propose de le brancher sur l'étape 3D d'ArtCraft — modéliser un décor et une caméra d'un côté, générer de l'autre — et se dit prêt à changer de nom si « Craft » gêne la marque. Version courante : 0.3.4. Projet indépendant, sans lien officiel avec ArtCraft à ce stade.<br />
-Lien : https://github.com/jasonsutter87/sketchcraft — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxidl1/sketchcraft_an_opensource_mit_pushpull_3d_modeler/</p>
-<h3>craft-mcp-hub — un tableau de bord pour les serveurs MCP de la suite</h3>
-<p>Signé FaitaRyuu (dépôt sous le compte AndrianLeah), cet outil libre rassemble en une seule fenêtre la gestion des serveurs MCP des applications ArtCraft : il les maintient actifs en arrière-plan sans avoir à garder les applications ouvertes, permet de les activer ou de les couper, de changer les ports et de voir pourquoi une connexion échoue. Il configure aussi automatiquement Claude Code, Cursor, VS Code et quelques autres clients. L'auteur n'a testé que la version Windows ; des versions macOS et Linux existent sans garantie de fonctionnement. Outil communautaire non officiel, donc à essayer avec prudence.<br />
-Lien : https://github.com/AndrianLeah/craft-mcp-hub — présentation : https://www.reddit.com/r/ArtCraftAI/comments/1xxnfqt/made_a_small_dashboard_for_the_artcraft_mcp/</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Une recherche sur les logiciels comparables (ComfyUI, InvokeAI, Krita AI Diffusion, alternatives libres à la suite Adobe) ne remonte rien de notable publié dans les dernières 24 heures ; les résultats datent d'octobre ou début novembre.</p>
-<p>À l'inverse, un signal interne au subreddit : un utilisateur (pseudonyme JarlBallnuts) rapporte que GridCraft traite correctement l'empilement des règles de mise en forme conditionnelle, là où LibreOffice Calc s'arrête à la première règle satisfaite et ignore les suivantes — un défaut ancien de Calc qu'il documente par deux fils du subreddit LibreOffice datant de 2024 et 2025 et par des captures d'écran. Il en fait son futur tableur quotidien. C'est un retour d'utilisateur, non vérifié de mon côté, mais il porte sur un comportement précis et mesurable plutôt que sur une impression.<br />
-Lien : https://www.reddit.com/r/ArtCraftAI/comments/1xxsler/gridcraft_finally_fixed_libreoffice_calcs_borked/</p>
-<h2>À signaler</h2>
-<p>La collecte du subreddit a échoué lors de sa dernière passe (16 novembre à 23 h 51 UTC) avec une erreur 429 « Too Many Requests » de Reddit, et aucun nouveau post n'a été enregistré à ce moment-là. Les posts de la journée avaient toutefois été collectés plus tôt : cette édition n'est pas amputée, mais une édition future pourrait l'être si la limite de débit se répète.</p>
-<p>Un utilisateur (pseudonyme SpikeNotMike) demande par ailleurs s'il y a une explication à l'absence de nouvelle publication du dépôt GitHub ; aucune réponse officielle dans le journal. La dernière version publiée reste ArtCraft v0.41.1, datée du 7 novembre 2026 — l'intervalle est court, mais l'activité du dépôt se poursuit sur la branche principale.</p>
-<h2>Volume</h2>
-<p>17 entrées examinées (16 posts du subreddit, 1 commit du dépôt officiel), 6 retenues, 11 écartées.</p>]]></content:encoded>
-</item>
-<item>
-<title>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 16 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/labo-svt/2026-11-16.html</link>
-<guid isPermaLink="false">labo-svt-2026-11-16</guid>
-<pubDate>Mon, 16 Nov 2026 06:01:38 +0100</pubDate>
-<category>Le labo, c'est vous — pratiques SVT (Digipad)</category>
-<description><![CDATA[<h1>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 16 novembre 2026</h1>
-<p>Rien n'a bougé sur le mur depuis la synthèse du 9 novembre : aucune carte nouvelle, aucune carte modifiée, aucun commentaire nouveau. Le pavé compte toujours les mêmes quinze cartes, et son journal d'activité s'arrête au 8 novembre à 16 h 27 (heure UTC), soit une semaine sans dépôt.</p>
-<p>Le mur reste public et lisible sans compte : https://digipad.app/p/1859891/8a101ba6cbf708</p>
-<h2>Volume et méthode</h2>
-<p>Quinze cartes examinées, quinze déjà publiées dans l'édition du 9 novembre. Neuf commentaires connus, déjà relevés : le décompte de commentaires porté par chaque carte est identique à celui de la semaine dernière, carte par carte. Le constat ne repose donc pas sur une seule source : les empreintes du collecteur (titre, texte, pièce jointe, date de modification) sont inchangées, le journal d'activité du pavé ne porte aucun événement après le 8 novembre, et les compteurs de commentaires concordent.</p>
-<h2>Ce qu'il faut surveiller</h2>
-<p>Le mur fonctionne par vagues : l'essentiel du dépôt s'est fait en septembre et fin octobre, avec deux cartes le 8 novembre. Rien ne permet de dire si le calme vient d'un essoufflement des contributions ou du simple rythme de l'année ; la prochaine synthèse le dira. Les trois suites annoncées la semaine dernière restent ouvertes, et c'est là qu'il faudra regarder en premier :</p>
-<ul>
-<li>le bilan de l'expérimentation « badge Expert » est annoncé en fin d'année scolaire ;</li>
-<li>l'usage du Fautoscope doit être reconduit en 6e et en 3e, avec un retour à suivre sur l'effet en relecture ;</li>
-<li>les prolongements proposés en commentaire (explicitation des stratégies de récupération sur les ardoises, degré de confiance sur la fiche de mémorisation, pause active) n'ont pas encore de retour d'expérimentation.</li>
-</ul>]]></description>
-<content:encoded><![CDATA[<h1>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 16 novembre 2026</h1>
-<p>Rien n'a bougé sur le mur depuis la synthèse du 9 novembre : aucune carte nouvelle, aucune carte modifiée, aucun commentaire nouveau. Le pavé compte toujours les mêmes quinze cartes, et son journal d'activité s'arrête au 8 novembre à 16 h 27 (heure UTC), soit une semaine sans dépôt.</p>
-<p>Le mur reste public et lisible sans compte : https://digipad.app/p/1859891/8a101ba6cbf708</p>
-<h2>Volume et méthode</h2>
-<p>Quinze cartes examinées, quinze déjà publiées dans l'édition du 9 novembre. Neuf commentaires connus, déjà relevés : le décompte de commentaires porté par chaque carte est identique à celui de la semaine dernière, carte par carte. Le constat ne repose donc pas sur une seule source : les empreintes du collecteur (titre, texte, pièce jointe, date de modification) sont inchangées, le journal d'activité du pavé ne porte aucun événement après le 8 novembre, et les compteurs de commentaires concordent.</p>
-<h2>Ce qu'il faut surveiller</h2>
-<p>Le mur fonctionne par vagues : l'essentiel du dépôt s'est fait en septembre et fin octobre, avec deux cartes le 8 novembre. Rien ne permet de dire si le calme vient d'un essoufflement des contributions ou du simple rythme de l'année ; la prochaine synthèse le dira. Les trois suites annoncées la semaine dernière restent ouvertes, et c'est là qu'il faudra regarder en premier :</p>
-<ul>
-<li>le bilan de l'expérimentation « badge Expert » est annoncé en fin d'année scolaire ;</li>
-<li>l'usage du Fautoscope doit être reconduit en 6e et en 3e, avec un retour à suivre sur l'effet en relecture ;</li>
-<li>les prolongements proposés en commentaire (explicitation des stratégies de récupération sur les ardoises, degré de confiance sur la fiche de mémorisation, pause active) n'ont pas encore de retour d'expérimentation.</li>
-</ul>]]></content:encoded>
 </item>
 </channel>
 </rss>

@@ -6,9 +6,32 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 20 Nov 2026 00:52:24 +0100</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 00:52:13 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-21.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 00:52:13 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux versions majeures d'outils fondamentaux cette nuit : FFmpeg 9.1 « Gauss » apporte des encodeurs matériels et le support du protocole libcurl, tandis que PostgreSQL 19 introduit la réorganisation en ligne des tables et la cohérence en lecture sur les réplicas. Le flux du subreddit r/hermesagent est toujours inaccessible (erreur HTTP 404) — les entrées viennent de Hacker News, Simon Willison et Latent Space.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia libre (licence LGPL/GPL). Au menu : encodage et décodage ASTC via libastcenc avec les contenus .astc et KTX 1.0 ; encodeur AAC considérablement amélioré ; encodeur APV Vulkan ; support du protocole libcurl pour les flux HTTP avancés ; filtre d'interpolation accéléré par NVIDIA Optical Flow (vf_fruc_vulkan) ; encodage xHE-AAC via libfdk-xhe-aac ; inférence DirectML zéro-copie via D3D12 pour le backend ONNX Runtime. Une mise à jour qui concerne tous ceux qui manipulent de l'audio ou de la vidéo en ligne de commande. <a href="https://ffmpeg.org/download.html#release_9.1">ffmpeg.org</a> (288 points sur HN, 35 commentaires)</p>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure de la base de données libre (licence PostgreSQL). Fonctionnalités phares : commande <code>REPACK CONCURRENTLY</code> pour réorganiser les tables et récupérer de l'espace disque sans bloquer les accès ; réplication logique des séquences ; commande <code>WAIT FOR LSN</code> qui garantit la cohérence « lecture après écriture » sur les réplicas en lecture ; extension <code>pg_plan_advice</code> pour contrôler les décisions du planificateur de requêtes ; JIT désactivé par défaut (son impact sur les performances était jugé trop imprévisible). <a href="https://www.postgresql.org/docs/release/19.0/">postgresql.org</a> (339 points sur HN, 21 commentaires)</p>
+<h2>Volume</h2>
+<p>74 posts publiés dans l'intervalle (0 de r/hermesagent — flux en erreur 404, 69 de Hacker News, 3 de Simon Willison, 2 de Latent Space), 2 retenus, 72 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux versions majeures d'outils fondamentaux cette nuit : FFmpeg 9.1 « Gauss » apporte des encodeurs matériels et le support du protocole libcurl, tandis que PostgreSQL 19 introduit la réorganisation en ligne des tables et la cohérence en lecture sur les réplicas. Le flux du subreddit r/hermesagent est toujours inaccessible (erreur HTTP 404) — les entrées viennent de Hacker News, Simon Willison et Latent Space.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure du couteau suisse multimédia libre (licence LGPL/GPL). Au menu : encodage et décodage ASTC via libastcenc avec les contenus .astc et KTX 1.0 ; encodeur AAC considérablement amélioré ; encodeur APV Vulkan ; support du protocole libcurl pour les flux HTTP avancés ; filtre d'interpolation accéléré par NVIDIA Optical Flow (vf_fruc_vulkan) ; encodage xHE-AAC via libfdk-xhe-aac ; inférence DirectML zéro-copie via D3D12 pour le backend ONNX Runtime. Une mise à jour qui concerne tous ceux qui manipulent de l'audio ou de la vidéo en ligne de commande. <a href="https://ffmpeg.org/download.html#release_9.1">ffmpeg.org</a> (288 points sur HN, 35 commentaires)</p>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure de la base de données libre (licence PostgreSQL). Fonctionnalités phares : commande <code>REPACK CONCURRENTLY</code> pour réorganiser les tables et récupérer de l'espace disque sans bloquer les accès ; réplication logique des séquences ; commande <code>WAIT FOR LSN</code> qui garantit la cohérence « lecture après écriture » sur les réplicas en lecture ; extension <code>pg_plan_advice</code> pour contrôler les décisions du planificateur de requêtes ; JIT désactivé par défaut (son impact sur les performances était jugé trop imprévisible). <a href="https://www.postgresql.org/docs/release/19.0/">postgresql.org</a> (339 points sur HN, 21 commentaires)</p>
+<h2>Volume</h2>
+<p>74 posts publiés dans l'intervalle (0 de r/hermesagent — flux en erreur 404, 69 de Hacker News, 3 de Simon Willison, 2 de Latent Space), 2 retenus, 72 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — vendredi 20 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-20.html</link>
