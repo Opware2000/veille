@@ -6,9 +6,44 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 00:22:56 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 00:23:13 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-22.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 00:23:13 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une journée riche en modèles ouverts : Thinking Machines Lab publie Inkling 2 Mini, un modèle à poids ouverts conçu pour tourner localement, et Meta dévoile Muse Spark 1.3 orienté agent. Deux nouveaux outils open source pour les développeurs : OpenComputer (alternative libre à Devin) et MCPlama (gestion centralisée des serveurs MCP). Côté utilitaires, SourceDomino aide à vérifier les sources derrière les citations d'IA, et ClawDOS fait tourner un agent de codage sur un IBM PC XT d'origine.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenComputer — alternative open source à Devin.</strong> Agent de codage cloud open source qui s'exécute dans votre propre compte cloud (AWS, GCP, Azure). Premier commit en 24 secondes, là où les alternatives mettent 53 à 72 secondes. Licence Apache-2.0, 1 132 étoiles GitHub, mis à jour le 21 novembre. Lien : https://github.com/diggerhq/opencomputer</p>
+<p><strong>MCPlama — gestion centralisée des serveurs MCP.</strong> Plateforme auto-hébergée pour administrer les serveurs MCP locaux et distants, contrôler les permissions utilisateurs et outils, gérer les identifiants et auditer les appels. Comprend une carte de visualisation des relations d'accès. Licence AGPL-3.0, 25 étoiles GitHub. Lien : https://github.com/mcplama/mcplama</p>
+<p><strong>SourceDomino — vérification des sources derrière les citations d'IA.</strong> Banc d'essai sous licence MIT pour inspecter les liens de citation et détecter les passages partagés entre plusieurs sources. Fonctionne entièrement dans le navigateur, sans téléchargement vers un serveur. Lien : https://github.com/ufodia/source-domino</p>
+<p><strong>ClawDOS — agent de codage IA pour DOS.</strong> Un agent de chat et de codage qui tourne sur un vrai IBM PC 5160 (8088 à 4,77 MHz, 640 Ko de RAM). Le programme HARNESS.EXE (176 Ko) parle directement l'API Claude et exécute les outils sur la machine d'origine, la passerelle TLS étant déléguée à un PC « pont ». Licence GPL-3.0, 16 étoiles GitHub. Lien : http://ricapar.net/ClawDOS/</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — un modèle à poids ouverts pour machine locale.</strong> Thinking Machines Lab publie Inkling 2 Mini, un transformateur à boucle (looped transformer) de 26,4 milliards de paramètres dont 3,4 actifs par token. Architecture MoE avec 24 couches dont les 12 centrales sont exécutées trois fois, portant la profondeur effective à 48 passes. Fenêtre de contexte de 1 million de tokens, entrée texte et image. L'empreinte mémoire d'environ 20 Go le fait tenir sur un MacBook Pro ; les poids sont livrés en NVFP4 et MXFP8. Il surpasse tous les modèles ouverts de moins de 100 milliards de paramètres sur DeepSWE v1.1 (48,2 %) et Vals Index v2.2 (46,5 %). Une variante GGUF pour llama.cpp est également disponible. Lien : https://huggingface.co/blog/inkling2mini</p>
+<p><strong>Muse Spark 1.3 — nouvelle version du modèle ouvert de Meta.</strong> Entraîné pour les workflows agentiques, il améliore la précision au premier essai en codage et l'appel d'outils. Contexte d'1 million de tokens, perception multimodale native (vidéo, image, document). Il se positionne de manière compétitive face à GPT 5.6 Sol et Opus 5 sur plusieurs bancs d'essai (DeepSWE v1.1, Terminal-Bench 2.1, SWEAtlas). Lien : https://dev.meta.ai/models/muse-spark</p>
+<h2>Volume</h2>
+<p>66 entrées publiées dans l'intervalle (dont 56 de Hacker News, 7 de Reddit, 1 de Hugging Face Blog, 1 d'It's FOSS, 1 de Simon Willison), 6 retenues (dont 2 regroupées par sujet), 60 écartées.</p>
+<p>Note : la collecte Reddit directe a échoué (HTTP 404) — le flux du subreddit est inaccessible ; les entrées Hacker News et Lobsters restent la source principale.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une journée riche en modèles ouverts : Thinking Machines Lab publie Inkling 2 Mini, un modèle à poids ouverts conçu pour tourner localement, et Meta dévoile Muse Spark 1.3 orienté agent. Deux nouveaux outils open source pour les développeurs : OpenComputer (alternative libre à Devin) et MCPlama (gestion centralisée des serveurs MCP). Côté utilitaires, SourceDomino aide à vérifier les sources derrière les citations d'IA, et ClawDOS fait tourner un agent de codage sur un IBM PC XT d'origine.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenComputer — alternative open source à Devin.</strong> Agent de codage cloud open source qui s'exécute dans votre propre compte cloud (AWS, GCP, Azure). Premier commit en 24 secondes, là où les alternatives mettent 53 à 72 secondes. Licence Apache-2.0, 1 132 étoiles GitHub, mis à jour le 21 novembre. Lien : https://github.com/diggerhq/opencomputer</p>
+<p><strong>MCPlama — gestion centralisée des serveurs MCP.</strong> Plateforme auto-hébergée pour administrer les serveurs MCP locaux et distants, contrôler les permissions utilisateurs et outils, gérer les identifiants et auditer les appels. Comprend une carte de visualisation des relations d'accès. Licence AGPL-3.0, 25 étoiles GitHub. Lien : https://github.com/mcplama/mcplama</p>
+<p><strong>SourceDomino — vérification des sources derrière les citations d'IA.</strong> Banc d'essai sous licence MIT pour inspecter les liens de citation et détecter les passages partagés entre plusieurs sources. Fonctionne entièrement dans le navigateur, sans téléchargement vers un serveur. Lien : https://github.com/ufodia/source-domino</p>
+<p><strong>ClawDOS — agent de codage IA pour DOS.</strong> Un agent de chat et de codage qui tourne sur un vrai IBM PC 5160 (8088 à 4,77 MHz, 640 Ko de RAM). Le programme HARNESS.EXE (176 Ko) parle directement l'API Claude et exécute les outils sur la machine d'origine, la passerelle TLS étant déléguée à un PC « pont ». Licence GPL-3.0, 16 étoiles GitHub. Lien : http://ricapar.net/ClawDOS/</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — un modèle à poids ouverts pour machine locale.</strong> Thinking Machines Lab publie Inkling 2 Mini, un transformateur à boucle (looped transformer) de 26,4 milliards de paramètres dont 3,4 actifs par token. Architecture MoE avec 24 couches dont les 12 centrales sont exécutées trois fois, portant la profondeur effective à 48 passes. Fenêtre de contexte de 1 million de tokens, entrée texte et image. L'empreinte mémoire d'environ 20 Go le fait tenir sur un MacBook Pro ; les poids sont livrés en NVFP4 et MXFP8. Il surpasse tous les modèles ouverts de moins de 100 milliards de paramètres sur DeepSWE v1.1 (48,2 %) et Vals Index v2.2 (46,5 %). Une variante GGUF pour llama.cpp est également disponible. Lien : https://huggingface.co/blog/inkling2mini</p>
+<p><strong>Muse Spark 1.3 — nouvelle version du modèle ouvert de Meta.</strong> Entraîné pour les workflows agentiques, il améliore la précision au premier essai en codage et l'appel d'outils. Contexte d'1 million de tokens, perception multimodale native (vidéo, image, document). Il se positionne de manière compétitive face à GPT 5.6 Sol et Opus 5 sur plusieurs bancs d'essai (DeepSWE v1.1, Terminal-Bench 2.1, SWEAtlas). Lien : https://dev.meta.ai/models/muse-spark</p>
+<h2>Volume</h2>
+<p>66 entrées publiées dans l'intervalle (dont 56 de Hacker News, 7 de Reddit, 1 de Hugging Face Blog, 1 d'It's FOSS, 1 de Simon Willison), 6 retenues (dont 2 regroupées par sujet), 60 écartées.</p>
+<p>Note : la collecte Reddit directe a échoué (HTTP 404) — le flux du subreddit est inaccessible ; les entrées Hacker News et Lobsters restent la source principale.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-21.html</link>

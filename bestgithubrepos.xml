@@ -6,9 +6,90 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 00:32:45 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 00:34:58 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-22.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 00:34:58 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 22 novembre 2026</h1>
+<p><strong>Note</strong> : le flux du subreddit BestGitHubRepos ne répond plus (HTTP 404 depuis la dernière collecte). Les entrées ci-dessous proviennent de Hacker News, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com, It's FOSS et gitmanual.com — les sources complémentaires configurées pour ce thème.</p>
+<h2>En bref</h2>
+<p>Une semaine riche en lancements : un gestionnaire de téléchargement open source écrit en Rust, un synthétiseur vocal ultime, un outil pour faire tourner des applis Android sur Windows, et un éditeur d'images par IA pour les non-initiés. Côté mises à jour majeures, PostgreSQL 19 et FFmpeg 9.1 sont disponibles.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>MisterDownloadManager</strong> — Gestionnaire de téléchargement intégralement réécrit en Rust, open source, sans dépendance à un framework existant. Il revendique une architecture « clean room » et une empreinte minimale. Licence MIT, 9 500 étoiles, en forte progression cette semaine. https://github.com/anefzaoui/misterdownloadmanager</p>
+<p><strong>APKStart</strong> — Lanceur d'applications Android sur Windows : double-clic sur un APK pour l'installer, chaque application s'ouvre dans sa propre fenêtre avec une icône sur le bureau. Utilise QEMU en coulisses. Licence MIT, 4 100 étoiles (en forte hausse). https://github.com/RoutineMiku/apkstart</p>
+<p><strong>Chimera Vocal Synth</strong> — Synthétiseur vocal capable de chanter, parler, beatboxer et plus encore. Un seul modèle polyvalent, open source (licence à vérifier), 2 400 étoiles. Pour les amateurs de musique et de synthèse vocale. https://github.com/jamesondh/chimera-vocal-synth</p>
+<p><strong>OpenWhispr</strong> — Application de dictée vocale multiplateforme, respectueuse de la vie privée : utilise des modèles locaux (Whisper, Parakeet) ou vos propres clés API cloud. Idéal pour prendre des notes sans passer par un service tiers. Licence MIT, 12 000 étoiles. https://github.com/openwhispr/openwhispr</p>
+<p><strong>Pear Desktop</strong> — Extension pour lecteur de musique qui ajoute des fonctionnalités de playlist intelligente et de navigation. Compatible avec plusieurs lecteurs, open source (MIT), 34 100 étoiles. https://github.com/pear-devs/pear-desktop</p>
+<p><strong>Kando</strong> — Menu radial (pie menu) multiplateforme, entièrement configurable. Lancez applications, commandes et scripts d'un geste de souris. Licence libre, 6 700 étoiles. https://github.com/kando-menu/kando</p>
+<p><strong>Scumble</strong> — Éditeur open source d'images par IA : sélectionnez une zone, décrivez ce que vous voulez voir apparaître, et Scumble génère un calque cohérent avec l'image d'origine. Compatible FLUX, GPT Image, Seedream et ComfyUI. Export PSD, couches, MCP. Licence GPL-3.0, 182 étoiles (outil récent). https://github.com/scumble-app/scumble</p>
+<p><strong>Wireless Device Battery Monitor</strong> — Affiche le niveau de batterie des souris, casques, claviers et manettes sans fil directement dans la barre des tâches Windows. Utilitaire simple et pratique. Licence MIT, 2 600 étoiles. https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</p>
+<p><strong>PeakCut</strong> — Montage vidéo assisté par IA, auto-hébergé. Détecte les moments clés dans des vidéos longues ou des streams en direct et génère des extraits. Apportez votre propre clé API. Licence libre, 713 étoiles. https://github.com/haziqahmedqasmi/PeakCut</p>
+<p><strong>PhoneBox</strong> — Transformez un vieux téléphone Android en panneau de contrôle tactile pour votre ordinateur (Windows, Linux ou Mac). Idéal pour des touches de raccourci, macros, monitoring. Licence MIT, 3 400 étoiles (en forte hausse). https://github.com/ersinkoc/phonebox</p>
+<p><strong>PhoneUse</strong> — Depuis un PC Linux, voyez l'écran de votre iPhone et contrôlez-le par clavier/souris Bluetooth. Utilise AirPlay pour le miroir et HID pour le contrôle. Licence MIT, 658 étoiles. https://github.com/lxe/phoneuse</p>
+<p><strong>Expo Exact</strong> — Écrivez une application une seule fois ; elle tourne nativement sur le web, macOS, iOS et Linux. Un agent IA peut la construire à partir d'une description. Licence MIT, 4 200 étoiles (en forte hausse). https://github.com/expo/exact</p>
+<p><strong>tiny-voca</strong> — Modèle de synthèse vocale anglais extrêmement léger (4,5 millions de paramètres), deux voix, capable de fonctionner sur du matériel modeste. Licence MIT, 638 étoiles. https://github.com/n4ze3m/tiny-voca</p>
+<p><strong>ClawDOS</strong> — Agent de codage IA fonctionnant sous MS-DOS. Une curiosité technique qui fait tourner un LLM dans un environnement vintage. 84 points sur Hacker News. http://ricapar.net/ClawDOS/</p>
+<p><strong>Smorza</strong> — Utilitaire Mac qui assigne un volume et une sortie audio différents à chaque application. Indispensable pour ceux qui écoutent de la musique en travaillant et veulent entendre les notifications à part. Lancé sur Product Hunt. https://www.producthunt.com/products/smorza</p>
+<p><strong>Nova by Vybe</strong> — Audit gratuit de site web, avec corrections automatiques des problèmes détectés (accessibilité, performance, SEO). https://www.producthunt.com/products/vybe-4</p>
+<p><strong>greatai Review</strong> — Revue de code gratuite, combinant IA et relecture humaine, pour les projets open source et les associations. https://www.producthunt.com/products/greatai-review</p>
+<p><strong>Samiksa</strong> — Plateforme pour comprendre la recherche scientifique, la reproduire et publier ses propres résultats. https://www.producthunt.com/products/samiksa</p>
+<p><strong>Mailpipe</strong> — Utilitaire en ligne de commande qui rédige des réponses Apple Mail avec votre agent IA local. https://www.producthunt.com/products/mailpipe-2</p>
+<p><strong>UndoGuard</strong> — Bouton « Ctrl+Z » pour les agents IA autonomes : permet d'annuler la dernière action d'un agent avant qu'elle n'ait des conséquences. https://www.producthunt.com/products/undoguard</p>
+<p><strong>Fack'd</strong> — Extension qui ajoute des vérifications de faits en temps réel sur YouTube, avec les sources affichées à côté de la vidéo. https://www.producthunt.com/products/fack-d</p>
+<p><strong>DreamCoder</strong> — Environnement de développement et harnais de codage, annoncé par l'auteur de Mastering Emacs. Conçu pour les sessions de codage assistées par IA. 67 points sur HN. https://www.masteringemacs.org/article/announcing-dreamcoder</p>
+<p><strong>OpenComputer</strong> — Alternative open source à Devin : agent de codage cloud qui tourne dans votre propre compte AWS/GCP/Azure. Premier commit en 24 secondes (contre 53-72 pour les alternatives). Licence Apache-2.0, 1 132 étoiles. https://github.com/diggerhq/opencomputer</p>
+<p><strong>GraphHopper</strong> — Moteur de routage open source pour OpenStreetMap, utilisable comme bibliothèque Java ou serveur autonome. Licence Apache-2.0, 6 800 étoiles. https://github.com/graphhopper/graphhopper</p>
+<p><strong>MicroZig</strong> — Boîte à outils pour construire des applications embarquées en Zig. Propose un SDK, des exemples et des bibliothèques pour microcontrôleurs. Licence Zlib, 2 300 étoiles. https://github.com/ZigEmbeddedGroup/microzig</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure du SGBD open source. Apporte notamment « Repack », un nettoyage de bloat intégré et plus rapide, sans extension externe. Notes de version : https://www.postgresql.org/docs/release/19.0/</p>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure de la suite multimédia de référence. https://ffmpeg.org/download.html#release_9.1</p>
+<p><strong>PHP 8.6</strong> — Disponible. Nouveautés : application partielle de fonction, classe Duration native, API de polling. https://www.php.net/</p>
+<p><strong>Purism Librem 5 v2</strong> — Campagne de financement participatif pour un téléphone Linux sous RISC-V, avec interrupteurs physiques de confidentialité. Prix de lancement : 1 599 $. https://feed.itsfoss.com/link/24361/17536714/purism-5-v2-crowdfunding</p>
+<h2>Volume</h2>
+<p>217 posts publiés dans l'intervalle (subreddit plus accessible), 125 sur le flux HN, 127 notices gitmanual, 69 lancements Product Hunt et 23 autres sources — 31 outils et applications retenus, 269 écartés (hors périmètre : actualités générales, opinions, sujets non logiciels, doublons).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — dimanche 22 novembre 2026</h1>
+<p><strong>Note</strong> : le flux du subreddit BestGitHubRepos ne répond plus (HTTP 404 depuis la dernière collecte). Les entrées ci-dessous proviennent de Hacker News, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com, It's FOSS et gitmanual.com — les sources complémentaires configurées pour ce thème.</p>
+<h2>En bref</h2>
+<p>Une semaine riche en lancements : un gestionnaire de téléchargement open source écrit en Rust, un synthétiseur vocal ultime, un outil pour faire tourner des applis Android sur Windows, et un éditeur d'images par IA pour les non-initiés. Côté mises à jour majeures, PostgreSQL 19 et FFmpeg 9.1 sont disponibles.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>MisterDownloadManager</strong> — Gestionnaire de téléchargement intégralement réécrit en Rust, open source, sans dépendance à un framework existant. Il revendique une architecture « clean room » et une empreinte minimale. Licence MIT, 9 500 étoiles, en forte progression cette semaine. https://github.com/anefzaoui/misterdownloadmanager</p>
+<p><strong>APKStart</strong> — Lanceur d'applications Android sur Windows : double-clic sur un APK pour l'installer, chaque application s'ouvre dans sa propre fenêtre avec une icône sur le bureau. Utilise QEMU en coulisses. Licence MIT, 4 100 étoiles (en forte hausse). https://github.com/RoutineMiku/apkstart</p>
+<p><strong>Chimera Vocal Synth</strong> — Synthétiseur vocal capable de chanter, parler, beatboxer et plus encore. Un seul modèle polyvalent, open source (licence à vérifier), 2 400 étoiles. Pour les amateurs de musique et de synthèse vocale. https://github.com/jamesondh/chimera-vocal-synth</p>
+<p><strong>OpenWhispr</strong> — Application de dictée vocale multiplateforme, respectueuse de la vie privée : utilise des modèles locaux (Whisper, Parakeet) ou vos propres clés API cloud. Idéal pour prendre des notes sans passer par un service tiers. Licence MIT, 12 000 étoiles. https://github.com/openwhispr/openwhispr</p>
+<p><strong>Pear Desktop</strong> — Extension pour lecteur de musique qui ajoute des fonctionnalités de playlist intelligente et de navigation. Compatible avec plusieurs lecteurs, open source (MIT), 34 100 étoiles. https://github.com/pear-devs/pear-desktop</p>
+<p><strong>Kando</strong> — Menu radial (pie menu) multiplateforme, entièrement configurable. Lancez applications, commandes et scripts d'un geste de souris. Licence libre, 6 700 étoiles. https://github.com/kando-menu/kando</p>
+<p><strong>Scumble</strong> — Éditeur open source d'images par IA : sélectionnez une zone, décrivez ce que vous voulez voir apparaître, et Scumble génère un calque cohérent avec l'image d'origine. Compatible FLUX, GPT Image, Seedream et ComfyUI. Export PSD, couches, MCP. Licence GPL-3.0, 182 étoiles (outil récent). https://github.com/scumble-app/scumble</p>
+<p><strong>Wireless Device Battery Monitor</strong> — Affiche le niveau de batterie des souris, casques, claviers et manettes sans fil directement dans la barre des tâches Windows. Utilitaire simple et pratique. Licence MIT, 2 600 étoiles. https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</p>
+<p><strong>PeakCut</strong> — Montage vidéo assisté par IA, auto-hébergé. Détecte les moments clés dans des vidéos longues ou des streams en direct et génère des extraits. Apportez votre propre clé API. Licence libre, 713 étoiles. https://github.com/haziqahmedqasmi/PeakCut</p>
+<p><strong>PhoneBox</strong> — Transformez un vieux téléphone Android en panneau de contrôle tactile pour votre ordinateur (Windows, Linux ou Mac). Idéal pour des touches de raccourci, macros, monitoring. Licence MIT, 3 400 étoiles (en forte hausse). https://github.com/ersinkoc/phonebox</p>
+<p><strong>PhoneUse</strong> — Depuis un PC Linux, voyez l'écran de votre iPhone et contrôlez-le par clavier/souris Bluetooth. Utilise AirPlay pour le miroir et HID pour le contrôle. Licence MIT, 658 étoiles. https://github.com/lxe/phoneuse</p>
+<p><strong>Expo Exact</strong> — Écrivez une application une seule fois ; elle tourne nativement sur le web, macOS, iOS et Linux. Un agent IA peut la construire à partir d'une description. Licence MIT, 4 200 étoiles (en forte hausse). https://github.com/expo/exact</p>
+<p><strong>tiny-voca</strong> — Modèle de synthèse vocale anglais extrêmement léger (4,5 millions de paramètres), deux voix, capable de fonctionner sur du matériel modeste. Licence MIT, 638 étoiles. https://github.com/n4ze3m/tiny-voca</p>
+<p><strong>ClawDOS</strong> — Agent de codage IA fonctionnant sous MS-DOS. Une curiosité technique qui fait tourner un LLM dans un environnement vintage. 84 points sur Hacker News. http://ricapar.net/ClawDOS/</p>
+<p><strong>Smorza</strong> — Utilitaire Mac qui assigne un volume et une sortie audio différents à chaque application. Indispensable pour ceux qui écoutent de la musique en travaillant et veulent entendre les notifications à part. Lancé sur Product Hunt. https://www.producthunt.com/products/smorza</p>
+<p><strong>Nova by Vybe</strong> — Audit gratuit de site web, avec corrections automatiques des problèmes détectés (accessibilité, performance, SEO). https://www.producthunt.com/products/vybe-4</p>
+<p><strong>greatai Review</strong> — Revue de code gratuite, combinant IA et relecture humaine, pour les projets open source et les associations. https://www.producthunt.com/products/greatai-review</p>
+<p><strong>Samiksa</strong> — Plateforme pour comprendre la recherche scientifique, la reproduire et publier ses propres résultats. https://www.producthunt.com/products/samiksa</p>
+<p><strong>Mailpipe</strong> — Utilitaire en ligne de commande qui rédige des réponses Apple Mail avec votre agent IA local. https://www.producthunt.com/products/mailpipe-2</p>
+<p><strong>UndoGuard</strong> — Bouton « Ctrl+Z » pour les agents IA autonomes : permet d'annuler la dernière action d'un agent avant qu'elle n'ait des conséquences. https://www.producthunt.com/products/undoguard</p>
+<p><strong>Fack'd</strong> — Extension qui ajoute des vérifications de faits en temps réel sur YouTube, avec les sources affichées à côté de la vidéo. https://www.producthunt.com/products/fack-d</p>
+<p><strong>DreamCoder</strong> — Environnement de développement et harnais de codage, annoncé par l'auteur de Mastering Emacs. Conçu pour les sessions de codage assistées par IA. 67 points sur HN. https://www.masteringemacs.org/article/announcing-dreamcoder</p>
+<p><strong>OpenComputer</strong> — Alternative open source à Devin : agent de codage cloud qui tourne dans votre propre compte AWS/GCP/Azure. Premier commit en 24 secondes (contre 53-72 pour les alternatives). Licence Apache-2.0, 1 132 étoiles. https://github.com/diggerhq/opencomputer</p>
+<p><strong>GraphHopper</strong> — Moteur de routage open source pour OpenStreetMap, utilisable comme bibliothèque Java ou serveur autonome. Licence Apache-2.0, 6 800 étoiles. https://github.com/graphhopper/graphhopper</p>
+<p><strong>MicroZig</strong> — Boîte à outils pour construire des applications embarquées en Zig. Propose un SDK, des exemples et des bibliothèques pour microcontrôleurs. Licence Zlib, 2 300 étoiles. https://github.com/ZigEmbeddedGroup/microzig</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure du SGBD open source. Apporte notamment « Repack », un nettoyage de bloat intégré et plus rapide, sans extension externe. Notes de version : https://www.postgresql.org/docs/release/19.0/</p>
+<p><strong>FFmpeg 9.1 « Gauss »</strong> — Nouvelle version majeure de la suite multimédia de référence. https://ffmpeg.org/download.html#release_9.1</p>
+<p><strong>PHP 8.6</strong> — Disponible. Nouveautés : application partielle de fonction, classe Duration native, API de polling. https://www.php.net/</p>
+<p><strong>Purism Librem 5 v2</strong> — Campagne de financement participatif pour un téléphone Linux sous RISC-V, avec interrupteurs physiques de confidentialité. Prix de lancement : 1 599 $. https://feed.itsfoss.com/link/24361/17536714/purism-5-v2-crowdfunding</p>
+<h2>Volume</h2>
+<p>217 posts publiés dans l'intervalle (subreddit plus accessible), 125 sur le flux HN, 127 notices gitmanual, 69 lancements Product Hunt et 23 autres sources — 31 outils et applications retenus, 269 écartés (hors périmètre : actualités générales, opinions, sujets non logiciels, doublons).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-21.html</link>
