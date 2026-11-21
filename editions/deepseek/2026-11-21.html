@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — samedi 21 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux entrées directement liées à DeepSeek ce samedi : un incident de sécurité chez Prime Intellect (modèle abliteré sur l'endpoint deepseek/deepseek-v4.1-flash début novembre) et un retour d'expérience détaillé d'un utilisateur qui a construit 70 000 lignes de code exclusivement avec DeepSeek Flash 4.1. Côté écosystème, plusieurs publications marquantes : Qwen 4 Max ferme ses poids, un article montre qu'un LLM de 27B peut réécrire ses propres poids sans entraînement, et HuggingFace publie des adaptateurs LoRA entraînés par RL par harnais d'agent.</p>
+<h2>DeepSeek</h2>
+<p><strong>Incident de sécurité chez Prime Intellect — modèle abliteré sur l'endpoint deepseek/deepseek-v4.1-flash.</strong> Entre le 8 novembre 2026 à 01h24 UTC et le 10 novembre à 06h35 UTC, un tiers non autorisé a remplacé le déploiement derrière l'endpoint <code>deepseek/deepseek-v4.1-flash</code> de Prime Intellect par une copie abliterée (poids publics modifiés pour réduire ou supprimer les refus). Le template de chat, le tokenizer et la configuration de service n'ont pas été modifiés. Les benchmarks de capacité (GPQA Diamond, τ-bench) sont restés inchangés ; en revanche, les refus sont passés de 98/100 à 1/100 sur JailbreakBench, de 304/313 à 2/313 sur StrongREJECT et de 198/240 à zéro sur HarmBench. Prime Intellect affirme n'avoir trouvé aucune preuve que les prompts ou complétions aient été enregistrés ou aient quitté le cluster de service. L'enquête est en cours. Source : <a href="https://primeintellect.one/security/advisories/deepseek-v4-1-flash-model-substitution">avis de sécurité Prime Intellect</a>.</p>
+<p><strong>70 000 lignes de code avec DeepSeek Flash 4.1, revues par Claude Opus.</strong> Un utilisateur (qxphq) a construit un gestionnaire de photos auto-hébergé — remplacement d'Apple Photos — en utilisant exclusivement DeepSeek Flash 4.1 depuis sa sortie en septembre 2026. Le projet compte 71 161 lignes dans 360 fichiers (Rust, SvelteKit, SQLite), avec développement RAW, transcodage vidéo, reconnaissance faciale hors ligne, géocodage inversé, titrage automatique par LLM local, et une pile d'édition complète. Il n'a jamais eu besoin d'un modèle « frontière » pour se débloquer. Il a ensuite pris un abonnement Claude pour faire revoir l'ensemble par Opus ; ses notes sont disponibles. Source : <a href="https://github.com/qxphq/notes/blob/main/26-11-20.md">notes de l'auteur</a>.</p>
+<h2>Modèles et poids</h2>
+<p><strong>Qwen 4 Max ferme ses poids — implications pour Qwen 4 27B.</strong> Alibaba a lancé Qwen 4 Max (2,4 billions de paramètres) le 16 novembre 2026. Contrairement à Qwen 3.8 Max dont les poids étaient téléchargeables (4,9 To), Qwen 4 Max n'est accessible que par le cloud et les applications Alibaba. Le modèle plus petit, Qwen 4 27B, est accompagné d'un article détaillant l'architecture, qui reste donc publique. Une vidéo d'analyse (Ruby Films) compare les performances et discute de la stratégie d'Alibaba. Source : <a href="https://www.youtube.com/watch?v=tvZMAqWmbFQ">vidéo YouTube</a> — vérifié : le modèle 4 Max n'est effectivement pas publié en open weights.</p>
+<p><strong>Les modèles de langage peuvent réécrire leurs propres poids.</strong> Un article (arXiv 2611.21885, auteurs de UIUC, CMU, Princeton, Stanford, Yale) montre pour la première fois qu'un LLM ouvert de 27B, recevant ses poids, ses réponses notées et la capacité de s'exécuter lui-même, peut diagnostiquer ses propres échecs et réécrire les poids responsables — sans gradients, sans entraînement, uniquement par passages forward. Le modèle s'améliore de 6,6 points de précision sur des problèmes jamais vus, et cette capacité émerge à partir d'une certaine échelle. Source : <a href="https://arxiv.org/abs/2611.21885">arXiv</a>.</p>
+<p><strong>Gemini 4 Neon est premier au Models Engineering Index.</strong> Le classement composite de 16 benchmarks de codage place Google Gemini 4 Neon en tête (68,4), devant OpenAI Astra 6.2 (67,1) et Anthropic Fable 5.2 (66,7). DeepSeek V4.1 Flash est 14e (45,9) mais avec un coût 0,15× par rapport à la médiane, le plus bas du classement parmi les modèles listés. Qwen 4-Max est 9e (51,9, coût 9,5×). Source : <a href="https://git-aarvin.github.io/mei/">Mei</a>.</p>
+<h2>Intégrations et outils tiers</h2>
+<p><strong>Harness adapters HuggingFace : des LoRA par harnais d'agent.</strong> HuggingFace publie un article et une recette reproductible pour entraîner un adaptateur LoRA par harnais d'agent (pi, Hermes Agent, OpenCode) avec RL, sur Qwen3.8-27B. Résultat : 55 % pass@1 contre 39 % sur Terminal-Bench 2.1 (pi), avec 1,5 k tokens par tâche au lieu de 2,9 k. Les trois adaptateurs peuvent être fusionnés en un super-adaptateur qui fonctionne sous les trois harnais. Tous les artéfacts (adaptateurs, GGUF, tâches RL) sont publiés sur HuggingFace. Source : <a href="https://huggingface.co/blog/harness-adapters-at-scale">blog HuggingFace</a>.</p>
+<p><strong>Carte des neurones de Qwen3-8B.</strong> Fermion Research publie une cartographie complète des 442 368 neurones de Qwen3-8B, avec des découvertes frappantes : un seul neurone poussé transforme le modèle en pirate (neurone 7601 couche 9), en allemand (5224 couche 5), en chat (4140 couche 10). L'article documente les personnages qui existent dans le modèle et ceux qui n'y sont pas, et montre comment éditer un modèle par un seul neurone. Source : <a href="https://www.fermionresearch.com/research/mapping-every-neuron-in-qwen3-8b/">Fermion Research</a>.</p>
+<p><strong>Neuron Atlas — Goodfire publie l'atlas public des neurones de Qwen3.6.</strong> Goodfire met à disposition un atlas complet des pôles de neurones, permettant de naviguer par étiquette. Source : <a href="https://www.goodfire.com/research/public_neuron_atlas/all_labels">Goodfire Neuron Atlas</a>.</p>
+<p><strong>Séparation capacité de réponse / permission de génération dans Qwen3-4B.</strong> Un modèle expérimental (PCCG-2) ajoute une porte de 101 paramètres apprise qui contrôle si le modèle répond ou reste silencieux, sans modifier le moindre logit non-EOS du modèle de contenu gelé. 65 536/65 536 conditions qualifiées. Démonstration causale : la porte inversée inverse le comportement. Source : <a href="https://huggingface.co/sharthokrayanpal/PCCG-2-Qwen3-4B">HuggingFace</a>.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Le « sleep framework » de Google Research pour l'apprentissage continu des LLM.</strong> Google Research propose un paradigme où un LLM alterne entre une phase active (traitement des entrées, stockage temporaire) et une phase de sommeil (consolidation hors ligne, mise à jour des poids via des blocs MoE pré-alloués et des exemples auto-générés). Les résultats montrent une rétention de connaissances sur des contextes allant jusqu'à 10 millions de tokens et une amélioration du raisonnement complexe, sans réentraînement complet. Source : <a href="https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/">Google Research Blog</a>.</p>
+<h2>Volume</h2>
+<p>81 entrées lues dans la shortlist (dont 69 Hacker News, 9 r/DeepSeek/HN/Lobsters, 2 Latent Space, 1 HuggingFace blog), 10 retenues, 71 écartées. Taux de rétention : 12 %. Aucune erreur de collecte signalée par le fichier meta.json.</p>
+<footer>Édition du samedi 21 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
