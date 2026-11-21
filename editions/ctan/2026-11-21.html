@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — samedi 21 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux nouveaux paquets (Mermin Equations pour étiqueter les équations par des phrases ; tenkana pour accélérer les compilations par reprise sur instantané) et deux mises à jour notables (nicematrix 7.13a et physketch 0.2). Aucune mise à jour des paquets que vous utilisez.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>Mermin Equations</strong> (v0.1.1, LPPL1.3c) — Permet d'étiqueter les équations par des phrases nominales et de les citer par cette phrase plutôt que par leur seul numéro : on écrit <code>\aka{condition d'anomalie}</code> pour définir l'étiquette, puis <code>\eq{condition d'anomalie}</code> pour la citer. Applique deux règles de N. David Mermin (numéroter toute équation affichée, citer par une phrase en plus du nombre), avec des options pour les désactiver. Compatible avec amsmath, hyperref, cleveref, beamer ; fonctionne sous pdfLaTeX, LuaLaTeX et XeLaTeX. Utile pour des documents ou des évaluations de sciences comportant des équations. https://ctan.org/pkg/mermin-equations</p>
+<p><strong>tenkana</strong> (v0.2.0, GPL3+) — Outil qui accélère les compilations LaTeX répétées en reprenant depuis des instantanés du moteur. Avant <code>\begin{document}</code> et avant chaque <code>\include</code>, tenkana conserve une copie gelée du moteur ; après une édition, il repart du dernier instantané antérieur à la modification, sans recompiler le préambule, ses paquets et les chapitres inchangés. S'utilise en préfixant la commande habituelle : <code>tenkana lualatex these</code>. Nécessite GNU/Linux x86-64 et un compilateur C (ailleurs, il fait des compilations simples sans accélération). https://ctan.org/pkg/tenkana</p>
+<h2>Autres mises à jour notables</h2>
+<p><strong>nicematrix</strong> v7.13a — Assure la compatibilité avec le nouveau mécanisme <code>+=</code> de l3keys (dans latex-dev). Ce paquet très utilisé pour les matrices et tableaux reste donc compatible avec les noyaux à venir.</p>
+<p><strong>physketch</strong> v0.2 — Ajout de matériaux noir et blanc pour l'impression (eau, glace, neige, gaz, pétrole en noir et blanc), du matériau neige et du réglage <code>materials=bw</code> qui bascule l'ensemble des matériaux en noir et blanc. Ce paquet de styles TikZ pour les dessins de physique (forces, ressorts, poulies, optique, circuits) gagne ainsi des options d'impression économique.</p>
+<h2>Volume</h2>
+<p>12 annonces publiées dans l'intervalle, 4 retenues (dont 0 concernant vos paquets), 8 écartées. Motifs d'exclusion : paquets liés à une langue non latine (calendrier persan), thème d'université (beamertheme-niederrhein), domaines très spécialisés (mtp2otf, tugboat-plain, florilegium), correction mineure (biblatex-iso690), outil pour développeurs (expltools).</p>
+<footer>Édition du samedi 21 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

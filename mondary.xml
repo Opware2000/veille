@@ -6,9 +6,40 @@
 <description>Veille quotidienne — Clément Mondary — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/mondary.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 20 Nov 2026 01:52:04 +0100</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 01:51:22 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Clément Mondary — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-11-21.html</link>
+<guid isPermaLink="false">mondary-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 01:51:22 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un IDE Rust qui rivalise en vitesse avec IntelliJ, une app Windows pour dialoguer avec des LLM sans terminal, une bibliothèque de composants vidéo pour vos agents IA, et un calque macOS pour garder vos outils sous la main sans changer de fenêtre.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>OpenIDEA</strong> — Un IDE natif écrit en Rust avec Tauri, qui reprend les réflexes d'IntelliJ IDEA (keymap, double-Shift, tool windows) sans la couche Electron. Le projet s'ouvre en 0,9 s contre 3,1 s, consomme 169 Mo de RAM au lieu de 2 Go. La fonction qui retient l'attention est le panneau Agents : douze agents de code (Claude Code, Codex, Gemini CLI, Copilot, Cursor, OpenCode, Qwen Code, Kimi, Goose, Auggie, Kiro, Mistral Vibe) peuvent travailler chacun dans son propre worktree Git — pas de conflit entre les modifications. Plus de 60 langages, débogueur via DAP, terminal, Git, SSH/SFTP, clients base de données et HTTP. Disponible sur macOS (Intel et Apple Silicon), Windows et Linux (AppImage, DEB, RPM). Dépôt GitHub public, open source. <em>Source : github.com/l0ng-ai/openidea</em></p>
+<p><strong>LLAMA</strong> — Une application Windows 11 qui intègre l'exécution de LLM locaux directement dans la zone de notification. Raccourci Alt+Space pour ouvrir une fenêtre volante par-dessus l'application en cours, conservation de la conversation d'un appel à l'autre. Gère elle-même le serveur <code>llama serve</code>, propose un catalogue de modèles téléchargeables en un clic depuis Hugging Face, et estime la mémoire nécessaire avant chargement (entête GGUF). Aucune télémétrie, aucun identifiant d'installation, tout reste en local. Idéal pour tester des modèles sans passer par la CLI, mais réservé à Windows 11. Dépôt GitHub public (ggml-org). <em>Source : github.com/ggml-org/Llama-Windows</em></p>
+<h2>Sciences, données et création graphique</h2>
+<p><strong>REMOCN</strong> — Une bibliothèque de composants Remotion (TypeScript, licence MIT) pour générer des vidéos de démonstration avec un agent IA. Deux modes : ajouter un composant avec <code>npx shadcn@latest add @remocn/blur-reveal</code> et l'intégrer manuellement, ou utiliser Remocn Studio : l'agent IA installe le projet, configure la skill et génère la vidéo décrite en langage naturel. Pas de timeline, pas de keyframes, pas de compte obligatoire, pas de filigrane. Le code reste dans votre dépôt, modifiable sans dépendre d'une API fermée. <em>Source : remocn.dev</em></p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>PEEK</strong> — Une application macOS native (gratuite, macOS 14.2+) qui réunit sites web, PDF locaux et widgets dans un calque superposé à votre travail. Maintenez un raccourci pour voir le contenu, relâchez pour revenir à votre application. Chaque écran peut avoir sa propre disposition ; blocage des publicités et traqueurs, rafraîchissement automatique, envoi vers l'application par défaut au clic droit. 8,1 Mo sur le Mac App Store, interface en anglais, pas de collecte de données. <em>Source : peek.zone</em></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 4 retenus, 1 écarté (KARGUL : calendrier de congés et people-ops, sans intérêt pour la production, l'organisation ou l'administration d'un établissement scolaire).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un IDE Rust qui rivalise en vitesse avec IntelliJ, une app Windows pour dialoguer avec des LLM sans terminal, une bibliothèque de composants vidéo pour vos agents IA, et un calque macOS pour garder vos outils sous la main sans changer de fenêtre.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>OpenIDEA</strong> — Un IDE natif écrit en Rust avec Tauri, qui reprend les réflexes d'IntelliJ IDEA (keymap, double-Shift, tool windows) sans la couche Electron. Le projet s'ouvre en 0,9 s contre 3,1 s, consomme 169 Mo de RAM au lieu de 2 Go. La fonction qui retient l'attention est le panneau Agents : douze agents de code (Claude Code, Codex, Gemini CLI, Copilot, Cursor, OpenCode, Qwen Code, Kimi, Goose, Auggie, Kiro, Mistral Vibe) peuvent travailler chacun dans son propre worktree Git — pas de conflit entre les modifications. Plus de 60 langages, débogueur via DAP, terminal, Git, SSH/SFTP, clients base de données et HTTP. Disponible sur macOS (Intel et Apple Silicon), Windows et Linux (AppImage, DEB, RPM). Dépôt GitHub public, open source. <em>Source : github.com/l0ng-ai/openidea</em></p>
+<p><strong>LLAMA</strong> — Une application Windows 11 qui intègre l'exécution de LLM locaux directement dans la zone de notification. Raccourci Alt+Space pour ouvrir une fenêtre volante par-dessus l'application en cours, conservation de la conversation d'un appel à l'autre. Gère elle-même le serveur <code>llama serve</code>, propose un catalogue de modèles téléchargeables en un clic depuis Hugging Face, et estime la mémoire nécessaire avant chargement (entête GGUF). Aucune télémétrie, aucun identifiant d'installation, tout reste en local. Idéal pour tester des modèles sans passer par la CLI, mais réservé à Windows 11. Dépôt GitHub public (ggml-org). <em>Source : github.com/ggml-org/Llama-Windows</em></p>
+<h2>Sciences, données et création graphique</h2>
+<p><strong>REMOCN</strong> — Une bibliothèque de composants Remotion (TypeScript, licence MIT) pour générer des vidéos de démonstration avec un agent IA. Deux modes : ajouter un composant avec <code>npx shadcn@latest add @remocn/blur-reveal</code> et l'intégrer manuellement, ou utiliser Remocn Studio : l'agent IA installe le projet, configure la skill et génère la vidéo décrite en langage naturel. Pas de timeline, pas de keyframes, pas de compte obligatoire, pas de filigrane. Le code reste dans votre dépôt, modifiable sans dépendre d'une API fermée. <em>Source : remocn.dev</em></p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>PEEK</strong> — Une application macOS native (gratuite, macOS 14.2+) qui réunit sites web, PDF locaux et widgets dans un calque superposé à votre travail. Maintenez un raccourci pour voir le contenu, relâchez pour revenir à votre application. Chaque écran peut avoir sa propre disposition ; blocage des publicités et traqueurs, rafraîchissement automatique, envoi vers l'application par défaut au clic droit. 8,1 Mo sur le Mac App Store, interface en anglais, pas de collecte de données. <em>Source : peek.zone</em></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 4 retenus, 1 écarté (KARGUL : calendrier de congés et people-ops, sans intérêt pour la production, l'organisation ou l'administration d'un établissement scolaire).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Clément Mondary — vendredi 20 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/mondary/2026-11-20.html</link>
