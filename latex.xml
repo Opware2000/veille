@@ -6,9 +6,36 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 20 Nov 2026 01:11:57 +0100</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 01:11:50 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — samedi 21 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-21.html</link>
+<guid isPermaLink="false">latex-2026-11-21</guid>
+<pubDate>Sat, 21 Nov 2026 01:11:50 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une veille calme sur le sous-reddit et les sources annexes : deux techniques TikZ réutilisables (réflexion d'un polygone par transformation affine, tangente d'un cercle à l'axe des abscisses avec la seule bibliothèque calc) et un outil de comparaison de versions pour Typst, équivalent de latexdiff.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<p><strong>Typst-redline</strong> — outil en ligne de commande qui compare deux versions d'un document Typst et produit un PDF avec les changements marqués (insertions, suppressions, modifications). Fonctionne par différence de commits git ou entre deux fichiers. Propose un résumé paginé de chaque changement, une mise en page côte à côte pour les slides, et une extension VS Code. Le code a été produit par « vibe coding » (l'auteur le dit lui-même) et n'a pas de dépôt public identifiable. D'autres outils similaires existent (typdiff, typst-diff) avec des approches différentes. Source : forum Typst.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p><strong>Réflexion d'un polygone par transformation affine</strong> — sur TeX Stack Exchange, un utilisateur voulait tracer le symétrique d'un polygone par rapport à un axe vertical en utilisant <code>scope</code> et la transformation <code>cm={-1,0,0,1,(8,0)}</code>. La solution retenue : les coordonnées nommées (A, B, C…) ne sont pas transformées par le scope — TikZ les résout dans le repère de la figure d'origine —, il faut donc définir un macro qui dessine le polygone à partir de ses coordonnées numériques et l'appeler dans le scope avec <code>name prefix=mirror-</code>. La transformation <code>cm={-1,0,0,1,(8,0)}</code> envoie (x,y) vers (8−x,y), soit une réflexion d'axe x=4. Technique reproductible pour toute symétrie axiale dans une figure TikZ.</p>
+<p><strong>Tangente d'un cercle à l'axe des abscisses avec la seule bibliothèque calc</strong> — question de technique TikZ : comment tracer la tangente depuis un point P sur un cercle jusqu'à l'axe des x, en n'utilisant que <code>\usetikzlibrary{calc}</code>. La réponse : <code>($(P)!1!90:(O)$)</code> donne la direction de la tangente (rotation de O de 90° autour de P) ; l'intersection de cette demi-droite avec l'axe des x se calcule avec <code>intersection cs</code>. Solution compacte qui évite de recourir aux bibliothèques intersections ou math. Une réponse alternative propose une construction par intersection de deux cercles en Metapost (compilable avec lualatex).</p>
+<h2>Volume</h2>
+<p>10 entrées dans la shortlist (dont 9 de TeX Stack Exchange et 1 du forum Typst), 3 retenues, 7 écartées, taux de rétention 30 % — attendu sur un site d'entraide où la majorité des questions sont des dépannages ponctuels.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une veille calme sur le sous-reddit et les sources annexes : deux techniques TikZ réutilisables (réflexion d'un polygone par transformation affine, tangente d'un cercle à l'axe des abscisses avec la seule bibliothèque calc) et un outil de comparaison de versions pour Typst, équivalent de latexdiff.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<p><strong>Typst-redline</strong> — outil en ligne de commande qui compare deux versions d'un document Typst et produit un PDF avec les changements marqués (insertions, suppressions, modifications). Fonctionne par différence de commits git ou entre deux fichiers. Propose un résumé paginé de chaque changement, une mise en page côte à côte pour les slides, et une extension VS Code. Le code a été produit par « vibe coding » (l'auteur le dit lui-même) et n'a pas de dépôt public identifiable. D'autres outils similaires existent (typdiff, typst-diff) avec des approches différentes. Source : forum Typst.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p><strong>Réflexion d'un polygone par transformation affine</strong> — sur TeX Stack Exchange, un utilisateur voulait tracer le symétrique d'un polygone par rapport à un axe vertical en utilisant <code>scope</code> et la transformation <code>cm={-1,0,0,1,(8,0)}</code>. La solution retenue : les coordonnées nommées (A, B, C…) ne sont pas transformées par le scope — TikZ les résout dans le repère de la figure d'origine —, il faut donc définir un macro qui dessine le polygone à partir de ses coordonnées numériques et l'appeler dans le scope avec <code>name prefix=mirror-</code>. La transformation <code>cm={-1,0,0,1,(8,0)}</code> envoie (x,y) vers (8−x,y), soit une réflexion d'axe x=4. Technique reproductible pour toute symétrie axiale dans une figure TikZ.</p>
+<p><strong>Tangente d'un cercle à l'axe des abscisses avec la seule bibliothèque calc</strong> — question de technique TikZ : comment tracer la tangente depuis un point P sur un cercle jusqu'à l'axe des x, en n'utilisant que <code>\usetikzlibrary{calc}</code>. La réponse : <code>($(P)!1!90:(O)$)</code> donne la direction de la tangente (rotation de O de 90° autour de P) ; l'intersection de cette demi-droite avec l'axe des x se calcule avec <code>intersection cs</code>. Solution compacte qui évite de recourir aux bibliothèques intersections ou math. Une réponse alternative propose une construction par intersection de deux cercles en Metapost (compilable avec lualatex).</p>
+<h2>Volume</h2>
+<p>10 entrées dans la shortlist (dont 9 de TeX Stack Exchange et 1 du forum Typst), 3 retenues, 7 écartées, taux de rétention 30 % — attendu sur un site d'entraide où la majorité des questions sont des dépannages ponctuels.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — vendredi 20 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-20.html</link>

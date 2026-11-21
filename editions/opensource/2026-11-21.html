@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — samedi 21 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — samedi 21 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Journée exceptionnellement riche avec une vingtaine de projets à découvrir : un agent local capable de faire tourner un modèle 125B sur 12 Go de VRAM (Linger), un moteur de génération vidéo MiniMax H3 sur 8 Go (FreeVideo), un studio vidéo complet open source (OpenMotion), une capture de mouvement par simple vidéo sans costume (RGB MoCap), et une douzaine d'autres outils nouveaux. Côté mises à jour : PostgreSQL 19, FFmpeg 9.1, Rust Coreutils 0.13, le premier terminal KDE basé sur Ghostty, et Vim Classic 8.3.1.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>RGB MoCap</strong> — Application Windows qui extrait le mouvement humain d'une simple vidéo et le transforme en animation 3D éditable, le tout en local (pas d'envoi vers le cloud). Supporte plusieurs moteurs d'estimation, la capture multi-caméra et le streaming vers Blender et Unreal Engine MetaHuman. Licence NOASSERTION, 2 608 étoiles, mise à jour le 20 novembre. Lien : https://github.com/toyxyz/toyxyz_rgbmocap</p>
+<p><strong>Ghost Downloader 3</strong> — Un seul téléchargeur pour HTTP, BitTorrent, YouTube, Bilibili et plus encore, qui remplace la demi-douzaine d'outils éparpillés habituels. Licence GPL-3.0, 13 677 étoiles. Lien : https://github.com/xiaoyouchr/ghost-downloader-3</p>
+<p><strong>Linger</strong> — Agent personnel open source avec un modèle de 125 milliards de paramètres (Qwen3.8-Flash-Next) tournant entièrement en local sur des machines à partir de 12 Go de VRAM. Le moteur d'inférence MoE PolyStrata place les experts les plus sollicités sur le GPU et délogue les autres en RAM ou sur SSD, atteignant 45,5 tokens/s sur une RTX 3060 12 Go avec 64 Go de RAM. Pas de coût par token, données jamais envoyées sur le cloud. Licence NOASSERTION, 2 858 étoiles. Lien : https://github.com/simplexai-labs/linger</p>
+<p><strong>FreeVideo</strong> — Moteur d'inférence local pour le modèle de génération vidéo MiniMax H3, fonctionnant dès 8 Go de VRAM et 16 Go de RAM. Livré comme plugin ComfyUI avec lanceurs Windows, macOS et Linux. Gère les poids entre VRAM, RAM et disque pour s'adapter au matériel disponible. Licence Apache-2.0, 3 794 étoiles. Lien : https://github.com/flashml-org/freevideo</p>
+<p><strong>Nginx UI</strong> — Interface web pour administrer Nginx sans toucher à la ligne de commande. Licence AGPL-3.0, 11 809 étoiles. Lien : https://github.com/0xjacky/nginx-ui</p>
+<p><strong>DSH Go</strong> — Application Android qui permet de surveiller et contrôler DeepSeek Harness à distance depuis son téléphone. Licence AGPL-3.0, 28 998 étoiles. Lien : https://github.com/ccch1mneyyy/dsh-go</p>
+<p><strong>rust-anything</strong> — Enregistre le comportement d'une application existante (Node, Python, Go) puis aide à la porter en Rust pièce par pièce, en vérifiant que chaque étape ne casse rien. Licence MIT, 6 628 étoiles. Lien : https://github.com/erkamyaman/rust-anything</p>
+<p><strong>iFixAI</strong> — Audit indépendant pour agents IA, conçu pour détecter les comportements déviants (fraude, contournement d'autorisations) que les tests unitaires ne couvrent pas. Licence Apache-2.0, 46 351 étoiles. Lien : https://github.com/ifixai-ai/ifixai</p>
+<p><strong>LoopForge (Tencent)</strong> — Bac à sable Docker auto-hébergé où les agents de codage soumettent des Pull Requests et exécutent des procédures reproductibles, avec validation intégrée. Licence NOASSERTION, 5 271 étoiles. Lien : https://github.com/tencent/loopforge</p>
+<p><strong>EdenText</strong> — Traitement de texte complet fonctionnant entièrement dans le navigateur, capable d'ouvrir et d'enregistrer les formats .odt et .docx sans passer par le cloud. Licence AGPL-3.0, 645 étoiles. Lien : https://github.com/stffnb/edentext</p>
+<p><strong>ffmpeg-skill</strong> — Compétence pour agent de codage qui lui donne la capacité de monter, couper et normaliser de la vidéo et de l'audio en local via FFmpeg, puis de vérifier son propre résultat. Licence MIT, 8 829 étoiles. Lien : https://github.com/kajisho5/ffmpeg-skill</p>
+<p><strong>OpenMotion</strong> — Studio vidéo open source full-stack qui permet de recréer une vidéo existante avec son propre agent, sa charte graphique et ses propres séquences, sans repartir de zéro. Licence Apache-2.0, 13 939 étoiles. Lien : https://github.com/nexu-io/openmotion</p>
+<p><strong>PdfCraft</strong> — Lecteur et éditeur PDF écrit intégralement en Rust, sans dépendance à des bibliothèques C existantes. Licence Apache-2.0, 21 342 étoiles. Lien : https://github.com/storytold/pdfcraft</p>
+<p><strong>OpenComputer</strong> — Agent de codage cloud open source, alternative à Devin, qui s'exécute dans votre propre compte AWS, GCP ou Azure. Premier commit en 24 secondes, architecture à machine virtuelle durable. Licence Apache-2.0, 726 étoiles. Lien : https://github.com/diggerhq/opencomputer</p>
+<p><strong>Pug.sh</strong> — Solution d'analytics produit open source et auto-hébergeable. Licence AGPL-3.0, 115 étoiles. Lien : https://github.com/pug-sh/pug</p>
+<p><strong>LarpLess</strong> — Application macOS et Windows qui traque votre concentration en étude en analysant localement l'écran et la webcam (modèle YOLO11n pour la détection de présence/ téléphone, Qwen3-VL ou SigLIP 2 pour le contenu écran). Donne un score de concentration et une répartition par matière à la fin de chaque session. AGPL-3.0, 5 étoiles. Lien : https://github.com/AlperErg/larpless</p>
+<p><strong>Ostorlab RASP</strong> — Protection d'applications Android et iOS au moment de l'exécution, sans aucune modification du code source. Licence Apache-2.0, 7 étoiles. Lien : https://github.com/Ostorlab/rasp</p>
+<p><strong>Full Production Studio</strong> — Collection de 77 compétences IA open source pour créateurs vidéo, couvrant la génération, l'édition et le montage. Licence NOASSERTION, 1 étoile. Lien : https://github.com/alfaris/full-production-studio</p>
+<p><strong>Katamaran</strong> — Runtime Docker et Linux open source spécialement conçu pour Apple Silicon. Licence AGPL-3.0, 0 étoile (projet tout nouveau). Lien : https://katamaran.rs</p>
+<p><strong>WASD Engine</strong> — Harnais open source pour le développement de jeux avec IA, embarquant Godot 4, Blender, GIMP, SuperCollider et une vingtaine d'extensions. Permet à un agent de coder, modéliser, texturer, composer et tester un jeu de bout en bout. Lien : https://wasdengine.com (vu sur Hacker News, 3 points)</p>
+<p><strong>Interviewer Assistant</strong> — Assistant d'entretien open source, utilisant l'IA pour aider les recruteurs. Licence Apache-2.0, 0 étoile. Lien : https://github.com/blackarck/intaiassist</p>
+<p><strong>Greatai Review</strong> — Service gratuit de relecture de code par IA et humains, dédié aux projets open source. Lien : https://greatai.dev/clinic (vu sur Hacker News)</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Kwi — premier terminal KDE</strong> — Nouvel émulateur de terminal pour l'environnement KDE, basé sur la bibliothèque Ghostty. Première version publique, nettement plus performant que Konsole. (Phoronix)</p>
+<p><strong>Rust Coreutils 0.13</strong> — Nouvelle version de cette réimplémentation en Rust des utilitaires GNU Coreutils, avec davantage de performances et une meilleure compatibilité. (Phoronix)</p>
+<p><strong>FFmpeg 9.1</strong> — Nouvelle version majeure de la bibliothèque multimédia, avec décodage NVIDIA Optical Flow FRUC et encodeur APV Vulkan. (Phoronix)</p>
+<p><strong>Cloud Hypervisor 55</strong> — Nouvelle version de cet hyperviseur cloud en Rust, avec virtualisation imbriquée AArch64 et prise en charge de jusqu'à 990 vCPU ARM. (Phoronix)</p>
+<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure du système de gestion de bases de données. Annoncé sur le site officiel de PostgreSQL, 61 points sur Hacker News.</p>
+<p><strong>Vim Classic 8.3.1</strong> — Nouvelle version de l'éditeur de texte Vim dans sa branche classique. 10 points, 4 commentaires sur Lobsters. Lien : https://vim-classic.org/news/vim-8.3.1-released.html</p>
+<p><strong>Alice v0.6.0</strong> — Nouvelle version du langage de programmation Alice (dialecte OCaml enrichi). 6 points, 3 commentaires sur Lobsters. Lien : https://www.alicecaml.org/blog/alice-v0-6-0/</p>
+<p><strong>jj-musubi</strong> — Extension de synchronisation en direct pour le système de contrôle de version Jujutsu (jj), permettant la collaboration en temps réel. 5 points sur Lobsters. Lien : https://www.serpentine.com/posts/2026/announcing-jj-musubi/</p>
+<h2>Volume</h2>
+<p>63 entrées dans la shortlist, 19 applications ou outils nouveaux retenus, 8 mises à jour, 36 écartés (actualités générales, articles, questions, sans rapport avec un logiciel utilisable).</p>
+<footer>Édition du samedi 21 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
