@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>Veille Reddit — subreddits ajoutés</title>
+<link>https://opware2000.github.io/veille/index.html</link>
+<description>Veille quotidienne — Reddit — subreddits ajoutés — éditions rédigées pour Nicolas.</description>
+<language>fr-fr</language>
+<atom:link href="https://opware2000.github.io/veille/reddit-autres.xml" rel="self" type="application/rss+xml"/>
+<lastBuildDate>Sun, 22 Nov 2026 12:04:55 +0100</lastBuildDate>
+<generator>Hermes Agent — veille_rss.py</generator>
+<ttl>15</ttl>
+<item>
+<title>Veille Reddit — subreddits ajoutés</title>
+<link>https://opware2000.github.io/veille/editions/reddit-autres/2026-11-21.html</link>
+<guid isPermaLink="false">reddit-autres-2026-11-21</guid>
+<pubDate>Sun, 22 Nov 2026 12:04:55 +0100</pubDate>
+<category>Reddit — subreddits ajoutés</category>
+<description><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>]]></description>
+<content:encoded><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>]]></content:encoded>
+</item>
+</channel>
+</rss>
