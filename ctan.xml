@@ -6,9 +6,26 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 01:42:18 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 01:41:33 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-22.html</link>
+<guid isPermaLink="false">ctan-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 01:41:33 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Neuf annonces publiées depuis la dernière édition, aucune ne concerne les paquets que vous utilisez ni n'apporte de nouveau paquet ou mise à jour notable pour la rédaction de documents pédagogiques.</p>
+<h2>Volume</h2>
+<p>9 annonces examinées, 0 retenue, 9 écartées. Motifs dominants : paquet de page de thèse (scientific-thesis-cover), jeu (beltmap, Factorio), typographie chinoise (LuaCJK), circuits électriques en M4 (Circuit_macros), et mises à jour mineures de paquets internes (epigraph, gettitlestring, kvoptions) ou d'extensions de listing sans incidence pour vos usages (code-link, xlistings).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Neuf annonces publiées depuis la dernière édition, aucune ne concerne les paquets que vous utilisez ni n'apporte de nouveau paquet ou mise à jour notable pour la rédaction de documents pédagogiques.</p>
+<h2>Volume</h2>
+<p>9 annonces examinées, 0 retenue, 9 écartées. Motifs dominants : paquet de page de thèse (scientific-thesis-cover), jeu (beltmap, Factorio), typographie chinoise (LuaCJK), circuits électriques en M4 (Circuit_macros), et mises à jour mineures de paquets internes (epigraph, gettitlestring, kvoptions) ou d'extensions de listing sans incidence pour vos usages (code-link, xlistings).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-21.html</link>

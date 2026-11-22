@@ -6,9 +6,42 @@
 <description>Veille quotidienne — Clément Mondary — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/mondary.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 01:51:22 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 01:51:50 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Clément Mondary — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-11-22.html</link>
+<guid isPermaLink="false">mondary-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 01:51:50 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés le 21 novembre. Au menu : un assistant personnel cloud qui agit à votre place (HARK PRO), un framework d'applications de bureau en Zig aux binaires minuscules (NANOUI), un canevas infini pour organiser ses fenêtres Mac (SUNLIGHT), et une suite de sept applications créatives open source en Rust pilotables par des agents (CRAFT APPS).</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>HARK PRO — Assistant personnel cloud, disponible sur Mac.</strong> HARK PRO réunit recherche, achats et organisation dans un seul fil de discussion, avec un ordinateur cloud qui exécute les actions à votre place : navigation sur des sites, remplissage de formulaires, réservation. Disponible en application macOS (téléchargement direct depuis hark.com/mac), il conserve le contexte entre les conversations et peut programmer des tâches récurrentes. Le service n'est pas open source et repose entièrement sur les serveurs de Hark ; le modèle économique n'est pas précisé dans le billet. Une solution intéressante pour qui accepte de déléguer, mais à confronter à son besoin de contrôle.</p>
+<h2>Sciences, données et création graphique</h2>
+<p><strong>CRAFT APPS — Sept applications créatives open source en Rust.</strong> L'équipe ArtCraft propose une suite de sept outils créatifs — édition photo, dessin vectoriel, montage vidéo, retouche RAW, édition PDF, motion design et mise en page — tous écrits en Rust, exécutés en local et gratuits. Chaque application peut être pilotée par des agents IA, ce qui ouvre des possibilités d'automatisation. Une alternative libre et performante aux suites propriétaires, qui tourne sans abonnement ni compte.</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>SUNLIGHT — Toutes vos fenêtres Mac sur un canevas infini.</strong> SUNLIGHT rassemble les fenêtres ouvertes sur un canevas infini où l'on pince pour voir la journée entière et clique pour entrer dans une fenêtre à l'échelle 1:1. Gratuit, open source, en bêta. Peut remplacer le gestionnaire de fenêtres classique pour ceux qui préfèrent une vue d'ensemble continue.</p>
+<h2>Python et enseignement de l'informatique</h2>
+<p><strong>NANOUI — Framework Zig pour applications de bureau et mobiles, binaires de 0,7 Mo.</strong> NANOUI est un framework Zig 0.17 qui permet de créer des applications avec une interface native dessinée par le GPU ou une interface web. Le binaire unique pèse environ 0,7 Mo et fonctionne sur cinq plateformes. Intéressant pour illustrer ce que permet un langage système moderne (Zig) dans la conception d'interfaces, et pour montrer aux élèves qu'une application complète peut tenir dans un fichier minuscule, sans Electron ni web runtime.</p>
+<h2>Volume</h2>
+<p>5 billets publiés le 21 novembre, 4 retenus, 1 écarté (NANOLIGHT : lanceur macOS, utilitaire trop spécifique sans usage pédagogique ou professionnel déterminant).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés le 21 novembre. Au menu : un assistant personnel cloud qui agit à votre place (HARK PRO), un framework d'applications de bureau en Zig aux binaires minuscules (NANOUI), un canevas infini pour organiser ses fenêtres Mac (SUNLIGHT), et une suite de sept applications créatives open source en Rust pilotables par des agents (CRAFT APPS).</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>HARK PRO — Assistant personnel cloud, disponible sur Mac.</strong> HARK PRO réunit recherche, achats et organisation dans un seul fil de discussion, avec un ordinateur cloud qui exécute les actions à votre place : navigation sur des sites, remplissage de formulaires, réservation. Disponible en application macOS (téléchargement direct depuis hark.com/mac), il conserve le contexte entre les conversations et peut programmer des tâches récurrentes. Le service n'est pas open source et repose entièrement sur les serveurs de Hark ; le modèle économique n'est pas précisé dans le billet. Une solution intéressante pour qui accepte de déléguer, mais à confronter à son besoin de contrôle.</p>
+<h2>Sciences, données et création graphique</h2>
+<p><strong>CRAFT APPS — Sept applications créatives open source en Rust.</strong> L'équipe ArtCraft propose une suite de sept outils créatifs — édition photo, dessin vectoriel, montage vidéo, retouche RAW, édition PDF, motion design et mise en page — tous écrits en Rust, exécutés en local et gratuits. Chaque application peut être pilotée par des agents IA, ce qui ouvre des possibilités d'automatisation. Une alternative libre et performante aux suites propriétaires, qui tourne sans abonnement ni compte.</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>SUNLIGHT — Toutes vos fenêtres Mac sur un canevas infini.</strong> SUNLIGHT rassemble les fenêtres ouvertes sur un canevas infini où l'on pince pour voir la journée entière et clique pour entrer dans une fenêtre à l'échelle 1:1. Gratuit, open source, en bêta. Peut remplacer le gestionnaire de fenêtres classique pour ceux qui préfèrent une vue d'ensemble continue.</p>
+<h2>Python et enseignement de l'informatique</h2>
+<p><strong>NANOUI — Framework Zig pour applications de bureau et mobiles, binaires de 0,7 Mo.</strong> NANOUI est un framework Zig 0.17 qui permet de créer des applications avec une interface native dessinée par le GPU ou une interface web. Le binaire unique pèse environ 0,7 Mo et fonctionne sur cinq plateformes. Intéressant pour illustrer ce que permet un langage système moderne (Zig) dans la conception d'interfaces, et pour montrer aux élèves qu'une application complète peut tenir dans un fichier minuscule, sans Electron ni web runtime.</p>
+<h2>Volume</h2>
+<p>5 billets publiés le 21 novembre, 4 retenus, 1 écarté (NANOLIGHT : lanceur macOS, utilitaire trop spécifique sans usage pédagogique ou professionnel déterminant).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Clément Mondary — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/mondary/2026-11-21.html</link>
