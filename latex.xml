@@ -6,9 +6,26 @@
 <description>Veille quotidienne du subreddit r/LaTeX — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/latex.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 01:11:50 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 01:13:48 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-22.html</link>
+<guid isPermaLink="false">latex-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 01:13:48 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention dans les fils de la période écoulée. Le subreddit et les forums complémentaires n'ont vu que des questions de dépannage et des demandes d'aide sans solution réutilisable.</p>
+<h2>Volume</h2>
+<p>11 posts publiés dans l'intervalle, 0 retenu, 11 écartés (taux de rétention 0 %). Un taux nul est normal sur r/LaTeX, forum d'entraide : la quasi-totalité des posts y sont des questions ponctuelles.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention dans les fils de la période écoulée. Le subreddit et les forums complémentaires n'ont vu que des questions de dépannage et des demandes d'aide sans solution réutilisable.</p>
+<h2>Volume</h2>
+<p>11 posts publiés dans l'intervalle, 0 retenu, 11 écartés (taux de rétention 0 %). Un taux nul est normal sur r/LaTeX, forum d'entraide : la quasi-totalité des posts y sont des questions ponctuelles.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-21.html</link>

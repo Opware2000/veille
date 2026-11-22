@@ -6,9 +6,60 @@
 <description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 01:04:27 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 01:05:27 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opensource — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-22.html</link>
+<guid isPermaLink="false">opensource-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 01:05:27 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une bonne moisson de nouveaux outils libres cette semaine : un agenda de rendez-vous en Rust, une application de dictée vocale entièrement locale, un convertisseur d'e-books en livres audio aux capacités impressionnantes, et plusieurs utilitaires pour agents de codage. Pas de grosse nouvelle de l'écosystème ; la collecte s'est déroulée normalement.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>WisperChad</strong> — Application de dictée vocale locale pour Windows et macOS. Maintenez un raccourci, parlez, relâchez : le texte apparaît où vous tapez. Un second raccourci permet de dicter une réponse qui est reformulée par un LLM local (Qwen3.5 ou Gemma 4 via llama.cpp). Utilise Parakeet, Whisper ou Moonshine pour la transcription, avec configuration automatique selon le matériel. Gratuit, licence MIT, 0 étoiles (projet très récent). https://currymunchy.github.io/wisperchad-app/</p>
+<p><strong>CalRS v2.0</strong> — Solution de planification et de réservation de rendez-vous auto-hébergée en un seul binaire Rust, créée par frustration avec Cal.com. v2.0 ajoute les calendriers Microsoft et Google (en plus du CalDav standard), une API REST avec OpenAPI/Swagger, une interface MCP over HTTP avec OAuth pour les assistants IA, des formulaires de réservation clients, des notes internes, et 10 traductions. Gratuit, AGPL-3.0, 362 étoiles. https://github.com/olivierlambert/calrs</p>
+<p><strong>eBook2audiobook</strong> — Convertisseur auto-hébergé d'e-books en livres audio. La dernière mise à jour porte à 44 moteurs TTS et 1 696 langues, avec clonage vocal. Fonctionne entièrement en local (2 Go de RAM minimum). Installation par pip, Docker, Colab ou Hugging Face. Gratuit, Apache-2.0, 20 627 étoiles. https://github.com/DrewThomasson/ebook2audiobook</p>
+<p><strong>SocialMesh</strong> — Infrastructure de communication décentralisée où chaque nœud transporte son propre « bureau de poste ». Pas d'adresse fixe, pas de serveur central : les sites web sont partagés entre pairs, et deux appareils peuvent communiquer sans Wi-Fi, Bluetooth, NFC ni données cellulaires. Gratuit, MIT, 2 étoiles. https://github.com/doctarock/SocialMesh</p>
+<p><strong>Amgi</strong> — Application de flashcards iOS compatible Anki, open source et fonctionnant hors ligne. Idéal pour les révisions sans connexion. Gratuit, 353 étoiles. https://github.com/antigluten/amgi</p>
+<p><strong>Musset</strong> — Alternative libre à Scrivener pour l'écriture de romans. Un dossier de fichiers Markdown, versionné par Git automatiquement, avec un assistant IA qui discute du texte sans jamais écrire à votre place. Gratuit, GPL-3.0, 10 étoiles. https://github.com/Musset-App/musset</p>
+<p><strong>Pantry</strong> — Scanner open source qui inspecte ce que vos agents de codage exécutent : commandes, accès fichiers, appels réseau. Gratuit. https://waffuru.ai/products/pantry</p>
+<p><strong>KeepPlain Plugin</strong> — Plugin open source pour agents de codage apportant mémoire partagée, règles de projet et blame Git. Permet à plusieurs agents de partager le contexte et de tracer les modifications. Gratuit, MIT, 4 étoiles. https://github.com/keepplain/keepplain-plugin</p>
+<p><strong>ILoveNotch v2.0</strong> — Application Mac qui utilise l'encoche (notch) comme zone d'affichage, avec un téléprompteur intégré. Gratuit, MIT, 46 étoiles. https://github.com/niyamvora/ILoveNotch</p>
+<p><strong>Nuvo</strong> — Lecteur de musique open source qui transforme les paroles en vidéo en direct. Gratuit, AGPL-3.0, 16 étoiles. https://github.com/Ziuziuk-Denys/Nuvo</p>
+<p><strong>WebBrain</strong> — Agent IA navigateur local et open source, mis en avant par Mozilla. Fonctionne entièrement sur la machine, sans envoi de données vers le cloud. Gratuit. https://blog.mozilla.org/addons/2026/11/20/developer-spotlight-webbrain/</p>
+<p><strong>Branchi</strong> — Client Git pour Windows et Linux, écrit en Rust et Flutter. Gratuit, MIT, 3 étoiles. https://github.com/mbpcoder/Branchi</p>
+<p><strong>Synthetic Consumer Research</strong> — Compétence open source pour tester des idées de produits sur des clients synthétiques générés par LLM. Gratuit, MIT, 2 étoiles. https://github.com/AryamanSi17/synthetic-consumer-research</p>
+<p><strong>Openski.org</strong> — Éditeur et navigateur de cartes de ski open source. Gratuit. https://openski.org/</p>
+<p><strong>QFTM-1024</strong> — Alternative open source au MBTI proposant 1 024 profils de personnalité. Gratuit. https://Daniil-Myagkov.github.io/qftm-1024/</p>
+<p><strong>Air Office</strong> — Espace de travail open source, local et hors ligne, conçu pour la recherche en sécurité IA. Gratuit. https://gyrogovernance.com/air-office/</p>
+<h2>Volume</h2>
+<p>33 articles publiés dans l'intervalle, 18 retenus, 15 écartés (actualités sans outil nouveau, discussions, sécurité).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une bonne moisson de nouveaux outils libres cette semaine : un agenda de rendez-vous en Rust, une application de dictée vocale entièrement locale, un convertisseur d'e-books en livres audio aux capacités impressionnantes, et plusieurs utilitaires pour agents de codage. Pas de grosse nouvelle de l'écosystème ; la collecte s'est déroulée normalement.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>WisperChad</strong> — Application de dictée vocale locale pour Windows et macOS. Maintenez un raccourci, parlez, relâchez : le texte apparaît où vous tapez. Un second raccourci permet de dicter une réponse qui est reformulée par un LLM local (Qwen3.5 ou Gemma 4 via llama.cpp). Utilise Parakeet, Whisper ou Moonshine pour la transcription, avec configuration automatique selon le matériel. Gratuit, licence MIT, 0 étoiles (projet très récent). https://currymunchy.github.io/wisperchad-app/</p>
+<p><strong>CalRS v2.0</strong> — Solution de planification et de réservation de rendez-vous auto-hébergée en un seul binaire Rust, créée par frustration avec Cal.com. v2.0 ajoute les calendriers Microsoft et Google (en plus du CalDav standard), une API REST avec OpenAPI/Swagger, une interface MCP over HTTP avec OAuth pour les assistants IA, des formulaires de réservation clients, des notes internes, et 10 traductions. Gratuit, AGPL-3.0, 362 étoiles. https://github.com/olivierlambert/calrs</p>
+<p><strong>eBook2audiobook</strong> — Convertisseur auto-hébergé d'e-books en livres audio. La dernière mise à jour porte à 44 moteurs TTS et 1 696 langues, avec clonage vocal. Fonctionne entièrement en local (2 Go de RAM minimum). Installation par pip, Docker, Colab ou Hugging Face. Gratuit, Apache-2.0, 20 627 étoiles. https://github.com/DrewThomasson/ebook2audiobook</p>
+<p><strong>SocialMesh</strong> — Infrastructure de communication décentralisée où chaque nœud transporte son propre « bureau de poste ». Pas d'adresse fixe, pas de serveur central : les sites web sont partagés entre pairs, et deux appareils peuvent communiquer sans Wi-Fi, Bluetooth, NFC ni données cellulaires. Gratuit, MIT, 2 étoiles. https://github.com/doctarock/SocialMesh</p>
+<p><strong>Amgi</strong> — Application de flashcards iOS compatible Anki, open source et fonctionnant hors ligne. Idéal pour les révisions sans connexion. Gratuit, 353 étoiles. https://github.com/antigluten/amgi</p>
+<p><strong>Musset</strong> — Alternative libre à Scrivener pour l'écriture de romans. Un dossier de fichiers Markdown, versionné par Git automatiquement, avec un assistant IA qui discute du texte sans jamais écrire à votre place. Gratuit, GPL-3.0, 10 étoiles. https://github.com/Musset-App/musset</p>
+<p><strong>Pantry</strong> — Scanner open source qui inspecte ce que vos agents de codage exécutent : commandes, accès fichiers, appels réseau. Gratuit. https://waffuru.ai/products/pantry</p>
+<p><strong>KeepPlain Plugin</strong> — Plugin open source pour agents de codage apportant mémoire partagée, règles de projet et blame Git. Permet à plusieurs agents de partager le contexte et de tracer les modifications. Gratuit, MIT, 4 étoiles. https://github.com/keepplain/keepplain-plugin</p>
+<p><strong>ILoveNotch v2.0</strong> — Application Mac qui utilise l'encoche (notch) comme zone d'affichage, avec un téléprompteur intégré. Gratuit, MIT, 46 étoiles. https://github.com/niyamvora/ILoveNotch</p>
+<p><strong>Nuvo</strong> — Lecteur de musique open source qui transforme les paroles en vidéo en direct. Gratuit, AGPL-3.0, 16 étoiles. https://github.com/Ziuziuk-Denys/Nuvo</p>
+<p><strong>WebBrain</strong> — Agent IA navigateur local et open source, mis en avant par Mozilla. Fonctionne entièrement sur la machine, sans envoi de données vers le cloud. Gratuit. https://blog.mozilla.org/addons/2026/11/20/developer-spotlight-webbrain/</p>
+<p><strong>Branchi</strong> — Client Git pour Windows et Linux, écrit en Rust et Flutter. Gratuit, MIT, 3 étoiles. https://github.com/mbpcoder/Branchi</p>
+<p><strong>Synthetic Consumer Research</strong> — Compétence open source pour tester des idées de produits sur des clients synthétiques générés par LLM. Gratuit, MIT, 2 étoiles. https://github.com/AryamanSi17/synthetic-consumer-research</p>
+<p><strong>Openski.org</strong> — Éditeur et navigateur de cartes de ski open source. Gratuit. https://openski.org/</p>
+<p><strong>QFTM-1024</strong> — Alternative open source au MBTI proposant 1 024 profils de personnalité. Gratuit. https://Daniil-Myagkov.github.io/qftm-1024/</p>
+<p><strong>Air Office</strong> — Espace de travail open source, local et hors ligne, conçu pour la recherche en sécurité IA. Gratuit. https://gyrogovernance.com/air-office/</p>
+<h2>Volume</h2>
+<p>33 articles publiés dans l'intervalle, 18 retenus, 15 écartés (actualités sans outil nouveau, discussions, sécurité).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-21.html</link>
