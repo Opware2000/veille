@@ -6,9 +6,60 @@
 <description>Veille quotidienne du subreddit r/vibecoding — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/vibecoding.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 21 Nov 2026 00:43:03 +0100</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 00:44:59 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/vibecoding — dimanche 22 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-22.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-22</guid>
+<pubDate>Sun, 22 Nov 2026 00:44:59 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une semaine riche en annonces d'outils pour le codage assisté par IA, avec l'arrivée d'OpenComputer (alternative open source à Devin), de ClawDOS (agent IA pour DOS, sur du vrai matériel vintage), et de plusieurs utilitaires pour Claude Code. Côté modèles, Inkling 2 Mini sort pour le déploiement local, tandis qu'Astra 6.2 et Sol 6.2 déçoivent sur Simple Bench. Le flux du subreddit vibecoding est inaccessible (HTTP 404) — les entrées ci-dessous viennent de Hacker News et Lobsters.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenComputer</strong> — alternative open source à Devin. Agent de codage cloud pour équipes, s'exécutant dans votre propre compte AWS, GCP ou Azure. Premier commit en 24 secondes (53 à 72 secondes chez les concurrents). Le harnais et le bac à sable tournent sur une même VM durable. GitHub : ⭐ 1 136, licence Apache-2.0, dernière mise à jour le 21 novembre.</p>
+<p><strong>ClawDOS</strong> — agent de codage IA pour DOS, tournant sur un vrai IBM PC 5160 (8088 à 4,77 MHz). Un projet aussi absurde que fascinant : faire dialoguer un LLM avec un système d'exploitation vieux de 45 ans pour y écrire et exécuter du code. 84 points sur Hacker News.</p>
+<p><strong>Dotfactory</strong> — des « dotfiles » pour les sessions Claude Code. Permet de configurer et personnaliser ses agents Claude Code (compétences, instincts, mémoire) comme on le ferait avec ses dotfiles shell. GitHub : ⭐ 5, licence MIT, mis à jour le 21 novembre.</p>
+<p><strong>agent-mcts</strong> — Monte Carlo Tree Search appliqué à Claude Code. L'agent explore plusieurs branches de décision avant d'agir, ce qui améliore la qualité de ses choix pour les tâches complexes. GitHub : ⭐ 7, licence MIT, mis à jour le 21 novembre.</p>
+<p><strong>DreamCoder</strong> — environnement de codage et IDE assisté par IA, annoncé par l'auteur de Mastering Emacs. Se présente comme un harnais de codage complet, avec une emphase sur l'intégration dans le flux de travail existant du développeur. 67 points sur Hacker News.</p>
+<p><strong>Parallel Code</strong> — utilitaire pour exécuter Claude Code, Codex et Copilot Agent en parallèle sur des worktrees Git séparés. Permet de comparer leurs résultats sur la même tâche, ou de les faire travailler en parallèle sur des parties différentes d'un projet.</p>
+<p><strong>Navigateur Chromium open source en remplacement d'Arc</strong> — un développeur a codé avec Claude Code un navigateur Chromium complet pour remplacer Arc (qui ferme le 22 décembre). 158 correctifs sur Chromium, compilation automatisée quotidienne, tests de bout en bout écrits par Claude. Disponible pour Mac et Windows, open source.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini</strong> — nouveau modèle d'IA de Thinking Machines, optimisé pour le déploiement local. 547 points et 91 commentaires sur Hacker News, ce qui en fait l'annonce la plus discutée de la semaine. Également présenté sur le blog Hugging Face.</p>
+<p><strong>Muse Spark 1.3</strong> — mise à jour du modèle de Meta. Disponible sur dev.meta.ai, cette version apporte des améliorations non détaillées publiquement mais notables dans les benchmarks.</p>
+<p><strong>Astra 6.2 et Sol 6.2 échouent à Simple Bench</strong> — les dernières versions des modèles de Google (Astra) et d'un concurrent (Sol) obtiennent des résultats décevants au benchmark Simple Bench, qui teste les capacités fondamentales des LLM. 118 points, 103 commentaires : le sujet a suscité un vif débat sur la fiabilité des benchmarks.</p>
+<p><strong>Stripe publie sa méthodologie d'évaluation des agents de codage</strong> — Stripe détaille comment elle mesure les performances des agents de codage en conditions réelles d'intégration. Un référentiel utile pour juger objectivement les outils de vibecoding au-delà des benchmarks synthétiques.</p>
+<p><strong>OpenAI contre la distillation adverse</strong> — OpenAI publie ses méthodes pour détecter et contrer la distillation adverse (vol de modèle par envoi massif de requêtes API). 30 points, 47 commentaires : beaucoup de discussions sur l'impact pour les développeurs qui utilisent des modèles via API.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>PostgreSQL Extensions en Go</strong> — bibliothèque pour écrire des extensions PostgreSQL en Go plutôt qu'en C. Ouvre la voie à des extensions PG maintenables sans la complexité et les risques de mémoire du C. 27 points sur Hacker News.</p>
+<h2>Volume</h2>
+<p>104 entrées publiées dans l'intervalle, 14 retenues, 90 écartées.</p>
+<p><em>Nota : le collecteur du subreddit vibecoding est en erreur (HTTP 404). Les entrées viennent de Hacker News, Lobsters, Latent Space, Simon Willison et Hugging Face.</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — dimanche 22 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Une semaine riche en annonces d'outils pour le codage assisté par IA, avec l'arrivée d'OpenComputer (alternative open source à Devin), de ClawDOS (agent IA pour DOS, sur du vrai matériel vintage), et de plusieurs utilitaires pour Claude Code. Côté modèles, Inkling 2 Mini sort pour le déploiement local, tandis qu'Astra 6.2 et Sol 6.2 déçoivent sur Simple Bench. Le flux du subreddit vibecoding est inaccessible (HTTP 404) — les entrées ci-dessous viennent de Hacker News et Lobsters.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenComputer</strong> — alternative open source à Devin. Agent de codage cloud pour équipes, s'exécutant dans votre propre compte AWS, GCP ou Azure. Premier commit en 24 secondes (53 à 72 secondes chez les concurrents). Le harnais et le bac à sable tournent sur une même VM durable. GitHub : ⭐ 1 136, licence Apache-2.0, dernière mise à jour le 21 novembre.</p>
+<p><strong>ClawDOS</strong> — agent de codage IA pour DOS, tournant sur un vrai IBM PC 5160 (8088 à 4,77 MHz). Un projet aussi absurde que fascinant : faire dialoguer un LLM avec un système d'exploitation vieux de 45 ans pour y écrire et exécuter du code. 84 points sur Hacker News.</p>
+<p><strong>Dotfactory</strong> — des « dotfiles » pour les sessions Claude Code. Permet de configurer et personnaliser ses agents Claude Code (compétences, instincts, mémoire) comme on le ferait avec ses dotfiles shell. GitHub : ⭐ 5, licence MIT, mis à jour le 21 novembre.</p>
+<p><strong>agent-mcts</strong> — Monte Carlo Tree Search appliqué à Claude Code. L'agent explore plusieurs branches de décision avant d'agir, ce qui améliore la qualité de ses choix pour les tâches complexes. GitHub : ⭐ 7, licence MIT, mis à jour le 21 novembre.</p>
+<p><strong>DreamCoder</strong> — environnement de codage et IDE assisté par IA, annoncé par l'auteur de Mastering Emacs. Se présente comme un harnais de codage complet, avec une emphase sur l'intégration dans le flux de travail existant du développeur. 67 points sur Hacker News.</p>
+<p><strong>Parallel Code</strong> — utilitaire pour exécuter Claude Code, Codex et Copilot Agent en parallèle sur des worktrees Git séparés. Permet de comparer leurs résultats sur la même tâche, ou de les faire travailler en parallèle sur des parties différentes d'un projet.</p>
+<p><strong>Navigateur Chromium open source en remplacement d'Arc</strong> — un développeur a codé avec Claude Code un navigateur Chromium complet pour remplacer Arc (qui ferme le 22 décembre). 158 correctifs sur Chromium, compilation automatisée quotidienne, tests de bout en bout écrits par Claude. Disponible pour Mac et Windows, open source.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini</strong> — nouveau modèle d'IA de Thinking Machines, optimisé pour le déploiement local. 547 points et 91 commentaires sur Hacker News, ce qui en fait l'annonce la plus discutée de la semaine. Également présenté sur le blog Hugging Face.</p>
+<p><strong>Muse Spark 1.3</strong> — mise à jour du modèle de Meta. Disponible sur dev.meta.ai, cette version apporte des améliorations non détaillées publiquement mais notables dans les benchmarks.</p>
+<p><strong>Astra 6.2 et Sol 6.2 échouent à Simple Bench</strong> — les dernières versions des modèles de Google (Astra) et d'un concurrent (Sol) obtiennent des résultats décevants au benchmark Simple Bench, qui teste les capacités fondamentales des LLM. 118 points, 103 commentaires : le sujet a suscité un vif débat sur la fiabilité des benchmarks.</p>
+<p><strong>Stripe publie sa méthodologie d'évaluation des agents de codage</strong> — Stripe détaille comment elle mesure les performances des agents de codage en conditions réelles d'intégration. Un référentiel utile pour juger objectivement les outils de vibecoding au-delà des benchmarks synthétiques.</p>
+<p><strong>OpenAI contre la distillation adverse</strong> — OpenAI publie ses méthodes pour détecter et contrer la distillation adverse (vol de modèle par envoi massif de requêtes API). 30 points, 47 commentaires : beaucoup de discussions sur l'impact pour les développeurs qui utilisent des modèles via API.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>PostgreSQL Extensions en Go</strong> — bibliothèque pour écrire des extensions PostgreSQL en Go plutôt qu'en C. Ouvre la voie à des extensions PG maintenables sans la complexité et les risques de mémoire du C. 27 points sur Hacker News.</p>
+<h2>Volume</h2>
+<p>104 entrées publiées dans l'intervalle, 14 retenues, 90 écartées.</p>
+<p><em>Nota : le collecteur du subreddit vibecoding est en erreur (HTTP 404). Les entrées viennent de Hacker News, Lobsters, Latent Space, Simon Willison et Hugging Face.</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — samedi 21 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-21.html</link>
