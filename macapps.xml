@@ -6,9 +6,160 @@
 <description>Veille quotidienne du subreddit r/macapps — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/macapps.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 22 Nov 2026 00:14:22 +0100</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 00:14:56 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — lundi 23 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-23.html</link>
+<guid isPermaLink="false">macapps-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:14:56 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Dix-sept applications nouvelles, dont trois libres et gratuites (OpenShelf, Gitā, CurlGo) et quatre à achat unique de 5 à 10 dollars ; le reste est gratuit avec option payante, ou à tarif non publié.<br />
+Deux mises à jour notables : StepGrab 1.7 rend tous les formats d'export gratuits, Unclutter 2.3 se refait une jeunesse.<br />
+À signaler hors applications : Microsoft arrêtera Microsoft To Do le 30 juin 2027 au profit de Planner, sans équivalent personnel — l'occasion de choisir dès maintenant un gestionnaire de tâches pérenne.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenShelf — roue d'actions autour du fichier qu'on glisse</h3>
+<p>Utilitaire de barre de menus : on commence à glisser n'importe quel fichier, on appuie sur une touche, et une roue s'ouvre pour convertir, éditer, envoyer par AirDrop ou mettre de côté. Tout se passe hors ligne. Gratuit et open source, licence MIT, 245 étoiles, dernière mise à jour le 19 novembre 2026, écrit en Swift.<br />
+→ https://github.com/Manan-Santoki/OpenShelf<br />
+→ annonce : https://www.reddit.com/r/macapps/comments/1y2aa9g/os_openshelf_drag_any_file_tap_a_key_and_a_wheel/</p>
+<h3>Gitā — client Git natif qui montre le travail des agents de codage</h3>
+<p>Client Git macOS centré sur l'historique d'un dépôt : un seul graphe réunit branches, demandes de tirage, vérifications CI, déploiements Vercel et l'état des agents de codage qui travaillent dans le dépôt (branche, sous-agents, travaux en cours, « needs input »). Version 0.1.0, gratuite et open source, licence MIT, 14 étoiles, mise à jour le 21 novembre 2026. C'est encore un tout jeune projet : à essayer sans en attendre la solidité de GitHub Desktop.<br />
+→ https://getgita.app/ — dépôt : https://github.com/clever-mechanisms/gita</p>
+<h3>CurlGo — client HTTP natif de 5 Mo</h3>
+<p>Client d'API natif (Go, interface native) qui réunit HTTP, SSE et WebSocket dans un même espace de travail, avec import et export de commandes curl : le successeur léger de Postman pour qui veut éviter l'application à plugiciels. L'installateur macOS ne pèse que 4,97 Mo, signé et notarié ; Windows existe en x64 et ARM64. Gratuit et open source, licence MIT, 5 étoiles, dernière poussée le 16 novembre 2026. Attention : l'installateur macOS est réservé à Apple Silicon, les Mac Intel passent par les sources.<br />
+→ https://curlgo.echovic.com/en/ — dépôt : https://github.com/echoVic/curlgo</p>
+<h3>Sxitch — remplaçant de ⌘ Tab par arbre de lettres</h3>
+<p>Commutateur d'applications : on appuie sur une touche de tête, on tape les premières lettres du nom de l'application, et Sxitch bascule dès qu'il ne reste qu'une correspondance ; un second appui choisit la fenêtre quand il y en a plusieurs. Le gratuit couvre déjà toutes les vues (grille, liste, radiale), tous les thèmes et le changement par arbre ; le Pro à 10 $ une fois (3 Mac, mises à jour à vie) ajoute masquer/quitter, les modes personnalisés, le renommage et les applications épinglées. macOS 15 ou plus, Apple Silicon et Intel ; installable par <code>brew install --cask sxitch</code>, et les sources sont publiées.<br />
+→ https://sxitch.app/</p>
+<h3>Wilt — un arbre pousse pendant qu'on travaille, et fane si on ouvre YouTube</h3>
+<p>Application de concentration native : on choisit 25, 50 ou 90 minutes depuis la barre de menus, un arbre pousse dans un coin de l'écran, au-dessus des fenêtres ; ouvrir un site de la liste le fait faner, avec dix secondes pour revenir avant que les feuilles ne tombent et que le tronc sec ne rejoigne le jardin. Wilt lit l'adresse de l'onglet au premier plan (Safari, Chrome, Arc, Brave, Edge, Vivaldi), propose un minuteur Pomodoro et un mode « Deep Focus » qui masque les applications et sites listés. Trois séances gratuites, puis 9,99 $ une fois ; macOS 14 ou plus ; rien ne quitte la machine.<br />
+→ https://wiltmac.com/</p>
+<h3>Sky — fond d'écran vivant qui suit le soleil et les étoiles</h3>
+<p>Fond d'écran macOS animé : le Soleil traverse le bureau en temps réel selon l'heure, et la nuit découvre un champ d'étoiles calculé pour la position géographique de l'utilisateur. L'auteur le présente comme complémentaire des fonds dynamiques classiques, plus continu dans la course du Soleil. Je n'ai pas trouvé de page officielle permettant de vérifier le prix ni la licence : à considérer comme non établi avant installation.<br />
+→ https://www.reddit.com/r/macapps/comments/1y1ih8g/i_built_sky_a_live_mac_wallpaper_that_follows_the/</p>
+<h3>CalendarCascade — frise calendaire continue et widgets de bureau</h3>
+<p>Application de calendrier pensée pour les personnes qui perdent la notion du temps : une chronologie continue plutôt qu'une grille mensuelle, plus des widgets de bureau alimentés par Apple Calendar. L'application écoute les modifications du calendrier, met à jour les données des widgets et demande leur rafraîchissement. Le fil annonce aussi un réglage de portée sur douze mois. Prix non établi (aucune page officielle trouvée).<br />
+→ https://www.reddit.com/r/macapps/comments/1y1lm04/calendarcascade_a_continuous_calendar_timeline/</p>
+<h3>SpacialStage — fonds d'écran en parallaxe 3D</h3>
+<p>Application de l'App Store qui découpe une image en couches et les décale pour donner une impression de profondeur au pointeur ou au visage, avec flou d'arrière-plan réglable pour l'effet bokeh. Bibliothèque de fonds, un réglage par espace de travail dans la version Pro. Essai gratuit de 7 jours, puis 4,99 $ pour le niveau standard et 9,99 $ pour le Pro (ou 4,99 $ de plus en mise à niveau) — achat unique, pas d'abonnement. macOS, suivi caméra optionnel plus gourmand que le pointeur.<br />
+→ https://apps.apple.com/us/app/spacial-stage/id6814268815</p>
+<h3>Proled Notch — panneau qui sort de l'encoche</h3>
+<p>Petit panneau qui se déploie depuis l'encoche du MacBook. Selon l'annonce, le téléchargement est gratuit et la version Pro coûte 5,99 € une fois. Je n'ai pas retrouvé la page officielle de l'éditeur pour confirmer le prix ni la licence : à vérifier sur place avant d'installer.<br />
+→ https://www.reddit.com/r/macapps/comments/1y134g0/proled_notch_a_panel_that_grows_out_of_your_macs/</p>
+<h3>Easy Caption Pro — sous-titres hors ligne sur Mac</h3>
+<p>Application qui transcrit une vidéo directement sur la machine puis permet de styliser et animer les sous-titres, avec une chronologie mot à mot, des segments, des modèles et un éditeur de script synchronisé. Transcription hors ligne annoncée en 99 langues, sans envoi sur un serveur. Le prix n'apparaît pas sur la page d'accueil et la page de tarifs ne répond pas : à relever dans l'App Store avant de s'engager.<br />
+→ https://easycaptionpro.com/</p>
+<h3>NovelStage — studio 3D pour romans visuels et bandes dessinées</h3>
+<p>Studio 3D pour Mac : on crée un personnage une fois (corps, peau, cheveux, tatouages, vêtements), on le pose et on l'habille dans des décors, puis on rend des images destinées à un roman visuel, une bande dessinée ou une histoire. Le contenu annoncé est conséquent pour un outil d'illustration : 51 poses, plus de 60 tenues, 16 décors extérieurs et plus de 5 000 objets. Disponible sur le Mac App Store, gratuit avec une extension Pro facultative (prix de la version Pro non vérifié).<br />
+→ https://radiantbeargames.com/novelstage</p>
+<h3>AskEditor — greffon d'IA qui monte dans Final Cut Pro</h3>
+<p>Greffon qui branche Claude sur la timeline ouverte dans Final Cut Pro : on demande en parlant de couper les silences et les hésitations, d'habiller les sous-titres au style du client ou d'aligner une caméra B, et les coupes arrivent comme des plans Final Cut, sans export ni réimport. Fonctionne sur Final Cut Pro 12.4 ou plus et Mac Apple Silicon ; la transcription se fait sur la machine. Gratuit jusqu'à 50 modifications vocales par mois, puis formule payante dont le tarif n'est pas publié — c'est un service en ligne, pas un logiciel libre.<br />
+→ https://askeditor.com/final-cut-pro</p>
+<h3>ctrlhq — boîte à outils dans l'encoche, dictée locale comprise</h3>
+<p>Application native qui installe dans l'encoche les fonctions que le Mac possède déjà mais qu'on n'utilise pas : dictée et transcription sur l'appareil (Apple Intelligence), tâches, minuteurs, presse-papiers, étagère de fichiers, enregistrement d'écran, notes de réunion et un chat nommé Nook. L'auteur la situe entre Boring Notch (gratuit, plus léger) et NotchNook (25 $ ou 3 $ par mois) en couvrant beaucoup plus de fonctions. 24,99 $ une fois au lancement (29 $ ensuite), un Mac, mises à jour à vie, pas d'abonnement ni d'essai — c'est le seul vrai achat de la sélection, à vous de juger s'il les vaut.<br />
+→ https://ctrlhq.app</p>
+<h3>DeNotch — masquer l'encoche, ranger la barre de menus</h3>
+<p>Masque l'encoche du MacBook derrière une barre noire qui tient sur n'importe quel fond d'écran, y compris dynamiques, range les icônes de la barre de menus derrière un chevron et place des widgets (et un chat) à côté de l'encoche, sans modifier les fichiers du système. Bêta gratuite, macOS récent. Le prix de la version finale n'est pas annoncé.<br />
+→ https://denotch.app/</p>
+<h3>Verge: Corner Controls — régler le volume et la luminosité d'un geste dans un coin</h3>
+<p>Utilitaire qui transforme un balayage dans un coin de l'écran en réglage de luminosité, de volume et d'autres paramètres. L'information disponible se limite à sa fiche Product Hunt : ni prix, ni licence, ni lien vers un site d'éditeur n'y figurent, je ne peux donc rien affirmer de plus.<br />
+→ https://www.producthunt.com/products/verge-corner-controls</p>
+<h3>Resurf — base de connaissances et gestionnaire de signets pour Mac</h3>
+<p>Présenté comme une base de connaissances personnelle et un gestionnaire de marque-pages pour Mac. La fiche Product Hunt ne donne ni tarif, ni licence, ni dépôt ; à ouvrir soi-même si le sujet vous intéresse.<br />
+→ https://www.producthunt.com/products/resurf-2</p>
+<h3>Omi CLI — agent de codage en terminal, treize modèles</h3>
+<p>Agent de codage en ligne de commande qui propose treize modèles au choix. La fiche Product Hunt ne précise ni les modèles exacts, ni le prix, ni la licence : c'est une nouveauté à regarder, pas encore une recommandation.<br />
+→ https://www.producthunt.com/products/omi-cli</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>StepGrab 1.7 — tous les formats d'export gratuits sur Mac</h3>
+<p>Le créateur de guides pas à pas automatique (une capture à chaque clic, flèches numérotées) rend gratuits tous les formats d'export sur Mac — GIF, PDF, MP4, HTML, Markdown, vidéo mobile — avec seulement une petite mention « Made with stepgrab.net ». Capture hors ligne, aucune image envoyée ; macOS 14 ou plus, aussi dans le Mac App Store.<br />
+→ https://stepgrab.net/</p>
+<h3>Unclutter 2.3 — refonte complète de l'étagère</h3>
+<p>Mise à jour majeure de l'étagère de fichiers, notes et presse-papiers : fenêtre redimensionnable librement, apparence rafraîchie pour macOS 27, 22 nouvelles actions Raccourcis, recherche dans l'historique du presse-papiers, notes Markdown, captures d'écran enregistrées dans l'étagère plutôt que sur le bureau, et 200 à 300 Mo de mémoire vive en moins. Application payante (Mac App Store et Setapp, tarif non relevé ici).<br />
+→ https://www.reddit.com/r/macapps/comments/1y1gkis/just_released_unclutter_23_with_improvements_to/</p>
+<h3>Casks Homebrew — versions notables du week-end</h3>
+<p>Parmi les casks mis à jour : <strong>Stirling PDF</strong> 3.5.0 (boîte à outils PDF libre), <strong>Osaurus</strong> 1.0.10 (serveur de modèles local), <strong>Open Science</strong> 1.3.3, <strong>Textus</strong> 1.4.6, <strong>Koharu</strong> 0.91.0. Rien de nouveau côté casks ajoutés : le journal des nouveautés Homebrew est vide.</p>
+<hr />
+<h2>Volume</h2>
+<p>23 fils r/macapps et 38 entrées de flux publiés entre le 19 et le 22 novembre (plus 6 entrées de plus de quatre jours écartées d'office), 20 retenues, 41 écartées — promotions de Black Friday, rumeurs Apple, questions et avis, billets sans annonce. Les 80 casks Homebrew de l'intervalle sont des mises à jour de version, sans ajout d'application. Collecte Reddit fonctionnelle (dernier relevé le 22 novembre à 21 h 50 UTC, aucun échec signalé).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Dix-sept applications nouvelles, dont trois libres et gratuites (OpenShelf, Gitā, CurlGo) et quatre à achat unique de 5 à 10 dollars ; le reste est gratuit avec option payante, ou à tarif non publié.<br />
+Deux mises à jour notables : StepGrab 1.7 rend tous les formats d'export gratuits, Unclutter 2.3 se refait une jeunesse.<br />
+À signaler hors applications : Microsoft arrêtera Microsoft To Do le 30 juin 2027 au profit de Planner, sans équivalent personnel — l'occasion de choisir dès maintenant un gestionnaire de tâches pérenne.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>OpenShelf — roue d'actions autour du fichier qu'on glisse</h3>
+<p>Utilitaire de barre de menus : on commence à glisser n'importe quel fichier, on appuie sur une touche, et une roue s'ouvre pour convertir, éditer, envoyer par AirDrop ou mettre de côté. Tout se passe hors ligne. Gratuit et open source, licence MIT, 245 étoiles, dernière mise à jour le 19 novembre 2026, écrit en Swift.<br />
+→ https://github.com/Manan-Santoki/OpenShelf<br />
+→ annonce : https://www.reddit.com/r/macapps/comments/1y2aa9g/os_openshelf_drag_any_file_tap_a_key_and_a_wheel/</p>
+<h3>Gitā — client Git natif qui montre le travail des agents de codage</h3>
+<p>Client Git macOS centré sur l'historique d'un dépôt : un seul graphe réunit branches, demandes de tirage, vérifications CI, déploiements Vercel et l'état des agents de codage qui travaillent dans le dépôt (branche, sous-agents, travaux en cours, « needs input »). Version 0.1.0, gratuite et open source, licence MIT, 14 étoiles, mise à jour le 21 novembre 2026. C'est encore un tout jeune projet : à essayer sans en attendre la solidité de GitHub Desktop.<br />
+→ https://getgita.app/ — dépôt : https://github.com/clever-mechanisms/gita</p>
+<h3>CurlGo — client HTTP natif de 5 Mo</h3>
+<p>Client d'API natif (Go, interface native) qui réunit HTTP, SSE et WebSocket dans un même espace de travail, avec import et export de commandes curl : le successeur léger de Postman pour qui veut éviter l'application à plugiciels. L'installateur macOS ne pèse que 4,97 Mo, signé et notarié ; Windows existe en x64 et ARM64. Gratuit et open source, licence MIT, 5 étoiles, dernière poussée le 16 novembre 2026. Attention : l'installateur macOS est réservé à Apple Silicon, les Mac Intel passent par les sources.<br />
+→ https://curlgo.echovic.com/en/ — dépôt : https://github.com/echoVic/curlgo</p>
+<h3>Sxitch — remplaçant de ⌘ Tab par arbre de lettres</h3>
+<p>Commutateur d'applications : on appuie sur une touche de tête, on tape les premières lettres du nom de l'application, et Sxitch bascule dès qu'il ne reste qu'une correspondance ; un second appui choisit la fenêtre quand il y en a plusieurs. Le gratuit couvre déjà toutes les vues (grille, liste, radiale), tous les thèmes et le changement par arbre ; le Pro à 10 $ une fois (3 Mac, mises à jour à vie) ajoute masquer/quitter, les modes personnalisés, le renommage et les applications épinglées. macOS 15 ou plus, Apple Silicon et Intel ; installable par <code>brew install --cask sxitch</code>, et les sources sont publiées.<br />
+→ https://sxitch.app/</p>
+<h3>Wilt — un arbre pousse pendant qu'on travaille, et fane si on ouvre YouTube</h3>
+<p>Application de concentration native : on choisit 25, 50 ou 90 minutes depuis la barre de menus, un arbre pousse dans un coin de l'écran, au-dessus des fenêtres ; ouvrir un site de la liste le fait faner, avec dix secondes pour revenir avant que les feuilles ne tombent et que le tronc sec ne rejoigne le jardin. Wilt lit l'adresse de l'onglet au premier plan (Safari, Chrome, Arc, Brave, Edge, Vivaldi), propose un minuteur Pomodoro et un mode « Deep Focus » qui masque les applications et sites listés. Trois séances gratuites, puis 9,99 $ une fois ; macOS 14 ou plus ; rien ne quitte la machine.<br />
+→ https://wiltmac.com/</p>
+<h3>Sky — fond d'écran vivant qui suit le soleil et les étoiles</h3>
+<p>Fond d'écran macOS animé : le Soleil traverse le bureau en temps réel selon l'heure, et la nuit découvre un champ d'étoiles calculé pour la position géographique de l'utilisateur. L'auteur le présente comme complémentaire des fonds dynamiques classiques, plus continu dans la course du Soleil. Je n'ai pas trouvé de page officielle permettant de vérifier le prix ni la licence : à considérer comme non établi avant installation.<br />
+→ https://www.reddit.com/r/macapps/comments/1y1ih8g/i_built_sky_a_live_mac_wallpaper_that_follows_the/</p>
+<h3>CalendarCascade — frise calendaire continue et widgets de bureau</h3>
+<p>Application de calendrier pensée pour les personnes qui perdent la notion du temps : une chronologie continue plutôt qu'une grille mensuelle, plus des widgets de bureau alimentés par Apple Calendar. L'application écoute les modifications du calendrier, met à jour les données des widgets et demande leur rafraîchissement. Le fil annonce aussi un réglage de portée sur douze mois. Prix non établi (aucune page officielle trouvée).<br />
+→ https://www.reddit.com/r/macapps/comments/1y1lm04/calendarcascade_a_continuous_calendar_timeline/</p>
+<h3>SpacialStage — fonds d'écran en parallaxe 3D</h3>
+<p>Application de l'App Store qui découpe une image en couches et les décale pour donner une impression de profondeur au pointeur ou au visage, avec flou d'arrière-plan réglable pour l'effet bokeh. Bibliothèque de fonds, un réglage par espace de travail dans la version Pro. Essai gratuit de 7 jours, puis 4,99 $ pour le niveau standard et 9,99 $ pour le Pro (ou 4,99 $ de plus en mise à niveau) — achat unique, pas d'abonnement. macOS, suivi caméra optionnel plus gourmand que le pointeur.<br />
+→ https://apps.apple.com/us/app/spacial-stage/id6814268815</p>
+<h3>Proled Notch — panneau qui sort de l'encoche</h3>
+<p>Petit panneau qui se déploie depuis l'encoche du MacBook. Selon l'annonce, le téléchargement est gratuit et la version Pro coûte 5,99 € une fois. Je n'ai pas retrouvé la page officielle de l'éditeur pour confirmer le prix ni la licence : à vérifier sur place avant d'installer.<br />
+→ https://www.reddit.com/r/macapps/comments/1y134g0/proled_notch_a_panel_that_grows_out_of_your_macs/</p>
+<h3>Easy Caption Pro — sous-titres hors ligne sur Mac</h3>
+<p>Application qui transcrit une vidéo directement sur la machine puis permet de styliser et animer les sous-titres, avec une chronologie mot à mot, des segments, des modèles et un éditeur de script synchronisé. Transcription hors ligne annoncée en 99 langues, sans envoi sur un serveur. Le prix n'apparaît pas sur la page d'accueil et la page de tarifs ne répond pas : à relever dans l'App Store avant de s'engager.<br />
+→ https://easycaptionpro.com/</p>
+<h3>NovelStage — studio 3D pour romans visuels et bandes dessinées</h3>
+<p>Studio 3D pour Mac : on crée un personnage une fois (corps, peau, cheveux, tatouages, vêtements), on le pose et on l'habille dans des décors, puis on rend des images destinées à un roman visuel, une bande dessinée ou une histoire. Le contenu annoncé est conséquent pour un outil d'illustration : 51 poses, plus de 60 tenues, 16 décors extérieurs et plus de 5 000 objets. Disponible sur le Mac App Store, gratuit avec une extension Pro facultative (prix de la version Pro non vérifié).<br />
+→ https://radiantbeargames.com/novelstage</p>
+<h3>AskEditor — greffon d'IA qui monte dans Final Cut Pro</h3>
+<p>Greffon qui branche Claude sur la timeline ouverte dans Final Cut Pro : on demande en parlant de couper les silences et les hésitations, d'habiller les sous-titres au style du client ou d'aligner une caméra B, et les coupes arrivent comme des plans Final Cut, sans export ni réimport. Fonctionne sur Final Cut Pro 12.4 ou plus et Mac Apple Silicon ; la transcription se fait sur la machine. Gratuit jusqu'à 50 modifications vocales par mois, puis formule payante dont le tarif n'est pas publié — c'est un service en ligne, pas un logiciel libre.<br />
+→ https://askeditor.com/final-cut-pro</p>
+<h3>ctrlhq — boîte à outils dans l'encoche, dictée locale comprise</h3>
+<p>Application native qui installe dans l'encoche les fonctions que le Mac possède déjà mais qu'on n'utilise pas : dictée et transcription sur l'appareil (Apple Intelligence), tâches, minuteurs, presse-papiers, étagère de fichiers, enregistrement d'écran, notes de réunion et un chat nommé Nook. L'auteur la situe entre Boring Notch (gratuit, plus léger) et NotchNook (25 $ ou 3 $ par mois) en couvrant beaucoup plus de fonctions. 24,99 $ une fois au lancement (29 $ ensuite), un Mac, mises à jour à vie, pas d'abonnement ni d'essai — c'est le seul vrai achat de la sélection, à vous de juger s'il les vaut.<br />
+→ https://ctrlhq.app</p>
+<h3>DeNotch — masquer l'encoche, ranger la barre de menus</h3>
+<p>Masque l'encoche du MacBook derrière une barre noire qui tient sur n'importe quel fond d'écran, y compris dynamiques, range les icônes de la barre de menus derrière un chevron et place des widgets (et un chat) à côté de l'encoche, sans modifier les fichiers du système. Bêta gratuite, macOS récent. Le prix de la version finale n'est pas annoncé.<br />
+→ https://denotch.app/</p>
+<h3>Verge: Corner Controls — régler le volume et la luminosité d'un geste dans un coin</h3>
+<p>Utilitaire qui transforme un balayage dans un coin de l'écran en réglage de luminosité, de volume et d'autres paramètres. L'information disponible se limite à sa fiche Product Hunt : ni prix, ni licence, ni lien vers un site d'éditeur n'y figurent, je ne peux donc rien affirmer de plus.<br />
+→ https://www.producthunt.com/products/verge-corner-controls</p>
+<h3>Resurf — base de connaissances et gestionnaire de signets pour Mac</h3>
+<p>Présenté comme une base de connaissances personnelle et un gestionnaire de marque-pages pour Mac. La fiche Product Hunt ne donne ni tarif, ni licence, ni dépôt ; à ouvrir soi-même si le sujet vous intéresse.<br />
+→ https://www.producthunt.com/products/resurf-2</p>
+<h3>Omi CLI — agent de codage en terminal, treize modèles</h3>
+<p>Agent de codage en ligne de commande qui propose treize modèles au choix. La fiche Product Hunt ne précise ni les modèles exacts, ni le prix, ni la licence : c'est une nouveauté à regarder, pas encore une recommandation.<br />
+→ https://www.producthunt.com/products/omi-cli</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>StepGrab 1.7 — tous les formats d'export gratuits sur Mac</h3>
+<p>Le créateur de guides pas à pas automatique (une capture à chaque clic, flèches numérotées) rend gratuits tous les formats d'export sur Mac — GIF, PDF, MP4, HTML, Markdown, vidéo mobile — avec seulement une petite mention « Made with stepgrab.net ». Capture hors ligne, aucune image envoyée ; macOS 14 ou plus, aussi dans le Mac App Store.<br />
+→ https://stepgrab.net/</p>
+<h3>Unclutter 2.3 — refonte complète de l'étagère</h3>
+<p>Mise à jour majeure de l'étagère de fichiers, notes et presse-papiers : fenêtre redimensionnable librement, apparence rafraîchie pour macOS 27, 22 nouvelles actions Raccourcis, recherche dans l'historique du presse-papiers, notes Markdown, captures d'écran enregistrées dans l'étagère plutôt que sur le bureau, et 200 à 300 Mo de mémoire vive en moins. Application payante (Mac App Store et Setapp, tarif non relevé ici).<br />
+→ https://www.reddit.com/r/macapps/comments/1y1gkis/just_released_unclutter_23_with_improvements_to/</p>
+<h3>Casks Homebrew — versions notables du week-end</h3>
+<p>Parmi les casks mis à jour : <strong>Stirling PDF</strong> 3.5.0 (boîte à outils PDF libre), <strong>Osaurus</strong> 1.0.10 (serveur de modèles local), <strong>Open Science</strong> 1.3.3, <strong>Textus</strong> 1.4.6, <strong>Koharu</strong> 0.91.0. Rien de nouveau côté casks ajoutés : le journal des nouveautés Homebrew est vide.</p>
+<hr />
+<h2>Volume</h2>
+<p>23 fils r/macapps et 38 entrées de flux publiés entre le 19 et le 22 novembre (plus 6 entrées de plus de quatre jours écartées d'office), 20 retenues, 41 écartées — promotions de Black Friday, rumeurs Apple, questions et avis, billets sans annonce. Les 80 casks Homebrew de l'intervalle sont des mises à jour de version, sans ajout d'application. Collecte Reddit fonctionnelle (dernier relevé le 22 novembre à 21 h 50 UTC, aucun échec signalé).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — dimanche 22 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-22.html</link>
