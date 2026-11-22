@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — lundi 23 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Muru, du créateur de mod_wsgi, apporte à Python les livraisons sans coupure : un serveur Rust, en alpha, Apache-2.0.</li>
+<li>PcapAnalyzer nomme la panne dans une capture réseau parmi 27 détecteurs, exécuté chez soi, sans que la capture sorte du réseau local.</li>
+<li>ZeroBurn et Worker 755, deux projets de moins de trois jours : l'un traque les jetons gaspillés des agents de codage, l'autre se joue dans le navigateur en tenant le rôle du sous-agent d'une IA.</li>
+</ul>
+<h2>Applications et outils nouveaux</h2>
+<h3>Muru — un serveur Rust pour applications Python, par l'auteur de mod_wsgi</h3>
+<p>Graham Dumpleton, qui a écrit mod_wsgi il y a vingt ans, publie Muru : une arête de routage en Rust doublée d'un plan de contrôle et d'un exécuteur Python, servant indifféremment WSGI et ASGI. Le point notable est la livraison : chaque version démarre à côté de la précédente — éventuellement sur une autre version de Python — et le trafic bascule quand elle est prête, avec canaris pondérés, prévisualisations, bascule bleu/vert et retour arrière immédiat, sans redémarrage. La gestion des processus comprend Python (préchargement avec vérification d'import, groupes de travailleurs, limites mémoire, délais souples et durs, Python sans GIL), et un serveur MCP permet à un agent de codage de déployer chaque changement, de le tester, de lire ce que Muru observe en cas d'échec et d'annuler. Alpha assumée : préversions 0.1.0 sur PyPI, commandes et configuration susceptibles de changer ; installation par <code>uv tool install muructl</code>, ou essai sans rien installer avec les ateliers Jupyter du dépôt. Apache-2.0, 85 étoiles, dernier commit le 21 novembre 2026 : https://github.com/muruhq/muru — documentation https://docs.muruhq.dev/ — vu aussi chez Simon Willison, https://simonwillison.net/2026/Nov/21/muru/</p>
+<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture, sans la sortir de chez soi</h3>
+<p>Application libre, auto-hébergée (Docker), qui prend une capture <code>.pcap</code> ou <code>.pcapng</code> et la passe à 27 détecteurs, chacun rendant une gravité et l'étape suivante : blocages de pare-feu voyant un SYN partir en RST, retransmissions et réordonnancements TCP, trous noirs PMTUD, MSS trop faible, fragmentation, DNS sans réponse ou en SERVFAIL, DHCP en NAK, adresses IP dupliquées, tempêtes ARP, erreurs HTTP, alertes TLS, versions SSL 3.0 et TLS 1.0/1.1, tunnels WireGuard, OpenVPN, IPsec, GRE et L2TP à sens unique ou qui renégocient sans fin, scans de ports, identifiants en clair. Il prévient d'abord des défauts de la capture elle-même — trafic vu dans un seul sens, trames dupliquées par un port miroir, paquets tronqués — ce qui évite de conclure à une panne qui n'existe pas dans les données. L'enquête par IA est facultative et demande une clé Anthropic personnelle ; sans clé, un mode démonstration déroule le même parcours sans frais, avec des textes issus de l'analyse. Vues façon Wireshark (filtres d'affichage réels, tables HTTP/DNS/DHCP/TLS, chronophotographie des échanges), rapport PDF, interface en français et en espagnol. Apache-2.0, 207 étoiles, dernier commit le 21 novembre 2026, encore en bêta ; l'application n'écoute que sur 127.0.0.1 : https://github.com/sebaandrada-cell/PcapAnalyzer (démonstration sans installation : https://pcap-analyzer-seven.vercel.app/#demo)</p>
+<h3>ZeroBurn — réduire la dépense de jetons des agents de codage</h3>
+<p>Projet publié le 20 novembre, qui s'installe dans un dépôt sous <code>.agents/</code> et s'intercale entre l'agent (Claude, Gemini, OpenAI, Cursor) et le code : il remplace les journaux de tests et les listings de fichiers par des condensés de quelques lignes, fait les vérifications déterministes par analyse syntaxique sans aucun jeton, interroge un graphe de code local, et déporte la relecture des différences vers un modèle Ollama local. L'auteur annonce 70 à 83 % de jetons en moins sur son propre banc d'essai, et donne une commande de démonstration à lancer dans n'importe quel dépôt ; le titre de l'annonce sur Hacker News promet 98 %, chiffre que le fichier README ne reprend pas — l'écart mérite d'être mesuré soi-même. MIT, 5 étoiles, dernier commit le 22 novembre 2026, 2 points sur Hacker News et aucune validation indépendante : à considérer comme une piste à éprouver, pas comme un résultat acquis. https://github.com/thoufeeque22/zeroburn</p>
+<h3>Worker 755 — un jeu de navigateur où l'on est le sous-agent d'une IA</h3>
+<p>Le « manager » du jeu est un vrai modèle (Claude, GPT, Gemini, DeepSeek, GLM, Kimi) monté comme un orchestrateur : file de tâches, accès en lecture à la machine, outil qui « lance un sous-agent ». Le sous-agent, c'est le joueur : les instructions arrivent dans son terminal avec 90 secondes pour les exécuter, et le modèle reçoit en retour exactement ce qu'un sous-agent renverrait — compte rendu et journal des commandes, ou « le sous-agent n'a rien fait ». Il vérifie ensuite le travail, envoie des corrections, ouvre des rapports d'incident et finit par rédiger l'évaluation annuelle. Le jeu se lance chez soi (Node 24), fonctionne hors ligne avec un manager scripté, et accepte un modèle local par <code>LOCAL_LLM_URL</code> (Ollama, llama.cpp, vLLM), à condition qu'il sache appeler des outils. MIT, 113 étoiles, dernier commit le 22 novembre 2026 : https://github.com/gulivan/worker755 — à jouer sur https://worker755.com. Incertitude à signaler : les « shifts » gratuits sur le serveur de l'auteur sont contingentés (un compte reçoit de quoi jouer environ un shift, puis une recharge de 10 à 200 dollars) ; en auto-hébergement, il n'y a que le coût du modèle choisi, quelques centimes par partie avec un petit modèle.</p>
+<h3>Banc d'essai vLLM/SGLang sur un seul A100 — un harnais et ses résultats</h3>
+<p>Harnais de montée en pente sur Kubernetes qui fait varier automatiquement les paramètres de vLLM et de SGLang : un pod par essai pour isoler le GPU, calibrage du bruit de mesure à 3 sigma, essais de confirmation appariés, recherche de capacité en régime établi sur sept à neuf minutes, et garde-fous de qualité (GSM8K, récupération de clé en contexte long, vraisemblance des jetons comparée au BF16). Le dépôt contient l'étude complète — 337 essais, une base SQLite de plus de 400 lignes, dix graphiques — et les configurations gagnantes avec les commandes de service prêtes à copier pour un Nanbeige4.3-33B sur un A100 80 Go. Utile à qui fait tourner son propre serveur d'inférence ; deux entrées sur Hacker News (1 et 2 points), 1 étoile, dernier commit le 22 novembre 2026, et surtout aucune licence déclarée : le code est lisible, les résultats utilisables, mais rien ne l'autorise formellement à être réutilisé. https://github.com/johnsonshi/a100-inference-hillclimb</p>
+<h2>Extensions et greffons</h2>
+<h3>llm-gemini 0.38.1 — le palier de raisonnement « xhigh » sur Gemini 4 Hydrogen et Neon</h3>
+<p>Correctif de la version 0.38 : le greffon <code>llm-gemini</code>, qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code> de Simon Willison, proposait les paliers low, medium et high pour les trois modèles Gemini 4, sans tenir compte du palier <code>xhigh</code> que Hydrogen et Neon acceptent (Carbon, non). Le réglage n'est pas cosmétique : l'auteur mesure, sur Hydrogen, 5 311 jetons de sortie pour 3,99 cents au palier high, contre 31 477 jetons et 23,61 cents en xhigh, pour un résultat jugé compétitif avec Gemini 4 Neon. Mise à jour par <code>llm install -U llm-gemini</code> : https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
+<h2>Volume</h2>
+<p>49 entrées lues dans l'intervalle (journal du subreddit relayé par Hacker News et Lobsters, plus les flux Hugging Face, Simon Willison, Hacker News à 10 points et plus, et It's FOSS), 8 retenues formant 6 sujets après regroupement, 41 écartées — dont Owl OS, écarté pour cause de licence propriétaire malgré sa présentation comme alternative à Kali Linux, et Leonida, la recompilation PC de GTA VI, dont le jeu ne démarre pas encore.</p>
+<footer>Édition du lundi 23 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
