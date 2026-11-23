@@ -6,9 +6,143 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 05:59:45 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:14:21 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-24.html</link>
+<guid isPermaLink="false">macapps-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:14:21 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention cette nuit — la collecte s'est achevée à minuit, les nouveaux fils ne sont pas encore dans les journaux. L'édition suivante prendra le relais dès que les prochains relevers seront passés.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p>Aucune nouvelle annonce détectée depuis l'édition d'hier. Les items retenus la veille restent en attente de traitement complet :</p>
+<ul>
+<li><strong>Chocky</strong> — assistant IA hors-ligne et traducteur Mandarin/Cantonais, 0,99 $ une fois (<a href="https://chocky.app">chocky.app</a>)</li>
+<li><strong>NO SPEAKER</strong> — pavé tactile qui parle via son moteur haptique, gratuit MIT, 1200 étoiles GitHub (<a href="https://github.com/os6/nospeaker">github.com/os6/nospeaker</a>)</li>
+<li><strong>Lume</strong> — gestionnaire de recettes et mode cuisine pour Mac/iOS/Watch, disponible sur la Mac App Store</li>
+<li><strong>TideGlass</strong> — mondes vivants animés, 10 mondes gratuits + débloquements à 12 $ (<a href="https://tideglass.app">tideglass.app</a>)</li>
+<li><strong>Auralyn</strong> — lecteur centralisé musique/films, essai 14 jours, CA$29,99 à vie (<a href="https://ironlabstech.com/auralyn">ironlabstech.com/auralyn</a>)</li>
+<li><strong>VelaTerm</strong> — terminal multiplexer et environnement agentic, libre MIT (<a href="https://velaterm.com">velaterm.com</a>)</li>
+<li><strong>FigmaMCP</strong> — laissez Claude Code ou Codex modifier vos fichiers Figma, gratuit (<a href="https://www.producthunt.com/products/figmamcp">Product Hunt</a>)</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p>Aucune.</p>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune.</p>
+<hr />
+<h2>Homebrew — nouveautés</h2>
+<p>Aucun cask nouvellement ajouté ce cycle.</p>
+<hr />
+<h2>Mention — Setapp</h2>
+<p>Aucune nouvelle newsletter reçue depuis celle du 23 novembre (AtAt, PocketWebTools, BX).</p>
+<hr />
+<h2>Volume</h2>
+<p>Zéro post publié dans l'intervalle. Collecte en attente du prochain cycle toutes les deux heures.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Rien de nouveau qui mérite votre attention cette nuit — la collecte s'est achevée à minuit, les nouveaux fils ne sont pas encore dans les journaux. L'édition suivante prendra le relais dès que les prochains relevers seront passés.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p>Aucune nouvelle annonce détectée depuis l'édition d'hier. Les items retenus la veille restent en attente de traitement complet :</p>
+<ul>
+<li><strong>Chocky</strong> — assistant IA hors-ligne et traducteur Mandarin/Cantonais, 0,99 $ une fois (<a href="https://chocky.app">chocky.app</a>)</li>
+<li><strong>NO SPEAKER</strong> — pavé tactile qui parle via son moteur haptique, gratuit MIT, 1200 étoiles GitHub (<a href="https://github.com/os6/nospeaker">github.com/os6/nospeaker</a>)</li>
+<li><strong>Lume</strong> — gestionnaire de recettes et mode cuisine pour Mac/iOS/Watch, disponible sur la Mac App Store</li>
+<li><strong>TideGlass</strong> — mondes vivants animés, 10 mondes gratuits + débloquements à 12 $ (<a href="https://tideglass.app">tideglass.app</a>)</li>
+<li><strong>Auralyn</strong> — lecteur centralisé musique/films, essai 14 jours, CA$29,99 à vie (<a href="https://ironlabstech.com/auralyn">ironlabstech.com/auralyn</a>)</li>
+<li><strong>VelaTerm</strong> — terminal multiplexer et environnement agentic, libre MIT (<a href="https://velaterm.com">velaterm.com</a>)</li>
+<li><strong>FigmaMCP</strong> — laissez Claude Code ou Codex modifier vos fichiers Figma, gratuit (<a href="https://www.producthunt.com/products/figmamcp">Product Hunt</a>)</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p>Aucune.</p>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune.</p>
+<hr />
+<h2>Homebrew — nouveautés</h2>
+<p>Aucun cask nouvellement ajouté ce cycle.</p>
+<hr />
+<h2>Mention — Setapp</h2>
+<p>Aucune nouvelle newsletter reçue depuis celle du 23 novembre (AtAt, PocketWebTools, BX).</p>
+<hr />
+<h2>Volume</h2>
+<p>Zéro post publié dans l'intervalle. Collecte en attente du prochain cycle toutes les deux heures.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille ArtCraft — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-24.html</link>
+<guid isPermaLink="false">artcraft-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:01:34 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>ArtCraft Studio a publié la version 0.3.31 avec des améliorations importantes de l'Agent Beta. La communauté propose ModCraft, un outil d'aide au développement de plugins, et CraftLook étend les aperçus macOS aux projets ArtCraft. Le plugin Stream Deck pour LightCraft gagne en maturité.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft Studio 0.3.31 — Agent Beta amélioré</h3>
+<p>L'équipe publie la version 0.3.31 de l'application desktop, centrée sur des améliorations de l'Agent Beta (le mode agent est désormais optionnel à activer) : meilleure compréhension des instructions utilisateur, gestion affinée de l'édition annotée (dessins, esquisses, encadrements ou flèches dessinés directement sur la couche image), possibilité de pointer EggLab vers une configuration OpenCode existante ou vers d'autres modèles de la famille Qwen-Image 2.1, contournement de l'Agent via <code>/invocation</code> pour envoyer une invite directe au modèle, et sessions de discussion et gestion de documents plus stables. Problème connu signalé : l'édition d'images peut parfois rencontrer des erreurs. Post officiel par AdditionCorrect2929 sur r/ArtCraftAI (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y28zd7/update/">lien</a>).</p>
+<h3>ModCraft — Outil de développement de plugins assisté par IA</h3>
+<p>La communauté annonce ModCraft, un outil interne visant à simplifier la création de plugins pour l'écosystème ArtCraft. L'utilisateur sélectionne l'app cible dans un menu déroulant, charge les instructions de l'agent IA vérifié de cette application (API hooks, schéma manifeste, règles interface, limites sandboxing), décrit le comportement du plugin à l'agent IA dans une session unique, puis déploie le plugin directement dans le répertoire plugins de l'app hôte avec incrément automatique de version et rechargement instantané. Flux basé sur un post Discord partagé sur Reddit par Eduliz (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y1895k/app_request_modcraft/">lien</a>).</p>
+<h3>PDFCraft v0.22.0 — Correction résolution impression</h3>
+<p>PDFCraft publie la version 0.22.0 qui résout le problème de résolution d'impression longtempssignalé. Ce fil marque l'une des entrées les plus votées de l'édition actuelle avec 617 upvotes et 42 commentaires, signe d'un besoin très attendu par la communauté. YEEG4R rapporte qu'il se débarrasse désormais des autres logiciels PDF (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">lien</a>).</p>
+<h3>VectorCraft sous FreeBSD — Exécution native sans daemon</h3>
+<p>WordCraft fonctionne maintenant sous FreeBSD avec fjord, conteneurs OCI natifs via AppJail — sans daemon requis. Cette capacité d'exécution s'étend à l'ensemble de la suite ArtCraft sur cette plateforme alternative, ajoutée au support Linux/macOS/Windows déjà couvert. Poste de grahamperrin sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2u96y/wordcraft_in_firefox_with_fjord/">lien</a>).</p>
+<h3>ArtCraft sur LibreNT — Compatibilité Windows open-source confirmée</h3>
+<p>Les applications ArtCraft fonctionnent sur LibreNT, système open-source compatible Windows. L'utilisateur Interesting_Ad_5676 confirme que plusieurs applis tournent sans problème sur le dernier ISO installé. Ce retour élargit la liste des systèmes compatibles confirmés par la communauté (Linux, macOS, Windows, FreeBSD, LibreNT). 64 upvotes, 10 commentaires (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/">lien</a>).</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>CraftLook — Vignettes et aperçus Finder macOS</h3>
+<p>Roccobot développe CraftLook, une application macOS gratuite offrant de vraies miniatures dans la vue icône, colonne et galerie du Finder, ainsi qu'un aperçu complet au appui sur Espace. Prise en charge simultanée de FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc .solidcraft), FilmCraft (.fcproj cadre tête lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj .ecprojx), SoundCraft (.scraft timeline complète), plus PSD et SVG. Le ZIP pèse environ 720 Mo (l'application ~1,6 Go décompressé) car il embarque les huit moteurs de rendu pour puces Intel et Apple. Signé et notarié Apple. Poste détaillé de Roccobot sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/">lien</a>).</p>
+<h3>Plugin Stream Deck pour LightCraft — Version disponible</h3>
+<p>ResearcherMasserMassive802 publie son plugin Stream Deck open-source pour LightCraft. Il se connecte directement au port local de LightCraft (127.0.0.1:7980) avec connexion bidirectionnelle : le deck affiche les valeurs des curseurs en direct et maintient les états des touches synchronisés. Compatible avec Stream Deck 6.5+ et OpenDeck, il couvre tous les encoders (120+ curseurs de développement, transformation/recadrage, culling, navigateur préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR…), culling (sélection, étoiles, drapeaux), masques IA (SAM 3), préréglages (application à intensité 0-200%, export) et commutateurs d'affichage. Téléchargeable depuis la page des versions. Poste de ResearcherMassive802 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">lien</a>).</p>
+<h3>Dōri v0.1.0-alpha.1 — DAW open-source Rust pour motion design</h3>
+<p>melble5 construit Dōri, une station audioration numérique open-source écrite en Rust pour l'audio de motion design, ciblant Linux et Windows. Bien que non spécifique à ArtCraft, cet outil comble un vide dans l'écosystème craft côté production audio professionnelle. Poste de melble5 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/"> lien</a>).</p>
+<h2>Autour d'ArtCraft</h2>
+<p><strong>Intégration craft-image-codecs en cours.</strong> Les commits récents (du 19 au 20 novembre) poursuivent le basculement systématique du décodage images depuis le crate <code>image</code> vers <code>craft-image-codecs</code> (partie de storytold/craft-libs#778). Sont concernés le cache média (<code>media_cache.rs</code>), le redimensionnement, le flip, la conversion PNG, et les tests de parité statique/animé entre chemins Tauri legacy et chemins Rust natif. Un correctif de build (<code>#2923</code>) a réparé une régression compile après <code>#2921</code>. Travail technique approfondi mais transparent pour l'utilisateur final — aucune nouvelle fonctionnalité visible directement.</p>
+<p><strong>Activité de maintenance CI/SonarCloud.</strong> L'équipe consacre un effort notable à la qualité du code : suppression de Promesses fire-and-forget non marquées (<code>void</code>), remplacement <code>Math.random</code> par <code>uuidv4</code>, migration <code>std::fs</code> vers <code>tokio::fs</code> en contexte asynchrone, conformité SonarCloud (S9383, S7493, S2245, S8786, S6852, S7059, S6848, S6853, S7773, S5725, S6505, S7637), sécurité GitHub Actions (Harden-Runner sur chaque job, actions StepSecurity). L'intégration continue inclut désormais une matrice complète de packages Linux (DEB, RPM, AppImage, tarball, Arch, Flatpak OCI) signés, avec FreeBSD CI. Aucun impact utilisateur direct.</p>
+<p><strong>Le futur des modèles open source.</strong> Un fil de discussion sur Reddit soulève des inquiétudes concernant la pérennité des modèles open source face aux évolutions des conditions d'utilisation des fournisseurs d'IA. 9 upvotes, 10 commentaires (DotRakianSteel, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3lgc8/the_future_of_our_open_source_models_is_safe/">lien</a>).</p>
+<p><strong>Qualité de code comparée Adobe.</strong> Un article de Software Improvement Group analyse la qualité du code ArtCraft en comparaison avec Adobe. 31 upvotes, 36 commentaires (Delicious_Recover543, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/">lien</a>).</p>
+<h2>À signaler</h2>
+<p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
+<h2>Volume</h2>
+<p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>ArtCraft Studio a publié la version 0.3.31 avec des améliorations importantes de l'Agent Beta. La communauté propose ModCraft, un outil d'aide au développement de plugins, et CraftLook étend les aperçus macOS aux projets ArtCraft. Le plugin Stream Deck pour LightCraft gagne en maturité.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>ArtCraft Studio 0.3.31 — Agent Beta amélioré</h3>
+<p>L'équipe publie la version 0.3.31 de l'application desktop, centrée sur des améliorations de l'Agent Beta (le mode agent est désormais optionnel à activer) : meilleure compréhension des instructions utilisateur, gestion affinée de l'édition annotée (dessins, esquisses, encadrements ou flèches dessinés directement sur la couche image), possibilité de pointer EggLab vers une configuration OpenCode existante ou vers d'autres modèles de la famille Qwen-Image 2.1, contournement de l'Agent via <code>/invocation</code> pour envoyer une invite directe au modèle, et sessions de discussion et gestion de documents plus stables. Problème connu signalé : l'édition d'images peut parfois rencontrer des erreurs. Post officiel par AdditionCorrect2929 sur r/ArtCraftAI (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y28zd7/update/">lien</a>).</p>
+<h3>ModCraft — Outil de développement de plugins assisté par IA</h3>
+<p>La communauté annonce ModCraft, un outil interne visant à simplifier la création de plugins pour l'écosystème ArtCraft. L'utilisateur sélectionne l'app cible dans un menu déroulant, charge les instructions de l'agent IA vérifié de cette application (API hooks, schéma manifeste, règles interface, limites sandboxing), décrit le comportement du plugin à l'agent IA dans une session unique, puis déploie le plugin directement dans le répertoire plugins de l'app hôte avec incrément automatique de version et rechargement instantané. Flux basé sur un post Discord partagé sur Reddit par Eduliz (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y1895k/app_request_modcraft/">lien</a>).</p>
+<h3>PDFCraft v0.22.0 — Correction résolution impression</h3>
+<p>PDFCraft publie la version 0.22.0 qui résout le problème de résolution d'impression longtempssignalé. Ce fil marque l'une des entrées les plus votées de l'édition actuelle avec 617 upvotes et 42 commentaires, signe d'un besoin très attendu par la communauté. YEEG4R rapporte qu'il se débarrasse désormais des autres logiciels PDF (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">lien</a>).</p>
+<h3>VectorCraft sous FreeBSD — Exécution native sans daemon</h3>
+<p>WordCraft fonctionne maintenant sous FreeBSD avec fjord, conteneurs OCI natifs via AppJail — sans daemon requis. Cette capacité d'exécution s'étend à l'ensemble de la suite ArtCraft sur cette plateforme alternative, ajoutée au support Linux/macOS/Windows déjà couvert. Poste de grahamperrin sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2u96y/wordcraft_in_firefox_with_fjord/">lien</a>).</p>
+<h3>ArtCraft sur LibreNT — Compatibilité Windows open-source confirmée</h3>
+<p>Les applications ArtCraft fonctionnent sur LibreNT, système open-source compatible Windows. L'utilisateur Interesting_Ad_5676 confirme que plusieurs applis tournent sans problème sur le dernier ISO installé. Ce retour élargit la liste des systèmes compatibles confirmés par la communauté (Linux, macOS, Windows, FreeBSD, LibreNT). 64 upvotes, 10 commentaires (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/">lien</a>).</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>CraftLook — Vignettes et aperçus Finder macOS</h3>
+<p>Roccobot développe CraftLook, une application macOS gratuite offrant de vraies miniatures dans la vue icône, colonne et galerie du Finder, ainsi qu'un aperçu complet au appui sur Espace. Prise en charge simultanée de FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc .solidcraft), FilmCraft (.fcproj cadre tête lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj .ecprojx), SoundCraft (.scraft timeline complète), plus PSD et SVG. Le ZIP pèse environ 720 Mo (l'application ~1,6 Go décompressé) car il embarque les huit moteurs de rendu pour puces Intel et Apple. Signé et notarié Apple. Poste détaillé de Roccobot sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/">lien</a>).</p>
+<h3>Plugin Stream Deck pour LightCraft — Version disponible</h3>
+<p>ResearcherMasserMassive802 publie son plugin Stream Deck open-source pour LightCraft. Il se connecte directement au port local de LightCraft (127.0.0.1:7980) avec connexion bidirectionnelle : le deck affiche les valeurs des curseurs en direct et maintient les états des touches synchronisés. Compatible avec Stream Deck 6.5+ et OpenDeck, il couvre tous les encoders (120+ curseurs de développement, transformation/recadrage, culling, navigateur préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR…), culling (sélection, étoiles, drapeaux), masques IA (SAM 3), préréglages (application à intensité 0-200%, export) et commutateurs d'affichage. Téléchargeable depuis la page des versions. Poste de ResearcherMassive802 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">lien</a>).</p>
+<h3>Dōri v0.1.0-alpha.1 — DAW open-source Rust pour motion design</h3>
+<p>melble5 construit Dōri, une station audioration numérique open-source écrite en Rust pour l'audio de motion design, ciblant Linux et Windows. Bien que non spécifique à ArtCraft, cet outil comble un vide dans l'écosystème craft côté production audio professionnelle. Poste de melble5 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/"> lien</a>).</p>
+<h2>Autour d'ArtCraft</h2>
+<p><strong>Intégration craft-image-codecs en cours.</strong> Les commits récents (du 19 au 20 novembre) poursuivent le basculement systématique du décodage images depuis le crate <code>image</code> vers <code>craft-image-codecs</code> (partie de storytold/craft-libs#778). Sont concernés le cache média (<code>media_cache.rs</code>), le redimensionnement, le flip, la conversion PNG, et les tests de parité statique/animé entre chemins Tauri legacy et chemins Rust natif. Un correctif de build (<code>#2923</code>) a réparé une régression compile après <code>#2921</code>. Travail technique approfondi mais transparent pour l'utilisateur final — aucune nouvelle fonctionnalité visible directement.</p>
+<p><strong>Activité de maintenance CI/SonarCloud.</strong> L'équipe consacre un effort notable à la qualité du code : suppression de Promesses fire-and-forget non marquées (<code>void</code>), remplacement <code>Math.random</code> par <code>uuidv4</code>, migration <code>std::fs</code> vers <code>tokio::fs</code> en contexte asynchrone, conformité SonarCloud (S9383, S7493, S2245, S8786, S6852, S7059, S6848, S6853, S7773, S5725, S6505, S7637), sécurité GitHub Actions (Harden-Runner sur chaque job, actions StepSecurity). L'intégration continue inclut désormais une matrice complète de packages Linux (DEB, RPM, AppImage, tarball, Arch, Flatpak OCI) signés, avec FreeBSD CI. Aucun impact utilisateur direct.</p>
+<p><strong>Le futur des modèles open source.</strong> Un fil de discussion sur Reddit soulève des inquiétudes concernant la pérennité des modèles open source face aux évolutions des conditions d'utilisation des fournisseurs d'IA. 9 upvotes, 10 commentaires (DotRakianSteel, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3lgc8/the_future_of_our_open_source_models_is_safe/">lien</a>).</p>
+<p><strong>Qualité de code comparée Adobe.</strong> Un article de Software Improvement Group analyse la qualité du code ArtCraft en comparaison avec Adobe. 31 upvotes, 36 commentaires (Delicious_Recover543, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/">lien</a>).</p>
+<h2>À signaler</h2>
+<p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
+<h2>Volume</h2>
+<p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille IA, sciences et société — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/actuia-sciences/2026-11-23.html</link>
@@ -4110,96 +4244,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 → <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">simonwillison.net/2026/Nov/18/llm-gemini</a></p>
 <h2>Volume</h2>
 <p>88 entrées publiées dans l'intervalle, 9 retenues, 79 écartées.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-20.html</link>
-<guid isPermaLink="false">macapps-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:14:22 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en lancements et mises à jour d'outils macOS : un tableur natif gratuit, un classeur de fichiers intelligent qui tourne localement, un gestionnaire d'archives open source, des utilitaires réseau et de productivité, et les grosses mises à jour du Creator Studio d'Apple (iWork 16.0, Pixelmator Pro 5.0, Final Cut Pro 13.0).</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Spark Grid</strong> — Tableur natif Mac, gratuit, qui ouvre et sauvegarde les fichiers .xlsx et CSV sans conversion. 91 fonctions (XLOOKUP, SUMIFS, SUMPRODUCT…), filtres, tri, mise en forme conditionnelle, graphiques en direct sur la feuille et, depuis la version 1.4, création et édition de tableaux croisés dynamiques. Aucun compte, aucune publicité, aucune analyse, aucun accès réseau. Nécessite macOS 14+ et Apple Silicon. Gratuit, sans achat intégré. <a href="https://sparkgridapp.com">Site</a> · <a href="https://apps.apple.com/us/app/spark-grid/id6811196983?mt=12">Mac App Store</a></p>
-<p><strong>OCDify</strong> — Classeur de fichiers automatique par contenu, qui lit les documents en 23 langues (français, anglais, chinois, japonais, arabe…) sur le Mac, sans rien télécharger. Surveillance de dossiers, renommage intelligent, détection de doublons exacts, historique avec annulation pendant sept jours. La version gratuite gère un dossier source et quatre catégories ; le déverrouillage complet (dossiers et catégories illimités, renommage intelligent, OCR) est à 19,99 $, paiement unique, sans abonnement. Apple Silicon, macOS 14+. <a href="https://ocdify.app">Site</a> · <a href="https://apps.apple.com/us/app/ocdify/id6739576895">Mac App Store</a></p>
-<p><strong>MacPacker v1.3</strong> — Utilitaire d'archives gratuit et open source (GPL-3.0, 1 537 ★ sur GitHub). Prend en charge 40+ formats, peut créer et modifier des archives ZIP et 7z, et ajoute dans cette version le test d'intégrité des archives. Permet de parcourir des archives imbriquées et d'extraire un fichier sans tout décompresser. Gratuit sur le Mac App Store et sur <a href="https://macpacker.app">macpacker.app</a>. Également disponible sur Homebrew.</p>
-<p><strong>Cover</strong> — Coffre-fort d'applications, de sites web et de fichiers avec Touch ID et un mode « faux plantage » (Fake Crash) qui masque le contenu verrouillé. Bloque les sites web dans Safari, Chrome, Brave, Firefox et Edge sans extension. Coffre AES-256 local. Apple Silicon, macOS 13+. Prix non précisé dans le post.</p>
-<p><strong>My Financials</strong> — Gestionnaire de finances personnelles natif pour Mac, iPhone et iPad, conçu pour la vie privée : pas de connexion bancaire, pas d'agrégateur tiers, les données restent sur l'appareil et dans iCloud. Suivi des comptes, transactions, budgets, investissements, factures récurrentes et valeur nette. Capture des reçus, intégration Apple Pay via les raccourcis et Siri. Abonnement : 1,99 $/semaine (essai de sept jours).</p>
-<p><strong>DuperMail</strong> — Raccourcis clavier de Gmail (j/k, e pour archiver, r pour répondre, # pour supprimer…) dans Apple Mail, plus snooze, report, snippets, envoi et archivage, désabonnement en une touche, et une palette ⌘K. Rien ne quitte le Mac, pas d'analyse tierce. 14 jours gratuits, puis 4 $/mois, 36 $/an, ou 59 $ à vie. Jusqu'au 30 novembre, le tarif à vie est à 39 $ (Black Friday). <a href="https://www.dupermail.com">Site</a></p>
-<p><strong>Netutilus</strong> — Utilitaire réseau tout-en-un pour Mac. Quinze outils gratuits (ping, traceroute, test de débit avec bufferbloat, DNS, whois, GeoIP, SSL, scan de ports, calculatrice de sous-réseau, moniteur de réseau, indicateur de barre de menus avec fuite IPv4/IPv6). La version Pro (achat unique) ajoute le scan LAN, les alertes de nouveaux appareils, la surveillance de disponibilité, MTR, l'analyse Wi-Fi, iperf3, le lecteur de rapports DMARC et le support MCP.</p>
-<p><strong>StarDesk</strong> — Application de bureau à distance pour macOS et iOS. Streaming 4K/144 Hz HDR, support multi-écran, Apple Pencil, manettes de jeu. Gratuite pour le moment sur l'App Store (des niveaux gratuits et payants sont prévus plus tard). <a href="https://apps.apple.com/us/app/stardesk-remote-desktop/">Mac App Store</a></p>
-<p><strong>Lattix</strong> — Gestionnaire d'espaces de travail macOS : sauvegarde et restauration d'un ensemble complet d'applications, fichiers et fenêtres répartis sur plusieurs Spaces et écrans, en un clic. Déplacement de fenêtres entre Spaces sans les fermer, création et suppression automatiques de Spaces. Achat unique : 19,99 $ (un appareil) ou 39,99 $ (deux). Code BLACKFRIDAY26 disponible. <a href="https://www.lattix.app">Site</a></p>
-<p><strong>PopStack 2.0</strong> — Remplace les Stacks du bureau par des popups instantanés pour accéder rapidement au contenu des dossiers sans les ouvrir. Popovers directement dans le Finder, navigation au clavier, Quick Look, tri automatique réglable, affichage à 120 Hz. Achat unique à 14,99 $ à vie (code MACAPPS pour 25 % de réduction sur les vingt premiers acheteurs). <a href="https://popstack.us">Site</a></p>
-<p><strong>Widgetscape</strong> — Widgets de bureau pour macOS : horloge, météo et autres informations dans un style coordonné, sans configuration ni code. Huit widgets gratuits à vie, version Pro à 9,99 € + TVA (achat unique, jusqu'à deux Mac). macOS 14+ et Apple Silicon.</p>
-<p><strong>Unfold v3.3.0</strong> — Extension Quick Look qui permet de prévisualiser plus de 300 types de fichiers. Cette version ajoute les vidéos (MKV, WebM, AVI, WMV, FLV, VOB…), plus de formats 3D (glTF, FBX, VRM, IGES, Collada, 3DS), les ebooks (MOBI, AZW3) et le rendu natif du code, Markdown, Jupyter, LaTeX et des BD, sans vue web. Prix non précisé dans le post.</p>
-<p><strong>LookAway 2.5</strong> — Application de rappels de pause intelligente pour Mac, qui évite d'interrompre pendant les réunions, l'enregistrement d'écran ou la lecture vidéo. Version 2.5 ajoute les rappels personnalisés (boire de l'eau, s'étirer…) avec un design inspiré du Siri Orb de macOS 27, et un nouveau style de pause « Split the screen ». Synchronisation iPhone. Code BF2026 pour 50 % de réduction sur toutes les licences jusqu'à la fin du Black Friday.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Alfred 6</strong> — Le lanceur d'applications et de productivité pour Mac passe en version 6 avec Alfred UI, une boîte à outils native macOS qui permet aux développeurs de workflows de construire des interfaces interactives personnalisées, avec des apparences paramétrables, à l'intérieur comme à l'extérieur d'Alfred. Plusieurs workflows de démonstration sont publiés (Launchpad, Text Transformer, SF Symbols Browser, Brain Outsourcing avec option IA). Ajout également de l'historique des requêtes. <a href="https://www.alfredapp.com">Site</a></p>
-<p><strong>Creator Studio : iWork 16.0, Pixelmator Pro 5.0, Final Cut Pro 13.0</strong> — Apple a distribué les mises à jour majeures annoncées fin octobre. Pages, Numbers et Keynote 16.0 intègrent un assistant intelligent (bêta, anglais américain seulement, Apple Intelligence requis) qui peut rédiger, réorganiser ou reformuler du texte, construire des formules et des tableaux, ou préparer des diapositives. Pixelmator Pro 5.0 ajoute « Générer le remplissage » : on entoure une zone, on décrit la retouche, et l'IA génère le résultat en accord avec la lumière et les textures environnantes. Final Cut Pro 13.0 intègre nativement les effets de MotionVFX (racheté par Apple en mars). Ces nouveautés sont comprises dans l'abonnement Creator Studio à 12,99 €/mois ou 129 €/an. Les versions vendues à l'unité de Final Cut Pro, Motion et Compressor reçoivent aussi des améliorations.</p>
-<h2>Volume</h2>
-<p>Environ 235 entrées lues dans les sources (dont 80 mises à jour Homebrew Cask), 20 retenues, le reste écarté (actualité Apple générale, offres Black Friday, questions de support, discussions).</p>
-<p><em>Source : r/macapps (Reddit), Hacker News, Lobsters, AlternativeTo, Product Hunt, MacGeneration, iGeneration, 9to5Mac, MacRumors, MacStories, The Eclectic Light Company, Michael Tsai, forums MacG, Homebrew Cask.</em><br />
-<em>Aucune erreur de collecte signalée par le journal de veille.</em></p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en lancements et mises à jour d'outils macOS : un tableur natif gratuit, un classeur de fichiers intelligent qui tourne localement, un gestionnaire d'archives open source, des utilitaires réseau et de productivité, et les grosses mises à jour du Creator Studio d'Apple (iWork 16.0, Pixelmator Pro 5.0, Final Cut Pro 13.0).</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Spark Grid</strong> — Tableur natif Mac, gratuit, qui ouvre et sauvegarde les fichiers .xlsx et CSV sans conversion. 91 fonctions (XLOOKUP, SUMIFS, SUMPRODUCT…), filtres, tri, mise en forme conditionnelle, graphiques en direct sur la feuille et, depuis la version 1.4, création et édition de tableaux croisés dynamiques. Aucun compte, aucune publicité, aucune analyse, aucun accès réseau. Nécessite macOS 14+ et Apple Silicon. Gratuit, sans achat intégré. <a href="https://sparkgridapp.com">Site</a> · <a href="https://apps.apple.com/us/app/spark-grid/id6811196983?mt=12">Mac App Store</a></p>
-<p><strong>OCDify</strong> — Classeur de fichiers automatique par contenu, qui lit les documents en 23 langues (français, anglais, chinois, japonais, arabe…) sur le Mac, sans rien télécharger. Surveillance de dossiers, renommage intelligent, détection de doublons exacts, historique avec annulation pendant sept jours. La version gratuite gère un dossier source et quatre catégories ; le déverrouillage complet (dossiers et catégories illimités, renommage intelligent, OCR) est à 19,99 $, paiement unique, sans abonnement. Apple Silicon, macOS 14+. <a href="https://ocdify.app">Site</a> · <a href="https://apps.apple.com/us/app/ocdify/id6739576895">Mac App Store</a></p>
-<p><strong>MacPacker v1.3</strong> — Utilitaire d'archives gratuit et open source (GPL-3.0, 1 537 ★ sur GitHub). Prend en charge 40+ formats, peut créer et modifier des archives ZIP et 7z, et ajoute dans cette version le test d'intégrité des archives. Permet de parcourir des archives imbriquées et d'extraire un fichier sans tout décompresser. Gratuit sur le Mac App Store et sur <a href="https://macpacker.app">macpacker.app</a>. Également disponible sur Homebrew.</p>
-<p><strong>Cover</strong> — Coffre-fort d'applications, de sites web et de fichiers avec Touch ID et un mode « faux plantage » (Fake Crash) qui masque le contenu verrouillé. Bloque les sites web dans Safari, Chrome, Brave, Firefox et Edge sans extension. Coffre AES-256 local. Apple Silicon, macOS 13+. Prix non précisé dans le post.</p>
-<p><strong>My Financials</strong> — Gestionnaire de finances personnelles natif pour Mac, iPhone et iPad, conçu pour la vie privée : pas de connexion bancaire, pas d'agrégateur tiers, les données restent sur l'appareil et dans iCloud. Suivi des comptes, transactions, budgets, investissements, factures récurrentes et valeur nette. Capture des reçus, intégration Apple Pay via les raccourcis et Siri. Abonnement : 1,99 $/semaine (essai de sept jours).</p>
-<p><strong>DuperMail</strong> — Raccourcis clavier de Gmail (j/k, e pour archiver, r pour répondre, # pour supprimer…) dans Apple Mail, plus snooze, report, snippets, envoi et archivage, désabonnement en une touche, et une palette ⌘K. Rien ne quitte le Mac, pas d'analyse tierce. 14 jours gratuits, puis 4 $/mois, 36 $/an, ou 59 $ à vie. Jusqu'au 30 novembre, le tarif à vie est à 39 $ (Black Friday). <a href="https://www.dupermail.com">Site</a></p>
-<p><strong>Netutilus</strong> — Utilitaire réseau tout-en-un pour Mac. Quinze outils gratuits (ping, traceroute, test de débit avec bufferbloat, DNS, whois, GeoIP, SSL, scan de ports, calculatrice de sous-réseau, moniteur de réseau, indicateur de barre de menus avec fuite IPv4/IPv6). La version Pro (achat unique) ajoute le scan LAN, les alertes de nouveaux appareils, la surveillance de disponibilité, MTR, l'analyse Wi-Fi, iperf3, le lecteur de rapports DMARC et le support MCP.</p>
-<p><strong>StarDesk</strong> — Application de bureau à distance pour macOS et iOS. Streaming 4K/144 Hz HDR, support multi-écran, Apple Pencil, manettes de jeu. Gratuite pour le moment sur l'App Store (des niveaux gratuits et payants sont prévus plus tard). <a href="https://apps.apple.com/us/app/stardesk-remote-desktop/">Mac App Store</a></p>
-<p><strong>Lattix</strong> — Gestionnaire d'espaces de travail macOS : sauvegarde et restauration d'un ensemble complet d'applications, fichiers et fenêtres répartis sur plusieurs Spaces et écrans, en un clic. Déplacement de fenêtres entre Spaces sans les fermer, création et suppression automatiques de Spaces. Achat unique : 19,99 $ (un appareil) ou 39,99 $ (deux). Code BLACKFRIDAY26 disponible. <a href="https://www.lattix.app">Site</a></p>
-<p><strong>PopStack 2.0</strong> — Remplace les Stacks du bureau par des popups instantanés pour accéder rapidement au contenu des dossiers sans les ouvrir. Popovers directement dans le Finder, navigation au clavier, Quick Look, tri automatique réglable, affichage à 120 Hz. Achat unique à 14,99 $ à vie (code MACAPPS pour 25 % de réduction sur les vingt premiers acheteurs). <a href="https://popstack.us">Site</a></p>
-<p><strong>Widgetscape</strong> — Widgets de bureau pour macOS : horloge, météo et autres informations dans un style coordonné, sans configuration ni code. Huit widgets gratuits à vie, version Pro à 9,99 € + TVA (achat unique, jusqu'à deux Mac). macOS 14+ et Apple Silicon.</p>
-<p><strong>Unfold v3.3.0</strong> — Extension Quick Look qui permet de prévisualiser plus de 300 types de fichiers. Cette version ajoute les vidéos (MKV, WebM, AVI, WMV, FLV, VOB…), plus de formats 3D (glTF, FBX, VRM, IGES, Collada, 3DS), les ebooks (MOBI, AZW3) et le rendu natif du code, Markdown, Jupyter, LaTeX et des BD, sans vue web. Prix non précisé dans le post.</p>
-<p><strong>LookAway 2.5</strong> — Application de rappels de pause intelligente pour Mac, qui évite d'interrompre pendant les réunions, l'enregistrement d'écran ou la lecture vidéo. Version 2.5 ajoute les rappels personnalisés (boire de l'eau, s'étirer…) avec un design inspiré du Siri Orb de macOS 27, et un nouveau style de pause « Split the screen ». Synchronisation iPhone. Code BF2026 pour 50 % de réduction sur toutes les licences jusqu'à la fin du Black Friday.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Alfred 6</strong> — Le lanceur d'applications et de productivité pour Mac passe en version 6 avec Alfred UI, une boîte à outils native macOS qui permet aux développeurs de workflows de construire des interfaces interactives personnalisées, avec des apparences paramétrables, à l'intérieur comme à l'extérieur d'Alfred. Plusieurs workflows de démonstration sont publiés (Launchpad, Text Transformer, SF Symbols Browser, Brain Outsourcing avec option IA). Ajout également de l'historique des requêtes. <a href="https://www.alfredapp.com">Site</a></p>
-<p><strong>Creator Studio : iWork 16.0, Pixelmator Pro 5.0, Final Cut Pro 13.0</strong> — Apple a distribué les mises à jour majeures annoncées fin octobre. Pages, Numbers et Keynote 16.0 intègrent un assistant intelligent (bêta, anglais américain seulement, Apple Intelligence requis) qui peut rédiger, réorganiser ou reformuler du texte, construire des formules et des tableaux, ou préparer des diapositives. Pixelmator Pro 5.0 ajoute « Générer le remplissage » : on entoure une zone, on décrit la retouche, et l'IA génère le résultat en accord avec la lumière et les textures environnantes. Final Cut Pro 13.0 intègre nativement les effets de MotionVFX (racheté par Apple en mars). Ces nouveautés sont comprises dans l'abonnement Creator Studio à 12,99 €/mois ou 129 €/an. Les versions vendues à l'unité de Final Cut Pro, Motion et Compressor reçoivent aussi des améliorations.</p>
-<h2>Volume</h2>
-<p>Environ 235 entrées lues dans les sources (dont 80 mises à jour Homebrew Cask), 20 retenues, le reste écarté (actualité Apple générale, offres Black Friday, questions de support, discussions).</p>
-<p><em>Source : r/macapps (Reddit), Hacker News, Lobsters, AlternativeTo, Product Hunt, MacGeneration, iGeneration, 9to5Mac, MacRumors, MacStories, The Eclectic Light Company, Michael Tsai, forums MacG, Homebrew Cask.</em><br />
-<em>Aucune erreur de collecte signalée par le journal de veille.</em></p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-20.html</link>
-<guid isPermaLink="false">artcraft-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:01:49 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Aucune nouveauté depuis l'édition d'hier : le sous-forum r/ArtCraftAI est toujours inaccessible (404 émis par Reddit, quatrième jour consécutif), le dépôt officiel n'a reçu aucun nouveau commit depuis le 18 novembre, et la dernière version publiée reste la 0.41.1 du 7 novembre. Aucun post ni aucun commit nouveau n'a donc été collecté dans l'intervalle.</p>
-<h2>Nouveautés et annonces</h2>
-<p>Rien de nouveau depuis l'édition d'hier. Les deux correctifs signalés le 19 novembre (retrait du jeton de téléversement dans la console, suppression des boutons de fenêtre redondants sous Linux) sont toujours les derniers changements du dépôt ; ils ne sont pas dans une version publiée.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de nouveau : aucun post du sous-forum n'a été collecté depuis le 17 novembre à 14 h 58 UTC, la collecte étant toujours en échec. Les projets communautaires signalés les jours précédents (SketchCraft, craft-mcp-hub, KizamuBeam, rustyfiles) n'ont pas fait l'objet de nouvelles publications dans les sources surveillées.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable dans les dernières 24 heures. L'article de heise.de (Moritz Förster, 17 novembre) sur AutoCraft, l'outil de maintenance de dépôts GitHub par IA présenté par Brandon Thomas le 12 novembre au AI Engineer CODE Summit, circule encore — mais il décrit un événement déjà ancien de huit jours, et le dépôt AutoCraft n'a pas été mis à jour depuis sa création.</p>
-<h2>À signaler</h2>
-<h3>Le sous-forum r/ArtCraftAI toujours inaccessible, quatrième jour</h3>
-<p>La collecte du sous-forum principal reste en échec : chaque passe du collecteur depuis le 17 novembre à 21 h 02 UTC se solde par « ArtCraftAI: HTTPError: HTTP Error 404: Not Found », sans qu'aucun nouveau post ne soit enregistré. La règle de diagnostic distingue ce 404 (flux retiré) d'un 429 (limite de débit passagère), et le nombre de jours écoulé confirme la permanence. Aucune voie de secours n'existe pour l'instant : r/ArtCraftAI est le seul des sous-forums surveillés qui ne figure pas dans la liste du relais installé sur le Mac de Nicolas, celui qui lit les neuf autres depuis une connexion résidentielle et dépose les fichiers sur svt.tw. La correction — ajouter r/ArtCraftAI à cette liste — modifie un script qui tourne chez lui et n'a pas été faite sans son accord.</p>
-<h2>Volume</h2>
-<p>0 post collecté dans l'intervalle sur r/ArtCraftAI (404 permanent, quatrième jour) ; 0 nouvelle entrée dans les journaux des versions publiées, des commits du dépôt officiel et de la chaîne YouTube de Brandon Thomas. Tous les identifiants des sources étaient déjà dans digested.txt : aucun élément nouveau à examiner.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Aucune nouveauté depuis l'édition d'hier : le sous-forum r/ArtCraftAI est toujours inaccessible (404 émis par Reddit, quatrième jour consécutif), le dépôt officiel n'a reçu aucun nouveau commit depuis le 18 novembre, et la dernière version publiée reste la 0.41.1 du 7 novembre. Aucun post ni aucun commit nouveau n'a donc été collecté dans l'intervalle.</p>
-<h2>Nouveautés et annonces</h2>
-<p>Rien de nouveau depuis l'édition d'hier. Les deux correctifs signalés le 19 novembre (retrait du jeton de téléversement dans la console, suppression des boutons de fenêtre redondants sous Linux) sont toujours les derniers changements du dépôt ; ils ne sont pas dans une version publiée.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de nouveau : aucun post du sous-forum n'a été collecté depuis le 17 novembre à 14 h 58 UTC, la collecte étant toujours en échec. Les projets communautaires signalés les jours précédents (SketchCraft, craft-mcp-hub, KizamuBeam, rustyfiles) n'ont pas fait l'objet de nouvelles publications dans les sources surveillées.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable dans les dernières 24 heures. L'article de heise.de (Moritz Förster, 17 novembre) sur AutoCraft, l'outil de maintenance de dépôts GitHub par IA présenté par Brandon Thomas le 12 novembre au AI Engineer CODE Summit, circule encore — mais il décrit un événement déjà ancien de huit jours, et le dépôt AutoCraft n'a pas été mis à jour depuis sa création.</p>
-<h2>À signaler</h2>
-<h3>Le sous-forum r/ArtCraftAI toujours inaccessible, quatrième jour</h3>
-<p>La collecte du sous-forum principal reste en échec : chaque passe du collecteur depuis le 17 novembre à 21 h 02 UTC se solde par « ArtCraftAI: HTTPError: HTTP Error 404: Not Found », sans qu'aucun nouveau post ne soit enregistré. La règle de diagnostic distingue ce 404 (flux retiré) d'un 429 (limite de débit passagère), et le nombre de jours écoulé confirme la permanence. Aucune voie de secours n'existe pour l'instant : r/ArtCraftAI est le seul des sous-forums surveillés qui ne figure pas dans la liste du relais installé sur le Mac de Nicolas, celui qui lit les neuf autres depuis une connexion résidentielle et dépose les fichiers sur svt.tw. La correction — ajouter r/ArtCraftAI à cette liste — modifie un script qui tourne chez lui et n'a pas été faite sans son accord.</p>
-<h2>Volume</h2>
-<p>0 post collecté dans l'intervalle sur r/ArtCraftAI (404 permanent, quatrième jour) ; 0 nouvelle entrée dans les journaux des versions publiées, des commits du dépôt officiel et de la chaîne YouTube de Brandon Thomas. Tous les identifiants des sources étaient déjà dans digested.txt : aucun élément nouveau à examiner.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
