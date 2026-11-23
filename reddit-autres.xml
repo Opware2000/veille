@@ -6,9 +6,66 @@
 <description>Veille quotidienne — Reddit — subreddits ajoutés — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/reddit-autres.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 22 Nov 2026 12:04:55 +0100</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 05:25:29 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Reddit — subreddits ajoutés</title>
+<link>https://opware2000.github.io/veille/editions/reddit-autres/2026-11-23.html</link>
+<guid isPermaLink="false">reddit-autres-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 05:25:29 +0100</pubDate>
+<category>Reddit — subreddits ajoutés</category>
+<description><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>
+<h2>Compte rendu par subreddit</h2>
+<ul>
+<li><strong>ArtCraftAI</strong> — veille dédiée, non orphelin : 47 fils au journal, 0 examiné ici.</li>
+<li><strong>BestGitHubRepos</strong> — veille dédiée, non orphelin : 211 fils au journal, 0 examiné ici.</li>
+<li><strong>DeepSeek</strong> — veille dédiée, non orphelin : 251 fils au journal, 0 examiné ici.</li>
+<li><strong>LaTeX</strong> — veille dédiée, non orphelin : 69 fils au journal, 0 examiné ici.</li>
+<li><strong>LovingOpenSourceAI</strong> — veille dédiée, non orphelin : 48 fils au journal, 0 examiné ici.</li>
+<li><strong>hermesagent</strong> — veille dédiée, non orphelin : 276 fils au journal, 0 examiné ici.</li>
+<li><strong>macapps</strong> — veille dédiée, non orphelin : 246 fils au journal, 0 examiné ici.</li>
+<li><strong>opencode</strong> — veille dédiée, non orphelin : 313 fils au journal, 0 examiné ici.</li>
+<li><strong>opensource</strong> — veille dédiée, non orphelin : 121 fils au journal, 0 examiné ici.</li>
+<li><strong>vibecoding</strong> — veille dédiée, non orphelin : 323 fils au journal, 0 examiné ici.</li>
+</ul>
+<p>Total : 0 fil examiné, 0 retenu, 0 écarté — aucun journal n'est sans lecteur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>
+<h2>Compte rendu par subreddit</h2>
+<ul>
+<li><strong>ArtCraftAI</strong> — veille dédiée, non orphelin : 47 fils au journal, 0 examiné ici.</li>
+<li><strong>BestGitHubRepos</strong> — veille dédiée, non orphelin : 211 fils au journal, 0 examiné ici.</li>
+<li><strong>DeepSeek</strong> — veille dédiée, non orphelin : 251 fils au journal, 0 examiné ici.</li>
+<li><strong>LaTeX</strong> — veille dédiée, non orphelin : 69 fils au journal, 0 examiné ici.</li>
+<li><strong>LovingOpenSourceAI</strong> — veille dédiée, non orphelin : 48 fils au journal, 0 examiné ici.</li>
+<li><strong>hermesagent</strong> — veille dédiée, non orphelin : 276 fils au journal, 0 examiné ici.</li>
+<li><strong>macapps</strong> — veille dédiée, non orphelin : 246 fils au journal, 0 examiné ici.</li>
+<li><strong>opencode</strong> — veille dédiée, non orphelin : 313 fils au journal, 0 examiné ici.</li>
+<li><strong>opensource</strong> — veille dédiée, non orphelin : 121 fils au journal, 0 examiné ici.</li>
+<li><strong>vibecoding</strong> — veille dédiée, non orphelin : 323 fils au journal, 0 examiné ici.</li>
+</ul>
+<p>Total : 0 fil examiné, 0 retenu, 0 écarté — aucun journal n'est sans lecteur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Reddit — subreddits ajoutés</title>
 <link>https://opware2000.github.io/veille/editions/reddit-autres/2026-11-21.html</link>

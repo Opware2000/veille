@@ -6,9 +6,66 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 05:23:14 +0100</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 05:25:29 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Reddit — subreddits ajoutés</title>
+<link>https://opware2000.github.io/veille/editions/reddit-autres/2026-11-23.html</link>
+<guid isPermaLink="false">reddit-autres-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 05:25:29 +0100</pubDate>
+<category>Reddit — subreddits ajoutés</category>
+<description><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>
+<h2>Compte rendu par subreddit</h2>
+<ul>
+<li><strong>ArtCraftAI</strong> — veille dédiée, non orphelin : 47 fils au journal, 0 examiné ici.</li>
+<li><strong>BestGitHubRepos</strong> — veille dédiée, non orphelin : 211 fils au journal, 0 examiné ici.</li>
+<li><strong>DeepSeek</strong> — veille dédiée, non orphelin : 251 fils au journal, 0 examiné ici.</li>
+<li><strong>LaTeX</strong> — veille dédiée, non orphelin : 69 fils au journal, 0 examiné ici.</li>
+<li><strong>LovingOpenSourceAI</strong> — veille dédiée, non orphelin : 48 fils au journal, 0 examiné ici.</li>
+<li><strong>hermesagent</strong> — veille dédiée, non orphelin : 276 fils au journal, 0 examiné ici.</li>
+<li><strong>macapps</strong> — veille dédiée, non orphelin : 246 fils au journal, 0 examiné ici.</li>
+<li><strong>opencode</strong> — veille dédiée, non orphelin : 313 fils au journal, 0 examiné ici.</li>
+<li><strong>opensource</strong> — veille dédiée, non orphelin : 121 fils au journal, 0 examiné ici.</li>
+<li><strong>vibecoding</strong> — veille dédiée, non orphelin : 323 fils au journal, 0 examiné ici.</li>
+</ul>
+<p>Total : 0 fil examiné, 0 retenu, 0 écarté — aucun journal n'est sans lecteur.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
+<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
+<h2>Cette semaine</h2>
+<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
+<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
+<h2>Volume</h2>
+<ul>
+<li>Subreddits collectés : 10</li>
+<li>Subreddits sans veille dédiée : 0</li>
+<li>Fils examinés : 0 (rien à examiner)</li>
+</ul>
+<h2>Compte rendu par subreddit</h2>
+<ul>
+<li><strong>ArtCraftAI</strong> — veille dédiée, non orphelin : 47 fils au journal, 0 examiné ici.</li>
+<li><strong>BestGitHubRepos</strong> — veille dédiée, non orphelin : 211 fils au journal, 0 examiné ici.</li>
+<li><strong>DeepSeek</strong> — veille dédiée, non orphelin : 251 fils au journal, 0 examiné ici.</li>
+<li><strong>LaTeX</strong> — veille dédiée, non orphelin : 69 fils au journal, 0 examiné ici.</li>
+<li><strong>LovingOpenSourceAI</strong> — veille dédiée, non orphelin : 48 fils au journal, 0 examiné ici.</li>
+<li><strong>hermesagent</strong> — veille dédiée, non orphelin : 276 fils au journal, 0 examiné ici.</li>
+<li><strong>macapps</strong> — veille dédiée, non orphelin : 246 fils au journal, 0 examiné ici.</li>
+<li><strong>opencode</strong> — veille dédiée, non orphelin : 313 fils au journal, 0 examiné ici.</li>
+<li><strong>opensource</strong> — veille dédiée, non orphelin : 121 fils au journal, 0 examiné ici.</li>
+<li><strong>vibecoding</strong> — veille dédiée, non orphelin : 323 fils au journal, 0 examiné ici.</li>
+</ul>
+<p>Total : 0 fil examiné, 0 retenu, 0 écarté — aucun journal n'est sans lecteur.</p>]]></content:encoded>
+</item>
 <item>
 <title>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/labo-svt/2026-11-23.html</link>
@@ -3797,47 +3854,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <p><strong>OPEN ANDROID DEX — transformer un téléphone Android en bureau complet</strong> (<a href="https://github.com/dotnetdreamer/open-android-dex">github.com/dotnetdreamer/open-android-dex</a>). Application open source qui affiche les applications du téléphone dans de vraies fenêtres redimensionnables (barre des tâches, lanceur, accolement) sur l'écran d'un ordinateur, avec presse-papiers dans les deux sens, envoi de fichiers par glisser-déposer et installation d'APK, notifications et appels sur Windows et macOS. Le plus notable pour un usage technique : une <strong>Ubuntu 24.04 avec XFCE tourne dans un conteneur proot, sans root</strong>, avec Firefox, Chromium, VS Code et git proposés à l'installation (Node.js, GIMP et IntelliJ IDEA Community en option), et un moteur Docker qui accepte <code>docker pull</code>, <code>docker run</code> et <code>docker compose</code> — au prix d'une installation d'environ 3 Go et de performances de téléphone. Un bureau est même accessible dans un onglet de navigateur, par code à six chiffres et transport WebRTC, et l'accès distant à l'Ubuntu du téléphone utilise iroh (code de huit caractères, connexion chiffrée, <code>ssh mon-telephone</code>). <strong>Système</strong> : Android 8 ou plus récent côté téléphone ; application côté ordinateur pour Windows 10 et 11, macOS Intel ou Apple Silicon, et Linux 64 bits (sous macOS, l'application non notariée se débloque par une commande <code>xattr</code>). <strong>Licence</strong> : GPL-3.0, sans compte ni abonnement. Réserve honnête : le résultat dépend du téléphone, les fenêtres libres sur l'écran du mobile ne sont pas garanties, et les barres de titre personnalisées demandent l'application PC et Android 14.</p>
 <h2>Volume</h2>
 <p>Cinq billets publiés dans l'intervalle (18 novembre, 09h00 à 13h00 UTC), cinq retenus, aucun écarté.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille CTAN — jeudi 19 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/ctan/2026-11-19.html</link>
-<guid isPermaLink="false">ctan-2026-11-19</guid>
-<pubDate>Thu, 19 Nov 2026 01:41:34 +0100</pubDate>
-<category>CTAN</category>
-<description><![CDATA[<h1>Veille CTAN — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Huit annonces depuis le dernier passage, aucune ne concerne les soixante et un paquets que votre classe nBook3 appelle : cette édition ne signale donc aucune mise à jour à faire chez vous. Trois entrées sont retenues comme nouveauté ou information utile (un paquet de matrices, la bibliothèque Markdown, l'extension de notes de bas de page pour tcolorbox), cinq sont écartées. Aucun incident de collecte.</p>
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<p>Aucune. Aucune des annonces de l'intervalle ne porte sur un paquet de la liste extraite de nBook3 (xcolor, fontspec, tabularray, tcolorbox, tikz, siunitx, mhchem, enumitem, hyperref, microtype, etc.).</p>
-<h2>Nouveaux paquets pertinents</h2>
-<p><strong>lt3matrix</strong> — version 0.1 du 16 novembre 2026, licence LPPL 1.3c.<br />
-Ce paquet fournit un type « matrice » léger, bâti sur expl3 et l3fparray, avec les opérations courantes : création, modification, opérations terme à terme, opérations entre matrices, application d'une fonction aux éléments et composition typographique. Il vise explicitement les démonstrations de matrices, les exemples numériques et les transformations géométriques dans un document TeX.<br />
-Ce qu'il apporte : une façon d'écrire un calcul matriciel et de le montrer étape par étape sans passer par un langage de calcul externe. Sa portée reste étroite — le contenu du programme de lycée n'appelle guère de calcul matriciel — et je ne le classe ici que parce qu'il touche à la typographie des mathématiques que vous pratiquez déjà avec mathtools et siunitx ; à vous de juger s'il mérite une place.<br />
-https://ctan.org/pkg/lt3matrix</p>
-<h2>Autres mises à jour notables</h2>
-<ul>
-<li><strong>markdown</strong> 3.16.3 (17 novembre 2026) — la bibliothèque qui convertit et compose du Markdown à l'intérieur de TeX. Elle suppose désormais <code>enumitem</code> toujours chargé lorsque le balisage de structure (<em>tagging</em>) est actif, ce qui évite un conflit avec les interfaces qu'emule LaTeX2e depuis sa version de juin 2026. Changement interne sans effet visible sur vos conversions actuelles, mais à connaître si vous repassez un jour par ce paquet pour du Markdown → LaTeX.</li>
-<li><strong>tcbpagefootnote</strong> 1.3 (17 novembre 2026) — l'extension qui fait remonter au bas de la page, et non au bas du cadre, les notes de bas de page saisies dans un <code>tcolorbox</code> (clé <code>page footnote</code>). Cette version range correctement ces notes dans l'arbre de structure d'un PDF balisé (<code>\DocumentMetadata{tagging=on}</code>) et documente son emploi en écriture verticale japonaise, sans intérêt pour vous. À considérer seulement si vous ajoutez un jour des notes de bas de page dans vos encadrés tcolorbox.</li>
-</ul>
-<h2>Volume</h2>
-<p>8 annonces publiées dans l'intervalle (18 novembre 2026), 3 retenues (dont 0 concernant vos paquets), 5 écartées — motifs dominants : adaptation d'un gabarit à une université précise (ou-tma), jeu de société (weiqi), prise en charge de langues non latines et de l'écriture bidirectionnelle (BabelBidi), style bibliographique propre à l'économie et aux références japonaises (ua-jecon), correctif de niche sans conséquence en classe (drawmgr).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille CTAN — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Huit annonces depuis le dernier passage, aucune ne concerne les soixante et un paquets que votre classe nBook3 appelle : cette édition ne signale donc aucune mise à jour à faire chez vous. Trois entrées sont retenues comme nouveauté ou information utile (un paquet de matrices, la bibliothèque Markdown, l'extension de notes de bas de page pour tcolorbox), cinq sont écartées. Aucun incident de collecte.</p>
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<p>Aucune. Aucune des annonces de l'intervalle ne porte sur un paquet de la liste extraite de nBook3 (xcolor, fontspec, tabularray, tcolorbox, tikz, siunitx, mhchem, enumitem, hyperref, microtype, etc.).</p>
-<h2>Nouveaux paquets pertinents</h2>
-<p><strong>lt3matrix</strong> — version 0.1 du 16 novembre 2026, licence LPPL 1.3c.<br />
-Ce paquet fournit un type « matrice » léger, bâti sur expl3 et l3fparray, avec les opérations courantes : création, modification, opérations terme à terme, opérations entre matrices, application d'une fonction aux éléments et composition typographique. Il vise explicitement les démonstrations de matrices, les exemples numériques et les transformations géométriques dans un document TeX.<br />
-Ce qu'il apporte : une façon d'écrire un calcul matriciel et de le montrer étape par étape sans passer par un langage de calcul externe. Sa portée reste étroite — le contenu du programme de lycée n'appelle guère de calcul matriciel — et je ne le classe ici que parce qu'il touche à la typographie des mathématiques que vous pratiquez déjà avec mathtools et siunitx ; à vous de juger s'il mérite une place.<br />
-https://ctan.org/pkg/lt3matrix</p>
-<h2>Autres mises à jour notables</h2>
-<ul>
-<li><strong>markdown</strong> 3.16.3 (17 novembre 2026) — la bibliothèque qui convertit et compose du Markdown à l'intérieur de TeX. Elle suppose désormais <code>enumitem</code> toujours chargé lorsque le balisage de structure (<em>tagging</em>) est actif, ce qui évite un conflit avec les interfaces qu'emule LaTeX2e depuis sa version de juin 2026. Changement interne sans effet visible sur vos conversions actuelles, mais à connaître si vous repassez un jour par ce paquet pour du Markdown → LaTeX.</li>
-<li><strong>tcbpagefootnote</strong> 1.3 (17 novembre 2026) — l'extension qui fait remonter au bas de la page, et non au bas du cadre, les notes de bas de page saisies dans un <code>tcolorbox</code> (clé <code>page footnote</code>). Cette version range correctement ces notes dans l'arbre de structure d'un PDF balisé (<code>\DocumentMetadata{tagging=on}</code>) et documente son emploi en écriture verticale japonaise, sans intérêt pour vous. À considérer seulement si vous ajoutez un jour des notes de bas de page dans vos encadrés tcolorbox.</li>
-</ul>
-<h2>Volume</h2>
-<p>8 annonces publiées dans l'intervalle (18 novembre 2026), 3 retenues (dont 0 concernant vos paquets), 5 écartées — motifs dominants : adaptation d'un gabarit à une université précise (ou-tma), jeu de société (weiqi), prise en charge de langues non latines et de l'écriture bidirectionnelle (BabelBidi), style bibliographique propre à l'économie et aux références japonaises (ua-jecon), correctif de niche sans conséquence en classe (drawmgr).</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
