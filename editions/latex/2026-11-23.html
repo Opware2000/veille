@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — lundi 23 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux outils retenus : Snippai, qui transforme une capture d'écran de formule en LaTeX éditable, et l'éditeur PDF libre de word-sys, dont la version 1.12.1 apporte l'intégration SyncTeX.</li>
+<li>Tout le reste de la fenêtre est du dépannage ponctuel (TeX Live, biblatex, imakeidx, classes memoir et ltx-talk) : rien de réutilisable.</li>
+<li>Aucune erreur de collecte signalée dans <code>meta.json</code>.</li>
+</ul>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Snippai — de la capture d'écran au LaTeX éditable</h3>
+<p>Snippai est un utilitaire de capture d'écran assisté par intelligence artificielle, disponible pour Windows, macOS et Linux. On sélectionne une zone de l'écran ; l'outil en détecte la nature et rend un contenu structuré. Le cas utile ici est la reconnaissance de formules, manuscrites ou imprimées, restituées en code LaTeX éditable ; l'outil convertit aussi les tableaux en Excel, CSV ou Markdown, extrait les blocs de code et fait de l'OCR enrichi sur le texte. L'intérêt est direct pour la préparation de sujets et de corrigés : au lieu de ressaisir une formule repérée dans un manuel ou un sujet papier, on la photographie et on récupère le code.</p>
+<p>Le dépôt est publié sous licence AGPL-3.0, avec 1 950 étoiles, 135 forks et une dernière mise à jour le 21 novembre 2026 ; la dernière version publiée est la v0.7.0, datée du 21 novembre 2026, avec des paquets .deb, .rpm et .zip pour Linux, un installeur Windows et des archives macOS.</p>
+<p>Deux réserves. D'abord, le fichier README du dépôt n'est que le gabarit par défaut de Create React App : aucun mode d'emploi n'y décrit la conversion LaTeX, qui n'est documentée que sur le site du projet (https://snippai.de/), et les journaux de version ne la détaillent pas non plus. Ensuite, l'horodatage de compilation du paquet renvoie à un dépôt « Snippai/snippai » qui répond 404, alors que l'entrée pointe vers « xyTom/snippai » : la provenance affichée ne correspond pas au dépôt accessible.</p>
+<p>Lien : https://github.com/xyTom/snippai — site : https://snippai.de/ (soumis sur Hacker News avec 1 point et aucun commentaire : nouveauté encore peu vue).</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>word-sys's PDF Editor 1.12.1 — SyncTeX pour relier PDF et source LaTeX</h3>
+<p>L'éditeur PDF libre de word-sys, écrit en Python pour Linux avec une interface GTK/Libadwaita, sort en version 1.12.1 (22 novembre 2026). La nouveauté qui compte pour un utilisateur de LaTeX est l'intégration SyncTeX : la recherche avant et arrière est implémentée en Python pur, un Ctrl+clic dans le PDF ouvre le fichier source à la bonne ligne dans VS Code, TeXstudio, Vim, Neovim, Emacs ou Kate, et le PDF recompilé est rechargé automatiquement en conservant la page, le zoom et la position de défilement — ce qui évite de rouvrir le document à chaque compilation. La version ajoute par ailleurs le glisser-déposer de pages entre onglets avec un presse-papier de pages persistant (y compris après fermeture de l'onglet source, avec des plages du type <code>1-3, 5</code>), le texte enrichi dans les formulaires AcroForm conformes ISO 32000-1, une fenêtre de préférences dédiée (Ctrl+,) et une localisation complète en sept langues, français compris.</p>
+<p>Licence GPL-3.0, 150 étoiles, dernière mise à jour du dépôt le 22 novembre 2026. Diffusion par Flatpak sur Flathub (io.github.word_sys.word-sys-pdf-editor), paquets .deb x86_64 et aarch64, AppImage ou source.</p>
+<p>Deux précisions : le billet est une auto-promotion sur r/LaTeX (0 point, 0 commentaire) — la traduction française de l'interface y est annoncée, je ne l'ai pas vérifiée sur pièce.</p>
+<p>Lien : https://github.com/word-sys/word-sys-pdf-editor — Flatpak : https://flathub.org/apps/io.github.word_sys.word-sys-pdf-editor — billet : https://www.reddit.com/r/LaTeX/comments/1y2ombj/updated_my_opensource_linux_pdf_editor_with/</p>
+<h2>Volume</h2>
+<p>7 entrées nouvelles publiées ces quatre derniers jours (hors identifiants déjà traités), 2 retenues, 5 écartées, soit un taux de rétention de 29 %. Les cinq écartées sont des questions de dépannage ponctuelles : blocage de tlmgr sous TeX Live 2026, avertissement de référence croisée avec la classe ltx-talk, initiales non abrégées dans biblatex, option de style d'index avec imakeidx, et hauteur de texte de la première page d'un chapitre en classe memoir. Sur un forum d'entraide comme r/LaTeX, un taux faible est attendu.</p>
+<footer>Édition du lundi 23 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
