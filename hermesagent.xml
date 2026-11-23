@@ -6,9 +6,62 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sun, 22 Nov 2026 00:54:12 +0100</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 00:51:21 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — lundi 23 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-23.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 00:51:21 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois trouvailles ce lundi : PcapAnalyzer, un analyseur de captures réseau auto-hébergé sous licence Apache 2.0 qui diagnostique les pannes en clair ; Muru, le nouveau serveur Rust de Graham Dumpleton pour exécuter les applications web Python, publié au fil d'un journal de développement très détaillé ; et une version corrective du greffon llm-gemini. Le reste de l'intervalle est dominé par de l'actualité générale (climat, automobile, politique américaine) sans annonce logicielle exploitable.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture</h3>
+<p>Outil libre et gratuit, auto-hébergé, qui reçoit un fichier de capture réseau (<code>.pcap</code> ou <code>.pcapng</code>, gzip accepté) et en tire un diagnostic : 27 détecteurs couvrent le TCP (blocages de pare-feu repérés par un SYN suivi d'un RST, retransmissions, fenêtres à zéro, réinitialisations après établissement), le chemin réseau (trous de MTU, fragmentation), les services de noms (DNS sans réponse, SERVFAIL, DHCP sans réponse, IP en double, tempêtes ARP), les applications (HTTP 4xx/5xx, alertes TLS, protocoles TLS obsolètes), les tunnels (IPsec, WireGuard, OpenVPN unidirectionnels ou qui renégocient sans fin) et la sécurité (balayages de ports, identifiants transmis en clair, usurpation ARP). Il prévient aussi quand c'est la capture elle-même qui limite le résultat (paquets vus dans un seul sens, doublons de port miroir, capture commencée après l'ouverture des connexions), affiche des vues proches de Wireshark avec filtres, coloration, export CSV et diagramme de flux par conversation, et produit un rapport PDF. Une enquête par IA est optionnelle et s'appuie sur votre propre clé Anthropic ; sans clé, un mode démonstration déroule tout le parcours avec un texte généré, sans coût. Licence Apache 2.0, gratuit, état « bêta », déploiement par Docker Compose ; l'application n'écoute que sur <code>127.0.0.1</code> et ne doit pas être exposée en réseau sans mandataire authentifié, car son API peut consommer votre compte d'IA.<br />
+Vérifié le 23/11/2026 sur l'API GitHub : 208 étoiles, dernière mise à jour le 21/11/2026, licence Apache-2.0, dépôt créé le 21/10/2026.<br />
+https://github.com/sebaandrada-cell/PcapAnalyzer</p>
+<h3>Muru — un serveur Rust pour les applications web Python</h3>
+<p>Graham Dumpleton, à l'origine de mod_wsgi il y a vingt ans, publie Muru : un serveur écrit en Rust destiné à exécuter en développement comme en production les applications Python ASGI et WSGI, avec pour objectif explicite d'être le meilleur outil possible pour cette tâche (isolement des workers, import unique puis duplication, HTTPS en développement, déploiements sans redémarrage, canaris, dimensionnement à zéro, respect du conteneur et de Kubernetes, barre d'outils de traçage). Le projet est annoncé et documenté article par article depuis le 4 novembre sur le blog de l'auteur, Simon Willison en ayant relayé la présentation le 21 novembre. Incertitude assumée : je n'ai trouvé aucun dépôt public ni aucune licence affichée à ce jour, et je ne peux donc pas confirmer que Muru est libre ni qu'il est gratuit — à vérifier auprès de l'auteur. Le travail est explicitement assisté par IA, l'auteur revendiquant la décision de ce qui n'est pas encore acceptable comme le cœur de son apport.<br />
+https://simonwillison.net/2026/Nov/21/muru/</p>
+<h3>worker755 — un jeu de navigateur où l'on est le « subagent » d'une IA</h3>
+<p>Projet libre (licence MIT) et gratuit, jouable directement sur worker755.com : on y incarne le subagent d'un gestionnaire automatique qui distribue des tâches. Ce n'est pas un outil de travail mais un jeu, et je le signale pour son lien direct avec le thème des agents. Dépôt actif, mis à jour le 22/11/2026, 116 étoiles ; 148 points et 36 commentaires sur Hacker News le 22/11.<br />
+https://github.com/gulivan/worker755</p>
+<h3>Leonida — recompilation PC de la version Xbox de GTA 6</h3>
+<p>Projet libre sous GPL-3.0 qui recompile pour PC la version Xbox de Grand Theft Auto 6 ; dépôt créé le 20/11/2026 et très suivi (14 793 étoiles, dernière mise à jour le 22/11/2026, 111 points sur Hacker News). Je le mentionne parce qu'il s'agit d'un dépôt libre notable, en signalant l'incertitude juridique évidente : le contenu recompilé reste la propriété de son éditeur, et la légalité de la diffusion du résultat n'est pas établie.<br />
+https://github.com/ItsNotRexed/Leonida</p>
+<h2>Extensions et greffons</h2>
+<h3>llm-gemini 0.38.1</h3>
+<p>Version corrective du greffon de Simon Willison qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code>. La 0.38.1 répare un oubli : les modèles Gemini 4 Carbon n'acceptent que les niveaux de raisonnement <code>low</code>, <code>medium</code> et <code>high</code>, tandis que Gemini 4 Hydrogen et Gemini 4 Neon en offrent un quatrième, <code>xhigh</code>, que le greffon n'exposait pas. Licence Apache-2.0, 466 étoiles, dernière mise à jour le 20/11/2026.<br />
+https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
+<h2>Volume</h2>
+<p>45 entrées examinées dans l'intervalle (3 fils r/hermesagent, 40 entrées Hacker News, 2 billets de Simon Willison), 5 retenues, 40 écartées ; un doublon regroupé (Muru, vu à la fois sur Hacker News et chez Simon Willison). Les écarts sont surtout de l'actualité générale sans annonce logicielle (climat, automobile, politique, santé) et des billets d'analyse ou d'opinion sur l'IA.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois trouvailles ce lundi : PcapAnalyzer, un analyseur de captures réseau auto-hébergé sous licence Apache 2.0 qui diagnostique les pannes en clair ; Muru, le nouveau serveur Rust de Graham Dumpleton pour exécuter les applications web Python, publié au fil d'un journal de développement très détaillé ; et une version corrective du greffon llm-gemini. Le reste de l'intervalle est dominé par de l'actualité générale (climat, automobile, politique américaine) sans annonce logicielle exploitable.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture</h3>
+<p>Outil libre et gratuit, auto-hébergé, qui reçoit un fichier de capture réseau (<code>.pcap</code> ou <code>.pcapng</code>, gzip accepté) et en tire un diagnostic : 27 détecteurs couvrent le TCP (blocages de pare-feu repérés par un SYN suivi d'un RST, retransmissions, fenêtres à zéro, réinitialisations après établissement), le chemin réseau (trous de MTU, fragmentation), les services de noms (DNS sans réponse, SERVFAIL, DHCP sans réponse, IP en double, tempêtes ARP), les applications (HTTP 4xx/5xx, alertes TLS, protocoles TLS obsolètes), les tunnels (IPsec, WireGuard, OpenVPN unidirectionnels ou qui renégocient sans fin) et la sécurité (balayages de ports, identifiants transmis en clair, usurpation ARP). Il prévient aussi quand c'est la capture elle-même qui limite le résultat (paquets vus dans un seul sens, doublons de port miroir, capture commencée après l'ouverture des connexions), affiche des vues proches de Wireshark avec filtres, coloration, export CSV et diagramme de flux par conversation, et produit un rapport PDF. Une enquête par IA est optionnelle et s'appuie sur votre propre clé Anthropic ; sans clé, un mode démonstration déroule tout le parcours avec un texte généré, sans coût. Licence Apache 2.0, gratuit, état « bêta », déploiement par Docker Compose ; l'application n'écoute que sur <code>127.0.0.1</code> et ne doit pas être exposée en réseau sans mandataire authentifié, car son API peut consommer votre compte d'IA.<br />
+Vérifié le 23/11/2026 sur l'API GitHub : 208 étoiles, dernière mise à jour le 21/11/2026, licence Apache-2.0, dépôt créé le 21/10/2026.<br />
+https://github.com/sebaandrada-cell/PcapAnalyzer</p>
+<h3>Muru — un serveur Rust pour les applications web Python</h3>
+<p>Graham Dumpleton, à l'origine de mod_wsgi il y a vingt ans, publie Muru : un serveur écrit en Rust destiné à exécuter en développement comme en production les applications Python ASGI et WSGI, avec pour objectif explicite d'être le meilleur outil possible pour cette tâche (isolement des workers, import unique puis duplication, HTTPS en développement, déploiements sans redémarrage, canaris, dimensionnement à zéro, respect du conteneur et de Kubernetes, barre d'outils de traçage). Le projet est annoncé et documenté article par article depuis le 4 novembre sur le blog de l'auteur, Simon Willison en ayant relayé la présentation le 21 novembre. Incertitude assumée : je n'ai trouvé aucun dépôt public ni aucune licence affichée à ce jour, et je ne peux donc pas confirmer que Muru est libre ni qu'il est gratuit — à vérifier auprès de l'auteur. Le travail est explicitement assisté par IA, l'auteur revendiquant la décision de ce qui n'est pas encore acceptable comme le cœur de son apport.<br />
+https://simonwillison.net/2026/Nov/21/muru/</p>
+<h3>worker755 — un jeu de navigateur où l'on est le « subagent » d'une IA</h3>
+<p>Projet libre (licence MIT) et gratuit, jouable directement sur worker755.com : on y incarne le subagent d'un gestionnaire automatique qui distribue des tâches. Ce n'est pas un outil de travail mais un jeu, et je le signale pour son lien direct avec le thème des agents. Dépôt actif, mis à jour le 22/11/2026, 116 étoiles ; 148 points et 36 commentaires sur Hacker News le 22/11.<br />
+https://github.com/gulivan/worker755</p>
+<h3>Leonida — recompilation PC de la version Xbox de GTA 6</h3>
+<p>Projet libre sous GPL-3.0 qui recompile pour PC la version Xbox de Grand Theft Auto 6 ; dépôt créé le 20/11/2026 et très suivi (14 793 étoiles, dernière mise à jour le 22/11/2026, 111 points sur Hacker News). Je le mentionne parce qu'il s'agit d'un dépôt libre notable, en signalant l'incertitude juridique évidente : le contenu recompilé reste la propriété de son éditeur, et la légalité de la diffusion du résultat n'est pas établie.<br />
+https://github.com/ItsNotRexed/Leonida</p>
+<h2>Extensions et greffons</h2>
+<h3>llm-gemini 0.38.1</h3>
+<p>Version corrective du greffon de Simon Willison qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code>. La 0.38.1 répare un oubli : les modèles Gemini 4 Carbon n'acceptent que les niveaux de raisonnement <code>low</code>, <code>medium</code> et <code>high</code>, tandis que Gemini 4 Hydrogen et Gemini 4 Neon en offrent un quatrième, <code>xhigh</code>, que le greffon n'exposait pas. Licence Apache-2.0, 466 étoiles, dernière mise à jour le 20/11/2026.<br />
+https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
+<h2>Volume</h2>
+<p>45 entrées examinées dans l'intervalle (3 fils r/hermesagent, 40 entrées Hacker News, 2 billets de Simon Willison), 5 retenues, 40 écartées ; un doublon regroupé (Muru, vu à la fois sur Hacker News et chez Simon Willison). Les écarts sont surtout de l'actualité générale sans annonce logicielle (climat, automobile, politique, santé) et des billets d'analyse ou d'opinion sur l'IA.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — dimanche 22 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-22.html</link>
