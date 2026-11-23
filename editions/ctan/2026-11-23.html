@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille CTAN — lundi 23 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../ctan.xml" title="CTAN">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille CTAN — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune des annonces nouvelles ne concerne les 61 paquets externes de votre classe nBook3.</li>
+<li>Trois nouveaux paquets valent un coup d'œil : mathwrap (coupures de ligne dans les mathématiques en ligne), framecite (sources citées rappelées sur la diapositive beamer), lc-visualizer (calcul lambda dessiné et réduit avec TikZ).</li>
+<li>Une mise à jour notable en revanche : la classe ltx-talk, de l'équipe LaTeX, passe en 0.6.14.</li>
+</ul>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>mathwrap — version 1.0, licence LPPL 1.3c</h3>
+<p>Écrit par Yiu Sing Lee, ce paquet s'attaque aux avertissements « Overfull \hbox » qui naissent des mathématiques en ligne trop longues : LaTeX, par défaut, ne coupe pas une ligne à l'intérieur d'une formule $...$. mathwrap rend la virgule active dans les mathématiques en ligne pour autoriser une coupure juste après elle, et laisse intactes les formules hors texte. Il ajuste en option les pénalités des opérateurs binaires et des relations ainsi que <code>\emergencystretch</code>, et fournit les commandes <code>\mathwrapOn</code> et <code>\mathwrapOff</code> pour désactiver ce mécanisme autour des paquets qui analysent le code caractère par caractère, comme TikZ ou pgfplots. Pour vos énoncés d'exercices et vos copies, c'est exactement le genre d'outil qui supprime des avertissements sans changer le rendu.<br />
+https://ctan.org/pkg/mathwrap</p>
+<h3>framecite — version 0.8, licence LPPL 1.3c</h3>
+<p>Nouveau paquet de Tobias J. Bauer : sur chaque diapositive beamer, il affiche en petit bloc les sources citées sur cette diapositive. Chaque entrée porte le libellé de citation dans le style BibLaTeX actif, l'auteur ou l'éditeur et le titre cité. Le bloc se place au-dessus de la ligne de pied du thème et sous les notes de bas de page ; la collecte est automatique à partir des commandes de citation abrégée usuelles, <code>\fcite</code> et <code>\fsource</code> servant à ajouter des entrées à la main. Utile si vous présentez des documents sourcés en cours (textes, images, données) et que vous voulez la référence visible sans alourdir le commentaire.<br />
+https://ctan.org/pkg/framecite</p>
+<h3>lc-visualizer — version 1.0.0, licence MIT</h3>
+<p>Première publication sur CTAN de Florian Sihler. Le paquet compose avec TikZ des termes du calcul lambda non typé : chaque abstraction reçoit une couleur, et les variables qu'elle lie comme l'étendue de son corps sont surlignées de cette couleur. Les termes peuvent être réduits automatiquement — conversions alpha et eta, réductions bêta, dépliage de règles de réécriture définies par l'utilisateur — et chaque étape d'une réduction peut être représentée. C'est un outil de théorie informatique, plutôt du niveau universitaire que du lycée, mais il donne un support visuel propre à un sujet qui s'enseigne mal au tableau ; à vous de juger s'il rejoint vos supports de SNT ou de préparation au DIU.<br />
+https://ctan.org/pkg/lc-visualizer</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>ltx-talk 0.6.14</strong> (20 novembre, LPPL 1.3c) : la classe expérimentale de l'équipe LaTeX pour des présentations accessibles, qui sert aussi de banc d'essai au balisage des PDF ; ici, réglage du comportement standard de superposition pour <code>\label</code> — rien qui touche beamer, mais c'est le chantier à suivre si vous vous intéressez à l'accessibilité de vos diaporamas.</li>
+</ul>
+<h2>Volume</h2>
+<p>Dix annonces publiées entre le 21 et le 22 novembre, quatre retenues — aucune concernant vos paquets, trois nouveaux paquets et une mise à jour notable —, six écartées : une police de mathématiques sans-serif confidentielle (Micfong Sans Math), une police à chasse fixe dont la correction ne touche que les encodages TS1 et Unicode (newtxtt), un outil de conversion de polices MathTime (mtp2otf), un gabarit propre à l'université de Vienne (Univie Ling), un générateur de mentions de rôles pour articles académiques (Contributor CRediTs) et un paquet de tracés de trapèzes vocaliques destiné à la linguistique (VowelChart).</p>
+<hr />
+<p><em>Note de traçage : le journal CTAN ne signalait aucune erreur de collecte (dernière collecte le 23 novembre à 00 h 12).</em></p>
+<footer>Édition du lundi 23 novembre 2026 — <a href="https://opware2000.github.io/veille/ctan.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

@@ -6,9 +6,101 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 01:34:29 +0100</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 01:51:06 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Clément Mondary — lundi 23 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-11-23.html</link>
+<guid isPermaLink="false">mondary-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 01:51:06 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois billets retenus sur les cinq publiés le 22 novembre : un bloc-notes natif écrit en Rust qui laisse ses fichiers en clair sur le disque (QUIET.MD), une boîte de réception unique pour piloter Claude Code et Codex (VESPIN), et un modem acoustique pour faire passer un petit fichier d'une machine à l'autre sans réseau ni câble (CHIRP).</p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>QUIET.MD — Des notes locales qui répondent sans attendre.</strong> Application de prise de notes native écrite en Rust, sans Electron ni service inférieur : les textes restent dans un dossier de fichiers XML sur votre propre disque, et la frappe demeure sous 6 millisecondes même sur un document d'un million de caractères. Pour un usage enseignant, l'intérêt tient à l'absence de compte et d'abonnement : le dossier de notes se sauvegarde ou se synchronise par simple copie, et un fichier XML reste lisible sans l'application, ce qui réduit la dépendance à l'éditeur. Tourne sur macOS et Windows, en bêta gratuite ; la licence et le prix à venir ne sont pas précisés dans le billet, et le dépôt du projet n'y est pas cité, donc l'ouverture du code reste à vérifier.<br />
+https://mondary.design/2026/11/quiet-md-des-notes-locales-qui-repondent-sans-attendre/</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>VESPIN — Claude Code et Codex réunis dans une seule boîte de réception.</strong> Application macOS et web qui rassemble plusieurs agents de code au même endroit : on ouvre une tâche, on choisit un dépôt GitHub et on décrit le changement comme une issue ; l'agent travaille dans un bac à sable, écrit son plan, ouvre une pull request, et ne revient vers vous que lorsqu'il bute sur une décision, une relecture ou une tâche à valider. L'intérêt pour un professeur qui fait tourner des agents est de ne plus courir après trois fenêtres de conversation : une vue « Needs me » rassemble les fils qui attendent une réponse, et les fils se mettent de côté jusqu'à une heure donnée. Le projet se présente comme gratuit et open source sous licence Apache-2.0 ; il ne facture pas les modèles, qui tournent sur votre abonnement Claude ou ChatGPT, ou sur votre clé API Anthropic ou OpenAI. L'app Mac exige macOS 14 ou plus et une puce Apple silicon ; le web prend le relais sur téléphone ou sur une autre machine, avec le même espace de travail. Un serveur MCP et une intégration Slack permettent de le piloter depuis d'autres outils ; le dépôt reste jeune (créé en août 2026, version 0.27.0) et le cœur du flux passe par GitHub — dépôt, pull request, relecture.<br />
+https://mondary.design/2026/11/vespin-claude-code-et-codex-reunis-dans-une-seule-boite-de-reception/</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>CHIRP — Transférer des données entre deux machines par le son.</strong> Modem acoustique qui tourne dans le navigateur : une machine joue une salve de tonalités, l'autre l'écoute au microphone et reconstruit le texte ou le fichier, sans réseau, sans câble, sans compte et sans serveur. Le mode rapide envoie quatre tonalités à la fois (1,5 à 7,9 kHz) à environ 320 bit/s — 100 octets en deux secondes et demie — quand le mode robuste descend à 85 bit/s pour résister au bruit ambiant, et un troisième mode se place entre 18 et 19 kHz. Un fichier est limité à 256 Ko et à quinze minutes d'antenne. Deux réserves que le projet ne cache pas : rien n'est chiffré, donc quiconque est à portée d'oreille peut écouter ou émettre, et la transmission reste à sens unique, sans accusé de réception. C'est plus une curiosité qu'un outil de production, mais pour dépanner entre deux postes isolés — un ordinateur et un téléphone posés sur la même table, une salle sans connexion — l'idée se retient. Le billet ne donne ni licence ni système au-delà du navigateur ; le dépôt GitHub (solst-ice/chirp) fournit un Dockerfile et un fichier compose pour héberger la page soi-même, ce qui permet de vérifier soi-même les conditions d'usage.<br />
+https://mondary.design/2026/11/chirp-transferer-des-donnees-entre-deux-machines-par-le-son/</p>
+<h2>Volume</h2>
+<p>Cinq billets publiés dans l'intervalle (tous le 22 novembre), trois retenus, deux écartés : un émulateur de console de jeu (STEAMAC) et un effet visuel décoratif pour page web (SWARM REBUILD), soit un motif de jeu vidéo et un de gadget.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois billets retenus sur les cinq publiés le 22 novembre : un bloc-notes natif écrit en Rust qui laisse ses fichiers en clair sur le disque (QUIET.MD), une boîte de réception unique pour piloter Claude Code et Codex (VESPIN), et un modem acoustique pour faire passer un petit fichier d'une machine à l'autre sans réseau ni câble (CHIRP).</p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>QUIET.MD — Des notes locales qui répondent sans attendre.</strong> Application de prise de notes native écrite en Rust, sans Electron ni service inférieur : les textes restent dans un dossier de fichiers XML sur votre propre disque, et la frappe demeure sous 6 millisecondes même sur un document d'un million de caractères. Pour un usage enseignant, l'intérêt tient à l'absence de compte et d'abonnement : le dossier de notes se sauvegarde ou se synchronise par simple copie, et un fichier XML reste lisible sans l'application, ce qui réduit la dépendance à l'éditeur. Tourne sur macOS et Windows, en bêta gratuite ; la licence et le prix à venir ne sont pas précisés dans le billet, et le dépôt du projet n'y est pas cité, donc l'ouverture du code reste à vérifier.<br />
+https://mondary.design/2026/11/quiet-md-des-notes-locales-qui-repondent-sans-attendre/</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>VESPIN — Claude Code et Codex réunis dans une seule boîte de réception.</strong> Application macOS et web qui rassemble plusieurs agents de code au même endroit : on ouvre une tâche, on choisit un dépôt GitHub et on décrit le changement comme une issue ; l'agent travaille dans un bac à sable, écrit son plan, ouvre une pull request, et ne revient vers vous que lorsqu'il bute sur une décision, une relecture ou une tâche à valider. L'intérêt pour un professeur qui fait tourner des agents est de ne plus courir après trois fenêtres de conversation : une vue « Needs me » rassemble les fils qui attendent une réponse, et les fils se mettent de côté jusqu'à une heure donnée. Le projet se présente comme gratuit et open source sous licence Apache-2.0 ; il ne facture pas les modèles, qui tournent sur votre abonnement Claude ou ChatGPT, ou sur votre clé API Anthropic ou OpenAI. L'app Mac exige macOS 14 ou plus et une puce Apple silicon ; le web prend le relais sur téléphone ou sur une autre machine, avec le même espace de travail. Un serveur MCP et une intégration Slack permettent de le piloter depuis d'autres outils ; le dépôt reste jeune (créé en août 2026, version 0.27.0) et le cœur du flux passe par GitHub — dépôt, pull request, relecture.<br />
+https://mondary.design/2026/11/vespin-claude-code-et-codex-reunis-dans-une-seule-boite-de-reception/</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>CHIRP — Transférer des données entre deux machines par le son.</strong> Modem acoustique qui tourne dans le navigateur : une machine joue une salve de tonalités, l'autre l'écoute au microphone et reconstruit le texte ou le fichier, sans réseau, sans câble, sans compte et sans serveur. Le mode rapide envoie quatre tonalités à la fois (1,5 à 7,9 kHz) à environ 320 bit/s — 100 octets en deux secondes et demie — quand le mode robuste descend à 85 bit/s pour résister au bruit ambiant, et un troisième mode se place entre 18 et 19 kHz. Un fichier est limité à 256 Ko et à quinze minutes d'antenne. Deux réserves que le projet ne cache pas : rien n'est chiffré, donc quiconque est à portée d'oreille peut écouter ou émettre, et la transmission reste à sens unique, sans accusé de réception. C'est plus une curiosité qu'un outil de production, mais pour dépanner entre deux postes isolés — un ordinateur et un téléphone posés sur la même table, une salle sans connexion — l'idée se retient. Le billet ne donne ni licence ni système au-delà du navigateur ; le dépôt GitHub (solst-ice/chirp) fournit un Dockerfile et un fichier compose pour héberger la page soi-même, ce qui permet de vérifier soi-même les conditions d'usage.<br />
+https://mondary.design/2026/11/chirp-transferer-des-donnees-entre-deux-machines-par-le-son/</p>
+<h2>Volume</h2>
+<p>Cinq billets publiés dans l'intervalle (tous le 22 novembre), trois retenus, deux écartés : un émulateur de console de jeu (STEAMAC) et un effet visuel décoratif pour page web (SWARM REBUILD), soit un motif de jeu vidéo et un de gadget.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille CTAN — lundi 23 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-23.html</link>
+<guid isPermaLink="false">ctan-2026-11-23</guid>
+<pubDate>Mon, 23 Nov 2026 01:41:11 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune des annonces nouvelles ne concerne les 61 paquets externes de votre classe nBook3.</li>
+<li>Trois nouveaux paquets valent un coup d'œil : mathwrap (coupures de ligne dans les mathématiques en ligne), framecite (sources citées rappelées sur la diapositive beamer), lc-visualizer (calcul lambda dessiné et réduit avec TikZ).</li>
+<li>Une mise à jour notable en revanche : la classe ltx-talk, de l'équipe LaTeX, passe en 0.6.14.</li>
+</ul>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>mathwrap — version 1.0, licence LPPL 1.3c</h3>
+<p>Écrit par Yiu Sing Lee, ce paquet s'attaque aux avertissements « Overfull \hbox » qui naissent des mathématiques en ligne trop longues : LaTeX, par défaut, ne coupe pas une ligne à l'intérieur d'une formule $...$. mathwrap rend la virgule active dans les mathématiques en ligne pour autoriser une coupure juste après elle, et laisse intactes les formules hors texte. Il ajuste en option les pénalités des opérateurs binaires et des relations ainsi que <code>\emergencystretch</code>, et fournit les commandes <code>\mathwrapOn</code> et <code>\mathwrapOff</code> pour désactiver ce mécanisme autour des paquets qui analysent le code caractère par caractère, comme TikZ ou pgfplots. Pour vos énoncés d'exercices et vos copies, c'est exactement le genre d'outil qui supprime des avertissements sans changer le rendu.<br />
+https://ctan.org/pkg/mathwrap</p>
+<h3>framecite — version 0.8, licence LPPL 1.3c</h3>
+<p>Nouveau paquet de Tobias J. Bauer : sur chaque diapositive beamer, il affiche en petit bloc les sources citées sur cette diapositive. Chaque entrée porte le libellé de citation dans le style BibLaTeX actif, l'auteur ou l'éditeur et le titre cité. Le bloc se place au-dessus de la ligne de pied du thème et sous les notes de bas de page ; la collecte est automatique à partir des commandes de citation abrégée usuelles, <code>\fcite</code> et <code>\fsource</code> servant à ajouter des entrées à la main. Utile si vous présentez des documents sourcés en cours (textes, images, données) et que vous voulez la référence visible sans alourdir le commentaire.<br />
+https://ctan.org/pkg/framecite</p>
+<h3>lc-visualizer — version 1.0.0, licence MIT</h3>
+<p>Première publication sur CTAN de Florian Sihler. Le paquet compose avec TikZ des termes du calcul lambda non typé : chaque abstraction reçoit une couleur, et les variables qu'elle lie comme l'étendue de son corps sont surlignées de cette couleur. Les termes peuvent être réduits automatiquement — conversions alpha et eta, réductions bêta, dépliage de règles de réécriture définies par l'utilisateur — et chaque étape d'une réduction peut être représentée. C'est un outil de théorie informatique, plutôt du niveau universitaire que du lycée, mais il donne un support visuel propre à un sujet qui s'enseigne mal au tableau ; à vous de juger s'il rejoint vos supports de SNT ou de préparation au DIU.<br />
+https://ctan.org/pkg/lc-visualizer</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>ltx-talk 0.6.14</strong> (20 novembre, LPPL 1.3c) : la classe expérimentale de l'équipe LaTeX pour des présentations accessibles, qui sert aussi de banc d'essai au balisage des PDF ; ici, réglage du comportement standard de superposition pour <code>\label</code> — rien qui touche beamer, mais c'est le chantier à suivre si vous vous intéressez à l'accessibilité de vos diaporamas.</li>
+</ul>
+<h2>Volume</h2>
+<p>Dix annonces publiées entre le 21 et le 22 novembre, quatre retenues — aucune concernant vos paquets, trois nouveaux paquets et une mise à jour notable —, six écartées : une police de mathématiques sans-serif confidentielle (Micfong Sans Math), une police à chasse fixe dont la correction ne touche que les encodages TS1 et Unicode (newtxtt), un outil de conversion de polices MathTime (mtp2otf), un gabarit propre à l'université de Vienne (Univie Ling), un générateur de mentions de rôles pour articles académiques (Contributor CRediTs) et un paquet de tracés de trapèzes vocaliques destiné à la linguistique (VowelChart).</p>
+<hr />
+<p><em>Note de traçage : le journal CTAN ne signalait aucune erreur de collecte (dernière collecte le 23 novembre à 00 h 12).</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Aucune des annonces nouvelles ne concerne les 61 paquets externes de votre classe nBook3.</li>
+<li>Trois nouveaux paquets valent un coup d'œil : mathwrap (coupures de ligne dans les mathématiques en ligne), framecite (sources citées rappelées sur la diapositive beamer), lc-visualizer (calcul lambda dessiné et réduit avec TikZ).</li>
+<li>Une mise à jour notable en revanche : la classe ltx-talk, de l'équipe LaTeX, passe en 0.6.14.</li>
+</ul>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>mathwrap — version 1.0, licence LPPL 1.3c</h3>
+<p>Écrit par Yiu Sing Lee, ce paquet s'attaque aux avertissements « Overfull \hbox » qui naissent des mathématiques en ligne trop longues : LaTeX, par défaut, ne coupe pas une ligne à l'intérieur d'une formule $...$. mathwrap rend la virgule active dans les mathématiques en ligne pour autoriser une coupure juste après elle, et laisse intactes les formules hors texte. Il ajuste en option les pénalités des opérateurs binaires et des relations ainsi que <code>\emergencystretch</code>, et fournit les commandes <code>\mathwrapOn</code> et <code>\mathwrapOff</code> pour désactiver ce mécanisme autour des paquets qui analysent le code caractère par caractère, comme TikZ ou pgfplots. Pour vos énoncés d'exercices et vos copies, c'est exactement le genre d'outil qui supprime des avertissements sans changer le rendu.<br />
+https://ctan.org/pkg/mathwrap</p>
+<h3>framecite — version 0.8, licence LPPL 1.3c</h3>
+<p>Nouveau paquet de Tobias J. Bauer : sur chaque diapositive beamer, il affiche en petit bloc les sources citées sur cette diapositive. Chaque entrée porte le libellé de citation dans le style BibLaTeX actif, l'auteur ou l'éditeur et le titre cité. Le bloc se place au-dessus de la ligne de pied du thème et sous les notes de bas de page ; la collecte est automatique à partir des commandes de citation abrégée usuelles, <code>\fcite</code> et <code>\fsource</code> servant à ajouter des entrées à la main. Utile si vous présentez des documents sourcés en cours (textes, images, données) et que vous voulez la référence visible sans alourdir le commentaire.<br />
+https://ctan.org/pkg/framecite</p>
+<h3>lc-visualizer — version 1.0.0, licence MIT</h3>
+<p>Première publication sur CTAN de Florian Sihler. Le paquet compose avec TikZ des termes du calcul lambda non typé : chaque abstraction reçoit une couleur, et les variables qu'elle lie comme l'étendue de son corps sont surlignées de cette couleur. Les termes peuvent être réduits automatiquement — conversions alpha et eta, réductions bêta, dépliage de règles de réécriture définies par l'utilisateur — et chaque étape d'une réduction peut être représentée. C'est un outil de théorie informatique, plutôt du niveau universitaire que du lycée, mais il donne un support visuel propre à un sujet qui s'enseigne mal au tableau ; à vous de juger s'il rejoint vos supports de SNT ou de préparation au DIU.<br />
+https://ctan.org/pkg/lc-visualizer</p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>ltx-talk 0.6.14</strong> (20 novembre, LPPL 1.3c) : la classe expérimentale de l'équipe LaTeX pour des présentations accessibles, qui sert aussi de banc d'essai au balisage des PDF ; ici, réglage du comportement standard de superposition pour <code>\label</code> — rien qui touche beamer, mais c'est le chantier à suivre si vous vous intéressez à l'accessibilité de vos diaporamas.</li>
+</ul>
+<h2>Volume</h2>
+<p>Dix annonces publiées entre le 21 et le 22 novembre, quatre retenues — aucune concernant vos paquets, trois nouveaux paquets et une mise à jour notable —, six écartées : une police de mathématiques sans-serif confidentielle (Micfong Sans Math), une police à chasse fixe dont la correction ne touche que les encodages TS1 et Unicode (newtxtt), un outil de conversion de polices MathTime (mtp2otf), un gabarit propre à l'université de Vienne (Univie Ling), un générateur de mentions de rôles pour articles académiques (Contributor CRediTs) et un paquet de tracés de trapèzes vocaliques destiné à la linguistique (VowelChart).</p>
+<hr />
+<p><em>Note de traçage : le journal CTAN ne signalait aucune erreur de collecte (dernière collecte le 23 novembre à 00 h 12).</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/DeepSeek — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/deepseek/2026-11-23.html</link>
@@ -3544,208 +3636,6 @@ Un banc d'essai indépendant de 27 280 exécutions d'agents classe OpenCode v2 c
 <p><strong>Atténuer les vignettes YouTube déjà parcourues.</strong> Extension MIT écrite par son auteur (anciennement YouTube Attention Cleaner) : une vignette s'atténue après deux secondes passées à l'écran puis deux secondes hors du champ de vision, sans masquer l'interface ni s'appuyer sur l'historique de visionnage ; tout reste dans le navigateur. Annoncée sur r/opensource. https://www.reddit.com/r/opensource/comments/1xzfxci/</p>
 <h2>Volume</h2>
 <p>69 entrées nouvelles examinées (sur 280 publiées dans l'intervalle de quatre jours ; les autres étaient déjà traitées les jours précédents), 28 sujets retenus, 41 entrées écartées. Six fils Reddit du 16 novembre ont réapparu sous un identifiant préfixé « t3_ » alors qu'ils avaient déjà été traités sous leur identifiant d'origine : le rapprochement des identifiants les a écartés, aucun n'a été annoncé deux fois. La collecte a en revanche signalé une erreur : « opensource: HTTP 404 » sur le flux du subreddit — les fils Reddit continuent d'arriver, mais par le relais, ce qui confirme la fermeture du flux direct.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/hermesagent — jeudi 19 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-19.html</link>
-<guid isPermaLink="false">hermesagent-2026-11-19</guid>
-<pubDate>Thu, 19 Nov 2026 00:58:56 +0100</pubDate>
-<category>r/hermesagent</category>
-<description><![CDATA[<h1>Veille r/hermesagent — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Journée dense malgré beaucoup d'actualité générale : trois outils libres neufs méritent le détour — Hex, la dictée vocale locale des auteurs d'opencode (MIT), un noyau de CAO en Rust écrit pour la robotique, et un navigateur Mac de dix mégaoctets signé WebKit. S'y ajoutent deux dépôts liés à l'écosystème Hermes, dont un greffon de suivi des jetons qui résiste aux réinitialisations de la base d'état. Côté modèles, Google et Microsoft ont chacun dégainé une famille orientée coût et travail d'agent.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>Hex — la dictée vocale locale des auteurs d'opencode</h3>
-<p>Une application de dictée qui transcrit sur la machine et colle le texte dans l'application active : on maintient une touche, on parle, on relâche. Le premier lancement télécharge un modèle de reconnaissance, ensuite rien ne quitte l'ordinateur. Elle est signée Anomaly, l'équipe derrière opencode, et fonctionne sur macOS, Windows et Linux, avec en plus une commande en ligne qui transcrit un fichier audio ou vidéo sans ouvrir l'application. C'est la solution libre à opposer aux services de dictée par abonnement. Licence MIT, plus de 7 400 étoiles, dernière activité le 18 novembre 2026.<br />
-<a href="https://anoma.ly/hex/">https://anoma.ly/hex/</a> — code : <a href="https://github.com/anomalyco/hex">https://github.com/anomalyco/hex</a></p>
-<h3>springrep — un noyau de CAO exact, en Rust</h3>
-<p>Écrit par un roboticiens mécontent des noyaux existants, ce logiciel calcule une vraie géométrie de CAO (surfaces analytiques ou NURBS, pas des maillages) : opérations booléennes, congés, balayages, export STEP, avec une précision annoncée au dix-millionième de millimètre et une validation de chaque résultat. Pur Rust, sans dépendance ni code non sécurisé, et compilable en WebAssembly. Résultat vérifiable sur un banc d'essai public. C'est spécialisé, loin de l'écosystème des agents, mais c'est un projet libre neuf et solide. Licence MIT, 3 étoiles (publié le 18 novembre 2026).<br />
-<a href="https://springcraft-ai.github.io/springrep/">https://springcraft-ai.github.io/springrep/</a> — code : <a href="https://github.com/springcraft-ai/springrep">https://github.com/springcraft-ai/springrep</a></p>
-<h3>Search — un navigateur Mac de dix mégaoctets</h3>
-<p>Un navigateur pour macOS qui s'appuie sur le moteur WebKit déjà présent dans le système d'exploitation, d'où sa taille : 10,8 mégaoctets sur le disque et environ 320 millisecondes pour ouvrir sa première fenêtre. Il offre les onglets en haut ou sur le côté, des espaces séparés, des épingles, un mode lecture, une fenêtre vidéo flottante, une importation depuis Arc ou Chrome, et le blocage des publicités au niveau réseau. Les extensions du Chrome Web Store sont acceptées à partir de macOS 15.4. Gratuit, licence MIT, 3 293 étoiles.<br />
-<a href="https://searchbrowser.app/">https://searchbrowser.app/</a> — code : <a href="https://github.com/driceroland/Search">https://github.com/driceroland/Search</a></p>
-<h3>SuperKMeans reçoit e-means (SuperEMeans)</h3>
-<p>La bibliothèque libre de partitionnement de vecteurs à haute dimension — celle qu'utilisent ParadeDB, Zilliz et FAISS — intègre désormais e-means, une méthode qui atteint la qualité du k-means classique en deux époques au lieu de dix. L'auteur mesure un gain allant jusqu'à 1,8 fois sur e-means seul, sans perte de qualité de regroupement. Utile pour qui construit un index de recherche vectorielle sur son propre serveur. Licence MIT, 106 étoiles, dernière mise à jour le 18 novembre 2026.<br />
-<a href="https://github.com/cwida/SuperKMeans">https://github.com/cwida/SuperKMeans</a> — explication : <a href="https://www.lkuffo.com/superemeans/">https://www.lkuffo.com/superemeans/</a></p>
-<h3>ExitPath — la carte de sortie des grandes plateformes</h3>
-<p>Un site qui recense, pour chaque outil propriétaire (Google Docs, Microsoft 365, Slack, Notion, Dropbox, Zoom, Google Photos, 1Password…), les remplaçants libres possibles, la difficulté réelle de la migration chiffrée sur 100, et des listes de vérification étape par étape. Tout se calcule dans le navigateur, sans compte ni envoi de données. Présenté comme libre par son auteur sur Hacker News ; réserve — je n'ai pas trouvé le dépôt du code source, la mention de logiciel libre reste donc à confirmer.<br />
-<a href="https://exitpath-ruddy.vercel.app/">https://exitpath-ruddy.vercel.app/</a></p>
-<h3>Recursive AI — trente bibliothèques .NET publiées en libre</h3>
-<p>Un développeur seul, assisté d'une flotte d'agents, annonce avoir écrit et publié trente bibliothèques libres : un moteur de base de données compatible SQLite, un moteur de jeu à physique déterministe, une chaîne graphique avec son propre compilateur de nuanceurs, et des lecteurs-écrivains de Word, Excel et PowerPoint. Vingt-huit sont passées en version 1.0 entre début octobre et mi-novembre. C'est du C# sur NuGet, une bibliothèque YAML existe aussi en Rust et en Go. L'ensemble des dépôts est sous licence Apache 2.0 ; la plus suivie, onepdf, compte 44 étoiles.<br />
-<a href="https://recursiveai.org/blog/what-my-software-factory-built/">https://recursiveai.org/blog/what-my-software-factory-built/</a> — dépôts : <a href="https://github.com/recursive-ai-oss">https://github.com/recursive-ai-oss</a></p>
-<h3>gta6-uefi — un jeu dans le micrologiciel de démarrage (curiosité)</h3>
-<p>Un jeu de course de type GTA, tenant dans une image amorçable de 942 kilo-octets qui s'exécute avant tout système d'exploitation, au niveau du micrologiciel UEFI. C'est un tour de force technique plus qu'un outil du quotidien, mais le code est public et le dépôt actif. Réserve : aucune licence reconnue par GitHub, 7 étoiles.<br />
-<a href="https://github.com/eklavya-raj/gta6-uefi">https://github.com/eklavya-raj/gta6-uefi</a></p>
-<h2>Extensions et greffons</h2>
-<h3>Token Stats Ledger v1.0.0 — suivi d'usage et de coûts pour Hermes</h3>
-<p>Un greffon pour l'application de bureau Hermes : un indicateur dans la barre d'état et un panneau qui suivent les jetons par session et par modèle (entrée, cache, sortie, taux de hits, remplissage de contexte, coût équivalent à l'usage), avec l'historique par jour, semaine et mois. Son intérêt technique est le backend : la base d'état de Hermes n'est pas monotone — les réinitialisations de compression et les retours en arrière font chuter les compteurs —, aussi un petit démon interroge la base en lecture seule toutes les quinze secondes et conserve des compteurs monotones qui survivent à ces événements. La version 1.0.0 fusionne client et backend en un seul dépôt, n'installe plus de points d'accroche dans le serveur de Hermes (les mises à jour de l'agent n'effacent donc plus rien) et accepte des tarifs personnalisés. Projet amateur et gratuit ; l'auteur ne précise pas de licence dans son annonce.<br />
-<a href="https://www.reddit.com/r/hermesagent/comments/1xzi77q/token_stats_ledger_v100_usage_cost_tracking/">https://www.reddit.com/r/hermesagent/comments/1xzi77q/token_stats_ledger_v100_usage_cost_tracking/</a></p>
-<h3>hermes-kernel-lab — reconstruire Hermes en Rust, une proposition à la fois</h3>
-<p>Un dépôt qui réécrit le fonctionnement de l'agent en Rust, en découpant le travail en propositions de fusion courtes et compréhensibles, pour qui veut lire le code d'un agent plutôt que la notice. Présenté par son auteur sur le subreddit. Réserve : dépôt très jeune et sans licence reconnue par GitHub, aucune étoile, dernière poussée le 17 novembre 2026.<br />
-<a href="https://github.com/udayj/hermes-kernel-lab">https://github.com/udayj/hermes-kernel-lab</a></p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Gemini 4 Neon (Google).</strong> Nouveau modèle de la famille Gemini, présenté comme taillé pour le travail d'agent : un million de jetons de contexte, facturé 3 dollars le million de jetons en entrée (0,15 dollars pour les jetons en cache) et 15 dollars en sortie. Google revendique la troisième place au classement général d'Artificial Analysis et des points forts en suivi d'instructions et en œuvres scientifiques. Modèle propriétaire, accessible par interface payante et plateforme Google ; les chiffres de comparaison viennent de l'éditeur, à prendre avec la réserve d'usage.<br />
-<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</a></p>
-<p><strong>Microsoft MAI — sept modèles annoncés à Ignite 2026.</strong> La firme présente une famille de modèles d'accès payant, tous construits sur l'argument du coût : MAI Code 2 (98 % de la qualité de GPT-6.1 Sol pour environ 40 % du prix), MAI Cyber 2 Flash, MAI Code 2 Flash, MAI Image 2.7, MAI Realtime 1 (à partir de 0,01 dollar la minute audio), MAI Transcribe 2 et Decision 1.1, auxquels s'ajoute un accélérateur matériel, Maia 200. Ce ne sont pas des modèles ouverts et rien n'est utilisable hors de l'offre Microsoft ; les comparaisons de prix et de qualité sont fournies par l'éditeur (132 points, 80 commentaires).<br />
-<a href="https://microsoft.ai/news/microsoft-ignite-2026/">https://microsoft.ai/news/microsoft-ignite-2026/</a></p>
-<h2>Volume</h2>
-<p>84 entrées examinées (77 Hacker News, 2 Simon Willison, 1 Latent Space, 4 r/hermesagent), 11 retenues, 73 écartées. Principaux motifs d'écart : actualité générale et politique (Nvidia, pont de Crimée, élections, Amazon, entrée en bourse d'Anthropic), avis et billets de blog sans outil, incidents et failles de sécurité (Nginx, coupure de Codeberg, paquet PyPI compromis), et deux sujets déjà couverts dans l'édition du 18 novembre (GPT-6.2 Astra et Sol).</p>
-<p>Note de collecte : les deux dernières passes du collecteur Reddit (18 novembre à 21 h 51 et 23 h 51 UTC) ne signalent aucune erreur ; les journaux Reddit, Hacker News et des flux externes sont à jour.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/hermesagent — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Journée dense malgré beaucoup d'actualité générale : trois outils libres neufs méritent le détour — Hex, la dictée vocale locale des auteurs d'opencode (MIT), un noyau de CAO en Rust écrit pour la robotique, et un navigateur Mac de dix mégaoctets signé WebKit. S'y ajoutent deux dépôts liés à l'écosystème Hermes, dont un greffon de suivi des jetons qui résiste aux réinitialisations de la base d'état. Côté modèles, Google et Microsoft ont chacun dégainé une famille orientée coût et travail d'agent.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>Hex — la dictée vocale locale des auteurs d'opencode</h3>
-<p>Une application de dictée qui transcrit sur la machine et colle le texte dans l'application active : on maintient une touche, on parle, on relâche. Le premier lancement télécharge un modèle de reconnaissance, ensuite rien ne quitte l'ordinateur. Elle est signée Anomaly, l'équipe derrière opencode, et fonctionne sur macOS, Windows et Linux, avec en plus une commande en ligne qui transcrit un fichier audio ou vidéo sans ouvrir l'application. C'est la solution libre à opposer aux services de dictée par abonnement. Licence MIT, plus de 7 400 étoiles, dernière activité le 18 novembre 2026.<br />
-<a href="https://anoma.ly/hex/">https://anoma.ly/hex/</a> — code : <a href="https://github.com/anomalyco/hex">https://github.com/anomalyco/hex</a></p>
-<h3>springrep — un noyau de CAO exact, en Rust</h3>
-<p>Écrit par un roboticiens mécontent des noyaux existants, ce logiciel calcule une vraie géométrie de CAO (surfaces analytiques ou NURBS, pas des maillages) : opérations booléennes, congés, balayages, export STEP, avec une précision annoncée au dix-millionième de millimètre et une validation de chaque résultat. Pur Rust, sans dépendance ni code non sécurisé, et compilable en WebAssembly. Résultat vérifiable sur un banc d'essai public. C'est spécialisé, loin de l'écosystème des agents, mais c'est un projet libre neuf et solide. Licence MIT, 3 étoiles (publié le 18 novembre 2026).<br />
-<a href="https://springcraft-ai.github.io/springrep/">https://springcraft-ai.github.io/springrep/</a> — code : <a href="https://github.com/springcraft-ai/springrep">https://github.com/springcraft-ai/springrep</a></p>
-<h3>Search — un navigateur Mac de dix mégaoctets</h3>
-<p>Un navigateur pour macOS qui s'appuie sur le moteur WebKit déjà présent dans le système d'exploitation, d'où sa taille : 10,8 mégaoctets sur le disque et environ 320 millisecondes pour ouvrir sa première fenêtre. Il offre les onglets en haut ou sur le côté, des espaces séparés, des épingles, un mode lecture, une fenêtre vidéo flottante, une importation depuis Arc ou Chrome, et le blocage des publicités au niveau réseau. Les extensions du Chrome Web Store sont acceptées à partir de macOS 15.4. Gratuit, licence MIT, 3 293 étoiles.<br />
-<a href="https://searchbrowser.app/">https://searchbrowser.app/</a> — code : <a href="https://github.com/driceroland/Search">https://github.com/driceroland/Search</a></p>
-<h3>SuperKMeans reçoit e-means (SuperEMeans)</h3>
-<p>La bibliothèque libre de partitionnement de vecteurs à haute dimension — celle qu'utilisent ParadeDB, Zilliz et FAISS — intègre désormais e-means, une méthode qui atteint la qualité du k-means classique en deux époques au lieu de dix. L'auteur mesure un gain allant jusqu'à 1,8 fois sur e-means seul, sans perte de qualité de regroupement. Utile pour qui construit un index de recherche vectorielle sur son propre serveur. Licence MIT, 106 étoiles, dernière mise à jour le 18 novembre 2026.<br />
-<a href="https://github.com/cwida/SuperKMeans">https://github.com/cwida/SuperKMeans</a> — explication : <a href="https://www.lkuffo.com/superemeans/">https://www.lkuffo.com/superemeans/</a></p>
-<h3>ExitPath — la carte de sortie des grandes plateformes</h3>
-<p>Un site qui recense, pour chaque outil propriétaire (Google Docs, Microsoft 365, Slack, Notion, Dropbox, Zoom, Google Photos, 1Password…), les remplaçants libres possibles, la difficulté réelle de la migration chiffrée sur 100, et des listes de vérification étape par étape. Tout se calcule dans le navigateur, sans compte ni envoi de données. Présenté comme libre par son auteur sur Hacker News ; réserve — je n'ai pas trouvé le dépôt du code source, la mention de logiciel libre reste donc à confirmer.<br />
-<a href="https://exitpath-ruddy.vercel.app/">https://exitpath-ruddy.vercel.app/</a></p>
-<h3>Recursive AI — trente bibliothèques .NET publiées en libre</h3>
-<p>Un développeur seul, assisté d'une flotte d'agents, annonce avoir écrit et publié trente bibliothèques libres : un moteur de base de données compatible SQLite, un moteur de jeu à physique déterministe, une chaîne graphique avec son propre compilateur de nuanceurs, et des lecteurs-écrivains de Word, Excel et PowerPoint. Vingt-huit sont passées en version 1.0 entre début octobre et mi-novembre. C'est du C# sur NuGet, une bibliothèque YAML existe aussi en Rust et en Go. L'ensemble des dépôts est sous licence Apache 2.0 ; la plus suivie, onepdf, compte 44 étoiles.<br />
-<a href="https://recursiveai.org/blog/what-my-software-factory-built/">https://recursiveai.org/blog/what-my-software-factory-built/</a> — dépôts : <a href="https://github.com/recursive-ai-oss">https://github.com/recursive-ai-oss</a></p>
-<h3>gta6-uefi — un jeu dans le micrologiciel de démarrage (curiosité)</h3>
-<p>Un jeu de course de type GTA, tenant dans une image amorçable de 942 kilo-octets qui s'exécute avant tout système d'exploitation, au niveau du micrologiciel UEFI. C'est un tour de force technique plus qu'un outil du quotidien, mais le code est public et le dépôt actif. Réserve : aucune licence reconnue par GitHub, 7 étoiles.<br />
-<a href="https://github.com/eklavya-raj/gta6-uefi">https://github.com/eklavya-raj/gta6-uefi</a></p>
-<h2>Extensions et greffons</h2>
-<h3>Token Stats Ledger v1.0.0 — suivi d'usage et de coûts pour Hermes</h3>
-<p>Un greffon pour l'application de bureau Hermes : un indicateur dans la barre d'état et un panneau qui suivent les jetons par session et par modèle (entrée, cache, sortie, taux de hits, remplissage de contexte, coût équivalent à l'usage), avec l'historique par jour, semaine et mois. Son intérêt technique est le backend : la base d'état de Hermes n'est pas monotone — les réinitialisations de compression et les retours en arrière font chuter les compteurs —, aussi un petit démon interroge la base en lecture seule toutes les quinze secondes et conserve des compteurs monotones qui survivent à ces événements. La version 1.0.0 fusionne client et backend en un seul dépôt, n'installe plus de points d'accroche dans le serveur de Hermes (les mises à jour de l'agent n'effacent donc plus rien) et accepte des tarifs personnalisés. Projet amateur et gratuit ; l'auteur ne précise pas de licence dans son annonce.<br />
-<a href="https://www.reddit.com/r/hermesagent/comments/1xzi77q/token_stats_ledger_v100_usage_cost_tracking/">https://www.reddit.com/r/hermesagent/comments/1xzi77q/token_stats_ledger_v100_usage_cost_tracking/</a></p>
-<h3>hermes-kernel-lab — reconstruire Hermes en Rust, une proposition à la fois</h3>
-<p>Un dépôt qui réécrit le fonctionnement de l'agent en Rust, en découpant le travail en propositions de fusion courtes et compréhensibles, pour qui veut lire le code d'un agent plutôt que la notice. Présenté par son auteur sur le subreddit. Réserve : dépôt très jeune et sans licence reconnue par GitHub, aucune étoile, dernière poussée le 17 novembre 2026.<br />
-<a href="https://github.com/udayj/hermes-kernel-lab">https://github.com/udayj/hermes-kernel-lab</a></p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Gemini 4 Neon (Google).</strong> Nouveau modèle de la famille Gemini, présenté comme taillé pour le travail d'agent : un million de jetons de contexte, facturé 3 dollars le million de jetons en entrée (0,15 dollars pour les jetons en cache) et 15 dollars en sortie. Google revendique la troisième place au classement général d'Artificial Analysis et des points forts en suivi d'instructions et en œuvres scientifiques. Modèle propriétaire, accessible par interface payante et plateforme Google ; les chiffres de comparaison viennent de l'éditeur, à prendre avec la réserve d'usage.<br />
-<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</a></p>
-<p><strong>Microsoft MAI — sept modèles annoncés à Ignite 2026.</strong> La firme présente une famille de modèles d'accès payant, tous construits sur l'argument du coût : MAI Code 2 (98 % de la qualité de GPT-6.1 Sol pour environ 40 % du prix), MAI Cyber 2 Flash, MAI Code 2 Flash, MAI Image 2.7, MAI Realtime 1 (à partir de 0,01 dollar la minute audio), MAI Transcribe 2 et Decision 1.1, auxquels s'ajoute un accélérateur matériel, Maia 200. Ce ne sont pas des modèles ouverts et rien n'est utilisable hors de l'offre Microsoft ; les comparaisons de prix et de qualité sont fournies par l'éditeur (132 points, 80 commentaires).<br />
-<a href="https://microsoft.ai/news/microsoft-ignite-2026/">https://microsoft.ai/news/microsoft-ignite-2026/</a></p>
-<h2>Volume</h2>
-<p>84 entrées examinées (77 Hacker News, 2 Simon Willison, 1 Latent Space, 4 r/hermesagent), 11 retenues, 73 écartées. Principaux motifs d'écart : actualité générale et politique (Nvidia, pont de Crimée, élections, Amazon, entrée en bourse d'Anthropic), avis et billets de blog sans outil, incidents et failles de sécurité (Nginx, coupure de Codeberg, paquet PyPI compromis), et deux sujets déjà couverts dans l'édition du 18 novembre (GPT-6.2 Astra et Sol).</p>
-<p>Note de collecte : les deux dernières passes du collecteur Reddit (18 novembre à 21 h 51 et 23 h 51 UTC) ne signalent aucune erreur ; les journaux Reddit, Hacker News et des flux externes sont à jour.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/vibecoding — jeudi 19 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-19.html</link>
-<guid isPermaLink="false">vibecoding-2026-11-19</guid>
-<pubDate>Thu, 19 Nov 2026 00:43:50 +0100</pubDate>
-<category>r/vibecoding</category>
-<description><![CDATA[<h1>Veille r/vibecoding — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>La collecte Reddit ne remonte que deux messages exploitables sur la période : le gros du volume vient de Hacker News, de Lobsters et des journaux de flux (Simon Willison, Latent Space, Hugging Face).</li>
-<li>Plusieurs outils libres nouveaux ou fraîchement publiés : un client de discussion pour agents en ligne de commande, une mémoire persistante pour agents MCP, un terminal multi-agents, un surveillant de déploiements Vercel et trois bacs à sable isolés pour exécuter le code d'un agent.</li>
-<li>Côté modèles : GPT-6.2 Astra et Sol moins chers que leurs prédécesseurs, poids ouverts pour Tencent Hy4 Flash, et un modèle vocal de 0,5 milliard de paramètres sous licence Apache 2.0.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>TaroBird — les agents en ligne de commande réunis dans une messagerie</h3>
-<p>TaroBird présente les agents d'interface en ligne de commande (Codex, Claude Code, DeepSeek et autres) comme des correspondants dans une messagerie unique, sur ordinateur et sur téléphone ; il permet notamment de reprendre une session de terminal depuis un mobile, là où il fallait jusque-là plusieurs applications. Publié sous AGPL-3.0, 34 étoiles, dernière mise à jour le 17 novembre.<br />
-https://github.com/cloveric/tarobird</p>
-<h3>Terminess — un terminal qui fait tourner les CLI officiels des agents</h3>
-<p>Terminess est un terminal et un harnais Swift (Mac, serveur, iPhone) qui exécute les CLI officiels de Claude Code et de Codex signés avec ses propres abonnements, sans lire, stocker ni relayer les jetons de connexion. L'auteur explique l'avoir écrit après que les abonnements Claude ont cessé de fonctionner dans les harnais tiers en février, en se tenant aux conditions d'utilisation. Licence Apache-2.0, projet créé le 18 novembre, 2 étoiles : c'est une publication du jour, pas encore éprouvée.<br />
-https://github.com/Terminess/terminess</p>
-<h3>OmniMem — mémoire persistante pour agents MCP</h3>
-<p>OmniMem est un serveur de mémoire auto-hébergé, servi par le protocole MCP, qui donne à Claude Code, Codex, Cursor ou tout autre agent compatible une mémoire conservée d'une session et d'un projet à l'autre : préférences, connaissances, et une « fosse » des approches abandonnées pour éviter de les retenter. Distribution en binaire (macOS, Windows, Linux, Docker), gratuit, licence MIT, 100 étoiles. L'éditeur annonce une baisse mesurée de 26 % des jetons sur une tâche répétée vingt fois ; ce chiffre vient de ses propres essais, pas d'une évaluation indépendante.<br />
-https://github.com/richarvey/omnimem</p>
-<h3>Spooky Particles — les pannes de production envoyées à l'agent</h3>
-<p>Ce service surveille une application Vercel (échec de déploiement, site qui ne répond plus, tâche planifiée qui s'arrête, secret exposé) et transmet la cause à l'agent de développement, Claude Code ou Codex, qui peut corriger dans une tâche GitHub lancée même en l'absence de l'utilisateur. Gratuit, scripts d'installation publiés sous licence MIT ; ne fonctionne que sur Vercel et ne fait aucune écriture autre que le lancement de la correction.<br />
-https://spookyparticles.com — dépôt : https://github.com/banana-intelligence-dot-ai/spookyparticles</p>
-<h3>Hex — dictée vocale locale</h3>
-<p>Hex transcrit la parole directement sur la machine et l'insère dans l'application active (maintien de la touche Option sur Mac), sans passer par un service distant. Versions macOS 15 ou plus récent, Windows et Linux, installation par Homebrew, paquet Debian, Nix ou AUR. Licence MIT, 7 455 étoiles, mise à jour le 18 novembre.<br />
-https://anoma.ly/hex/</p>
-<h3>Bacs à sable externes pour agents de codage</h3>
-<p>Simon Willison et le laboratoire Prime Radiant publient trois implémentations d'un même motif : le code exécuté par l'agent tourne dans un bac à sable distinct, l'agent restant à l'extérieur. L'une s'appuie sur v86 et Alpine Linux compilé en WebAssembly, une autre sur les conteneurs Apple, la troisième sur la bibliothèque Quicksand de Microsoft qui embarque QEMU et Alpine dans un paquet Python. Les trois exposent la même interface locale et se configurent depuis Pi, Claude Code ou Codex, avec un mandataire à liste blanche de domaines et un mécanisme de remplacement des identifiants pour ne pas confier de secret à l'agent. Licence Apache-2.0, 35 étoiles pour le dépôt principal.<br />
-https://github.com/prime-radiant-inc/external-sandbox</p>
-<h3>Benteveo — pilote pour une imprimante HP abandonnée, écrit avec un agent</h3>
-<p>L'auteur a réimplémenté en C++20 le pilote de l'imprimante HP LaserJet 1005 pour Windows 11 en 64 bits, qu'HP ne prend plus en charge depuis l'époque Windows XP, en travaillant avec Codex. Licence GPL-2.0, mise à jour le 18 novembre, aucune étoile à ce jour : projet neuf, à considérer comme une piste plutôt qu'une solution établie.<br />
-https://github.com/hernandp/OpenHPZJS1005-x64-drv</p>
-<h3>Une usine logicielle pilotée par agent publie trente bibliothèques</h3>
-<p>Kurtis Welch raconte que l'usine logicielle qu'il fait tourner seul a produit trente bibliothèques .NET publiées gratuitement sous licence MIT ou Apache-2.0 (vérifié sur le paquet OneLite, la licence variant d'un paquet à l'autre) : moteur de base de données compatible SQLite, lecture et écriture de Word, Excel et PowerPoint, moteur de jeu à physique déterministe, pile graphique avec son compilateur de nuanceurs. Vingt-huit ont atteint la version 1.0 entre octobre et novembre, pour près de 1,9 million de lignes. Le billet décrit le résultat, pas l'outil qui le produit.<br />
-https://recursiveai.org/blog/what-my-software-factory-built/</p>
-<h2>Nouveautés et mises à jour</h2>
-<ul>
-<li><strong>GPT-6.2 Astra et GPT-6.2 Sol</strong> — OpenAI remplace la gamme 6 par deux modèles : Astra pour les tâches lourdes, Sol pour l'usage courant, à 8 et 40 dollars le million de jetons en entrée et en sortie pour Astra (contre 10 et 50 pour le 6 Astra), et 2 et 10 dollars pour Sol ; le prix du cache tombe à 0,40 dollar le million pour Astra, ce qui compte sur les longues sessions d'agent. Simon Willison, qui a publié la prise en charge dans LLM 0.38, rapporte des avis mitigés : Astra reste en retrait de Claude Fable 5.2 sur plusieurs évaluations et son style de réponse déroute. Vu chez Simon Willison et Latent Space.<br />
-  https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/</li>
-<li><strong>Qwen3.8-27B-pi</strong> — ajustement de Qwen3.8-27B destiné au harnais Pi, pour que les niveaux d'effort demandés soient réellement ordonnés, avec à la clé environ 41 % de jetons de sortie en moins à performance égale sur Terminal-Bench 2.1. Poids en BF16, en FP8 (environ 30 Go) et en dix-sept variantes GGUF de 9 à 29 Go. Pi lui-même est un agent de terminal libre sous licence MIT.<br />
-  https://huggingface.co/blog/bytkim/qwen38-27b-pi</li>
-<li><strong>Tencent Hy4 Flash</strong> — Hy4 Flash, sa variante FP8 et le modèle de base pré-entraîné sont publiés en poids ouverts sur Hugging Face, sous licence maison Tencent Hy (poids téléchargeables et utilisables localement, mais ce n'est pas une licence reconnue par l'OSI). Environ 220 milliards de paramètres, architecture à experts, entrée multimodale.<br />
-  https://huggingface.co/tencent/Hy4-flash</li>
-<li><strong>Rumble-2-Flash</strong> — modèle de reconnaissance vocale de 0,5 milliard de paramètres publié sous licence Apache 2.0, couvrant plus de quarante langues avec détection automatique, annoncé comme capable de transcrire une heure d'audio en une demi-seconde environ et fonctionnant sans code spécifique dans Transformers ou vLLM.<br />
-  https://huggingface.co/blog/rumble-2-flash</li>
-<li><strong>Faire tenir un modèle à experts de 180 milliards de paramètres dans 32 Go de mémoire</strong> — Hugging Face documente, code à l'appui, la diffusion des experts depuis le disque plutôt que depuis la mémoire vive, en comparant le comportement de Transformers, de llama.cpp et de vLLM ; il ne s'agit pas d'une application mais d'une méthode utilisable telle quelle pour faire tourner ces modèles sur une machine modeste.<br />
-  https://huggingface.co/blog/moe-expert-streaming</li>
-</ul>
-<h2>Extensions et greffons</h2>
-<ul>
-<li><strong>skill-finder</strong> — un paragraphe à ajouter au fichier CLAUDE.md et un petit script de recherche qui amènent Claude Code à consulter ses compétences avant de travailler, plutôt qu'à les découvrir au hasard. Expérience évaluée sur Haiku, Sonnet et Opus. Licence MIT, 0 étoile, projet d'octobre : c'est un test documenté, pas un outil installable.<br />
-  https://github.com/ydmitry/skill-finder</li>
-<li><strong>Compétence « Video Polish » pour Hyperframes</strong> — son auteur la partage pour retoucher en une seule passe les vidéos animées produites avec Hyperframes et éviter les allers-retours de corrections mineures. Le corps du message n'est pas récupérable par notre collecte, le contenu de la compétence n'a donc pas été vérifié.<br />
-  https://www.reddit.com/r/vibecoding/comments/1xzntt7/i_built_a_video_polish_skill_for_hyperframes_you/</li>
-</ul>
-<h2>Volume</h2>
-<p>103 entrées lues sur l'intervalle (18 du journal r/vibecoding, 85 des journaux de flux), 15 retenues, 88 écartées ; 1 sujet regroupé en une seule entrée (GPT-6.2, vu chez Simon Willison et Latent Space). Aucun incident de collecte : les journaux de flux ne signalent aucune erreur.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/vibecoding — jeudi 19 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>La collecte Reddit ne remonte que deux messages exploitables sur la période : le gros du volume vient de Hacker News, de Lobsters et des journaux de flux (Simon Willison, Latent Space, Hugging Face).</li>
-<li>Plusieurs outils libres nouveaux ou fraîchement publiés : un client de discussion pour agents en ligne de commande, une mémoire persistante pour agents MCP, un terminal multi-agents, un surveillant de déploiements Vercel et trois bacs à sable isolés pour exécuter le code d'un agent.</li>
-<li>Côté modèles : GPT-6.2 Astra et Sol moins chers que leurs prédécesseurs, poids ouverts pour Tencent Hy4 Flash, et un modèle vocal de 0,5 milliard de paramètres sous licence Apache 2.0.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>TaroBird — les agents en ligne de commande réunis dans une messagerie</h3>
-<p>TaroBird présente les agents d'interface en ligne de commande (Codex, Claude Code, DeepSeek et autres) comme des correspondants dans une messagerie unique, sur ordinateur et sur téléphone ; il permet notamment de reprendre une session de terminal depuis un mobile, là où il fallait jusque-là plusieurs applications. Publié sous AGPL-3.0, 34 étoiles, dernière mise à jour le 17 novembre.<br />
-https://github.com/cloveric/tarobird</p>
-<h3>Terminess — un terminal qui fait tourner les CLI officiels des agents</h3>
-<p>Terminess est un terminal et un harnais Swift (Mac, serveur, iPhone) qui exécute les CLI officiels de Claude Code et de Codex signés avec ses propres abonnements, sans lire, stocker ni relayer les jetons de connexion. L'auteur explique l'avoir écrit après que les abonnements Claude ont cessé de fonctionner dans les harnais tiers en février, en se tenant aux conditions d'utilisation. Licence Apache-2.0, projet créé le 18 novembre, 2 étoiles : c'est une publication du jour, pas encore éprouvée.<br />
-https://github.com/Terminess/terminess</p>
-<h3>OmniMem — mémoire persistante pour agents MCP</h3>
-<p>OmniMem est un serveur de mémoire auto-hébergé, servi par le protocole MCP, qui donne à Claude Code, Codex, Cursor ou tout autre agent compatible une mémoire conservée d'une session et d'un projet à l'autre : préférences, connaissances, et une « fosse » des approches abandonnées pour éviter de les retenter. Distribution en binaire (macOS, Windows, Linux, Docker), gratuit, licence MIT, 100 étoiles. L'éditeur annonce une baisse mesurée de 26 % des jetons sur une tâche répétée vingt fois ; ce chiffre vient de ses propres essais, pas d'une évaluation indépendante.<br />
-https://github.com/richarvey/omnimem</p>
-<h3>Spooky Particles — les pannes de production envoyées à l'agent</h3>
-<p>Ce service surveille une application Vercel (échec de déploiement, site qui ne répond plus, tâche planifiée qui s'arrête, secret exposé) et transmet la cause à l'agent de développement, Claude Code ou Codex, qui peut corriger dans une tâche GitHub lancée même en l'absence de l'utilisateur. Gratuit, scripts d'installation publiés sous licence MIT ; ne fonctionne que sur Vercel et ne fait aucune écriture autre que le lancement de la correction.<br />
-https://spookyparticles.com — dépôt : https://github.com/banana-intelligence-dot-ai/spookyparticles</p>
-<h3>Hex — dictée vocale locale</h3>
-<p>Hex transcrit la parole directement sur la machine et l'insère dans l'application active (maintien de la touche Option sur Mac), sans passer par un service distant. Versions macOS 15 ou plus récent, Windows et Linux, installation par Homebrew, paquet Debian, Nix ou AUR. Licence MIT, 7 455 étoiles, mise à jour le 18 novembre.<br />
-https://anoma.ly/hex/</p>
-<h3>Bacs à sable externes pour agents de codage</h3>
-<p>Simon Willison et le laboratoire Prime Radiant publient trois implémentations d'un même motif : le code exécuté par l'agent tourne dans un bac à sable distinct, l'agent restant à l'extérieur. L'une s'appuie sur v86 et Alpine Linux compilé en WebAssembly, une autre sur les conteneurs Apple, la troisième sur la bibliothèque Quicksand de Microsoft qui embarque QEMU et Alpine dans un paquet Python. Les trois exposent la même interface locale et se configurent depuis Pi, Claude Code ou Codex, avec un mandataire à liste blanche de domaines et un mécanisme de remplacement des identifiants pour ne pas confier de secret à l'agent. Licence Apache-2.0, 35 étoiles pour le dépôt principal.<br />
-https://github.com/prime-radiant-inc/external-sandbox</p>
-<h3>Benteveo — pilote pour une imprimante HP abandonnée, écrit avec un agent</h3>
-<p>L'auteur a réimplémenté en C++20 le pilote de l'imprimante HP LaserJet 1005 pour Windows 11 en 64 bits, qu'HP ne prend plus en charge depuis l'époque Windows XP, en travaillant avec Codex. Licence GPL-2.0, mise à jour le 18 novembre, aucune étoile à ce jour : projet neuf, à considérer comme une piste plutôt qu'une solution établie.<br />
-https://github.com/hernandp/OpenHPZJS1005-x64-drv</p>
-<h3>Une usine logicielle pilotée par agent publie trente bibliothèques</h3>
-<p>Kurtis Welch raconte que l'usine logicielle qu'il fait tourner seul a produit trente bibliothèques .NET publiées gratuitement sous licence MIT ou Apache-2.0 (vérifié sur le paquet OneLite, la licence variant d'un paquet à l'autre) : moteur de base de données compatible SQLite, lecture et écriture de Word, Excel et PowerPoint, moteur de jeu à physique déterministe, pile graphique avec son compilateur de nuanceurs. Vingt-huit ont atteint la version 1.0 entre octobre et novembre, pour près de 1,9 million de lignes. Le billet décrit le résultat, pas l'outil qui le produit.<br />
-https://recursiveai.org/blog/what-my-software-factory-built/</p>
-<h2>Nouveautés et mises à jour</h2>
-<ul>
-<li><strong>GPT-6.2 Astra et GPT-6.2 Sol</strong> — OpenAI remplace la gamme 6 par deux modèles : Astra pour les tâches lourdes, Sol pour l'usage courant, à 8 et 40 dollars le million de jetons en entrée et en sortie pour Astra (contre 10 et 50 pour le 6 Astra), et 2 et 10 dollars pour Sol ; le prix du cache tombe à 0,40 dollar le million pour Astra, ce qui compte sur les longues sessions d'agent. Simon Willison, qui a publié la prise en charge dans LLM 0.38, rapporte des avis mitigés : Astra reste en retrait de Claude Fable 5.2 sur plusieurs évaluations et son style de réponse déroute. Vu chez Simon Willison et Latent Space.<br />
-  https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/</li>
-<li><strong>Qwen3.8-27B-pi</strong> — ajustement de Qwen3.8-27B destiné au harnais Pi, pour que les niveaux d'effort demandés soient réellement ordonnés, avec à la clé environ 41 % de jetons de sortie en moins à performance égale sur Terminal-Bench 2.1. Poids en BF16, en FP8 (environ 30 Go) et en dix-sept variantes GGUF de 9 à 29 Go. Pi lui-même est un agent de terminal libre sous licence MIT.<br />
-  https://huggingface.co/blog/bytkim/qwen38-27b-pi</li>
-<li><strong>Tencent Hy4 Flash</strong> — Hy4 Flash, sa variante FP8 et le modèle de base pré-entraîné sont publiés en poids ouverts sur Hugging Face, sous licence maison Tencent Hy (poids téléchargeables et utilisables localement, mais ce n'est pas une licence reconnue par l'OSI). Environ 220 milliards de paramètres, architecture à experts, entrée multimodale.<br />
-  https://huggingface.co/tencent/Hy4-flash</li>
-<li><strong>Rumble-2-Flash</strong> — modèle de reconnaissance vocale de 0,5 milliard de paramètres publié sous licence Apache 2.0, couvrant plus de quarante langues avec détection automatique, annoncé comme capable de transcrire une heure d'audio en une demi-seconde environ et fonctionnant sans code spécifique dans Transformers ou vLLM.<br />
-  https://huggingface.co/blog/rumble-2-flash</li>
-<li><strong>Faire tenir un modèle à experts de 180 milliards de paramètres dans 32 Go de mémoire</strong> — Hugging Face documente, code à l'appui, la diffusion des experts depuis le disque plutôt que depuis la mémoire vive, en comparant le comportement de Transformers, de llama.cpp et de vLLM ; il ne s'agit pas d'une application mais d'une méthode utilisable telle quelle pour faire tourner ces modèles sur une machine modeste.<br />
-  https://huggingface.co/blog/moe-expert-streaming</li>
-</ul>
-<h2>Extensions et greffons</h2>
-<ul>
-<li><strong>skill-finder</strong> — un paragraphe à ajouter au fichier CLAUDE.md et un petit script de recherche qui amènent Claude Code à consulter ses compétences avant de travailler, plutôt qu'à les découvrir au hasard. Expérience évaluée sur Haiku, Sonnet et Opus. Licence MIT, 0 étoile, projet d'octobre : c'est un test documenté, pas un outil installable.<br />
-  https://github.com/ydmitry/skill-finder</li>
-<li><strong>Compétence « Video Polish » pour Hyperframes</strong> — son auteur la partage pour retoucher en une seule passe les vidéos animées produites avec Hyperframes et éviter les allers-retours de corrections mineures. Le corps du message n'est pas récupérable par notre collecte, le contenu de la compétence n'a donc pas été vérifié.<br />
-  https://www.reddit.com/r/vibecoding/comments/1xzntt7/i_built_a_video_polish_skill_for_hyperframes_you/</li>
-</ul>
-<h2>Volume</h2>
-<p>103 entrées lues sur l'intervalle (18 du journal r/vibecoding, 85 des journaux de flux), 15 retenues, 88 écartées ; 1 sujet regroupé en une seule entrée (GPT-6.2, vu chez Simon Willison et Latent Space). Aucun incident de collecte : les journaux de flux ne signalent aucune erreur.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
