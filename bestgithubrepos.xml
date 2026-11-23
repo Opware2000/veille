@@ -6,9 +6,250 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 00:35:21 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:32:43 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-24.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:32:43 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
+<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
+<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
+<h3>PyBot — Chatbot en Python pur sans modèles</h3>
+<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
+<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
+<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
+<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
+<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
+<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
+<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
+<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
+<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
+<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
+<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
+<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
+<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
+<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
+<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
+<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
+<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
+<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
+<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
+<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
+<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
+<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
+<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
+<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
+<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
+<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
+<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
+<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
+<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
+<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
+<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
+<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
+<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
+<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
+<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
+<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
+<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
+<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
+<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
+<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
+<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
+<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
+<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
+<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
+<h3>ChatWoot — Messagerie client et support multi-canal</h3>
+<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
+<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
+<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
+<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
+<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
+<h3>Kagi Mail — Passage en bêta publique</h3>
+<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
+<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
+<h3>Lexis World — Application créative pour enfants</h3>
+<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
+<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
+<h3>UltraIterator — Galerie interactive de fractales</h3>
+<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
+<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
+<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
+<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
+<a href="https://puresound.app">Lien : https://puresound.app</a></p>
+<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
+<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
+<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
+<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
+<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
+<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<h3>Ladybird passe en phase alpha</h3>
+<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
+<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
+<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
+<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
+<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
+<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
+<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
+<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
+<h3>DeepSeek Harness — Tout est plugin</h3>
+<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
+<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
+<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
+<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
+<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Skills Karpathy pour Claude Code</h3>
+<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
+<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
+<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
+<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
+<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
+<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
+<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
+<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
+<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
+<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
+<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
+<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
+<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
+<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
+<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
+<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
+<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
+<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
+<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
+<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
+<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
+<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
+<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
+<h2>Volume</h2>
+<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
+<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
+<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
+<h3>PyBot — Chatbot en Python pur sans modèles</h3>
+<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
+<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
+<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
+<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
+<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
+<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
+<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
+<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
+<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
+<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
+<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
+<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
+<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
+<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
+<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
+<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
+<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
+<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
+<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
+<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
+<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
+<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
+<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
+<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
+<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
+<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
+<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
+<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
+<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
+<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
+<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
+<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
+<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
+<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
+<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
+<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
+<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
+<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
+<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
+<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
+<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
+<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
+<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
+<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
+<h3>ChatWoot — Messagerie client et support multi-canal</h3>
+<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
+<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
+<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
+<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
+<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
+<h3>Kagi Mail — Passage en bêta publique</h3>
+<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
+<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
+<h3>Lexis World — Application créative pour enfants</h3>
+<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
+<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
+<h3>UltraIterator — Galerie interactive de fractales</h3>
+<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
+<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
+<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
+<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
+<a href="https://puresound.app">Lien : https://puresound.app</a></p>
+<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
+<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
+<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
+<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
+<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
+<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<h3>Ladybird passe en phase alpha</h3>
+<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
+<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
+<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
+<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
+<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
+<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
+<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
+<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
+<h3>DeepSeek Harness — Tout est plugin</h3>
+<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
+<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
+<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
+<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
+<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Skills Karpathy pour Claude Code</h3>
+<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
+<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
+<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
+<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
+<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
+<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
+<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
+<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
+<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
+<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
+<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
+<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
+<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
+<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
+<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
+<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
+<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
+<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
+<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
+<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
+<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
+<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
+<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
+<h2>Volume</h2>
+<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-23.html</link>

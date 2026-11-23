@@ -6,9 +6,364 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 00:14:21 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:35:57 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Renaud Dékode — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/renaud/2026-11-24.html</link>
+<guid isPermaLink="false">renaud-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:35:57 +0100</pubDate>
+<category>Renaud Dékode</category>
+<description><![CDATA[<h1>Veille Renaud Dékode — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Anthropic signe la plus grande entrée en bourse de l'histoire ($81,3 milliards), premier laboratoire d'IA pure coté. Gemini 4 Neon de Google arrive : meilleur que Carbon à la tâche, deux fois moins cher qu'Opus 5.5. GPT-6.2 Astra d'OpenAI peine sérieusement dans ses tâches longues.</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<h3>Gemini 4 Neon : le fils plus fort que le père</h3>
+<p>Google vient de rendre disponible Gemini 4 Neon, troisième maillon de sa famille Gemini 4 après Argon (retiré) et Carbon. Dérivé de Carbon par réentraînement rapide sur les données générées par ce dernier, il réalise un contre-intitulé rare : un modèle intermédiaire plus performant que son aîné. Sur Artificial Analysis en mode raisonnement maximal, Neon obtient un score de 61 contre 60 pour Carbon, et se place juste en dessous de Fable d'Anthropic, hors catégorie. Le modèle multimodal gère un contexte d'un million de tokens, s'intègre dans Antigravity (outil de code de Google), et est déclinable en quatre niveaux de réflexion. Prix : 15 dollars américains par million de tokens en sortie, contre 20 pour Claude Opus 5.5 et les 20 annoncés initialement pour Carbon. À tâche équivalente, Neon coûte 33 % de moins que Carbon et presque deux fois moins que Claude Opus 5.5. Dans le benchmark codage Antigravity + Gemini, il dépasse Claude Code + Claude Opus et Claude Fable. Disponibilité : API Google AI Studio, Google Cloud Business, Antigravity ; réservé aux abonnés Ultra pour les usages complets. Transcription vidéo à 10 min 40 s [00:10:40].</p>
+<p>Sources mentionnées : Artificial Analysis, transcription de Renaud Dékode du 23/11.</p>
+<h3>Project Genie 4 disponible en bêta rémunérée</h3>
+<p>Genie 4, système de génération de mondes interactifs temps réel annoncé plusieurs semaines plus tôt, vient de passer en accès ouvert aux abonnés Ultra. Le système n'est pas un seul modèle mais une combinaison de modèles Gemini (agent conversationnel Touchstones, Omni pour la cohérence spatiale, Flash 3.8 pour les objectifs, Nano Banana et Lyra pour l'image et le son). On lui donne une consigne ou une image de référence, il assemble des éléments visuels et audio qu'on explore ensuite par commandes texte ou déplacements virtuels : on peut changer la lumière, la météo, les couleurs, la perspective, puis continuer à avancer. La cohérence tient environ une minute avant de commencer à dériver si on modifie trop d'éléments simultanément — Genie 3 tenait mieux, autour de trois minutes. Cas d'usage montré : « Villa Calmo » style cartoon, « Living Memory » basé sur une photo personnelle, reconstitution immersive de données Google Maps. Application réelle actuelle : entraînement de robots dans des situations simulées. Google Lab elle-même utilise le système. Programme de bêta rémunérée : l'accès fait partie de l'abonnement Ultra. Transcription vidéo à 24 min 50 s [00:24:50].</p>
+<p>Source : transcription de Renaud Dékode du 23/11.</p>
+<h3>GPT-6.2 Astra : le génie qui n'a pas envie de bosser</h3>
+<p>OpenAI vient de sortir GPT-6.2, remplaçant officiel de GPT-6.1 glissé sous le tapis pour problèmes de sécurité, avec deux modes : Astra (haut de gamme) et Sol (usage courant). Astra se veut orienté tâches longues et complexes, coûte 40 dollars par million de tokens en sortie. Les retours utilisateurs sont déjà massivement négatifs : abandon au milieu des tâches sans message d'erreur, résultats inexploitables, questions absurdes interrompant le flux. Un développeur de renom (Théo Brown, patron de T3) rapporte avoir laissé tourner Astra sept jours puis quatre jours supplémentaires sur la réécriture Rust d'un compilateur Lua : zéro progrès dans les sept premiers jours, rien du tout dans les quatre suivants, et le résultat final était 56 % plus lent que le code original. L'absence de persistance est le problème central : le modèle ne continue pas, ne signale pas, ne demande pas, il se contente de s'arrêter. OpenAI reconnaît le défaut via Sam Altman, qui invite à « continuer à le rendre agréable à l'usage ». Le modèle reste plus intelligent que son prédécesseur sur le plan brut, et sa capacité cyber est meilleure, mais il détecte parfois des failles sans les signaler. Sol pourrait être utilisable en usage courant, à tester. Transcription vidéo à 18 min 46 s [00:18:46] à 23 min 15 s [00:23:15].</p>
+<p>Sources mentionnées : réseaux sociaux de développeurs (Théo Brown/T3, Mathmer, Dan Schiepper), déclaration publique de Sam Altman.</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<h3>Kiev pilotait son missile sur le pont de Kertch sans Starlink</h3>
+<p>Le 22 novembre 2026, un missile ukrainien Flamingo (vitesse estimée 900 km/h) a atteint le pont de Kertch reliant la Crimée à la Russie, provoquant un trou de 200 mètres sur la voie routière confirmée par des observateurs indépendants. Jusqu'ici, la limitation principale de Starlink pour les Ukrainiens avait été leur incapacité à suivre des véhicules aériens rapides : dès qu'un intercepteur dépassait un seuil voisin de 100 km/h, StarShield perdait la connexion. Cette fois, Kiev a contourné le satellite en utilisant un réseau de drones-relais volant très bas (au ras de l'eau ou du sol), indétectables par les systèmes adverses. Le pilote, situé à 250 km du pont, a gardé la main pendant toute la trajectoire grâce à ce maillage radio distribué, précédemment expérimenté par les Russes mais ici utilisé contre eux. Le montage comprenait aussi des opérations de brouillage ciblé sur certains aspects du spectre. Solution technologique simple mais inédite en opérationnel, posant la question d'une possible généralisation hors contexte militaire de ce type de relai autonome. Transcription vidéo à 31 min 54 s [00:31:54] à 37 min 05 s [00:37:05].</p>
+<p>Sources mentionnées : interview de créateur de contenu spatial, informations militaires non vérifiées directement.</p>
+<h2>Économie et finance</h2>
+<h3>Anthropic : 81,3 milliards levés, record absolu</h3>
+<p>Anthropic signe la plus grande introduction en bourse jamais réalisée, 81,3 milliards de dollars, battant SpaceX (75 milliards en juin 2026) et portant le total à 107,3 milliards avec 26 milliards d'investissements privés concomitants (Google 10 milliards, Nvidia 10 milliards, Broadcom, AMD). 980 millions d'actions émises contre 825 prévues, prix final 83 dollars monté à plus de 100 le premier jour avant correction. Valorisation symbolique franchie : 1500 milliards. Premier laboratoire d'IA pur à être coté (ticker ANT). Croissance des revenus exceptionnelle : 33 milliards sur neuf mois, progression annuelle de 33 %, chiffre d'affaires passé de 71 à 81 milliards en un mois entre fin septembre et fin octobre. Moteur : clients entreprises passés de 1 500 à 11 900 en neuf mois (seuils d'achat supérieurs à 100 000 dollars/an), notamment Claude Code et agents de code. Pertes comptables affichées de 104 milliards, surtout liées à du compute futur ; le trimestre 3 affiche seulement -500 millions de résultat net malgré 5 milliards de compute achetés récemment. Activité opérationnelle près de l'équilibre. 90 % des employés deviennent millionnaires via leurs actions. Point de tension : Google et Amazon cumulent désormais 30 % du capital tout en étant fournisseurs cloud, distributeurs et concurrents, conflits d'intérêt potentiels signalés dans la note d'entrée en bourse. Risque systémique : si Google retire Claude au profit de Gemini, il prive à la fois Anthropic de revenus et sa propre marge. Transcription vidéo à 00:00:00 à 09:36.</p>
+<p>Sources mentionnées : note d'entrée en bourse d'Anthropic, chiffres officiels IPO.</p>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 5 sujets retenus, 2 clips écartés (ZduisWJpkxE clip, IIhDcQY8xHk live), aucune transcription manquante.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Renaud Dékode — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Anthropic signe la plus grande entrée en bourse de l'histoire ($81,3 milliards), premier laboratoire d'IA pure coté. Gemini 4 Neon de Google arrive : meilleur que Carbon à la tâche, deux fois moins cher qu'Opus 5.5. GPT-6.2 Astra d'OpenAI peine sérieusement dans ses tâches longues.</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<h3>Gemini 4 Neon : le fils plus fort que le père</h3>
+<p>Google vient de rendre disponible Gemini 4 Neon, troisième maillon de sa famille Gemini 4 après Argon (retiré) et Carbon. Dérivé de Carbon par réentraînement rapide sur les données générées par ce dernier, il réalise un contre-intitulé rare : un modèle intermédiaire plus performant que son aîné. Sur Artificial Analysis en mode raisonnement maximal, Neon obtient un score de 61 contre 60 pour Carbon, et se place juste en dessous de Fable d'Anthropic, hors catégorie. Le modèle multimodal gère un contexte d'un million de tokens, s'intègre dans Antigravity (outil de code de Google), et est déclinable en quatre niveaux de réflexion. Prix : 15 dollars américains par million de tokens en sortie, contre 20 pour Claude Opus 5.5 et les 20 annoncés initialement pour Carbon. À tâche équivalente, Neon coûte 33 % de moins que Carbon et presque deux fois moins que Claude Opus 5.5. Dans le benchmark codage Antigravity + Gemini, il dépasse Claude Code + Claude Opus et Claude Fable. Disponibilité : API Google AI Studio, Google Cloud Business, Antigravity ; réservé aux abonnés Ultra pour les usages complets. Transcription vidéo à 10 min 40 s [00:10:40].</p>
+<p>Sources mentionnées : Artificial Analysis, transcription de Renaud Dékode du 23/11.</p>
+<h3>Project Genie 4 disponible en bêta rémunérée</h3>
+<p>Genie 4, système de génération de mondes interactifs temps réel annoncé plusieurs semaines plus tôt, vient de passer en accès ouvert aux abonnés Ultra. Le système n'est pas un seul modèle mais une combinaison de modèles Gemini (agent conversationnel Touchstones, Omni pour la cohérence spatiale, Flash 3.8 pour les objectifs, Nano Banana et Lyra pour l'image et le son). On lui donne une consigne ou une image de référence, il assemble des éléments visuels et audio qu'on explore ensuite par commandes texte ou déplacements virtuels : on peut changer la lumière, la météo, les couleurs, la perspective, puis continuer à avancer. La cohérence tient environ une minute avant de commencer à dériver si on modifie trop d'éléments simultanément — Genie 3 tenait mieux, autour de trois minutes. Cas d'usage montré : « Villa Calmo » style cartoon, « Living Memory » basé sur une photo personnelle, reconstitution immersive de données Google Maps. Application réelle actuelle : entraînement de robots dans des situations simulées. Google Lab elle-même utilise le système. Programme de bêta rémunérée : l'accès fait partie de l'abonnement Ultra. Transcription vidéo à 24 min 50 s [00:24:50].</p>
+<p>Source : transcription de Renaud Dékode du 23/11.</p>
+<h3>GPT-6.2 Astra : le génie qui n'a pas envie de bosser</h3>
+<p>OpenAI vient de sortir GPT-6.2, remplaçant officiel de GPT-6.1 glissé sous le tapis pour problèmes de sécurité, avec deux modes : Astra (haut de gamme) et Sol (usage courant). Astra se veut orienté tâches longues et complexes, coûte 40 dollars par million de tokens en sortie. Les retours utilisateurs sont déjà massivement négatifs : abandon au milieu des tâches sans message d'erreur, résultats inexploitables, questions absurdes interrompant le flux. Un développeur de renom (Théo Brown, patron de T3) rapporte avoir laissé tourner Astra sept jours puis quatre jours supplémentaires sur la réécriture Rust d'un compilateur Lua : zéro progrès dans les sept premiers jours, rien du tout dans les quatre suivants, et le résultat final était 56 % plus lent que le code original. L'absence de persistance est le problème central : le modèle ne continue pas, ne signale pas, ne demande pas, il se contente de s'arrêter. OpenAI reconnaît le défaut via Sam Altman, qui invite à « continuer à le rendre agréable à l'usage ». Le modèle reste plus intelligent que son prédécesseur sur le plan brut, et sa capacité cyber est meilleure, mais il détecte parfois des failles sans les signaler. Sol pourrait être utilisable en usage courant, à tester. Transcription vidéo à 18 min 46 s [00:18:46] à 23 min 15 s [00:23:15].</p>
+<p>Sources mentionnées : réseaux sociaux de développeurs (Théo Brown/T3, Mathmer, Dan Schiepper), déclaration publique de Sam Altman.</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<h3>Kiev pilotait son missile sur le pont de Kertch sans Starlink</h3>
+<p>Le 22 novembre 2026, un missile ukrainien Flamingo (vitesse estimée 900 km/h) a atteint le pont de Kertch reliant la Crimée à la Russie, provoquant un trou de 200 mètres sur la voie routière confirmée par des observateurs indépendants. Jusqu'ici, la limitation principale de Starlink pour les Ukrainiens avait été leur incapacité à suivre des véhicules aériens rapides : dès qu'un intercepteur dépassait un seuil voisin de 100 km/h, StarShield perdait la connexion. Cette fois, Kiev a contourné le satellite en utilisant un réseau de drones-relais volant très bas (au ras de l'eau ou du sol), indétectables par les systèmes adverses. Le pilote, situé à 250 km du pont, a gardé la main pendant toute la trajectoire grâce à ce maillage radio distribué, précédemment expérimenté par les Russes mais ici utilisé contre eux. Le montage comprenait aussi des opérations de brouillage ciblé sur certains aspects du spectre. Solution technologique simple mais inédite en opérationnel, posant la question d'une possible généralisation hors contexte militaire de ce type de relai autonome. Transcription vidéo à 31 min 54 s [00:31:54] à 37 min 05 s [00:37:05].</p>
+<p>Sources mentionnées : interview de créateur de contenu spatial, informations militaires non vérifiées directement.</p>
+<h2>Économie et finance</h2>
+<h3>Anthropic : 81,3 milliards levés, record absolu</h3>
+<p>Anthropic signe la plus grande introduction en bourse jamais réalisée, 81,3 milliards de dollars, battant SpaceX (75 milliards en juin 2026) et portant le total à 107,3 milliards avec 26 milliards d'investissements privés concomitants (Google 10 milliards, Nvidia 10 milliards, Broadcom, AMD). 980 millions d'actions émises contre 825 prévues, prix final 83 dollars monté à plus de 100 le premier jour avant correction. Valorisation symbolique franchie : 1500 milliards. Premier laboratoire d'IA pur à être coté (ticker ANT). Croissance des revenus exceptionnelle : 33 milliards sur neuf mois, progression annuelle de 33 %, chiffre d'affaires passé de 71 à 81 milliards en un mois entre fin septembre et fin octobre. Moteur : clients entreprises passés de 1 500 à 11 900 en neuf mois (seuils d'achat supérieurs à 100 000 dollars/an), notamment Claude Code et agents de code. Pertes comptables affichées de 104 milliards, surtout liées à du compute futur ; le trimestre 3 affiche seulement -500 millions de résultat net malgré 5 milliards de compute achetés récemment. Activité opérationnelle près de l'équilibre. 90 % des employés deviennent millionnaires via leurs actions. Point de tension : Google et Amazon cumulent désormais 30 % du capital tout en étant fournisseurs cloud, distributeurs et concurrents, conflits d'intérêt potentiels signalés dans la note d'entrée en bourse. Risque systémique : si Google retire Claude au profit de Gemini, il prive à la fois Anthropic de revenus et sa propre marge. Transcription vidéo à 00:00:00 à 09:36.</p>
+<p>Sources mentionnées : note d'entrée en bourse d'Anthropic, chiffres officiels IPO.</p>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 5 sujets retenus, 2 clips écartés (ZduisWJpkxE clip, IIhDcQY8xHk live), aucune transcription manquante.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-24.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:32:43 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
+<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
+<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
+<h3>PyBot — Chatbot en Python pur sans modèles</h3>
+<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
+<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
+<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
+<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
+<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
+<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
+<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
+<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
+<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
+<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
+<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
+<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
+<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
+<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
+<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
+<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
+<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
+<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
+<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
+<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
+<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
+<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
+<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
+<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
+<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
+<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
+<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
+<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
+<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
+<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
+<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
+<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
+<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
+<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
+<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
+<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
+<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
+<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
+<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
+<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
+<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
+<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
+<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
+<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
+<h3>ChatWoot — Messagerie client et support multi-canal</h3>
+<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
+<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
+<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
+<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
+<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
+<h3>Kagi Mail — Passage en bêta publique</h3>
+<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
+<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
+<h3>Lexis World — Application créative pour enfants</h3>
+<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
+<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
+<h3>UltraIterator — Galerie interactive de fractales</h3>
+<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
+<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
+<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
+<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
+<a href="https://puresound.app">Lien : https://puresound.app</a></p>
+<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
+<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
+<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
+<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
+<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
+<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<h3>Ladybird passe en phase alpha</h3>
+<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
+<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
+<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
+<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
+<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
+<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
+<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
+<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
+<h3>DeepSeek Harness — Tout est plugin</h3>
+<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
+<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
+<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
+<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
+<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Skills Karpathy pour Claude Code</h3>
+<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
+<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
+<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
+<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
+<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
+<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
+<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
+<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
+<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
+<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
+<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
+<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
+<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
+<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
+<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
+<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
+<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
+<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
+<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
+<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
+<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
+<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
+<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
+<h2>Volume</h2>
+<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
+<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
+<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
+<h3>PyBot — Chatbot en Python pur sans modèles</h3>
+<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
+<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
+<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
+<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
+<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
+<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
+<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
+<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
+<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
+<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
+<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
+<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
+<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
+<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
+<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
+<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
+<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
+<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
+<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
+<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
+<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
+<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
+<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
+<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
+<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
+<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
+<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
+<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
+<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
+<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
+<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
+<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
+<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
+<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
+<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
+<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
+<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
+<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
+<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
+<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
+<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
+<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
+<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
+<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
+<h3>ChatWoot — Messagerie client et support multi-canal</h3>
+<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
+<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
+<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
+<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
+<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
+<h3>Kagi Mail — Passage en bêta publique</h3>
+<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
+<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
+<h3>Lexis World — Application créative pour enfants</h3>
+<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
+<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
+<h3>UltraIterator — Galerie interactive de fractales</h3>
+<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
+<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
+<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
+<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
+<a href="https://puresound.app">Lien : https://puresound.app</a></p>
+<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
+<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
+<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
+<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
+<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
+<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<h3>Ladybird passe en phase alpha</h3>
+<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
+<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
+<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
+<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
+<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
+<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
+<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
+<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
+<h3>DeepSeek Harness — Tout est plugin</h3>
+<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
+<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
+<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
+<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
+<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Skills Karpathy pour Claude Code</h3>
+<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
+<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
+<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
+<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
+<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
+<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
+<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
+<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
+<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
+<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
+<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
+<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
+<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
+<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
+<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
+<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
+<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
+<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
+<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
+<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
+<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
+<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
+<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
+<h2>Volume</h2>
+<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-24.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:21:22 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird atteint sa version alpha et suscite un vif intérêt sur Hacker News (534 points). La mise à jour Kolibri 1.1 d'Aleph Alpha introduit une nouvelle architecture sparse attention. Un outil de vérification d'utilisation GPU en terminal fait son apparition sur le subreddit.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Nospeaker — Faire parler le pavé tactile de votre MacBook</strong><br />
+Un outil open source qui utilise la capacité haptique du pavé MaggyTrack pour restituer des sons et notifications via les vibrations plutôt que l'audio. Conçu par défaut dans un but d'accessibilité et d'intimité, il offre une alternative discrète aux alertes sonores. Le projet est sous licence MIT, entièrement gratuit, et a déjà récolté 1398 étoiles sur GitHub depuis son lancement fin novembre 2026. https://github.com/os6/nospeaker</p>
+<p><strong>XNU Linux — Interface graphique OS X dans un conteneur utilisateur sous Linux</strong><br />
+Le projet XNU Linux propose d'exécuter le système de fenêtres et l'interface macOS complète (docks, menus, Finder) au sein d'un environnement utilisateur Linux. C'est un portage complet du composant GUI d'OS X sur le noyau Linux. Pas encore de licence claire affichée, mais 1963 étoiles et des développements actifs ce jour même. https://github.com/AFK-surf/xnulinux</p>
+<p><strong>win4wine — Lancer l'environnement Windows comme bureau Linux via Wine</strong><br />
+Une approche originale qui s'appuie sur Wine pour exécuter le shell Windows (explorer.exe) directement sur un bureau Linux. L'objectif est de bénéficier d'une expérience Windows sans virtualisation lourde ni dual boot. Projet sous licence LGPL-2.1, environ 288 étoiles sur GitHub. https://github.com/mikuta0407/win4wine</p>
+<p><strong>Please CLI — Assistant IA en ligne de commande avec pontage SSH et moteur Metal 4</strong><br />
+Un outil en ligne de commandes qui permet d'interagir avec un modèle local en langage naturel. Toutes les inférences restent sur la machine locale (poids GPT-OSS chargés une fois, vérifiables par somme SHA-256). La fonctionnalité distinctive est le bridging : possibilité de lancer <code>please</code> dans un conteneur Docker ou une coquille distante tout en gardant les poids et le calcul sur la machine hôte, via forwarding socket SSH. Installation via Homebrew ou script direct. Rust. Début novembre 2026. https://github.com/xhjkl/please</p>
+<p><strong>GpuTaskMan — Moniteur d'utilisation GPU en terminal</strong><br />
+Un utilitaire terminal qui affiche les processus utilisant la mémoire vidéo GPU en temps réel. Utile quand un modèle local remplit le tampon graphique : chaque processus est identifié avec son empreinte mémoire propre, permettant de vérifier exactement quelle application consomme quoi. Dépôt partagé sur le subreddit r/LovingOpenSourceAI. https://www.reddit.com/r/LovingOpenSourceAI/comments/1y3i5zr/gputaskman_is_a_terminal_tool_to_see_the_programs/</p>
+<p><strong>News Blocklist — Liste DNS de blocage de 14 000 sites d'actualités</strong><br />
+Un projet né de la frustration face à l'invasion des nouvelles et de l'actualité dans la consommation quotidienne. Liste DNS permettant de bloquer plus de 14 000 sites de presse et d'actualité à l'échelle du réseau. Extension Mac fournie initialement, extension possible pour tout dispositif supportant les listes DNS. Libre. https://github.com/ruairidhflint/news-blocklist</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Ladybird — Navigateur libre en version alpha</strong><br />
+Ladybird, le navigateur développé à partir de zéro par l'équipe SerenityOS (et non un fork d'un moteur existant), passe officiellement en phase alpha. Le moteur HTML/CSS/Javascript est maison, écrit en C++. Les versions alpha sont disponibles pour macOS et Linux, avec un canal de mises à jour automatiques. Le navigateur supporte WebDriver pour les tests automatisés et le protocole Firefox DevTools. Il reconnaît qu'il s'agit d'une alpha — certains sites ne fonctionneront pas et des crashes sont possibles, d'où un système de signalement intégré. Très fort écho sur Hacker News (534 points, 142 commentaires). https://ladybird.org/posts/alpha/</p>
+<p><strong>Kolibri 1.1 — Modèle open-weights Aleph Alpha optimisé</strong><br />
+Aleph Alpha publie Kolibri 1.1, évolution de son modèle anglais-allemand open-weights de 75 milliards de paramètres (3 milliards actifs). Nouvelle architecture sparse attention, efficacité améliorée : 3,4 × moins de temps GPU par tâche que la version 1.0, scores supérieurs en mathématiques, code, instruction-following et traduction germano-anglaise. Licence Apache 2.0, disponible sur Hugging Face avec supports vLLM et transformers officiels. Construit et formé en Allemagne sous droit européen. https://aleph-alpha.com/en/blog/kolibri-1-1/</p>
+<p><strong>GLM-5.4 — Nouveau modèle de codage avec « Loop Transformer »</strong><br />
+Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant sur un nouvel architecture appelée Loop Transformer. Disponible pour tous les utilisateurs inscrits au plan de codage GLM. Fort écho sur Hacker News (189 points, 84 commentaires). https://z.ai/blog/glm-5.4</p>
+<h2>Extensions et greffons</h2>
+<p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
+<h2>Volume</h2>
+<p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird atteint sa version alpha et suscite un vif intérêt sur Hacker News (534 points). La mise à jour Kolibri 1.1 d'Aleph Alpha introduit une nouvelle architecture sparse attention. Un outil de vérification d'utilisation GPU en terminal fait son apparition sur le subreddit.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Nospeaker — Faire parler le pavé tactile de votre MacBook</strong><br />
+Un outil open source qui utilise la capacité haptique du pavé MaggyTrack pour restituer des sons et notifications via les vibrations plutôt que l'audio. Conçu par défaut dans un but d'accessibilité et d'intimité, il offre une alternative discrète aux alertes sonores. Le projet est sous licence MIT, entièrement gratuit, et a déjà récolté 1398 étoiles sur GitHub depuis son lancement fin novembre 2026. https://github.com/os6/nospeaker</p>
+<p><strong>XNU Linux — Interface graphique OS X dans un conteneur utilisateur sous Linux</strong><br />
+Le projet XNU Linux propose d'exécuter le système de fenêtres et l'interface macOS complète (docks, menus, Finder) au sein d'un environnement utilisateur Linux. C'est un portage complet du composant GUI d'OS X sur le noyau Linux. Pas encore de licence claire affichée, mais 1963 étoiles et des développements actifs ce jour même. https://github.com/AFK-surf/xnulinux</p>
+<p><strong>win4wine — Lancer l'environnement Windows comme bureau Linux via Wine</strong><br />
+Une approche originale qui s'appuie sur Wine pour exécuter le shell Windows (explorer.exe) directement sur un bureau Linux. L'objectif est de bénéficier d'une expérience Windows sans virtualisation lourde ni dual boot. Projet sous licence LGPL-2.1, environ 288 étoiles sur GitHub. https://github.com/mikuta0407/win4wine</p>
+<p><strong>Please CLI — Assistant IA en ligne de commande avec pontage SSH et moteur Metal 4</strong><br />
+Un outil en ligne de commandes qui permet d'interagir avec un modèle local en langage naturel. Toutes les inférences restent sur la machine locale (poids GPT-OSS chargés une fois, vérifiables par somme SHA-256). La fonctionnalité distinctive est le bridging : possibilité de lancer <code>please</code> dans un conteneur Docker ou une coquille distante tout en gardant les poids et le calcul sur la machine hôte, via forwarding socket SSH. Installation via Homebrew ou script direct. Rust. Début novembre 2026. https://github.com/xhjkl/please</p>
+<p><strong>GpuTaskMan — Moniteur d'utilisation GPU en terminal</strong><br />
+Un utilitaire terminal qui affiche les processus utilisant la mémoire vidéo GPU en temps réel. Utile quand un modèle local remplit le tampon graphique : chaque processus est identifié avec son empreinte mémoire propre, permettant de vérifier exactement quelle application consomme quoi. Dépôt partagé sur le subreddit r/LovingOpenSourceAI. https://www.reddit.com/r/LovingOpenSourceAI/comments/1y3i5zr/gputaskman_is_a_terminal_tool_to_see_the_programs/</p>
+<p><strong>News Blocklist — Liste DNS de blocage de 14 000 sites d'actualités</strong><br />
+Un projet né de la frustration face à l'invasion des nouvelles et de l'actualité dans la consommation quotidienne. Liste DNS permettant de bloquer plus de 14 000 sites de presse et d'actualité à l'échelle du réseau. Extension Mac fournie initialement, extension possible pour tout dispositif supportant les listes DNS. Libre. https://github.com/ruairidhflint/news-blocklist</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Ladybird — Navigateur libre en version alpha</strong><br />
+Ladybird, le navigateur développé à partir de zéro par l'équipe SerenityOS (et non un fork d'un moteur existant), passe officiellement en phase alpha. Le moteur HTML/CSS/Javascript est maison, écrit en C++. Les versions alpha sont disponibles pour macOS et Linux, avec un canal de mises à jour automatiques. Le navigateur supporte WebDriver pour les tests automatisés et le protocole Firefox DevTools. Il reconnaît qu'il s'agit d'une alpha — certains sites ne fonctionneront pas et des crashes sont possibles, d'où un système de signalement intégré. Très fort écho sur Hacker News (534 points, 142 commentaires). https://ladybird.org/posts/alpha/</p>
+<p><strong>Kolibri 1.1 — Modèle open-weights Aleph Alpha optimisé</strong><br />
+Aleph Alpha publie Kolibri 1.1, évolution de son modèle anglais-allemand open-weights de 75 milliards de paramètres (3 milliards actifs). Nouvelle architecture sparse attention, efficacité améliorée : 3,4 × moins de temps GPU par tâche que la version 1.0, scores supérieurs en mathématiques, code, instruction-following et traduction germano-anglaise. Licence Apache 2.0, disponible sur Hugging Face avec supports vLLM et transformers officiels. Construit et formé en Allemagne sous droit européen. https://aleph-alpha.com/en/blog/kolibri-1-1/</p>
+<p><strong>GLM-5.4 — Nouveau modèle de codage avec « Loop Transformer »</strong><br />
+Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant sur un nouvel architecture appelée Loop Transformer. Disponible pour tous les utilisateurs inscrits au plan de codage GLM. Fort écho sur Hacker News (189 points, 84 commentaires). https://z.ai/blog/glm-5.4</p>
+<h2>Extensions et greffons</h2>
+<p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
+<h2>Volume</h2>
+<p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-24.html</link>
@@ -3971,279 +4326,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <h2>Volume</h2>
 <p>119 entrées lues dans les sources (shortlist du 19-20 novembre), 44 retenues après dédoublonnage et tri, 75 écartées (hors sujet, questions, retours d'expérience sans outil, annonces commerciales propriétaires, actualités générales sans lien avec le logiciel).</p>
 <p>Note : la source Reddit (r/vibecoding) a retourné une erreur 404 lors de la dernière collecte (meta.json signale une erreur). Les entrées de ce subreddit dans la shortlist proviennent de collectes antérieures. La majorité des outils retenus viennent de Hacker News (collecte directe via hn_lobsters_watch.py) et des flux complémentaires (hnrss, Simon Willison, Hugging Face, Latent Space).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille Renaud Dékode — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/renaud/2026-11-20.html</link>
-<guid isPermaLink="false">renaud-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:37:26 +0100</pubDate>
-<category>Renaud Dékode</category>
-<description><![CDATA[<h1>Veille Renaud Dékode — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Microsoft Ignite à San Francisco : Copilot déclaré « nouveau système d'exploitation du travail », avec Microsoft IQ comme couche de connaissance d'entreprise et sept nouveaux modèles MAI (Code 2, Image 2.7, Cyber 2 Flash) qui rivalisent avec OpenAI et Anthropic à une fraction du coût. GPT-6.2 Astra et Sol disponibles dans Copilot dès l'ouverture. — La question du transfert de propriété intellectuelle quand un salarié forme son agent avec son savoir-faire reste posée. — Comparaison saisissante entre l'efficacité pragmatique d'Ignite et la déception du Vivatech parisien.</p>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Microsoft Copilot devient le système d'exploitation du travail.</strong> Satya Nadella a ouvert Ignite en annonçant que Copilot n'est plus un assistant dans Office mais le nouveau point d'entrée de tout poste de travail — au point que le mot « Windows » n'a pas été prononcé une seule fois pendant les deux heures et demie de keynote (à 01:31). Trois piliers : Human Ambition (toute ambition réalisable par l'IA), Intelligence (les modèles derrière) et Trust (sécurité et conformité). Confirmé par le communiqué officiel de Microsoft.</p>
-<p><strong>GPT-6.2 Astra et Sol disponibles dans Copilot.</strong> OpenAI a présenté ses deux nouveaux modèles le 17 novembre, jour d'ouverture d'Ignite — un calendrier coordonné avec Microsoft. Astra est le modèle de pointe pour les projets complexes, Sol le modèle polyvalent pour le travail quotidien. Tous deux produisent moins de tokens de sortie pour un résultat équivalent, réduisant le coût par tâche. Disponibles dans Copilot et GitHub Copilot (source : OpenAI, blog Microsoft).</p>
-<p><strong>Sept nouveaux modèles MAI annoncés</strong> (source : microsoft.ai) :<br />
-- <strong>MAI Image 2.7</strong> — #1 du classement Artificial Analysis en édition d'image, et #4 en génération texte-image, ce qui fait de Microsoft le deuxième laboratoire derrière OpenAI. Coût cinq fois inférieur à GPT Image 2.6 Sunburst.<br />
-- <strong>MAI Code 2</strong> — 98 % de la qualité de GPT-6.1 Sol à 40 % du prix, et 96 % d'Opus 5.5 à 5 % du prix.<br />
-- <strong>MAI Code 2 Flash</strong> — performances comparables à GPT-6 Luna pour 65 % de son prix, et à Haiku 5.5 pour 20 %.<br />
-- <strong>MAI Cyber 2 Flash</strong> — modèle de cybersécurité défensive : bat GPT-6 Astra sur le benchmark CyberGym-E2E (92,3 % contre 91,5 %) à moins de 2 % du coût par tâche. Déjà intégré à MDASH, où il représente 40 % des scans.<br />
-- <strong>MAI Realtime 1</strong> — dépasse GPT-Realtime 2.1 à partir de 0,01 $ par minute audio.<br />
-- <strong>Decision 1.1</strong> — modèle de décision 50 fois plus rapide et 79 fois moins cher que GPT-6.1 Sol.<br />
-- <strong>Maia 200</strong> — accélérateur AI de deuxième génération, en production, avec 1,7× plus de tokens par watt.</p>
-<p><strong>Microsoft Perception : agents de sécurité rouge, bleu, vert.</strong> Un système qui orchestre des agents spécialisés : les agents rouges simulent des attaques, les agents bleus détectent et trient, les agents verts appliquent les correctifs. Lancé à Ignite (source : blog Microsoft Security, techcommunity). Renaud a pu constater sur place l'ampleur de la démonstration.</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Microsoft IQ et Fabric : la couche de connaissance d'entreprise.</strong> Renaud a interviewé Amir Netz, CTO de Fabric, qui lui a expliqué que la vraie valeur ne vient pas de la puissance d'un modèle mais du contexte — toutes les données, règles, process et connaissances de l'entreprise rassemblés dans une couche IQ unique (Fabric pour les données, Foundry pour l'IA, M365 pour la bureautique). « Mettez toutes les données au même endroit, créez des ontologies, et vous aurez une seule image de ce qui se passe dans votre entreprise », résume Netz (à 22:03). Copilot route ensuite automatiquement vers le modèle adapté à chaque tâche : un petit modèle pour une facture, un gros modèle pour une analyse complexe, sans que l'utilisateur ait à choisir.</p>
-<p><strong>Routage intelligent des modèles dans Copilot.</strong> Les administrateurs IT fixent les modèles autorisés ; Copilot choisit le plus pertinent selon la tâche et le coût. Les entreprises paient un abonnement de base (30 $ par mois annoncé par Renaud) et des tokens supplémentaires pour les modèles tiers les plus coûteux. La question du double paiement (abonnement + tokens) a été soulevée pendant le live, sans réponse ferme de Microsoft.</p>
-<p><strong>Le transfert de propriété intellectuelle : qui possède l'agent que vous avez formé ?</strong> Renaud a interrogé Amir Netz sur un point qui le préoccupe : quand un salarié forme un agent autonome avec son savoir-faire, son expérience, ses astuces de métier, cet agent reste dans le workspace de l'entreprise. Le salarié a-t-il transféré sa valeur sans contrepartie ? La réponse de Netz : « Les agents sont des enfants très talentueux, mais les humains sont les adultes. The buck stops with the humans » — la responsabilité reste humaine, et c'est ce qui justifie le salariat. Pas de réponse sur la rémunération de ce transfert de connaissance.</p>
-<p><strong>Microsoft Ignite en chiffres</strong> : le salon occupe quatre blocs du Moscone Center en sous-sol à San Francisco — Renaud a mis dix minutes à en parcourir les deux tiers en longueur. Des centaines d'exposants, des studios de podcast et vidéo professionnels alignés, et des échanges d'affaires d'un pragmatisme qu'il oppose au Vivatech parisien : « deux fois moins de stands et cinquante fois moins d'échanges concrets » (à 44:30). Mustafa Suleyman (CEO de Microsoft AI, cofondateur de DeepMind) était présent, accessible, discutant avec les créateurs de contenu.</p>
-<h2>Économie et finance</h2>
-<p><strong>Le coût des modèles comme nouvelle barrière d'entrée.</strong> Amir Netz a expliqué qu'une entreprise ne peut pas justifier un budget LLM entier sur le modèle le plus coûteux. Copilot résout ce problème par le routage automatique, mais le coût des modèles frontier (Claude Opus 5.5, GPT-6.2 Astra) reste un sujet pour les PME. Microsoft pousse ses propres modèles MAI comme alternative économique — un mouvement stratégique pour détourner les entreprises d'OpenAI et Anthropic vers ses propres modèles sous licence (MAI Licensed Weights).</p>
-<p><strong>Lock-in Microsoft renforcé par IQ.</strong> Plus la connaissance de l'entreprise est encapsulée dans Microsoft IQ, plus il est difficile d'en sortir. Renaud le formule clairement : « Si toute la science de ton entreprise est dans Microsoft IQ, tu peux trouver un nouveau modèle mais tu repars à zéro » (à 46:37). Il compare la situation à Google qui a cannibalisé son moteur de recherche pour passer à l'IA, et évoque la menace d'un « Macr-hard » d'Elon Musk — une alternative IA pour les entreprises — comme moteur de la transformation chez Microsoft.</p>
-<h2>À reprendre dans les autres veilles</h2>
-<ul>
-<li><strong>Microsoft Perception et les agents de sécurité rouge/bleu/vert</strong> — à signaler dans la veille pédagogique et scientifique comme illustration concrète de l'IA agentive en cybersécurité.</li>
-<li><strong>MAI Code 2 et Code 2 Flash</strong> — à suivre dans les veilles développement : disponibles dans GitHub Copilot dès le 17 novembre, avec des prix qui les rendent accessibles pour l'enseignement du code.</li>
-<li><strong>La question du transfert de propriété intellectuelle</strong> — sujet de société qui mérite d'être relayé dans la veille pédagogique : quand un enseignant ou un formateur transfère son savoir à un agent, que devient sa valeur ?</li>
-</ul>
-<h2>Volume</h2>
-<p>1 vidéo examinée (AaXfidA7Kbo — 50 min), 10 sujets retenus, 0 écarté. Transcription utilisée (intégrale). Mise à jour du sujet « Microsoft Ignite 2026 » déjà traité le 18 novembre avec les éléments nouveaux du reportage sur place (interviews, analyse, impressions directes).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille Renaud Dékode — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Microsoft Ignite à San Francisco : Copilot déclaré « nouveau système d'exploitation du travail », avec Microsoft IQ comme couche de connaissance d'entreprise et sept nouveaux modèles MAI (Code 2, Image 2.7, Cyber 2 Flash) qui rivalisent avec OpenAI et Anthropic à une fraction du coût. GPT-6.2 Astra et Sol disponibles dans Copilot dès l'ouverture. — La question du transfert de propriété intellectuelle quand un salarié forme son agent avec son savoir-faire reste posée. — Comparaison saisissante entre l'efficacité pragmatique d'Ignite et la déception du Vivatech parisien.</p>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Microsoft Copilot devient le système d'exploitation du travail.</strong> Satya Nadella a ouvert Ignite en annonçant que Copilot n'est plus un assistant dans Office mais le nouveau point d'entrée de tout poste de travail — au point que le mot « Windows » n'a pas été prononcé une seule fois pendant les deux heures et demie de keynote (à 01:31). Trois piliers : Human Ambition (toute ambition réalisable par l'IA), Intelligence (les modèles derrière) et Trust (sécurité et conformité). Confirmé par le communiqué officiel de Microsoft.</p>
-<p><strong>GPT-6.2 Astra et Sol disponibles dans Copilot.</strong> OpenAI a présenté ses deux nouveaux modèles le 17 novembre, jour d'ouverture d'Ignite — un calendrier coordonné avec Microsoft. Astra est le modèle de pointe pour les projets complexes, Sol le modèle polyvalent pour le travail quotidien. Tous deux produisent moins de tokens de sortie pour un résultat équivalent, réduisant le coût par tâche. Disponibles dans Copilot et GitHub Copilot (source : OpenAI, blog Microsoft).</p>
-<p><strong>Sept nouveaux modèles MAI annoncés</strong> (source : microsoft.ai) :<br />
-- <strong>MAI Image 2.7</strong> — #1 du classement Artificial Analysis en édition d'image, et #4 en génération texte-image, ce qui fait de Microsoft le deuxième laboratoire derrière OpenAI. Coût cinq fois inférieur à GPT Image 2.6 Sunburst.<br />
-- <strong>MAI Code 2</strong> — 98 % de la qualité de GPT-6.1 Sol à 40 % du prix, et 96 % d'Opus 5.5 à 5 % du prix.<br />
-- <strong>MAI Code 2 Flash</strong> — performances comparables à GPT-6 Luna pour 65 % de son prix, et à Haiku 5.5 pour 20 %.<br />
-- <strong>MAI Cyber 2 Flash</strong> — modèle de cybersécurité défensive : bat GPT-6 Astra sur le benchmark CyberGym-E2E (92,3 % contre 91,5 %) à moins de 2 % du coût par tâche. Déjà intégré à MDASH, où il représente 40 % des scans.<br />
-- <strong>MAI Realtime 1</strong> — dépasse GPT-Realtime 2.1 à partir de 0,01 $ par minute audio.<br />
-- <strong>Decision 1.1</strong> — modèle de décision 50 fois plus rapide et 79 fois moins cher que GPT-6.1 Sol.<br />
-- <strong>Maia 200</strong> — accélérateur AI de deuxième génération, en production, avec 1,7× plus de tokens par watt.</p>
-<p><strong>Microsoft Perception : agents de sécurité rouge, bleu, vert.</strong> Un système qui orchestre des agents spécialisés : les agents rouges simulent des attaques, les agents bleus détectent et trient, les agents verts appliquent les correctifs. Lancé à Ignite (source : blog Microsoft Security, techcommunity). Renaud a pu constater sur place l'ampleur de la démonstration.</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Microsoft IQ et Fabric : la couche de connaissance d'entreprise.</strong> Renaud a interviewé Amir Netz, CTO de Fabric, qui lui a expliqué que la vraie valeur ne vient pas de la puissance d'un modèle mais du contexte — toutes les données, règles, process et connaissances de l'entreprise rassemblés dans une couche IQ unique (Fabric pour les données, Foundry pour l'IA, M365 pour la bureautique). « Mettez toutes les données au même endroit, créez des ontologies, et vous aurez une seule image de ce qui se passe dans votre entreprise », résume Netz (à 22:03). Copilot route ensuite automatiquement vers le modèle adapté à chaque tâche : un petit modèle pour une facture, un gros modèle pour une analyse complexe, sans que l'utilisateur ait à choisir.</p>
-<p><strong>Routage intelligent des modèles dans Copilot.</strong> Les administrateurs IT fixent les modèles autorisés ; Copilot choisit le plus pertinent selon la tâche et le coût. Les entreprises paient un abonnement de base (30 $ par mois annoncé par Renaud) et des tokens supplémentaires pour les modèles tiers les plus coûteux. La question du double paiement (abonnement + tokens) a été soulevée pendant le live, sans réponse ferme de Microsoft.</p>
-<p><strong>Le transfert de propriété intellectuelle : qui possède l'agent que vous avez formé ?</strong> Renaud a interrogé Amir Netz sur un point qui le préoccupe : quand un salarié forme un agent autonome avec son savoir-faire, son expérience, ses astuces de métier, cet agent reste dans le workspace de l'entreprise. Le salarié a-t-il transféré sa valeur sans contrepartie ? La réponse de Netz : « Les agents sont des enfants très talentueux, mais les humains sont les adultes. The buck stops with the humans » — la responsabilité reste humaine, et c'est ce qui justifie le salariat. Pas de réponse sur la rémunération de ce transfert de connaissance.</p>
-<p><strong>Microsoft Ignite en chiffres</strong> : le salon occupe quatre blocs du Moscone Center en sous-sol à San Francisco — Renaud a mis dix minutes à en parcourir les deux tiers en longueur. Des centaines d'exposants, des studios de podcast et vidéo professionnels alignés, et des échanges d'affaires d'un pragmatisme qu'il oppose au Vivatech parisien : « deux fois moins de stands et cinquante fois moins d'échanges concrets » (à 44:30). Mustafa Suleyman (CEO de Microsoft AI, cofondateur de DeepMind) était présent, accessible, discutant avec les créateurs de contenu.</p>
-<h2>Économie et finance</h2>
-<p><strong>Le coût des modèles comme nouvelle barrière d'entrée.</strong> Amir Netz a expliqué qu'une entreprise ne peut pas justifier un budget LLM entier sur le modèle le plus coûteux. Copilot résout ce problème par le routage automatique, mais le coût des modèles frontier (Claude Opus 5.5, GPT-6.2 Astra) reste un sujet pour les PME. Microsoft pousse ses propres modèles MAI comme alternative économique — un mouvement stratégique pour détourner les entreprises d'OpenAI et Anthropic vers ses propres modèles sous licence (MAI Licensed Weights).</p>
-<p><strong>Lock-in Microsoft renforcé par IQ.</strong> Plus la connaissance de l'entreprise est encapsulée dans Microsoft IQ, plus il est difficile d'en sortir. Renaud le formule clairement : « Si toute la science de ton entreprise est dans Microsoft IQ, tu peux trouver un nouveau modèle mais tu repars à zéro » (à 46:37). Il compare la situation à Google qui a cannibalisé son moteur de recherche pour passer à l'IA, et évoque la menace d'un « Macr-hard » d'Elon Musk — une alternative IA pour les entreprises — comme moteur de la transformation chez Microsoft.</p>
-<h2>À reprendre dans les autres veilles</h2>
-<ul>
-<li><strong>Microsoft Perception et les agents de sécurité rouge/bleu/vert</strong> — à signaler dans la veille pédagogique et scientifique comme illustration concrète de l'IA agentive en cybersécurité.</li>
-<li><strong>MAI Code 2 et Code 2 Flash</strong> — à suivre dans les veilles développement : disponibles dans GitHub Copilot dès le 17 novembre, avec des prix qui les rendent accessibles pour l'enseignement du code.</li>
-<li><strong>La question du transfert de propriété intellectuelle</strong> — sujet de société qui mérite d'être relayé dans la veille pédagogique : quand un enseignant ou un formateur transfère son savoir à un agent, que devient sa valeur ?</li>
-</ul>
-<h2>Volume</h2>
-<p>1 vidéo examinée (AaXfidA7Kbo — 50 min), 10 sujets retenus, 0 écarté. Transcription utilisée (intégrale). Mise à jour du sujet « Microsoft Ignite 2026 » déjà traité le 18 novembre avec les éléments nouveaux du reportage sur place (interviews, analyse, impressions directes).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-20.html</link>
-<guid isPermaLink="false">bestgithubrepos-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:34:05 +0100</pubDate>
-<category>r/BestGitHubRepos</category>
-<description><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une trentaine de nouveaux outils open source repérés cette semaine, avec plusieurs pépites : Lumio (alternative à Spotlight avec OCR), Phonebox (transformer un vieil Android en panneau de contrôle), Filee (convertisseur 263 formats hors ligne) et GitDiagram (visualisation interactive de n'importe quel dépôt GitHub). Côté vidéo, l'offre open source continue de s'étoffer avec Concat, FilmCraft et HyperFrames.</p>
-<p>Le collecteur du subreddit Reddit est en échec (HTTP 404 depuis le 19 novembre). Les entrées proviennent de Hacker News, Lobsters, Product Hunt, gitmanual.com et des flux de veille complémentaires.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Lumio</strong> — Lanceur macOS open source qui remplace Spotlight ou Raycast. Il propose une recherche OCR dans les images et l'historique du presse-papier, et peut lancer des applications, ouvrir des fichiers ou exécuter des raccourcis. Licence GPL-3.0, gratuit. 57 étoiles. Dernière mise à jour : 19 novembre 2026. (github.com/cavaldos/Lumio)</p>
-<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste qui supporte les extensions Chrome. Conçu pour être léger et rapide, il conserve la compatibilité avec l'écosystème d'extensions du marché. Gratuit. (searchbrowser.app)</p>
-<p><strong>Retriever</strong> — Moteur de recherche hors ligne pour photos, documents et vidéos sur votre téléphone. Il décrit le contenu des fichiers et permet de les retrouver par description, le tout sur l'appareil sans envoi vers le cloud. Licence Apache-2.0, gratuit. 4 étoiles. (github.com/dhruv2295/Retriever)</p>
-<p><strong>Filee</strong> — Convertisseur de fichiers libre et hors ligne. Il prend en charge 263 formats : images, PDF, Word, Excel, PowerPoint, vidéo, audio, livres électroniques et archives. Glisser-déposer, aucun téléversement ni suite bureautique requis. Licence MIT, gratuit. 29 080 étoiles. (github.com/KnifeLemon/Filee)</p>
-<p><strong>Phonebox</strong> — Transformez un vieux téléphone Android en panneau de contrôle personnalisable pour Windows, Linux et macOS. 124 widgets et 30 modèles pour les statistiques système, le codage IA, le contrôle multimédia et l'automatisation. Connexion USB ou Wi-Fi, aucun cloud nécessaire. Licence MIT, gratuit. 3 836 étoiles. (github.com/ersinkoc/phonebox)</p>
-<p><strong>GitDiagram</strong> — Visualisez n'importe quelle codebase GitHub sous forme de diagrammes d'architecture interactifs. Remplacez « hub » par « diagram » dans l'URL d'un dépôt pour obtenir un schéma en une minute, avec une vidéo d'explication. Licence MIT, gratuit. 19 012 étoiles. (github.com/ahmedkhaleel2004/gitdiagram)</p>
-<p><strong>Gitcraft</strong> — Client Git visuel, léger, rapide et sans fonctionnalités superflues. Licence Apache-2.0, gratuit. 245 étoiles. (github.com/Vancete/gitcraft)</p>
-<p><strong>Winhance</strong> — Application Windows d'optimisation, de personnalisation et de débloat. Permet de supprimer les logiciels préinstallés inutiles et d'ajuster les paramètres système. Gratuit. 14 988 étoiles. (github.com/memstechtips/Winhance)</p>
-<p><strong>Recordly</strong> — Créez des vidéos de démonstration soignées sans compétences de montage. Fonctionne sur Mac, Windows et Linux. Licence AGPL-3.0, gratuit. 37 100 étoiles. (github.com/webadderallorg/Recordly)</p>
-<p><strong>Coucou</strong> — Un petit compagnon dans le notch du Mac (et sur iPhone) qui surveille vos agents de codage IA : Claude Code, Codex, Cursor, Gemini CLI, Antigravity et autres. Permet d'approuver des actions depuis le notch ou l'écran de verrouillage. Licence MIT, gratuit. 7 353 étoiles. (github.com/Louis-CFM/coucou)</p>
-<p><strong>DCIM</strong> — Application de photos auto-hébergée pour l'Indie Web. Téléversez des photos depuis le navigateur et intégrez-les en HTML ou Markdown. Fonctionne sur Cloudflare (10 Go de stockage gratuit) ou tout bucket S3. Licence MIT, gratuit. 5 étoiles. (github.com/aspizu/dcim)</p>
-<p><strong>Screen-relay</strong> — Stream et contrôle de n'importe quel bureau à 120 images par seconde depuis un navigateur ou une CLI. Conçu pour les agents IA et l'accès à distance. Licence Apache-2.0, gratuit. 220 étoiles. (github.com/vercel-labs/screen-relay)</p>
-<p><strong>Skyfind</strong> — Identifie les satellites dans les vidéos time-lapse du ciel nocturne et détermine la position du photographe au sol. Utilise les données orbitales de space-track.org. Interface en ligne de commande, Qt ou compétence Claude. Licence NONE, gratuit. 1 étoile. (github.com/dmead/skyfind)</p>
-<p><strong>Purple Flow</strong> — Alternative à n8n écrite en Elixir, conçue pour les workflows d'agents IA. Supporte le streaming, les connexions multi-bases de données et l'exécution de workflows sur 512 Mo de RAM. Licence MIT, gratuit. 3 étoiles. (github.com/leetheguy/purple_flow)</p>
-<p><strong>Kibi</strong> — Cadre d'exigences pour agents de codage IA. Définit des contraintes que l'agent doit respecter (règles de projet, conventions de code, dépendances) et vérifie la conformité. Licence AGPL-3.0, gratuit. 13 étoiles. (github.com/looted/kibi)</p>
-<p><strong>Globus</strong> — Application iOS qui place l'actualité mondiale sur un globe interactif. Une édition quotidienne de 20 à 30 articles, positionnés géographiquement. Gratuit. (globus.earth)</p>
-<p><strong>Brief</strong> — Parlez d'un bug devant l'écran, Brief rédige et soumet le ticket automatiquement (Linear, Jira, GitHub Issues). Licence MIT, gratuit. 18 étoiles. (github.com/razi2001/brief)</p>
-<p><strong>Ruscal</strong> — Transpileur Turbo Pascal vers Rust, suffisamment complet et testé pour exécuter d'anciens programmes Pascal sur des machines modernes. Supporte le mélange Rust et Pascal, les graphismes et la tortue graphique. Licence MIT, gratuit. 9 étoiles. (github.com/jjinux/ruscal)</p>
-<p><strong>FailTrace</strong> — Reproduisez localement un échec de GitHub Actions à partir de son URL. Plus besoin de deviner pourquoi la CI a cassé. Licence MIT, gratuit. 29 étoiles. (github.com/Ri4dH/failtrace)</p>
-<p><strong>Pitot</strong> — Plateforme d'observabilité OpenTelemetry en un seul binaire. Ingère OTLP, stocke en Parquet, interroge avec DuckDB et expose un serveur MCP. Licence Apache-2.0, gratuit. 147 étoiles. (github.com/labstack/pitot)</p>
-<p><strong>HyCanvas</strong> — Alternative open source à Canva que vous pouvez héberger vous-même. Graphismes, diapositives, vidéo, tableaux blancs. Licence AGPL-3.0, gratuit. 305 étoiles. (github.com/hyscaler/HyCanvas)</p>
-<p><strong>Starquix</strong> — Constructeur de sites Astro visuel et local. Éditez votre site Astro dans une interface visuelle, le code reste un vrai projet Astro. Licence MIT, gratuit. 24 étoiles. (github.com/Mayhopar/Starquix)</p>
-<p><strong>Phrack-TUI</strong> — Lecteur terminal pour les archives Phrack. Navigation au clavier (touches vim), recherche live, marque-pages, extraits, sauts de référence croisée, thèmes et effets CRT. Licence MIT, gratuit. 2 étoiles. (github.com/krmbzds/phrack-tui)</p>
-<p><strong>Agent Hive</strong> — Application Mac open source qui orchestre des équipes d'agents IA (Claude Code, Codex, Gemini CLI, etc.) avec une reine et plusieurs abeilles. Licence MIT, gratuit. 4 étoiles. (github.com/ericwang915/agent-hive)</p>
-<p><strong>Lazycow Studio</strong> — Transforme vos rushs vidéo en réels et films de voyage, localement sur votre machine. Licence Apache-2.0, gratuit. 3 étoiles. (github.com/kensaurus/lazycow-studio)</p>
-<p><strong>Psudo</strong> — Modèle de codage 2-bit de 47 Mo avec IR à préfixe polonais et transpileur Rust. Léger, conçu pour l'exécution locale. Licence MIT, gratuit. 1 étoile. (github.com/steveSujo/psudo)</p>
-<p><strong>Motion Wallpaper</strong> — Fonds d'écran animés (vidéo et GIF) sur plusieurs écrans sous Linux (X11 uniquement pour l'instant). Licence LGPL-2.1, gratuit. 1 étoile. (github.com/sozipp/motion-wallpaper)</p>
-<p><strong>Archiver</strong> — Outil de compression et d'extraction dans le navigateur, utilisant WebAssembly. Rien n'est téléversé, tout est traité localement, fonctionne hors ligne. Gratuit. (archiver.scryer.media)</p>
-<p><strong>Svetoviz</strong> — Débogueur visuel pour grands modèles de langage. Fonctionne avec les modules PyTorch, les modèles Hugging Face et les jeux de données. Gratuit. 0 étoiles. (github.com/PiotrGryko/svetoviz)</p>
-<p><strong>VPNDetection</strong> — API de détection VPN et proxy sans clé. Un simple <code>curl</code> vers l'API indique si une adresse IP est un VPN, un nœud Tor ou un relais. Gratuit. (vpndetection.io)</p>
-<p><strong>Foolscap</strong> — Application d'écriture qui lit votre livre et ne rédige jamais à votre place. Conçue pour les auteurs qui veulent un retour sur leur texte sans que l'IA n'écrive à leur place. Gratuit. 4 étoiles. (foolscap.works)</p>
-<p><strong>Pritunl</strong> — Client OpenVPN et WireGuard gratuit et open source, multiplateforme. Gratuit. 1 481 étoiles. (github.com/pritunl/pritunl-client)</p>
-<p><strong>Archiver (WebAssembly)</strong> — Outil de compression/extraction entièrement local dans le navigateur. Utilise des bibliothèques Rust compilées en WebAssembly. Rien n'est téléversé. Gratuit. (archiver.scryer.media)</p>
-<p><strong>Holding Pattern</strong> — Jeu de programmation où vous écrivez le code d'un contrôleur aérien. Le trafic arrive, vous devez gérer les vols avec votre code. Licence MIT, gratuit. 1 étoile. (github.com/shawnzam/holding-pattern)</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Concat</strong> — Éditeur vidéo open source, local et multiplateforme, désormais scriptable via une API JSON-RPC et MCP. 18 957 étoiles, licence AGPL-3.0. (github.com/jub0t/Concat)</p>
-<p><strong>FilmCraft</strong> — Éditeur vidéo non linéaire écrit en Rust, récemment publié. 18 640 étoiles, licence Apache-2.0. (github.com/storytold/filmcraft)</p>
-<p><strong>VideoLingo</strong> — Outil de sous-titrage, traduction, alignement et doublage automatisé par IA. 19 324 étoiles, licence Apache-2.0. (github.com/Huanshere/VideoLingo)</p>
-<p><strong>HyperFrames (HeyGen)</strong> — Éditeur vidéo IA open source. Décrivez une vidéo, obtenez un projet éditable image par image. 87 032 étoiles, licence Apache-2.0. (github.com/heygen-com/hyperframes)</p>
-<p><strong>Remotion</strong> — Créez des vidéos programmatiquement avec React. 74 352 étoiles. (github.com/remotion-dev/remotion)</p>
-<p><strong>Manim</strong> — Moteur d'animation pour vidéos mathématiques explicatives (créé par 3Blue1Brown). 96 684 étoiles, licence MIT. (github.com/3b1b/manim)</p>
-<p><strong>InvokeAI</strong> — Moteur de génération d'images et de vidéos par IA, avec interface applicative. 29 127 étoiles, licence Apache-2.0. (github.com/invoke-ai/InvokeAI)</p>
-<p><strong>Lossless-cut</strong> — Couteau suisse du montage vidéo/audio sans perte. 46 211 étoiles, licence GPL-2.0. (github.com/mifi/lossless-cut)</p>
-<p><strong>Video2x</strong> — Suréchantillonnage vidéo par apprentissage automatique et interpolation d'images. 22 813 étoiles, licence AGPL-3.0. (github.com/k4yt3x/video2x)</p>
-<p><strong>Seal</strong> — Téléchargeur vidéo/audio pour Android basé sur yt-dlp. 30 842 étoiles, licence GPL-3.0. (github.com/JunkFood02/Seal)</p>
-<p><strong>Onlook</strong> — Outil de développement open source pour designers : une interface visuelle par-dessus votre codebase réelle, avec agent IA. 27 387 étoiles, licence Apache-2.0. (github.com/onlook-dev/onlook)</p>
-<p><strong>Slax</strong> — Distribution Linux relancée après trois ans d'absence, désormais basée sur Debian 13 avec un installateur graphique USB/dual-boot et une aide IA. (itsfoss.com)</p>
-<p><strong>ToolJet 4.0</strong> — Constructeur d'applications internes open source, désormais compatible avec le vibe-coding. (tooljet.com)</p>
-<p><strong>ZXC 1.0</strong> — Codec de compression asymétrique en C, intégré dans ClickHouse. 541 étoiles, licence BSD-3-Clause. (github.com/hellobertrand/zxc)</p>
-<h2>Extensions et greffons</h2>
-<p>Aucun greffon ou extension notable cette semaine.</p>
-<h2>Volume</h2>
-<p>383 entrées lues dans la shortlist (dont 83 tronquées car antérieures à la fenêtre de 4 jours), 52 retenues, 331 écartées.</p>
-<p>Le collecteur Reddit r/BestGitHubRepos est en échec (HTTP 404). Les entrées proviennent de Hacker News, Lobsters, gitmanual.com, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com et It's FOSS.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une trentaine de nouveaux outils open source repérés cette semaine, avec plusieurs pépites : Lumio (alternative à Spotlight avec OCR), Phonebox (transformer un vieil Android en panneau de contrôle), Filee (convertisseur 263 formats hors ligne) et GitDiagram (visualisation interactive de n'importe quel dépôt GitHub). Côté vidéo, l'offre open source continue de s'étoffer avec Concat, FilmCraft et HyperFrames.</p>
-<p>Le collecteur du subreddit Reddit est en échec (HTTP 404 depuis le 19 novembre). Les entrées proviennent de Hacker News, Lobsters, Product Hunt, gitmanual.com et des flux de veille complémentaires.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Lumio</strong> — Lanceur macOS open source qui remplace Spotlight ou Raycast. Il propose une recherche OCR dans les images et l'historique du presse-papier, et peut lancer des applications, ouvrir des fichiers ou exécuter des raccourcis. Licence GPL-3.0, gratuit. 57 étoiles. Dernière mise à jour : 19 novembre 2026. (github.com/cavaldos/Lumio)</p>
-<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste qui supporte les extensions Chrome. Conçu pour être léger et rapide, il conserve la compatibilité avec l'écosystème d'extensions du marché. Gratuit. (searchbrowser.app)</p>
-<p><strong>Retriever</strong> — Moteur de recherche hors ligne pour photos, documents et vidéos sur votre téléphone. Il décrit le contenu des fichiers et permet de les retrouver par description, le tout sur l'appareil sans envoi vers le cloud. Licence Apache-2.0, gratuit. 4 étoiles. (github.com/dhruv2295/Retriever)</p>
-<p><strong>Filee</strong> — Convertisseur de fichiers libre et hors ligne. Il prend en charge 263 formats : images, PDF, Word, Excel, PowerPoint, vidéo, audio, livres électroniques et archives. Glisser-déposer, aucun téléversement ni suite bureautique requis. Licence MIT, gratuit. 29 080 étoiles. (github.com/KnifeLemon/Filee)</p>
-<p><strong>Phonebox</strong> — Transformez un vieux téléphone Android en panneau de contrôle personnalisable pour Windows, Linux et macOS. 124 widgets et 30 modèles pour les statistiques système, le codage IA, le contrôle multimédia et l'automatisation. Connexion USB ou Wi-Fi, aucun cloud nécessaire. Licence MIT, gratuit. 3 836 étoiles. (github.com/ersinkoc/phonebox)</p>
-<p><strong>GitDiagram</strong> — Visualisez n'importe quelle codebase GitHub sous forme de diagrammes d'architecture interactifs. Remplacez « hub » par « diagram » dans l'URL d'un dépôt pour obtenir un schéma en une minute, avec une vidéo d'explication. Licence MIT, gratuit. 19 012 étoiles. (github.com/ahmedkhaleel2004/gitdiagram)</p>
-<p><strong>Gitcraft</strong> — Client Git visuel, léger, rapide et sans fonctionnalités superflues. Licence Apache-2.0, gratuit. 245 étoiles. (github.com/Vancete/gitcraft)</p>
-<p><strong>Winhance</strong> — Application Windows d'optimisation, de personnalisation et de débloat. Permet de supprimer les logiciels préinstallés inutiles et d'ajuster les paramètres système. Gratuit. 14 988 étoiles. (github.com/memstechtips/Winhance)</p>
-<p><strong>Recordly</strong> — Créez des vidéos de démonstration soignées sans compétences de montage. Fonctionne sur Mac, Windows et Linux. Licence AGPL-3.0, gratuit. 37 100 étoiles. (github.com/webadderallorg/Recordly)</p>
-<p><strong>Coucou</strong> — Un petit compagnon dans le notch du Mac (et sur iPhone) qui surveille vos agents de codage IA : Claude Code, Codex, Cursor, Gemini CLI, Antigravity et autres. Permet d'approuver des actions depuis le notch ou l'écran de verrouillage. Licence MIT, gratuit. 7 353 étoiles. (github.com/Louis-CFM/coucou)</p>
-<p><strong>DCIM</strong> — Application de photos auto-hébergée pour l'Indie Web. Téléversez des photos depuis le navigateur et intégrez-les en HTML ou Markdown. Fonctionne sur Cloudflare (10 Go de stockage gratuit) ou tout bucket S3. Licence MIT, gratuit. 5 étoiles. (github.com/aspizu/dcim)</p>
-<p><strong>Screen-relay</strong> — Stream et contrôle de n'importe quel bureau à 120 images par seconde depuis un navigateur ou une CLI. Conçu pour les agents IA et l'accès à distance. Licence Apache-2.0, gratuit. 220 étoiles. (github.com/vercel-labs/screen-relay)</p>
-<p><strong>Skyfind</strong> — Identifie les satellites dans les vidéos time-lapse du ciel nocturne et détermine la position du photographe au sol. Utilise les données orbitales de space-track.org. Interface en ligne de commande, Qt ou compétence Claude. Licence NONE, gratuit. 1 étoile. (github.com/dmead/skyfind)</p>
-<p><strong>Purple Flow</strong> — Alternative à n8n écrite en Elixir, conçue pour les workflows d'agents IA. Supporte le streaming, les connexions multi-bases de données et l'exécution de workflows sur 512 Mo de RAM. Licence MIT, gratuit. 3 étoiles. (github.com/leetheguy/purple_flow)</p>
-<p><strong>Kibi</strong> — Cadre d'exigences pour agents de codage IA. Définit des contraintes que l'agent doit respecter (règles de projet, conventions de code, dépendances) et vérifie la conformité. Licence AGPL-3.0, gratuit. 13 étoiles. (github.com/looted/kibi)</p>
-<p><strong>Globus</strong> — Application iOS qui place l'actualité mondiale sur un globe interactif. Une édition quotidienne de 20 à 30 articles, positionnés géographiquement. Gratuit. (globus.earth)</p>
-<p><strong>Brief</strong> — Parlez d'un bug devant l'écran, Brief rédige et soumet le ticket automatiquement (Linear, Jira, GitHub Issues). Licence MIT, gratuit. 18 étoiles. (github.com/razi2001/brief)</p>
-<p><strong>Ruscal</strong> — Transpileur Turbo Pascal vers Rust, suffisamment complet et testé pour exécuter d'anciens programmes Pascal sur des machines modernes. Supporte le mélange Rust et Pascal, les graphismes et la tortue graphique. Licence MIT, gratuit. 9 étoiles. (github.com/jjinux/ruscal)</p>
-<p><strong>FailTrace</strong> — Reproduisez localement un échec de GitHub Actions à partir de son URL. Plus besoin de deviner pourquoi la CI a cassé. Licence MIT, gratuit. 29 étoiles. (github.com/Ri4dH/failtrace)</p>
-<p><strong>Pitot</strong> — Plateforme d'observabilité OpenTelemetry en un seul binaire. Ingère OTLP, stocke en Parquet, interroge avec DuckDB et expose un serveur MCP. Licence Apache-2.0, gratuit. 147 étoiles. (github.com/labstack/pitot)</p>
-<p><strong>HyCanvas</strong> — Alternative open source à Canva que vous pouvez héberger vous-même. Graphismes, diapositives, vidéo, tableaux blancs. Licence AGPL-3.0, gratuit. 305 étoiles. (github.com/hyscaler/HyCanvas)</p>
-<p><strong>Starquix</strong> — Constructeur de sites Astro visuel et local. Éditez votre site Astro dans une interface visuelle, le code reste un vrai projet Astro. Licence MIT, gratuit. 24 étoiles. (github.com/Mayhopar/Starquix)</p>
-<p><strong>Phrack-TUI</strong> — Lecteur terminal pour les archives Phrack. Navigation au clavier (touches vim), recherche live, marque-pages, extraits, sauts de référence croisée, thèmes et effets CRT. Licence MIT, gratuit. 2 étoiles. (github.com/krmbzds/phrack-tui)</p>
-<p><strong>Agent Hive</strong> — Application Mac open source qui orchestre des équipes d'agents IA (Claude Code, Codex, Gemini CLI, etc.) avec une reine et plusieurs abeilles. Licence MIT, gratuit. 4 étoiles. (github.com/ericwang915/agent-hive)</p>
-<p><strong>Lazycow Studio</strong> — Transforme vos rushs vidéo en réels et films de voyage, localement sur votre machine. Licence Apache-2.0, gratuit. 3 étoiles. (github.com/kensaurus/lazycow-studio)</p>
-<p><strong>Psudo</strong> — Modèle de codage 2-bit de 47 Mo avec IR à préfixe polonais et transpileur Rust. Léger, conçu pour l'exécution locale. Licence MIT, gratuit. 1 étoile. (github.com/steveSujo/psudo)</p>
-<p><strong>Motion Wallpaper</strong> — Fonds d'écran animés (vidéo et GIF) sur plusieurs écrans sous Linux (X11 uniquement pour l'instant). Licence LGPL-2.1, gratuit. 1 étoile. (github.com/sozipp/motion-wallpaper)</p>
-<p><strong>Archiver</strong> — Outil de compression et d'extraction dans le navigateur, utilisant WebAssembly. Rien n'est téléversé, tout est traité localement, fonctionne hors ligne. Gratuit. (archiver.scryer.media)</p>
-<p><strong>Svetoviz</strong> — Débogueur visuel pour grands modèles de langage. Fonctionne avec les modules PyTorch, les modèles Hugging Face et les jeux de données. Gratuit. 0 étoiles. (github.com/PiotrGryko/svetoviz)</p>
-<p><strong>VPNDetection</strong> — API de détection VPN et proxy sans clé. Un simple <code>curl</code> vers l'API indique si une adresse IP est un VPN, un nœud Tor ou un relais. Gratuit. (vpndetection.io)</p>
-<p><strong>Foolscap</strong> — Application d'écriture qui lit votre livre et ne rédige jamais à votre place. Conçue pour les auteurs qui veulent un retour sur leur texte sans que l'IA n'écrive à leur place. Gratuit. 4 étoiles. (foolscap.works)</p>
-<p><strong>Pritunl</strong> — Client OpenVPN et WireGuard gratuit et open source, multiplateforme. Gratuit. 1 481 étoiles. (github.com/pritunl/pritunl-client)</p>
-<p><strong>Archiver (WebAssembly)</strong> — Outil de compression/extraction entièrement local dans le navigateur. Utilise des bibliothèques Rust compilées en WebAssembly. Rien n'est téléversé. Gratuit. (archiver.scryer.media)</p>
-<p><strong>Holding Pattern</strong> — Jeu de programmation où vous écrivez le code d'un contrôleur aérien. Le trafic arrive, vous devez gérer les vols avec votre code. Licence MIT, gratuit. 1 étoile. (github.com/shawnzam/holding-pattern)</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Concat</strong> — Éditeur vidéo open source, local et multiplateforme, désormais scriptable via une API JSON-RPC et MCP. 18 957 étoiles, licence AGPL-3.0. (github.com/jub0t/Concat)</p>
-<p><strong>FilmCraft</strong> — Éditeur vidéo non linéaire écrit en Rust, récemment publié. 18 640 étoiles, licence Apache-2.0. (github.com/storytold/filmcraft)</p>
-<p><strong>VideoLingo</strong> — Outil de sous-titrage, traduction, alignement et doublage automatisé par IA. 19 324 étoiles, licence Apache-2.0. (github.com/Huanshere/VideoLingo)</p>
-<p><strong>HyperFrames (HeyGen)</strong> — Éditeur vidéo IA open source. Décrivez une vidéo, obtenez un projet éditable image par image. 87 032 étoiles, licence Apache-2.0. (github.com/heygen-com/hyperframes)</p>
-<p><strong>Remotion</strong> — Créez des vidéos programmatiquement avec React. 74 352 étoiles. (github.com/remotion-dev/remotion)</p>
-<p><strong>Manim</strong> — Moteur d'animation pour vidéos mathématiques explicatives (créé par 3Blue1Brown). 96 684 étoiles, licence MIT. (github.com/3b1b/manim)</p>
-<p><strong>InvokeAI</strong> — Moteur de génération d'images et de vidéos par IA, avec interface applicative. 29 127 étoiles, licence Apache-2.0. (github.com/invoke-ai/InvokeAI)</p>
-<p><strong>Lossless-cut</strong> — Couteau suisse du montage vidéo/audio sans perte. 46 211 étoiles, licence GPL-2.0. (github.com/mifi/lossless-cut)</p>
-<p><strong>Video2x</strong> — Suréchantillonnage vidéo par apprentissage automatique et interpolation d'images. 22 813 étoiles, licence AGPL-3.0. (github.com/k4yt3x/video2x)</p>
-<p><strong>Seal</strong> — Téléchargeur vidéo/audio pour Android basé sur yt-dlp. 30 842 étoiles, licence GPL-3.0. (github.com/JunkFood02/Seal)</p>
-<p><strong>Onlook</strong> — Outil de développement open source pour designers : une interface visuelle par-dessus votre codebase réelle, avec agent IA. 27 387 étoiles, licence Apache-2.0. (github.com/onlook-dev/onlook)</p>
-<p><strong>Slax</strong> — Distribution Linux relancée après trois ans d'absence, désormais basée sur Debian 13 avec un installateur graphique USB/dual-boot et une aide IA. (itsfoss.com)</p>
-<p><strong>ToolJet 4.0</strong> — Constructeur d'applications internes open source, désormais compatible avec le vibe-coding. (tooljet.com)</p>
-<p><strong>ZXC 1.0</strong> — Codec de compression asymétrique en C, intégré dans ClickHouse. 541 étoiles, licence BSD-3-Clause. (github.com/hellobertrand/zxc)</p>
-<h2>Extensions et greffons</h2>
-<p>Aucun greffon ou extension notable cette semaine.</p>
-<h2>Volume</h2>
-<p>383 entrées lues dans la shortlist (dont 83 tronquées car antérieures à la fenêtre de 4 jours), 52 retenues, 331 écartées.</p>
-<p>Le collecteur Reddit r/BestGitHubRepos est en échec (HTTP 404). Les entrées proviennent de Hacker News, Lobsters, gitmanual.com, Product Hunt, LinuxFr.org, Journal du Hacker, Developpez.com et It's FOSS.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-20.html</link>
-<guid isPermaLink="false">lovingopensourceai-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:23:02 +0100</pubDate>
-<category>r/LovingOpenSourceAI</category>
-<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</h1>
-<p><strong>Note : la source Reddit r/LovingOpenSourceAI a retourné une erreur HTTP 404 lors de la dernière collecte (19 novembre). Les entrées de ce subreddit peuvent donc être incomplètes. La collecte via Hacker News et Lobsters fonctionne normalement.</strong></p>
-<h2>En bref</h2>
-<p>Une journée riche en annonces de modèles ouverts et d'outils d'IA locale : Cloudflare publie les poids de ses modèles d'extraction Clairic, DeepMind ouvre un plugin de robotique agentique, et un nouveau modèle d'agent DaisyRose-27B atteint des scores remarquables sur Terminal-Bench. Côté outils, JunctionBox AI permet de faire travailler ensemble Claude Code, Codex et des modèles locaux sur sa propre machine, tandis que Tiger Guard apporte une modération de contenu exécutable localement.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>Onlook — un outil de conception open source piloté par l'IA</h3>
-<p>Onlook est une application de bureau qui superpose une toile visuelle sur votre code source, permettant de concevoir et d'éditer l'interface directement dans le code, avec l'agent d'IA de votre choix. Le projet compte plus de 27 000 étoiles et a été deux fois numéro un des tendances GitHub. Licence Apache-2.0, gratuit et open source.<br />
-→ <a href="https://github.com/onlook-dev/onlook">github.com/onlook-dev/onlook</a> (Apache-2.0, 27 385 ★, mis à jour le 19 novembre 2026)</p>
-<h3>JunctionBox AI — une plateforme d'agents IA locale</h3>
-<p>JunctionBox AI permet d'exécuter Claude Code, Codex, Grok et des modèles locaux (via Ollama) comme une équipe d'agents sur votre propre ordinateur, sans abonnement mensuel. La version Core est gratuite pour deux agents actifs ; la version Pro coûte 49 $ par an. Une fonctionnalité originale permet de piloter ses agents depuis un téléviseur connecté (Roku, Fire TV, Android TV). Le projet publie ses binaires sur GitHub.<br />
-→ <a href="https://junctionboxai.com/">junctionboxai.com</a> (gratuit pour deux agents, Pro 49 $/an)</p>
-<h3>Tiger Guard — un modèle de modération local et ouvert</h3>
-<p>Casdo Labs a publié Tiger Guard et Tiger Guard Small, deux classifieurs de modération de contenu pour l'anglais et l'allemand (308 M et 141 M paramètres). Ils acceptent un commentaire, une invite ou une réponse et retournent un score SAFE/UNSAFE. Les poids sont sous licence Apache-2.0, avec support Transformers, exports ONNX et code d'inférence. Le modèle Small pèse 105 Mo une fois quantifié, et son exécution ne nécessite aucun service distant.<br />
-→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation">huggingface.co/patronus-studio/tiger-guard-content-moderation</a> (Apache-2.0, 308 M paramètres)<br />
-→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation-small">huggingface.co/patronus-studio/tiger-guard-content-moderation-small</a> (Apache-2.0, 141 M paramètres)</p>
-<h3>Transformers.js — l'IA dans le navigateur, sans serveur</h3>
-<p>La bibliothèque JavaScript de Hugging Face permet d'exécuter des modèles d'IA compatibles directement dans une page web, sans infrastructure serveur. Les modèles tournent dans le navigateur de l'utilisateur, ce qui préserve la confidentialité des données et supprime les coûts d'hébergement. Le dépôt principal et la documentation sont sur GitHub.<br />
-→ <a href="https://github.com/huggingface/transformers.js">github.com/huggingface/transformers.js</a> (Apache-2.0, open source)</p>
-<h3>GMBasic — un BASIC moderne avec IA intégrée</h3>
-<p>GMBasic est un environnement BASIC compilé, open source depuis le 19 novembre, qui intègre nativement l'appel à des modèles d'IA locaux. Il propose quatre moteurs d'exécution (machine virtuelle P-Code en C#, IL .NET, VM C, transpileur C99) et six bases de données embarquées dont SQLite et une base vectorielle. Le projet est très récent (1 étoile) et encore en phase de découverte.<br />
-→ <a href="https://github.com/c-vision/GMBasic">github.com/c-vision/GMBasic</a> (1 ★, très récent)</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>DaisyRose-27B — un modèle d'agent open weight performant</h3>
-<p>RadixArk a publié DaisyRose-27B, construit sur Qwen3.8-27B et entraîné par apprentissage par renforcement sur des tâches d'agent de longue durée (sessions jusqu'à 1 million de tokens). Le modèle passe de 5,6 % à 12,0 % sur Terminal-Bench 4.1 pass@1, et progresse sur tous les autres benchmarks (DeepSWE, SWE-Bench Pro, GPQA Diamond). Les poids sont disponibles en BF16, FP8 et NVFP4 sous licence Apache-2.0.<br />
-→ <a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">huggingface.co/blog/RadixArk/daisyrose-27b</a> (Apache-2.0)</p>
-<h3>Clairic et Clairic-flash passent en open weight</h3>
-<p>Cloudflare a publié les poids complets de ses modèles d'extraction Clairic (version améliorée) et Clairic-flash (9 milliards de paramètres). Le nouveau Clairic excelle dans l'extraction à partir de documents complexes : images, PDF, tableaux et listes. Les deux modèles sont hébergés sur Workers AI et disponibles sur Hugging Face.<br />
-→ <a href="https://blog.cloudflare.com/open-clairic/">blog.cloudflare.com/open-clairic</a> (poids ouverts sur Hugging Face)</p>
-<h3>Plugin de robotique agentique de DeepMind (Vibe Robotics)</h3>
-<p>DeepMind a publié un plugin open source permettant de piloter des robots par agents d'IA, en simulation (MuJoCo) ou sur un vrai robot. Le plugin inclut des compétences pré-écrites qui orientent le modèle vers les bonnes pratiques. Le code est sous licence Apache-2.0.<br />
-→ <a href="https://github.com/google-deepmind/robotics-antigravity-plugin">github.com/google-deepmind/robotics-antigravity-plugin</a> (Apache-2.0, 133 ★)</p>
-<h3>llm-gemini 0.38 — support de Gemini 4 Neon</h3>
-<p>Simon Willison a mis à jour le plugin llm-gemini pour le CLI <code>llm</code>, ajoutant le support du nouveau modèle Gemini 4 Neon de Google (sorti le 18 novembre). Le plugin permet d'interroger les modèles Gemini depuis le terminal.<br />
-→ <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">simonwillison.net/2026/Nov/18/llm-gemini</a></p>
-<h2>Volume</h2>
-<p>88 entrées publiées dans l'intervalle, 9 retenues, 79 écartées.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 20 novembre 2026</h1>
-<p><strong>Note : la source Reddit r/LovingOpenSourceAI a retourné une erreur HTTP 404 lors de la dernière collecte (19 novembre). Les entrées de ce subreddit peuvent donc être incomplètes. La collecte via Hacker News et Lobsters fonctionne normalement.</strong></p>
-<h2>En bref</h2>
-<p>Une journée riche en annonces de modèles ouverts et d'outils d'IA locale : Cloudflare publie les poids de ses modèles d'extraction Clairic, DeepMind ouvre un plugin de robotique agentique, et un nouveau modèle d'agent DaisyRose-27B atteint des scores remarquables sur Terminal-Bench. Côté outils, JunctionBox AI permet de faire travailler ensemble Claude Code, Codex et des modèles locaux sur sa propre machine, tandis que Tiger Guard apporte une modération de contenu exécutable localement.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>Onlook — un outil de conception open source piloté par l'IA</h3>
-<p>Onlook est une application de bureau qui superpose une toile visuelle sur votre code source, permettant de concevoir et d'éditer l'interface directement dans le code, avec l'agent d'IA de votre choix. Le projet compte plus de 27 000 étoiles et a été deux fois numéro un des tendances GitHub. Licence Apache-2.0, gratuit et open source.<br />
-→ <a href="https://github.com/onlook-dev/onlook">github.com/onlook-dev/onlook</a> (Apache-2.0, 27 385 ★, mis à jour le 19 novembre 2026)</p>
-<h3>JunctionBox AI — une plateforme d'agents IA locale</h3>
-<p>JunctionBox AI permet d'exécuter Claude Code, Codex, Grok et des modèles locaux (via Ollama) comme une équipe d'agents sur votre propre ordinateur, sans abonnement mensuel. La version Core est gratuite pour deux agents actifs ; la version Pro coûte 49 $ par an. Une fonctionnalité originale permet de piloter ses agents depuis un téléviseur connecté (Roku, Fire TV, Android TV). Le projet publie ses binaires sur GitHub.<br />
-→ <a href="https://junctionboxai.com/">junctionboxai.com</a> (gratuit pour deux agents, Pro 49 $/an)</p>
-<h3>Tiger Guard — un modèle de modération local et ouvert</h3>
-<p>Casdo Labs a publié Tiger Guard et Tiger Guard Small, deux classifieurs de modération de contenu pour l'anglais et l'allemand (308 M et 141 M paramètres). Ils acceptent un commentaire, une invite ou une réponse et retournent un score SAFE/UNSAFE. Les poids sont sous licence Apache-2.0, avec support Transformers, exports ONNX et code d'inférence. Le modèle Small pèse 105 Mo une fois quantifié, et son exécution ne nécessite aucun service distant.<br />
-→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation">huggingface.co/patronus-studio/tiger-guard-content-moderation</a> (Apache-2.0, 308 M paramètres)<br />
-→ <a href="https://huggingface.co/patronus-studio/tiger-guard-content-moderation-small">huggingface.co/patronus-studio/tiger-guard-content-moderation-small</a> (Apache-2.0, 141 M paramètres)</p>
-<h3>Transformers.js — l'IA dans le navigateur, sans serveur</h3>
-<p>La bibliothèque JavaScript de Hugging Face permet d'exécuter des modèles d'IA compatibles directement dans une page web, sans infrastructure serveur. Les modèles tournent dans le navigateur de l'utilisateur, ce qui préserve la confidentialité des données et supprime les coûts d'hébergement. Le dépôt principal et la documentation sont sur GitHub.<br />
-→ <a href="https://github.com/huggingface/transformers.js">github.com/huggingface/transformers.js</a> (Apache-2.0, open source)</p>
-<h3>GMBasic — un BASIC moderne avec IA intégrée</h3>
-<p>GMBasic est un environnement BASIC compilé, open source depuis le 19 novembre, qui intègre nativement l'appel à des modèles d'IA locaux. Il propose quatre moteurs d'exécution (machine virtuelle P-Code en C#, IL .NET, VM C, transpileur C99) et six bases de données embarquées dont SQLite et une base vectorielle. Le projet est très récent (1 étoile) et encore en phase de découverte.<br />
-→ <a href="https://github.com/c-vision/GMBasic">github.com/c-vision/GMBasic</a> (1 ★, très récent)</p>
-<h2>Nouveautés et mises à jour</h2>
-<h3>DaisyRose-27B — un modèle d'agent open weight performant</h3>
-<p>RadixArk a publié DaisyRose-27B, construit sur Qwen3.8-27B et entraîné par apprentissage par renforcement sur des tâches d'agent de longue durée (sessions jusqu'à 1 million de tokens). Le modèle passe de 5,6 % à 12,0 % sur Terminal-Bench 4.1 pass@1, et progresse sur tous les autres benchmarks (DeepSWE, SWE-Bench Pro, GPQA Diamond). Les poids sont disponibles en BF16, FP8 et NVFP4 sous licence Apache-2.0.<br />
-→ <a href="https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin">huggingface.co/blog/RadixArk/daisyrose-27b</a> (Apache-2.0)</p>
-<h3>Clairic et Clairic-flash passent en open weight</h3>
-<p>Cloudflare a publié les poids complets de ses modèles d'extraction Clairic (version améliorée) et Clairic-flash (9 milliards de paramètres). Le nouveau Clairic excelle dans l'extraction à partir de documents complexes : images, PDF, tableaux et listes. Les deux modèles sont hébergés sur Workers AI et disponibles sur Hugging Face.<br />
-→ <a href="https://blog.cloudflare.com/open-clairic/">blog.cloudflare.com/open-clairic</a> (poids ouverts sur Hugging Face)</p>
-<h3>Plugin de robotique agentique de DeepMind (Vibe Robotics)</h3>
-<p>DeepMind a publié un plugin open source permettant de piloter des robots par agents d'IA, en simulation (MuJoCo) ou sur un vrai robot. Le plugin inclut des compétences pré-écrites qui orientent le modèle vers les bonnes pratiques. Le code est sous licence Apache-2.0.<br />
-→ <a href="https://github.com/google-deepmind/robotics-antigravity-plugin">github.com/google-deepmind/robotics-antigravity-plugin</a> (Apache-2.0, 133 ★)</p>
-<h3>llm-gemini 0.38 — support de Gemini 4 Neon</h3>
-<p>Simon Willison a mis à jour le plugin llm-gemini pour le CLI <code>llm</code>, ajoutant le support du nouveau modèle Gemini 4 Neon de Google (sorti le 18 novembre). Le plugin permet d'interroger les modèles Gemini depuis le terminal.<br />
-→ <a href="https://simonwillison.net/2026/Nov/18/llm-gemini/">simonwillison.net/2026/Nov/18/llm-gemini</a></p>
-<h2>Volume</h2>
-<p>88 entrées publiées dans l'intervalle, 9 retenues, 79 écartées.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

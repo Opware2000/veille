@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird atteint sa version alpha et suscite un vif intérêt sur Hacker News (534 points). La mise à jour Kolibri 1.1 d'Aleph Alpha introduit une nouvelle architecture sparse attention. Un outil de vérification d'utilisation GPU en terminal fait son apparition sur le subreddit.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Nospeaker — Faire parler le pavé tactile de votre MacBook</strong><br />
+Un outil open source qui utilise la capacité haptique du pavé MaggyTrack pour restituer des sons et notifications via les vibrations plutôt que l'audio. Conçu par défaut dans un but d'accessibilité et d'intimité, il offre une alternative discrète aux alertes sonores. Le projet est sous licence MIT, entièrement gratuit, et a déjà récolté 1398 étoiles sur GitHub depuis son lancement fin novembre 2026. https://github.com/os6/nospeaker</p>
+<p><strong>XNU Linux — Interface graphique OS X dans un conteneur utilisateur sous Linux</strong><br />
+Le projet XNU Linux propose d'exécuter le système de fenêtres et l'interface macOS complète (docks, menus, Finder) au sein d'un environnement utilisateur Linux. C'est un portage complet du composant GUI d'OS X sur le noyau Linux. Pas encore de licence claire affichée, mais 1963 étoiles et des développements actifs ce jour même. https://github.com/AFK-surf/xnulinux</p>
+<p><strong>win4wine — Lancer l'environnement Windows comme bureau Linux via Wine</strong><br />
+Une approche originale qui s'appuie sur Wine pour exécuter le shell Windows (explorer.exe) directement sur un bureau Linux. L'objectif est de bénéficier d'une expérience Windows sans virtualisation lourde ni dual boot. Projet sous licence LGPL-2.1, environ 288 étoiles sur GitHub. https://github.com/mikuta0407/win4wine</p>
+<p><strong>Please CLI — Assistant IA en ligne de commande avec pontage SSH et moteur Metal 4</strong><br />
+Un outil en ligne de commandes qui permet d'interagir avec un modèle local en langage naturel. Toutes les inférences restent sur la machine locale (poids GPT-OSS chargés une fois, vérifiables par somme SHA-256). La fonctionnalité distinctive est le bridging : possibilité de lancer <code>please</code> dans un conteneur Docker ou une coquille distante tout en gardant les poids et le calcul sur la machine hôte, via forwarding socket SSH. Installation via Homebrew ou script direct. Rust. Début novembre 2026. https://github.com/xhjkl/please</p>
+<p><strong>GpuTaskMan — Moniteur d'utilisation GPU en terminal</strong><br />
+Un utilitaire terminal qui affiche les processus utilisant la mémoire vidéo GPU en temps réel. Utile quand un modèle local remplit le tampon graphique : chaque processus est identifié avec son empreinte mémoire propre, permettant de vérifier exactement quelle application consomme quoi. Dépôt partagé sur le subreddit r/LovingOpenSourceAI. https://www.reddit.com/r/LovingOpenSourceAI/comments/1y3i5zr/gputaskman_is_a_terminal_tool_to_see_the_programs/</p>
+<p><strong>News Blocklist — Liste DNS de blocage de 14 000 sites d'actualités</strong><br />
+Un projet né de la frustration face à l'invasion des nouvelles et de l'actualité dans la consommation quotidienne. Liste DNS permettant de bloquer plus de 14 000 sites de presse et d'actualité à l'échelle du réseau. Extension Mac fournie initialement, extension possible pour tout dispositif supportant les listes DNS. Libre. https://github.com/ruairidhflint/news-blocklist</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Ladybird — Navigateur libre en version alpha</strong><br />
+Ladybird, le navigateur développé à partir de zéro par l'équipe SerenityOS (et non un fork d'un moteur existant), passe officiellement en phase alpha. Le moteur HTML/CSS/Javascript est maison, écrit en C++. Les versions alpha sont disponibles pour macOS et Linux, avec un canal de mises à jour automatiques. Le navigateur supporte WebDriver pour les tests automatisés et le protocole Firefox DevTools. Il reconnaît qu'il s'agit d'une alpha — certains sites ne fonctionneront pas et des crashes sont possibles, d'où un système de signalement intégré. Très fort écho sur Hacker News (534 points, 142 commentaires). https://ladybird.org/posts/alpha/</p>
+<p><strong>Kolibri 1.1 — Modèle open-weights Aleph Alpha optimisé</strong><br />
+Aleph Alpha publie Kolibri 1.1, évolution de son modèle anglais-allemand open-weights de 75 milliards de paramètres (3 milliards actifs). Nouvelle architecture sparse attention, efficacité améliorée : 3,4 × moins de temps GPU par tâche que la version 1.0, scores supérieurs en mathématiques, code, instruction-following et traduction germano-anglaise. Licence Apache 2.0, disponible sur Hugging Face avec supports vLLM et transformers officiels. Construit et formé en Allemagne sous droit européen. https://aleph-alpha.com/en/blog/kolibri-1-1/</p>
+<p><strong>GLM-5.4 — Nouveau modèle de codage avec « Loop Transformer »</strong><br />
+Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant sur un nouvel architecture appelée Loop Transformer. Disponible pour tous les utilisateurs inscrits au plan de codage GLM. Fort écho sur Hacker News (189 points, 84 commentaires). https://z.ai/blog/glm-5.4</p>
+<h2>Extensions et greffons</h2>
+<p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
+<h2>Volume</h2>
+<p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>
+<footer>Édition du mardi 24 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
