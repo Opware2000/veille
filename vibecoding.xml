@@ -6,9 +6,120 @@
 <description>Veille quotidienne du subreddit r/vibecoding — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/vibecoding.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 00:42:15 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:42:25 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/vibecoding — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-24.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:42:25 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web de SerenityOS, annonce son passage en phase alpha — un résultat massif sur Hacker News (534 points, 142 commentaires). Jcode, harness de codage agentique en Rust, franchit la barre des 22 000 étoiles sur GitHub au cours d'une journée. La rentrée de Jensen Huang chez Nvidia occupe aussi le devant de la scène, sans lien direct avec le développement logiciel.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ladybird atteint la phase alpha <a href="https://github.com/LadybirdBrowser/ladybird">LadyBirdBrowser/ladybird</a> · BSD-2-Clause · 67 729 étoiles</h3>
+<p>Le projet SerenityOS présente Ladybird, son moteur de rendu web autonome, en version alpha publique. Il s'agit du premier navigateur écrit entièrement dans ce cadre, indépendamment de QtWebEngine ou Blink. L'annonce recueille 534 points sur Hacker News. Une étape significative pour l'écosystème de langages systèmes (C++ modern) et l'indépendance des moteurs de rendu.</p>
+<h3>XNU Linux — interface graphique macOS sur Linux <a href="https://github.com/AFK-surf/xnulinux">AFK-surf/xnulinux</a> · License non spécifiée · 1 986 étoiles</h3>
+<p>Projet visant à porter l'espace utilisateur graphique complet de macOS (XNU) sous Linux. L'idée est d'offrir l'expérience macOS native sans machine Apple, en exécutant les composants GUI sur un noyau Linux. Actif régulièrement.</p>
+<h3>Localcode — codage agentique local sur Mac en une commande <a href="https://github.com/mjwsolo/localcode">mjwsolo/localcode</a> · Apache-2.0 · 149 étoiles</h3>
+<p>Application destinée au codage agentique autonome sur macOS, lancée depuis le terminal par une seule commande. Stockée localement, conçue pour fonctionner sans dépendances cloud. Développée par son auteur directement sur HN (montré à 7 points).</p>
+<h3>nospeaker — le pavé tactile de votre MacBook parle <a href="https://github.com/os6/nospeaker">os6/nospeaker</a> · MIT · 1 406 étoiles</h3>
+<p>Petit outil macOS exploitant le moteur haptique du pavé tactile MacBook pour restituer de l'audio sous forme de vibrations. Concept simple mais élégant : transformer le retour haptique unique de la pince Apple en haut-parleur. 44 points sur HN.</p>
+<h3>win4wine — bureau Linux exécutant un shell Windows <a href="https://github.com/mikuta0407/win4wine">mikuta0407/win4wine</a> · LGPL-2.1 · 289 étoiles</h3>
+<p>Permet d'exécuter un environnement shell Windows comme bureau Linux, en s'appuyant sur Wine. Approche inverse de WINE classique : au lieu de lancer des applications Windows isolées, le bureau entier se trouve sous shell Windows. Intéressant pour les cas d'usage nécessitant un environnement Windows complet.</p>
+<h3>Peep — explorateur de fichiers avec aperçus intégrés <a href="https://www.reddit.com/r/vibecoding/comments/1y352vj/peep_a_file_explorer_that_previews_images_videos/">kincaidDev/peep</a></h3>
+<p>Nouvel explorateur de fichiers capable d'afficher des aperçus pour images, vidéos, audio, diagrammes Mermaid et Markdown. Répond au besoin de navigation rapide dans des projets mêlant multimédia et documentation technique. À surveiller en tant que nouveau venu.</p>
+<h3>Jcode — harness de codage agentique haute performance en Rust <a href="https://github.com/1jehuang/jcode">1jehuang/jcode</a> · MIT · 22 008 étoiles</h3>
+<p>Harness de codage agentique écrit en Rust, mis en avant sur Hacker News. L'approche vise la performance brute pour orchestrer les appels agents — un choix de langage cohérent avec cette exigence. Montée spectaculaire en popularité récente.</p>
+<h3>Clawd HQ — chef d'équipe pour agents Claude spécialisés <a href="https://github.com/vedant-shah/clawd-hq">vedant-shah/clawd-hq</a> · MIT · 15 étoiles</h3>
+<p>« Chief of staff » pour Claude Code, coordonnant plusieurs agents spécialistes. S'intègre dans la tendance émergente d'orchestration multi-agents, où différents modèles ou configurations gèrent des rôles distincts (recherche, rédaction, test) sous supervision centralisée.</p>
+<h3>verfy — validation des appels d'outils IA avant exécution <a href="https://github.com/verfy-dev/verfy">verfy-dev/verfy</a></h3>
+<p>Outil vérifiant les appels d'outils (tool calls) effectués par un agent de codage IA avant leur exécution réelle. Approche défensive : inspecter ce que l'agent veut faire avant qu'il ne le fasse. Pertinent pour les flux de production où les erreurs coûteuses sont unacceptable. Licence non trouvée sur le dépôt.</p>
+<h3>Second Brain — mémoire partagée entre Claude, ChatGPT et Cursor via MCP <a href="https://github.com/bhushan/getsecondbrain.io">bhushan/getsecondbrain.io</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Implémentation MCP offrant une mémoire commune accessible simultanément par Claude Code, ChatGPT et Cursor. Répond au problème de fragmentation informationnelle entre plateformes : un même contexte disponible partout sans ressaisie.</p>
+<h3>Show-context — voir ce que Claude Code a lu dans une session <a href="https://github.com/bernatsampera/show-context">bernatsampera/show-context</a> · MIT · 3 étoiles</h3>
+<p>Visualiseur montrant exactement quels fichiers et documents ont été lus par Claude Code pendant une session de codage. Outil de transparence diagnostique : comprendre pourquoi un agent a pris telle ou telle décision en examinant sa matière première.</p>
+<h3>Taskcue — identifier les sessions Claude Code/Codex en attente <a href="https://github.com/taskcue/taskcue">taskcue/taskcue</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Moniteur montrant quelles sessions de codage assisté par IA nécessitent une intervention humaine. Permet de garder le contrôle sur plusieurs agents en parallèle. Même famille fonctionnelle que Trix et Show Context, mais axé sur la gestion de files d'attente.</p>
+<h3>KRYN — agent de codage local avec son propre benchmark <a href="https://pranavmishra.app/case-studies/kryn">pranavmishra.app/case-studies/kryn</a></h3>
+<p>Présentation d'un agent de codage entièrement local accompagné d'un benchmark dédié à son évaluation. L'approche combine autonomie (pas d'appel API externe) et mesure objective des performances — deux aspects souvent négligés dans les outils agentiques grand public.</p>
+<h3>Teach your coding agent your design taste <a href="https://get-pinch.io/">get-pinch.io</a></h3>
+<p>Plateforme visant à enseigner ses préférences estétiques à un agent de codage IA, pour que le code généré corresponde au goût personnel de l'utilisateur plutôt qu'au standard générique. Réponse concrète au problème de l'homogénéisation stylistique induite par les LLMs.</p>
+<h3>News Blocklist — liste DNS de blocage de sites d'actualité <a href="https://github.com/ruairidhflint/news-blocklist">ruairidhflint/news-blocklist</a> · MIT · 21 étoiles</h3>
+<p>Filtre DNS couvrant 14 000 sites d'actualités et d'affaires courantes. Né d'un utilitaire macOS initial bloquant des sites via le fichier hosts, puis ouvert en liste DNS réutilisable. Simple, efficace, orienté réduction de distraction numérique.</p>
+<h3>Tempo — partiel d'évaluation pour le langage C <a href="https://phoenix.labri.fr/software/tempo/">phoenix.labri.fr/software/tempo</a></h3>
+<p>Partiel d'évaluation (partial evaluator) pour C, développé au LabRI (Bordeaux). Permet d'optimiser du code C connu partiellement à la compilation — technique spécialisée intéressante pour la génération de code performant. 73 points sur HN.</p>
+<h2>Extensions et greffons</h2>
+<h3>Glimpse — interface générative pour codebases dans Claude Code <a href="https://github.com/svailla4/glimpse">svailla4/glimpse</a> · License non spécifiée · 2 étoiles</h3>
+<p>Extension produisant une interface visuelle générée automatiquement pour naviguer dans un codebase, intégrée à Claude Code. Transforme la vision textuelle habituelle en représentation spatiale.</p>
+<h3>TTP 0.5.1 — redirection du trafic Linux vers Tor via nftables <a href="https://www.reddit.com/r/vibecoding/comments/1y3o4iw/ttp_051_route_all_linux_traffic_through_tor_with/">reddit.com/r/vibecoding/comments/1y3o4iw</a></h3>
+<p>Version 0.5.1 de TTP, utilitaire configurant nftables pour acheminer tout le trafic système Linux à travers Tor. Mise à jour fonctionnelle pour usage anonymat complet. 2 commentaires sur le fil reddit.</p>
+<h3>Show HN: Trix — espace de travail terminal indiquant quel agent a besoin de vous <a href="https://trixapp.ai/">trixapp.ai</a></h3>
+<p>Espace de travail terminal affichant en temps réel les agents de codage en attente d'une réponse. Approche ergonomique : au lieu de vérifier manuellement chaque session, l'outil signale quand intervenir. 2 points sur HN.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GLM 5.4 — nouveau modèle de Zhipu AI</h3>
+<p>Zhipu AI publie GLM 5.4, son dernier modèle de codage, avec mention d'un « Loop Transformer ». Disponible pour tous les abonnés GLM Coding Plan. Moins de buzz que la veille de GLM 5, mais marque un progrès architecturel.</p>
+<h3>Satya Nadella admet que VS Code « a disparu » après six mois <a href="https://www.windowslatest.com/2026/11/23/the-thing-that-hit-us-satya-nadella-admits-vs-code-faded-in-six-months-after-a-decade-on-top-because-of-claude-code-and-some-developers-say-theyve-stopped-opening-it/">windowslatest.com</a></h3>
+<p>Le PDG de Microsoft reconnait que Visual Studio Code a perdu des parts face à Claude Code en six mois, certains développeurs ayant cessé de l'ouvrir. Conversation ouverte sur HN (1 point, 1 commentaire).</p>
+<h3>GPT-6.2.Astra déçoit mais anime remarquablement bien <a href="https://www.reddit.com/r/vibecoding/comments/1y3dyz1/quite_unsatisfied_with_gpt62astra_but_damn_it_can/">reddit.com/r/vibecoding/comments/1y3dyz1</a></h3>
+<p>Utilisateur exprime son insatisfaction générale envers GPT-6.2.Astra tout en reconnaissant des capacités animation impressionnantes. Retour d'expérience isolé mais symptomatique des modèles hybrides (bonnes在某方面, médiocres ailleurs).</p>
+<h2>Volume</h2>
+<p>116 entrées dans la shortlist (sources : 47 reddit/vibecoding, 66 hackernews filtrées, 2 Hugging Face Blog, 1 Simon Willison), parmi lesquelles 35 retenues pour annonce d'outil ou de capacité logicielle notable, 81 écartées (discussion, politique, non logiciel, hors thématique).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web de SerenityOS, annonce son passage en phase alpha — un résultat massif sur Hacker News (534 points, 142 commentaires). Jcode, harness de codage agentique en Rust, franchit la barre des 22 000 étoiles sur GitHub au cours d'une journée. La rentrée de Jensen Huang chez Nvidia occupe aussi le devant de la scène, sans lien direct avec le développement logiciel.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ladybird atteint la phase alpha <a href="https://github.com/LadybirdBrowser/ladybird">LadyBirdBrowser/ladybird</a> · BSD-2-Clause · 67 729 étoiles</h3>
+<p>Le projet SerenityOS présente Ladybird, son moteur de rendu web autonome, en version alpha publique. Il s'agit du premier navigateur écrit entièrement dans ce cadre, indépendamment de QtWebEngine ou Blink. L'annonce recueille 534 points sur Hacker News. Une étape significative pour l'écosystème de langages systèmes (C++ modern) et l'indépendance des moteurs de rendu.</p>
+<h3>XNU Linux — interface graphique macOS sur Linux <a href="https://github.com/AFK-surf/xnulinux">AFK-surf/xnulinux</a> · License non spécifiée · 1 986 étoiles</h3>
+<p>Projet visant à porter l'espace utilisateur graphique complet de macOS (XNU) sous Linux. L'idée est d'offrir l'expérience macOS native sans machine Apple, en exécutant les composants GUI sur un noyau Linux. Actif régulièrement.</p>
+<h3>Localcode — codage agentique local sur Mac en une commande <a href="https://github.com/mjwsolo/localcode">mjwsolo/localcode</a> · Apache-2.0 · 149 étoiles</h3>
+<p>Application destinée au codage agentique autonome sur macOS, lancée depuis le terminal par une seule commande. Stockée localement, conçue pour fonctionner sans dépendances cloud. Développée par son auteur directement sur HN (montré à 7 points).</p>
+<h3>nospeaker — le pavé tactile de votre MacBook parle <a href="https://github.com/os6/nospeaker">os6/nospeaker</a> · MIT · 1 406 étoiles</h3>
+<p>Petit outil macOS exploitant le moteur haptique du pavé tactile MacBook pour restituer de l'audio sous forme de vibrations. Concept simple mais élégant : transformer le retour haptique unique de la pince Apple en haut-parleur. 44 points sur HN.</p>
+<h3>win4wine — bureau Linux exécutant un shell Windows <a href="https://github.com/mikuta0407/win4wine">mikuta0407/win4wine</a> · LGPL-2.1 · 289 étoiles</h3>
+<p>Permet d'exécuter un environnement shell Windows comme bureau Linux, en s'appuyant sur Wine. Approche inverse de WINE classique : au lieu de lancer des applications Windows isolées, le bureau entier se trouve sous shell Windows. Intéressant pour les cas d'usage nécessitant un environnement Windows complet.</p>
+<h3>Peep — explorateur de fichiers avec aperçus intégrés <a href="https://www.reddit.com/r/vibecoding/comments/1y352vj/peep_a_file_explorer_that_previews_images_videos/">kincaidDev/peep</a></h3>
+<p>Nouvel explorateur de fichiers capable d'afficher des aperçus pour images, vidéos, audio, diagrammes Mermaid et Markdown. Répond au besoin de navigation rapide dans des projets mêlant multimédia et documentation technique. À surveiller en tant que nouveau venu.</p>
+<h3>Jcode — harness de codage agentique haute performance en Rust <a href="https://github.com/1jehuang/jcode">1jehuang/jcode</a> · MIT · 22 008 étoiles</h3>
+<p>Harness de codage agentique écrit en Rust, mis en avant sur Hacker News. L'approche vise la performance brute pour orchestrer les appels agents — un choix de langage cohérent avec cette exigence. Montée spectaculaire en popularité récente.</p>
+<h3>Clawd HQ — chef d'équipe pour agents Claude spécialisés <a href="https://github.com/vedant-shah/clawd-hq">vedant-shah/clawd-hq</a> · MIT · 15 étoiles</h3>
+<p>« Chief of staff » pour Claude Code, coordonnant plusieurs agents spécialistes. S'intègre dans la tendance émergente d'orchestration multi-agents, où différents modèles ou configurations gèrent des rôles distincts (recherche, rédaction, test) sous supervision centralisée.</p>
+<h3>verfy — validation des appels d'outils IA avant exécution <a href="https://github.com/verfy-dev/verfy">verfy-dev/verfy</a></h3>
+<p>Outil vérifiant les appels d'outils (tool calls) effectués par un agent de codage IA avant leur exécution réelle. Approche défensive : inspecter ce que l'agent veut faire avant qu'il ne le fasse. Pertinent pour les flux de production où les erreurs coûteuses sont unacceptable. Licence non trouvée sur le dépôt.</p>
+<h3>Second Brain — mémoire partagée entre Claude, ChatGPT et Cursor via MCP <a href="https://github.com/bhushan/getsecondbrain.io">bhushan/getsecondbrain.io</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Implémentation MCP offrant une mémoire commune accessible simultanément par Claude Code, ChatGPT et Cursor. Répond au problème de fragmentation informationnelle entre plateformes : un même contexte disponible partout sans ressaisie.</p>
+<h3>Show-context — voir ce que Claude Code a lu dans une session <a href="https://github.com/bernatsampera/show-context">bernatsampera/show-context</a> · MIT · 3 étoiles</h3>
+<p>Visualiseur montrant exactement quels fichiers et documents ont été lus par Claude Code pendant une session de codage. Outil de transparence diagnostique : comprendre pourquoi un agent a pris telle ou telle décision en examinant sa matière première.</p>
+<h3>Taskcue — identifier les sessions Claude Code/Codex en attente <a href="https://github.com/taskcue/taskcue">taskcue/taskcue</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Moniteur montrant quelles sessions de codage assisté par IA nécessitent une intervention humaine. Permet de garder le contrôle sur plusieurs agents en parallèle. Même famille fonctionnelle que Trix et Show Context, mais axé sur la gestion de files d'attente.</p>
+<h3>KRYN — agent de codage local avec son propre benchmark <a href="https://pranavmishra.app/case-studies/kryn">pranavmishra.app/case-studies/kryn</a></h3>
+<p>Présentation d'un agent de codage entièrement local accompagné d'un benchmark dédié à son évaluation. L'approche combine autonomie (pas d'appel API externe) et mesure objective des performances — deux aspects souvent négligés dans les outils agentiques grand public.</p>
+<h3>Teach your coding agent your design taste <a href="https://get-pinch.io/">get-pinch.io</a></h3>
+<p>Plateforme visant à enseigner ses préférences estétiques à un agent de codage IA, pour que le code généré corresponde au goût personnel de l'utilisateur plutôt qu'au standard générique. Réponse concrète au problème de l'homogénéisation stylistique induite par les LLMs.</p>
+<h3>News Blocklist — liste DNS de blocage de sites d'actualité <a href="https://github.com/ruairidhflint/news-blocklist">ruairidhflint/news-blocklist</a> · MIT · 21 étoiles</h3>
+<p>Filtre DNS couvrant 14 000 sites d'actualités et d'affaires courantes. Né d'un utilitaire macOS initial bloquant des sites via le fichier hosts, puis ouvert en liste DNS réutilisable. Simple, efficace, orienté réduction de distraction numérique.</p>
+<h3>Tempo — partiel d'évaluation pour le langage C <a href="https://phoenix.labri.fr/software/tempo/">phoenix.labri.fr/software/tempo</a></h3>
+<p>Partiel d'évaluation (partial evaluator) pour C, développé au LabRI (Bordeaux). Permet d'optimiser du code C connu partiellement à la compilation — technique spécialisée intéressante pour la génération de code performant. 73 points sur HN.</p>
+<h2>Extensions et greffons</h2>
+<h3>Glimpse — interface générative pour codebases dans Claude Code <a href="https://github.com/svailla4/glimpse">svailla4/glimpse</a> · License non spécifiée · 2 étoiles</h3>
+<p>Extension produisant une interface visuelle générée automatiquement pour naviguer dans un codebase, intégrée à Claude Code. Transforme la vision textuelle habituelle en représentation spatiale.</p>
+<h3>TTP 0.5.1 — redirection du trafic Linux vers Tor via nftables <a href="https://www.reddit.com/r/vibecoding/comments/1y3o4iw/ttp_051_route_all_linux_traffic_through_tor_with/">reddit.com/r/vibecoding/comments/1y3o4iw</a></h3>
+<p>Version 0.5.1 de TTP, utilitaire configurant nftables pour acheminer tout le trafic système Linux à travers Tor. Mise à jour fonctionnelle pour usage anonymat complet. 2 commentaires sur le fil reddit.</p>
+<h3>Show HN: Trix — espace de travail terminal indiquant quel agent a besoin de vous <a href="https://trixapp.ai/">trixapp.ai</a></h3>
+<p>Espace de travail terminal affichant en temps réel les agents de codage en attente d'une réponse. Approche ergonomique : au lieu de vérifier manuellement chaque session, l'outil signale quand intervenir. 2 points sur HN.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GLM 5.4 — nouveau modèle de Zhipu AI</h3>
+<p>Zhipu AI publie GLM 5.4, son dernier modèle de codage, avec mention d'un « Loop Transformer ». Disponible pour tous les abonnés GLM Coding Plan. Moins de buzz que la veille de GLM 5, mais marque un progrès architecturel.</p>
+<h3>Satya Nadella admet que VS Code « a disparu » après six mois <a href="https://www.windowslatest.com/2026/11/23/the-thing-that-hit-us-satya-nadella-admits-vs-code-faded-in-six-months-after-a-decade-on-top-because-of-claude-code-and-some-developers-say-theyve-stopped-opening-it/">windowslatest.com</a></h3>
+<p>Le PDG de Microsoft reconnait que Visual Studio Code a perdu des parts face à Claude Code en six mois, certains développeurs ayant cessé de l'ouvrir. Conversation ouverte sur HN (1 point, 1 commentaire).</p>
+<h3>GPT-6.2.Astra déçoit mais anime remarquablement bien <a href="https://www.reddit.com/r/vibecoding/comments/1y3dyz1/quite_unsatisfied_with_gpt62astra_but_damn_it_can/">reddit.com/r/vibecoding/comments/1y3dyz1</a></h3>
+<p>Utilisateur exprime son insatisfaction générale envers GPT-6.2.Astra tout en reconnaissant des capacités animation impressionnantes. Retour d'expérience isolé mais symptomatique des modèles hybrides (bonnes在某方面, médiocres ailleurs).</p>
+<h2>Volume</h2>
+<p>116 entrées dans la shortlist (sources : 47 reddit/vibecoding, 66 hackernews filtrées, 2 Hugging Face Blog, 1 Simon Willison), parmi lesquelles 35 retenues pour annonce d'outil ou de capacité logicielle notable, 81 écartées (discussion, politique, non logiciel, hors thématique).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-23.html</link>

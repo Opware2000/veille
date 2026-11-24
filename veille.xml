@@ -6,9 +6,120 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 00:35:57 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 00:51:33 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/vibecoding — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-24.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 00:42:25 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web de SerenityOS, annonce son passage en phase alpha — un résultat massif sur Hacker News (534 points, 142 commentaires). Jcode, harness de codage agentique en Rust, franchit la barre des 22 000 étoiles sur GitHub au cours d'une journée. La rentrée de Jensen Huang chez Nvidia occupe aussi le devant de la scène, sans lien direct avec le développement logiciel.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ladybird atteint la phase alpha <a href="https://github.com/LadybirdBrowser/ladybird">LadyBirdBrowser/ladybird</a> · BSD-2-Clause · 67 729 étoiles</h3>
+<p>Le projet SerenityOS présente Ladybird, son moteur de rendu web autonome, en version alpha publique. Il s'agit du premier navigateur écrit entièrement dans ce cadre, indépendamment de QtWebEngine ou Blink. L'annonce recueille 534 points sur Hacker News. Une étape significative pour l'écosystème de langages systèmes (C++ modern) et l'indépendance des moteurs de rendu.</p>
+<h3>XNU Linux — interface graphique macOS sur Linux <a href="https://github.com/AFK-surf/xnulinux">AFK-surf/xnulinux</a> · License non spécifiée · 1 986 étoiles</h3>
+<p>Projet visant à porter l'espace utilisateur graphique complet de macOS (XNU) sous Linux. L'idée est d'offrir l'expérience macOS native sans machine Apple, en exécutant les composants GUI sur un noyau Linux. Actif régulièrement.</p>
+<h3>Localcode — codage agentique local sur Mac en une commande <a href="https://github.com/mjwsolo/localcode">mjwsolo/localcode</a> · Apache-2.0 · 149 étoiles</h3>
+<p>Application destinée au codage agentique autonome sur macOS, lancée depuis le terminal par une seule commande. Stockée localement, conçue pour fonctionner sans dépendances cloud. Développée par son auteur directement sur HN (montré à 7 points).</p>
+<h3>nospeaker — le pavé tactile de votre MacBook parle <a href="https://github.com/os6/nospeaker">os6/nospeaker</a> · MIT · 1 406 étoiles</h3>
+<p>Petit outil macOS exploitant le moteur haptique du pavé tactile MacBook pour restituer de l'audio sous forme de vibrations. Concept simple mais élégant : transformer le retour haptique unique de la pince Apple en haut-parleur. 44 points sur HN.</p>
+<h3>win4wine — bureau Linux exécutant un shell Windows <a href="https://github.com/mikuta0407/win4wine">mikuta0407/win4wine</a> · LGPL-2.1 · 289 étoiles</h3>
+<p>Permet d'exécuter un environnement shell Windows comme bureau Linux, en s'appuyant sur Wine. Approche inverse de WINE classique : au lieu de lancer des applications Windows isolées, le bureau entier se trouve sous shell Windows. Intéressant pour les cas d'usage nécessitant un environnement Windows complet.</p>
+<h3>Peep — explorateur de fichiers avec aperçus intégrés <a href="https://www.reddit.com/r/vibecoding/comments/1y352vj/peep_a_file_explorer_that_previews_images_videos/">kincaidDev/peep</a></h3>
+<p>Nouvel explorateur de fichiers capable d'afficher des aperçus pour images, vidéos, audio, diagrammes Mermaid et Markdown. Répond au besoin de navigation rapide dans des projets mêlant multimédia et documentation technique. À surveiller en tant que nouveau venu.</p>
+<h3>Jcode — harness de codage agentique haute performance en Rust <a href="https://github.com/1jehuang/jcode">1jehuang/jcode</a> · MIT · 22 008 étoiles</h3>
+<p>Harness de codage agentique écrit en Rust, mis en avant sur Hacker News. L'approche vise la performance brute pour orchestrer les appels agents — un choix de langage cohérent avec cette exigence. Montée spectaculaire en popularité récente.</p>
+<h3>Clawd HQ — chef d'équipe pour agents Claude spécialisés <a href="https://github.com/vedant-shah/clawd-hq">vedant-shah/clawd-hq</a> · MIT · 15 étoiles</h3>
+<p>« Chief of staff » pour Claude Code, coordonnant plusieurs agents spécialistes. S'intègre dans la tendance émergente d'orchestration multi-agents, où différents modèles ou configurations gèrent des rôles distincts (recherche, rédaction, test) sous supervision centralisée.</p>
+<h3>verfy — validation des appels d'outils IA avant exécution <a href="https://github.com/verfy-dev/verfy">verfy-dev/verfy</a></h3>
+<p>Outil vérifiant les appels d'outils (tool calls) effectués par un agent de codage IA avant leur exécution réelle. Approche défensive : inspecter ce que l'agent veut faire avant qu'il ne le fasse. Pertinent pour les flux de production où les erreurs coûteuses sont unacceptable. Licence non trouvée sur le dépôt.</p>
+<h3>Second Brain — mémoire partagée entre Claude, ChatGPT et Cursor via MCP <a href="https://github.com/bhushan/getsecondbrain.io">bhushan/getsecondbrain.io</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Implémentation MCP offrant une mémoire commune accessible simultanément par Claude Code, ChatGPT et Cursor. Répond au problème de fragmentation informationnelle entre plateformes : un même contexte disponible partout sans ressaisie.</p>
+<h3>Show-context — voir ce que Claude Code a lu dans une session <a href="https://github.com/bernatsampera/show-context">bernatsampera/show-context</a> · MIT · 3 étoiles</h3>
+<p>Visualiseur montrant exactement quels fichiers et documents ont été lus par Claude Code pendant une session de codage. Outil de transparence diagnostique : comprendre pourquoi un agent a pris telle ou telle décision en examinant sa matière première.</p>
+<h3>Taskcue — identifier les sessions Claude Code/Codex en attente <a href="https://github.com/taskcue/taskcue">taskcue/taskcue</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Moniteur montrant quelles sessions de codage assisté par IA nécessitent une intervention humaine. Permet de garder le contrôle sur plusieurs agents en parallèle. Même famille fonctionnelle que Trix et Show Context, mais axé sur la gestion de files d'attente.</p>
+<h3>KRYN — agent de codage local avec son propre benchmark <a href="https://pranavmishra.app/case-studies/kryn">pranavmishra.app/case-studies/kryn</a></h3>
+<p>Présentation d'un agent de codage entièrement local accompagné d'un benchmark dédié à son évaluation. L'approche combine autonomie (pas d'appel API externe) et mesure objective des performances — deux aspects souvent négligés dans les outils agentiques grand public.</p>
+<h3>Teach your coding agent your design taste <a href="https://get-pinch.io/">get-pinch.io</a></h3>
+<p>Plateforme visant à enseigner ses préférences estétiques à un agent de codage IA, pour que le code généré corresponde au goût personnel de l'utilisateur plutôt qu'au standard générique. Réponse concrète au problème de l'homogénéisation stylistique induite par les LLMs.</p>
+<h3>News Blocklist — liste DNS de blocage de sites d'actualité <a href="https://github.com/ruairidhflint/news-blocklist">ruairidhflint/news-blocklist</a> · MIT · 21 étoiles</h3>
+<p>Filtre DNS couvrant 14 000 sites d'actualités et d'affaires courantes. Né d'un utilitaire macOS initial bloquant des sites via le fichier hosts, puis ouvert en liste DNS réutilisable. Simple, efficace, orienté réduction de distraction numérique.</p>
+<h3>Tempo — partiel d'évaluation pour le langage C <a href="https://phoenix.labri.fr/software/tempo/">phoenix.labri.fr/software/tempo</a></h3>
+<p>Partiel d'évaluation (partial evaluator) pour C, développé au LabRI (Bordeaux). Permet d'optimiser du code C connu partiellement à la compilation — technique spécialisée intéressante pour la génération de code performant. 73 points sur HN.</p>
+<h2>Extensions et greffons</h2>
+<h3>Glimpse — interface générative pour codebases dans Claude Code <a href="https://github.com/svailla4/glimpse">svailla4/glimpse</a> · License non spécifiée · 2 étoiles</h3>
+<p>Extension produisant une interface visuelle générée automatiquement pour naviguer dans un codebase, intégrée à Claude Code. Transforme la vision textuelle habituelle en représentation spatiale.</p>
+<h3>TTP 0.5.1 — redirection du trafic Linux vers Tor via nftables <a href="https://www.reddit.com/r/vibecoding/comments/1y3o4iw/ttp_051_route_all_linux_traffic_through_tor_with/">reddit.com/r/vibecoding/comments/1y3o4iw</a></h3>
+<p>Version 0.5.1 de TTP, utilitaire configurant nftables pour acheminer tout le trafic système Linux à travers Tor. Mise à jour fonctionnelle pour usage anonymat complet. 2 commentaires sur le fil reddit.</p>
+<h3>Show HN: Trix — espace de travail terminal indiquant quel agent a besoin de vous <a href="https://trixapp.ai/">trixapp.ai</a></h3>
+<p>Espace de travail terminal affichant en temps réel les agents de codage en attente d'une réponse. Approche ergonomique : au lieu de vérifier manuellement chaque session, l'outil signale quand intervenir. 2 points sur HN.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GLM 5.4 — nouveau modèle de Zhipu AI</h3>
+<p>Zhipu AI publie GLM 5.4, son dernier modèle de codage, avec mention d'un « Loop Transformer ». Disponible pour tous les abonnés GLM Coding Plan. Moins de buzz que la veille de GLM 5, mais marque un progrès architecturel.</p>
+<h3>Satya Nadella admet que VS Code « a disparu » après six mois <a href="https://www.windowslatest.com/2026/11/23/the-thing-that-hit-us-satya-nadella-admits-vs-code-faded-in-six-months-after-a-decade-on-top-because-of-claude-code-and-some-developers-say-theyve-stopped-opening-it/">windowslatest.com</a></h3>
+<p>Le PDG de Microsoft reconnait que Visual Studio Code a perdu des parts face à Claude Code en six mois, certains développeurs ayant cessé de l'ouvrir. Conversation ouverte sur HN (1 point, 1 commentaire).</p>
+<h3>GPT-6.2.Astra déçoit mais anime remarquablement bien <a href="https://www.reddit.com/r/vibecoding/comments/1y3dyz1/quite_unsatisfied_with_gpt62astra_but_damn_it_can/">reddit.com/r/vibecoding/comments/1y3dyz1</a></h3>
+<p>Utilisateur exprime son insatisfaction générale envers GPT-6.2.Astra tout en reconnaissant des capacités animation impressionnantes. Retour d'expérience isolé mais symptomatique des modèles hybrides (bonnes在某方面, médiocres ailleurs).</p>
+<h2>Volume</h2>
+<p>116 entrées dans la shortlist (sources : 47 reddit/vibecoding, 66 hackernews filtrées, 2 Hugging Face Blog, 1 Simon Willison), parmi lesquelles 35 retenues pour annonce d'outil ou de capacité logicielle notable, 81 écartées (discussion, politique, non logiciel, hors thématique).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web de SerenityOS, annonce son passage en phase alpha — un résultat massif sur Hacker News (534 points, 142 commentaires). Jcode, harness de codage agentique en Rust, franchit la barre des 22 000 étoiles sur GitHub au cours d'une journée. La rentrée de Jensen Huang chez Nvidia occupe aussi le devant de la scène, sans lien direct avec le développement logiciel.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Ladybird atteint la phase alpha <a href="https://github.com/LadybirdBrowser/ladybird">LadyBirdBrowser/ladybird</a> · BSD-2-Clause · 67 729 étoiles</h3>
+<p>Le projet SerenityOS présente Ladybird, son moteur de rendu web autonome, en version alpha publique. Il s'agit du premier navigateur écrit entièrement dans ce cadre, indépendamment de QtWebEngine ou Blink. L'annonce recueille 534 points sur Hacker News. Une étape significative pour l'écosystème de langages systèmes (C++ modern) et l'indépendance des moteurs de rendu.</p>
+<h3>XNU Linux — interface graphique macOS sur Linux <a href="https://github.com/AFK-surf/xnulinux">AFK-surf/xnulinux</a> · License non spécifiée · 1 986 étoiles</h3>
+<p>Projet visant à porter l'espace utilisateur graphique complet de macOS (XNU) sous Linux. L'idée est d'offrir l'expérience macOS native sans machine Apple, en exécutant les composants GUI sur un noyau Linux. Actif régulièrement.</p>
+<h3>Localcode — codage agentique local sur Mac en une commande <a href="https://github.com/mjwsolo/localcode">mjwsolo/localcode</a> · Apache-2.0 · 149 étoiles</h3>
+<p>Application destinée au codage agentique autonome sur macOS, lancée depuis le terminal par une seule commande. Stockée localement, conçue pour fonctionner sans dépendances cloud. Développée par son auteur directement sur HN (montré à 7 points).</p>
+<h3>nospeaker — le pavé tactile de votre MacBook parle <a href="https://github.com/os6/nospeaker">os6/nospeaker</a> · MIT · 1 406 étoiles</h3>
+<p>Petit outil macOS exploitant le moteur haptique du pavé tactile MacBook pour restituer de l'audio sous forme de vibrations. Concept simple mais élégant : transformer le retour haptique unique de la pince Apple en haut-parleur. 44 points sur HN.</p>
+<h3>win4wine — bureau Linux exécutant un shell Windows <a href="https://github.com/mikuta0407/win4wine">mikuta0407/win4wine</a> · LGPL-2.1 · 289 étoiles</h3>
+<p>Permet d'exécuter un environnement shell Windows comme bureau Linux, en s'appuyant sur Wine. Approche inverse de WINE classique : au lieu de lancer des applications Windows isolées, le bureau entier se trouve sous shell Windows. Intéressant pour les cas d'usage nécessitant un environnement Windows complet.</p>
+<h3>Peep — explorateur de fichiers avec aperçus intégrés <a href="https://www.reddit.com/r/vibecoding/comments/1y352vj/peep_a_file_explorer_that_previews_images_videos/">kincaidDev/peep</a></h3>
+<p>Nouvel explorateur de fichiers capable d'afficher des aperçus pour images, vidéos, audio, diagrammes Mermaid et Markdown. Répond au besoin de navigation rapide dans des projets mêlant multimédia et documentation technique. À surveiller en tant que nouveau venu.</p>
+<h3>Jcode — harness de codage agentique haute performance en Rust <a href="https://github.com/1jehuang/jcode">1jehuang/jcode</a> · MIT · 22 008 étoiles</h3>
+<p>Harness de codage agentique écrit en Rust, mis en avant sur Hacker News. L'approche vise la performance brute pour orchestrer les appels agents — un choix de langage cohérent avec cette exigence. Montée spectaculaire en popularité récente.</p>
+<h3>Clawd HQ — chef d'équipe pour agents Claude spécialisés <a href="https://github.com/vedant-shah/clawd-hq">vedant-shah/clawd-hq</a> · MIT · 15 étoiles</h3>
+<p>« Chief of staff » pour Claude Code, coordonnant plusieurs agents spécialistes. S'intègre dans la tendance émergente d'orchestration multi-agents, où différents modèles ou configurations gèrent des rôles distincts (recherche, rédaction, test) sous supervision centralisée.</p>
+<h3>verfy — validation des appels d'outils IA avant exécution <a href="https://github.com/verfy-dev/verfy">verfy-dev/verfy</a></h3>
+<p>Outil vérifiant les appels d'outils (tool calls) effectués par un agent de codage IA avant leur exécution réelle. Approche défensive : inspecter ce que l'agent veut faire avant qu'il ne le fasse. Pertinent pour les flux de production où les erreurs coûteuses sont unacceptable. Licence non trouvée sur le dépôt.</p>
+<h3>Second Brain — mémoire partagée entre Claude, ChatGPT et Cursor via MCP <a href="https://github.com/bhushan/getsecondbrain.io">bhushan/getsecondbrain.io</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Implémentation MCP offrant une mémoire commune accessible simultanément par Claude Code, ChatGPT et Cursor. Répond au problème de fragmentation informationnelle entre plateformes : un même contexte disponible partout sans ressaisie.</p>
+<h3>Show-context — voir ce que Claude Code a lu dans une session <a href="https://github.com/bernatsampera/show-context">bernatsampera/show-context</a> · MIT · 3 étoiles</h3>
+<p>Visualiseur montrant exactement quels fichiers et documents ont été lus par Claude Code pendant une session de codage. Outil de transparence diagnostique : comprendre pourquoi un agent a pris telle ou telle décision en examinant sa matière première.</p>
+<h3>Taskcue — identifier les sessions Claude Code/Codex en attente <a href="https://github.com/taskcue/taskcue">taskcue/taskcue</a> · AGPL-3.0 · 2 étoiles</h3>
+<p>Moniteur montrant quelles sessions de codage assisté par IA nécessitent une intervention humaine. Permet de garder le contrôle sur plusieurs agents en parallèle. Même famille fonctionnelle que Trix et Show Context, mais axé sur la gestion de files d'attente.</p>
+<h3>KRYN — agent de codage local avec son propre benchmark <a href="https://pranavmishra.app/case-studies/kryn">pranavmishra.app/case-studies/kryn</a></h3>
+<p>Présentation d'un agent de codage entièrement local accompagné d'un benchmark dédié à son évaluation. L'approche combine autonomie (pas d'appel API externe) et mesure objective des performances — deux aspects souvent négligés dans les outils agentiques grand public.</p>
+<h3>Teach your coding agent your design taste <a href="https://get-pinch.io/">get-pinch.io</a></h3>
+<p>Plateforme visant à enseigner ses préférences estétiques à un agent de codage IA, pour que le code généré corresponde au goût personnel de l'utilisateur plutôt qu'au standard générique. Réponse concrète au problème de l'homogénéisation stylistique induite par les LLMs.</p>
+<h3>News Blocklist — liste DNS de blocage de sites d'actualité <a href="https://github.com/ruairidhflint/news-blocklist">ruairidhflint/news-blocklist</a> · MIT · 21 étoiles</h3>
+<p>Filtre DNS couvrant 14 000 sites d'actualités et d'affaires courantes. Né d'un utilitaire macOS initial bloquant des sites via le fichier hosts, puis ouvert en liste DNS réutilisable. Simple, efficace, orienté réduction de distraction numérique.</p>
+<h3>Tempo — partiel d'évaluation pour le langage C <a href="https://phoenix.labri.fr/software/tempo/">phoenix.labri.fr/software/tempo</a></h3>
+<p>Partiel d'évaluation (partial evaluator) pour C, développé au LabRI (Bordeaux). Permet d'optimiser du code C connu partiellement à la compilation — technique spécialisée intéressante pour la génération de code performant. 73 points sur HN.</p>
+<h2>Extensions et greffons</h2>
+<h3>Glimpse — interface générative pour codebases dans Claude Code <a href="https://github.com/svailla4/glimpse">svailla4/glimpse</a> · License non spécifiée · 2 étoiles</h3>
+<p>Extension produisant une interface visuelle générée automatiquement pour naviguer dans un codebase, intégrée à Claude Code. Transforme la vision textuelle habituelle en représentation spatiale.</p>
+<h3>TTP 0.5.1 — redirection du trafic Linux vers Tor via nftables <a href="https://www.reddit.com/r/vibecoding/comments/1y3o4iw/ttp_051_route_all_linux_traffic_through_tor_with/">reddit.com/r/vibecoding/comments/1y3o4iw</a></h3>
+<p>Version 0.5.1 de TTP, utilitaire configurant nftables pour acheminer tout le trafic système Linux à travers Tor. Mise à jour fonctionnelle pour usage anonymat complet. 2 commentaires sur le fil reddit.</p>
+<h3>Show HN: Trix — espace de travail terminal indiquant quel agent a besoin de vous <a href="https://trixapp.ai/">trixapp.ai</a></h3>
+<p>Espace de travail terminal affichant en temps réel les agents de codage en attente d'une réponse. Approche ergonomique : au lieu de vérifier manuellement chaque session, l'outil signale quand intervenir. 2 points sur HN.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GLM 5.4 — nouveau modèle de Zhipu AI</h3>
+<p>Zhipu AI publie GLM 5.4, son dernier modèle de codage, avec mention d'un « Loop Transformer ». Disponible pour tous les abonnés GLM Coding Plan. Moins de buzz que la veille de GLM 5, mais marque un progrès architecturel.</p>
+<h3>Satya Nadella admet que VS Code « a disparu » après six mois <a href="https://www.windowslatest.com/2026/11/23/the-thing-that-hit-us-satya-nadella-admits-vs-code-faded-in-six-months-after-a-decade-on-top-because-of-claude-code-and-some-developers-say-theyve-stopped-opening-it/">windowslatest.com</a></h3>
+<p>Le PDG de Microsoft reconnait que Visual Studio Code a perdu des parts face à Claude Code en six mois, certains développeurs ayant cessé de l'ouvrir. Conversation ouverte sur HN (1 point, 1 commentaire).</p>
+<h3>GPT-6.2.Astra déçoit mais anime remarquablement bien <a href="https://www.reddit.com/r/vibecoding/comments/1y3dyz1/quite_unsatisfied_with_gpt62astra_but_damn_it_can/">reddit.com/r/vibecoding/comments/1y3dyz1</a></h3>
+<p>Utilisateur exprime son insatisfaction générale envers GPT-6.2.Astra tout en reconnaissant des capacités animation impressionnantes. Retour d'expérience isolé mais symptomatique des modèles hybrides (bonnes在某方面, médiocres ailleurs).</p>
+<h2>Volume</h2>
+<p>116 entrées dans la shortlist (sources : 47 reddit/vibecoding, 66 hackernews filtrées, 2 Hugging Face Blog, 1 Simon Willison), parmi lesquelles 35 retenues pour annonce d'outil ou de capacité logicielle notable, 81 écartées (discussion, politique, non logiciel, hors thématique).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Renaud Dékode — mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/renaud/2026-11-24.html</link>
@@ -497,6 +608,67 @@ Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant
 <p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
 <h2>Volume</h2>
 <p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/hermesagent — lundi 23 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-23.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-23</guid>
+<pubDate>Tue, 24 Nov 2026 00:51:33 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web open source entièrement réinventé, franchit le cap de l'alpha publique avec 67 700 étoiles sur GitHub. Trois nouveautés dans l'écosystème Hermes : Threadpacket, plugin pour échanger des tâches entre agents ; Hermit 1.2 optimisé pour Hermes Agent ; Conduit Desktop 1.0 sorti sur les trois plateformes. GLM-5.4 accessible à tous les abonnés Z.AI.</p>
+<p>Applications et outils nouveaux</p>
+<p><strong>Ladybird – un navigateur web construit depuis zéro</strong><br />
+La team LadybirdBrowser développe un navigateur web complet (moteur de rendu HTML, CSS, JavaScript) écrit en C++ à partir de zéro, sans dépendre de Blink ou WebKit. Le projet franchit aujourd'hui le cap de l'alpha publique : il affiche une interface fonctionnelle capable de charger des pages web courantes. Le dépôt est incroyablement actif (67 700 étoiles sur GitHub, licence BSD-2-Clause, dernier push hier soir). Les commentaires sur HN (plus de 530 points, 140 threads) montrent un engouement considérable pour un navigateur vraiment libre et transparent. Vérifié le 23/11/2026 sur l'API GitHub : 67 735 étoiles, dernière mise à jour le 23/11/2026, licence BSD-2-Clause. Source: <a href="https://ladybird.org/posts/alpha/">https://ladybird.org/posts/alpha/</a> — dépôt GitHub <code>LadybirdBrowser/ladybird</code>.</p>
+<p><strong>Nospeaker – le pavé tactile de votre MacBook qui parle</strong><br />
+Un utilitaire opensource qui exploite le moteur haptique du pavé Magic Trackpad pour produire des retours sonores — essentiellement un haut-parleur qui n'existait pas avant. Conçu pour les personnes malvoyantes ou simplement par curiosité technique. Dépôt <code>os6/nospeaker</code>, licence MIT, 1 409 étoiles, dernier commit le 22 novembre. Source: <a href="https://github.com/os6/nospeaker">https://github.com/os6/nospeaker</a>.</p>
+<p><strong>Kagi Mail – beta publique</strong><br />
+Kagi, le moteur de recherche payant, lance sa propre offre de messagerie en beta publique. Les caractéristiques exactes ne sont pas détaillées dans l'annonce mais Kagi promet une expérience centrée sur la vie privée, sans traçage publicitaire. Un service attendu, mais dont les capacités concrètes restent à vérifier. Source: <a href="https://blog.kagi.com/kagi-mail-public-beta">https://blog.kagi.com/kagi-mail-public-beta</a>.</p>
+<p><strong>News Blocklist – filtre DNS contre les sites d'actualités</strong><br />
+Un auteur a créé une petite application Mac qui bloque via le fichier hosts une liste de 14 000 sites d'information courante et d'actualités, complétée par des filtres pour contenus adultes et réseaux sociaux. Le dépôt <code>ruairidhflint/news-blocklist</code> est sous licence MIT, 21 étoiles, très récemment mis à jour. Source: <a href="https://github.com/ruairidhflint/news-blocklist">https://github.com/ruairidhflint/news-blocklist</a>.</p>
+<p><strong>Win4wine – shell Windows sur un bureau Linux</strong><br />
+Permet d'exécuter un environnement shell Windows entier (interface graphique, menus, barre des tâches) sur un bureau Linux en utilisant Wine comme couche de compatibilité. Interprétable comme une alternative légère à un bureau Windows virtuel. Dépôt <code>mikuta0407/win4wine</code>, licence LGPL-2.1, 290 étoiles, dernier push fin octobre. Source: <a href="https://github.com/mikuta0407/win4wine">https://github.com/mikuta0407/win4wine</a>.</p>
+<p><strong>Spelunkr TV – réseau télévisif gratuit à base d'archives</strong><br />
+Un réseau télévisif construit à partir des vidéos oubliées conservées dans l'Internet Archive. Projet communautaire sans but lucratif, très bien accueilli sur HN (320+ points). Pas de dépôt GitHub identifié. Source: <a href="https://spelunkr.tv">https://spelunkr.tv</a>.</p>
+<p>Nouveautés et mises à jour</p>
+<p><strong>Conduit Desktop 1.0</strong><br />
+Après une longue période de développement en version bêta, l'application desktop Conduit publie enfin sa version 1.0, disponible sur Windows, macOS et Linux. La nouvelle inclut également « Landscape », probablement une visualisation de landscape ou de données structurées. Conduit étant un client de messagerie open source déjà connu, cette version marque un jalon important. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y34aqn/conduit_desktop_10_is_here_windows_macos_linux/">Reddit r/hermesagent</a>.</p>
+<p><strong>GLM-5.4 disponible pour tous les abonnés GLM Coding Plan</strong><br />
+Z.AI rend GLM-5.4 accessible à tous les utilisateurs du plan de codage GLM. Ce modèle introduit un « loop transformer » destiné au coding généralisé — une architecture visant à mieux gérer les boucles et la récursivité dans les tâches de programmation. Annonce suivie avec intérêt sur HN (près de 200 points, 80+ commentaires). Source: <a href="https://z.ai/blog/glm-5.4">https://z.ai/blog/glm-5.4</a>.</p>
+<p>Extensions et greffons</p>
+<p><strong>Threadpacket — transfert de tâches entre agents IA</strong><br />
+Plugin Hermes venant d'être fusionné dans le catalogue officiel (NousResearch/hermes-agent #156066). Il permet d'envoyer des paquets éphémères d'un agent IA à un autre — résumé de travail en cours + fichiers originaux — sur la même machine ou entre machines distinctes. Utile quand on fait tourner Hermes en background pendant qu'on utilise Claude Code ou Codex en interactif. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3hps7/my_hermes_plugin_is_live_in_the_catalog_send/">Reddit r/hermesagent</a>.</p>
+<p><strong>Hermit 1.2 pour Hermes Agent</strong><br />
+L'annonce d'Hermit 1.2 mentionne des optimisations spécifiques pour Hermes Agent, orientées productivité. Le contenu exact de ces améliorations n'étant pas détaillé dans le titre ni l'extrait, cela reste à vérifier. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3o5ov/hermit_12_for_hermes_agent_optimizing_bots_for/">Reddit r/hermesagent</a>.</p>
+<p>Volume — 94 éléments lus dans la shortlist, 13 sujets retenus, 81 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ladybird, le navigateur web open source entièrement réinventé, franchit le cap de l'alpha publique avec 67 700 étoiles sur GitHub. Trois nouveautés dans l'écosystème Hermes : Threadpacket, plugin pour échanger des tâches entre agents ; Hermit 1.2 optimisé pour Hermes Agent ; Conduit Desktop 1.0 sorti sur les trois plateformes. GLM-5.4 accessible à tous les abonnés Z.AI.</p>
+<p>Applications et outils nouveaux</p>
+<p><strong>Ladybird – un navigateur web construit depuis zéro</strong><br />
+La team LadybirdBrowser développe un navigateur web complet (moteur de rendu HTML, CSS, JavaScript) écrit en C++ à partir de zéro, sans dépendre de Blink ou WebKit. Le projet franchit aujourd'hui le cap de l'alpha publique : il affiche une interface fonctionnelle capable de charger des pages web courantes. Le dépôt est incroyablement actif (67 700 étoiles sur GitHub, licence BSD-2-Clause, dernier push hier soir). Les commentaires sur HN (plus de 530 points, 140 threads) montrent un engouement considérable pour un navigateur vraiment libre et transparent. Vérifié le 23/11/2026 sur l'API GitHub : 67 735 étoiles, dernière mise à jour le 23/11/2026, licence BSD-2-Clause. Source: <a href="https://ladybird.org/posts/alpha/">https://ladybird.org/posts/alpha/</a> — dépôt GitHub <code>LadybirdBrowser/ladybird</code>.</p>
+<p><strong>Nospeaker – le pavé tactile de votre MacBook qui parle</strong><br />
+Un utilitaire opensource qui exploite le moteur haptique du pavé Magic Trackpad pour produire des retours sonores — essentiellement un haut-parleur qui n'existait pas avant. Conçu pour les personnes malvoyantes ou simplement par curiosité technique. Dépôt <code>os6/nospeaker</code>, licence MIT, 1 409 étoiles, dernier commit le 22 novembre. Source: <a href="https://github.com/os6/nospeaker">https://github.com/os6/nospeaker</a>.</p>
+<p><strong>Kagi Mail – beta publique</strong><br />
+Kagi, le moteur de recherche payant, lance sa propre offre de messagerie en beta publique. Les caractéristiques exactes ne sont pas détaillées dans l'annonce mais Kagi promet une expérience centrée sur la vie privée, sans traçage publicitaire. Un service attendu, mais dont les capacités concrètes restent à vérifier. Source: <a href="https://blog.kagi.com/kagi-mail-public-beta">https://blog.kagi.com/kagi-mail-public-beta</a>.</p>
+<p><strong>News Blocklist – filtre DNS contre les sites d'actualités</strong><br />
+Un auteur a créé une petite application Mac qui bloque via le fichier hosts une liste de 14 000 sites d'information courante et d'actualités, complétée par des filtres pour contenus adultes et réseaux sociaux. Le dépôt <code>ruairidhflint/news-blocklist</code> est sous licence MIT, 21 étoiles, très récemment mis à jour. Source: <a href="https://github.com/ruairidhflint/news-blocklist">https://github.com/ruairidhflint/news-blocklist</a>.</p>
+<p><strong>Win4wine – shell Windows sur un bureau Linux</strong><br />
+Permet d'exécuter un environnement shell Windows entier (interface graphique, menus, barre des tâches) sur un bureau Linux en utilisant Wine comme couche de compatibilité. Interprétable comme une alternative légère à un bureau Windows virtuel. Dépôt <code>mikuta0407/win4wine</code>, licence LGPL-2.1, 290 étoiles, dernier push fin octobre. Source: <a href="https://github.com/mikuta0407/win4wine">https://github.com/mikuta0407/win4wine</a>.</p>
+<p><strong>Spelunkr TV – réseau télévisif gratuit à base d'archives</strong><br />
+Un réseau télévisif construit à partir des vidéos oubliées conservées dans l'Internet Archive. Projet communautaire sans but lucratif, très bien accueilli sur HN (320+ points). Pas de dépôt GitHub identifié. Source: <a href="https://spelunkr.tv">https://spelunkr.tv</a>.</p>
+<p>Nouveautés et mises à jour</p>
+<p><strong>Conduit Desktop 1.0</strong><br />
+Après une longue période de développement en version bêta, l'application desktop Conduit publie enfin sa version 1.0, disponible sur Windows, macOS et Linux. La nouvelle inclut également « Landscape », probablement une visualisation de landscape ou de données structurées. Conduit étant un client de messagerie open source déjà connu, cette version marque un jalon important. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y34aqn/conduit_desktop_10_is_here_windows_macos_linux/">Reddit r/hermesagent</a>.</p>
+<p><strong>GLM-5.4 disponible pour tous les abonnés GLM Coding Plan</strong><br />
+Z.AI rend GLM-5.4 accessible à tous les utilisateurs du plan de codage GLM. Ce modèle introduit un « loop transformer » destiné au coding généralisé — une architecture visant à mieux gérer les boucles et la récursivité dans les tâches de programmation. Annonce suivie avec intérêt sur HN (près de 200 points, 80+ commentaires). Source: <a href="https://z.ai/blog/glm-5.4">https://z.ai/blog/glm-5.4</a>.</p>
+<p>Extensions et greffons</p>
+<p><strong>Threadpacket — transfert de tâches entre agents IA</strong><br />
+Plugin Hermes venant d'être fusionné dans le catalogue officiel (NousResearch/hermes-agent #156066). Il permet d'envoyer des paquets éphémères d'un agent IA à un autre — résumé de travail en cours + fichiers originaux — sur la même machine ou entre machines distinctes. Utile quand on fait tourner Hermes en background pendant qu'on utilise Claude Code ou Codex en interactif. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3hps7/my_hermes_plugin_is_live_in_the_catalog_send/">Reddit r/hermesagent</a>.</p>
+<p><strong>Hermit 1.2 pour Hermes Agent</strong><br />
+L'annonce d'Hermit 1.2 mentionne des optimisations spécifiques pour Hermes Agent, orientées productivité. Le contenu exact de ces améliorations n'étant pas détaillé dans le titre ni l'extrait, cela reste à vérifier. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3o5ov/hermit_12_for_hermes_agent_optimizing_bots_for/">Reddit r/hermesagent</a>.</p>
+<p>Volume — 94 éléments lus dans la shortlist, 13 sujets retenus, 81 écartés.</p>]]></content:encoded>
 </item>
 <item>
 <title>Veille IA, sciences et société — lundi 23 novembre 2026</title>
@@ -1892,59 +2064,6 @@ https://ctan.org/pkg/lc-visualizer</p>
 <p><strong>diagram-design</strong> — Compétence pour agents de codage (Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder et Pi) qui dessine quarante-cinq modèles de diagrammes éditoriaux et les rend en un seul fichier HTML et SVG autonome, au lieu des schémas par défaut des assistants. Gratuit, MIT ; 70 281 étoiles relevées ce jour, dépôt créé en avril 2026, ce qui en fait l'un des projets les plus suivis retenus ici. https://github.com/cathrynlavery/diagram-design</p>
 <h2>Volume</h2>
 <p>39 posts publiés dans l'intervalle, 22 retenus, 17 écartés (actualités de noyau et de pilotes sans logiciel utilisable, discussions, essais personnels, un projet finalement propriétaire et un faux outil humoristique).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/hermesagent — lundi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-23.html</link>
-<guid isPermaLink="false">hermesagent-2026-11-23</guid>
-<pubDate>Mon, 23 Nov 2026 00:51:21 +0100</pubDate>
-<category>r/hermesagent</category>
-<description><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Trois trouvailles ce lundi : PcapAnalyzer, un analyseur de captures réseau auto-hébergé sous licence Apache 2.0 qui diagnostique les pannes en clair ; Muru, le nouveau serveur Rust de Graham Dumpleton pour exécuter les applications web Python, publié au fil d'un journal de développement très détaillé ; et une version corrective du greffon llm-gemini. Le reste de l'intervalle est dominé par de l'actualité générale (climat, automobile, politique américaine) sans annonce logicielle exploitable.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture</h3>
-<p>Outil libre et gratuit, auto-hébergé, qui reçoit un fichier de capture réseau (<code>.pcap</code> ou <code>.pcapng</code>, gzip accepté) et en tire un diagnostic : 27 détecteurs couvrent le TCP (blocages de pare-feu repérés par un SYN suivi d'un RST, retransmissions, fenêtres à zéro, réinitialisations après établissement), le chemin réseau (trous de MTU, fragmentation), les services de noms (DNS sans réponse, SERVFAIL, DHCP sans réponse, IP en double, tempêtes ARP), les applications (HTTP 4xx/5xx, alertes TLS, protocoles TLS obsolètes), les tunnels (IPsec, WireGuard, OpenVPN unidirectionnels ou qui renégocient sans fin) et la sécurité (balayages de ports, identifiants transmis en clair, usurpation ARP). Il prévient aussi quand c'est la capture elle-même qui limite le résultat (paquets vus dans un seul sens, doublons de port miroir, capture commencée après l'ouverture des connexions), affiche des vues proches de Wireshark avec filtres, coloration, export CSV et diagramme de flux par conversation, et produit un rapport PDF. Une enquête par IA est optionnelle et s'appuie sur votre propre clé Anthropic ; sans clé, un mode démonstration déroule tout le parcours avec un texte généré, sans coût. Licence Apache 2.0, gratuit, état « bêta », déploiement par Docker Compose ; l'application n'écoute que sur <code>127.0.0.1</code> et ne doit pas être exposée en réseau sans mandataire authentifié, car son API peut consommer votre compte d'IA.<br />
-Vérifié le 23/11/2026 sur l'API GitHub : 208 étoiles, dernière mise à jour le 21/11/2026, licence Apache-2.0, dépôt créé le 21/10/2026.<br />
-https://github.com/sebaandrada-cell/PcapAnalyzer</p>
-<h3>Muru — un serveur Rust pour les applications web Python</h3>
-<p>Graham Dumpleton, à l'origine de mod_wsgi il y a vingt ans, publie Muru : un serveur écrit en Rust destiné à exécuter en développement comme en production les applications Python ASGI et WSGI, avec pour objectif explicite d'être le meilleur outil possible pour cette tâche (isolement des workers, import unique puis duplication, HTTPS en développement, déploiements sans redémarrage, canaris, dimensionnement à zéro, respect du conteneur et de Kubernetes, barre d'outils de traçage). Le projet est annoncé et documenté article par article depuis le 4 novembre sur le blog de l'auteur, Simon Willison en ayant relayé la présentation le 21 novembre. Incertitude assumée : je n'ai trouvé aucun dépôt public ni aucune licence affichée à ce jour, et je ne peux donc pas confirmer que Muru est libre ni qu'il est gratuit — à vérifier auprès de l'auteur. Le travail est explicitement assisté par IA, l'auteur revendiquant la décision de ce qui n'est pas encore acceptable comme le cœur de son apport.<br />
-https://simonwillison.net/2026/Nov/21/muru/</p>
-<h3>worker755 — un jeu de navigateur où l'on est le « subagent » d'une IA</h3>
-<p>Projet libre (licence MIT) et gratuit, jouable directement sur worker755.com : on y incarne le subagent d'un gestionnaire automatique qui distribue des tâches. Ce n'est pas un outil de travail mais un jeu, et je le signale pour son lien direct avec le thème des agents. Dépôt actif, mis à jour le 22/11/2026, 116 étoiles ; 148 points et 36 commentaires sur Hacker News le 22/11.<br />
-https://github.com/gulivan/worker755</p>
-<h3>Leonida — recompilation PC de la version Xbox de GTA 6</h3>
-<p>Projet libre sous GPL-3.0 qui recompile pour PC la version Xbox de Grand Theft Auto 6 ; dépôt créé le 20/11/2026 et très suivi (14 793 étoiles, dernière mise à jour le 22/11/2026, 111 points sur Hacker News). Je le mentionne parce qu'il s'agit d'un dépôt libre notable, en signalant l'incertitude juridique évidente : le contenu recompilé reste la propriété de son éditeur, et la légalité de la diffusion du résultat n'est pas établie.<br />
-https://github.com/ItsNotRexed/Leonida</p>
-<h2>Extensions et greffons</h2>
-<h3>llm-gemini 0.38.1</h3>
-<p>Version corrective du greffon de Simon Willison qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code>. La 0.38.1 répare un oubli : les modèles Gemini 4 Carbon n'acceptent que les niveaux de raisonnement <code>low</code>, <code>medium</code> et <code>high</code>, tandis que Gemini 4 Hydrogen et Gemini 4 Neon en offrent un quatrième, <code>xhigh</code>, que le greffon n'exposait pas. Licence Apache-2.0, 466 étoiles, dernière mise à jour le 20/11/2026.<br />
-https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
-<h2>Volume</h2>
-<p>45 entrées examinées dans l'intervalle (3 fils r/hermesagent, 40 entrées Hacker News, 2 billets de Simon Willison), 5 retenues, 40 écartées ; un doublon regroupé (Muru, vu à la fois sur Hacker News et chez Simon Willison). Les écarts sont surtout de l'actualité générale sans annonce logicielle (climat, automobile, politique, santé) et des billets d'analyse ou d'opinion sur l'IA.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Trois trouvailles ce lundi : PcapAnalyzer, un analyseur de captures réseau auto-hébergé sous licence Apache 2.0 qui diagnostique les pannes en clair ; Muru, le nouveau serveur Rust de Graham Dumpleton pour exécuter les applications web Python, publié au fil d'un journal de développement très détaillé ; et une version corrective du greffon llm-gemini. Le reste de l'intervalle est dominé par de l'actualité générale (climat, automobile, politique américaine) sans annonce logicielle exploitable.</p>
-<h2>Applications et outils nouveaux</h2>
-<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture</h3>
-<p>Outil libre et gratuit, auto-hébergé, qui reçoit un fichier de capture réseau (<code>.pcap</code> ou <code>.pcapng</code>, gzip accepté) et en tire un diagnostic : 27 détecteurs couvrent le TCP (blocages de pare-feu repérés par un SYN suivi d'un RST, retransmissions, fenêtres à zéro, réinitialisations après établissement), le chemin réseau (trous de MTU, fragmentation), les services de noms (DNS sans réponse, SERVFAIL, DHCP sans réponse, IP en double, tempêtes ARP), les applications (HTTP 4xx/5xx, alertes TLS, protocoles TLS obsolètes), les tunnels (IPsec, WireGuard, OpenVPN unidirectionnels ou qui renégocient sans fin) et la sécurité (balayages de ports, identifiants transmis en clair, usurpation ARP). Il prévient aussi quand c'est la capture elle-même qui limite le résultat (paquets vus dans un seul sens, doublons de port miroir, capture commencée après l'ouverture des connexions), affiche des vues proches de Wireshark avec filtres, coloration, export CSV et diagramme de flux par conversation, et produit un rapport PDF. Une enquête par IA est optionnelle et s'appuie sur votre propre clé Anthropic ; sans clé, un mode démonstration déroule tout le parcours avec un texte généré, sans coût. Licence Apache 2.0, gratuit, état « bêta », déploiement par Docker Compose ; l'application n'écoute que sur <code>127.0.0.1</code> et ne doit pas être exposée en réseau sans mandataire authentifié, car son API peut consommer votre compte d'IA.<br />
-Vérifié le 23/11/2026 sur l'API GitHub : 208 étoiles, dernière mise à jour le 21/11/2026, licence Apache-2.0, dépôt créé le 21/10/2026.<br />
-https://github.com/sebaandrada-cell/PcapAnalyzer</p>
-<h3>Muru — un serveur Rust pour les applications web Python</h3>
-<p>Graham Dumpleton, à l'origine de mod_wsgi il y a vingt ans, publie Muru : un serveur écrit en Rust destiné à exécuter en développement comme en production les applications Python ASGI et WSGI, avec pour objectif explicite d'être le meilleur outil possible pour cette tâche (isolement des workers, import unique puis duplication, HTTPS en développement, déploiements sans redémarrage, canaris, dimensionnement à zéro, respect du conteneur et de Kubernetes, barre d'outils de traçage). Le projet est annoncé et documenté article par article depuis le 4 novembre sur le blog de l'auteur, Simon Willison en ayant relayé la présentation le 21 novembre. Incertitude assumée : je n'ai trouvé aucun dépôt public ni aucune licence affichée à ce jour, et je ne peux donc pas confirmer que Muru est libre ni qu'il est gratuit — à vérifier auprès de l'auteur. Le travail est explicitement assisté par IA, l'auteur revendiquant la décision de ce qui n'est pas encore acceptable comme le cœur de son apport.<br />
-https://simonwillison.net/2026/Nov/21/muru/</p>
-<h3>worker755 — un jeu de navigateur où l'on est le « subagent » d'une IA</h3>
-<p>Projet libre (licence MIT) et gratuit, jouable directement sur worker755.com : on y incarne le subagent d'un gestionnaire automatique qui distribue des tâches. Ce n'est pas un outil de travail mais un jeu, et je le signale pour son lien direct avec le thème des agents. Dépôt actif, mis à jour le 22/11/2026, 116 étoiles ; 148 points et 36 commentaires sur Hacker News le 22/11.<br />
-https://github.com/gulivan/worker755</p>
-<h3>Leonida — recompilation PC de la version Xbox de GTA 6</h3>
-<p>Projet libre sous GPL-3.0 qui recompile pour PC la version Xbox de Grand Theft Auto 6 ; dépôt créé le 20/11/2026 et très suivi (14 793 étoiles, dernière mise à jour le 22/11/2026, 111 points sur Hacker News). Je le mentionne parce qu'il s'agit d'un dépôt libre notable, en signalant l'incertitude juridique évidente : le contenu recompilé reste la propriété de son éditeur, et la légalité de la diffusion du résultat n'est pas établie.<br />
-https://github.com/ItsNotRexed/Leonida</p>
-<h2>Extensions et greffons</h2>
-<h3>llm-gemini 0.38.1</h3>
-<p>Version corrective du greffon de Simon Willison qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code>. La 0.38.1 répare un oubli : les modèles Gemini 4 Carbon n'acceptent que les niveaux de raisonnement <code>low</code>, <code>medium</code> et <code>high</code>, tandis que Gemini 4 Hydrogen et Gemini 4 Neon en offrent un quatrième, <code>xhigh</code>, que le greffon n'exposait pas. Licence Apache-2.0, 466 étoiles, dernière mise à jour le 20/11/2026.<br />
-https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
-<h2>Volume</h2>
-<p>45 entrées examinées dans l'intervalle (3 fils r/hermesagent, 40 entrées Hacker News, 2 billets de Simon Willison), 5 retenues, 40 écartées ; un doublon regroupé (Muru, vu à la fois sur Hacker News et chez Simon Willison). Les écarts sont surtout de l'actualité générale sans annonce logicielle (climat, automobile, politique, santé) et des billets d'analyse ou d'opinion sur l'IA.</p>]]></content:encoded>
 </item>
 <item>
 <title>Veille r/vibecoding — lundi 23 novembre 2026</title>
@@ -4225,107 +4344,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <h2>Volume</h2>
 <p>58 posts publiés dans l'intervalle (dont 52 de Hacker News, 3 du subreddit, 2 de Simon Willison, 1 de Latent Space), 5 retenus, 53 écartés.</p>
 <p><em>Incident de collecte</em> : le collecteur Reddit a retourné une erreur HTTP 404 lors de la dernière exécution (flux RSS de r/hermesagent définitivement fermé par Reddit le 13 novembre 2026). Les entrées de ce subreddit encore visibles sont celles collectées avant la fermeture. Les sources Hacker News, Simon Willison et Latent Space fonctionnent normalement.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/vibecoding — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-20.html</link>
-<guid isPermaLink="false">vibecoding-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:43:29 +0100</pubDate>
-<category>r/vibecoding</category>
-<description><![CDATA[<h1>Veille r/vibecoding — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Journée très chargée sur les sources du thème, avec une moisson exceptionnelle d'outils nouveaux pour les agents de codage : Magpie (39 000 étoiles) devient la passerelle de modèles de référence, Maki propose une architecture extensible par plugins Lua, Onlook s'ouvre en open source pour le design dans le code, et Tokendoctor promet jusqu'à 38 % de tokens en moins sur Claude Code. Google DeepMind publie Gemini 4 Neon, un modèle qui rivalise avec Opus 5.5. Côté pratique, FailTrace reproduit localement vos échecs CI et Brief2mp4 transforme un brief en vidéo motion graphics.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Onlook</strong> — Outil de développement open source pour designers : pose un canevas visuel sur votre code réel et permet de concevoir directement dans le code avec l'agent que vous utilisez déjà. Construit avec React, plus de 25 000 utilisateurs et 27 390 étoiles. Licence Apache-2.0, gratuit. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/onlook-dev/onlook/</p>
-<p><strong>Maki</strong> — Agent de codage IA efficace et extensible par plugins Lua (façon Neovim). 1 440 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/tontinton/maki</p>
-<p><strong>Magpie</strong> — Passerelle de modèles open source pour agents de codage : un seul point d'accès pour utiliser Codex sur DeepSeek, Claude Code sur Kimi, etc., depuis la barre de menus. 39 048 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/yetone/magpie</p>
-<p><strong>Localix Studio</strong> — Environnement de développement agentic open source, alternative à Cursor pour n'importe quel modèle. 75 étoiles, licence MIT. Lien : https://github.com/localixai/localix-studio</p>
-<p><strong>Tokendoctor</strong> — Analyse les sessions Claude Code passées et montre ce que chaque requête transporte avant même que vous n'ayez tapé quoi que ce soit. Promet jusqu'à 38 % de tokens en moins. 164 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/localixai/tokendoctor</p>
-<p><strong>TaroBird</strong> — Messagerie instantanée open source pour Codex, Claude Code et autres CLI d'agents : tous vos agents dans une seule appli desktop et mobile. 91 étoiles, licence AGPL-3.0. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/cloveric/tarobird</p>
-<p><strong>Friday</strong> — Alternative desktop locale d'abord à Grok Bot, OpenBot, T3 Code, Herdr et Orca. Exécute Claude Code, Codex et Cursor en parallèle dans une seule équipe. 82 étoiles, licence MIT. Lien : https://github.com/splashxmoon/friday</p>
-<p><strong>Serc</strong> — Compilateur de bytecode CPython écrit en Rust (2 à 4 fois plus rapide), construit avec Codex. 126 étoiles, licence Apache-2.0. Lien : https://github.com/astral-experiments/serc</p>
-<p><strong>Nanocode</strong> — Agent de codage modifiable dans un seul fichier Python : utilise Claude Max (Agent SDK) ou n'importe quel modèle OpenRouter. 3 étoiles, licence MIT. Lien : https://github.com/car-mrazomor/nanocode-agent</p>
-<p><strong>SpringRep</strong> — Noyau B-rep de CAO mécanique écrit en Rust sans dépendances, couvre les congés, lissages et lofteurs avancés. Accompagné d'une suite de tests de conformité B-rep indépendante du noyau. 31 étoiles, licence MIT. Lien : https://github.com/springcraft-ai/springrep</p>
-<p><strong>FailTrace</strong> — Reproduit localement un échec d'exécution GitHub Actions à partir de son URL : plus besoin de deviner ce qui a planté. 29 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/Ri4dH/failtrace</p>
-<p><strong>Vibe Robotics</strong> — Plugin Google DeepMind pour workflows robotiques pilotés par agent, compatible robots réels et simulation MuJoCo. Branchez un robot, donnez des instructions. 133 étoiles, licence Apache-2.0. Lien : https://github.com/google-deepmind/robotics-antigravity-plugin</p>
-<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste pour Mac (10,8 Mo, 320 ms à l'ouverture). Support des extensions Chrome, blocage de publicités au niveau réseau, espaces de travail, open source et gratuit. Lien : https://searchbrowser.app/</p>
-<p><strong>NOX Local</strong> — Agent de codage en terminal pour modèles locaux : sa propre TUI, llama.cpp sur GPU 8 Go, support MCP, skills, mode planification. 5 étoiles, licence MIT. Lien : https://github.com/Johnny008-creator/nox-local</p>
-<p><strong>Taskman</strong> — Interface TUI en Rust pour gérer plusieurs sessions Claude Code et Codex en parallèle : chaque ticket, session, issue et PR dans une fenêtre. 5 étoiles, licence Apache-2.0. Lien : https://github.com/sanagnos/taskman</p>
-<p><strong>Brief2mp4</strong> — Skill pour Claude Code et Codex qui produit des vidéos motion graphics à partir d'un brief texte : 30 formes d'art, vérifiées par rapport au brief. 47 étoiles, licence MIT. Lien : https://github.com/qualixar/brief2mp4</p>
-<p><strong>Eso-box</strong> — Transforme un vieux PC ou Mac Linux en serveur Claude Code toujours actif : ouvrez des sessions depuis n'importe quel portable en SSH. 1 étoile, licence MIT. Lien : https://github.com/blumalex/eso-box</p>
-<p><strong>Deadweight</strong> — Analyse ce que chaque requête Claude Code transporte avant votre premier mot, et ce que vous n'utilisez jamais. 14 étoiles, licence MIT. Lien : https://github.com/msertdev/deadweight</p>
-<p><strong>Agent-Otel-Kit</strong> — Observabilité OpenTelemetry en une commande pour les agents de codage IA (Claude Code, Codex, Gemini CLI) : traces, métriques et dashboards. 5 étoiles, licence Apache-2.0. Lien : https://github.com/s3onghyun/agent-otel-kit</p>
-<p><strong>Malini</strong> — Couche d'abstraction pour construire avec des agents : si Conductor et Cursor avaient un enfant. 9 étoiles, licence AGPL-3.0, macOS. Lien : https://github.com/bestboyhq/malini</p>
-<p><strong>Claudette</strong> — Utilise les modèles Mistral dans Claude Code. 7 étoiles, licence MIT. Lien : https://github.com/raed667/claudette</p>
-<p><strong>Lmux</strong> — Terminal macOS natif léger conçu pour vivre dans Claude Code et Codex toute la journée. 36 étoiles, licence MIT. Lien : https://github.com/sooftware/lmux</p>
-<p><strong>Forchetta</strong> — Garde qui empêche plusieurs sessions Claude Code dans le même dépôt de se marcher dessus. 2 étoiles, licence Apache-2.0. Lien : https://github.com/alessiodonato/forchetta</p>
-<p><strong>AI Juggler</strong> — Console unique pour tous ses fournisseurs, comptes et instances d'IA : basculez quand vous atteignez une limite. 8 étoiles, licence MIT. Lien : https://github.com/figurehead-ai/AI-juggler</p>
-<p><strong>Memro</strong> — Mémoire persistante pour tous les outils de codage IA : Claude Code, Cursor, Codex, Copilot. Serveur MCP, SDK. 23 étoiles. Lien : https://github.com/memrohq/memro</p>
-<p><strong>AI Usage Ball</strong> — Sphères d'utilisation liquides en direct pour Claude, Codex et Antigravity sur macOS : voyez votre quota restant dans la barre des menus. 2 étoiles. Lien : https://github.com/aiusageball/ai-usage-ball</p>
-<p><strong>Process Watch</strong> — Skill Codex et appliquette Windows tray qui surveille des jobs distants (locaux ou SSH) et notifie Codex quand ils finissent. 0 étoile, licence MIT. Lien : https://github.com/XX123122/process-watch</p>
-<p><strong>Realmbridge</strong> — Outil pour jouer aux mondes Minecraft Bedrock depuis l'édition Java : codes d'invitation, connexion en un clic, mods Fabric. 4 étoiles, licence GPL-3.0. Lien : https://github.com/neilbauman21-hub/realmbridge</p>
-<p><strong>ADE Index</strong> — Index sourcé et classé de 975 outils de codage agentic. Pas un outil en soi, mais un répertoire utile pour explorer ce qui existe. Lien : https://adeindex.com</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Gemini 4 Neon</strong> — Google DeepMind a dévoilé son quatrième modèle Gemini 4 en sept semaines. Neon se positionne comme un modèle intermédiaire (plus rapide et moins cher que Carbon) et semble rivaliser avec Opus 5.5 selon les premières évaluations (vu sur Hacker News, Latent Space et le blog de Simon Willison). Les précédents modèles Argon et les anciens Pro/Flash sont retirés. Disponible sur AI Studio et via l'API Google. Lien : https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</p>
-<p><strong>SRE-1</strong> — Modèle de 27 milliards de paramètres spécialisé dans les investigations de production (SRE). Publié par Resolve AI. Lien : https://resolve.ai/labs/sre-1/paper</p>
-<p><strong>DaisyRose-27B</strong> — Modèle poussant la frontière de l'efficacité du post-entraînement, publié sur Hugging Face. Lien : https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin</p>
-<p><strong>llm-gemini 0.38</strong> — Mise à jour du plugin LLM de Simon Willison pour supporter Gemini 4 Neon. Lien : https://simonwillison.net/2026/Nov/18/llm-gemini/</p>
-<p><strong>datasette-arrows 0.1a0</strong> — Plugin Datasette pour l'export streaming au format Arrow, publié par Simon Willison. Lien : https://simonwillison.net/2026/Nov/18/datasette-arrows/</p>
-<p><strong>Google Gemini Tasks gratuit</strong> — L'assistant personnel « Tasks » de Google Gemini, auparavant réservé aux abonnés Advanced, est désormais accessible gratuitement. Lien : https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/</p>
-<h2>Extensions et greffons</h2>
-<p><strong>Vibe Robotics</strong> (plugin Antigravity pour la robotique) — voir dans la section Applications.</p>
-<p><strong>Brief2mp4</strong> (skill Claude Code/Codex) — voir dans la section Applications.</p>
-<p><strong>ADE Index</strong> (répertoire) — voir dans la section Applications.</p>
-<h2>Volume</h2>
-<p>119 entrées lues dans les sources (shortlist du 19-20 novembre), 44 retenues après dédoublonnage et tri, 75 écartées (hors sujet, questions, retours d'expérience sans outil, annonces commerciales propriétaires, actualités générales sans lien avec le logiciel).</p>
-<p>Note : la source Reddit (r/vibecoding) a retourné une erreur 404 lors de la dernière collecte (meta.json signale une erreur). Les entrées de ce subreddit dans la shortlist proviennent de collectes antérieures. La majorité des outils retenus viennent de Hacker News (collecte directe via hn_lobsters_watch.py) et des flux complémentaires (hnrss, Simon Willison, Hugging Face, Latent Space).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/vibecoding — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Journée très chargée sur les sources du thème, avec une moisson exceptionnelle d'outils nouveaux pour les agents de codage : Magpie (39 000 étoiles) devient la passerelle de modèles de référence, Maki propose une architecture extensible par plugins Lua, Onlook s'ouvre en open source pour le design dans le code, et Tokendoctor promet jusqu'à 38 % de tokens en moins sur Claude Code. Google DeepMind publie Gemini 4 Neon, un modèle qui rivalise avec Opus 5.5. Côté pratique, FailTrace reproduit localement vos échecs CI et Brief2mp4 transforme un brief en vidéo motion graphics.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Onlook</strong> — Outil de développement open source pour designers : pose un canevas visuel sur votre code réel et permet de concevoir directement dans le code avec l'agent que vous utilisez déjà. Construit avec React, plus de 25 000 utilisateurs et 27 390 étoiles. Licence Apache-2.0, gratuit. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/onlook-dev/onlook/</p>
-<p><strong>Maki</strong> — Agent de codage IA efficace et extensible par plugins Lua (façon Neovim). 1 440 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/tontinton/maki</p>
-<p><strong>Magpie</strong> — Passerelle de modèles open source pour agents de codage : un seul point d'accès pour utiliser Codex sur DeepSeek, Claude Code sur Kimi, etc., depuis la barre de menus. 39 048 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/yetone/magpie</p>
-<p><strong>Localix Studio</strong> — Environnement de développement agentic open source, alternative à Cursor pour n'importe quel modèle. 75 étoiles, licence MIT. Lien : https://github.com/localixai/localix-studio</p>
-<p><strong>Tokendoctor</strong> — Analyse les sessions Claude Code passées et montre ce que chaque requête transporte avant même que vous n'ayez tapé quoi que ce soit. Promet jusqu'à 38 % de tokens en moins. 164 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/localixai/tokendoctor</p>
-<p><strong>TaroBird</strong> — Messagerie instantanée open source pour Codex, Claude Code et autres CLI d'agents : tous vos agents dans une seule appli desktop et mobile. 91 étoiles, licence AGPL-3.0. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/cloveric/tarobird</p>
-<p><strong>Friday</strong> — Alternative desktop locale d'abord à Grok Bot, OpenBot, T3 Code, Herdr et Orca. Exécute Claude Code, Codex et Cursor en parallèle dans une seule équipe. 82 étoiles, licence MIT. Lien : https://github.com/splashxmoon/friday</p>
-<p><strong>Serc</strong> — Compilateur de bytecode CPython écrit en Rust (2 à 4 fois plus rapide), construit avec Codex. 126 étoiles, licence Apache-2.0. Lien : https://github.com/astral-experiments/serc</p>
-<p><strong>Nanocode</strong> — Agent de codage modifiable dans un seul fichier Python : utilise Claude Max (Agent SDK) ou n'importe quel modèle OpenRouter. 3 étoiles, licence MIT. Lien : https://github.com/car-mrazomor/nanocode-agent</p>
-<p><strong>SpringRep</strong> — Noyau B-rep de CAO mécanique écrit en Rust sans dépendances, couvre les congés, lissages et lofteurs avancés. Accompagné d'une suite de tests de conformité B-rep indépendante du noyau. 31 étoiles, licence MIT. Lien : https://github.com/springcraft-ai/springrep</p>
-<p><strong>FailTrace</strong> — Reproduit localement un échec d'exécution GitHub Actions à partir de son URL : plus besoin de deviner ce qui a planté. 29 étoiles, licence MIT. Dernière mise à jour : 19 novembre 2026. Lien : https://github.com/Ri4dH/failtrace</p>
-<p><strong>Vibe Robotics</strong> — Plugin Google DeepMind pour workflows robotiques pilotés par agent, compatible robots réels et simulation MuJoCo. Branchez un robot, donnez des instructions. 133 étoiles, licence Apache-2.0. Lien : https://github.com/google-deepmind/robotics-antigravity-plugin</p>
-<p><strong>Search Browser</strong> — Navigateur WebKit minimaliste pour Mac (10,8 Mo, 320 ms à l'ouverture). Support des extensions Chrome, blocage de publicités au niveau réseau, espaces de travail, open source et gratuit. Lien : https://searchbrowser.app/</p>
-<p><strong>NOX Local</strong> — Agent de codage en terminal pour modèles locaux : sa propre TUI, llama.cpp sur GPU 8 Go, support MCP, skills, mode planification. 5 étoiles, licence MIT. Lien : https://github.com/Johnny008-creator/nox-local</p>
-<p><strong>Taskman</strong> — Interface TUI en Rust pour gérer plusieurs sessions Claude Code et Codex en parallèle : chaque ticket, session, issue et PR dans une fenêtre. 5 étoiles, licence Apache-2.0. Lien : https://github.com/sanagnos/taskman</p>
-<p><strong>Brief2mp4</strong> — Skill pour Claude Code et Codex qui produit des vidéos motion graphics à partir d'un brief texte : 30 formes d'art, vérifiées par rapport au brief. 47 étoiles, licence MIT. Lien : https://github.com/qualixar/brief2mp4</p>
-<p><strong>Eso-box</strong> — Transforme un vieux PC ou Mac Linux en serveur Claude Code toujours actif : ouvrez des sessions depuis n'importe quel portable en SSH. 1 étoile, licence MIT. Lien : https://github.com/blumalex/eso-box</p>
-<p><strong>Deadweight</strong> — Analyse ce que chaque requête Claude Code transporte avant votre premier mot, et ce que vous n'utilisez jamais. 14 étoiles, licence MIT. Lien : https://github.com/msertdev/deadweight</p>
-<p><strong>Agent-Otel-Kit</strong> — Observabilité OpenTelemetry en une commande pour les agents de codage IA (Claude Code, Codex, Gemini CLI) : traces, métriques et dashboards. 5 étoiles, licence Apache-2.0. Lien : https://github.com/s3onghyun/agent-otel-kit</p>
-<p><strong>Malini</strong> — Couche d'abstraction pour construire avec des agents : si Conductor et Cursor avaient un enfant. 9 étoiles, licence AGPL-3.0, macOS. Lien : https://github.com/bestboyhq/malini</p>
-<p><strong>Claudette</strong> — Utilise les modèles Mistral dans Claude Code. 7 étoiles, licence MIT. Lien : https://github.com/raed667/claudette</p>
-<p><strong>Lmux</strong> — Terminal macOS natif léger conçu pour vivre dans Claude Code et Codex toute la journée. 36 étoiles, licence MIT. Lien : https://github.com/sooftware/lmux</p>
-<p><strong>Forchetta</strong> — Garde qui empêche plusieurs sessions Claude Code dans le même dépôt de se marcher dessus. 2 étoiles, licence Apache-2.0. Lien : https://github.com/alessiodonato/forchetta</p>
-<p><strong>AI Juggler</strong> — Console unique pour tous ses fournisseurs, comptes et instances d'IA : basculez quand vous atteignez une limite. 8 étoiles, licence MIT. Lien : https://github.com/figurehead-ai/AI-juggler</p>
-<p><strong>Memro</strong> — Mémoire persistante pour tous les outils de codage IA : Claude Code, Cursor, Codex, Copilot. Serveur MCP, SDK. 23 étoiles. Lien : https://github.com/memrohq/memro</p>
-<p><strong>AI Usage Ball</strong> — Sphères d'utilisation liquides en direct pour Claude, Codex et Antigravity sur macOS : voyez votre quota restant dans la barre des menus. 2 étoiles. Lien : https://github.com/aiusageball/ai-usage-ball</p>
-<p><strong>Process Watch</strong> — Skill Codex et appliquette Windows tray qui surveille des jobs distants (locaux ou SSH) et notifie Codex quand ils finissent. 0 étoile, licence MIT. Lien : https://github.com/XX123122/process-watch</p>
-<p><strong>Realmbridge</strong> — Outil pour jouer aux mondes Minecraft Bedrock depuis l'édition Java : codes d'invitation, connexion en un clic, mods Fabric. 4 étoiles, licence GPL-3.0. Lien : https://github.com/neilbauman21-hub/realmbridge</p>
-<p><strong>ADE Index</strong> — Index sourcé et classé de 975 outils de codage agentic. Pas un outil en soi, mais un répertoire utile pour explorer ce qui existe. Lien : https://adeindex.com</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Gemini 4 Neon</strong> — Google DeepMind a dévoilé son quatrième modèle Gemini 4 en sept semaines. Neon se positionne comme un modèle intermédiaire (plus rapide et moins cher que Carbon) et semble rivaliser avec Opus 5.5 selon les premières évaluations (vu sur Hacker News, Latent Space et le blog de Simon Willison). Les précédents modèles Argon et les anciens Pro/Flash sont retirés. Disponible sur AI Studio et via l'API Google. Lien : https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/</p>
-<p><strong>SRE-1</strong> — Modèle de 27 milliards de paramètres spécialisé dans les investigations de production (SRE). Publié par Resolve AI. Lien : https://resolve.ai/labs/sre-1/paper</p>
-<p><strong>DaisyRose-27B</strong> — Modèle poussant la frontière de l'efficacité du post-entraînement, publié sur Hugging Face. Lien : https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin</p>
-<p><strong>llm-gemini 0.38</strong> — Mise à jour du plugin LLM de Simon Willison pour supporter Gemini 4 Neon. Lien : https://simonwillison.net/2026/Nov/18/llm-gemini/</p>
-<p><strong>datasette-arrows 0.1a0</strong> — Plugin Datasette pour l'export streaming au format Arrow, publié par Simon Willison. Lien : https://simonwillison.net/2026/Nov/18/datasette-arrows/</p>
-<p><strong>Google Gemini Tasks gratuit</strong> — L'assistant personnel « Tasks » de Google Gemini, auparavant réservé aux abonnés Advanced, est désormais accessible gratuitement. Lien : https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/</p>
-<h2>Extensions et greffons</h2>
-<p><strong>Vibe Robotics</strong> (plugin Antigravity pour la robotique) — voir dans la section Applications.</p>
-<p><strong>Brief2mp4</strong> (skill Claude Code/Codex) — voir dans la section Applications.</p>
-<p><strong>ADE Index</strong> (répertoire) — voir dans la section Applications.</p>
-<h2>Volume</h2>
-<p>119 entrées lues dans les sources (shortlist du 19-20 novembre), 44 retenues après dédoublonnage et tri, 75 écartées (hors sujet, questions, retours d'expérience sans outil, annonces commerciales propriétaires, actualités générales sans lien avec le logiciel).</p>
-<p>Note : la source Reddit (r/vibecoding) a retourné une erreur 404 lors de la dernière collecte (meta.json signale une erreur). Les entrées de ce subreddit dans la shortlist proviennent de collectes antérieures. La majorité des outils retenus viennent de Hacker News (collecte directe via hn_lobsters_watch.py) et des flux complémentaires (hnrss, Simon Willison, Hugging Face, Latent Space).</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
