@@ -6,9 +6,104 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 01:51:33 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 18:02:18 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>À la French 💻 — semaine du 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/alafrench/2026-11-24.html</link>
+<guid isPermaLink="false">alafrench-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 18:02:18 +0100</pubDate>
+<category>À la French 💻 (YouTube)</category>
+<description><![CDATA[<h1>À la French 💻 — semaine du 24 novembre 2026</h1>
+<p><strong>1 vidéo longue retenue, 14 extraits courts écartés.</strong></p>
+<hr />
+<h2>Pourquoi 80% des confs tech Françaises vont disparaitre</h2>
+<p>https://youtu.be/ezA82u5tHks</p>
+<h3>Résumé général</h3>
+<p>Dans cet épisode d'une heure, le trio d'À la French — Jean-Baptiste Kempf (président de VideoLAN/VLC), Steeve Morin et Mehdi Medjaoui — dresse un état des lieux des conférences tech en 2026, entre passion du live et crise économique du secteur.</p>
+<p>L'épisode s'ouvre sur les parcours des trois compères : JB Kempf, speaker infatigable qui donne des dizaines de talks par an dans le monde entier ; Steeve Morin, plus sélectif mais exigeant sur la qualité de ses présentations ; et Mehdi Medjaoui, organisateur de multiples conférences (API Days, Generation AI, Digital Resilience Europe). Ils reviennent sur la « 5ᵉ track » — les couloirs et les rencontres informelles, qui font selon eux la vraie valeur des conférences.</p>
+<p>Le cœur du débat porte sur la crise que traversent les conférences de taille moyenne, notamment associatives. Mehdi Medjaoui identifie trois causes principales qu'il appelle « la Triforce » :</p>
+<ol>
+<li>
+<p><strong>Les éditeurs créent leurs propres événements</strong> — Google (Google Cloud Summit), AWS (AWS re:Invent), Databricks, Snowflake organisent désormais leurs propres conférences, captant les budgets marketing qui allaient auparavant aux événements indépendants. Un sponsor qui verse 500 000 € ou 1 M€ pour sa propre conférence n'a plus 50 000 € à donner aux petits événements.</p>
+</li>
+<li>
+<p><strong>Le coût d'envoi d'un développeur</strong> — entre le billet (200-1000 €), la journée de salaire (300-500 € chargés), le train et l'hôtel, une journée en conférence revient à environ 2 000 € par personne. Un coût que les entreprises serrent de plus en plus.</p>
+</li>
+<li>
+<p><strong>L'inflation des tickets gratuits</strong> — les conférences commerciales inondent le marché de places gratuites pour remplir les salles, créant une « drogue du ticket gratuit » qui rend le public réticent à payer. Les conférences associatives, qui ne facturent pas le travail bénévole dans leur prix, n'arrivent pas à couvrir leurs coûts.</p>
+</li>
+</ol>
+<p>Ils mentionnent la lettre ouverte de l'AFUP (Association française des utilisateurs de PHP), signée par plus de 80 organisateurs, alertant sur la disparition annoncée de nombreuses conférences.</p>
+<h3>Sections thématiques</h3>
+<p><strong>00:00-03:00</strong> — Introduction : la passion des conférences et les profils des trois intervenants.</p>
+<p><strong>03:00-07:00</strong> — Les coulisses du speaker : JB Kempf parle de sa frénésie de conférences, du besoin de renouvellement, et de l'énergie que ça lui coûte.</p>
+<p><strong>07:00-10:00</strong> — La 5ᵉ track (les couloirs) : ce qui fait la valeur réelle d'une conférence, selon les trois compères.</p>
+<p><strong>10:00-12:00</strong> — Les trois causes de la crise (la Triforce) : sponsors-vendeurs, coût par développeur, tickets gratuits.</p>
+<p><strong>12:00-16:00</strong> — Panorama des conférences en France : des associations (Capitole du Libre, RMLL) aux communautés (PHP, Python, JavaScript, Android FR) jusqu'aux méga-événements (Vivatech, Web Summit, GITEX).</p>
+<p><strong>16:00-20:00</strong> — Le modèle fédératif : comment mutualiser les coûts en co-localisant plusieurs petites conférences dans un même lieu.</p>
+<p><strong>20:00-28:00</strong> — Organiser à différentes échelles : JB Kempf explique sa méthode pour la conférence VLC (~80 personnes, annoncée 1 mois à l'avance) et pourquoi il refuse de gérer de l'argent.</p>
+<p><strong>28:00-37:00</strong> — Les non-conférences (unconferences) : format sans agenda prédéfini où les participants construisent le programme sur place, avec des gommettes et des post-its.</p>
+<p><strong>37:00-45:00</strong> — Les stands VLC : le cône, la déconne, les goodies délirants (pièces romaines du IIe siècle modifiées à la Dremel, chasses au trésor dans les villes), et les déménagements improbables.</p>
+<p><strong>45:00-50:00</strong> — Le débat « Kempf contre Kempf » : faut-il encore aller aux conférences en 2026 ? Un faux procès où les arguments pour et contre s'affrontent.</p>
+<p><strong>50:00-56:00</strong> — Le sort des grandes conférences : NAB (Las Vegas) qui a chuté de 80 000 à 45 000 participants, la saturation des lieux à San Francisco à cause des conférences IA, l'éviction des autres événements.</p>
+<p><strong>56:00-1:05:00</strong> — Détails pratiques : badges sans nom, moquettes d'hôtels américains, absence de lumière du jour à Las Vegas, les slides de dernière minute, le prix exorbitant des retours vidéo (1 500 $), les panels trop préparés.</p>
+<h3>Citations clés</h3>
+<blockquote>
+<p>« La 5ᵉ track, c'est les couloirs. Les enregistrements des conférences, à part s'il y a des trucs incroyablement nouveaux, c'est pas ce que je cherche. »</p>
+<p>« Ça coûte 2 000 balles d'envoyer un développeur une journée en conférence. »</p>
+<p>« Les conférences associatives ne vendent pas assez cher parce qu'elles ne mettent pas le coût des bénévoles dans le prix final. »</p>
+<p>« Il faut sortir, il faut aller voir d'autres humains. Les conférences, c'est nécessaire à votre vie sociale et à l'écosystème. »</p>
+</blockquote>
+<h3>Conclusion</h3>
+<p>L'épisode se termine sur une note résolument optimiste : malgré les difficultés, les trois compères continuent d'organiser et d'aller à des conférences, et invitent la communauté à partager ses événements préférés. Ils annoncent plusieurs rendez-vous à venir : l'épisode live à TechRox le 30 novembre, Generation AI (1-2 décembre, sur le thème AI for Science avec Hugo Duminil-Copin, David Roux et Mistral), Digital Resilience Europe (2-3 décembre), <strong>la Conférence À la French le 3 décembre</strong> (toute la journée, avec surprises), le 25e anniversaire de VLC au Grand Rex le 8 décembre, et OSXP le 10 décembre.</p>
+<p><em>Note : la transcription est automatique (générée par YouTube) et peut comporter des erreurs, notamment sur les noms propres et les termes techniques.</em></p>]]></description>
+<content:encoded><![CDATA[<h1>À la French 💻 — semaine du 24 novembre 2026</h1>
+<p><strong>1 vidéo longue retenue, 14 extraits courts écartés.</strong></p>
+<hr />
+<h2>Pourquoi 80% des confs tech Françaises vont disparaitre</h2>
+<p>https://youtu.be/ezA82u5tHks</p>
+<h3>Résumé général</h3>
+<p>Dans cet épisode d'une heure, le trio d'À la French — Jean-Baptiste Kempf (président de VideoLAN/VLC), Steeve Morin et Mehdi Medjaoui — dresse un état des lieux des conférences tech en 2026, entre passion du live et crise économique du secteur.</p>
+<p>L'épisode s'ouvre sur les parcours des trois compères : JB Kempf, speaker infatigable qui donne des dizaines de talks par an dans le monde entier ; Steeve Morin, plus sélectif mais exigeant sur la qualité de ses présentations ; et Mehdi Medjaoui, organisateur de multiples conférences (API Days, Generation AI, Digital Resilience Europe). Ils reviennent sur la « 5ᵉ track » — les couloirs et les rencontres informelles, qui font selon eux la vraie valeur des conférences.</p>
+<p>Le cœur du débat porte sur la crise que traversent les conférences de taille moyenne, notamment associatives. Mehdi Medjaoui identifie trois causes principales qu'il appelle « la Triforce » :</p>
+<ol>
+<li>
+<p><strong>Les éditeurs créent leurs propres événements</strong> — Google (Google Cloud Summit), AWS (AWS re:Invent), Databricks, Snowflake organisent désormais leurs propres conférences, captant les budgets marketing qui allaient auparavant aux événements indépendants. Un sponsor qui verse 500 000 € ou 1 M€ pour sa propre conférence n'a plus 50 000 € à donner aux petits événements.</p>
+</li>
+<li>
+<p><strong>Le coût d'envoi d'un développeur</strong> — entre le billet (200-1000 €), la journée de salaire (300-500 € chargés), le train et l'hôtel, une journée en conférence revient à environ 2 000 € par personne. Un coût que les entreprises serrent de plus en plus.</p>
+</li>
+<li>
+<p><strong>L'inflation des tickets gratuits</strong> — les conférences commerciales inondent le marché de places gratuites pour remplir les salles, créant une « drogue du ticket gratuit » qui rend le public réticent à payer. Les conférences associatives, qui ne facturent pas le travail bénévole dans leur prix, n'arrivent pas à couvrir leurs coûts.</p>
+</li>
+</ol>
+<p>Ils mentionnent la lettre ouverte de l'AFUP (Association française des utilisateurs de PHP), signée par plus de 80 organisateurs, alertant sur la disparition annoncée de nombreuses conférences.</p>
+<h3>Sections thématiques</h3>
+<p><strong>00:00-03:00</strong> — Introduction : la passion des conférences et les profils des trois intervenants.</p>
+<p><strong>03:00-07:00</strong> — Les coulisses du speaker : JB Kempf parle de sa frénésie de conférences, du besoin de renouvellement, et de l'énergie que ça lui coûte.</p>
+<p><strong>07:00-10:00</strong> — La 5ᵉ track (les couloirs) : ce qui fait la valeur réelle d'une conférence, selon les trois compères.</p>
+<p><strong>10:00-12:00</strong> — Les trois causes de la crise (la Triforce) : sponsors-vendeurs, coût par développeur, tickets gratuits.</p>
+<p><strong>12:00-16:00</strong> — Panorama des conférences en France : des associations (Capitole du Libre, RMLL) aux communautés (PHP, Python, JavaScript, Android FR) jusqu'aux méga-événements (Vivatech, Web Summit, GITEX).</p>
+<p><strong>16:00-20:00</strong> — Le modèle fédératif : comment mutualiser les coûts en co-localisant plusieurs petites conférences dans un même lieu.</p>
+<p><strong>20:00-28:00</strong> — Organiser à différentes échelles : JB Kempf explique sa méthode pour la conférence VLC (~80 personnes, annoncée 1 mois à l'avance) et pourquoi il refuse de gérer de l'argent.</p>
+<p><strong>28:00-37:00</strong> — Les non-conférences (unconferences) : format sans agenda prédéfini où les participants construisent le programme sur place, avec des gommettes et des post-its.</p>
+<p><strong>37:00-45:00</strong> — Les stands VLC : le cône, la déconne, les goodies délirants (pièces romaines du IIe siècle modifiées à la Dremel, chasses au trésor dans les villes), et les déménagements improbables.</p>
+<p><strong>45:00-50:00</strong> — Le débat « Kempf contre Kempf » : faut-il encore aller aux conférences en 2026 ? Un faux procès où les arguments pour et contre s'affrontent.</p>
+<p><strong>50:00-56:00</strong> — Le sort des grandes conférences : NAB (Las Vegas) qui a chuté de 80 000 à 45 000 participants, la saturation des lieux à San Francisco à cause des conférences IA, l'éviction des autres événements.</p>
+<p><strong>56:00-1:05:00</strong> — Détails pratiques : badges sans nom, moquettes d'hôtels américains, absence de lumière du jour à Las Vegas, les slides de dernière minute, le prix exorbitant des retours vidéo (1 500 $), les panels trop préparés.</p>
+<h3>Citations clés</h3>
+<blockquote>
+<p>« La 5ᵉ track, c'est les couloirs. Les enregistrements des conférences, à part s'il y a des trucs incroyablement nouveaux, c'est pas ce que je cherche. »</p>
+<p>« Ça coûte 2 000 balles d'envoyer un développeur une journée en conférence. »</p>
+<p>« Les conférences associatives ne vendent pas assez cher parce qu'elles ne mettent pas le coût des bénévoles dans le prix final. »</p>
+<p>« Il faut sortir, il faut aller voir d'autres humains. Les conférences, c'est nécessaire à votre vie sociale et à l'écosystème. »</p>
+</blockquote>
+<h3>Conclusion</h3>
+<p>L'épisode se termine sur une note résolument optimiste : malgré les difficultés, les trois compères continuent d'organiser et d'aller à des conférences, et invitent la communauté à partager ses événements préférés. Ils annoncent plusieurs rendez-vous à venir : l'épisode live à TechRox le 30 novembre, Generation AI (1-2 décembre, sur le thème AI for Science avec Hugo Duminil-Copin, David Roux et Mistral), Digital Resilience Europe (2-3 décembre), <strong>la Conférence À la French le 3 décembre</strong> (toute la journée, avec surprises), le 25e anniversaire de VLC au Grand Rex le 8 décembre, et OSXP le 10 décembre.</p>
+<p><em>Note : la transcription est automatique (générée par YouTube) et peut comporter des erreurs, notamment sur les noms propres et les termes techniques.</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Clément Mondary — mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/mondary/2026-11-24.html</link>
@@ -4443,47 +4538,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <p><strong>Downbit</strong> — Application native (macOS, Windows, Linux) et CLI pour télécharger des vidéos et de l'audio depuis YouTube, Vimeo, TikTok et d'autres sites. On colle une URL, l'aperçu montre la vignette, le titre, la durée et les formats disponibles (1080p, 720p, audio seul). Le téléchargement se lance d'une touche. La version gratuite est pleinement fonctionnelle : deux téléchargements simultanés, quatre connexions chacun, MP4 et M4A, reprise après interruption. La version Pro (19 $, trois machines, mises à jour incluses) débloque des formats supplémentaires, la découpe sans réencodage, le saut des passages sponsorisés, l'enregistrement des lives et huit téléchargements simultanés. Le DRM (Netflix, Disney+, Spotify) reste hors de portée. Utile pour constituer une bibliothèque de vidéos pédagogiques sans dépendre de la disponibilité en ligne. <em>(gratuit fonctionnel, Pro 19 $, macOS/Windows/Linux)</em></p>
 <h2>Volume</h2>
 <p>5 billets publiés dans l'intervalle, 5 retenus, 0 écartés — l'édition du 19 novembre était entièrement composée d'outils utiles pour Nicolas (agents IA, développement, vidéo).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille CTAN — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/ctan/2026-11-20.html</link>
-<guid isPermaLink="false">ctan-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 01:41:55 +0100</pubDate>
-<category>CTAN</category>
-<description><![CDATA[<h1>Veille CTAN — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Deux annonces retenues sur quatre : une mise à jour corrective d'<strong>iftex</strong> (un de vos paquets) et un nouveau paquet <strong>wrapblock</strong> pour habiller du texte autour d'une image. Deux nouvelles entrées écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence).</p>
-<hr />
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<h3>iftex — version 1.0h (17 novembre 2026)</h3>
-<p>Le noyau LaTeX a publié une mise à jour corrective d'<strong>iftex</strong>, le paquet qui détecte le moteur de compilation (pdfTeX, XeTeX ou LuaTeX). Le correctif garantit que <code>\ifpdftex</code> vaut <code>false</code> sous LuaTeX, même lorsque des noms de compatibilité pdfTeX sont définis. Sans ce correctif, un document compilé avec LuaTeX pouvait se voir répondre « oui » à la question « es-tu sous pdfTeX ? » dans certaines configurations, ce qui aurait pu faire basculer des branchements conditionnels vers le mauvais chemin.</p>
-<p><strong>Pour votre classe nBook3</strong> : si vous compilez en LuaLaTeX (ce que vous faites avec <code>fontspec</code> et <code>unicode-math</code>), la macro <code>\ifpdftex</code> est désormais fiable dans tous les cas. Aucune adaptation de votre classe n'est nécessaire — le correctif est transparent.</p>
-<hr />
-<h2>Nouveaux paquets pertinents</h2>
-<h3>wrapblock — version 0.1.4 (licence LPPL 1.3c)</h3>
-<p>Antonin Marchand a publié <strong>wrapblock</strong>, un nouvel environnement qui place une image à côté d'un bloc de texte « fermé » : le texte est rétréci le long de l'image, puis reprend toute la largeur en dessous. Contrairement à <code>wrapfig</code>, l'environnement gère correctement les listes (de n'importe quelle profondeur) et les équations hors-texte, et ne coupe jamais l'image ni les lignes qui lui font face en travers d'un saut de page. Il fonctionne avec pdfLaTeX et LuaLaTeX, préserve la structure d'un PDF tagué, et nécessite un noyau LaTeX de juin 2023 ou ultérieur.</p>
-<p>Utile pour vos documents pédagogiques où une figure doit côtoyer une énumération ou un calcul sans que la mise en page ne parte en travers.</p>
-<p>Lien : https://ctan.org/pkg/wrapblock</p>
-<hr />
-<h2>Volume</h2>
-<p>4 annonces publiées dans l'intervalle, 2 retenues (dont 1 concernant vos paquets), 2 écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence pratique).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille CTAN — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Deux annonces retenues sur quatre : une mise à jour corrective d'<strong>iftex</strong> (un de vos paquets) et un nouveau paquet <strong>wrapblock</strong> pour habiller du texte autour d'une image. Deux nouvelles entrées écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence).</p>
-<hr />
-<h2>Mises à jour des paquets que vous utilisez</h2>
-<h3>iftex — version 1.0h (17 novembre 2026)</h3>
-<p>Le noyau LaTeX a publié une mise à jour corrective d'<strong>iftex</strong>, le paquet qui détecte le moteur de compilation (pdfTeX, XeTeX ou LuaTeX). Le correctif garantit que <code>\ifpdftex</code> vaut <code>false</code> sous LuaTeX, même lorsque des noms de compatibilité pdfTeX sont définis. Sans ce correctif, un document compilé avec LuaTeX pouvait se voir répondre « oui » à la question « es-tu sous pdfTeX ? » dans certaines configurations, ce qui aurait pu faire basculer des branchements conditionnels vers le mauvais chemin.</p>
-<p><strong>Pour votre classe nBook3</strong> : si vous compilez en LuaLaTeX (ce que vous faites avec <code>fontspec</code> et <code>unicode-math</code>), la macro <code>\ifpdftex</code> est désormais fiable dans tous les cas. Aucune adaptation de votre classe n'est nécessaire — le correctif est transparent.</p>
-<hr />
-<h2>Nouveaux paquets pertinents</h2>
-<h3>wrapblock — version 0.1.4 (licence LPPL 1.3c)</h3>
-<p>Antonin Marchand a publié <strong>wrapblock</strong>, un nouvel environnement qui place une image à côté d'un bloc de texte « fermé » : le texte est rétréci le long de l'image, puis reprend toute la largeur en dessous. Contrairement à <code>wrapfig</code>, l'environnement gère correctement les listes (de n'importe quelle profondeur) et les équations hors-texte, et ne coupe jamais l'image ni les lignes qui lui font face en travers d'un saut de page. Il fonctionne avec pdfLaTeX et LuaLaTeX, préserve la structure d'un PDF tagué, et nécessite un noyau LaTeX de juin 2023 ou ultérieur.</p>
-<p>Utile pour vos documents pédagogiques où une figure doit côtoyer une énumération ou un calcul sans que la mise en page ne parte en travers.</p>
-<p>Lien : https://ctan.org/pkg/wrapblock</p>
-<hr />
-<h2>Volume</h2>
-<p>4 annonces publiées dans l'intervalle, 2 retenues (dont 1 concernant vos paquets), 2 écartées (gabarit de thèse universitaire, mise à jour de données de marquage sans incidence pratique).</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
