@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Veille r/DeepSeek — lundi 23 novembre 2026</title>
+<title>Veille r/DeepSeek — mardi 23 novembre 2026</title>
 <link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
 <style>
  body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
@@ -18,27 +18,99 @@
 </style>
 </head>
 <body>
-<h1>Veille r/DeepSeek — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Chez l'hébergeur Prime Intellect, une copie de DeepSeek V4.1 Flash privée de ses refus a répondu aux clients pendant 53 heures, du 8 au 10 novembre ; l'entreprise l'a reconnu le 19 novembre.</li>
-<li>OpenRouter chiffre enfin l'affaire des prompts MiniMax : trois hébergeurs écartés et 125 points de terminaison retirés du régime « zéro rétention », avec les enquêtes publiées par Together, Novita, Phala et Atlas Cloud.</li>
-<li>L'accès payant se déplace vers l'abonnement : un revendeur vend DeepSeek V4.1 Flash à 0,99 $ par mois, tandis que la plateforme d'agents kosem ouvre sa bêta en laissant le modèle sur le compte DeepSeek de l'utilisateur.</li>
-</ul>
+<h1>Veille r/DeepSeek — mardi 23 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Zhipu AI publie GLM-5.4, premier modèle fondé sur l'architecture Loop Transformer, comparable en intelligence à des modèles de 2 à 3 trilliones de paramètres. Trois projets locaux méritent l'attention : NariQ quantifie Qwen3.8-27B à 3 bits sans perte perceptible, NukeTorch affiche 517 tok/s pour Qwen3.6-35B sur puce Apple, et le projet Deeprubik montre qu'un unique prompt DeepSeek Flash génère un Rubik's cube complet en une session autonome.</p>
 <h2>Modèles et poids</h2>
-<p><strong>Une copie sans refus de DeepSeek V4.1 Flash a répondu aux clients de Prime Intellect pendant 53 heures.</strong> L'avis de sécurité PI-SA-2026-001, publié le 19 novembre sur https://www.primeintellect.ai/security/advisories, indique que le modèle derrière le point de terminaison <code>deepseek/deepseek-v4.1-flash</code> a été remplacé, du 8 novembre à 1 h 24 UTC au 10 novembre à 6 h 35 UTC, soit 53 heures et 11 minutes, par une version « abliterated » dont le mécanisme de refus a été retiré sans réentraînement. Une partie non autorisée a donc répondu à la place de DeepSeek : la note de capacités est restée identique, la propension à refuser est devenue quasi nulle. Le format des conversations, les réglages du serveur et le tokenizer n'ont pas bougé, si bien que rien, côté client, ne signalait la substitution. Prime Intellect affirme avoir prévenu chaque client concerné et conseille de relire les réponses reçues pendant ces deux jours. Le modèle d'origine est publié depuis le 10 septembre 2026 sur Hugging Face sous licence MIT, qui autorise la modification et l'usage commercial ; des dizaines de copies modifiées du même genre y sont disponibles, et c'est l'une d'elles qui a servi. Le détail des faits vient de l'article de Marc Winer du 22 novembre (https://maccus.fr/en/prime-intellect-deepseek-swap/), arrivé sur Hacker News avec un seul point, donc passé inaperçu ; l'avis de première main confirme l'essentiel mais ne nomme pas la partie responsable, et l'on ignore comment l'intrus a atteint ce déploiement.</p>
-<p><strong>Les identifiants de modèles de l'API ont changé dans la documentation officielle.</strong> D'après https://api-docs.deepseek.com/, <code>deepseek-flash</code> désigne maintenant DeepSeek-V4.1-Flash-1017 et <code>deepseek-v4-pro</code> DeepSeek-V4.1-Pro-0813. Les anciens noms <code>deepseek-v4-flash</code> et <code>deepseek-v4-flash-vision-exp</code> sont retirés : les requêtes qui les emploient sont servies par V4.1-Flash-1017 et facturées au tarif Flash, donc un script ancien continue de tourner mais sur un autre modèle que celui qu'il croyait appeler. La même page documente un mode de raisonnement explicite (<code>thinking</code>) et un paramètre <code>reasoning_effort</code> réglable, et confirme que le harnais maison, DeepSeek Harness, reste en avant-première pour développeurs ; le dépôt correspondant (https://github.com/deepseek-ai/deepseek-harness) affiche 285 549 étoiles, licence MIT, dernière poussée le 22 novembre. Ce point ne vient d'aucun fil du subreddit : il est lu directement dans la documentation.</p>
+<h3>GLM-5.4 — Loop Transformer chez Zhipu AI (GLM)</h3>
+<p>Zhipu AI publie <a href="https://z.ai/blog/glm-5.4">GLM-5.4</a>, son premier modèle phare construit sur l'architecture « Loop Transformer ». Le principe : au lieu d'exécuter chaque couche une fois par passage avant, un groupe de couches partagées boucle plusieurs itérations, affinant les états cachés à chaque tour. Cela donne un réseau plus profond sans ajouter de paramètres.</p>
+<p>GLM-5.4 applique ce mécanisme à l'échelle 750 milliards : 28 couches du modèle GLM-5 de base sont bouclées deux fois chacune, avec des portes progressives par jeton pour stabiliser les normes d'activation. Résultat annoncé : un niveau d'intelligence comparable à des modèles de 2 à 3 trilliones de paramètres. Les mesures couvrent la programmation, la cybersécurité, la modélisation 3D et le contrôle physique — toutes des tâches nécessitant des chaînes de raisonnement multi-étapes.</p>
+<p><strong>Limitation signalée</strong> : le modèle a tendance à entrer dans des boucles de réflexion excessives (« marathon thinking »). Cette persévoration améliore néanmoins systématiquement la précision au-delà de ce que le compte de paramètres pourrait laisser attendre.</p>
+<p>Le thread HN associé atteint <strong>1033 points et 338 commentaires</strong>. Les commentateurs comparent cette approche aux recherches historiques sur les Universal Transformers (Schmidhuber, 2018) et notent que Thinking Machines a également publié il y a une semaine un modèle bouclé ouvert (Inkling 2 Mini) via son blog HuggingFace.</p>
+<p>Source officielle : <a href="https://z.ai/blog/glm-5.4">z.ai/blog/glm-5.4</a></p>
+<h3>NariQ — quantification agressive de Qwen3.8-27B</h3>
+<p><a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">NariQ v1</a> propose des poids GGUF de Qwen3.8-27B à 3, 2,5 et 2 bits par paramètre. La méthode est une quantification post-entraînement (PTQ) à codage en treillis, calibrée sur des traces réelles d'agents de codage.</p>
+<p>Résultats sur DeepSWE v1.1 (113 tâches × 3 rounds) :</p>
+<table>
+<thead>
+<tr>
+<th>Fichier</th>
+<th>Taille</th>
+<th>Pass@1 moyen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BF16 (référence)</td>
+<td>53,8 GB</td>
+<td>39,8 %</td>
+</tr>
+<tr>
+<td>NariQ 3-bit</td>
+<td>10,1 GB</td>
+<td>41,0 % (légèrement meilleur)</td>
+</tr>
+<tr>
+<td>NariQ 2,5-bit</td>
+<td>8,4 GB</td>
+<td>41,9 %</td>
+</tr>
+<tr>
+<td>NariQ 2-bit</td>
+<td>6,8 GB</td>
+<td>28,6 %</td>
+</tr>
+</tbody>
+</table>
+<p>À 3 bits, le fichier tient dans 10 GB et égale ou dépasse légèrement la référence BF16 sur plusieurs benchmarks (DeepSWE, Terminal-Bench, MGSM, RealWorldQA). Requis : une fork de llama.cpp dédié.</p>
+<p>Dépôt HuggingFace : <a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">nari-labs/Qwen3.8-27B-NariQ-GGUF</a></p>
 <h2>Prix, accès et quotas</h2>
-<p><strong>Le service gratuit reste plafonné, et les chiffres se précisent.</strong> Le fil le plus voté du week-end (78 points) ne fait que reprendre la capture d'écran des nouvelles limites ; les précisions viennent d'ailleurs. Depuis le 16 novembre, la saisie est plafonnée à environ 40 000 caractères, la lecture de documents à 20 pages ou 10 000 jetons, et les conversations longues inactives depuis 72 heures — selon d'autres témoignages, sept jours — ne peuvent plus être reprises et un quota quotidien coupe l'usage avec un message invoquant la congestion des serveurs. Le compte rendu de BigGo (https://finance.biggo.com/news/9e6a3531-1613-407c-934b-a5e14ec5ef20) donne la cause probable : le volume hebdomadaire de jetons servis par DeepSeek V4.1 Flash sur OpenRouter est passé de 7,22 billions fin juillet à 33,6 billions fin octobre, puis à 59,2 billions début novembre, premier rang mondial, avec huit incidents de service depuis octobre. Caixin, relayé par NeoTeo (https://www.neoteo.com/en/deepseek-usage-limits-reported-caps-for-chats-and-documents), confirme les seuils de 72 heures et de 20 pages. Aucune communication officielle de DeepSeek ne fixe ces règles, et les témoignages divergent sur le délai d'inactivité : ce qui est établi, c'est le fait des limites, pas leur barème exact. L'API n'est pas concernée, elle garde sa facturation à l'usage et ses propres limites de concurrence.</p>
-<p><strong>Un revendeur transforme l'accès DeepSeek en abonnement à 0,99 $ par mois.</strong> DeepRelay (https://deeprelay.ai/pricing) propose un plan « Base » à 0,99 $ par mois comprenant 500 millions de jetons d'entrée et 50 millions de jetons de sortie mensuels, avec un plafond glissant de 125 millions et 12,5 millions sur sept jours ; le plan « Plus » à 4,99 $ multiplie ces montants par cinq. DeepSeek V4.1 Flash 1017 fait partie des modèles servis directement, mais les autres comptent davantage : Kimi K3.1 Pro décompte l'allocation trente fois plus vite, GLM 5.3 douze fois, GLM 5.3 Flash 1,75 fois. Au-delà des plafonds, les appels continuent au tarif à l'usage, et l'abonnement ne peut pas être payé avec des crédits. Le fil qui annonçait 550 millions de jetons pour 8 $ d'usage équivalent (https://www.reddit.com/r/DeepSeek/comments/1y2p7cw/cheapest_api_plan_for_light_users_and_role/) est cohérent avec la grille vérifiée sur le site, et un second fil reprend la même grille (https://www.reddit.com/r/DeepSeek/comments/1y2kxqo/api_pricing_plans_from_099mo_permodel_rates/). Il s'agit d'un intermédiaire, pas de DeepSeek : ni la qualité de service ni la politique de données ne sont garanties par l'éditeur du modèle.</p>
+<h3>Alibaba Cloud Model Studio — le plan Lite décrypté</h3>
+<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3fyh9/alibaba_token_plan_lite_6mo_with_deepseek_v41/">lien</a>) a testé et décortiqué le plan « Lite » d'Alibaba Cloud ($6/mois, 20 000 crédits) avec DeepSeek V4.1 Flash comme moteur quotidien.</p>
+<p>Alibaba n'affiche pas de conversion crédit → jeton. L'auteur a contre-percé les taux en utilisation réelle : 100 crédits par million de jetons en entrée, 400 par million en sortie, 10 par million en lecture cache. Avec un hit-rate cache typique d'agent de 95 %, cela représente environ <strong>1,2 milliard de jetons par mois pour 6 dollars</strong>.</p>
+<p>Questions ouvertes : le débit et la latence passés par la passerelle Singapour conviennent-ils à des boucles d'agent, ou le service est-il throtté ? Aucun retour mesuré ne répond encore.</p>
+<h3>deeprelay — la réalité du « 500 millions de jetons »</h3>
+<p>Le même subreddit publie un fil détaillé (<a href="https://www.reddit.com/r/DeepSeek/comments/1y33162/what_deeprelays_099_500m_token_deepseek_v41_flash/">lien</a>) analysant le plan « Base » de deeprelay ($0,99/mois). deeprelay affiche 500 millions de jetons mais ces chiffres sont pondérés selon le modèle : chaque famille de modèle a un multiplicateur de coût annoncé. L'auteur a calculé ce que chaque tier donne réellement en jetons nominaux, et intègre deeprelay comme fournisseur secondaire dans <a href="https://opencode.ai">OpenCode</a>. Le détail des multiplicateurs n'est pas vérifiable sans accès au site — la méthode repose sur une analyse rétroactive des facturations.</p>
+<h3>Coût réel du contexte long — AdaptiqAI</h3>
+<p>Theis, CTO d'<a href="https://adaptiqai.com">AdaptiqAI</a>, rapporte avoir soumis <strong>7 millions de jetons</strong> à DeepSeek V4.1 Flash en une seule requête : une année complète de recherche LLM (architectures, mémoire, algorithmes, mathématiques) combinée à l'intégralité de leur dépôt de code. Un LLM normal gère entre 250 000 et 1 000 000 de jetons.</p>
+<p>Résultat : le modèle connaissait tout dès la première question. Il trouve des connexions transversales dans la recherche et propose des solutions non évidentes. Il vérifie toujours en relisant, mais ne fait pas appel à des agents multiples. Dans un codebase déjà connu, l'agent résout les tâches <strong>2,2× plus vite</strong> et écrit <strong>30 % de jetons en moins</strong>, car il sait où se trouvent les éléments sans chercher d'abord.</p>
+<p>Tarifs annoncés pour le service live (hébergement Europe) : 0,60 $/M input, 2,00 $/M output, 0 $ pour le KV cache. Seuls les nouveaux jetons sont facturés ; les millions déjà mémorisés ne le sont pas à nouveau.</p>
+<p>Discussion : <a href="https://www.reddit.com/r/DeepSeek/comments/1y3mlfx/i_gave_deepseek_v41_flash_7_million_tokens_to/">r/DeepSeek/comments/1y3mlfx</a></p>
+<h3>DeepSeek Harness — build communautaire « Uncensored »</h3>
+<p><a href="https://github.com/Water-Run/deepseek-harness-uncensored">Water-Run/deepseek-harness-uncensored</a> (licence GPL-3.0) fournit un environnement de bureau basé sur le DeepSeek Harness officiel, avec quatre modes spécialisés : développement, audit sécurité (avec agent réseau isolé), ingénierie inverse (REA 6.9 intégré), et écriture longue. Fonctionnalités additionnelles : questions latérales, suivi de quota en temps réel, mémoire inter-session, et prédiction d'entrée. Windows et Linux. Dépôt : 602 contributions depuis octobre 2026.</p>
+<h2>Auto-hébergement et quantification</h2>
+<h3>NariQ (cf. section Modèles)</h3>
+<p>Trois fichiers GGUF de Qwen3.8-27B disponibles à 3, 2,5 et 2 bits. Exige un fork de llama.cpp de Nari Labs. Compatible single-GPU.</p>
+<h3>NukeTorch — 517 tok/s sur Apple Silicon</h3>
+<p>Le projet <a href="https://github.com/NukeTorch/Qwen3.6-35B">NukeTorch</a> affiche <strong>517,5 tok/s</strong> pour Qwen3.6-35B (4-bit, architecture MoEA 35B+3B) sur puce Apple, dans un moteur C++/Metal dédié. Le benchmark compare directement à mlx-lm, llama.cpp et oMLX Splash + DFlash2.</p>
+<p>Points clés : efficacité énergétique de 7,6 à 9,4 tok/J, consommation RAM stable autour de 24,7 GB. Supporte jusqu'à 8 utilisateurs simultanés (821,8 tok/s cumulés). Installation par script <code>curl</code>, serveur HTTP compatible API OpenAI sur port configurable.</p>
+<p>Vidéo démo et rapport de benchmark détaillé en lien README.</p>
 <h2>Intégrations et outils tiers</h2>
-<p><strong>kosem ouvre sa bêta publique avec un support natif de l'API DeepSeek.</strong> La plateforme, présentée le 16 novembre (https://kosem.ai/blog/introducing-kosem-agents-with-identity-and-access), exécute chaque agent de codage dans un microVM isolé, avec son propre disque et une identité distincte ; les accès sont délivrés par jetons courts limités à un dépôt, plutôt que par la clé personnelle de l'utilisateur. L'intérêt pour DeepSeek est explicite : on branche sa propre clé <code>api.deepseek.com</code>, DeepSeek facture directement, kosem ne prend aucune marge sur les jetons et ne facture pas les appels de modèle des agents. La tarification (https://kosem.ai/pricing) est honnête à lire : plan Hobby à 0 $ avec 10 $ de crédits de démarrage valables soixante jours, calcul facturé à la seconde, 0,0504 $ par cœur-heure et 0,0162 $ par gigaoctet-heure, soit 0,230 $ de l'heure pour un environnement de 2 cœurs et 8 Go, et 15 $ par mois pour le plan Pro. Deux réserves : l'annonce vient de l'équipe qui construit le produit (elle le déclare), et les chiffres de capacité ou de rapidité ne sont pas vérifiés indépendamment.</p>
-<p><strong>TonkAI se présente comme une passerelle unique, compatible OpenAI, vers 55 modèles.</strong> Le service (https://tonkai.app/) expose une API à l'adresse <code>https://api.tonkai.app/v1</code> où l'on désigne le modèle sous la forme fournisseur/modèle, avec flux, outils et mode JSON là où le modèle les accepte. DeepSeek y figure par deux entrées, dont DeepSeek V4 Pro annoncé avec un million de jetons de contexte ; cette classe « Standard » n'est incluse qu'à partir du plan Plus, à 12,99 € par mois, les plans inférieurs se limitant aux modèles légers (https://tonkai.app/pricing). L'éditeur affirme que les prompts et les réponses ne sont jamais journalisés et qu'un dépassement d'allocation renvoie une erreur 402 sans facturation supplémentaire : ce sont des engagements commerciaux, pas des faits vérifiés. L'entrée n'a qu'un point sur Hacker News, donc personne ne l'a encore éprouvée.</p>
-<p><strong>OpenRouter tranche après l'affaire des prompts MiniMax : trois hébergeurs écartés, 125 points de terminaison retirés du « zéro rétention ».</strong> Dans une note du 22 novembre (https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/), la plateforme indique avoir suspendu trois fournisseurs à la suite des tests menés par le chercheur de Dragos, retiré 125 points de terminaison de l'éligibilité à la rétention nulle — dont certains par précaution, sans qu'ils soient mis en cause — et prévenu tous les clients potentiellement touchés. Elle ajoute vérifier désormais les chemins réseau pour repérer les requêtes réexpédiées à des tiers, et exiger des garanties avant de rétablir la rétention nulle. Les enquêtes des fournisseurs sont publiées : Together reconnaît (https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026) que des échantillons de prompts envoyés aux modèles MiniMax M3, GLM-5.2 et Kimi K2.6 en juin et juillet 2026 ont été téléchargés par un tiers, après qu'un agent de codage eut commité dans un dépôt public une clé d'accès à un dépôt Hugging Face privé ; cinq des identifiants testés ensuite par l'intrus étaient des canaris de l'expérience Dragos, et Together passe la rétention nulle par défaut pour les nouveaux comptes. Novita, Phala et Atlas Cloud ont également publié. Le point à retenir pour un usage de DeepSeek : aucun modèle DeepSeek n'est nommé parmi les fuites constatées, qui portent sur MiniMax, GLM et Kimi, mais le problème est celui du transport — le même que celui qui a fait relayer l'affaire sur r/LocalLLaMA (https://www.reddit.com/r/LocalLLaMA/comments/1y1we95/openrouter_requests_to_minimax_models_may_have/) et documenté par Ars Technica (https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/).</p>
+<h3>Deeprubik — Rubik's cube entièrement généré par un prompt</h3>
+<p>Projet <a href="https://github.com/asamarts/deeprubik">deeprubik</a> : un puzzle Rubik's cube photoréaliste dans le navigateur, généré à partir d'un <strong>unique prompt</strong> à DeepSeek Flash, sans aucun code humain ni modification ultérieure. Le modèle a été piloté par un agent autonome custom.</p>
+<p>Mesures de la session (rapportées par le harness) :<br />
+- <strong>6 721 lignes</strong> de code · 30 fichiers · 1 commit<br />
+- <strong>87,5 millions de jetons</strong> totaux (cache hit rate 99,3 %)<br />
+- <strong>55 minutes</strong> de wall-clock<br />
+- <strong>~1,22 $</strong> de coût total<br />
+- <strong>38 tests unitaires + 45 tests end-to-end</strong> générés automatiquement<br />
+- Supporte des cubes de 1×1×1 à 100×100×100 en 2 appels de dessin</p>
+<p>Technologies : instanced mesh WebGL, matériaux PBR (ABS clearcoat, alliage anodisé, cristal translucide, satin doux), rendu HDR PMREM, ACES tone mapping. Puzzle jouable en drag ou notation clavier.</p>
+<h3>Compétition Inkling 2 Mini vs Qwen 3.8</h3>
+<p>Un essay vidéo (<a href="https://www.youtube.com/watch?v=TcrPYFdvR7c">lien</a>) oppose Inkling 2 Mini (26 B) à Qwen 3.8, explorant si le plus petit modèle peut rivaliser sur les tâches de codage. À lire aussi dans le même esprit : l'article de <a href="https://getstream.io/blog/local-video-audit-skill/">Stream.io</a> sur le portage d'une skill d'audit code vers Inkling 2 Mini et Qwen3.8 pour exécution locale sur MacBook Pro.</p>
+<h3>Technique de commutation régulier / ablitéré</h3>
+<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3spu1/gpt_astra_and_i_found_a_way_to_switch_between/">lien</a>) annonce une méthode permettant de basculer entre le modèle DeepSeek standard et une version ablitérée <strong>à partir d'un seul set de poids</strong>, aidé par GPT Astra. Aucune autre détail technique n'est fourni dans le fil original. Méthode non vérifiée à ce stade.</p>
 <h2>Méthodes et retours d'expérience</h2>
-<p><strong>Faire tourner plusieurs agents DeepSeek en parallèle casse sur deux points précis, tous deux documentés.</strong> Le premier est le raisonnement : l'API DeepSeek exige que <code>reasoning_content</code> soit renvoyé lors des appels d'outils multi-étapes ; un adaptateur compatible OpenAI générique qui l'omet fait échouer l'agent juste après sa première exécution d'outil, et le champ <code>thinking</code> n'est pas celui des autres fournisseurs. Le second est le cache : la documentation officielle (https://api-docs.deepseek.com/guides/kv_cache) explique qu'un succès de cache exige une correspondance exacte et complète avec une unité de préfixe persistée, et que ces unités se créent aux frontières de requête et par détection de préfixe commun. Conséquence pratique : si le harnais modifie le prompt système d'un tour à l'autre — un horodatage, un ordre de clés JSON qui change dans la liste des outils — la session longue repaie le prix d'entrée plein à chaque étape au lieu du prix de cache. Le troisième enseignement est matériel : quatre agents sur un même portable se disputent ports, conteneurs Docker et branches git, et les lancer sans restriction expose les clés SSH et les fichiers <code>.env</code> de la machine. Ces constats viennent du retour d'expérience publié avec la bêta de kosem (https://www.reddit.com/r/DeepSeek/comments/1y2e0p4/running_parallel_deepseek_coding_agents_in/) ; les propriétés de l'API, elles, se vérifient dans la documentation citée.</p>
-<h2>Volume</h2>
-<p>100 entrées examinées — 80 préparées par la shortlist de 00 h 05 et 20 arrivées ensuite dans le journal Hacker News —, 13 publications retenues réparties en huit entrées, 87 écartées. Taux de rétention : 13 %. Ce taux bas est normal ici : le subreddit vit surtout de questions, de plaintes sur les nouvelles limites et de captures d'écran sans texte, et Hacker News déverse dans le journal des sujets sans rapport avec les modèles. Aucune erreur de collecte signalée (dernière passe le 22 novembre à 23 h 51 UTC).</p>
+<h3>Travail avec 7 millions de jetons (méthode AdaptiqAI)</h3>
+<p>La approche d'AdaptiqAI consiste à alimenter DeepSeek V4.1 Flash d'un contexte massif contenant toute la documentation de référence et le code source du projet concerné, puis à lancer l'optimisation directement. Le modèle connaît déjà le contenu, évite les phases de recherche multi-agents, vérifie ses réponses par relecture interne, et agit en conséquence. Avantage clé : facturation uniquement des nouveaux jetons produits, pas des millions mémorisés.</p>
+<h3>Sovereign Skills — exécution locale d'une skill d'audit</h3>
+<p>L'équipe video de Stream (<a href="https://getstream.io/blog/local-video-audit-skill/">article</a>) explique pourquoi et comment porter une skill d'audit code sur un MacBook Pro plutôt que via un cloud. Trois niveaux de souveraineté identifiés : conformité (résidence des données), contrôle opérationnel (indépendance vis-à-vis des changements de conditions fournisseurs), et contrôle modèle (open weights, fine-tuning propriétaire). Benchmark comparatif Inkling 2 Mini vs Qwen3.8.</p>
+<h2>Autres passages</h2>
+<ul>
+<li><strong>Jensen Huang réintégré chez Nvidia</strong> — titre très populaire sur HN (&gt;2000 points cumulés sur plusieurs URLs redondantes). Peu de lien direct avec DeepSeek.</li>
+<li><strong>Incident MiniMax/OpenRouter</strong> — une tierce partie aurait lu des prompts envoyés via les endpoints MiniMax de juin à octobre 2026 (<a href="https://news.ycombinator.com/item?id=50591694">HN</a>). OpenRouter retire le label Zero Data Retention pour ces endpoints. Probablement affecte les flux passant par Novita, StreamLake et AtlasCloud.</li>
+</ul>
+<h2>Volume — 82 posts publiés dans l'intervalle, 13 retenus, 69 écartés, taux de rétention 15,9 %.</h2>
 <footer>Édition du lundi 23 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
 </body>
 </html>

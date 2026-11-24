@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opencode — mardi 24 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opencode.xml" title="r/opencode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opencode — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<ul>
+<li>Deux nouveaux plugins signés par la communauté : un suivi de coût de session pour le TUI et un outil d'annotation visuelle en navigateur.</li>
+<li>Le subreddit aborde les modèles gratuits qui apparaissent sur Go (Qwen, Kimi) et une stratégie d'orchestration multi-agents populaire.</li>
+<li>Trois serveurs MCP et un utilitaire HN méritent attention ; GLM-5.4 fait sensation sur Hacker News.</li>
+</ul>
+<h2>Versions et fonctionnalités</h2>
+<p><strong>Qwen4 Max gratuit dans opencode.</strong> Plusieurs utilisateurs rapportent que Qwen4 Max Free apparaît parmi les modèles disponibles dans opencode, bien que le compte officiel n'en ait rien confirmé à ce jour (<em>vu sur Reddit</em>, sans vérification officielle). Les questions sur Qwen 4.0 et son accès via Go se multiplient également. [Source : posts t3_1y3jy6c, t3_1y3i20l]</p>
+<p><strong>Kimi K3.1 Pro disponible gratuitement via NVIDIA NIM.</strong> Le modèle est maintenant listé comme point d'accès libre dans opencode, avec une discussion active de 13 commentaires sur son utilisation et ses performances. [Source : post t3_1y36cpn]</p>
+<p><strong>Problèmes de disponibilité des modèles Litellm dans le TUI.</strong> Le TUI a cessé de lister les modèles configurés via Litellm. Aucun correctif n'a été annoncé publiquement. [Source : post t3_1y3l5cq]</p>
+<p><strong>DeepSpeed V4.1 Flash – TPS variable signalé.</strong> Un thread de six commentaires signale un TPS lent sur DeepSeek V4.1 Flash avec le plan Go, mais aucun benchmark chiffré n'a été partagé. [Source : post t3_1y3pn3t]</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p><strong>Orchestrateur + sous-agents : DeepSeek V4.1 Flash + Hyperthink Y4 Flash.</strong> Une méthode gagnante partagée par un utilisateur : utiliser DeepSeek V4.1 Flash comme orchestrateur (planification, prévoyance) et les sous-agents Hyperthink Y4 Flash pour l'exécution du code, contournant ainsi la limite d'utilisation gratuite. Y4 Flash étant illimité, c'est actuellement le réglage le moins cher. Le fil a suscité 17 commentaires. [Source : post t3_1y3foqy]</p>
+<p><strong>Limite Google AI Pro atteinte deux fois avec Antigravity Neon.</strong> Un utilisateur rapporte avoir épuisé sa limite hebdomadaire Google AI Pro deux fois consécutives en travaillant avec Antigravity Neon dans opencode, jugeant « Neon » nettement supérieur à Opus 5.5 pour ses besoins. Le fil recueille huit commentaires. [Source : post t3_1y3dws8]</p>
+<p><strong>GLM-5.4 sur HN : un nouveau « loop transformer » pour le codage général.</strong> Publié sur Hacker News avec 189 points et 84 commentaires, GLM-5.4 présente un premier architecture « Loop Transformer » ciblant le codage généralisé. L'article original est à <a href="https://z.ai/blog/glm-5.4">z.ai/blog/glm-5.4</a>. Bien que non spécifique à opencode, cette annonce concerne directement les modèles utilisés avec l'outil. [Source : HN item 50609685]</p>
+<p><strong>GLM-5.4 désormais disponible pour tous les abonnés au plan GLM Coding.</strong> Disponible en réponse aux questions de promotion posées sur le subreddit. [Source : HN item 50607775]</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>opencode-usage-insights — plugin pour afficher le coût de session.</strong> Le TUI ayant cessé d'afficher le coût de la session et du dernier prompt, l'auteur a développé un plugin qui ajoute en bas du TUI et dans le panneau latéral : coût, temps, réutilisation du cache. Il inclut aussi un panneau de statistiques complet avec la commande <code>/usage</code>. Auteur : <code>pasteldebytes</code>. [Source : post t3_1y3pr7u]</p>
+<p><strong>design-in-browser — annoter des designs en direct avec l'agent.</strong> Plugin Vite+React (pas d'extension Chrome) permettant de chatter avec Claude Code ou OpenCode, dessiner directement sur la page, et laisser des commentaires pour demander des modifications. Testable avec design-in-browser. [Source : post t3_1y3nstl — npmjs.com/package/design-in-browser]</p>
+<p><strong>Geo-SEO-MCP-Pro — serveur MCP open-source pour vérifier la préparation des crawlers IA.</strong> Permet de tester la visibilité IA d'un site (fichiers <code>llms.txt</code>, structured data, sitemaps, performance). Licence MIT, 1 étoile GitHub, publié le 23 novembre 2026 par alexchen (@alicexixi85). Voir <a href="https://github.com/alicexixi85/geo-seo-mcp-pro">github.com/alicexixi85/geo-seo-mcp-pro</a>. [Source : HN item 50608126]</p>
+<p><strong>AgentClock — serveur MCP donnant une horloge fiable aux agents IA.</strong> Résout le problème des agents perdant leur sens du temps pour des tâches nécessitant des durées ou des échéances. Serveur public partageable. Lien : <a href="https://agentclock.andalabx.com/">agentclock.andalabx.com</a>. [Source : HN item 50615107]</p>
+<p><strong>Tilen — API de planification et serveur MCP pour agents IA.</strong> Interface de scheduling destinée aux agents, avec serveur MCP associé. Lien : <a href="https://www.tilen.cc">tilen.cc</a>. [Source : HN item 50612145]</p>
+<p><strong>Promptfolio — découvrir quels prompts recommandent votre serveur MCP.</strong> Outil de découverte de serveurs MCP et de visualisation des prompts qui recommandent votre serveur. Lien : <a href="https://www.mcpfolio.com">mcpfolio.com</a>. [Source : HN item 50616069]</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Migration Claude Code → OpenCode : retour d'expérience.</strong> Un utilisateur de Claude CLI demande les avantages concrets d'opencode pour un usage similaire avec des modèles Anthropic. Les 22 commentaires révèlent plusieurs arguments : abstraction fournisseur, orchestration native, gestion multi-agents, et liberté de choisir différents backends. [Source : post t3_1y3ber1]</p>
+<p><strong>Retour positif mitigé sur le plan Go.</strong> Un utilisateur sceptique avant achat confirme que DeepSeek V4.1 Flash subventionné par le plan offre une qualité supérieure, malgré quelques pannes isolées et une TPS très variable. Mentionne l'utilisabilité globale. Le fil recueille 14 commentaires. [Source : post t3_1y3hz4h]</p>
+<h2>Volume</h2>
+<p>95 éléments passés en revue dans la shortlist, 10 retenus, 85 écartés (taux de rétention 11 %). Parmi les écartés : demandes de conseil d'achat, questions de dépannage sans données, promotions de produits tiers, sujets hors-thème (HN), et contenus sans fait vérifiable ni méthode reprenable.</p>
+<footer>Édition du mardi 24 novembre 2026 — <a href="https://opware2000.github.io/veille/opencode.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
