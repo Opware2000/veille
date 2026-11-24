@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Renaud Dékode — mercredi 25 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../renaud.xml" title="Renaud Dékode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Renaud Dékode — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune brève supplémentaire : l'édition se concentre sur une seule vidéo longue, un décodage de fond dont les grandes lignes manquaient aux précédentes couvertures du même live.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>La distinction modèle / harnais, pourquoi c'est crucial (MYVQ19hAqWk, 31 min)</strong></p>
+<p>Renaud pose une idée simple mais rarement explicitée dans la couverture grand public : tout le monde confond le LLM (le « moteur ») avec le produit qu'on utilise au quotidien (le « harnais »). Un LLM seul est un fichier de poids qui prend des tokens en entrée et produit des tokens en sortie. Il ne se souvient de rien entre deux appels, il ne consulte pas vos fichiers, il ne navigue pas sur le web, il ne sait pas exécuter du code ou générer des images par lui-même. Tout ce qui rend un LLM utile vient du logiciel qui l'entoure — et c'est ce que Renaud appelle le harnais.</p>
+<p>Il propose quatre natures de harnais pour structurer la réflexion :</p>
+<p>Le harnais <strong>ergonomique</strong>, c'est ce qui rend le modèle utilisable au quotidien : interface conversationnelle, historique à gauche, reconnaissance vocale, mise en forme des réponses, tableaux, listes, dialogue tour à tour. ChatGPT.com a bluffé le monde en 2022 non pas grâce à GPT-3 (le modèle existait depuis deux ans), mais grâce à cette interface. L'ergonomie ne rend pas le modèle plus capable, elle le rend simplement accessible.</p>
+<p>Le harnais <strong>fonctionnel</strong>, lui, ajoute réellement des capacités au modèle : rôles systèmes (un système prompt enregistré fait répondre Opus 5.5 différemment selon qu'il est en mode « prof de maths » ou « pote »), recherche web intégrée (sans laquelle un modèle d'entraînement à six mois répond faux sur l'actualité récente), exécution de code, génération d'images via d'autres modèles, connecteurs MCP (agenda Gmail, etc.), skills personnalisés (procédures écrites qui disent au modèle quelle procédure suivre pour facturer, par exemple). Avec Kiro v4, gratuit et local, on peut combiner plusieurs modèles différents (GPT-6 Astra, Sonnet 5.5, Gemini 4 Neon) dans le même harnais, basculer d'un modèle à l'autre sans refaire sa configuration.</p>
+<p>Le harnais <strong>organisationnel</strong> impose un processus au lieu d'une réponse brute : boucle écrire-tester-corriger de Claude Code, plans présentés avant action, sous-agents spécialisés (un pour la comptabilité, un pour les relances client), vérification croisée par différents modèles. C'est ici que se joue la différence entre utiliser un modèle comme boîte de dialogue et l'utiliser comme outil de travail organisé. Claude Cowork est cité comme exemple de harnais organisationnel réussi pour le travail collaboratif ; Claude Code, comme harnais spécialisé développeur. Le même modèle (Claude 5.5) donne des produits complètement différents selon le harnais qu'on lui applique.</p>
+<p>Le harnais <strong>structurel</strong> impose un mode de fonctionnement contraint : Gemini Notebook oblige structurellement à travailler sur des documents de référence avec RAG vectorisé, et refuse catégoriquement les requêtes hors contexte documentaire. Même LLM derrière, mais architecture d'usage entièrement différente.</p>
+<p>La conséquence directe : créer son propre harnais est possible et Renaud encourage à le faire plutôt que de courir après chaque nouveau modèle. La flexibilité d'un harnais maison permet d'utiliser le meilleur modèle pour chaque tâche (OpenAI pour la voix, Anthropic pour le code, Google pour certains contextes) et de tester un nouveau modèle sans toucher à ses workflows. Les exemples personnels montrent un harnais connecté à Gmail, agenda, YouTube, webcam extérieure, et même un Richie Mini Robot piloté par reconnaissance vocale et second cerveau.</p>
+<p>Renaud anticipe un avenir où les modèles se ressemblent de plus en plus (« je n'ai pas trouvé de truc qu'Opus 5.5 ne sait pas faire ») et estime que la bataille se jouera sur les harnais, pas sur les modèles. Il pose un défi final aux spectateurs : identifier leur harnais réel du quotidien (et non leur modèle) et mesurer ce qui leur manque parmi les quatre natures.</p>
+<p><em>Sources : transcription locale complète.</em></p>
+<h2>Enseignement et école</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Régulation et politique</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Économie et finance</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><strong>Distinction modèle/harnais</strong> — concept transversal utile à la veille pédagogique pour expliquer aux enseignants que la qualité d'un outil IA dépend autant de son interface et de ses connexions que du modèle sous-jacent.</li>
+<li><strong>Harnais organisationnel et boucles coder-tester-corriger</strong> — pertinent pour la veille SNT sur les méthodes de développement avec IA.</li>
+<li><strong>Liberté des modèles dans un harnais maison</strong> — angle intéressant pour discuter des alternatives aux écosystèmes fermés face aux élèves.</li>
+</ul>
+<h2>Volume</h2>
+<p>4 vidéos examinées (1 longue retenue, 2 clips courts écartés, 1 direct écarté), 1 sujet retenu. Transcription utilisée : MYVQ19hAqWk.txt (31 min 42 s, 51 blocs).</p>
+<footer>Édition du mercredi 25 novembre 2026 — <a href="https://opware2000.github.io/veille/renaud.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

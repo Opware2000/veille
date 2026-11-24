@@ -6,9 +6,338 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 00:12:52 +0100</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 00:36:12 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Renaud Dékode — mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/renaud/2026-11-25.html</link>
+<guid isPermaLink="false">renaud-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 00:36:12 +0100</pubDate>
+<category>Renaud Dékode</category>
+<description><![CDATA[<h1>Veille Renaud Dékode — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune brève supplémentaire : l'édition se concentre sur une seule vidéo longue, un décodage de fond dont les grandes lignes manquaient aux précédentes couvertures du même live.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>La distinction modèle / harnais, pourquoi c'est crucial (MYVQ19hAqWk, 31 min)</strong></p>
+<p>Renaud pose une idée simple mais rarement explicitée dans la couverture grand public : tout le monde confond le LLM (le « moteur ») avec le produit qu'on utilise au quotidien (le « harnais »). Un LLM seul est un fichier de poids qui prend des tokens en entrée et produit des tokens en sortie. Il ne se souvient de rien entre deux appels, il ne consulte pas vos fichiers, il ne navigue pas sur le web, il ne sait pas exécuter du code ou générer des images par lui-même. Tout ce qui rend un LLM utile vient du logiciel qui l'entoure — et c'est ce que Renaud appelle le harnais.</p>
+<p>Il propose quatre natures de harnais pour structurer la réflexion :</p>
+<p>Le harnais <strong>ergonomique</strong>, c'est ce qui rend le modèle utilisable au quotidien : interface conversationnelle, historique à gauche, reconnaissance vocale, mise en forme des réponses, tableaux, listes, dialogue tour à tour. ChatGPT.com a bluffé le monde en 2022 non pas grâce à GPT-3 (le modèle existait depuis deux ans), mais grâce à cette interface. L'ergonomie ne rend pas le modèle plus capable, elle le rend simplement accessible.</p>
+<p>Le harnais <strong>fonctionnel</strong>, lui, ajoute réellement des capacités au modèle : rôles systèmes (un système prompt enregistré fait répondre Opus 5.5 différemment selon qu'il est en mode « prof de maths » ou « pote »), recherche web intégrée (sans laquelle un modèle d'entraînement à six mois répond faux sur l'actualité récente), exécution de code, génération d'images via d'autres modèles, connecteurs MCP (agenda Gmail, etc.), skills personnalisés (procédures écrites qui disent au modèle quelle procédure suivre pour facturer, par exemple). Avec Kiro v4, gratuit et local, on peut combiner plusieurs modèles différents (GPT-6 Astra, Sonnet 5.5, Gemini 4 Neon) dans le même harnais, basculer d'un modèle à l'autre sans refaire sa configuration.</p>
+<p>Le harnais <strong>organisationnel</strong> impose un processus au lieu d'une réponse brute : boucle écrire-tester-corriger de Claude Code, plans présentés avant action, sous-agents spécialisés (un pour la comptabilité, un pour les relances client), vérification croisée par différents modèles. C'est ici que se joue la différence entre utiliser un modèle comme boîte de dialogue et l'utiliser comme outil de travail organisé. Claude Cowork est cité comme exemple de harnais organisationnel réussi pour le travail collaboratif ; Claude Code, comme harnais spécialisé développeur. Le même modèle (Claude 5.5) donne des produits complètement différents selon le harnais qu'on lui applique.</p>
+<p>Le harnais <strong>structurel</strong> impose un mode de fonctionnement contraint : Gemini Notebook oblige structurellement à travailler sur des documents de référence avec RAG vectorisé, et refuse catégoriquement les requêtes hors contexte documentaire. Même LLM derrière, mais architecture d'usage entièrement différente.</p>
+<p>La conséquence directe : créer son propre harnais est possible et Renaud encourage à le faire plutôt que de courir après chaque nouveau modèle. La flexibilité d'un harnais maison permet d'utiliser le meilleur modèle pour chaque tâche (OpenAI pour la voix, Anthropic pour le code, Google pour certains contextes) et de tester un nouveau modèle sans toucher à ses workflows. Les exemples personnels montrent un harnais connecté à Gmail, agenda, YouTube, webcam extérieure, et même un Richie Mini Robot piloté par reconnaissance vocale et second cerveau.</p>
+<p>Renaud anticipe un avenir où les modèles se ressemblent de plus en plus (« je n'ai pas trouvé de truc qu'Opus 5.5 ne sait pas faire ») et estime que la bataille se jouera sur les harnais, pas sur les modèles. Il pose un défi final aux spectateurs : identifier leur harnais réel du quotidien (et non leur modèle) et mesurer ce qui leur manque parmi les quatre natures.</p>
+<p><em>Sources : transcription locale complète.</em></p>
+<h2>Enseignement et école</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Régulation et politique</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Économie et finance</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><strong>Distinction modèle/harnais</strong> — concept transversal utile à la veille pédagogique pour expliquer aux enseignants que la qualité d'un outil IA dépend autant de son interface et de ses connexions que du modèle sous-jacent.</li>
+<li><strong>Harnais organisationnel et boucles coder-tester-corriger</strong> — pertinent pour la veille SNT sur les méthodes de développement avec IA.</li>
+<li><strong>Liberté des modèles dans un harnais maison</strong> — angle intéressant pour discuter des alternatives aux écosystèmes fermés face aux élèves.</li>
+</ul>
+<h2>Volume</h2>
+<p>4 vidéos examinées (1 longue retenue, 2 clips courts écartés, 1 direct écarté), 1 sujet retenu. Transcription utilisée : MYVQ19hAqWk.txt (31 min 42 s, 51 blocs).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Renaud Dékode — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune brève supplémentaire : l'édition se concentre sur une seule vidéo longue, un décodage de fond dont les grandes lignes manquaient aux précédentes couvertures du même live.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>La distinction modèle / harnais, pourquoi c'est crucial (MYVQ19hAqWk, 31 min)</strong></p>
+<p>Renaud pose une idée simple mais rarement explicitée dans la couverture grand public : tout le monde confond le LLM (le « moteur ») avec le produit qu'on utilise au quotidien (le « harnais »). Un LLM seul est un fichier de poids qui prend des tokens en entrée et produit des tokens en sortie. Il ne se souvient de rien entre deux appels, il ne consulte pas vos fichiers, il ne navigue pas sur le web, il ne sait pas exécuter du code ou générer des images par lui-même. Tout ce qui rend un LLM utile vient du logiciel qui l'entoure — et c'est ce que Renaud appelle le harnais.</p>
+<p>Il propose quatre natures de harnais pour structurer la réflexion :</p>
+<p>Le harnais <strong>ergonomique</strong>, c'est ce qui rend le modèle utilisable au quotidien : interface conversationnelle, historique à gauche, reconnaissance vocale, mise en forme des réponses, tableaux, listes, dialogue tour à tour. ChatGPT.com a bluffé le monde en 2022 non pas grâce à GPT-3 (le modèle existait depuis deux ans), mais grâce à cette interface. L'ergonomie ne rend pas le modèle plus capable, elle le rend simplement accessible.</p>
+<p>Le harnais <strong>fonctionnel</strong>, lui, ajoute réellement des capacités au modèle : rôles systèmes (un système prompt enregistré fait répondre Opus 5.5 différemment selon qu'il est en mode « prof de maths » ou « pote »), recherche web intégrée (sans laquelle un modèle d'entraînement à six mois répond faux sur l'actualité récente), exécution de code, génération d'images via d'autres modèles, connecteurs MCP (agenda Gmail, etc.), skills personnalisés (procédures écrites qui disent au modèle quelle procédure suivre pour facturer, par exemple). Avec Kiro v4, gratuit et local, on peut combiner plusieurs modèles différents (GPT-6 Astra, Sonnet 5.5, Gemini 4 Neon) dans le même harnais, basculer d'un modèle à l'autre sans refaire sa configuration.</p>
+<p>Le harnais <strong>organisationnel</strong> impose un processus au lieu d'une réponse brute : boucle écrire-tester-corriger de Claude Code, plans présentés avant action, sous-agents spécialisés (un pour la comptabilité, un pour les relances client), vérification croisée par différents modèles. C'est ici que se joue la différence entre utiliser un modèle comme boîte de dialogue et l'utiliser comme outil de travail organisé. Claude Cowork est cité comme exemple de harnais organisationnel réussi pour le travail collaboratif ; Claude Code, comme harnais spécialisé développeur. Le même modèle (Claude 5.5) donne des produits complètement différents selon le harnais qu'on lui applique.</p>
+<p>Le harnais <strong>structurel</strong> impose un mode de fonctionnement contraint : Gemini Notebook oblige structurellement à travailler sur des documents de référence avec RAG vectorisé, et refuse catégoriquement les requêtes hors contexte documentaire. Même LLM derrière, mais architecture d'usage entièrement différente.</p>
+<p>La conséquence directe : créer son propre harnais est possible et Renaud encourage à le faire plutôt que de courir après chaque nouveau modèle. La flexibilité d'un harnais maison permet d'utiliser le meilleur modèle pour chaque tâche (OpenAI pour la voix, Anthropic pour le code, Google pour certains contextes) et de tester un nouveau modèle sans toucher à ses workflows. Les exemples personnels montrent un harnais connecté à Gmail, agenda, YouTube, webcam extérieure, et même un Richie Mini Robot piloté par reconnaissance vocale et second cerveau.</p>
+<p>Renaud anticipe un avenir où les modèles se ressemblent de plus en plus (« je n'ai pas trouvé de truc qu'Opus 5.5 ne sait pas faire ») et estime que la bataille se jouera sur les harnais, pas sur les modèles. Il pose un défi final aux spectateurs : identifier leur harnais réel du quotidien (et non leur modèle) et mesurer ce qui leur manque parmi les quatre natures.</p>
+<p><em>Sources : transcription locale complète.</em></p>
+<h2>Enseignement et école</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Régulation et politique</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>Économie et finance</h2>
+<p>Aucune entrée aujourd'hui.</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><strong>Distinction modèle/harnais</strong> — concept transversal utile à la veille pédagogique pour expliquer aux enseignants que la qualité d'un outil IA dépend autant de son interface et de ses connexions que du modèle sous-jacent.</li>
+<li><strong>Harnais organisationnel et boucles coder-tester-corriger</strong> — pertinent pour la veille SNT sur les méthodes de développement avec IA.</li>
+<li><strong>Liberté des modèles dans un harnais maison</strong> — angle intéressant pour discuter des alternatives aux écosystèmes fermés face aux élèves.</li>
+</ul>
+<h2>Volume</h2>
+<p>4 vidéos examinées (1 longue retenue, 2 clips courts écartés, 1 direct écarté), 1 sujet retenu. Transcription utilisée : MYVQ19hAqWk.txt (31 min 42 s, 51 blocs).</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-25.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 00:32:22 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Trois Show HN méritent le détour : un moteur d'entraînement pour modèle local alimenté par l'informatique disponible, une réplique de lecture PostgreSQL légère sur moteur colonne, et un studio vocal en licence libre sur votre propre GPU. Côté écosystème, Paperclip s'impose comme la référence open source pour gérer ses agents au travail, tandis que GPUI quitte Zed pour tenir son propre dépôt.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraînement en continu grâce à l'informatique idle</h3>
+<p>Songe est un moteur d'entraînement pour modèle local qui exploite les ressources inutilisées de votre machine pour faire progresser vos modèles sans interruption. Conçu par <code>sous-labs</code>, il tourne en Python sous licence Apache 2.0 et compte déjà 642 étoiles sur GitHub. L'approche — laisser votre ordinateur travailler pendant qu'il ne s'en sert pas — répond précisément au problème des modèles locaux qui stagnent faute de temps d'entraînement consacré.</p>
+<ul>
+<li>Licence : Apache 2.0 | Gratuit</li>
+<li><a href="https://github.com/sous-labs/songe">https://github.com/sous-labs/songe</a></li>
+</ul>
+<h3>Mason — réplique de lecture PostgreSQL sur moteur colonne</h3>
+<p>Mason se présente comme un remplacement « plug-and-play » d'une réplique de lecture PostgreSQL, propulsé par le moteur de calcul colonnaire de DuckDB. La question venait du besoin de rejeter des requêtes analytiques sur des bases PostgreSQL existantes sans apprendre ClickHouse. Mason ressemble à PostgreSQL côté interface, mais utilise le stockage colonnaire pour la vitesse. Développé par l'équipe derrière masondata.ai, il vient de passer devant les lecteurs HN avec 12 commentaires. Pas d'indication explicite de licence dans le post ; à vérifier sur le dépôt.</p>
+<ul>
+<li>Lien principal : <a href="https://masondata.ai">https://masondata.ai</a></li>
+<li>Autre vue : <a href="https://news.ycombinator.com/item?id=50630294">https://news.ycombinator.com/item?id=50630294</a></li>
+</ul>
+<h3>Decl — langage d'interface pour vous et votre IA</h3>
+<p>Decl propose un langage déclaratif spécifiquement conçu pour dialoguer entre humain et IA dans la définition des interfaces utilisateur. Le projet est porté par David Temkin, développeur connu dans la communauté. Il bénéficie d'une audience correcte sur HN (30 points, 11 commentaires). Le site declarelang.io expose le concept et démos. Pas d'information vérifiée sur la licence actuellement.</p>
+<ul>
+<li><a href="https://davidtemkin.github.io/declarelang">https://davidtemkin.github.io/declarelang</a></li>
+</ul>
+<h3>Paperclip — gestionnaire d'agents au travail</h3>
+<p>Paperclip s'est imposé comme l'application open source de référence pour gérer ses agents dans un environnement professionnel. Avec près de 117 000 étoiles sur GitHub, TypeScript sous licence MIT, et des mises à jour très récentes, c'est un outil mature. L'outil permet d'orchestrer plusieurs agents, définir des rôles et partager le contexte entre eux. La croissance récente est marquée, ce qui confirme un intérêt soutenu.</p>
+<ul>
+<li>Licence : MIT | Gratuit | ~117 000 étoiles</li>
+<li><a href="https://github.com/paperclipai/paperclip">https://github.com/paperclipai/paperclip</a></li>
+</ul>
+<h3>FigCraftStudio — alternative Figma locale en Rust</h3>
+<p>FigCraftStudio se positionne comme une alternative à Figma locale-first, écrite entièrement en Rust et fonctionnant aussi bien comme application native (Win/Mac/Linux) que via WebAssembly dans le navigateur. Fonctionnalités : Auto Layout, vecteurs, et support natif de MCP pour les agents IA. Tout fonctionne hors ligne, sans dépendance cloud. Le projet est très récent — seul 1 étoile pour l'instant, mais l'architecture prometteuse et l'ambition méritent une mention.</p>
+<ul>
+<li>Licence : MIT | Gratuit | 1 étoile (projet naissant)</li>
+<li><a href="https://github.com/jastfan/FigCraftStudio">https://github.com/jastfan/FigCraftStudio</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Rune — machine virtuelle Rust pour Emacs</h3>
+<p>Rune implémente une machine virtuelle Rust exécutée depuis Emacs, ouvrant la possibilité d'étendre Emacs avec du code Rust performant tout en conservant l'écosystème Emacs. Sous licence GPL 3.0, 843 étoiles, dernière mise à jour hier. L'auteur l'a présenté sur HN avec peu de réactions (16 points, 0 commentaire) — probablement trop tôt pour juger, mais le concept est unique.</p>
+<ul>
+<li>Licence : GPL 3.0 | Gratuit</li>
+<li><a href="https://github.com/CeleritasCelery/rune">https://github.com/CeleritasCelery/rune</a></li>
+</ul>
+<h3>Unlazy — compétence anti-paresse pour agents IA</h3>
+<p>Unlazy est une « compétence » conçue pour les agents de codage, fondée sur la méthode « Depth Tree ». Au lieu d'un budget temporel fixe, le système divise chaque tâche en N couches et alloue à chaque feuille le budget entier de la tâche originale, multipliant ainsi l'effort fourni. Documenté par la recherche 2025-2026 sur la paresse des modèles. 4 470 étoiles, JavaScript, MIT.</p>
+<ul>
+<li>Licence : MIT | Gratuit</li>
+<li><a href="https://github.com/Leonxlnx/unlazy">https://github.com/Leonxlnx/unlazy</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI quitte Zed pour un dépôt indépendant</h3>
+<p>Le framework graphique GPUI (GPU-accelerated UI framework for Rust), initialement intégré à l'éditeur Zed, fait maintenant l'objet d'un dépôt séparé : <code>zed-industries/gpui</code>. Le projet cumule environ 1 572 étoiles et a été mis à jour hier. Cette séparation indique un matûrement du composant et ouvre la porte à des utilisations en dehors de Zed. Pas de licence affichée sur le dépôt.</p>
+<ul>
+<li><a href="https://github.com/zed-industries/gpui">https://github.com/zed-industries/gpui</a></li>
+</ul>
+<h3>FireVoice — studio vocal gratuit sur GPU personnel</h3>
+<p>FireVoice se décrit comme un studio vocal open source gratuit tournant sur votre propre GPU. Développé par fabwaseem et affiché Show HN avec 12 points et 2 commentaires, il cible les utilisateurs souhaitant produire ou traiter de la voix synthétisée sans recourir à des services cloud.</p>
+<ul>
+<li><a href="https://firevoice.fabwaseem.com">https://firevoice.fabwaseem.com</a></li>
+</ul>
+<h2>GitManual cette semaine — sélection</h2>
+<p>La vision « récemment consultés » de gitmanual.com met en lumière les dépôts qui attirent le plus de visiteurs cette semaine. Certains sont des valeurs sûres, d'autres de découvertes intéressantes :</p>
+<ul>
+<li><strong>Openrig</strong> (8 957 étoiles, MIT) — Créez un réseau d'agents à partir de Claude Code, Codex et Pi : équipes persistantes avec rôles, contexte partagé et travail propriétaire.</li>
+<li><strong>OmniRoute</strong> (~90 000 étoiles, MIT) — Passerelle IA gratuite : un point de terminaison, 375 fournisseurs (plus de 150 gratuits), 1 400+ modèles. Compatible Claude Code, Codex, Cursor, OpenCode. Compression RTK+Caveman économisant 15-95 % de jetons.</li>
+<li><strong>OpenMontage</strong> (~83 000 étoiles, AGPL-3.0) — Premier système open source de production vidéo agentic : 12 pipelines, 100+ outils, 700+ fichiers de compétences. Transformez votre assistant de codage en studio vidéo complet.</li>
+<li><strong>Buzz</strong> (~23 000 étoiles, MIT) — Transcription et traduction audio hors ligne sur PC, propulsé par Whisper d'OpenAI.</li>
+<li><strong>Anarlog</strong> (~10 000 étoiles, MIT) — Alternative open source à Granola AI, en Rust.</li>
+<li><strong>DBDelve</strong> (~2 100 étoiles, GPL 3.0) — Client base de données rapide et léger en Rust utilisant GPUI.</li>
+<li><strong>PasteFerry</strong> — Synchronisation presse-papiers et fichiers entre macOS, Windows et Linux, chiffré de bout en bout.</li>
+<li><strong>StradaOS</strong> — Redonnez vie à l'écran Android de votre véhicule.</li>
+</ul>
+<p>Les dépôts déjà abordés précédemment (Notesnook, Uptime Kuma, Jackett, LlamaFactory, CapsWriter-Offline, Zotero PDF Translate, Solidus, TouchDeck, Piper) n'apportent rien de nouveau ce cycle.</p>
+<h2>Volume — nombre de posts traités</h2>
+<p>300 entrées issues de la shortlist (le collecteur nocturne en avait pré-filté 570, tronqué à 300 pour limiter la charge tokens — fichier marqué <code>"tronque": true</code>). Complétée par la relecture des extraits gitmanual et quelques appels API GitHub. 9 articles retenus, ~291 écartés. Les sujets répétés (retour de Jensen Huang chez Nvidia, cours Anthropic, politique IA Tidal, scandale Polymarket, Amazon drone) ont été exclus car non liés à des logiciels ou outils. Note : la shortlist n'étant pas exhaustive (170 éléments manquants entre le rang 300 et 570), il est possible que certains dépôts intéressants n'aient pas été vus ce cycle — à surveiller au prochain tour.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Trois Show HN méritent le détour : un moteur d'entraînement pour modèle local alimenté par l'informatique disponible, une réplique de lecture PostgreSQL légère sur moteur colonne, et un studio vocal en licence libre sur votre propre GPU. Côté écosystème, Paperclip s'impose comme la référence open source pour gérer ses agents au travail, tandis que GPUI quitte Zed pour tenir son propre dépôt.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraînement en continu grâce à l'informatique idle</h3>
+<p>Songe est un moteur d'entraînement pour modèle local qui exploite les ressources inutilisées de votre machine pour faire progresser vos modèles sans interruption. Conçu par <code>sous-labs</code>, il tourne en Python sous licence Apache 2.0 et compte déjà 642 étoiles sur GitHub. L'approche — laisser votre ordinateur travailler pendant qu'il ne s'en sert pas — répond précisément au problème des modèles locaux qui stagnent faute de temps d'entraînement consacré.</p>
+<ul>
+<li>Licence : Apache 2.0 | Gratuit</li>
+<li><a href="https://github.com/sous-labs/songe">https://github.com/sous-labs/songe</a></li>
+</ul>
+<h3>Mason — réplique de lecture PostgreSQL sur moteur colonne</h3>
+<p>Mason se présente comme un remplacement « plug-and-play » d'une réplique de lecture PostgreSQL, propulsé par le moteur de calcul colonnaire de DuckDB. La question venait du besoin de rejeter des requêtes analytiques sur des bases PostgreSQL existantes sans apprendre ClickHouse. Mason ressemble à PostgreSQL côté interface, mais utilise le stockage colonnaire pour la vitesse. Développé par l'équipe derrière masondata.ai, il vient de passer devant les lecteurs HN avec 12 commentaires. Pas d'indication explicite de licence dans le post ; à vérifier sur le dépôt.</p>
+<ul>
+<li>Lien principal : <a href="https://masondata.ai">https://masondata.ai</a></li>
+<li>Autre vue : <a href="https://news.ycombinator.com/item?id=50630294">https://news.ycombinator.com/item?id=50630294</a></li>
+</ul>
+<h3>Decl — langage d'interface pour vous et votre IA</h3>
+<p>Decl propose un langage déclaratif spécifiquement conçu pour dialoguer entre humain et IA dans la définition des interfaces utilisateur. Le projet est porté par David Temkin, développeur connu dans la communauté. Il bénéficie d'une audience correcte sur HN (30 points, 11 commentaires). Le site declarelang.io expose le concept et démos. Pas d'information vérifiée sur la licence actuellement.</p>
+<ul>
+<li><a href="https://davidtemkin.github.io/declarelang">https://davidtemkin.github.io/declarelang</a></li>
+</ul>
+<h3>Paperclip — gestionnaire d'agents au travail</h3>
+<p>Paperclip s'est imposé comme l'application open source de référence pour gérer ses agents dans un environnement professionnel. Avec près de 117 000 étoiles sur GitHub, TypeScript sous licence MIT, et des mises à jour très récentes, c'est un outil mature. L'outil permet d'orchestrer plusieurs agents, définir des rôles et partager le contexte entre eux. La croissance récente est marquée, ce qui confirme un intérêt soutenu.</p>
+<ul>
+<li>Licence : MIT | Gratuit | ~117 000 étoiles</li>
+<li><a href="https://github.com/paperclipai/paperclip">https://github.com/paperclipai/paperclip</a></li>
+</ul>
+<h3>FigCraftStudio — alternative Figma locale en Rust</h3>
+<p>FigCraftStudio se positionne comme une alternative à Figma locale-first, écrite entièrement en Rust et fonctionnant aussi bien comme application native (Win/Mac/Linux) que via WebAssembly dans le navigateur. Fonctionnalités : Auto Layout, vecteurs, et support natif de MCP pour les agents IA. Tout fonctionne hors ligne, sans dépendance cloud. Le projet est très récent — seul 1 étoile pour l'instant, mais l'architecture prometteuse et l'ambition méritent une mention.</p>
+<ul>
+<li>Licence : MIT | Gratuit | 1 étoile (projet naissant)</li>
+<li><a href="https://github.com/jastfan/FigCraftStudio">https://github.com/jastfan/FigCraftStudio</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Rune — machine virtuelle Rust pour Emacs</h3>
+<p>Rune implémente une machine virtuelle Rust exécutée depuis Emacs, ouvrant la possibilité d'étendre Emacs avec du code Rust performant tout en conservant l'écosystème Emacs. Sous licence GPL 3.0, 843 étoiles, dernière mise à jour hier. L'auteur l'a présenté sur HN avec peu de réactions (16 points, 0 commentaire) — probablement trop tôt pour juger, mais le concept est unique.</p>
+<ul>
+<li>Licence : GPL 3.0 | Gratuit</li>
+<li><a href="https://github.com/CeleritasCelery/rune">https://github.com/CeleritasCelery/rune</a></li>
+</ul>
+<h3>Unlazy — compétence anti-paresse pour agents IA</h3>
+<p>Unlazy est une « compétence » conçue pour les agents de codage, fondée sur la méthode « Depth Tree ». Au lieu d'un budget temporel fixe, le système divise chaque tâche en N couches et alloue à chaque feuille le budget entier de la tâche originale, multipliant ainsi l'effort fourni. Documenté par la recherche 2025-2026 sur la paresse des modèles. 4 470 étoiles, JavaScript, MIT.</p>
+<ul>
+<li>Licence : MIT | Gratuit</li>
+<li><a href="https://github.com/Leonxlnx/unlazy">https://github.com/Leonxlnx/unlazy</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI quitte Zed pour un dépôt indépendant</h3>
+<p>Le framework graphique GPUI (GPU-accelerated UI framework for Rust), initialement intégré à l'éditeur Zed, fait maintenant l'objet d'un dépôt séparé : <code>zed-industries/gpui</code>. Le projet cumule environ 1 572 étoiles et a été mis à jour hier. Cette séparation indique un matûrement du composant et ouvre la porte à des utilisations en dehors de Zed. Pas de licence affichée sur le dépôt.</p>
+<ul>
+<li><a href="https://github.com/zed-industries/gpui">https://github.com/zed-industries/gpui</a></li>
+</ul>
+<h3>FireVoice — studio vocal gratuit sur GPU personnel</h3>
+<p>FireVoice se décrit comme un studio vocal open source gratuit tournant sur votre propre GPU. Développé par fabwaseem et affiché Show HN avec 12 points et 2 commentaires, il cible les utilisateurs souhaitant produire ou traiter de la voix synthétisée sans recourir à des services cloud.</p>
+<ul>
+<li><a href="https://firevoice.fabwaseem.com">https://firevoice.fabwaseem.com</a></li>
+</ul>
+<h2>GitManual cette semaine — sélection</h2>
+<p>La vision « récemment consultés » de gitmanual.com met en lumière les dépôts qui attirent le plus de visiteurs cette semaine. Certains sont des valeurs sûres, d'autres de découvertes intéressantes :</p>
+<ul>
+<li><strong>Openrig</strong> (8 957 étoiles, MIT) — Créez un réseau d'agents à partir de Claude Code, Codex et Pi : équipes persistantes avec rôles, contexte partagé et travail propriétaire.</li>
+<li><strong>OmniRoute</strong> (~90 000 étoiles, MIT) — Passerelle IA gratuite : un point de terminaison, 375 fournisseurs (plus de 150 gratuits), 1 400+ modèles. Compatible Claude Code, Codex, Cursor, OpenCode. Compression RTK+Caveman économisant 15-95 % de jetons.</li>
+<li><strong>OpenMontage</strong> (~83 000 étoiles, AGPL-3.0) — Premier système open source de production vidéo agentic : 12 pipelines, 100+ outils, 700+ fichiers de compétences. Transformez votre assistant de codage en studio vidéo complet.</li>
+<li><strong>Buzz</strong> (~23 000 étoiles, MIT) — Transcription et traduction audio hors ligne sur PC, propulsé par Whisper d'OpenAI.</li>
+<li><strong>Anarlog</strong> (~10 000 étoiles, MIT) — Alternative open source à Granola AI, en Rust.</li>
+<li><strong>DBDelve</strong> (~2 100 étoiles, GPL 3.0) — Client base de données rapide et léger en Rust utilisant GPUI.</li>
+<li><strong>PasteFerry</strong> — Synchronisation presse-papiers et fichiers entre macOS, Windows et Linux, chiffré de bout en bout.</li>
+<li><strong>StradaOS</strong> — Redonnez vie à l'écran Android de votre véhicule.</li>
+</ul>
+<p>Les dépôts déjà abordés précédemment (Notesnook, Uptime Kuma, Jackett, LlamaFactory, CapsWriter-Offline, Zotero PDF Translate, Solidus, TouchDeck, Piper) n'apportent rien de nouveau ce cycle.</p>
+<h2>Volume — nombre de posts traités</h2>
+<p>300 entrées issues de la shortlist (le collecteur nocturne en avait pré-filté 570, tronqué à 300 pour limiter la charge tokens — fichier marqué <code>"tronque": true</code>). Complétée par la relecture des extraits gitmanual et quelques appels API GitHub. 9 articles retenus, ~291 écartés. Les sujets répétés (retour de Jensen Huang chez Nvidia, cours Anthropic, politique IA Tidal, scandale Polymarket, Amazon drone) ont été exclus car non liés à des logiciels ou outils. Note : la shortlist n'étant pas exhaustive (170 éléments manquants entre le rang 300 et 570), il est possible que certains dépôts intéressants n'aient pas été vus ce cycle — à surveiller au prochain tour.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-25.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 00:21:40 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>La journée a été dominée par la controverse autour du retour de Jensen Huang chez Nvidia et de l'IPO d'Anthropic — peu de place pour les outils dans ce déluge politique. Le vrai contenu utile se concentre sur Songe, moteur d'entraînement local ; Stalwart 1.2.0, désormais compatible Exchange ; et FireVoice, studio vocal gratuit fonctionnant sur votre GPU. Trois extensions Datasette d'alpha précoce de Simon Willison, ainsi que Ladybird, premier alpha d'un nouveau navigateur, complètent le panorama.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraîner son modèle local avec son propre matériel inactif</h3>
+<p>Sous Labs publie Songe, un moteur d'apprentissage conçu pour s'intégrer discrètement à votre environnement de développement. Il écoute ce que vous faites avec votre modèle local (OpenAI-compatible) : résultats d'outils, erreurs, corrections manuelles. Lorsqu'aucune tâche n'est active, il utilise ces traces pour entraîner le modèle ou ajuster ses instructions. Deux modes sont prévus : un « Quick Dream » pour ajouter vos préférences aux instructions en quelques minutes, et un « Deep Dream » pour former réellement le modèle pendant que vous êtes absent. Rien ne quitte votre machine, aucun compte requis, aucune télémétrie. Nouvelle version installée uniquement si elle bat l'ancienne sur vos propres conversations. Licence Apache-2.0.</p>
+<p>Installable via <code>uv</code> ou <code>pipx</code>, macOS Homebrew, Python 3.11+. Compatible avec LM Studio, Opencode, Pi.</p>
+<p>https://github.com/sous-labs/songe</p>
+<p><em>637 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h3>Stalwart 1.2.0 — serveur de messagerie compatible Microsoft Exchange</h3>
+<p>Le serveur de messagerie auto-hébergé Stalwart passe en version 1.2.0 et devient un remplaçant direct de Microsoft Exchange. Il implémente désormais MAPI over HTTP, Exchange Web Services (EWS), Exchange ActiveSync et Autodiscover. Outlook, Apple Mail et les clients mobiles s'y connectent comme ils le feraient avec un Exchange, avec messagerie, calendriers, contacts, tâches et notes dans un seul compte. L'implémentation Exchange est incluse dans l'édition communautaire sous licence AGPL. Une étape majeure pour l'auto-hébergement de messagerie professionnelle.</p>
+<p>https://stalw.art/blog/microsoft-exchange-replacement/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI</em></p>
+<h3>FireVoice — studio vocal gratuit sur votre GPU</h3>
+<p>FireVoice se présente comme un studio vocal gratuit et autonome, capable de fonctionner sur votre propre GPU. Il prend en charge Windows, Mac et Linux, fonctionne hors-ligne et vise à transformer la saisie vocale en texte épuré, corrigé et mis en forme automatiquement. Annoncé sur Hacker News avec seulement 12 points — nouveauté récente encore peu vue — le site promet près de quatre fois plus de productivité que la frappe clavier classique.</p>
+<p>https://firevoice.fabwaseem.com/</p>
+<h3>Genesis Map — visualiser les changements d'un agent logiciel</h3>
+<p>Un outil publié pour comprendre ce qu'un agent fait quand il écrit du code. Genesis Map trace les modifications apportées par un agent de développement, permet de voir où elles pourraient introduire des régressions et sert de contrepoint visuel à la vitesse croissante des agents qui livrent du code. Licence Apache-2.0.</p>
+<p>https://github.com/GenesisAgentInfra/genesis</p>
+<p><em>70 étoiles · mise à jour 23 nov. 2026 · Apache-2.0</em></p>
+<h3>Inference Observe — aperçu en direct de votre moteur d'inférence LLM</h3>
+<p>Un tableau de bord expérimental permettant d'observer le fonctionnement interne de SGLang et vLLM pendant l'exécution. Outil de débogage et d'analyse pour développeurs travaillant directement avec des moteurs d'inférence. Licence Apache-2.0.</p>
+<p>https://gauravjain14.github.io/inference-observe/</p>
+<p><em>12 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI — le cadre graphique de Zed devient un projet séparé</h3>
+<p>GPUI, le framework UI qui alimente l'éditeur Zed, a reçu son propre dépôt GitHub, indépendant de Zed Industries. Cette séparation pourrait faciliter les contributions extérieures et permettre à d'autres projets d'utiliser GPUI comme fondement graphique.</p>
+<p>https://github.com/zed-industries/gpui</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 81 points HN</em></p>
+<h3>Shirudo — runtime OpenAI / Cisco pour protéger les Linux non patchés</h3>
+<p>OpenAI et Cisco annoncent Shirudo, un runtime open source destiné à isoler les systèmes Linux dont les correctifs de sécurité n'ont pas pu être appliqués. S'adresse aux environnements critiques où le redémarrage ou le patching immédiat n'est pas possible. Moins un outil grand public qu'une brique infrastructure.</p>
+<p>https://openai.com/index/introducing-shirudo/</p>
+<p><em>14 points HN · 1 commentaire</em></p>
+<h2>Extensions et greffons</h2>
+<h3>Datasette — deux nouvelles extensions alpha de Simon Willison</h3>
+<p>Simon Willison publie simultanément <strong>datasette-agent 0.7a1</strong> et <strong>datasette-charts 0.2a0</strong>. La première améliore la navigation des sessions de chat avec des panneaux latéraux iframe et une intégration profonde avec les plugins Datasette. La seconde propose un plugin de graphiques interrogé par langage naturel : on demande à Chat une chart et le plugin génère le graphique approprié en utilisant des suggestions de type de visualisation et les outils de génération sous-jacents.</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-agent/</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-charts/</p>
+<h2>Autres</h2>
+<h3>Ladybird — premier alpha d'un nouveau navigateur web</h3>
+<p>Ladybird publie son premier alpha : un navigateur écrit entièrement de zéro avec ses propres moteurs HTML, CSS, layout JavaScript et WebAssembly. Quelques composants externes restent utilisés (HarfBuzz, Skia, ffmpeg, SQLite). Ambition notable dans un marché dominé par Chromium et Gecko.</p>
+<p>https://ladybird.org/</p>
+<h3>NovoYN — modèle décisionnel en boucle ouverte</h3>
+<p>Une équipe annonce NovoYN, un modèle de décision à architecture looped transformer de qualité state-of-the-art. Disponible en version 0.9 avec poids ouverts. Basé sur une architecture où un groupe de couches à poids partagés itère plusieurs fois pour affiner les états cachés.</p>
+<p>https://www.novyn.ai/blog/announcing-novyn-looped-decision-0.9/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 2 points HN</em></p>
+<h3>Rune — VM Rust pour Emacs</h3>
+<p>Rune est une machine virtuelle écrite en Rust visant à exécuter le code Emacs Lisp dans un environnement moderne. Permettrait une exécution plus rapide et plus sûre du code Elisp avec une compatibilité ascendante. Mise à jour octobre 2026.</p>
+<p>https://github.com/CeleritasCelery/rune</p>
+<p><em>843 étoiles · GPL-3.0</em></p>
+<hr />
+<p><strong>Volume</strong> — 79 articles publiés dans l'intervalle (seuil ≥ 10 points HN), 10 retenus, 69 écartés. Les sujets Nvidia-Anthropic ont occupé la quasi-totalité des discussions ; la veille a traité en priorité les annonces d'outils concrets parmi les fils restants.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>La journée a été dominée par la controverse autour du retour de Jensen Huang chez Nvidia et de l'IPO d'Anthropic — peu de place pour les outils dans ce déluge politique. Le vrai contenu utile se concentre sur Songe, moteur d'entraînement local ; Stalwart 1.2.0, désormais compatible Exchange ; et FireVoice, studio vocal gratuit fonctionnant sur votre GPU. Trois extensions Datasette d'alpha précoce de Simon Willison, ainsi que Ladybird, premier alpha d'un nouveau navigateur, complètent le panorama.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraîner son modèle local avec son propre matériel inactif</h3>
+<p>Sous Labs publie Songe, un moteur d'apprentissage conçu pour s'intégrer discrètement à votre environnement de développement. Il écoute ce que vous faites avec votre modèle local (OpenAI-compatible) : résultats d'outils, erreurs, corrections manuelles. Lorsqu'aucune tâche n'est active, il utilise ces traces pour entraîner le modèle ou ajuster ses instructions. Deux modes sont prévus : un « Quick Dream » pour ajouter vos préférences aux instructions en quelques minutes, et un « Deep Dream » pour former réellement le modèle pendant que vous êtes absent. Rien ne quitte votre machine, aucun compte requis, aucune télémétrie. Nouvelle version installée uniquement si elle bat l'ancienne sur vos propres conversations. Licence Apache-2.0.</p>
+<p>Installable via <code>uv</code> ou <code>pipx</code>, macOS Homebrew, Python 3.11+. Compatible avec LM Studio, Opencode, Pi.</p>
+<p>https://github.com/sous-labs/songe</p>
+<p><em>637 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h3>Stalwart 1.2.0 — serveur de messagerie compatible Microsoft Exchange</h3>
+<p>Le serveur de messagerie auto-hébergé Stalwart passe en version 1.2.0 et devient un remplaçant direct de Microsoft Exchange. Il implémente désormais MAPI over HTTP, Exchange Web Services (EWS), Exchange ActiveSync et Autodiscover. Outlook, Apple Mail et les clients mobiles s'y connectent comme ils le feraient avec un Exchange, avec messagerie, calendriers, contacts, tâches et notes dans un seul compte. L'implémentation Exchange est incluse dans l'édition communautaire sous licence AGPL. Une étape majeure pour l'auto-hébergement de messagerie professionnelle.</p>
+<p>https://stalw.art/blog/microsoft-exchange-replacement/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI</em></p>
+<h3>FireVoice — studio vocal gratuit sur votre GPU</h3>
+<p>FireVoice se présente comme un studio vocal gratuit et autonome, capable de fonctionner sur votre propre GPU. Il prend en charge Windows, Mac et Linux, fonctionne hors-ligne et vise à transformer la saisie vocale en texte épuré, corrigé et mis en forme automatiquement. Annoncé sur Hacker News avec seulement 12 points — nouveauté récente encore peu vue — le site promet près de quatre fois plus de productivité que la frappe clavier classique.</p>
+<p>https://firevoice.fabwaseem.com/</p>
+<h3>Genesis Map — visualiser les changements d'un agent logiciel</h3>
+<p>Un outil publié pour comprendre ce qu'un agent fait quand il écrit du code. Genesis Map trace les modifications apportées par un agent de développement, permet de voir où elles pourraient introduire des régressions et sert de contrepoint visuel à la vitesse croissante des agents qui livrent du code. Licence Apache-2.0.</p>
+<p>https://github.com/GenesisAgentInfra/genesis</p>
+<p><em>70 étoiles · mise à jour 23 nov. 2026 · Apache-2.0</em></p>
+<h3>Inference Observe — aperçu en direct de votre moteur d'inférence LLM</h3>
+<p>Un tableau de bord expérimental permettant d'observer le fonctionnement interne de SGLang et vLLM pendant l'exécution. Outil de débogage et d'analyse pour développeurs travaillant directement avec des moteurs d'inférence. Licence Apache-2.0.</p>
+<p>https://gauravjain14.github.io/inference-observe/</p>
+<p><em>12 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI — le cadre graphique de Zed devient un projet séparé</h3>
+<p>GPUI, le framework UI qui alimente l'éditeur Zed, a reçu son propre dépôt GitHub, indépendant de Zed Industries. Cette séparation pourrait faciliter les contributions extérieures et permettre à d'autres projets d'utiliser GPUI comme fondement graphique.</p>
+<p>https://github.com/zed-industries/gpui</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 81 points HN</em></p>
+<h3>Shirudo — runtime OpenAI / Cisco pour protéger les Linux non patchés</h3>
+<p>OpenAI et Cisco annoncent Shirudo, un runtime open source destiné à isoler les systèmes Linux dont les correctifs de sécurité n'ont pas pu être appliqués. S'adresse aux environnements critiques où le redémarrage ou le patching immédiat n'est pas possible. Moins un outil grand public qu'une brique infrastructure.</p>
+<p>https://openai.com/index/introducing-shirudo/</p>
+<p><em>14 points HN · 1 commentaire</em></p>
+<h2>Extensions et greffons</h2>
+<h3>Datasette — deux nouvelles extensions alpha de Simon Willison</h3>
+<p>Simon Willison publie simultanément <strong>datasette-agent 0.7a1</strong> et <strong>datasette-charts 0.2a0</strong>. La première améliore la navigation des sessions de chat avec des panneaux latéraux iframe et une intégration profonde avec les plugins Datasette. La seconde propose un plugin de graphiques interrogé par langage naturel : on demande à Chat une chart et le plugin génère le graphique approprié en utilisant des suggestions de type de visualisation et les outils de génération sous-jacents.</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-agent/</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-charts/</p>
+<h2>Autres</h2>
+<h3>Ladybird — premier alpha d'un nouveau navigateur web</h3>
+<p>Ladybird publie son premier alpha : un navigateur écrit entièrement de zéro avec ses propres moteurs HTML, CSS, layout JavaScript et WebAssembly. Quelques composants externes restent utilisés (HarfBuzz, Skia, ffmpeg, SQLite). Ambition notable dans un marché dominé par Chromium et Gecko.</p>
+<p>https://ladybird.org/</p>
+<h3>NovoYN — modèle décisionnel en boucle ouverte</h3>
+<p>Une équipe annonce NovoYN, un modèle de décision à architecture looped transformer de qualité state-of-the-art. Disponible en version 0.9 avec poids ouverts. Basé sur une architecture où un groupe de couches à poids partagés itère plusieurs fois pour affiner les états cachés.</p>
+<p>https://www.novyn.ai/blog/announcing-novyn-looped-decision-0.9/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 2 points HN</em></p>
+<h3>Rune — VM Rust pour Emacs</h3>
+<p>Rune est une machine virtuelle écrite en Rust visant à exécuter le code Emacs Lisp dans un environnement moderne. Permettrait une exécution plus rapide et plus sûre du code Elisp avec une compatibilité ascendante. Mise à jour octobre 2026.</p>
+<p>https://github.com/CeleritasCelery/rune</p>
+<p><em>843 étoiles · GPL-3.0</em></p>
+<hr />
+<p><strong>Volume</strong> — 79 articles publiés dans l'intervalle (seuil ≥ 10 points HN), 10 retenus, 69 écartés. Les sujets Nvidia-Anthropic ont occupé la quasi-totalité des discussions ; la veille a traité en priorité les annonces d'outils concrets parmi les fils restants.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-25.html</link>
@@ -4429,117 +4758,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <h2>Volume</h2>
 <p>2 534 posts lus dans l'intervalle (dont 300 dans la shortlist), 36 retenus, 2 498 écartés. Note : la collecte Reddit (BestGitHubRepos) a retourné une erreur 404 — les entrées proviennent des autres sources (Hacker News, Product Hunt, gitmanual, flux complémentaires).</p>
 <p>Incident : le flux Reddit r/BestGitHubRepos renvoie une erreur 404 (arrêt des flux RSS par Reddit le 13 novembre 2026). La veille s'appuie désormais sur Hacker News, Lobsters et les flux complémentaires.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-21.html</link>
-<guid isPermaLink="false">lovingopensourceai-2026-11-21</guid>
-<pubDate>Sat, 21 Nov 2026 00:22:56 +0100</pubDate>
-<category>r/LovingOpenSourceAI</category>
-<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Un benchmark de modèles TTS ouverts sur CPU, une technique d'adaptation par RL pour les harnais d'agents, et un nouveau plugin de détection de mot-clé vocal pour remplacer openWakeWord.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Small TTS Bench — classement des modèles de synthèse vocale ouverts sur CPU.</strong> Eren Gölge publie un banc d'essai de 21 modèles TTS à poids ouverts, mesurés sur un seul thread CPU : latence de première audio, vitesse (× temps réel), mémoire, taux d'erreur et naturalité (UTMOS). Phonon 31m (Apache-2.0, via le moteur ptts) se distingue comme meilleur compromis : 82 ms de première audio, 4× temps réel, 363 Mo, 1,6 % WER, 4,43 UTMOS. PiVo-1.4M (Apache-2.0) offre la plus faible latence (5 ms) pour 147 Mo. Tous les échantillons audio et le classement sont en ligne. Lien : <a href="https://erogol.com/small_tts_bench/">https://erogol.com/small_tts_bench/</a></p>
-<p><strong>Harness adapters — des adaptateurs LoRA entraînés par RL pour chaque harnais d'agent.</strong> Hugging Face publie une recette reproductible pour entraîner, par RL dans le harnais cible, un adaptateur LoRA qui spécialise un modèle (Qwen3.8-27B) sur un harnais particulier (pi, Hermes Agent, OpenCode). Résultat : jusqu'à 55 % pass@1 sur Terminal-Bench (contre 39 % sans), avec une consommation de tokens réduite de moitié (1 500 au lieu de 2 900 par tâche). Les trois adaptateurs sont fusionnables en un super-adaptateur unique. Tous les artéfacts (LoRA, GGUF, tâches RL) sont publiés sur le Hub sous licence ouverte. Lien : <a href="https://huggingface.co/blog/harness-adapters-at-scale">https://huggingface.co/blog/harness-adapters-at-scale</a></p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Platypush — assistant vocal local : migration vers microWakeWord.</strong> Fabio Manganiello remplace le plugin openWakeWord (abandonné, modèles de 2023) par <code>assistant.microwakeword</code>, basé sur microWakeWord — le moteur utilisé par ESPHome et Home Assistant Voice. Les modèles intégrés (<code>okay_nabu</code>, <code>hey_jarvis</code>, <code>alexa</code>) sont livrés avec le paquet, plus robustes et mieux entretenus. Le nouveau plugin expose la même API que l'ancien : la migration se fait en changeant le nom du plugin dans la configuration. microWakeWord : dépôt GitHub (39 ★, Apache-2.0). Lien : <a href="https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline">https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline</a></p>
-<h2>Volume</h2>
-<p>79 posts publiés dans l'intervalle, 3 retenus, 76 écartés. Le flux Reddit du subreddit LovingOpenSourceAI est inaccessible (HTTP 404) ; la collecte se poursuit via Hacker News et Lobsters.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Un benchmark de modèles TTS ouverts sur CPU, une technique d'adaptation par RL pour les harnais d'agents, et un nouveau plugin de détection de mot-clé vocal pour remplacer openWakeWord.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Small TTS Bench — classement des modèles de synthèse vocale ouverts sur CPU.</strong> Eren Gölge publie un banc d'essai de 21 modèles TTS à poids ouverts, mesurés sur un seul thread CPU : latence de première audio, vitesse (× temps réel), mémoire, taux d'erreur et naturalité (UTMOS). Phonon 31m (Apache-2.0, via le moteur ptts) se distingue comme meilleur compromis : 82 ms de première audio, 4× temps réel, 363 Mo, 1,6 % WER, 4,43 UTMOS. PiVo-1.4M (Apache-2.0) offre la plus faible latence (5 ms) pour 147 Mo. Tous les échantillons audio et le classement sont en ligne. Lien : <a href="https://erogol.com/small_tts_bench/">https://erogol.com/small_tts_bench/</a></p>
-<p><strong>Harness adapters — des adaptateurs LoRA entraînés par RL pour chaque harnais d'agent.</strong> Hugging Face publie une recette reproductible pour entraîner, par RL dans le harnais cible, un adaptateur LoRA qui spécialise un modèle (Qwen3.8-27B) sur un harnais particulier (pi, Hermes Agent, OpenCode). Résultat : jusqu'à 55 % pass@1 sur Terminal-Bench (contre 39 % sans), avec une consommation de tokens réduite de moitié (1 500 au lieu de 2 900 par tâche). Les trois adaptateurs sont fusionnables en un super-adaptateur unique. Tous les artéfacts (LoRA, GGUF, tâches RL) sont publiés sur le Hub sous licence ouverte. Lien : <a href="https://huggingface.co/blog/harness-adapters-at-scale">https://huggingface.co/blog/harness-adapters-at-scale</a></p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Platypush — assistant vocal local : migration vers microWakeWord.</strong> Fabio Manganiello remplace le plugin openWakeWord (abandonné, modèles de 2023) par <code>assistant.microwakeword</code>, basé sur microWakeWord — le moteur utilisé par ESPHome et Home Assistant Voice. Les modèles intégrés (<code>okay_nabu</code>, <code>hey_jarvis</code>, <code>alexa</code>) sont livrés avec le paquet, plus robustes et mieux entretenus. Le nouveau plugin expose la même API que l'ancien : la migration se fait en changeant le nom du plugin dans la configuration. microWakeWord : dépôt GitHub (39 ★, Apache-2.0). Lien : <a href="https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline">https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline</a></p>
-<h2>Volume</h2>
-<p>79 posts publiés dans l'intervalle, 3 retenus, 76 écartés. Le flux Reddit du subreddit LovingOpenSourceAI est inaccessible (HTTP 404) ; la collecte se poursuit via Hacker News et Lobsters.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — samedi 21 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-21.html</link>
-<guid isPermaLink="false">macapps-2026-11-21</guid>
-<pubDate>Sat, 21 Nov 2026 00:12:20 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Le flux Reddit de r/macapps est inaccessible (HTTP 404), mais les sources alternatives (Hacker News, Lobsters, flux de veille Apple et Product Hunt) ont livré quelques annonces notables. Apple prépare Harbor, une application Mac dédiée à l'inférence IA locale sur Apple Silicon ; Raycast 2.13 intègre un serveur MCP local ; et Microsoft annonce la fin de son gestionnaire de tâches To Do pour juin 2027.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Harbor</strong> — Apple/Claris développe Harbor, une application Mac qui transforme la machine en serveur d'inférence IA privé. L'outil détecte automatiquement les Mac connectés par Thunderbolt 5, mutualise leur mémoire unifiée pour charger des modèles plus volumineux, et permet de parcourir, télécharger et exécuter des modèles open-weight depuis l'interface. Aucune configuration manuelle ni connaissance en ligne de commande requise. Données jamais transmises au cloud. Actuellement en aperçu privé sous la marque Claris (9to5Mac, 10 novembre).</p>
-<p><strong>NetSieve</strong> — Bloqueur de publicités, traqueurs et sites d'arnaques au niveau système sur Mac, pas seulement dans le navigateur. Montre quelles applications contactent quels serveurs et dans quels pays. Les données d'historique restent sur la machine. Paiement unique, pas d'abonnement. Lancé le 19 novembre sur Product Hunt (netsieve.app).</p>
-<p><strong>RemoveMacAI</strong> — Utilitaire gratuit qui purge les modèles d'Apple Intelligence (jusqu'à 10 Go libérés) et empêche leur retéléchargement automatique. Apple tente de contrer ce contournement dans macOS 27.3 (MacG, 20 novembre).</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Raycast 2.13</strong> — Le lanceur d'applications macOS gratuit (freemium) ajoute un serveur MCP local : les agents IA (Claude, Codex, Cursor) peuvent accéder aux extensions et données Raycast sélectionnées. Ajoute aussi des sauvegardes automatiques hebdomadaires, des pièces jointes dans le chat IA, et une recherche d'historique du presse-papiers plus rapide.</p>
-<p><strong>Zed 1.29.3</strong> (et preview 1.30.2) — L'éditeur de code open source (MIT, 95 000 étoiles sur GitHub) poursuit ses mises à jour. La preview 1.30.2 est disponible via Homebrew.</p>
-<p><strong>Gemini pour Mac — contrôle des applications</strong> — Google ajoute à son application Gemini la capacité de piloter les applications macOS en langage naturel : ouvrir des fichiers, naviguer dans le web, exécuter des tâches en arrière-plan. Annoncé le 19 novembre.</p>
-<p><strong>Motrix 2.4.5</strong> — Gestionnaire de téléchargements open source (MIT, 58 500 étoiles) mis à jour via Homebrew. Interface sobre, téléchargements en parallèle, support BitTorrent.</p>
-<p><strong>Vivaldi 8.3</strong> — Navigateur basé sur Chromium (propriétaire, gratuit) mis à jour avec un blocage de publicités et traqueurs renforcé et des onglets verticaux améliorés.</p>
-<p><strong>Signal bloque les captures d'écran sur iPhone</strong> — La dernière mise à jour de Signal désactive automatiquement les captures d'écran dans l'application pour empêcher Siri AI de lire les conversations. Fonctionnalité iOS, mais le geste de Signal vers plus de protection par défaut est notable.</p>
-<p><strong>Microsoft va retirer To Do</strong> — L'application de gestion des tâches To Do sera abandonnée le 30 juin 2027. Les comptes professionnels sont redirigés vers Planner ; les comptes personnels (Microsoft 365) n'ont pas de remplaçant annoncé. Une occasion de migrer vers Things, OmniFocus, ou une solution open source comme OpenTodo (MacG, MacRumors, 20 novembre).</p>
-<p><strong>Terminal-browser 0.15.9</strong> — Navigateur web en ligne de commande pour macOS, mis à jour via Homebrew.</p>
-<p><strong>Apple ferme ses forums d'assistance</strong> — Les forums Apple Support ont fermé le 20 novembre. Il n'est plus possible d'y publier ni de consulter les anciens fils (MacG, 9to5Mac, 20 novembre).</p>
-<h2>Volume</h2>
-<p>Près de 200 entrées publiées dans l'intervalle (toutes sources confondues), 14 sujets retenus, le reste écarté (promotions Black Friday, rumeurs matérielles, actualités Apple sans lien logiciel, contenus sponsorisés, mises à jour mineures de paquets Homebrew).</p>
-<p><em>Note : le flux Reddit de r/macapps n'a pas été collecté (erreur HTTP 404). Les entrées proviennent des sources alternatives.</em></p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Le flux Reddit de r/macapps est inaccessible (HTTP 404), mais les sources alternatives (Hacker News, Lobsters, flux de veille Apple et Product Hunt) ont livré quelques annonces notables. Apple prépare Harbor, une application Mac dédiée à l'inférence IA locale sur Apple Silicon ; Raycast 2.13 intègre un serveur MCP local ; et Microsoft annonce la fin de son gestionnaire de tâches To Do pour juin 2027.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Harbor</strong> — Apple/Claris développe Harbor, une application Mac qui transforme la machine en serveur d'inférence IA privé. L'outil détecte automatiquement les Mac connectés par Thunderbolt 5, mutualise leur mémoire unifiée pour charger des modèles plus volumineux, et permet de parcourir, télécharger et exécuter des modèles open-weight depuis l'interface. Aucune configuration manuelle ni connaissance en ligne de commande requise. Données jamais transmises au cloud. Actuellement en aperçu privé sous la marque Claris (9to5Mac, 10 novembre).</p>
-<p><strong>NetSieve</strong> — Bloqueur de publicités, traqueurs et sites d'arnaques au niveau système sur Mac, pas seulement dans le navigateur. Montre quelles applications contactent quels serveurs et dans quels pays. Les données d'historique restent sur la machine. Paiement unique, pas d'abonnement. Lancé le 19 novembre sur Product Hunt (netsieve.app).</p>
-<p><strong>RemoveMacAI</strong> — Utilitaire gratuit qui purge les modèles d'Apple Intelligence (jusqu'à 10 Go libérés) et empêche leur retéléchargement automatique. Apple tente de contrer ce contournement dans macOS 27.3 (MacG, 20 novembre).</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Raycast 2.13</strong> — Le lanceur d'applications macOS gratuit (freemium) ajoute un serveur MCP local : les agents IA (Claude, Codex, Cursor) peuvent accéder aux extensions et données Raycast sélectionnées. Ajoute aussi des sauvegardes automatiques hebdomadaires, des pièces jointes dans le chat IA, et une recherche d'historique du presse-papiers plus rapide.</p>
-<p><strong>Zed 1.29.3</strong> (et preview 1.30.2) — L'éditeur de code open source (MIT, 95 000 étoiles sur GitHub) poursuit ses mises à jour. La preview 1.30.2 est disponible via Homebrew.</p>
-<p><strong>Gemini pour Mac — contrôle des applications</strong> — Google ajoute à son application Gemini la capacité de piloter les applications macOS en langage naturel : ouvrir des fichiers, naviguer dans le web, exécuter des tâches en arrière-plan. Annoncé le 19 novembre.</p>
-<p><strong>Motrix 2.4.5</strong> — Gestionnaire de téléchargements open source (MIT, 58 500 étoiles) mis à jour via Homebrew. Interface sobre, téléchargements en parallèle, support BitTorrent.</p>
-<p><strong>Vivaldi 8.3</strong> — Navigateur basé sur Chromium (propriétaire, gratuit) mis à jour avec un blocage de publicités et traqueurs renforcé et des onglets verticaux améliorés.</p>
-<p><strong>Signal bloque les captures d'écran sur iPhone</strong> — La dernière mise à jour de Signal désactive automatiquement les captures d'écran dans l'application pour empêcher Siri AI de lire les conversations. Fonctionnalité iOS, mais le geste de Signal vers plus de protection par défaut est notable.</p>
-<p><strong>Microsoft va retirer To Do</strong> — L'application de gestion des tâches To Do sera abandonnée le 30 juin 2027. Les comptes professionnels sont redirigés vers Planner ; les comptes personnels (Microsoft 365) n'ont pas de remplaçant annoncé. Une occasion de migrer vers Things, OmniFocus, ou une solution open source comme OpenTodo (MacG, MacRumors, 20 novembre).</p>
-<p><strong>Terminal-browser 0.15.9</strong> — Navigateur web en ligne de commande pour macOS, mis à jour via Homebrew.</p>
-<p><strong>Apple ferme ses forums d'assistance</strong> — Les forums Apple Support ont fermé le 20 novembre. Il n'est plus possible d'y publier ni de consulter les anciens fils (MacG, 9to5Mac, 20 novembre).</p>
-<h2>Volume</h2>
-<p>Près de 200 entrées publiées dans l'intervalle (toutes sources confondues), 14 sujets retenus, le reste écarté (promotions Black Friday, rumeurs matérielles, actualités Apple sans lien logiciel, contenus sponsorisés, mises à jour mineures de paquets Homebrew).</p>
-<p><em>Note : le flux Reddit de r/macapps n'a pas été collecté (erreur HTTP 404). Les entrées proviennent des sources alternatives.</em></p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — samedi 21 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-21.html</link>
-<guid isPermaLink="false">artcraft-2026-11-21</guid>
-<pubDate>Sat, 21 Nov 2026 00:02:32 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>La migration du pipeline raster legacy vers les codecs natifs Rust est achevée pour la branche principale, avec l'amélioration de la précision des vignettes 16 bits. PhotoCraft 0.23.1 a été publié, et FigCraft ajoute la gestion de page d'ouverture partagée. Le collecteur Reddit (r/ArtCraftAI) est en erreur 404 — aucun nouveau post du subreddit n'a pu être lu depuis le 17 novembre.</p>
-<h2>Nouveautés et annonces</h2>
-<p><strong>Précision des vignettes 16 bits et fin de la migration raster</strong> — Dylan Taylor a fusionné plusieurs séries de correctifs qui closent le dernier lot de la « native/legacy raster parity » (#2913, #2921). D'une part, les images 16 bits de grande taille bénéficient désormais d'un prévisualisation par moyennage en précision u64 avant conversion, évitant les débordements et les artefacts de quantification. D'autre part, l'ensemble du pipeline raster (decodage des vignettes, flip, redimensionnement, export PNG/WebP) a été basculé des décodeurs Tauri legacy vers la bibliothèque <code>craft-image-codecs</code>, avec des tests de parité statiques et animés. Une régression de compilation sur main (#2913 → #2915) a été corrigée le jour même. Le ticket storytold/craft-libs#778, qui couvre l'ensemble de ce chantier, est désormais clos pour le périmètre raster. Dylan Taylor est l'auteur des sept commits concernés.</p>
-<p><strong>PhotoCraft v0.23.1</strong> — Publié le 12 novembre, PhotoCraft 0.23.1 apporte des améliorations aux outils de dessin et d'édition (contrôles de zoom, comportement affiné du stylo et des points d'ancrage, meilleurs réglages par défaut pour les outils ligne et polygone), ainsi que de nombreuses corrections de fiabilité et de sécurité dans le traitement des images et l'export. Source : dépôt officiel storytold/photocraft.</p>
-<p><strong>FigCraft — commande « Set as opening page »</strong> — La branche principale de FigCraft (l'alternative à Figma de la suite Craft) a intégré une commande qui permet de définir la page affichée à l'ouverture d'un document partagé. Les collaborateurs conservent leur propre page pendant l'édition. Changement sur main, pas encore dans une version publiée.</p>
-<p><strong>ArtCraft Launcher — file d'attente de téléchargement</strong> — Le lanceur de la suite Craft (qui gère l'installation et la mise à jour des applications) intègre désormais une file d'attente : les téléchargements s'effectuent un par un par défaut, avec un paramètre pour autoriser plusieurs téléchargements simultanés. Changement sur main.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de notable cette semaine.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable.</p>
-<h2>Volume</h2>
-<p>7 commits publiés dans l'intervalle, 3 retenus (16-bit thumbnail precision, raster parity closure, PhotoCraft v0.23.1), 4 écartés (mises à jour de dépendances et correctifs de compilation internes).</p>
-<p><em>Note : le collecteur r/ArtCraftAI est en erreur 404 depuis le 20 novembre — les posts du subreddit n'ont pas été collectés. Seules les sources GitHub et YouTube étaient disponibles.</em></p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — samedi 21 novembre 2026</h1>
-<h2>En bref</h2>
-<p>La migration du pipeline raster legacy vers les codecs natifs Rust est achevée pour la branche principale, avec l'amélioration de la précision des vignettes 16 bits. PhotoCraft 0.23.1 a été publié, et FigCraft ajoute la gestion de page d'ouverture partagée. Le collecteur Reddit (r/ArtCraftAI) est en erreur 404 — aucun nouveau post du subreddit n'a pu être lu depuis le 17 novembre.</p>
-<h2>Nouveautés et annonces</h2>
-<p><strong>Précision des vignettes 16 bits et fin de la migration raster</strong> — Dylan Taylor a fusionné plusieurs séries de correctifs qui closent le dernier lot de la « native/legacy raster parity » (#2913, #2921). D'une part, les images 16 bits de grande taille bénéficient désormais d'un prévisualisation par moyennage en précision u64 avant conversion, évitant les débordements et les artefacts de quantification. D'autre part, l'ensemble du pipeline raster (decodage des vignettes, flip, redimensionnement, export PNG/WebP) a été basculé des décodeurs Tauri legacy vers la bibliothèque <code>craft-image-codecs</code>, avec des tests de parité statiques et animés. Une régression de compilation sur main (#2913 → #2915) a été corrigée le jour même. Le ticket storytold/craft-libs#778, qui couvre l'ensemble de ce chantier, est désormais clos pour le périmètre raster. Dylan Taylor est l'auteur des sept commits concernés.</p>
-<p><strong>PhotoCraft v0.23.1</strong> — Publié le 12 novembre, PhotoCraft 0.23.1 apporte des améliorations aux outils de dessin et d'édition (contrôles de zoom, comportement affiné du stylo et des points d'ancrage, meilleurs réglages par défaut pour les outils ligne et polygone), ainsi que de nombreuses corrections de fiabilité et de sécurité dans le traitement des images et l'export. Source : dépôt officiel storytold/photocraft.</p>
-<p><strong>FigCraft — commande « Set as opening page »</strong> — La branche principale de FigCraft (l'alternative à Figma de la suite Craft) a intégré une commande qui permet de définir la page affichée à l'ouverture d'un document partagé. Les collaborateurs conservent leur propre page pendant l'édition. Changement sur main, pas encore dans une version publiée.</p>
-<p><strong>ArtCraft Launcher — file d'attente de téléchargement</strong> — Le lanceur de la suite Craft (qui gère l'installation et la mise à jour des applications) intègre désormais une file d'attente : les téléchargements s'effectuent un par un par défaut, avec un paramètre pour autoriser plusieurs téléchargements simultanés. Changement sur main.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de notable cette semaine.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable.</p>
-<h2>Volume</h2>
-<p>7 commits publiés dans l'intervalle, 3 retenus (16-bit thumbnail precision, raster parity closure, PhotoCraft v0.23.1), 4 écartés (mises à jour de dépendances et correctifs de compilation internes).</p>
-<p><em>Note : le collecteur r/ArtCraftAI est en erreur 404 depuis le 20 novembre — les posts du subreddit n'ont pas été collectés. Seules les sources GitHub et YouTube étaient disponibles.</em></p>]]></content:encoded>
 </item>
 </channel>
 </rss>

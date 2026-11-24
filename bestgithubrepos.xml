@@ -6,9 +6,160 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 00:32:43 +0100</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 00:32:22 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-25.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 00:32:22 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Trois Show HN méritent le détour : un moteur d'entraînement pour modèle local alimenté par l'informatique disponible, une réplique de lecture PostgreSQL légère sur moteur colonne, et un studio vocal en licence libre sur votre propre GPU. Côté écosystème, Paperclip s'impose comme la référence open source pour gérer ses agents au travail, tandis que GPUI quitte Zed pour tenir son propre dépôt.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraînement en continu grâce à l'informatique idle</h3>
+<p>Songe est un moteur d'entraînement pour modèle local qui exploite les ressources inutilisées de votre machine pour faire progresser vos modèles sans interruption. Conçu par <code>sous-labs</code>, il tourne en Python sous licence Apache 2.0 et compte déjà 642 étoiles sur GitHub. L'approche — laisser votre ordinateur travailler pendant qu'il ne s'en sert pas — répond précisément au problème des modèles locaux qui stagnent faute de temps d'entraînement consacré.</p>
+<ul>
+<li>Licence : Apache 2.0 | Gratuit</li>
+<li><a href="https://github.com/sous-labs/songe">https://github.com/sous-labs/songe</a></li>
+</ul>
+<h3>Mason — réplique de lecture PostgreSQL sur moteur colonne</h3>
+<p>Mason se présente comme un remplacement « plug-and-play » d'une réplique de lecture PostgreSQL, propulsé par le moteur de calcul colonnaire de DuckDB. La question venait du besoin de rejeter des requêtes analytiques sur des bases PostgreSQL existantes sans apprendre ClickHouse. Mason ressemble à PostgreSQL côté interface, mais utilise le stockage colonnaire pour la vitesse. Développé par l'équipe derrière masondata.ai, il vient de passer devant les lecteurs HN avec 12 commentaires. Pas d'indication explicite de licence dans le post ; à vérifier sur le dépôt.</p>
+<ul>
+<li>Lien principal : <a href="https://masondata.ai">https://masondata.ai</a></li>
+<li>Autre vue : <a href="https://news.ycombinator.com/item?id=50630294">https://news.ycombinator.com/item?id=50630294</a></li>
+</ul>
+<h3>Decl — langage d'interface pour vous et votre IA</h3>
+<p>Decl propose un langage déclaratif spécifiquement conçu pour dialoguer entre humain et IA dans la définition des interfaces utilisateur. Le projet est porté par David Temkin, développeur connu dans la communauté. Il bénéficie d'une audience correcte sur HN (30 points, 11 commentaires). Le site declarelang.io expose le concept et démos. Pas d'information vérifiée sur la licence actuellement.</p>
+<ul>
+<li><a href="https://davidtemkin.github.io/declarelang">https://davidtemkin.github.io/declarelang</a></li>
+</ul>
+<h3>Paperclip — gestionnaire d'agents au travail</h3>
+<p>Paperclip s'est imposé comme l'application open source de référence pour gérer ses agents dans un environnement professionnel. Avec près de 117 000 étoiles sur GitHub, TypeScript sous licence MIT, et des mises à jour très récentes, c'est un outil mature. L'outil permet d'orchestrer plusieurs agents, définir des rôles et partager le contexte entre eux. La croissance récente est marquée, ce qui confirme un intérêt soutenu.</p>
+<ul>
+<li>Licence : MIT | Gratuit | ~117 000 étoiles</li>
+<li><a href="https://github.com/paperclipai/paperclip">https://github.com/paperclipai/paperclip</a></li>
+</ul>
+<h3>FigCraftStudio — alternative Figma locale en Rust</h3>
+<p>FigCraftStudio se positionne comme une alternative à Figma locale-first, écrite entièrement en Rust et fonctionnant aussi bien comme application native (Win/Mac/Linux) que via WebAssembly dans le navigateur. Fonctionnalités : Auto Layout, vecteurs, et support natif de MCP pour les agents IA. Tout fonctionne hors ligne, sans dépendance cloud. Le projet est très récent — seul 1 étoile pour l'instant, mais l'architecture prometteuse et l'ambition méritent une mention.</p>
+<ul>
+<li>Licence : MIT | Gratuit | 1 étoile (projet naissant)</li>
+<li><a href="https://github.com/jastfan/FigCraftStudio">https://github.com/jastfan/FigCraftStudio</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Rune — machine virtuelle Rust pour Emacs</h3>
+<p>Rune implémente une machine virtuelle Rust exécutée depuis Emacs, ouvrant la possibilité d'étendre Emacs avec du code Rust performant tout en conservant l'écosystème Emacs. Sous licence GPL 3.0, 843 étoiles, dernière mise à jour hier. L'auteur l'a présenté sur HN avec peu de réactions (16 points, 0 commentaire) — probablement trop tôt pour juger, mais le concept est unique.</p>
+<ul>
+<li>Licence : GPL 3.0 | Gratuit</li>
+<li><a href="https://github.com/CeleritasCelery/rune">https://github.com/CeleritasCelery/rune</a></li>
+</ul>
+<h3>Unlazy — compétence anti-paresse pour agents IA</h3>
+<p>Unlazy est une « compétence » conçue pour les agents de codage, fondée sur la méthode « Depth Tree ». Au lieu d'un budget temporel fixe, le système divise chaque tâche en N couches et alloue à chaque feuille le budget entier de la tâche originale, multipliant ainsi l'effort fourni. Documenté par la recherche 2025-2026 sur la paresse des modèles. 4 470 étoiles, JavaScript, MIT.</p>
+<ul>
+<li>Licence : MIT | Gratuit</li>
+<li><a href="https://github.com/Leonxlnx/unlazy">https://github.com/Leonxlnx/unlazy</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI quitte Zed pour un dépôt indépendant</h3>
+<p>Le framework graphique GPUI (GPU-accelerated UI framework for Rust), initialement intégré à l'éditeur Zed, fait maintenant l'objet d'un dépôt séparé : <code>zed-industries/gpui</code>. Le projet cumule environ 1 572 étoiles et a été mis à jour hier. Cette séparation indique un matûrement du composant et ouvre la porte à des utilisations en dehors de Zed. Pas de licence affichée sur le dépôt.</p>
+<ul>
+<li><a href="https://github.com/zed-industries/gpui">https://github.com/zed-industries/gpui</a></li>
+</ul>
+<h3>FireVoice — studio vocal gratuit sur GPU personnel</h3>
+<p>FireVoice se décrit comme un studio vocal open source gratuit tournant sur votre propre GPU. Développé par fabwaseem et affiché Show HN avec 12 points et 2 commentaires, il cible les utilisateurs souhaitant produire ou traiter de la voix synthétisée sans recourir à des services cloud.</p>
+<ul>
+<li><a href="https://firevoice.fabwaseem.com">https://firevoice.fabwaseem.com</a></li>
+</ul>
+<h2>GitManual cette semaine — sélection</h2>
+<p>La vision « récemment consultés » de gitmanual.com met en lumière les dépôts qui attirent le plus de visiteurs cette semaine. Certains sont des valeurs sûres, d'autres de découvertes intéressantes :</p>
+<ul>
+<li><strong>Openrig</strong> (8 957 étoiles, MIT) — Créez un réseau d'agents à partir de Claude Code, Codex et Pi : équipes persistantes avec rôles, contexte partagé et travail propriétaire.</li>
+<li><strong>OmniRoute</strong> (~90 000 étoiles, MIT) — Passerelle IA gratuite : un point de terminaison, 375 fournisseurs (plus de 150 gratuits), 1 400+ modèles. Compatible Claude Code, Codex, Cursor, OpenCode. Compression RTK+Caveman économisant 15-95 % de jetons.</li>
+<li><strong>OpenMontage</strong> (~83 000 étoiles, AGPL-3.0) — Premier système open source de production vidéo agentic : 12 pipelines, 100+ outils, 700+ fichiers de compétences. Transformez votre assistant de codage en studio vidéo complet.</li>
+<li><strong>Buzz</strong> (~23 000 étoiles, MIT) — Transcription et traduction audio hors ligne sur PC, propulsé par Whisper d'OpenAI.</li>
+<li><strong>Anarlog</strong> (~10 000 étoiles, MIT) — Alternative open source à Granola AI, en Rust.</li>
+<li><strong>DBDelve</strong> (~2 100 étoiles, GPL 3.0) — Client base de données rapide et léger en Rust utilisant GPUI.</li>
+<li><strong>PasteFerry</strong> — Synchronisation presse-papiers et fichiers entre macOS, Windows et Linux, chiffré de bout en bout.</li>
+<li><strong>StradaOS</strong> — Redonnez vie à l'écran Android de votre véhicule.</li>
+</ul>
+<p>Les dépôts déjà abordés précédemment (Notesnook, Uptime Kuma, Jackett, LlamaFactory, CapsWriter-Offline, Zotero PDF Translate, Solidus, TouchDeck, Piper) n'apportent rien de nouveau ce cycle.</p>
+<h2>Volume — nombre de posts traités</h2>
+<p>300 entrées issues de la shortlist (le collecteur nocturne en avait pré-filté 570, tronqué à 300 pour limiter la charge tokens — fichier marqué <code>"tronque": true</code>). Complétée par la relecture des extraits gitmanual et quelques appels API GitHub. 9 articles retenus, ~291 écartés. Les sujets répétés (retour de Jensen Huang chez Nvidia, cours Anthropic, politique IA Tidal, scandale Polymarket, Amazon drone) ont été exclus car non liés à des logiciels ou outils. Note : la shortlist n'étant pas exhaustive (170 éléments manquants entre le rang 300 et 570), il est possible que certains dépôts intéressants n'aient pas été vus ce cycle — à surveiller au prochain tour.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Trois Show HN méritent le détour : un moteur d'entraînement pour modèle local alimenté par l'informatique disponible, une réplique de lecture PostgreSQL légère sur moteur colonne, et un studio vocal en licence libre sur votre propre GPU. Côté écosystème, Paperclip s'impose comme la référence open source pour gérer ses agents au travail, tandis que GPUI quitte Zed pour tenir son propre dépôt.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraînement en continu grâce à l'informatique idle</h3>
+<p>Songe est un moteur d'entraînement pour modèle local qui exploite les ressources inutilisées de votre machine pour faire progresser vos modèles sans interruption. Conçu par <code>sous-labs</code>, il tourne en Python sous licence Apache 2.0 et compte déjà 642 étoiles sur GitHub. L'approche — laisser votre ordinateur travailler pendant qu'il ne s'en sert pas — répond précisément au problème des modèles locaux qui stagnent faute de temps d'entraînement consacré.</p>
+<ul>
+<li>Licence : Apache 2.0 | Gratuit</li>
+<li><a href="https://github.com/sous-labs/songe">https://github.com/sous-labs/songe</a></li>
+</ul>
+<h3>Mason — réplique de lecture PostgreSQL sur moteur colonne</h3>
+<p>Mason se présente comme un remplacement « plug-and-play » d'une réplique de lecture PostgreSQL, propulsé par le moteur de calcul colonnaire de DuckDB. La question venait du besoin de rejeter des requêtes analytiques sur des bases PostgreSQL existantes sans apprendre ClickHouse. Mason ressemble à PostgreSQL côté interface, mais utilise le stockage colonnaire pour la vitesse. Développé par l'équipe derrière masondata.ai, il vient de passer devant les lecteurs HN avec 12 commentaires. Pas d'indication explicite de licence dans le post ; à vérifier sur le dépôt.</p>
+<ul>
+<li>Lien principal : <a href="https://masondata.ai">https://masondata.ai</a></li>
+<li>Autre vue : <a href="https://news.ycombinator.com/item?id=50630294">https://news.ycombinator.com/item?id=50630294</a></li>
+</ul>
+<h3>Decl — langage d'interface pour vous et votre IA</h3>
+<p>Decl propose un langage déclaratif spécifiquement conçu pour dialoguer entre humain et IA dans la définition des interfaces utilisateur. Le projet est porté par David Temkin, développeur connu dans la communauté. Il bénéficie d'une audience correcte sur HN (30 points, 11 commentaires). Le site declarelang.io expose le concept et démos. Pas d'information vérifiée sur la licence actuellement.</p>
+<ul>
+<li><a href="https://davidtemkin.github.io/declarelang">https://davidtemkin.github.io/declarelang</a></li>
+</ul>
+<h3>Paperclip — gestionnaire d'agents au travail</h3>
+<p>Paperclip s'est imposé comme l'application open source de référence pour gérer ses agents dans un environnement professionnel. Avec près de 117 000 étoiles sur GitHub, TypeScript sous licence MIT, et des mises à jour très récentes, c'est un outil mature. L'outil permet d'orchestrer plusieurs agents, définir des rôles et partager le contexte entre eux. La croissance récente est marquée, ce qui confirme un intérêt soutenu.</p>
+<ul>
+<li>Licence : MIT | Gratuit | ~117 000 étoiles</li>
+<li><a href="https://github.com/paperclipai/paperclip">https://github.com/paperclipai/paperclip</a></li>
+</ul>
+<h3>FigCraftStudio — alternative Figma locale en Rust</h3>
+<p>FigCraftStudio se positionne comme une alternative à Figma locale-first, écrite entièrement en Rust et fonctionnant aussi bien comme application native (Win/Mac/Linux) que via WebAssembly dans le navigateur. Fonctionnalités : Auto Layout, vecteurs, et support natif de MCP pour les agents IA. Tout fonctionne hors ligne, sans dépendance cloud. Le projet est très récent — seul 1 étoile pour l'instant, mais l'architecture prometteuse et l'ambition méritent une mention.</p>
+<ul>
+<li>Licence : MIT | Gratuit | 1 étoile (projet naissant)</li>
+<li><a href="https://github.com/jastfan/FigCraftStudio">https://github.com/jastfan/FigCraftStudio</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Rune — machine virtuelle Rust pour Emacs</h3>
+<p>Rune implémente une machine virtuelle Rust exécutée depuis Emacs, ouvrant la possibilité d'étendre Emacs avec du code Rust performant tout en conservant l'écosystème Emacs. Sous licence GPL 3.0, 843 étoiles, dernière mise à jour hier. L'auteur l'a présenté sur HN avec peu de réactions (16 points, 0 commentaire) — probablement trop tôt pour juger, mais le concept est unique.</p>
+<ul>
+<li>Licence : GPL 3.0 | Gratuit</li>
+<li><a href="https://github.com/CeleritasCelery/rune">https://github.com/CeleritasCelery/rune</a></li>
+</ul>
+<h3>Unlazy — compétence anti-paresse pour agents IA</h3>
+<p>Unlazy est une « compétence » conçue pour les agents de codage, fondée sur la méthode « Depth Tree ». Au lieu d'un budget temporel fixe, le système divise chaque tâche en N couches et alloue à chaque feuille le budget entier de la tâche originale, multipliant ainsi l'effort fourni. Documenté par la recherche 2025-2026 sur la paresse des modèles. 4 470 étoiles, JavaScript, MIT.</p>
+<ul>
+<li>Licence : MIT | Gratuit</li>
+<li><a href="https://github.com/Leonxlnx/unlazy">https://github.com/Leonxlnx/unlazy</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI quitte Zed pour un dépôt indépendant</h3>
+<p>Le framework graphique GPUI (GPU-accelerated UI framework for Rust), initialement intégré à l'éditeur Zed, fait maintenant l'objet d'un dépôt séparé : <code>zed-industries/gpui</code>. Le projet cumule environ 1 572 étoiles et a été mis à jour hier. Cette séparation indique un matûrement du composant et ouvre la porte à des utilisations en dehors de Zed. Pas de licence affichée sur le dépôt.</p>
+<ul>
+<li><a href="https://github.com/zed-industries/gpui">https://github.com/zed-industries/gpui</a></li>
+</ul>
+<h3>FireVoice — studio vocal gratuit sur GPU personnel</h3>
+<p>FireVoice se décrit comme un studio vocal open source gratuit tournant sur votre propre GPU. Développé par fabwaseem et affiché Show HN avec 12 points et 2 commentaires, il cible les utilisateurs souhaitant produire ou traiter de la voix synthétisée sans recourir à des services cloud.</p>
+<ul>
+<li><a href="https://firevoice.fabwaseem.com">https://firevoice.fabwaseem.com</a></li>
+</ul>
+<h2>GitManual cette semaine — sélection</h2>
+<p>La vision « récemment consultés » de gitmanual.com met en lumière les dépôts qui attirent le plus de visiteurs cette semaine. Certains sont des valeurs sûres, d'autres de découvertes intéressantes :</p>
+<ul>
+<li><strong>Openrig</strong> (8 957 étoiles, MIT) — Créez un réseau d'agents à partir de Claude Code, Codex et Pi : équipes persistantes avec rôles, contexte partagé et travail propriétaire.</li>
+<li><strong>OmniRoute</strong> (~90 000 étoiles, MIT) — Passerelle IA gratuite : un point de terminaison, 375 fournisseurs (plus de 150 gratuits), 1 400+ modèles. Compatible Claude Code, Codex, Cursor, OpenCode. Compression RTK+Caveman économisant 15-95 % de jetons.</li>
+<li><strong>OpenMontage</strong> (~83 000 étoiles, AGPL-3.0) — Premier système open source de production vidéo agentic : 12 pipelines, 100+ outils, 700+ fichiers de compétences. Transformez votre assistant de codage en studio vidéo complet.</li>
+<li><strong>Buzz</strong> (~23 000 étoiles, MIT) — Transcription et traduction audio hors ligne sur PC, propulsé par Whisper d'OpenAI.</li>
+<li><strong>Anarlog</strong> (~10 000 étoiles, MIT) — Alternative open source à Granola AI, en Rust.</li>
+<li><strong>DBDelve</strong> (~2 100 étoiles, GPL 3.0) — Client base de données rapide et léger en Rust utilisant GPUI.</li>
+<li><strong>PasteFerry</strong> — Synchronisation presse-papiers et fichiers entre macOS, Windows et Linux, chiffré de bout en bout.</li>
+<li><strong>StradaOS</strong> — Redonnez vie à l'écran Android de votre véhicule.</li>
+</ul>
+<p>Les dépôts déjà abordés précédemment (Notesnook, Uptime Kuma, Jackett, LlamaFactory, CapsWriter-Offline, Zotero PDF Translate, Solidus, TouchDeck, Piper) n'apportent rien de nouveau ce cycle.</p>
+<h2>Volume — nombre de posts traités</h2>
+<p>300 entrées issues de la shortlist (le collecteur nocturne en avait pré-filté 570, tronqué à 300 pour limiter la charge tokens — fichier marqué <code>"tronque": true</code>). Complétée par la relecture des extraits gitmanual et quelques appels API GitHub. 9 articles retenus, ~291 écartés. Les sujets répétés (retour de Jensen Huang chez Nvidia, cours Anthropic, politique IA Tidal, scandale Polymarket, Amazon drone) ont été exclus car non liés à des logiciels ou outils. Note : la shortlist n'étant pas exhaustive (170 éléments manquants entre le rang 300 et 570), il est possible que certains dépôts intéressants n'aient pas été vus ce cycle — à surveiller au prochain tour.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-24.html</link>

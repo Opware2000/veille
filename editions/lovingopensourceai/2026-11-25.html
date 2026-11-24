@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../lovingopensourceai.xml" title="r/LovingOpenSourceAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>La journée a été dominée par la controverse autour du retour de Jensen Huang chez Nvidia et de l'IPO d'Anthropic — peu de place pour les outils dans ce déluge politique. Le vrai contenu utile se concentre sur Songe, moteur d'entraînement local ; Stalwart 1.2.0, désormais compatible Exchange ; et FireVoice, studio vocal gratuit fonctionnant sur votre GPU. Trois extensions Datasette d'alpha précoce de Simon Willison, ainsi que Ladybird, premier alpha d'un nouveau navigateur, complètent le panorama.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Songe — entraîner son modèle local avec son propre matériel inactif</h3>
+<p>Sous Labs publie Songe, un moteur d'apprentissage conçu pour s'intégrer discrètement à votre environnement de développement. Il écoute ce que vous faites avec votre modèle local (OpenAI-compatible) : résultats d'outils, erreurs, corrections manuelles. Lorsqu'aucune tâche n'est active, il utilise ces traces pour entraîner le modèle ou ajuster ses instructions. Deux modes sont prévus : un « Quick Dream » pour ajouter vos préférences aux instructions en quelques minutes, et un « Deep Dream » pour former réellement le modèle pendant que vous êtes absent. Rien ne quitte votre machine, aucun compte requis, aucune télémétrie. Nouvelle version installée uniquement si elle bat l'ancienne sur vos propres conversations. Licence Apache-2.0.</p>
+<p>Installable via <code>uv</code> ou <code>pipx</code>, macOS Homebrew, Python 3.11+. Compatible avec LM Studio, Opencode, Pi.</p>
+<p>https://github.com/sous-labs/songe</p>
+<p><em>637 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h3>Stalwart 1.2.0 — serveur de messagerie compatible Microsoft Exchange</h3>
+<p>Le serveur de messagerie auto-hébergé Stalwart passe en version 1.2.0 et devient un remplaçant direct de Microsoft Exchange. Il implémente désormais MAPI over HTTP, Exchange Web Services (EWS), Exchange ActiveSync et Autodiscover. Outlook, Apple Mail et les clients mobiles s'y connectent comme ils le feraient avec un Exchange, avec messagerie, calendriers, contacts, tâches et notes dans un seul compte. L'implémentation Exchange est incluse dans l'édition communautaire sous licence AGPL. Une étape majeure pour l'auto-hébergement de messagerie professionnelle.</p>
+<p>https://stalw.art/blog/microsoft-exchange-replacement/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI</em></p>
+<h3>FireVoice — studio vocal gratuit sur votre GPU</h3>
+<p>FireVoice se présente comme un studio vocal gratuit et autonome, capable de fonctionner sur votre propre GPU. Il prend en charge Windows, Mac et Linux, fonctionne hors-ligne et vise à transformer la saisie vocale en texte épuré, corrigé et mis en forme automatiquement. Annoncé sur Hacker News avec seulement 12 points — nouveauté récente encore peu vue — le site promet près de quatre fois plus de productivité que la frappe clavier classique.</p>
+<p>https://firevoice.fabwaseem.com/</p>
+<h3>Genesis Map — visualiser les changements d'un agent logiciel</h3>
+<p>Un outil publié pour comprendre ce qu'un agent fait quand il écrit du code. Genesis Map trace les modifications apportées par un agent de développement, permet de voir où elles pourraient introduire des régressions et sert de contrepoint visuel à la vitesse croissante des agents qui livrent du code. Licence Apache-2.0.</p>
+<p>https://github.com/GenesisAgentInfra/genesis</p>
+<p><em>70 étoiles · mise à jour 23 nov. 2026 · Apache-2.0</em></p>
+<h3>Inference Observe — aperçu en direct de votre moteur d'inférence LLM</h3>
+<p>Un tableau de bord expérimental permettant d'observer le fonctionnement interne de SGLang et vLLM pendant l'exécution. Outil de débogage et d'analyse pour développeurs travaillant directement avec des moteurs d'inférence. Licence Apache-2.0.</p>
+<p>https://gauravjain14.github.io/inference-observe/</p>
+<p><em>12 étoiles · mise à jour 24 nov. 2026 · Apache-2.0</em></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>GPUI — le cadre graphique de Zed devient un projet séparé</h3>
+<p>GPUI, le framework UI qui alimente l'éditeur Zed, a reçu son propre dépôt GitHub, indépendant de Zed Industries. Cette séparation pourrait faciliter les contributions extérieures et permettre à d'autres projets d'utiliser GPUI comme fondement graphique.</p>
+<p>https://github.com/zed-industries/gpui</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 81 points HN</em></p>
+<h3>Shirudo — runtime OpenAI / Cisco pour protéger les Linux non patchés</h3>
+<p>OpenAI et Cisco annoncent Shirudo, un runtime open source destiné à isoler les systèmes Linux dont les correctifs de sécurité n'ont pas pu être appliqués. S'adresse aux environnements critiques où le redémarrage ou le patching immédiat n'est pas possible. Moins un outil grand public qu'une brique infrastructure.</p>
+<p>https://openai.com/index/introducing-shirudo/</p>
+<p><em>14 points HN · 1 commentaire</em></p>
+<h2>Extensions et greffons</h2>
+<h3>Datasette — deux nouvelles extensions alpha de Simon Willison</h3>
+<p>Simon Willison publie simultanément <strong>datasette-agent 0.7a1</strong> et <strong>datasette-charts 0.2a0</strong>. La première améliore la navigation des sessions de chat avec des panneaux latéraux iframe et une intégration profonde avec les plugins Datasette. La seconde propose un plugin de graphiques interrogé par langage naturel : on demande à Chat une chart et le plugin génère le graphique approprié en utilisant des suggestions de type de visualisation et les outils de génération sous-jacents.</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-agent/</p>
+<p>https://simonwillison.net/2026/Nov/24/datasette-charts/</p>
+<h2>Autres</h2>
+<h3>Ladybird — premier alpha d'un nouveau navigateur web</h3>
+<p>Ladybird publie son premier alpha : un navigateur écrit entièrement de zéro avec ses propres moteurs HTML, CSS, layout JavaScript et WebAssembly. Quelques composants externes restent utilisés (HarfBuzz, Skia, ffmpeg, SQLite). Ambition notable dans un marché dominé par Chromium et Gecko.</p>
+<p>https://ladybird.org/</p>
+<h3>NovoYN — modèle décisionnel en boucle ouverte</h3>
+<p>Une équipe annonce NovoYN, un modèle de décision à architecture looped transformer de qualité state-of-the-art. Disponible en version 0.9 avec poids ouverts. Basé sur une architecture où un groupe de couches à poids partagés itère plusieurs fois pour affiner les états cachés.</p>
+<p>https://www.novyn.ai/blog/announcing-novyn-looped-decision-0.9/</p>
+<p><em>Aussi vu sur le subreddit r/LovingOpenSourceAI — 2 points HN</em></p>
+<h3>Rune — VM Rust pour Emacs</h3>
+<p>Rune est une machine virtuelle écrite en Rust visant à exécuter le code Emacs Lisp dans un environnement moderne. Permettrait une exécution plus rapide et plus sûre du code Elisp avec une compatibilité ascendante. Mise à jour octobre 2026.</p>
+<p>https://github.com/CeleritasCelery/rune</p>
+<p><em>843 étoiles · GPL-3.0</em></p>
+<hr />
+<p><strong>Volume</strong> — 79 articles publiés dans l'intervalle (seuil ≥ 10 points HN), 10 retenus, 69 écartés. Les sujets Nvidia-Anthropic ont occupé la quasi-totalité des discussions ; la veille a traité en priorité les annonces d'outils concrets parmi les fils restants.</p>
+<footer>Édition du mercredi 25 novembre 2026 — <a href="https://opware2000.github.io/veille/lovingopensourceai.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
