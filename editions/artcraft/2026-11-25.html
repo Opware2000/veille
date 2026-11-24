@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille ArtCraft — mercredi 25 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../artcraft.xml" title="r/ArtCraftAI">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille ArtCraft — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le fil r/ArtCraftAI continue de déborder : un thread sur la génération d'IA locale dans PhotoCraft dépasse les 500 votes, et une release de PDFCraft corrige un problème de résolution d'impression. Début de développement natif avec migration vers craft-image-codecs pour le traitement des images.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>PhotoCraft — intégration d'un agent IA local et modèle Qwen-Image 2.1 (EggLab)</h3>
+<p>La publication <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y02kga/local_ai_image_generation_image_editing_and_a/">t3_1y02kga</a> a récolté <strong>531 votes</strong> en quelques heures, indiquant que l'agent intégré à PhotoCraft — sous le nom EggLab — est désormais disponible avec support de l'IA locale via le CLI OpenCode. L'agent permet de sélectionner une zone du canvas, de décrire une modification en texte naturel, et de voir le résultat directement sur le calque actif — sans passer par le cloud. Parmi les améliorations de la mise à jour 0.3.31 signalée sur <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y28zd7/update/">t3_1y28zd7</a> : meilleure compréhension des instructions utilisateur (croquis, encadrement, flèches dessinés directement sur le calque), capacité de pointer vers une configuration OpenCode existante ou vers d'autres modèles de la famille Qwen-Image 2.1, et possibilité de contourner l'agent pour envoyer une consigne directement au modèle via <code>/egg "votre consigne" @mention_layer</code>. Pour les développeurs et utilisateurs avancés : la sélection d'un modèle local ou d'une API externe reste à confirmer, car l'article Reddit ne détaille pas l'étendue du support OpenCode. Par ailleurs, le thread <a href="https://www.reddit.com/r/ArtCraftAI/comments/1xxckyj/thoughts_on_native_file_formats_vs_sticking/">t3_1xxckyj</a> montre que l'équipe réfléchit actuellement à l'architecture des fichiers natifs : supporter exclusivement le format .psd (indispensable pour l'interopérabilité) ou créer des formats dédiés à chaque application Craft. Une décision importante pour les plugins et l'intégration à long terme. <em>AdditionCorrect2929 / AdditionCorrect2929</em></p>
+<h3>PDFCraft v0.22.0 — correction du rendu d'impression</h3>
+<p>Une nouvelle version de PDFCraft (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">t3_1y3fv9i</a>), saluée par <strong>617 votes</strong> et 42 commentaires, résout enfin le problème de résolution d'impression qui affectait les exports PDF depuis plusieurs versions. Les utilisateurs signalent pouvoir se débarrasser d'autres logiciels PDF. Cette release répond à un besoin récurrent ; aucun détail technique supplémentaire n'a été trouvé sur le correctif exact. <em>YEEG4R</em></p>
+<h3>Nouvelle version Android Craftapps 0.6.0</h3>
+<p>La sortie <a href="https://www.reddit.com/r/ArtCraftAI/comments/1xwguoq/android_craftapps_060_released_more_desktop/">t3_1xwguoq</a> annonce Android Craftapps 0.6.0. La suite continue de porter les applications ArtCraft sur Android — WordCraft, GridCraft, PDFCraft — bien qu'aucun changelog détaillé n'ait été relevé sur ce passage de version. <em>Bchliu</em></p>
+<h3>Anicraft_ffmpeg — configuration du rendu vidéo</h3>
+<p>Plusieurs utilisateurs tentent d'exporter des vidéos depuis Anicraft via FFmpeg (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1xxvyjs/anicraft_ffmpeg/">t3_1xxvyjs</a>). Le projet dépend de FFmpeg installé séparément ; son intégration directe dans Anicraft serait un gain d'ergonomie notable pour les utilisateurs macOS qui doivent configurer FFmpeg manuellement. <em>Lario_o</em></p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>SketchCraft — modélisation 3D push/pull open-source (MIT)</h3>
+<p><a href="https://github.com/apprehensive-fly/sketchcraft">SketchCraft</a> est un éditeur 3D push/pull écrit en Rust (Tauri + React), licencié MIT dans l'esprit des Craft apps. Il ouvre les fichiers SketchUp, DWG/DXF et IFC, génère des murs à partir de plans 2D, propose des études solaires et des rendus photoréalistes, et expose chaque action via un scriptable over MCP. Le développeur souhaite intégrer SketchCraft au 3D Stage d'ArtCraft pour modéliser un décor puis générer des textures IA. <em>Apprehensive_Fly_493</em></p>
+<h3>CraftLook — miniatures et aperçus Quick Look pour tous les projets ArtCraft sur macOS</h3>
+<p>CraftLook (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/">t3_1y2uigf</a>) est une application macOS gratuite offrant des vignettes Finder et des aperçus Quick Look pour les projets de toute la suite ArtCraft (.figcraft, .designcraft, .vectorcraft, .tcraft, .pcraft, .sc, .solidcraft, .fcproj, .mcraft, .ecproj, .ecprojx, .scraft) ainsi que pour les PSD et SVG (avec une qualité supérieure au preview macOS par défaut). Elle intègre huit moteurs de rendu sans tête des applications ArtCraft — le binaire décompressé pèse environ 1,6 Go. Signé et notarised Apple. <em>Roccobot</em></p>
+<h3>Plugin Stream Deck pour LightCraft</h3>
+<p>Un plugin Stream Deck open-source relie directement au port de contrôle local de LightCraft (127.0.0.1:7980) (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">t3_1y36lz3</a>). Connexion bidirectionnelle : le deck affiche en direct les valeurs des curseurs et synchronise les touches éclairées (culling, évaluations). Fonctionnalités : encodeurs (120+ curseurs de développement, cadrans de transformation/recadrage, navigateur de préréglages), touches (auto-tone, AI denoise, HDR, masques AI via SAM 3, album/collection), et progression en direct pour l'export. Compatible Stream Deck 6.5+ et OpenDeck. Disponible sur la page des releases. <em>ResearcherMassive802</em></p>
+<h3>ModCraft — environnement de développement assisté par IA pour les plugins ArtCraft</h3>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y1895k/app_request_modcraft/">ModCraft</a> est un outil communautaire permettant de créer des plugins pour les apps ArtCraft avec assistance IA. L'utilisateur sélectionne une application cible, charge le prompt agent vérifié de cette app, déploie directement dans le répertoire plugins pour tests instantanés, et itère avec incrément automatique de version. Objectif : réduire les frictions de copier-coller et passer de l'idée au test en quelques secondes. Il s'agit d'une demande de développement (non encore intégrée à la suite officielle). <em>Eduliz</em></p>
+<h3>Hamster Video — téléchargeur vidéo open-source pour Mac</h3>
+<p><a href="https://spookspectrum.github.io/hamster-video/">Hamster Video</a> est un petit utilitaire gratuit et open-source pour télécharger des vidéos sur Mac (Apple Silicon et Intel), créé par un développeur motivé par les mises à jour intrusives de 4K Video Downloader Plus. Projet inspiré par l'esprit ArtCraft. <em>Outside_Bison6179</em></p>
+<h2>Autour d'ArtCraft</h2>
+<h3>Analyse SIG de la qualité du code ArtCraft</h3>
+<p>Le thread <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/">t3_1y3eq7n</a> reprend une analyse de Software Improvement Group (<a href="https://www.softwareimprovementgroup.com/blog/artcraft-adobe-clone-ai-code-quality/">SIG</a>) comparant la dette technique et la qualité du code ArtCraft aux standards du secteur. Le sujet a suscité 36 commentaires ; l'outil SIG mesure entre autres la modularité, la duplication et la complexité cyclomatique. Aucun communiqué officiel de Storytold AI n'a été relevé en réponse. <em>Delicious_Recover543</em></p>
+<h3>Développement natif ArtCraft — migration vers craft-image-codecs</h3>
+<p>Le dépôt principal confirme un effort continu de migration vers <code>craft-image-codecs</code> pour le traitement des images : suppression progressive de la dépendance au crate <code>image</code> (<code>artcraft-native/src/backend/media_cache.rs</code>, <code>crates/desktop/artcraft/core/utils/image/*</code>, <code>crates/lib/files/images</code>). Ce mouvement vise la consolidation autour de <code>craft-sniff</code> pour la détection de types de fichiers (images, audio, vidéo, 3D), la gestion améliorée des erreurs (les échantillons 16-bit absents retournent des erreurs plutôt que des Option), et la protection contre les bombes de décompression EXIF (<code>de571bb</code> → <code>74e2ec5</code> → <code>c288a23</code> → <code>3217e0e</code>). La parité native/legacy est presque complète (problème de build post-#2921 corrigé dans #2923). Aucune release user-visible n'en découle immédiatement : c'est du travail infrastructure. <em>dylanmtaylor</em></p>
+<h3>Collecteur ArtCraftAI — erreur HTTP 404 le 22 novembre</h3>
+<p>La dernière collecte programmée pour la source principale (<code>state/artcraftai/</code>) a échoué avec une erreur HTTP 404 Not Found le 22 novembre. Le relais Reddit (<code>state/reddit/ArtCraftAI/posts.jsonl</code>) fonctionne toujours normalement et alimente cette veille. La source principale semble être temporairement indisponible ; aucune intervention requise si elle rétablit.</p>
+<h2>À signaler</h2>
+<p>Aucun incident de sécurité ni alerte notable détecté.</p>
+<h2>Volume</h2>
+<p>63 posts du subreddit r/ArtCraftAI examinés, 6 retenus, 57 écartés. 11 commits du dépôt officiel (dernière publication le 24 nov.) examinés, 0 retenus comme nouveautés utilisateurs. 0 nouvelle release. Source artcraftai/ : erreur 404 le 22 novembre, relais reddit en service.</p>
+<footer>Édition du mercredi 25 novembre 2026 — <a href="https://opware2000.github.io/veille/artcraft.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
