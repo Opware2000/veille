@@ -6,9 +6,137 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 00:51:33 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 01:13:33 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-24.html</link>
+<guid isPermaLink="false">latex-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 01:13:33 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — mardi 24 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le moteur TeX de bureau TeXyon s'ouvre : écrit en Rust, il vise l'aperçu en temps réel et se distribue avec une extension VS Code et un paquet npm. L'outil Snippai, utilisé par près de deux mille personnes, propose de convertir des captures d'écran en code LaTeX grâce à l'IA. Le reste du jour est dominé par des demandes de dépannage et des questions sans réponse nouvelle.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>TeXyon — moteur TeX de bureau pour l'aperçu direct</h3>
+<p>Yendric a publié le code source de TeXyon, un moteur TeX écrit entièrement en Rust et conçu dès l'origine pour afficher les modifications aussi rapidement que possible. Le projet accompagne son lancement d'un article technique détaillant les décisions architecturales, de benchmarks comparatifs et d'une liste de bugs connus. Trois livrables sont mis à disposition :</p>
+<ul>
+<li><strong>Moteur natif</strong> — binaire unique compilé depuis Rust, exécutable localement sur macOS, Linux et Windows ;</li>
+<li><strong>Extension VS Code</strong> — démontre le moteur en action via une intégration native ;</li>
+<li><strong>Paquet npm</strong> — compile TeXyon en WebAssembly et expose une API simple pour créer des expériences TeX interactives dans un navigateur.</li>
+</ul>
+<p>L'auteur a validé la fidélité de compilation sur plus de 9 000 documents tirés de TexLive en amont. Début de projet, bogues attendus — les rapports se font sur le dépôt GitHub.</p>
+<p>Licence : MIT. Dépôt : <a href="https://github.com/texyon-org/texyon">github.com/texyon-org/texyon</a> · 17 étoiles. Article de présentation : <a href="https://yendric.be/introducing-texyon/">yendric.be/introducing-texyon</a>.</p>
+<h3>Snippai — extraire du LaTeX d'une capture d'écran grâce à l'IA</h3>
+<p>Outil open-source permettant de convertir des captures d'écran contenant des formules ou du code vers LaTeX, Markdown ou réponses textuelles. Utilise l'intelligence artificielle pour lire le contenu visuel et restituer du code exploitable directement. Communauté importante (près de 2 000 étoiles sur GitHub). Licence : AGPL-3.0. Dépôt : <a href="https://github.com/xyTom/snippai">github.com/xyTom/snippai</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Aucune annonce majeure de distribution ou de paquet CTATN dans les quatre derniers jours. Le flux Overleaf n'a rien publié d'actuel.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p>Rien de nouveau à retenir ce cycle. Les discussions sur le subreddit consistent principalement en questions de débogage sans solution applicable à un contexte plus large.</p>
+<h2>Volume</h2>
+<p>Environ 25 entrées publiées dans les sources examinées (r/LaTeX, TeX Stack Exchange, Typst forum) entre le 20 et le 24 novembre, 2 retenues, 23 écartées. Taux de rétention : 8 %.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — mardi 24 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le moteur TeX de bureau TeXyon s'ouvre : écrit en Rust, il vise l'aperçu en temps réel et se distribue avec une extension VS Code et un paquet npm. L'outil Snippai, utilisé par près de deux mille personnes, propose de convertir des captures d'écran en code LaTeX grâce à l'IA. Le reste du jour est dominé par des demandes de dépannage et des questions sans réponse nouvelle.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>TeXyon — moteur TeX de bureau pour l'aperçu direct</h3>
+<p>Yendric a publié le code source de TeXyon, un moteur TeX écrit entièrement en Rust et conçu dès l'origine pour afficher les modifications aussi rapidement que possible. Le projet accompagne son lancement d'un article technique détaillant les décisions architecturales, de benchmarks comparatifs et d'une liste de bugs connus. Trois livrables sont mis à disposition :</p>
+<ul>
+<li><strong>Moteur natif</strong> — binaire unique compilé depuis Rust, exécutable localement sur macOS, Linux et Windows ;</li>
+<li><strong>Extension VS Code</strong> — démontre le moteur en action via une intégration native ;</li>
+<li><strong>Paquet npm</strong> — compile TeXyon en WebAssembly et expose une API simple pour créer des expériences TeX interactives dans un navigateur.</li>
+</ul>
+<p>L'auteur a validé la fidélité de compilation sur plus de 9 000 documents tirés de TexLive en amont. Début de projet, bogues attendus — les rapports se font sur le dépôt GitHub.</p>
+<p>Licence : MIT. Dépôt : <a href="https://github.com/texyon-org/texyon">github.com/texyon-org/texyon</a> · 17 étoiles. Article de présentation : <a href="https://yendric.be/introducing-texyon/">yendric.be/introducing-texyon</a>.</p>
+<h3>Snippai — extraire du LaTeX d'une capture d'écran grâce à l'IA</h3>
+<p>Outil open-source permettant de convertir des captures d'écran contenant des formules ou du code vers LaTeX, Markdown ou réponses textuelles. Utilise l'intelligence artificielle pour lire le contenu visuel et restituer du code exploitable directement. Communauté importante (près de 2 000 étoiles sur GitHub). Licence : AGPL-3.0. Dépôt : <a href="https://github.com/xyTom/snippai">github.com/xyTom/snippai</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p>Aucune annonce majeure de distribution ou de paquet CTATN dans les quatre derniers jours. Le flux Overleaf n'a rien publié d'actuel.</p>
+<h2>Astuces et gabarits réutilisables</h2>
+<p>Rien de nouveau à retenir ce cycle. Les discussions sur le subreddit consistent principalement en questions de débogage sans solution applicable à un contexte plus large.</p>
+<h2>Volume</h2>
+<p>Environ 25 entrées publiées dans les sources examinées (r/LaTeX, TeX Stack Exchange, Typst forum) entre le 20 et le 24 novembre, 2 retenues, 23 écartées. Taux de rétention : 8 %.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/opensource — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-24.html</link>
+<guid isPermaLink="false">opensource-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 01:01:38 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>PostgreSQL 19 sort en version stable avec une refonte de la gestion des tables. LibreOffice 27.2 Alpha 1 est disponible pour tests. Rust 1.100 et FFmpeg 9.1 complètent le carnet de releases du jour. Plusieurs nouveaux outils libres méritent l'attention, notamment OpenShorts (nearly 10k étoiles) et un dashboard Linux complet.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenShorts</strong> — générateur de shorts vidéo à partir de longs formats vidéo, alimenté par l'IA mais open source. Permet d'extraire automatiquement des segments courts de vidéos existantes. Python, licence MIT, ~9 800 étoiles sur GitHub (source: <a href="https://github.com/mutonby/openshorts">mutonby/openshorts</a>).</p>
+<p><strong>Budget</strong> — application de suivi budgétaire personnelle pour Mac et Windows, mode simple pour les budgets et dépenses courants, mode avancé avec report des reliquats et répartition multi-budgets. Données stockées localement via Markdown dans Git. GPL-3.0, langage Python, 1 étoile (<a href="https://github.com/hendrikdemir/budget">hendrikdemir/budget</a>). Gratuit.</p>
+<p><strong>Hermit CRM</strong> — CRM open source pour solopreneurs et indépendants. Conçu pour suivre les prospects et deals au sein d'une petite structure : données stockées en Markdown dans Git, accessible via application web. Licence GPL-3.0, Python, 1 étoile (<a href="https://github.com/gijsbos/hermit-crm">gijsbos/hermit-crm</a>). Gratuit.</p>
+<p><strong>Just Dashboard</strong> — panneau de contrôle privé pour serveur Linux : déploiement d'applications, Docker, bases de données, proxy et TLS, terminal intégré, gestion de fichiers, Git et sauvegardes. Go, licence AGPL-3.0, 26 étoiles, dernière mise à jour le 23/11 (<a href="https://github.com/JustDashboard/Just-Dashboard">JustDashboard/Just-Dashboard</a>). Gratuit et auto-hébergeable.</p>
+<p><strong>Dawarich</strong> — solution de géolocalisation auto-hébergée. Trace les déplacements et permet un partage familial du positionnement, sans dépendance aux services propriétaires. Source non spécifiée (<a href="https://dawarich.com">dawarich</a>). Gratuit.</p>
+<p><strong>Satura</strong> — espace de travail Apache 2.0 pour agents IA qui « vous tendent la main » pendant la programmation. Interface de travail collaborative pilotée par IA (<a href="https://satura.space">satura.space</a>).</p>
+<p><strong>Pentworks</strong> — outil CLI open source pour gérer des projets de tests d'intrusion (penetration testing). Organisation des engagements, traçabilité et rapports. Python, aucune licence identifiée, 8 étoiles (<a href="https://github.com/Sheykder/Pentworks">Sheykder/Pentworks</a>). Gratuit.</p>
+<p><strong>ScreenTinker</strong> — logiciel de signalétique numérique distante open source pour vos propres téléviseurs. Serveur + clients légers. JavaScript, licence MIT, 277 étoiles, 76 forks, dernière MAJ le 23/11 (<a href="https://github.com/screentinker/screentinker">screentinker/screentinker</a>). Gratuit.</p>
+<p><strong>Tellyscope</strong> — lecteur/streamer TV internet Kotlin, licence GPL-3.0, 2 217 étoiles (<a href="https://github.com/man15h/tellyscope">man15h/tellyscope</a>). Gratuit.</p>
+<p><strong>Inbox Envoy</strong> — compétence open source de tri d'emails dédiée à votre propre agent IA. Filtre, classifie et priorise les messages entrants. Python, licence MIT, 4 étoiles (<a href="https://github.com/salespeak-ai/inbox-envoy">salespeak-ai/inbox-envoy</a>). Gratuit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — sortie officielle de cette version majeure de la base de données relationnelle open source. Gestion des tables entièrement repensée, performances accrues et nouvelles fonctionnalités (source: <a href="https://www.phoronix.com/news/PostgreSQL-19-Released">phoronix</a>, <a href="https://postgresql.developpez.com/actu/389354">developpez</a>). PostgreSQL sous licence PostgreSQL (permissive).</p>
+<p><strong>LibreOffice 27.2 Alpha 1</strong> — première version alpha destinée aux tests, en vue de la sortie stable prévue en février. La suite bureautique libre poursuit son cycle de développement bi-mensuel (source: <a href="https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1">phoronix</a>). MPL-2.0.</p>
+<p><strong>Rust 1.100</strong> — ce release stabilise le type <code>never</code>, l'API <code>Allocator</code> et implémente l'API <code>DropGuard</code>. Ce sont des évolutions fondamentales du language (source: <a href="https://rust.developpez.com/actu/389089">developpez</a>).</p>
+<p><strong>FFmpeg 9.1</strong> — nouvelle version de la référence open source pour le traitement audio/vidéo. Changelog détaillé disponible (source: <a href="https://www.phoronix.com/news/FFmpeg-9.1-Released">phoronix</a>).</p>
+<p><strong>Wine 11.22</strong> — nouvelle publication du compatibilité Windows/Linux, incluant des correctifs OpenGL et des améliorations cross-process render (source: <a href="https://www.phoronix.com/news/Wine-11.22-Released">phoronix</a>).</p>
+<p><strong>KDE Plasma 6.9</strong> — la maquette XWayland on demand est désormais intégrée, permettant de basculer selon besoin entre Wayland et X11 par session (source: <a href="https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand">phoronix</a>).</p>
+<p><strong>Mesa 26.3.1</strong> — correction de régressions et bugs dans les pilotes GPU Mesa (source: <a href="https://www.phoronix.com/news/Mesa-26.3.1-Released">phoronix</a>).</p>
+<p><strong>Blender 5.3</strong> — nouvelle version majeure de la suite 3D open source. Mises à jour notables (source: <a href="https://www.phoronix.com/news/Blender-5.3-Released">phoronix</a>). LGPL-2.1.</p>
+<p><strong>Linux 7.4-rc4</strong> — quatrième candidate release du noyau Linux 7.4, marqué comme volumineux par Linus Torvalds. Inclut de nombreuses corrections et nouveautés (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc4-Released">phoronix</a>).</p>
+<p><strong>Linux 7.4-rc3</strong> — release candidate précédente marquant aussi des progrès significatifs (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc3-Released">phoronix</a>).</p>
+<p><strong>Firefox 161</strong> — navigation web open source ajoutant le basculement VPN par site et une section de thèmes classiques. Le VPN intégré gratuit avec volume illimité fonctionne jusqu'en janvier 2027 (source: <a href="https://www.phoronix.com/news/Firefox-161">phoronix</a>). Mozilla Public License.</p>
+<p><strong>PHP 8.6</strong> — nouveau release du langage incluant l'application partielle de fonctions, une nouvelle classe <code>Duration</code> et une API de polling. (source: <a href="https://www.phoronix.com/news/PHP-8.6-Released">phoronix</a>, <a href="https://php.developpez.com/actu/389311">developpez</a>).</p>
+<p><strong>NVIDIA 620.73.04</strong> — pilote Linux NVIDIA, mise à jour mensuelle de drivers GPU (source: <a href="https://www.phoronix.com/news/NVIDIA-620.73.04-Linux">phoronix</a>).</p>
+<p><strong>Fedora 46 approuve RPM v6</strong> — la prochaine Fedora adoptera le format RPM v6 dans son infrastructure de paquets (source: <a href="https://www.phoronix.com/news/Fedora-46-Approves-RPM-v6">phoronix</a>).</p>
+<p><strong>openSUSE Leap 16.1 → Agama</strong> — la distribution openSUSE Leap migre vers l'installateur Agama (source: <a href="https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agara">phoronix</a>).</p>
+<p><strong>Shirudo</strong> — runtime open source développé conjointement par OpenAI et Cisco pour protéger les systèmes Linux non patchés. Exécution en environnement isolé pour limiter l'exposition aux vulnérabilités connues (source: <a href="https://openai.com/index/introducing-shirudo/">OpenAI blog</a>).</p>
+<p><strong>Arti 2.8</strong> — nouvelle version du client Tor de nouvelle génération écrit en Rust, se rapprochant d'une réécriture complète (source: <a href="https://rust.developpez.com/actu/388864">developpez</a>).</p>
+<h2>Extensions et greffons</h2>
+<p><strong>jetbrain-agent-skill-for-blender</strong> — greffon Blender intégrant Claude Code AI pour la modélisation et la génération de scènes assistées par IA. Extension professionnelle (<a href="https://www.opensourceprojects.dev/post/blender-ai-mcp-addon">opensourceprojects.dev/post/blender-ai-mcp-addon</a>).</p>
+<h2>Volume</h2>
+<p>47 entrées analysées dans les sources traitées, 11 sujets retenus, 36 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>PostgreSQL 19 sort en version stable avec une refonte de la gestion des tables. LibreOffice 27.2 Alpha 1 est disponible pour tests. Rust 1.100 et FFmpeg 9.1 complètent le carnet de releases du jour. Plusieurs nouveaux outils libres méritent l'attention, notamment OpenShorts (nearly 10k étoiles) et un dashboard Linux complet.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenShorts</strong> — générateur de shorts vidéo à partir de longs formats vidéo, alimenté par l'IA mais open source. Permet d'extraire automatiquement des segments courts de vidéos existantes. Python, licence MIT, ~9 800 étoiles sur GitHub (source: <a href="https://github.com/mutonby/openshorts">mutonby/openshorts</a>).</p>
+<p><strong>Budget</strong> — application de suivi budgétaire personnelle pour Mac et Windows, mode simple pour les budgets et dépenses courants, mode avancé avec report des reliquats et répartition multi-budgets. Données stockées localement via Markdown dans Git. GPL-3.0, langage Python, 1 étoile (<a href="https://github.com/hendrikdemir/budget">hendrikdemir/budget</a>). Gratuit.</p>
+<p><strong>Hermit CRM</strong> — CRM open source pour solopreneurs et indépendants. Conçu pour suivre les prospects et deals au sein d'une petite structure : données stockées en Markdown dans Git, accessible via application web. Licence GPL-3.0, Python, 1 étoile (<a href="https://github.com/gijsbos/hermit-crm">gijsbos/hermit-crm</a>). Gratuit.</p>
+<p><strong>Just Dashboard</strong> — panneau de contrôle privé pour serveur Linux : déploiement d'applications, Docker, bases de données, proxy et TLS, terminal intégré, gestion de fichiers, Git et sauvegardes. Go, licence AGPL-3.0, 26 étoiles, dernière mise à jour le 23/11 (<a href="https://github.com/JustDashboard/Just-Dashboard">JustDashboard/Just-Dashboard</a>). Gratuit et auto-hébergeable.</p>
+<p><strong>Dawarich</strong> — solution de géolocalisation auto-hébergée. Trace les déplacements et permet un partage familial du positionnement, sans dépendance aux services propriétaires. Source non spécifiée (<a href="https://dawarich.com">dawarich</a>). Gratuit.</p>
+<p><strong>Satura</strong> — espace de travail Apache 2.0 pour agents IA qui « vous tendent la main » pendant la programmation. Interface de travail collaborative pilotée par IA (<a href="https://satura.space">satura.space</a>).</p>
+<p><strong>Pentworks</strong> — outil CLI open source pour gérer des projets de tests d'intrusion (penetration testing). Organisation des engagements, traçabilité et rapports. Python, aucune licence identifiée, 8 étoiles (<a href="https://github.com/Sheykder/Pentworks">Sheykder/Pentworks</a>). Gratuit.</p>
+<p><strong>ScreenTinker</strong> — logiciel de signalétique numérique distante open source pour vos propres téléviseurs. Serveur + clients légers. JavaScript, licence MIT, 277 étoiles, 76 forks, dernière MAJ le 23/11 (<a href="https://github.com/screentinker/screentinker">screentinker/screentinker</a>). Gratuit.</p>
+<p><strong>Tellyscope</strong> — lecteur/streamer TV internet Kotlin, licence GPL-3.0, 2 217 étoiles (<a href="https://github.com/man15h/tellyscope">man15h/tellyscope</a>). Gratuit.</p>
+<p><strong>Inbox Envoy</strong> — compétence open source de tri d'emails dédiée à votre propre agent IA. Filtre, classifie et priorise les messages entrants. Python, licence MIT, 4 étoiles (<a href="https://github.com/salespeak-ai/inbox-envoy">salespeak-ai/inbox-envoy</a>). Gratuit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — sortie officielle de cette version majeure de la base de données relationnelle open source. Gestion des tables entièrement repensée, performances accrues et nouvelles fonctionnalités (source: <a href="https://www.phoronix.com/news/PostgreSQL-19-Released">phoronix</a>, <a href="https://postgresql.developpez.com/actu/389354">developpez</a>). PostgreSQL sous licence PostgreSQL (permissive).</p>
+<p><strong>LibreOffice 27.2 Alpha 1</strong> — première version alpha destinée aux tests, en vue de la sortie stable prévue en février. La suite bureautique libre poursuit son cycle de développement bi-mensuel (source: <a href="https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1">phoronix</a>). MPL-2.0.</p>
+<p><strong>Rust 1.100</strong> — ce release stabilise le type <code>never</code>, l'API <code>Allocator</code> et implémente l'API <code>DropGuard</code>. Ce sont des évolutions fondamentales du language (source: <a href="https://rust.developpez.com/actu/389089">developpez</a>).</p>
+<p><strong>FFmpeg 9.1</strong> — nouvelle version de la référence open source pour le traitement audio/vidéo. Changelog détaillé disponible (source: <a href="https://www.phoronix.com/news/FFmpeg-9.1-Released">phoronix</a>).</p>
+<p><strong>Wine 11.22</strong> — nouvelle publication du compatibilité Windows/Linux, incluant des correctifs OpenGL et des améliorations cross-process render (source: <a href="https://www.phoronix.com/news/Wine-11.22-Released">phoronix</a>).</p>
+<p><strong>KDE Plasma 6.9</strong> — la maquette XWayland on demand est désormais intégrée, permettant de basculer selon besoin entre Wayland et X11 par session (source: <a href="https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand">phoronix</a>).</p>
+<p><strong>Mesa 26.3.1</strong> — correction de régressions et bugs dans les pilotes GPU Mesa (source: <a href="https://www.phoronix.com/news/Mesa-26.3.1-Released">phoronix</a>).</p>
+<p><strong>Blender 5.3</strong> — nouvelle version majeure de la suite 3D open source. Mises à jour notables (source: <a href="https://www.phoronix.com/news/Blender-5.3-Released">phoronix</a>). LGPL-2.1.</p>
+<p><strong>Linux 7.4-rc4</strong> — quatrième candidate release du noyau Linux 7.4, marqué comme volumineux par Linus Torvalds. Inclut de nombreuses corrections et nouveautés (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc4-Released">phoronix</a>).</p>
+<p><strong>Linux 7.4-rc3</strong> — release candidate précédente marquant aussi des progrès significatifs (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc3-Released">phoronix</a>).</p>
+<p><strong>Firefox 161</strong> — navigation web open source ajoutant le basculement VPN par site et une section de thèmes classiques. Le VPN intégré gratuit avec volume illimité fonctionne jusqu'en janvier 2027 (source: <a href="https://www.phoronix.com/news/Firefox-161">phoronix</a>). Mozilla Public License.</p>
+<p><strong>PHP 8.6</strong> — nouveau release du langage incluant l'application partielle de fonctions, une nouvelle classe <code>Duration</code> et une API de polling. (source: <a href="https://www.phoronix.com/news/PHP-8.6-Released">phoronix</a>, <a href="https://php.developpez.com/actu/389311">developpez</a>).</p>
+<p><strong>NVIDIA 620.73.04</strong> — pilote Linux NVIDIA, mise à jour mensuelle de drivers GPU (source: <a href="https://www.phoronix.com/news/NVIDIA-620.73.04-Linux">phoronix</a>).</p>
+<p><strong>Fedora 46 approuve RPM v6</strong> — la prochaine Fedora adoptera le format RPM v6 dans son infrastructure de paquets (source: <a href="https://www.phoronix.com/news/Fedora-46-Approves-RPM-v6">phoronix</a>).</p>
+<p><strong>openSUSE Leap 16.1 → Agama</strong> — la distribution openSUSE Leap migre vers l'installateur Agama (source: <a href="https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agara">phoronix</a>).</p>
+<p><strong>Shirudo</strong> — runtime open source développé conjointement par OpenAI et Cisco pour protéger les systèmes Linux non patchés. Exécution en environnement isolé pour limiter l'exposition aux vulnérabilités connues (source: <a href="https://openai.com/index/introducing-shirudo/">OpenAI blog</a>).</p>
+<p><strong>Arti 2.8</strong> — nouvelle version du client Tor de nouvelle génération écrit en Rust, se rapprochant d'une réécriture complète (source: <a href="https://rust.developpez.com/actu/388864">developpez</a>).</p>
+<h2>Extensions et greffons</h2>
+<p><strong>jetbrain-agent-skill-for-blender</strong> — greffon Blender intégrant Claude Code AI pour la modélisation et la génération de scènes assistées par IA. Extension professionnelle (<a href="https://www.opensourceprojects.dev/post/blender-ai-mcp-addon">opensourceprojects.dev/post/blender-ai-mcp-addon</a>).</p>
+<h2>Volume</h2>
+<p>47 entrées analysées dans les sources traitées, 11 sujets retenus, 36 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-24.html</link>
@@ -4210,140 +4338,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <p><em>(aucun)</em></p>
 <h2>Volume</h2>
 <p>4 posts publiés dans l'intervalle (TeX Stack Exchange), 0 retenus, 4 écartés — taux de rétention 0 %. Sur un forum d'entraide comme TeX SE, un taux nul est normal et ne signale pas un filtre défaillant.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/opensource — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/opensource/2026-11-20.html</link>
-<guid isPermaLink="false">opensource-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 01:05:14 +0100</pubDate>
-<category>r/opensource</category>
-<description><![CDATA[<h1>Veille r/opensource — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en annonces de projets libres, portée par les découvertes de Hacker News et du collecteur opensourceprojects.dev. On retient BetterOffice, une suite bureautique en Rust prometteuse, Chipload pour l'usinage CNC, et la version 19 de PostgreSQL. Côté outils, le vérificateur Pyrefly promet de diviser par quinze le temps d'analyse des projets Python.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>BetterOffice</strong> — Suite bureautique open source dont les moteurs OOXML sont écrits nativement en Rust. Se présente comme une alternative légère et rapide à LibreOffice pour la manipulation de documents Office sans dépendre de code C++ historique. Licence à vérifier, site betteroffice.dev.</p>
-<p><strong>Chipload</strong> — Logiciel de FAO 2.5D open source pour fraiseuses CNC. Importe DXF et SVG, propose le poches avec passes de finition, la découpe de profil, la gravure en V et en prism, le relief 3D par hauteur, le nesting et l'usinage en retournement. Développé par son auteur avec Claude, disponible sur github.com/chipload/chipload.</p>
-<p><strong>Pyrefly</strong> — Vérificateur de types pour Python écrit en Rust, annoncé comme quinze fois plus rapide que Mypy. Idéal pour les bases de code volumineuses où la vérification ralentit le cycle de développement. Dépôt : github.com/pyrefly-org/pyrefly.</p>
-<p><strong>AnyPS5</strong> — Projet qui porte les exécutables PS5 vers Linux et Windows en les reliant à des bibliothèques natives plutôt qu'en les émuplant. Une approche qui évite la lourdeur des émulateurs traditionnels. Dépôt : github.com/boykopovar/anyps5.</p>
-<p><strong>Substrate</strong> — Bac à sable pour agents IA sur Kubernetes qui met en sommeil les agents inactifs au lieu de laisser les conteneurs consommer de la mémoire à vide. Destiné aux déploiements de flottes d'agents. Dépôt : github.com/agent-substrate/substrate.</p>
-<p><strong>Graphic Walker</strong> — Alternative open source à Tableau, livrée comme un composant React à intégrer dans une application. Permet l'exploration de données par glisser-déposer sans déployer une plateforme BI complète. Dépôt : github.com/kanaries/graphic-walker.</p>
-<p><strong>Freeplane</strong> — Application de mind mapping en Java (Swing, OSGi) avec support de formules et de calculs dans les nœuds. Fonctionne hors ligne, sans compte ni cloud. Dépôt : github.com/freeplane/freeplane.</p>
-<p><strong>Floccus</strong> — Extension navigateur (Firefox, Chrome) qui synchronise les favoris via Nextcloud, Git ou WebDAV, sans passer par le cloud d'un éditeur. Dépôt : github.com/floccusaddon/floccus.</p>
-<p><strong>Flowgram AI</strong> — Framework de workflows visuels développé par ByteDance, avec canvas glissable, formulaires de nœuds et portée de variables. Destiné à la construction d'applications agents. Dépôt : github.com/bytedance/flowgram.ai.</p>
-<p><strong>Tiviate</strong> — Lecteur IPTV GPL-3.0 pour Android TV, Fire TV et téléphones, écrit en Kotlin avec Jetpack Compose et Media3. Chaque fonctionnalité est gratuite et le code est ouvert. Présenté par son développeur sur Reddit.</p>
-<p><strong>nyaa.si TUI</strong> — Interface en mode texte (Rust, ratatui) pour parcourir les torrents d'anime de nyaa.si depuis le terminal. Pas de scraping, alimenté par le flux RSS. Dépôt : github.com/metaory/nyaa-tui.</p>
-<p><strong>MdNotePad</strong> — Éditeur Markdown gratuit pour Windows 10/11, d'aspect minimal (comme le Bloc-notes) mais avec rendu en direct des titres, listes, code et liens. Supporte les tableaux en grille et les diagrammes Mermaid intégrés.</p>
-<p><strong>SoduWork</strong> — Workbench open source (MIT) où les agents IA doivent prouver leur travail avant qu'il soit accepté. Déjà 4 181 étoiles sur GitHub, dernière mise à jour le 19 novembre 2026. Dépôt : github.com/mdiri-ai/SoduWork.</p>
-<p><strong>HyCanvas</strong> — Alternative à Canva écrite en Go, sous licence AGPL-3.0 (306 étoiles, mise à jour le 19 novembre 2026). Dépôt : github.com/hyscaler/HyCanvas.</p>
-<p><strong>Lattice</strong> — Alternative open source à Obsidian Publish, pour publier des notes Markdown en ligne sans abonnement. Présenté sur lattice.jacobg.co.</p>
-<p><strong>CopySpeech</strong> — Application de synthèse vocale open source qui lit à voix haute tout texte copié dans le presse-papiers. Dépôt : github.com/ilyaizen/CopySpeech.</p>
-<p><strong>Motion Wallpaper</strong> — Fond d'écran animé libre et ultra-léger pour Linux (X11 pour l'instant). Dépôt : github.com/sozipp/motion-wallpaper.</p>
-<p><strong>Pritunl Client</strong> — Client OpenVPN et WireGuard gratuit, open source et multiplateforme. 1 481 étoiles, mis à jour le 18 novembre 2026. Dépôt : github.com/pritunl/pritunl-client.</p>
-<p><strong>ExtendDB 1.0</strong> — Adaptateur open source compatible DynamoDB publié par AWS. Permet d'utiliser des bases DynamoDB-compatibles sans verrouillage propriétaire.</p>
-<p><strong>Onlook</strong> — Application de bureau open source qui superpose une interface de conception graphique sur une base de code réelle. Déjà 25 000 utilisateurs, a été deux fois numéro 1 des tendances GitHub. Dépôt : github.com/onlook-dev/onlook.</p>
-<p><strong>pie-tui</strong> — Harness TUI et CLI open source pour développeurs Android : création de pull requests, correction automatique des commentaires de revue, le tout depuis le terminal. Dépôt : github.com/Apple-Pie-AI/pie-tui.</p>
-<p><strong>minUS</strong> — Plateforme de développement d'échographie open source minimale basée sur un PIC32, pour l'apprentissage et le prototypage. Présenté sur kelu124.github.io/minus.</p>
-<p><strong>SHARD</strong> — Projet d'inférence distribuée open source. Cherche des contributeurs pour son développement. Dépôt : github.com/avelone123123/shard.</p>
-<p><strong>Panda Federation Tools</strong> — Serveur MCP open source (MIT) pour outils de recherche et données publiques pay-per-result. Tout nouveau (0 étoiles, 19 novembre 2026). Dépôt : github.com/pandadad0214/panda-federation-tools.</p>
-<p><strong>The Adversary</strong> — Firmware open source pour ESP32 destiné aux tests d'intrusion des réseaux sans fil. Dépôt : github.com/Isonimus/adversary.</p>
-<p><strong>Raven Recon</strong> — Framework de recherche en sécurité open source utilisant des agents IA. Dépôt : github.com/9illcodelli6-cpp69cve/raven-recon.</p>
-<p><strong>XApp</strong> — Ensemble d'applications et de bibliothèques conçues pour fonctionner sur tous les environnements de bureau Linux (GNOME, KDE, Xfce, etc.). Projet initié par le développeur du bureau Cinnamon. Site : xapp-project.org.</p>
-<p><strong>sysdeck</strong> — Lanceur d'applications et de commandes pour Linux et BSD, comparable à Raycast sous macOS. Présenté par son auteur.</p>
-<p><strong>I Did My Own</strong> — Annuaire de projets open source où quelqu'un a reconstruit une application célèbre (alternative to X). Site : idmo.app/own.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure du SGBD open source, avec des améliorations de performances. La publication a été retardée de plusieurs semaines à cause de l'afflux de rapports de bogues générés par l'IA. Vu sur Phoronix.</p>
-<p><strong>PHP 8.6</strong> — Nouvelle version majeure du langage, avec la fonctionnalité Partial Function Application et d'autres améliorations. Également des correctifs de sécurité pour les branches 8.2 à 8.5. Vu sur Phoronix et Lobsters.</p>
-<p><strong>Valkey 9.2</strong> — Dernière version du fork ouvert de Redis, avec compression Zstd, réduction de l'empreinte mémoire et gains de performances. Vu sur Phoronix.</p>
-<p><strong>AMD ROCm 10.2</strong> — Nouvelle version de la pile de calcul GPU open source d'AMD, avec optimisations et support étendu des laptops Ryzen. Mise à jour à six semaines. Vu sur Phoronix.</p>
-<p><strong>GNOME 51</strong> — Nouvelle version majeure de l'environnement de bureau, avec son lot de nouveautés. Vu sur Lobsters.</p>
-<p><strong>jQuery 4.1.0 et 3.8.0</strong> — Les deux versions de la bibliothèque JavaScript corrigent une vulnérabilité ReDoS. La version 4.1.0 est la première mineure de la série 4.x. Vu sur Developpez.com et Lobsters.</p>
-<p><strong>Unsloth Desktop</strong> — Le client de bureau supporte désormais l'inférence locale sur les NPU AMD Ryzen AI (XDNA 2), y compris sous Linux. Vu sur Phoronix.</p>
-<p><strong>Haiku — Automne 2026</strong> — Le système d'exploitation open source a publié sa R1 bêta 6. Le rapport d'activité couvre les mois d'août à octobre (plus de 300 changements dans le code source). Vu sur LinuxFr.org.</p>
-<p><strong>LiberNT</strong> — Fork de ReactOS utilisant l'IA pour accélérer le développement, avec pour objectif la compatibilité Windows 11. Une approche controversée dans la communauté. Vu sur Phoronix.</p>
-<h2>Volume</h2>
-<p>90 posts publiés dans l'intervalle, 30 retenus, 60 écartés.</p>
-<p><em>Aucune erreur de collecte signalée (meta.json).</em></p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/opensource — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en annonces de projets libres, portée par les découvertes de Hacker News et du collecteur opensourceprojects.dev. On retient BetterOffice, une suite bureautique en Rust prometteuse, Chipload pour l'usinage CNC, et la version 19 de PostgreSQL. Côté outils, le vérificateur Pyrefly promet de diviser par quinze le temps d'analyse des projets Python.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>BetterOffice</strong> — Suite bureautique open source dont les moteurs OOXML sont écrits nativement en Rust. Se présente comme une alternative légère et rapide à LibreOffice pour la manipulation de documents Office sans dépendre de code C++ historique. Licence à vérifier, site betteroffice.dev.</p>
-<p><strong>Chipload</strong> — Logiciel de FAO 2.5D open source pour fraiseuses CNC. Importe DXF et SVG, propose le poches avec passes de finition, la découpe de profil, la gravure en V et en prism, le relief 3D par hauteur, le nesting et l'usinage en retournement. Développé par son auteur avec Claude, disponible sur github.com/chipload/chipload.</p>
-<p><strong>Pyrefly</strong> — Vérificateur de types pour Python écrit en Rust, annoncé comme quinze fois plus rapide que Mypy. Idéal pour les bases de code volumineuses où la vérification ralentit le cycle de développement. Dépôt : github.com/pyrefly-org/pyrefly.</p>
-<p><strong>AnyPS5</strong> — Projet qui porte les exécutables PS5 vers Linux et Windows en les reliant à des bibliothèques natives plutôt qu'en les émuplant. Une approche qui évite la lourdeur des émulateurs traditionnels. Dépôt : github.com/boykopovar/anyps5.</p>
-<p><strong>Substrate</strong> — Bac à sable pour agents IA sur Kubernetes qui met en sommeil les agents inactifs au lieu de laisser les conteneurs consommer de la mémoire à vide. Destiné aux déploiements de flottes d'agents. Dépôt : github.com/agent-substrate/substrate.</p>
-<p><strong>Graphic Walker</strong> — Alternative open source à Tableau, livrée comme un composant React à intégrer dans une application. Permet l'exploration de données par glisser-déposer sans déployer une plateforme BI complète. Dépôt : github.com/kanaries/graphic-walker.</p>
-<p><strong>Freeplane</strong> — Application de mind mapping en Java (Swing, OSGi) avec support de formules et de calculs dans les nœuds. Fonctionne hors ligne, sans compte ni cloud. Dépôt : github.com/freeplane/freeplane.</p>
-<p><strong>Floccus</strong> — Extension navigateur (Firefox, Chrome) qui synchronise les favoris via Nextcloud, Git ou WebDAV, sans passer par le cloud d'un éditeur. Dépôt : github.com/floccusaddon/floccus.</p>
-<p><strong>Flowgram AI</strong> — Framework de workflows visuels développé par ByteDance, avec canvas glissable, formulaires de nœuds et portée de variables. Destiné à la construction d'applications agents. Dépôt : github.com/bytedance/flowgram.ai.</p>
-<p><strong>Tiviate</strong> — Lecteur IPTV GPL-3.0 pour Android TV, Fire TV et téléphones, écrit en Kotlin avec Jetpack Compose et Media3. Chaque fonctionnalité est gratuite et le code est ouvert. Présenté par son développeur sur Reddit.</p>
-<p><strong>nyaa.si TUI</strong> — Interface en mode texte (Rust, ratatui) pour parcourir les torrents d'anime de nyaa.si depuis le terminal. Pas de scraping, alimenté par le flux RSS. Dépôt : github.com/metaory/nyaa-tui.</p>
-<p><strong>MdNotePad</strong> — Éditeur Markdown gratuit pour Windows 10/11, d'aspect minimal (comme le Bloc-notes) mais avec rendu en direct des titres, listes, code et liens. Supporte les tableaux en grille et les diagrammes Mermaid intégrés.</p>
-<p><strong>SoduWork</strong> — Workbench open source (MIT) où les agents IA doivent prouver leur travail avant qu'il soit accepté. Déjà 4 181 étoiles sur GitHub, dernière mise à jour le 19 novembre 2026. Dépôt : github.com/mdiri-ai/SoduWork.</p>
-<p><strong>HyCanvas</strong> — Alternative à Canva écrite en Go, sous licence AGPL-3.0 (306 étoiles, mise à jour le 19 novembre 2026). Dépôt : github.com/hyscaler/HyCanvas.</p>
-<p><strong>Lattice</strong> — Alternative open source à Obsidian Publish, pour publier des notes Markdown en ligne sans abonnement. Présenté sur lattice.jacobg.co.</p>
-<p><strong>CopySpeech</strong> — Application de synthèse vocale open source qui lit à voix haute tout texte copié dans le presse-papiers. Dépôt : github.com/ilyaizen/CopySpeech.</p>
-<p><strong>Motion Wallpaper</strong> — Fond d'écran animé libre et ultra-léger pour Linux (X11 pour l'instant). Dépôt : github.com/sozipp/motion-wallpaper.</p>
-<p><strong>Pritunl Client</strong> — Client OpenVPN et WireGuard gratuit, open source et multiplateforme. 1 481 étoiles, mis à jour le 18 novembre 2026. Dépôt : github.com/pritunl/pritunl-client.</p>
-<p><strong>ExtendDB 1.0</strong> — Adaptateur open source compatible DynamoDB publié par AWS. Permet d'utiliser des bases DynamoDB-compatibles sans verrouillage propriétaire.</p>
-<p><strong>Onlook</strong> — Application de bureau open source qui superpose une interface de conception graphique sur une base de code réelle. Déjà 25 000 utilisateurs, a été deux fois numéro 1 des tendances GitHub. Dépôt : github.com/onlook-dev/onlook.</p>
-<p><strong>pie-tui</strong> — Harness TUI et CLI open source pour développeurs Android : création de pull requests, correction automatique des commentaires de revue, le tout depuis le terminal. Dépôt : github.com/Apple-Pie-AI/pie-tui.</p>
-<p><strong>minUS</strong> — Plateforme de développement d'échographie open source minimale basée sur un PIC32, pour l'apprentissage et le prototypage. Présenté sur kelu124.github.io/minus.</p>
-<p><strong>SHARD</strong> — Projet d'inférence distribuée open source. Cherche des contributeurs pour son développement. Dépôt : github.com/avelone123123/shard.</p>
-<p><strong>Panda Federation Tools</strong> — Serveur MCP open source (MIT) pour outils de recherche et données publiques pay-per-result. Tout nouveau (0 étoiles, 19 novembre 2026). Dépôt : github.com/pandadad0214/panda-federation-tools.</p>
-<p><strong>The Adversary</strong> — Firmware open source pour ESP32 destiné aux tests d'intrusion des réseaux sans fil. Dépôt : github.com/Isonimus/adversary.</p>
-<p><strong>Raven Recon</strong> — Framework de recherche en sécurité open source utilisant des agents IA. Dépôt : github.com/9illcodelli6-cpp69cve/raven-recon.</p>
-<p><strong>XApp</strong> — Ensemble d'applications et de bibliothèques conçues pour fonctionner sur tous les environnements de bureau Linux (GNOME, KDE, Xfce, etc.). Projet initié par le développeur du bureau Cinnamon. Site : xapp-project.org.</p>
-<p><strong>sysdeck</strong> — Lanceur d'applications et de commandes pour Linux et BSD, comparable à Raycast sous macOS. Présenté par son auteur.</p>
-<p><strong>I Did My Own</strong> — Annuaire de projets open source où quelqu'un a reconstruit une application célèbre (alternative to X). Site : idmo.app/own.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>PostgreSQL 19</strong> — Nouvelle version majeure du SGBD open source, avec des améliorations de performances. La publication a été retardée de plusieurs semaines à cause de l'afflux de rapports de bogues générés par l'IA. Vu sur Phoronix.</p>
-<p><strong>PHP 8.6</strong> — Nouvelle version majeure du langage, avec la fonctionnalité Partial Function Application et d'autres améliorations. Également des correctifs de sécurité pour les branches 8.2 à 8.5. Vu sur Phoronix et Lobsters.</p>
-<p><strong>Valkey 9.2</strong> — Dernière version du fork ouvert de Redis, avec compression Zstd, réduction de l'empreinte mémoire et gains de performances. Vu sur Phoronix.</p>
-<p><strong>AMD ROCm 10.2</strong> — Nouvelle version de la pile de calcul GPU open source d'AMD, avec optimisations et support étendu des laptops Ryzen. Mise à jour à six semaines. Vu sur Phoronix.</p>
-<p><strong>GNOME 51</strong> — Nouvelle version majeure de l'environnement de bureau, avec son lot de nouveautés. Vu sur Lobsters.</p>
-<p><strong>jQuery 4.1.0 et 3.8.0</strong> — Les deux versions de la bibliothèque JavaScript corrigent une vulnérabilité ReDoS. La version 4.1.0 est la première mineure de la série 4.x. Vu sur Developpez.com et Lobsters.</p>
-<p><strong>Unsloth Desktop</strong> — Le client de bureau supporte désormais l'inférence locale sur les NPU AMD Ryzen AI (XDNA 2), y compris sous Linux. Vu sur Phoronix.</p>
-<p><strong>Haiku — Automne 2026</strong> — Le système d'exploitation open source a publié sa R1 bêta 6. Le rapport d'activité couvre les mois d'août à octobre (plus de 300 changements dans le code source). Vu sur LinuxFr.org.</p>
-<p><strong>LiberNT</strong> — Fork de ReactOS utilisant l'IA pour accélérer le développement, avec pour objectif la compatibilité Windows 11. Une approche controversée dans la communauté. Vu sur Phoronix.</p>
-<h2>Volume</h2>
-<p>90 posts publiés dans l'intervalle, 30 retenus, 60 écartés.</p>
-<p><em>Aucune erreur de collecte signalée (meta.json).</em></p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/hermesagent — vendredi 20 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-20.html</link>
-<guid isPermaLink="false">hermesagent-2026-11-20</guid>
-<pubDate>Fri, 20 Nov 2026 00:52:24 +0100</pubDate>
-<category>r/hermesagent</category>
-<description><![CDATA[<h1>Veille r/hermesagent — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Cinq nouveautés cette semaine : Onlook, un outil de conception visuelle open source qui traduit les modifications en code réel ; FailTrace, qui reproduit localement un échec d'action GitHub à partir de son URL ; l'ADE Index, un répertoire librement accessible de plus de 380 outils de codage agentique ; et deux mises à jour dans l'écosystème Datasette (plugin d'export Arrow) et LLM (support de Gemini 4 Neon). Le collecteur du subreddit r/hermesagent reste indisponible (HTTP 404) — la veille s'appuie sur Hacker News et les flux complémentaires.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Onlook</strong> — Un outil de bureau open source qui superpose une toile visuelle sur votre codebase réel, permettant de concevoir l'interface directement dans le code avec l'agent de votre choix. Le projet a été le dépôt le plus en vue de GitHub à deux reprises, compte plus de 25 000 utilisateurs et 100 contributeurs. Licence Apache-2.0, gratuit. Dépôt : github.com/onlook-dev/onlook (27 400 étoiles, mis à jour le 19 novembre 2026, TypeScript).</p>
-<p><strong>FailTrace</strong> — Un utilitaire en Go qui reproduit localement un échec d'action GitHub Actions à partir de la seule URL de l'action. Plus besoin de fouiller les journaux distants : on donne le lien, FailTrace rejoue l'étape qui a échoué dans l'environnement local. Licence MIT, gratuit. Dépôt : github.com/Ri4dH/failtrace (29 étoiles, mis à jour le 19 novembre 2026).</p>
-<p><strong>ADE Index</strong> — Un index librement accessible de 383 espaces de travail et outils de développement agentiques, classés par le volume de discussion qu'ils suscitent sur Hacker News sur les 90 derniers jours. Chaque outil est sourcé, noté et comparé. Le site référence aussi 237 agents CLI, 113 orchestrateurs, 62 extensions IDE et 35 agents cloud. Accès libre sans inscription sur adeindex.com.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>llm-gemini 0.38</strong> — La nouvelle version du plugin qui ajoute le support de Gemini 4 Neon (le dernier modèle de Google DeepMind) à l'outil en ligne de commande <code>llm</code> de Simon Willison. Le modèle Neon est présenté comme un concurrent direct d'Opus 5.5 à un coût inférieur.</p>
-<h2>Extensions et greffons</h2>
-<p><strong>datasette-arrows 0.1a0</strong> — Un nouveau plugin pour Datasette (version alpha) qui ajoute un format d'export streaming en Apache Arrow. Tirant parti du crochet <code>register_output_renderer()</code> introduit dans Datasette 1.0a43, il permet d'exporter de très gros volumes de données sans les charger en mémoire, au même titre que les exportations CSV et TSV streamées déjà supportées par le cœur.</p>
-<h2>Volume</h2>
-<p>58 posts publiés dans l'intervalle (dont 52 de Hacker News, 3 du subreddit, 2 de Simon Willison, 1 de Latent Space), 5 retenus, 53 écartés.</p>
-<p><em>Incident de collecte</em> : le collecteur Reddit a retourné une erreur HTTP 404 lors de la dernière exécution (flux RSS de r/hermesagent définitivement fermé par Reddit le 13 novembre 2026). Les entrées de ce subreddit encore visibles sont celles collectées avant la fermeture. Les sources Hacker News, Simon Willison et Latent Space fonctionnent normalement.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/hermesagent — vendredi 20 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Cinq nouveautés cette semaine : Onlook, un outil de conception visuelle open source qui traduit les modifications en code réel ; FailTrace, qui reproduit localement un échec d'action GitHub à partir de son URL ; l'ADE Index, un répertoire librement accessible de plus de 380 outils de codage agentique ; et deux mises à jour dans l'écosystème Datasette (plugin d'export Arrow) et LLM (support de Gemini 4 Neon). Le collecteur du subreddit r/hermesagent reste indisponible (HTTP 404) — la veille s'appuie sur Hacker News et les flux complémentaires.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Onlook</strong> — Un outil de bureau open source qui superpose une toile visuelle sur votre codebase réel, permettant de concevoir l'interface directement dans le code avec l'agent de votre choix. Le projet a été le dépôt le plus en vue de GitHub à deux reprises, compte plus de 25 000 utilisateurs et 100 contributeurs. Licence Apache-2.0, gratuit. Dépôt : github.com/onlook-dev/onlook (27 400 étoiles, mis à jour le 19 novembre 2026, TypeScript).</p>
-<p><strong>FailTrace</strong> — Un utilitaire en Go qui reproduit localement un échec d'action GitHub Actions à partir de la seule URL de l'action. Plus besoin de fouiller les journaux distants : on donne le lien, FailTrace rejoue l'étape qui a échoué dans l'environnement local. Licence MIT, gratuit. Dépôt : github.com/Ri4dH/failtrace (29 étoiles, mis à jour le 19 novembre 2026).</p>
-<p><strong>ADE Index</strong> — Un index librement accessible de 383 espaces de travail et outils de développement agentiques, classés par le volume de discussion qu'ils suscitent sur Hacker News sur les 90 derniers jours. Chaque outil est sourcé, noté et comparé. Le site référence aussi 237 agents CLI, 113 orchestrateurs, 62 extensions IDE et 35 agents cloud. Accès libre sans inscription sur adeindex.com.</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>llm-gemini 0.38</strong> — La nouvelle version du plugin qui ajoute le support de Gemini 4 Neon (le dernier modèle de Google DeepMind) à l'outil en ligne de commande <code>llm</code> de Simon Willison. Le modèle Neon est présenté comme un concurrent direct d'Opus 5.5 à un coût inférieur.</p>
-<h2>Extensions et greffons</h2>
-<p><strong>datasette-arrows 0.1a0</strong> — Un nouveau plugin pour Datasette (version alpha) qui ajoute un format d'export streaming en Apache Arrow. Tirant parti du crochet <code>register_output_renderer()</code> introduit dans Datasette 1.0a43, il permet d'exporter de très gros volumes de données sans les charger en mémoire, au même titre que les exportations CSV et TSV streamées déjà supportées par le cœur.</p>
-<h2>Volume</h2>
-<p>58 posts publiés dans l'intervalle (dont 52 de Hacker News, 3 du subreddit, 2 de Simon Willison, 1 de Latent Space), 5 retenus, 53 écartés.</p>
-<p><em>Incident de collecte</em> : le collecteur Reddit a retourné une erreur HTTP 404 lors de la dernière exécution (flux RSS de r/hermesagent définitivement fermé par Reddit le 13 novembre 2026). Les entrées de ce subreddit encore visibles sont celles collectées avant la fermeture. Les sources Hacker News, Simon Willison et Latent Space fonctionnent normalement.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

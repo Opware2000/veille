@@ -6,9 +6,88 @@
 <description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 01:02:51 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 01:01:38 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opensource — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-24.html</link>
+<guid isPermaLink="false">opensource-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 01:01:38 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>PostgreSQL 19 sort en version stable avec une refonte de la gestion des tables. LibreOffice 27.2 Alpha 1 est disponible pour tests. Rust 1.100 et FFmpeg 9.1 complètent le carnet de releases du jour. Plusieurs nouveaux outils libres méritent l'attention, notamment OpenShorts (nearly 10k étoiles) et un dashboard Linux complet.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenShorts</strong> — générateur de shorts vidéo à partir de longs formats vidéo, alimenté par l'IA mais open source. Permet d'extraire automatiquement des segments courts de vidéos existantes. Python, licence MIT, ~9 800 étoiles sur GitHub (source: <a href="https://github.com/mutonby/openshorts">mutonby/openshorts</a>).</p>
+<p><strong>Budget</strong> — application de suivi budgétaire personnelle pour Mac et Windows, mode simple pour les budgets et dépenses courants, mode avancé avec report des reliquats et répartition multi-budgets. Données stockées localement via Markdown dans Git. GPL-3.0, langage Python, 1 étoile (<a href="https://github.com/hendrikdemir/budget">hendrikdemir/budget</a>). Gratuit.</p>
+<p><strong>Hermit CRM</strong> — CRM open source pour solopreneurs et indépendants. Conçu pour suivre les prospects et deals au sein d'une petite structure : données stockées en Markdown dans Git, accessible via application web. Licence GPL-3.0, Python, 1 étoile (<a href="https://github.com/gijsbos/hermit-crm">gijsbos/hermit-crm</a>). Gratuit.</p>
+<p><strong>Just Dashboard</strong> — panneau de contrôle privé pour serveur Linux : déploiement d'applications, Docker, bases de données, proxy et TLS, terminal intégré, gestion de fichiers, Git et sauvegardes. Go, licence AGPL-3.0, 26 étoiles, dernière mise à jour le 23/11 (<a href="https://github.com/JustDashboard/Just-Dashboard">JustDashboard/Just-Dashboard</a>). Gratuit et auto-hébergeable.</p>
+<p><strong>Dawarich</strong> — solution de géolocalisation auto-hébergée. Trace les déplacements et permet un partage familial du positionnement, sans dépendance aux services propriétaires. Source non spécifiée (<a href="https://dawarich.com">dawarich</a>). Gratuit.</p>
+<p><strong>Satura</strong> — espace de travail Apache 2.0 pour agents IA qui « vous tendent la main » pendant la programmation. Interface de travail collaborative pilotée par IA (<a href="https://satura.space">satura.space</a>).</p>
+<p><strong>Pentworks</strong> — outil CLI open source pour gérer des projets de tests d'intrusion (penetration testing). Organisation des engagements, traçabilité et rapports. Python, aucune licence identifiée, 8 étoiles (<a href="https://github.com/Sheykder/Pentworks">Sheykder/Pentworks</a>). Gratuit.</p>
+<p><strong>ScreenTinker</strong> — logiciel de signalétique numérique distante open source pour vos propres téléviseurs. Serveur + clients légers. JavaScript, licence MIT, 277 étoiles, 76 forks, dernière MAJ le 23/11 (<a href="https://github.com/screentinker/screentinker">screentinker/screentinker</a>). Gratuit.</p>
+<p><strong>Tellyscope</strong> — lecteur/streamer TV internet Kotlin, licence GPL-3.0, 2 217 étoiles (<a href="https://github.com/man15h/tellyscope">man15h/tellyscope</a>). Gratuit.</p>
+<p><strong>Inbox Envoy</strong> — compétence open source de tri d'emails dédiée à votre propre agent IA. Filtre, classifie et priorise les messages entrants. Python, licence MIT, 4 étoiles (<a href="https://github.com/salespeak-ai/inbox-envoy">salespeak-ai/inbox-envoy</a>). Gratuit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — sortie officielle de cette version majeure de la base de données relationnelle open source. Gestion des tables entièrement repensée, performances accrues et nouvelles fonctionnalités (source: <a href="https://www.phoronix.com/news/PostgreSQL-19-Released">phoronix</a>, <a href="https://postgresql.developpez.com/actu/389354">developpez</a>). PostgreSQL sous licence PostgreSQL (permissive).</p>
+<p><strong>LibreOffice 27.2 Alpha 1</strong> — première version alpha destinée aux tests, en vue de la sortie stable prévue en février. La suite bureautique libre poursuit son cycle de développement bi-mensuel (source: <a href="https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1">phoronix</a>). MPL-2.0.</p>
+<p><strong>Rust 1.100</strong> — ce release stabilise le type <code>never</code>, l'API <code>Allocator</code> et implémente l'API <code>DropGuard</code>. Ce sont des évolutions fondamentales du language (source: <a href="https://rust.developpez.com/actu/389089">developpez</a>).</p>
+<p><strong>FFmpeg 9.1</strong> — nouvelle version de la référence open source pour le traitement audio/vidéo. Changelog détaillé disponible (source: <a href="https://www.phoronix.com/news/FFmpeg-9.1-Released">phoronix</a>).</p>
+<p><strong>Wine 11.22</strong> — nouvelle publication du compatibilité Windows/Linux, incluant des correctifs OpenGL et des améliorations cross-process render (source: <a href="https://www.phoronix.com/news/Wine-11.22-Released">phoronix</a>).</p>
+<p><strong>KDE Plasma 6.9</strong> — la maquette XWayland on demand est désormais intégrée, permettant de basculer selon besoin entre Wayland et X11 par session (source: <a href="https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand">phoronix</a>).</p>
+<p><strong>Mesa 26.3.1</strong> — correction de régressions et bugs dans les pilotes GPU Mesa (source: <a href="https://www.phoronix.com/news/Mesa-26.3.1-Released">phoronix</a>).</p>
+<p><strong>Blender 5.3</strong> — nouvelle version majeure de la suite 3D open source. Mises à jour notables (source: <a href="https://www.phoronix.com/news/Blender-5.3-Released">phoronix</a>). LGPL-2.1.</p>
+<p><strong>Linux 7.4-rc4</strong> — quatrième candidate release du noyau Linux 7.4, marqué comme volumineux par Linus Torvalds. Inclut de nombreuses corrections et nouveautés (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc4-Released">phoronix</a>).</p>
+<p><strong>Linux 7.4-rc3</strong> — release candidate précédente marquant aussi des progrès significatifs (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc3-Released">phoronix</a>).</p>
+<p><strong>Firefox 161</strong> — navigation web open source ajoutant le basculement VPN par site et une section de thèmes classiques. Le VPN intégré gratuit avec volume illimité fonctionne jusqu'en janvier 2027 (source: <a href="https://www.phoronix.com/news/Firefox-161">phoronix</a>). Mozilla Public License.</p>
+<p><strong>PHP 8.6</strong> — nouveau release du langage incluant l'application partielle de fonctions, une nouvelle classe <code>Duration</code> et une API de polling. (source: <a href="https://www.phoronix.com/news/PHP-8.6-Released">phoronix</a>, <a href="https://php.developpez.com/actu/389311">developpez</a>).</p>
+<p><strong>NVIDIA 620.73.04</strong> — pilote Linux NVIDIA, mise à jour mensuelle de drivers GPU (source: <a href="https://www.phoronix.com/news/NVIDIA-620.73.04-Linux">phoronix</a>).</p>
+<p><strong>Fedora 46 approuve RPM v6</strong> — la prochaine Fedora adoptera le format RPM v6 dans son infrastructure de paquets (source: <a href="https://www.phoronix.com/news/Fedora-46-Approves-RPM-v6">phoronix</a>).</p>
+<p><strong>openSUSE Leap 16.1 → Agama</strong> — la distribution openSUSE Leap migre vers l'installateur Agama (source: <a href="https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agara">phoronix</a>).</p>
+<p><strong>Shirudo</strong> — runtime open source développé conjointement par OpenAI et Cisco pour protéger les systèmes Linux non patchés. Exécution en environnement isolé pour limiter l'exposition aux vulnérabilités connues (source: <a href="https://openai.com/index/introducing-shirudo/">OpenAI blog</a>).</p>
+<p><strong>Arti 2.8</strong> — nouvelle version du client Tor de nouvelle génération écrit en Rust, se rapprochant d'une réécriture complète (source: <a href="https://rust.developpez.com/actu/388864">developpez</a>).</p>
+<h2>Extensions et greffons</h2>
+<p><strong>jetbrain-agent-skill-for-blender</strong> — greffon Blender intégrant Claude Code AI pour la modélisation et la génération de scènes assistées par IA. Extension professionnelle (<a href="https://www.opensourceprojects.dev/post/blender-ai-mcp-addon">opensourceprojects.dev/post/blender-ai-mcp-addon</a>).</p>
+<h2>Volume</h2>
+<p>47 entrées analysées dans les sources traitées, 11 sujets retenus, 36 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>PostgreSQL 19 sort en version stable avec une refonte de la gestion des tables. LibreOffice 27.2 Alpha 1 est disponible pour tests. Rust 1.100 et FFmpeg 9.1 complètent le carnet de releases du jour. Plusieurs nouveaux outils libres méritent l'attention, notamment OpenShorts (nearly 10k étoiles) et un dashboard Linux complet.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>OpenShorts</strong> — générateur de shorts vidéo à partir de longs formats vidéo, alimenté par l'IA mais open source. Permet d'extraire automatiquement des segments courts de vidéos existantes. Python, licence MIT, ~9 800 étoiles sur GitHub (source: <a href="https://github.com/mutonby/openshorts">mutonby/openshorts</a>).</p>
+<p><strong>Budget</strong> — application de suivi budgétaire personnelle pour Mac et Windows, mode simple pour les budgets et dépenses courants, mode avancé avec report des reliquats et répartition multi-budgets. Données stockées localement via Markdown dans Git. GPL-3.0, langage Python, 1 étoile (<a href="https://github.com/hendrikdemir/budget">hendrikdemir/budget</a>). Gratuit.</p>
+<p><strong>Hermit CRM</strong> — CRM open source pour solopreneurs et indépendants. Conçu pour suivre les prospects et deals au sein d'une petite structure : données stockées en Markdown dans Git, accessible via application web. Licence GPL-3.0, Python, 1 étoile (<a href="https://github.com/gijsbos/hermit-crm">gijsbos/hermit-crm</a>). Gratuit.</p>
+<p><strong>Just Dashboard</strong> — panneau de contrôle privé pour serveur Linux : déploiement d'applications, Docker, bases de données, proxy et TLS, terminal intégré, gestion de fichiers, Git et sauvegardes. Go, licence AGPL-3.0, 26 étoiles, dernière mise à jour le 23/11 (<a href="https://github.com/JustDashboard/Just-Dashboard">JustDashboard/Just-Dashboard</a>). Gratuit et auto-hébergeable.</p>
+<p><strong>Dawarich</strong> — solution de géolocalisation auto-hébergée. Trace les déplacements et permet un partage familial du positionnement, sans dépendance aux services propriétaires. Source non spécifiée (<a href="https://dawarich.com">dawarich</a>). Gratuit.</p>
+<p><strong>Satura</strong> — espace de travail Apache 2.0 pour agents IA qui « vous tendent la main » pendant la programmation. Interface de travail collaborative pilotée par IA (<a href="https://satura.space">satura.space</a>).</p>
+<p><strong>Pentworks</strong> — outil CLI open source pour gérer des projets de tests d'intrusion (penetration testing). Organisation des engagements, traçabilité et rapports. Python, aucune licence identifiée, 8 étoiles (<a href="https://github.com/Sheykder/Pentworks">Sheykder/Pentworks</a>). Gratuit.</p>
+<p><strong>ScreenTinker</strong> — logiciel de signalétique numérique distante open source pour vos propres téléviseurs. Serveur + clients légers. JavaScript, licence MIT, 277 étoiles, 76 forks, dernière MAJ le 23/11 (<a href="https://github.com/screentinker/screentinker">screentinker/screentinker</a>). Gratuit.</p>
+<p><strong>Tellyscope</strong> — lecteur/streamer TV internet Kotlin, licence GPL-3.0, 2 217 étoiles (<a href="https://github.com/man15h/tellyscope">man15h/tellyscope</a>). Gratuit.</p>
+<p><strong>Inbox Envoy</strong> — compétence open source de tri d'emails dédiée à votre propre agent IA. Filtre, classifie et priorise les messages entrants. Python, licence MIT, 4 étoiles (<a href="https://github.com/salespeak-ai/inbox-envoy">salespeak-ai/inbox-envoy</a>). Gratuit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>PostgreSQL 19</strong> — sortie officielle de cette version majeure de la base de données relationnelle open source. Gestion des tables entièrement repensée, performances accrues et nouvelles fonctionnalités (source: <a href="https://www.phoronix.com/news/PostgreSQL-19-Released">phoronix</a>, <a href="https://postgresql.developpez.com/actu/389354">developpez</a>). PostgreSQL sous licence PostgreSQL (permissive).</p>
+<p><strong>LibreOffice 27.2 Alpha 1</strong> — première version alpha destinée aux tests, en vue de la sortie stable prévue en février. La suite bureautique libre poursuit son cycle de développement bi-mensuel (source: <a href="https://www.phoronix.com/news/LibreOffice-27.2-Alpha-1">phoronix</a>). MPL-2.0.</p>
+<p><strong>Rust 1.100</strong> — ce release stabilise le type <code>never</code>, l'API <code>Allocator</code> et implémente l'API <code>DropGuard</code>. Ce sont des évolutions fondamentales du language (source: <a href="https://rust.developpez.com/actu/389089">developpez</a>).</p>
+<p><strong>FFmpeg 9.1</strong> — nouvelle version de la référence open source pour le traitement audio/vidéo. Changelog détaillé disponible (source: <a href="https://www.phoronix.com/news/FFmpeg-9.1-Released">phoronix</a>).</p>
+<p><strong>Wine 11.22</strong> — nouvelle publication du compatibilité Windows/Linux, incluant des correctifs OpenGL et des améliorations cross-process render (source: <a href="https://www.phoronix.com/news/Wine-11.22-Released">phoronix</a>).</p>
+<p><strong>KDE Plasma 6.9</strong> — la maquette XWayland on demand est désormais intégrée, permettant de basculer selon besoin entre Wayland et X11 par session (source: <a href="https://www.phoronix.com/news/Plasma-6.9-XWayland-On-Demand">phoronix</a>).</p>
+<p><strong>Mesa 26.3.1</strong> — correction de régressions et bugs dans les pilotes GPU Mesa (source: <a href="https://www.phoronix.com/news/Mesa-26.3.1-Released">phoronix</a>).</p>
+<p><strong>Blender 5.3</strong> — nouvelle version majeure de la suite 3D open source. Mises à jour notables (source: <a href="https://www.phoronix.com/news/Blender-5.3-Released">phoronix</a>). LGPL-2.1.</p>
+<p><strong>Linux 7.4-rc4</strong> — quatrième candidate release du noyau Linux 7.4, marqué comme volumineux par Linus Torvalds. Inclut de nombreuses corrections et nouveautés (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc4-Released">phoronix</a>).</p>
+<p><strong>Linux 7.4-rc3</strong> — release candidate précédente marquant aussi des progrès significatifs (source: <a href="https://www.phoronix.com/news/Linux-7.4-rc3-Released">phoronix</a>).</p>
+<p><strong>Firefox 161</strong> — navigation web open source ajoutant le basculement VPN par site et une section de thèmes classiques. Le VPN intégré gratuit avec volume illimité fonctionne jusqu'en janvier 2027 (source: <a href="https://www.phoronix.com/news/Firefox-161">phoronix</a>). Mozilla Public License.</p>
+<p><strong>PHP 8.6</strong> — nouveau release du langage incluant l'application partielle de fonctions, une nouvelle classe <code>Duration</code> et une API de polling. (source: <a href="https://www.phoronix.com/news/PHP-8.6-Released">phoronix</a>, <a href="https://php.developpez.com/actu/389311">developpez</a>).</p>
+<p><strong>NVIDIA 620.73.04</strong> — pilote Linux NVIDIA, mise à jour mensuelle de drivers GPU (source: <a href="https://www.phoronix.com/news/NVIDIA-620.73.04-Linux">phoronix</a>).</p>
+<p><strong>Fedora 46 approuve RPM v6</strong> — la prochaine Fedora adoptera le format RPM v6 dans son infrastructure de paquets (source: <a href="https://www.phoronix.com/news/Fedora-46-Approves-RPM-v6">phoronix</a>).</p>
+<p><strong>openSUSE Leap 16.1 → Agama</strong> — la distribution openSUSE Leap migre vers l'installateur Agama (source: <a href="https://www.phoronix.com/news/openSUSE-Tumbleweed-Goes-Agara">phoronix</a>).</p>
+<p><strong>Shirudo</strong> — runtime open source développé conjointement par OpenAI et Cisco pour protéger les systèmes Linux non patchés. Exécution en environnement isolé pour limiter l'exposition aux vulnérabilités connues (source: <a href="https://openai.com/index/introducing-shirudo/">OpenAI blog</a>).</p>
+<p><strong>Arti 2.8</strong> — nouvelle version du client Tor de nouvelle génération écrit en Rust, se rapprochant d'une réécriture complète (source: <a href="https://rust.developpez.com/actu/388864">developpez</a>).</p>
+<h2>Extensions et greffons</h2>
+<p><strong>jetbrain-agent-skill-for-blender</strong> — greffon Blender intégrant Claude Code AI pour la modélisation et la génération de scènes assistées par IA. Extension professionnelle (<a href="https://www.opensourceprojects.dev/post/blender-ai-mcp-addon">opensourceprojects.dev/post/blender-ai-mcp-addon</a>).</p>
+<h2>Volume</h2>
+<p>47 entrées analysées dans les sources traitées, 11 sujets retenus, 36 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-23.html</link>
