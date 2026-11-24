@@ -6,9 +6,32 @@
 <description>Veille quotidienne — Clément Mondary — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/mondary.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Mon, 23 Nov 2026 01:51:06 +0100</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 01:51:33 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Clément Mondary — mardi 24 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-11-24.html</link>
+<guid isPermaLink="false">mondary-2026-11-24</guid>
+<pubDate>Tue, 24 Nov 2026 01:51:33 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le blog publie cinq billets aujourd'hui. Un seul retient l'attention : un moteur de génération logicielle par agent IA. Le reste se répartit entre trois navigateurs macOS et deux utilitaires hors périmètre.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>Craft Anything</strong> est un moteur open source en Rust qui inspecte un site, une application ou un jeu pour en extraire la structure, puis charge un agent de code afin que celui-ci en reconstruise une version vérifiée contre l'original. L'outil fait travailler un agent de programmation sur la base d'une analyse statique du produit cible, ce qui permet de reproduire fidèlement une interface ou un comportement sans avoir à écrire le code soi-même. Licence non indiquée dans le billet, ouvertures possibles pour explorer le génie logiciel inversé ou construire des prototypes pédagogiques.<br />
+Source : <a href="https://mondary.design/2026/11/craft-anything-comprendre-un-logiciel-puis-construire-le-votre/">mondary.design</a></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 1 retenu, 4 écartés (navigateurs macOS, lecteur IPTV, utilitaire de thèmes).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — mardi 24 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Le blog publie cinq billets aujourd'hui. Un seul retient l'attention : un moteur de génération logicielle par agent IA. Le reste se répartit entre trois navigateurs macOS et deux utilitaires hors périmètre.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<p><strong>Craft Anything</strong> est un moteur open source en Rust qui inspecte un site, une application ou un jeu pour en extraire la structure, puis charge un agent de code afin que celui-ci en reconstruise une version vérifiée contre l'original. L'outil fait travailler un agent de programmation sur la base d'une analyse statique du produit cible, ce qui permet de reproduire fidèlement une interface ou un comportement sans avoir à écrire le code soi-même. Licence non indiquée dans le billet, ouvertures possibles pour explorer le génie logiciel inversé ou construire des prototypes pédagogiques.<br />
+Source : <a href="https://mondary.design/2026/11/craft-anything-comprendre-un-logiciel-puis-construire-le-votre/">mondary.design</a></p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 1 retenu, 4 écartés (navigateurs macOS, lecteur IPTV, utilitaire de thèmes).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Clément Mondary — lundi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/mondary/2026-11-23.html</link>
