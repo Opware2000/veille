@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — mercredi 25 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Jensen Huang réintègre Nvidia après la démission au cœur du scandale espionnage chinois ; le conseil d'administration avait fini par rejeter son retour quelques jours plus tard. La faille SSHole s'avère exploitée activement dans la nature. Anthropic lève 81 milliards lors d'un IPO record qui place sa valorisation autour de 1 500 milliards de dollars.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>XCL — émulation native Xbox Series X|S sur Windows</h3>
+<p>La plupart des émulateurs de console traduisent chaque instruction CPU dans un langage compréhensible par l'hôte, approche lente et avec pertes. XCL va droit au but : votre processeur exécute directement le jeu. Le dépôt atteint 7 810 étoiles.<br />
+<a href="https://github.com/ivall/xcl">https://github.com/ivall/xcl</a> — licence GPL-2.0, 7 810 étoiles, dernière activité il y a moins de 24 heures.</p>
+<h3>minimind — entraîner un petit modèle de langage en deux heures</h3>
+<p>On a tous fait du fine-tuning ou suivi un tutoriel LoRA, mais la question « que se passe-t-il exactement entre des fichiers textes bruts et un modèle capable converser » reste obscure. minimind montre comment former un réseau de 64 millions de paramètres à partir de zéro en deux heures sur matériel grand public. 70 160 étoiles.<br />
+<a href="https://github.com/jingyaogong/minimind">https://github.com/jingyaogong/minimind</a> — licence Apache-2.0, 70 160 étoiles, dernier push le 23 novembre.</p>
+<h3>OpenSRE — agent CLI pour retracer les causes d'échec CI</h3>
+<p>Face à un pull request refusé, aux logs rouges et à un message d'erreur qui dit tout sans rien expliquer, OpenSRE propose une approche différente : un agent en ligne de commande qui lit l'exécution CI échouée et en trace la cause. 15 176 étoiles.<br />
+<a href="https://github.com/tracer-cloud/opensre">https://github.com/tracer-cloud/opensre</a> — licence Apache-2.0, 15 176 étoiles, actif hier.</p>
+<h3>Homer — page statique de gestion de serveur domestique</h3>
+<p>Vous avez un homelab, plusieurs services hébergés sur différents ports ? Homer génère une page d'accueil statique configurée par un seul fichier YAML. Pas de base de données, pas de compte, juste une vue d'ensemble. 11 746 étoiles.<br />
+<a href="https://github.com/homer-dashboard/homer">https://github.com/homer-dashboard/homer</a> — licence Apache-2.0, 11 746 étoiles.</p>
+<h3>Fast-Anything — porter les fonctions lentes en Rust sans refonte totale</h3>
+<p>« Si ton application est lente, réécris-la en Rust » : ça parle à tout le monde jusqu'au moment où on imagine les mois de portage, les compilations interminables et les gigaoctets de <code>target/</code>. Fast-Anything permet de ne convertir que les fonctions problématiques, puis de vérifier leur exactitude. 3 596 étoiles.<br />
+<a href="https://github.com/el4cteo/fast-anything">https://github.com/el4cteo/fast-anything</a> — licence MIT, 3 596 étoiles, actif le 24 novembre.</p>
+<h3>XnUlinux — espace utilisateurs macOS sur Linux via module noyau</h3>
+<p>Projets de macOS-en-VM comme QEMU ou Docker-OSX bien connus, mais XnUlinux propose une idée plus radicale : charger le vrai noyau Apple (XNU) comme module dans un noyau Linux. 3 343 étoiles.<br />
+<a href="https://github.com/afk-surf/xnulinux">https://github.com/afk-surf/xnulinux</a> — licence NOASSERTION, 3 343 étoiles, dernier push hier.</p>
+<h3>Open Source Oura Ring — données libres de votre Oura</h3>
+<p>Accéder aux données de santé de l'Oura Ring sans passer par l'application propriétaire. 730 étoiles.<br />
+<a href="https://github.com/Th0rgal/open_oura">https://github.com/Th0rgal/open_oura</a> — licence MIT, 730 étoiles.</p>
+<h3>Chili3D — CAO paramétrique dans le navigateur</h3>
+<p>Chili3D ajoute trois modules principaux : modélisation paramétrique avec arbre de fonctionnalités et contraintes croquis (rebuild en aval automatique), modélisation en langage naturel assistée par IA avec votre propre clé API, et modélisation directe poussé-tiré sans historique. 5 022 étoiles.<br />
+<a href="https://github.com/xiangechen/chili3d">https://github.com/xiangechen/chili3d</a> — licence AGPL-3.0, 5 022 étoiles, actif le 24 novembre.</p>
+<h3>Voxa — doublage vidéo open-source synchronisé avec le locuteur</h3>
+<p>Doublage vidéo open-source qui reste synchronisé avec la voix originale.<br />
+<a href="https://github.com/akshinmrv/Voxa">https://github.com/akshinmrv/Voxa</a> — licence ?, étoiles non indiquées.</p>
+<h3>ByName — voir quand les assistants IA nomment votre produit</h3>
+<p>Outil open-source pour détecter quand un assistant IA mentionne le nom de votre produit.<br />
+<a href="https://byname.dev/">https://byname.dev/</a> — lien web, dépôts non renseignés.</p>
+<h3>Agromate — serre connectée open-source basée sur ESP32</h3>
+<p>Micro-serre personnalisable contrôlée par un ESP32, ouverte à la modification.<br />
+<a href="https://agromate-devs.github.io/website/">https://agromate-devs.github.io/website/</a> — lien site web.</p>
+<h3>Docker WSL Manager — alternative open-source à Docker Desktop pour Windows</h3>
+<p>Alternative légère (&lt; 3 Mo) à Docker Desktop pour Windows via WSL.<br />
+<a href="https://github.com/elazaroo/docker-wsl-manager">https://github.com/elazaroo/docker-wsl-manager</a> — lien GitHub, étoiles non précisées.</p>
+<h3>Open Hood — lecteur de codes défaut voiture gratuit (navigateur + MCP)</h3>
+<p>Lecteur de codes défaut OBD2 gratuit et open-source, utilisable directement dans le navigateur ou via le protocole MCP.<br />
+<a href="https://tuffjocke.github.io/openhood/">https://tuffjocke.github.io/openhood/</a> — lien web.</p>
+<h3>OpenRemap — découverte et édition de cartes dans les binaires ECU automobile</h3>
+<p>Outil open-source pour explorer et modifier les cartes de calibration contenues dans les firmware d'ECU automobiles.<br />
+<a href="https://openremap.com">https://openremap.com</a> — site web dédié.</p>
+<h3>FireVoice — studio vocal gratuit sur votre propre GPU</h3>
+<p>Studio de traitement vocal open-source entièrement gratuit tournant sur GPU local.<br />
+<a href="https://firevoice.fabwaseem.com">https://firevoice.fabwaseem.com</a> — lien web.</p>
+<h3>Digisensus Recorder — enregistreur d'appels/réunions pour Mac</h3>
+<p>Enregistreur d'appels téléphoniques et réunions en ligne pour macOS. Tourne dans le flux audio de la machine, transcrit, distingue les locuteurs, renomme automatiquement si leur nom a été évoqué, produit un résumé. Utilisation de modèles locaux, APIs externes ou plan gratuit.<br />
+<a href="https://github.com/Digisensus/digisensus-recorder">https://github.com/Digisensus/digisensus-recorder</a> — licence GPL-3.0, 20 étoiles, actif le 23 novembre.</p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>aerynOS — distribution Linux atomique</h3>
+<p>aerynOS est une distribution Linux atomique annoncée cette semaine. Une distribution atomique garantit qu'une mise à jour réussie applies comme un tout indivisible ; en cas d'échec, le système revient automatiquement à l'état précédent.</p>
+<h3>Snacks.nvim —plugins qualité de vie pour Neovim</h3>
+<p>Collection de petits greffons améliorant le confort de travail dans Neovim (gestion des buffers, notifications, ouverture de gros fichiers). 8 232 étoiles.<br />
+<a href="https://github.com/folke/snacks.nvim">https://github.com/folke/snacks.nvim</a> — licence Apache-2.0.</p>
+<h3>Ladybird Browser — passage en phase Alpha</h3>
+<p>Le navigateur web open-source Ladybird, construit de zéro avec son propre moteur web indépendant (Serene), franchit le cap de l'alpha. Un projet ambitieux qui cherche à offrir une alternative réelle au rendu propulsé par Chromium.</p>
+<h3>zlib-rs 0.6.9 — implémentation Rust de zlib</h3>
+<p>Version mineure de zlib-rs, implémentation de la bibliothèque zlib écrite en Rust, avec des améliorations de performances.<br />
+<a href="https://www.phoronix.com/news/zlib-rs-0.6.9">https://www.phoronix.com/news/zlib-rs-0.6.9</a></p>
+<h3>zstd 1.6 — nouvelle version majeure de la compression</h3>
+<p>Sortie de zstd 1.6 après un an et demi d'intervalle depuis la 1.5.7. Nouvelles optimizations de performances pour cet algorithme de compression open-source très utilisé.<br />
+<a href="https://www.phoronix.com/news/Zstandard-Zstd-1.6">https://www.phoronix.com/news/Zstandard-Zstd-1.6</a></p>
+<h3>Proton 11.0-3 — couche de compatibilité Steam Play</h3>
+<p>Nouvelle version de Proton, dérivée de Wine, pour l'exécution de jeux Windows sous Linux via Steam Play. Plus de jeux maintenant jouables.<br />
+<a href="https://www.phoronix.com/news/Proton-11.0-3-Released">https://www.phoronix.com/news/Proton-11.0-3-Released</a></p>
+<h3>SUSE Agama — premier installateur OS « prêt pour l'IA »</h3>
+<p>L'installateur SUSE Agama intègre désormais le support de l'IA via un serveur Model Context Protocol. C'est présenté comme le premier installateur de distribution Linux conçu comme « AI-ready ».<br />
+<a href="https://www.phoronix.com/news/SUSE-Agama-Adding-AI-MCP">https://www.phoronix.com/news/SUSE-Agama-Adding-AI-MCP</a></p>
+<h3>TornadoVM 8.2 — compilation GPU pour Java</h3>
+<p>Framework Java permettant de JIT compiler du code Java (OpenJDK 21+) vers CUDA, OpenCL, Metal, et désormais AMD ROCm HIP. Nouvelle version sort aujourd'hui.<br />
+<a href="https://www.phoronix.com/news/TornadoVM-8.2">https://www.phoronix.com/news/TornadoVM-8.2</a></p>
+<h3>Collabora Online — réduction de 50 % de l'utilisation mémoire</h3>
+<p>Collabora Online, suite bureautique open-source web dérivée de LibreOffice, réduit l'utilisation mémoire par document de moitié grâce à une optimisation du mécanisme copy-on-write. Important pour les déploiements serveurs.<br />
+<a href="https://www.phoronix.com/news/Collabora-Online-Half-Memory">https://www.phoronix.com/news/Collabora-Online-Half-Memory</a></p>
+<h3>Wakeshift — événements MCP compatibles agents de codage</h3>
+<p>Serveur open-source permettant à tout serveur MCP de servir des événements interopérables via MCP Events ou ponts spécifiques à chaque harnais. Permet aux serveurs MCP de pousser des événements vers des agents comme Claude Code, Codex et Cursor.<br />
+<a href="https://github.com/wakeshift/server">https://github.com/wakeshift/server</a> — licence Apache-2.0, 3 étoiles.</p>
+<h3>Forge SSHole — exploitation active confirmée</h3>
+<p>Des experts en cybersécurité signalent une exploitation active de la faille SSHole, permettant l'accès à des appareils Linux via SSH même lorsque le mot de passe est désactivé. Les attaquants déploient des portes dérobées.</p>
+<h3>OnlyOffice 10.0 — correctif de sécurité et intégration IA</h3>
+<p>Dernière version de ONLYOFFICE corrigeant 44 vulnérabilités et renforçant le contrôle des outils IA ainsi que les paramètres de sécurité par défaut. Intégration de Claude pour la gestion de fichiers et salles depuis un assistant IA.<br />
+<a href="https://onlyoffice.developpez.com/actu/389413">https://onlyoffice.developpez.com/actu/389413</a></p>
+<h3>Mesa NVK — ray tracing NVIDIA en cours d'implémentation</h3>
+<p>Le pilote Vulkan open-source NVIDIA NVK (pour Mesa) progresse vers la prise en charge du ray tracing Vulkan. Toujours en développement.<br />
+<a href="https://www.phoronix.com/news/Mesa-NVK-TTU-Instructions">https://www.phoronix.com/news/Mesa-NVK-TTU-Instructions</a></p>
+<h3>Firefox VPN illimité jusqu'en janvier 2027</h3>
+<p>Firefox propose un VPN intégré avec un volume de données illimité et gratuit jusqu'en janvier 2027, supprimant la limite mensuelle de 50 Go.<br />
+<a href="https://web.developpez.com/actu/388989">https://web.developpez.com/actu/388989</a></p>
+<h3>GNU 1.100 — stabilisation du type never</h3>
+<p>Version 1.100 du langage de programmation Rust avec le type never enfin stabilisé, la stabilisation de l'API Allocator et l'implémentation de l'API DropGuard.<br />
+<a href="https://www.phoronix.com/news/Rust-1.100-Released">https://www.phoronix.com/news/Rust-1.100-Released</a></p>
+<h3>Dégooglisons Internet — site revamp par Framasoft</h3>
+<p>Framasoft a repensé entièrement son portail Dégooglisons Internet : outils numériques éthiques repérés, alternatives classées, guides pratiques pour débuter loin des GAFA.<br />
+<a href="https://framablog.org/2026/11/24/degooglisons-internet-le-site-pour-commencer-a-semanciper-des-techno-monopoles/">https://framablog.org/2026/11/24/degooglisons-internet-le-site-pour-commencer-a-semanciper-des-techno-monopoles/</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Judge-Audit — audits open-source de calibration pour juges IA</h3>
+<p>Outil open-source pour réaliser des audits de calibration d'IA servant de juge. Primitives essentielles pour évaluer la fiabilité des systèmes auto-évaluatifs. Dépôt récent, 16 étoiles.<br />
+<a href="https://github.com/kunko-ai-labs/judge-audit">https://github.com/kunko-ai-labs/judge-audit</a> — licence non indiquée.</p>
+<h2>Volume</h2>
+<p>65 entrées examinées dans la shortlist, environ 45 sujets retenus après filtrage (outils, versions majeures, projets notables), le reste écarté (actualités sociales, retours d'expérience, annonces hors périmètre, duplication de sources).</p>
+<footer>Édition du mercredi 25 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

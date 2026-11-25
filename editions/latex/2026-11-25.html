@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — mercredi 25 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Deux projets open source méritent l'attention : un moteur TeX Rust pour l'aperçu en direct (TeXyoN) et un espace de travail auto-hébergé avec intégration Zotero (DocWizard). L'article des bibliothèques universitaires sur l'enseignement de LaTeX en atelier rassemble des cas concrets de treize institutions. Le forum Typst signale une évolution technique importante avec la phase de post-traitement dans l'export groupé HTML. Les autres fils du jour relèvent principalement de la résolution de problèmes ponctuels.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>TeXyoN — moteur TeX Rust pour l'aperçu en direct</h3>
+<p>Le projet <strong>TeXyoN</strong> (« tachyon », particule hypothétique plus rapide que la lumière) vient d'être mis sous licence MIT. C'est un moteur TeX/TeX écrit en Rust, conçu spécifiquement pour afficher les modifications aussi vite que possible — l'aperçu en temps réel dans le navigateur.</p>
+<p>Le déploiement se fait par une extension Visual Studio Code (native, locale) et un paquet npm qui compile TeXyoN en WebAssembly avec une API simple pour créer des expériences interactives TeX dans le navigateur.</p>
+<p>Les résultats de benchmark figurent dans un article détaillé disponible sur <a href="https://yendric.be/introducing-texyon/">yendric.be</a> : validation sur plus de 9 000 documents comparés à TeX Live complet.</p>
+<ul>
+<li><strong>Auteur</strong> : Yendric</li>
+<li><strong>Licence</strong> : MIT</li>
+<li><strong>Étoiles GitHub</strong> : 19</li>
+<li><strong>Dernière mise à jour</strong> : 23 novembre 2026</li>
+<li><strong>Source</strong> : https://www.reddit.com/r/LaTeX/comments/1y35s2y/open_sourcing_my_livepreview_tex_engine_writeup/</li>
+<li><strong>GitHub</strong> : https://github.com/texyon-org/texyon</li>
+</ul>
+<h3>DocWizard — espace de travail d'écriture auto-hébergé avec Zotero</h3>
+<p><strong>DocWizard</strong> est un espace de travail collaboratif pour l'édition de documents, similaire à Overleaf ou HedgeDoc, développé par les mêmes créateurs que FileWizard (convertisseur de fichiers). Il prend en charge l'écriture en Markdown et TeX, la conversion HTML/PDF, et dispose d'une intégration Zotero native pour la gestion bibliographique. La collaboration multi-utilisateurs est au cœur du projet.</p>
+<ul>
+<li><strong>Licence</strong> : GPL-3.0</li>
+<li><strong>Étoiles GitHub</strong> : 6</li>
+<li><strong>Source</strong> : https://www.reddit.com/r/LaTeX/comments/1xznjf4/selfhostable_writing_workspace_with_native_zotero/</li>
+<li><strong>GitHub</strong> : https://github.com/LoredCast/DocWizard</li>
+</ul>
+<h3>Keisen — tableau de présentation pour Typst (note complémentaire)</h3>
+<p><strong>Keisen</strong> 0.1.0 est un nouveau paquet Typst pour la présentation de tableaux, dans l'esprit de <code>gt</code> et <code>great_tables</code> pour R/Python. Il permet de construire pas à pas des tableaux de régression et des tables cliniques avec un niveau de raffinement difficile à atteindre en Typst brut. Utile si vous expérimentez Typst pour des documents scientifiques incluant des données tabulaires complexes.</p>
+<ul>
+<li><strong>Documentation</strong> : https://m.canouil.dev/keisen/</li>
+<li><strong>Forum Typst</strong> : https://forum.typst.app/t/keisen-display-tables-for-typst/10146</li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>TexLite v0.19.0 — agents de codage locaux</h3>
+<p><strong>TexLite</strong>, l'éditeur LaTeX web open source autogéré destiné aux petites équipes de recherche, a ajouté le support des agents de codage locaux. On peut désormais utiliser des agents comme Codex CLI ou OpenCode directement dans l'interface, sans passer par les fonctionnalités IA embarquées d'Overleaf. Chaque utilisateur conserve le contrôle sur le LLM choisi et les flux de travail utilisés.</p>
+<ul>
+<li><strong>Source</strong> : https://www.reddit.com/r/LaTeX/comments/1xgrxyk/texlite_update_now_with_coding_agent_support_v0190/</li>
+<li><strong>GitHub</strong> : https://github.com/SWUFE-DB-Group/TexLite</li>
+</ul>
+<h3>TeX Live 2026 — supports PDF accessibles prêts pour la production</h3>
+<p>La mise à jour annuelle Overleaf pour TeX Live 2026 est publiée. Les fonctionnalités de génération de PDF accessibles ont quitté la phase prototype et sont considérées comme prêtes pour les flux de production. Mise à jour des programmes liés à TeX, des polices et des paquets macro. Un guide de migration couvre les erreurs courantes à anticiper.</p>
+<ul>
+<li><strong>Détaillé par Overleaf</strong> : https://www.overleaf.com/blog/tex-live-2026-is-now-available</li>
+</ul>
+<h3>Fonctionnalité Overleaf — espaces de travail partagés</h3>
+<p>Pour les abonnements Pro en groupe, Overleaf a déployé les « espaces de workspace partagés » : un espace commun où les projets sont accessibles à tous les membres du groupe, et non plus uniquement à leur créateur. Une réponse pratique aux départs de collaborateurs qui s'emparaient auparavant des projets qu'ils avaient initiés.</p>
+<ul>
+<li><strong>Source</strong> : https://www.overleaf.com/blog/protect-your-groups-projects-with-a-shared-workspace</li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<h3>frame-it — personnaliser la police du titre d'un cadre Beamer</h3>
+<p>Le paquet <strong>frame-it</strong> (paquet Univers Typst, mais le principe s'applique également à LaTeX/beamer) permet d'afficher des citations, définitions et notes de bas de page dans des cadres stylisés dans les présentations Beamer. Pour modifier la police du titre d'un cadre, il faut capturer l'élément figure dans une règle <code>show</code> et appliquer la famille de caractères souhaitée avant le rendu. Une approche utile pour harmoniser les titres de cadres avec le style visuel de votre présentation.</p>
+<p>En LaTeX pur, l'équivalent consiste à définir un format personnalisé pour les environnements de cadre via <code>\newtheoremstyle</code> ou en redéfinissant les commandes <code>frametitle</code>.</p>
+<ul>
+<li><strong>Paquet Typst</strong> : https://typst.app/universe/package/frame-it</li>
+</ul>
+<h2>Discussions notables</h2>
+<h3>Post-traitement dans l'export groupé Typst</h3>
+<p>Le forum Typst discute de l'ajout d'une étape de post-traitement (<code>bundle postprocessing stage</code>) dans l'export groupé HTML. Cette fonctionnalité permettrait d'intégrer de la recherche plein texte dans les documents exportés — impossibles à réaliser avec l'export actuel car Typst ne dispose pas d'étape de post-traitement dans son pipeline. Ce sujet intéresse ceux qui comparent Typst et LaTeX pour l'export HTML structuré.</p>
+<ul>
+<li><strong>Forum</strong> : https://forum.typst.app/t/bundle-postprocessing-stage/10304</li>
+</ul>
+<h3>Enseignement de LaTeX dans les bibliothèques universitaires</h3>
+<p>Un article publié dans le <em>Journal of eScience Librarianship</em> (<em>« LaTeX Instruction in Academic Libraries: Section 1 »</em>, del Junco et al. 2026) rassemble des études de cas issues de treize bibliothèques : Université d'Oklahoma, Princeton University, KAUST (Arabie saoudite), et dix autres établissements. Point commun : chacune utilise Overleaf pour ses ateliers, supprimant la barrière de l'installation locale. L'article montre que LaTeX n'est pas réservé aux STEM et attire aussi des étudiants en sciences politiques, commerce et philosophie.</p>
+<ul>
+<li><strong>Source Overleaf</strong> : https://www.overleaf.com/blog/twelve-libraries-teach-latex-heres-what-they-have-in-common-overleaf</li>
+<li><strong>Article original</strong> : https://publishing.escholarship.umassmed.edu/jeslib/article/id/1191/</li>
+</ul>
+<h2>Volume</h2>
+<p>24 publications dans les sources depuis le 21 novembre, 6 retenues, 18 écartées — taux de rétention 25 %.</p>
+<footer>Édition du mercredi 25 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
