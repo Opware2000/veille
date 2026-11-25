@@ -6,9 +6,44 @@
 <description>Veille quotidienne du subreddit r/DeepSeek — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/deepseek.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 01:33:27 +0100</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 01:31:19 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/DeepSeek — mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/deepseek/2026-11-25.html</link>
+<guid isPermaLink="false">deepseek-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 01:31:19 +0100</pubDate>
+<category>r/DeepSeek</category>
+<description><![CDATA[<h1>Veille r/DeepSeek — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Rien de nouveau concernant les modèles, le prix ou l'auto-hébergement DeepSeek dans les sources consultées aujourd'hui. Le flux Hacker News est dominé par la réintégration de Jensen Huang chez Nvidia et des sujets hors-sujet.</p>
+<h2>Modèles et poids — versions, variantes, licences, contexte, performances annoncées ; ce qui est vérifié et ce qui ne l'est pas.</h2>
+<p>[Rien]</p>
+<h2>Prix, accès et quotas — changements tarifaires et conditions d'accès, avec les chiffres et leur origine.</h2>
+<p>[Rien]</p>
+<h2>Auto-hébergement et quantification — guides et mesures reproductibles.</h2>
+<p>[Rien]</p>
+<h2>Intégrations et outils tiers — éditeurs, agents, greffons, serveurs compatibles : ce que c'est, ce que ça apporte, licence, lien.</h2>
+<p>[Rien]</p>
+<h2>Méthodes et retours d'expérience — réglages et façons de faire reprenables, avec assez de détail pour être appliqués.</h2>
+<p>[Rien]</p>
+<h2>Volume — 125 posts publiés dans l'intervalle, 0 retenus, 125 écartés, taux de rétention 0 %.</h2>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/DeepSeek — mercredi 25 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Rien de nouveau concernant les modèles, le prix ou l'auto-hébergement DeepSeek dans les sources consultées aujourd'hui. Le flux Hacker News est dominé par la réintégration de Jensen Huang chez Nvidia et des sujets hors-sujet.</p>
+<h2>Modèles et poids — versions, variantes, licences, contexte, performances annoncées ; ce qui est vérifié et ce qui ne l'est pas.</h2>
+<p>[Rien]</p>
+<h2>Prix, accès et quotas — changements tarifaires et conditions d'accès, avec les chiffres et leur origine.</h2>
+<p>[Rien]</p>
+<h2>Auto-hébergement et quantification — guides et mesures reproductibles.</h2>
+<p>[Rien]</p>
+<h2>Intégrations et outils tiers — éditeurs, agents, greffons, serveurs compatibles : ce que c'est, ce que ça apporte, licence, lien.</h2>
+<p>[Rien]</p>
+<h2>Méthodes et retours d'expérience — réglages et façons de faire reprenables, avec assez de détail pour être appliqués.</h2>
+<p>[Rien]</p>
+<h2>Volume — 125 posts publiés dans l'intervalle, 0 retenus, 125 écartés, taux de rétention 0 %.</h2>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/DeepSeek — mardi 23 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/deepseek/2026-11-23.html</link>
