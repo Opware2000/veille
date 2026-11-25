@@ -6,9 +6,38 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Tue, 24 Nov 2026 01:42:28 +0100</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 01:42:21 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — Mercredi 25 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-25.html</link>
+<guid isPermaLink="false">ctan-2026-11-25</guid>
+<pubDate>Wed, 25 Nov 2026 01:42:21 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — Mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces au programme de ce mercredi : une mise à jour d'un paquet utilisé pour vos documents (enumext), des corrections sur un paquet core LaTeX (l3kernel) et sur la typographie (BaskervilleF), ainsi qu'une option utilitaire dans geometry. Aucune nouvelle présentation de paquet.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>enumext</strong> — version 2.6 (annoncée le 24 novembre). Le CTAN liste désormais la version 2.7 (datée du 25 novembre), probablement publiée entre l'envoi de l'annonce et sa collecte. Au programme : <code>save-ref</code> crée maintenant la cible et l'étiquette hyperliées avec <code>\MakeLinkTarget</code> et <code>\label</code> lorsque hyperref est chargé ; prise en charge des PDF balisés pour les listes dont l'étiquette n'utilise pas de compteur (par exemple <code>label={}</code>). Cela devrait s'intégrer sans modification dans votre flux actuel, mais vérifiez les numéros automatiques si vous utilisez cette fonctionnalité.</p>
+<h2>Autres mises à jour notables</h2>
+<p><strong>geometry</strong> — version 6.3 (16 novembre). Ajout de l'option <code>logunit</code> pour spécifier les unités d'impression des dimensions dans le fichier log ou le terminal. Utile pour le débogage de mise en page. Aucun impact attendu sur la compilation. (<a href="https://ctan.org/pkg/geometry">https://ctan.org/pkg/geometry</a>)</p>
+<p><strong>l3kernel</strong> — version 2026-11-16. Mise à jour du noyau LaTeX3 (expl3). L'annonce ne détaille que des corrections sans mentionner de nouvelles fonctionnalités. Ce paquet constitue la base de tout environnement expl3 et il est recommandé de maintenir cette version à jour. (<a href="https://ctan.org/pkg/l3kernel">https://ctan.org/pkg/l3kernel</a>)</p>
+<p><strong>BaskervilleF</strong> — version 1.053 (22 novembre). Corrections des ligatures en encodage OT1 et corrections des fichiers fd OT1. Modification purement typographique destinée aux utilisateurs de cette police ; aucune conséquence si vous n'utilisez pas Baskerville comme fonte principale. (<a href="https://ctan.org/pkg/BaskervilleF">https://ctan.org/pkg/BaskervilleF</a>)</p>
+<h2>Volume</h2>
+<p>Six annonces examinées, quatre retenues (dont une concernant un paquet de votre corpus), deux écartées : newtxtt v1.062 (mise à jour ne modifiant que le journal de modifications).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — Mercredi 25 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quatre annonces au programme de ce mercredi : une mise à jour d'un paquet utilisé pour vos documents (enumext), des corrections sur un paquet core LaTeX (l3kernel) et sur la typographie (BaskervilleF), ainsi qu'une option utilitaire dans geometry. Aucune nouvelle présentation de paquet.</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p><strong>enumext</strong> — version 2.6 (annoncée le 24 novembre). Le CTAN liste désormais la version 2.7 (datée du 25 novembre), probablement publiée entre l'envoi de l'annonce et sa collecte. Au programme : <code>save-ref</code> crée maintenant la cible et l'étiquette hyperliées avec <code>\MakeLinkTarget</code> et <code>\label</code> lorsque hyperref est chargé ; prise en charge des PDF balisés pour les listes dont l'étiquette n'utilise pas de compteur (par exemple <code>label={}</code>). Cela devrait s'intégrer sans modification dans votre flux actuel, mais vérifiez les numéros automatiques si vous utilisez cette fonctionnalité.</p>
+<h2>Autres mises à jour notables</h2>
+<p><strong>geometry</strong> — version 6.3 (16 novembre). Ajout de l'option <code>logunit</code> pour spécifier les unités d'impression des dimensions dans le fichier log ou le terminal. Utile pour le débogage de mise en page. Aucun impact attendu sur la compilation. (<a href="https://ctan.org/pkg/geometry">https://ctan.org/pkg/geometry</a>)</p>
+<p><strong>l3kernel</strong> — version 2026-11-16. Mise à jour du noyau LaTeX3 (expl3). L'annonce ne détaille que des corrections sans mentionner de nouvelles fonctionnalités. Ce paquet constitue la base de tout environnement expl3 et il est recommandé de maintenir cette version à jour. (<a href="https://ctan.org/pkg/l3kernel">https://ctan.org/pkg/l3kernel</a>)</p>
+<p><strong>BaskervilleF</strong> — version 1.053 (22 novembre). Corrections des ligatures en encodage OT1 et corrections des fichiers fd OT1. Modification purement typographique destinée aux utilisateurs de cette police ; aucune conséquence si vous n'utilisez pas Baskerville comme fonte principale. (<a href="https://ctan.org/pkg/BaskervilleF">https://ctan.org/pkg/BaskervilleF</a>)</p>
+<h2>Volume</h2>
+<p>Six annonces examinées, quatre retenues (dont une concernant un paquet de votre corpus), deux écartées : newtxtt v1.062 (mise à jour ne modifiant que le journal de modifications).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — mardi 24 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-24.html</link>
