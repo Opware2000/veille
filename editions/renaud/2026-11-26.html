@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Renaud Dékode — jeudi 26 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../renaud.xml" title="Renaud Dékode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Renaud Dékode — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Jensen Huang reprend la tête de Nvidia onze jours après sa démission, relançant l'action de +31 %. Claude / Anthropic produit une preuve compilée de l'hypothesse de Riemann ouvrant le débat sur la super-intelligence. Claude Ship automatise la revue, la correction et l'approbation des pull requests.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Résolution de l'hypothèse de Riemann assistée par Claude</strong><br />
+Après qu'OpenAI eût démontré quasi-Riemann en octobre via son modèle interne et vérifié dans Lean, Levent Alpuge, mathématicien travaillant chez Anthropic, a utilisé durant six semaines des modèles privés de la société pour résoudre pleinement l'hypothèse de Riemann. Le résultat s'étend sur 250 000 pages, compilées et acceptées sans erreur par Lean. Alpuge a publié depuis quelques tweets humoristiques suggérant que le travail comportait des « approximations » et des références à <em>Big Buck Bunny</em>, mais le logiciel de vérification n'a refusé aucun passage. La communauté scientifique distingue ainsi trois étapes : les preuves d'OpenAI du 6 octobre, celle d'Alpuge validée par Lean, et l'examen humain restant à effectuer. Alexander Wong, responsable de la « superintelligence » chez Meta, y voit un signe que les systèmes IA peuvent désormais prouver des théorèmes hors de portée humaine et améliorer leurs propres algorithmes ; Yann Lecun, de son côté, maintient que les LLM restent loin de comprendre le monde physique. [minutage 09:51]</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Claude Ship : agents pour la validation automatique des pull requests</strong><br />
+Anthropic lance Claude Ship, une suite d'agents intégrée à Claude Code et destinée aux équipes utilisant GitHub. Un premier appel à <code>/ship</code> enclenche trois couches successives : un agent Code Review qui examine le diff, détecte les erreurs et publie un avis ; un agent PR Steward encore en bêta qui corrige les problèmes identifiés, teste les conflits et propose les modifications ; un agent Approve enfin qui arbitre entre corrections routinières et éléments nécessitant l'attention humaine, et approuve les pull requests à faible risque. Disponible aux abonnements Team et Enterprise, Claude Ship repose sur le fonctionnement interne d'Anthropic où Claude gère déjà l'essentiel du développement de ses propres produits. [minutage 22:33]</p>
+<p><strong>Inkling 2 Mini, petit modèle US opensource dédié au code local</strong><br />
+Thinking Machines, fondée par Miramurati (ancienne CTO d'OpenAI), publie Inkling 2 Mini, un modèle de 26 milliards de paramètres sous licence Apache, conçue pour tourner localement sur une machine grand public dotée d'environ 24 à 32 Go de RAM. Seuls 5 milliards de paramètres sont actifs par token grâce à la technologie Loop Transformer : le raisonnement se déroule en interne sans production de tokens intermédiaires, ce qui accélère le traitement tout en conservant une qualité élevée sur les tâches de codage agentique. Le fichier pèse 20 Go et est également disponible sur OpenRouter à 0,30 dollar par million de tokens en sortie. Sur Artificial Analysis, il surpasse Qwen 3.8 en 27B sur les tâches de code. [minutage 28:47]</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p><strong>Robot téléopéré armé déployé en Haïti</strong><br />
+Le Salvador a publié des images montrant un robot quadrupède Unitree G2 équipé d'un fusil d'assaut téléopéré à distance, utilisé pour sécuriser le stade Sylvio-Cator de Port-au-Prince dans le cadre d'une intervention coordonnée avec les forces d'opposition aux gangs. Ces robots seraient disponibles dans le commerce à environ 2 500 dollars. L'intervention s'inscrit dans un accord entre Haïti et le Salvador sans mandat direct de l'ONU, qui dispose pourtant de ses propres forces sur place. [minutage 35:39]</p>
+<h2>Régulation et politique — ce qui change concrètement</h2>
+<p><strong>Jensen Huang,export controls et enquête FBI toujours actives</strong><br />
+Le retour de Jensen Huang n'éteint pas les enquêtes en cours : le Congrès démocrate réclame toujours des explications sur Megaspeed, client singapourien soupçonné d'avoir servi de relais vers la Chine pour contourner les restrictions américaines sur les puces d'IA, et le FBI poursuit ses investigations. Le contexte réglementaire actuel encadre strictement toute vente de matériel IA sensible à destination chinoise, et le cas Alice Wang, ex-patronne de Megaspeed liée depuis un an à des services chinois, reste ouvert. [minutage 05:52]</p>
+<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
+<p><strong>Nvidia, 950 milliards de dollars d'un coup</strong><br />
+Le conseil d'administration de Nvidia, qui se renouvelle chaque année, a rappelé Jensen Huang à l'unanimité onze jours après sa démission, citant sa franchise et l'impossibilité de trouver un remplaçant satisfaisant. Les salariés, clients, fournisseurs et actionnaires avaient réclamé ce retour. La Bourse a répondu par une hausse de 31 %, représentant près de 950 milliards de dollars gagnés en une journée, avant un nouvel ajustement. Le Nasdaq montre la même courbe. [minutage 02:13]</p>
+<h2>À reprendre dans les autres veilles</h2>
+<p><strong>Résolution Riemann assistée par IA</strong> —Veille pédagogique et scientifique : avancée historique en mathématiques, rôle de la vérification formelle (Lean) et débats sur l'expertise assistée.<br />
+<strong>Claude Ship</strong> — Veille développement : automatisation complète du cycle de revue de code, de la correction à l'approbation. Passage du review manuel à la supervision par agents.<br />
+<strong>Inkling 2 Mini</strong> — Veille développement : petit modèle open pour le code local, architecture Loop Transformer, compétitif face à Qwen 3.8. Testable dès aujourd'hui.<br />
+<strong>Robot armé en Haïti</strong> — Veille scientifique : usage militaire de robotique commerciale téléopérée. Questions juridiques et éthiques.<br />
+<strong>Jensen Huang et export controls</strong> — Veille régulation : enquête FBI active malgré le retour du PDG. Contexte contrôle export des semi-conducteurs.</p>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 7 sujets retenus, 3 écartés (clips et live), transcriptions utilisées : udvi2dMXExg (complète).</p>
+<footer>Édition du jeudi 26 novembre 2026 — <a href="https://opware2000.github.io/veille/renaud.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

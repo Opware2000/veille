@@ -6,9 +6,74 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 00:21:40 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:23:20 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-26.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:23:20 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un lot d'outils nouveaux et de mises à jour marque cette édition. Nvidia libère NVKE, son moteur Kubernetes pour les charges de travail IA sur matériel NVIDIA. DeepSeek open-sonne DeepInfer, le serveur de production avec un mode déterministe. Google publie des papiers Cogentic sur la factorisation. Et deux outils se distinguent : Karakeep pour le signet auto-hébergé enrichi par l'IA, Handy pour la saisie vocale locale dans n'importe quelle application bureau.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Karakeep — marque-pages auto-hébergés enrichis par l'IA</strong></p>
+<p>Application de signets complète que vous hébergez vous-même. Elle sauvegarde liens, notes et images, applique un étiquetage automatique fondé sur l'IA (classification des thèmes sans intervention manuelle) et propose une recherche en texte intégral sur tous vos signets stockés. Le principe est simple : plus besoin de classer manuellement des dizaines de favoris ; l'IA s'en charge et tout est consultable via un moteur de recherche interne. Conçu pour les amateurs d'auto-hébergement qui veulent garder le contrôle sur leurs données de navigation.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y5bspl/</p>
+<p><strong>Handy — transcription vocale au curseur sur bureau</strong></p>
+<p>Application de bureau qui transforme ce que vous dites en texte directement dans le champ où se trouve votre curseur. Vous lancez un raccourci clavier, vous parlez, et Handy colle la transcription là où elle est nécessaire — dans un éditeur, un formulaire web, ou un client mail. Le modèle vocal fonctionne en local sur votre machine (pas d'appel cloud requis). L'intérêt est l'intégration transparente : aucun plug-in spécifique, aucune configuration préalable autre que l'installation du logiciel. Utile quand on veut dicter rapidement sans avoir à basculer entre une application de dictée et le document cible.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y55l0y/</p>
+<p><strong>nvke — Nvidia Kubernetes Engine pour charges IA</strong></p>
+<p>Projet open-source sous licence Apache-2.0 offrant environ 1 255 étoiles sur GitHub (dernière mise à jour hier). Il fournit un ensemble d'outils pour orchestrer et gérer des charges de travail d'intelligence artificielle sur Kubernetes avec du matériel NVIDIA. L'idée est de simplifier le déploiement de modèles IA dans un cluster Kubernetes en exploitant les capacités GPU de manière automatisée. Pour toute infrastructure qui doit déployer des modèles IA récurrents, cela réduit la complexité opérationnelle.<br />
+https://github.com/dsx-ai-factory/nvke</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — optimisation d'inférence sur matériel grand public</strong></p>
+<p>Thinking Machines a publié un billet technique sur l'optimisation de l'inférence d'Inkling 2 Mini sur une seule RTX PRO 6000. Le post détaille les stratégies de hill-climbing appliquées au pipeline d'inférence pour maximiser le débit sur du matériel consommateur. Pas une nouvelle version, mais un niveau de performance supplémentaire accessible aux particuliers disposant de GPUs NVIDIA de gamme professionnelle. Un résultat qui montre que le coût d'exécution des modèles locaux peut être réduit significativement avec un tuning approprié.<br />
+https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</p>
+<p><strong>Google Cogentic — papers sur la factorisation entière et les logarithmes discrets</strong></p>
+<p>Google Research publie une série de papiers Cogentic accessibles en open access. Les travaux portent sur la factorisation entière et les logarithmes discrets — des problèmes mathématiques fondamentaux avec des implications directes en cryptographie. Bien que ces résultats soient principalement académiques, leur disponibilité publique rend accessible à la communauté open source une avancée majeure qui restait confinée auparavant aux rapports internes de Google.<br />
+https://news.ycombinator.com/item?id=50642086</p>
+<p><strong>DeepSeek — DeepInfer engine open-source avec mode déterministe</strong></p>
+<p>L'équipe de DeepSeek a rendu open-source (Apache-2.0) DeepInfer, le serveur d'inférence qui fait tourner ses services en production. La fonctionnalité marquante est un mode « batch-invariant » : quel que soit le lot de requêtes partagées au même instant, le modèle produit les mêmes réponses. Ce mode permet aussi d'activer un échantillonnage entièrement reproductible (seed fixe + désactivation du speedup par tokens de draft). L'engine tourne sur B200-class Blackwell et Huawei Ascend 950. Note : les indicateurs déterministes sont actuellement restreints au matériel NVIDIA, les GPU grand public ne supportent pas le compute capability requis.<br />
+https://s.conao3.com/blog/2026/e4f733</p>
+<h2>Extensions et greffons</h2>
+<p><strong>OpenDuet — agent proactif open-source</strong></p>
+<p>Agent open-source qui accomplit des tâches tout en gardant l'utilisateur informé. Chaque agent dispose de son propre environnement de travail. Disponible sur le web, mobile, Slack et Microsoft Teams. Le projet vise à combiner l'automatisation proactive avec la transparence utilisateur — pas juste un bot qui agit seul, mais un assistant qui communique ce qu'il fait.<br />
+https://github.com/CopilotKit/OpenDuet</p>
+<h2>Volume</h2>
+<p>63 publications nouvelles détectées dans les sources de cette veille, dont 7 retenus après filtrage, 56 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un lot d'outils nouveaux et de mises à jour marque cette édition. Nvidia libère NVKE, son moteur Kubernetes pour les charges de travail IA sur matériel NVIDIA. DeepSeek open-sonne DeepInfer, le serveur de production avec un mode déterministe. Google publie des papiers Cogentic sur la factorisation. Et deux outils se distinguent : Karakeep pour le signet auto-hébergé enrichi par l'IA, Handy pour la saisie vocale locale dans n'importe quelle application bureau.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Karakeep — marque-pages auto-hébergés enrichis par l'IA</strong></p>
+<p>Application de signets complète que vous hébergez vous-même. Elle sauvegarde liens, notes et images, applique un étiquetage automatique fondé sur l'IA (classification des thèmes sans intervention manuelle) et propose une recherche en texte intégral sur tous vos signets stockés. Le principe est simple : plus besoin de classer manuellement des dizaines de favoris ; l'IA s'en charge et tout est consultable via un moteur de recherche interne. Conçu pour les amateurs d'auto-hébergement qui veulent garder le contrôle sur leurs données de navigation.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y5bspl/</p>
+<p><strong>Handy — transcription vocale au curseur sur bureau</strong></p>
+<p>Application de bureau qui transforme ce que vous dites en texte directement dans le champ où se trouve votre curseur. Vous lancez un raccourci clavier, vous parlez, et Handy colle la transcription là où elle est nécessaire — dans un éditeur, un formulaire web, ou un client mail. Le modèle vocal fonctionne en local sur votre machine (pas d'appel cloud requis). L'intérêt est l'intégration transparente : aucun plug-in spécifique, aucune configuration préalable autre que l'installation du logiciel. Utile quand on veut dicter rapidement sans avoir à basculer entre une application de dictée et le document cible.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y55l0y/</p>
+<p><strong>nvke — Nvidia Kubernetes Engine pour charges IA</strong></p>
+<p>Projet open-source sous licence Apache-2.0 offrant environ 1 255 étoiles sur GitHub (dernière mise à jour hier). Il fournit un ensemble d'outils pour orchestrer et gérer des charges de travail d'intelligence artificielle sur Kubernetes avec du matériel NVIDIA. L'idée est de simplifier le déploiement de modèles IA dans un cluster Kubernetes en exploitant les capacités GPU de manière automatisée. Pour toute infrastructure qui doit déployer des modèles IA récurrents, cela réduit la complexité opérationnelle.<br />
+https://github.com/dsx-ai-factory/nvke</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — optimisation d'inférence sur matériel grand public</strong></p>
+<p>Thinking Machines a publié un billet technique sur l'optimisation de l'inférence d'Inkling 2 Mini sur une seule RTX PRO 6000. Le post détaille les stratégies de hill-climbing appliquées au pipeline d'inférence pour maximiser le débit sur du matériel consommateur. Pas une nouvelle version, mais un niveau de performance supplémentaire accessible aux particuliers disposant de GPUs NVIDIA de gamme professionnelle. Un résultat qui montre que le coût d'exécution des modèles locaux peut être réduit significativement avec un tuning approprié.<br />
+https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</p>
+<p><strong>Google Cogentic — papers sur la factorisation entière et les logarithmes discrets</strong></p>
+<p>Google Research publie une série de papiers Cogentic accessibles en open access. Les travaux portent sur la factorisation entière et les logarithmes discrets — des problèmes mathématiques fondamentaux avec des implications directes en cryptographie. Bien que ces résultats soient principalement académiques, leur disponibilité publique rend accessible à la communauté open source une avancée majeure qui restait confinée auparavant aux rapports internes de Google.<br />
+https://news.ycombinator.com/item?id=50642086</p>
+<p><strong>DeepSeek — DeepInfer engine open-source avec mode déterministe</strong></p>
+<p>L'équipe de DeepSeek a rendu open-source (Apache-2.0) DeepInfer, le serveur d'inférence qui fait tourner ses services en production. La fonctionnalité marquante est un mode « batch-invariant » : quel que soit le lot de requêtes partagées au même instant, le modèle produit les mêmes réponses. Ce mode permet aussi d'activer un échantillonnage entièrement reproductible (seed fixe + désactivation du speedup par tokens de draft). L'engine tourne sur B200-class Blackwell et Huawei Ascend 950. Note : les indicateurs déterministes sont actuellement restreints au matériel NVIDIA, les GPU grand public ne supportent pas le compute capability requis.<br />
+https://s.conao3.com/blog/2026/e4f733</p>
+<h2>Extensions et greffons</h2>
+<p><strong>OpenDuet — agent proactif open-source</strong></p>
+<p>Agent open-source qui accomplit des tâches tout en gardant l'utilisateur informé. Chaque agent dispose de son propre environnement de travail. Disponible sur le web, mobile, Slack et Microsoft Teams. Le projet vise à combiner l'automatisation proactive avec la transparence utilisateur — pas juste un bot qui agit seul, mais un assistant qui communique ce qu'il fait.<br />
+https://github.com/CopilotKit/OpenDuet</p>
+<h2>Volume</h2>
+<p>63 publications nouvelles détectées dans les sources de cette veille, dont 7 retenus après filtrage, 56 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LearningOpenSourceAI — mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-25.html</link>

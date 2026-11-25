@@ -6,9 +6,292 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 00:12:24 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:35:54 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Renaud Dékode — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/renaud/2026-11-26.html</link>
+<guid isPermaLink="false">renaud-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:35:54 +0100</pubDate>
+<category>Renaud Dékode</category>
+<description><![CDATA[<h1>Veille Renaud Dékode — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Jensen Huang reprend la tête de Nvidia onze jours après sa démission, relançant l'action de +31 %. Claude / Anthropic produit une preuve compilée de l'hypothesse de Riemann ouvrant le débat sur la super-intelligence. Claude Ship automatise la revue, la correction et l'approbation des pull requests.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Résolution de l'hypothèse de Riemann assistée par Claude</strong><br />
+Après qu'OpenAI eût démontré quasi-Riemann en octobre via son modèle interne et vérifié dans Lean, Levent Alpuge, mathématicien travaillant chez Anthropic, a utilisé durant six semaines des modèles privés de la société pour résoudre pleinement l'hypothèse de Riemann. Le résultat s'étend sur 250 000 pages, compilées et acceptées sans erreur par Lean. Alpuge a publié depuis quelques tweets humoristiques suggérant que le travail comportait des « approximations » et des références à <em>Big Buck Bunny</em>, mais le logiciel de vérification n'a refusé aucun passage. La communauté scientifique distingue ainsi trois étapes : les preuves d'OpenAI du 6 octobre, celle d'Alpuge validée par Lean, et l'examen humain restant à effectuer. Alexander Wong, responsable de la « superintelligence » chez Meta, y voit un signe que les systèmes IA peuvent désormais prouver des théorèmes hors de portée humaine et améliorer leurs propres algorithmes ; Yann Lecun, de son côté, maintient que les LLM restent loin de comprendre le monde physique. [minutage 09:51]</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Claude Ship : agents pour la validation automatique des pull requests</strong><br />
+Anthropic lance Claude Ship, une suite d'agents intégrée à Claude Code et destinée aux équipes utilisant GitHub. Un premier appel à <code>/ship</code> enclenche trois couches successives : un agent Code Review qui examine le diff, détecte les erreurs et publie un avis ; un agent PR Steward encore en bêta qui corrige les problèmes identifiés, teste les conflits et propose les modifications ; un agent Approve enfin qui arbitre entre corrections routinières et éléments nécessitant l'attention humaine, et approuve les pull requests à faible risque. Disponible aux abonnements Team et Enterprise, Claude Ship repose sur le fonctionnement interne d'Anthropic où Claude gère déjà l'essentiel du développement de ses propres produits. [minutage 22:33]</p>
+<p><strong>Inkling 2 Mini, petit modèle US opensource dédié au code local</strong><br />
+Thinking Machines, fondée par Miramurati (ancienne CTO d'OpenAI), publie Inkling 2 Mini, un modèle de 26 milliards de paramètres sous licence Apache, conçue pour tourner localement sur une machine grand public dotée d'environ 24 à 32 Go de RAM. Seuls 5 milliards de paramètres sont actifs par token grâce à la technologie Loop Transformer : le raisonnement se déroule en interne sans production de tokens intermédiaires, ce qui accélère le traitement tout en conservant une qualité élevée sur les tâches de codage agentique. Le fichier pèse 20 Go et est également disponible sur OpenRouter à 0,30 dollar par million de tokens en sortie. Sur Artificial Analysis, il surpasse Qwen 3.8 en 27B sur les tâches de code. [minutage 28:47]</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p><strong>Robot téléopéré armé déployé en Haïti</strong><br />
+Le Salvador a publié des images montrant un robot quadrupède Unitree G2 équipé d'un fusil d'assaut téléopéré à distance, utilisé pour sécuriser le stade Sylvio-Cator de Port-au-Prince dans le cadre d'une intervention coordonnée avec les forces d'opposition aux gangs. Ces robots seraient disponibles dans le commerce à environ 2 500 dollars. L'intervention s'inscrit dans un accord entre Haïti et le Salvador sans mandat direct de l'ONU, qui dispose pourtant de ses propres forces sur place. [minutage 35:39]</p>
+<h2>Régulation et politique — ce qui change concrètement</h2>
+<p><strong>Jensen Huang,export controls et enquête FBI toujours actives</strong><br />
+Le retour de Jensen Huang n'éteint pas les enquêtes en cours : le Congrès démocrate réclame toujours des explications sur Megaspeed, client singapourien soupçonné d'avoir servi de relais vers la Chine pour contourner les restrictions américaines sur les puces d'IA, et le FBI poursuit ses investigations. Le contexte réglementaire actuel encadre strictement toute vente de matériel IA sensible à destination chinoise, et le cas Alice Wang, ex-patronne de Megaspeed liée depuis un an à des services chinois, reste ouvert. [minutage 05:52]</p>
+<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
+<p><strong>Nvidia, 950 milliards de dollars d'un coup</strong><br />
+Le conseil d'administration de Nvidia, qui se renouvelle chaque année, a rappelé Jensen Huang à l'unanimité onze jours après sa démission, citant sa franchise et l'impossibilité de trouver un remplaçant satisfaisant. Les salariés, clients, fournisseurs et actionnaires avaient réclamé ce retour. La Bourse a répondu par une hausse de 31 %, représentant près de 950 milliards de dollars gagnés en une journée, avant un nouvel ajustement. Le Nasdaq montre la même courbe. [minutage 02:13]</p>
+<h2>À reprendre dans les autres veilles</h2>
+<p><strong>Résolution Riemann assistée par IA</strong> —Veille pédagogique et scientifique : avancée historique en mathématiques, rôle de la vérification formelle (Lean) et débats sur l'expertise assistée.<br />
+<strong>Claude Ship</strong> — Veille développement : automatisation complète du cycle de revue de code, de la correction à l'approbation. Passage du review manuel à la supervision par agents.<br />
+<strong>Inkling 2 Mini</strong> — Veille développement : petit modèle open pour le code local, architecture Loop Transformer, compétitif face à Qwen 3.8. Testable dès aujourd'hui.<br />
+<strong>Robot armé en Haïti</strong> — Veille scientifique : usage militaire de robotique commerciale téléopérée. Questions juridiques et éthiques.<br />
+<strong>Jensen Huang et export controls</strong> — Veille régulation : enquête FBI active malgré le retour du PDG. Contexte contrôle export des semi-conducteurs.</p>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 7 sujets retenus, 3 écartés (clips et live), transcriptions utilisées : udvi2dMXExg (complète).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Renaud Dékode — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Jensen Huang reprend la tête de Nvidia onze jours après sa démission, relançant l'action de +31 %. Claude / Anthropic produit une preuve compilée de l'hypothesse de Riemann ouvrant le débat sur la super-intelligence. Claude Ship automatise la revue, la correction et l'approbation des pull requests.</p>
+<h2>IA : modèles et capacités</h2>
+<p><strong>Résolution de l'hypothèse de Riemann assistée par Claude</strong><br />
+Après qu'OpenAI eût démontré quasi-Riemann en octobre via son modèle interne et vérifié dans Lean, Levent Alpuge, mathématicien travaillant chez Anthropic, a utilisé durant six semaines des modèles privés de la société pour résoudre pleinement l'hypothèse de Riemann. Le résultat s'étend sur 250 000 pages, compilées et acceptées sans erreur par Lean. Alpuge a publié depuis quelques tweets humoristiques suggérant que le travail comportait des « approximations » et des références à <em>Big Buck Bunny</em>, mais le logiciel de vérification n'a refusé aucun passage. La communauté scientifique distingue ainsi trois étapes : les preuves d'OpenAI du 6 octobre, celle d'Alpuge validée par Lean, et l'examen humain restant à effectuer. Alexander Wong, responsable de la « superintelligence » chez Meta, y voit un signe que les systèmes IA peuvent désormais prouver des théorèmes hors de portée humaine et améliorer leurs propres algorithmes ; Yann Lecun, de son côté, maintient que les LLM restent loin de comprendre le monde physique. [minutage 09:51]</p>
+<h2>Outils, logiciels et fonctionnalités</h2>
+<p><strong>Claude Ship : agents pour la validation automatique des pull requests</strong><br />
+Anthropic lance Claude Ship, une suite d'agents intégrée à Claude Code et destinée aux équipes utilisant GitHub. Un premier appel à <code>/ship</code> enclenche trois couches successives : un agent Code Review qui examine le diff, détecte les erreurs et publie un avis ; un agent PR Steward encore en bêta qui corrige les problèmes identifiés, teste les conflits et propose les modifications ; un agent Approve enfin qui arbitre entre corrections routinières et éléments nécessitant l'attention humaine, et approuve les pull requests à faible risque. Disponible aux abonnements Team et Enterprise, Claude Ship repose sur le fonctionnement interne d'Anthropic où Claude gère déjà l'essentiel du développement de ses propres produits. [minutage 22:33]</p>
+<p><strong>Inkling 2 Mini, petit modèle US opensource dédié au code local</strong><br />
+Thinking Machines, fondée par Miramurati (ancienne CTO d'OpenAI), publie Inkling 2 Mini, un modèle de 26 milliards de paramètres sous licence Apache, conçue pour tourner localement sur une machine grand public dotée d'environ 24 à 32 Go de RAM. Seuls 5 milliards de paramètres sont actifs par token grâce à la technologie Loop Transformer : le raisonnement se déroule en interne sans production de tokens intermédiaires, ce qui accélère le traitement tout en conservant une qualité élevée sur les tâches de codage agentique. Le fichier pèse 20 Go et est également disponible sur OpenRouter à 0,30 dollar par million de tokens en sortie. Sur Artificial Analysis, il surpasse Qwen 3.8 en 27B sur les tâches de code. [minutage 28:47]</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<p><strong>Robot téléopéré armé déployé en Haïti</strong><br />
+Le Salvador a publié des images montrant un robot quadrupède Unitree G2 équipé d'un fusil d'assaut téléopéré à distance, utilisé pour sécuriser le stade Sylvio-Cator de Port-au-Prince dans le cadre d'une intervention coordonnée avec les forces d'opposition aux gangs. Ces robots seraient disponibles dans le commerce à environ 2 500 dollars. L'intervention s'inscrit dans un accord entre Haïti et le Salvador sans mandat direct de l'ONU, qui dispose pourtant de ses propres forces sur place. [minutage 35:39]</p>
+<h2>Régulation et politique — ce qui change concrètement</h2>
+<p><strong>Jensen Huang,export controls et enquête FBI toujours actives</strong><br />
+Le retour de Jensen Huang n'éteint pas les enquêtes en cours : le Congrès démocrate réclame toujours des explications sur Megaspeed, client singapourien soupçonné d'avoir servi de relais vers la Chine pour contourner les restrictions américaines sur les puces d'IA, et le FBI poursuit ses investigations. Le contexte réglementaire actuel encadre strictement toute vente de matériel IA sensible à destination chinoise, et le cas Alice Wang, ex-patronne de Megaspeed liée depuis un an à des services chinois, reste ouvert. [minutage 05:52]</p>
+<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
+<p><strong>Nvidia, 950 milliards de dollars d'un coup</strong><br />
+Le conseil d'administration de Nvidia, qui se renouvelle chaque année, a rappelé Jensen Huang à l'unanimité onze jours après sa démission, citant sa franchise et l'impossibilité de trouver un remplaçant satisfaisant. Les salariés, clients, fournisseurs et actionnaires avaient réclamé ce retour. La Bourse a répondu par une hausse de 31 %, représentant près de 950 milliards de dollars gagnés en une journée, avant un nouvel ajustement. Le Nasdaq montre la même courbe. [minutage 02:13]</p>
+<h2>À reprendre dans les autres veilles</h2>
+<p><strong>Résolution Riemann assistée par IA</strong> —Veille pédagogique et scientifique : avancée historique en mathématiques, rôle de la vérification formelle (Lean) et débats sur l'expertise assistée.<br />
+<strong>Claude Ship</strong> — Veille développement : automatisation complète du cycle de revue de code, de la correction à l'approbation. Passage du review manuel à la supervision par agents.<br />
+<strong>Inkling 2 Mini</strong> — Veille développement : petit modèle open pour le code local, architecture Loop Transformer, compétitif face à Qwen 3.8. Testable dès aujourd'hui.<br />
+<strong>Robot armé en Haïti</strong> — Veille scientifique : usage militaire de robotique commerciale téléopérée. Questions juridiques et éthiques.<br />
+<strong>Jensen Huang et export controls</strong> — Veille régulation : enquête FBI active malgré le retour du PDG. Contexte contrôle export des semi-conducteurs.</p>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 7 sujets retenus, 3 écartés (clips et live), transcriptions utilisées : udvi2dMXExg (complète).</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/BestGitHubRepos — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-26.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:31:39 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ce matin, trois fils méritent l'attention : un moteur de préservation pour les dépôts GitHub disparus, une base de données publiques vérifiables avec DuckDB, et un outil qui fait "parler" le pavé tactile d'un MacBook. Le reste est une collecte importante de projets récents que vous trouverez ci-dessous.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Yogurt — notes de réunion privées avec IA, en libre</strong><br />
+Dépôt : <a href="https://github.com/FrigadeHQ/yogardt">FrigadeHQ/yogurt</a> (3 525 étoiles, MIT, TypeScript, dernière mise à jour le 25 nov.)<br />
+Notes de réunion stockées localement, sans bot de rencontre ni service cloud. Alternative libre à Granola, Otter ou Fireflies. Fonctionne sur Mac, Windows et Linux. L'auteur précise qu'aucune donnée ne quitte l'appareil.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y4m2wr/">Sur Reddit</a> · <a href="https://lobste.rs/gtc9rg">Lobsters</a></p>
+<hr />
+<p><strong>VIctory — faire tourner GTA VI sur PC</strong><br />
+Dépôt : <a href="https://github.com/Marvisak/VIctory">Marvisak/VIctory</a> (12 584 étoiles, GPL-3.0, Rust, dernière mise à jour le 25 nov.)<br />
+Portage statique de The Legend of Zelda : Tears of the Kingdom vers Windows et Linux x86-64. Fait partie du même mouvement que Bo3mac (Black Ops III sur ARM64) qui vient aussi d'être remarqué. Fichiers de jeu non inclus.</p>
+<p><a href="https://github.com/Marvisak/VIctory">Sur GitManual</a></p>
+<hr />
+<p><strong>dbx — client de bases de données universel léger</strong><br />
+Dépôt : <a href="https://github.com/t8y2/dbx">t8y2/dbx</a> (~31 000 étoiles, Apache-2.0, Rust)<br />
+Client de 25 Mo支持 100+ bases de données (MySQL, PostgreSQL, SQLite, Redis, MongoDB, etc.), avec serveur MCP intégré, CLI, version bureau et Docker. Idéal pour tester plusieurs backends rapidement depuis une seule interface.</p>
+<p><a href="https://github.com/t8y2/dbx">Sur GitManual</a></p>
+<hr />
+<p><strong>Handy — reconnaissance vocale en ligne de commande, hors ligne</strong><br />
+Dépôt : <a href="https://github.com/cjpais/Handy">cjpais/Handy</a> (~40 000 étoiles, MIT, Rust)<br />
+Application gratuite et open source de synthèse parole-texte entièrement locale. Aucune connexion réseau requise. Intéressant si vous cherchez un moyen de transcrire des dictées ou des réunions sans dépendre d'un service cloud.</p>
+<p><a href="https://github.com/cjpais/Handy">Sur GitManual</a></p>
+<hr />
+<p><strong>owly — AirDrop pour appareils non-Apple</strong><br />
+Dépôt : <a href="https://github.com/t4t5/owly">t4t5/owly</a> (~3 430 étoiles, MIT, Rust)<br />
+Transfert de fichiers peer-to-peer entre machines Linux, Windows ou macOS. Alternative ouverte à AirDrop, fonctionne sans infrastructure centralisée.</p>
+<p><a href="https://github.com/t4t5/owly">Sur GitManual</a></p>
+<hr />
+<p><strong>Coretilus — animations ASCII humoristiques dans le terminal</strong><br />
+Dépôt : <a href="https://github.com/titilambert/coretilus">titilambert/coretilus</a><br />
+Homage absurde aux commandes Unix classiques : tapez mal <code>ls</code> au lieu de <code>sl</code> ? Tapez mal <code>git</code> ? Des animations surviennent. Suite spirituelle de <code>sl</code> et <code>gti</code>. Version 0.2.0 sortie récemment. Source : <a href="https://linuxfr.org/news/coretilus">LinuxFr</a>.</p>
+<p><a href="https://linuxfr.org/news/coretilus">Sur LinuxFr</a></p>
+<hr />
+<p><strong>nospeaker — le pavé tactile de votre MacBook parle</strong><br />
+Dépôt : <a href="~1 880 étoiles, MIT, Swift">os6/nospeaker</a><br />
+Transforme le moteur haptique du trackpad MacBook en haut-parleur. Utilisé comme retour audio ou notification sonore. Concept original et amusant pour les développeurs mac.</p>
+<p><a href="https://github.com/os6/nospeaker">Sur GitManual</a></p>
+<hr />
+<p><strong>SurfSense — NotebookLM alternatif, en local</strong><br />
+Dépôt : <a href="~17 000 étoiles, Apache-2.0, Python">MODSetter/SurfSense</a><br />
+IA privée sans accès réseau pour documents confidentiels. Alternative open source à NotebookLM de Google, fonctionnant intégralement sur votre machine. Discord communautaire disponible.</p>
+<p><a href="https://github.com/MODSetter/SurfSense">Sur GitManual</a></p>
+<hr />
+<p><strong>Salsyx — moteur de recherche et couche de préservation GitHub</strong><br />
+Annonce parue sur le subreddit r/BestGitHubRepos : un moteur de recherche pour dépôts publics qui redirige vers GitHub si actif, ou restaure la copie archivée avec historique git si supprimé. Dépôt non accessible à la vérification aujourd'hui, mais le concept mérite l'attention pour la pérennité des liens.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y57ck2/">Sur Reddit</a></p>
+<hr />
+<p><strong>Karpo Browser — pile d'agents navigateur open-source</strong><br />
+Annonce parue sur r/BestGitHubRepos : une architecture où un modèle de décision gère les clics dans un navigateur automatisé. Repos non vérifié, mais l'angle « browser agent » est de plus en plus porteur.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y56dn2/">Sur Reddit</a></p>
+<hr />
+<p><strong>Chaque Euro — finances publiques vérifiables avec DuckDB</strong><br />
+Dépôt : <a href="https://github.com/ArthurVerrez/chaque-euro">ArthurVerrez/chaque-euro</a> (AGPL-3.0)<br />
+Pipeline Python + DuckDB + site Astro pour interroger les comptes locaux, marchés publics, budget de l'État et subventions. Serveur MCP en lecture seule, tables téléchargeables CSV/Parquet. Utile pour comprendre comment l'argent public est dépensé. Source : <a href="https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb">LinuxFr</a>.</p>
+<p><a href="https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb">LinuxFr</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<p><strong>Google débloque du contenu sur Hugging Face</strong><br />
+Suite au départ de Jensen Huang, Hugging Face publie son code précédent bloqué sur HuggingFace Hub. Une opportunité pour explorer ce qui était jusqu'alors inaccessible. Source : LinuxFr.</p>
+<hr />
+<p><strong>Microsoft achète Pierre Computer Company</strong><br />
+OpenAI acquiert le développeur d'outils de programmation open source Pierre Computer Company pour étendre Codex en création, compréhension et évaluation de logiciels. Une consolidation de l'écosystème dev-tool autour de l'IA.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>RelayRunner — routeur open source pour les GitHub Actions runners</strong><br />
+Permet de dispatcher intelligemment les jobs CI/CD sur différents runners. Ouvert, gratuit, directement intégré à l'écosystème GitHub Actions. Source : <a href="https://www.producthunt.com/products/relayrunner">Product Hunt</a>.</p>
+<p><strong>ClawRouter — passerelle auto-hébergée pour modèles IA</strong><br />
+Routage intelligent, basculement automatique, limitation de débit et suivi d'utilisation pour héberger ses propres endpoints IA. Source : <a href="https://github.com/iant89/ClawRouter">GitManual</a>.</p>
+<h2>Autres sources</h2>
+<p><strong>OpenProject remplace Jira chez l'offre publique allemande</strong><br />
+Le fournisseur IT fédéral allemand ITZBund remplace Jira par OpenProject dans un contrat multimillionnaire (chiffre à sept chiffres minimum). Victoire notable pour un gestionnaire de projet open source face à l'offre commerciale dominante. Source : <a href="https://www.heise.de/en/news/OpenProject-wins-multimillion-dollar-contract-from-ITZBund-to-replace-Jira-11536539.html">Hacker News</a>.</p>
+<p><strong>Zapier propose des appels MCP gratuits jusqu'au 5 janvier</strong><br />
+Zapier rend gratuitement accessibles ses outils MCP (Model Context Protocol) pendant un mois. À noter mais probablement une promotion limitée plutôt qu'un produit définitif. Source : <a href="https://zapier.com/mcp">Hacker News</a>.</p>
+<h2>Volume</h2>
+<p>300 éléments dans la shortlist nocturne (tronquée à partir de 668), auxquels ont été ajoutés quelques éléments des JSONL bruts manquants de la shortlist. Au total, ~85 éléments pertinents identifiés dont ~40 retenus après filtrage.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Ce matin, trois fils méritent l'attention : un moteur de préservation pour les dépôts GitHub disparus, une base de données publiques vérifiables avec DuckDB, et un outil qui fait "parler" le pavé tactile d'un MacBook. Le reste est une collecte importante de projets récents que vous trouverez ci-dessous.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Yogurt — notes de réunion privées avec IA, en libre</strong><br />
+Dépôt : <a href="https://github.com/FrigadeHQ/yogardt">FrigadeHQ/yogurt</a> (3 525 étoiles, MIT, TypeScript, dernière mise à jour le 25 nov.)<br />
+Notes de réunion stockées localement, sans bot de rencontre ni service cloud. Alternative libre à Granola, Otter ou Fireflies. Fonctionne sur Mac, Windows et Linux. L'auteur précise qu'aucune donnée ne quitte l'appareil.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y4m2wr/">Sur Reddit</a> · <a href="https://lobste.rs/gtc9rg">Lobsters</a></p>
+<hr />
+<p><strong>VIctory — faire tourner GTA VI sur PC</strong><br />
+Dépôt : <a href="https://github.com/Marvisak/VIctory">Marvisak/VIctory</a> (12 584 étoiles, GPL-3.0, Rust, dernière mise à jour le 25 nov.)<br />
+Portage statique de The Legend of Zelda : Tears of the Kingdom vers Windows et Linux x86-64. Fait partie du même mouvement que Bo3mac (Black Ops III sur ARM64) qui vient aussi d'être remarqué. Fichiers de jeu non inclus.</p>
+<p><a href="https://github.com/Marvisak/VIctory">Sur GitManual</a></p>
+<hr />
+<p><strong>dbx — client de bases de données universel léger</strong><br />
+Dépôt : <a href="https://github.com/t8y2/dbx">t8y2/dbx</a> (~31 000 étoiles, Apache-2.0, Rust)<br />
+Client de 25 Mo支持 100+ bases de données (MySQL, PostgreSQL, SQLite, Redis, MongoDB, etc.), avec serveur MCP intégré, CLI, version bureau et Docker. Idéal pour tester plusieurs backends rapidement depuis une seule interface.</p>
+<p><a href="https://github.com/t8y2/dbx">Sur GitManual</a></p>
+<hr />
+<p><strong>Handy — reconnaissance vocale en ligne de commande, hors ligne</strong><br />
+Dépôt : <a href="https://github.com/cjpais/Handy">cjpais/Handy</a> (~40 000 étoiles, MIT, Rust)<br />
+Application gratuite et open source de synthèse parole-texte entièrement locale. Aucune connexion réseau requise. Intéressant si vous cherchez un moyen de transcrire des dictées ou des réunions sans dépendre d'un service cloud.</p>
+<p><a href="https://github.com/cjpais/Handy">Sur GitManual</a></p>
+<hr />
+<p><strong>owly — AirDrop pour appareils non-Apple</strong><br />
+Dépôt : <a href="https://github.com/t4t5/owly">t4t5/owly</a> (~3 430 étoiles, MIT, Rust)<br />
+Transfert de fichiers peer-to-peer entre machines Linux, Windows ou macOS. Alternative ouverte à AirDrop, fonctionne sans infrastructure centralisée.</p>
+<p><a href="https://github.com/t4t5/owly">Sur GitManual</a></p>
+<hr />
+<p><strong>Coretilus — animations ASCII humoristiques dans le terminal</strong><br />
+Dépôt : <a href="https://github.com/titilambert/coretilus">titilambert/coretilus</a><br />
+Homage absurde aux commandes Unix classiques : tapez mal <code>ls</code> au lieu de <code>sl</code> ? Tapez mal <code>git</code> ? Des animations surviennent. Suite spirituelle de <code>sl</code> et <code>gti</code>. Version 0.2.0 sortie récemment. Source : <a href="https://linuxfr.org/news/coretilus">LinuxFr</a>.</p>
+<p><a href="https://linuxfr.org/news/coretilus">Sur LinuxFr</a></p>
+<hr />
+<p><strong>nospeaker — le pavé tactile de votre MacBook parle</strong><br />
+Dépôt : <a href="~1 880 étoiles, MIT, Swift">os6/nospeaker</a><br />
+Transforme le moteur haptique du trackpad MacBook en haut-parleur. Utilisé comme retour audio ou notification sonore. Concept original et amusant pour les développeurs mac.</p>
+<p><a href="https://github.com/os6/nospeaker">Sur GitManual</a></p>
+<hr />
+<p><strong>SurfSense — NotebookLM alternatif, en local</strong><br />
+Dépôt : <a href="~17 000 étoiles, Apache-2.0, Python">MODSetter/SurfSense</a><br />
+IA privée sans accès réseau pour documents confidentiels. Alternative open source à NotebookLM de Google, fonctionnant intégralement sur votre machine. Discord communautaire disponible.</p>
+<p><a href="https://github.com/MODSetter/SurfSense">Sur GitManual</a></p>
+<hr />
+<p><strong>Salsyx — moteur de recherche et couche de préservation GitHub</strong><br />
+Annonce parue sur le subreddit r/BestGitHubRepos : un moteur de recherche pour dépôts publics qui redirige vers GitHub si actif, ou restaure la copie archivée avec historique git si supprimé. Dépôt non accessible à la vérification aujourd'hui, mais le concept mérite l'attention pour la pérennité des liens.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y57ck2/">Sur Reddit</a></p>
+<hr />
+<p><strong>Karpo Browser — pile d'agents navigateur open-source</strong><br />
+Annonce parue sur r/BestGitHubRepos : une architecture où un modèle de décision gère les clics dans un navigateur automatisé. Repos non vérifié, mais l'angle « browser agent » est de plus en plus porteur.</p>
+<p><a href="https://www.reddit.com/r/BestGitHubRepos/comments/1y56dn2/">Sur Reddit</a></p>
+<hr />
+<p><strong>Chaque Euro — finances publiques vérifiables avec DuckDB</strong><br />
+Dépôt : <a href="https://github.com/ArthurVerrez/chaque-euro">ArthurVerrez/chaque-euro</a> (AGPL-3.0)<br />
+Pipeline Python + DuckDB + site Astro pour interroger les comptes locaux, marchés publics, budget de l'État et subventions. Serveur MCP en lecture seule, tables téléchargeables CSV/Parquet. Utile pour comprendre comment l'argent public est dépensé. Source : <a href="https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb">LinuxFr</a>.</p>
+<p><a href="https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb">LinuxFr</a></p>
+<h2>Nouvelles et mises à jour</h2>
+<p><strong>Google débloque du contenu sur Hugging Face</strong><br />
+Suite au départ de Jensen Huang, Hugging Face publie son code précédent bloqué sur HuggingFace Hub. Une opportunité pour explorer ce qui était jusqu'alors inaccessible. Source : LinuxFr.</p>
+<hr />
+<p><strong>Microsoft achète Pierre Computer Company</strong><br />
+OpenAI acquiert le développeur d'outils de programmation open source Pierre Computer Company pour étendre Codex en création, compréhension et évaluation de logiciels. Une consolidation de l'écosystème dev-tool autour de l'IA.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>RelayRunner — routeur open source pour les GitHub Actions runners</strong><br />
+Permet de dispatcher intelligemment les jobs CI/CD sur différents runners. Ouvert, gratuit, directement intégré à l'écosystème GitHub Actions. Source : <a href="https://www.producthunt.com/products/relayrunner">Product Hunt</a>.</p>
+<p><strong>ClawRouter — passerelle auto-hébergée pour modèles IA</strong><br />
+Routage intelligent, basculement automatique, limitation de débit et suivi d'utilisation pour héberger ses propres endpoints IA. Source : <a href="https://github.com/iant89/ClawRouter">GitManual</a>.</p>
+<h2>Autres sources</h2>
+<p><strong>OpenProject remplace Jira chez l'offre publique allemande</strong><br />
+Le fournisseur IT fédéral allemand ITZBund remplace Jira par OpenProject dans un contrat multimillionnaire (chiffre à sept chiffres minimum). Victoire notable pour un gestionnaire de projet open source face à l'offre commerciale dominante. Source : <a href="https://www.heise.de/en/news/OpenProject-wins-multimillion-dollar-contract-from-ITZBund-to-replace-Jira-11536539.html">Hacker News</a>.</p>
+<p><strong>Zapier propose des appels MCP gratuits jusqu'au 5 janvier</strong><br />
+Zapier rend gratuitement accessibles ses outils MCP (Model Context Protocol) pendant un mois. À noter mais probablement une promotion limitée plutôt qu'un produit définitif. Source : <a href="https://zapier.com/mcp">Hacker News</a>.</p>
+<h2>Volume</h2>
+<p>300 éléments dans la shortlist nocturne (tronquée à partir de 668), auxquels ont été ajoutés quelques éléments des JSONL bruts manquants de la shortlist. Au total, ~85 éléments pertinents identifiés dont ~40 retenus après filtrage.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-26.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:23:20 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un lot d'outils nouveaux et de mises à jour marque cette édition. Nvidia libère NVKE, son moteur Kubernetes pour les charges de travail IA sur matériel NVIDIA. DeepSeek open-sonne DeepInfer, le serveur de production avec un mode déterministe. Google publie des papiers Cogentic sur la factorisation. Et deux outils se distinguent : Karakeep pour le signet auto-hébergé enrichi par l'IA, Handy pour la saisie vocale locale dans n'importe quelle application bureau.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Karakeep — marque-pages auto-hébergés enrichis par l'IA</strong></p>
+<p>Application de signets complète que vous hébergez vous-même. Elle sauvegarde liens, notes et images, applique un étiquetage automatique fondé sur l'IA (classification des thèmes sans intervention manuelle) et propose une recherche en texte intégral sur tous vos signets stockés. Le principe est simple : plus besoin de classer manuellement des dizaines de favoris ; l'IA s'en charge et tout est consultable via un moteur de recherche interne. Conçu pour les amateurs d'auto-hébergement qui veulent garder le contrôle sur leurs données de navigation.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y5bspl/</p>
+<p><strong>Handy — transcription vocale au curseur sur bureau</strong></p>
+<p>Application de bureau qui transforme ce que vous dites en texte directement dans le champ où se trouve votre curseur. Vous lancez un raccourci clavier, vous parlez, et Handy colle la transcription là où elle est nécessaire — dans un éditeur, un formulaire web, ou un client mail. Le modèle vocal fonctionne en local sur votre machine (pas d'appel cloud requis). L'intérêt est l'intégration transparente : aucun plug-in spécifique, aucune configuration préalable autre que l'installation du logiciel. Utile quand on veut dicter rapidement sans avoir à basculer entre une application de dictée et le document cible.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y55l0y/</p>
+<p><strong>nvke — Nvidia Kubernetes Engine pour charges IA</strong></p>
+<p>Projet open-source sous licence Apache-2.0 offrant environ 1 255 étoiles sur GitHub (dernière mise à jour hier). Il fournit un ensemble d'outils pour orchestrer et gérer des charges de travail d'intelligence artificielle sur Kubernetes avec du matériel NVIDIA. L'idée est de simplifier le déploiement de modèles IA dans un cluster Kubernetes en exploitant les capacités GPU de manière automatisée. Pour toute infrastructure qui doit déployer des modèles IA récurrents, cela réduit la complexité opérationnelle.<br />
+https://github.com/dsx-ai-factory/nvke</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — optimisation d'inférence sur matériel grand public</strong></p>
+<p>Thinking Machines a publié un billet technique sur l'optimisation de l'inférence d'Inkling 2 Mini sur une seule RTX PRO 6000. Le post détaille les stratégies de hill-climbing appliquées au pipeline d'inférence pour maximiser le débit sur du matériel consommateur. Pas une nouvelle version, mais un niveau de performance supplémentaire accessible aux particuliers disposant de GPUs NVIDIA de gamme professionnelle. Un résultat qui montre que le coût d'exécution des modèles locaux peut être réduit significativement avec un tuning approprié.<br />
+https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</p>
+<p><strong>Google Cogentic — papers sur la factorisation entière et les logarithmes discrets</strong></p>
+<p>Google Research publie une série de papiers Cogentic accessibles en open access. Les travaux portent sur la factorisation entière et les logarithmes discrets — des problèmes mathématiques fondamentaux avec des implications directes en cryptographie. Bien que ces résultats soient principalement académiques, leur disponibilité publique rend accessible à la communauté open source une avancée majeure qui restait confinée auparavant aux rapports internes de Google.<br />
+https://news.ycombinator.com/item?id=50642086</p>
+<p><strong>DeepSeek — DeepInfer engine open-source avec mode déterministe</strong></p>
+<p>L'équipe de DeepSeek a rendu open-source (Apache-2.0) DeepInfer, le serveur d'inférence qui fait tourner ses services en production. La fonctionnalité marquante est un mode « batch-invariant » : quel que soit le lot de requêtes partagées au même instant, le modèle produit les mêmes réponses. Ce mode permet aussi d'activer un échantillonnage entièrement reproductible (seed fixe + désactivation du speedup par tokens de draft). L'engine tourne sur B200-class Blackwell et Huawei Ascend 950. Note : les indicateurs déterministes sont actuellement restreints au matériel NVIDIA, les GPU grand public ne supportent pas le compute capability requis.<br />
+https://s.conao3.com/blog/2026/e4f733</p>
+<h2>Extensions et greffons</h2>
+<p><strong>OpenDuet — agent proactif open-source</strong></p>
+<p>Agent open-source qui accomplit des tâches tout en gardant l'utilisateur informé. Chaque agent dispose de son propre environnement de travail. Disponible sur le web, mobile, Slack et Microsoft Teams. Le projet vise à combiner l'automatisation proactive avec la transparence utilisateur — pas juste un bot qui agit seul, mais un assistant qui communique ce qu'il fait.<br />
+https://github.com/CopilotKit/OpenDuet</p>
+<h2>Volume</h2>
+<p>63 publications nouvelles détectées dans les sources de cette veille, dont 7 retenus après filtrage, 56 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un lot d'outils nouveaux et de mises à jour marque cette édition. Nvidia libère NVKE, son moteur Kubernetes pour les charges de travail IA sur matériel NVIDIA. DeepSeek open-sonne DeepInfer, le serveur de production avec un mode déterministe. Google publie des papiers Cogentic sur la factorisation. Et deux outils se distinguent : Karakeep pour le signet auto-hébergé enrichi par l'IA, Handy pour la saisie vocale locale dans n'importe quelle application bureau.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Karakeep — marque-pages auto-hébergés enrichis par l'IA</strong></p>
+<p>Application de signets complète que vous hébergez vous-même. Elle sauvegarde liens, notes et images, applique un étiquetage automatique fondé sur l'IA (classification des thèmes sans intervention manuelle) et propose une recherche en texte intégral sur tous vos signets stockés. Le principe est simple : plus besoin de classer manuellement des dizaines de favoris ; l'IA s'en charge et tout est consultable via un moteur de recherche interne. Conçu pour les amateurs d'auto-hébergement qui veulent garder le contrôle sur leurs données de navigation.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y5bspl/</p>
+<p><strong>Handy — transcription vocale au curseur sur bureau</strong></p>
+<p>Application de bureau qui transforme ce que vous dites en texte directement dans le champ où se trouve votre curseur. Vous lancez un raccourci clavier, vous parlez, et Handy colle la transcription là où elle est nécessaire — dans un éditeur, un formulaire web, ou un client mail. Le modèle vocal fonctionne en local sur votre machine (pas d'appel cloud requis). L'intérêt est l'intégration transparente : aucun plug-in spécifique, aucune configuration préalable autre que l'installation du logiciel. Utile quand on veut dicter rapidement sans avoir à basculer entre une application de dictée et le document cible.<br />
+https://www.reddit.com/r/LovingOpenSourceAI/comments/1y55l0y/</p>
+<p><strong>nvke — Nvidia Kubernetes Engine pour charges IA</strong></p>
+<p>Projet open-source sous licence Apache-2.0 offrant environ 1 255 étoiles sur GitHub (dernière mise à jour hier). Il fournit un ensemble d'outils pour orchestrer et gérer des charges de travail d'intelligence artificielle sur Kubernetes avec du matériel NVIDIA. L'idée est de simplifier le déploiement de modèles IA dans un cluster Kubernetes en exploitant les capacités GPU de manière automatisée. Pour toute infrastructure qui doit déployer des modèles IA récurrents, cela réduit la complexité opérationnelle.<br />
+https://github.com/dsx-ai-factory/nvke</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Inkling 2 Mini — optimisation d'inférence sur matériel grand public</strong></p>
+<p>Thinking Machines a publié un billet technique sur l'optimisation de l'inférence d'Inkling 2 Mini sur une seule RTX PRO 6000. Le post détaille les stratégies de hill-climbing appliquées au pipeline d'inférence pour maximiser le débit sur du matériel consommateur. Pas une nouvelle version, mais un niveau de performance supplémentaire accessible aux particuliers disposant de GPUs NVIDIA de gamme professionnelle. Un résultat qui montre que le coût d'exécution des modèles locaux peut être réduit significativement avec un tuning approprié.<br />
+https://huggingface.co/blog/inkling-2-mini-inference-hillclimb</p>
+<p><strong>Google Cogentic — papers sur la factorisation entière et les logarithmes discrets</strong></p>
+<p>Google Research publie une série de papiers Cogentic accessibles en open access. Les travaux portent sur la factorisation entière et les logarithmes discrets — des problèmes mathématiques fondamentaux avec des implications directes en cryptographie. Bien que ces résultats soient principalement académiques, leur disponibilité publique rend accessible à la communauté open source une avancée majeure qui restait confinée auparavant aux rapports internes de Google.<br />
+https://news.ycombinator.com/item?id=50642086</p>
+<p><strong>DeepSeek — DeepInfer engine open-source avec mode déterministe</strong></p>
+<p>L'équipe de DeepSeek a rendu open-source (Apache-2.0) DeepInfer, le serveur d'inférence qui fait tourner ses services en production. La fonctionnalité marquante est un mode « batch-invariant » : quel que soit le lot de requêtes partagées au même instant, le modèle produit les mêmes réponses. Ce mode permet aussi d'activer un échantillonnage entièrement reproductible (seed fixe + désactivation du speedup par tokens de draft). L'engine tourne sur B200-class Blackwell et Huawei Ascend 950. Note : les indicateurs déterministes sont actuellement restreints au matériel NVIDIA, les GPU grand public ne supportent pas le compute capability requis.<br />
+https://s.conao3.com/blog/2026/e4f733</p>
+<h2>Extensions et greffons</h2>
+<p><strong>OpenDuet — agent proactif open-source</strong></p>
+<p>Agent open-source qui accomplit des tâches tout en gardant l'utilisateur informé. Chaque agent dispose de son propre environnement de travail. Disponible sur le web, mobile, Slack et Microsoft Teams. Le projet vise à combiner l'automatisation proactive avec la transparence utilisateur — pas juste un bot qui agit seul, mais un assistant qui communique ce qu'il fait.<br />
+https://github.com/CopilotKit/OpenDuet</p>
+<h2>Volume</h2>
+<p>63 publications nouvelles détectées dans les sources de cette veille, dont 7 retenus après filtrage, 56 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — jeudi 26 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-26.html</link>
@@ -4999,199 +5282,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <p><strong>Purism Librem 5 v2</strong> — Campagne de financement participatif pour un téléphone Linux sous RISC-V, avec interrupteurs physiques de confidentialité. Prix de lancement : 1 599 $. https://feed.itsfoss.com/link/24361/17536714/purism-5-v2-crowdfunding</p>
 <h2>Volume</h2>
 <p>217 posts publiés dans l'intervalle (subreddit plus accessible), 125 sur le flux HN, 127 notices gitmanual, 69 lancements Product Hunt et 23 autres sources — 31 outils et applications retenus, 269 écartés (hors périmètre : actualités générales, opinions, sujets non logiciels, doublons).</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-22.html</link>
-<guid isPermaLink="false">lovingopensourceai-2026-11-22</guid>
-<pubDate>Sun, 22 Nov 2026 00:23:13 +0100</pubDate>
-<category>r/LovingOpenSourceAI</category>
-<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en modèles ouverts : Thinking Machines Lab publie Inkling 2 Mini, un modèle à poids ouverts conçu pour tourner localement, et Meta dévoile Muse Spark 1.3 orienté agent. Deux nouveaux outils open source pour les développeurs : OpenComputer (alternative libre à Devin) et MCPlama (gestion centralisée des serveurs MCP). Côté utilitaires, SourceDomino aide à vérifier les sources derrière les citations d'IA, et ClawDOS fait tourner un agent de codage sur un IBM PC XT d'origine.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>OpenComputer — alternative open source à Devin.</strong> Agent de codage cloud open source qui s'exécute dans votre propre compte cloud (AWS, GCP, Azure). Premier commit en 24 secondes, là où les alternatives mettent 53 à 72 secondes. Licence Apache-2.0, 1 132 étoiles GitHub, mis à jour le 21 novembre. Lien : https://github.com/diggerhq/opencomputer</p>
-<p><strong>MCPlama — gestion centralisée des serveurs MCP.</strong> Plateforme auto-hébergée pour administrer les serveurs MCP locaux et distants, contrôler les permissions utilisateurs et outils, gérer les identifiants et auditer les appels. Comprend une carte de visualisation des relations d'accès. Licence AGPL-3.0, 25 étoiles GitHub. Lien : https://github.com/mcplama/mcplama</p>
-<p><strong>SourceDomino — vérification des sources derrière les citations d'IA.</strong> Banc d'essai sous licence MIT pour inspecter les liens de citation et détecter les passages partagés entre plusieurs sources. Fonctionne entièrement dans le navigateur, sans téléchargement vers un serveur. Lien : https://github.com/ufodia/source-domino</p>
-<p><strong>ClawDOS — agent de codage IA pour DOS.</strong> Un agent de chat et de codage qui tourne sur un vrai IBM PC 5160 (8088 à 4,77 MHz, 640 Ko de RAM). Le programme HARNESS.EXE (176 Ko) parle directement l'API Claude et exécute les outils sur la machine d'origine, la passerelle TLS étant déléguée à un PC « pont ». Licence GPL-3.0, 16 étoiles GitHub. Lien : http://ricapar.net/ClawDOS/</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Inkling 2 Mini — un modèle à poids ouverts pour machine locale.</strong> Thinking Machines Lab publie Inkling 2 Mini, un transformateur à boucle (looped transformer) de 26,4 milliards de paramètres dont 3,4 actifs par token. Architecture MoE avec 24 couches dont les 12 centrales sont exécutées trois fois, portant la profondeur effective à 48 passes. Fenêtre de contexte de 1 million de tokens, entrée texte et image. L'empreinte mémoire d'environ 20 Go le fait tenir sur un MacBook Pro ; les poids sont livrés en NVFP4 et MXFP8. Il surpasse tous les modèles ouverts de moins de 100 milliards de paramètres sur DeepSWE v1.1 (48,2 %) et Vals Index v2.2 (46,5 %). Une variante GGUF pour llama.cpp est également disponible. Lien : https://huggingface.co/blog/inkling2mini</p>
-<p><strong>Muse Spark 1.3 — nouvelle version du modèle ouvert de Meta.</strong> Entraîné pour les workflows agentiques, il améliore la précision au premier essai en codage et l'appel d'outils. Contexte d'1 million de tokens, perception multimodale native (vidéo, image, document). Il se positionne de manière compétitive face à GPT 5.6 Sol et Opus 5 sur plusieurs bancs d'essai (DeepSWE v1.1, Terminal-Bench 2.1, SWEAtlas). Lien : https://dev.meta.ai/models/muse-spark</p>
-<h2>Volume</h2>
-<p>66 entrées publiées dans l'intervalle (dont 56 de Hacker News, 7 de Reddit, 1 de Hugging Face Blog, 1 d'It's FOSS, 1 de Simon Willison), 6 retenues (dont 2 regroupées par sujet), 60 écartées.</p>
-<p>Note : la collecte Reddit directe a échoué (HTTP 404) — le flux du subreddit est inaccessible ; les entrées Hacker News et Lobsters restent la source principale.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une journée riche en modèles ouverts : Thinking Machines Lab publie Inkling 2 Mini, un modèle à poids ouverts conçu pour tourner localement, et Meta dévoile Muse Spark 1.3 orienté agent. Deux nouveaux outils open source pour les développeurs : OpenComputer (alternative libre à Devin) et MCPlama (gestion centralisée des serveurs MCP). Côté utilitaires, SourceDomino aide à vérifier les sources derrière les citations d'IA, et ClawDOS fait tourner un agent de codage sur un IBM PC XT d'origine.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>OpenComputer — alternative open source à Devin.</strong> Agent de codage cloud open source qui s'exécute dans votre propre compte cloud (AWS, GCP, Azure). Premier commit en 24 secondes, là où les alternatives mettent 53 à 72 secondes. Licence Apache-2.0, 1 132 étoiles GitHub, mis à jour le 21 novembre. Lien : https://github.com/diggerhq/opencomputer</p>
-<p><strong>MCPlama — gestion centralisée des serveurs MCP.</strong> Plateforme auto-hébergée pour administrer les serveurs MCP locaux et distants, contrôler les permissions utilisateurs et outils, gérer les identifiants et auditer les appels. Comprend une carte de visualisation des relations d'accès. Licence AGPL-3.0, 25 étoiles GitHub. Lien : https://github.com/mcplama/mcplama</p>
-<p><strong>SourceDomino — vérification des sources derrière les citations d'IA.</strong> Banc d'essai sous licence MIT pour inspecter les liens de citation et détecter les passages partagés entre plusieurs sources. Fonctionne entièrement dans le navigateur, sans téléchargement vers un serveur. Lien : https://github.com/ufodia/source-domino</p>
-<p><strong>ClawDOS — agent de codage IA pour DOS.</strong> Un agent de chat et de codage qui tourne sur un vrai IBM PC 5160 (8088 à 4,77 MHz, 640 Ko de RAM). Le programme HARNESS.EXE (176 Ko) parle directement l'API Claude et exécute les outils sur la machine d'origine, la passerelle TLS étant déléguée à un PC « pont ». Licence GPL-3.0, 16 étoiles GitHub. Lien : http://ricapar.net/ClawDOS/</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Inkling 2 Mini — un modèle à poids ouverts pour machine locale.</strong> Thinking Machines Lab publie Inkling 2 Mini, un transformateur à boucle (looped transformer) de 26,4 milliards de paramètres dont 3,4 actifs par token. Architecture MoE avec 24 couches dont les 12 centrales sont exécutées trois fois, portant la profondeur effective à 48 passes. Fenêtre de contexte de 1 million de tokens, entrée texte et image. L'empreinte mémoire d'environ 20 Go le fait tenir sur un MacBook Pro ; les poids sont livrés en NVFP4 et MXFP8. Il surpasse tous les modèles ouverts de moins de 100 milliards de paramètres sur DeepSWE v1.1 (48,2 %) et Vals Index v2.2 (46,5 %). Une variante GGUF pour llama.cpp est également disponible. Lien : https://huggingface.co/blog/inkling2mini</p>
-<p><strong>Muse Spark 1.3 — nouvelle version du modèle ouvert de Meta.</strong> Entraîné pour les workflows agentiques, il améliore la précision au premier essai en codage et l'appel d'outils. Contexte d'1 million de tokens, perception multimodale native (vidéo, image, document). Il se positionne de manière compétitive face à GPT 5.6 Sol et Opus 5 sur plusieurs bancs d'essai (DeepSWE v1.1, Terminal-Bench 2.1, SWEAtlas). Lien : https://dev.meta.ai/models/muse-spark</p>
-<h2>Volume</h2>
-<p>66 entrées publiées dans l'intervalle (dont 56 de Hacker News, 7 de Reddit, 1 de Hugging Face Blog, 1 d'It's FOSS, 1 de Simon Willison), 6 retenues (dont 2 regroupées par sujet), 60 écartées.</p>
-<p>Note : la collecte Reddit directe a échoué (HTTP 404) — le flux du subreddit est inaccessible ; les entrées Hacker News et Lobsters restent la source principale.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — dimanche 22 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-22.html</link>
-<guid isPermaLink="false">macapps-2026-11-22</guid>
-<pubDate>Sun, 22 Nov 2026 00:14:22 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une quinzaine d'applications et outils macOS nouveaux, presque tous gratuits ou open source, dans des registres variés : gestion de fenêtres, conteneurs Linux, bac à sable, lanceur, email, écriture, audio et quelques utilitaires de bureau. Côté mises à jour, Cloak 2.2 ajoute le déverrouillage facial et Apple Watch.</p>
-<p><strong>Note :</strong> la collecte Reddit directe est en échec (HTTP 404) — les entrées de cette veille viennent de Hacker News, Lobsters et des flux de veille complémentaires (MacGeneration, iGeneration, 9to5Mac, MacRumors, Product Hunt, AlternativeTo, etc.).</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<h3>HyprMac — gestionnaire de fenêtres en tuiles piloté au clavier</h3>
-<p>Gestionnaire de fenêtres en tuiles (disposition BSP/dwindle) inspiré de Hyprland sous Linux. Les fenêtres s'organisent automatiquement sans souris : focus, échange, redimensionnement et dix espaces de travail au clavier. Compatible macOS 13+, SIP reste activé. Gratuit et open source.<br />
-→ <a href="https://hyprmac.app/">hyprmac.app</a></p>
-<h3>Katamaran — conteneurs Docker et machines Linux pour Apple Silicon</h3>
-<p>Moteur de conteneurs et machines Linux natif pour Apple Silicon, basé sur Hypervisor.framework (libkrun). Un seul invité Linux gère tous les conteneurs avec montages rapides (virtio-fs + hypercalls), redirection de ports automatique et récupération de mémoire inutilisée. Application macOS native (Swift/AppKit) + CLI <code>kat</code>. Open source.<br />
-→ <a href="https://katamaran.rs/">katamaran.rs</a> (GitHub : nklmilojevic/katamaran)</p>
-<h3>Boxling — bac à sable macOS pour code non fiable et agents IA</h3>
-<p>Exécute des agents de codage IA et des paquets npm non fiables dans des espaces de travail Debian isolés sur le Mac. Chaque accès est approuvé par Touch ID ou mot de passe. Open source.<br />
-→ <a href="https://boxling.app/">boxling.app</a> (GitHub : janpmz/boxling)</p>
-<h3>Openspot — lanceur d'outils jetables</h3>
-<p>Lanceur macOS léger qui génère des outils (coding agent) pour la tâche en cours : on les garde s'ils sont utiles, on les jette sinon. Open source (MIT, 5 étoiles).<br />
-→ <a href="https://github.com/celishq/openspot">github.com/celishq/openspot</a></p>
-<h3>Zwitch — commutateur d'applications clavier</h3>
-<p>Alternative gratuite à ⌘-Tab : double-appui sur une touche de commande, puis une lettre pour sauter vers l'application. Vit dans la barre de menus.<br />
-→ <a href="https://zwitch.net/">zwitch.net</a></p>
-<h3>AbcTab — commutateur d'applications par première lettre</h3>
-<p>Commutateur d'applications et de fenêtres en Swift 6 natif (AppKit). Permet de sauter à une application par sa première lettre (anglais ou pinyin), liste les fenêtres multiples et les onglets de terminal. Ne nécessite pas l'autorisation d'enregistrement d'écran. Gratuit.<br />
-→ <a href="https://solocraft.app/abctab">solocraft.app/abctab</a></p>
-<h3>Peek — vue instantanée par superposition</h3>
-<p>Application macOS native : maintenir une touche (Fn par défaut) affiche sites web et widgets en superposition ; relâcher pour revenir à ce qu'on faisait. Pratique pour consulter des infos sans changer d'application.<br />
-→ <a href="https://peek.zone/">peek.zone</a></p>
-<h3>Glassmail — client email natif Mac avec IA privée</h3>
-<p>Client email natif pour Gmail, iCloud, Outlook, Yahoo et tout compte IMAP. L'assistant IA (résumés, écriture, recherche en langage naturel) tourne entièrement sur la machine (Apple Intelligence ou modèle téléchargé). Les mots de passe restent dans le trousseau. Paiement unique : 29 $ (prix de lancement, puis 49 $), jusqu'à 3 Mac. Essai gratuit 14 jours.<br />
-→ <a href="https://glassmail.app/">glassmail.app</a></p>
-<h3>Smorza — volume par application sur Mac</h3>
-<p>Permet de régler le volume et l'audio de sortie pour chaque application macOS indépendamment.<br />
-→ <a href="https://www.producthunt.com/products/smorza">producthunt.com/products/smorza</a></p>
-<h3>Fenêtre d'humidité — suivi humidité, point de rosée et CO₂</h3>
-<p>Application macOS qui affiche l'humidité intérieure et extérieure, le point de rosée et des graphiques de CO₂. Données issues de capteurs compatibles. Idéal pour surveiller la qualité de l'air — pertinente pour un professeur de SVT.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1tope/humidity_window_indoor_vs_outdoor_humidity_dew/">reddit.com/r/macapps</a></p>
-<h3>Meboki — sous-titres de style Grammarly hors ligne</h3>
-<p>Ajoute des soulignements (orthographe, grammaire, style) dans n'importe quelle application Mac, sans envoyer les données sur le réseau. Le traitement est entièrement local.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1s8fm/os_meboki_grammarlystyle_underlines_in_any_mac/">reddit.com/r/macapps</a></p>
-<h3>Inkrail — application d'écriture minimale et gratuite</h3>
-<p>Application d'écriture conçue pour le travail en profondeur : minimaliste, entièrement hors ligne et gratuite.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1s5ly/os_inkrail_offline_minimal_app_for_writing_built/">reddit.com/r/macapps</a></p>
-<h3>DynoCap — machines Linux jetables pour agents sur macOS</h3>
-<p>Crée des machines virtuelles Linux éphémères et hors ligne via Apple Virtualization.framework, destinées à exécuter des agents de codage ou du code non fiable en isolation. Open source (Apache 2.0).<br />
-→ <a href="https://github.com/baires/dynocap">github.com/baires/dynocap</a></p>
-<h3>Poker Trainer — jeu de poker gratuit dans la barre de menus</h3>
-<p>Jeu de poker free-to-play conçu pour s'améliorer en jouant, directement accessible depuis la barre de menus. Gratuit.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y203a9/i_wanted_a_poker_game_for_my_downtime_that_would/">reddit.com/r/macapps</a></p>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<h3>Cloak 2.2 — déverrouillage facial et Apple Watch</h3>
-<p>L'utilitaire de protection de la vie privée Cloak passe en version 2.2 avec le déverrouillage par reconnaissance faciale, le déverrouillage par Apple Watch, un code d'urgence et des profils de confidentialité.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1w73v/cloak_22_is_here_face_unlock_apple_watch_unlock/">reddit.com/r/macapps</a></p>
-<h3>Mises à jour Homebrew (casks)</h3>
-<p>Quelques mises à jour notables parmi les casks Homebrew : <strong>Super Productivity</strong> 20.1.0 (gestion de tâches), <strong>The Commander</strong> 1.13.0 (gestionnaire de fichiers), <strong>Token Monitor</strong> 0.95.1 (surveillance de jetons), <strong>Nook</strong> 1.6.1 (gestionnaire de liseuse), <strong>OpenCodex</strong> 2.100.8 et l'ajout d'un nouveau cask <strong>SmartGit@preview</strong> 26.2.024.</p>
-<hr />
-<h2>Volume</h2>
-<p>15 entrées lues dans la shortlist (hors homebrew cask), 14 retenues, 1 écartée (décorative, sans utilité pratique). La collecte Reddit est en erreur (404) — les entrées proviennent des autres sources.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Une quinzaine d'applications et outils macOS nouveaux, presque tous gratuits ou open source, dans des registres variés : gestion de fenêtres, conteneurs Linux, bac à sable, lanceur, email, écriture, audio et quelques utilitaires de bureau. Côté mises à jour, Cloak 2.2 ajoute le déverrouillage facial et Apple Watch.</p>
-<p><strong>Note :</strong> la collecte Reddit directe est en échec (HTTP 404) — les entrées de cette veille viennent de Hacker News, Lobsters et des flux de veille complémentaires (MacGeneration, iGeneration, 9to5Mac, MacRumors, Product Hunt, AlternativeTo, etc.).</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<h3>HyprMac — gestionnaire de fenêtres en tuiles piloté au clavier</h3>
-<p>Gestionnaire de fenêtres en tuiles (disposition BSP/dwindle) inspiré de Hyprland sous Linux. Les fenêtres s'organisent automatiquement sans souris : focus, échange, redimensionnement et dix espaces de travail au clavier. Compatible macOS 13+, SIP reste activé. Gratuit et open source.<br />
-→ <a href="https://hyprmac.app/">hyprmac.app</a></p>
-<h3>Katamaran — conteneurs Docker et machines Linux pour Apple Silicon</h3>
-<p>Moteur de conteneurs et machines Linux natif pour Apple Silicon, basé sur Hypervisor.framework (libkrun). Un seul invité Linux gère tous les conteneurs avec montages rapides (virtio-fs + hypercalls), redirection de ports automatique et récupération de mémoire inutilisée. Application macOS native (Swift/AppKit) + CLI <code>kat</code>. Open source.<br />
-→ <a href="https://katamaran.rs/">katamaran.rs</a> (GitHub : nklmilojevic/katamaran)</p>
-<h3>Boxling — bac à sable macOS pour code non fiable et agents IA</h3>
-<p>Exécute des agents de codage IA et des paquets npm non fiables dans des espaces de travail Debian isolés sur le Mac. Chaque accès est approuvé par Touch ID ou mot de passe. Open source.<br />
-→ <a href="https://boxling.app/">boxling.app</a> (GitHub : janpmz/boxling)</p>
-<h3>Openspot — lanceur d'outils jetables</h3>
-<p>Lanceur macOS léger qui génère des outils (coding agent) pour la tâche en cours : on les garde s'ils sont utiles, on les jette sinon. Open source (MIT, 5 étoiles).<br />
-→ <a href="https://github.com/celishq/openspot">github.com/celishq/openspot</a></p>
-<h3>Zwitch — commutateur d'applications clavier</h3>
-<p>Alternative gratuite à ⌘-Tab : double-appui sur une touche de commande, puis une lettre pour sauter vers l'application. Vit dans la barre de menus.<br />
-→ <a href="https://zwitch.net/">zwitch.net</a></p>
-<h3>AbcTab — commutateur d'applications par première lettre</h3>
-<p>Commutateur d'applications et de fenêtres en Swift 6 natif (AppKit). Permet de sauter à une application par sa première lettre (anglais ou pinyin), liste les fenêtres multiples et les onglets de terminal. Ne nécessite pas l'autorisation d'enregistrement d'écran. Gratuit.<br />
-→ <a href="https://solocraft.app/abctab">solocraft.app/abctab</a></p>
-<h3>Peek — vue instantanée par superposition</h3>
-<p>Application macOS native : maintenir une touche (Fn par défaut) affiche sites web et widgets en superposition ; relâcher pour revenir à ce qu'on faisait. Pratique pour consulter des infos sans changer d'application.<br />
-→ <a href="https://peek.zone/">peek.zone</a></p>
-<h3>Glassmail — client email natif Mac avec IA privée</h3>
-<p>Client email natif pour Gmail, iCloud, Outlook, Yahoo et tout compte IMAP. L'assistant IA (résumés, écriture, recherche en langage naturel) tourne entièrement sur la machine (Apple Intelligence ou modèle téléchargé). Les mots de passe restent dans le trousseau. Paiement unique : 29 $ (prix de lancement, puis 49 $), jusqu'à 3 Mac. Essai gratuit 14 jours.<br />
-→ <a href="https://glassmail.app/">glassmail.app</a></p>
-<h3>Smorza — volume par application sur Mac</h3>
-<p>Permet de régler le volume et l'audio de sortie pour chaque application macOS indépendamment.<br />
-→ <a href="https://www.producthunt.com/products/smorza">producthunt.com/products/smorza</a></p>
-<h3>Fenêtre d'humidité — suivi humidité, point de rosée et CO₂</h3>
-<p>Application macOS qui affiche l'humidité intérieure et extérieure, le point de rosée et des graphiques de CO₂. Données issues de capteurs compatibles. Idéal pour surveiller la qualité de l'air — pertinente pour un professeur de SVT.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1tope/humidity_window_indoor_vs_outdoor_humidity_dew/">reddit.com/r/macapps</a></p>
-<h3>Meboki — sous-titres de style Grammarly hors ligne</h3>
-<p>Ajoute des soulignements (orthographe, grammaire, style) dans n'importe quelle application Mac, sans envoyer les données sur le réseau. Le traitement est entièrement local.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1s8fm/os_meboki_grammarlystyle_underlines_in_any_mac/">reddit.com/r/macapps</a></p>
-<h3>Inkrail — application d'écriture minimale et gratuite</h3>
-<p>Application d'écriture conçue pour le travail en profondeur : minimaliste, entièrement hors ligne et gratuite.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1s5ly/os_inkrail_offline_minimal_app_for_writing_built/">reddit.com/r/macapps</a></p>
-<h3>DynoCap — machines Linux jetables pour agents sur macOS</h3>
-<p>Crée des machines virtuelles Linux éphémères et hors ligne via Apple Virtualization.framework, destinées à exécuter des agents de codage ou du code non fiable en isolation. Open source (Apache 2.0).<br />
-→ <a href="https://github.com/baires/dynocap">github.com/baires/dynocap</a></p>
-<h3>Poker Trainer — jeu de poker gratuit dans la barre de menus</h3>
-<p>Jeu de poker free-to-play conçu pour s'améliorer en jouant, directement accessible depuis la barre de menus. Gratuit.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y203a9/i_wanted_a_poker_game_for_my_downtime_that_would/">reddit.com/r/macapps</a></p>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<h3>Cloak 2.2 — déverrouillage facial et Apple Watch</h3>
-<p>L'utilitaire de protection de la vie privée Cloak passe en version 2.2 avec le déverrouillage par reconnaissance faciale, le déverrouillage par Apple Watch, un code d'urgence et des profils de confidentialité.<br />
-→ <a href="https://www.reddit.com/r/macapps/comments/1y1w73v/cloak_22_is_here_face_unlock_apple_watch_unlock/">reddit.com/r/macapps</a></p>
-<h3>Mises à jour Homebrew (casks)</h3>
-<p>Quelques mises à jour notables parmi les casks Homebrew : <strong>Super Productivity</strong> 20.1.0 (gestion de tâches), <strong>The Commander</strong> 1.13.0 (gestionnaire de fichiers), <strong>Token Monitor</strong> 0.95.1 (surveillance de jetons), <strong>Nook</strong> 1.6.1 (gestionnaire de liseuse), <strong>OpenCodex</strong> 2.100.8 et l'ajout d'un nouveau cask <strong>SmartGit@preview</strong> 26.2.024.</p>
-<hr />
-<h2>Volume</h2>
-<p>15 entrées lues dans la shortlist (hors homebrew cask), 14 retenues, 1 écartée (décorative, sans utilité pratique). La collecte Reddit est en erreur (404) — les entrées proviennent des autres sources.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — dimanche 22 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-22.html</link>
-<guid isPermaLink="false">artcraft-2026-11-22</guid>
-<pubDate>Sun, 22 Nov 2026 00:03:22 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Peu d'activité ce week-end sur les sources ArtCraft. Le sous-reddit r/ArtCraftAI reste inaccessible (erreur 404 côté collecteur). Aucune nouvelle version publiée. L'actualité récente la plus notable reste l'annonce d'AutoCraft par Brandon Thomas (17 novembre).</p>
-<h2>Nouveautés et annonces</h2>
-<p><strong>AutoCraft — un outil open source pour la maintenance de dépôts GitHub par IA.</strong> Brandon Thomas a présenté AutoCraft lors de sa conférence « Let's Open Source the World » au AI Engineer CODE Summit le 12 novembre. AutoCraft est décrit comme un « Model Harness » qui orchestre des modèles d'IA (Claude Haiku, Sonnet, Opus) pour trier les issues et pull requests, détecter les doublons, rédiger des correctifs et proposer des fusions. Les actions sont limitées par un tableau de bord où le mainteneur définit ce que l'outil peut faire automatiquement. Les builds s'exécutent dans un environnement Podman rootless et les appels de modèles dans un bac à sable Bubblewrap. Le code source est disponible sur GitHub (dépôt AutoCraft). Vu sur heise.de.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de nouveau cette période.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable.</p>
-<h2>À signaler</h2>
-<p><strong>Le sous-reddit r/ArtCraftAI est inaccessible</strong> — le collecteur retourne une erreur HTTP 404 depuis la dernière collecte (21 novembre). Il est possible que le sous-reddit ait été renommé, rendu privé ou supprimé temporairement. Les publications y sont interrompues depuis le 17 novembre. Les flux complémentaires (commits, releases, YouTube) continuent de fonctionner normalement.</p>
-<p><strong>Développement en cours</strong> — l'activité sur le dépôt principal reste soutenue, avec des correctifs de build et des travaux sur le décodage d'images via <code>craft-image-codecs</code> (parité native/legacy pour les vignettes). Aucune nouvelle version publiée depuis la 0.41.1 (7 novembre).</p>
-<h2>Volume</h2>
-<p>0 publication Reddit dans l'intervalle des 4 derniers jours (source inaccessible), 10 commits examinés, 1 nouveau commit retenu (correctif de build), 9 déjà digérés, 1 article web retenu.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Peu d'activité ce week-end sur les sources ArtCraft. Le sous-reddit r/ArtCraftAI reste inaccessible (erreur 404 côté collecteur). Aucune nouvelle version publiée. L'actualité récente la plus notable reste l'annonce d'AutoCraft par Brandon Thomas (17 novembre).</p>
-<h2>Nouveautés et annonces</h2>
-<p><strong>AutoCraft — un outil open source pour la maintenance de dépôts GitHub par IA.</strong> Brandon Thomas a présenté AutoCraft lors de sa conférence « Let's Open Source the World » au AI Engineer CODE Summit le 12 novembre. AutoCraft est décrit comme un « Model Harness » qui orchestre des modèles d'IA (Claude Haiku, Sonnet, Opus) pour trier les issues et pull requests, détecter les doublons, rédiger des correctifs et proposer des fusions. Les actions sont limitées par un tableau de bord où le mainteneur définit ce que l'outil peut faire automatiquement. Les builds s'exécutent dans un environnement Podman rootless et les appels de modèles dans un bac à sable Bubblewrap. Le code source est disponible sur GitHub (dépôt AutoCraft). Vu sur heise.de.</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<p>Rien de nouveau cette période.</p>
-<h2>Autour d'ArtCraft</h2>
-<p>Rien de notable.</p>
-<h2>À signaler</h2>
-<p><strong>Le sous-reddit r/ArtCraftAI est inaccessible</strong> — le collecteur retourne une erreur HTTP 404 depuis la dernière collecte (21 novembre). Il est possible que le sous-reddit ait été renommé, rendu privé ou supprimé temporairement. Les publications y sont interrompues depuis le 17 novembre. Les flux complémentaires (commits, releases, YouTube) continuent de fonctionner normalement.</p>
-<p><strong>Développement en cours</strong> — l'activité sur le dépôt principal reste soutenue, avec des correctifs de build et des travaux sur le décodage d'images via <code>craft-image-codecs</code> (parité native/legacy pour les vignettes). Aucune nouvelle version publiée depuis la 0.41.1 (7 novembre).</p>
-<h2>Volume</h2>
-<p>0 publication Reddit dans l'intervalle des 4 derniers jours (source inaccessible), 10 commits examinés, 1 nouveau commit retenu (correctif de build), 9 déjà digérés, 1 article web retenu.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
