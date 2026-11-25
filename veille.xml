@@ -6,9 +6,187 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 05:02:42 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:12:24 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-26.html</link>
+<guid isPermaLink="false">macapps-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:12:24 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Ladybird, navigateur web indépendant construit à partir de zéro, publie sa première version alpha téléchargeable pour macOS et Linux. Apple développe en interne l'application « Harbor » qui transforme plusieurs Mac reliés en cluster unique d'inférence IA locale — projet sous la marque Claris, en aperçu privé. Claude for Mac propose désormais d'installer les artefacts créés avec l'IA comme de véritables applications de bureau natives, avec propre icône, fenêtres séparées et contrôles de permission.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Ladybird — navigateur web en version alpha</strong></p>
+<p>L'équipe SerenityOS a publié la première version alpha publique de Ladybird, un navigateur web dont le moteur de rendu est entièrement construit à partir de zéro plutôt que dérivé de Blink ou WebKit. Le code, écrit en Rust et C++, est sous licence BSD 2-Clause. Le dépôt compte près de 69 000 étoiles et reçoit des commits quotidiens. Des binaires macOS et Linux sont disponibles au téléchargement. La fonctionnalité phare est son indépendance : ni Chromium, ni Firefox ne servent de socle, ce qui en fait le seul grand navigateur à n'emprunter le chemin de personne. <a href="https://github.com/LadybirdBrowser/ladybird">LadybirdBrowser/ladybird · GitHub</a></p>
+<p><strong>Harbor — serveur d'inférence IA locale avec clustering Thunderbolt 5</strong></p>
+<p>Le leaker Aaron Perris a mis au jour dans les fichiers d'Apple une nouvelle application appelée Harbor, actuellement en aperçu privé sous la marque Claris. Harbor transforme le Mac en serveur d'inférence IA privée : les modèles ouverts s'exécutent en local sur puce Apple Silicon, aucune donnée ne quitte le matériel. La fonctionnalité majeure est le clustering — deux Mac ou plus reliés en Thunderbolt 5 voient leur mémoire unifiée mutualisée en une seule ressource d'inférence, permettant de faire tourner des modèles dépassant la capacité d'une machine isolée ou de servir davantage de requêtes simultanées. Aucun ligne de commande n'est requise : détection automatique des appareils, téléchargement et chargement des modèles depuis l'interface graphique. Une publication publique semble prévue dans les semaines à venir. <a href="https://www.macstories.net/linked/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/">MacStories / 9to5Mac</a></p>
+<p><strong>Claude « Install as app » — artefacts Claude deviennent applications de bureau natives</strong></p>
+<p>Anthropic a introduit dans Claude for Mac et Windows une fonctionnalité baptisée « Install as app ». À partir de n'importe quel artefact créé avec Claude, on peut l'installer comme une application de bureau à part entière : elle obtient sa propre icône, s'ouvre dans sa propre fenêtre externe à l'interface Claude, peut envoyer des notifications, ajouter des entrées au menu bar, et bénéficie des connecteurs Claude. L'utilisateur choisit le niveau d'accès aux fonctions du système. Les applications ainsi créées peuvent être partagées. Fonctionnalité en bêta, uniquement disponible dans Claude for Mac et Windows. <a href="https://9to5mac.com/2026/11/24/anthropic-just-gave-claude-users-a-new-way-to-make-mac-apps/">9to5Mac</a></p>
+<p><strong>Inky — inférence Inkling 2 Mini sur Apple Silicon</strong></p>
+<p>Projet Rust (<code>GPL-3.0</code>, 8 étoiles GitHub, dernier commit 25 nov.) portant l'inférence du modèle Thinking Machines Inkling 2 Mini sur les puces Apple. Disponible aussi via Homebrew : <code>brew install --cask ink</code>. <a href="https://github.com/robotgamedevelopers/inky">robotgamedevelopers/inky · GitHub</a></p>
+<p><strong>Grokmind — connexion Grok Bot aux vaults Obsidian</strong></p>
+<p>Le bot Grok se connecte désormais aux vaults Obsidian pour gérer notes et fichiers. Extension utile pour les flux de travail basés sur Obsidian combinés à l'IA. <a href="https://www.producthunt.com/products/grok-bot">Product Hunt</a></p>
+<h2>Extensions et greffons</h2>
+<p>Cette rubrique est vide pour cette édition.</p>
+<h2>Volume</h2>
+<p>230 entrées examinées dans la shortlist, 7 retenus, 223 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/macapps posts.jsonl, HN via macapps journal, Feed alternatives, Setapp newsletter, 9to5Mac, MacStories, Homebrew nouveauté, MacG, iGeneration, forum MacG. Fichier shortlist <code>cache/veille/shortlist/macapps.json</code> (230 entrées, non tronqué).</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Ladybird, navigateur web indépendant construit à partir de zéro, publie sa première version alpha téléchargeable pour macOS et Linux. Apple développe en interne l'application « Harbor » qui transforme plusieurs Mac reliés en cluster unique d'inférence IA locale — projet sous la marque Claris, en aperçu privé. Claude for Mac propose désormais d'installer les artefacts créés avec l'IA comme de véritables applications de bureau natives, avec propre icône, fenêtres séparées et contrôles de permission.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Ladybird — navigateur web en version alpha</strong></p>
+<p>L'équipe SerenityOS a publié la première version alpha publique de Ladybird, un navigateur web dont le moteur de rendu est entièrement construit à partir de zéro plutôt que dérivé de Blink ou WebKit. Le code, écrit en Rust et C++, est sous licence BSD 2-Clause. Le dépôt compte près de 69 000 étoiles et reçoit des commits quotidiens. Des binaires macOS et Linux sont disponibles au téléchargement. La fonctionnalité phare est son indépendance : ni Chromium, ni Firefox ne servent de socle, ce qui en fait le seul grand navigateur à n'emprunter le chemin de personne. <a href="https://github.com/LadybirdBrowser/ladybird">LadybirdBrowser/ladybird · GitHub</a></p>
+<p><strong>Harbor — serveur d'inférence IA locale avec clustering Thunderbolt 5</strong></p>
+<p>Le leaker Aaron Perris a mis au jour dans les fichiers d'Apple une nouvelle application appelée Harbor, actuellement en aperçu privé sous la marque Claris. Harbor transforme le Mac en serveur d'inférence IA privée : les modèles ouverts s'exécutent en local sur puce Apple Silicon, aucune donnée ne quitte le matériel. La fonctionnalité majeure est le clustering — deux Mac ou plus reliés en Thunderbolt 5 voient leur mémoire unifiée mutualisée en une seule ressource d'inférence, permettant de faire tourner des modèles dépassant la capacité d'une machine isolée ou de servir davantage de requêtes simultanées. Aucun ligne de commande n'est requise : détection automatique des appareils, téléchargement et chargement des modèles depuis l'interface graphique. Une publication publique semble prévue dans les semaines à venir. <a href="https://www.macstories.net/linked/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/">MacStories / 9to5Mac</a></p>
+<p><strong>Claude « Install as app » — artefacts Claude deviennent applications de bureau natives</strong></p>
+<p>Anthropic a introduit dans Claude for Mac et Windows une fonctionnalité baptisée « Install as app ». À partir de n'importe quel artefact créé avec Claude, on peut l'installer comme une application de bureau à part entière : elle obtient sa propre icône, s'ouvre dans sa propre fenêtre externe à l'interface Claude, peut envoyer des notifications, ajouter des entrées au menu bar, et bénéficie des connecteurs Claude. L'utilisateur choisit le niveau d'accès aux fonctions du système. Les applications ainsi créées peuvent être partagées. Fonctionnalité en bêta, uniquement disponible dans Claude for Mac et Windows. <a href="https://9to5mac.com/2026/11/24/anthropic-just-gave-claude-users-a-new-way-to-make-mac-apps/">9to5Mac</a></p>
+<p><strong>Inky — inférence Inkling 2 Mini sur Apple Silicon</strong></p>
+<p>Projet Rust (<code>GPL-3.0</code>, 8 étoiles GitHub, dernier commit 25 nov.) portant l'inférence du modèle Thinking Machines Inkling 2 Mini sur les puces Apple. Disponible aussi via Homebrew : <code>brew install --cask ink</code>. <a href="https://github.com/robotgamedevelopers/inky">robotgamedevelopers/inky · GitHub</a></p>
+<p><strong>Grokmind — connexion Grok Bot aux vaults Obsidian</strong></p>
+<p>Le bot Grok se connecte désormais aux vaults Obsidian pour gérer notes et fichiers. Extension utile pour les flux de travail basés sur Obsidian combinés à l'IA. <a href="https://www.producthunt.com/products/grok-bot">Product Hunt</a></p>
+<h2>Extensions et greffons</h2>
+<p>Cette rubrique est vide pour cette édition.</p>
+<h2>Volume</h2>
+<p>230 entrées examinées dans la shortlist, 7 retenus, 223 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/macapps posts.jsonl, HN via macapps journal, Feed alternatives, Setapp newsletter, 9to5Mac, MacStories, Homebrew nouveauté, MacG, iGeneration, forum MacG. Fichier shortlist <code>cache/veille/shortlist/macapps.json</code> (230 entrées, non tronqué).</em></p>]]></content:encoded>
+</item>
+<item>
+<title>Veille ArtCraft — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-26.html</link>
+<guid isPermaLink="false">artcraft-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:01:50 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'écosystème ArtCraft poursuit son activité avec PhotoCraft v0.24.0-rc.1 (candidat de version majeure incluant des intégrations IA) et SketchCraft à la version 0.3.0 après dix itérations. La communauté développe des outils tiers notables : CraftLook (aperçus macOS), PxC (plugin IA PhotoCraft) et un plugin Stream Deck pour LightCraft. Côté dépôt, l'application ArtCraft passe à 0.42.1 avec ajout d'un vérificateur de mises à jour dans le menu Aide et élargissement massif du packaging Linux signé.</p>
+<p>Les publications officielles ont été calmes depuis une semaine car le développement se concentre sur la refonte majeure menant à 0.42.x ; un message officiel a confirmé cette information au subreddit hier.</p>
+<p><strong>Note :</strong> l'ancien collecteur de feeds RSS d'ArtCraft rencontre une erreur HTTP 404 depuis le 22 novembre — le relais via l'extension de navigateur reste opérationnel.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>PhotoCraft v0.24.0-rc.1 — candidat de version majeure</h3>
+<p>Le candidat de version 0.24.0 de PhotoCraft est disponible pour tests communautaires. Cette version fait suite à une refactorisation importante et pourrait contenir des bugs inattendus. Elle introduit des intégrations IA avec Claude Desktop, Claude Code et Cursor, permettant de connecter ces outils à PhotoCraft sans passer par un terminal. PhotoCraft v0.23.x reste la version stable actuelle.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/">PhotoCraft v0.24.0-rc.1</a> · rickidangerous</p>
+<h3>PDFCraft v0.22.0 — correction de la résolution d'impression</h3>
+<p>PDFCraft atteint la version 0.22.0 avec une correction du problème de résolution d'impression qui gênait nombre d'utilisateurs depuis plusieurs versions. Un utilisateur rapporte qu'il se débarrasse désormais des autres logiciels PDF grâce à cet outil.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">Discussion PDFCraft v0.22.0</a> · YEEG4R</p>
+<h3>SketchCraft — passage à la 0.3.0 après dix versions intermédiaires</h3>
+<p>SketchCraft, l'alternative open source à SketchUp, progresse rapidement : dix versions publiées depuis sa première annonce publique. La 0.3.0 ajoute les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'auteur confirme un rythme de développement soutenu.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/">Discussion SketchCraft 0.3.0</a> · Apprehensive_Fly_493</p>
+<h3>Message officiel : la raison des retards de mise à jour</h3>
+<p>Un message officiel publié hier répond aux questions de la communauté concernant l'absence de nouvelles sorties depuis plus d'une semaine. Les applications continuent d'être développées activement mais la focus est mis sur la prochaine refonte majeure plutôt que sur des sorties mineures successives.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/">Message officiel sur les retards</a> · BrettMaster</p>
+<h3>Polices et builds nocturnes disponibles</h3>
+<p>La communauté se félicite l'arrivée des polices personnalisées et des builds nocturnes, accessibles directement depuis le lanceur ArtCraft Launcher. Ces fonctionnalités permettent de tester les dernières évolutions avant leur publication officielle.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4q5nm/we_got_fonts_and_nightly_builds/">Polices et builds nocturnes</a> · timmmmb</p>
+<h3>SketchCraft — suivi Vimaan : vitesse, altitude et angle sur globe 3D</h3>
+<p>Vimaan, outil de visualisation GPS en temps réel sur globe 3D, est signalé comme intéressant pour la modélisation terrain et la pré-visualisation architecturale. Outil indépendant de l'écosystème ArtCraft mais compatible.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3qe8h/vimaan_flight_gps_speed_altitude_and_angle/">Vimaan</a> · babachisays</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>CraftLook — miniatures et aperçus natifs macOS pour les projets ArtCraft</h3>
+<p>CraftLook, petite application gratuite signée et notarée par Apple, permet à Finder d'afficher de véritables miniatures et aperçus dans le Quick Look pour les fichiers de projet ArtCraft. Le moteur embarqué reconstruit le projet à la volée sans nécessiter l'installation des applications ArtCraft. Supporte FigCraft, DesignCraft, VectorCraft, TextureCraft, PhotoCraft, SolidCraft, FilmCraft, MaterialCraft, EffectCraft, SoundCraft, ainsi que les fichiers PSD et SVG (avec une qualité supérieure aux aperçus natifs macOS).</p>
+<p>Dépôt : <a href="https://github.com/roccobot/CraftLook">CraftLook</a> · Roccobot</p>
+<h3>PxC — plugin d'IA générative pour PhotoCraft</h3>
+<p>PxC est un plugin écrit intégralement par Claude pour étendre PhotoCraft avec des fonctionnalités d'IA générative : texte en image, sélection de remplissage, édition de toile, agrandissement de toile, suppression d'arrière-plan, upscaling et plus encore. Compatible Windows et Linux. Il supporte les modèles MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit et Flux 3 Klein. Développé par un professionnel du graphisme cherchant un remplacement Photoshop avec capacités IA.</p>
+<p>Dépôt : <a href="https://github.com/phil-haderer/pxc">phil-haderer/pxc</a> · phil-haderer</p>
+<h3>Plugin Stream Deck pour LightCraft</h3>
+<p>Plugin open-source connecté directement au port local de contrôle de LightCraft (127.0.0.1:7980). Connexion bidirectionnelle : affichage en direct des curseurs et synchronisation des touches éclairées. Supporte encodeurs (cadrans de culling, transformation, préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR), masque AI (via SAM 3), navigation et export. Compatible Stream Deck 6.5+ et OpenDeck. Téléchargement via la page des releases du plugin.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">Débuts du plugin Stream Deck</a> · ResearcherMassive802</p>
+<h3>Explorateur de fichiers — miniatures PDFCraft pour Windows</h3>
+<p>Projet github <code>rajatmo/explorer-thumbs</code> fournissant des miniatures PDF dans l'explorateur Windows, solution temporaire au problème des vignettes non affichées lorsque PDFCraft est défini comme application PDF par défaut. Installation manuelle nécessaire.</p>
+<p><a href="https://github.com/rajatmo/explorer-thumbs">Explorer thumbs</a> · defnotaloser</p>
+<h3>Plugin FigCraft — documentation automatique de composants</h3>
+<p>Plugin FigCraft v0.11.0 (pré-version) qui documente automatiquement un composant pour le transfert. Fonctionnalité utile pour les workflows de design collaboratif.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/">Plugin FigCraft documentation</a> · DamageNo9147</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>Dépôt ArtCraft — artcraft 0.42.1</h3>
+<p>Le dépôt principal ArtCraft passe à la version 0.42.1 (commit #2835). Cette release inclut un <strong>vérificateur de mises à jour manuelles</strong> intégré au menu Aide (<code>Help &gt; Check for Updates…</code>) avec contrôles en arrière-plan, affichage des versions courante et disponible, boutons explicites Update et restart, gestion des états de progression et d'erreur, et fallback vers les pages Releases. Utilise le core <code>craft-update</code> partagé avec les applications natives Craft, pinning commit immutable revu. Supporte Flatpak avec interface de mise à jour hôte et options de launcher en lecture seule.</p>
+<p>Suivi par plusieurs correctifs liés au chiffrement Linux (matrice multi-architecture x86_64, aarch64, riscv64 : DEB, RPM, AppImage, tar.gz, Arch, Flatpak), dual-push OCI Docker Hub, correction de persistance des données Flatpak, et migration complète vers <code>tokio::fs</code> dans les fonctions async pour éliminer les appels bloquants (SonarCloud).</p>
+<p><strong>Changement de licence majeur</strong> : le projet est relicense sous <strong>MIT OR Apache-2.0</strong> (#2043, octobre), alignant ArtCraft sur les autres apps de la suite Craft. Des travaux de nettoyage des assets tiers non couverts par cette licence sont toujours en cours.</p>
+<h3>Développement desktop natif Rust (artcraft-native)</h3>
+<p>L'application native pure Rust (egui, sans Tauri ni webview) progresse : détection des types de fichiers image/audio/vidéo/3D via <code>craft-sniff</code>, cutover vers <code>craft-image-codecs</code> pour le media cache (décompression-bomb protection, normalisation EXIF, alpha-frame guard), precision 16-bit des miniatures (box-averaging u64 accumulators), test de parité statique/animée legacy vs natif, et règles partagées AGENTS.md adoptées (RFC-0072). Le développement suit un processus rigoureux avec SonarCloud, CodeRabbit et Harden-Runner.</p>
+<h3>Écosystème général</h3>
+<p><strong>SolidCraft</strong> continue de faire parler de lui — qualifié de « remplacement potentiel pour AutoCAD, Rhino, SketchUp et Revit » via une approche « noyau paramétrique/NURBS + bancs d'atelier modulaire ». Architecture B-rep propre, WASM dans navigateur, CLI/MCP natif. Le subreddit reste actif sur ce sujet.</p>
+<p><strong>LightCraft</strong> — quelques utilisateurs signalent des problèmes de calibration (onglet déjà au maximum avec peu d'effet) et un bug ProRes (impossible à décoder après dernière mise à jour dans EffectCraft). Un utilisateur développe un plugin WordPress pour synchroniser des dossiers depuis LightCraft.</p>
+<p><strong>SoundCraft</strong> — interrogation sur un ralentissement du développement (passage de mises à jour quasi quotidiennes à un silence). L'auteur suppose un impact éventuel des changements des conditions d'utilisation de Claude concernant le clÃ©nage. Pas de confirmation officielle.</p>
+<p><strong>WordCraft</strong> — plusieurs retours sur les limites actuelles : absence de table des matières avancée, difficulté avec les tableaux faits via Claude/LibreOffice, demande de templates préconçus (lettres de candidature). Pas de réponse officielle à ces demandes.</p>
+<p><strong>Autres sujets</strong> : CAPYTALE citée comme plateforme de partage de carnets Jupyter avec paramètres IPython (liens courts réutilisables). Des discussions sur l'importation de pinceaux ProCreate dans ProCraft Android, la compatibilité RTL de VectorCraft, et l'usage de Claude dans WordCraft.</p>
+<p><strong>Logiciels comparables</strong> : rien de notable récemment dans ComfyUI, InvokeAI, Krita AI Diffusion ou Draw Things qui mériterait mention spécifique.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Cookie upload session token exposé dans la console</strong> (commit #2632) : des <code>console.log</code> de debug imprimaient le jeton de session d'upload en clair et la réponse d'inscription contenant la session signée. Corrigé, mais cela révèle une vulnérabilité de configuration qui aurait pu exposer des données sensibles. Aucun exploit connu.</li>
+<li><strong>Collecteur RSS 404</strong> : l'ancienne collecte de feeds d'ArtCraft via feed_watch.py rencontre une erreur HTTP 404 depuis le 22 novembre 2026. Le relais via extension de navigateur (state/reddit/ArtCraftAI/) fonctionne normalement et alimente le journal principal.</li>
+<li><strong>SolidCraft v0.49.1 ne démarre plus</strong> : un utilisateur rapporte que SolidCraft échoue à démarrer après la mise à jour v0.49.1, mêmes en mode administrateur et sans échec. Problème isolé, aucune autre remontée.</li>
+</ul>
+<h2>Volume</h2>
+<p>100 posts lus dans l'intervalle, 22 retenus, 78 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>L'écosystème ArtCraft poursuit son activité avec PhotoCraft v0.24.0-rc.1 (candidat de version majeure incluant des intégrations IA) et SketchCraft à la version 0.3.0 après dix itérations. La communauté développe des outils tiers notables : CraftLook (aperçus macOS), PxC (plugin IA PhotoCraft) et un plugin Stream Deck pour LightCraft. Côté dépôt, l'application ArtCraft passe à 0.42.1 avec ajout d'un vérificateur de mises à jour dans le menu Aide et élargissement massif du packaging Linux signé.</p>
+<p>Les publications officielles ont été calmes depuis une semaine car le développement se concentre sur la refonte majeure menant à 0.42.x ; un message officiel a confirmé cette information au subreddit hier.</p>
+<p><strong>Note :</strong> l'ancien collecteur de feeds RSS d'ArtCraft rencontre une erreur HTTP 404 depuis le 22 novembre — le relais via l'extension de navigateur reste opérationnel.</p>
+<h2>Nouveautés et annonces</h2>
+<h3>PhotoCraft v0.24.0-rc.1 — candidat de version majeure</h3>
+<p>Le candidat de version 0.24.0 de PhotoCraft est disponible pour tests communautaires. Cette version fait suite à une refactorisation importante et pourrait contenir des bugs inattendus. Elle introduit des intégrations IA avec Claude Desktop, Claude Code et Cursor, permettant de connecter ces outils à PhotoCraft sans passer par un terminal. PhotoCraft v0.23.x reste la version stable actuelle.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/">PhotoCraft v0.24.0-rc.1</a> · rickidangerous</p>
+<h3>PDFCraft v0.22.0 — correction de la résolution d'impression</h3>
+<p>PDFCraft atteint la version 0.22.0 avec une correction du problème de résolution d'impression qui gênait nombre d'utilisateurs depuis plusieurs versions. Un utilisateur rapporte qu'il se débarrasse désormais des autres logiciels PDF grâce à cet outil.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">Discussion PDFCraft v0.22.0</a> · YEEG4R</p>
+<h3>SketchCraft — passage à la 0.3.0 après dix versions intermédiaires</h3>
+<p>SketchCraft, l'alternative open source à SketchUp, progresse rapidement : dix versions publiées depuis sa première annonce publique. La 0.3.0 ajoute les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'auteur confirme un rythme de développement soutenu.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/">Discussion SketchCraft 0.3.0</a> · Apprehensive_Fly_493</p>
+<h3>Message officiel : la raison des retards de mise à jour</h3>
+<p>Un message officiel publié hier répond aux questions de la communauté concernant l'absence de nouvelles sorties depuis plus d'une semaine. Les applications continuent d'être développées activement mais la focus est mis sur la prochaine refonte majeure plutôt que sur des sorties mineures successives.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/">Message officiel sur les retards</a> · BrettMaster</p>
+<h3>Polices et builds nocturnes disponibles</h3>
+<p>La communauté se félicite l'arrivée des polices personnalisées et des builds nocturnes, accessibles directement depuis le lanceur ArtCraft Launcher. Ces fonctionnalités permettent de tester les dernières évolutions avant leur publication officielle.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4q5nm/we_got_fonts_and_nightly_builds/">Polices et builds nocturnes</a> · timmmmb</p>
+<h3>SketchCraft — suivi Vimaan : vitesse, altitude et angle sur globe 3D</h3>
+<p>Vimaan, outil de visualisation GPS en temps réel sur globe 3D, est signalé comme intéressant pour la modélisation terrain et la pré-visualisation architecturale. Outil indépendant de l'écosystème ArtCraft mais compatible.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3qe8h/vimaan_flight_gps_speed_altitude_and_angle/">Vimaan</a> · babachisays</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<h3>CraftLook — miniatures et aperçus natifs macOS pour les projets ArtCraft</h3>
+<p>CraftLook, petite application gratuite signée et notarée par Apple, permet à Finder d'afficher de véritables miniatures et aperçus dans le Quick Look pour les fichiers de projet ArtCraft. Le moteur embarqué reconstruit le projet à la volée sans nécessiter l'installation des applications ArtCraft. Supporte FigCraft, DesignCraft, VectorCraft, TextureCraft, PhotoCraft, SolidCraft, FilmCraft, MaterialCraft, EffectCraft, SoundCraft, ainsi que les fichiers PSD et SVG (avec une qualité supérieure aux aperçus natifs macOS).</p>
+<p>Dépôt : <a href="https://github.com/roccobot/CraftLook">CraftLook</a> · Roccobot</p>
+<h3>PxC — plugin d'IA générative pour PhotoCraft</h3>
+<p>PxC est un plugin écrit intégralement par Claude pour étendre PhotoCraft avec des fonctionnalités d'IA générative : texte en image, sélection de remplissage, édition de toile, agrandissement de toile, suppression d'arrière-plan, upscaling et plus encore. Compatible Windows et Linux. Il supporte les modèles MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit et Flux 3 Klein. Développé par un professionnel du graphisme cherchant un remplacement Photoshop avec capacités IA.</p>
+<p>Dépôt : <a href="https://github.com/phil-haderer/pxc">phil-haderer/pxc</a> · phil-haderer</p>
+<h3>Plugin Stream Deck pour LightCraft</h3>
+<p>Plugin open-source connecté directement au port local de contrôle de LightCraft (127.0.0.1:7980). Connexion bidirectionnelle : affichage en direct des curseurs et synchronisation des touches éclairées. Supporte encodeurs (cadrans de culling, transformation, préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR), masque AI (via SAM 3), navigation et export. Compatible Stream Deck 6.5+ et OpenDeck. Téléchargement via la page des releases du plugin.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">Débuts du plugin Stream Deck</a> · ResearcherMassive802</p>
+<h3>Explorateur de fichiers — miniatures PDFCraft pour Windows</h3>
+<p>Projet github <code>rajatmo/explorer-thumbs</code> fournissant des miniatures PDF dans l'explorateur Windows, solution temporaire au problème des vignettes non affichées lorsque PDFCraft est défini comme application PDF par défaut. Installation manuelle nécessaire.</p>
+<p><a href="https://github.com/rajatmo/explorer-thumbs">Explorer thumbs</a> · defnotaloser</p>
+<h3>Plugin FigCraft — documentation automatique de composants</h3>
+<p>Plugin FigCraft v0.11.0 (pré-version) qui documente automatiquement un composant pour le transfert. Fonctionnalité utile pour les workflows de design collaboratif.</p>
+<p><a href="https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/">Plugin FigCraft documentation</a> · DamageNo9147</p>
+<h2>Autour d'ArtCraft</h2>
+<h3>Dépôt ArtCraft — artcraft 0.42.1</h3>
+<p>Le dépôt principal ArtCraft passe à la version 0.42.1 (commit #2835). Cette release inclut un <strong>vérificateur de mises à jour manuelles</strong> intégré au menu Aide (<code>Help &gt; Check for Updates…</code>) avec contrôles en arrière-plan, affichage des versions courante et disponible, boutons explicites Update et restart, gestion des états de progression et d'erreur, et fallback vers les pages Releases. Utilise le core <code>craft-update</code> partagé avec les applications natives Craft, pinning commit immutable revu. Supporte Flatpak avec interface de mise à jour hôte et options de launcher en lecture seule.</p>
+<p>Suivi par plusieurs correctifs liés au chiffrement Linux (matrice multi-architecture x86_64, aarch64, riscv64 : DEB, RPM, AppImage, tar.gz, Arch, Flatpak), dual-push OCI Docker Hub, correction de persistance des données Flatpak, et migration complète vers <code>tokio::fs</code> dans les fonctions async pour éliminer les appels bloquants (SonarCloud).</p>
+<p><strong>Changement de licence majeur</strong> : le projet est relicense sous <strong>MIT OR Apache-2.0</strong> (#2043, octobre), alignant ArtCraft sur les autres apps de la suite Craft. Des travaux de nettoyage des assets tiers non couverts par cette licence sont toujours en cours.</p>
+<h3>Développement desktop natif Rust (artcraft-native)</h3>
+<p>L'application native pure Rust (egui, sans Tauri ni webview) progresse : détection des types de fichiers image/audio/vidéo/3D via <code>craft-sniff</code>, cutover vers <code>craft-image-codecs</code> pour le media cache (décompression-bomb protection, normalisation EXIF, alpha-frame guard), precision 16-bit des miniatures (box-averaging u64 accumulators), test de parité statique/animée legacy vs natif, et règles partagées AGENTS.md adoptées (RFC-0072). Le développement suit un processus rigoureux avec SonarCloud, CodeRabbit et Harden-Runner.</p>
+<h3>Écosystème général</h3>
+<p><strong>SolidCraft</strong> continue de faire parler de lui — qualifié de « remplacement potentiel pour AutoCAD, Rhino, SketchUp et Revit » via une approche « noyau paramétrique/NURBS + bancs d'atelier modulaire ». Architecture B-rep propre, WASM dans navigateur, CLI/MCP natif. Le subreddit reste actif sur ce sujet.</p>
+<p><strong>LightCraft</strong> — quelques utilisateurs signalent des problèmes de calibration (onglet déjà au maximum avec peu d'effet) et un bug ProRes (impossible à décoder après dernière mise à jour dans EffectCraft). Un utilisateur développe un plugin WordPress pour synchroniser des dossiers depuis LightCraft.</p>
+<p><strong>SoundCraft</strong> — interrogation sur un ralentissement du développement (passage de mises à jour quasi quotidiennes à un silence). L'auteur suppose un impact éventuel des changements des conditions d'utilisation de Claude concernant le clÃ©nage. Pas de confirmation officielle.</p>
+<p><strong>WordCraft</strong> — plusieurs retours sur les limites actuelles : absence de table des matières avancée, difficulté avec les tableaux faits via Claude/LibreOffice, demande de templates préconçus (lettres de candidature). Pas de réponse officielle à ces demandes.</p>
+<p><strong>Autres sujets</strong> : CAPYTALE citée comme plateforme de partage de carnets Jupyter avec paramètres IPython (liens courts réutilisables). Des discussions sur l'importation de pinceaux ProCreate dans ProCraft Android, la compatibilité RTL de VectorCraft, et l'usage de Claude dans WordCraft.</p>
+<p><strong>Logiciels comparables</strong> : rien de notable récemment dans ComfyUI, InvokeAI, Krita AI Diffusion ou Draw Things qui mériterait mention spécifique.</p>
+<h2>À signaler</h2>
+<ul>
+<li><strong>Cookie upload session token exposé dans la console</strong> (commit #2632) : des <code>console.log</code> de debug imprimaient le jeton de session d'upload en clair et la réponse d'inscription contenant la session signée. Corrigé, mais cela révèle une vulnérabilité de configuration qui aurait pu exposer des données sensibles. Aucun exploit connu.</li>
+<li><strong>Collecteur RSS 404</strong> : l'ancienne collecte de feeds d'ArtCraft via feed_watch.py rencontre une erreur HTTP 404 depuis le 22 novembre 2026. Le relais via extension de navigateur (state/reddit/ArtCraftAI/) fonctionne normalement et alimente le journal principal.</li>
+<li><strong>SolidCraft v0.49.1 ne démarre plus</strong> : un utilisateur rapporte que SolidCraft échoue à démarrer après la mise à jour v0.49.1, mêmes en mode administrateur et sans échec. Problème isolé, aucune autre remontée.</li>
+</ul>
+<h2>Volume</h2>
+<p>100 posts lus dans l'intervalle, 22 retenus, 78 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique et scientifique — 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-25.html</link>
@@ -5014,106 +5192,6 @@ https://www.reddit.com/r/ArtCraftAI/comments/1y0gjnq/pdfcraft_requires_libreoffi
 <p><strong>Développement en cours</strong> — l'activité sur le dépôt principal reste soutenue, avec des correctifs de build et des travaux sur le décodage d'images via <code>craft-image-codecs</code> (parité native/legacy pour les vignettes). Aucune nouvelle version publiée depuis la 0.41.1 (7 novembre).</p>
 <h2>Volume</h2>
 <p>0 publication Reddit dans l'intervalle des 4 derniers jours (source inaccessible), 10 commits examinés, 1 nouveau commit retenu (correctif de build), 9 déjà digérés, 1 article web retenu.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille Reddit — subreddits ajoutés</title>
-<link>https://opware2000.github.io/veille/editions/reddit-autres/2026-11-21.html</link>
-<guid isPermaLink="false">reddit-autres-2026-11-21</guid>
-<pubDate>Sun, 22 Nov 2026 12:04:55 +0100</pubDate>
-<category>Reddit — subreddits ajoutés</category>
-<description><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
-<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
-<h2>Cette semaine</h2>
-<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
-<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
-<h2>Volume</h2>
-<ul>
-<li>Subreddits collectés : 10</li>
-<li>Subreddits sans veille dédiée : 0</li>
-<li>Fils examinés : 0 (rien à examiner)</li>
-</ul>]]></description>
-<content:encoded><![CDATA[<h1>Veille Reddit — subreddits ajoutés</h1>
-<p>Cette veille est <strong>générique</strong> : elle traite les subreddits Reddit que l'extension de Nicolas dépose sur svt.tw sans qu'une veille dédiée ne les lise. Elle parle au nom de personne en particulier — elle existe pour qu'aucun relevé ne soit collecté pour rien.</p>
-<h2>Cette semaine</h2>
-<p>Aucun subreddit orphelin : les dix subreddits relevés par l'extension — ArtCraftAI, BestGitHubRepos, DeepSeek, LaTeX, LovingOpenSourceAI, hermesagent, macapps, opencode, opensource, vibecoding — ont chacun leur veille dédiée.</p>
-<p>Quand l'extension en ajoutera un, son contenu paraîtra ici, à la première édition du lundi.</p>
-<h2>Volume</h2>
-<ul>
-<li>Subreddits collectés : 10</li>
-<li>Subreddits sans veille dédiée : 0</li>
-<li>Fils examinés : 0 (rien à examiner)</li>
-</ul>]]></content:encoded>
-</item>
-<item>
-<title>Veille du 21 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-21.html</link>
-<guid isPermaLink="false">pedagogique-2026-11-21</guid>
-<pubDate>Sat, 21 Nov 2026 05:10:39 +0100</pubDate>
-<category>pédagogique et scientifique</category>
-<description><![CDATA[<h1>Veille du 21 novembre 2026</h1>
-<p><strong>Prioritaire — boîte académique</strong></p>
-<p>Aucun nouveau message prioritaire ce matin.</p>
-<hr />
-<h2>1. Informatique pédagogique et RUPN</h2>
-<p><strong>ARTEX, l'IA de piratage open source qui a paralysé la Commission européenne</strong> — La Commission confirme une cyberattaque via Artex, plateforme de tests d'intrusion fondée sur des LLM initialement publiée en open source. Les systèmes RH (Sysper) ont été hors ligne plus de dix jours à partir du 22 octobre. Un cas d'école sur ce que des IA disponibles publiquement permettent en cybersécurité offensive. (Korben, 20/11 ; sources Heise, Politico)</p>
-<p><strong>Signal bloque les captures d'écran pour tenir Gemini et Siri à distance</strong> — L'application de messagerie chiffrée active automatiquement son réglage « Screen security » quand elle détecte qu'un assistant IA tente de lire l'écran, sur iOS 27 et Android. Une parade à connaître pour les discussions vie privée et IA en classe. (Korben, 20/11)</p>
-<p><strong>200 lycées « prioritaires » : les régions contestent la méthode et le financement</strong> — Lancée par le ministre après la mobilisation lycéenne, la consultation nationale a recueilli plus de 100 000 contributions. La liste des 200 lycées jugés prioritaires pour des travaux a été publiée début novembre ; les régions contestent à la fois la méthode de sélection et le financement annoncé. (Café pédagogique, 20/11)</p>
-<p><strong>Cécile Rilhac nommée experte de haut niveau au ministère</strong> — Par arrêté du 17 novembre, l'ancienne députée, connue pour la loi Rilhac de 2021 sur le statut des directeurs d'école, rejoint le Conseil d'évaluation de l'école pour trois ans à compter du 23 novembre. (Café pédagogique, 20/11)</p>
-<p><strong>Inondations dans le Pas-de-Calais : écoles évacuées</strong> — Une vingtaine de communes touchées, deux écoles évacuées le 19 novembre, fermeture des établissements dans trois intercommunalités. (Café pédagogique, 20/11)</p>
-<h2>2. IA pour le développement</h2>
-<p><strong>Tencent publie les poids de Hy4 flash, MoE multimodal de 220 milliards de paramètres</strong> — Le modèle atteint 1 million de tokens de contexte, avec environ 12 milliards de paramètres actifs par token et 512 experts routés. Disponible sur Hugging Face en versions Hy4 flash, Hy4 flash-FP8 et Hy4 flash-Base. Poids ouverts. (ActuIA, 20/11)</p>
-<p><strong>TokenEconomizer : un plugin open source de Microsoft Research qui réduit de 18 à 31 % le coût des agents de code</strong> — Le plugin exploite les sessions passées d'un agent dans un dépôt pour limiter les tokens gaspillés, sans modifier l'agent ni le modèle. Testé sur 277 tâches SWE-Bench. Gratuit, open source. (ActuIA, 20/11)</p>
-<p><strong>Together Compiler : des agents d'IA réécrivent les noyaux GPU</strong> — Together AI présente un cadre où des agents réécrivent et fusionnent les noyaux GPU de la passe avant d'un modèle, avec des gains annoncés jusqu'à 2,6 fois les performances de moteurs optimisés. (ActuIA, 20/11)</p>
-<p><strong>Microsoft-Decision-1.1 disponible en général</strong> — Modèle de routage bâti sur Gemma 4 26B A4B, disponible dans Microsoft Foundry, OpenRouter et Vercel. Accepte désormais les images. Obtient 68 sur l'Artificial Analysis Decision Index. (ActuIA, 18/11)</p>
-<p><strong>Un MoE de 180 milliards de paramètres tourne sur un Mac de 32 Go</strong> — Hugging Face décrit comment exécuter Qwen3.8-Flash-Next sur un MacBook M5 avec 32 Go de mémoire unifiée, en diffusant les experts depuis le SSD via l'option <code>experts_offload</code> de <code>from_pretrained</code>. 13,9 tokens par seconde. (ActuIA, 19/11)</p>
-<p><strong>Orange publie cinq modèles Wolof-Qwen3 en open source</strong> — Adaptés de Qwen3 (0,6 à 14 milliards de paramètres) pour comprendre et générer le wolof tout en conservant le français et l'anglais. Disponibles sur Hugging Face. (ActuIA, 20/11)</p>
-<h2>3. IA et éducation</h2>
-<p><strong>Corée du Sud : des propositions de loi pour exclure jusqu'à dix ans les tricheurs à l'examen national</strong> — À la veille du CSAT (l'équivalent du bac), le Parti démocrate dépose trois textes visant à interdire pendant dix ans l'accès à l'examen et annuler l'admission à l'université en cas de fraude avérée avec l'IA. Un durcissement qui fait écho aux débats sur les lunettes connectées. (ActuIA, 18/11)</p>
-<p><strong>Face à l'IA, un dialogue entre le secondaire et le supérieur</strong> — Le Café pédagogique relaie l'idée que les deux niveaux partagent les mêmes difficultés face à l'IA générative, utilisée massivement et souvent clandestinement par les élèves comme par les étudiants. L'article appelle à partager interrogations et pistes entre enseignants des deux degrés. (Café pédagogique, 20/11)</p>
-<p><strong>Oregon poursuit OpenAI pour 2,035 milliards de dollars sur la sécurité des mineurs</strong> — Le procureur général de l'Oregon reproche à OpenAI d'avoir présenté ChatGPT comme sûr pour les enfants alors que l'entreprise en connaissait les lacunes, notamment l'absence fréquente de vérification du consentement parental. (ActuIA, 20/11)</p>
-<p><strong>Californie : Gavin Newsom recommande des normes de sécurité IA fixées par l'État</strong> — Le gouverneur présente un rapport prévoyant des normes minimales, des tests obligatoires, et un pouvoir d'ordonner l'arrêt d'urgence d'un modèle. (ActuIA, 18/11)</p>
-<h2>4. Python pour l'enseignement</h2>
-<p><strong>Rien de neuf cette semaine dans les sources Python suivies</strong> — Developpez.com (section Python), Human Coders News et Journal du hacker : aucun article nouveau à moins de quinze jours dans les journaux collectés. La semaine a surtout été riche en annonces d'outils de codage par IA (Vibe Desktop, VS Code 1.147, Codex), traitées dans le thème 2.</p>
-<p><strong>Aucune nouveauté cette semaine pour le thème Python.</strong></p>
-<h2>5. Sciences</h2>
-<p><strong>« Il faut mieux prendre en considération les sciences du vivant »</strong> — Marc-André Selosse signe une tribune dans Pour la Science (20/11) plaidant pour une revalorisation de l'enseignement des sciences du vivant face aux crises sanitaires, climatiques et écologiques. Un texte de fond pour les enseignants de SVT, à mettre en regard des réflexions sur les programmes.</p>
-<p><strong>La semaine en bref : il faut encore sauver le soldat Hubble</strong> — La NASA lance un appel au secteur spatial privé pour relever l'orbite du télescope Hubble, qui se désintégrera dans l'atmosphère dans environ sept ans. L'IA a par ailleurs aidé à déchiffrer les carnets posthumes de Gödel, révélant des théorèmes inédits. (Pour la Science, 20/11)</p>
-<p><strong>Les cellules souples : des formes sans angle qui pavent l'espace</strong> — Des mathématiciens ont identifié des formes capables de paver le plan ou l'espace avec un nombre minimal d'angles — jusqu'à aucun en trois dimensions. Des structures proches de ces « cellules souples » apparaissent dans la nature, l'art ou l'architecture. Une curiosité interdisciplinaire pour l'enseignement scientifique. (Pour la Science, 20/11)</p>
-<p><strong>3 nouveautés seulement cette semaine pour le thème Sciences</strong>, les articles de Pour la Science des jours précédents ayant déjà été traités.</p>
-<hr />
-<p><strong>À retenir</strong> : Une actualité marquée par la cybersécurité (ARTEX, Signal, faille NGINX) et par l'essor des modèles ouverts (Tencent Hy4 flash, Wolof-Qwen3, Olala mini). Côté éducation, les régulations internationales s'accélèrent (Oregon vs OpenAI, normes californiennes, Corée du Sud contre la triche par IA). Côté sciences, Marc-André Selosse rappelle l'urgence de revaloriser les sciences du vivant dans l'enseignement.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille du 21 novembre 2026</h1>
-<p><strong>Prioritaire — boîte académique</strong></p>
-<p>Aucun nouveau message prioritaire ce matin.</p>
-<hr />
-<h2>1. Informatique pédagogique et RUPN</h2>
-<p><strong>ARTEX, l'IA de piratage open source qui a paralysé la Commission européenne</strong> — La Commission confirme une cyberattaque via Artex, plateforme de tests d'intrusion fondée sur des LLM initialement publiée en open source. Les systèmes RH (Sysper) ont été hors ligne plus de dix jours à partir du 22 octobre. Un cas d'école sur ce que des IA disponibles publiquement permettent en cybersécurité offensive. (Korben, 20/11 ; sources Heise, Politico)</p>
-<p><strong>Signal bloque les captures d'écran pour tenir Gemini et Siri à distance</strong> — L'application de messagerie chiffrée active automatiquement son réglage « Screen security » quand elle détecte qu'un assistant IA tente de lire l'écran, sur iOS 27 et Android. Une parade à connaître pour les discussions vie privée et IA en classe. (Korben, 20/11)</p>
-<p><strong>200 lycées « prioritaires » : les régions contestent la méthode et le financement</strong> — Lancée par le ministre après la mobilisation lycéenne, la consultation nationale a recueilli plus de 100 000 contributions. La liste des 200 lycées jugés prioritaires pour des travaux a été publiée début novembre ; les régions contestent à la fois la méthode de sélection et le financement annoncé. (Café pédagogique, 20/11)</p>
-<p><strong>Cécile Rilhac nommée experte de haut niveau au ministère</strong> — Par arrêté du 17 novembre, l'ancienne députée, connue pour la loi Rilhac de 2021 sur le statut des directeurs d'école, rejoint le Conseil d'évaluation de l'école pour trois ans à compter du 23 novembre. (Café pédagogique, 20/11)</p>
-<p><strong>Inondations dans le Pas-de-Calais : écoles évacuées</strong> — Une vingtaine de communes touchées, deux écoles évacuées le 19 novembre, fermeture des établissements dans trois intercommunalités. (Café pédagogique, 20/11)</p>
-<h2>2. IA pour le développement</h2>
-<p><strong>Tencent publie les poids de Hy4 flash, MoE multimodal de 220 milliards de paramètres</strong> — Le modèle atteint 1 million de tokens de contexte, avec environ 12 milliards de paramètres actifs par token et 512 experts routés. Disponible sur Hugging Face en versions Hy4 flash, Hy4 flash-FP8 et Hy4 flash-Base. Poids ouverts. (ActuIA, 20/11)</p>
-<p><strong>TokenEconomizer : un plugin open source de Microsoft Research qui réduit de 18 à 31 % le coût des agents de code</strong> — Le plugin exploite les sessions passées d'un agent dans un dépôt pour limiter les tokens gaspillés, sans modifier l'agent ni le modèle. Testé sur 277 tâches SWE-Bench. Gratuit, open source. (ActuIA, 20/11)</p>
-<p><strong>Together Compiler : des agents d'IA réécrivent les noyaux GPU</strong> — Together AI présente un cadre où des agents réécrivent et fusionnent les noyaux GPU de la passe avant d'un modèle, avec des gains annoncés jusqu'à 2,6 fois les performances de moteurs optimisés. (ActuIA, 20/11)</p>
-<p><strong>Microsoft-Decision-1.1 disponible en général</strong> — Modèle de routage bâti sur Gemma 4 26B A4B, disponible dans Microsoft Foundry, OpenRouter et Vercel. Accepte désormais les images. Obtient 68 sur l'Artificial Analysis Decision Index. (ActuIA, 18/11)</p>
-<p><strong>Un MoE de 180 milliards de paramètres tourne sur un Mac de 32 Go</strong> — Hugging Face décrit comment exécuter Qwen3.8-Flash-Next sur un MacBook M5 avec 32 Go de mémoire unifiée, en diffusant les experts depuis le SSD via l'option <code>experts_offload</code> de <code>from_pretrained</code>. 13,9 tokens par seconde. (ActuIA, 19/11)</p>
-<p><strong>Orange publie cinq modèles Wolof-Qwen3 en open source</strong> — Adaptés de Qwen3 (0,6 à 14 milliards de paramètres) pour comprendre et générer le wolof tout en conservant le français et l'anglais. Disponibles sur Hugging Face. (ActuIA, 20/11)</p>
-<h2>3. IA et éducation</h2>
-<p><strong>Corée du Sud : des propositions de loi pour exclure jusqu'à dix ans les tricheurs à l'examen national</strong> — À la veille du CSAT (l'équivalent du bac), le Parti démocrate dépose trois textes visant à interdire pendant dix ans l'accès à l'examen et annuler l'admission à l'université en cas de fraude avérée avec l'IA. Un durcissement qui fait écho aux débats sur les lunettes connectées. (ActuIA, 18/11)</p>
-<p><strong>Face à l'IA, un dialogue entre le secondaire et le supérieur</strong> — Le Café pédagogique relaie l'idée que les deux niveaux partagent les mêmes difficultés face à l'IA générative, utilisée massivement et souvent clandestinement par les élèves comme par les étudiants. L'article appelle à partager interrogations et pistes entre enseignants des deux degrés. (Café pédagogique, 20/11)</p>
-<p><strong>Oregon poursuit OpenAI pour 2,035 milliards de dollars sur la sécurité des mineurs</strong> — Le procureur général de l'Oregon reproche à OpenAI d'avoir présenté ChatGPT comme sûr pour les enfants alors que l'entreprise en connaissait les lacunes, notamment l'absence fréquente de vérification du consentement parental. (ActuIA, 20/11)</p>
-<p><strong>Californie : Gavin Newsom recommande des normes de sécurité IA fixées par l'État</strong> — Le gouverneur présente un rapport prévoyant des normes minimales, des tests obligatoires, et un pouvoir d'ordonner l'arrêt d'urgence d'un modèle. (ActuIA, 18/11)</p>
-<h2>4. Python pour l'enseignement</h2>
-<p><strong>Rien de neuf cette semaine dans les sources Python suivies</strong> — Developpez.com (section Python), Human Coders News et Journal du hacker : aucun article nouveau à moins de quinze jours dans les journaux collectés. La semaine a surtout été riche en annonces d'outils de codage par IA (Vibe Desktop, VS Code 1.147, Codex), traitées dans le thème 2.</p>
-<p><strong>Aucune nouveauté cette semaine pour le thème Python.</strong></p>
-<h2>5. Sciences</h2>
-<p><strong>« Il faut mieux prendre en considération les sciences du vivant »</strong> — Marc-André Selosse signe une tribune dans Pour la Science (20/11) plaidant pour une revalorisation de l'enseignement des sciences du vivant face aux crises sanitaires, climatiques et écologiques. Un texte de fond pour les enseignants de SVT, à mettre en regard des réflexions sur les programmes.</p>
-<p><strong>La semaine en bref : il faut encore sauver le soldat Hubble</strong> — La NASA lance un appel au secteur spatial privé pour relever l'orbite du télescope Hubble, qui se désintégrera dans l'atmosphère dans environ sept ans. L'IA a par ailleurs aidé à déchiffrer les carnets posthumes de Gödel, révélant des théorèmes inédits. (Pour la Science, 20/11)</p>
-<p><strong>Les cellules souples : des formes sans angle qui pavent l'espace</strong> — Des mathématiciens ont identifié des formes capables de paver le plan ou l'espace avec un nombre minimal d'angles — jusqu'à aucun en trois dimensions. Des structures proches de ces « cellules souples » apparaissent dans la nature, l'art ou l'architecture. Une curiosité interdisciplinaire pour l'enseignement scientifique. (Pour la Science, 20/11)</p>
-<p><strong>3 nouveautés seulement cette semaine pour le thème Sciences</strong>, les articles de Pour la Science des jours précédents ayant déjà été traités.</p>
-<hr />
-<p><strong>À retenir</strong> : Une actualité marquée par la cybersécurité (ARTEX, Signal, faille NGINX) et par l'essor des modèles ouverts (Tencent Hy4 flash, Wolof-Qwen3, Olala mini). Côté éducation, les régulations internationales s'accélèrent (Oregon vs OpenAI, normes californiennes, Corée du Sud contre la triche par IA). Côté sciences, Marc-André Selosse rappelle l'urgence de revaloriser les sciences du vivant dans l'enseignement.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

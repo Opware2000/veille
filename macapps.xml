@@ -6,9 +6,56 @@
 <description>Veille quotidienne du subreddit r/macapps — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/macapps.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 00:12:52 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:12:24 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-26.html</link>
+<guid isPermaLink="false">macapps-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:12:24 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Ladybird, navigateur web indépendant construit à partir de zéro, publie sa première version alpha téléchargeable pour macOS et Linux. Apple développe en interne l'application « Harbor » qui transforme plusieurs Mac reliés en cluster unique d'inférence IA locale — projet sous la marque Claris, en aperçu privé. Claude for Mac propose désormais d'installer les artefacts créés avec l'IA comme de véritables applications de bureau natives, avec propre icône, fenêtres séparées et contrôles de permission.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Ladybird — navigateur web en version alpha</strong></p>
+<p>L'équipe SerenityOS a publié la première version alpha publique de Ladybird, un navigateur web dont le moteur de rendu est entièrement construit à partir de zéro plutôt que dérivé de Blink ou WebKit. Le code, écrit en Rust et C++, est sous licence BSD 2-Clause. Le dépôt compte près de 69 000 étoiles et reçoit des commits quotidiens. Des binaires macOS et Linux sont disponibles au téléchargement. La fonctionnalité phare est son indépendance : ni Chromium, ni Firefox ne servent de socle, ce qui en fait le seul grand navigateur à n'emprunter le chemin de personne. <a href="https://github.com/LadybirdBrowser/ladybird">LadybirdBrowser/ladybird · GitHub</a></p>
+<p><strong>Harbor — serveur d'inférence IA locale avec clustering Thunderbolt 5</strong></p>
+<p>Le leaker Aaron Perris a mis au jour dans les fichiers d'Apple une nouvelle application appelée Harbor, actuellement en aperçu privé sous la marque Claris. Harbor transforme le Mac en serveur d'inférence IA privée : les modèles ouverts s'exécutent en local sur puce Apple Silicon, aucune donnée ne quitte le matériel. La fonctionnalité majeure est le clustering — deux Mac ou plus reliés en Thunderbolt 5 voient leur mémoire unifiée mutualisée en une seule ressource d'inférence, permettant de faire tourner des modèles dépassant la capacité d'une machine isolée ou de servir davantage de requêtes simultanées. Aucun ligne de commande n'est requise : détection automatique des appareils, téléchargement et chargement des modèles depuis l'interface graphique. Une publication publique semble prévue dans les semaines à venir. <a href="https://www.macstories.net/linked/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/">MacStories / 9to5Mac</a></p>
+<p><strong>Claude « Install as app » — artefacts Claude deviennent applications de bureau natives</strong></p>
+<p>Anthropic a introduit dans Claude for Mac et Windows une fonctionnalité baptisée « Install as app ». À partir de n'importe quel artefact créé avec Claude, on peut l'installer comme une application de bureau à part entière : elle obtient sa propre icône, s'ouvre dans sa propre fenêtre externe à l'interface Claude, peut envoyer des notifications, ajouter des entrées au menu bar, et bénéficie des connecteurs Claude. L'utilisateur choisit le niveau d'accès aux fonctions du système. Les applications ainsi créées peuvent être partagées. Fonctionnalité en bêta, uniquement disponible dans Claude for Mac et Windows. <a href="https://9to5mac.com/2026/11/24/anthropic-just-gave-claude-users-a-new-way-to-make-mac-apps/">9to5Mac</a></p>
+<p><strong>Inky — inférence Inkling 2 Mini sur Apple Silicon</strong></p>
+<p>Projet Rust (<code>GPL-3.0</code>, 8 étoiles GitHub, dernier commit 25 nov.) portant l'inférence du modèle Thinking Machines Inkling 2 Mini sur les puces Apple. Disponible aussi via Homebrew : <code>brew install --cask ink</code>. <a href="https://github.com/robotgamedevelopers/inky">robotgamedevelopers/inky · GitHub</a></p>
+<p><strong>Grokmind — connexion Grok Bot aux vaults Obsidian</strong></p>
+<p>Le bot Grok se connecte désormais aux vaults Obsidian pour gérer notes et fichiers. Extension utile pour les flux de travail basés sur Obsidian combinés à l'IA. <a href="https://www.producthunt.com/products/grok-bot">Product Hunt</a></p>
+<h2>Extensions et greffons</h2>
+<p>Cette rubrique est vide pour cette édition.</p>
+<h2>Volume</h2>
+<p>230 entrées examinées dans la shortlist, 7 retenus, 223 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/macapps posts.jsonl, HN via macapps journal, Feed alternatives, Setapp newsletter, 9to5Mac, MacStories, Homebrew nouveauté, MacG, iGeneration, forum MacG. Fichier shortlist <code>cache/veille/shortlist/macapps.json</code> (230 entrées, non tronqué).</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Ladybird, navigateur web indépendant construit à partir de zéro, publie sa première version alpha téléchargeable pour macOS et Linux. Apple développe en interne l'application « Harbor » qui transforme plusieurs Mac reliés en cluster unique d'inférence IA locale — projet sous la marque Claris, en aperçu privé. Claude for Mac propose désormais d'installer les artefacts créés avec l'IA comme de véritables applications de bureau natives, avec propre icône, fenêtres séparées et contrôles de permission.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Ladybird — navigateur web en version alpha</strong></p>
+<p>L'équipe SerenityOS a publié la première version alpha publique de Ladybird, un navigateur web dont le moteur de rendu est entièrement construit à partir de zéro plutôt que dérivé de Blink ou WebKit. Le code, écrit en Rust et C++, est sous licence BSD 2-Clause. Le dépôt compte près de 69 000 étoiles et reçoit des commits quotidiens. Des binaires macOS et Linux sont disponibles au téléchargement. La fonctionnalité phare est son indépendance : ni Chromium, ni Firefox ne servent de socle, ce qui en fait le seul grand navigateur à n'emprunter le chemin de personne. <a href="https://github.com/LadybirdBrowser/ladybird">LadybirdBrowser/ladybird · GitHub</a></p>
+<p><strong>Harbor — serveur d'inférence IA locale avec clustering Thunderbolt 5</strong></p>
+<p>Le leaker Aaron Perris a mis au jour dans les fichiers d'Apple une nouvelle application appelée Harbor, actuellement en aperçu privé sous la marque Claris. Harbor transforme le Mac en serveur d'inférence IA privée : les modèles ouverts s'exécutent en local sur puce Apple Silicon, aucune donnée ne quitte le matériel. La fonctionnalité majeure est le clustering — deux Mac ou plus reliés en Thunderbolt 5 voient leur mémoire unifiée mutualisée en une seule ressource d'inférence, permettant de faire tourner des modèles dépassant la capacité d'une machine isolée ou de servir davantage de requêtes simultanées. Aucun ligne de commande n'est requise : détection automatique des appareils, téléchargement et chargement des modèles depuis l'interface graphique. Une publication publique semble prévue dans les semaines à venir. <a href="https://www.macstories.net/linked/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/">MacStories / 9to5Mac</a></p>
+<p><strong>Claude « Install as app » — artefacts Claude deviennent applications de bureau natives</strong></p>
+<p>Anthropic a introduit dans Claude for Mac et Windows une fonctionnalité baptisée « Install as app ». À partir de n'importe quel artefact créé avec Claude, on peut l'installer comme une application de bureau à part entière : elle obtient sa propre icône, s'ouvre dans sa propre fenêtre externe à l'interface Claude, peut envoyer des notifications, ajouter des entrées au menu bar, et bénéficie des connecteurs Claude. L'utilisateur choisit le niveau d'accès aux fonctions du système. Les applications ainsi créées peuvent être partagées. Fonctionnalité en bêta, uniquement disponible dans Claude for Mac et Windows. <a href="https://9to5mac.com/2026/11/24/anthropic-just-gave-claude-users-a-new-way-to-make-mac-apps/">9to5Mac</a></p>
+<p><strong>Inky — inférence Inkling 2 Mini sur Apple Silicon</strong></p>
+<p>Projet Rust (<code>GPL-3.0</code>, 8 étoiles GitHub, dernier commit 25 nov.) portant l'inférence du modèle Thinking Machines Inkling 2 Mini sur les puces Apple. Disponible aussi via Homebrew : <code>brew install --cask ink</code>. <a href="https://github.com/robotgamedevelopers/inky">robotgamedevelopers/inky · GitHub</a></p>
+<p><strong>Grokmind — connexion Grok Bot aux vaults Obsidian</strong></p>
+<p>Le bot Grok se connecte désormais aux vaults Obsidian pour gérer notes et fichiers. Extension utile pour les flux de travail basés sur Obsidian combinés à l'IA. <a href="https://www.producthunt.com/products/grok-bot">Product Hunt</a></p>
+<h2>Extensions et greffons</h2>
+<p>Cette rubrique est vide pour cette édition.</p>
+<h2>Volume</h2>
+<p>230 entrées examinées dans la shortlist, 7 retenus, 223 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/macapps posts.jsonl, HN via macapps journal, Feed alternatives, Setapp newsletter, 9to5Mac, MacStories, Homebrew nouveauté, MacG, iGeneration, forum MacG. Fichier shortlist <code>cache/veille/shortlist/macapps.json</code> (230 entrées, non tronqué).</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-25.html</link>
