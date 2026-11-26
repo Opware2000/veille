@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — Jeudi 26 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — Jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La fermeture de l'espace de travail LaTeX Prism d'OpenAI au 1er janvier suscite des débats sur la dépendance aux outils hébergés. Le moteur TeXyoN, écrit en Rust, publie son code source avec aperçu en direct et extension VS Code. Une mise à jour de TeXstudio introduit un bogue de saisie à éviter.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>TeXyoN — Moteur TeX pour aperçu en direct (code source ouvert)</h3>
+<p>Le projet TeXyoN (dénommé ainsi en référence à la tachyon, particule hypothétique plus rapide que la lumière) est un moteur TeX written entirely in Rust conçu pour rafraîchir les changements aussi vite que possible. Il vient de publier son code source complet, accompagné d'un billet détaillant les décisions d'architecture, des benchmarks de performance et une liste de bugs connus. Le projet inclut également une extension VS Code et un paquet npm compilant le moteur en WASM pour créer des expériences interactives dans le navigateur. L'auteur a comparé la sortie de compilation complète sur plus de 9 000 documents avec TexLive ; il indique une compatibilité très élevée bien que certaines limitations subsistent en version initiale.</p>
+<ul>
+<li>Dépôt : <a href="https://github.com/texyon-org/texyon">https://github.com/texyon-org/texyon</a></li>
+<li>Billet technique : <a href="https://yendric.be/introducing-texyon/">https://yendric.be/introducing-texyon/</a></li>
+<li>Extension VS Code : <a href="https://marketplace.visualstudio.com/items?itemName=texyon.texyon-live-preview">https://marketplace.visualstudio.com/items?itemName=texyon.texyon-live-preview</a></li>
+<li>Paquet npm : <code>npm install texyon</code></li>
+</ul>
+<p>La licence n'a pas été précisée dans les informations consultées ; vérifier sur le dépôt avant toute utilisation commerciale.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>TeXstudio 4.9.9 — Bogue de saisie des accolades.</strong> En mettant à jour depuis la version 4.9.7, TeXstudio 4.9.9 ne ferme plus automatiquement l'accolade gauche <code>{</code> au-dessus du texte sélectionné : au lieu d'entourer le texte, il remplace celui-ci par <code>{</code>. Les autres symboles <code>()</code>, <code>[]</code>, <code>\left{ \right}</code> conservent leur comportement attendu. Un correctif est attendu. Si vous utilisez cette version, faites attention lors de la saisie d'environnements ou de macros entre accolades.</p>
+<p><strong>Overleaf — Article sur la numérisation de documents accessibles dans les bibliothèques académiques.</strong> Overleaf publie un article de synthèse reprenant les études de cas rapportées dans la première section d'un article publié dans le <em>Journal of eScience Librarianship</em> (del Junco et al. 2026), qui recueille les retours de bibliothécaires universitaires (University of Oklahoma, Princeton University, KAUST) sur leurs pratiques d'enseignement de LaTeX. Pour les chercheurs ou enseignants souhaitant s'appuyer sur des méthodes éprouvées, les liens vers les études originales sont fournis dans l'article.</p>
+<ul>
+<li>Article Overleaf : <a href="https://www.overleaf.com/blog/twelve-libraries-teach-latex-heres-what-they-have-in-common-overleaf">https://www.overleaf.com/blog/twelve-libraries-teach-latex-heres-what-they-have-in-common-overleaf</a></li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<p><strong>Beamer — Spécifier l'encodage T1 pour une police de titre uniquement.</strong> Une question récente sur TeX Stack Exchange montre comment contourner une limitation de Beamer : lorsqu'on utilise <code>\setbeamerfont</code> pour appliquer une police personnalisée (comme Oswald) aux titres de diapositive, l'encodage de police défini au niveau de la présentation (<code>\setbeamerfont</code>) n'est pas toujours appliqué correctement si la police ne charge pas son encodage via le mécanisme <code>fontspec</code>. La solution consiste à utiliser <code>\fontencoding{T1}\usebeamerfont{title}</code> directement dans le contenu ou à définir des fontes fixes via <code>\DeclareFixedFont</code> pour chaque taille de titre désirée. Cette astuce s'applique à toute présentation nécessitant une police différente de celle du corps du texte.</p>
+<p><strong>Prism d'OpenAI — Liste de vérification pour l'export.</strong> Les utilisateurs de Prism doivent exporter leurs projets avant le 1er janvier 2027. L'export se fait via Paramètres → Contrôles de données → Exporter tous les projets. Il est recommandé de télécharger ensuite chaque projet individuellement en mode PDF, de vérifier que la version exportée correspond au fichier original, et de conserver les fichiers <code>.tex</code>, figures et <code>.bib</code>. L'historique, les commentaires en ligne et les liens Zotero ne sont pas transférables.</p>
+<ul>
+<li>Guide complet : <a href="https://www.reddit.com/r/LaTeX/comments/1y3yquk/are_you_tired_of_ai_tools_shutting_down_and/">https://www.reddit.com/r/LaTeX/comments/1y3yquk/are_you_tired_of_ai_tools_shutting_down_and/</a></li>
+</ul>
+<h2>Volume — 37 entrées examinéees, 4 retenues, 33 écartées (10,8 %)</h2>
+<p>Entrées traitées depuis les sources <code>reddit/LaTeX</code> (3 jours), <code>texse</code> (3 jours), <code>overleaf</code> (3 jours), <code>hn_lobsters_watch.py</code> (3 jours). Tous les identifiants examinés consignés dans <code>digested.txt</code>.</p>
+<footer>Édition du jeudi 26 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
