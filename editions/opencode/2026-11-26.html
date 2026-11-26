@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opencode — jeudi 26 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opencode.xml" title="r/opencode">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opencode — jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Trois sujets ce jour : une étude mesurant la dégradation du mode plan sans interaction humaine (+38 % de coût), le relaunch d'opencode-usage par un fork communautaire après disparition du projet original, et une application open source de suivi tokenisé multi-agents. Le reste du subreddit oscille entre conseils d'achat et dépannage.</p>
+<hr />
+<h2>Versions et fonctionnalités</h2>
+<p><strong>Bêta mobile OpenCode pleine, statut incertain.</strong> Un utilisateur signale le message « Cette version bêta est pleine » sur l'application iOS et demande une estimation de déblocage ainsi qu'un moyen de notification. Pas de réponse officielle à ce jour, les commentaires ne font que s'enquérir des mêmes informations (6 réponses).</p>
+<hr />
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p><strong>Le mode plan sans intervention coûte 38 % de plus et réduit le taux de résolution.</strong> wwdennis5 a testé ce qui se passe quand on active le mode plan dans DeepSeek V4.1 Flash sans interagir réellement avec sa sortie. Résultat chiffré : dégradation du taux de résolution des tâches et surcoût de 38 % en jetons par rapport à un flux autonome direct. La recommandation est claire : n'utiliser le mode plan que si l'on intervient pour affiner ou rediriger l'exécution, sinon il alourdit le travail sans apport.</p>
+<p><strong>Comparaison accidentelle : inférence directe vs quantisation OpenCode Go.</strong> squirrelscrush a laissé tourner son agent OpenCode en arrière-plan et a basculé l'agent principal vers la plateforme API directe de DeepSeek au lieu du DeepSeek intégré à OpenCode Go. Constat : différence notable de performance, confirmant les soupçons de quantification appliquée par OpenCode sur Go au détriment de la qualité. Il s'agit d'une expérience isolée, non contrôlée.</p>
+<hr />
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>coding-agent-toolkit — suivi tokenisé multi-agents, MIT.</strong> Remote_Book a publié une application pour centraliser le suivi de l'utilisation de jetons sur plusieurs agents (OpenCode, Claude Code, Codex). Développé en TypeScript sous licence MIT, le dépôt compte 55 étoiles sur GitHub et est actif jusqu'au 25 novembre. Des utilisateurs étaient déjà présents sur r/herdr avant l'annonce. Dépôt vérifié sur GitHub (GaganSD/coding-agent-toolkit, étoilé 55, mis à jour le 25/11/2026, licence MIT).</p>
+<p><strong>opencode-usage-v2 — fork communautaire après disparition du projet original.</strong> fcomovaz annonce le relancement de opencode-usage, outil terminal de suivi d'utilisation et de coûts des tokens OpenCode, après la suppression du dépôt original et du package PyPI (404). Le projet maintient la compatibilité avec les versions v1 et v2 d'OpenCode. Le lien vers le nouveau dépôt n'est pas directement accessible depuis la page Reddit (lien tronqué vers GitHub).</p>
+<p><strong>Aetheris Microbrains — support OpenCode ajouté.</strong> drtikov ajoute le support d'OpenCode à Aetheris Microbrains, décrit comme une porte de sécurité pré-vol sub-ms destinée aux agents de codage. Aucun lien vers le code n'a été trouvé via l'API GitHub (dépôt introuvable ou privé).</p>
+<hr />
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Orchestration d'agents sans perdre le fil.</strong> Plus de vingt commentaires se penchent sur la structuration d'orchestration multi-agents, avec des configurations partageant leurs choix réels de modèles assignés par tâche et d'organisation des sessions. La discussion tourne autour de la séparation travail/personnel et de l'attribution de modèles spécifiques à chaque rôle agent.</p>
+<hr />
+<h2>Volume</h2>
+<p>108 entrées dans la shortlist (56 Reddit, 50 Hacker News, 1 Latent Space, 1 Simon Willison), 7 retenues, 101 écartées. Taux de rétention : 6,5 %.</p>
+<hr />
+<h2>Éléments écartés</h2>
+<p><strong>Non pertinents :</strong> questions de dépannage (OpenChamber, session cache, reconnexion après mise à jour), demandes de conseil d'achat (« quel abonnement choisir », « quelle configuration de matériel », « quel modèle est le meilleur »), plaintes sans fait vérifiable (« ça ne marche pas », limite atteinte sans usage), captures d'écran humoristiques, contenus sur T3 Code unrelated.</p>
+<p><strong>Hacker News :</strong> articles généraux sans lien avec les agents de codage (économie, politique, science, culture technique), demand-threading et posts en dessous du seuil de pertinence.</p>
+<hr />
+<h3>Identifiants traités (ajoutés à digested.txt)</h3>
+<p>t3_1y5for9 t3_1y5fmfl t3_1y5e2y8 t3_1y5drzz https://news.ycombinator.com/item?id=50645010 t3_1y5d7dp t3_1y5d4iy https://news.ycombinator.com/item?id=50644817 t3_1y5cp4t t3_1y5coue https://news.ycombinator.com/item?id=50643836 t3_1y5b46u https://news.ycombinator.com/item?id=50643720 t3_1y5aumq https://news.ycombinator.com/item?id=50643199 https://news.ycombinator.com/item?id=50643129 t3_1y58d4p t3_1y57tiz t3_1y56doo t3_1y55xje t3_1y55pe3 t3_1y55d4r https://news.ycombinator.com/item?id=50641171 t3_1y541kj t3_1y53hff t3_1y52521 https://news.ycombinator.com/item?id=50639929 https://news.ycombinator.com/item?id=50639619 t3_1y50kmn https://news.ycombinator.com/item?id=50638940 t3_1y4ydaz https://news.ycombinator.com/item?id=50638647 https://news.ycombinator.com/item?id=50638523 https://news.ycombinator.com/item?id=50638503 urn:latent-space:post:post_d721d443-2cdb-44ba-8da8-666b8311df8b https://news.ycombinator.com/item?id=50638478 https://news.ycombinator.com/item?id=50638320 https://news.ycombinator.com/item?id=50638276 https://news.ycombinator.com/item?id=50638220 https://news.ycombinator.com/item?id=50638158 https://news.ycombinator.com/item?id=50638075 https://news.ycombinator.com/item?id=50638070 https://news.ycombinator.com/item?id=50638032 t3_1y4wzdf https://news.ycombinator.com/item?id=50637936 https://news.ycombinator.com/item?id=50637891 https://news.ycombinator.com/item?id=50637890 https://news.ycombinator.com/item?id=50637888 https://news.ycombinator.com/item?id=50637874 https://news.ycombinator.com/item?id=50637871 https://news.ycombinator.com/item?id=50637866 https://news.ycombinator.com/item?id=50637863 https://news.ycombinator.com/item?id=50637686 https://news.ycombinator.com/item?id=50637661 https://news.ycombinator.com/item?id=50637507 t3_1y4v1s8 https://simonwillison.net/2026/Nov/24/llm-inflection-points/ t3_1y4r6en t3_1y4paix t3_1y4o8gm t3_1y4nrac t3_1y4nkhz t3_1y4m9o9 t3_1y4losy t3_1y4l1is t3_1y4kj04 t3_1y4key7 t3_1y4j11y t3_1y4iadu t3_1y4hxxy t3_1y4hjtl t3_1y4gyvn t3_1y4g774 t3_1y4g2tg t3_1y4g0f7 t3_1y4ervf t3_1y4dbke t3_1y4cwho t3_1y4bumd t3_1y4a7sb t3_1y4a404 t3_1y49gbq t3_1y48lf8 t3_1y47q45 t3_1y46qfz hn-50635826 hn-50637725 hn-50638638 hn-50641710 hn-50644793</p>
+<footer>Édition du jeudi 26 novembre 2026 — <a href="https://opware2000.github.io/veille/opencode.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

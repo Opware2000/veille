@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — jeudi 26 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Un thread sur Hacker News présente les leçons tirées de l'exécution du cadre de sandboxing DSec de DeepSeek dans le cloud public (Vibrant Labs). Des bugs de mise en cache de l'API DeepSeek provoquent des pics de 10 à 30 %, avec une facture journalière pouvant atteindre 25 $. Enfin, un projet Rust reconduit DwarfStar pour l'inférence explicite et validée par matériel sur DGX-Sark.</p>
+<h2>Modèles et poids</h2>
+<p><strong>PALIMPSEST : entrée de DeepSeek au « Colisée Silicon »</strong> — Huit modèles de base ont été invités à concevoir leur propre « gladiateur » sans persona ni outil additionnel. L'entrée de DeepSeek, nommée PALIMPSEST, est décrite comme un automate fin aux multiples yeux, en papier et laiton, dont le slogan est « Laissez la prochaine ligne décider ». Il guette les ouvertures et ajuste rapidement sa position. La compétition reste un exercice de prompting créatif ; il n'y a aucune annonce de nouveau modèle ou de nouvelle série de weights.</p>
+<h2>Prix, accès et quotas</h2>
+<p><strong>Bugs de mise en cache de l'API DeepSeek</strong> — Un suivi publié le 25 novembre sur Substack rapporte des écarts soudains de coût : les erreurs de cache étaient à 10 % le 22 novembre (coût à 6 $) puis ont atteint 30 % le 24 novembre, portant la dépense à 26 $. Deux causes possibles sont évoquées : un changement de stratégie de DeepSeek visant à réduire le trafic, ou des modifications récentes de Copilot (l'extension) qui changeraient légèrement l'historique de conversation et annihilent le cache. Le suivi des métriques d'utilisation sera renforcé dans l'extension pour identifier l'auteur des pertes de cache.</p>
+<p><strong>Anthropic augmente ses prix entreprise de dix fois</strong> — Une discussion indique qu'Anthropic a multiplié ses tarifs par dix pour une entreprise utilisatrice. L'information provient uniquement d'un post Reddit sans chiffres précis ni lien vérifiable.</p>
+<h2>Auto-hébergement et quantification</h2>
+<p><strong>ds4-dfm-rs : continuation en Rust de DwarfStar pour inférence grande échelle sur DGX-Sark</strong> — Le dépôt <a href="https://github.com/Baekpica/ds4-dfm-rs">Baekpica/ds4-dfm-rs</a> (licence MIT, 22 étoiles, mis à jour le 25 novembre 2026) propose un hébergement Rust de DwarfStar, visé à l'inférence de grands modèles explicite et validée par le matériel sur DGX-Sark. DwarfStar avait précédemment attiré l'attention pour son approche matérielle-native de l'inférence ; cette reconduite en Rust vise notamment une meilleure portabilité. Aucune mesure de débit n'est communiquée dans le fil Reddit.</p>
+<h2>Intégrations et outils tiers</h2>
+<p><strong>DSH Companion : contrôle multi-PC depuis le téléphone via DeepSeek Harness</strong> — Le projet <a href="https://github.com/TintaYNodos/dsh-mobile-companion">TintaYNodos/dsh-mobile-companion</a> offre un accès mobile à DeepSeek Harness en faisant le pont entre un téléphone distant et plusieurs PC connectés via ZeroTier ou Tailscale. Fonctionnalités notables : bascule automatique entre machines, reconnexion au réseau suspendu, télémétrie en temps réel (CPU, RAM, disque, batterie, température), commandes rapides par profil (écriture, code, tâches) avec détection automatique du contexte. Débit faible (2 étoiles) mais solution ciblée sur un besoin précis.</p>
+<p><strong>Canevas de workflow visuel multi-agents open-source</strong> — Un autre projet open-source (mentionné dans un fil Reddit) apporte un canevas de workflow visuel conçu spécifiquement pour DeepSeek Harness, avec routage conditionnel et boucles de réessai bornées. L'écosystème d'outils autour de Harness se dense continuellement.</p>
+<p><strong>Trading Command Suite (Alpha)</strong> — Un développeur publie une suite de commande de trading construite à partir de zéro, reposant à 90 % sur les agents DeepSeek. Le projet inclut un intranet interne comme interface de centralisation et décrit les techniques employées pour rationaliser la pile multi-agents. Le code est rendu open-source ; aucun lien direct vers le dépôt ne figure dans le post original.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>DeepSeek détecte une RCE sur le serveur de développement Vite que Claude a refusée</strong> — Un retour d'expérience concret relate comment DeepSeek a analysé des logs à l'échelle du système pour repérer une menace inactive : un service était tombé sur un port ouvert et un serveur de développement s'était lancé à sa place sans que le développeur ne s'en aperçoive, ouvrant la porte à une exploitation. DeepSeek a identifié le vecteur ; Claude avait rejeté la même demande d'analyse. Il s'agit d'un témoignage utilisateur isolé, non d'une comparaison benchmarkée.</p>
+<p><strong>ZDR : usage réel de DeepSeek V4.1 Flash 1017 chez un opérateur Hermes Agent</strong> — Un compte rendu de 30 jours rapporte 5,7 milliards de tokens d'entrée, 58 000 appels API, un taux de cache de 96 % et un coût mensuel d'environ 70 $. L'utilisateur utilise l'endpoint fp8 de DeepInfra et signale une dégradation de qualité visible (arguments d'appel d'outils livrés avec des préfixes JSON superflus comparé aux autres routes FP8). Cette donnée constitue un repère concret pour dimensionner un déploiement ZDR à haut volume.</p>
+<p><strong>Swarmbox : sandboxing d'agents inspiré de DSec sur Azure</strong> — Vibrant Labs a publié <a href="https://vibrantlabs.com/research/swarmbox">swarmbox</a>, une plateforme de test en environnement sandbox basé sur VM Azure ordinaires, directement inspirée du papier DSec de DeepSeek. Chaque essai obtient un World isolé (conteneur workspace + conteneur services sur réseau privé). Sur deux nœuds sandbox, 220 tâches Harbor exécutées en parallèle (32 à la fois) achèvent en moins de 4 minutes sans erreur d'infrastructure. L' SDK Python et le provider Harbor sont open-source ; le bac d'essai hébergé est disponible sur invitation.</p>
+<p><strong>Best-practice DSH et Chatbox via API</strong> — Plusieurs fils discutent de configurations optimales : une méthode standard consiste à assigner une tâche, attendre la terminaison, lire le résumé et poursuivre. Pour les utilisateurs de Chatbox en mode API, la recherche d'un équilibre entre qualité des réponses et vitesse fait débat. Aucun consensus émergé.</p>
+<h2>Volume — 110 entrées lues dans l'intervalle de quatre jours, 12 retenues (incluant sujets développés à partir de sources externes), 98 écartées (principalement questions de dépannage, plaintes sur les limites, discussions de RP et hors-sujet), soit un taux de rétention de 11 %.</h2>
+<footer>Édition du jeudi 26 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
