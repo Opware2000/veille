@@ -6,9 +6,46 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 01:42:21 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 01:41:06 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — Jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-26.html</link>
+<guid isPermaLink="false">ctan-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 01:41:06 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — Jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quinze annonces traitées dans ce cycle. Trois nouveaux paquets jugés pertinents — mise en page multi-colonnes, pages de couverture pour publications auto-archivées et fragmentation des tcolorboxes imbriquées. Aucune annonce ne concerne directement les paquets que vous utilisez actuellement. Le paquet VowelChart a reçu une nouvelle version ; il est signalé ci-après bien qu'il ne s'agisse pas d'un nouveau dépôt sur CTAN.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>ncolumn — disposition à N colonnes</h3>
+<p>ncolumn propose un système de disposition à plusieurs colonnes qui va au-delà du <code>twocolumn</code> classique de LaTeX : contrairement à ce dernier, qui construit les colonnes une après l'autre (ce qui pose problème pour les flottants, les notes de bas de page et les marges), ncolumn gère toutes les colonnes simultanément. Version 0.3, publiée le 24 novembre 2026, sous licence lppl1.3c. Utile si vous avez besoin de créer des documents à trois colonnes ou plus avec une gestion correcte des éléments flottants. Voir <a href="https://www.ctan.org/pkg/ncolumn">ctan.org/pkg/ncolumn</a> et <a href="https://www.ctan.org/ctan-ann/id/04ce3711-972d-b1ed-a414-9768fd958e32@ctan.org">l'annonce</a>.</p>
+<h3>deckblatt — pages de couverture pour publications auto-archivées</h3>
+<p>deckblatt génère des pages de couverture pour des publications en accès vert (auto-archivage Green Open Access). Il lit les références bibliographiques directement depuis un fichier BibTeX ou biblatex et produit une page résumant auteurs, titre, journal et autres métadonnées. Version 1.0, sous licence lppl1.3c. Pourrait servir si vous publiez régulièrement des articles nécessitant une page de couverture conformes aux exigences d'auto-archivage. Voir <a href="https://www.ctan.org/pkg/deckblatt">ctan.org/pkg/deckblatt</a> et <a href="https://www.ctan.org/ctan-ann/id/f7a15385-ef86-513c-86ed-7754e73e527c@ctan.org">l'annonce</a>.</p>
+<h3>tcbnestbreak — tcolorboxes fragmentables à l'intérieur de tcolorboxes fragmentables</h3>
+<p>Ce package résout la limite connue de tcolorbox (que vous utilisez) : lorsqu'une box fragmentable contient une autre box marquée <code>breakable</code>, cette dernière n'est pas scindée — tcolorbox traite le contenu comme un bloc unique. tcbnestbreak permet d'imbriquer des boîtes fragmentables. Version 0.2, sous licence lppl1.3c. À surveiller si vos documents utilisent des tcolorboxes imbriquées contenant du texte long. Voir <a href="https://www.ctan.org/pkg/tcbnestbreak">ctan.org/pkg/tcbnestbreak</a> et <a href="https://www.ctan.org/ctan-ann/id/88284975-3ff6-32d2-9d11-82775cdf5c92@ctan.org">l'annonce</a>.</p>
+<h2>Mises à jour signalées</h2>
+<h3>VowelChart 1.1 — graphiques de voyelles pour la linguistique</h3>
+<p>VowelChart améliore ses graphiques de quadrilatères et triangles vocaux dessinés avec TikZ. Cette version 1.1 s'accompagne d'un générateur en ligne disponible à l'adresse <a href="https://danielbuncic.github.io/vowelchart/">https://danielbuncic.github.io/vowelchart/</a>. Plutôt pertinent pour un usage en linguistique ou phonétique. Sous licence lppl1.3c. Voir <a href="https://www.ctan.org/pkg/VowelChart">ctan.org/pkg/VowelChart</a>.</p>
+<h2>Volume</h2>
+<p>15 annonces publiées dans l'intervalle, 5 retenues (dont 0 concernant vos paquets), 10 écartées (langues non latines — japonais et chinois —, outils de développement, domaine jeu vidéo, ajustements tcolorbox sans ajout fonctionnel majeur).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — Jeudi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quinze annonces traitées dans ce cycle. Trois nouveaux paquets jugés pertinents — mise en page multi-colonnes, pages de couverture pour publications auto-archivées et fragmentation des tcolorboxes imbriquées. Aucune annonce ne concerne directement les paquets que vous utilisez actuellement. Le paquet VowelChart a reçu une nouvelle version ; il est signalé ci-après bien qu'il ne s'agisse pas d'un nouveau dépôt sur CTAN.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<h3>ncolumn — disposition à N colonnes</h3>
+<p>ncolumn propose un système de disposition à plusieurs colonnes qui va au-delà du <code>twocolumn</code> classique de LaTeX : contrairement à ce dernier, qui construit les colonnes une après l'autre (ce qui pose problème pour les flottants, les notes de bas de page et les marges), ncolumn gère toutes les colonnes simultanément. Version 0.3, publiée le 24 novembre 2026, sous licence lppl1.3c. Utile si vous avez besoin de créer des documents à trois colonnes ou plus avec une gestion correcte des éléments flottants. Voir <a href="https://www.ctan.org/pkg/ncolumn">ctan.org/pkg/ncolumn</a> et <a href="https://www.ctan.org/ctan-ann/id/04ce3711-972d-b1ed-a414-9768fd958e32@ctan.org">l'annonce</a>.</p>
+<h3>deckblatt — pages de couverture pour publications auto-archivées</h3>
+<p>deckblatt génère des pages de couverture pour des publications en accès vert (auto-archivage Green Open Access). Il lit les références bibliographiques directement depuis un fichier BibTeX ou biblatex et produit une page résumant auteurs, titre, journal et autres métadonnées. Version 1.0, sous licence lppl1.3c. Pourrait servir si vous publiez régulièrement des articles nécessitant une page de couverture conformes aux exigences d'auto-archivage. Voir <a href="https://www.ctan.org/pkg/deckblatt">ctan.org/pkg/deckblatt</a> et <a href="https://www.ctan.org/ctan-ann/id/f7a15385-ef86-513c-86ed-7754e73e527c@ctan.org">l'annonce</a>.</p>
+<h3>tcbnestbreak — tcolorboxes fragmentables à l'intérieur de tcolorboxes fragmentables</h3>
+<p>Ce package résout la limite connue de tcolorbox (que vous utilisez) : lorsqu'une box fragmentable contient une autre box marquée <code>breakable</code>, cette dernière n'est pas scindée — tcolorbox traite le contenu comme un bloc unique. tcbnestbreak permet d'imbriquer des boîtes fragmentables. Version 0.2, sous licence lppl1.3c. À surveiller si vos documents utilisent des tcolorboxes imbriquées contenant du texte long. Voir <a href="https://www.ctan.org/pkg/tcbnestbreak">ctan.org/pkg/tcbnestbreak</a> et <a href="https://www.ctan.org/ctan-ann/id/88284975-3ff6-32d2-9d11-82775cdf5c92@ctan.org">l'annonce</a>.</p>
+<h2>Mises à jour signalées</h2>
+<h3>VowelChart 1.1 — graphiques de voyelles pour la linguistique</h3>
+<p>VowelChart améliore ses graphiques de quadrilatères et triangles vocaux dessinés avec TikZ. Cette version 1.1 s'accompagne d'un générateur en ligne disponible à l'adresse <a href="https://danielbuncic.github.io/vowelchart/">https://danielbuncic.github.io/vowelchart/</a>. Plutôt pertinent pour un usage en linguistique ou phonétique. Sous licence lppl1.3c. Voir <a href="https://www.ctan.org/pkg/VowelChart">ctan.org/pkg/VowelChart</a>.</p>
+<h2>Volume</h2>
+<p>15 annonces publiées dans l'intervalle, 5 retenues (dont 0 concernant vos paquets), 10 écartées (langues non latines — japonais et chinois —, outils de développement, domaine jeu vidéo, ajustements tcolorbox sans ajout fonctionnel majeur).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — Mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-25.html</link>

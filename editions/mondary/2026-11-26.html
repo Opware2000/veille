@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille Clément Mondary — jeudi 26 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../mondary.xml" title="Clément Mondary">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille Clément Mondary — jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Cinq billets publiés hier : la veille tourne autour d'un même produit, RESULT, agent IA personnel pour iPhone avec modèles en cloud ou sur Mac, et de deux outils destinés aux développeurs, KATHAMO (terminal GPU pour agents de code) et GLASS (espace de travail unifié pour chats, pages et agents). Aucun sujet science ou enseignement.</p>
+<h2>Intelligence artificielle, agents et modèles locaux</h2>
+<h3>RESULT — Agent IA personnel qui travaille sur votre iPhone plutôt que dans le cloud</h3>
+<p>Développé par Savio Martin (<a href="https://result.dev/">result.dev</a>), RESULT est un agent IA conçu pour exécuter des tâches directement sur l'iPhone ou l'iPad de l'utilisateur. Concrètement, l'agent navigue sur les vrais sites web à travers le navigateur intégré de l'app, remplit des formulaires, compare des produits et réserve sans passer par une machine virtuelle distante. Vos cookies et sessions restent sur l'appareil ; les sites voient l'adresse IP de votre téléphone.</p>
+<p>L'intelligence repose sur des modèles open-weight — Qwen, GLM et DeepSeek pour le texte, FLUX pour les images — transitant par la passerelle Vercel AI Gateway configurée en mode « zéro rétention ». Alternative locale : vous pairiez un Mac via QR code ou code à six chiffres pour faire tourner le modèle sur son matériel, avec téléchargement depuis Hugging Face. Le mode local sert aussi quand l'iPhone n'a pas de réseau. Si le Mac ne répond pas, le cloud prend le relais. Les champs sensibles (mots de passe, paiements) sont masqués avant de quitter l'appareil ; dès qu'une connexion, un paiement ou un CAPTCHA est demandé, l'agent rend la main. L'app s'intègre aux applications natives Apple (Calendrier, Rappels, Plans, Météo, Fichiers), accepte le partage depuis Safari, génère PDF, documents et tableurs, et poursuit ses tâches en arrière-plan même écran verrouillé. Gratuit sur l'App Store, iOS 18 minimum, avec un compagnon macOS pour le mode local. Lien : <a href="https://result.dev/">result.dev</a></p>
+<h3>GLASS — Espace de travail unifié pour conversations, pages et agents IA</h3>
+<p>GLASS réunit dans une seule application les échanges textuels, les documents, les projets et les agents IA, le tout accompagné d'un navigateur web complet intégré. L'application est annoncée sur cinq plateformes : macOS, Windows, Linux (AppImage et .deb), web, ainsi qu'iOS et Android en bêta publique. Version actuelle 1.0.39 (6 novembre 2026), l'éditeur assume le statut alpha.</p>
+<p>Le navigateur n'est pas greffé : onglets et conversations partagent le même espace, un site peut se partager directement dans un chat, et le geste de vérifier une source pendant une discussion devient fluide. Les pages documentent ce qui reste attaché à sa conversation d'origine, rédigées à la main ou générées par un agent avec mention @ pour inviter quelqu'un. La fonction agents est centrale : on confie une tâche à un agent dans n'importe quel échange, il peut travailler sur les fichiers locaux ou sur un serveur distant. On peut utiliser ses propres abonnements (Codex, Claude). Les routines permettent de déléguer des tâches récurrentes, comme relever les e-mails chaque matin. Politique données explicite : aucune publicité, aucun entraînement sur les contenus utilisateurs, analytique désactivée par défaut. Libre et gratuit (statut alpha). Lien : <a href="https://glassapp.dev/">glassapp.dev</a></p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<h3>KATHAMO — Terminal GPU qui surveille vos agents de code</h3>
+<p>KATHAMO (<a href="https://github.com/olovalabs/kathamo">GitHub</a>) est un émulateur de terminal accéléré par GPU, écrit en Rust par Oval Labs. Il regroupe vos projets dans une barre latérale repliable, gère onglets et panneaux fractionnés, et surtout suit en temps réel l'état de vos agents de code — Claude Code, OpenCode, Codex, Pi, OMP, Command Code — en prévenant quand l'un est bloqué, en attente ou terminé. Contrairement à un terminal classique où le texte défile sans indiquer l'état réel, Kathamo résout le problème courant de trois agents tournant en fond sans que vous remarquiez qu'un d'eux attendait une autorisation depuis vingt minutes.</p>
+<p>Chaque agent remonte son état par socket Unix ou séquences OSC 7501. Kathamo applique une hiérarchie stricte : bloqué, terminé, en cours, inactif. Une tâche terminée alors que l'onglet est masqué reste épinglée avec notification sonore et alerte visuelle. Les sous-agents s'affichent en retrait sous leur parent sans déclencher d'alerte doublonnée. Au redémarrage, tout revient : projets, disposition des splits, répertoire de travail, brouillons de saisie et historique. Le terminal lui-même inclut une barre de saisie proposant l'historique fusionné de zsh, bash et fish, complétion Git, recherche inversée, et un chat agent natif en Markdown avec cartes d'appels d'outils, commande <code>/model</code> et bascule Fast/Deep. Rendu GPU capable d'absorber des logs de compilation à 40 Mo/s. Licence : open source. Lien : <a href="https://github.com/olovalabs/kathamo">github.com/olovalabs/kathamo</a></p>
+<h2>Volume — 5 billets publiés dans l'intervalle, 3 retenus, 2 écartés (articles en double sur RESULT coulés ensemble en une synthèse).</h2>
+<footer>Édition du jeudi 26 novembre 2026 — <a href="https://opware2000.github.io/veille/mondary.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
