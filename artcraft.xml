@@ -6,9 +6,46 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 00:01:50 +0100</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:01:05 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-27.html</link>
+<guid isPermaLink="false">artcraft-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 00:01:05 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune nouveauté notable cette semaine. Dernière publication officielle (v0.41.1) du 7 novembre, suivi d'une rafale de correctifs internes au dépôt en novembre. L'édition d'aujourd'hui a été rédigée sans la source Reddit r/ArtCraftAI : la collecte sur ce flux rencontre une erreur HTTP 404 depuis le 22 novembre, ce qui prive l'édition des fils communautaires. Les journaux Git et YouTube n'ont apporté aucun élément nouveau dans les quatre derniers jours.</p>
+<h2>Nouveautés et annonces</h2>
+<p><em>Rien de neuf à signaler.</em> La dernière version publiée est la v0.41.1 (7 novembre). Les commits récents du dépôt visent essentiellement des corrections de qualité logicielle (SonarCloud), la mise à niveau vers <code>craft-libs next</code>, et la standardisation des règles de contribution (<code>AGENTS.md</code> / RFC-0072). Aucun commit ne traduit de fonctionnalité visible pour l'utilisateur.</p>
+<p><strong>Dernière version :</strong> <a href="https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1">ArtCraft v0.41.1</a> — 7 novembre 2026.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><em>Rien de nouveau cette semaine.</em></p>
+<p>L'outil <strong>CraftLook</strong> (macOS), présenté le 22 novembre par Roccobot, continue de gagner en adoption : il fournit des miniatures Finder et des aperçus Quick Look pour les projets ArtCraft et PSD/SVG, avec huit moteurs de rendu intégrés signés et notaré Apple. Son plugin Stream Deck open-source pour LightCraft, publié le 23 novembre par ResearcherMassive802, permet un contrôle matériel direct des curseurs, évaluations et masques AI de LightCraft. Ces deux projets existent mais n'ont pas été publiés cette semaine — mentionnés ici à titre informatif.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Les discussions en ligne se concentrent actuellement sur la compatibilité multiplateforme (portage sur FreeBSD, LibreNT, Flatpak), les demandes de la communauté (SolidCraft comme alternative BIM, ModCraft pour le développement de plugins, Dōri comme DAW open-source) et la comparaison avec Adobe. Aucune actualité majeure n'a marqué cet écosystème ces sept derniers jours.</p>
+<h2>À signaler</h2>
+<p><strong>Erreur de collecte sur r/ArtCraftAI.</strong> Le journal <code>/opt/data/state/reddit/ArtCraftAI/posts.jsonl</code> n'est plus mis à jour depuis le 22 novembre 2026. Le collecteur reporte une erreur <code>HTTP Error 404: Not Found</code>. Cette source primaire (threads du subreddit relayés via svt.tw puis ingérés par le relais) est donc inaccessible pour le moment. L'édition d'aujourd'hui se base uniquement sur les journaux Git et YouTube, dont l'activité reste faible.</p>
+<h2>Volume</h2>
+<p>0 post dans les sources disponibles dans l'intervalle, 0 retenus, 0 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Aucune nouveauté notable cette semaine. Dernière publication officielle (v0.41.1) du 7 novembre, suivi d'une rafale de correctifs internes au dépôt en novembre. L'édition d'aujourd'hui a été rédigée sans la source Reddit r/ArtCraftAI : la collecte sur ce flux rencontre une erreur HTTP 404 depuis le 22 novembre, ce qui prive l'édition des fils communautaires. Les journaux Git et YouTube n'ont apporté aucun élément nouveau dans les quatre derniers jours.</p>
+<h2>Nouveautés et annonces</h2>
+<p><em>Rien de neuf à signaler.</em> La dernière version publiée est la v0.41.1 (7 novembre). Les commits récents du dépôt visent essentiellement des corrections de qualité logicielle (SonarCloud), la mise à niveau vers <code>craft-libs next</code>, et la standardisation des règles de contribution (<code>AGENTS.md</code> / RFC-0072). Aucun commit ne traduit de fonctionnalité visible pour l'utilisateur.</p>
+<p><strong>Dernière version :</strong> <a href="https://github.com/storytold/artcraft/releases/tag/artcraft-v0.41.1">ArtCraft v0.41.1</a> — 7 novembre 2026.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><em>Rien de nouveau cette semaine.</em></p>
+<p>L'outil <strong>CraftLook</strong> (macOS), présenté le 22 novembre par Roccobot, continue de gagner en adoption : il fournit des miniatures Finder et des aperçus Quick Look pour les projets ArtCraft et PSD/SVG, avec huit moteurs de rendu intégrés signés et notaré Apple. Son plugin Stream Deck open-source pour LightCraft, publié le 23 novembre par ResearcherMassive802, permet un contrôle matériel direct des curseurs, évaluations et masques AI de LightCraft. Ces deux projets existent mais n'ont pas été publiés cette semaine — mentionnés ici à titre informatif.</p>
+<h2>Autour d'ArtCraft</h2>
+<p>Les discussions en ligne se concentrent actuellement sur la compatibilité multiplateforme (portage sur FreeBSD, LibreNT, Flatpak), les demandes de la communauté (SolidCraft comme alternative BIM, ModCraft pour le développement de plugins, Dōri comme DAW open-source) et la comparaison avec Adobe. Aucune actualité majeure n'a marqué cet écosystème ces sept derniers jours.</p>
+<h2>À signaler</h2>
+<p><strong>Erreur de collecte sur r/ArtCraftAI.</strong> Le journal <code>/opt/data/state/reddit/ArtCraftAI/posts.jsonl</code> n'est plus mis à jour depuis le 22 novembre 2026. Le collecteur reporte une erreur <code>HTTP Error 404: Not Found</code>. Cette source primaire (threads du subreddit relayés via svt.tw puis ingérés par le relais) est donc inaccessible pour le moment. L'édition d'aujourd'hui se base uniquement sur les journaux Git et YouTube, dont l'activité reste faible.</p>
+<h2>Volume</h2>
+<p>0 post dans les sources disponibles dans l'intervalle, 0 retenus, 0 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — jeudi 26 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-26.html</link>
