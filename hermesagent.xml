@@ -6,9 +6,54 @@
 <description>Veille quotidienne du subreddit r/hermesagent — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/hermesagent.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 00:51:18 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:51:27 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-26.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:51:27 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — jeudi 26 novembre 2026</h1>
+<h2>En bref.</h2>
+<p>Le subreddit est dominé aujourd'hui par des demandes de configuration et des retours d'expérience sur Hermes Agent. Deux actualités logicielles se détachent : une mise à jour majeure de Kyllene et un portage open source pour PipeWire. Le reste du flux ne contient aucune annonce concrète d'outil nouveau.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>pw-loudness-eq — Égalisation du volume Windows portée sous PipeWire</h3>
+<p>Un développeur a rétro-ingéniéré la fonctionnalité <em>Loudness Equalization</em> de Windows et en a livré une implémentation libre pour PipeWire. Le projet, écrit en C, vise les utilisateurs Linux qui souhaitent bénéficier d'une normalisation automatique du volume sonore — équivalent open source d'une fonction propriétaire courante sous Windows.</p>
+<p><a href="https://github.com/xoxorwr/pw-loudness-eq">https://github.com/xoxorwr/pw-loudness-eq</a> · Pas de licence déclarée · 163 étoiles · Dernière activité le 22 novembre 2026 · Langage : C · 31 points sur Hacker News.</p>
+<h3>Kyllene (anciennement Herald) — version 18 avec applications de bureau, Wear OS et extension Pebble</h3>
+<p>Kyllene, anciennement Herald, publie sa version 18. La plateforme étend désormais ses capacités aux applications de bureau, à Android Wear OS, ainsi qu'à l'écosystème Pebble (montres connectées). Herald/Kyllene est un agrégateur de flux RSS/Atom orienté productivité. Cette version marque une expansion significative vers le matériel connecté.</p>
+<p><a href="https://www.reddit.com/r/hermesagent/comments/1y5bf1v/kyllene_formerly_herald_version_18_desktop_apps/">Nous n'avons pas vérifié les détails techniques complets car seul le titre Reddit était disponible dans la shortlist ; voir :</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>OpsBrain — nouvelle version publiée</h3>
+<p>Un développeur annonce avoir mis à jour OpsBrain sur le subreddit. Sans extrait disponible dans la shortlist, il s'agit simplement de constater la publication d'un point de version. Voir : <a href="https://www.reddit.com/r/hermesagent/comments/1y5c0nj/i_have_updated_opsbrain/">https://www.reddit.com/r/hermesagent/comments/1y5c0nj/i_have_updated_opsbrain/</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Hermes Workflow — agent d'apprentissage par renforcement comme plugin</h3>
+<p>Le plugin officiel <em>Hermes Workflow</em> permet de créer un agent basé sur l'apprentissage par renforcement pour toute tâche que l'on souhaite voir améliorer progressivement par Hermes. Concrètement, cela signifie qu'Hermès peut apprendre et optimiser une séquence d'actions au fil du temps, plutôt que de se contenter d'exécuter un flux prédéfini. Plugin officiel, donc intégré au catalogue.</p>
+<p><a href="https://hermes-agent.nousresearch.com/">Documentation du plugin dans la documentation officielle Hermes Agent</a></p>
+<h2>Volume.</h2>
+<p>82 posts publiés dans l'intervalle, 5 retenus, 66 écartés, 11 hors thématique.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — jeudi 26 novembre 2026</h1>
+<h2>En bref.</h2>
+<p>Le subreddit est dominé aujourd'hui par des demandes de configuration et des retours d'expérience sur Hermes Agent. Deux actualités logicielles se détachent : une mise à jour majeure de Kyllene et un portage open source pour PipeWire. Le reste du flux ne contient aucune annonce concrète d'outil nouveau.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>pw-loudness-eq — Égalisation du volume Windows portée sous PipeWire</h3>
+<p>Un développeur a rétro-ingéniéré la fonctionnalité <em>Loudness Equalization</em> de Windows et en a livré une implémentation libre pour PipeWire. Le projet, écrit en C, vise les utilisateurs Linux qui souhaitent bénéficier d'une normalisation automatique du volume sonore — équivalent open source d'une fonction propriétaire courante sous Windows.</p>
+<p><a href="https://github.com/xoxorwr/pw-loudness-eq">https://github.com/xoxorwr/pw-loudness-eq</a> · Pas de licence déclarée · 163 étoiles · Dernière activité le 22 novembre 2026 · Langage : C · 31 points sur Hacker News.</p>
+<h3>Kyllene (anciennement Herald) — version 18 avec applications de bureau, Wear OS et extension Pebble</h3>
+<p>Kyllene, anciennement Herald, publie sa version 18. La plateforme étend désormais ses capacités aux applications de bureau, à Android Wear OS, ainsi qu'à l'écosystème Pebble (montres connectées). Herald/Kyllene est un agrégateur de flux RSS/Atom orienté productivité. Cette version marque une expansion significative vers le matériel connecté.</p>
+<p><a href="https://www.reddit.com/r/hermesagent/comments/1y5bf1v/kyllene_formerly_herald_version_18_desktop_apps/">Nous n'avons pas vérifié les détails techniques complets car seul le titre Reddit était disponible dans la shortlist ; voir :</a></p>
+<h2>Nouveautés et mises à jour</h2>
+<h3>OpsBrain — nouvelle version publiée</h3>
+<p>Un développeur annonce avoir mis à jour OpsBrain sur le subreddit. Sans extrait disponible dans la shortlist, il s'agit simplement de constater la publication d'un point de version. Voir : <a href="https://www.reddit.com/r/hermesagent/comments/1y5c0nj/i_have_updated_opsbrain/">https://www.reddit.com/r/hermesagent/comments/1y5c0nj/i_have_updated_opsbrain/</a></p>
+<h2>Extensions et greffons</h2>
+<h3>Hermes Workflow — agent d'apprentissage par renforcement comme plugin</h3>
+<p>Le plugin officiel <em>Hermes Workflow</em> permet de créer un agent basé sur l'apprentissage par renforcement pour toute tâche que l'on souhaite voir améliorer progressivement par Hermes. Concrètement, cela signifie qu'Hermès peut apprendre et optimiser une séquence d'actions au fil du temps, plutôt que de se contenter d'exécuter un flux prédéfini. Plugin officiel, donc intégré au catalogue.</p>
+<p><a href="https://hermes-agent.nousresearch.com/">Documentation du plugin dans la documentation officielle Hermes Agent</a></p>
+<h2>Volume.</h2>
+<p>82 posts publiés dans l'intervalle, 5 retenus, 66 écartés, 11 hors thématique.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-25.html</link>

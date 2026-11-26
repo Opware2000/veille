@@ -6,9 +6,184 @@
 <description>Veille quotidienne du subreddit r/vibecoding — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/vibecoding.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Wed, 25 Nov 2026 00:41:30 +0100</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 00:42:44 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/vibecoding — Jeudi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-26.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-26</guid>
+<pubDate>Thu, 26 Nov 2026 00:42:44 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — Jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>La journée affiche un nombre élevé d'annonces liées à l'écosystème de codage assisté par agents. Plusieurs outils libres font leur apparition : observateur pour Discord, navigateur d'échantillons audio, cadre de déploiement local iOS/Android, et plateforme de coordination multi-agents. Sur Hacker News, la couverture est classique (actualité générale), mais quelques projets pertinents se distinguent, dont le clone open source d'une série entière de Black Ops III sur ARM64.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Audify — Navigateur SFX et échantillons gratuit, open-source et portable pour Windows</strong></p>
+<p>Un lecteur d'échantillons sonores portatif pour Windows, entièrement codé avec assistance IA, sans télémétrie ni installation requise. Il pèse environ 400 Mo de RAM en usage. Conçu comme un outil pratique pour les créateurs de sons et les développeurs qui manipulent des fichiers audio dans un environnement libre.</p>
+<p>https://www.reddit.com/r/vibecoding/comments/1y5amdo/audify_free_opensource_portable_sfx_sample/</p>
+<p><strong>Obs-overlay — Superposition inspirée NVIDIA Instant Replay pour OBS</strong></p>
+<p>Une application de superposition pour OBS Studio offrant des contrôles de scène, des widgets basés sur le web personnalisables (chat, alertes de dons, etc.), utile notamment lors du streaming en moniteur unique. Codée avec Claude Sonnet 5.5 (version gratuite). Nouveau dépôt : 1 étoile, licence MIT.</p>
+<p>GitHub : https://github.com/ordinalkurdi/obs-overlay | Source : https://www.reddit.com/r/vibecoding/comments/1xfll5p/obsoverlaynvidialike/</p>
+<p><strong>Dislauncher — Minimalist Android Launcher</strong></p>
+<p>Un lanceur d'écran d'accueil centré sur le texte, sans encombrement visuel. Il propose des polices et couleurs personnalisables, des widgets, des points de notification, ainsi qu'un bloc-notes et un calendrier intégrés. Totalement gratuit, sans publicités ni analyse. GitHub : 5 étoiles, licence MIT, dernière mise à jour le 24 novembre.</p>
+<p>Source : https://github.com/insomdroid/Dislauncher/releases/latest | https://www.reddit.com/r/vibecoding/comments/1xfsxuv/i_made_dislauncher_a_minimalist_android_launcher/</p>
+<p><strong>Nostalgia — 18 jeux DOS dans un seul fichier HTML</strong></p>
+<p>Un lanceur de style rétro contenant 18 jeux dans l'esprit de l'ère DOS, incluant Tapper, Lode Runner, Karateka, Death Rally, Scorched Earth, Sensible Soccer et Tennis 4D. Chaque jeu tient dans un seul fichier HTML ; le rendu sonore utilise Web Audio API au lieu de fichiers MP3. Licence MIT. Nouveau dépôt : 0 étoile, dernier commit le 24 novembre.</p>
+<p>Jouer : https://ogg.varyform.info | Source : https://www.reddit.com/r/vibecoding/comments/1y49lre/i_vibecoded_18_dosera_games_each_one_html_file/</p>
+<p><strong>Wakeshift — Événements MCP open-source pour Claude Code et Codex</strong></p>
+<p>Le framework open-source Wakeshift permet à tout serveur MCP de servir des événements interopérables via le protocole MCP Events ou des ponts spécifiques aux plateformes. Il rend possible l'envoi d'événements depuis les serveurs vers les plateformes qui ne supportent pas encore MCP Events, y compris Claude Code, Codex et Cursor. La spécification MCP Events a été approuvée il y a cinq jours seulement. GitHub : 6 étoiles, licence Apache-2.0, dernière mise à jour le 24 novembre.</p>
+<p>GitHub : https://github.com/wakeshift/server | Source : https://www.reddit.com/r/vibecoding/comments/hn-50634239/show_hn-wakeshift-open-source-mcp-events-for-claude-code-codex-and-more/</p>
+<p><strong>VedOS Academy — Plateforme d'apprentissage IA inspirée des jeux</strong></p>
+<p>Une plateforme éducative utilisant l'intelligence artificielle, conçue autour du gameplay et cherchant activement des testeurs précoces et des éducateurs. Le projet vise à combiner apprentissage interactif et mécaniques de jeu pour engager les apprenants.</p>
+<p>Source : https://www.reddit.com/r/vibecoding/comments/1y4c58x/building_vedos_academy_an_aipowered_learning/</p>
+<p><strong>Olympus Coder — Application desktop unifiée pour plusieurs agents de codage</strong></p>
+<p>Une seule application de bureau regroupant Claude Code, Codex et d'autres agents de programmation dans une interface commune. GitHub : 16 étoiles, licence Apache-2.0, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/martianacademy/olympus-coder | Source : https://www.reddit.com/r/vibecoding/comments/hn-50642722/show_hn-olympus-coder-one-desktop-app-for-claude-code-codex-and-other-agents/</p>
+<p><strong>Blind Art Scroll — Rouleau d'art collaboratif par agents de codage</strong></p>
+<p>Une expérience artistique collaborative où différents modèles de codage dessinent consécutivement sur un Canvas 2D, chaque modèle ne voyant que les 75 derniers pixels de la pièce précédente. Les fleurs sauvages deviennent racines souterraines, puis ammonites enterrées, puis nénuphars dans une carrière submergée. Gratuit, sans connexion ni installation.</p>
+<p>Site : https://seam15.me | Source : https://www.reddit.com/r/vibecoding/comments/1y4bnhb/i_made_a_blind_art_scroll_where_coding_agents/</p>
+<p><strong>Free Software Alternatives — Plateforme communautaire de remplacement logiciel</strong></p>
+<p>Une plateforme open-source destinée à trouver des alternatives gratuites aux logiciels payants, accompagnée d'un hackathon à but non lucratif financé pour couvrir les lacunes identifiées entre les produits commerciaux et leurs équivalents libres.</p>
+<p>Source : https://www.reddit.com/r/vibecoding/comments/1y4dp0g/i_built_an_open_source_platform_for_finding_free/</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-charts 0.1a0 — Visualisations interactives pour Datasette</strong></p>
+<p>Simon Willison publie la première version alpha de datasette-charts, un plugin Datasette qui crée des visualisations interactives contre n'importe quelle table ou requête SQL arbitraire. Le prototype initial a été réalisé avec Claude Fable 5.2 et le plugin résultant est fonctionnel. Essayable directement dans Datasette Lite.</p>
+<p>Publication : https://simonwillison.net/2026/Nov/23/datasette-charts/</p>
+<p><strong>GoLand Plugin — Disponibles dans Cursor et VS Code</strong></p>
+<p>Le plugin Go par JetBrains, initialement réservé à GoLand, est désormais disponible dans Cursor et VS Code, étendant les capacités de développement Go à ces éditeurs tiers. Une extension notable qui rapproche l'expérience GoLand de ces autres IDE populaires.</p>
+<p>Source : https://blog.jetbrains.com/go/2026/11/25/go-by-goland-public-preview/ | https://www.reddit.com/r/vibecoding/comments/hn-50643651/goland-plugin-now-available-in-cursor-and-vs-code/</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>AutoSteer pour Claude Code</strong></p>
+<p>Rashomon s'offre un nouveau rôle sous le nom d'AutoSteer pour Claude Code, avec l'ambition de piloter et corriger automatiquement la direction des sessions de codage. Nouveau dépôt, aucune étoile pour l'instant.</p>
+<p>GitHub : https://github.com/altrace-dev-role/rashomon | Source : https://www.reddit.com/r/vibecoding/comments/hn-50639529/auto-steer-for-claude-code/</p>
+<p><strong>MarginCue — Aperçu des choix de l'agent avant validation</strong></p>
+<p>MarginCue affiche les sélections potentielles de l'agent de codage dans la marge de l'éditeur avant même de valider l'action, permettant un contrôle fin. GitHub : 2 étoiles, 3 commentaires.</p>
+<p>GitHub : https://github.com/fus3r/margincue | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641783/show_hn-margincue-see-your-coding-agents-choices-before-you-press-enter/</p>
+<p><strong>Belay — Différences sémantiques déterministes des modifications d'agents</strong></p>
+<p>Belay calcule des différences sémantiques déterministes de ce qu'un agent de codage a modifié dans le code, facilitant la relecture et le raisonnement sur les changements automatisés. GitHub : 1 étoile, licence Apache-2.0.</p>
+<p>GitHub : https://github.com/Allexsen/belay | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641716/show_hn-belay-deterministic-semantic-diffs-of-what-a-coding-agent-changed/</p>
+<p><strong>CheckMyApp — Vérification automatique post-déploiement</strong></p>
+<p>CheckMyApp clique à travers les modifications en production (ou les URLs de prévisualisation de PR) et génère des tickets avec captures d'écran des bugs découverts. Intégrable directement avec Claude ou Codex pour fermer la boucle de correction.</p>
+<p>Site : https://checkmyapp.dev | Source : https://www.reddit.com/r/vibecoding/comments/hn-50635545/show_hn-checkmyapp-checks-your-live-app-with-each-deploy-from-coding-agent/</p>
+<p><strong>Telesma — Boucle de développement autonome pour Claude Code</strong></p>
+<p>Telesma fournit une boucle de développement entièrement autonome travaillant avec Claude Code, capable d'itérer sans intervention humaine directe sur les tâches de codage. GitHub : 3 étoiles.</p>
+<p>GitHub : https://github.com/mario12358/telesma | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641714/show_hn-telesma-an-autonomous-development-loop-for-claude-code/</p>
+<p><strong>Shh-code — Agent de codage axé confidentialité</strong></p>
+<p>Shh-code met l'accent sur la confidentialité dans les sessions de codage assisté par agent, proposant des garanties que les données sensibles restent protégées pendant l'exécution. Nouveau dépôt sans étoile.</p>
+<p>GitHub : https://github.com/maksympetkus/shh-code | Source : https://www.reddit.com/r/vibecoding/comments/hn-50644746/show_hn-shh-code-coding-agent-with-privacy/</p>
+<p><strong>Bo3mac — Recompilation statique ARM64 et port direct de Black Ops III</strong></p>
+<p>Projet ambitieux réalisant une recompilation statique ARM64 et un port en métal direct de Call of Duty : Black Ops III, permettant le jeu sur architectures Apple Silicon. Dépôt : 18 étoiles, licence non spécifiée, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/mawlicious/bo3mac | Source : https://news.ycombinator.com/item?id=50637863</p>
+<p><strong>Rhebok — RAG local gratuit pour agent de codage</strong></p>
+<p>Rhebok est un moteur RAG local et gratuit conçu spécifiquement pour alimenter votre agent de codage avec la documentation et le contexte de votre projet, sans dépendance cloud. GitHub : 4 étoiles, licence AGPL-3.0, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/Stellenbosch-Technologies/rhebok | Source : https://www.reddit.com/r/vibecoding/comments/hn-50635912/show-hn-rhebok-free-local-rag-for-your-coding-agent/</p>
+<p><strong>Hub — Coordonnateur open-source pour sessions Claude Code et Codex</strong></p>
+<p>Hub, développé par Icons8, est un coordonnateur open-source gérant simultanément les sessions de Claude Code et Codex, permettant une orchestration entre plusieurs agents de codage. GitHub : 2 étoiles, 1 commentaire.</p>
+<p>GitHub : https://github.com/icons8/hub | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641541/show-hn-hub-an-open-source-coordinator-for-claude-code-and-codex-sessions/</p>
+<p><strong>Xcode Agent Bridge — Sessions terminal Claude/Codex depuis Xcode</strong></p>
+<p>Un bridge connectant Xcode aux sessions terminal Claude/Codex en cours d'exécution, permettant d'interagir directement avec vos agents de codage depuis l'environnement de développement Apple. GitHub : 1 étoile, licence MIT.</p>
+<p>GitHub : https://github.com/supersonicbyte/xcode-agent-bridge | Source : https://www.reddit.com/r/vibecoding/comments/hn-50629023/chat-with-running-claude-codex-terminal-sessions-from-xcode/</p>
+<p><strong>App Map — Diagramme UML cliquable généré par agent IA</strong></p>
+<p>App Map fait dessiner par votre agent IA de l'UML cliquable représentant votre application mobile, transformant le code existant en schémas structurels navigables. GitHub : 1 étoile, 1 commentaire.</p>
+<p>GitHub : https://github.com/yonivav/app-map | Source : https://www.reddit.com/r/vibecoding/comments/hn-50643269/app-map-your-ai-coding-agent-draws-clickable-uml-of-your-mobile-app/</p>
+<h2>Articles et ressources</h2>
+<p><strong>Three LLM inflection points in twelve months — Simon Willison</strong></p>
+<p>Simon Willison identifie trois moments charnières dans les capacités des grands modèles de langage et des agents de programmation au cours des douze derniers mois. L'article approfondit les évolutions clés qui ont marqué cette période, incluant la montée en puissance des agents de codage à partir de novembre 2025.</p>
+<p>https://simonwillison.net/2026/Nov/24/llm-inflection-points/</p>
+<p><strong>Gemini refused to give me the lyrics to Twinkle Twinkle Little Star — 100 points</strong></p>
+<p>Un article rapportant que Gemini a refusé de fournir les paroles de « Douce Nuit » (« Twinkle Twinkle Little Star »), soulevant des questions sur les limitations et les filtres imposés par certains modèles face à des œuvres apparemment anodines. Discussion animée (70 commentaires).</p>
+<p>https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F | https://news.ycombinator.com/item?id=50638320</p>
+<p><strong>Making a dumb TV just smart enough — 33 points</strong></p>
+<p>Un projet personnel rendant une télévision traditionnelle intelligente, en ajoutant une couche logicielle minimale sans remplacer le matériel. Approche pragmatique qui devrait intéresser ceux qui privilégient la conservation plutôt que le remplacement.</p>
+<p>https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/ | https://news.ycombinator.com/item?id=50622934</p>
+<h2>Volume</h2>
+<p>144 publications dans l'intervalle, 16 retenus, 128 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — Jeudi 26 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>La journée affiche un nombre élevé d'annonces liées à l'écosystème de codage assisté par agents. Plusieurs outils libres font leur apparition : observateur pour Discord, navigateur d'échantillons audio, cadre de déploiement local iOS/Android, et plateforme de coordination multi-agents. Sur Hacker News, la couverture est classique (actualité générale), mais quelques projets pertinents se distinguent, dont le clone open source d'une série entière de Black Ops III sur ARM64.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Audify — Navigateur SFX et échantillons gratuit, open-source et portable pour Windows</strong></p>
+<p>Un lecteur d'échantillons sonores portatif pour Windows, entièrement codé avec assistance IA, sans télémétrie ni installation requise. Il pèse environ 400 Mo de RAM en usage. Conçu comme un outil pratique pour les créateurs de sons et les développeurs qui manipulent des fichiers audio dans un environnement libre.</p>
+<p>https://www.reddit.com/r/vibecoding/comments/1y5amdo/audify_free_opensource_portable_sfx_sample/</p>
+<p><strong>Obs-overlay — Superposition inspirée NVIDIA Instant Replay pour OBS</strong></p>
+<p>Une application de superposition pour OBS Studio offrant des contrôles de scène, des widgets basés sur le web personnalisables (chat, alertes de dons, etc.), utile notamment lors du streaming en moniteur unique. Codée avec Claude Sonnet 5.5 (version gratuite). Nouveau dépôt : 1 étoile, licence MIT.</p>
+<p>GitHub : https://github.com/ordinalkurdi/obs-overlay | Source : https://www.reddit.com/r/vibecoding/comments/1xfll5p/obsoverlaynvidialike/</p>
+<p><strong>Dislauncher — Minimalist Android Launcher</strong></p>
+<p>Un lanceur d'écran d'accueil centré sur le texte, sans encombrement visuel. Il propose des polices et couleurs personnalisables, des widgets, des points de notification, ainsi qu'un bloc-notes et un calendrier intégrés. Totalement gratuit, sans publicités ni analyse. GitHub : 5 étoiles, licence MIT, dernière mise à jour le 24 novembre.</p>
+<p>Source : https://github.com/insomdroid/Dislauncher/releases/latest | https://www.reddit.com/r/vibecoding/comments/1xfsxuv/i_made_dislauncher_a_minimalist_android_launcher/</p>
+<p><strong>Nostalgia — 18 jeux DOS dans un seul fichier HTML</strong></p>
+<p>Un lanceur de style rétro contenant 18 jeux dans l'esprit de l'ère DOS, incluant Tapper, Lode Runner, Karateka, Death Rally, Scorched Earth, Sensible Soccer et Tennis 4D. Chaque jeu tient dans un seul fichier HTML ; le rendu sonore utilise Web Audio API au lieu de fichiers MP3. Licence MIT. Nouveau dépôt : 0 étoile, dernier commit le 24 novembre.</p>
+<p>Jouer : https://ogg.varyform.info | Source : https://www.reddit.com/r/vibecoding/comments/1y49lre/i_vibecoded_18_dosera_games_each_one_html_file/</p>
+<p><strong>Wakeshift — Événements MCP open-source pour Claude Code et Codex</strong></p>
+<p>Le framework open-source Wakeshift permet à tout serveur MCP de servir des événements interopérables via le protocole MCP Events ou des ponts spécifiques aux plateformes. Il rend possible l'envoi d'événements depuis les serveurs vers les plateformes qui ne supportent pas encore MCP Events, y compris Claude Code, Codex et Cursor. La spécification MCP Events a été approuvée il y a cinq jours seulement. GitHub : 6 étoiles, licence Apache-2.0, dernière mise à jour le 24 novembre.</p>
+<p>GitHub : https://github.com/wakeshift/server | Source : https://www.reddit.com/r/vibecoding/comments/hn-50634239/show_hn-wakeshift-open-source-mcp-events-for-claude-code-codex-and-more/</p>
+<p><strong>VedOS Academy — Plateforme d'apprentissage IA inspirée des jeux</strong></p>
+<p>Une plateforme éducative utilisant l'intelligence artificielle, conçue autour du gameplay et cherchant activement des testeurs précoces et des éducateurs. Le projet vise à combiner apprentissage interactif et mécaniques de jeu pour engager les apprenants.</p>
+<p>Source : https://www.reddit.com/r/vibecoding/comments/1y4c58x/building_vedos_academy_an_aipowered_learning/</p>
+<p><strong>Olympus Coder — Application desktop unifiée pour plusieurs agents de codage</strong></p>
+<p>Une seule application de bureau regroupant Claude Code, Codex et d'autres agents de programmation dans une interface commune. GitHub : 16 étoiles, licence Apache-2.0, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/martianacademy/olympus-coder | Source : https://www.reddit.com/r/vibecoding/comments/hn-50642722/show_hn-olympus-coder-one-desktop-app-for-claude-code-codex-and-other-agents/</p>
+<p><strong>Blind Art Scroll — Rouleau d'art collaboratif par agents de codage</strong></p>
+<p>Une expérience artistique collaborative où différents modèles de codage dessinent consécutivement sur un Canvas 2D, chaque modèle ne voyant que les 75 derniers pixels de la pièce précédente. Les fleurs sauvages deviennent racines souterraines, puis ammonites enterrées, puis nénuphars dans une carrière submergée. Gratuit, sans connexion ni installation.</p>
+<p>Site : https://seam15.me | Source : https://www.reddit.com/r/vibecoding/comments/1y4bnhb/i_made_a_blind_art_scroll_where_coding_agents/</p>
+<p><strong>Free Software Alternatives — Plateforme communautaire de remplacement logiciel</strong></p>
+<p>Une plateforme open-source destinée à trouver des alternatives gratuites aux logiciels payants, accompagnée d'un hackathon à but non lucratif financé pour couvrir les lacunes identifiées entre les produits commerciaux et leurs équivalents libres.</p>
+<p>Source : https://www.reddit.com/r/vibecoding/comments/1y4dp0g/i_built_an_open_source_platform_for_finding_free/</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-charts 0.1a0 — Visualisations interactives pour Datasette</strong></p>
+<p>Simon Willison publie la première version alpha de datasette-charts, un plugin Datasette qui crée des visualisations interactives contre n'importe quelle table ou requête SQL arbitraire. Le prototype initial a été réalisé avec Claude Fable 5.2 et le plugin résultant est fonctionnel. Essayable directement dans Datasette Lite.</p>
+<p>Publication : https://simonwillison.net/2026/Nov/23/datasette-charts/</p>
+<p><strong>GoLand Plugin — Disponibles dans Cursor et VS Code</strong></p>
+<p>Le plugin Go par JetBrains, initialement réservé à GoLand, est désormais disponible dans Cursor et VS Code, étendant les capacités de développement Go à ces éditeurs tiers. Une extension notable qui rapproche l'expérience GoLand de ces autres IDE populaires.</p>
+<p>Source : https://blog.jetbrains.com/go/2026/11/25/go-by-goland-public-preview/ | https://www.reddit.com/r/vibecoding/comments/hn-50643651/goland-plugin-now-available-in-cursor-and-vs-code/</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>AutoSteer pour Claude Code</strong></p>
+<p>Rashomon s'offre un nouveau rôle sous le nom d'AutoSteer pour Claude Code, avec l'ambition de piloter et corriger automatiquement la direction des sessions de codage. Nouveau dépôt, aucune étoile pour l'instant.</p>
+<p>GitHub : https://github.com/altrace-dev-role/rashomon | Source : https://www.reddit.com/r/vibecoding/comments/hn-50639529/auto-steer-for-claude-code/</p>
+<p><strong>MarginCue — Aperçu des choix de l'agent avant validation</strong></p>
+<p>MarginCue affiche les sélections potentielles de l'agent de codage dans la marge de l'éditeur avant même de valider l'action, permettant un contrôle fin. GitHub : 2 étoiles, 3 commentaires.</p>
+<p>GitHub : https://github.com/fus3r/margincue | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641783/show_hn-margincue-see-your-coding-agents-choices-before-you-press-enter/</p>
+<p><strong>Belay — Différences sémantiques déterministes des modifications d'agents</strong></p>
+<p>Belay calcule des différences sémantiques déterministes de ce qu'un agent de codage a modifié dans le code, facilitant la relecture et le raisonnement sur les changements automatisés. GitHub : 1 étoile, licence Apache-2.0.</p>
+<p>GitHub : https://github.com/Allexsen/belay | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641716/show_hn-belay-deterministic-semantic-diffs-of-what-a-coding-agent-changed/</p>
+<p><strong>CheckMyApp — Vérification automatique post-déploiement</strong></p>
+<p>CheckMyApp clique à travers les modifications en production (ou les URLs de prévisualisation de PR) et génère des tickets avec captures d'écran des bugs découverts. Intégrable directement avec Claude ou Codex pour fermer la boucle de correction.</p>
+<p>Site : https://checkmyapp.dev | Source : https://www.reddit.com/r/vibecoding/comments/hn-50635545/show_hn-checkmyapp-checks-your-live-app-with-each-deploy-from-coding-agent/</p>
+<p><strong>Telesma — Boucle de développement autonome pour Claude Code</strong></p>
+<p>Telesma fournit une boucle de développement entièrement autonome travaillant avec Claude Code, capable d'itérer sans intervention humaine directe sur les tâches de codage. GitHub : 3 étoiles.</p>
+<p>GitHub : https://github.com/mario12358/telesma | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641714/show_hn-telesma-an-autonomous-development-loop-for-claude-code/</p>
+<p><strong>Shh-code — Agent de codage axé confidentialité</strong></p>
+<p>Shh-code met l'accent sur la confidentialité dans les sessions de codage assisté par agent, proposant des garanties que les données sensibles restent protégées pendant l'exécution. Nouveau dépôt sans étoile.</p>
+<p>GitHub : https://github.com/maksympetkus/shh-code | Source : https://www.reddit.com/r/vibecoding/comments/hn-50644746/show_hn-shh-code-coding-agent-with-privacy/</p>
+<p><strong>Bo3mac — Recompilation statique ARM64 et port direct de Black Ops III</strong></p>
+<p>Projet ambitieux réalisant une recompilation statique ARM64 et un port en métal direct de Call of Duty : Black Ops III, permettant le jeu sur architectures Apple Silicon. Dépôt : 18 étoiles, licence non spécifiée, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/mawlicious/bo3mac | Source : https://news.ycombinator.com/item?id=50637863</p>
+<p><strong>Rhebok — RAG local gratuit pour agent de codage</strong></p>
+<p>Rhebok est un moteur RAG local et gratuit conçu spécifiquement pour alimenter votre agent de codage avec la documentation et le contexte de votre projet, sans dépendance cloud. GitHub : 4 étoiles, licence AGPL-3.0, dernière mise à jour le 25 novembre.</p>
+<p>GitHub : https://github.com/Stellenbosch-Technologies/rhebok | Source : https://www.reddit.com/r/vibecoding/comments/hn-50635912/show-hn-rhebok-free-local-rag-for-your-coding-agent/</p>
+<p><strong>Hub — Coordonnateur open-source pour sessions Claude Code et Codex</strong></p>
+<p>Hub, développé par Icons8, est un coordonnateur open-source gérant simultanément les sessions de Claude Code et Codex, permettant une orchestration entre plusieurs agents de codage. GitHub : 2 étoiles, 1 commentaire.</p>
+<p>GitHub : https://github.com/icons8/hub | Source : https://www.reddit.com/r/vibecoding/comments/hn-50641541/show-hn-hub-an-open-source-coordinator-for-claude-code-and-codex-sessions/</p>
+<p><strong>Xcode Agent Bridge — Sessions terminal Claude/Codex depuis Xcode</strong></p>
+<p>Un bridge connectant Xcode aux sessions terminal Claude/Codex en cours d'exécution, permettant d'interagir directement avec vos agents de codage depuis l'environnement de développement Apple. GitHub : 1 étoile, licence MIT.</p>
+<p>GitHub : https://github.com/supersonicbyte/xcode-agent-bridge | Source : https://www.reddit.com/r/vibecoding/comments/hn-50629023/chat-with-running-claude-codex-terminal-sessions-from-xcode/</p>
+<p><strong>App Map — Diagramme UML cliquable généré par agent IA</strong></p>
+<p>App Map fait dessiner par votre agent IA de l'UML cliquable représentant votre application mobile, transformant le code existant en schémas structurels navigables. GitHub : 1 étoile, 1 commentaire.</p>
+<p>GitHub : https://github.com/yonivav/app-map | Source : https://www.reddit.com/r/vibecoding/comments/hn-50643269/app-map-your-ai-coding-agent-draws-clickable-uml-of-your-mobile-app/</p>
+<h2>Articles et ressources</h2>
+<p><strong>Three LLM inflection points in twelve months — Simon Willison</strong></p>
+<p>Simon Willison identifie trois moments charnières dans les capacités des grands modèles de langage et des agents de programmation au cours des douze derniers mois. L'article approfondit les évolutions clés qui ont marqué cette période, incluant la montée en puissance des agents de codage à partir de novembre 2025.</p>
+<p>https://simonwillison.net/2026/Nov/24/llm-inflection-points/</p>
+<p><strong>Gemini refused to give me the lyrics to Twinkle Twinkle Little Star — 100 points</strong></p>
+<p>Un article rapportant que Gemini a refusé de fournir les paroles de « Douce Nuit » (« Twinkle Twinkle Little Star »), soulevant des questions sur les limitations et les filtres imposés par certains modèles face à des œuvres apparemment anodines. Discussion animée (70 commentaires).</p>
+<p>https://www.comentr.com/technology/01M88DWQ0R4NCMYR17AFEWRG1F | https://news.ycombinator.com/item?id=50638320</p>
+<p><strong>Making a dumb TV just smart enough — 33 points</strong></p>
+<p>Un projet personnel rendant une télévision traditionnelle intelligente, en ajoutant une couche logicielle minimale sans remplacer le matériel. Approche pragmatique qui devrait intéresser ceux qui privilégient la conservation plutôt que le remplacement.</p>
+<p>https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/ | https://news.ycombinator.com/item?id=50622934</p>
+<h2>Volume</h2>
+<p>144 publications dans l'intervalle, 16 retenus, 128 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/vibecoding — mercredi 25 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-25.html</link>
