@@ -6,9 +6,234 @@
 <description>Veille quotidienne du subreddit r/BestGitHubRepos — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/bestgithubrepos.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 00:31:39 +0100</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:34:18 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-27.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 00:34:18 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le jour s'ouvre sur une forte activité provenant de plusieurs dépôts vérifiés et d'une série de présentations « Show HN » particulièrement fournies. Parmi les nouveautés notables : Kitab, lecteur multi-formats en Rust ; Agent Zero, agent autonome à plus de 20 000 étoiles ; Colibri, moteur d'inférence hiérarchique pour grands modèles ; et le service de détection d'espionnage Supacheap.eu qui vise 544 courtiers en données.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Kitab — Lecteur PDF, EPUB, comics et Markdown</strong><br />
+Dépôt <a href="https://github.com/t21dev/kitab">t21dev/kitab</a> · Licence AGPL-3.0 · 150 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur de bureau rapide écrit en Rust avec GPUI. Il supporte les PDF, EPUB, fichiers de bande dessinée et documents Markdown dans la même interface. L'application se veut minimaliste et performante, sans dépendances webview ni navigateur intégré. Parfait pour une utilisation quotidienne sur tous les systèmes d'exploitation.</p>
+<p><strong>YouTube Ad Punisher — Contournement des bloqueurs anti-adblock</strong><br />
+Dépôt <a href="https://github.com/antonpictures/youtube-punisher">antonpictures/youtube-punisher</a> · Licence MIT · 98 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un outil qui permet de regarder YouTube même lorsque le site détecte un bloqueur de publicités. Le dépôt propose une extension combinée utilisateur et CSS qui contourne les vérifications intégrées par Google. Utile si vous utilisez déjà un bloqueur au quotidien mais que certaines pages vous bloquent l'accès.</p>
+<p><strong>Side by Side — Trois VM Linux dans un onglet de navigateur</strong><br />
+Dépôt <a href="https://github.com/michidk/sidebyside">michidk/sidebyside</a> · Licence Apache-2.0 · 47 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Permet d'exécuter trois machines virtuelles Linux simultanément directement dans un onglet de navigateur, chacune avec son propre environnement graphique. Chaque VM peut tourner sous un système différent. Idéal pour tester des configurations ou travailler avec plusieurs environnements de développement côte à côte sans matériel supplémentaire.</p>
+<p><strong>Intel One Mono — Police de caractères mono-espace</strong><br />
+Dépôt <a href="https://github.com/intel/intel-one-mono">intel/intel-one-mono</a> · Licence OFL-1.1 · 10 765 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Une nouvelle police de caractères mono-espace conçue par Intel pour le code et les interfaces terminal. La licence Open Font License autorise l'utilisation personnelle et commerciale sans restriction. Un ajout pratique pour ceux qui cherchent une police dédiée au développement.</p>
+<p><strong>Minipg — PostgreSQL en un seul exécutable</strong><br />
+Dépôt <a href="https://github.com/progrium/minipg">progrium/minipg</a> · Licence MIT · 202 étoiles · Dernière mise à jour : 26/11/2026.<br />
+PostgreSQL compilé en un binaire unique, sans dépendances système ni installation complexe. Particulièrement utile pour les tests, les démonstrations ou les environnements où PostgreSQL n'est pas disponible via les gestionnaires de paquets. Une approche pragmatique pour exécuter PostgreSQL sans overhead.</p>
+<p><strong>Block Ads — Blocage publicitaire sur Android</strong><br />
+Dépôt <a href="https://github.com/pass-with-high-score/blockads-android">pass-with-high-score/blockads-android</a> · Licence GPL-3.0 · 2 860 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Bloque les publicités au niveau système sur Android grâce au filtrage DNS basé sur VPN local. Aucune root nécessaire et aucune collecte de données. Un blocage complet au-delà des navigateurs, sur toutes les applications du système. Fonctionne en arrière-plan une fois configuré.</p>
+<p><strong>OmnySSH — Client et serveur SSH multiplateforme</strong><br />
+Dépôt <a href="https://github.com/timhartmann7/omnyssh">timhartmann7/omnyssh</a> · Licence Apache-2.0 · 1 335 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client et serveur SSH open-source pour macOS, Windows et Linux. Interface graphique de bureau et terminal textuel avec tableau de bord de métriques en direct. Gestionnaire de fichiers SFTP intégré, transfert de ports, clés SSH en un clic et snippets. Un remplaçant moderne pour les outils SSH existants.</p>
+<p><strong>Colibri — Moteur d'inférence hiérarchique pour grands modèles MOE</strong><br />
+Dépôt <a href="https://github.com/JustVugg/colibri">JustVugg/colibri</a> · Licence Apache-2.0 · 53 595 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un moteur d'inférence pour les modèles mélange d'experts frontier : experts chauds sur le GPU (CUDA, Vulkan), tièdes en RAM, froids lus depuis NVMe. Écrit en C, conçu pour fonctionner sur le matériel dont vous disposez déjà. Un projet ambitieux permettant d'exécuter de grands modèles locaux efficacement.</p>
+<p><strong>Agent Zero — Agent IA autonome personnel</strong><br />
+Dépôt <a href="https://github.com/agent0ai/agent-zero">agent0ai/agent-zero</a> · Licence non spécifiée · 20 001 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA personnel capable de raisonner et d'agir de manière autonome. Conçu pour être hébergé localement et interagir avec des API et services externes. Le projet a connu une croissance rapide ces derniers mois et constitue une base solide pour construire des automatisations personnelles.</p>
+<p><strong>Private GPT — RAG privé et local</strong><br />
+Dépôt <a href="https://github.com/zylon-ai/private-gpt">zylon-ai/private-gpt</a> · Licence Apache-2.0 · 57 662 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Posez des questions à vos documents. 100 % privé, aucun donné ne quitte votre machine. Supporte les principaux formats de fichiers et intègre divers moteurs LLM locaux. Une référence pour l'intelligence artificielle locale préservant la confidentialité des données.</p>
+<p><strong>Spotify Player — Lecteur Spotify en terminal</strong><br />
+Dépôt <a href="https://github.com/aome510/spotify-player">aome510/spotify-player</a> · Licence MIT · 7 332 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur Spotify complet fonctionnant entièrement en ligne de commande, avec toutes les fonctionnalités de la version bureautique. Contrôle via clavier ou souris, compatible avec le contrôle tactile sur terminaux supports. Alternative légère pour écouter Spotify sans lourdeur d'interface.</p>
+<p><strong>Stack Diagram — Diagramme d'architecture par description</strong><br />
+Dépôt <a href="https://github.com/caru-ini/stack-diagram">caru-ini/stack-diagram</a> · Licence MIT · 2 950 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA décrivant votre pile technique en une phrase, reçoit un diagramme d'architecture avec logos officiels. Permet de visualiser rapidement l'organisation de ses projets. Idéalement intégré dans les flux de travail de développement.</p>
+<p><strong>DeepTutor — Tutorat personnalisé par IA</strong><br />
+Dépôt <a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a> · Licence Apache-2.0 · 63 255 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un système de tutorat personnalisé en continu utilisant les grands modèles de langage. S'adapte au rythme de chaque apprenant et mémorise sa progression au fil du temps. Développé par l'Université Hong Kong des Sciences et Technologies. Un investissement réel dans l'éducation assistée par IA.</p>
+<p><strong>Yaak — Client API desktop intuitif</strong><br />
+Dépôt <a href="https://github.com/mountain-loop/yaak">mountain-loop/yaak</a> · Licence MIT · 19 554 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client intuitif pour organiser et exécuter requêtes REST, GraphQL, WebSockets, Server Sent Events et gRPC. Interface moderne et fluide, alternative à Postman et Insomnia. Organisation par dossiers, variables d'environnement et historique des appels.</p>
+<p><strong>OpenMotion — Studio vidéo génératif open-source</strong><br />
+Dépôt <a href="https://github.com/nexu-io/openmotion">nexu-io/openmotion</a> · Licence Apache-2.0 · 16 708 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Alternative open-source à Claude Motion et CapCut. Transforme une vidéo de référence en graphismes animés éditables avec kit de marque personnalisé. Export MP4 pour YouTube, Shorts, Instagram Reels et TikTok. Studio vidéo agnostique intégrant 300+ guides Motion.md et support pour 22 agents dont Claude Code et Codex.</p>
+<p><strong>Edge0 — Modèles fondamentaux natifs appareil</strong><br />
+Dépôt <a href="https://github.com/Edge0-AI/Edge0">Edge0-AI/Edge0</a> · Licence Apache-2.0 · 10 694 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Modèles fondamentaux exécutés nativement sur l'appareil : 145 milliards de paramètres sur portable, 35 milliards sur téléphone. Architecture latent mixture of experts, poids diffusés depuis SSD, routeur prédisant les charges d'une étape en avance. Compatible Mac, iPhone, Android et Windows. Des modèles sérieux directement sur votre matériel.</p>
+<p><strong>FreeLLM-API — Front uni vers des endpoints LLM gratuits</strong><br />
+Dépôt <a href="https://github.com/tashfeenahmed/freellmapi">tashfeenahmed/freellmapi</a> · Licence MIT · 58 862 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plus de 87 fournisseurs de LLM gratuits, 1 313 endpoints de modèles derrière une seule interface compatible /v1 OpenAI. Routage intelligent, basculement automatique, clés chiffrées. Destiné exclusivement à l'expérimentation personnelle. Pratique pour tester différents modèles sans créer de comptes multiples.</p>
+<p><strong>Bla — Protection contre le reverse engineering par IA</strong><br />
+Dépôt <a href="https://github.com/qybaihe/bla">qybaihe/bla</a> · Licence MIT · 6 995 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Serveur MCP et CLI protégeant JavaScript/TypeScript, Electron ASAR, WASM, Python, binaires natifs, bases SQLite, modèles GGUF/Safetensors et APK Android contre les agents de reverse engineering par IA. Un outil défensif destiné aux développeurs soucieux de protéger leur code face aux scanners automatiques.</p>
+<p><strong>Dokploy — Alternative open-source à Vercel, Netlify et Heroku</strong><br />
+Dépôt <a href="https://github.com/dokploy/dokploy">dokploy/dokploy</a> · Licence non spécifiée · 38 731 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plateforme de déploiement open-source pour héberger ses applications soi-même. Panneau de contrôle visuel, gestion des domaines, bases de données, certificats SSL automatiques et déploiement en un clic. Remplaçant concret aux solutions cloud payantes pour les développeurs indépendants.</p>
+<p><strong>Nod — Agent personnel avec son propre ordinateur</strong><br />
+Dépôt mentionné sur Reddit r/BestGitHubRepos · 3 700 étoiles.<br />
+Un agent personnel open-source disposant de sa propre machine virtuelle pour agir de manière autonome. Différent d'un simple chatbot : il possède un espace informatique dédié pour effectuer des tâches réelles. Projet encore émergent mais prometteur.</p>
+<p><strong>DiPlay — Récepteur CarPlay indépendant</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 14 000 étoiles.<br />
+Récepteur CarPlay indépendant pour les unités principales Android compatibles. Permet d'utiliser CarPlay sur tout écran Android auto existant, sans modification matérielle. Solution logicielle pour équiper son véhicule sans changer l'autoradio.</p>
+<p><strong>MicroG Services — Implémentation libre des Google Play Services</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 15 000 étoiles.<br />
+Implémentation gratuite des services Google Play pour Android. Permet d'utiliser les applications nécessitant les services Google tout en préservant la vie privée. Composant essentiel pour les utilisateurs d'Android libre.</p>
+<p><strong>Nextcloud Office — Application de bureau Nextcloud</strong><br />
+Application Nextcloud Office annoncée récemment avec son application de bureau native. Permet d'éditer des documents suite bureautique directement depuis son serveur Nextcloud. Alternative open-source à Microsoft 365 et Google Workspace.</p>
+<p><strong>Quoth — Dictée vocale IA locale pour Linux</strong><br />
+Outil de dictée vocale exclusivement conçu pour Linux, développée par ItsFOSS. Exécute les modèles Whisper en local et teste le matériel pour déterminer quel modèle fonctionne où (CPU, GPU ou NPU). Pas besoin de configuration manuelle pour choisir le bon modèle. Gratuit, open-source, respectueux de la vie privée.</p>
+<p><strong>MoCha — Remplacement de personnage vidéo par IA</strong><br />
+Dépôt <a href="https://github.com/Orange-3DV-Team/MoCha">Orange-3DV-Team/MoCha</a> · Licence privée · 1 055 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Remplacement de personnages vidéo end-to-end sans guide structurel. Technologie de recherche avancée pour modifier un personnage dans une vidéo tout en conservant la cohérence visuelle. À suivre, au stade expérimental.</p>
+<p><strong>Scambraid — GPUs Nvidia et AMD servant une couche MoE ensemble</strong><br />
+Projet mentionné sur HN : permet à des GPU de marques différentes de servir ensemble une seule couche d'un modèle mélange d'experts. Optimisation matérielle pour maximiser l'usage des ressources disponibles.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg Skill — Éditeur vidéo local pour agents de codage</strong><br />
+Dépôt <a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a>.<br />
+Outil local proposant 42 outils FFmpeg avec contrat lisible par machine et serveur MCP. Compatible Claude Code, Cursor et Codex. Découpe, sous-titres, recadrage, normalisation sonore, exports pour plateformes. Sans cloud ni clé API. Mise à jour récente de l'outil d'assistance aux agents IA de codage.</p>
+<p><strong>PatchRight — Version indétectable de Playwright</strong><br />
+Dépôt <a href="https://github.com/kaliiiiiiii-vinyzu/patchright">kaliiiiiiiiii-Vinyzu/patchright</a> · Licence Apache-2.0 · 5 266 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Version modifiée de la bibliothèque de test et automatisation Playwright, conçue pour passer les systèmes de détection de bots. Utile pour les tests d'accessibilité, le scraping éthique et l'automatisation de navigation nécessitant une identité humaine.</p>
+<p><strong>Chrome DevTools MCP</strong><br />
+Dépôt <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a>.<br />
+Interface MCP (Model Context Protocol) pour Chrome DevTools, permettant aux agents IA d'interagir avec les outils de développement du navigateur. Intégration directe entre agents de codage et débogage web.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Telescope.nvim — Trouver, filtrer, prévisualiser, choisir</strong><br />
+Dépôt mentionné sur Reddit · 20 000 étoiles.<br />
+Extension lua pour Neovirgule offrant recherche, filtrage, prévisualisation et sélection dans l'éditeur. Tout est écrit en lua, sans dépendance externe. Le greffon de navigation le plus abouti pour Neovim, largement utilisé par la communauté.</p>
+<p><strong>SkillEvaluator — Évaluation des compétences d'agents IA</strong><br />
+Dépôt mentionné sur Reddit · 3 000 étoiles.<br />
+Framework pour évaluer et améliorer les compétences et greffons des agents IA. Permet de mesurer l'efficacité d'une compétence avant son déploiement et d'identifier les améliorations nécessaires.</p>
+<p><strong>AgentDE — Console unifiée pour agents de codage</strong><br />
+Mentionné sur Product Hunt.<br />
+Regroupe tous les agents de codage dans une fenêtre Mac native unique. Alternative à la multiplication des fenêtres d'IDE pour les équipes utilisant plusieurs outils IA simultanément.</p>
+<p><strong>Pax par Pydantic — Coding agent où le coding est un plugin</strong><br />
+Mentionné sur Product Hunt.<br />
+Agent de codage développé par Pydantic où la génération de code elle-même est extensible via plugins. Approche modulaire pour personnaliser le comportement de l'agent selon les besoins du projet.</p>
+<p><strong>DeskFleet — Agents de codage collaboratifs en équipe</strong><br />
+Mentionné sur Product Hunt.<br />
+Permet d'exécuter des agents de codage ensemble sur les machines de toute l'équipe. Synchronisation des sessions et partage des résultats entre développeurs.</p>
+<p><strong>Remora — Couche mémoire à long terme pour agents IA</strong><br />
+Mentionné sur Product Hunt.<br />
+Couche de mémoire pérenne permettant aux agents IA de conserver et récupérer des informations entre les sessions. Important pour les agents effectuant des tâches nécessitant une connaissance contextuelle prolongée.</p>
+<h2>Volume — 300 éléments traités depuis la shortlist (sur 722 au total, la liste est tronquée à 300), 25 nouveautés retenues détaillées, 3 mises à jour, 10 extensions/greffons. L'édition couvre gitmanual (93 entrées), BestGitHubRepos (83), hn RSS (68), Product Hunt (36), Developpez (13), ItsFOSS (4), Journal du Hacker (2) et LinuxFr (1).</h2>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le jour s'ouvre sur une forte activité provenant de plusieurs dépôts vérifiés et d'une série de présentations « Show HN » particulièrement fournies. Parmi les nouveautés notables : Kitab, lecteur multi-formats en Rust ; Agent Zero, agent autonome à plus de 20 000 étoiles ; Colibri, moteur d'inférence hiérarchique pour grands modèles ; et le service de détection d'espionnage Supacheap.eu qui vise 544 courtiers en données.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Kitab — Lecteur PDF, EPUB, comics et Markdown</strong><br />
+Dépôt <a href="https://github.com/t21dev/kitab">t21dev/kitab</a> · Licence AGPL-3.0 · 150 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur de bureau rapide écrit en Rust avec GPUI. Il supporte les PDF, EPUB, fichiers de bande dessinée et documents Markdown dans la même interface. L'application se veut minimaliste et performante, sans dépendances webview ni navigateur intégré. Parfait pour une utilisation quotidienne sur tous les systèmes d'exploitation.</p>
+<p><strong>YouTube Ad Punisher — Contournement des bloqueurs anti-adblock</strong><br />
+Dépôt <a href="https://github.com/antonpictures/youtube-punisher">antonpictures/youtube-punisher</a> · Licence MIT · 98 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un outil qui permet de regarder YouTube même lorsque le site détecte un bloqueur de publicités. Le dépôt propose une extension combinée utilisateur et CSS qui contourne les vérifications intégrées par Google. Utile si vous utilisez déjà un bloqueur au quotidien mais que certaines pages vous bloquent l'accès.</p>
+<p><strong>Side by Side — Trois VM Linux dans un onglet de navigateur</strong><br />
+Dépôt <a href="https://github.com/michidk/sidebyside">michidk/sidebyside</a> · Licence Apache-2.0 · 47 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Permet d'exécuter trois machines virtuelles Linux simultanément directement dans un onglet de navigateur, chacune avec son propre environnement graphique. Chaque VM peut tourner sous un système différent. Idéal pour tester des configurations ou travailler avec plusieurs environnements de développement côte à côte sans matériel supplémentaire.</p>
+<p><strong>Intel One Mono — Police de caractères mono-espace</strong><br />
+Dépôt <a href="https://github.com/intel/intel-one-mono">intel/intel-one-mono</a> · Licence OFL-1.1 · 10 765 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Une nouvelle police de caractères mono-espace conçue par Intel pour le code et les interfaces terminal. La licence Open Font License autorise l'utilisation personnelle et commerciale sans restriction. Un ajout pratique pour ceux qui cherchent une police dédiée au développement.</p>
+<p><strong>Minipg — PostgreSQL en un seul exécutable</strong><br />
+Dépôt <a href="https://github.com/progrium/minipg">progrium/minipg</a> · Licence MIT · 202 étoiles · Dernière mise à jour : 26/11/2026.<br />
+PostgreSQL compilé en un binaire unique, sans dépendances système ni installation complexe. Particulièrement utile pour les tests, les démonstrations ou les environnements où PostgreSQL n'est pas disponible via les gestionnaires de paquets. Une approche pragmatique pour exécuter PostgreSQL sans overhead.</p>
+<p><strong>Block Ads — Blocage publicitaire sur Android</strong><br />
+Dépôt <a href="https://github.com/pass-with-high-score/blockads-android">pass-with-high-score/blockads-android</a> · Licence GPL-3.0 · 2 860 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Bloque les publicités au niveau système sur Android grâce au filtrage DNS basé sur VPN local. Aucune root nécessaire et aucune collecte de données. Un blocage complet au-delà des navigateurs, sur toutes les applications du système. Fonctionne en arrière-plan une fois configuré.</p>
+<p><strong>OmnySSH — Client et serveur SSH multiplateforme</strong><br />
+Dépôt <a href="https://github.com/timhartmann7/omnyssh">timhartmann7/omnyssh</a> · Licence Apache-2.0 · 1 335 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client et serveur SSH open-source pour macOS, Windows et Linux. Interface graphique de bureau et terminal textuel avec tableau de bord de métriques en direct. Gestionnaire de fichiers SFTP intégré, transfert de ports, clés SSH en un clic et snippets. Un remplaçant moderne pour les outils SSH existants.</p>
+<p><strong>Colibri — Moteur d'inférence hiérarchique pour grands modèles MOE</strong><br />
+Dépôt <a href="https://github.com/JustVugg/colibri">JustVugg/colibri</a> · Licence Apache-2.0 · 53 595 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un moteur d'inférence pour les modèles mélange d'experts frontier : experts chauds sur le GPU (CUDA, Vulkan), tièdes en RAM, froids lus depuis NVMe. Écrit en C, conçu pour fonctionner sur le matériel dont vous disposez déjà. Un projet ambitieux permettant d'exécuter de grands modèles locaux efficacement.</p>
+<p><strong>Agent Zero — Agent IA autonome personnel</strong><br />
+Dépôt <a href="https://github.com/agent0ai/agent-zero">agent0ai/agent-zero</a> · Licence non spécifiée · 20 001 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA personnel capable de raisonner et d'agir de manière autonome. Conçu pour être hébergé localement et interagir avec des API et services externes. Le projet a connu une croissance rapide ces derniers mois et constitue une base solide pour construire des automatisations personnelles.</p>
+<p><strong>Private GPT — RAG privé et local</strong><br />
+Dépôt <a href="https://github.com/zylon-ai/private-gpt">zylon-ai/private-gpt</a> · Licence Apache-2.0 · 57 662 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Posez des questions à vos documents. 100 % privé, aucun donné ne quitte votre machine. Supporte les principaux formats de fichiers et intègre divers moteurs LLM locaux. Une référence pour l'intelligence artificielle locale préservant la confidentialité des données.</p>
+<p><strong>Spotify Player — Lecteur Spotify en terminal</strong><br />
+Dépôt <a href="https://github.com/aome510/spotify-player">aome510/spotify-player</a> · Licence MIT · 7 332 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur Spotify complet fonctionnant entièrement en ligne de commande, avec toutes les fonctionnalités de la version bureautique. Contrôle via clavier ou souris, compatible avec le contrôle tactile sur terminaux supports. Alternative légère pour écouter Spotify sans lourdeur d'interface.</p>
+<p><strong>Stack Diagram — Diagramme d'architecture par description</strong><br />
+Dépôt <a href="https://github.com/caru-ini/stack-diagram">caru-ini/stack-diagram</a> · Licence MIT · 2 950 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA décrivant votre pile technique en une phrase, reçoit un diagramme d'architecture avec logos officiels. Permet de visualiser rapidement l'organisation de ses projets. Idéalement intégré dans les flux de travail de développement.</p>
+<p><strong>DeepTutor — Tutorat personnalisé par IA</strong><br />
+Dépôt <a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a> · Licence Apache-2.0 · 63 255 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un système de tutorat personnalisé en continu utilisant les grands modèles de langage. S'adapte au rythme de chaque apprenant et mémorise sa progression au fil du temps. Développé par l'Université Hong Kong des Sciences et Technologies. Un investissement réel dans l'éducation assistée par IA.</p>
+<p><strong>Yaak — Client API desktop intuitif</strong><br />
+Dépôt <a href="https://github.com/mountain-loop/yaak">mountain-loop/yaak</a> · Licence MIT · 19 554 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client intuitif pour organiser et exécuter requêtes REST, GraphQL, WebSockets, Server Sent Events et gRPC. Interface moderne et fluide, alternative à Postman et Insomnia. Organisation par dossiers, variables d'environnement et historique des appels.</p>
+<p><strong>OpenMotion — Studio vidéo génératif open-source</strong><br />
+Dépôt <a href="https://github.com/nexu-io/openmotion">nexu-io/openmotion</a> · Licence Apache-2.0 · 16 708 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Alternative open-source à Claude Motion et CapCut. Transforme une vidéo de référence en graphismes animés éditables avec kit de marque personnalisé. Export MP4 pour YouTube, Shorts, Instagram Reels et TikTok. Studio vidéo agnostique intégrant 300+ guides Motion.md et support pour 22 agents dont Claude Code et Codex.</p>
+<p><strong>Edge0 — Modèles fondamentaux natifs appareil</strong><br />
+Dépôt <a href="https://github.com/Edge0-AI/Edge0">Edge0-AI/Edge0</a> · Licence Apache-2.0 · 10 694 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Modèles fondamentaux exécutés nativement sur l'appareil : 145 milliards de paramètres sur portable, 35 milliards sur téléphone. Architecture latent mixture of experts, poids diffusés depuis SSD, routeur prédisant les charges d'une étape en avance. Compatible Mac, iPhone, Android et Windows. Des modèles sérieux directement sur votre matériel.</p>
+<p><strong>FreeLLM-API — Front uni vers des endpoints LLM gratuits</strong><br />
+Dépôt <a href="https://github.com/tashfeenahmed/freellmapi">tashfeenahmed/freellmapi</a> · Licence MIT · 58 862 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plus de 87 fournisseurs de LLM gratuits, 1 313 endpoints de modèles derrière une seule interface compatible /v1 OpenAI. Routage intelligent, basculement automatique, clés chiffrées. Destiné exclusivement à l'expérimentation personnelle. Pratique pour tester différents modèles sans créer de comptes multiples.</p>
+<p><strong>Bla — Protection contre le reverse engineering par IA</strong><br />
+Dépôt <a href="https://github.com/qybaihe/bla">qybaihe/bla</a> · Licence MIT · 6 995 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Serveur MCP et CLI protégeant JavaScript/TypeScript, Electron ASAR, WASM, Python, binaires natifs, bases SQLite, modèles GGUF/Safetensors et APK Android contre les agents de reverse engineering par IA. Un outil défensif destiné aux développeurs soucieux de protéger leur code face aux scanners automatiques.</p>
+<p><strong>Dokploy — Alternative open-source à Vercel, Netlify et Heroku</strong><br />
+Dépôt <a href="https://github.com/dokploy/dokploy">dokploy/dokploy</a> · Licence non spécifiée · 38 731 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plateforme de déploiement open-source pour héberger ses applications soi-même. Panneau de contrôle visuel, gestion des domaines, bases de données, certificats SSL automatiques et déploiement en un clic. Remplaçant concret aux solutions cloud payantes pour les développeurs indépendants.</p>
+<p><strong>Nod — Agent personnel avec son propre ordinateur</strong><br />
+Dépôt mentionné sur Reddit r/BestGitHubRepos · 3 700 étoiles.<br />
+Un agent personnel open-source disposant de sa propre machine virtuelle pour agir de manière autonome. Différent d'un simple chatbot : il possède un espace informatique dédié pour effectuer des tâches réelles. Projet encore émergent mais prometteur.</p>
+<p><strong>DiPlay — Récepteur CarPlay indépendant</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 14 000 étoiles.<br />
+Récepteur CarPlay indépendant pour les unités principales Android compatibles. Permet d'utiliser CarPlay sur tout écran Android auto existant, sans modification matérielle. Solution logicielle pour équiper son véhicule sans changer l'autoradio.</p>
+<p><strong>MicroG Services — Implémentation libre des Google Play Services</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 15 000 étoiles.<br />
+Implémentation gratuite des services Google Play pour Android. Permet d'utiliser les applications nécessitant les services Google tout en préservant la vie privée. Composant essentiel pour les utilisateurs d'Android libre.</p>
+<p><strong>Nextcloud Office — Application de bureau Nextcloud</strong><br />
+Application Nextcloud Office annoncée récemment avec son application de bureau native. Permet d'éditer des documents suite bureautique directement depuis son serveur Nextcloud. Alternative open-source à Microsoft 365 et Google Workspace.</p>
+<p><strong>Quoth — Dictée vocale IA locale pour Linux</strong><br />
+Outil de dictée vocale exclusivement conçu pour Linux, développée par ItsFOSS. Exécute les modèles Whisper en local et teste le matériel pour déterminer quel modèle fonctionne où (CPU, GPU ou NPU). Pas besoin de configuration manuelle pour choisir le bon modèle. Gratuit, open-source, respectueux de la vie privée.</p>
+<p><strong>MoCha — Remplacement de personnage vidéo par IA</strong><br />
+Dépôt <a href="https://github.com/Orange-3DV-Team/MoCha">Orange-3DV-Team/MoCha</a> · Licence privée · 1 055 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Remplacement de personnages vidéo end-to-end sans guide structurel. Technologie de recherche avancée pour modifier un personnage dans une vidéo tout en conservant la cohérence visuelle. À suivre, au stade expérimental.</p>
+<p><strong>Scambraid — GPUs Nvidia et AMD servant une couche MoE ensemble</strong><br />
+Projet mentionné sur HN : permet à des GPU de marques différentes de servir ensemble une seule couche d'un modèle mélange d'experts. Optimisation matérielle pour maximiser l'usage des ressources disponibles.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg Skill — Éditeur vidéo local pour agents de codage</strong><br />
+Dépôt <a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a>.<br />
+Outil local proposant 42 outils FFmpeg avec contrat lisible par machine et serveur MCP. Compatible Claude Code, Cursor et Codex. Découpe, sous-titres, recadrage, normalisation sonore, exports pour plateformes. Sans cloud ni clé API. Mise à jour récente de l'outil d'assistance aux agents IA de codage.</p>
+<p><strong>PatchRight — Version indétectable de Playwright</strong><br />
+Dépôt <a href="https://github.com/kaliiiiiiii-vinyzu/patchright">kaliiiiiiiiii-Vinyzu/patchright</a> · Licence Apache-2.0 · 5 266 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Version modifiée de la bibliothèque de test et automatisation Playwright, conçue pour passer les systèmes de détection de bots. Utile pour les tests d'accessibilité, le scraping éthique et l'automatisation de navigation nécessitant une identité humaine.</p>
+<p><strong>Chrome DevTools MCP</strong><br />
+Dépôt <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a>.<br />
+Interface MCP (Model Context Protocol) pour Chrome DevTools, permettant aux agents IA d'interagir avec les outils de développement du navigateur. Intégration directe entre agents de codage et débogage web.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Telescope.nvim — Trouver, filtrer, prévisualiser, choisir</strong><br />
+Dépôt mentionné sur Reddit · 20 000 étoiles.<br />
+Extension lua pour Neovirgule offrant recherche, filtrage, prévisualisation et sélection dans l'éditeur. Tout est écrit en lua, sans dépendance externe. Le greffon de navigation le plus abouti pour Neovim, largement utilisé par la communauté.</p>
+<p><strong>SkillEvaluator — Évaluation des compétences d'agents IA</strong><br />
+Dépôt mentionné sur Reddit · 3 000 étoiles.<br />
+Framework pour évaluer et améliorer les compétences et greffons des agents IA. Permet de mesurer l'efficacité d'une compétence avant son déploiement et d'identifier les améliorations nécessaires.</p>
+<p><strong>AgentDE — Console unifiée pour agents de codage</strong><br />
+Mentionné sur Product Hunt.<br />
+Regroupe tous les agents de codage dans une fenêtre Mac native unique. Alternative à la multiplication des fenêtres d'IDE pour les équipes utilisant plusieurs outils IA simultanément.</p>
+<p><strong>Pax par Pydantic — Coding agent où le coding est un plugin</strong><br />
+Mentionné sur Product Hunt.<br />
+Agent de codage développé par Pydantic où la génération de code elle-même est extensible via plugins. Approche modulaire pour personnaliser le comportement de l'agent selon les besoins du projet.</p>
+<p><strong>DeskFleet — Agents de codage collaboratifs en équipe</strong><br />
+Mentionné sur Product Hunt.<br />
+Permet d'exécuter des agents de codage ensemble sur les machines de toute l'équipe. Synchronisation des sessions et partage des résultats entre développeurs.</p>
+<p><strong>Remora — Couche mémoire à long terme pour agents IA</strong><br />
+Mentionné sur Product Hunt.<br />
+Couche de mémoire pérenne permettant aux agents IA de conserver et récupérer des informations entre les sessions. Important pour les agents effectuant des tâches nécessitant une connaissance contextuelle prolongée.</p>
+<h2>Volume — 300 éléments traités depuis la shortlist (sur 722 au total, la liste est tronquée à 300), 25 nouveautés retenues détaillées, 3 mises à jour, 10 extensions/greffons. L'édition couvre gitmanual (93 entrées), BestGitHubRepos (83), hn RSS (68), Product Hunt (36), Developpez (13), ItsFOSS (4), Journal du Hacker (2) et LinuxFr (1).</h2>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/BestGitHubRepos — jeudi 26 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-26.html</link>

@@ -6,9 +6,112 @@
 <description>Veille quotidienne du subreddit r/LovingOpenSourceAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/lovingopensourceai.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 00:23:20 +0100</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:22:12 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-27.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 00:22:12 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Moins d'une quinzaine de fils nouveaux aujourd'hui, mais un noyau d'annonces utiles : PostgreSQL en exécutable unique, un serveur de diffusion local compatible fal.ai, et un moteur LLM Rust capable de faire tourner des modèles plus gros que la VRAM disponible.</p>
+<p><strong>Remarque :</strong> la shortlist contenait 90 entrées (dont beaucoup hors sujet). Les éléments retenus sont ci-dessous.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>Minipg — PostgreSQL en un seul exécutable</h3>
+<p>Minipg embarque PostgreSQL dans un fichier binaire autonome. Pas de serveur à configurer, pas de daemon en arrière-plan : une archive <code>.pgdb</code> contient les données, la configuration et le mot de passe superutilisateur. À chaque commande, minipg lance Postgres via <a href="https://github.com/justincmayer/h9">h9</a> (une bibliothèque Zig qui fait tourner des binaires Alpine sur un micro-noyau Plan 9), l'utilise, puis l'éteint quand il n'est plus utilisé. Un lock assure qu'un seul processus tourne par base.</p>
+<p>Disponible pour Linux x86_64 (KVM ou mode natif sans <code>/dev/kvm</code>), macOS Apple Silicon et même dans un navigateur WebAssembly. La licence est MIT, l'exécutable pèse environ 35 Mo en téléchargement.</p>
+<p><a href="https://github.com/progrium/minipg">progrium/minipg</a> — 202 étoiles, licence MIT, dernière mise à jour le 26/11.</p>
+<h3>OpenFal — Serveur local compatible fal.ai pour la génération d'images et vidéo</h3>
+<p>OpenFal fournit une API HTTP compatible avec fal.ai pour faire tourner localement Qwen-Image-2.1, Wan 2.2 et MiniMax H3 (génération vidéo, face swap, audio stéréo). Contrairement à ComfyUI, on évite les graphes de nœuds : un CLI détecte le matériel, télécharge les poids vérifiés, et met en place un point de terminaison local, un queue manager et un Studio web.</p>
+<p>Le runtime utilise le block-offloading PyTorch plutôt que le continuous batching — c'est séquentiel au lieu de concurrent, ce qui convient aux GPU grand public où la mémoire peut être juste. Compatible Windows, Linux et macOS.</p>
+<p>License MIT, dépôt créé le 16/11.<br />
+<a href="https://github.com/esokullu/openfal">esokullu/openfal</a> — site : https://openfal.org</p>
+<h3>RustingStrata — Moteur GGUF Rust, modèles &gt; VRAM sur CUDA et Vulkan</h3>
+<p>RustingStrata est un moteur d'inférence LLM écrit en pur Rust, capable de charger des modèles GGUF plus volumineux que la VRAM disponible grâce à un système de tiering entre GPU et RAM hôte. Supporte CUDA et Vulkan comme accélérateurs matériels. Déjà près de 500 étoiles en quelques jours seulement.</p>
+<p>Le projet vise les développeurs Rust qui souhaitent intégrer l'inférence locale directement dans leurs applications sans passer par Python. Licence <code>NOASSERTION</code> (à vérifier).<br />
+<a href="https://github.com/RustingStudio/RustingStrata">RustingStudio/RustingStrata</a> — 495 étoiles, dernière mise à jour le 26/11.</p>
+<h3>Please — LLM de dialogue dans le terminal, inférence locale</h3>
+<p>Please est un outil en ligne de commande qui permet de décrire en langage naturel des opérations sur le répertoire courant (résumer des commits, générer des scripts, formater du code, résoudre des conflits Git). Tout le traitement reste local sur la machine — les weights Inkling-2-Mini-IQ4_NL sont téléchargés une fois et réutilisés. Une fonctionnalité SSH « bridging » permet de s'y connecter depuis un shell distant ou un conteneur Docker sans recopier les poids.</p>
+<p>Disponible via Homebrew ou un script d'installation. Écrit en Ruby + Rust + Shell.<br />
+<a href="https://github.com/xhjkl/please">xhjkl/please</a> — 26 étoiles, dernière mise à jour le 25/11.</p>
+<h3>DhurandharAI — Exécuter des modèles GGUF offline sur Android</h3>
+<p>Une application Android pour faire tourner des modèles GGUF en local sur téléphone, sans connexion internet. Destinée aux utilisateurs qui veulent accéder à un assistant IA hors ligne sur mobile.<br />
+<a href="https://play.google.com/store/apps/details?id=com.soprso.dhurandharai&amp;hl=en_US">Lien Play Store</a></p>
+<h3>ZeroBurn — Réduire la consommation de tokens des agents de codage</h3>
+<p>ZeroBurn réduit la combustion de tokens des agents de programmation grâce à un mode MCP zéro token couplé à Ollama en local. Annoncé comme permettant jusqu'à 98 % d'économie de tokens sur les tâches d'agent.<br />
+<a href="https://github.com/thoufeeque22/zeroburn">thoufeeque22/zeroburn</a> — 2 points sur HN, aucun commentaire.</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Intel publie la police Mono One</h3>
+<p>Intel a rendu publique sa police de caractères mono espacement One, sous licence Apache 2.0. Conçue pour la lecture de code, elle vise à remplacer les fontes propriétaires ou celles avec licences restrictives dans les environnements de développement. Cette publication complète la gamme de polices proposées précédemment par Intel Design Font Foundry.<br />
+<a href="https://github.com/intel/intel-one-mono">github.com/intel/intel-one-mono</a></p>
+<h3>Correctifs spécifiques AMD pour llama.cpp</h3>
+<p>Des correctifs ciblés pour les processeurs AMD ont été publiés dans le cadre de llama.cpp. Ils activent des instructions AVX512 non supportées par défaut sur certains chips Ryzen, améliorant significativement les performances sur les architectures AMD modernes.<br />
+<a href="https://github.com/davidbau/amd-specific-llama-cpp">davidbau/amd-specific-llama-cpp</a> — 45 points sur HN, 6 commentaires.</p>
+<h3>OS bare-metal pour Qwen3-0.6B</h3>
+<p>Un système d'exploitation bare-metal exécutant Qwen3-0.6B est annoncé, affichant des performances 54 % supérieures à llama.cpp. Le projet, issu des travaux d'alesha-pro (connu pour les benchmarks de latence de modèles), démontre qu'en supprimant toute couche d'abstraction (hyperviseur, kernel Linux), l'inférence LLM peut atteindre des vitesses très proches du matériel nu.<br />
+<a href="https://twitter.com/superalesha/status/2125682626056839259">@superalesha</a></p>
+<hr />
+<h2>Extensions et greffons</h2>
+<h3>Relecture de code AI dans VS Code, clé API personnelle ou Ollama</h3>
+<p>Une extension VS Code propose de relire le code généré par des IA en utilisant soit sa propre clé API (tout reste privé), soit un modèle local via Ollama. Sans création de compte obligatoire.<br />
+<a href="https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model">VS Code Marketplace</a> — 1 point sur HN, inédit.</p>
+<hr />
+<h2>Volume</h2>
+<p>90 posts publiés dans l'intervalle analysé, 11 retenus, 79 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Moins d'une quinzaine de fils nouveaux aujourd'hui, mais un noyau d'annonces utiles : PostgreSQL en exécutable unique, un serveur de diffusion local compatible fal.ai, et un moteur LLM Rust capable de faire tourner des modèles plus gros que la VRAM disponible.</p>
+<p><strong>Remarque :</strong> la shortlist contenait 90 entrées (dont beaucoup hors sujet). Les éléments retenus sont ci-dessous.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>Minipg — PostgreSQL en un seul exécutable</h3>
+<p>Minipg embarque PostgreSQL dans un fichier binaire autonome. Pas de serveur à configurer, pas de daemon en arrière-plan : une archive <code>.pgdb</code> contient les données, la configuration et le mot de passe superutilisateur. À chaque commande, minipg lance Postgres via <a href="https://github.com/justincmayer/h9">h9</a> (une bibliothèque Zig qui fait tourner des binaires Alpine sur un micro-noyau Plan 9), l'utilise, puis l'éteint quand il n'est plus utilisé. Un lock assure qu'un seul processus tourne par base.</p>
+<p>Disponible pour Linux x86_64 (KVM ou mode natif sans <code>/dev/kvm</code>), macOS Apple Silicon et même dans un navigateur WebAssembly. La licence est MIT, l'exécutable pèse environ 35 Mo en téléchargement.</p>
+<p><a href="https://github.com/progrium/minipg">progrium/minipg</a> — 202 étoiles, licence MIT, dernière mise à jour le 26/11.</p>
+<h3>OpenFal — Serveur local compatible fal.ai pour la génération d'images et vidéo</h3>
+<p>OpenFal fournit une API HTTP compatible avec fal.ai pour faire tourner localement Qwen-Image-2.1, Wan 2.2 et MiniMax H3 (génération vidéo, face swap, audio stéréo). Contrairement à ComfyUI, on évite les graphes de nœuds : un CLI détecte le matériel, télécharge les poids vérifiés, et met en place un point de terminaison local, un queue manager et un Studio web.</p>
+<p>Le runtime utilise le block-offloading PyTorch plutôt que le continuous batching — c'est séquentiel au lieu de concurrent, ce qui convient aux GPU grand public où la mémoire peut être juste. Compatible Windows, Linux et macOS.</p>
+<p>License MIT, dépôt créé le 16/11.<br />
+<a href="https://github.com/esokullu/openfal">esokullu/openfal</a> — site : https://openfal.org</p>
+<h3>RustingStrata — Moteur GGUF Rust, modèles &gt; VRAM sur CUDA et Vulkan</h3>
+<p>RustingStrata est un moteur d'inférence LLM écrit en pur Rust, capable de charger des modèles GGUF plus volumineux que la VRAM disponible grâce à un système de tiering entre GPU et RAM hôte. Supporte CUDA et Vulkan comme accélérateurs matériels. Déjà près de 500 étoiles en quelques jours seulement.</p>
+<p>Le projet vise les développeurs Rust qui souhaitent intégrer l'inférence locale directement dans leurs applications sans passer par Python. Licence <code>NOASSERTION</code> (à vérifier).<br />
+<a href="https://github.com/RustingStudio/RustingStrata">RustingStudio/RustingStrata</a> — 495 étoiles, dernière mise à jour le 26/11.</p>
+<h3>Please — LLM de dialogue dans le terminal, inférence locale</h3>
+<p>Please est un outil en ligne de commande qui permet de décrire en langage naturel des opérations sur le répertoire courant (résumer des commits, générer des scripts, formater du code, résoudre des conflits Git). Tout le traitement reste local sur la machine — les weights Inkling-2-Mini-IQ4_NL sont téléchargés une fois et réutilisés. Une fonctionnalité SSH « bridging » permet de s'y connecter depuis un shell distant ou un conteneur Docker sans recopier les poids.</p>
+<p>Disponible via Homebrew ou un script d'installation. Écrit en Ruby + Rust + Shell.<br />
+<a href="https://github.com/xhjkl/please">xhjkl/please</a> — 26 étoiles, dernière mise à jour le 25/11.</p>
+<h3>DhurandharAI — Exécuter des modèles GGUF offline sur Android</h3>
+<p>Une application Android pour faire tourner des modèles GGUF en local sur téléphone, sans connexion internet. Destinée aux utilisateurs qui veulent accéder à un assistant IA hors ligne sur mobile.<br />
+<a href="https://play.google.com/store/apps/details?id=com.soprso.dhurandharai&amp;hl=en_US">Lien Play Store</a></p>
+<h3>ZeroBurn — Réduire la consommation de tokens des agents de codage</h3>
+<p>ZeroBurn réduit la combustion de tokens des agents de programmation grâce à un mode MCP zéro token couplé à Ollama en local. Annoncé comme permettant jusqu'à 98 % d'économie de tokens sur les tâches d'agent.<br />
+<a href="https://github.com/thoufeeque22/zeroburn">thoufeeque22/zeroburn</a> — 2 points sur HN, aucun commentaire.</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Intel publie la police Mono One</h3>
+<p>Intel a rendu publique sa police de caractères mono espacement One, sous licence Apache 2.0. Conçue pour la lecture de code, elle vise à remplacer les fontes propriétaires ou celles avec licences restrictives dans les environnements de développement. Cette publication complète la gamme de polices proposées précédemment par Intel Design Font Foundry.<br />
+<a href="https://github.com/intel/intel-one-mono">github.com/intel/intel-one-mono</a></p>
+<h3>Correctifs spécifiques AMD pour llama.cpp</h3>
+<p>Des correctifs ciblés pour les processeurs AMD ont été publiés dans le cadre de llama.cpp. Ils activent des instructions AVX512 non supportées par défaut sur certains chips Ryzen, améliorant significativement les performances sur les architectures AMD modernes.<br />
+<a href="https://github.com/davidbau/amd-specific-llama-cpp">davidbau/amd-specific-llama-cpp</a> — 45 points sur HN, 6 commentaires.</p>
+<h3>OS bare-metal pour Qwen3-0.6B</h3>
+<p>Un système d'exploitation bare-metal exécutant Qwen3-0.6B est annoncé, affichant des performances 54 % supérieures à llama.cpp. Le projet, issu des travaux d'alesha-pro (connu pour les benchmarks de latence de modèles), démontre qu'en supprimant toute couche d'abstraction (hyperviseur, kernel Linux), l'inférence LLM peut atteindre des vitesses très proches du matériel nu.<br />
+<a href="https://twitter.com/superalesha/status/2125682626056839259">@superalesha</a></p>
+<hr />
+<h2>Extensions et greffons</h2>
+<h3>Relecture de code AI dans VS Code, clé API personnelle ou Ollama</h3>
+<p>Une extension VS Code propose de relire le code généré par des IA en utilisant soit sa propre clé API (tout reste privé), soit un modèle local via Ollama. Sans création de compte obligatoire.<br />
+<a href="https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model">VS Code Marketplace</a> — 1 point sur HN, inédit.</p>
+<hr />
+<h2>Volume</h2>
+<p>90 posts publiés dans l'intervalle analysé, 11 retenus, 79 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LovingOpenSourceAI — jeudi 26 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-26.html</link>

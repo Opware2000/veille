@@ -6,9 +6,337 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 00:14:46 +0100</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 00:36:31 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-27.html</link>
+<guid isPermaLink="false">bestgithubrepos-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 00:34:18 +0100</pubDate>
+<category>r/BestGitHubRepos</category>
+<description><![CDATA[<h1>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le jour s'ouvre sur une forte activité provenant de plusieurs dépôts vérifiés et d'une série de présentations « Show HN » particulièrement fournies. Parmi les nouveautés notables : Kitab, lecteur multi-formats en Rust ; Agent Zero, agent autonome à plus de 20 000 étoiles ; Colibri, moteur d'inférence hiérarchique pour grands modèles ; et le service de détection d'espionnage Supacheap.eu qui vise 544 courtiers en données.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Kitab — Lecteur PDF, EPUB, comics et Markdown</strong><br />
+Dépôt <a href="https://github.com/t21dev/kitab">t21dev/kitab</a> · Licence AGPL-3.0 · 150 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur de bureau rapide écrit en Rust avec GPUI. Il supporte les PDF, EPUB, fichiers de bande dessinée et documents Markdown dans la même interface. L'application se veut minimaliste et performante, sans dépendances webview ni navigateur intégré. Parfait pour une utilisation quotidienne sur tous les systèmes d'exploitation.</p>
+<p><strong>YouTube Ad Punisher — Contournement des bloqueurs anti-adblock</strong><br />
+Dépôt <a href="https://github.com/antonpictures/youtube-punisher">antonpictures/youtube-punisher</a> · Licence MIT · 98 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un outil qui permet de regarder YouTube même lorsque le site détecte un bloqueur de publicités. Le dépôt propose une extension combinée utilisateur et CSS qui contourne les vérifications intégrées par Google. Utile si vous utilisez déjà un bloqueur au quotidien mais que certaines pages vous bloquent l'accès.</p>
+<p><strong>Side by Side — Trois VM Linux dans un onglet de navigateur</strong><br />
+Dépôt <a href="https://github.com/michidk/sidebyside">michidk/sidebyside</a> · Licence Apache-2.0 · 47 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Permet d'exécuter trois machines virtuelles Linux simultanément directement dans un onglet de navigateur, chacune avec son propre environnement graphique. Chaque VM peut tourner sous un système différent. Idéal pour tester des configurations ou travailler avec plusieurs environnements de développement côte à côte sans matériel supplémentaire.</p>
+<p><strong>Intel One Mono — Police de caractères mono-espace</strong><br />
+Dépôt <a href="https://github.com/intel/intel-one-mono">intel/intel-one-mono</a> · Licence OFL-1.1 · 10 765 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Une nouvelle police de caractères mono-espace conçue par Intel pour le code et les interfaces terminal. La licence Open Font License autorise l'utilisation personnelle et commerciale sans restriction. Un ajout pratique pour ceux qui cherchent une police dédiée au développement.</p>
+<p><strong>Minipg — PostgreSQL en un seul exécutable</strong><br />
+Dépôt <a href="https://github.com/progrium/minipg">progrium/minipg</a> · Licence MIT · 202 étoiles · Dernière mise à jour : 26/11/2026.<br />
+PostgreSQL compilé en un binaire unique, sans dépendances système ni installation complexe. Particulièrement utile pour les tests, les démonstrations ou les environnements où PostgreSQL n'est pas disponible via les gestionnaires de paquets. Une approche pragmatique pour exécuter PostgreSQL sans overhead.</p>
+<p><strong>Block Ads — Blocage publicitaire sur Android</strong><br />
+Dépôt <a href="https://github.com/pass-with-high-score/blockads-android">pass-with-high-score/blockads-android</a> · Licence GPL-3.0 · 2 860 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Bloque les publicités au niveau système sur Android grâce au filtrage DNS basé sur VPN local. Aucune root nécessaire et aucune collecte de données. Un blocage complet au-delà des navigateurs, sur toutes les applications du système. Fonctionne en arrière-plan une fois configuré.</p>
+<p><strong>OmnySSH — Client et serveur SSH multiplateforme</strong><br />
+Dépôt <a href="https://github.com/timhartmann7/omnyssh">timhartmann7/omnyssh</a> · Licence Apache-2.0 · 1 335 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client et serveur SSH open-source pour macOS, Windows et Linux. Interface graphique de bureau et terminal textuel avec tableau de bord de métriques en direct. Gestionnaire de fichiers SFTP intégré, transfert de ports, clés SSH en un clic et snippets. Un remplaçant moderne pour les outils SSH existants.</p>
+<p><strong>Colibri — Moteur d'inférence hiérarchique pour grands modèles MOE</strong><br />
+Dépôt <a href="https://github.com/JustVugg/colibri">JustVugg/colibri</a> · Licence Apache-2.0 · 53 595 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un moteur d'inférence pour les modèles mélange d'experts frontier : experts chauds sur le GPU (CUDA, Vulkan), tièdes en RAM, froids lus depuis NVMe. Écrit en C, conçu pour fonctionner sur le matériel dont vous disposez déjà. Un projet ambitieux permettant d'exécuter de grands modèles locaux efficacement.</p>
+<p><strong>Agent Zero — Agent IA autonome personnel</strong><br />
+Dépôt <a href="https://github.com/agent0ai/agent-zero">agent0ai/agent-zero</a> · Licence non spécifiée · 20 001 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA personnel capable de raisonner et d'agir de manière autonome. Conçu pour être hébergé localement et interagir avec des API et services externes. Le projet a connu une croissance rapide ces derniers mois et constitue une base solide pour construire des automatisations personnelles.</p>
+<p><strong>Private GPT — RAG privé et local</strong><br />
+Dépôt <a href="https://github.com/zylon-ai/private-gpt">zylon-ai/private-gpt</a> · Licence Apache-2.0 · 57 662 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Posez des questions à vos documents. 100 % privé, aucun donné ne quitte votre machine. Supporte les principaux formats de fichiers et intègre divers moteurs LLM locaux. Une référence pour l'intelligence artificielle locale préservant la confidentialité des données.</p>
+<p><strong>Spotify Player — Lecteur Spotify en terminal</strong><br />
+Dépôt <a href="https://github.com/aome510/spotify-player">aome510/spotify-player</a> · Licence MIT · 7 332 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur Spotify complet fonctionnant entièrement en ligne de commande, avec toutes les fonctionnalités de la version bureautique. Contrôle via clavier ou souris, compatible avec le contrôle tactile sur terminaux supports. Alternative légère pour écouter Spotify sans lourdeur d'interface.</p>
+<p><strong>Stack Diagram — Diagramme d'architecture par description</strong><br />
+Dépôt <a href="https://github.com/caru-ini/stack-diagram">caru-ini/stack-diagram</a> · Licence MIT · 2 950 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA décrivant votre pile technique en une phrase, reçoit un diagramme d'architecture avec logos officiels. Permet de visualiser rapidement l'organisation de ses projets. Idéalement intégré dans les flux de travail de développement.</p>
+<p><strong>DeepTutor — Tutorat personnalisé par IA</strong><br />
+Dépôt <a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a> · Licence Apache-2.0 · 63 255 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un système de tutorat personnalisé en continu utilisant les grands modèles de langage. S'adapte au rythme de chaque apprenant et mémorise sa progression au fil du temps. Développé par l'Université Hong Kong des Sciences et Technologies. Un investissement réel dans l'éducation assistée par IA.</p>
+<p><strong>Yaak — Client API desktop intuitif</strong><br />
+Dépôt <a href="https://github.com/mountain-loop/yaak">mountain-loop/yaak</a> · Licence MIT · 19 554 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client intuitif pour organiser et exécuter requêtes REST, GraphQL, WebSockets, Server Sent Events et gRPC. Interface moderne et fluide, alternative à Postman et Insomnia. Organisation par dossiers, variables d'environnement et historique des appels.</p>
+<p><strong>OpenMotion — Studio vidéo génératif open-source</strong><br />
+Dépôt <a href="https://github.com/nexu-io/openmotion">nexu-io/openmotion</a> · Licence Apache-2.0 · 16 708 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Alternative open-source à Claude Motion et CapCut. Transforme une vidéo de référence en graphismes animés éditables avec kit de marque personnalisé. Export MP4 pour YouTube, Shorts, Instagram Reels et TikTok. Studio vidéo agnostique intégrant 300+ guides Motion.md et support pour 22 agents dont Claude Code et Codex.</p>
+<p><strong>Edge0 — Modèles fondamentaux natifs appareil</strong><br />
+Dépôt <a href="https://github.com/Edge0-AI/Edge0">Edge0-AI/Edge0</a> · Licence Apache-2.0 · 10 694 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Modèles fondamentaux exécutés nativement sur l'appareil : 145 milliards de paramètres sur portable, 35 milliards sur téléphone. Architecture latent mixture of experts, poids diffusés depuis SSD, routeur prédisant les charges d'une étape en avance. Compatible Mac, iPhone, Android et Windows. Des modèles sérieux directement sur votre matériel.</p>
+<p><strong>FreeLLM-API — Front uni vers des endpoints LLM gratuits</strong><br />
+Dépôt <a href="https://github.com/tashfeenahmed/freellmapi">tashfeenahmed/freellmapi</a> · Licence MIT · 58 862 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plus de 87 fournisseurs de LLM gratuits, 1 313 endpoints de modèles derrière une seule interface compatible /v1 OpenAI. Routage intelligent, basculement automatique, clés chiffrées. Destiné exclusivement à l'expérimentation personnelle. Pratique pour tester différents modèles sans créer de comptes multiples.</p>
+<p><strong>Bla — Protection contre le reverse engineering par IA</strong><br />
+Dépôt <a href="https://github.com/qybaihe/bla">qybaihe/bla</a> · Licence MIT · 6 995 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Serveur MCP et CLI protégeant JavaScript/TypeScript, Electron ASAR, WASM, Python, binaires natifs, bases SQLite, modèles GGUF/Safetensors et APK Android contre les agents de reverse engineering par IA. Un outil défensif destiné aux développeurs soucieux de protéger leur code face aux scanners automatiques.</p>
+<p><strong>Dokploy — Alternative open-source à Vercel, Netlify et Heroku</strong><br />
+Dépôt <a href="https://github.com/dokploy/dokploy">dokploy/dokploy</a> · Licence non spécifiée · 38 731 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plateforme de déploiement open-source pour héberger ses applications soi-même. Panneau de contrôle visuel, gestion des domaines, bases de données, certificats SSL automatiques et déploiement en un clic. Remplaçant concret aux solutions cloud payantes pour les développeurs indépendants.</p>
+<p><strong>Nod — Agent personnel avec son propre ordinateur</strong><br />
+Dépôt mentionné sur Reddit r/BestGitHubRepos · 3 700 étoiles.<br />
+Un agent personnel open-source disposant de sa propre machine virtuelle pour agir de manière autonome. Différent d'un simple chatbot : il possède un espace informatique dédié pour effectuer des tâches réelles. Projet encore émergent mais prometteur.</p>
+<p><strong>DiPlay — Récepteur CarPlay indépendant</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 14 000 étoiles.<br />
+Récepteur CarPlay indépendant pour les unités principales Android compatibles. Permet d'utiliser CarPlay sur tout écran Android auto existant, sans modification matérielle. Solution logicielle pour équiper son véhicule sans changer l'autoradio.</p>
+<p><strong>MicroG Services — Implémentation libre des Google Play Services</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 15 000 étoiles.<br />
+Implémentation gratuite des services Google Play pour Android. Permet d'utiliser les applications nécessitant les services Google tout en préservant la vie privée. Composant essentiel pour les utilisateurs d'Android libre.</p>
+<p><strong>Nextcloud Office — Application de bureau Nextcloud</strong><br />
+Application Nextcloud Office annoncée récemment avec son application de bureau native. Permet d'éditer des documents suite bureautique directement depuis son serveur Nextcloud. Alternative open-source à Microsoft 365 et Google Workspace.</p>
+<p><strong>Quoth — Dictée vocale IA locale pour Linux</strong><br />
+Outil de dictée vocale exclusivement conçu pour Linux, développée par ItsFOSS. Exécute les modèles Whisper en local et teste le matériel pour déterminer quel modèle fonctionne où (CPU, GPU ou NPU). Pas besoin de configuration manuelle pour choisir le bon modèle. Gratuit, open-source, respectueux de la vie privée.</p>
+<p><strong>MoCha — Remplacement de personnage vidéo par IA</strong><br />
+Dépôt <a href="https://github.com/Orange-3DV-Team/MoCha">Orange-3DV-Team/MoCha</a> · Licence privée · 1 055 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Remplacement de personnages vidéo end-to-end sans guide structurel. Technologie de recherche avancée pour modifier un personnage dans une vidéo tout en conservant la cohérence visuelle. À suivre, au stade expérimental.</p>
+<p><strong>Scambraid — GPUs Nvidia et AMD servant une couche MoE ensemble</strong><br />
+Projet mentionné sur HN : permet à des GPU de marques différentes de servir ensemble une seule couche d'un modèle mélange d'experts. Optimisation matérielle pour maximiser l'usage des ressources disponibles.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg Skill — Éditeur vidéo local pour agents de codage</strong><br />
+Dépôt <a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a>.<br />
+Outil local proposant 42 outils FFmpeg avec contrat lisible par machine et serveur MCP. Compatible Claude Code, Cursor et Codex. Découpe, sous-titres, recadrage, normalisation sonore, exports pour plateformes. Sans cloud ni clé API. Mise à jour récente de l'outil d'assistance aux agents IA de codage.</p>
+<p><strong>PatchRight — Version indétectable de Playwright</strong><br />
+Dépôt <a href="https://github.com/kaliiiiiiii-vinyzu/patchright">kaliiiiiiiiii-Vinyzu/patchright</a> · Licence Apache-2.0 · 5 266 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Version modifiée de la bibliothèque de test et automatisation Playwright, conçue pour passer les systèmes de détection de bots. Utile pour les tests d'accessibilité, le scraping éthique et l'automatisation de navigation nécessitant une identité humaine.</p>
+<p><strong>Chrome DevTools MCP</strong><br />
+Dépôt <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a>.<br />
+Interface MCP (Model Context Protocol) pour Chrome DevTools, permettant aux agents IA d'interagir avec les outils de développement du navigateur. Intégration directe entre agents de codage et débogage web.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Telescope.nvim — Trouver, filtrer, prévisualiser, choisir</strong><br />
+Dépôt mentionné sur Reddit · 20 000 étoiles.<br />
+Extension lua pour Neovirgule offrant recherche, filtrage, prévisualisation et sélection dans l'éditeur. Tout est écrit en lua, sans dépendance externe. Le greffon de navigation le plus abouti pour Neovim, largement utilisé par la communauté.</p>
+<p><strong>SkillEvaluator — Évaluation des compétences d'agents IA</strong><br />
+Dépôt mentionné sur Reddit · 3 000 étoiles.<br />
+Framework pour évaluer et améliorer les compétences et greffons des agents IA. Permet de mesurer l'efficacité d'une compétence avant son déploiement et d'identifier les améliorations nécessaires.</p>
+<p><strong>AgentDE — Console unifiée pour agents de codage</strong><br />
+Mentionné sur Product Hunt.<br />
+Regroupe tous les agents de codage dans une fenêtre Mac native unique. Alternative à la multiplication des fenêtres d'IDE pour les équipes utilisant plusieurs outils IA simultanément.</p>
+<p><strong>Pax par Pydantic — Coding agent où le coding est un plugin</strong><br />
+Mentionné sur Product Hunt.<br />
+Agent de codage développé par Pydantic où la génération de code elle-même est extensible via plugins. Approche modulaire pour personnaliser le comportement de l'agent selon les besoins du projet.</p>
+<p><strong>DeskFleet — Agents de codage collaboratifs en équipe</strong><br />
+Mentionné sur Product Hunt.<br />
+Permet d'exécuter des agents de codage ensemble sur les machines de toute l'équipe. Synchronisation des sessions et partage des résultats entre développeurs.</p>
+<p><strong>Remora — Couche mémoire à long terme pour agents IA</strong><br />
+Mentionné sur Product Hunt.<br />
+Couche de mémoire pérenne permettant aux agents IA de conserver et récupérer des informations entre les sessions. Important pour les agents effectuant des tâches nécessitant une connaissance contextuelle prolongée.</p>
+<h2>Volume — 300 éléments traités depuis la shortlist (sur 722 au total, la liste est tronquée à 300), 25 nouveautés retenues détaillées, 3 mises à jour, 10 extensions/greffons. L'édition couvre gitmanual (93 entrées), BestGitHubRepos (83), hn RSS (68), Product Hunt (36), Developpez (13), ItsFOSS (4), Journal du Hacker (2) et LinuxFr (1).</h2>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — vendredi 27 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Le jour s'ouvre sur une forte activité provenant de plusieurs dépôts vérifiés et d'une série de présentations « Show HN » particulièrement fournies. Parmi les nouveautés notables : Kitab, lecteur multi-formats en Rust ; Agent Zero, agent autonome à plus de 20 000 étoiles ; Colibri, moteur d'inférence hiérarchique pour grands modèles ; et le service de détection d'espionnage Supacheap.eu qui vise 544 courtiers en données.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Kitab — Lecteur PDF, EPUB, comics et Markdown</strong><br />
+Dépôt <a href="https://github.com/t21dev/kitab">t21dev/kitab</a> · Licence AGPL-3.0 · 150 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur de bureau rapide écrit en Rust avec GPUI. Il supporte les PDF, EPUB, fichiers de bande dessinée et documents Markdown dans la même interface. L'application se veut minimaliste et performante, sans dépendances webview ni navigateur intégré. Parfait pour une utilisation quotidienne sur tous les systèmes d'exploitation.</p>
+<p><strong>YouTube Ad Punisher — Contournement des bloqueurs anti-adblock</strong><br />
+Dépôt <a href="https://github.com/antonpictures/youtube-punisher">antonpictures/youtube-punisher</a> · Licence MIT · 98 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un outil qui permet de regarder YouTube même lorsque le site détecte un bloqueur de publicités. Le dépôt propose une extension combinée utilisateur et CSS qui contourne les vérifications intégrées par Google. Utile si vous utilisez déjà un bloqueur au quotidien mais que certaines pages vous bloquent l'accès.</p>
+<p><strong>Side by Side — Trois VM Linux dans un onglet de navigateur</strong><br />
+Dépôt <a href="https://github.com/michidk/sidebyside">michidk/sidebyside</a> · Licence Apache-2.0 · 47 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Permet d'exécuter trois machines virtuelles Linux simultanément directement dans un onglet de navigateur, chacune avec son propre environnement graphique. Chaque VM peut tourner sous un système différent. Idéal pour tester des configurations ou travailler avec plusieurs environnements de développement côte à côte sans matériel supplémentaire.</p>
+<p><strong>Intel One Mono — Police de caractères mono-espace</strong><br />
+Dépôt <a href="https://github.com/intel/intel-one-mono">intel/intel-one-mono</a> · Licence OFL-1.1 · 10 765 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Une nouvelle police de caractères mono-espace conçue par Intel pour le code et les interfaces terminal. La licence Open Font License autorise l'utilisation personnelle et commerciale sans restriction. Un ajout pratique pour ceux qui cherchent une police dédiée au développement.</p>
+<p><strong>Minipg — PostgreSQL en un seul exécutable</strong><br />
+Dépôt <a href="https://github.com/progrium/minipg">progrium/minipg</a> · Licence MIT · 202 étoiles · Dernière mise à jour : 26/11/2026.<br />
+PostgreSQL compilé en un binaire unique, sans dépendances système ni installation complexe. Particulièrement utile pour les tests, les démonstrations ou les environnements où PostgreSQL n'est pas disponible via les gestionnaires de paquets. Une approche pragmatique pour exécuter PostgreSQL sans overhead.</p>
+<p><strong>Block Ads — Blocage publicitaire sur Android</strong><br />
+Dépôt <a href="https://github.com/pass-with-high-score/blockads-android">pass-with-high-score/blockads-android</a> · Licence GPL-3.0 · 2 860 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Bloque les publicités au niveau système sur Android grâce au filtrage DNS basé sur VPN local. Aucune root nécessaire et aucune collecte de données. Un blocage complet au-delà des navigateurs, sur toutes les applications du système. Fonctionne en arrière-plan une fois configuré.</p>
+<p><strong>OmnySSH — Client et serveur SSH multiplateforme</strong><br />
+Dépôt <a href="https://github.com/timhartmann7/omnyssh">timhartmann7/omnyssh</a> · Licence Apache-2.0 · 1 335 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client et serveur SSH open-source pour macOS, Windows et Linux. Interface graphique de bureau et terminal textuel avec tableau de bord de métriques en direct. Gestionnaire de fichiers SFTP intégré, transfert de ports, clés SSH en un clic et snippets. Un remplaçant moderne pour les outils SSH existants.</p>
+<p><strong>Colibri — Moteur d'inférence hiérarchique pour grands modèles MOE</strong><br />
+Dépôt <a href="https://github.com/JustVugg/colibri">JustVugg/colibri</a> · Licence Apache-2.0 · 53 595 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un moteur d'inférence pour les modèles mélange d'experts frontier : experts chauds sur le GPU (CUDA, Vulkan), tièdes en RAM, froids lus depuis NVMe. Écrit en C, conçu pour fonctionner sur le matériel dont vous disposez déjà. Un projet ambitieux permettant d'exécuter de grands modèles locaux efficacement.</p>
+<p><strong>Agent Zero — Agent IA autonome personnel</strong><br />
+Dépôt <a href="https://github.com/agent0ai/agent-zero">agent0ai/agent-zero</a> · Licence non spécifiée · 20 001 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA personnel capable de raisonner et d'agir de manière autonome. Conçu pour être hébergé localement et interagir avec des API et services externes. Le projet a connu une croissance rapide ces derniers mois et constitue une base solide pour construire des automatisations personnelles.</p>
+<p><strong>Private GPT — RAG privé et local</strong><br />
+Dépôt <a href="https://github.com/zylon-ai/private-gpt">zylon-ai/private-gpt</a> · Licence Apache-2.0 · 57 662 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Posez des questions à vos documents. 100 % privé, aucun donné ne quitte votre machine. Supporte les principaux formats de fichiers et intègre divers moteurs LLM locaux. Une référence pour l'intelligence artificielle locale préservant la confidentialité des données.</p>
+<p><strong>Spotify Player — Lecteur Spotify en terminal</strong><br />
+Dépôt <a href="https://github.com/aome510/spotify-player">aome510/spotify-player</a> · Licence MIT · 7 332 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un lecteur Spotify complet fonctionnant entièrement en ligne de commande, avec toutes les fonctionnalités de la version bureautique. Contrôle via clavier ou souris, compatible avec le contrôle tactile sur terminaux supports. Alternative légère pour écouter Spotify sans lourdeur d'interface.</p>
+<p><strong>Stack Diagram — Diagramme d'architecture par description</strong><br />
+Dépôt <a href="https://github.com/caru-ini/stack-diagram">caru-ini/stack-diagram</a> · Licence MIT · 2 950 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un agent IA décrivant votre pile technique en une phrase, reçoit un diagramme d'architecture avec logos officiels. Permet de visualiser rapidement l'organisation de ses projets. Idéalement intégré dans les flux de travail de développement.</p>
+<p><strong>DeepTutor — Tutorat personnalisé par IA</strong><br />
+Dépôt <a href="https://github.com/HKUDS/DeepTutor">HKUDS/DeepTutor</a> · Licence Apache-2.0 · 63 255 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Un système de tutorat personnalisé en continu utilisant les grands modèles de langage. S'adapte au rythme de chaque apprenant et mémorise sa progression au fil du temps. Développé par l'Université Hong Kong des Sciences et Technologies. Un investissement réel dans l'éducation assistée par IA.</p>
+<p><strong>Yaak — Client API desktop intuitif</strong><br />
+Dépôt <a href="https://github.com/mountain-loop/yaak">mountain-loop/yaak</a> · Licence MIT · 19 554 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Client intuitif pour organiser et exécuter requêtes REST, GraphQL, WebSockets, Server Sent Events et gRPC. Interface moderne et fluide, alternative à Postman et Insomnia. Organisation par dossiers, variables d'environnement et historique des appels.</p>
+<p><strong>OpenMotion — Studio vidéo génératif open-source</strong><br />
+Dépôt <a href="https://github.com/nexu-io/openmotion">nexu-io/openmotion</a> · Licence Apache-2.0 · 16 708 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Alternative open-source à Claude Motion et CapCut. Transforme une vidéo de référence en graphismes animés éditables avec kit de marque personnalisé. Export MP4 pour YouTube, Shorts, Instagram Reels et TikTok. Studio vidéo agnostique intégrant 300+ guides Motion.md et support pour 22 agents dont Claude Code et Codex.</p>
+<p><strong>Edge0 — Modèles fondamentaux natifs appareil</strong><br />
+Dépôt <a href="https://github.com/Edge0-AI/Edge0">Edge0-AI/Edge0</a> · Licence Apache-2.0 · 10 694 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Modèles fondamentaux exécutés nativement sur l'appareil : 145 milliards de paramètres sur portable, 35 milliards sur téléphone. Architecture latent mixture of experts, poids diffusés depuis SSD, routeur prédisant les charges d'une étape en avance. Compatible Mac, iPhone, Android et Windows. Des modèles sérieux directement sur votre matériel.</p>
+<p><strong>FreeLLM-API — Front uni vers des endpoints LLM gratuits</strong><br />
+Dépôt <a href="https://github.com/tashfeenahmed/freellmapi">tashfeenahmed/freellmapi</a> · Licence MIT · 58 862 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plus de 87 fournisseurs de LLM gratuits, 1 313 endpoints de modèles derrière une seule interface compatible /v1 OpenAI. Routage intelligent, basculement automatique, clés chiffrées. Destiné exclusivement à l'expérimentation personnelle. Pratique pour tester différents modèles sans créer de comptes multiples.</p>
+<p><strong>Bla — Protection contre le reverse engineering par IA</strong><br />
+Dépôt <a href="https://github.com/qybaihe/bla">qybaihe/bla</a> · Licence MIT · 6 995 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Serveur MCP et CLI protégeant JavaScript/TypeScript, Electron ASAR, WASM, Python, binaires natifs, bases SQLite, modèles GGUF/Safetensors et APK Android contre les agents de reverse engineering par IA. Un outil défensif destiné aux développeurs soucieux de protéger leur code face aux scanners automatiques.</p>
+<p><strong>Dokploy — Alternative open-source à Vercel, Netlify et Heroku</strong><br />
+Dépôt <a href="https://github.com/dokploy/dokploy">dokploy/dokploy</a> · Licence non spécifiée · 38 731 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Plateforme de déploiement open-source pour héberger ses applications soi-même. Panneau de contrôle visuel, gestion des domaines, bases de données, certificats SSL automatiques et déploiement en un clic. Remplaçant concret aux solutions cloud payantes pour les développeurs indépendants.</p>
+<p><strong>Nod — Agent personnel avec son propre ordinateur</strong><br />
+Dépôt mentionné sur Reddit r/BestGitHubRepos · 3 700 étoiles.<br />
+Un agent personnel open-source disposant de sa propre machine virtuelle pour agir de manière autonome. Différent d'un simple chatbot : il possède un espace informatique dédié pour effectuer des tâches réelles. Projet encore émergent mais prometteur.</p>
+<p><strong>DiPlay — Récepteur CarPlay indépendant</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 14 000 étoiles.<br />
+Récepteur CarPlay indépendant pour les unités principales Android compatibles. Permet d'utiliser CarPlay sur tout écran Android auto existant, sans modification matérielle. Solution logicielle pour équiper son véhicule sans changer l'autoradio.</p>
+<p><strong>MicroG Services — Implémentation libre des Google Play Services</strong><br />
+Projet mentionné sur Reddit r/BestGitHubRepos · 15 000 étoiles.<br />
+Implémentation gratuite des services Google Play pour Android. Permet d'utiliser les applications nécessitant les services Google tout en préservant la vie privée. Composant essentiel pour les utilisateurs d'Android libre.</p>
+<p><strong>Nextcloud Office — Application de bureau Nextcloud</strong><br />
+Application Nextcloud Office annoncée récemment avec son application de bureau native. Permet d'éditer des documents suite bureautique directement depuis son serveur Nextcloud. Alternative open-source à Microsoft 365 et Google Workspace.</p>
+<p><strong>Quoth — Dictée vocale IA locale pour Linux</strong><br />
+Outil de dictée vocale exclusivement conçu pour Linux, développée par ItsFOSS. Exécute les modèles Whisper en local et teste le matériel pour déterminer quel modèle fonctionne où (CPU, GPU ou NPU). Pas besoin de configuration manuelle pour choisir le bon modèle. Gratuit, open-source, respectueux de la vie privée.</p>
+<p><strong>MoCha — Remplacement de personnage vidéo par IA</strong><br />
+Dépôt <a href="https://github.com/Orange-3DV-Team/MoCha">Orange-3DV-Team/MoCha</a> · Licence privée · 1 055 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Remplacement de personnages vidéo end-to-end sans guide structurel. Technologie de recherche avancée pour modifier un personnage dans une vidéo tout en conservant la cohérence visuelle. À suivre, au stade expérimental.</p>
+<p><strong>Scambraid — GPUs Nvidia et AMD servant une couche MoE ensemble</strong><br />
+Projet mentionné sur HN : permet à des GPU de marques différentes de servir ensemble une seule couche d'un modèle mélange d'experts. Optimisation matérielle pour maximiser l'usage des ressources disponibles.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>FFmpeg Skill — Éditeur vidéo local pour agents de codage</strong><br />
+Dépôt <a href="https://github.com/kajisho5/ffmpeg-skill">kajisho5/ffmpeg-skill</a>.<br />
+Outil local proposant 42 outils FFmpeg avec contrat lisible par machine et serveur MCP. Compatible Claude Code, Cursor et Codex. Découpe, sous-titres, recadrage, normalisation sonore, exports pour plateformes. Sans cloud ni clé API. Mise à jour récente de l'outil d'assistance aux agents IA de codage.</p>
+<p><strong>PatchRight — Version indétectable de Playwright</strong><br />
+Dépôt <a href="https://github.com/kaliiiiiiii-vinyzu/patchright">kaliiiiiiiiii-Vinyzu/patchright</a> · Licence Apache-2.0 · 5 266 étoiles · Dernière mise à jour : 26/11/2026.<br />
+Version modifiée de la bibliothèque de test et automatisation Playwright, conçue pour passer les systèmes de détection de bots. Utile pour les tests d'accessibilité, le scraping éthique et l'automatisation de navigation nécessitant une identité humaine.</p>
+<p><strong>Chrome DevTools MCP</strong><br />
+Dépôt <a href="https://github.com/ChromeDevTools/chrome-devtools-mcp">ChromeDevTools/chrome-devtools-mcp</a>.<br />
+Interface MCP (Model Context Protocol) pour Chrome DevTools, permettant aux agents IA d'interagir avec les outils de développement du navigateur. Intégration directe entre agents de codage et débogage web.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Telescope.nvim — Trouver, filtrer, prévisualiser, choisir</strong><br />
+Dépôt mentionné sur Reddit · 20 000 étoiles.<br />
+Extension lua pour Neovirgule offrant recherche, filtrage, prévisualisation et sélection dans l'éditeur. Tout est écrit en lua, sans dépendance externe. Le greffon de navigation le plus abouti pour Neovim, largement utilisé par la communauté.</p>
+<p><strong>SkillEvaluator — Évaluation des compétences d'agents IA</strong><br />
+Dépôt mentionné sur Reddit · 3 000 étoiles.<br />
+Framework pour évaluer et améliorer les compétences et greffons des agents IA. Permet de mesurer l'efficacité d'une compétence avant son déploiement et d'identifier les améliorations nécessaires.</p>
+<p><strong>AgentDE — Console unifiée pour agents de codage</strong><br />
+Mentionné sur Product Hunt.<br />
+Regroupe tous les agents de codage dans une fenêtre Mac native unique. Alternative à la multiplication des fenêtres d'IDE pour les équipes utilisant plusieurs outils IA simultanément.</p>
+<p><strong>Pax par Pydantic — Coding agent où le coding est un plugin</strong><br />
+Mentionné sur Product Hunt.<br />
+Agent de codage développé par Pydantic où la génération de code elle-même est extensible via plugins. Approche modulaire pour personnaliser le comportement de l'agent selon les besoins du projet.</p>
+<p><strong>DeskFleet — Agents de codage collaboratifs en équipe</strong><br />
+Mentionné sur Product Hunt.<br />
+Permet d'exécuter des agents de codage ensemble sur les machines de toute l'équipe. Synchronisation des sessions et partage des résultats entre développeurs.</p>
+<p><strong>Remora — Couche mémoire à long terme pour agents IA</strong><br />
+Mentionné sur Product Hunt.<br />
+Couche de mémoire pérenne permettant aux agents IA de conserver et récupérer des informations entre les sessions. Important pour les agents effectuant des tâches nécessitant une connaissance contextuelle prolongée.</p>
+<h2>Volume — 300 éléments traités depuis la shortlist (sur 722 au total, la liste est tronquée à 300), 25 nouveautés retenues détaillées, 3 mises à jour, 10 extensions/greffons. L'édition couvre gitmanual (93 entrées), BestGitHubRepos (83), hn RSS (68), Product Hunt (36), Developpez (13), ItsFOSS (4), Journal du Hacker (2) et LinuxFr (1).</h2>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-27.html</link>
+<guid isPermaLink="false">lovingopensourceai-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 00:22:12 +0100</pubDate>
+<category>r/LovingOpenSourceAI</category>
+<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Moins d'une quinzaine de fils nouveaux aujourd'hui, mais un noyau d'annonces utiles : PostgreSQL en exécutable unique, un serveur de diffusion local compatible fal.ai, et un moteur LLM Rust capable de faire tourner des modèles plus gros que la VRAM disponible.</p>
+<p><strong>Remarque :</strong> la shortlist contenait 90 entrées (dont beaucoup hors sujet). Les éléments retenus sont ci-dessous.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>Minipg — PostgreSQL en un seul exécutable</h3>
+<p>Minipg embarque PostgreSQL dans un fichier binaire autonome. Pas de serveur à configurer, pas de daemon en arrière-plan : une archive <code>.pgdb</code> contient les données, la configuration et le mot de passe superutilisateur. À chaque commande, minipg lance Postgres via <a href="https://github.com/justincmayer/h9">h9</a> (une bibliothèque Zig qui fait tourner des binaires Alpine sur un micro-noyau Plan 9), l'utilise, puis l'éteint quand il n'est plus utilisé. Un lock assure qu'un seul processus tourne par base.</p>
+<p>Disponible pour Linux x86_64 (KVM ou mode natif sans <code>/dev/kvm</code>), macOS Apple Silicon et même dans un navigateur WebAssembly. La licence est MIT, l'exécutable pèse environ 35 Mo en téléchargement.</p>
+<p><a href="https://github.com/progrium/minipg">progrium/minipg</a> — 202 étoiles, licence MIT, dernière mise à jour le 26/11.</p>
+<h3>OpenFal — Serveur local compatible fal.ai pour la génération d'images et vidéo</h3>
+<p>OpenFal fournit une API HTTP compatible avec fal.ai pour faire tourner localement Qwen-Image-2.1, Wan 2.2 et MiniMax H3 (génération vidéo, face swap, audio stéréo). Contrairement à ComfyUI, on évite les graphes de nœuds : un CLI détecte le matériel, télécharge les poids vérifiés, et met en place un point de terminaison local, un queue manager et un Studio web.</p>
+<p>Le runtime utilise le block-offloading PyTorch plutôt que le continuous batching — c'est séquentiel au lieu de concurrent, ce qui convient aux GPU grand public où la mémoire peut être juste. Compatible Windows, Linux et macOS.</p>
+<p>License MIT, dépôt créé le 16/11.<br />
+<a href="https://github.com/esokullu/openfal">esokullu/openfal</a> — site : https://openfal.org</p>
+<h3>RustingStrata — Moteur GGUF Rust, modèles &gt; VRAM sur CUDA et Vulkan</h3>
+<p>RustingStrata est un moteur d'inférence LLM écrit en pur Rust, capable de charger des modèles GGUF plus volumineux que la VRAM disponible grâce à un système de tiering entre GPU et RAM hôte. Supporte CUDA et Vulkan comme accélérateurs matériels. Déjà près de 500 étoiles en quelques jours seulement.</p>
+<p>Le projet vise les développeurs Rust qui souhaitent intégrer l'inférence locale directement dans leurs applications sans passer par Python. Licence <code>NOASSERTION</code> (à vérifier).<br />
+<a href="https://github.com/RustingStudio/RustingStrata">RustingStudio/RustingStrata</a> — 495 étoiles, dernière mise à jour le 26/11.</p>
+<h3>Please — LLM de dialogue dans le terminal, inférence locale</h3>
+<p>Please est un outil en ligne de commande qui permet de décrire en langage naturel des opérations sur le répertoire courant (résumer des commits, générer des scripts, formater du code, résoudre des conflits Git). Tout le traitement reste local sur la machine — les weights Inkling-2-Mini-IQ4_NL sont téléchargés une fois et réutilisés. Une fonctionnalité SSH « bridging » permet de s'y connecter depuis un shell distant ou un conteneur Docker sans recopier les poids.</p>
+<p>Disponible via Homebrew ou un script d'installation. Écrit en Ruby + Rust + Shell.<br />
+<a href="https://github.com/xhjkl/please">xhjkl/please</a> — 26 étoiles, dernière mise à jour le 25/11.</p>
+<h3>DhurandharAI — Exécuter des modèles GGUF offline sur Android</h3>
+<p>Une application Android pour faire tourner des modèles GGUF en local sur téléphone, sans connexion internet. Destinée aux utilisateurs qui veulent accéder à un assistant IA hors ligne sur mobile.<br />
+<a href="https://play.google.com/store/apps/details?id=com.soprso.dhurandharai&amp;hl=en_US">Lien Play Store</a></p>
+<h3>ZeroBurn — Réduire la consommation de tokens des agents de codage</h3>
+<p>ZeroBurn réduit la combustion de tokens des agents de programmation grâce à un mode MCP zéro token couplé à Ollama en local. Annoncé comme permettant jusqu'à 98 % d'économie de tokens sur les tâches d'agent.<br />
+<a href="https://github.com/thoufeeque22/zeroburn">thoufeeque22/zeroburn</a> — 2 points sur HN, aucun commentaire.</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Intel publie la police Mono One</h3>
+<p>Intel a rendu publique sa police de caractères mono espacement One, sous licence Apache 2.0. Conçue pour la lecture de code, elle vise à remplacer les fontes propriétaires ou celles avec licences restrictives dans les environnements de développement. Cette publication complète la gamme de polices proposées précédemment par Intel Design Font Foundry.<br />
+<a href="https://github.com/intel/intel-one-mono">github.com/intel/intel-one-mono</a></p>
+<h3>Correctifs spécifiques AMD pour llama.cpp</h3>
+<p>Des correctifs ciblés pour les processeurs AMD ont été publiés dans le cadre de llama.cpp. Ils activent des instructions AVX512 non supportées par défaut sur certains chips Ryzen, améliorant significativement les performances sur les architectures AMD modernes.<br />
+<a href="https://github.com/davidbau/amd-specific-llama-cpp">davidbau/amd-specific-llama-cpp</a> — 45 points sur HN, 6 commentaires.</p>
+<h3>OS bare-metal pour Qwen3-0.6B</h3>
+<p>Un système d'exploitation bare-metal exécutant Qwen3-0.6B est annoncé, affichant des performances 54 % supérieures à llama.cpp. Le projet, issu des travaux d'alesha-pro (connu pour les benchmarks de latence de modèles), démontre qu'en supprimant toute couche d'abstraction (hyperviseur, kernel Linux), l'inférence LLM peut atteindre des vitesses très proches du matériel nu.<br />
+<a href="https://twitter.com/superalesha/status/2125682626056839259">@superalesha</a></p>
+<hr />
+<h2>Extensions et greffons</h2>
+<h3>Relecture de code AI dans VS Code, clé API personnelle ou Ollama</h3>
+<p>Une extension VS Code propose de relire le code généré par des IA en utilisant soit sa propre clé API (tout reste privé), soit un modèle local via Ollama. Sans création de compte obligatoire.<br />
+<a href="https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model">VS Code Marketplace</a> — 1 point sur HN, inédit.</p>
+<hr />
+<h2>Volume</h2>
+<p>90 posts publiés dans l'intervalle analysé, 11 retenus, 79 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Moins d'une quinzaine de fils nouveaux aujourd'hui, mais un noyau d'annonces utiles : PostgreSQL en exécutable unique, un serveur de diffusion local compatible fal.ai, et un moteur LLM Rust capable de faire tourner des modèles plus gros que la VRAM disponible.</p>
+<p><strong>Remarque :</strong> la shortlist contenait 90 entrées (dont beaucoup hors sujet). Les éléments retenus sont ci-dessous.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<h3>Minipg — PostgreSQL en un seul exécutable</h3>
+<p>Minipg embarque PostgreSQL dans un fichier binaire autonome. Pas de serveur à configurer, pas de daemon en arrière-plan : une archive <code>.pgdb</code> contient les données, la configuration et le mot de passe superutilisateur. À chaque commande, minipg lance Postgres via <a href="https://github.com/justincmayer/h9">h9</a> (une bibliothèque Zig qui fait tourner des binaires Alpine sur un micro-noyau Plan 9), l'utilise, puis l'éteint quand il n'est plus utilisé. Un lock assure qu'un seul processus tourne par base.</p>
+<p>Disponible pour Linux x86_64 (KVM ou mode natif sans <code>/dev/kvm</code>), macOS Apple Silicon et même dans un navigateur WebAssembly. La licence est MIT, l'exécutable pèse environ 35 Mo en téléchargement.</p>
+<p><a href="https://github.com/progrium/minipg">progrium/minipg</a> — 202 étoiles, licence MIT, dernière mise à jour le 26/11.</p>
+<h3>OpenFal — Serveur local compatible fal.ai pour la génération d'images et vidéo</h3>
+<p>OpenFal fournit une API HTTP compatible avec fal.ai pour faire tourner localement Qwen-Image-2.1, Wan 2.2 et MiniMax H3 (génération vidéo, face swap, audio stéréo). Contrairement à ComfyUI, on évite les graphes de nœuds : un CLI détecte le matériel, télécharge les poids vérifiés, et met en place un point de terminaison local, un queue manager et un Studio web.</p>
+<p>Le runtime utilise le block-offloading PyTorch plutôt que le continuous batching — c'est séquentiel au lieu de concurrent, ce qui convient aux GPU grand public où la mémoire peut être juste. Compatible Windows, Linux et macOS.</p>
+<p>License MIT, dépôt créé le 16/11.<br />
+<a href="https://github.com/esokullu/openfal">esokullu/openfal</a> — site : https://openfal.org</p>
+<h3>RustingStrata — Moteur GGUF Rust, modèles &gt; VRAM sur CUDA et Vulkan</h3>
+<p>RustingStrata est un moteur d'inférence LLM écrit en pur Rust, capable de charger des modèles GGUF plus volumineux que la VRAM disponible grâce à un système de tiering entre GPU et RAM hôte. Supporte CUDA et Vulkan comme accélérateurs matériels. Déjà près de 500 étoiles en quelques jours seulement.</p>
+<p>Le projet vise les développeurs Rust qui souhaitent intégrer l'inférence locale directement dans leurs applications sans passer par Python. Licence <code>NOASSERTION</code> (à vérifier).<br />
+<a href="https://github.com/RustingStudio/RustingStrata">RustingStudio/RustingStrata</a> — 495 étoiles, dernière mise à jour le 26/11.</p>
+<h3>Please — LLM de dialogue dans le terminal, inférence locale</h3>
+<p>Please est un outil en ligne de commande qui permet de décrire en langage naturel des opérations sur le répertoire courant (résumer des commits, générer des scripts, formater du code, résoudre des conflits Git). Tout le traitement reste local sur la machine — les weights Inkling-2-Mini-IQ4_NL sont téléchargés une fois et réutilisés. Une fonctionnalité SSH « bridging » permet de s'y connecter depuis un shell distant ou un conteneur Docker sans recopier les poids.</p>
+<p>Disponible via Homebrew ou un script d'installation. Écrit en Ruby + Rust + Shell.<br />
+<a href="https://github.com/xhjkl/please">xhjkl/please</a> — 26 étoiles, dernière mise à jour le 25/11.</p>
+<h3>DhurandharAI — Exécuter des modèles GGUF offline sur Android</h3>
+<p>Une application Android pour faire tourner des modèles GGUF en local sur téléphone, sans connexion internet. Destinée aux utilisateurs qui veulent accéder à un assistant IA hors ligne sur mobile.<br />
+<a href="https://play.google.com/store/apps/details?id=com.soprso.dhurandharai&amp;hl=en_US">Lien Play Store</a></p>
+<h3>ZeroBurn — Réduire la consommation de tokens des agents de codage</h3>
+<p>ZeroBurn réduit la combustion de tokens des agents de programmation grâce à un mode MCP zéro token couplé à Ollama en local. Annoncé comme permettant jusqu'à 98 % d'économie de tokens sur les tâches d'agent.<br />
+<a href="https://github.com/thoufeeque22/zeroburn">thoufeeque22/zeroburn</a> — 2 points sur HN, aucun commentaire.</p>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<h3>Intel publie la police Mono One</h3>
+<p>Intel a rendu publique sa police de caractères mono espacement One, sous licence Apache 2.0. Conçue pour la lecture de code, elle vise à remplacer les fontes propriétaires ou celles avec licences restrictives dans les environnements de développement. Cette publication complète la gamme de polices proposées précédemment par Intel Design Font Foundry.<br />
+<a href="https://github.com/intel/intel-one-mono">github.com/intel/intel-one-mono</a></p>
+<h3>Correctifs spécifiques AMD pour llama.cpp</h3>
+<p>Des correctifs ciblés pour les processeurs AMD ont été publiés dans le cadre de llama.cpp. Ils activent des instructions AVX512 non supportées par défaut sur certains chips Ryzen, améliorant significativement les performances sur les architectures AMD modernes.<br />
+<a href="https://github.com/davidbau/amd-specific-llama-cpp">davidbau/amd-specific-llama-cpp</a> — 45 points sur HN, 6 commentaires.</p>
+<h3>OS bare-metal pour Qwen3-0.6B</h3>
+<p>Un système d'exploitation bare-metal exécutant Qwen3-0.6B est annoncé, affichant des performances 54 % supérieures à llama.cpp. Le projet, issu des travaux d'alesha-pro (connu pour les benchmarks de latence de modèles), démontre qu'en supprimant toute couche d'abstraction (hyperviseur, kernel Linux), l'inférence LLM peut atteindre des vitesses très proches du matériel nu.<br />
+<a href="https://twitter.com/superalesha/status/2125682626056839259">@superalesha</a></p>
+<hr />
+<h2>Extensions et greffons</h2>
+<h3>Relecture de code AI dans VS Code, clé API personnelle ou Ollama</h3>
+<p>Une extension VS Code propose de relire le code généré par des IA en utilisant soit sa propre clé API (tout reste privé), soit un modèle local via Ollama. Sans création de compte obligatoire.<br />
+<a href="https://marketplace.visualstudio.com/items?itemName=puzaricloud.ai-code-review-any-model">VS Code Marketplace</a> — 1 point sur HN, inédit.</p>
+<hr />
+<h2>Volume</h2>
+<p>90 posts publiés dans l'intervalle analysé, 11 retenus, 79 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-27.html</link>
@@ -158,6 +486,105 @@
 <p><strong>Erreur de collecte sur r/ArtCraftAI.</strong> Le journal <code>/opt/data/state/reddit/ArtCraftAI/posts.jsonl</code> n'est plus mis à jour depuis le 22 novembre 2026. Le collecteur reporte une erreur <code>HTTP Error 404: Not Found</code>. Cette source primaire (threads du subreddit relayés via svt.tw puis ingérés par le relais) est donc inaccessible pour le moment. L'édition d'aujourd'hui se base uniquement sur les journaux Git et YouTube, dont l'activité reste faible.</p>
 <h2>Volume</h2>
 <p>0 post dans les sources disponibles dans l'intervalle, 0 retenus, 0 écartés.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille Renaud Dékode — vendredi 26 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/renaud/2026-11-26.html</link>
+<guid isPermaLink="false">renaud-2026-11-26</guid>
+<pubDate>Fri, 27 Nov 2026 00:36:31 +0100</pubDate>
+<category>Renaud Dékode</category>
+<description><![CDATA[<h1>Veille Renaud Dékode — vendredi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p><strong>Interview de Claire Dune, roboticienne sous-marine.</strong> L'intéressante : un regard de chercheuse sur ce que l'IA apporte vraiment à la robotique physique, loin des démos virales, avec des exemples concrets (navigation sous glace, reconstruction 3D des fonds marins). Trois points marquants : (1) les données physiques sont encore le goulot d'étranglement principal pour l'apprentissage ; (2) la communauté robotique reste fortement ouverte et collaborative ; (3) les ressources naturelles en terres rares rendent irréaliste une production massive de humanoïdes.</p>
+<p><em>Source : interview enregistrée en direct, durée 65 min.</em></p>
+<hr />
+<h2>Outils, logiciels et fonctionnalités</h2>
+<h3>Claire Dune, roboticien·ne et son ROV sous-glaciaire</h3>
+<p>Claire Dune, docteure de l'Université de Rennes (thèse Inria / CEA), a travaillé sur des robots humanoïdes au Japon (Tsukuba, JRL de l'IST), enseigné et mené ses recherches plus de quinze ans à l'Université de Toulon où elle a cofondé le laboratoire COSMER, collaboré avec l'Ifremer sur la reconstruction 3D des fonds marins, et présidé SubMeeting, la rencontre française de robotique sous-marine. Depuis juin 2026, professeure à l'Université Laval (Québec), au Laboratoire de robotique boréale (Nord Lab), où elle développe l'autonomie des robots sous-marins pour explorer sous la glace et étudier le changement climatique.</p>
+<p>L'un des robots qu'elle utilise est un ROV (remotely operated vehicle) d'environ 36-40 kg, équipé de six propulseurs (quatre latéraux + deux verticaux), capable de se déplacer dans presque toutes les directions en trois dimensions — mais pas de contrôler son roulis. Il atteint 1 000 mètres de profondeur, peut recevoir jusqu'à 3 km de câble, et embarque caméra, sonars, capteurs d'ADN environnemental. Actuellement déployé sous la glace par l'unité mixte TACUVIC (laboratoire Franco-Canadien), il inspecte des installations de capteurs océanographiques et effectue des missions d'océanographie. Le ROV fonctionne en téléopération avec assistances bas niveau : maintien de profondeur, navigation vers waypoints acoustiques, parcours prédéfinis de sites. Pas d'IA embarquée pour la compréhension visuelle à ce stade ; les flux vidéo sont reconstruits en 3D photogrammétrique au retour.</p>
+<p>À titre de comparaison, la robotique sous-marine mondiale mutualise ses moyens via SubMeeting, qui réunit une fois par an des chercheurs du monde entier pour une semaine d'expérimentation commune. Les bateaux, les systèmes et les robots sont partagés entre laboratoires (Brest, Écosse, Allemagne, etc.). La prochaine édition aura lieu à Saint-Raphaël du 10 au 14 mai 2027, avec démonstrations grand public et conférences ouvertes. [transcription 19:28 – 22:10, 01:01:33]</p>
+<h2>IA : modèles et capacités</h2>
+<h3>Ce que l'IA fait (et ne fait pas) pour les robots aujourd'hui</h3>
+<p>Le fil directeur de cette entrevue est un panorama lucide des capacités réelles de l'IA pour la robotique physique, distinguées en trois approches complémentaires :</p>
+<p><strong>(1) Contrôle classique (années 50 à 2020).</strong> Modélisation mathématique du robot selon la physique newtonienne, lois de commande explicites. Cette approche fonctionne bien quand le modèle est précis, mais échoue face aux imprévus non modélisés. Claire cite l'exemple du contrôle d'un train autonome Siemens en 2005 avec LIDAR et reconstruction 3D : objectif « faire aussi bien qu'un chauffeur humain », déjà ambitieux à l'époque. [transcription 38:29]</p>
+<p><strong>(2) Apprentissage par renforcement (RL).</strong> Mise en simulation de milliers de situations (escaliers, pentes, gravier, vagues, courants) avec fonction de récompense. « Ça marche super bien sur les robots quadrupèdes et même humanoïdes » — c'est ainsi que des robots comme Spot ou Atlas apprennent à marcher. Pour la robotique sous-marine, cependant, la simulation peine à reproduire la complexité hydraulique réelle : perturbations entre propulseurs, courant variable, turbidité. [transcription 39:00 – 43:00]</p>
+<p><strong>(3) World Models (modèles du monde).</strong> Inspirés de Dreamer (DeepMind) et Genie 4 : on filme un robot réel avec sa caméra, on apprend les transitions état-action-perception, puis on utilise ce modèle appris comme simulateur pour entraîner des politiques de contrôle. Claire y voit la piste la plus prometteuse pour la robotique sous-marine car « au lieu d'apprendre un robot simulé sur un modèle CAO, on fait vraiment marcher son robot réel dans la réalité ». Mais la collecte de ces données physiques reste le goulot : « des gens qui se greffent des pinces à deux doigts avec une GoPro sur la pince, qui essayent de faire des tâches pour représenter la faible capacité de manipulation des robots ». [transcription 40:00 – 47:00]</p>
+<h3>Limites actuelles : adaptation et compréhension</h3>
+<p>Un robot peut apprendre des tâches répétitives (« vois une chaussette, baisse-toi, ramasse-la, mets-la dans le panier ») mais peine à s'adapter à des scènes nouvelles. Claire cite la vidéo virale d'un humanoïde saisissant une poêle beaucoup plus lourde que prévu et tombant en avant : le modèle n'a pas intégré la notion de masse. À l'inverse, des décisions autonomes partielles sont possibles en milieu contraint : un robot sous-marin peut adapter sa trajectoire si sa reconstruction 3D montre un angle mort, retourner chercher un point mal vu, ou modifier l'éclairage. Mais risquer de passer dix heures à reconstruire une canette de Coca en « découverte majeure » est un problème de ciblage difficile à résoudre. [transcription 25:30 – 29:50]</p>
+<p>Sur les attaques adversariales, la recherche se développe : miroirs réfléchissants, lampes trompeuses, tout système de localisation robotisé peut être flanché. Un champ en pleine expansion, comparé au jeu du code secret entre crypteurs et déchiffreurs. [transcription 26:10 – 27:00]</p>
+<p>Petit exemple concret de raisonnement agentique : le petit robot Joshua de l'émission — doté d'une IA vocale — entend « tu as une mouche sur les antennes », fait le lien entre le problème et sa fonction « bouger les antennes », et agit en conséquence. Claire nuance : ce n'est ni de l'adaptation, ni un world model de compréhension physique, mais signe d'avancées en raisonnement multimodal. [transcription 32:00 – 33:00]</p>
+<h3>DeepMind Genie 4 et la connexion robotique</h3>
+<p>Claire mentionne Genie 4 de DeepMind comme exemple de modèle capable de mixer plusieurs modalités (vision, son, dynamique) et de créer des environnements pour entraîner des robots quadripèdes. Ces « mondes interactifs générés en temps réel » alimentent directement la recherche en world models. [transcription 43:49]</p>
+<h2>Enseignement et école</h2>
+<h3>Communauté robotique : partage ouvert, compétitions internes</h3>
+<p>La communauté robotique est décrite comme fortement orientée open source, notamment depuis la création de ROS (Robot Operating System) par Willow Garage dans les années 2010. ROS a permis aux différents systèmes robotiques de communiquer entre eux, supprimé les batailles Windows/Linux, et facilité le développement de bibliothèques partagées accessibles en accès ouvert (HAL en France, arXiv aux États-Unis). Le hardware suit : impression 3D, plans open source. Claire travaille avec BlueRove, un « petit robot de recherche entièrement open source » dont les librairies de support, capteurs et électronique embarquée sont partageables.</p>
+<p>Malgré cette culture de partage, la recherche reste compétitive : « on garde les choses qu'on a sur le feu et on partage tout ce qu'on peut. Moi je me suis toujours dit : j'ai plus d'idées que ce que je suis capable de réaliser en une vie, donc autant partager. » Les publications scientifiques doivent rester publiques et diffusées. La participation à des consortiums industriels influence toutefois le degré d'ouverture : code partagé quand pas de partenaire industriel, variables selon les projets. [transcription 44:45 – 49:15]</p>
+<p>Les conférences internationales de robotique passent de 3 000 participants dans les années 2000 à près de 10 000 aujourd'hui, et la diversité des types de robots (souuples, macros, micros, médicaux, agricoles, volants, modulaires) s'élargit chaque année. [transcription 17:33]</p>
+<h3>Science vs société : qui décide ?</h3>
+<p>Claire soulève une question transversale : les chercheurs sont peu armés pour comprendre les enjeux géopolitiques et sociétaux de leur travail. Certains estiment qu'il n'est pas de leur métier de s'intéresser à la finalité ; d'autres voient le transfert et la valorisation industrielle comme partie intégrante de leur mission. La robotique arrive enfin à maturité commerciale : « c'est la première fois dans l'histoire qu'on voit des produits sur Amazon, qu'on peut acheter un gros humanoïde sur Amazon. » Mais qui oriente ces financements ? « C'est ceux qui mettent le pognon qui décident. » [transcription 50:00 – 52:25]</p>
+<p>Elle relate l'expérience du professeur Amir Benamigan, sollicité par la présidence de la République pour une étude sur l'addiction aux réseaux sociaux : le rapport scientifique recommandé des mesures précises, mais « a été jeté à la poubelle dans la foulée » par les décideurs politiques, remplacé par une loi qui n'a rien à voir. L'analogie avec la robotique est claire : les élus décident sans nécessairement maîtriser les sujets. [transcription 53:50 – 55:50]</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<h3>Robotique sous-marine pour l'étude du climat</h3>
+<p>Au Nord Lab de l'Université Laval, Claire développe l'autonomie des robots sous-marins spécifiquement pour explorer sous la glace et mieux comprendre le changement climatique. Les missions consistent àfilmer les mêmes écosystèmes à intervalles réguliers, reconstruire les fonds marins en 3D, inspecter des capteurs placés en milieu extrême, aider les plongeurs sur site. Le déploiement sous la glace est choisi pour éviter que des humains ne risquent leur vie dans l'eau glacée. [transcription 00:40, 21:00 – 21:55]</p>
+<h3>Ressources naturelles et limites physiques</h3>
+<p>Une estimation frappante : les matériaux rares nécessaires pour fabriquer les millions de humanoïdes promis par les grands groupes américains sont hors portée. Même les entreprises cherchent désormais des métaux rares sous l'océan et envisagent d'aller en chercher sur Mars. Claire note : « si on voulait un robot humanoïde pour tout le monde, il faudrait choisir entre avoir un robot ou avoir une voiture. On est en tension sur toutes les ressources. » Une question de justice sociale : sans régulation, seuls les pays nantis auraient accès à ces technologies. [transcription 56:35 – 58:00]</p>
+<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
+<h3>Collecte de données : « esclavagisme moderne » ?</h3>
+<p>La méthode dominante pour constituer les bases de données robotiques mobilise massivement des opérateurs humains filmés en situation de travail : GoPro scotchées sur le front, pinces à deux doigts greffées aux mains, tâches répétées des milliers d'heures pour entraîner le futur robot. Claire qualifie cela de « côté un peu flippant, un peu d'esclavage moderne, quand même, sur les gens dont c'est le boulot d'abolir des données ou de créer ces données. Quand tu vois les employés d'usines avec un iPhone scotché au front, tu te poses des questions sur l'éthique. Et ils ont la GoPro pour entraîner le robot qui les remplacera après. » [transcription 35:25 – 37:40]</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><strong>Robotique sous-marine autonome</strong> — sujet scientifique intéressant pour la veille pédagogique et scientifique : exploration des océans, changement climatique, reconstruction 3D des fonds marins, autonomie décisionnelle en milieu sans GPS ni lumière.</li>
+<li><strong>World Models en robotique</strong> — concept central pour comprendre l'avenir de larobotique physique ; à suivre dans les veilles IA et développement.</li>
+<li><strong>Collecte de données robotiques et éthique du travail</strong> — thème sociétal qui pourrait alimenter la rubrique « régulation et politique » si des textes apparaissent.</li>
+</ul>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 1 sujet retenu, 1 clip écarté (id 8hRyZvgP4-o), transcription complète utilisée (87 blocs, 65 min).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Renaud Dékode — vendredi 26 novembre 2026</h1>
+<h2>En bref</h2>
+<p><strong>Interview de Claire Dune, roboticienne sous-marine.</strong> L'intéressante : un regard de chercheuse sur ce que l'IA apporte vraiment à la robotique physique, loin des démos virales, avec des exemples concrets (navigation sous glace, reconstruction 3D des fonds marins). Trois points marquants : (1) les données physiques sont encore le goulot d'étranglement principal pour l'apprentissage ; (2) la communauté robotique reste fortement ouverte et collaborative ; (3) les ressources naturelles en terres rares rendent irréaliste une production massive de humanoïdes.</p>
+<p><em>Source : interview enregistrée en direct, durée 65 min.</em></p>
+<hr />
+<h2>Outils, logiciels et fonctionnalités</h2>
+<h3>Claire Dune, roboticien·ne et son ROV sous-glaciaire</h3>
+<p>Claire Dune, docteure de l'Université de Rennes (thèse Inria / CEA), a travaillé sur des robots humanoïdes au Japon (Tsukuba, JRL de l'IST), enseigné et mené ses recherches plus de quinze ans à l'Université de Toulon où elle a cofondé le laboratoire COSMER, collaboré avec l'Ifremer sur la reconstruction 3D des fonds marins, et présidé SubMeeting, la rencontre française de robotique sous-marine. Depuis juin 2026, professeure à l'Université Laval (Québec), au Laboratoire de robotique boréale (Nord Lab), où elle développe l'autonomie des robots sous-marins pour explorer sous la glace et étudier le changement climatique.</p>
+<p>L'un des robots qu'elle utilise est un ROV (remotely operated vehicle) d'environ 36-40 kg, équipé de six propulseurs (quatre latéraux + deux verticaux), capable de se déplacer dans presque toutes les directions en trois dimensions — mais pas de contrôler son roulis. Il atteint 1 000 mètres de profondeur, peut recevoir jusqu'à 3 km de câble, et embarque caméra, sonars, capteurs d'ADN environnemental. Actuellement déployé sous la glace par l'unité mixte TACUVIC (laboratoire Franco-Canadien), il inspecte des installations de capteurs océanographiques et effectue des missions d'océanographie. Le ROV fonctionne en téléopération avec assistances bas niveau : maintien de profondeur, navigation vers waypoints acoustiques, parcours prédéfinis de sites. Pas d'IA embarquée pour la compréhension visuelle à ce stade ; les flux vidéo sont reconstruits en 3D photogrammétrique au retour.</p>
+<p>À titre de comparaison, la robotique sous-marine mondiale mutualise ses moyens via SubMeeting, qui réunit une fois par an des chercheurs du monde entier pour une semaine d'expérimentation commune. Les bateaux, les systèmes et les robots sont partagés entre laboratoires (Brest, Écosse, Allemagne, etc.). La prochaine édition aura lieu à Saint-Raphaël du 10 au 14 mai 2027, avec démonstrations grand public et conférences ouvertes. [transcription 19:28 – 22:10, 01:01:33]</p>
+<h2>IA : modèles et capacités</h2>
+<h3>Ce que l'IA fait (et ne fait pas) pour les robots aujourd'hui</h3>
+<p>Le fil directeur de cette entrevue est un panorama lucide des capacités réelles de l'IA pour la robotique physique, distinguées en trois approches complémentaires :</p>
+<p><strong>(1) Contrôle classique (années 50 à 2020).</strong> Modélisation mathématique du robot selon la physique newtonienne, lois de commande explicites. Cette approche fonctionne bien quand le modèle est précis, mais échoue face aux imprévus non modélisés. Claire cite l'exemple du contrôle d'un train autonome Siemens en 2005 avec LIDAR et reconstruction 3D : objectif « faire aussi bien qu'un chauffeur humain », déjà ambitieux à l'époque. [transcription 38:29]</p>
+<p><strong>(2) Apprentissage par renforcement (RL).</strong> Mise en simulation de milliers de situations (escaliers, pentes, gravier, vagues, courants) avec fonction de récompense. « Ça marche super bien sur les robots quadrupèdes et même humanoïdes » — c'est ainsi que des robots comme Spot ou Atlas apprennent à marcher. Pour la robotique sous-marine, cependant, la simulation peine à reproduire la complexité hydraulique réelle : perturbations entre propulseurs, courant variable, turbidité. [transcription 39:00 – 43:00]</p>
+<p><strong>(3) World Models (modèles du monde).</strong> Inspirés de Dreamer (DeepMind) et Genie 4 : on filme un robot réel avec sa caméra, on apprend les transitions état-action-perception, puis on utilise ce modèle appris comme simulateur pour entraîner des politiques de contrôle. Claire y voit la piste la plus prometteuse pour la robotique sous-marine car « au lieu d'apprendre un robot simulé sur un modèle CAO, on fait vraiment marcher son robot réel dans la réalité ». Mais la collecte de ces données physiques reste le goulot : « des gens qui se greffent des pinces à deux doigts avec une GoPro sur la pince, qui essayent de faire des tâches pour représenter la faible capacité de manipulation des robots ». [transcription 40:00 – 47:00]</p>
+<h3>Limites actuelles : adaptation et compréhension</h3>
+<p>Un robot peut apprendre des tâches répétitives (« vois une chaussette, baisse-toi, ramasse-la, mets-la dans le panier ») mais peine à s'adapter à des scènes nouvelles. Claire cite la vidéo virale d'un humanoïde saisissant une poêle beaucoup plus lourde que prévu et tombant en avant : le modèle n'a pas intégré la notion de masse. À l'inverse, des décisions autonomes partielles sont possibles en milieu contraint : un robot sous-marin peut adapter sa trajectoire si sa reconstruction 3D montre un angle mort, retourner chercher un point mal vu, ou modifier l'éclairage. Mais risquer de passer dix heures à reconstruire une canette de Coca en « découverte majeure » est un problème de ciblage difficile à résoudre. [transcription 25:30 – 29:50]</p>
+<p>Sur les attaques adversariales, la recherche se développe : miroirs réfléchissants, lampes trompeuses, tout système de localisation robotisé peut être flanché. Un champ en pleine expansion, comparé au jeu du code secret entre crypteurs et déchiffreurs. [transcription 26:10 – 27:00]</p>
+<p>Petit exemple concret de raisonnement agentique : le petit robot Joshua de l'émission — doté d'une IA vocale — entend « tu as une mouche sur les antennes », fait le lien entre le problème et sa fonction « bouger les antennes », et agit en conséquence. Claire nuance : ce n'est ni de l'adaptation, ni un world model de compréhension physique, mais signe d'avancées en raisonnement multimodal. [transcription 32:00 – 33:00]</p>
+<h3>DeepMind Genie 4 et la connexion robotique</h3>
+<p>Claire mentionne Genie 4 de DeepMind comme exemple de modèle capable de mixer plusieurs modalités (vision, son, dynamique) et de créer des environnements pour entraîner des robots quadripèdes. Ces « mondes interactifs générés en temps réel » alimentent directement la recherche en world models. [transcription 43:49]</p>
+<h2>Enseignement et école</h2>
+<h3>Communauté robotique : partage ouvert, compétitions internes</h3>
+<p>La communauté robotique est décrite comme fortement orientée open source, notamment depuis la création de ROS (Robot Operating System) par Willow Garage dans les années 2010. ROS a permis aux différents systèmes robotiques de communiquer entre eux, supprimé les batailles Windows/Linux, et facilité le développement de bibliothèques partagées accessibles en accès ouvert (HAL en France, arXiv aux États-Unis). Le hardware suit : impression 3D, plans open source. Claire travaille avec BlueRove, un « petit robot de recherche entièrement open source » dont les librairies de support, capteurs et électronique embarquée sont partageables.</p>
+<p>Malgré cette culture de partage, la recherche reste compétitive : « on garde les choses qu'on a sur le feu et on partage tout ce qu'on peut. Moi je me suis toujours dit : j'ai plus d'idées que ce que je suis capable de réaliser en une vie, donc autant partager. » Les publications scientifiques doivent rester publiques et diffusées. La participation à des consortiums industriels influence toutefois le degré d'ouverture : code partagé quand pas de partenaire industriel, variables selon les projets. [transcription 44:45 – 49:15]</p>
+<p>Les conférences internationales de robotique passent de 3 000 participants dans les années 2000 à près de 10 000 aujourd'hui, et la diversité des types de robots (souuples, macros, micros, médicaux, agricoles, volants, modulaires) s'élargit chaque année. [transcription 17:33]</p>
+<h3>Science vs société : qui décide ?</h3>
+<p>Claire soulève une question transversale : les chercheurs sont peu armés pour comprendre les enjeux géopolitiques et sociétaux de leur travail. Certains estiment qu'il n'est pas de leur métier de s'intéresser à la finalité ; d'autres voient le transfert et la valorisation industrielle comme partie intégrante de leur mission. La robotique arrive enfin à maturité commerciale : « c'est la première fois dans l'histoire qu'on voit des produits sur Amazon, qu'on peut acheter un gros humanoïde sur Amazon. » Mais qui oriente ces financements ? « C'est ceux qui mettent le pognon qui décident. » [transcription 50:00 – 52:25]</p>
+<p>Elle relate l'expérience du professeur Amir Benamigan, sollicité par la présidence de la République pour une étude sur l'addiction aux réseaux sociaux : le rapport scientifique recommandé des mesures précises, mais « a été jeté à la poubelle dans la foulée » par les décideurs politiques, remplacé par une loi qui n'a rien à voir. L'analogie avec la robotique est claire : les élus décident sans nécessairement maîtriser les sujets. [transcription 53:50 – 55:50]</p>
+<h2>Sciences, santé, robotique, spatial</h2>
+<h3>Robotique sous-marine pour l'étude du climat</h3>
+<p>Au Nord Lab de l'Université Laval, Claire développe l'autonomie des robots sous-marins spécifiquement pour explorer sous la glace et mieux comprendre le changement climatique. Les missions consistent àfilmer les mêmes écosystèmes à intervalles réguliers, reconstruire les fonds marins en 3D, inspecter des capteurs placés en milieu extrême, aider les plongeurs sur site. Le déploiement sous la glace est choisi pour éviter que des humains ne risquent leur vie dans l'eau glacée. [transcription 00:40, 21:00 – 21:55]</p>
+<h3>Ressources naturelles et limites physiques</h3>
+<p>Une estimation frappante : les matériaux rares nécessaires pour fabriquer les millions de humanoïdes promis par les grands groupes américains sont hors portée. Même les entreprises cherchent désormais des métaux rares sous l'océan et envisagent d'aller en chercher sur Mars. Claire note : « si on voulait un robot humanoïde pour tout le monde, il faudrait choisir entre avoir un robot ou avoir une voiture. On est en tension sur toutes les ressources. » Une question de justice sociale : sans régulation, seuls les pays nantis auraient accès à ces technologies. [transcription 56:35 – 58:00]</p>
+<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
+<h3>Collecte de données : « esclavagisme moderne » ?</h3>
+<p>La méthode dominante pour constituer les bases de données robotiques mobilise massivement des opérateurs humains filmés en situation de travail : GoPro scotchées sur le front, pinces à deux doigts greffées aux mains, tâches répétées des milliers d'heures pour entraîner le futur robot. Claire qualifie cela de « côté un peu flippant, un peu d'esclavage moderne, quand même, sur les gens dont c'est le boulot d'abolir des données ou de créer ces données. Quand tu vois les employés d'usines avec un iPhone scotché au front, tu te poses des questions sur l'éthique. Et ils ont la GoPro pour entraîner le robot qui les remplacera après. » [transcription 35:25 – 37:40]</p>
+<h2>À reprendre dans les autres veilles</h2>
+<ul>
+<li><strong>Robotique sous-marine autonome</strong> — sujet scientifique intéressant pour la veille pédagogique et scientifique : exploration des océans, changement climatique, reconstruction 3D des fonds marins, autonomie décisionnelle en milieu sans GPS ni lumière.</li>
+<li><strong>World Models en robotique</strong> — concept central pour comprendre l'avenir de larobotique physique ; à suivre dans les veilles IA et développement.</li>
+<li><strong>Collecte de données robotiques et éthique du travail</strong> — thème sociétal qui pourrait alimenter la rubrique « régulation et politique » si des textes apparaissent.</li>
+</ul>
+<h2>Volume</h2>
+<p>1 vidéo examinée, 1 sujet retenu, 1 clip écarté (id 8hRyZvgP4-o), transcription complète utilisée (87 blocs, 65 min).</p>]]></content:encoded>
 </item>
 <item>
 <title>Veille pédagogique et scientifique — 26 novembre 2026</title>
@@ -825,69 +1252,6 @@
 <p>https://qsantos.fr/2026/11/19/making-a-dumb-tv-just-smart-enough/ | https://news.ycombinator.com/item?id=50622934</p>
 <h2>Volume</h2>
 <p>144 publications dans l'intervalle, 16 retenus, 128 écartés.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille Renaud Dékode — jeudi 26 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/renaud/2026-11-26.html</link>
-<guid isPermaLink="false">renaud-2026-11-26</guid>
-<pubDate>Thu, 26 Nov 2026 00:35:54 +0100</pubDate>
-<category>Renaud Dékode</category>
-<description><![CDATA[<h1>Veille Renaud Dékode — jeudi 26 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Jensen Huang reprend la tête de Nvidia onze jours après sa démission, relançant l'action de +31 %. Claude / Anthropic produit une preuve compilée de l'hypothesse de Riemann ouvrant le débat sur la super-intelligence. Claude Ship automatise la revue, la correction et l'approbation des pull requests.</p>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Résolution de l'hypothèse de Riemann assistée par Claude</strong><br />
-Après qu'OpenAI eût démontré quasi-Riemann en octobre via son modèle interne et vérifié dans Lean, Levent Alpuge, mathématicien travaillant chez Anthropic, a utilisé durant six semaines des modèles privés de la société pour résoudre pleinement l'hypothèse de Riemann. Le résultat s'étend sur 250 000 pages, compilées et acceptées sans erreur par Lean. Alpuge a publié depuis quelques tweets humoristiques suggérant que le travail comportait des « approximations » et des références à <em>Big Buck Bunny</em>, mais le logiciel de vérification n'a refusé aucun passage. La communauté scientifique distingue ainsi trois étapes : les preuves d'OpenAI du 6 octobre, celle d'Alpuge validée par Lean, et l'examen humain restant à effectuer. Alexander Wong, responsable de la « superintelligence » chez Meta, y voit un signe que les systèmes IA peuvent désormais prouver des théorèmes hors de portée humaine et améliorer leurs propres algorithmes ; Yann Lecun, de son côté, maintient que les LLM restent loin de comprendre le monde physique. [minutage 09:51]</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Claude Ship : agents pour la validation automatique des pull requests</strong><br />
-Anthropic lance Claude Ship, une suite d'agents intégrée à Claude Code et destinée aux équipes utilisant GitHub. Un premier appel à <code>/ship</code> enclenche trois couches successives : un agent Code Review qui examine le diff, détecte les erreurs et publie un avis ; un agent PR Steward encore en bêta qui corrige les problèmes identifiés, teste les conflits et propose les modifications ; un agent Approve enfin qui arbitre entre corrections routinières et éléments nécessitant l'attention humaine, et approuve les pull requests à faible risque. Disponible aux abonnements Team et Enterprise, Claude Ship repose sur le fonctionnement interne d'Anthropic où Claude gère déjà l'essentiel du développement de ses propres produits. [minutage 22:33]</p>
-<p><strong>Inkling 2 Mini, petit modèle US opensource dédié au code local</strong><br />
-Thinking Machines, fondée par Miramurati (ancienne CTO d'OpenAI), publie Inkling 2 Mini, un modèle de 26 milliards de paramètres sous licence Apache, conçue pour tourner localement sur une machine grand public dotée d'environ 24 à 32 Go de RAM. Seuls 5 milliards de paramètres sont actifs par token grâce à la technologie Loop Transformer : le raisonnement se déroule en interne sans production de tokens intermédiaires, ce qui accélère le traitement tout en conservant une qualité élevée sur les tâches de codage agentique. Le fichier pèse 20 Go et est également disponible sur OpenRouter à 0,30 dollar par million de tokens en sortie. Sur Artificial Analysis, il surpasse Qwen 3.8 en 27B sur les tâches de code. [minutage 28:47]</p>
-<h2>Sciences, santé, robotique, spatial</h2>
-<p><strong>Robot téléopéré armé déployé en Haïti</strong><br />
-Le Salvador a publié des images montrant un robot quadrupède Unitree G2 équipé d'un fusil d'assaut téléopéré à distance, utilisé pour sécuriser le stade Sylvio-Cator de Port-au-Prince dans le cadre d'une intervention coordonnée avec les forces d'opposition aux gangs. Ces robots seraient disponibles dans le commerce à environ 2 500 dollars. L'intervention s'inscrit dans un accord entre Haïti et le Salvador sans mandat direct de l'ONU, qui dispose pourtant de ses propres forces sur place. [minutage 35:39]</p>
-<h2>Régulation et politique — ce qui change concrètement</h2>
-<p><strong>Jensen Huang,export controls et enquête FBI toujours actives</strong><br />
-Le retour de Jensen Huang n'éteint pas les enquêtes en cours : le Congrès démocrate réclame toujours des explications sur Megaspeed, client singapourien soupçonné d'avoir servi de relais vers la Chine pour contourner les restrictions américaines sur les puces d'IA, et le FBI poursuit ses investigations. Le contexte réglementaire actuel encadre strictement toute vente de matériel IA sensible à destination chinoise, et le cas Alice Wang, ex-patronne de Megaspeed liée depuis un an à des services chinois, reste ouvert. [minutage 05:52]</p>
-<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
-<p><strong>Nvidia, 950 milliards de dollars d'un coup</strong><br />
-Le conseil d'administration de Nvidia, qui se renouvelle chaque année, a rappelé Jensen Huang à l'unanimité onze jours après sa démission, citant sa franchise et l'impossibilité de trouver un remplaçant satisfaisant. Les salariés, clients, fournisseurs et actionnaires avaient réclamé ce retour. La Bourse a répondu par une hausse de 31 %, représentant près de 950 milliards de dollars gagnés en une journée, avant un nouvel ajustement. Le Nasdaq montre la même courbe. [minutage 02:13]</p>
-<h2>À reprendre dans les autres veilles</h2>
-<p><strong>Résolution Riemann assistée par IA</strong> —Veille pédagogique et scientifique : avancée historique en mathématiques, rôle de la vérification formelle (Lean) et débats sur l'expertise assistée.<br />
-<strong>Claude Ship</strong> — Veille développement : automatisation complète du cycle de revue de code, de la correction à l'approbation. Passage du review manuel à la supervision par agents.<br />
-<strong>Inkling 2 Mini</strong> — Veille développement : petit modèle open pour le code local, architecture Loop Transformer, compétitif face à Qwen 3.8. Testable dès aujourd'hui.<br />
-<strong>Robot armé en Haïti</strong> — Veille scientifique : usage militaire de robotique commerciale téléopérée. Questions juridiques et éthiques.<br />
-<strong>Jensen Huang et export controls</strong> — Veille régulation : enquête FBI active malgré le retour du PDG. Contexte contrôle export des semi-conducteurs.</p>
-<h2>Volume</h2>
-<p>1 vidéo examinée, 7 sujets retenus, 3 écartés (clips et live), transcriptions utilisées : udvi2dMXExg (complète).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille Renaud Dékode — jeudi 26 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Jensen Huang reprend la tête de Nvidia onze jours après sa démission, relançant l'action de +31 %. Claude / Anthropic produit une preuve compilée de l'hypothesse de Riemann ouvrant le débat sur la super-intelligence. Claude Ship automatise la revue, la correction et l'approbation des pull requests.</p>
-<h2>IA : modèles et capacités</h2>
-<p><strong>Résolution de l'hypothèse de Riemann assistée par Claude</strong><br />
-Après qu'OpenAI eût démontré quasi-Riemann en octobre via son modèle interne et vérifié dans Lean, Levent Alpuge, mathématicien travaillant chez Anthropic, a utilisé durant six semaines des modèles privés de la société pour résoudre pleinement l'hypothèse de Riemann. Le résultat s'étend sur 250 000 pages, compilées et acceptées sans erreur par Lean. Alpuge a publié depuis quelques tweets humoristiques suggérant que le travail comportait des « approximations » et des références à <em>Big Buck Bunny</em>, mais le logiciel de vérification n'a refusé aucun passage. La communauté scientifique distingue ainsi trois étapes : les preuves d'OpenAI du 6 octobre, celle d'Alpuge validée par Lean, et l'examen humain restant à effectuer. Alexander Wong, responsable de la « superintelligence » chez Meta, y voit un signe que les systèmes IA peuvent désormais prouver des théorèmes hors de portée humaine et améliorer leurs propres algorithmes ; Yann Lecun, de son côté, maintient que les LLM restent loin de comprendre le monde physique. [minutage 09:51]</p>
-<h2>Outils, logiciels et fonctionnalités</h2>
-<p><strong>Claude Ship : agents pour la validation automatique des pull requests</strong><br />
-Anthropic lance Claude Ship, une suite d'agents intégrée à Claude Code et destinée aux équipes utilisant GitHub. Un premier appel à <code>/ship</code> enclenche trois couches successives : un agent Code Review qui examine le diff, détecte les erreurs et publie un avis ; un agent PR Steward encore en bêta qui corrige les problèmes identifiés, teste les conflits et propose les modifications ; un agent Approve enfin qui arbitre entre corrections routinières et éléments nécessitant l'attention humaine, et approuve les pull requests à faible risque. Disponible aux abonnements Team et Enterprise, Claude Ship repose sur le fonctionnement interne d'Anthropic où Claude gère déjà l'essentiel du développement de ses propres produits. [minutage 22:33]</p>
-<p><strong>Inkling 2 Mini, petit modèle US opensource dédié au code local</strong><br />
-Thinking Machines, fondée par Miramurati (ancienne CTO d'OpenAI), publie Inkling 2 Mini, un modèle de 26 milliards de paramètres sous licence Apache, conçue pour tourner localement sur une machine grand public dotée d'environ 24 à 32 Go de RAM. Seuls 5 milliards de paramètres sont actifs par token grâce à la technologie Loop Transformer : le raisonnement se déroule en interne sans production de tokens intermédiaires, ce qui accélère le traitement tout en conservant une qualité élevée sur les tâches de codage agentique. Le fichier pèse 20 Go et est également disponible sur OpenRouter à 0,30 dollar par million de tokens en sortie. Sur Artificial Analysis, il surpasse Qwen 3.8 en 27B sur les tâches de code. [minutage 28:47]</p>
-<h2>Sciences, santé, robotique, spatial</h2>
-<p><strong>Robot téléopéré armé déployé en Haïti</strong><br />
-Le Salvador a publié des images montrant un robot quadrupède Unitree G2 équipé d'un fusil d'assaut téléopéré à distance, utilisé pour sécuriser le stade Sylvio-Cator de Port-au-Prince dans le cadre d'une intervention coordonnée avec les forces d'opposition aux gangs. Ces robots seraient disponibles dans le commerce à environ 2 500 dollars. L'intervention s'inscrit dans un accord entre Haïti et le Salvador sans mandat direct de l'ONU, qui dispose pourtant de ses propres forces sur place. [minutage 35:39]</p>
-<h2>Régulation et politique — ce qui change concrètement</h2>
-<p><strong>Jensen Huang,export controls et enquête FBI toujours actives</strong><br />
-Le retour de Jensen Huang n'éteint pas les enquêtes en cours : le Congrès démocrate réclame toujours des explications sur Megaspeed, client singapourien soupçonné d'avoir servi de relais vers la Chine pour contourner les restrictions américaines sur les puces d'IA, et le FBI poursuit ses investigations. Le contexte réglementaire actuel encadre strictement toute vente de matériel IA sensible à destination chinoise, et le cas Alice Wang, ex-patronne de Megaspeed liée depuis un an à des services chinois, reste ouvert. [minutage 05:52]</p>
-<h2>Économie et finance — quelques lignes par sujet, faits seulement</h2>
-<p><strong>Nvidia, 950 milliards de dollars d'un coup</strong><br />
-Le conseil d'administration de Nvidia, qui se renouvelle chaque année, a rappelé Jensen Huang à l'unanimité onze jours après sa démission, citant sa franchise et l'impossibilité de trouver un remplaçant satisfaisant. Les salariés, clients, fournisseurs et actionnaires avaient réclamé ce retour. La Bourse a répondu par une hausse de 31 %, représentant près de 950 milliards de dollars gagnés en une journée, avant un nouvel ajustement. Le Nasdaq montre la même courbe. [minutage 02:13]</p>
-<h2>À reprendre dans les autres veilles</h2>
-<p><strong>Résolution Riemann assistée par IA</strong> —Veille pédagogique et scientifique : avancée historique en mathématiques, rôle de la vérification formelle (Lean) et débats sur l'expertise assistée.<br />
-<strong>Claude Ship</strong> — Veille développement : automatisation complète du cycle de revue de code, de la correction à l'approbation. Passage du review manuel à la supervision par agents.<br />
-<strong>Inkling 2 Mini</strong> — Veille développement : petit modèle open pour le code local, architecture Loop Transformer, compétitif face à Qwen 3.8. Testable dès aujourd'hui.<br />
-<strong>Robot armé en Haïti</strong> — Veille scientifique : usage militaire de robotique commerciale téléopérée. Questions juridiques et éthiques.<br />
-<strong>Jensen Huang et export controls</strong> — Veille régulation : enquête FBI active malgré le retour du PDG. Contexte contrôle export des semi-conducteurs.</p>
-<h2>Volume</h2>
-<p>1 vidéo examinée, 7 sujets retenus, 3 écartés (clips et live), transcriptions utilisées : udvi2dMXExg (complète).</p>]]></content:encoded>
 </item>
 <item>
 <title>Veille r/BestGitHubRepos — jeudi 26 novembre 2026</title>
@@ -5300,210 +5664,6 @@ https://ctan.org/pkg/lc-visualizer</p>
 <p><strong>Claude Skills (alirezarezvani)</strong> — Recueil de 410 compétences et 120 agents pour Claude Code, Codex, Gemini CLI, Cursor et huit autres agents, couvrant ingénierie, produit, conformité, recherche et finances. Licence MIT, plus de 30 000 étoiles, à jour au 21 novembre 2026. https://github.com/alirezarezvani/claude-skills</p>
 <h2>Volume</h2>
 <p>523 entrées publiées dans l'intervalle (du 19 au 23 novembre) sur les huit journaux surveillés — dont 328 pour le thème BestGitHubRepos (Reddit via le relais de l'extension, Hacker News et Lobsters), 136 notices gitmanual, 40 entrées du flux HN et 19 des sources complémentaires. <strong>82 sujets retenus, 441 écartés</strong> ; parmi les écartés figurent 15 doublons d'une édition des jours précédents. Motifs d'écartement : actualités générales et politiques, articles d'opinion, jeux et distractions, contenus pédagogiques sans logiciel, services propriétaires par abonnement, offres commerciales et démarchage, projets déjà annoncés, dépôts anciens ou sans description exploitable. La shortlist de la nuit était tronquée à 300 éléments sur 519 : le reliquat a été repris directement dans les journaux bruts, comme le prévoit la règle. Dernière collecte du thème : 22 novembre 2026 à 21 h 50 UTC, sans erreur signalée.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LovingOpenSourceAI — lundi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-23.html</link>
-<guid isPermaLink="false">lovingopensourceai-2026-11-23</guid>
-<pubDate>Mon, 23 Nov 2026 00:22:02 +0100</pubDate>
-<category>r/LovingOpenSourceAI</category>
-<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Muru, du créateur de mod_wsgi, apporte à Python les livraisons sans coupure : un serveur Rust, en alpha, Apache-2.0.</li>
-<li>PcapAnalyzer nomme la panne dans une capture réseau parmi 27 détecteurs, exécuté chez soi, sans que la capture sorte du réseau local.</li>
-<li>ZeroBurn et Worker 755, deux projets de moins de trois jours : l'un traque les jetons gaspillés des agents de codage, l'autre se joue dans le navigateur en tenant le rôle du sous-agent d'une IA.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>Muru — un serveur Rust pour applications Python, par l'auteur de mod_wsgi</h3>
-<p>Graham Dumpleton, qui a écrit mod_wsgi il y a vingt ans, publie Muru : une arête de routage en Rust doublée d'un plan de contrôle et d'un exécuteur Python, servant indifféremment WSGI et ASGI. Le point notable est la livraison : chaque version démarre à côté de la précédente — éventuellement sur une autre version de Python — et le trafic bascule quand elle est prête, avec canaris pondérés, prévisualisations, bascule bleu/vert et retour arrière immédiat, sans redémarrage. La gestion des processus comprend Python (préchargement avec vérification d'import, groupes de travailleurs, limites mémoire, délais souples et durs, Python sans GIL), et un serveur MCP permet à un agent de codage de déployer chaque changement, de le tester, de lire ce que Muru observe en cas d'échec et d'annuler. Alpha assumée : préversions 0.1.0 sur PyPI, commandes et configuration susceptibles de changer ; installation par <code>uv tool install muructl</code>, ou essai sans rien installer avec les ateliers Jupyter du dépôt. Apache-2.0, 85 étoiles, dernier commit le 21 novembre 2026 : https://github.com/muruhq/muru — documentation https://docs.muruhq.dev/ — vu aussi chez Simon Willison, https://simonwillison.net/2026/Nov/21/muru/</p>
-<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture, sans la sortir de chez soi</h3>
-<p>Application libre, auto-hébergée (Docker), qui prend une capture <code>.pcap</code> ou <code>.pcapng</code> et la passe à 27 détecteurs, chacun rendant une gravité et l'étape suivante : blocages de pare-feu voyant un SYN partir en RST, retransmissions et réordonnancements TCP, trous noirs PMTUD, MSS trop faible, fragmentation, DNS sans réponse ou en SERVFAIL, DHCP en NAK, adresses IP dupliquées, tempêtes ARP, erreurs HTTP, alertes TLS, versions SSL 3.0 et TLS 1.0/1.1, tunnels WireGuard, OpenVPN, IPsec, GRE et L2TP à sens unique ou qui renégocient sans fin, scans de ports, identifiants en clair. Il prévient d'abord des défauts de la capture elle-même — trafic vu dans un seul sens, trames dupliquées par un port miroir, paquets tronqués — ce qui évite de conclure à une panne qui n'existe pas dans les données. L'enquête par IA est facultative et demande une clé Anthropic personnelle ; sans clé, un mode démonstration déroule le même parcours sans frais, avec des textes issus de l'analyse. Vues façon Wireshark (filtres d'affichage réels, tables HTTP/DNS/DHCP/TLS, chronophotographie des échanges), rapport PDF, interface en français et en espagnol. Apache-2.0, 207 étoiles, dernier commit le 21 novembre 2026, encore en bêta ; l'application n'écoute que sur 127.0.0.1 : https://github.com/sebaandrada-cell/PcapAnalyzer (démonstration sans installation : https://pcap-analyzer-seven.vercel.app/#demo)</p>
-<h3>ZeroBurn — réduire la dépense de jetons des agents de codage</h3>
-<p>Projet publié le 20 novembre, qui s'installe dans un dépôt sous <code>.agents/</code> et s'intercale entre l'agent (Claude, Gemini, OpenAI, Cursor) et le code : il remplace les journaux de tests et les listings de fichiers par des condensés de quelques lignes, fait les vérifications déterministes par analyse syntaxique sans aucun jeton, interroge un graphe de code local, et déporte la relecture des différences vers un modèle Ollama local. L'auteur annonce 70 à 83 % de jetons en moins sur son propre banc d'essai, et donne une commande de démonstration à lancer dans n'importe quel dépôt ; le titre de l'annonce sur Hacker News promet 98 %, chiffre que le fichier README ne reprend pas — l'écart mérite d'être mesuré soi-même. MIT, 5 étoiles, dernier commit le 22 novembre 2026, 2 points sur Hacker News et aucune validation indépendante : à considérer comme une piste à éprouver, pas comme un résultat acquis. https://github.com/thoufeeque22/zeroburn</p>
-<h3>Worker 755 — un jeu de navigateur où l'on est le sous-agent d'une IA</h3>
-<p>Le « manager » du jeu est un vrai modèle (Claude, GPT, Gemini, DeepSeek, GLM, Kimi) monté comme un orchestrateur : file de tâches, accès en lecture à la machine, outil qui « lance un sous-agent ». Le sous-agent, c'est le joueur : les instructions arrivent dans son terminal avec 90 secondes pour les exécuter, et le modèle reçoit en retour exactement ce qu'un sous-agent renverrait — compte rendu et journal des commandes, ou « le sous-agent n'a rien fait ». Il vérifie ensuite le travail, envoie des corrections, ouvre des rapports d'incident et finit par rédiger l'évaluation annuelle. Le jeu se lance chez soi (Node 24), fonctionne hors ligne avec un manager scripté, et accepte un modèle local par <code>LOCAL_LLM_URL</code> (Ollama, llama.cpp, vLLM), à condition qu'il sache appeler des outils. MIT, 113 étoiles, dernier commit le 22 novembre 2026 : https://github.com/gulivan/worker755 — à jouer sur https://worker755.com. Incertitude à signaler : les « shifts » gratuits sur le serveur de l'auteur sont contingentés (un compte reçoit de quoi jouer environ un shift, puis une recharge de 10 à 200 dollars) ; en auto-hébergement, il n'y a que le coût du modèle choisi, quelques centimes par partie avec un petit modèle.</p>
-<h3>Banc d'essai vLLM/SGLang sur un seul A100 — un harnais et ses résultats</h3>
-<p>Harnais de montée en pente sur Kubernetes qui fait varier automatiquement les paramètres de vLLM et de SGLang : un pod par essai pour isoler le GPU, calibrage du bruit de mesure à 3 sigma, essais de confirmation appariés, recherche de capacité en régime établi sur sept à neuf minutes, et garde-fous de qualité (GSM8K, récupération de clé en contexte long, vraisemblance des jetons comparée au BF16). Le dépôt contient l'étude complète — 337 essais, une base SQLite de plus de 400 lignes, dix graphiques — et les configurations gagnantes avec les commandes de service prêtes à copier pour un Nanbeige4.3-33B sur un A100 80 Go. Utile à qui fait tourner son propre serveur d'inférence ; deux entrées sur Hacker News (1 et 2 points), 1 étoile, dernier commit le 22 novembre 2026, et surtout aucune licence déclarée : le code est lisible, les résultats utilisables, mais rien ne l'autorise formellement à être réutilisé. https://github.com/johnsonshi/a100-inference-hillclimb</p>
-<h2>Extensions et greffons</h2>
-<h3>llm-gemini 0.38.1 — le palier de raisonnement « xhigh » sur Gemini 4 Hydrogen et Neon</h3>
-<p>Correctif de la version 0.38 : le greffon <code>llm-gemini</code>, qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code> de Simon Willison, proposait les paliers low, medium et high pour les trois modèles Gemini 4, sans tenir compte du palier <code>xhigh</code> que Hydrogen et Neon acceptent (Carbon, non). Le réglage n'est pas cosmétique : l'auteur mesure, sur Hydrogen, 5 311 jetons de sortie pour 3,99 cents au palier high, contre 31 477 jetons et 23,61 cents en xhigh, pour un résultat jugé compétitif avec Gemini 4 Neon. Mise à jour par <code>llm install -U llm-gemini</code> : https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
-<h2>Volume</h2>
-<p>49 entrées lues dans l'intervalle (journal du subreddit relayé par Hacker News et Lobsters, plus les flux Hugging Face, Simon Willison, Hacker News à 10 points et plus, et It's FOSS), 8 retenues formant 6 sujets après regroupement, 41 écartées — dont Owl OS, écarté pour cause de licence propriétaire malgré sa présentation comme alternative à Kali Linux, et Leonida, la recompilation PC de GTA VI, dont le jeu ne démarre pas encore.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Muru, du créateur de mod_wsgi, apporte à Python les livraisons sans coupure : un serveur Rust, en alpha, Apache-2.0.</li>
-<li>PcapAnalyzer nomme la panne dans une capture réseau parmi 27 détecteurs, exécuté chez soi, sans que la capture sorte du réseau local.</li>
-<li>ZeroBurn et Worker 755, deux projets de moins de trois jours : l'un traque les jetons gaspillés des agents de codage, l'autre se joue dans le navigateur en tenant le rôle du sous-agent d'une IA.</li>
-</ul>
-<h2>Applications et outils nouveaux</h2>
-<h3>Muru — un serveur Rust pour applications Python, par l'auteur de mod_wsgi</h3>
-<p>Graham Dumpleton, qui a écrit mod_wsgi il y a vingt ans, publie Muru : une arête de routage en Rust doublée d'un plan de contrôle et d'un exécuteur Python, servant indifféremment WSGI et ASGI. Le point notable est la livraison : chaque version démarre à côté de la précédente — éventuellement sur une autre version de Python — et le trafic bascule quand elle est prête, avec canaris pondérés, prévisualisations, bascule bleu/vert et retour arrière immédiat, sans redémarrage. La gestion des processus comprend Python (préchargement avec vérification d'import, groupes de travailleurs, limites mémoire, délais souples et durs, Python sans GIL), et un serveur MCP permet à un agent de codage de déployer chaque changement, de le tester, de lire ce que Muru observe en cas d'échec et d'annuler. Alpha assumée : préversions 0.1.0 sur PyPI, commandes et configuration susceptibles de changer ; installation par <code>uv tool install muructl</code>, ou essai sans rien installer avec les ateliers Jupyter du dépôt. Apache-2.0, 85 étoiles, dernier commit le 21 novembre 2026 : https://github.com/muruhq/muru — documentation https://docs.muruhq.dev/ — vu aussi chez Simon Willison, https://simonwillison.net/2026/Nov/21/muru/</p>
-<h3>PcapAnalyzer — trouver la panne réseau à partir d'une capture, sans la sortir de chez soi</h3>
-<p>Application libre, auto-hébergée (Docker), qui prend une capture <code>.pcap</code> ou <code>.pcapng</code> et la passe à 27 détecteurs, chacun rendant une gravité et l'étape suivante : blocages de pare-feu voyant un SYN partir en RST, retransmissions et réordonnancements TCP, trous noirs PMTUD, MSS trop faible, fragmentation, DNS sans réponse ou en SERVFAIL, DHCP en NAK, adresses IP dupliquées, tempêtes ARP, erreurs HTTP, alertes TLS, versions SSL 3.0 et TLS 1.0/1.1, tunnels WireGuard, OpenVPN, IPsec, GRE et L2TP à sens unique ou qui renégocient sans fin, scans de ports, identifiants en clair. Il prévient d'abord des défauts de la capture elle-même — trafic vu dans un seul sens, trames dupliquées par un port miroir, paquets tronqués — ce qui évite de conclure à une panne qui n'existe pas dans les données. L'enquête par IA est facultative et demande une clé Anthropic personnelle ; sans clé, un mode démonstration déroule le même parcours sans frais, avec des textes issus de l'analyse. Vues façon Wireshark (filtres d'affichage réels, tables HTTP/DNS/DHCP/TLS, chronophotographie des échanges), rapport PDF, interface en français et en espagnol. Apache-2.0, 207 étoiles, dernier commit le 21 novembre 2026, encore en bêta ; l'application n'écoute que sur 127.0.0.1 : https://github.com/sebaandrada-cell/PcapAnalyzer (démonstration sans installation : https://pcap-analyzer-seven.vercel.app/#demo)</p>
-<h3>ZeroBurn — réduire la dépense de jetons des agents de codage</h3>
-<p>Projet publié le 20 novembre, qui s'installe dans un dépôt sous <code>.agents/</code> et s'intercale entre l'agent (Claude, Gemini, OpenAI, Cursor) et le code : il remplace les journaux de tests et les listings de fichiers par des condensés de quelques lignes, fait les vérifications déterministes par analyse syntaxique sans aucun jeton, interroge un graphe de code local, et déporte la relecture des différences vers un modèle Ollama local. L'auteur annonce 70 à 83 % de jetons en moins sur son propre banc d'essai, et donne une commande de démonstration à lancer dans n'importe quel dépôt ; le titre de l'annonce sur Hacker News promet 98 %, chiffre que le fichier README ne reprend pas — l'écart mérite d'être mesuré soi-même. MIT, 5 étoiles, dernier commit le 22 novembre 2026, 2 points sur Hacker News et aucune validation indépendante : à considérer comme une piste à éprouver, pas comme un résultat acquis. https://github.com/thoufeeque22/zeroburn</p>
-<h3>Worker 755 — un jeu de navigateur où l'on est le sous-agent d'une IA</h3>
-<p>Le « manager » du jeu est un vrai modèle (Claude, GPT, Gemini, DeepSeek, GLM, Kimi) monté comme un orchestrateur : file de tâches, accès en lecture à la machine, outil qui « lance un sous-agent ». Le sous-agent, c'est le joueur : les instructions arrivent dans son terminal avec 90 secondes pour les exécuter, et le modèle reçoit en retour exactement ce qu'un sous-agent renverrait — compte rendu et journal des commandes, ou « le sous-agent n'a rien fait ». Il vérifie ensuite le travail, envoie des corrections, ouvre des rapports d'incident et finit par rédiger l'évaluation annuelle. Le jeu se lance chez soi (Node 24), fonctionne hors ligne avec un manager scripté, et accepte un modèle local par <code>LOCAL_LLM_URL</code> (Ollama, llama.cpp, vLLM), à condition qu'il sache appeler des outils. MIT, 113 étoiles, dernier commit le 22 novembre 2026 : https://github.com/gulivan/worker755 — à jouer sur https://worker755.com. Incertitude à signaler : les « shifts » gratuits sur le serveur de l'auteur sont contingentés (un compte reçoit de quoi jouer environ un shift, puis une recharge de 10 à 200 dollars) ; en auto-hébergement, il n'y a que le coût du modèle choisi, quelques centimes par partie avec un petit modèle.</p>
-<h3>Banc d'essai vLLM/SGLang sur un seul A100 — un harnais et ses résultats</h3>
-<p>Harnais de montée en pente sur Kubernetes qui fait varier automatiquement les paramètres de vLLM et de SGLang : un pod par essai pour isoler le GPU, calibrage du bruit de mesure à 3 sigma, essais de confirmation appariés, recherche de capacité en régime établi sur sept à neuf minutes, et garde-fous de qualité (GSM8K, récupération de clé en contexte long, vraisemblance des jetons comparée au BF16). Le dépôt contient l'étude complète — 337 essais, une base SQLite de plus de 400 lignes, dix graphiques — et les configurations gagnantes avec les commandes de service prêtes à copier pour un Nanbeige4.3-33B sur un A100 80 Go. Utile à qui fait tourner son propre serveur d'inférence ; deux entrées sur Hacker News (1 et 2 points), 1 étoile, dernier commit le 22 novembre 2026, et surtout aucune licence déclarée : le code est lisible, les résultats utilisables, mais rien ne l'autorise formellement à être réutilisé. https://github.com/johnsonshi/a100-inference-hillclimb</p>
-<h2>Extensions et greffons</h2>
-<h3>llm-gemini 0.38.1 — le palier de raisonnement « xhigh » sur Gemini 4 Hydrogen et Neon</h3>
-<p>Correctif de la version 0.38 : le greffon <code>llm-gemini</code>, qui donne accès aux modèles Gemini depuis l'outil en ligne de commande <code>llm</code> de Simon Willison, proposait les paliers low, medium et high pour les trois modèles Gemini 4, sans tenir compte du palier <code>xhigh</code> que Hydrogen et Neon acceptent (Carbon, non). Le réglage n'est pas cosmétique : l'auteur mesure, sur Hydrogen, 5 311 jetons de sortie pour 3,99 cents au palier high, contre 31 477 jetons et 23,61 cents en xhigh, pour un résultat jugé compétitif avec Gemini 4 Neon. Mise à jour par <code>llm install -U llm-gemini</code> : https://simonwillison.net/2026/Nov/20/llm-gemini/</p>
-<h2>Volume</h2>
-<p>49 entrées lues dans l'intervalle (journal du subreddit relayé par Hacker News et Lobsters, plus les flux Hugging Face, Simon Willison, Hacker News à 10 points et plus, et It's FOSS), 8 retenues formant 6 sujets après regroupement, 41 écartées — dont Owl OS, écarté pour cause de licence propriétaire malgré sa présentation comme alternative à Kali Linux, et Leonida, la recompilation PC de GTA VI, dont le jeu ne démarre pas encore.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — lundi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-23.html</link>
-<guid isPermaLink="false">macapps-2026-11-23</guid>
-<pubDate>Mon, 23 Nov 2026 00:14:56 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix-sept applications nouvelles, dont trois libres et gratuites (OpenShelf, Gitā, CurlGo) et quatre à achat unique de 5 à 10 dollars ; le reste est gratuit avec option payante, ou à tarif non publié.<br />
-Deux mises à jour notables : StepGrab 1.7 rend tous les formats d'export gratuits, Unclutter 2.3 se refait une jeunesse.<br />
-À signaler hors applications : Microsoft arrêtera Microsoft To Do le 30 juin 2027 au profit de Planner, sans équivalent personnel — l'occasion de choisir dès maintenant un gestionnaire de tâches pérenne.</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<h3>OpenShelf — roue d'actions autour du fichier qu'on glisse</h3>
-<p>Utilitaire de barre de menus : on commence à glisser n'importe quel fichier, on appuie sur une touche, et une roue s'ouvre pour convertir, éditer, envoyer par AirDrop ou mettre de côté. Tout se passe hors ligne. Gratuit et open source, licence MIT, 245 étoiles, dernière mise à jour le 19 novembre 2026, écrit en Swift.<br />
-→ https://github.com/Manan-Santoki/OpenShelf<br />
-→ annonce : https://www.reddit.com/r/macapps/comments/1y2aa9g/os_openshelf_drag_any_file_tap_a_key_and_a_wheel/</p>
-<h3>Gitā — client Git natif qui montre le travail des agents de codage</h3>
-<p>Client Git macOS centré sur l'historique d'un dépôt : un seul graphe réunit branches, demandes de tirage, vérifications CI, déploiements Vercel et l'état des agents de codage qui travaillent dans le dépôt (branche, sous-agents, travaux en cours, « needs input »). Version 0.1.0, gratuite et open source, licence MIT, 14 étoiles, mise à jour le 21 novembre 2026. C'est encore un tout jeune projet : à essayer sans en attendre la solidité de GitHub Desktop.<br />
-→ https://getgita.app/ — dépôt : https://github.com/clever-mechanisms/gita</p>
-<h3>CurlGo — client HTTP natif de 5 Mo</h3>
-<p>Client d'API natif (Go, interface native) qui réunit HTTP, SSE et WebSocket dans un même espace de travail, avec import et export de commandes curl : le successeur léger de Postman pour qui veut éviter l'application à plugiciels. L'installateur macOS ne pèse que 4,97 Mo, signé et notarié ; Windows existe en x64 et ARM64. Gratuit et open source, licence MIT, 5 étoiles, dernière poussée le 16 novembre 2026. Attention : l'installateur macOS est réservé à Apple Silicon, les Mac Intel passent par les sources.<br />
-→ https://curlgo.echovic.com/en/ — dépôt : https://github.com/echoVic/curlgo</p>
-<h3>Sxitch — remplaçant de ⌘ Tab par arbre de lettres</h3>
-<p>Commutateur d'applications : on appuie sur une touche de tête, on tape les premières lettres du nom de l'application, et Sxitch bascule dès qu'il ne reste qu'une correspondance ; un second appui choisit la fenêtre quand il y en a plusieurs. Le gratuit couvre déjà toutes les vues (grille, liste, radiale), tous les thèmes et le changement par arbre ; le Pro à 10 $ une fois (3 Mac, mises à jour à vie) ajoute masquer/quitter, les modes personnalisés, le renommage et les applications épinglées. macOS 15 ou plus, Apple Silicon et Intel ; installable par <code>brew install --cask sxitch</code>, et les sources sont publiées.<br />
-→ https://sxitch.app/</p>
-<h3>Wilt — un arbre pousse pendant qu'on travaille, et fane si on ouvre YouTube</h3>
-<p>Application de concentration native : on choisit 25, 50 ou 90 minutes depuis la barre de menus, un arbre pousse dans un coin de l'écran, au-dessus des fenêtres ; ouvrir un site de la liste le fait faner, avec dix secondes pour revenir avant que les feuilles ne tombent et que le tronc sec ne rejoigne le jardin. Wilt lit l'adresse de l'onglet au premier plan (Safari, Chrome, Arc, Brave, Edge, Vivaldi), propose un minuteur Pomodoro et un mode « Deep Focus » qui masque les applications et sites listés. Trois séances gratuites, puis 9,99 $ une fois ; macOS 14 ou plus ; rien ne quitte la machine.<br />
-→ https://wiltmac.com/</p>
-<h3>Sky — fond d'écran vivant qui suit le soleil et les étoiles</h3>
-<p>Fond d'écran macOS animé : le Soleil traverse le bureau en temps réel selon l'heure, et la nuit découvre un champ d'étoiles calculé pour la position géographique de l'utilisateur. L'auteur le présente comme complémentaire des fonds dynamiques classiques, plus continu dans la course du Soleil. Je n'ai pas trouvé de page officielle permettant de vérifier le prix ni la licence : à considérer comme non établi avant installation.<br />
-→ https://www.reddit.com/r/macapps/comments/1y1ih8g/i_built_sky_a_live_mac_wallpaper_that_follows_the/</p>
-<h3>CalendarCascade — frise calendaire continue et widgets de bureau</h3>
-<p>Application de calendrier pensée pour les personnes qui perdent la notion du temps : une chronologie continue plutôt qu'une grille mensuelle, plus des widgets de bureau alimentés par Apple Calendar. L'application écoute les modifications du calendrier, met à jour les données des widgets et demande leur rafraîchissement. Le fil annonce aussi un réglage de portée sur douze mois. Prix non établi (aucune page officielle trouvée).<br />
-→ https://www.reddit.com/r/macapps/comments/1y1lm04/calendarcascade_a_continuous_calendar_timeline/</p>
-<h3>SpacialStage — fonds d'écran en parallaxe 3D</h3>
-<p>Application de l'App Store qui découpe une image en couches et les décale pour donner une impression de profondeur au pointeur ou au visage, avec flou d'arrière-plan réglable pour l'effet bokeh. Bibliothèque de fonds, un réglage par espace de travail dans la version Pro. Essai gratuit de 7 jours, puis 4,99 $ pour le niveau standard et 9,99 $ pour le Pro (ou 4,99 $ de plus en mise à niveau) — achat unique, pas d'abonnement. macOS, suivi caméra optionnel plus gourmand que le pointeur.<br />
-→ https://apps.apple.com/us/app/spacial-stage/id6814268815</p>
-<h3>Proled Notch — panneau qui sort de l'encoche</h3>
-<p>Petit panneau qui se déploie depuis l'encoche du MacBook. Selon l'annonce, le téléchargement est gratuit et la version Pro coûte 5,99 € une fois. Je n'ai pas retrouvé la page officielle de l'éditeur pour confirmer le prix ni la licence : à vérifier sur place avant d'installer.<br />
-→ https://www.reddit.com/r/macapps/comments/1y134g0/proled_notch_a_panel_that_grows_out_of_your_macs/</p>
-<h3>Easy Caption Pro — sous-titres hors ligne sur Mac</h3>
-<p>Application qui transcrit une vidéo directement sur la machine puis permet de styliser et animer les sous-titres, avec une chronologie mot à mot, des segments, des modèles et un éditeur de script synchronisé. Transcription hors ligne annoncée en 99 langues, sans envoi sur un serveur. Le prix n'apparaît pas sur la page d'accueil et la page de tarifs ne répond pas : à relever dans l'App Store avant de s'engager.<br />
-→ https://easycaptionpro.com/</p>
-<h3>NovelStage — studio 3D pour romans visuels et bandes dessinées</h3>
-<p>Studio 3D pour Mac : on crée un personnage une fois (corps, peau, cheveux, tatouages, vêtements), on le pose et on l'habille dans des décors, puis on rend des images destinées à un roman visuel, une bande dessinée ou une histoire. Le contenu annoncé est conséquent pour un outil d'illustration : 51 poses, plus de 60 tenues, 16 décors extérieurs et plus de 5 000 objets. Disponible sur le Mac App Store, gratuit avec une extension Pro facultative (prix de la version Pro non vérifié).<br />
-→ https://radiantbeargames.com/novelstage</p>
-<h3>AskEditor — greffon d'IA qui monte dans Final Cut Pro</h3>
-<p>Greffon qui branche Claude sur la timeline ouverte dans Final Cut Pro : on demande en parlant de couper les silences et les hésitations, d'habiller les sous-titres au style du client ou d'aligner une caméra B, et les coupes arrivent comme des plans Final Cut, sans export ni réimport. Fonctionne sur Final Cut Pro 12.4 ou plus et Mac Apple Silicon ; la transcription se fait sur la machine. Gratuit jusqu'à 50 modifications vocales par mois, puis formule payante dont le tarif n'est pas publié — c'est un service en ligne, pas un logiciel libre.<br />
-→ https://askeditor.com/final-cut-pro</p>
-<h3>ctrlhq — boîte à outils dans l'encoche, dictée locale comprise</h3>
-<p>Application native qui installe dans l'encoche les fonctions que le Mac possède déjà mais qu'on n'utilise pas : dictée et transcription sur l'appareil (Apple Intelligence), tâches, minuteurs, presse-papiers, étagère de fichiers, enregistrement d'écran, notes de réunion et un chat nommé Nook. L'auteur la situe entre Boring Notch (gratuit, plus léger) et NotchNook (25 $ ou 3 $ par mois) en couvrant beaucoup plus de fonctions. 24,99 $ une fois au lancement (29 $ ensuite), un Mac, mises à jour à vie, pas d'abonnement ni d'essai — c'est le seul vrai achat de la sélection, à vous de juger s'il les vaut.<br />
-→ https://ctrlhq.app</p>
-<h3>DeNotch — masquer l'encoche, ranger la barre de menus</h3>
-<p>Masque l'encoche du MacBook derrière une barre noire qui tient sur n'importe quel fond d'écran, y compris dynamiques, range les icônes de la barre de menus derrière un chevron et place des widgets (et un chat) à côté de l'encoche, sans modifier les fichiers du système. Bêta gratuite, macOS récent. Le prix de la version finale n'est pas annoncé.<br />
-→ https://denotch.app/</p>
-<h3>Verge: Corner Controls — régler le volume et la luminosité d'un geste dans un coin</h3>
-<p>Utilitaire qui transforme un balayage dans un coin de l'écran en réglage de luminosité, de volume et d'autres paramètres. L'information disponible se limite à sa fiche Product Hunt : ni prix, ni licence, ni lien vers un site d'éditeur n'y figurent, je ne peux donc rien affirmer de plus.<br />
-→ https://www.producthunt.com/products/verge-corner-controls</p>
-<h3>Resurf — base de connaissances et gestionnaire de signets pour Mac</h3>
-<p>Présenté comme une base de connaissances personnelle et un gestionnaire de marque-pages pour Mac. La fiche Product Hunt ne donne ni tarif, ni licence, ni dépôt ; à ouvrir soi-même si le sujet vous intéresse.<br />
-→ https://www.producthunt.com/products/resurf-2</p>
-<h3>Omi CLI — agent de codage en terminal, treize modèles</h3>
-<p>Agent de codage en ligne de commande qui propose treize modèles au choix. La fiche Product Hunt ne précise ni les modèles exacts, ni le prix, ni la licence : c'est une nouveauté à regarder, pas encore une recommandation.<br />
-→ https://www.producthunt.com/products/omi-cli</p>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<h3>StepGrab 1.7 — tous les formats d'export gratuits sur Mac</h3>
-<p>Le créateur de guides pas à pas automatique (une capture à chaque clic, flèches numérotées) rend gratuits tous les formats d'export sur Mac — GIF, PDF, MP4, HTML, Markdown, vidéo mobile — avec seulement une petite mention « Made with stepgrab.net ». Capture hors ligne, aucune image envoyée ; macOS 14 ou plus, aussi dans le Mac App Store.<br />
-→ https://stepgrab.net/</p>
-<h3>Unclutter 2.3 — refonte complète de l'étagère</h3>
-<p>Mise à jour majeure de l'étagère de fichiers, notes et presse-papiers : fenêtre redimensionnable librement, apparence rafraîchie pour macOS 27, 22 nouvelles actions Raccourcis, recherche dans l'historique du presse-papiers, notes Markdown, captures d'écran enregistrées dans l'étagère plutôt que sur le bureau, et 200 à 300 Mo de mémoire vive en moins. Application payante (Mac App Store et Setapp, tarif non relevé ici).<br />
-→ https://www.reddit.com/r/macapps/comments/1y1gkis/just_released_unclutter_23_with_improvements_to/</p>
-<h3>Casks Homebrew — versions notables du week-end</h3>
-<p>Parmi les casks mis à jour : <strong>Stirling PDF</strong> 3.5.0 (boîte à outils PDF libre), <strong>Osaurus</strong> 1.0.10 (serveur de modèles local), <strong>Open Science</strong> 1.3.3, <strong>Textus</strong> 1.4.6, <strong>Koharu</strong> 0.91.0. Rien de nouveau côté casks ajoutés : le journal des nouveautés Homebrew est vide.</p>
-<hr />
-<h2>Volume</h2>
-<p>23 fils r/macapps et 38 entrées de flux publiés entre le 19 et le 22 novembre (plus 6 entrées de plus de quatre jours écartées d'office), 20 retenues, 41 écartées — promotions de Black Friday, rumeurs Apple, questions et avis, billets sans annonce. Les 80 casks Homebrew de l'intervalle sont des mises à jour de version, sans ajout d'application. Collecte Reddit fonctionnelle (dernier relevé le 22 novembre à 21 h 50 UTC, aucun échec signalé).</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Dix-sept applications nouvelles, dont trois libres et gratuites (OpenShelf, Gitā, CurlGo) et quatre à achat unique de 5 à 10 dollars ; le reste est gratuit avec option payante, ou à tarif non publié.<br />
-Deux mises à jour notables : StepGrab 1.7 rend tous les formats d'export gratuits, Unclutter 2.3 se refait une jeunesse.<br />
-À signaler hors applications : Microsoft arrêtera Microsoft To Do le 30 juin 2027 au profit de Planner, sans équivalent personnel — l'occasion de choisir dès maintenant un gestionnaire de tâches pérenne.</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<h3>OpenShelf — roue d'actions autour du fichier qu'on glisse</h3>
-<p>Utilitaire de barre de menus : on commence à glisser n'importe quel fichier, on appuie sur une touche, et une roue s'ouvre pour convertir, éditer, envoyer par AirDrop ou mettre de côté. Tout se passe hors ligne. Gratuit et open source, licence MIT, 245 étoiles, dernière mise à jour le 19 novembre 2026, écrit en Swift.<br />
-→ https://github.com/Manan-Santoki/OpenShelf<br />
-→ annonce : https://www.reddit.com/r/macapps/comments/1y2aa9g/os_openshelf_drag_any_file_tap_a_key_and_a_wheel/</p>
-<h3>Gitā — client Git natif qui montre le travail des agents de codage</h3>
-<p>Client Git macOS centré sur l'historique d'un dépôt : un seul graphe réunit branches, demandes de tirage, vérifications CI, déploiements Vercel et l'état des agents de codage qui travaillent dans le dépôt (branche, sous-agents, travaux en cours, « needs input »). Version 0.1.0, gratuite et open source, licence MIT, 14 étoiles, mise à jour le 21 novembre 2026. C'est encore un tout jeune projet : à essayer sans en attendre la solidité de GitHub Desktop.<br />
-→ https://getgita.app/ — dépôt : https://github.com/clever-mechanisms/gita</p>
-<h3>CurlGo — client HTTP natif de 5 Mo</h3>
-<p>Client d'API natif (Go, interface native) qui réunit HTTP, SSE et WebSocket dans un même espace de travail, avec import et export de commandes curl : le successeur léger de Postman pour qui veut éviter l'application à plugiciels. L'installateur macOS ne pèse que 4,97 Mo, signé et notarié ; Windows existe en x64 et ARM64. Gratuit et open source, licence MIT, 5 étoiles, dernière poussée le 16 novembre 2026. Attention : l'installateur macOS est réservé à Apple Silicon, les Mac Intel passent par les sources.<br />
-→ https://curlgo.echovic.com/en/ — dépôt : https://github.com/echoVic/curlgo</p>
-<h3>Sxitch — remplaçant de ⌘ Tab par arbre de lettres</h3>
-<p>Commutateur d'applications : on appuie sur une touche de tête, on tape les premières lettres du nom de l'application, et Sxitch bascule dès qu'il ne reste qu'une correspondance ; un second appui choisit la fenêtre quand il y en a plusieurs. Le gratuit couvre déjà toutes les vues (grille, liste, radiale), tous les thèmes et le changement par arbre ; le Pro à 10 $ une fois (3 Mac, mises à jour à vie) ajoute masquer/quitter, les modes personnalisés, le renommage et les applications épinglées. macOS 15 ou plus, Apple Silicon et Intel ; installable par <code>brew install --cask sxitch</code>, et les sources sont publiées.<br />
-→ https://sxitch.app/</p>
-<h3>Wilt — un arbre pousse pendant qu'on travaille, et fane si on ouvre YouTube</h3>
-<p>Application de concentration native : on choisit 25, 50 ou 90 minutes depuis la barre de menus, un arbre pousse dans un coin de l'écran, au-dessus des fenêtres ; ouvrir un site de la liste le fait faner, avec dix secondes pour revenir avant que les feuilles ne tombent et que le tronc sec ne rejoigne le jardin. Wilt lit l'adresse de l'onglet au premier plan (Safari, Chrome, Arc, Brave, Edge, Vivaldi), propose un minuteur Pomodoro et un mode « Deep Focus » qui masque les applications et sites listés. Trois séances gratuites, puis 9,99 $ une fois ; macOS 14 ou plus ; rien ne quitte la machine.<br />
-→ https://wiltmac.com/</p>
-<h3>Sky — fond d'écran vivant qui suit le soleil et les étoiles</h3>
-<p>Fond d'écran macOS animé : le Soleil traverse le bureau en temps réel selon l'heure, et la nuit découvre un champ d'étoiles calculé pour la position géographique de l'utilisateur. L'auteur le présente comme complémentaire des fonds dynamiques classiques, plus continu dans la course du Soleil. Je n'ai pas trouvé de page officielle permettant de vérifier le prix ni la licence : à considérer comme non établi avant installation.<br />
-→ https://www.reddit.com/r/macapps/comments/1y1ih8g/i_built_sky_a_live_mac_wallpaper_that_follows_the/</p>
-<h3>CalendarCascade — frise calendaire continue et widgets de bureau</h3>
-<p>Application de calendrier pensée pour les personnes qui perdent la notion du temps : une chronologie continue plutôt qu'une grille mensuelle, plus des widgets de bureau alimentés par Apple Calendar. L'application écoute les modifications du calendrier, met à jour les données des widgets et demande leur rafraîchissement. Le fil annonce aussi un réglage de portée sur douze mois. Prix non établi (aucune page officielle trouvée).<br />
-→ https://www.reddit.com/r/macapps/comments/1y1lm04/calendarcascade_a_continuous_calendar_timeline/</p>
-<h3>SpacialStage — fonds d'écran en parallaxe 3D</h3>
-<p>Application de l'App Store qui découpe une image en couches et les décale pour donner une impression de profondeur au pointeur ou au visage, avec flou d'arrière-plan réglable pour l'effet bokeh. Bibliothèque de fonds, un réglage par espace de travail dans la version Pro. Essai gratuit de 7 jours, puis 4,99 $ pour le niveau standard et 9,99 $ pour le Pro (ou 4,99 $ de plus en mise à niveau) — achat unique, pas d'abonnement. macOS, suivi caméra optionnel plus gourmand que le pointeur.<br />
-→ https://apps.apple.com/us/app/spacial-stage/id6814268815</p>
-<h3>Proled Notch — panneau qui sort de l'encoche</h3>
-<p>Petit panneau qui se déploie depuis l'encoche du MacBook. Selon l'annonce, le téléchargement est gratuit et la version Pro coûte 5,99 € une fois. Je n'ai pas retrouvé la page officielle de l'éditeur pour confirmer le prix ni la licence : à vérifier sur place avant d'installer.<br />
-→ https://www.reddit.com/r/macapps/comments/1y134g0/proled_notch_a_panel_that_grows_out_of_your_macs/</p>
-<h3>Easy Caption Pro — sous-titres hors ligne sur Mac</h3>
-<p>Application qui transcrit une vidéo directement sur la machine puis permet de styliser et animer les sous-titres, avec une chronologie mot à mot, des segments, des modèles et un éditeur de script synchronisé. Transcription hors ligne annoncée en 99 langues, sans envoi sur un serveur. Le prix n'apparaît pas sur la page d'accueil et la page de tarifs ne répond pas : à relever dans l'App Store avant de s'engager.<br />
-→ https://easycaptionpro.com/</p>
-<h3>NovelStage — studio 3D pour romans visuels et bandes dessinées</h3>
-<p>Studio 3D pour Mac : on crée un personnage une fois (corps, peau, cheveux, tatouages, vêtements), on le pose et on l'habille dans des décors, puis on rend des images destinées à un roman visuel, une bande dessinée ou une histoire. Le contenu annoncé est conséquent pour un outil d'illustration : 51 poses, plus de 60 tenues, 16 décors extérieurs et plus de 5 000 objets. Disponible sur le Mac App Store, gratuit avec une extension Pro facultative (prix de la version Pro non vérifié).<br />
-→ https://radiantbeargames.com/novelstage</p>
-<h3>AskEditor — greffon d'IA qui monte dans Final Cut Pro</h3>
-<p>Greffon qui branche Claude sur la timeline ouverte dans Final Cut Pro : on demande en parlant de couper les silences et les hésitations, d'habiller les sous-titres au style du client ou d'aligner une caméra B, et les coupes arrivent comme des plans Final Cut, sans export ni réimport. Fonctionne sur Final Cut Pro 12.4 ou plus et Mac Apple Silicon ; la transcription se fait sur la machine. Gratuit jusqu'à 50 modifications vocales par mois, puis formule payante dont le tarif n'est pas publié — c'est un service en ligne, pas un logiciel libre.<br />
-→ https://askeditor.com/final-cut-pro</p>
-<h3>ctrlhq — boîte à outils dans l'encoche, dictée locale comprise</h3>
-<p>Application native qui installe dans l'encoche les fonctions que le Mac possède déjà mais qu'on n'utilise pas : dictée et transcription sur l'appareil (Apple Intelligence), tâches, minuteurs, presse-papiers, étagère de fichiers, enregistrement d'écran, notes de réunion et un chat nommé Nook. L'auteur la situe entre Boring Notch (gratuit, plus léger) et NotchNook (25 $ ou 3 $ par mois) en couvrant beaucoup plus de fonctions. 24,99 $ une fois au lancement (29 $ ensuite), un Mac, mises à jour à vie, pas d'abonnement ni d'essai — c'est le seul vrai achat de la sélection, à vous de juger s'il les vaut.<br />
-→ https://ctrlhq.app</p>
-<h3>DeNotch — masquer l'encoche, ranger la barre de menus</h3>
-<p>Masque l'encoche du MacBook derrière une barre noire qui tient sur n'importe quel fond d'écran, y compris dynamiques, range les icônes de la barre de menus derrière un chevron et place des widgets (et un chat) à côté de l'encoche, sans modifier les fichiers du système. Bêta gratuite, macOS récent. Le prix de la version finale n'est pas annoncé.<br />
-→ https://denotch.app/</p>
-<h3>Verge: Corner Controls — régler le volume et la luminosité d'un geste dans un coin</h3>
-<p>Utilitaire qui transforme un balayage dans un coin de l'écran en réglage de luminosité, de volume et d'autres paramètres. L'information disponible se limite à sa fiche Product Hunt : ni prix, ni licence, ni lien vers un site d'éditeur n'y figurent, je ne peux donc rien affirmer de plus.<br />
-→ https://www.producthunt.com/products/verge-corner-controls</p>
-<h3>Resurf — base de connaissances et gestionnaire de signets pour Mac</h3>
-<p>Présenté comme une base de connaissances personnelle et un gestionnaire de marque-pages pour Mac. La fiche Product Hunt ne donne ni tarif, ni licence, ni dépôt ; à ouvrir soi-même si le sujet vous intéresse.<br />
-→ https://www.producthunt.com/products/resurf-2</p>
-<h3>Omi CLI — agent de codage en terminal, treize modèles</h3>
-<p>Agent de codage en ligne de commande qui propose treize modèles au choix. La fiche Product Hunt ne précise ni les modèles exacts, ni le prix, ni la licence : c'est une nouveauté à regarder, pas encore une recommandation.<br />
-→ https://www.producthunt.com/products/omi-cli</p>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<h3>StepGrab 1.7 — tous les formats d'export gratuits sur Mac</h3>
-<p>Le créateur de guides pas à pas automatique (une capture à chaque clic, flèches numérotées) rend gratuits tous les formats d'export sur Mac — GIF, PDF, MP4, HTML, Markdown, vidéo mobile — avec seulement une petite mention « Made with stepgrab.net ». Capture hors ligne, aucune image envoyée ; macOS 14 ou plus, aussi dans le Mac App Store.<br />
-→ https://stepgrab.net/</p>
-<h3>Unclutter 2.3 — refonte complète de l'étagère</h3>
-<p>Mise à jour majeure de l'étagère de fichiers, notes et presse-papiers : fenêtre redimensionnable librement, apparence rafraîchie pour macOS 27, 22 nouvelles actions Raccourcis, recherche dans l'historique du presse-papiers, notes Markdown, captures d'écran enregistrées dans l'étagère plutôt que sur le bureau, et 200 à 300 Mo de mémoire vive en moins. Application payante (Mac App Store et Setapp, tarif non relevé ici).<br />
-→ https://www.reddit.com/r/macapps/comments/1y1gkis/just_released_unclutter_23_with_improvements_to/</p>
-<h3>Casks Homebrew — versions notables du week-end</h3>
-<p>Parmi les casks mis à jour : <strong>Stirling PDF</strong> 3.5.0 (boîte à outils PDF libre), <strong>Osaurus</strong> 1.0.10 (serveur de modèles local), <strong>Open Science</strong> 1.3.3, <strong>Textus</strong> 1.4.6, <strong>Koharu</strong> 0.91.0. Rien de nouveau côté casks ajoutés : le journal des nouveautés Homebrew est vide.</p>
-<hr />
-<h2>Volume</h2>
-<p>23 fils r/macapps et 38 entrées de flux publiés entre le 19 et le 22 novembre (plus 6 entrées de plus de quatre jours écartées d'office), 20 retenues, 41 écartées — promotions de Black Friday, rumeurs Apple, questions et avis, billets sans annonce. Les 80 casks Homebrew de l'intervalle sont des mises à jour de version, sans ajout d'application. Collecte Reddit fonctionnelle (dernier relevé le 22 novembre à 21 h 50 UTC, aucun échec signalé).</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
