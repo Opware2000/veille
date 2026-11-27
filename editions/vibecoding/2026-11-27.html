@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/vibecoding — Vendredi 27 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../vibecoding.xml" title="r/vibecoding">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/vibecoding — Vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Nextcloud sort sa version bureau de son suite bureautique open source. SeaHelm propose une application macOS native pour exécuter des agents Claude Code en parallèle. Moat se présente comme un remplacement d'OpenRouter pour réduire les coûts.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>SeaHelm — espace de travail natif macOS pour les agents Claude Code</strong><br />
+SeaHelm est une application macOS native construite autour de Ghostty qui offre un roster de worktrees Git et un agent par split-pane. Chaque worktree correspond à une ligne du roster et les sessions persistent via zmx. Idéal si vous gérez plusieurs projets simultanément avec des agents Claude Code. Dépôt <a href="https://github.com/BetaYao/seahelm">BetaYao/seahelm</a> (Rust, 23 étoiles, dernier push 26/11/2026). Gratuit.</p>
+<p><strong>Torno — établi de bureau pour fabriquer des pièces CAO avec un agent IA</strong><br />
+Torno permet de créer des pièces CAO en pointant vers le modèle et en laissant l'agent écrire le code build123d ;torno reconstruit la pièce à chaque sauvegarde. C'est un atelier de fabrication assistée par IA dédié à la modélisation CAO paramétrique. Dépôt <a href="https://github.com/luisg0nc/torno">luisg0nc/torno</a> (TypeScript, 11 étoiles, dernier push 26/11/2026). Gratuit.</p>
+<p><strong>Lip-Dictation — dictation silencieuse pour Claude Code via lecture des lèvres locale</strong><br />
+Lip-Dictation permet de faire parler un modèle de reconnaissance des lèvres installé localement devant votre webcam : les mots tapés directement dans le prompt de Claude Code, sans microphone. Une approche originale pour coder sans bruit. Dépôt <a href="https://github.com/batanus/lip-dictation">batanus/lip-dictation</a> (TypeScript, 7 étoiles, dernier push 26/11/2026). Gratuit.</p>
+<p><strong>Moat — remplacement OpenRouter pour les appels à grands modèles</strong><br />
+Moat se positionne comme un replace d'OpenRouter pour accéder aux mêmes modèles de grandes capacités. Présenté comme une alternative moins chère, il vise les développeurs qui cherchent à réduire leurs coûts d'appels API tout en conservant l'accès aux frontier models. Site <a href="https://commandcode.ai/moat">commandcode.ai/moat</a>.</p>
+<p><strong>Draftmux — polir le texte écrit par votre agent de codage avant qu'il ne parte</strong><br />
+Draftmux est un outil de relecture et de polissage automatique des textes générés par un agent de codage avant leur diffusion. Il intervient entre la sortie brute de Claude Code et le message envoyé — email, ticket, documentation. Site <a href="https://draftmux.raine.dev/">draftmux.raine.dev</a>.</p>
+<p><strong>AgentDesign — dessiner chaque écran avant que l'agent de codage n'écrive</strong><br />
+AgentDesign fait intervenir l'agent IA pour dessiner chaque écran de l'application avant même d'en coder la logique. L'idée : valider visuellement l'interface utilisateur avant de passer au développement, ce qui évite les boucles de correction coûteuses. Site <a href="https://getagentdesign.com/">getagentdesign.com</a>.</p>
+<p><strong>Minipg — PostgreSQL et SQLite réunis en un seul exécutable portable</strong><br />
+Minipg combine les fonctionnalités de PostgreSQL et de SQLite en un seul exécutable statique écrit en Zig. Idéal pour distribuer des applications avec une base de données relationnelle complète, sans dépendance système ni installation séparée. Dépôt <a href="https://github.com/progrium/minipg">progrium/minipg</a> (Zig, 204 étoiles, dernier push 26/11/2026). Gratuit.</p>
+<p><strong>Safer-dependencies — couche de sécurité pour Claude Code</strong><br />
+Safer-dependencies audite les paquets avant qu'ils ne soient ajoutés au projet par Claude Code. Il détecte et corrige les dépendances risquées : CVE connues, typosquats, paquets abandonnés, problèmes de version. Couvre npm, PyPI, RubyGems, Maven, Go et Rust. Dépôt <a href="https://github.com/robert-auger/safer-dependencies">robert-auger/safer-dependencies</a> (Python, 46 étoiles). Gratuit.</p>
+<p><strong>Openfal — génération d'images et vidéos locales via une API style fal</strong><br />
+Openfal offre un serveur local de génération d'images et de vidéos exposant une API compatible avec le protocole fal. Permet d'intégrer la génération multimodale dans des pipelines de développement sans dépendre d'un service cloud. Site <a href="https://openfal.org">openfal.org</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Nextcloud Office Desktop</strong> — Nextcloud lance une application bureau pour sa suite bureautique collaborative. La nouveauté génère beaucoup d'intérêt sur Hacker News (348 points, 150 commentaires). L'approche consiste à rapprocher la bureautique web du poste de travail, avec synchronisation continue via Nextcloud. Article sur <a href="https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/">nextcloud.com</a>.</p>
+<p><strong>llama.cpp — benchmarks AMD Ryzen et Radeon</strong> — HuggingFace publie un tableau de bord de benchmarks spécifique pour les processeurs AMD dans llama.cpp. Ce suivi aide les utilisateurs AMD à suivre les performances de chargement et d'inférence des modèles locaux. Blog <a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench">huggingface.co/blog/ggml-org/llamacpp-amd-bench</a>.</p>
+<h2>Extensions et greffons</h2>
+<p><strong>datasette-charts 0.3a0</strong> — Simon Willison publie une version alpha de datasette-charts avec annotations de graphiques : lignes, zones ombrées et étiquettes superposables sur les rendus de données. Pratique pour les analyses visuelles dans Datasette. Blog <a href="https://simonwillison.net/2026/Nov/25/datasette-charts/">simonwillison.net/2026/Nov/25/datasette-charts/</a>.</p>
+<p><strong>sqlite3_rsync — copie distante pour bases SQLite</strong> — Outil officiel expérimental intégré à SQLite depuis la version 3.47.0, permettant une copie distante de bases SQLite. Simon Willison souligne ses avantages pratiques pour les snapshots de bases. Blog <a href="https://simonwillison.net/2026/Nov/26/sqlite3-rsync/">simonwillison.net/2026/Nov/26/sqlite3-rsync/</a>.</p>
+<h2>Volume</h2>
+<p>168 entrées dans la shortlist pré-mâchée, 9 retenus, 159 écartés.</p>
+<footer>Édition du vendredi 27 novembre 2026 — <a href="https://opware2000.github.io/veille/vibecoding.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
