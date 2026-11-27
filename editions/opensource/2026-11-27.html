@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/opensource — vendredi 27 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../opensource.xml" title="r/opensource">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/opensource — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Quelques outils concrets se dégagent aujourd'hui : MeghXL pour le transfert de fichiers local sans cloud, et Quoth pour la dictée vocale locale sur Linux. Du côté des agents IA, Nod impose un modèle où l'agent doit obtenir votre accord avant d'agir. Garage propose une nouvelle version avec interface web.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>MeghXL — transfert de fichiers local entre appareils sur le même réseau Wi-Fi</strong></p>
+<p>Un développeur propose son propre outil open source qui permet de transférer des fichiers entre Windows, Mac, Linux, Android et iPhone sans passer par le cloud ni installer d'application mobile. Le principe est simple : tous les appareils du même réseau Wi-Fi se détectent mutuellement et peuvent s'échanger des fichiers directement. L'auteur détaille sa motivation — la frustration de devoir utiliser AirDrop (limité à Apple) ou des services cloud (qui exposent les données) — et le fonctionnement se résume à un serveur auto-hébergé léger tournant en arrière-plan.<br />
+<a href="https://www.reddit.com/r/opensource/comments/1y5v0l9/meghxl_a_selfhosted_way_to_transfer_files_between/">https://www.reddit.com/r/opensource/comments/1y5v0l9/meghxl_a_selfhosted_way_to_transfer_files_between/</a></p>
+<p><strong>Quoth — dictée vocale locale pour Linux qui sélectionne automatiquement le matériel adapté</strong></p>
+<p>It's FOSS teste Quoth, une application dédiée à Linux qui transforme la voix en texte en exécutant des modèles Whisper localement. Son intérêt principal : elle effectue un benchmark automatique du matériel pour déterminer si le modèle doit tourner sur le CPU, le GPU ou le NPU, ce qui résout le problème récurrent de savoir quel modèle son matériel peut effectivement gérer. L'outil reste confidentiel à l'heure actuelle mais adresse un besoin concret des utilisateurs Linux souhaitant une transcription hors ligne.<br />
+https://feed.itsfoss.com/link/24361/17541371/quoth-review</p>
+<p><strong>Nod — agent personnel open-source n8n avec approbation humaine obligatoire</strong></p>
+<p>L'équipe derrière n8n publie Nod, un agent IA personnel qui fonctionne localement sur la machine de l'utilisateur. À la différence de la plupart des agents IA actuels qui agissent sans validation préalable, Nod exige une approbation humaine avant chaque action : il ne réserve pas un vol, ne remplit pas de formulaire ou ne rédige pas de texte sans que l'utilisateur n'ait approuvé au préalable. Développé en Node.js sous licence Apache-2.0, le projet cumule environ 4 000 étoiles sur GitHub et a été activement maintenu ces dernières 24 heures. Les sources sont disponibles à https://github.com/n8n-io/nod.</p>
+<p><strong>TraceKit — enregistreur de vol pour agents IA vérifiable hors ligne</strong></p>
+<p>TraceKit est un projet open-source conçu pour tracer les actions des agents IA qui accèdent à un shell, une base de données ou une API de paiement. Quand un agent fait quelque chose d'inattendu, TraceKit permet de reconstruire ce qui s'est passé grâce à un journal immuable que même un auditeur peut vérifier hors ligne, car l'agent lui-même ne peut ni modifier ni supprimer ses propres traces. Écrit en Go sous licence MIT, le dépôt compte environ 920 étoiles sur GitHub et affiche une activité récente. Les sources sont disponibles à https://github.com/cygnux-labs/tracekit.</p>
+<p><strong>Framaspeak — transcription audio en texte dans le navigateur, sans exploitation des données</strong></p>
+<p>Framasoft présente Framaspeak, un nouveau service en ligne gratuit qui transforme les enregistrements audio en texte écrit. Utilisable directement depuis un navigateur (bureau ou smartphone), il ne stocke aucune donnée utilisateur sur les serveurs de Framasoft. Le moteur repose sur un modèle d'apprentissage ouvert. La solution s'adresse à ceux qui souhaitent transcrire des réunions, entretiens, conférences ou podcasts sans compromettre leur vie privée.<br />
+https://framablog.org/2026/11/26/framaspeak-de-loral-a-lecrit-sans-les-mains/</p>
+<h2>Mises à jour et fonctionnalités notables</h2>
+<p><strong>Garage v2.6.0 — interface d'administration web et fin de vie de la série v1.x</strong></p>
+<p>Le stockage distribué Garage publie sa version 2.6.0 avec une interface d'administration web nouvelle, rendant l'exploitation plus accessible sans passer par la CLI. La version 2.x introduit également des changements internes significatifs. Gardez que la série v1.x arrive à son terme — migrez vers la 2.x si vous êtes encore en version antérieure. Communauté française active, disponible à https://garagehq.deuxfleurs.fr/.</p>
+<p><strong>Brush 0.5 — shell compatible Bash/POSIX écrit en Rust</strong></p>
+<p>Le projet Brush, un shell écrit en Rust destiné à remplacer Bash tout en restant compatible, franchit un cap avec sa version 0.5. Il passe désormais plus de 96 % des tests du suite de test upstream de bash-completion. La plupart des scripts Bash devraient fonctionner inchangés sous Brush. Pour qui cherche une alternative moderne à Bash écrite dans un langage plus sûr, c'est une version intéressante.<br />
+https://www.phoronix.com/news/Brush-0.5-Released</p>
+<p><strong>DXVK 3.2 — support du present timing pour Steam Play / Proton</strong></p>
+<p>Valve annonce DXVK 3.2, nouvelle version fonctionnelle de son implémentation Vulkan des API Direct3D 8 à 11, utilisée en arrière-plan par Steam Play (Proton). Cette mouture introduit un support du present timing, améliorant potentiellement les performances d'affichage dans les jeux Windows tournant via Proton sous Linux. Un outil majeur pour les joueurs Linux qui mérite qu'on le suive.<br />
+https://www.phoronix.com/news/DXVK-3.2-Released</p>
+<h2>Extensions et greffons</h2>
+<p>Aucune extension ou greffe significative identifiée dans cette édition.</p>
+<h2>Volume</h2>
+<p>60 posts publiés dans l'intervalle, 6 retenus, 54 écartés.</p>
+<footer>Édition du vendredi 27 novembre 2026 — <a href="https://opware2000.github.io/veille/opensource.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
