@@ -6,9 +6,52 @@
 <description>Veille quotidienne — CTAN — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/ctan.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Thu, 26 Nov 2026 01:41:06 +0100</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 01:42:32 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille CTAN — vendredi 27 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/ctan/2026-11-27.html</link>
+<guid isPermaLink="false">ctan-2026-11-27</guid>
+<pubDate>Fri, 27 Nov 2026 01:42:32 +0100</pubDate>
+<category>CTAN</category>
+<description><![CDATA[<h1>Veille CTAN — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq annonces ont été traitées depuis la dernière édition : deux mises à jour de paquets pertinents (BabelBidi, fontscale), un nouveau paquet potentiellement utile pour les cours de SNT (devicon), et des mises à jour de paquets sans impact direct sur vos documents. Les deux dernières annonces concernent des thèmes hors périmètre (prototypes allemands et template MIT).</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune mise à jour des 61 paquets de nBook3 n'est parue dans cette fenêtre.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>Devicon (v0.2.0, licence MIT)</strong> — Le package devicon intègre la police d'icônes Devicon avec LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX). La version 0.2.0 bundle Devicon 2.18.0 et propose 1 680 icônes nommées, couvrant langages de programmation, frameworks, outils de développement et logos logiciels. Par exemple, <code>\devicon{python-plain}</code> affiche le logo Python, <code>\devicon{latex-original}</code> le logo LaTeX. Intéressant pour illustrer des présentations ou des documents montrant des outils informatiques en cours de SNT.<br />
+<a href="https://ctan.org/pkg/devicon">Lien</a></p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>BabelBidi v1.2.2</strong> — Correction du traitement inline de la direction du texte dans le mode bidi basique de LuaTeX ; préserve l'ordre gauche-droite correct du texte latin et des chiffres dans le contenu RTL. Version vérifiée via l'API CTAN (2026-11-25).</li>
+<li><strong>fontscale v5.1.0</strong> — Ajout de la syntaxe <code>+=</code> pour les clés qui sont définies (extension incrémentale des valeurs de taille). Version vérifiée via l'API CTAN (2026-11-24).</li>
+<li><strong>lua-font-config v0.3</strong> — Nouvelles fonctionnalités : prise en charge des « jeux de polices » pour multiples configurations avec surcharge minimale, ajout des polices fausses graisse/oblique, applicationscoped des fonctionnalités, documentation utilisateur séparée. License : lppl1.3c + gpl2.</li>
+<li><strong>hyperref / nameref / backref</strong> — nameref et backref ont été extraits du bundle hyperref et sont désormais maintenus indépendamment (<code>github.com/LaTeX-Package-Repositories/</code>). xr-hyper réduit à un simple wrapper autour de xr. Pour les documents utilisant ces mécanismes de référence croisée, vérifier que la migration ne pose pas de problème.</li>
+<li><strong>babel-french v2026-11-08</strong> — Nouvelle option <code>KernFootnotes</code> remplaçant l'option éphémère <code>SwapFootnotes</code>. Compatible avec le kernel LaTeX 2026-11-01 (ne redéfinit plus les commandes internes pour les documents avec <code>\DocumentMetadata</code>).</li>
+</ul>
+<h2>Volume</h2>
+<p>7 annonces publiées dans l'intervalle, 4 retenues (dont 1 nouvelle paquet pertinent), 3 écartées (template de thèse MIT, gabarits DFG Allemagne, tau topologie). Aucun échec de collecte détecté. Aucune annonce de votre liste de paquets n'a été mise à jour.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille CTAN — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq annonces ont été traitées depuis la dernière édition : deux mises à jour de paquets pertinents (BabelBidi, fontscale), un nouveau paquet potentiellement utile pour les cours de SNT (devicon), et des mises à jour de paquets sans impact direct sur vos documents. Les deux dernières annonces concernent des thèmes hors périmètre (prototypes allemands et template MIT).</p>
+<h2>Mises à jour des paquets que vous utilisez</h2>
+<p>Aucune mise à jour des 61 paquets de nBook3 n'est parue dans cette fenêtre.</p>
+<h2>Nouveaux paquets pertinents</h2>
+<p><strong>Devicon (v0.2.0, licence MIT)</strong> — Le package devicon intègre la police d'icônes Devicon avec LaTeX (pdfLaTeX, XeLaTeX, LuaLaTeX). La version 0.2.0 bundle Devicon 2.18.0 et propose 1 680 icônes nommées, couvrant langages de programmation, frameworks, outils de développement et logos logiciels. Par exemple, <code>\devicon{python-plain}</code> affiche le logo Python, <code>\devicon{latex-original}</code> le logo LaTeX. Intéressant pour illustrer des présentations ou des documents montrant des outils informatiques en cours de SNT.<br />
+<a href="https://ctan.org/pkg/devicon">Lien</a></p>
+<h2>Autres mises à jour notables</h2>
+<ul>
+<li><strong>BabelBidi v1.2.2</strong> — Correction du traitement inline de la direction du texte dans le mode bidi basique de LuaTeX ; préserve l'ordre gauche-droite correct du texte latin et des chiffres dans le contenu RTL. Version vérifiée via l'API CTAN (2026-11-25).</li>
+<li><strong>fontscale v5.1.0</strong> — Ajout de la syntaxe <code>+=</code> pour les clés qui sont définies (extension incrémentale des valeurs de taille). Version vérifiée via l'API CTAN (2026-11-24).</li>
+<li><strong>lua-font-config v0.3</strong> — Nouvelles fonctionnalités : prise en charge des « jeux de polices » pour multiples configurations avec surcharge minimale, ajout des polices fausses graisse/oblique, applicationscoped des fonctionnalités, documentation utilisateur séparée. License : lppl1.3c + gpl2.</li>
+<li><strong>hyperref / nameref / backref</strong> — nameref et backref ont été extraits du bundle hyperref et sont désormais maintenus indépendamment (<code>github.com/LaTeX-Package-Repositories/</code>). xr-hyper réduit à un simple wrapper autour de xr. Pour les documents utilisant ces mécanismes de référence croisée, vérifier que la migration ne pose pas de problème.</li>
+<li><strong>babel-french v2026-11-08</strong> — Nouvelle option <code>KernFootnotes</code> remplaçant l'option éphémère <code>SwapFootnotes</code>. Compatible avec le kernel LaTeX 2026-11-01 (ne redéfinit plus les commandes internes pour les documents avec <code>\DocumentMetadata</code>).</li>
+</ul>
+<h2>Volume</h2>
+<p>7 annonces publiées dans l'intervalle, 4 retenues (dont 1 nouvelle paquet pertinent), 3 écartées (template de thèse MIT, gabarits DFG Allemagne, tau topologie). Aucun échec de collecte détecté. Aucune annonce de votre liste de paquets n'a été mise à jour.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille CTAN — Jeudi 26 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/ctan/2026-11-26.html</link>
