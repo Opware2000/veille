@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — vendredi 27 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — vendredi 27 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Hugging Face publie un tableau de benchmarking llama.cpp pour le matériel AMD ; la communauté HN s'active sur un fork llama.cpp dédié GPU AMD anciens et modernes ; un projet en assembleur pur fait tourner Qwen3-0.6B sur un OS bare-metal ; un utilitaire开源 permet de migrer les archives de chat DeepSeek. Pas d'annonce directe de modèle ou de prix DeepSeek ce jour.</p>
+<h2>Modèles et poids</h2>
+<h3>Un modèle non identifié se révèle être du Qwen3.5-35B-A3B</h3>
+<p>Le blogue Modaic analyse la latence d'un service IA nommé « Jev » et conclut que ses signatures temporelles correspondent à celles du modèle <strong>Qwen3.5-35B-A3B</strong> (mixture-of-experts, architecture 35 milliards de paramètres dont 3 milliards actifs). L'auteur utilise des mesures de temps de réponse comme méthode d'identification : « <em>latency doesn't lie</em> ». Le fil HN associé compte 86 points et 5 commentaires. Aucun communiqué officiel de chez Alibaba/Qwen ne corrobore cette identification — il s'agit d'une déduction par analyse inverse.</p>
+<p><em>Source : <a href="https://modaic.dev/blog/latency-doesnt-lie">modaic.dev/blog/latency-doesnt-lie</a></em></p>
+<h2>Prix, accès et quotas</h2>
+<p>Rien de nouveau aujourd'hui. Quelques fils posent des questions (« deepseek pas cher ? », critère des limites quotidiennes), mais sans retour vérifiable.</p>
+<h2>Auto-hébergement et quantification</h2>
+<h3>Tableau de benchmarking llama.cpp pour l'écosystème AMD</h3>
+<p>Hugging Face et l'équipe ggml ont publié un <strong>tableau de bord interactif</strong> permettant de suivre les performances d'inférence locale sur processeurs Ryzen et cartes Radeon. Disponible sur Hugging Face depuis le 26 novembre, il propose trois onglets :</p>
+<ul>
+<li><strong>Overview</strong> : comparer les quantifications (Q4_K_M, Q8_0, BF16, F16) pour un matériel, un modèle et une build donnés. Deux métriques sont affichées : PP512 (traitement de 512 tokens d'entrée sans génération) et TG128 (génération de 128 tokens à partir de contexte vide).</li>
+<li><strong>Build history</strong> : suivre l'évolution des performances au fil des builds llama.cpp.</li>
+<li><strong>Context scaling</strong> : voir comment le débit diminue à mesure que le contexte s'allonge.</li>
+</ul>
+<p>Le matériel pris en charge comprend les Radeon 8060S (gfx1151) et Radeon AI Pro R9700S (gfx1201). Les modèles testés incluent Inkling 2 Mini, Qwen, Gemma, gpt-oss et LFM (architectures dense et MoE). Les benchmarks tournent chaque semaine via des workflows publics, avec Flash Attention activé ou désactivé et 10 répétitions par configuration. Les données brutes sont consultables dans un Storage Bucket ggml-org sur Hugging Face.</p>
+<p><em>Source : <a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench">huggingface.co/blog/ggml-org/llamacpp-amd-bench</a></em></p>
+<h3>Fork llama.cpp spécialisé GPU AMD anciens</h3>
+<p>Un dépôt dédié à l'optimisation de llama.cpp pour les cartes AMD qui n'ont ni cœurs tensoriels ni support natif BF16, en particulier la série gfx906 (Radeon VII Pro 16 Go, Instinct MI50 16/32 Go) sortie vers 2018. Ces cartes offrent environ 1 To/s de bande passante mémoire HBM2 pour 200 $, contre plus de 3 000 $ sur les équivalents récents. Optimisations kernel par kernel : passage de ~250 pp / 25 tg à ~600 pp / 40 tg pour un 27B en Q8, avant même le speculative decoding. Le déploiement Docker est prévu. Le thread HN affiche 269 points et 64 commentaires.</p>
+<p><em>Source : <a href="https://devnull.land/amd-specific-llama-cpp">devnull.land/amd-specific-llama-cpp</a> · <a href="https://news.ycombinator.com/item?id=50657265">HN #50657265</a></em></p>
+<h3>OS bare-metal en assembleur x86-64 pur pour inférer Qwen3-0.6B</h3>
+<p>Le dépôt <strong><a href="https://github.com/alesha-pro/llm.asm">alesha-pro/llm.asm</a></strong> (MIT, 1 517 étoiles, dernière mise à jour le 25 novembre 2026) embarque trois projets en assembleur x86-64 NASM pur, sans C, sans libc, sans dépendance :</p>
+<ul>
+<li><strong>Inférence Qwen3-0.6B</strong> (12 Ko) : moteur d'inférence autonome</li>
+<li><strong>OS bootable bare-metal</strong> (22 Ko) : système d'exploitation minimal</li>
+<li><strong>Mini-GPT trainer</strong> (32 Ko) : entraînement from-scratch avec interface Braille TUI</li>
+</ul>
+<p>L'article HN montre un résultat de 54 % plus rapide que llama.cpp pour le même modèle. Projet expérimental, mais documenté et reproduisible.</p>
+<p><em>Source : <a href="https://github.com/alesha-pro/llm.asm">github.com/alesha-pro/llm.asm</a></em></p>
+<h2>Intégrations et outils tiers</h2>
+<h3>Migrateur d'archives de chat DeepSeek</h3>
+<p>Le dépôt <strong><a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">selsie/DeepSeek-Chat-Archive-Migrator</a></strong> (MIT, 0 étoile, créé le 26 novembre 2026) permet de migrer les conversations DeepSeek en préservant l'hébergement des images et la continuité du persona. Outil récent, aucun historique de commits vérifiable disponible. À surveiller pour son adoption.</p>
+<p><em>Source : <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">github.com/selsie/DeepSeek-Chat-Archive-Migrator</a></em></p>
+<h2>Méthodes et retours d'expérience</h2>
+<h3>Identifier un modèle propriétaire par analyse de latence</h3>
+<p>L'article Modaic illustre la technique d'identification de modèles via leurs signatures temporelles : mesurer systématiquement les temps de réponse sur différents types de requêtes (court vs long prompt, peu vs beaucoup de tokens générés) et croiser avec les courbes théoriques connues. Méthode applicable tout modèle API accessible — y compris DeepSeek — mais nécessite une base de référence des latences attendues par modèle.</p>
+<p><em>Source : <a href="https://modaic.dev/blog/latency-doesnt-lie">modaic.dev/blog/latency-doesnt-lie</a> · <a href="https://news.ycombinator.com/item?id=50648823">HN #50648823</a></em></p>
+<h2>Volume</h2>
+<p>106 entrées lues dans la shortlist, 6 sujets retenus, 100 écartés (taux de rétention 5,7 %). La majorité des posts Reddit étaient des demandes vagues, des anecdotes personnelles, des mèmes ou des questions sans données vérifiables — ce qui est attendu sur r/DeepSeek.</p>
+<footer>Édition du vendredi 27 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
