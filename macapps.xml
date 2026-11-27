@@ -6,9 +6,242 @@
 <description>Veille quotidienne du subreddit r/macapps — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/macapps.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 00:14:46 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 00:12:38 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-28.html</link>
+<guid isPermaLink="false">macapps-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:12:38 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Wine 11.23 sort avec le support de macOS (en plus de Linux, BSD et Solaris) ; il s'agit d'une version majeure pour les utilisateurs souhaitant faire tourner des applications Windows. Partout, le Black Friday domine : promotions matérielles chez Amazon, Fnac, Apple Store. Mozilla rend son interface Nova obligatoire dès le 8 décembre dans Firefox 161.0.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Docuria [Bêta]</strong> — Application de lecture PDF conçue pour remplacer Acrobat, DEVONthink, Voice Dream Reader et Notability en un seul outil. En phase bêta, elle vise à simplifier la gestion documentaire sur Mac.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6nobo/docuria_beta_one_app_to_stop_juggling_acrobat/</li>
+</ul>
+<p><strong>Vivarium</strong> — Moteur de fonds d'écran animés écrit en Swift et Metal, proposant dix scènes en temps réel avec une empreinte matérielle minimale : moins de trois % de CPU et zéro % de GPU quand l'écran est couvert. Sans abonnement, sans surveillance. Conçu spécifiquement pour macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6w7gm/vivarium_10_realtime_swift_metal_living_mac/</li>
+</ul>
+<p><strong>Ember</strong> — Journal interactif où chaque personne dont vous parlez dispose de sa propre page dédiée. L'application retravaille au fil des années qui se croise ou vous croise, offrant une vision chronologique de vos relations. Natif macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6xw5c/ember_a_journal_where_the_people_you_write_about/</li>
+</ul>
+<p><strong>Ganella</strong> — Rend les icônes du Dock vivantes sous forme de widgets en direct, avec aperçu d'applications et notifications intégrées. Alternative au Dock statique par défaut.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6spqe/ganella_your_dock_icons_become_live_widgets_now/</li>
+</ul>
+<p><strong>StoryPass</strong> — Générateur de mots de passe pour Mac né de la transformation d'un jeu sur papier créé par la mère de l'auteur. Gratuit lors du prix de lancement jusqu'au 30 novembre. Idée simple, originale, parfaitement adaptée à un usage personnel.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6je3r/storypass_i_turned_my_moms_paper_game_into_a/</li>
+</ul>
+<p><strong>LaunchOS</strong> — Alternative au Launchpad natif, en trente-neuvième version après un an de développement. Améliore la présentation et la navigation entre applications sur macOS 27. Dépot visible sur GitHub sous <code>Remix-Design/LaunchOS</code> (80 étoiles, sans licence affichée). Vente Black Friday active.</p>
+<ul>
+<li>https://github.com/Remix-Design/LaunchOS</li>
+<li>https://www.reddit.com/r/macapps/comments/1y6r9ng/launchos_one_year_39_releases_and_a_better/</li>
+</ul>
+<p><strong>Beaming</strong> — Synchronisez et affichez votre iPhone, iPad ou téléphone Android sur votre Mac, chaque appareil apparaissant dans un cadre réaliste reproduisant son design physique. Prix unique de 9,99 $ avec offres Black Friday.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y69ebv/beaming_plug_and_play_mirror_your_real_iphone/</li>
+</ul>
+<p><strong>FrameOS</strong> — Enregistrez l'écran de votre iPhone ou Android avec la caméra externe intégrée, puis éditez le tout en une vidéo soignée sur Mac. Paiement unique de 19 $. Intéressant pour des tutoriels ou des démonstrations.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6ao5b/black_friday_frameos_record_your_iphoneandroid/</li>
+</ul>
+<p><strong>TextFix</strong> — Application Swift ultra-légère de 2,4 Mo qui corrige le texte sélectionné directement sur macOS, sans passer par un traitement cloud. Fonctionne hors ligne. L'auteur fournit son code sous <code>jonathanhind/textfix</code>.</p>
+<ul>
+<li>https://textfix.jonathanhind.com</li>
+</ul>
+<p><strong>Blur</strong> — Application Mac qui masqu automatiquement les contenus sensibles lors d'un partage d'écran, pour éviter de dévoiler involontairement des tokens API, des dossiers privés ou des messages personnels. À vérifier du côté licence / statut open source.</p>
+<ul>
+<li>https://useblur.app</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Wine 11.23</strong> — Nouvelle version majeure du projet Wine, ajoutant l'exécution d'applications Windows sur macOS en plus de Linux, BSD et Solaris. Changelog détaillé sur winehq.org. Pour tout utilisateur souhaitant faire tourner des utilitaires Windows sur son Mac.</p>
+<ul>
+<li>https://www.winehq.org/announce/11.23</li>
+</ul>
+<p><strong>ShareX 22.5.0</strong> — Remplace son moteur OCR Windows par PaddleOCR exécuté localement, couvrant plus de cent langues sans packs supplémentaires. Ajoute aussi un éditeur pixel intégré. Application libre, bien que principalement destinée à Windows.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/sharex-22-5-0-adds-local-ai-ocr-and-a-pixel-editor/</li>
+</ul>
+<p><strong>Firefox 161</strong> — Contrôle VPN par site web, bouton « Fire Button » pour effacer toutes les données navigateur en un clic, et nouveaux thèmes visuels. Mozilla rend également l'interface arrondie « Nova » obligatoire à partir du 8 décembre, sans possibilité de revenir en arrière.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/firefox-161-brings-per-site-vpn-controls-one-click-browser-da</li>
+<li>https://alternativeto.net/news/2026/11/mozilla-makes-firefox-s-rounded-nova-ui-mandatory-on-december</li>
+</ul>
+<p><strong>Craft</strong> — Ajout des pages favorites et de la sélection de texte multi-blocs dans les applis natives. Web limité aux pages favorites uniquement. Application payante de prise de notes structurée.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/craft-adds-starred-pages-and-cross-block-text-selection/</li>
+</ul>
+<p><strong>Readdle Documents</strong> — Ajout de l'enregistrement vocal avec transcription et résumé IA via la fonctionnalité « Voice Notes ». Mis à jour pour iPhone et iPad.</p>
+<ul>
+<li>https://9to5mac.com/2026/11/26/readdles-documents-app-adds-voice-recording-with-transcripts-summarie</li>
+</ul>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune extension ou greffon notable identifié cette période.</p>
+<hr />
+<h2>Nouveautés Homebrew cask</h2>
+<p>Cinq nouvelles applications ajoutées au catalogue depuis la dernière collecte, absentes du fichier <code>digested.txt</code> :</p>
+<p><strong>StableBar 0.19.0</strong> — Barre de menus macOS configurable, pour remplacer ou compléter la barre système par défaut. Interface personnalisable, légères et épurées.</p>
+<pre><code class="language-bash">brew install --cask stablebar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/stablebar</li>
+<li>https://stablebar.app/</li>
+</ul>
+<p><strong>Chapar 0.14.1</strong> — Client API natif pour macOS. Alternative légère et moderne aux outils de test d'API comme Postman, conçu spécifiquement pour l'écosystème Mac.</p>
+<pre><code class="language-bash">brew install --cask chapar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/chapar</li>
+<li>https://chapar.rest/</li>
+</ul>
+<p><strong>Anomaly Spaceman 0.3.5</strong> — Gestionnaire de fenêtrage empilé (tiling) pour macOS. Permet d'organiser automatiquement les fenêtres selon des grilles prédéfinies, inspiré de i3/sway sur Linux.</p>
+<pre><code class="language-bash">brew install --cask anomaly-spaceman
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/anomaly-spaceman</li>
+<li>https://anoma.ly/spaceman/</li>
+</ul>
+<p><strong>Paradev 2.0.12</strong> — Environnement de travail pour exécuter des agents de codage IA en parallèle. Conçu pour les développeurs souhaitant piloter plusieurs assistants simultanément.</p>
+<pre><code class="language-bash">brew install --cask paradev
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/paradev</li>
+<li>https://paradev.com/</li>
+</ul>
+<p><strong>Layout Department 0.9.1</strong> — Logiciel de composition d'imposition pour préparer livres, fanzines et brochures à partir de PDF. Outil précieux pour l'auto-édition et l'impression domestique.</p>
+<pre><code class="language-bash">brew install --cask layout-department
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/layout-department</li>
+<li>https://layoutdepartment.com/</li>
+</ul>
+<hr />
+<h2>Volume</h2>
+<p>190 publications recensées dans les sources (Reddit r/macapps, Hacker News, Lobsters, MacStories, 9to5Mac, MacRumors, MacG, iGeneration, WatchGeneration, Eclectic Light Company, MJ Tsai, Forum MacG, Product Hunt, AlternativeTo), 27 retenues, 163 écartées. La majorité des publications écartées sont des promotions Black Friday matérielles (Apple Store, Amazon, Fnac), des articles économiques ou géopolitiques, et des billets de blogue sans annonce logicielle concrète.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Wine 11.23 sort avec le support de macOS (en plus de Linux, BSD et Solaris) ; il s'agit d'une version majeure pour les utilisateurs souhaitant faire tourner des applications Windows. Partout, le Black Friday domine : promotions matérielles chez Amazon, Fnac, Apple Store. Mozilla rend son interface Nova obligatoire dès le 8 décembre dans Firefox 161.0.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Docuria [Bêta]</strong> — Application de lecture PDF conçue pour remplacer Acrobat, DEVONthink, Voice Dream Reader et Notability en un seul outil. En phase bêta, elle vise à simplifier la gestion documentaire sur Mac.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6nobo/docuria_beta_one_app_to_stop_juggling_acrobat/</li>
+</ul>
+<p><strong>Vivarium</strong> — Moteur de fonds d'écran animés écrit en Swift et Metal, proposant dix scènes en temps réel avec une empreinte matérielle minimale : moins de trois % de CPU et zéro % de GPU quand l'écran est couvert. Sans abonnement, sans surveillance. Conçu spécifiquement pour macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6w7gm/vivarium_10_realtime_swift_metal_living_mac/</li>
+</ul>
+<p><strong>Ember</strong> — Journal interactif où chaque personne dont vous parlez dispose de sa propre page dédiée. L'application retravaille au fil des années qui se croise ou vous croise, offrant une vision chronologique de vos relations. Natif macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6xw5c/ember_a_journal_where_the_people_you_write_about/</li>
+</ul>
+<p><strong>Ganella</strong> — Rend les icônes du Dock vivantes sous forme de widgets en direct, avec aperçu d'applications et notifications intégrées. Alternative au Dock statique par défaut.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6spqe/ganella_your_dock_icons_become_live_widgets_now/</li>
+</ul>
+<p><strong>StoryPass</strong> — Générateur de mots de passe pour Mac né de la transformation d'un jeu sur papier créé par la mère de l'auteur. Gratuit lors du prix de lancement jusqu'au 30 novembre. Idée simple, originale, parfaitement adaptée à un usage personnel.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6je3r/storypass_i_turned_my_moms_paper_game_into_a/</li>
+</ul>
+<p><strong>LaunchOS</strong> — Alternative au Launchpad natif, en trente-neuvième version après un an de développement. Améliore la présentation et la navigation entre applications sur macOS 27. Dépot visible sur GitHub sous <code>Remix-Design/LaunchOS</code> (80 étoiles, sans licence affichée). Vente Black Friday active.</p>
+<ul>
+<li>https://github.com/Remix-Design/LaunchOS</li>
+<li>https://www.reddit.com/r/macapps/comments/1y6r9ng/launchos_one_year_39_releases_and_a_better/</li>
+</ul>
+<p><strong>Beaming</strong> — Synchronisez et affichez votre iPhone, iPad ou téléphone Android sur votre Mac, chaque appareil apparaissant dans un cadre réaliste reproduisant son design physique. Prix unique de 9,99 $ avec offres Black Friday.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y69ebv/beaming_plug_and_play_mirror_your_real_iphone/</li>
+</ul>
+<p><strong>FrameOS</strong> — Enregistrez l'écran de votre iPhone ou Android avec la caméra externe intégrée, puis éditez le tout en une vidéo soignée sur Mac. Paiement unique de 19 $. Intéressant pour des tutoriels ou des démonstrations.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6ao5b/black_friday_frameos_record_your_iphoneandroid/</li>
+</ul>
+<p><strong>TextFix</strong> — Application Swift ultra-légère de 2,4 Mo qui corrige le texte sélectionné directement sur macOS, sans passer par un traitement cloud. Fonctionne hors ligne. L'auteur fournit son code sous <code>jonathanhind/textfix</code>.</p>
+<ul>
+<li>https://textfix.jonathanhind.com</li>
+</ul>
+<p><strong>Blur</strong> — Application Mac qui masqu automatiquement les contenus sensibles lors d'un partage d'écran, pour éviter de dévoiler involontairement des tokens API, des dossiers privés ou des messages personnels. À vérifier du côté licence / statut open source.</p>
+<ul>
+<li>https://useblur.app</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Wine 11.23</strong> — Nouvelle version majeure du projet Wine, ajoutant l'exécution d'applications Windows sur macOS en plus de Linux, BSD et Solaris. Changelog détaillé sur winehq.org. Pour tout utilisateur souhaitant faire tourner des utilitaires Windows sur son Mac.</p>
+<ul>
+<li>https://www.winehq.org/announce/11.23</li>
+</ul>
+<p><strong>ShareX 22.5.0</strong> — Remplace son moteur OCR Windows par PaddleOCR exécuté localement, couvrant plus de cent langues sans packs supplémentaires. Ajoute aussi un éditeur pixel intégré. Application libre, bien que principalement destinée à Windows.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/sharex-22-5-0-adds-local-ai-ocr-and-a-pixel-editor/</li>
+</ul>
+<p><strong>Firefox 161</strong> — Contrôle VPN par site web, bouton « Fire Button » pour effacer toutes les données navigateur en un clic, et nouveaux thèmes visuels. Mozilla rend également l'interface arrondie « Nova » obligatoire à partir du 8 décembre, sans possibilité de revenir en arrière.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/firefox-161-brings-per-site-vpn-controls-one-click-browser-da</li>
+<li>https://alternativeto.net/news/2026/11/mozilla-makes-firefox-s-rounded-nova-ui-mandatory-on-december</li>
+</ul>
+<p><strong>Craft</strong> — Ajout des pages favorites et de la sélection de texte multi-blocs dans les applis natives. Web limité aux pages favorites uniquement. Application payante de prise de notes structurée.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/craft-adds-starred-pages-and-cross-block-text-selection/</li>
+</ul>
+<p><strong>Readdle Documents</strong> — Ajout de l'enregistrement vocal avec transcription et résumé IA via la fonctionnalité « Voice Notes ». Mis à jour pour iPhone et iPad.</p>
+<ul>
+<li>https://9to5mac.com/2026/11/26/readdles-documents-app-adds-voice-recording-with-transcripts-summarie</li>
+</ul>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune extension ou greffon notable identifié cette période.</p>
+<hr />
+<h2>Nouveautés Homebrew cask</h2>
+<p>Cinq nouvelles applications ajoutées au catalogue depuis la dernière collecte, absentes du fichier <code>digested.txt</code> :</p>
+<p><strong>StableBar 0.19.0</strong> — Barre de menus macOS configurable, pour remplacer ou compléter la barre système par défaut. Interface personnalisable, légères et épurées.</p>
+<pre><code class="language-bash">brew install --cask stablebar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/stablebar</li>
+<li>https://stablebar.app/</li>
+</ul>
+<p><strong>Chapar 0.14.1</strong> — Client API natif pour macOS. Alternative légère et moderne aux outils de test d'API comme Postman, conçu spécifiquement pour l'écosystème Mac.</p>
+<pre><code class="language-bash">brew install --cask chapar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/chapar</li>
+<li>https://chapar.rest/</li>
+</ul>
+<p><strong>Anomaly Spaceman 0.3.5</strong> — Gestionnaire de fenêtrage empilé (tiling) pour macOS. Permet d'organiser automatiquement les fenêtres selon des grilles prédéfinies, inspiré de i3/sway sur Linux.</p>
+<pre><code class="language-bash">brew install --cask anomaly-spaceman
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/anomaly-spaceman</li>
+<li>https://anoma.ly/spaceman/</li>
+</ul>
+<p><strong>Paradev 2.0.12</strong> — Environnement de travail pour exécuter des agents de codage IA en parallèle. Conçu pour les développeurs souhaitant piloter plusieurs assistants simultanément.</p>
+<pre><code class="language-bash">brew install --cask paradev
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/paradev</li>
+<li>https://paradev.com/</li>
+</ul>
+<p><strong>Layout Department 0.9.1</strong> — Logiciel de composition d'imposition pour préparer livres, fanzines et brochures à partir de PDF. Outil précieux pour l'auto-édition et l'impression domestique.</p>
+<pre><code class="language-bash">brew install --cask layout-department
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/layout-department</li>
+<li>https://layoutdepartment.com/</li>
+</ul>
+<hr />
+<h2>Volume</h2>
+<p>190 publications recensées dans les sources (Reddit r/macapps, Hacker News, Lobsters, MacStories, 9to5Mac, MacRumors, MacG, iGeneration, WatchGeneration, Eclectic Light Company, MJ Tsai, Forum MacG, Product Hunt, AlternativeTo), 27 retenues, 163 écartées. La majorité des publications écartées sont des promotions Black Friday matérielles (Apple Store, Amazon, Fnac), des articles économiques ou géopolitiques, et des billets de blogue sans annonce logicielle concrète.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/macapps — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/macapps/2026-11-27.html</link>

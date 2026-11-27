@@ -6,9 +6,164 @@
 <description>Veille quotidienne du subreddit r/ArtCraftAI — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/artcraft.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 00:01:05 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 00:02:14 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille ArtCraft — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-28.html</link>
+<guid isPermaLink="false">artcraft-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:02:14 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune sortie officielle cette semaine, mais le dépôt développe activement (correctifs Flatpak, palette complète des formats Linux, passage à craft-libs <code>next</code>). La communauté compense avec une quinzaine d'annonces notables : candidats de version PhotoCraft, résolution PDFCraft v0.22.0, plugins tiers et mises à jour SketchCraft.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Publication de PhotoCraft v0.24.0-rc.1 — candidat de version pour test</strong><br />
+RickiDangerous annonce le premier candidat de version stable de PhotoCraft 0.24. Le fichier est disponible sur le subreddit r/ArtCraftAI pour retours communautaires avant la version finale. Posté le 24 novembre, il recueille 79 votes et 16 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/ · u/RickiDangerous</p>
+<p><strong>Photocraft v0.24.0-rc.2 — deuxième candidat de version</strong><br />
+Le second candidat de version arrive le 26 novembre, toujours destiné aux tests communautaires. Il attire 60 votes en quelques heures.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y61kqg/photocraft_release_candidate_2_is_ready_for/ · u/RickiDangerous</p>
+<p><strong>PDFCraft v0.22.0 — le problème de résolution d'impression enfin résolu</strong><br />
+YEEG4R partage la mise à jour PDFCraft 0.22.0 qui corrige un problème récurrent de résolution d'impression. Le poste recueille 617 votes et 42 commentaires, témoignant de l'intérêt du public pour ce correctif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/ · u/YEEG4R</p>
+<p><strong>Explication officielle sur les retards de mise à jour</strong><br />
+BrettMaster publie la raison officielle donnée par l'équipe pour le manque de nouvelles sorties ces derniers jours. Le post reçoit 448 votes et 34 commentaires, montrant que la transparence était attendue par la communauté.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/ · u/BrettMaster</p>
+<p><strong>Mise à jour SketchCraft — 10 versions depuis 0.3.0, ajouts majeurs</strong><br />
+Un contributeur partage 10 versions successives de SketchCraft, ajoutant les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'extension du domaine d'utilisation technique de l'outil est marquée par 151 votes.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/ · u/Apprehensive_Fly_493</p>
+<p><strong>Lancement de PxC — plugin PhotoCraft IA avec modèles génératifs</strong><br />
+phil-haderer publie PxC, un plugin génératif complet pour PhotoCraft écrit entièrement par Claude. Il intègre MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit, Flux 3 Klein et d'autres modèles. Fonctionnalités : texte en image, sélection de remplissage, édition de toile, agrandissement, suppression, upscaling. Disponible sur GitHub avec guides d'installation.<br />
+https://github.com/phil-haderer/pxc · https://www.reddit.com/r/ArtCraftAI/comments/1y550zz/releasing_pxc_photocraft_ai_plugin_compatible/ · u/phil-haderer</p>
+<p><strong>Développement ArtCraft Studio : correction Flatpak et palette Linux</strong><br />
+Les commits récents incluent la persistance du dossier de données Flatpak, le rendu accéléré conservé, puis une matrice complète des formats Linux signés (x86_64, aarch64, riscv64) produisant DEB, RPM, AppImage, tar.gz, paquet Arch et bundle Flatpak OCI. Ces changements touchent aussi le CI avec FreeBSD et un lint de packaging.</p>
+<p><strong>Portage minimal vers craft-libs <code>next</code></strong><br />
+Le commit ac0e3695209a du 25 novembre bascule trois dépendances craft-libs (<code>craft-image-codecs</code>, <code>craft-update</code>, <code>craft-sniff</code>) de <code>main</code> vers <code>next</code>. Il s'agit d'un portage minimal : seules les APIs supprimées dans <code>next</code> ont dû être adaptées. Aucun runtime host ni dock ne change car ArtCraft n'utilise pas <code>craft-ui</code>. Le egui app (<code>artcraft-native</code>) reste sur eframe et egui 0.36 de crates.io.</p>
+<p><strong>Adoption des règles AGENTS.md partagées (RFC-0072)</strong><br />
+Le commit 9a1cc6b701e9 du 24 novembre remplace les règles maison RFC-0006 par le bloc partagé <code>craft-agents</code> de craft-contrib (commit e0bf5c9). Les treize règles propres au dépôt sont rewordées pour tenir dans le cap de 4 Ko.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><strong>CraftLook pour macOS — miniatures Finder et aperçus Quick Look</strong><br />
+Roccobot crée CraftLook, application macOS gratuite offrant des miniatures natives dans le Finder (vue icône, colonne, galerie) et des aperçus complets (barre d'espace). Supporte FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc/.solidcraft), FilmCraft (.fcproj cadre tête de lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj/.ecprojx), SoundCraft (.scraft timeline), ainsi que PSD et SVG. L'application embarque huit moteurs de rendu headless ; signé et notaré Apple. Environ 720 Mo ZIP, 1,6 Go décompressé. Application seule : 7 Mo.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/ · u/Roccobot</p>
+<p><strong>Plugin Stream Deck pour LightCraft</strong><br />
+ResearcherMassive802 développe un plugin Stream Deck open-source connectant directement le port de contrôle local de LightCraft (127.0.0.1:7980). Bidirectionnel : valeurs live des curseurs et états des touches éclairées synchronisés. Encodeurs disponibles pour 120+ curseurs de développement, cadrans transformation/recadrage, culling, navigateur préréglages. Touches pour actions rapides (Auto Tone, N&amp;B, Copier/Coller/Synchroniser, Avant/Après, AI Denoise, HDR), sélection/culling (rejeter, étoiles, étiquettes), masques IA (SAM 3) et manuel. Compatible Stream Deck 6.5+ et OpenDeck.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/ · u/ResearcherMassive802</p>
+<p><strong>Plugin FigCraft — documentation de composants</strong><br />
+DamageNo9147 publie un plugin FigCraft 0.11.0 (préversion) qui documente automatiquement un composant pour le transfert entre projets.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/ · u/DamageNo9147</p>
+<p><strong>Dōri v0.1.0-alpha.1 — DAW Rust open-source pour motion design</strong><br />
+melble5 construit un studio d'enregistrement numérique open-source en Rust pour l'audio de motion design, ciblant Linux et Windows. Premier alpha publié. Projet externe à ArtCraft mais pertinent pour l'écosystème audio créatif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/ · u/melble5</p>
+<p><strong>FimCraft — alignement de photos pour animation</strong><br />
+Clemens_Ratte-Polle explore la capacité de FilmCraft ou PhotoCraft à ajuster automatiquement des photographies statiques d'un même objet pour produire des films time-lapse.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4unri/fimcraft_animation_of_photos_to_be_aligned/ · u/Clemens_Ratte-Polle</p>
+<p><strong>LightCraft vers WordPress — plugin de synchronisation</strong><br />
+poudenes crée un outil de synchronisation de dossiers vers WordPress, alternative au plugin WP/LR classique, développé avec assistance Claude. Dépôt GitHub en préparation.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4x2sh/lightcraft_to_wordpress/ · u/poudenes</p>
+<h2>Autour d'ArtCraft — logiciels comparables et écosystème</h2>
+<p><strong>Adobe perd 357 votes sur sa capitalisation boursière</strong><br />
+velocityvector2 partage des données sur la capitalisation d'Adobe sur les années 2025-2026. Le post recueille 357 votes et 39 commentaires, reflétant l'humeur générale vis-à-vis d'Adobe face à la montée d'alternatives open source.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5tus3/adobe_market_cap_20252026/ · u/velocityvector2</p>
+<p><strong>Painite — améliorateur de photos IA auto-hébergé</strong><br />
+yuanlin2004 présente Painite, un outil d'amélioration photo IA auto-hébergeable fonctionnant sur Mac ou box NVIDIA. Solution locale concurrente aux services cloud similaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3z9s6/painite_an_opensource_selfhosted_ai_photo/ · u/yuanlin2004</p>
+<p><strong>« La fin d'une époque » — 816 votes</strong><br />
+velocityvector2 publie un message percutant intitulé « Penses-tu que c'est la fin d'une époque ? ». Avec 816 votes et 258 commentaires, le plus engagé du cycle, il marque probablement un tournant significatif dans le discours communautaire autour d'ArtCraft. Il mérite d'être lu attentivement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4uddw/do_you_think_this_is_the_end_of_an_era/ · u/velocityvector2</p>
+<p><strong>Qualité de code ArtCraft — analyse externe</strong><br />
+Delicious_Recover543 partage un lien vers une analyse de Software Improvement Group sur la qualité du code ArtCraft comme alternative à Adobe. Post suivi de 31 votes et 36 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/ · u/Delicious_Recover543 · https://www.softwareimprovementgroup.com/blog/artcraft-adobe-clone-ai-code-quality/</p>
+<p><strong>ArtCraft sur LibreNT — compatibilité confirmée</strong><br />
+Interesting_Ad_5676 teste les applications ArtCraft sur LibreNT (système open source ressemblant à Windows) avec succès. Preuve supplémentaire de la portée multiplateforme.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/ · u/Interesting_Ad_5676</p>
+<p><strong>PDFCraft miniature dans l'explorateur Windows</strong><br />
+defnotaloser partage une solution temporaire via le projet Github explorer-thumbs pour afficher les miniatures PDF dans l'explorateur Windows lorsque PDFCraft est défini comme lecteur par défaut. Fonctionnalité utile mais non résolue nativement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y45hnn/pdfcraft_windows_explorer_thumbnails/ · u/defnotaloser · https://github.com/rajatmo/explorer-thumbs</p>
+<p><strong>ArtCraft SpeedTree ?</strong><br />
+hamza_1988 exprime le besoin d'un remplacement open-source de SpeedTree (Unity), logiciel industriel standard pour la création de feuillage avec peu de personnalisation et aucun support MCP.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4u46o/artcraft_speedtree/ · u/hamza_1988</p>
+<p><strong>« Unifiée UI/UX ou contraire des promesses initiales ? »</strong><br />
+Longjumping_Limit486 interpelle sur l'unification récente de l'interface entre les applications ArtCraft, questionnant si cette approche ne va pas à l'encontre de la promesse initiale de légèreté et rapidité. Discussion de 7 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5pkmq/artcraft_unifying_uiux_across_its_apps_is_it_just/ · u/Longjumping_Limit486</p>
+<h2>Volume — X posts publiés dans l'intervalle, Y retenus, Z écartés.</h2>
+<p>38 posts lus dans l'intervalle des 4 derniers jours (source principale reddit-relay), 15 retenus, 23 écartés. 1 entrée issue du journal artcraft_commits (portage craft-libs next).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune sortie officielle cette semaine, mais le dépôt développe activement (correctifs Flatpak, palette complète des formats Linux, passage à craft-libs <code>next</code>). La communauté compense avec une quinzaine d'annonces notables : candidats de version PhotoCraft, résolution PDFCraft v0.22.0, plugins tiers et mises à jour SketchCraft.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Publication de PhotoCraft v0.24.0-rc.1 — candidat de version pour test</strong><br />
+RickiDangerous annonce le premier candidat de version stable de PhotoCraft 0.24. Le fichier est disponible sur le subreddit r/ArtCraftAI pour retours communautaires avant la version finale. Posté le 24 novembre, il recueille 79 votes et 16 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/ · u/RickiDangerous</p>
+<p><strong>Photocraft v0.24.0-rc.2 — deuxième candidat de version</strong><br />
+Le second candidat de version arrive le 26 novembre, toujours destiné aux tests communautaires. Il attire 60 votes en quelques heures.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y61kqg/photocraft_release_candidate_2_is_ready_for/ · u/RickiDangerous</p>
+<p><strong>PDFCraft v0.22.0 — le problème de résolution d'impression enfin résolu</strong><br />
+YEEG4R partage la mise à jour PDFCraft 0.22.0 qui corrige un problème récurrent de résolution d'impression. Le poste recueille 617 votes et 42 commentaires, témoignant de l'intérêt du public pour ce correctif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/ · u/YEEG4R</p>
+<p><strong>Explication officielle sur les retards de mise à jour</strong><br />
+BrettMaster publie la raison officielle donnée par l'équipe pour le manque de nouvelles sorties ces derniers jours. Le post reçoit 448 votes et 34 commentaires, montrant que la transparence était attendue par la communauté.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/ · u/BrettMaster</p>
+<p><strong>Mise à jour SketchCraft — 10 versions depuis 0.3.0, ajouts majeurs</strong><br />
+Un contributeur partage 10 versions successives de SketchCraft, ajoutant les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'extension du domaine d'utilisation technique de l'outil est marquée par 151 votes.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/ · u/Apprehensive_Fly_493</p>
+<p><strong>Lancement de PxC — plugin PhotoCraft IA avec modèles génératifs</strong><br />
+phil-haderer publie PxC, un plugin génératif complet pour PhotoCraft écrit entièrement par Claude. Il intègre MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit, Flux 3 Klein et d'autres modèles. Fonctionnalités : texte en image, sélection de remplissage, édition de toile, agrandissement, suppression, upscaling. Disponible sur GitHub avec guides d'installation.<br />
+https://github.com/phil-haderer/pxc · https://www.reddit.com/r/ArtCraftAI/comments/1y550zz/releasing_pxc_photocraft_ai_plugin_compatible/ · u/phil-haderer</p>
+<p><strong>Développement ArtCraft Studio : correction Flatpak et palette Linux</strong><br />
+Les commits récents incluent la persistance du dossier de données Flatpak, le rendu accéléré conservé, puis une matrice complète des formats Linux signés (x86_64, aarch64, riscv64) produisant DEB, RPM, AppImage, tar.gz, paquet Arch et bundle Flatpak OCI. Ces changements touchent aussi le CI avec FreeBSD et un lint de packaging.</p>
+<p><strong>Portage minimal vers craft-libs <code>next</code></strong><br />
+Le commit ac0e3695209a du 25 novembre bascule trois dépendances craft-libs (<code>craft-image-codecs</code>, <code>craft-update</code>, <code>craft-sniff</code>) de <code>main</code> vers <code>next</code>. Il s'agit d'un portage minimal : seules les APIs supprimées dans <code>next</code> ont dû être adaptées. Aucun runtime host ni dock ne change car ArtCraft n'utilise pas <code>craft-ui</code>. Le egui app (<code>artcraft-native</code>) reste sur eframe et egui 0.36 de crates.io.</p>
+<p><strong>Adoption des règles AGENTS.md partagées (RFC-0072)</strong><br />
+Le commit 9a1cc6b701e9 du 24 novembre remplace les règles maison RFC-0006 par le bloc partagé <code>craft-agents</code> de craft-contrib (commit e0bf5c9). Les treize règles propres au dépôt sont rewordées pour tenir dans le cap de 4 Ko.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><strong>CraftLook pour macOS — miniatures Finder et aperçus Quick Look</strong><br />
+Roccobot crée CraftLook, application macOS gratuite offrant des miniatures natives dans le Finder (vue icône, colonne, galerie) et des aperçus complets (barre d'espace). Supporte FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc/.solidcraft), FilmCraft (.fcproj cadre tête de lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj/.ecprojx), SoundCraft (.scraft timeline), ainsi que PSD et SVG. L'application embarque huit moteurs de rendu headless ; signé et notaré Apple. Environ 720 Mo ZIP, 1,6 Go décompressé. Application seule : 7 Mo.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/ · u/Roccobot</p>
+<p><strong>Plugin Stream Deck pour LightCraft</strong><br />
+ResearcherMassive802 développe un plugin Stream Deck open-source connectant directement le port de contrôle local de LightCraft (127.0.0.1:7980). Bidirectionnel : valeurs live des curseurs et états des touches éclairées synchronisés. Encodeurs disponibles pour 120+ curseurs de développement, cadrans transformation/recadrage, culling, navigateur préréglages. Touches pour actions rapides (Auto Tone, N&amp;B, Copier/Coller/Synchroniser, Avant/Après, AI Denoise, HDR), sélection/culling (rejeter, étoiles, étiquettes), masques IA (SAM 3) et manuel. Compatible Stream Deck 6.5+ et OpenDeck.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/ · u/ResearcherMassive802</p>
+<p><strong>Plugin FigCraft — documentation de composants</strong><br />
+DamageNo9147 publie un plugin FigCraft 0.11.0 (préversion) qui documente automatiquement un composant pour le transfert entre projets.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/ · u/DamageNo9147</p>
+<p><strong>Dōri v0.1.0-alpha.1 — DAW Rust open-source pour motion design</strong><br />
+melble5 construit un studio d'enregistrement numérique open-source en Rust pour l'audio de motion design, ciblant Linux et Windows. Premier alpha publié. Projet externe à ArtCraft mais pertinent pour l'écosystème audio créatif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/ · u/melble5</p>
+<p><strong>FimCraft — alignement de photos pour animation</strong><br />
+Clemens_Ratte-Polle explore la capacité de FilmCraft ou PhotoCraft à ajuster automatiquement des photographies statiques d'un même objet pour produire des films time-lapse.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4unri/fimcraft_animation_of_photos_to_be_aligned/ · u/Clemens_Ratte-Polle</p>
+<p><strong>LightCraft vers WordPress — plugin de synchronisation</strong><br />
+poudenes crée un outil de synchronisation de dossiers vers WordPress, alternative au plugin WP/LR classique, développé avec assistance Claude. Dépôt GitHub en préparation.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4x2sh/lightcraft_to_wordpress/ · u/poudenes</p>
+<h2>Autour d'ArtCraft — logiciels comparables et écosystème</h2>
+<p><strong>Adobe perd 357 votes sur sa capitalisation boursière</strong><br />
+velocityvector2 partage des données sur la capitalisation d'Adobe sur les années 2025-2026. Le post recueille 357 votes et 39 commentaires, reflétant l'humeur générale vis-à-vis d'Adobe face à la montée d'alternatives open source.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5tus3/adobe_market_cap_20252026/ · u/velocityvector2</p>
+<p><strong>Painite — améliorateur de photos IA auto-hébergé</strong><br />
+yuanlin2004 présente Painite, un outil d'amélioration photo IA auto-hébergeable fonctionnant sur Mac ou box NVIDIA. Solution locale concurrente aux services cloud similaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3z9s6/painite_an_opensource_selfhosted_ai_photo/ · u/yuanlin2004</p>
+<p><strong>« La fin d'une époque » — 816 votes</strong><br />
+velocityvector2 publie un message percutant intitulé « Penses-tu que c'est la fin d'une époque ? ». Avec 816 votes et 258 commentaires, le plus engagé du cycle, il marque probablement un tournant significatif dans le discours communautaire autour d'ArtCraft. Il mérite d'être lu attentivement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4uddw/do_you_think_this_is_the_end_of_an_era/ · u/velocityvector2</p>
+<p><strong>Qualité de code ArtCraft — analyse externe</strong><br />
+Delicious_Recover543 partage un lien vers une analyse de Software Improvement Group sur la qualité du code ArtCraft comme alternative à Adobe. Post suivi de 31 votes et 36 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/ · u/Delicious_Recover543 · https://www.softwareimprovementgroup.com/blog/artcraft-adobe-clone-ai-code-quality/</p>
+<p><strong>ArtCraft sur LibreNT — compatibilité confirmée</strong><br />
+Interesting_Ad_5676 teste les applications ArtCraft sur LibreNT (système open source ressemblant à Windows) avec succès. Preuve supplémentaire de la portée multiplateforme.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/ · u/Interesting_Ad_5676</p>
+<p><strong>PDFCraft miniature dans l'explorateur Windows</strong><br />
+defnotaloser partage une solution temporaire via le projet Github explorer-thumbs pour afficher les miniatures PDF dans l'explorateur Windows lorsque PDFCraft est défini comme lecteur par défaut. Fonctionnalité utile mais non résolue nativement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y45hnn/pdfcraft_windows_explorer_thumbnails/ · u/defnotaloser · https://github.com/rajatmo/explorer-thumbs</p>
+<p><strong>ArtCraft SpeedTree ?</strong><br />
+hamza_1988 exprime le besoin d'un remplacement open-source de SpeedTree (Unity), logiciel industriel standard pour la création de feuillage avec peu de personnalisation et aucun support MCP.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4u46o/artcraft_speedtree/ · u/hamza_1988</p>
+<p><strong>« Unifiée UI/UX ou contraire des promesses initiales ? »</strong><br />
+Longjumping_Limit486 interpelle sur l'unification récente de l'interface entre les applications ArtCraft, questionnant si cette approche ne va pas à l'encontre de la promesse initiale de légèreté et rapidité. Discussion de 7 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5pkmq/artcraft_unifying_uiux_across_its_apps_is_it_just/ · u/Longjumping_Limit486</p>
+<h2>Volume — X posts publiés dans l'intervalle, Y retenus, Z écartés.</h2>
+<p>38 posts lus dans l'intervalle des 4 derniers jours (source principale reddit-relay), 15 retenus, 23 écartés. 1 entrée issue du journal artcraft_commits (portage craft-libs next).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille ArtCraft — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/artcraft/2026-11-27.html</link>

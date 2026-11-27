@@ -6,9 +6,397 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 05:02:48 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 00:12:38 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/macapps — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/macapps/2026-11-28.html</link>
+<guid isPermaLink="false">macapps-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:12:38 +0100</pubDate>
+<category>r/macapps</category>
+<description><![CDATA[<h1>Veille r/macapps — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Wine 11.23 sort avec le support de macOS (en plus de Linux, BSD et Solaris) ; il s'agit d'une version majeure pour les utilisateurs souhaitant faire tourner des applications Windows. Partout, le Black Friday domine : promotions matérielles chez Amazon, Fnac, Apple Store. Mozilla rend son interface Nova obligatoire dès le 8 décembre dans Firefox 161.0.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Docuria [Bêta]</strong> — Application de lecture PDF conçue pour remplacer Acrobat, DEVONthink, Voice Dream Reader et Notability en un seul outil. En phase bêta, elle vise à simplifier la gestion documentaire sur Mac.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6nobo/docuria_beta_one_app_to_stop_juggling_acrobat/</li>
+</ul>
+<p><strong>Vivarium</strong> — Moteur de fonds d'écran animés écrit en Swift et Metal, proposant dix scènes en temps réel avec une empreinte matérielle minimale : moins de trois % de CPU et zéro % de GPU quand l'écran est couvert. Sans abonnement, sans surveillance. Conçu spécifiquement pour macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6w7gm/vivarium_10_realtime_swift_metal_living_mac/</li>
+</ul>
+<p><strong>Ember</strong> — Journal interactif où chaque personne dont vous parlez dispose de sa propre page dédiée. L'application retravaille au fil des années qui se croise ou vous croise, offrant une vision chronologique de vos relations. Natif macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6xw5c/ember_a_journal_where_the_people_you_write_about/</li>
+</ul>
+<p><strong>Ganella</strong> — Rend les icônes du Dock vivantes sous forme de widgets en direct, avec aperçu d'applications et notifications intégrées. Alternative au Dock statique par défaut.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6spqe/ganella_your_dock_icons_become_live_widgets_now/</li>
+</ul>
+<p><strong>StoryPass</strong> — Générateur de mots de passe pour Mac né de la transformation d'un jeu sur papier créé par la mère de l'auteur. Gratuit lors du prix de lancement jusqu'au 30 novembre. Idée simple, originale, parfaitement adaptée à un usage personnel.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6je3r/storypass_i_turned_my_moms_paper_game_into_a/</li>
+</ul>
+<p><strong>LaunchOS</strong> — Alternative au Launchpad natif, en trente-neuvième version après un an de développement. Améliore la présentation et la navigation entre applications sur macOS 27. Dépot visible sur GitHub sous <code>Remix-Design/LaunchOS</code> (80 étoiles, sans licence affichée). Vente Black Friday active.</p>
+<ul>
+<li>https://github.com/Remix-Design/LaunchOS</li>
+<li>https://www.reddit.com/r/macapps/comments/1y6r9ng/launchos_one_year_39_releases_and_a_better/</li>
+</ul>
+<p><strong>Beaming</strong> — Synchronisez et affichez votre iPhone, iPad ou téléphone Android sur votre Mac, chaque appareil apparaissant dans un cadre réaliste reproduisant son design physique. Prix unique de 9,99 $ avec offres Black Friday.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y69ebv/beaming_plug_and_play_mirror_your_real_iphone/</li>
+</ul>
+<p><strong>FrameOS</strong> — Enregistrez l'écran de votre iPhone ou Android avec la caméra externe intégrée, puis éditez le tout en une vidéo soignée sur Mac. Paiement unique de 19 $. Intéressant pour des tutoriels ou des démonstrations.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6ao5b/black_friday_frameos_record_your_iphoneandroid/</li>
+</ul>
+<p><strong>TextFix</strong> — Application Swift ultra-légère de 2,4 Mo qui corrige le texte sélectionné directement sur macOS, sans passer par un traitement cloud. Fonctionne hors ligne. L'auteur fournit son code sous <code>jonathanhind/textfix</code>.</p>
+<ul>
+<li>https://textfix.jonathanhind.com</li>
+</ul>
+<p><strong>Blur</strong> — Application Mac qui masqu automatiquement les contenus sensibles lors d'un partage d'écran, pour éviter de dévoiler involontairement des tokens API, des dossiers privés ou des messages personnels. À vérifier du côté licence / statut open source.</p>
+<ul>
+<li>https://useblur.app</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Wine 11.23</strong> — Nouvelle version majeure du projet Wine, ajoutant l'exécution d'applications Windows sur macOS en plus de Linux, BSD et Solaris. Changelog détaillé sur winehq.org. Pour tout utilisateur souhaitant faire tourner des utilitaires Windows sur son Mac.</p>
+<ul>
+<li>https://www.winehq.org/announce/11.23</li>
+</ul>
+<p><strong>ShareX 22.5.0</strong> — Remplace son moteur OCR Windows par PaddleOCR exécuté localement, couvrant plus de cent langues sans packs supplémentaires. Ajoute aussi un éditeur pixel intégré. Application libre, bien que principalement destinée à Windows.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/sharex-22-5-0-adds-local-ai-ocr-and-a-pixel-editor/</li>
+</ul>
+<p><strong>Firefox 161</strong> — Contrôle VPN par site web, bouton « Fire Button » pour effacer toutes les données navigateur en un clic, et nouveaux thèmes visuels. Mozilla rend également l'interface arrondie « Nova » obligatoire à partir du 8 décembre, sans possibilité de revenir en arrière.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/firefox-161-brings-per-site-vpn-controls-one-click-browser-da</li>
+<li>https://alternativeto.net/news/2026/11/mozilla-makes-firefox-s-rounded-nova-ui-mandatory-on-december</li>
+</ul>
+<p><strong>Craft</strong> — Ajout des pages favorites et de la sélection de texte multi-blocs dans les applis natives. Web limité aux pages favorites uniquement. Application payante de prise de notes structurée.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/craft-adds-starred-pages-and-cross-block-text-selection/</li>
+</ul>
+<p><strong>Readdle Documents</strong> — Ajout de l'enregistrement vocal avec transcription et résumé IA via la fonctionnalité « Voice Notes ». Mis à jour pour iPhone et iPad.</p>
+<ul>
+<li>https://9to5mac.com/2026/11/26/readdles-documents-app-adds-voice-recording-with-transcripts-summarie</li>
+</ul>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune extension ou greffon notable identifié cette période.</p>
+<hr />
+<h2>Nouveautés Homebrew cask</h2>
+<p>Cinq nouvelles applications ajoutées au catalogue depuis la dernière collecte, absentes du fichier <code>digested.txt</code> :</p>
+<p><strong>StableBar 0.19.0</strong> — Barre de menus macOS configurable, pour remplacer ou compléter la barre système par défaut. Interface personnalisable, légères et épurées.</p>
+<pre><code class="language-bash">brew install --cask stablebar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/stablebar</li>
+<li>https://stablebar.app/</li>
+</ul>
+<p><strong>Chapar 0.14.1</strong> — Client API natif pour macOS. Alternative légère et moderne aux outils de test d'API comme Postman, conçu spécifiquement pour l'écosystème Mac.</p>
+<pre><code class="language-bash">brew install --cask chapar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/chapar</li>
+<li>https://chapar.rest/</li>
+</ul>
+<p><strong>Anomaly Spaceman 0.3.5</strong> — Gestionnaire de fenêtrage empilé (tiling) pour macOS. Permet d'organiser automatiquement les fenêtres selon des grilles prédéfinies, inspiré de i3/sway sur Linux.</p>
+<pre><code class="language-bash">brew install --cask anomaly-spaceman
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/anomaly-spaceman</li>
+<li>https://anoma.ly/spaceman/</li>
+</ul>
+<p><strong>Paradev 2.0.12</strong> — Environnement de travail pour exécuter des agents de codage IA en parallèle. Conçu pour les développeurs souhaitant piloter plusieurs assistants simultanément.</p>
+<pre><code class="language-bash">brew install --cask paradev
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/paradev</li>
+<li>https://paradev.com/</li>
+</ul>
+<p><strong>Layout Department 0.9.1</strong> — Logiciel de composition d'imposition pour préparer livres, fanzines et brochures à partir de PDF. Outil précieux pour l'auto-édition et l'impression domestique.</p>
+<pre><code class="language-bash">brew install --cask layout-department
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/layout-department</li>
+<li>https://layoutdepartment.com/</li>
+</ul>
+<hr />
+<h2>Volume</h2>
+<p>190 publications recensées dans les sources (Reddit r/macapps, Hacker News, Lobsters, MacStories, 9to5Mac, MacRumors, MacG, iGeneration, WatchGeneration, Eclectic Light Company, MJ Tsai, Forum MacG, Product Hunt, AlternativeTo), 27 retenues, 163 écartées. La majorité des publications écartées sont des promotions Black Friday matérielles (Apple Store, Amazon, Fnac), des articles économiques ou géopolitiques, et des billets de blogue sans annonce logicielle concrète.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/macapps — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Wine 11.23 sort avec le support de macOS (en plus de Linux, BSD et Solaris) ; il s'agit d'une version majeure pour les utilisateurs souhaitant faire tourner des applications Windows. Partout, le Black Friday domine : promotions matérielles chez Amazon, Fnac, Apple Store. Mozilla rend son interface Nova obligatoire dès le 8 décembre dans Firefox 161.0.</p>
+<hr />
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Docuria [Bêta]</strong> — Application de lecture PDF conçue pour remplacer Acrobat, DEVONthink, Voice Dream Reader et Notability en un seul outil. En phase bêta, elle vise à simplifier la gestion documentaire sur Mac.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6nobo/docuria_beta_one_app_to_stop_juggling_acrobat/</li>
+</ul>
+<p><strong>Vivarium</strong> — Moteur de fonds d'écran animés écrit en Swift et Metal, proposant dix scènes en temps réel avec une empreinte matérielle minimale : moins de trois % de CPU et zéro % de GPU quand l'écran est couvert. Sans abonnement, sans surveillance. Conçu spécifiquement pour macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6w7gm/vivarium_10_realtime_swift_metal_living_mac/</li>
+</ul>
+<p><strong>Ember</strong> — Journal interactif où chaque personne dont vous parlez dispose de sa propre page dédiée. L'application retravaille au fil des années qui se croise ou vous croise, offrant une vision chronologique de vos relations. Natif macOS.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6xw5c/ember_a_journal_where_the_people_you_write_about/</li>
+</ul>
+<p><strong>Ganella</strong> — Rend les icônes du Dock vivantes sous forme de widgets en direct, avec aperçu d'applications et notifications intégrées. Alternative au Dock statique par défaut.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6spqe/ganella_your_dock_icons_become_live_widgets_now/</li>
+</ul>
+<p><strong>StoryPass</strong> — Générateur de mots de passe pour Mac né de la transformation d'un jeu sur papier créé par la mère de l'auteur. Gratuit lors du prix de lancement jusqu'au 30 novembre. Idée simple, originale, parfaitement adaptée à un usage personnel.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6je3r/storypass_i_turned_my_moms_paper_game_into_a/</li>
+</ul>
+<p><strong>LaunchOS</strong> — Alternative au Launchpad natif, en trente-neuvième version après un an de développement. Améliore la présentation et la navigation entre applications sur macOS 27. Dépot visible sur GitHub sous <code>Remix-Design/LaunchOS</code> (80 étoiles, sans licence affichée). Vente Black Friday active.</p>
+<ul>
+<li>https://github.com/Remix-Design/LaunchOS</li>
+<li>https://www.reddit.com/r/macapps/comments/1y6r9ng/launchos_one_year_39_releases_and_a_better/</li>
+</ul>
+<p><strong>Beaming</strong> — Synchronisez et affichez votre iPhone, iPad ou téléphone Android sur votre Mac, chaque appareil apparaissant dans un cadre réaliste reproduisant son design physique. Prix unique de 9,99 $ avec offres Black Friday.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y69ebv/beaming_plug_and_play_mirror_your_real_iphone/</li>
+</ul>
+<p><strong>FrameOS</strong> — Enregistrez l'écran de votre iPhone ou Android avec la caméra externe intégrée, puis éditez le tout en une vidéo soignée sur Mac. Paiement unique de 19 $. Intéressant pour des tutoriels ou des démonstrations.</p>
+<ul>
+<li>https://www.reddit.com/r/macapps/comments/1y6ao5b/black_friday_frameos_record_your_iphoneandroid/</li>
+</ul>
+<p><strong>TextFix</strong> — Application Swift ultra-légère de 2,4 Mo qui corrige le texte sélectionné directement sur macOS, sans passer par un traitement cloud. Fonctionne hors ligne. L'auteur fournit son code sous <code>jonathanhind/textfix</code>.</p>
+<ul>
+<li>https://textfix.jonathanhind.com</li>
+</ul>
+<p><strong>Blur</strong> — Application Mac qui masqu automatiquement les contenus sensibles lors d'un partage d'écran, pour éviter de dévoiler involontairement des tokens API, des dossiers privés ou des messages personnels. À vérifier du côté licence / statut open source.</p>
+<ul>
+<li>https://useblur.app</li>
+</ul>
+<hr />
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Wine 11.23</strong> — Nouvelle version majeure du projet Wine, ajoutant l'exécution d'applications Windows sur macOS en plus de Linux, BSD et Solaris. Changelog détaillé sur winehq.org. Pour tout utilisateur souhaitant faire tourner des utilitaires Windows sur son Mac.</p>
+<ul>
+<li>https://www.winehq.org/announce/11.23</li>
+</ul>
+<p><strong>ShareX 22.5.0</strong> — Remplace son moteur OCR Windows par PaddleOCR exécuté localement, couvrant plus de cent langues sans packs supplémentaires. Ajoute aussi un éditeur pixel intégré. Application libre, bien que principalement destinée à Windows.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/sharex-22-5-0-adds-local-ai-ocr-and-a-pixel-editor/</li>
+</ul>
+<p><strong>Firefox 161</strong> — Contrôle VPN par site web, bouton « Fire Button » pour effacer toutes les données navigateur en un clic, et nouveaux thèmes visuels. Mozilla rend également l'interface arrondie « Nova » obligatoire à partir du 8 décembre, sans possibilité de revenir en arrière.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/firefox-161-brings-per-site-vpn-controls-one-click-browser-da</li>
+<li>https://alternativeto.net/news/2026/11/mozilla-makes-firefox-s-rounded-nova-ui-mandatory-on-december</li>
+</ul>
+<p><strong>Craft</strong> — Ajout des pages favorites et de la sélection de texte multi-blocs dans les applis natives. Web limité aux pages favorites uniquement. Application payante de prise de notes structurée.</p>
+<ul>
+<li>https://alternativeto.net/news/2026/11/craft-adds-starred-pages-and-cross-block-text-selection/</li>
+</ul>
+<p><strong>Readdle Documents</strong> — Ajout de l'enregistrement vocal avec transcription et résumé IA via la fonctionnalité « Voice Notes ». Mis à jour pour iPhone et iPad.</p>
+<ul>
+<li>https://9to5mac.com/2026/11/26/readdles-documents-app-adds-voice-recording-with-transcripts-summarie</li>
+</ul>
+<hr />
+<h2>Extensions et greffons</h2>
+<p>Aucune extension ou greffon notable identifié cette période.</p>
+<hr />
+<h2>Nouveautés Homebrew cask</h2>
+<p>Cinq nouvelles applications ajoutées au catalogue depuis la dernière collecte, absentes du fichier <code>digested.txt</code> :</p>
+<p><strong>StableBar 0.19.0</strong> — Barre de menus macOS configurable, pour remplacer ou compléter la barre système par défaut. Interface personnalisable, légères et épurées.</p>
+<pre><code class="language-bash">brew install --cask stablebar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/stablebar</li>
+<li>https://stablebar.app/</li>
+</ul>
+<p><strong>Chapar 0.14.1</strong> — Client API natif pour macOS. Alternative légère et moderne aux outils de test d'API comme Postman, conçu spécifiquement pour l'écosystème Mac.</p>
+<pre><code class="language-bash">brew install --cask chapar
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/chapar</li>
+<li>https://chapar.rest/</li>
+</ul>
+<p><strong>Anomaly Spaceman 0.3.5</strong> — Gestionnaire de fenêtrage empilé (tiling) pour macOS. Permet d'organiser automatiquement les fenêtres selon des grilles prédéfinies, inspiré de i3/sway sur Linux.</p>
+<pre><code class="language-bash">brew install --cask anomaly-spaceman
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/anomaly-spaceman</li>
+<li>https://anoma.ly/spaceman/</li>
+</ul>
+<p><strong>Paradev 2.0.12</strong> — Environnement de travail pour exécuter des agents de codage IA en parallèle. Conçu pour les développeurs souhaitant piloter plusieurs assistants simultanément.</p>
+<pre><code class="language-bash">brew install --cask paradev
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/paradev</li>
+<li>https://paradev.com/</li>
+</ul>
+<p><strong>Layout Department 0.9.1</strong> — Logiciel de composition d'imposition pour préparer livres, fanzines et brochures à partir de PDF. Outil précieux pour l'auto-édition et l'impression domestique.</p>
+<pre><code class="language-bash">brew install --cask layout-department
+</code></pre>
+<ul>
+<li>https://formulae.brew.sh/cask/layout-department</li>
+<li>https://layoutdepartment.com/</li>
+</ul>
+<hr />
+<h2>Volume</h2>
+<p>190 publications recensées dans les sources (Reddit r/macapps, Hacker News, Lobsters, MacStories, 9to5Mac, MacRumors, MacG, iGeneration, WatchGeneration, Eclectic Light Company, MJ Tsai, Forum MacG, Product Hunt, AlternativeTo), 27 retenues, 163 écartées. La majorité des publications écartées sont des promotions Black Friday matérielles (Apple Store, Amazon, Fnac), des articles économiques ou géopolitiques, et des billets de blogue sans annonce logicielle concrète.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille ArtCraft — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-28.html</link>
+<guid isPermaLink="false">artcraft-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:02:14 +0100</pubDate>
+<category>r/ArtCraftAI</category>
+<description><![CDATA[<h1>Veille ArtCraft — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune sortie officielle cette semaine, mais le dépôt développe activement (correctifs Flatpak, palette complète des formats Linux, passage à craft-libs <code>next</code>). La communauté compense avec une quinzaine d'annonces notables : candidats de version PhotoCraft, résolution PDFCraft v0.22.0, plugins tiers et mises à jour SketchCraft.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Publication de PhotoCraft v0.24.0-rc.1 — candidat de version pour test</strong><br />
+RickiDangerous annonce le premier candidat de version stable de PhotoCraft 0.24. Le fichier est disponible sur le subreddit r/ArtCraftAI pour retours communautaires avant la version finale. Posté le 24 novembre, il recueille 79 votes et 16 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/ · u/RickiDangerous</p>
+<p><strong>Photocraft v0.24.0-rc.2 — deuxième candidat de version</strong><br />
+Le second candidat de version arrive le 26 novembre, toujours destiné aux tests communautaires. Il attire 60 votes en quelques heures.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y61kqg/photocraft_release_candidate_2_is_ready_for/ · u/RickiDangerous</p>
+<p><strong>PDFCraft v0.22.0 — le problème de résolution d'impression enfin résolu</strong><br />
+YEEG4R partage la mise à jour PDFCraft 0.22.0 qui corrige un problème récurrent de résolution d'impression. Le poste recueille 617 votes et 42 commentaires, témoignant de l'intérêt du public pour ce correctif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/ · u/YEEG4R</p>
+<p><strong>Explication officielle sur les retards de mise à jour</strong><br />
+BrettMaster publie la raison officielle donnée par l'équipe pour le manque de nouvelles sorties ces derniers jours. Le post reçoit 448 votes et 34 commentaires, montrant que la transparence était attendue par la communauté.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/ · u/BrettMaster</p>
+<p><strong>Mise à jour SketchCraft — 10 versions depuis 0.3.0, ajouts majeurs</strong><br />
+Un contributeur partage 10 versions successives de SketchCraft, ajoutant les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'extension du domaine d'utilisation technique de l'outil est marquée par 151 votes.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/ · u/Apprehensive_Fly_493</p>
+<p><strong>Lancement de PxC — plugin PhotoCraft IA avec modèles génératifs</strong><br />
+phil-haderer publie PxC, un plugin génératif complet pour PhotoCraft écrit entièrement par Claude. Il intègre MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit, Flux 3 Klein et d'autres modèles. Fonctionnalités : texte en image, sélection de remplissage, édition de toile, agrandissement, suppression, upscaling. Disponible sur GitHub avec guides d'installation.<br />
+https://github.com/phil-haderer/pxc · https://www.reddit.com/r/ArtCraftAI/comments/1y550zz/releasing_pxc_photocraft_ai_plugin_compatible/ · u/phil-haderer</p>
+<p><strong>Développement ArtCraft Studio : correction Flatpak et palette Linux</strong><br />
+Les commits récents incluent la persistance du dossier de données Flatpak, le rendu accéléré conservé, puis une matrice complète des formats Linux signés (x86_64, aarch64, riscv64) produisant DEB, RPM, AppImage, tar.gz, paquet Arch et bundle Flatpak OCI. Ces changements touchent aussi le CI avec FreeBSD et un lint de packaging.</p>
+<p><strong>Portage minimal vers craft-libs <code>next</code></strong><br />
+Le commit ac0e3695209a du 25 novembre bascule trois dépendances craft-libs (<code>craft-image-codecs</code>, <code>craft-update</code>, <code>craft-sniff</code>) de <code>main</code> vers <code>next</code>. Il s'agit d'un portage minimal : seules les APIs supprimées dans <code>next</code> ont dû être adaptées. Aucun runtime host ni dock ne change car ArtCraft n'utilise pas <code>craft-ui</code>. Le egui app (<code>artcraft-native</code>) reste sur eframe et egui 0.36 de crates.io.</p>
+<p><strong>Adoption des règles AGENTS.md partagées (RFC-0072)</strong><br />
+Le commit 9a1cc6b701e9 du 24 novembre remplace les règles maison RFC-0006 par le bloc partagé <code>craft-agents</code> de craft-contrib (commit e0bf5c9). Les treize règles propres au dépôt sont rewordées pour tenir dans le cap de 4 Ko.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><strong>CraftLook pour macOS — miniatures Finder et aperçus Quick Look</strong><br />
+Roccobot crée CraftLook, application macOS gratuite offrant des miniatures natives dans le Finder (vue icône, colonne, galerie) et des aperçus complets (barre d'espace). Supporte FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc/.solidcraft), FilmCraft (.fcproj cadre tête de lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj/.ecprojx), SoundCraft (.scraft timeline), ainsi que PSD et SVG. L'application embarque huit moteurs de rendu headless ; signé et notaré Apple. Environ 720 Mo ZIP, 1,6 Go décompressé. Application seule : 7 Mo.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/ · u/Roccobot</p>
+<p><strong>Plugin Stream Deck pour LightCraft</strong><br />
+ResearcherMassive802 développe un plugin Stream Deck open-source connectant directement le port de contrôle local de LightCraft (127.0.0.1:7980). Bidirectionnel : valeurs live des curseurs et états des touches éclairées synchronisés. Encodeurs disponibles pour 120+ curseurs de développement, cadrans transformation/recadrage, culling, navigateur préréglages. Touches pour actions rapides (Auto Tone, N&amp;B, Copier/Coller/Synchroniser, Avant/Après, AI Denoise, HDR), sélection/culling (rejeter, étoiles, étiquettes), masques IA (SAM 3) et manuel. Compatible Stream Deck 6.5+ et OpenDeck.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/ · u/ResearcherMassive802</p>
+<p><strong>Plugin FigCraft — documentation de composants</strong><br />
+DamageNo9147 publie un plugin FigCraft 0.11.0 (préversion) qui documente automatiquement un composant pour le transfert entre projets.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/ · u/DamageNo9147</p>
+<p><strong>Dōri v0.1.0-alpha.1 — DAW Rust open-source pour motion design</strong><br />
+melble5 construit un studio d'enregistrement numérique open-source en Rust pour l'audio de motion design, ciblant Linux et Windows. Premier alpha publié. Projet externe à ArtCraft mais pertinent pour l'écosystème audio créatif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/ · u/melble5</p>
+<p><strong>FimCraft — alignement de photos pour animation</strong><br />
+Clemens_Ratte-Polle explore la capacité de FilmCraft ou PhotoCraft à ajuster automatiquement des photographies statiques d'un même objet pour produire des films time-lapse.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4unri/fimcraft_animation_of_photos_to_be_aligned/ · u/Clemens_Ratte-Polle</p>
+<p><strong>LightCraft vers WordPress — plugin de synchronisation</strong><br />
+poudenes crée un outil de synchronisation de dossiers vers WordPress, alternative au plugin WP/LR classique, développé avec assistance Claude. Dépôt GitHub en préparation.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4x2sh/lightcraft_to_wordpress/ · u/poudenes</p>
+<h2>Autour d'ArtCraft — logiciels comparables et écosystème</h2>
+<p><strong>Adobe perd 357 votes sur sa capitalisation boursière</strong><br />
+velocityvector2 partage des données sur la capitalisation d'Adobe sur les années 2025-2026. Le post recueille 357 votes et 39 commentaires, reflétant l'humeur générale vis-à-vis d'Adobe face à la montée d'alternatives open source.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5tus3/adobe_market_cap_20252026/ · u/velocityvector2</p>
+<p><strong>Painite — améliorateur de photos IA auto-hébergé</strong><br />
+yuanlin2004 présente Painite, un outil d'amélioration photo IA auto-hébergeable fonctionnant sur Mac ou box NVIDIA. Solution locale concurrente aux services cloud similaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3z9s6/painite_an_opensource_selfhosted_ai_photo/ · u/yuanlin2004</p>
+<p><strong>« La fin d'une époque » — 816 votes</strong><br />
+velocityvector2 publie un message percutant intitulé « Penses-tu que c'est la fin d'une époque ? ». Avec 816 votes et 258 commentaires, le plus engagé du cycle, il marque probablement un tournant significatif dans le discours communautaire autour d'ArtCraft. Il mérite d'être lu attentivement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4uddw/do_you_think_this_is_the_end_of_an_era/ · u/velocityvector2</p>
+<p><strong>Qualité de code ArtCraft — analyse externe</strong><br />
+Delicious_Recover543 partage un lien vers une analyse de Software Improvement Group sur la qualité du code ArtCraft comme alternative à Adobe. Post suivi de 31 votes et 36 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/ · u/Delicious_Recover543 · https://www.softwareimprovementgroup.com/blog/artcraft-adobe-clone-ai-code-quality/</p>
+<p><strong>ArtCraft sur LibreNT — compatibilité confirmée</strong><br />
+Interesting_Ad_5676 teste les applications ArtCraft sur LibreNT (système open source ressemblant à Windows) avec succès. Preuve supplémentaire de la portée multiplateforme.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/ · u/Interesting_Ad_5676</p>
+<p><strong>PDFCraft miniature dans l'explorateur Windows</strong><br />
+defnotaloser partage une solution temporaire via le projet Github explorer-thumbs pour afficher les miniatures PDF dans l'explorateur Windows lorsque PDFCraft est défini comme lecteur par défaut. Fonctionnalité utile mais non résolue nativement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y45hnn/pdfcraft_windows_explorer_thumbnails/ · u/defnotaloser · https://github.com/rajatmo/explorer-thumbs</p>
+<p><strong>ArtCraft SpeedTree ?</strong><br />
+hamza_1988 exprime le besoin d'un remplacement open-source de SpeedTree (Unity), logiciel industriel standard pour la création de feuillage avec peu de personnalisation et aucun support MCP.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4u46o/artcraft_speedtree/ · u/hamza_1988</p>
+<p><strong>« Unifiée UI/UX ou contraire des promesses initiales ? »</strong><br />
+Longjumping_Limit486 interpelle sur l'unification récente de l'interface entre les applications ArtCraft, questionnant si cette approche ne va pas à l'encontre de la promesse initiale de légèreté et rapidité. Discussion de 7 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5pkmq/artcraft_unifying_uiux_across_its_apps_is_it_just/ · u/Longjumping_Limit486</p>
+<h2>Volume — X posts publiés dans l'intervalle, Y retenus, Z écartés.</h2>
+<p>38 posts lus dans l'intervalle des 4 derniers jours (source principale reddit-relay), 15 retenus, 23 écartés. 1 entrée issue du journal artcraft_commits (portage craft-libs next).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille ArtCraft — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune sortie officielle cette semaine, mais le dépôt développe activement (correctifs Flatpak, palette complète des formats Linux, passage à craft-libs <code>next</code>). La communauté compense avec une quinzaine d'annonces notables : candidats de version PhotoCraft, résolution PDFCraft v0.22.0, plugins tiers et mises à jour SketchCraft.</p>
+<h2>Nouveautés et annonces</h2>
+<p><strong>Publication de PhotoCraft v0.24.0-rc.1 — candidat de version pour test</strong><br />
+RickiDangerous annonce le premier candidat de version stable de PhotoCraft 0.24. Le fichier est disponible sur le subreddit r/ArtCraftAI pour retours communautaires avant la version finale. Posté le 24 novembre, il recueille 79 votes et 16 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4aohz/release_photocraft_v0240rc1_release_candidate_for/ · u/RickiDangerous</p>
+<p><strong>Photocraft v0.24.0-rc.2 — deuxième candidat de version</strong><br />
+Le second candidat de version arrive le 26 novembre, toujours destiné aux tests communautaires. Il attire 60 votes en quelques heures.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y61kqg/photocraft_release_candidate_2_is_ready_for/ · u/RickiDangerous</p>
+<p><strong>PDFCraft v0.22.0 — le problème de résolution d'impression enfin résolu</strong><br />
+YEEG4R partage la mise à jour PDFCraft 0.22.0 qui corrige un problème récurrent de résolution d'impression. Le poste recueille 617 votes et 42 commentaires, témoignant de l'intérêt du public pour ce correctif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/ · u/YEEG4R</p>
+<p><strong>Explication officielle sur les retards de mise à jour</strong><br />
+BrettMaster publie la raison officielle donnée par l'équipe pour le manque de nouvelles sorties ces derniers jours. Le post reçoit 448 votes et 34 commentaires, montrant que la transparence était attendue par la communauté.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4q3fv/here_is_the_official_reason_as_to_why_the_apps/ · u/BrettMaster</p>
+<p><strong>Mise à jour SketchCraft — 10 versions depuis 0.3.0, ajouts majeurs</strong><br />
+Un contributeur partage 10 versions successives de SketchCraft, ajoutant les plans de coupe, les vérifications d'impression 3D, la texturation, les pièces et les feuilles de dessin. L'extension du domaine d'utilisation technique de l'outil est marquée par 151 votes.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4ymin/sketchcraft_update_10_releases_since_i_shared_030/ · u/Apprehensive_Fly_493</p>
+<p><strong>Lancement de PxC — plugin PhotoCraft IA avec modèles génératifs</strong><br />
+phil-haderer publie PxC, un plugin génératif complet pour PhotoCraft écrit entièrement par Claude. Il intègre MiniMax H3 Image, MOSS/KroMoss, Krea 2, Qwen Image 2.1 Edit, Flux 3 Klein et d'autres modèles. Fonctionnalités : texte en image, sélection de remplissage, édition de toile, agrandissement, suppression, upscaling. Disponible sur GitHub avec guides d'installation.<br />
+https://github.com/phil-haderer/pxc · https://www.reddit.com/r/ArtCraftAI/comments/1y550zz/releasing_pxc_photocraft_ai_plugin_compatible/ · u/phil-haderer</p>
+<p><strong>Développement ArtCraft Studio : correction Flatpak et palette Linux</strong><br />
+Les commits récents incluent la persistance du dossier de données Flatpak, le rendu accéléré conservé, puis une matrice complète des formats Linux signés (x86_64, aarch64, riscv64) produisant DEB, RPM, AppImage, tar.gz, paquet Arch et bundle Flatpak OCI. Ces changements touchent aussi le CI avec FreeBSD et un lint de packaging.</p>
+<p><strong>Portage minimal vers craft-libs <code>next</code></strong><br />
+Le commit ac0e3695209a du 25 novembre bascule trois dépendances craft-libs (<code>craft-image-codecs</code>, <code>craft-update</code>, <code>craft-sniff</code>) de <code>main</code> vers <code>next</code>. Il s'agit d'un portage minimal : seules les APIs supprimées dans <code>next</code> ont dû être adaptées. Aucun runtime host ni dock ne change car ArtCraft n'utilise pas <code>craft-ui</code>. Le egui app (<code>artcraft-native</code>) reste sur eframe et egui 0.36 de crates.io.</p>
+<p><strong>Adoption des règles AGENTS.md partagées (RFC-0072)</strong><br />
+Le commit 9a1cc6b701e9 du 24 novembre remplace les règles maison RFC-0006 par le bloc partagé <code>craft-agents</code> de craft-contrib (commit e0bf5c9). Les treize règles propres au dépôt sont rewordées pour tenir dans le cap de 4 Ko.</p>
+<h2>Nouveaux plugins et outils tiers</h2>
+<p><strong>CraftLook pour macOS — miniatures Finder et aperçus Quick Look</strong><br />
+Roccobot crée CraftLook, application macOS gratuite offrant des miniatures natives dans le Finder (vue icône, colonne, galerie) et des aperçus complets (barre d'espace). Supporte FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc/.solidcraft), FilmCraft (.fcproj cadre tête de lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj/.ecprojx), SoundCraft (.scraft timeline), ainsi que PSD et SVG. L'application embarque huit moteurs de rendu headless ; signé et notaré Apple. Environ 720 Mo ZIP, 1,6 Go décompressé. Application seule : 7 Mo.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/ · u/Roccobot</p>
+<p><strong>Plugin Stream Deck pour LightCraft</strong><br />
+ResearcherMassive802 développe un plugin Stream Deck open-source connectant directement le port de contrôle local de LightCraft (127.0.0.1:7980). Bidirectionnel : valeurs live des curseurs et états des touches éclairées synchronisés. Encodeurs disponibles pour 120+ curseurs de développement, cadrans transformation/recadrage, culling, navigateur préréglages. Touches pour actions rapides (Auto Tone, N&amp;B, Copier/Coller/Synchroniser, Avant/Après, AI Denoise, HDR), sélection/culling (rejeter, étoiles, étiquettes), masques IA (SAM 3) et manuel. Compatible Stream Deck 6.5+ et OpenDeck.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/ · u/ResearcherMassive802</p>
+<p><strong>Plugin FigCraft — documentation de composants</strong><br />
+DamageNo9147 publie un plugin FigCraft 0.11.0 (préversion) qui documente automatiquement un composant pour le transfert entre projets.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4basa/i_made_a_figcraft_plugin_that_documents_a/ · u/DamageNo9147</p>
+<p><strong>Dōri v0.1.0-alpha.1 — DAW Rust open-source pour motion design</strong><br />
+melble5 construit un studio d'enregistrement numérique open-source en Rust pour l'audio de motion design, ciblant Linux et Windows. Premier alpha publié. Projet externe à ArtCraft mais pertinent pour l'écosystème audio créatif.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/ · u/melble5</p>
+<p><strong>FimCraft — alignement de photos pour animation</strong><br />
+Clemens_Ratte-Polle explore la capacité de FilmCraft ou PhotoCraft à ajuster automatiquement des photographies statiques d'un même objet pour produire des films time-lapse.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4unri/fimcraft_animation_of_photos_to_be_aligned/ · u/Clemens_Ratte-Polle</p>
+<p><strong>LightCraft vers WordPress — plugin de synchronisation</strong><br />
+poudenes crée un outil de synchronisation de dossiers vers WordPress, alternative au plugin WP/LR classique, développé avec assistance Claude. Dépôt GitHub en préparation.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4x2sh/lightcraft_to_wordpress/ · u/poudenes</p>
+<h2>Autour d'ArtCraft — logiciels comparables et écosystème</h2>
+<p><strong>Adobe perd 357 votes sur sa capitalisation boursière</strong><br />
+velocityvector2 partage des données sur la capitalisation d'Adobe sur les années 2025-2026. Le post recueille 357 votes et 39 commentaires, reflétant l'humeur générale vis-à-vis d'Adobe face à la montée d'alternatives open source.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5tus3/adobe_market_cap_20252026/ · u/velocityvector2</p>
+<p><strong>Painite — améliorateur de photos IA auto-hébergé</strong><br />
+yuanlin2004 présente Painite, un outil d'amélioration photo IA auto-hébergeable fonctionnant sur Mac ou box NVIDIA. Solution locale concurrente aux services cloud similaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3z9s6/painite_an_opensource_selfhosted_ai_photo/ · u/yuanlin2004</p>
+<p><strong>« La fin d'une époque » — 816 votes</strong><br />
+velocityvector2 publie un message percutant intitulé « Penses-tu que c'est la fin d'une époque ? ». Avec 816 votes et 258 commentaires, le plus engagé du cycle, il marque probablement un tournant significatif dans le discours communautaire autour d'ArtCraft. Il mérite d'être lu attentivement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4uddw/do_you_think_this_is_the_end_of_an_era/ · u/velocityvector2</p>
+<p><strong>Qualité de code ArtCraft — analyse externe</strong><br />
+Delicious_Recover543 partage un lien vers une analyse de Software Improvement Group sur la qualité du code ArtCraft comme alternative à Adobe. Post suivi de 31 votes et 36 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/ · u/Delicious_Recover543 · https://www.softwareimprovementgroup.com/blog/artcraft-adobe-clone-ai-code-quality/</p>
+<p><strong>ArtCraft sur LibreNT — compatibilité confirmée</strong><br />
+Interesting_Ad_5676 teste les applications ArtCraft sur LibreNT (système open source ressemblant à Windows) avec succès. Preuve supplémentaire de la portée multiplateforme.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/ · u/Interesting_Ad_5676</p>
+<p><strong>PDFCraft miniature dans l'explorateur Windows</strong><br />
+defnotaloser partage une solution temporaire via le projet Github explorer-thumbs pour afficher les miniatures PDF dans l'explorateur Windows lorsque PDFCraft est défini comme lecteur par défaut. Fonctionnalité utile mais non résolue nativement.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y45hnn/pdfcraft_windows_explorer_thumbnails/ · u/defnotaloser · https://github.com/rajatmo/explorer-thumbs</p>
+<p><strong>ArtCraft SpeedTree ?</strong><br />
+hamza_1988 exprime le besoin d'un remplacement open-source de SpeedTree (Unity), logiciel industriel standard pour la création de feuillage avec peu de personnalisation et aucun support MCP.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y4u46o/artcraft_speedtree/ · u/hamza_1988</p>
+<p><strong>« Unifiée UI/UX ou contraire des promesses initiales ? »</strong><br />
+Longjumping_Limit486 interpelle sur l'unification récente de l'interface entre les applications ArtCraft, questionnant si cette approche ne va pas à l'encontre de la promesse initiale de légèreté et rapidité. Discussion de 7 commentaires.<br />
+https://www.reddit.com/r/ArtCraftAI/comments/1y5pkmq/artcraft_unifying_uiux_across_its_apps_is_it_just/ · u/Longjumping_Limit486</p>
+<h2>Volume — X posts publiés dans l'intervalle, Y retenus, Z écartés.</h2>
+<p>38 posts lus dans l'intervalle des 4 derniers jours (source principale reddit-relay), 15 retenus, 23 écartés. 1 entrée issue du journal artcraft_commits (portage craft-libs next).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille pédagogique et scientifique — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/pedagogique/2026-11-27.html</link>
@@ -5218,242 +5606,6 @@ L'annonce d'Hermit 1.2 mentionne des optimisations spécifiques pour Hermes Agen
 <li><strong>vibecoding</strong> — veille dédiée, non orphelin : 323 fils au journal, 0 examiné ici.</li>
 </ul>
 <p>Total : 0 fil examiné, 0 retenu, 0 écarté — aucun journal n'est sans lecteur.</p>]]></content:encoded>
-</item>
-<item>
-<title>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/labo-svt/2026-11-23.html</link>
-<guid isPermaLink="false">labo-svt-2026-11-23</guid>
-<pubDate>Mon, 23 Nov 2026 05:23:14 +0100</pubDate>
-<category>Le labo, c'est vous — pratiques SVT (Digipad)</category>
-<description><![CDATA[<h1>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 23 novembre 2026</h1>
-<p>Rien n'a bougé sur le mur pour la troisième semaine consécutive : aucune carte nouvelle, aucune carte modifiée, aucun commentaire nouveau. Le pavé compte toujours les mêmes quinze cartes et neuf commentaires, et son journal d'activité s'arrête au 8 novembre à 16 h 27 (heure UTC), soit deux semaines sans dépôt.</p>
-<p>Le mur reste public et lisible sans compte : https://digipad.app/p/1859891/8a101ba6cbf708</p>
-<h2>Volume et méthode</h2>
-<p>Quinze cartes examinées, toutes déjà publiées dans l'édition du 9 novembre. Les empreintes du collecteur (titre, texte, pièce jointe, date de modification) sont inchangées, les dates de modification portées par les cartes sont identiques à celles de la semaine dernière, et les compteurs de commentaires concordent un par un avec ceux de l'édition du 16 novembre. Neuf commentaires connus, tous déjà relevés : la seule différence observée est le décompte relatif affiché sous chaque commentaire (« il y a un mois » devenu « il y a deux mois »), qui vieillit avec le temps et ne signale aucune contribution nouvelle. Le collecteur relancé à la main, depuis un autre dossier que celui de son écriture, est resté muet : il ne détecte rien de neuf, ce qui recoupe la lecture directe du pavé.</p>
-<h2>Ce qu'il faut surveiller</h2>
-<p>Le mur fonctionne par vagues : l'essentiel des dépôts s'est fait en septembre et fin octobre, puis deux cartes le 8 novembre, et plus rien depuis. Rien ne permet encore de distinguer un essoufflement des contributions du simple rythme de l'année ; deux semaines de calme commencent toutefois à faire une tendance, et non plus un creux.</p>
-<p>Trois suites sont ouvertes et n'ont pas encore de retour :</p>
-<ul>
-<li>le bilan de l'expérimentation « badge Expert » est annoncé en fin d'année scolaire ;</li>
-<li>l'usage du Fautoscope doit être reconduit en 6e et en 3e, avec un retour à suivre sur l'effet en relecture ;</li>
-<li>les prolongements proposés en commentaire (explicitation des stratégies de récupération sur les ardoises, degré de confiance sur la fiche de mémorisation, pause active) attendent toujours une mise en œuvre documentée.</li>
-</ul>]]></description>
-<content:encoded><![CDATA[<h1>Mur collaboratif « Le labo, c'est vous ! » — synthèse du lundi 23 novembre 2026</h1>
-<p>Rien n'a bougé sur le mur pour la troisième semaine consécutive : aucune carte nouvelle, aucune carte modifiée, aucun commentaire nouveau. Le pavé compte toujours les mêmes quinze cartes et neuf commentaires, et son journal d'activité s'arrête au 8 novembre à 16 h 27 (heure UTC), soit deux semaines sans dépôt.</p>
-<p>Le mur reste public et lisible sans compte : https://digipad.app/p/1859891/8a101ba6cbf708</p>
-<h2>Volume et méthode</h2>
-<p>Quinze cartes examinées, toutes déjà publiées dans l'édition du 9 novembre. Les empreintes du collecteur (titre, texte, pièce jointe, date de modification) sont inchangées, les dates de modification portées par les cartes sont identiques à celles de la semaine dernière, et les compteurs de commentaires concordent un par un avec ceux de l'édition du 16 novembre. Neuf commentaires connus, tous déjà relevés : la seule différence observée est le décompte relatif affiché sous chaque commentaire (« il y a un mois » devenu « il y a deux mois »), qui vieillit avec le temps et ne signale aucune contribution nouvelle. Le collecteur relancé à la main, depuis un autre dossier que celui de son écriture, est resté muet : il ne détecte rien de neuf, ce qui recoupe la lecture directe du pavé.</p>
-<h2>Ce qu'il faut surveiller</h2>
-<p>Le mur fonctionne par vagues : l'essentiel des dépôts s'est fait en septembre et fin octobre, puis deux cartes le 8 novembre, et plus rien depuis. Rien ne permet encore de distinguer un essoufflement des contributions du simple rythme de l'année ; deux semaines de calme commencent toutefois à faire une tendance, et non plus un creux.</p>
-<p>Trois suites sont ouvertes et n'ont pas encore de retour :</p>
-<ul>
-<li>le bilan de l'expérimentation « badge Expert » est annoncé en fin d'année scolaire ;</li>
-<li>l'usage du Fautoscope doit être reconduit en 6e et en 3e, avec un retour à suivre sur l'effet en relecture ;</li>
-<li>les prolongements proposés en commentaire (explicitation des stratégies de récupération sur les ardoises, degré de confiance sur la fiche de mémorisation, pause active) attendent toujours une mise en œuvre documentée.</li>
-</ul>]]></content:encoded>
-</item>
-<item>
-<title>Veille applications et logiciel libre — semaine du lundi 16 novembre au dimanche 22 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/avonture/2026-11-23.html</link>
-<guid isPermaLink="false">avonture-2026-11-23</guid>
-<pubDate>Mon, 23 Nov 2026 05:18:37 +0100</pubDate>
-<category>applications et logiciel libre</category>
-<description><![CDATA[<h1>Veille applications et logiciel libre — semaine du lundi 16 novembre au dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Semaine chargée en sécurité : dix failles corrigées dans nginx (dont cinq permettant d'exécuter du code), une faille critique dans la bibliothèque GPGME qui touche la plupart des clients de courrier, Java4Shell côté OpenJDK et douze vulnérabilités dans PostgreSQL Anonymizer ; Debian 13.8 et PostgreSQL 19 sont sortis dans la foulée.</li>
-<li>Deux outils à retenir pour la ligne de commande et les serveurs : Hurl remplace les enchaînements de curl et jq par un fichier texte lisible et vérifié, et Semaphore piloté par Teleport patche des machines sans ouvrir de port SSH.</li>
-<li>La dictée vocale locale se banalise sous Linux (Speech Note, Myna, TuxTalk, Vocalinux, WhisPaste, Koe), et Unsloth Desktop sait désormais exploiter le NPU des processeurs Ryzen AI, y compris sous Linux.</li>
-</ul>
-<h2>Outils recommandés cette semaine</h2>
-<p><strong>Hurl</strong> — outil en ligne de commande qui lit un fichier texte décrivant une suite de requêtes HTTP et vérifie chaque réponse avant de passer à la suivante. Un jeton capturé à la première requête devient une variable disponible pour les suivantes, ce qui remplace le bricolage habituel « un curl pour se connecter, jq pour extraire le jeton, un second curl pour l'appel protégé ». Chaque requête porte ses assertions (code attendu, contenu), les valeurs sensibles s'écrivent <code>{{password}}</code> et sont masquées dans les journaux, et l'échec indique la ligne fautive avec un code de sortie non nul — utilisable tel quel depuis un script, un cron ou une intégration continue. Hurl s'appuie sur libcurl, donc proxys, certificats et HTTP/2 se comportent comme avec curl. Licence Apache-2.0 (vérifiée sur l'API GitHub le 23 novembre 2026), écrit en Rust, maintenu par Orange, paquets pour Linux, macOS, Windows et WSL (Homebrew, winget, .deb, .rpm).<br />
-Article : https://www.avonture.be/blog/hurl — projet : https://github.com/Orange-OpenSource/hurl</p>
-<p><strong>OxiCloud</strong> — serveur de fichiers, de calendrier et de contacts auto-hébergé, écrit en Rust, présenté comme une alternative légère à un Nextcloud complet. Intérêt pratique si vous voulez un espace de partage pour vos documents sans embarquer la pile PHP d'un Nextcloud : un seul binaire, du stockage webdav et une interface web, avec une application de bureau séparée. Licence MIT (vérifiée sur l'API GitHub), 3 739 étoiles, code activement maintenu (dernier envoi le 23 novembre 2026). Réserve : je n'ai pas pu lire l'article qui le présente, le site fredix.xyz étant protégé par le dispositif anti-robots Anubis ; les caractéristiques viennent donc du dépôt du projet et non du billet.<br />
-Article (inaccessible sans JavaScript) : https://www.fredix.xyz/2026/11/oxicloud/ — projet : https://github.com/AtalayaLabs/OxiCloud</p>
-<p><strong>Semaphore UI (avec Teleport)</strong> — interface web et API pour lancer des playbooks Ansible, combinée ici à Teleport pour atteindre les machines sans que le port SSH soit exposé sur Internet. L'intérêt est double : les opérations de maintenance (mises à jour, correctifs) s'exécutent depuis une interface unique et traçable, et la surface d'attaque des serveurs se réduit puisque le port 22 n'est plus ouvert publiquement. Licence MIT (vérifiée sur l'API GitHub), écrit en Go, 14 444 étoiles, s'utilise aussi pour Terraform et PowerShell. Le billet détaille la mise en place ; je n'en ai lu que le titre et le chapô, le site aukfood.fr affichant un bandeau de consentement aux témoins de connexion.<br />
-Article : https://www.aukfood.fr/semaphore-ansible-teleport/ — projet : https://github.com/semaphoreui/semaphore</p>
-<p><strong>Chaque Euro</strong> — projet libre qui rend les finances publiques françaises vérifiables : le site rapproche les données officielles (comptes locaux, marchés publics, budget de l'État, subventions aux associations, votes, lobbying) pour répondre à des questions concrètes, par exemple quels marchés une organisation a remportés ou comment les dépenses d'une commune se comparent à celles de communes comparables. La mécanique est instructive en soi : un pipeline Python et DuckDB, des transformations écrites en SQL, un site Astro et un serveur MCP en lecture seule, les sources étant conservées avec leur date et leur empreinte SHA-256 et les tables calculées téléchargeables en CSV et Parquet. Licence AGPL-3.0.<br />
-Article : https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb</p>
-<p><strong>Kwi</strong> — nouvel émulateur de terminal pour KDE, construite sur la bibliothèque de Ghostty et annoncée comme nettement plus rapide que Konsole. Sa première version est sortie cette semaine ; elle s'adresse d'abord aux utilisateurs de Plasma, mais le projet vise aussi d'autres bureaux. Licence non précisée dans la brève consultée (les composants KDE sont habituellement sous GPL), écrit en C++.<br />
-Brève : https://www.phoronix.com/news/Kwi-Terminal-First-Release</p>
-<p><strong>Cryptomator 3.0 (Android)</strong> — la version Android apporte enfin ce que les utilisateurs réclamaient : les coffres chiffrés apparaissent directement dans l'application Fichiers et dans le sélecteur de fichiers du système. Concrètement, n'importe quelle application compatible (prise de notes, suite bureautique, lecteur PDF, retouche photo) peut ouvrir, enregistrer, renommer ou déplacer un fichier d'un coffre sans passer par Cryptomator. Licence GPL-3.0 (vérifiée sur l'API GitHub, dépôt cryptomator/android).<br />
-Article : https://alternativeto.net/news/2026/11/cryptomator-3-0-brings-encrypted-vaults-directly-into-android-s-files-app-and-file-picker/</p>
-<p><strong>CachyOS Package Installer 2.0</strong> — l'installateur de paquets maison de CachyOS (distribution dérivée d'Arch) gagne une interface entièrement revue et prend en charge, depuis un seul écran, les paquets officiels, AUR, Flatpak et AppImage. Utile si vous testez CachyOS ou une Arch sur un poste : cela évite de jongler entre pacman, un assistant AUR et la ligne de commande pour installer une application. Licence non précisée dans la brève.<br />
-Brève : https://www.phoronix.com/news/CachyOS-Package-Installer-2.0</p>
-<p><strong>gitea-cli 2.0.0</strong> — client en ligne de commande pour Gitea, dont la version majeure réduit fortement le volume produit par les journaux d'exécution d'Actions en échec : environ 46 800 jetons ramenés à 11 600, en limitant la sortie et en imposant la liste des champs demandés. Autrement dit, la même commande coûte quatre fois moins cher en jetons quand on la fait lire par un agent. La version aligne aussi ses options sur celles de <code>gh</code> et rend la sortie JSON prévisible (valeurs absentes à null, horodatages RFC 3339 en UTC). Licence non vérifiée : je n'ai pas identifié le dépôt correspondant avec certitude.<br />
-Article : https://alternativeto.net/news/2026/11/gitea-cli-2-0-0-cuts-ai-agent-log-tokens-by-75-percent/</p>
-<p><strong>Nextcloud Office (application de bureau)</strong> — les éditeurs de documents de Nextcloud existaient en ligne ; ils arrivent en application de bureau, fondée sur le code DesktopEditors d'Euro-Office, le consortium européen qui réunit notamment Nextcloud, IONOS, Proton, Open-Xchange et Tuta. Quatre éditeurs (texte, tableur, présentation, PDF) qui lisent les formats Microsoft comme OpenDocument, avec le choix de garder les fichiers en local ou de les synchroniser. Réserve : Euro-Office est lui-même un dérivé d'ONLYOFFICE, et la licence exacte de cette application de bureau n'est pas donnée dans l'article.<br />
-Article : https://feed.itsfoss.com/link/24361/17526232/nextcloud-office-desktop-launched</p>
-<p><strong>Raycast 2.13 (macOS)</strong> — l'utilitaire de lancement ajoute un serveur MCP local, c'est-à-dire de quoi laisser des agents (Claude, Codex, Cursor) utiliser certaines extensions et données de la machine. Vous choisissez celles que vous partagez, le serveur restant local. La version apporte aussi des sauvegardes automatiques hebdomadaires, des captures d'écran dans le chat d'IA et une recherche d'historique de presse-papiers plus rapide. À noter dans le même mouvement : <strong>Alfred 6</strong> introduit une bibliothèque d'interfaces pour construire des assistants interactifs dans ses propres flux de travail, avec intégration facultative de modèles de langage. Les deux sont commerciaux, en version gratuite limitée.<br />
-Raycast : https://alternativeto.net/news/2026/11/raycast-2-13-adds-local-mcp-server-and-automatic-backups/ — Alfred : https://alternativeto.net/news/2026/11/alfred-6-adds-native-workflow-interfaces-and-query-history/</p>
-<p><strong>Organic Maps</strong> — application de navigation hors ligne, libre, qui ajoute le relief en trois dimensions, les profondeurs marines, les courbes de niveau chiffrées en mètres et en pieds, l'import de fichiers KML, KMZ et GeoJSON affichés en zones colorées, et un routage revu. Utile sur le terrain, notamment pour préparer ou relire une sortie géologique : on y charge ses propres zones et tracés sans dépendre d'un service en ligne. Code sous Apache-2.0 (fichier de licence du dépôt ; GitHub ne reconnaît pas automatiquement le fichier, et les données cartographiques sont sous ODbL), plateformes Android et iOS.<br />
-Article : https://alternativeto.net/news/2026/11/organic-maps-rolls-out-3d-terrain-ocean-depths-imported-areas-improved-routing-and-more/ — projet : https://github.com/organicmaps/organicmaps</p>
-<p><strong>Zulip 13</strong> — serveur de discussion d'équipe auto-hébergeable, dont la version 13 ajoute les conversations liées (on voit quels sujets un fil cite et quels fils le citent), un bouton pour sauter à la conversation non lue suivante, la recherche par sujet dans un salon ou dans tous les salons abonnés grâce au préfixe <code>topic:</code>, et un opérateur <code>date:</code> dans la recherche de messages. Licence Apache-2.0 (vérifiée sur l'API GitHub). Intérêt pour un lycée ou un club : une discussion thématique qui reste lisible des mois après, là où un fil de messagerie instantanée devient illisible.<br />
-Article : https://alternativeto.net/news/2026/11/zulip-13-adds-linked-conversations-and-expanded-search-tools/ — projet : https://github.com/zulip/zulip</p>
-<p><strong>Jami</strong> — messagerie décentralisée (les échanges passent de pair à pair, sans serveur central), qui publie la deuxième prévisualisation de son client web : conversations de groupe, messages vocaux et vidéo, raccourcis de mise en forme et aperçu Markdown. Licence GPL-3.0 (vérifiée sur l'API GitHub pour le démon et le client, qui sont deux dépôts distincts).<br />
-Article : https://alternativeto.net/news/2026/11/jami-rolls-out-second-web-preview-with-groups-voice-video-messages-and-smarter-chat-tools/ — projet : https://github.com/savoirfairelinux/jami-daemon</p>
-<p><strong>Nabaztag / Naboot</strong> — le lapin connecté de 2006, éteint avec ses serveurs en 2011, est remis en service par une développeuse devenue administratrice système : nouveau micrologiciel, émulateur, station de programmation, add-on pour Home Assistant et un service baptisé « Le Terrier », le tout monté avec l'aide d'un assistant de codage. Le récit détaille comment elle a travaillé avec l'IA, le bug qu'elle a mis cinq mois à cerner et l'état des projets en cours. Instructif même sans Nabaztag : c'est un cas complet de réhabilitation d'un objet connecté orphelin, du micrologiciel à l'intégration domotique.<br />
-Article : https://linuxfr.org/news/un-nabaztag-une-medecin-et-une-ia-histoire-d-une-resurrection</p>
-<p><strong>ToolJet</strong> — plateforme libre de construction d'applications métier internes, auto-hébergeable, présentée cette semaine sur Product Hunt sous l'angle « applications générées par IA qui passent l'audit de sécurité ». Licence AGPL-3.0 (vérifiée sur l'API GitHub), 41 283 étoiles. À considérer seulement si vous avez besoin de fabriquer une petite interface sur une base de données ; pour vos cours, une page statique ou un script fait souvent mieux.<br />
-Article : https://www.producthunt.com/products/tooljet — projet : https://github.com/ToolJet/ToolJet</p>
-<h2>Intelligence artificielle locale</h2>
-<p><strong>La dictée vocale hors ligne devient une catégorie à part entière sous Linux.</strong> Le principe est le même partout : un premier modèle détecte la parole et coupe les silences (détection d'activité vocale, souvent Silero VAD), un modèle de reconnaissance transcrit localement (Whisper, Parakeet, FunASR, Vosk), et le texte est saisi dans la fenêtre active. Un modèle de langage local peut nettoyer ensuite la ponctuation, au prix de mémoire supplémentaire et de latence. Les outils cités : <strong>Speech Note</strong> (MPL-2.0, vérifiée sur l'API GitHub), qui réunit dictée, lecture à voix haute et traduction avec plusieurs moteurs au choix ; <strong>Myna</strong> de Canonical (AGPL-3.0-or-later, vérifiée sur l'API GitHub), encore en développement actif, avec modèles empaquetés en snaps sous Ubuntu ; <strong>TuxTalk</strong> (MIT), dictée à touche pressée, très large choix de bureaux ; <strong>Vocalinux</strong> (AGPL-3.0), avec commandes vocales de correction et une quinzaine de modes d'installation ; <strong>WhisPaste 1.5</strong> (MIT), qui transcrit aussi des fichiers audio et vidéo et chiffre son historique ; et <strong>Koe</strong> (MIT, en Rust), qui fait passer la transcription par Ollama pour la mise en forme finale. Conseil de l'auteur, à garder en tête : sur un portable sans carte graphique, mieux vaut un petit modèle dédié à l'anglais qu'un modèle multilingue de même taille, plus lent et souvent moins précis.<br />
-Article : https://feed.itsfoss.com/link/24361/17528980/voice-typing-tools-linux — brève : https://feed.itsfoss.com/link/24361/17527229/local-ai-weekly-10</p>
-<p><strong>Proton Lumo (application de bureau)</strong> — l'assistant de Proton, jusqu'ici cantonné au web et aux mobiles, gagne une application de bureau multiplateforme. La coquille est une application Tauri enveloppant l'interface web, publiée sous GPL-3.0 sur GitHub, complétée par des connecteurs qui donnent accès à vos fichiers et à votre interpréteur de commandes, ainsi qu'à Google Drive et à d'autres services. La promesse de confidentialité tient à la politique du fournisseur, pas à l'exécution en local : le modèle reste distant.<br />
-Article : https://feed.itsfoss.com/link/24361/17527120/proton-lumo-desktop</p>
-<p><strong>Unsloth Desktop et le NPU des Ryzen AI</strong> — AMD et Unsloth annoncent l'inférence locale sur le NPU pour Unsloth Desktop, à commencer par les NPU Ryzen AI de génération XDNA 2 et suivantes. C'est un pas de plus vers l'exécution locale sur un portable sans carte graphique dédiée : le traitement de l'unité neuronale libère le processeur et la mémoire graphique, et fonctionne aussi sous Linux.<br />
-Brève : https://www.phoronix.com/news/Unsloth-Desktop-Ryzen-AI-NPU</p>
-<p><strong>Obsidian avec IA locale et distante</strong> — retour d'expérience sur un système hybride : les notes privées restent sur la machine et passent par un modèle local, les documents de travail où la vitesse et la connaissance générale comptent partent vers un service en ligne, avec un coffre distinct par usage. L'auteur insiste sur un point utile : le modèle local exige une carte graphique correcte pour être utilisable sans attendre.<br />
-Article : https://feed.itsfoss.com/link/24361/17537415/obsidian-hybrid-ai-system</p>
-<h2>Méthodes et bonnes pratiques</h2>
-<p><strong>Un tunnel SSH local pour joindre un service sans l'exposer.</strong> Le procédé vaut pour bien plus que le web : un service qui écoute seulement sur la boucle locale du serveur (une base de données, par exemple) reste joignable depuis votre poste par un simple transfert de port, <code>ssh -N -L 5433:localhost:5432 user@serveur</code>, puis en pointant le client habituel sur le port local — aucun port n'est ouvert vers l'extérieur.<br />
-Article : https://blog.zarisse.fr/Billets2Blog/VracsLinux/ssh-forwarding/</p>
-<p><strong>Rouvrir une session tmux après une mise à jour.</strong> Sur une machine très stable, le binaire tmux peut avoir été mis à jour alors que le serveur qui porte la session tourne toujours avec l'ancienne version, d'où le message « server version is too old for client ». L'astuce consiste à récupérer le binaire d'origine dans <code>/proc/&lt;pid&gt;/exe</code> du processus encore vivant, puis à relancer le client en le pointant dessus, avec les bibliothèques d'origine ; l'article détaille la méthode et ses limites.<br />
-Article : https://lord.re/fast-posts/87-se-connecter-à-un-vieux-tmux/</p>
-<p><strong>GRUB et RAID sous Red Hat : l'erreur qui empêche le démarrage.</strong> Retour d'expérience de Microlinux, qui a rendu deux machines non amorçables en intégrant la gestion de GRUB à ses playbooks Ansible sans tenir compte de la configuration particulière des grappes RAID sous Red Hat : le chargeur d'amorçage doit être traité disque par disque, sinon la seconde moitié du miroir ne démarre pas. Le billet décrit la récupération complète — système de secours, assemblage des grappes, montage, <code>chroot</code>, récupération des UUID, reconfiguration de GRUB — et les précautions à prendre la prochaine fois.<br />
-Article : https://www.microlinux.fr/blog/grub-raid-rhel/</p>
-<p><strong>L'usine à vulnérabilités : planifier, auditer, contre-expertiser.</strong> Deuxième volet d'une série sur la recherche automatisée de vulnérabilités : l'auteur constate que ses rapports étaient rarement rejetés parce que le défaut n'existait pas, mais parce qu'ils étaient des doublons ou mal argumentés, puis décrit l'usine qu'il a montée pour y répondre — des agents aux rôles distincts (R0 planifie, R1 audite, R2 contre-expertise) et une base qui mémorise chaque piste, y compris celles écartées et la raison de leur rejet. Le tri, et non la détection, est la partie réellement rentable.<br />
-Article : https://blog.zwindler.fr/2026/11/12/usine-agentique-a-findings/</p>
-<p><strong>Ce que 6 000 € de crédits d'IA ont produit en sept jours.</strong> Retour d'expérience chiffré : environ 6 000 € de crédits consommés sur Azure Foundry avec Claude Opus 5.5, six chantiers menés en parallèle, soit environ douze mois de travail d'ingénieur selon les estimations annoncées, sans incident. La méthode repose sur des agents simultanés plutôt que successifs, un effort de raisonnement réglé selon l'enjeu (élevé pour les audits et les choix d'architecture, moyen pour le mécanique) et des sous-agents moins coûteux pour la relecture. Chiffres déclarés par l'auteur, non vérifiables.<br />
-Article : https://blog.hoppr.tech/blogs/2026-11-09-ce-que-6-000-de-credits-ia-ont-produit-en-7-jours</p>
-<p><strong>Un portable Linux qui ne se met plus en veille ?</strong> Le plus souvent rien n'est cassé : un programme a demandé à systemd de retarder la mise en veille, par un verrou d'inhibition. Pour lister ces verrous sans être administrateur, <code>systemd-inhibit --list</code> ; on lit ensuite ce que chacun bloque, on distingue le verrou qui empêche la veille de celui qui ne fait que la retarder, et on ferme le programme qui le détient. Toutes les commandes valent pour n'importe quelle distribution utilisant systemd.<br />
-Article : https://feed.itsfoss.com/link/24361/17537621/linux-laptop-suspend-inhibitor-lock</p>
-<p><strong>Performance de la table de routage Linux jusqu'au noyau 7.3.</strong> Vincent Bernat met à jour dix ans de mesures sur la recherche dans les tables de routage IPv4 et IPv6, avec quatre scénarios allant de 40 000 à 260 000 préfixes, et désigne les responsables des régressions successives, mitigations contre les failles matérielles comprises. Article de fond pour qui administre du routage ou s'intéresse aux compromis performance/sécurité du noyau.<br />
-Article : https://vincent.bernat.ch/fr/blog/2026-linux-performance-ipv4-ipv6-table-routage</p>
-<p><strong>Btrfs veut encadrer les contributions assistées par IA.</strong> Face à l'afflux de correctifs produits par des modèles de langage et par des débutants « sans bon sens », les développeurs de Btrfs envisagent de nouvelles règles pour les envois de correctifs dans Linux. Instructif sur la manière dont un projet mûr décide du coût de relecture qu'il accepte de payer.<br />
-Article : https://www.phoronix.com/news/Btrfs-LLM-Newbies-Guidelines</p>
-<h2>Mises à jour et sécurité</h2>
-<p><strong>nginx : dix vulnérabilités, dont cinq permettant l'exécution de code.</strong> Les correctifs sont dans 1.30.7 (branche stable) et 1.31.9 (branche principale). F5 note les cinq plus graves à 9,2 en CVSS 4.0 ; deux concernent HTTP/2, dont une erreur de gestion de mémoire dans le contrôle de flux présente depuis nginx 1.9.5. Beaucoup ne s'appliquent que si la fonction visée est active : la première chose à faire, si vous hébergez un site, est de rapprocher les avis de votre configuration avant de mettre à jour.<br />
-Article : https://feed.itsfoss.com/link/24361/17529152/nginx-code-execution-flaws — changements : https://nginx.org/en/CHANGES</p>
-<p><strong>GPGME : faille critique dans la bibliothèque.</strong> Werner Koch a annoncé un « bug de sécurité critique » touchant GPGME (GnuPG Made Easy), qui sert à peu près partout : la plupart des clients de courrier et de messagerie instantanée XMPP, Flatpak, Samba et d'autres logiciels. Il faut mettre à jour le paquet dès que votre distribution le propose, et vérifier du même coup votre client de courrier.<br />
-Brève : https://www.phoronix.com/news/GnuPG-GPGME-Critical</p>
-<p><strong>Java4Shell : exécution de code à distance dans OpenJDK.</strong> Une vulnérabilité critique de la famille des « shell » laisse de nombreuses applications Java exposées à l'exécution de code à distance ; elle a occupé la semaine et revient dans plusieurs récapitulatifs, dont la revue hebdomadaire de HappyToDev. Si vous maintenez une application Java exposée, mettez à jour votre machine virtuelle.<br />
-Articles : https://www.phoronix.com/news/Java4Shell-Vulnerability — https://quoi-de-neuf-les-devs.happyto.dev/p/java4shell-microsoft-fugaku-qdnld-192</p>
-<p><strong>PostgreSQL Anonymizer 3.3</strong> — mise à jour de sécurité majeure de l'extension d'anonymisation : douze vulnérabilités critiques corrigées, dont certaines permettaient à un utilisateur d'obtenir les privilèges de superutilisateur ou à un rôle masqué de lire des données personnelles qu'il ne devait pas voir. À passer sans attendre si vous utilisez l'extension pour préparer des jeux de données de test.<br />
-Article : https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html</p>
-<p><strong>Debian 13.8 et PostgreSQL 19</strong> — une image d'installation rafraîchie pour Debian 13 « Trixie », avec plus de 150 correctifs de sécurité et de nombreuses corrections de bogues ; et une nouvelle version majeure de PostgreSQL, centrée sur l'entretien des tables et la performance. Dans la même veine serveur, <strong>Valkey 9.2</strong> (le dérivé libre de Redis) ajoute des instantanés sans <code>fork</code>, une réplication compressée (52 % de bande passante en moins selon le repère interne du projet) et des ensembles triés moins gourmands en mémoire.<br />
-Debian : https://www.phoronix.com/news/Debian-13.8-Released — PostgreSQL : https://www.phoronix.com/news/PostgreSQL-19-Released — Valkey : https://alternativeto.net/news/2026/11/valkey-9-2-adds-forkless-snapshots-and-compressed-replication/</p>
-<p><strong>APT retire des fonctions anciennes à cause de l'IA.</strong> Après la faille par interposition qui a touché le code de téléchargement d'APT, et devant les découvertes de vulnérabilités accélérées par les modèles de langage, Debian désactive et retire certaines fonctions anciennes et complexes qui rendent le programme plus facile à attaquer. À suivre si vos scripts s'appuient sur des options peu courantes d'APT.<br />
-Article : https://www.phoronix.com/news/Debian-APT-Removing-Features</p>
-<p><strong>Linux 7.5 pourra bloquer l'accès à /proc/kcore.</strong> Un correctif en file d'attente permet de désactiver cet accès au démarrage, ce qui ferme une voie de lecture de la mémoire du noyau ; l'option restera active par défaut dans les noyaux qui la compilent. Mesure de durcissement à connaître si vous écrivez des règles de sécurité ou un profil d'accès.<br />
-Article : https://www.phoronix.com/news/Linux-7.5-Restrict-proc-kcore</p>
-<p><strong>Autres mises à jour de la semaine</strong> — FFmpeg 9.1 (interpolation d'images par flux optique NVIDIA, encodeur APV en Vulkan) ; Gawk 5.4.2, avec un gain de performance important ; Rust Coreutils 0.13, plus rapide et plus compatible ; Wine 11.22 (émulation AVX sur ARM64, randomisation de l'espace d'adressage, 34 corrections — la brève d'AlternativeTo annonce 11.22 dans son titre et 11.12 dans son texte, incohérence que je n'ai pas pu lever) ; Phosh 0.59 (captures d'écran, démarrage de sshd et indicateur d'usage de la caméra dans les réglages rapides) ; Ardour 9.10 (forme d'onde mise à jour en direct pendant l'édition des enveloppes) ; et Unity CLI 1.0, sorti de bêta avec un engagement de compatibilité des commandes et une sortie JSON stable pour les scripts.<br />
-FFmpeg : https://www.phoronix.com/news/FFmpeg-9.1-Released — Gawk : https://www.phoronix.com/news/GNU-Gawk-5.4.2 — Coreutils : https://www.phoronix.com/news/Rust-Coreutils-0.13 — Wine : https://alternativeto.net/news/2026/11/wine-11-12-brings-x86-avx-emulation-on-arm64-address-space-randomization-and-34-bug-fixes/ — Phosh : https://alternativeto.net/news/2026/11/phosh-0-59-adds-screenshot-ssh-and-camera-controls/ — Ardour : https://alternativeto.net/news/2026/11/ardour-9-10-brings-live-audio-waveform-update-during-envelope-editing-and-midi-refinements/ — Unity CLI : https://alternativeto.net/news/2026/11/unity-cli-1-0-leaves-beta-with-stable-automation-tools/</p>
-<h2>Vie des projets et du logiciel libre</h2>
-<p><strong>Framasoft annonce « Réensauvager Internet ».</strong> L'association se donne trois ans pour proposer des outils simples, fondés sur des standards ouverts, et pour ouvrir des espaces collectifs, en sortant d'une logique de recentralisation : les services annoncés valent comme portes d'entrée et démonstrateurs, que chacun — à commencer par les CHATONS — peut héberger à son tour. Sont prévus pour la fin 2026 une nouvelle plateforme PeerTube, une application mobile Framasoft et un site d'accompagnement à la « dégooglisation ». Le manifeste complet est en ligne.<br />
-Article : https://framablog.org/2026/11/17/face-au-web-artificialise-framasoft-veut-reensauvager-internet/ — manifeste : https://framasoft.org/fr/reensauvager-internet/manifeste/</p>
-<p><strong>Manjaro devient une association indépendante.</strong> Les développeurs ont enregistré en Allemagne une association à but non lucratif, Manjaro Project e.V., dotée de sept membres fondateurs et juridiquement distincte de la société commerciale Manjaro GmbH &amp; Co. KG. C'est l'aboutissement du manifeste de mars dernier, qui demandait une propriété partagée entre membres et des votes ouverts sur les décisions importantes. L'annonce a été faite sur le forum du projet, pas sur le site principal.<br />
-Article : https://feed.itsfoss.com/link/24361/17525382/manjaro-nonprofit-registered</p>
-<p><strong>Canonical livrera des correctifs de sécurité écrits par IA.</strong> Devant l'afflux de vulnérabilités trouvées plus vite qu'elles ne se corrigent — Canonical compte environ 3 100 correctifs par trimestre à la mi-2026 contre 1 400 début 2025, et presque autant de CVE en octobre 2026 que sur toute l'année 2025 — l'entreprise présente « Surge », un système multi-agents qui trie les avis et écrit les correctifs à rétroporter. Les correctifs arrivent d'abord dans un dépôt facultatif (« Edge archive ») et ne rejoignent les mises à jour normales qu'après des tests humains. Position à connaître, et à discuter : c'est un pari sur l'industrialisation du correctif.<br />
-Article : https://feed.itsfoss.com/link/24361/17526502/canonical-surge-announcemengt</p>
-<p><strong>Panne Microsoft : la démonstration par l'incident.</strong> Une panne d'Exchange Online débutée le 12 novembre a privé d'échanges un très grand nombre de professionnels pendant plus d'une journée, touchant des administrations et des services publics dans 74 pays et territoires ; Microsoft parle d'un défaut latent révélé par une modification réseau, et non d'une attaque. Le billet rappelle au passage les précédents et les questions que pose la concentration d'un outil vital chez un seul fournisseur — argument que l'on retrouve aussi dans la revue de presse de l'April.<br />
-Article : https://feed.itsfoss.com/link/24361/17525729/microsofts-outage-reaction — revue de presse April : https://linuxfr.org/news/revue-de-presse-de-l-april-pour-la-semaine-46-de-l-annee-2026</p>
-<p><strong>L'IA met les politiques des projets à l'épreuve.</strong> Libreboot, dérivé de Coreboot, a renoncé en un mois à la politique qui interdisait les contributions assistées par IA et accepte désormais les envois produits ainsi. Phoronix rapporte par ailleurs l'ajout d'une étape d'évaluation des performances au robot de revue Sashiko, développé par Google pour relire les correctifs du noyau. Le débat dépasse ces deux cas : les politiques anti-IA des projets se durcissent ou se relâchent au fil des mois, sans consensus.<br />
-Libreboot : https://www.phoronix.com/news/Libreboot-Drops-AI-Policy — Sashiko : https://www.phoronix.com/news/Sashiko-AI-Performance-Review</p>
-<p><strong>Matériel et systèmes alternatifs.</strong> Purism finance en participation le Librem 5 v2, téléphone Linux à huit cœurs RISC-V annoncé à 1 599 dollars, avec les interrupteurs physiques qui coupent matériellement modem, Wi-Fi et micro-caméras. Flipper Devices lance en participation le Flipper One, ordinateur Linux de poche à 399 dollars (Rockchip RK3576, 8 Go de mémoire, 64 Go de stockage, Wi-Fi 6E, Ethernet, modules M.2), livraison annoncée pour juillet 2027. Côté distributions, Owl OS sort en 1.0 comme alternative à Kali Linux — avec une mise en garde de l'auteur : ce n'est pas un logiciel libre et ce n'est pas fait pour un usage quotidien, certaines affirmations du projet n'ayant pas été vérifiées. On retrouve enfin les actualités de Haiku (bêta 6, travail sur la bêta 7) et de LuneOS, la distribution GNU/Linux pour mobiles, qui accélère après des années irrégulières.<br />
-Purism : https://feed.itsfoss.com/link/24361/17536714/purism-5-v2-crowdfunding — Flipper One : https://feed.itsfoss.com/link/24361/17526425/flipper-one-crowdfunding — Owl OS : https://feed.itsfoss.com/link/24361/17536916/owl-os-launch — Haiku : https://linuxfr.org/news/nouvelles-de-haiku-automne-2026 — LuneOS : https://linuxfr.org/news/luneos-en-2026</p>
-<p><strong>La souveraineté numérique vendue comme service.</strong> Soverin, fournisseur de courrier néerlandais soucieux de la vie privée, lance une suite qui assemble trois briques européennes — son propre service de courrier, Nextcloud pour la collaboration et Euro-Office pour les documents — installées sur du matériel européen et vendues avec support. Même logique que les offres de Nextcloud Office de bureau : la difficulté, quand on quitte Microsoft 365 ou Google Workspace, n'est pas le logiciel mais la migration et l'accompagnement des utilisateurs.<br />
-Article : https://feed.itsfoss.com/link/24361/17526903/soverin-suite-sovereignty-as-a-service</p>
-<h2>Volume</h2>
-<p>873 entrées examinées — les 872 publiées entre le 16 et le 22 novembre 2026 dans les dix journaux, plus le billet « Liens intéressants » du Journal du hacker (semaine 46, publié le 15 novembre et laissé sans traitement la semaine dernière). 42 entrées sont retenues, 831 sont écartées ; certaines entrées retenues regroupent plusieurs mises à jour. Motifs dominants du rejet : 560 montées de version d'applications macOS relevées dans Homebrew (un seul nouveau paquet, smartgit@prerelease), 149 lancements commerciaux de Product Hunt presque tous sans substance libre, et 70 dépêches de Phoronix sur le noyau et le matériel sans portée pratique. Les autres entrées écartées sont les revues de presse et récapitulatifs récurrents (April, Khrys'presso, Quoi de neuf les devs), les brèves d'humour et les billets personnels sans méthode transposable. La collecte n'a signalé aucune erreur sur les dix journaux cette semaine.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille applications et logiciel libre — semaine du lundi 16 novembre au dimanche 22 novembre 2026</h1>
-<h2>En bref</h2>
-<ul>
-<li>Semaine chargée en sécurité : dix failles corrigées dans nginx (dont cinq permettant d'exécuter du code), une faille critique dans la bibliothèque GPGME qui touche la plupart des clients de courrier, Java4Shell côté OpenJDK et douze vulnérabilités dans PostgreSQL Anonymizer ; Debian 13.8 et PostgreSQL 19 sont sortis dans la foulée.</li>
-<li>Deux outils à retenir pour la ligne de commande et les serveurs : Hurl remplace les enchaînements de curl et jq par un fichier texte lisible et vérifié, et Semaphore piloté par Teleport patche des machines sans ouvrir de port SSH.</li>
-<li>La dictée vocale locale se banalise sous Linux (Speech Note, Myna, TuxTalk, Vocalinux, WhisPaste, Koe), et Unsloth Desktop sait désormais exploiter le NPU des processeurs Ryzen AI, y compris sous Linux.</li>
-</ul>
-<h2>Outils recommandés cette semaine</h2>
-<p><strong>Hurl</strong> — outil en ligne de commande qui lit un fichier texte décrivant une suite de requêtes HTTP et vérifie chaque réponse avant de passer à la suivante. Un jeton capturé à la première requête devient une variable disponible pour les suivantes, ce qui remplace le bricolage habituel « un curl pour se connecter, jq pour extraire le jeton, un second curl pour l'appel protégé ». Chaque requête porte ses assertions (code attendu, contenu), les valeurs sensibles s'écrivent <code>{{password}}</code> et sont masquées dans les journaux, et l'échec indique la ligne fautive avec un code de sortie non nul — utilisable tel quel depuis un script, un cron ou une intégration continue. Hurl s'appuie sur libcurl, donc proxys, certificats et HTTP/2 se comportent comme avec curl. Licence Apache-2.0 (vérifiée sur l'API GitHub le 23 novembre 2026), écrit en Rust, maintenu par Orange, paquets pour Linux, macOS, Windows et WSL (Homebrew, winget, .deb, .rpm).<br />
-Article : https://www.avonture.be/blog/hurl — projet : https://github.com/Orange-OpenSource/hurl</p>
-<p><strong>OxiCloud</strong> — serveur de fichiers, de calendrier et de contacts auto-hébergé, écrit en Rust, présenté comme une alternative légère à un Nextcloud complet. Intérêt pratique si vous voulez un espace de partage pour vos documents sans embarquer la pile PHP d'un Nextcloud : un seul binaire, du stockage webdav et une interface web, avec une application de bureau séparée. Licence MIT (vérifiée sur l'API GitHub), 3 739 étoiles, code activement maintenu (dernier envoi le 23 novembre 2026). Réserve : je n'ai pas pu lire l'article qui le présente, le site fredix.xyz étant protégé par le dispositif anti-robots Anubis ; les caractéristiques viennent donc du dépôt du projet et non du billet.<br />
-Article (inaccessible sans JavaScript) : https://www.fredix.xyz/2026/11/oxicloud/ — projet : https://github.com/AtalayaLabs/OxiCloud</p>
-<p><strong>Semaphore UI (avec Teleport)</strong> — interface web et API pour lancer des playbooks Ansible, combinée ici à Teleport pour atteindre les machines sans que le port SSH soit exposé sur Internet. L'intérêt est double : les opérations de maintenance (mises à jour, correctifs) s'exécutent depuis une interface unique et traçable, et la surface d'attaque des serveurs se réduit puisque le port 22 n'est plus ouvert publiquement. Licence MIT (vérifiée sur l'API GitHub), écrit en Go, 14 444 étoiles, s'utilise aussi pour Terraform et PowerShell. Le billet détaille la mise en place ; je n'en ai lu que le titre et le chapô, le site aukfood.fr affichant un bandeau de consentement aux témoins de connexion.<br />
-Article : https://www.aukfood.fr/semaphore-ansible-teleport/ — projet : https://github.com/semaphoreui/semaphore</p>
-<p><strong>Chaque Euro</strong> — projet libre qui rend les finances publiques françaises vérifiables : le site rapproche les données officielles (comptes locaux, marchés publics, budget de l'État, subventions aux associations, votes, lobbying) pour répondre à des questions concrètes, par exemple quels marchés une organisation a remportés ou comment les dépenses d'une commune se comparent à celles de communes comparables. La mécanique est instructive en soi : un pipeline Python et DuckDB, des transformations écrites en SQL, un site Astro et un serveur MCP en lecture seule, les sources étant conservées avec leur date et leur empreinte SHA-256 et les tables calculées téléchargeables en CSV et Parquet. Licence AGPL-3.0.<br />
-Article : https://linuxfr.org/news/chaque-euro-rendre-les-finances-publiques-verifiables-avec-duckdb</p>
-<p><strong>Kwi</strong> — nouvel émulateur de terminal pour KDE, construite sur la bibliothèque de Ghostty et annoncée comme nettement plus rapide que Konsole. Sa première version est sortie cette semaine ; elle s'adresse d'abord aux utilisateurs de Plasma, mais le projet vise aussi d'autres bureaux. Licence non précisée dans la brève consultée (les composants KDE sont habituellement sous GPL), écrit en C++.<br />
-Brève : https://www.phoronix.com/news/Kwi-Terminal-First-Release</p>
-<p><strong>Cryptomator 3.0 (Android)</strong> — la version Android apporte enfin ce que les utilisateurs réclamaient : les coffres chiffrés apparaissent directement dans l'application Fichiers et dans le sélecteur de fichiers du système. Concrètement, n'importe quelle application compatible (prise de notes, suite bureautique, lecteur PDF, retouche photo) peut ouvrir, enregistrer, renommer ou déplacer un fichier d'un coffre sans passer par Cryptomator. Licence GPL-3.0 (vérifiée sur l'API GitHub, dépôt cryptomator/android).<br />
-Article : https://alternativeto.net/news/2026/11/cryptomator-3-0-brings-encrypted-vaults-directly-into-android-s-files-app-and-file-picker/</p>
-<p><strong>CachyOS Package Installer 2.0</strong> — l'installateur de paquets maison de CachyOS (distribution dérivée d'Arch) gagne une interface entièrement revue et prend en charge, depuis un seul écran, les paquets officiels, AUR, Flatpak et AppImage. Utile si vous testez CachyOS ou une Arch sur un poste : cela évite de jongler entre pacman, un assistant AUR et la ligne de commande pour installer une application. Licence non précisée dans la brève.<br />
-Brève : https://www.phoronix.com/news/CachyOS-Package-Installer-2.0</p>
-<p><strong>gitea-cli 2.0.0</strong> — client en ligne de commande pour Gitea, dont la version majeure réduit fortement le volume produit par les journaux d'exécution d'Actions en échec : environ 46 800 jetons ramenés à 11 600, en limitant la sortie et en imposant la liste des champs demandés. Autrement dit, la même commande coûte quatre fois moins cher en jetons quand on la fait lire par un agent. La version aligne aussi ses options sur celles de <code>gh</code> et rend la sortie JSON prévisible (valeurs absentes à null, horodatages RFC 3339 en UTC). Licence non vérifiée : je n'ai pas identifié le dépôt correspondant avec certitude.<br />
-Article : https://alternativeto.net/news/2026/11/gitea-cli-2-0-0-cuts-ai-agent-log-tokens-by-75-percent/</p>
-<p><strong>Nextcloud Office (application de bureau)</strong> — les éditeurs de documents de Nextcloud existaient en ligne ; ils arrivent en application de bureau, fondée sur le code DesktopEditors d'Euro-Office, le consortium européen qui réunit notamment Nextcloud, IONOS, Proton, Open-Xchange et Tuta. Quatre éditeurs (texte, tableur, présentation, PDF) qui lisent les formats Microsoft comme OpenDocument, avec le choix de garder les fichiers en local ou de les synchroniser. Réserve : Euro-Office est lui-même un dérivé d'ONLYOFFICE, et la licence exacte de cette application de bureau n'est pas donnée dans l'article.<br />
-Article : https://feed.itsfoss.com/link/24361/17526232/nextcloud-office-desktop-launched</p>
-<p><strong>Raycast 2.13 (macOS)</strong> — l'utilitaire de lancement ajoute un serveur MCP local, c'est-à-dire de quoi laisser des agents (Claude, Codex, Cursor) utiliser certaines extensions et données de la machine. Vous choisissez celles que vous partagez, le serveur restant local. La version apporte aussi des sauvegardes automatiques hebdomadaires, des captures d'écran dans le chat d'IA et une recherche d'historique de presse-papiers plus rapide. À noter dans le même mouvement : <strong>Alfred 6</strong> introduit une bibliothèque d'interfaces pour construire des assistants interactifs dans ses propres flux de travail, avec intégration facultative de modèles de langage. Les deux sont commerciaux, en version gratuite limitée.<br />
-Raycast : https://alternativeto.net/news/2026/11/raycast-2-13-adds-local-mcp-server-and-automatic-backups/ — Alfred : https://alternativeto.net/news/2026/11/alfred-6-adds-native-workflow-interfaces-and-query-history/</p>
-<p><strong>Organic Maps</strong> — application de navigation hors ligne, libre, qui ajoute le relief en trois dimensions, les profondeurs marines, les courbes de niveau chiffrées en mètres et en pieds, l'import de fichiers KML, KMZ et GeoJSON affichés en zones colorées, et un routage revu. Utile sur le terrain, notamment pour préparer ou relire une sortie géologique : on y charge ses propres zones et tracés sans dépendre d'un service en ligne. Code sous Apache-2.0 (fichier de licence du dépôt ; GitHub ne reconnaît pas automatiquement le fichier, et les données cartographiques sont sous ODbL), plateformes Android et iOS.<br />
-Article : https://alternativeto.net/news/2026/11/organic-maps-rolls-out-3d-terrain-ocean-depths-imported-areas-improved-routing-and-more/ — projet : https://github.com/organicmaps/organicmaps</p>
-<p><strong>Zulip 13</strong> — serveur de discussion d'équipe auto-hébergeable, dont la version 13 ajoute les conversations liées (on voit quels sujets un fil cite et quels fils le citent), un bouton pour sauter à la conversation non lue suivante, la recherche par sujet dans un salon ou dans tous les salons abonnés grâce au préfixe <code>topic:</code>, et un opérateur <code>date:</code> dans la recherche de messages. Licence Apache-2.0 (vérifiée sur l'API GitHub). Intérêt pour un lycée ou un club : une discussion thématique qui reste lisible des mois après, là où un fil de messagerie instantanée devient illisible.<br />
-Article : https://alternativeto.net/news/2026/11/zulip-13-adds-linked-conversations-and-expanded-search-tools/ — projet : https://github.com/zulip/zulip</p>
-<p><strong>Jami</strong> — messagerie décentralisée (les échanges passent de pair à pair, sans serveur central), qui publie la deuxième prévisualisation de son client web : conversations de groupe, messages vocaux et vidéo, raccourcis de mise en forme et aperçu Markdown. Licence GPL-3.0 (vérifiée sur l'API GitHub pour le démon et le client, qui sont deux dépôts distincts).<br />
-Article : https://alternativeto.net/news/2026/11/jami-rolls-out-second-web-preview-with-groups-voice-video-messages-and-smarter-chat-tools/ — projet : https://github.com/savoirfairelinux/jami-daemon</p>
-<p><strong>Nabaztag / Naboot</strong> — le lapin connecté de 2006, éteint avec ses serveurs en 2011, est remis en service par une développeuse devenue administratrice système : nouveau micrologiciel, émulateur, station de programmation, add-on pour Home Assistant et un service baptisé « Le Terrier », le tout monté avec l'aide d'un assistant de codage. Le récit détaille comment elle a travaillé avec l'IA, le bug qu'elle a mis cinq mois à cerner et l'état des projets en cours. Instructif même sans Nabaztag : c'est un cas complet de réhabilitation d'un objet connecté orphelin, du micrologiciel à l'intégration domotique.<br />
-Article : https://linuxfr.org/news/un-nabaztag-une-medecin-et-une-ia-histoire-d-une-resurrection</p>
-<p><strong>ToolJet</strong> — plateforme libre de construction d'applications métier internes, auto-hébergeable, présentée cette semaine sur Product Hunt sous l'angle « applications générées par IA qui passent l'audit de sécurité ». Licence AGPL-3.0 (vérifiée sur l'API GitHub), 41 283 étoiles. À considérer seulement si vous avez besoin de fabriquer une petite interface sur une base de données ; pour vos cours, une page statique ou un script fait souvent mieux.<br />
-Article : https://www.producthunt.com/products/tooljet — projet : https://github.com/ToolJet/ToolJet</p>
-<h2>Intelligence artificielle locale</h2>
-<p><strong>La dictée vocale hors ligne devient une catégorie à part entière sous Linux.</strong> Le principe est le même partout : un premier modèle détecte la parole et coupe les silences (détection d'activité vocale, souvent Silero VAD), un modèle de reconnaissance transcrit localement (Whisper, Parakeet, FunASR, Vosk), et le texte est saisi dans la fenêtre active. Un modèle de langage local peut nettoyer ensuite la ponctuation, au prix de mémoire supplémentaire et de latence. Les outils cités : <strong>Speech Note</strong> (MPL-2.0, vérifiée sur l'API GitHub), qui réunit dictée, lecture à voix haute et traduction avec plusieurs moteurs au choix ; <strong>Myna</strong> de Canonical (AGPL-3.0-or-later, vérifiée sur l'API GitHub), encore en développement actif, avec modèles empaquetés en snaps sous Ubuntu ; <strong>TuxTalk</strong> (MIT), dictée à touche pressée, très large choix de bureaux ; <strong>Vocalinux</strong> (AGPL-3.0), avec commandes vocales de correction et une quinzaine de modes d'installation ; <strong>WhisPaste 1.5</strong> (MIT), qui transcrit aussi des fichiers audio et vidéo et chiffre son historique ; et <strong>Koe</strong> (MIT, en Rust), qui fait passer la transcription par Ollama pour la mise en forme finale. Conseil de l'auteur, à garder en tête : sur un portable sans carte graphique, mieux vaut un petit modèle dédié à l'anglais qu'un modèle multilingue de même taille, plus lent et souvent moins précis.<br />
-Article : https://feed.itsfoss.com/link/24361/17528980/voice-typing-tools-linux — brève : https://feed.itsfoss.com/link/24361/17527229/local-ai-weekly-10</p>
-<p><strong>Proton Lumo (application de bureau)</strong> — l'assistant de Proton, jusqu'ici cantonné au web et aux mobiles, gagne une application de bureau multiplateforme. La coquille est une application Tauri enveloppant l'interface web, publiée sous GPL-3.0 sur GitHub, complétée par des connecteurs qui donnent accès à vos fichiers et à votre interpréteur de commandes, ainsi qu'à Google Drive et à d'autres services. La promesse de confidentialité tient à la politique du fournisseur, pas à l'exécution en local : le modèle reste distant.<br />
-Article : https://feed.itsfoss.com/link/24361/17527120/proton-lumo-desktop</p>
-<p><strong>Unsloth Desktop et le NPU des Ryzen AI</strong> — AMD et Unsloth annoncent l'inférence locale sur le NPU pour Unsloth Desktop, à commencer par les NPU Ryzen AI de génération XDNA 2 et suivantes. C'est un pas de plus vers l'exécution locale sur un portable sans carte graphique dédiée : le traitement de l'unité neuronale libère le processeur et la mémoire graphique, et fonctionne aussi sous Linux.<br />
-Brève : https://www.phoronix.com/news/Unsloth-Desktop-Ryzen-AI-NPU</p>
-<p><strong>Obsidian avec IA locale et distante</strong> — retour d'expérience sur un système hybride : les notes privées restent sur la machine et passent par un modèle local, les documents de travail où la vitesse et la connaissance générale comptent partent vers un service en ligne, avec un coffre distinct par usage. L'auteur insiste sur un point utile : le modèle local exige une carte graphique correcte pour être utilisable sans attendre.<br />
-Article : https://feed.itsfoss.com/link/24361/17537415/obsidian-hybrid-ai-system</p>
-<h2>Méthodes et bonnes pratiques</h2>
-<p><strong>Un tunnel SSH local pour joindre un service sans l'exposer.</strong> Le procédé vaut pour bien plus que le web : un service qui écoute seulement sur la boucle locale du serveur (une base de données, par exemple) reste joignable depuis votre poste par un simple transfert de port, <code>ssh -N -L 5433:localhost:5432 user@serveur</code>, puis en pointant le client habituel sur le port local — aucun port n'est ouvert vers l'extérieur.<br />
-Article : https://blog.zarisse.fr/Billets2Blog/VracsLinux/ssh-forwarding/</p>
-<p><strong>Rouvrir une session tmux après une mise à jour.</strong> Sur une machine très stable, le binaire tmux peut avoir été mis à jour alors que le serveur qui porte la session tourne toujours avec l'ancienne version, d'où le message « server version is too old for client ». L'astuce consiste à récupérer le binaire d'origine dans <code>/proc/&lt;pid&gt;/exe</code> du processus encore vivant, puis à relancer le client en le pointant dessus, avec les bibliothèques d'origine ; l'article détaille la méthode et ses limites.<br />
-Article : https://lord.re/fast-posts/87-se-connecter-à-un-vieux-tmux/</p>
-<p><strong>GRUB et RAID sous Red Hat : l'erreur qui empêche le démarrage.</strong> Retour d'expérience de Microlinux, qui a rendu deux machines non amorçables en intégrant la gestion de GRUB à ses playbooks Ansible sans tenir compte de la configuration particulière des grappes RAID sous Red Hat : le chargeur d'amorçage doit être traité disque par disque, sinon la seconde moitié du miroir ne démarre pas. Le billet décrit la récupération complète — système de secours, assemblage des grappes, montage, <code>chroot</code>, récupération des UUID, reconfiguration de GRUB — et les précautions à prendre la prochaine fois.<br />
-Article : https://www.microlinux.fr/blog/grub-raid-rhel/</p>
-<p><strong>L'usine à vulnérabilités : planifier, auditer, contre-expertiser.</strong> Deuxième volet d'une série sur la recherche automatisée de vulnérabilités : l'auteur constate que ses rapports étaient rarement rejetés parce que le défaut n'existait pas, mais parce qu'ils étaient des doublons ou mal argumentés, puis décrit l'usine qu'il a montée pour y répondre — des agents aux rôles distincts (R0 planifie, R1 audite, R2 contre-expertise) et une base qui mémorise chaque piste, y compris celles écartées et la raison de leur rejet. Le tri, et non la détection, est la partie réellement rentable.<br />
-Article : https://blog.zwindler.fr/2026/11/12/usine-agentique-a-findings/</p>
-<p><strong>Ce que 6 000 € de crédits d'IA ont produit en sept jours.</strong> Retour d'expérience chiffré : environ 6 000 € de crédits consommés sur Azure Foundry avec Claude Opus 5.5, six chantiers menés en parallèle, soit environ douze mois de travail d'ingénieur selon les estimations annoncées, sans incident. La méthode repose sur des agents simultanés plutôt que successifs, un effort de raisonnement réglé selon l'enjeu (élevé pour les audits et les choix d'architecture, moyen pour le mécanique) et des sous-agents moins coûteux pour la relecture. Chiffres déclarés par l'auteur, non vérifiables.<br />
-Article : https://blog.hoppr.tech/blogs/2026-11-09-ce-que-6-000-de-credits-ia-ont-produit-en-7-jours</p>
-<p><strong>Un portable Linux qui ne se met plus en veille ?</strong> Le plus souvent rien n'est cassé : un programme a demandé à systemd de retarder la mise en veille, par un verrou d'inhibition. Pour lister ces verrous sans être administrateur, <code>systemd-inhibit --list</code> ; on lit ensuite ce que chacun bloque, on distingue le verrou qui empêche la veille de celui qui ne fait que la retarder, et on ferme le programme qui le détient. Toutes les commandes valent pour n'importe quelle distribution utilisant systemd.<br />
-Article : https://feed.itsfoss.com/link/24361/17537621/linux-laptop-suspend-inhibitor-lock</p>
-<p><strong>Performance de la table de routage Linux jusqu'au noyau 7.3.</strong> Vincent Bernat met à jour dix ans de mesures sur la recherche dans les tables de routage IPv4 et IPv6, avec quatre scénarios allant de 40 000 à 260 000 préfixes, et désigne les responsables des régressions successives, mitigations contre les failles matérielles comprises. Article de fond pour qui administre du routage ou s'intéresse aux compromis performance/sécurité du noyau.<br />
-Article : https://vincent.bernat.ch/fr/blog/2026-linux-performance-ipv4-ipv6-table-routage</p>
-<p><strong>Btrfs veut encadrer les contributions assistées par IA.</strong> Face à l'afflux de correctifs produits par des modèles de langage et par des débutants « sans bon sens », les développeurs de Btrfs envisagent de nouvelles règles pour les envois de correctifs dans Linux. Instructif sur la manière dont un projet mûr décide du coût de relecture qu'il accepte de payer.<br />
-Article : https://www.phoronix.com/news/Btrfs-LLM-Newbies-Guidelines</p>
-<h2>Mises à jour et sécurité</h2>
-<p><strong>nginx : dix vulnérabilités, dont cinq permettant l'exécution de code.</strong> Les correctifs sont dans 1.30.7 (branche stable) et 1.31.9 (branche principale). F5 note les cinq plus graves à 9,2 en CVSS 4.0 ; deux concernent HTTP/2, dont une erreur de gestion de mémoire dans le contrôle de flux présente depuis nginx 1.9.5. Beaucoup ne s'appliquent que si la fonction visée est active : la première chose à faire, si vous hébergez un site, est de rapprocher les avis de votre configuration avant de mettre à jour.<br />
-Article : https://feed.itsfoss.com/link/24361/17529152/nginx-code-execution-flaws — changements : https://nginx.org/en/CHANGES</p>
-<p><strong>GPGME : faille critique dans la bibliothèque.</strong> Werner Koch a annoncé un « bug de sécurité critique » touchant GPGME (GnuPG Made Easy), qui sert à peu près partout : la plupart des clients de courrier et de messagerie instantanée XMPP, Flatpak, Samba et d'autres logiciels. Il faut mettre à jour le paquet dès que votre distribution le propose, et vérifier du même coup votre client de courrier.<br />
-Brève : https://www.phoronix.com/news/GnuPG-GPGME-Critical</p>
-<p><strong>Java4Shell : exécution de code à distance dans OpenJDK.</strong> Une vulnérabilité critique de la famille des « shell » laisse de nombreuses applications Java exposées à l'exécution de code à distance ; elle a occupé la semaine et revient dans plusieurs récapitulatifs, dont la revue hebdomadaire de HappyToDev. Si vous maintenez une application Java exposée, mettez à jour votre machine virtuelle.<br />
-Articles : https://www.phoronix.com/news/Java4Shell-Vulnerability — https://quoi-de-neuf-les-devs.happyto.dev/p/java4shell-microsoft-fugaku-qdnld-192</p>
-<p><strong>PostgreSQL Anonymizer 3.3</strong> — mise à jour de sécurité majeure de l'extension d'anonymisation : douze vulnérabilités critiques corrigées, dont certaines permettaient à un utilisateur d'obtenir les privilèges de superutilisateur ou à un rôle masqué de lire des données personnelles qu'il ne devait pas voir. À passer sans attendre si vous utilisez l'extension pour préparer des jeux de données de test.<br />
-Article : https://blog.dalibo.com/2026/11/16/postgresql_anonymizer_3.3.html</p>
-<p><strong>Debian 13.8 et PostgreSQL 19</strong> — une image d'installation rafraîchie pour Debian 13 « Trixie », avec plus de 150 correctifs de sécurité et de nombreuses corrections de bogues ; et une nouvelle version majeure de PostgreSQL, centrée sur l'entretien des tables et la performance. Dans la même veine serveur, <strong>Valkey 9.2</strong> (le dérivé libre de Redis) ajoute des instantanés sans <code>fork</code>, une réplication compressée (52 % de bande passante en moins selon le repère interne du projet) et des ensembles triés moins gourmands en mémoire.<br />
-Debian : https://www.phoronix.com/news/Debian-13.8-Released — PostgreSQL : https://www.phoronix.com/news/PostgreSQL-19-Released — Valkey : https://alternativeto.net/news/2026/11/valkey-9-2-adds-forkless-snapshots-and-compressed-replication/</p>
-<p><strong>APT retire des fonctions anciennes à cause de l'IA.</strong> Après la faille par interposition qui a touché le code de téléchargement d'APT, et devant les découvertes de vulnérabilités accélérées par les modèles de langage, Debian désactive et retire certaines fonctions anciennes et complexes qui rendent le programme plus facile à attaquer. À suivre si vos scripts s'appuient sur des options peu courantes d'APT.<br />
-Article : https://www.phoronix.com/news/Debian-APT-Removing-Features</p>
-<p><strong>Linux 7.5 pourra bloquer l'accès à /proc/kcore.</strong> Un correctif en file d'attente permet de désactiver cet accès au démarrage, ce qui ferme une voie de lecture de la mémoire du noyau ; l'option restera active par défaut dans les noyaux qui la compilent. Mesure de durcissement à connaître si vous écrivez des règles de sécurité ou un profil d'accès.<br />
-Article : https://www.phoronix.com/news/Linux-7.5-Restrict-proc-kcore</p>
-<p><strong>Autres mises à jour de la semaine</strong> — FFmpeg 9.1 (interpolation d'images par flux optique NVIDIA, encodeur APV en Vulkan) ; Gawk 5.4.2, avec un gain de performance important ; Rust Coreutils 0.13, plus rapide et plus compatible ; Wine 11.22 (émulation AVX sur ARM64, randomisation de l'espace d'adressage, 34 corrections — la brève d'AlternativeTo annonce 11.22 dans son titre et 11.12 dans son texte, incohérence que je n'ai pas pu lever) ; Phosh 0.59 (captures d'écran, démarrage de sshd et indicateur d'usage de la caméra dans les réglages rapides) ; Ardour 9.10 (forme d'onde mise à jour en direct pendant l'édition des enveloppes) ; et Unity CLI 1.0, sorti de bêta avec un engagement de compatibilité des commandes et une sortie JSON stable pour les scripts.<br />
-FFmpeg : https://www.phoronix.com/news/FFmpeg-9.1-Released — Gawk : https://www.phoronix.com/news/GNU-Gawk-5.4.2 — Coreutils : https://www.phoronix.com/news/Rust-Coreutils-0.13 — Wine : https://alternativeto.net/news/2026/11/wine-11-12-brings-x86-avx-emulation-on-arm64-address-space-randomization-and-34-bug-fixes/ — Phosh : https://alternativeto.net/news/2026/11/phosh-0-59-adds-screenshot-ssh-and-camera-controls/ — Ardour : https://alternativeto.net/news/2026/11/ardour-9-10-brings-live-audio-waveform-update-during-envelope-editing-and-midi-refinements/ — Unity CLI : https://alternativeto.net/news/2026/11/unity-cli-1-0-leaves-beta-with-stable-automation-tools/</p>
-<h2>Vie des projets et du logiciel libre</h2>
-<p><strong>Framasoft annonce « Réensauvager Internet ».</strong> L'association se donne trois ans pour proposer des outils simples, fondés sur des standards ouverts, et pour ouvrir des espaces collectifs, en sortant d'une logique de recentralisation : les services annoncés valent comme portes d'entrée et démonstrateurs, que chacun — à commencer par les CHATONS — peut héberger à son tour. Sont prévus pour la fin 2026 une nouvelle plateforme PeerTube, une application mobile Framasoft et un site d'accompagnement à la « dégooglisation ». Le manifeste complet est en ligne.<br />
-Article : https://framablog.org/2026/11/17/face-au-web-artificialise-framasoft-veut-reensauvager-internet/ — manifeste : https://framasoft.org/fr/reensauvager-internet/manifeste/</p>
-<p><strong>Manjaro devient une association indépendante.</strong> Les développeurs ont enregistré en Allemagne une association à but non lucratif, Manjaro Project e.V., dotée de sept membres fondateurs et juridiquement distincte de la société commerciale Manjaro GmbH &amp; Co. KG. C'est l'aboutissement du manifeste de mars dernier, qui demandait une propriété partagée entre membres et des votes ouverts sur les décisions importantes. L'annonce a été faite sur le forum du projet, pas sur le site principal.<br />
-Article : https://feed.itsfoss.com/link/24361/17525382/manjaro-nonprofit-registered</p>
-<p><strong>Canonical livrera des correctifs de sécurité écrits par IA.</strong> Devant l'afflux de vulnérabilités trouvées plus vite qu'elles ne se corrigent — Canonical compte environ 3 100 correctifs par trimestre à la mi-2026 contre 1 400 début 2025, et presque autant de CVE en octobre 2026 que sur toute l'année 2025 — l'entreprise présente « Surge », un système multi-agents qui trie les avis et écrit les correctifs à rétroporter. Les correctifs arrivent d'abord dans un dépôt facultatif (« Edge archive ») et ne rejoignent les mises à jour normales qu'après des tests humains. Position à connaître, et à discuter : c'est un pari sur l'industrialisation du correctif.<br />
-Article : https://feed.itsfoss.com/link/24361/17526502/canonical-surge-announcemengt</p>
-<p><strong>Panne Microsoft : la démonstration par l'incident.</strong> Une panne d'Exchange Online débutée le 12 novembre a privé d'échanges un très grand nombre de professionnels pendant plus d'une journée, touchant des administrations et des services publics dans 74 pays et territoires ; Microsoft parle d'un défaut latent révélé par une modification réseau, et non d'une attaque. Le billet rappelle au passage les précédents et les questions que pose la concentration d'un outil vital chez un seul fournisseur — argument que l'on retrouve aussi dans la revue de presse de l'April.<br />
-Article : https://feed.itsfoss.com/link/24361/17525729/microsofts-outage-reaction — revue de presse April : https://linuxfr.org/news/revue-de-presse-de-l-april-pour-la-semaine-46-de-l-annee-2026</p>
-<p><strong>L'IA met les politiques des projets à l'épreuve.</strong> Libreboot, dérivé de Coreboot, a renoncé en un mois à la politique qui interdisait les contributions assistées par IA et accepte désormais les envois produits ainsi. Phoronix rapporte par ailleurs l'ajout d'une étape d'évaluation des performances au robot de revue Sashiko, développé par Google pour relire les correctifs du noyau. Le débat dépasse ces deux cas : les politiques anti-IA des projets se durcissent ou se relâchent au fil des mois, sans consensus.<br />
-Libreboot : https://www.phoronix.com/news/Libreboot-Drops-AI-Policy — Sashiko : https://www.phoronix.com/news/Sashiko-AI-Performance-Review</p>
-<p><strong>Matériel et systèmes alternatifs.</strong> Purism finance en participation le Librem 5 v2, téléphone Linux à huit cœurs RISC-V annoncé à 1 599 dollars, avec les interrupteurs physiques qui coupent matériellement modem, Wi-Fi et micro-caméras. Flipper Devices lance en participation le Flipper One, ordinateur Linux de poche à 399 dollars (Rockchip RK3576, 8 Go de mémoire, 64 Go de stockage, Wi-Fi 6E, Ethernet, modules M.2), livraison annoncée pour juillet 2027. Côté distributions, Owl OS sort en 1.0 comme alternative à Kali Linux — avec une mise en garde de l'auteur : ce n'est pas un logiciel libre et ce n'est pas fait pour un usage quotidien, certaines affirmations du projet n'ayant pas été vérifiées. On retrouve enfin les actualités de Haiku (bêta 6, travail sur la bêta 7) et de LuneOS, la distribution GNU/Linux pour mobiles, qui accélère après des années irrégulières.<br />
-Purism : https://feed.itsfoss.com/link/24361/17536714/purism-5-v2-crowdfunding — Flipper One : https://feed.itsfoss.com/link/24361/17526425/flipper-one-crowdfunding — Owl OS : https://feed.itsfoss.com/link/24361/17536916/owl-os-launch — Haiku : https://linuxfr.org/news/nouvelles-de-haiku-automne-2026 — LuneOS : https://linuxfr.org/news/luneos-en-2026</p>
-<p><strong>La souveraineté numérique vendue comme service.</strong> Soverin, fournisseur de courrier néerlandais soucieux de la vie privée, lance une suite qui assemble trois briques européennes — son propre service de courrier, Nextcloud pour la collaboration et Euro-Office pour les documents — installées sur du matériel européen et vendues avec support. Même logique que les offres de Nextcloud Office de bureau : la difficulté, quand on quitte Microsoft 365 ou Google Workspace, n'est pas le logiciel mais la migration et l'accompagnement des utilisateurs.<br />
-Article : https://feed.itsfoss.com/link/24361/17526903/soverin-suite-sovereignty-as-a-service</p>
-<h2>Volume</h2>
-<p>873 entrées examinées — les 872 publiées entre le 16 et le 22 novembre 2026 dans les dix journaux, plus le billet « Liens intéressants » du Journal du hacker (semaine 46, publié le 15 novembre et laissé sans traitement la semaine dernière). 42 entrées sont retenues, 831 sont écartées ; certaines entrées retenues regroupent plusieurs mises à jour. Motifs dominants du rejet : 560 montées de version d'applications macOS relevées dans Homebrew (un seul nouveau paquet, smartgit@prerelease), 149 lancements commerciaux de Product Hunt presque tous sans substance libre, et 70 dépêches de Phoronix sur le noyau et le matériel sans portée pratique. Les autres entrées écartées sont les revues de presse et récapitulatifs récurrents (April, Khrys'presso, Quoi de neuf les devs), les brèves d'humour et les billets personnels sans méthode transposable. La collecte n'a signalé aucune erreur sur les dix journaux cette semaine.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
