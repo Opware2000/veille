@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/hermesagent — samedi 28 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../hermesagent.xml" title="r/hermesagent">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/hermesagent — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un plugin officiel Linear pour Hermes (open source), la version 2.0 du greffon Hindsight, et le redesign de l'interface desktop Hermes en vue. Côté Hacker News : DietPi v10.9, un stack VoIP en Rust, et un outil de suppression de données personnelles sur les courtiers de données.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Plugin Linear pour Hermes (open source)</h3>
+<p>L'utilisateur <code>masha256bit</code> a publié un plugin gratuit (licence MIT) pour intégrer Linear à Hermes. Il permet de déléguer un ticket Linear à son propre instance Hermes qui obtient alors sa propre session dédiée. L'outil est auto-hébergé, nécessite Hermes v0.23.2 minimum, et repose sur l'API agent native de Linear (sessions d'agent). Le dépôt est accessible sous <code>hermes-linear</code>.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h3>Fuck_data_brokers.py — supprimer vos données des courtiers</h3>
+<p>Un script Python (licence MIT, 650 étoiles sur GitHub) conçu pour aider les particuliers à supprimer leurs informations personnelles auprès des principaux courtiers de données. L'article a suscité une vive réaction sur Hacker News (207 points, 42 commentaires).</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : HN (id 50658191)</li>
+<li>Dépôt : <a href="https://github.com/gary23w/f-ck_data_brokers">https://github.com/gary23w/f-ck_data_brokers</a></li>
+</ul>
+<h3>Rvoip — stack VoIP écrite en Rust</h3>
+<p>Le projet <code>rvoip</code> propose une pile complète VoIP implémentée en Rust. Bien que sans licence explicite visible dans l'en-tête, il semble être un dépôts communautaire visant à fournir un alternative open source aux solutions propriétaires de voix sur IP.</p>
+<ul>
+<li>Langage : Rust · Licence : inconnue</li>
+<li>Source : HN (id 50658632, 67 points, 15 commentaires)</li>
+<li>Dépôt : <a href="https://github.com/eisenzopf/rvoip">https://github.com/eisenzopf/rvoip</a></li>
+</ul>
+<h3>Ladybird — navigateur web indépendant (alpha)</h3>
+<p>SerenityOS publie la première version alpha téléchargeable de Ladybird, un navigateur web autonome écrit en C++ (BSD-2-Clause, ~70 000 étoiles sur GitHub). L'article d'Ars Technica signale des résultats surprenants pour cette phase initiale. Ce n'est pas un outil quotidien aujourd'hui, mais c'est une référence dans l'écosystème matériel libre.</p>
+<ul>
+<li>Licence : BSD-2-Clause · Gratuit · Open source</li>
+<li>Source : HN (ids 50664104 / 50663666, fusionnés)</li>
+<li>Dépôt : <a href="https://github.com/LadybirdBrowser/ladybird">https://github.com/LadybirdBrowser/ladybird</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Greffon Hindsight 2.0</h3>
+<p>Le plugin Hindsight (gestion de l'historique conversationnel dans Hermes) vient de sortir en version 2.0. L'auteur du fil note la correction du bug qui faisait disparaitre le premier message, ainsi qu'une nouvelle injection de page en cours de développement. Les retours sont encore limités (3 commentaires).</p>
+<ul>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6yceb/hindsight_plugin_20_dropped_anyone_tried_it/">reddit</a></li>
+</ul>
+<h3>Redesign de l'interface Hermes Desktop</h3>
+<p>Nous Research prépare une refonte de l'interface graphique de Hermes Desktop pour la semaine prochaine. Détails techniques insuffisants pour le moment ; à surveiller de près.</p>
+<ul>
+<li>Source : HN (id 50668415, 1 point)</li>
+</ul>
+<h3>datasette-charts 0.3a0 — annotations de graphiques</h3>
+<p>Simon Willison annonce la version 0.3a0 (préversion) de datasette-charts, ajoutant la capacité d'annoter les graphiques avec des lignes, zones ombragées et étiquettes. Une UI de construction d'annotations est disponible via Datasette Lite, intégrée si on installe Datasette Agent. Un lien vers l'article original est ajouté dans les notes ci-dessous.</p>
+<ul>
+<li>Licence : Apache-2.0 · Gratuit · Open source</li>
+<li>Source : <a href="https://simonwillison.net/2026/Nov/25/datasette-charts/">simonwillison.net</a></li>
+</ul>
+<h3>DietPi v10.9</h3>
+<p>La distribution légère DietPi (base Debian, optimisée pour Raspberry Pi et SBCs) sort en version 10.9. Elle propose des stacks logicielles complètes via des menus en ligne de commande. La communauté reste active (~6 500 étoiles GitHub).</p>
+<ul>
+<li>Licence : GPL-2.0 · Gratuit · Open source</li>
+<li>Source : HN (id 50658963)</li>
+<li>Dépôt : <a href="https://github.com/MichaIng/DietPi">https://github.com/MichaIng/DietPi</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Plugin Linear</h3>
+<p>Voir section « Applications et outils nouveaux » ci-dessus. Il s'agit d'un greffon/extension permettant l'intégration Linear ↔ Hermes via sessions agent dédiées.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Auto-hébergé</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h2>Volume</h2>
+<p>70 posts publiés dans l'intervalle, 7 retenus, 63 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/hermesagent (Reddit), Hacker News, simonwillison.net, Latent Space.</em></p>
+<footer>Édition du samedi 28 novembre 2026 — <a href="https://opware2000.github.io/veille/hermesagent.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

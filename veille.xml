@@ -6,9 +6,229 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 28 Nov 2026 00:36:55 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 00:52:21 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/hermesagent — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-28.html</link>
+<guid isPermaLink="false">hermesagent-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:52:21 +0100</pubDate>
+<category>r/hermesagent</category>
+<description><![CDATA[<h1>Veille r/hermesagent — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un plugin officiel Linear pour Hermes (open source), la version 2.0 du greffon Hindsight, et le redesign de l'interface desktop Hermes en vue. Côté Hacker News : DietPi v10.9, un stack VoIP en Rust, et un outil de suppression de données personnelles sur les courtiers de données.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Plugin Linear pour Hermes (open source)</h3>
+<p>L'utilisateur <code>masha256bit</code> a publié un plugin gratuit (licence MIT) pour intégrer Linear à Hermes. Il permet de déléguer un ticket Linear à son propre instance Hermes qui obtient alors sa propre session dédiée. L'outil est auto-hébergé, nécessite Hermes v0.23.2 minimum, et repose sur l'API agent native de Linear (sessions d'agent). Le dépôt est accessible sous <code>hermes-linear</code>.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h3>Fuck_data_brokers.py — supprimer vos données des courtiers</h3>
+<p>Un script Python (licence MIT, 650 étoiles sur GitHub) conçu pour aider les particuliers à supprimer leurs informations personnelles auprès des principaux courtiers de données. L'article a suscité une vive réaction sur Hacker News (207 points, 42 commentaires).</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : HN (id 50658191)</li>
+<li>Dépôt : <a href="https://github.com/gary23w/f-ck_data_brokers">https://github.com/gary23w/f-ck_data_brokers</a></li>
+</ul>
+<h3>Rvoip — stack VoIP écrite en Rust</h3>
+<p>Le projet <code>rvoip</code> propose une pile complète VoIP implémentée en Rust. Bien que sans licence explicite visible dans l'en-tête, il semble être un dépôts communautaire visant à fournir un alternative open source aux solutions propriétaires de voix sur IP.</p>
+<ul>
+<li>Langage : Rust · Licence : inconnue</li>
+<li>Source : HN (id 50658632, 67 points, 15 commentaires)</li>
+<li>Dépôt : <a href="https://github.com/eisenzopf/rvoip">https://github.com/eisenzopf/rvoip</a></li>
+</ul>
+<h3>Ladybird — navigateur web indépendant (alpha)</h3>
+<p>SerenityOS publie la première version alpha téléchargeable de Ladybird, un navigateur web autonome écrit en C++ (BSD-2-Clause, ~70 000 étoiles sur GitHub). L'article d'Ars Technica signale des résultats surprenants pour cette phase initiale. Ce n'est pas un outil quotidien aujourd'hui, mais c'est une référence dans l'écosystème matériel libre.</p>
+<ul>
+<li>Licence : BSD-2-Clause · Gratuit · Open source</li>
+<li>Source : HN (ids 50664104 / 50663666, fusionnés)</li>
+<li>Dépôt : <a href="https://github.com/LadybirdBrowser/ladybird">https://github.com/LadybirdBrowser/ladybird</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Greffon Hindsight 2.0</h3>
+<p>Le plugin Hindsight (gestion de l'historique conversationnel dans Hermes) vient de sortir en version 2.0. L'auteur du fil note la correction du bug qui faisait disparaitre le premier message, ainsi qu'une nouvelle injection de page en cours de développement. Les retours sont encore limités (3 commentaires).</p>
+<ul>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6yceb/hindsight_plugin_20_dropped_anyone_tried_it/">reddit</a></li>
+</ul>
+<h3>Redesign de l'interface Hermes Desktop</h3>
+<p>Nous Research prépare une refonte de l'interface graphique de Hermes Desktop pour la semaine prochaine. Détails techniques insuffisants pour le moment ; à surveiller de près.</p>
+<ul>
+<li>Source : HN (id 50668415, 1 point)</li>
+</ul>
+<h3>datasette-charts 0.3a0 — annotations de graphiques</h3>
+<p>Simon Willison annonce la version 0.3a0 (préversion) de datasette-charts, ajoutant la capacité d'annoter les graphiques avec des lignes, zones ombragées et étiquettes. Une UI de construction d'annotations est disponible via Datasette Lite, intégrée si on installe Datasette Agent. Un lien vers l'article original est ajouté dans les notes ci-dessous.</p>
+<ul>
+<li>Licence : Apache-2.0 · Gratuit · Open source</li>
+<li>Source : <a href="https://simonwillison.net/2026/Nov/25/datasette-charts/">simonwillison.net</a></li>
+</ul>
+<h3>DietPi v10.9</h3>
+<p>La distribution légère DietPi (base Debian, optimisée pour Raspberry Pi et SBCs) sort en version 10.9. Elle propose des stacks logicielles complètes via des menus en ligne de commande. La communauté reste active (~6 500 étoiles GitHub).</p>
+<ul>
+<li>Licence : GPL-2.0 · Gratuit · Open source</li>
+<li>Source : HN (id 50658963)</li>
+<li>Dépôt : <a href="https://github.com/MichaIng/DietPi">https://github.com/MichaIng/DietPi</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Plugin Linear</h3>
+<p>Voir section « Applications et outils nouveaux » ci-dessus. Il s'agit d'un greffon/extension permettant l'intégration Linear ↔ Hermes via sessions agent dédiées.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Auto-hébergé</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h2>Volume</h2>
+<p>70 posts publiés dans l'intervalle, 7 retenus, 63 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/hermesagent (Reddit), Hacker News, simonwillison.net, Latent Space.</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/hermesagent — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Un plugin officiel Linear pour Hermes (open source), la version 2.0 du greffon Hindsight, et le redesign de l'interface desktop Hermes en vue. Côté Hacker News : DietPi v10.9, un stack VoIP en Rust, et un outil de suppression de données personnelles sur les courtiers de données.</p>
+<h2>Applications et outils nouveaux</h2>
+<h3>Plugin Linear pour Hermes (open source)</h3>
+<p>L'utilisateur <code>masha256bit</code> a publié un plugin gratuit (licence MIT) pour intégrer Linear à Hermes. Il permet de déléguer un ticket Linear à son propre instance Hermes qui obtient alors sa propre session dédiée. L'outil est auto-hébergé, nécessite Hermes v0.23.2 minimum, et repose sur l'API agent native de Linear (sessions d'agent). Le dépôt est accessible sous <code>hermes-linear</code>.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h3>Fuck_data_brokers.py — supprimer vos données des courtiers</h3>
+<p>Un script Python (licence MIT, 650 étoiles sur GitHub) conçu pour aider les particuliers à supprimer leurs informations personnelles auprès des principaux courtiers de données. L'article a suscité une vive réaction sur Hacker News (207 points, 42 commentaires).</p>
+<ul>
+<li>Licence : MIT · Gratuit · Open source</li>
+<li>Source : HN (id 50658191)</li>
+<li>Dépôt : <a href="https://github.com/gary23w/f-ck_data_brokers">https://github.com/gary23w/f-ck_data_brokers</a></li>
+</ul>
+<h3>Rvoip — stack VoIP écrite en Rust</h3>
+<p>Le projet <code>rvoip</code> propose une pile complète VoIP implémentée en Rust. Bien que sans licence explicite visible dans l'en-tête, il semble être un dépôts communautaire visant à fournir un alternative open source aux solutions propriétaires de voix sur IP.</p>
+<ul>
+<li>Langage : Rust · Licence : inconnue</li>
+<li>Source : HN (id 50658632, 67 points, 15 commentaires)</li>
+<li>Dépôt : <a href="https://github.com/eisenzopf/rvoip">https://github.com/eisenzopf/rvoip</a></li>
+</ul>
+<h3>Ladybird — navigateur web indépendant (alpha)</h3>
+<p>SerenityOS publie la première version alpha téléchargeable de Ladybird, un navigateur web autonome écrit en C++ (BSD-2-Clause, ~70 000 étoiles sur GitHub). L'article d'Ars Technica signale des résultats surprenants pour cette phase initiale. Ce n'est pas un outil quotidien aujourd'hui, mais c'est une référence dans l'écosystème matériel libre.</p>
+<ul>
+<li>Licence : BSD-2-Clause · Gratuit · Open source</li>
+<li>Source : HN (ids 50664104 / 50663666, fusionnés)</li>
+<li>Dépôt : <a href="https://github.com/LadybirdBrowser/ladybird">https://github.com/LadybirdBrowser/ladybird</a></li>
+</ul>
+<h2>Nouveautés et mises à jour</h2>
+<h3>Greffon Hindsight 2.0</h3>
+<p>Le plugin Hindsight (gestion de l'historique conversationnel dans Hermes) vient de sortir en version 2.0. L'auteur du fil note la correction du bug qui faisait disparaitre le premier message, ainsi qu'une nouvelle injection de page en cours de développement. Les retours sont encore limités (3 commentaires).</p>
+<ul>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6yceb/hindsight_plugin_20_dropped_anyone_tried_it/">reddit</a></li>
+</ul>
+<h3>Redesign de l'interface Hermes Desktop</h3>
+<p>Nous Research prépare une refonte de l'interface graphique de Hermes Desktop pour la semaine prochaine. Détails techniques insuffisants pour le moment ; à surveiller de près.</p>
+<ul>
+<li>Source : HN (id 50668415, 1 point)</li>
+</ul>
+<h3>datasette-charts 0.3a0 — annotations de graphiques</h3>
+<p>Simon Willison annonce la version 0.3a0 (préversion) de datasette-charts, ajoutant la capacité d'annoter les graphiques avec des lignes, zones ombragées et étiquettes. Une UI de construction d'annotations est disponible via Datasette Lite, intégrée si on installe Datasette Agent. Un lien vers l'article original est ajouté dans les notes ci-dessous.</p>
+<ul>
+<li>Licence : Apache-2.0 · Gratuit · Open source</li>
+<li>Source : <a href="https://simonwillison.net/2026/Nov/25/datasette-charts/">simonwillison.net</a></li>
+</ul>
+<h3>DietPi v10.9</h3>
+<p>La distribution légère DietPi (base Debian, optimisée pour Raspberry Pi et SBCs) sort en version 10.9. Elle propose des stacks logicielles complètes via des menus en ligne de commande. La communauté reste active (~6 500 étoiles GitHub).</p>
+<ul>
+<li>Licence : GPL-2.0 · Gratuit · Open source</li>
+<li>Source : HN (id 50658963)</li>
+<li>Dépôt : <a href="https://github.com/MichaIng/DietPi">https://github.com/MichaIng/DietPi</a></li>
+</ul>
+<h2>Extensions et greffons</h2>
+<h3>Plugin Linear</h3>
+<p>Voir section « Applications et outils nouveaux » ci-dessus. Il s'agit d'un greffon/extension permettant l'intégration Linear ↔ Hermes via sessions agent dédiées.</p>
+<ul>
+<li>Licence : MIT · Gratuit · Auto-hébergé</li>
+<li>Source : <a href="https://www.reddit.com/r/hermesagent/comments/1y6vxq2/i_built_a_linear_plugin_for_hermes_delegate_a/">reddit</a></li>
+<li>Dépôt : <a href="https://github.com/masha256bit/hermes-linear">https://github.com/masha256bit/hermes-linear</a></li>
+</ul>
+<h2>Volume</h2>
+<p>70 posts publiés dans l'intervalle, 7 retenus, 63 écartés.</p>
+<hr />
+<p><em>Sources consultées : r/hermesagent (Reddit), Hacker News, simonwillison.net, Latent Space.</em></p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/vibecoding — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/vibecoding/2026-11-28.html</link>
+<guid isPermaLink="false">vibecoding-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 00:43:46 +0100</pubDate>
+<category>r/vibecoding</category>
+<description><![CDATA[<h1>Veille r/vibecoding — samedi 28 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Lantern Promos : un serveur MCP pour vérifier les codes promo</strong><br />
+Serveur Model Context Protocol qui interroge les boutiques en ligne pour trouver et valider les codes de réduction en temps réel. Permet d'intégrer cette capacité dans des agents IA ou des workflows automatisés. Site officiel : <a href="https://lanternpromos.com/">https://lanternpromos.com/</a></p>
+<p><strong>Ladybird : premier alpha téléchargeable du navigateur indépendant SerenityOS</strong><br />
+La communauté derrière SerenityOS publie sa première version alpha utilisable du navigateur Ladybird, conçu pour fonctionner indépendamment de Chromium. La page de présentation indique que le rendu est déjà « surprenant » ; le code source est sous licence AGPL-3.0, le dépôt compte plus de mille étoiles sur GitHub. ([vue sur The Register et ArsTechnica])</p>
+<p><strong>DietPi v10.9 : nouvelle version de la distribution légère Debian</strong><br />
+Distribution minimale basée sur Debian, conçue pour les machines à ressources limitées (Raspberry Pi, SBC), avec installation automatique de logiciels via des menus en console. Licence GPL-2.0, 6 457 étoiles, dernière mise à jour ce 27 novembre. <a href="https://github.com/MichaIng/DietPi">https://github.com/MichaIng/DietPi</a></p>
+<p><strong>Rvoip : une stack VoIP complète écrite en Rust</strong><br />
+Implémentation moderne de téléphonie sur IP en Rust, destinée aux développeurs qui souhaitent intégrer la voix dans des applications sans dépendre de solutions propriétaires. Licence MIT, 524 étoiles. <a href="https://github.com/eisenzopf/rvoip">https://github.com/eisenzopf/rvoip</a></p>
+<p><strong>FCK_data_brokers.py : suppression automatisée des données personnelles</strong><br />
+Script Python qui identifie et supprime activement les informations personnelles auprès des principaux courtiers de données américains. Licence MIT, 646 étoiles, actif encore hier soir. <a href="https://github.com/gary23w/f-ck_data_brokers">https://github.com/gary23w/f-ck_data_brokers</a></p>
+<p><strong>Tierview : révision de code où chaque lot passe par un modèle moins cher</strong><br />
+Outil écrit en TypeScript qui divise les modifications de code (hunks) entre un modèle principal et un modèle gratuit pour les hunks simples, réduisant significativement le coût par session de code review. Licence MIT, 2 étoiles. <a href="https://github.com/moelsaka01/tierview">https://github.com/moelsaka01/tierview</a></p>
+<p><strong>Piton Lockfile : scanner statique de supply-chain pour agents de codage MCP</strong><br />
+Générateur de lockfile et analyseur de chaîne d'approvisionnement dédié aux agents de codage utilisant le protocole MCP. Vérifie la provenance et l'intégrité des paquets avant qu'ils n'atteignent votre environnement de développement. Licence MIT, 1 étoile, publié aujourd'hui même. <a href="https://github.com/tony-stark2025/piton">https://github.com/tony-stark2025/piton</a></p>
+<p><strong>Kaju : annotation, commentaires et collaboration autour de Claude Code</strong><br />
+Outil de collaboration permettant de prendre des notes, commenter du code et travailler à plusieurs sur un projet piloté par Claude Code. Licence Apache-2.0, 5 étoiles, dernier push ce 25 novembre. <a href="https://github.com/aigeano/kaju">https://github.com/aigeano/kaju</a></p>
+<p><strong>Hooks anti-fraude pour les projets Claude Code</strong><br />
+Modèle de projet contenant des hooks git et des garde-fous conçus pour empêcher Claude Code d'inventer des tests unitaires fictifs et de générer des paquets n'existant pas. Un problème courant rapporté par plusieurs utilisateurs. Licence MIT, 5 étoiles. <a href="https://github.com/John99101/claude-code-project-template">https://github.com/John99101/claude-code-project-template</a></p>
+<p><strong>Sentinel : surveillance en temps réel des abus d'agents de codage</strong><br />
+Projet open source de Hugging Face Labs (run-llama) offrant une plateforme de monitoring live pour détecter quand un agent de codage dévie, exécute des instructions malveillantes ou agit hors du cadre prévu. Conçu spécifiquement comme contrepoids au sabotage agentiel dont parlait Latent Space récemment.</p>
+<p><strong>EtherPK : tableau kanban qui délègue des tâches Markdown à Claude Code</strong><br />
+Application de gestion de projet de type kanban capable de convertir automatiquement les éléments de la backlist Markdown en tickets exécutables par Claude Code, intégrant le cycle de développement sans sortie manuelle.</p>
+<p><strong>Codex réduit de 80 % la quantité de données extraites de l'API Responses</strong><br />
+Charlie Marsh annonce sur X que le nouveau framework Codex optimise considérablement les appels API en extrayant environ 80 % moins de données que précédemment, tout en conservant la qualité des résultats. Moins de tokens, moins de coût. <a href="https://twitter.com/charliermarsh/status/2126381983945400542">https://twitter.com/charliermarsh/status/2126381983945400542</a></p>
+<p><strong>Untitled v0.73 : terminal GPU pur écrit en Rust</strong><br />
+Terminal graphique basé sur le traitement GPU, conçu spécifiquement pour fonctionner avec Claude Code, Codex et Agy. Interface visuelle alternative pour les workflows d'IA de développement. Version 0.73 publiée, disponible sur <a href="https://unterm.app/">https://unterm.app/</a>.</p>
+<h2>Alertes et mises à jour notables</h2>
+<p><strong>Le serveur MCP officiel de Notion injecte des instructions upsell cachées dans le contexte agent</strong><br />
+Un post viral sur Hacker News (142 points, 163 commentaires) révèle que le point d'accès MCP distribué par Notion insère silencieusement des directives d'upselling dans le contexte passé à l'agent Claude. Les utilisateurs connectant Notion à Claude Code sont invités à vérifier leur intégration et à désactiver le flux MCP si nécessaire. Source : <a href="https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/">r/ClaudeCode</a></p>
+<h2>En bref</h2>
+<p>Anthropic conduit sa tournée IPO tandis que Gemini inaugure son API de décisions explicites et que Datasette ajoute la cartographie par grappes. Des agents autonomes contrôlent désormais une partie du calcul de DeepMind ; l'IA redonne aussi goût à l'hébergement personnel en automatisant surveillance et débogage. <strong>OpenRouter détaille son positionnement tarifaire face aux fournisseurs directs.</strong></p>
+<h2>Volume</h2>
+<p>17 posts publiés dans l'intervalle, 15 retenus, 2 écartés.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/vibecoding — samedi 28 novembre 2026</h1>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Lantern Promos : un serveur MCP pour vérifier les codes promo</strong><br />
+Serveur Model Context Protocol qui interroge les boutiques en ligne pour trouver et valider les codes de réduction en temps réel. Permet d'intégrer cette capacité dans des agents IA ou des workflows automatisés. Site officiel : <a href="https://lanternpromos.com/">https://lanternpromos.com/</a></p>
+<p><strong>Ladybird : premier alpha téléchargeable du navigateur indépendant SerenityOS</strong><br />
+La communauté derrière SerenityOS publie sa première version alpha utilisable du navigateur Ladybird, conçu pour fonctionner indépendamment de Chromium. La page de présentation indique que le rendu est déjà « surprenant » ; le code source est sous licence AGPL-3.0, le dépôt compte plus de mille étoiles sur GitHub. ([vue sur The Register et ArsTechnica])</p>
+<p><strong>DietPi v10.9 : nouvelle version de la distribution légère Debian</strong><br />
+Distribution minimale basée sur Debian, conçue pour les machines à ressources limitées (Raspberry Pi, SBC), avec installation automatique de logiciels via des menus en console. Licence GPL-2.0, 6 457 étoiles, dernière mise à jour ce 27 novembre. <a href="https://github.com/MichaIng/DietPi">https://github.com/MichaIng/DietPi</a></p>
+<p><strong>Rvoip : une stack VoIP complète écrite en Rust</strong><br />
+Implémentation moderne de téléphonie sur IP en Rust, destinée aux développeurs qui souhaitent intégrer la voix dans des applications sans dépendre de solutions propriétaires. Licence MIT, 524 étoiles. <a href="https://github.com/eisenzopf/rvoip">https://github.com/eisenzopf/rvoip</a></p>
+<p><strong>FCK_data_brokers.py : suppression automatisée des données personnelles</strong><br />
+Script Python qui identifie et supprime activement les informations personnelles auprès des principaux courtiers de données américains. Licence MIT, 646 étoiles, actif encore hier soir. <a href="https://github.com/gary23w/f-ck_data_brokers">https://github.com/gary23w/f-ck_data_brokers</a></p>
+<p><strong>Tierview : révision de code où chaque lot passe par un modèle moins cher</strong><br />
+Outil écrit en TypeScript qui divise les modifications de code (hunks) entre un modèle principal et un modèle gratuit pour les hunks simples, réduisant significativement le coût par session de code review. Licence MIT, 2 étoiles. <a href="https://github.com/moelsaka01/tierview">https://github.com/moelsaka01/tierview</a></p>
+<p><strong>Piton Lockfile : scanner statique de supply-chain pour agents de codage MCP</strong><br />
+Générateur de lockfile et analyseur de chaîne d'approvisionnement dédié aux agents de codage utilisant le protocole MCP. Vérifie la provenance et l'intégrité des paquets avant qu'ils n'atteignent votre environnement de développement. Licence MIT, 1 étoile, publié aujourd'hui même. <a href="https://github.com/tony-stark2025/piton">https://github.com/tony-stark2025/piton</a></p>
+<p><strong>Kaju : annotation, commentaires et collaboration autour de Claude Code</strong><br />
+Outil de collaboration permettant de prendre des notes, commenter du code et travailler à plusieurs sur un projet piloté par Claude Code. Licence Apache-2.0, 5 étoiles, dernier push ce 25 novembre. <a href="https://github.com/aigeano/kaju">https://github.com/aigeano/kaju</a></p>
+<p><strong>Hooks anti-fraude pour les projets Claude Code</strong><br />
+Modèle de projet contenant des hooks git et des garde-fous conçus pour empêcher Claude Code d'inventer des tests unitaires fictifs et de générer des paquets n'existant pas. Un problème courant rapporté par plusieurs utilisateurs. Licence MIT, 5 étoiles. <a href="https://github.com/John99101/claude-code-project-template">https://github.com/John99101/claude-code-project-template</a></p>
+<p><strong>Sentinel : surveillance en temps réel des abus d'agents de codage</strong><br />
+Projet open source de Hugging Face Labs (run-llama) offrant une plateforme de monitoring live pour détecter quand un agent de codage dévie, exécute des instructions malveillantes ou agit hors du cadre prévu. Conçu spécifiquement comme contrepoids au sabotage agentiel dont parlait Latent Space récemment.</p>
+<p><strong>EtherPK : tableau kanban qui délègue des tâches Markdown à Claude Code</strong><br />
+Application de gestion de projet de type kanban capable de convertir automatiquement les éléments de la backlist Markdown en tickets exécutables par Claude Code, intégrant le cycle de développement sans sortie manuelle.</p>
+<p><strong>Codex réduit de 80 % la quantité de données extraites de l'API Responses</strong><br />
+Charlie Marsh annonce sur X que le nouveau framework Codex optimise considérablement les appels API en extrayant environ 80 % moins de données que précédemment, tout en conservant la qualité des résultats. Moins de tokens, moins de coût. <a href="https://twitter.com/charliermarsh/status/2126381983945400542">https://twitter.com/charliermarsh/status/2126381983945400542</a></p>
+<p><strong>Untitled v0.73 : terminal GPU pur écrit en Rust</strong><br />
+Terminal graphique basé sur le traitement GPU, conçu spécifiquement pour fonctionner avec Claude Code, Codex et Agy. Interface visuelle alternative pour les workflows d'IA de développement. Version 0.73 publiée, disponible sur <a href="https://unterm.app/">https://unterm.app/</a>.</p>
+<h2>Alertes et mises à jour notables</h2>
+<p><strong>Le serveur MCP officiel de Notion injecte des instructions upsell cachées dans le contexte agent</strong><br />
+Un post viral sur Hacker News (142 points, 163 commentaires) révèle que le point d'accès MCP distribué par Notion insère silencieusement des directives d'upselling dans le contexte passé à l'agent Claude. Les utilisateurs connectant Notion à Claude Code sont invités à vérifier leur intégration et à désactiver le flux MCP si nécessaire. Source : <a href="https://www.reddit.com/r/ClaudeCode/comments/1y4qm5o/">r/ClaudeCode</a></p>
+<h2>En bref</h2>
+<p>Anthropic conduit sa tournée IPO tandis que Gemini inaugure son API de décisions explicites et que Datasette ajoute la cartographie par grappes. Des agents autonomes contrôlent désormais une partie du calcul de DeepMind ; l'IA redonne aussi goût à l'hébergement personnel en automatisant surveillance et débogage. <strong>OpenRouter détaille son positionnement tarifaire face aux fournisseurs directs.</strong></p>
+<h2>Volume</h2>
+<p>17 posts publiés dans l'intervalle, 15 retenus, 2 écartés.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Renaud Dékode — samedi 28 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/renaud/2026-11-28.html</link>
@@ -5046,260 +5266,6 @@ Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant
 <p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
 <h2>Volume</h2>
 <p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/DeepSeek — mardi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/deepseek/2026-11-23.html</link>
-<guid isPermaLink="false">deepseek-2026-11-23</guid>
-<pubDate>Tue, 24 Nov 2026 01:33:27 +0100</pubDate>
-<category>r/DeepSeek</category>
-<description><![CDATA[<h1>Veille r/DeepSeek — mardi 23 novembre 2026</h1>
-<h2>En bref — trois lignes au maximum.</h2>
-<p>Zhipu AI publie GLM-5.4, premier modèle fondé sur l'architecture Loop Transformer, comparable en intelligence à des modèles de 2 à 3 trilliones de paramètres. Trois projets locaux méritent l'attention : NariQ quantifie Qwen3.8-27B à 3 bits sans perte perceptible, NukeTorch affiche 517 tok/s pour Qwen3.6-35B sur puce Apple, et le projet Deeprubik montre qu'un unique prompt DeepSeek Flash génère un Rubik's cube complet en une session autonome.</p>
-<h2>Modèles et poids</h2>
-<h3>GLM-5.4 — Loop Transformer chez Zhipu AI (GLM)</h3>
-<p>Zhipu AI publie <a href="https://z.ai/blog/glm-5.4">GLM-5.4</a>, son premier modèle phare construit sur l'architecture « Loop Transformer ». Le principe : au lieu d'exécuter chaque couche une fois par passage avant, un groupe de couches partagées boucle plusieurs itérations, affinant les états cachés à chaque tour. Cela donne un réseau plus profond sans ajouter de paramètres.</p>
-<p>GLM-5.4 applique ce mécanisme à l'échelle 750 milliards : 28 couches du modèle GLM-5 de base sont bouclées deux fois chacune, avec des portes progressives par jeton pour stabiliser les normes d'activation. Résultat annoncé : un niveau d'intelligence comparable à des modèles de 2 à 3 trilliones de paramètres. Les mesures couvrent la programmation, la cybersécurité, la modélisation 3D et le contrôle physique — toutes des tâches nécessitant des chaînes de raisonnement multi-étapes.</p>
-<p><strong>Limitation signalée</strong> : le modèle a tendance à entrer dans des boucles de réflexion excessives (« marathon thinking »). Cette persévoration améliore néanmoins systématiquement la précision au-delà de ce que le compte de paramètres pourrait laisser attendre.</p>
-<p>Le thread HN associé atteint <strong>1033 points et 338 commentaires</strong>. Les commentateurs comparent cette approche aux recherches historiques sur les Universal Transformers (Schmidhuber, 2018) et notent que Thinking Machines a également publié il y a une semaine un modèle bouclé ouvert (Inkling 2 Mini) via son blog HuggingFace.</p>
-<p>Source officielle : <a href="https://z.ai/blog/glm-5.4">z.ai/blog/glm-5.4</a></p>
-<h3>NariQ — quantification agressive de Qwen3.8-27B</h3>
-<p><a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">NariQ v1</a> propose des poids GGUF de Qwen3.8-27B à 3, 2,5 et 2 bits par paramètre. La méthode est une quantification post-entraînement (PTQ) à codage en treillis, calibrée sur des traces réelles d'agents de codage.</p>
-<p>Résultats sur DeepSWE v1.1 (113 tâches × 3 rounds) :</p>
-<table>
-<thead>
-<tr>
-<th>Fichier</th>
-<th>Taille</th>
-<th>Pass@1 moyen</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BF16 (référence)</td>
-<td>53,8 GB</td>
-<td>39,8 %</td>
-</tr>
-<tr>
-<td>NariQ 3-bit</td>
-<td>10,1 GB</td>
-<td>41,0 % (légèrement meilleur)</td>
-</tr>
-<tr>
-<td>NariQ 2,5-bit</td>
-<td>8,4 GB</td>
-<td>41,9 %</td>
-</tr>
-<tr>
-<td>NariQ 2-bit</td>
-<td>6,8 GB</td>
-<td>28,6 %</td>
-</tr>
-</tbody>
-</table>
-<p>À 3 bits, le fichier tient dans 10 GB et égale ou dépasse légèrement la référence BF16 sur plusieurs benchmarks (DeepSWE, Terminal-Bench, MGSM, RealWorldQA). Requis : une fork de llama.cpp dédié.</p>
-<p>Dépôt HuggingFace : <a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">nari-labs/Qwen3.8-27B-NariQ-GGUF</a></p>
-<h2>Prix, accès et quotas</h2>
-<h3>Alibaba Cloud Model Studio — le plan Lite décrypté</h3>
-<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3fyh9/alibaba_token_plan_lite_6mo_with_deepseek_v41/">lien</a>) a testé et décortiqué le plan « Lite » d'Alibaba Cloud ($6/mois, 20 000 crédits) avec DeepSeek V4.1 Flash comme moteur quotidien.</p>
-<p>Alibaba n'affiche pas de conversion crédit → jeton. L'auteur a contre-percé les taux en utilisation réelle : 100 crédits par million de jetons en entrée, 400 par million en sortie, 10 par million en lecture cache. Avec un hit-rate cache typique d'agent de 95 %, cela représente environ <strong>1,2 milliard de jetons par mois pour 6 dollars</strong>.</p>
-<p>Questions ouvertes : le débit et la latence passés par la passerelle Singapour conviennent-ils à des boucles d'agent, ou le service est-il throtté ? Aucun retour mesuré ne répond encore.</p>
-<h3>deeprelay — la réalité du « 500 millions de jetons »</h3>
-<p>Le même subreddit publie un fil détaillé (<a href="https://www.reddit.com/r/DeepSeek/comments/1y33162/what_deeprelays_099_500m_token_deepseek_v41_flash/">lien</a>) analysant le plan « Base » de deeprelay ($0,99/mois). deeprelay affiche 500 millions de jetons mais ces chiffres sont pondérés selon le modèle : chaque famille de modèle a un multiplicateur de coût annoncé. L'auteur a calculé ce que chaque tier donne réellement en jetons nominaux, et intègre deeprelay comme fournisseur secondaire dans <a href="https://opencode.ai">OpenCode</a>. Le détail des multiplicateurs n'est pas vérifiable sans accès au site — la méthode repose sur une analyse rétroactive des facturations.</p>
-<h3>Coût réel du contexte long — AdaptiqAI</h3>
-<p>Theis, CTO d'<a href="https://adaptiqai.com">AdaptiqAI</a>, rapporte avoir soumis <strong>7 millions de jetons</strong> à DeepSeek V4.1 Flash en une seule requête : une année complète de recherche LLM (architectures, mémoire, algorithmes, mathématiques) combinée à l'intégralité de leur dépôt de code. Un LLM normal gère entre 250 000 et 1 000 000 de jetons.</p>
-<p>Résultat : le modèle connaissait tout dès la première question. Il trouve des connexions transversales dans la recherche et propose des solutions non évidentes. Il vérifie toujours en relisant, mais ne fait pas appel à des agents multiples. Dans un codebase déjà connu, l'agent résout les tâches <strong>2,2× plus vite</strong> et écrit <strong>30 % de jetons en moins</strong>, car il sait où se trouvent les éléments sans chercher d'abord.</p>
-<p>Tarifs annoncés pour le service live (hébergement Europe) : 0,60 $/M input, 2,00 $/M output, 0 $ pour le KV cache. Seuls les nouveaux jetons sont facturés ; les millions déjà mémorisés ne le sont pas à nouveau.</p>
-<p>Discussion : <a href="https://www.reddit.com/r/DeepSeek/comments/1y3mlfx/i_gave_deepseek_v41_flash_7_million_tokens_to/">r/DeepSeek/comments/1y3mlfx</a></p>
-<h3>DeepSeek Harness — build communautaire « Uncensored »</h3>
-<p><a href="https://github.com/Water-Run/deepseek-harness-uncensored">Water-Run/deepseek-harness-uncensored</a> (licence GPL-3.0) fournit un environnement de bureau basé sur le DeepSeek Harness officiel, avec quatre modes spécialisés : développement, audit sécurité (avec agent réseau isolé), ingénierie inverse (REA 6.9 intégré), et écriture longue. Fonctionnalités additionnelles : questions latérales, suivi de quota en temps réel, mémoire inter-session, et prédiction d'entrée. Windows et Linux. Dépôt : 602 contributions depuis octobre 2026.</p>
-<h2>Auto-hébergement et quantification</h2>
-<h3>NariQ (cf. section Modèles)</h3>
-<p>Trois fichiers GGUF de Qwen3.8-27B disponibles à 3, 2,5 et 2 bits. Exige un fork de llama.cpp de Nari Labs. Compatible single-GPU.</p>
-<h3>NukeTorch — 517 tok/s sur Apple Silicon</h3>
-<p>Le projet <a href="https://github.com/NukeTorch/Qwen3.6-35B">NukeTorch</a> affiche <strong>517,5 tok/s</strong> pour Qwen3.6-35B (4-bit, architecture MoEA 35B+3B) sur puce Apple, dans un moteur C++/Metal dédié. Le benchmark compare directement à mlx-lm, llama.cpp et oMLX Splash + DFlash2.</p>
-<p>Points clés : efficacité énergétique de 7,6 à 9,4 tok/J, consommation RAM stable autour de 24,7 GB. Supporte jusqu'à 8 utilisateurs simultanés (821,8 tok/s cumulés). Installation par script <code>curl</code>, serveur HTTP compatible API OpenAI sur port configurable.</p>
-<p>Vidéo démo et rapport de benchmark détaillé en lien README.</p>
-<h2>Intégrations et outils tiers</h2>
-<h3>Deeprubik — Rubik's cube entièrement généré par un prompt</h3>
-<p>Projet <a href="https://github.com/asamarts/deeprubik">deeprubik</a> : un puzzle Rubik's cube photoréaliste dans le navigateur, généré à partir d'un <strong>unique prompt</strong> à DeepSeek Flash, sans aucun code humain ni modification ultérieure. Le modèle a été piloté par un agent autonome custom.</p>
-<p>Mesures de la session (rapportées par le harness) :<br />
-- <strong>6 721 lignes</strong> de code · 30 fichiers · 1 commit<br />
-- <strong>87,5 millions de jetons</strong> totaux (cache hit rate 99,3 %)<br />
-- <strong>55 minutes</strong> de wall-clock<br />
-- <strong>~1,22 $</strong> de coût total<br />
-- <strong>38 tests unitaires + 45 tests end-to-end</strong> générés automatiquement<br />
-- Supporte des cubes de 1×1×1 à 100×100×100 en 2 appels de dessin</p>
-<p>Technologies : instanced mesh WebGL, matériaux PBR (ABS clearcoat, alliage anodisé, cristal translucide, satin doux), rendu HDR PMREM, ACES tone mapping. Puzzle jouable en drag ou notation clavier.</p>
-<h3>Compétition Inkling 2 Mini vs Qwen 3.8</h3>
-<p>Un essay vidéo (<a href="https://www.youtube.com/watch?v=TcrPYFdvR7c">lien</a>) oppose Inkling 2 Mini (26 B) à Qwen 3.8, explorant si le plus petit modèle peut rivaliser sur les tâches de codage. À lire aussi dans le même esprit : l'article de <a href="https://getstream.io/blog/local-video-audit-skill/">Stream.io</a> sur le portage d'une skill d'audit code vers Inkling 2 Mini et Qwen3.8 pour exécution locale sur MacBook Pro.</p>
-<h3>Technique de commutation régulier / ablitéré</h3>
-<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3spu1/gpt_astra_and_i_found_a_way_to_switch_between/">lien</a>) annonce une méthode permettant de basculer entre le modèle DeepSeek standard et une version ablitérée <strong>à partir d'un seul set de poids</strong>, aidé par GPT Astra. Aucune autre détail technique n'est fourni dans le fil original. Méthode non vérifiée à ce stade.</p>
-<h2>Méthodes et retours d'expérience</h2>
-<h3>Travail avec 7 millions de jetons (méthode AdaptiqAI)</h3>
-<p>La approche d'AdaptiqAI consiste à alimenter DeepSeek V4.1 Flash d'un contexte massif contenant toute la documentation de référence et le code source du projet concerné, puis à lancer l'optimisation directement. Le modèle connaît déjà le contenu, évite les phases de recherche multi-agents, vérifie ses réponses par relecture interne, et agit en conséquence. Avantage clé : facturation uniquement des nouveaux jetons produits, pas des millions mémorisés.</p>
-<h3>Sovereign Skills — exécution locale d'une skill d'audit</h3>
-<p>L'équipe video de Stream (<a href="https://getstream.io/blog/local-video-audit-skill/">article</a>) explique pourquoi et comment porter une skill d'audit code sur un MacBook Pro plutôt que via un cloud. Trois niveaux de souveraineté identifiés : conformité (résidence des données), contrôle opérationnel (indépendance vis-à-vis des changements de conditions fournisseurs), et contrôle modèle (open weights, fine-tuning propriétaire). Benchmark comparatif Inkling 2 Mini vs Qwen3.8.</p>
-<h2>Autres passages</h2>
-<ul>
-<li><strong>Jensen Huang réintégré chez Nvidia</strong> — titre très populaire sur HN (&gt;2000 points cumulés sur plusieurs URLs redondantes). Peu de lien direct avec DeepSeek.</li>
-<li><strong>Incident MiniMax/OpenRouter</strong> — une tierce partie aurait lu des prompts envoyés via les endpoints MiniMax de juin à octobre 2026 (<a href="https://news.ycombinator.com/item?id=50591694">HN</a>). OpenRouter retire le label Zero Data Retention pour ces endpoints. Probablement affecte les flux passant par Novita, StreamLake et AtlasCloud.</li>
-</ul>
-<h2>Volume — 82 posts publiés dans l'intervalle, 13 retenus, 69 écartés, taux de rétention 15,9 %.</h2>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/DeepSeek — mardi 23 novembre 2026</h1>
-<h2>En bref — trois lignes au maximum.</h2>
-<p>Zhipu AI publie GLM-5.4, premier modèle fondé sur l'architecture Loop Transformer, comparable en intelligence à des modèles de 2 à 3 trilliones de paramètres. Trois projets locaux méritent l'attention : NariQ quantifie Qwen3.8-27B à 3 bits sans perte perceptible, NukeTorch affiche 517 tok/s pour Qwen3.6-35B sur puce Apple, et le projet Deeprubik montre qu'un unique prompt DeepSeek Flash génère un Rubik's cube complet en une session autonome.</p>
-<h2>Modèles et poids</h2>
-<h3>GLM-5.4 — Loop Transformer chez Zhipu AI (GLM)</h3>
-<p>Zhipu AI publie <a href="https://z.ai/blog/glm-5.4">GLM-5.4</a>, son premier modèle phare construit sur l'architecture « Loop Transformer ». Le principe : au lieu d'exécuter chaque couche une fois par passage avant, un groupe de couches partagées boucle plusieurs itérations, affinant les états cachés à chaque tour. Cela donne un réseau plus profond sans ajouter de paramètres.</p>
-<p>GLM-5.4 applique ce mécanisme à l'échelle 750 milliards : 28 couches du modèle GLM-5 de base sont bouclées deux fois chacune, avec des portes progressives par jeton pour stabiliser les normes d'activation. Résultat annoncé : un niveau d'intelligence comparable à des modèles de 2 à 3 trilliones de paramètres. Les mesures couvrent la programmation, la cybersécurité, la modélisation 3D et le contrôle physique — toutes des tâches nécessitant des chaînes de raisonnement multi-étapes.</p>
-<p><strong>Limitation signalée</strong> : le modèle a tendance à entrer dans des boucles de réflexion excessives (« marathon thinking »). Cette persévoration améliore néanmoins systématiquement la précision au-delà de ce que le compte de paramètres pourrait laisser attendre.</p>
-<p>Le thread HN associé atteint <strong>1033 points et 338 commentaires</strong>. Les commentateurs comparent cette approche aux recherches historiques sur les Universal Transformers (Schmidhuber, 2018) et notent que Thinking Machines a également publié il y a une semaine un modèle bouclé ouvert (Inkling 2 Mini) via son blog HuggingFace.</p>
-<p>Source officielle : <a href="https://z.ai/blog/glm-5.4">z.ai/blog/glm-5.4</a></p>
-<h3>NariQ — quantification agressive de Qwen3.8-27B</h3>
-<p><a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">NariQ v1</a> propose des poids GGUF de Qwen3.8-27B à 3, 2,5 et 2 bits par paramètre. La méthode est une quantification post-entraînement (PTQ) à codage en treillis, calibrée sur des traces réelles d'agents de codage.</p>
-<p>Résultats sur DeepSWE v1.1 (113 tâches × 3 rounds) :</p>
-<table>
-<thead>
-<tr>
-<th>Fichier</th>
-<th>Taille</th>
-<th>Pass@1 moyen</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>BF16 (référence)</td>
-<td>53,8 GB</td>
-<td>39,8 %</td>
-</tr>
-<tr>
-<td>NariQ 3-bit</td>
-<td>10,1 GB</td>
-<td>41,0 % (légèrement meilleur)</td>
-</tr>
-<tr>
-<td>NariQ 2,5-bit</td>
-<td>8,4 GB</td>
-<td>41,9 %</td>
-</tr>
-<tr>
-<td>NariQ 2-bit</td>
-<td>6,8 GB</td>
-<td>28,6 %</td>
-</tr>
-</tbody>
-</table>
-<p>À 3 bits, le fichier tient dans 10 GB et égale ou dépasse légèrement la référence BF16 sur plusieurs benchmarks (DeepSWE, Terminal-Bench, MGSM, RealWorldQA). Requis : une fork de llama.cpp dédié.</p>
-<p>Dépôt HuggingFace : <a href="https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF">nari-labs/Qwen3.8-27B-NariQ-GGUF</a></p>
-<h2>Prix, accès et quotas</h2>
-<h3>Alibaba Cloud Model Studio — le plan Lite décrypté</h3>
-<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3fyh9/alibaba_token_plan_lite_6mo_with_deepseek_v41/">lien</a>) a testé et décortiqué le plan « Lite » d'Alibaba Cloud ($6/mois, 20 000 crédits) avec DeepSeek V4.1 Flash comme moteur quotidien.</p>
-<p>Alibaba n'affiche pas de conversion crédit → jeton. L'auteur a contre-percé les taux en utilisation réelle : 100 crédits par million de jetons en entrée, 400 par million en sortie, 10 par million en lecture cache. Avec un hit-rate cache typique d'agent de 95 %, cela représente environ <strong>1,2 milliard de jetons par mois pour 6 dollars</strong>.</p>
-<p>Questions ouvertes : le débit et la latence passés par la passerelle Singapour conviennent-ils à des boucles d'agent, ou le service est-il throtté ? Aucun retour mesuré ne répond encore.</p>
-<h3>deeprelay — la réalité du « 500 millions de jetons »</h3>
-<p>Le même subreddit publie un fil détaillé (<a href="https://www.reddit.com/r/DeepSeek/comments/1y33162/what_deeprelays_099_500m_token_deepseek_v41_flash/">lien</a>) analysant le plan « Base » de deeprelay ($0,99/mois). deeprelay affiche 500 millions de jetons mais ces chiffres sont pondérés selon le modèle : chaque famille de modèle a un multiplicateur de coût annoncé. L'auteur a calculé ce que chaque tier donne réellement en jetons nominaux, et intègre deeprelay comme fournisseur secondaire dans <a href="https://opencode.ai">OpenCode</a>. Le détail des multiplicateurs n'est pas vérifiable sans accès au site — la méthode repose sur une analyse rétroactive des facturations.</p>
-<h3>Coût réel du contexte long — AdaptiqAI</h3>
-<p>Theis, CTO d'<a href="https://adaptiqai.com">AdaptiqAI</a>, rapporte avoir soumis <strong>7 millions de jetons</strong> à DeepSeek V4.1 Flash en une seule requête : une année complète de recherche LLM (architectures, mémoire, algorithmes, mathématiques) combinée à l'intégralité de leur dépôt de code. Un LLM normal gère entre 250 000 et 1 000 000 de jetons.</p>
-<p>Résultat : le modèle connaissait tout dès la première question. Il trouve des connexions transversales dans la recherche et propose des solutions non évidentes. Il vérifie toujours en relisant, mais ne fait pas appel à des agents multiples. Dans un codebase déjà connu, l'agent résout les tâches <strong>2,2× plus vite</strong> et écrit <strong>30 % de jetons en moins</strong>, car il sait où se trouvent les éléments sans chercher d'abord.</p>
-<p>Tarifs annoncés pour le service live (hébergement Europe) : 0,60 $/M input, 2,00 $/M output, 0 $ pour le KV cache. Seuls les nouveaux jetons sont facturés ; les millions déjà mémorisés ne le sont pas à nouveau.</p>
-<p>Discussion : <a href="https://www.reddit.com/r/DeepSeek/comments/1y3mlfx/i_gave_deepseek_v41_flash_7_million_tokens_to/">r/DeepSeek/comments/1y3mlfx</a></p>
-<h3>DeepSeek Harness — build communautaire « Uncensored »</h3>
-<p><a href="https://github.com/Water-Run/deepseek-harness-uncensored">Water-Run/deepseek-harness-uncensored</a> (licence GPL-3.0) fournit un environnement de bureau basé sur le DeepSeek Harness officiel, avec quatre modes spécialisés : développement, audit sécurité (avec agent réseau isolé), ingénierie inverse (REA 6.9 intégré), et écriture longue. Fonctionnalités additionnelles : questions latérales, suivi de quota en temps réel, mémoire inter-session, et prédiction d'entrée. Windows et Linux. Dépôt : 602 contributions depuis octobre 2026.</p>
-<h2>Auto-hébergement et quantification</h2>
-<h3>NariQ (cf. section Modèles)</h3>
-<p>Trois fichiers GGUF de Qwen3.8-27B disponibles à 3, 2,5 et 2 bits. Exige un fork de llama.cpp de Nari Labs. Compatible single-GPU.</p>
-<h3>NukeTorch — 517 tok/s sur Apple Silicon</h3>
-<p>Le projet <a href="https://github.com/NukeTorch/Qwen3.6-35B">NukeTorch</a> affiche <strong>517,5 tok/s</strong> pour Qwen3.6-35B (4-bit, architecture MoEA 35B+3B) sur puce Apple, dans un moteur C++/Metal dédié. Le benchmark compare directement à mlx-lm, llama.cpp et oMLX Splash + DFlash2.</p>
-<p>Points clés : efficacité énergétique de 7,6 à 9,4 tok/J, consommation RAM stable autour de 24,7 GB. Supporte jusqu'à 8 utilisateurs simultanés (821,8 tok/s cumulés). Installation par script <code>curl</code>, serveur HTTP compatible API OpenAI sur port configurable.</p>
-<p>Vidéo démo et rapport de benchmark détaillé en lien README.</p>
-<h2>Intégrations et outils tiers</h2>
-<h3>Deeprubik — Rubik's cube entièrement généré par un prompt</h3>
-<p>Projet <a href="https://github.com/asamarts/deeprubik">deeprubik</a> : un puzzle Rubik's cube photoréaliste dans le navigateur, généré à partir d'un <strong>unique prompt</strong> à DeepSeek Flash, sans aucun code humain ni modification ultérieure. Le modèle a été piloté par un agent autonome custom.</p>
-<p>Mesures de la session (rapportées par le harness) :<br />
-- <strong>6 721 lignes</strong> de code · 30 fichiers · 1 commit<br />
-- <strong>87,5 millions de jetons</strong> totaux (cache hit rate 99,3 %)<br />
-- <strong>55 minutes</strong> de wall-clock<br />
-- <strong>~1,22 $</strong> de coût total<br />
-- <strong>38 tests unitaires + 45 tests end-to-end</strong> générés automatiquement<br />
-- Supporte des cubes de 1×1×1 à 100×100×100 en 2 appels de dessin</p>
-<p>Technologies : instanced mesh WebGL, matériaux PBR (ABS clearcoat, alliage anodisé, cristal translucide, satin doux), rendu HDR PMREM, ACES tone mapping. Puzzle jouable en drag ou notation clavier.</p>
-<h3>Compétition Inkling 2 Mini vs Qwen 3.8</h3>
-<p>Un essay vidéo (<a href="https://www.youtube.com/watch?v=TcrPYFdvR7c">lien</a>) oppose Inkling 2 Mini (26 B) à Qwen 3.8, explorant si le plus petit modèle peut rivaliser sur les tâches de codage. À lire aussi dans le même esprit : l'article de <a href="https://getstream.io/blog/local-video-audit-skill/">Stream.io</a> sur le portage d'une skill d'audit code vers Inkling 2 Mini et Qwen3.8 pour exécution locale sur MacBook Pro.</p>
-<h3>Technique de commutation régulier / ablitéré</h3>
-<p>Un utilisateur de r/DeepSeek (<a href="https://www.reddit.com/r/DeepSeek/comments/1y3spu1/gpt_astra_and_i_found_a_way_to_switch_between/">lien</a>) annonce une méthode permettant de basculer entre le modèle DeepSeek standard et une version ablitérée <strong>à partir d'un seul set de poids</strong>, aidé par GPT Astra. Aucune autre détail technique n'est fourni dans le fil original. Méthode non vérifiée à ce stade.</p>
-<h2>Méthodes et retours d'expérience</h2>
-<h3>Travail avec 7 millions de jetons (méthode AdaptiqAI)</h3>
-<p>La approche d'AdaptiqAI consiste à alimenter DeepSeek V4.1 Flash d'un contexte massif contenant toute la documentation de référence et le code source du projet concerné, puis à lancer l'optimisation directement. Le modèle connaît déjà le contenu, évite les phases de recherche multi-agents, vérifie ses réponses par relecture interne, et agit en conséquence. Avantage clé : facturation uniquement des nouveaux jetons produits, pas des millions mémorisés.</p>
-<h3>Sovereign Skills — exécution locale d'une skill d'audit</h3>
-<p>L'équipe video de Stream (<a href="https://getstream.io/blog/local-video-audit-skill/">article</a>) explique pourquoi et comment porter une skill d'audit code sur un MacBook Pro plutôt que via un cloud. Trois niveaux de souveraineté identifiés : conformité (résidence des données), contrôle opérationnel (indépendance vis-à-vis des changements de conditions fournisseurs), et contrôle modèle (open weights, fine-tuning propriétaire). Benchmark comparatif Inkling 2 Mini vs Qwen3.8.</p>
-<h2>Autres passages</h2>
-<ul>
-<li><strong>Jensen Huang réintégré chez Nvidia</strong> — titre très populaire sur HN (&gt;2000 points cumulés sur plusieurs URLs redondantes). Peu de lien direct avec DeepSeek.</li>
-<li><strong>Incident MiniMax/OpenRouter</strong> — une tierce partie aurait lu des prompts envoyés via les endpoints MiniMax de juin à octobre 2026 (<a href="https://news.ycombinator.com/item?id=50591694">HN</a>). OpenRouter retire le label Zero Data Retention pour ces endpoints. Probablement affecte les flux passant par Novita, StreamLake et AtlasCloud.</li>
-</ul>
-<h2>Volume — 82 posts publiés dans l'intervalle, 13 retenus, 69 écartés, taux de rétention 15,9 %.</h2>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/hermesagent — lundi 23 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-23.html</link>
-<guid isPermaLink="false">hermesagent-2026-11-23</guid>
-<pubDate>Tue, 24 Nov 2026 00:51:33 +0100</pubDate>
-<category>r/hermesagent</category>
-<description><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Ladybird, le navigateur web open source entièrement réinventé, franchit le cap de l'alpha publique avec 67 700 étoiles sur GitHub. Trois nouveautés dans l'écosystème Hermes : Threadpacket, plugin pour échanger des tâches entre agents ; Hermit 1.2 optimisé pour Hermes Agent ; Conduit Desktop 1.0 sorti sur les trois plateformes. GLM-5.4 accessible à tous les abonnés Z.AI.</p>
-<p>Applications et outils nouveaux</p>
-<p><strong>Ladybird – un navigateur web construit depuis zéro</strong><br />
-La team LadybirdBrowser développe un navigateur web complet (moteur de rendu HTML, CSS, JavaScript) écrit en C++ à partir de zéro, sans dépendre de Blink ou WebKit. Le projet franchit aujourd'hui le cap de l'alpha publique : il affiche une interface fonctionnelle capable de charger des pages web courantes. Le dépôt est incroyablement actif (67 700 étoiles sur GitHub, licence BSD-2-Clause, dernier push hier soir). Les commentaires sur HN (plus de 530 points, 140 threads) montrent un engouement considérable pour un navigateur vraiment libre et transparent. Vérifié le 23/11/2026 sur l'API GitHub : 67 735 étoiles, dernière mise à jour le 23/11/2026, licence BSD-2-Clause. Source: <a href="https://ladybird.org/posts/alpha/">https://ladybird.org/posts/alpha/</a> — dépôt GitHub <code>LadybirdBrowser/ladybird</code>.</p>
-<p><strong>Nospeaker – le pavé tactile de votre MacBook qui parle</strong><br />
-Un utilitaire opensource qui exploite le moteur haptique du pavé Magic Trackpad pour produire des retours sonores — essentiellement un haut-parleur qui n'existait pas avant. Conçu pour les personnes malvoyantes ou simplement par curiosité technique. Dépôt <code>os6/nospeaker</code>, licence MIT, 1 409 étoiles, dernier commit le 22 novembre. Source: <a href="https://github.com/os6/nospeaker">https://github.com/os6/nospeaker</a>.</p>
-<p><strong>Kagi Mail – beta publique</strong><br />
-Kagi, le moteur de recherche payant, lance sa propre offre de messagerie en beta publique. Les caractéristiques exactes ne sont pas détaillées dans l'annonce mais Kagi promet une expérience centrée sur la vie privée, sans traçage publicitaire. Un service attendu, mais dont les capacités concrètes restent à vérifier. Source: <a href="https://blog.kagi.com/kagi-mail-public-beta">https://blog.kagi.com/kagi-mail-public-beta</a>.</p>
-<p><strong>News Blocklist – filtre DNS contre les sites d'actualités</strong><br />
-Un auteur a créé une petite application Mac qui bloque via le fichier hosts une liste de 14 000 sites d'information courante et d'actualités, complétée par des filtres pour contenus adultes et réseaux sociaux. Le dépôt <code>ruairidhflint/news-blocklist</code> est sous licence MIT, 21 étoiles, très récemment mis à jour. Source: <a href="https://github.com/ruairidhflint/news-blocklist">https://github.com/ruairidhflint/news-blocklist</a>.</p>
-<p><strong>Win4wine – shell Windows sur un bureau Linux</strong><br />
-Permet d'exécuter un environnement shell Windows entier (interface graphique, menus, barre des tâches) sur un bureau Linux en utilisant Wine comme couche de compatibilité. Interprétable comme une alternative légère à un bureau Windows virtuel. Dépôt <code>mikuta0407/win4wine</code>, licence LGPL-2.1, 290 étoiles, dernier push fin octobre. Source: <a href="https://github.com/mikuta0407/win4wine">https://github.com/mikuta0407/win4wine</a>.</p>
-<p><strong>Spelunkr TV – réseau télévisif gratuit à base d'archives</strong><br />
-Un réseau télévisif construit à partir des vidéos oubliées conservées dans l'Internet Archive. Projet communautaire sans but lucratif, très bien accueilli sur HN (320+ points). Pas de dépôt GitHub identifié. Source: <a href="https://spelunkr.tv">https://spelunkr.tv</a>.</p>
-<p>Nouveautés et mises à jour</p>
-<p><strong>Conduit Desktop 1.0</strong><br />
-Après une longue période de développement en version bêta, l'application desktop Conduit publie enfin sa version 1.0, disponible sur Windows, macOS et Linux. La nouvelle inclut également « Landscape », probablement une visualisation de landscape ou de données structurées. Conduit étant un client de messagerie open source déjà connu, cette version marque un jalon important. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y34aqn/conduit_desktop_10_is_here_windows_macos_linux/">Reddit r/hermesagent</a>.</p>
-<p><strong>GLM-5.4 disponible pour tous les abonnés GLM Coding Plan</strong><br />
-Z.AI rend GLM-5.4 accessible à tous les utilisateurs du plan de codage GLM. Ce modèle introduit un « loop transformer » destiné au coding généralisé — une architecture visant à mieux gérer les boucles et la récursivité dans les tâches de programmation. Annonce suivie avec intérêt sur HN (près de 200 points, 80+ commentaires). Source: <a href="https://z.ai/blog/glm-5.4">https://z.ai/blog/glm-5.4</a>.</p>
-<p>Extensions et greffons</p>
-<p><strong>Threadpacket — transfert de tâches entre agents IA</strong><br />
-Plugin Hermes venant d'être fusionné dans le catalogue officiel (NousResearch/hermes-agent #156066). Il permet d'envoyer des paquets éphémères d'un agent IA à un autre — résumé de travail en cours + fichiers originaux — sur la même machine ou entre machines distinctes. Utile quand on fait tourner Hermes en background pendant qu'on utilise Claude Code ou Codex en interactif. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3hps7/my_hermes_plugin_is_live_in_the_catalog_send/">Reddit r/hermesagent</a>.</p>
-<p><strong>Hermit 1.2 pour Hermes Agent</strong><br />
-L'annonce d'Hermit 1.2 mentionne des optimisations spécifiques pour Hermes Agent, orientées productivité. Le contenu exact de ces améliorations n'étant pas détaillé dans le titre ni l'extrait, cela reste à vérifier. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3o5ov/hermit_12_for_hermes_agent_optimizing_bots_for/">Reddit r/hermesagent</a>.</p>
-<p>Volume — 94 éléments lus dans la shortlist, 13 sujets retenus, 81 écartés.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/hermesagent — lundi 23 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Ladybird, le navigateur web open source entièrement réinventé, franchit le cap de l'alpha publique avec 67 700 étoiles sur GitHub. Trois nouveautés dans l'écosystème Hermes : Threadpacket, plugin pour échanger des tâches entre agents ; Hermit 1.2 optimisé pour Hermes Agent ; Conduit Desktop 1.0 sorti sur les trois plateformes. GLM-5.4 accessible à tous les abonnés Z.AI.</p>
-<p>Applications et outils nouveaux</p>
-<p><strong>Ladybird – un navigateur web construit depuis zéro</strong><br />
-La team LadybirdBrowser développe un navigateur web complet (moteur de rendu HTML, CSS, JavaScript) écrit en C++ à partir de zéro, sans dépendre de Blink ou WebKit. Le projet franchit aujourd'hui le cap de l'alpha publique : il affiche une interface fonctionnelle capable de charger des pages web courantes. Le dépôt est incroyablement actif (67 700 étoiles sur GitHub, licence BSD-2-Clause, dernier push hier soir). Les commentaires sur HN (plus de 530 points, 140 threads) montrent un engouement considérable pour un navigateur vraiment libre et transparent. Vérifié le 23/11/2026 sur l'API GitHub : 67 735 étoiles, dernière mise à jour le 23/11/2026, licence BSD-2-Clause. Source: <a href="https://ladybird.org/posts/alpha/">https://ladybird.org/posts/alpha/</a> — dépôt GitHub <code>LadybirdBrowser/ladybird</code>.</p>
-<p><strong>Nospeaker – le pavé tactile de votre MacBook qui parle</strong><br />
-Un utilitaire opensource qui exploite le moteur haptique du pavé Magic Trackpad pour produire des retours sonores — essentiellement un haut-parleur qui n'existait pas avant. Conçu pour les personnes malvoyantes ou simplement par curiosité technique. Dépôt <code>os6/nospeaker</code>, licence MIT, 1 409 étoiles, dernier commit le 22 novembre. Source: <a href="https://github.com/os6/nospeaker">https://github.com/os6/nospeaker</a>.</p>
-<p><strong>Kagi Mail – beta publique</strong><br />
-Kagi, le moteur de recherche payant, lance sa propre offre de messagerie en beta publique. Les caractéristiques exactes ne sont pas détaillées dans l'annonce mais Kagi promet une expérience centrée sur la vie privée, sans traçage publicitaire. Un service attendu, mais dont les capacités concrètes restent à vérifier. Source: <a href="https://blog.kagi.com/kagi-mail-public-beta">https://blog.kagi.com/kagi-mail-public-beta</a>.</p>
-<p><strong>News Blocklist – filtre DNS contre les sites d'actualités</strong><br />
-Un auteur a créé une petite application Mac qui bloque via le fichier hosts une liste de 14 000 sites d'information courante et d'actualités, complétée par des filtres pour contenus adultes et réseaux sociaux. Le dépôt <code>ruairidhflint/news-blocklist</code> est sous licence MIT, 21 étoiles, très récemment mis à jour. Source: <a href="https://github.com/ruairidhflint/news-blocklist">https://github.com/ruairidhflint/news-blocklist</a>.</p>
-<p><strong>Win4wine – shell Windows sur un bureau Linux</strong><br />
-Permet d'exécuter un environnement shell Windows entier (interface graphique, menus, barre des tâches) sur un bureau Linux en utilisant Wine comme couche de compatibilité. Interprétable comme une alternative légère à un bureau Windows virtuel. Dépôt <code>mikuta0407/win4wine</code>, licence LGPL-2.1, 290 étoiles, dernier push fin octobre. Source: <a href="https://github.com/mikuta0407/win4wine">https://github.com/mikuta0407/win4wine</a>.</p>
-<p><strong>Spelunkr TV – réseau télévisif gratuit à base d'archives</strong><br />
-Un réseau télévisif construit à partir des vidéos oubliées conservées dans l'Internet Archive. Projet communautaire sans but lucratif, très bien accueilli sur HN (320+ points). Pas de dépôt GitHub identifié. Source: <a href="https://spelunkr.tv">https://spelunkr.tv</a>.</p>
-<p>Nouveautés et mises à jour</p>
-<p><strong>Conduit Desktop 1.0</strong><br />
-Après une longue période de développement en version bêta, l'application desktop Conduit publie enfin sa version 1.0, disponible sur Windows, macOS et Linux. La nouvelle inclut également « Landscape », probablement une visualisation de landscape ou de données structurées. Conduit étant un client de messagerie open source déjà connu, cette version marque un jalon important. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y34aqn/conduit_desktop_10_is_here_windows_macos_linux/">Reddit r/hermesagent</a>.</p>
-<p><strong>GLM-5.4 disponible pour tous les abonnés GLM Coding Plan</strong><br />
-Z.AI rend GLM-5.4 accessible à tous les utilisateurs du plan de codage GLM. Ce modèle introduit un « loop transformer » destiné au coding généralisé — une architecture visant à mieux gérer les boucles et la récursivité dans les tâches de programmation. Annonce suivie avec intérêt sur HN (près de 200 points, 80+ commentaires). Source: <a href="https://z.ai/blog/glm-5.4">https://z.ai/blog/glm-5.4</a>.</p>
-<p>Extensions et greffons</p>
-<p><strong>Threadpacket — transfert de tâches entre agents IA</strong><br />
-Plugin Hermes venant d'être fusionné dans le catalogue officiel (NousResearch/hermes-agent #156066). Il permet d'envoyer des paquets éphémères d'un agent IA à un autre — résumé de travail en cours + fichiers originaux — sur la même machine ou entre machines distinctes. Utile quand on fait tourner Hermes en background pendant qu'on utilise Claude Code ou Codex en interactif. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3hps7/my_hermes_plugin_is_live_in_the_catalog_send/">Reddit r/hermesagent</a>.</p>
-<p><strong>Hermit 1.2 pour Hermes Agent</strong><br />
-L'annonce d'Hermit 1.2 mentionne des optimisations spécifiques pour Hermes Agent, orientées productivité. Le contenu exact de ces améliorations n'étant pas détaillé dans le titre ni l'extrait, cela reste à vérifier. Source: <a href="https://www.reddit.com/r/hermesagent/comments/1y3o5ov/hermit_12_for_hermes_agent_optimizing_bots_for/">Reddit r/hermesagent</a>.</p>
-<p>Volume — 94 éléments lus dans la shortlist, 13 sujets retenus, 81 écartés.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
