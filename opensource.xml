@@ -6,9 +6,120 @@
 <description>Veille quotidienne du subreddit r/opensource — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opensource.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 01:01:39 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 01:02:55 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opensource — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-28.html</link>
+<guid isPermaLink="false">opensource-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:02:55 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Linux Mint 27 passe en bêta avec un support Wayland intégral et Pop!_OS 26.04 LTS est officiellement disponible. systemd 263 intègre ses premières lignes de code en Rust. Parmi les nouveaux projets sélectionnés : un éditeur vidéo complet, un accès natif à iCloud sur tous les systèmes, et un outil permettant à un agent IA d'interagir avec un téléphone réel.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Concat — éditeur vidéo open source autonome</strong><br />
+Un éditeur vidéo qui propose souscription gratuite : sous-titrage automatique, isolation vocale, keyframes et montage non-linéaire. Alternative libre aux éditeurs par abonnement. Licence AGPL-3.0. 22 000 étoiles sur GitHub. https://github.com/jub0t/concat</p>
+<p><strong>SkyKeep — applications iCloud pour Windows, Linux et Android</strong><br />
+Accédez à vos notes, calendrier et autres données iCloud depuis n'importe quel système sans passer par le navigateur web. Écrit en Rust. GPL-3.0. 900 étoiles. https://github.com/yashwanthkamireddi/skykeep</p>
+<p><strong>Phone Harness — contrôlez un téléphone réel depuis un agent IA</strong><br />
+Permettez à Claude Code ou tout autre agent d'interagir avec un vrai téléphone (touchers, saisies, lectures d'écran). Ferme la brèche entre l'automatisation logicielle et les appareils physiques. Licence MIT. 6 000 étoiles. https://github.com/phone-harness/phone-harness</p>
+<p><strong>OpenGame — transformez votre agent de codage local en studio de jeu complet</strong><br />
+Fournit à Claude Code, Codex ou tout agent comparable les outils nécessaires pour construire un jeu 3D jouable de bout en bout, avec rendu, logique et design intégrés. Apache-2.0. 2 200 étoiles. https://github.com/nexu-io/opengame</p>
+<p><strong>SoundEtch — éditeur de podcasts et médias dans le navigateur</strong><br />
+Éditeur audio open source fonctionnant entièrement dans le navigateur desktop, sans installation ni compte. Prend en charge podcast et média. https://soundetch.org</p>
+<p><strong>OxiCloud — serveur de fichiers, calendrier et contacts en Rust</strong><br />
+Serveur self-hosted proposant gestion de documents, synchronisation de calendrier et répertoire téléphonique, conçu avec Rust pour la sécurité et les performances. https://www.fredix.xyz/2026/11/oxicloud/</p>
+<p><strong>TorqWave — éditeur audio spectral et MAO</strong><br />
+Éditeur audio C++20/JUCE orienté analyse spectrale avec licence AGPL-3.0. Récent, mais pertinent pour l'audio professionnel. https://github.com/BobClawblaw/torqwave</p>
+<p><strong>Lelvo — sauvegarde photo chiffrée de bout en bout, sans serveurs</strong><br />
+Application open source de sauvegarde photo chiffrée ne reposant sur aucun serveur centralisé. Les données restent uniquement chez l'utilisateur. License GPL-3.0. https://github.com/shahil-kv/Lelvo</p>
+<p><strong>Flipper Zero — kit CAN bus pour Tesla</strong><br />
+Toolkit open source pour explorer et interagir avec le bus CAN des véhicules Tesla à partir d'un Flipper Zero (matériel dès 14 $). https://github.com/hypery11/flipper-tesla-fsd</p>
+<p><strong>Audio-SWARM — application de bureau Python pour formes d'onde audio</strong><br />
+Génère des images de forme d'onde propres à intégrer comme couvertures d'album, avec traitement par lots de dossiers, spectres circulaires/radiaux et intégration en masse. Licence AGPL-3.0. Auteur original s'exprimant ici même sur Reddit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Linux Mint 27 — version bêta</strong><br />
+Bêta annoncée avant la version officielle prévue pour les fêtes. Apporte un support Wayland plein (et non plus optionnel), ainsi que de nouvelles applications incluses. https://www.phoronix.com/news/Linux-Mint-27-Beta</p>
+<p><strong>Pop!_OS 26.04 LTS</strong><br />
+Version longue durée disponible, sortie de System76. https://system76.com/blog/post/pop_os-26-04-lts-has-landed</p>
+<p><strong>systemd 263-rc1</strong><br />
+Premier gel candidat pour la prochaine grande version. Introduit un support initial du langage Rust pour créer de nouveaux programmes, un service de courtier pseudo-TTY expérimental, un outil de manifeste et un nouveau service keyring. https://www.phoronix.com/news/systemd-263-rc1</p>
+<p><strong>Pilote Vulkan Intel — mode e64 activé par défaut</strong><br />
+Le pilote ANV pour Linux active maintenant en mode par défaut l'adressage mémoire 64 bits efficace (« e64 »), remplaçant le mode décalage 32 bits utilisé jusqu'alors. Débutera avec les processeurs Intel Nova Lake P à graphique Xe3P intégré. https://www.phoronix.com/news/Intel-Efficient-64-bit-e64-ANV</p>
+<p><strong>ZenSMU — suivi et overclocking AMD Ryzen</strong><br />
+Utilitaire open source fournissant une interface CLI/TUI et une véritable interface graphique Linux pour surveiller et ajuster les paramètres du processeur AMD Ryzen, en absence d'utilitaire officiel AMD. https://www.phoronix.com/news/ZenSMU-Linux-TUI-GUI</p>
+<p><strong>runtime Compute Intel 26.44.40734.8</strong><br />
+Nouvelle mise à jour du runtime GPU open-source pour Linux et Windows, apportant des améliorations de performance. https://www.phoronix.com/news/Intel-Compute-26.44.40734.8</p>
+<p><strong>Support RDNA 5 dans le noyau Linux 7.5</strong><br />
+Le pilote graphique initial pour la nouvelle puce GFC13 / GC 13 d'AMD (RDNA 5) devrait atterrir dans Linux 7.5. https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5</p>
+<p><strong>Omarchy 4.6 RC1</strong><br />
+Distribution Arch Linux centrée sur l'IA, avec davantage d'intégrations locales IA et son propre gestionnaire de fichiers. https://www.phoronix.com/news/Omarchy-4.6-Released</p>
+<p><strong>Quoth — reconnaissance vocale locale IA pour Linux</strong><br />
+Outil de speech-to-text local qui choisit votre matériel plutôt que de vous imposer un modèle prédéfini. Mentionné sur itsFOSS. https://feed.itsfoss.com/link/24361/17516378/passbolt-review</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Node Modules Inspector — visualisez node_modules</strong><br />
+Visualisez les dépendances de vos projets Node.js, inspectez les paquets dupliqués et évaluez les tailles d'installation. Licence MIT, ~3 000 étoiles. https://github.com/antfu/node-modules-inspector</p>
+<p><strong>DiscordChatExporter — export d'historique de discussion Discord</strong><br />
+Application open source pour exporter l'historique complet d'un serveur ou canal Discord vers un fichier. Une manière simple de récupérer les conversations sans passer par les API propriétaires. https://github.com/tyrrrz/discordchatexporter</p>
+<p><strong>ComfyUI — moteur de graphes de nœuds pour modèles de diffusion</strong><br />
+Moteur d'inférence open source basé sur un graphe de nœuds, capable d'exécuter les derniers modèles de diffusion sur 4 Go de VRAM. Déjà bien établi (près de 149 000 étoiles), présenté ici comme projet notable de la sélection quotidienne opensourceprojects.dev. https://github.com/comfy-org/comfyui</p>
+<h2>Volume</h2>
+<p>64 entrées examinées dans la shortlist, 22 retenues, 42 écartées. Vérification à la source effectuée auprès de l'API GitHub pour les dépôts cités. Aucune erreur de collecte signalée dans meta.json.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Linux Mint 27 passe en bêta avec un support Wayland intégral et Pop!_OS 26.04 LTS est officiellement disponible. systemd 263 intègre ses premières lignes de code en Rust. Parmi les nouveaux projets sélectionnés : un éditeur vidéo complet, un accès natif à iCloud sur tous les systèmes, et un outil permettant à un agent IA d'interagir avec un téléphone réel.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Concat — éditeur vidéo open source autonome</strong><br />
+Un éditeur vidéo qui propose souscription gratuite : sous-titrage automatique, isolation vocale, keyframes et montage non-linéaire. Alternative libre aux éditeurs par abonnement. Licence AGPL-3.0. 22 000 étoiles sur GitHub. https://github.com/jub0t/concat</p>
+<p><strong>SkyKeep — applications iCloud pour Windows, Linux et Android</strong><br />
+Accédez à vos notes, calendrier et autres données iCloud depuis n'importe quel système sans passer par le navigateur web. Écrit en Rust. GPL-3.0. 900 étoiles. https://github.com/yashwanthkamireddi/skykeep</p>
+<p><strong>Phone Harness — contrôlez un téléphone réel depuis un agent IA</strong><br />
+Permettez à Claude Code ou tout autre agent d'interagir avec un vrai téléphone (touchers, saisies, lectures d'écran). Ferme la brèche entre l'automatisation logicielle et les appareils physiques. Licence MIT. 6 000 étoiles. https://github.com/phone-harness/phone-harness</p>
+<p><strong>OpenGame — transformez votre agent de codage local en studio de jeu complet</strong><br />
+Fournit à Claude Code, Codex ou tout agent comparable les outils nécessaires pour construire un jeu 3D jouable de bout en bout, avec rendu, logique et design intégrés. Apache-2.0. 2 200 étoiles. https://github.com/nexu-io/opengame</p>
+<p><strong>SoundEtch — éditeur de podcasts et médias dans le navigateur</strong><br />
+Éditeur audio open source fonctionnant entièrement dans le navigateur desktop, sans installation ni compte. Prend en charge podcast et média. https://soundetch.org</p>
+<p><strong>OxiCloud — serveur de fichiers, calendrier et contacts en Rust</strong><br />
+Serveur self-hosted proposant gestion de documents, synchronisation de calendrier et répertoire téléphonique, conçu avec Rust pour la sécurité et les performances. https://www.fredix.xyz/2026/11/oxicloud/</p>
+<p><strong>TorqWave — éditeur audio spectral et MAO</strong><br />
+Éditeur audio C++20/JUCE orienté analyse spectrale avec licence AGPL-3.0. Récent, mais pertinent pour l'audio professionnel. https://github.com/BobClawblaw/torqwave</p>
+<p><strong>Lelvo — sauvegarde photo chiffrée de bout en bout, sans serveurs</strong><br />
+Application open source de sauvegarde photo chiffrée ne reposant sur aucun serveur centralisé. Les données restent uniquement chez l'utilisateur. License GPL-3.0. https://github.com/shahil-kv/Lelvo</p>
+<p><strong>Flipper Zero — kit CAN bus pour Tesla</strong><br />
+Toolkit open source pour explorer et interagir avec le bus CAN des véhicules Tesla à partir d'un Flipper Zero (matériel dès 14 $). https://github.com/hypery11/flipper-tesla-fsd</p>
+<p><strong>Audio-SWARM — application de bureau Python pour formes d'onde audio</strong><br />
+Génère des images de forme d'onde propres à intégrer comme couvertures d'album, avec traitement par lots de dossiers, spectres circulaires/radiaux et intégration en masse. Licence AGPL-3.0. Auteur original s'exprimant ici même sur Reddit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Linux Mint 27 — version bêta</strong><br />
+Bêta annoncée avant la version officielle prévue pour les fêtes. Apporte un support Wayland plein (et non plus optionnel), ainsi que de nouvelles applications incluses. https://www.phoronix.com/news/Linux-Mint-27-Beta</p>
+<p><strong>Pop!_OS 26.04 LTS</strong><br />
+Version longue durée disponible, sortie de System76. https://system76.com/blog/post/pop_os-26-04-lts-has-landed</p>
+<p><strong>systemd 263-rc1</strong><br />
+Premier gel candidat pour la prochaine grande version. Introduit un support initial du langage Rust pour créer de nouveaux programmes, un service de courtier pseudo-TTY expérimental, un outil de manifeste et un nouveau service keyring. https://www.phoronix.com/news/systemd-263-rc1</p>
+<p><strong>Pilote Vulkan Intel — mode e64 activé par défaut</strong><br />
+Le pilote ANV pour Linux active maintenant en mode par défaut l'adressage mémoire 64 bits efficace (« e64 »), remplaçant le mode décalage 32 bits utilisé jusqu'alors. Débutera avec les processeurs Intel Nova Lake P à graphique Xe3P intégré. https://www.phoronix.com/news/Intel-Efficient-64-bit-e64-ANV</p>
+<p><strong>ZenSMU — suivi et overclocking AMD Ryzen</strong><br />
+Utilitaire open source fournissant une interface CLI/TUI et une véritable interface graphique Linux pour surveiller et ajuster les paramètres du processeur AMD Ryzen, en absence d'utilitaire officiel AMD. https://www.phoronix.com/news/ZenSMU-Linux-TUI-GUI</p>
+<p><strong>runtime Compute Intel 26.44.40734.8</strong><br />
+Nouvelle mise à jour du runtime GPU open-source pour Linux et Windows, apportant des améliorations de performance. https://www.phoronix.com/news/Intel-Compute-26.44.40734.8</p>
+<p><strong>Support RDNA 5 dans le noyau Linux 7.5</strong><br />
+Le pilote graphique initial pour la nouvelle puce GFC13 / GC 13 d'AMD (RDNA 5) devrait atterrir dans Linux 7.5. https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5</p>
+<p><strong>Omarchy 4.6 RC1</strong><br />
+Distribution Arch Linux centrée sur l'IA, avec davantage d'intégrations locales IA et son propre gestionnaire de fichiers. https://www.phoronix.com/news/Omarchy-4.6-Released</p>
+<p><strong>Quoth — reconnaissance vocale locale IA pour Linux</strong><br />
+Outil de speech-to-text local qui choisit votre matériel plutôt que de vous imposer un modèle prédéfini. Mentionné sur itsFOSS. https://feed.itsfoss.com/link/24361/17516378/passbolt-review</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Node Modules Inspector — visualisez node_modules</strong><br />
+Visualisez les dépendances de vos projets Node.js, inspectez les paquets dupliqués et évaluez les tailles d'installation. Licence MIT, ~3 000 étoiles. https://github.com/antfu/node-modules-inspector</p>
+<p><strong>DiscordChatExporter — export d'historique de discussion Discord</strong><br />
+Application open source pour exporter l'historique complet d'un serveur ou canal Discord vers un fichier. Une manière simple de récupérer les conversations sans passer par les API propriétaires. https://github.com/tyrrrz/discordchatexporter</p>
+<p><strong>ComfyUI — moteur de graphes de nœuds pour modèles de diffusion</strong><br />
+Moteur d'inférence open source basé sur un graphe de nœuds, capable d'exécuter les derniers modèles de diffusion sur 4 Go de VRAM. Déjà bien établi (près de 149 000 étoiles), présenté ici comme projet notable de la sélection quotidienne opensourceprojects.dev. https://github.com/comfy-org/comfyui</p>
+<h2>Volume</h2>
+<p>64 entrées examinées dans la shortlist, 22 retenues, 42 écartées. Vérification à la source effectuée auprès de l'API GitHub pour les dépôts cités. Aucune erreur de collecte signalée dans meta.json.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opensource — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opensource/2026-11-27.html</link>

@@ -6,9 +6,171 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 28 Nov 2026 00:52:21 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 01:12:54 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/LaTeX — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/latex/2026-11-28.html</link>
+<guid isPermaLink="false">latex-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:12:54 +0100</pubDate>
+<category>r/LaTeX</category>
+<description><![CDATA[<h1>Veille r/LaTeX — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune publication récente n'a été recensée sur r/LaTeX depuis le 27 novembre. Le moteur Volt, créé par Henry Oswald (cofondateur de ShareLaTeX/Overleaf), attire l'attention avec son ambition d'être un remplacement compatible et rapide des moteurs TeX traditionnels, écrit en Zig. La suite ForjaTeX propose également une alternative open-source à la compilation locale avec un éditeur visuel intégré pour TikZ/PGFPlots.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Volt — nouveau moteur LaTeX à compatibilité byte-to-byte</h3>
+<p>Henry Oswald, cofondateur de ShareLaTeX (acquis puis fusionné avec Overleaf), annonce Volt, un moteur de composition qui se veut un remplacement direct et fidèle — à_byte-près_ — de pdfTeX, XeTeX, LuaTeX et latexmk. Le projet est entièrement rédigé en Zig (environ 1,29 million de lignes) avec assistance de Lean 4, et devrait être publié sous licence libre prochainement. Selon la fiche du projet, Volt a vocation à s'intercaler sans modification dans les workflows existants tout en offrant des performances améliorées. Le site <a href="https://www.voltlatex.com/blog/next-gen-latex-tooling">voltlatex.com</a> accueille un billet introductif et un lien vers une présentation vidéo ainsi qu'une newsletter pour suivre l'avancement.</p>
+<h3>ForjaTeX App Suite — IDE LaTeX hors ligne et studio visuel TikZ/PGFPlots</h3>
+<p>Jean Pimenta présente ForjaTeX App Suite, une application de bureau gratuite et open-source (licence GPL v3.0) construite avec Tauri v2, Rust, React et TypeScript. Le projet se concentre sur le travail hors ligne pour l'écriture scientifique en LaTeX. ForjaTeX comprend plusieurs composants : un IDE LaTeX autonome (ForjaTeX Editor), un studio visuel interactif dédié aux diagrammes TikZ et graphiques PGFPlots (ForjaTikZ), et un outil de gestion des bibliographies (ForjaBib). L'ensemble vise à fournir une expérience locale rapide et légère, en alternative aux éditeurs en ligne comme Overleaf ou Prism. Liens : <a href="https://www.reddit.com/r/LaTeX/comments/1y6io20/open_source_forjatex_app_suite_free_offlinefirst/">reddit</a> / <a href="https://dicas-l.com.br/arquivo/forjatex_app_suite_suite_gratuita_e_open_source_para_escrita_cientifique_en_latex.php">Dicas-L</a>. Licence : GPL v3.0.</p>
+<h3>texpresso-view — aperçu LaTeX en direct dans Emacs, mis à jour à la frappe</h3>
+<p>Un fork de TeXstudio intègre désormais un aperçu en temps réel basé sur TeXpresso (l'utilitaire d'aperçu live pour Emacs et Vim). L'éditeur conserve l'interface TeXstudio habituelle tout en rafraîchissant le PDF pendant la saisie, avec le même outil de loupe et l'intégration Synctex. Le toggle entre vue live et PDF compilé permet de naviguer selon ses préférences. Source et installation disponibles via les dépôts du projet <a href="https://www.reddit.com/r/LaTeX/comments/1xpnkf9/texstudio_espresso_a_fork_of_texstudio_with_live/">reddit</a>.</p>
+<h3>Maintien simultané de versions HTML et PDF à partir d'un même fichier LaTeX</h3>
+<p>Un auteur explique comment il maintient actuellement une version web et une version PDF de son contenu LaTeX à partir d'un seul corpus de fichiers source. Il met en avant l'émergence d'outils rendant ce double flux « étonnamment simple » et partage le site web concret qu'il produit ainsi, comme démonstration pratique. L'article souligne aussi un point positif concernant l'usage de l'IA dans ce workflow, en contrepoint du discours généralement négatif. Lien : <a href="https://www.reddit.com/r/LaTeX/comments/1y6qmbi/maintaining_both_html_and_pdf_versions_of_latex/">reddit</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Volt</strong> sera open-sourcé dans les prochains jours ; sa date de sortie définitive n'est pas encore annoncée. Le moteur ne nécessite aucune clé API ni connexion internet et se présente comme un exécutable unique.</li>
+<li><strong>TeXpresso</strong> poursuit son développement : l'éditeur navigateur <a href="https://texpresso.app">texpresso.app</a> entre en béta publique et propose désormais la collaboration en temps réel chiffrée de pair-à-pair, la synchronisation Dropbox/GitHub/Dossier local, et le support de BibTeX et beamer.</li>
+<li><strong>Overleaf Server Pro 6.3</strong> a été publiée en août 2026 avec des améliorations des workflows d'édition, du personnalisation institutionnelle et des mises à jour de sécurité, mais n'apporte rien de spécifique à l'édition technique courante.</li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<p>Aucun filtre technique notable ne passe le tri cette fois-ci. Les fils de dépannage ponctuels (polices, erreurs de compilation, citations non résolues) restent au-dessous du seuil de généralisabilité attendu.</p>
+<h2>Volume</h2>
+<p>4 publications examinées dans l'intervalle des quatre derniers jours, 3 retenues, 1 écartée (hors fenêtre de quatre jours). Taux de rétention : 75 %.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/LaTeX — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune publication récente n'a été recensée sur r/LaTeX depuis le 27 novembre. Le moteur Volt, créé par Henry Oswald (cofondateur de ShareLaTeX/Overleaf), attire l'attention avec son ambition d'être un remplacement compatible et rapide des moteurs TeX traditionnels, écrit en Zig. La suite ForjaTeX propose également une alternative open-source à la compilation locale avec un éditeur visuel intégré pour TikZ/PGFPlots.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Volt — nouveau moteur LaTeX à compatibilité byte-to-byte</h3>
+<p>Henry Oswald, cofondateur de ShareLaTeX (acquis puis fusionné avec Overleaf), annonce Volt, un moteur de composition qui se veut un remplacement direct et fidèle — à_byte-près_ — de pdfTeX, XeTeX, LuaTeX et latexmk. Le projet est entièrement rédigé en Zig (environ 1,29 million de lignes) avec assistance de Lean 4, et devrait être publié sous licence libre prochainement. Selon la fiche du projet, Volt a vocation à s'intercaler sans modification dans les workflows existants tout en offrant des performances améliorées. Le site <a href="https://www.voltlatex.com/blog/next-gen-latex-tooling">voltlatex.com</a> accueille un billet introductif et un lien vers une présentation vidéo ainsi qu'une newsletter pour suivre l'avancement.</p>
+<h3>ForjaTeX App Suite — IDE LaTeX hors ligne et studio visuel TikZ/PGFPlots</h3>
+<p>Jean Pimenta présente ForjaTeX App Suite, une application de bureau gratuite et open-source (licence GPL v3.0) construite avec Tauri v2, Rust, React et TypeScript. Le projet se concentre sur le travail hors ligne pour l'écriture scientifique en LaTeX. ForjaTeX comprend plusieurs composants : un IDE LaTeX autonome (ForjaTeX Editor), un studio visuel interactif dédié aux diagrammes TikZ et graphiques PGFPlots (ForjaTikZ), et un outil de gestion des bibliographies (ForjaBib). L'ensemble vise à fournir une expérience locale rapide et légère, en alternative aux éditeurs en ligne comme Overleaf ou Prism. Liens : <a href="https://www.reddit.com/r/LaTeX/comments/1y6io20/open_source_forjatex_app_suite_free_offlinefirst/">reddit</a> / <a href="https://dicas-l.com.br/arquivo/forjatex_app_suite_suite_gratuita_e_open_source_para_escrita_cientifique_en_latex.php">Dicas-L</a>. Licence : GPL v3.0.</p>
+<h3>texpresso-view — aperçu LaTeX en direct dans Emacs, mis à jour à la frappe</h3>
+<p>Un fork de TeXstudio intègre désormais un aperçu en temps réel basé sur TeXpresso (l'utilitaire d'aperçu live pour Emacs et Vim). L'éditeur conserve l'interface TeXstudio habituelle tout en rafraîchissant le PDF pendant la saisie, avec le même outil de loupe et l'intégration Synctex. Le toggle entre vue live et PDF compilé permet de naviguer selon ses préférences. Source et installation disponibles via les dépôts du projet <a href="https://www.reddit.com/r/LaTeX/comments/1xpnkf9/texstudio_espresso_a_fork_of_texstudio_with_live/">reddit</a>.</p>
+<h3>Maintien simultané de versions HTML et PDF à partir d'un même fichier LaTeX</h3>
+<p>Un auteur explique comment il maintient actuellement une version web et une version PDF de son contenu LaTeX à partir d'un seul corpus de fichiers source. Il met en avant l'émergence d'outils rendant ce double flux « étonnamment simple » et partage le site web concret qu'il produit ainsi, comme démonstration pratique. L'article souligne aussi un point positif concernant l'usage de l'IA dans ce workflow, en contrepoint du discours généralement négatif. Lien : <a href="https://www.reddit.com/r/LaTeX/comments/1y6qmbi/maintaining_both_html_and_pdf_versions_of_latex/">reddit</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Volt</strong> sera open-sourcé dans les prochains jours ; sa date de sortie définitive n'est pas encore annoncée. Le moteur ne nécessite aucune clé API ni connexion internet et se présente comme un exécutable unique.</li>
+<li><strong>TeXpresso</strong> poursuit son développement : l'éditeur navigateur <a href="https://texpresso.app">texpresso.app</a> entre en béta publique et propose désormais la collaboration en temps réel chiffrée de pair-à-pair, la synchronisation Dropbox/GitHub/Dossier local, et le support de BibTeX et beamer.</li>
+<li><strong>Overleaf Server Pro 6.3</strong> a été publiée en août 2026 avec des améliorations des workflows d'édition, du personnalisation institutionnelle et des mises à jour de sécurité, mais n'apporte rien de spécifique à l'édition technique courante.</li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<p>Aucun filtre technique notable ne passe le tri cette fois-ci. Les fils de dépannage ponctuels (polices, erreurs de compilation, citations non résolues) restent au-dessous du seuil de généralisabilité attendu.</p>
+<h2>Volume</h2>
+<p>4 publications examinées dans l'intervalle des quatre derniers jours, 3 retenues, 1 écartée (hors fenêtre de quatre jours). Taux de rétention : 75 %.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/opensource — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opensource/2026-11-28.html</link>
+<guid isPermaLink="false">opensource-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:02:55 +0100</pubDate>
+<category>r/opensource</category>
+<description><![CDATA[<h1>Veille r/opensource — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Linux Mint 27 passe en bêta avec un support Wayland intégral et Pop!_OS 26.04 LTS est officiellement disponible. systemd 263 intègre ses premières lignes de code en Rust. Parmi les nouveaux projets sélectionnés : un éditeur vidéo complet, un accès natif à iCloud sur tous les systèmes, et un outil permettant à un agent IA d'interagir avec un téléphone réel.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Concat — éditeur vidéo open source autonome</strong><br />
+Un éditeur vidéo qui propose souscription gratuite : sous-titrage automatique, isolation vocale, keyframes et montage non-linéaire. Alternative libre aux éditeurs par abonnement. Licence AGPL-3.0. 22 000 étoiles sur GitHub. https://github.com/jub0t/concat</p>
+<p><strong>SkyKeep — applications iCloud pour Windows, Linux et Android</strong><br />
+Accédez à vos notes, calendrier et autres données iCloud depuis n'importe quel système sans passer par le navigateur web. Écrit en Rust. GPL-3.0. 900 étoiles. https://github.com/yashwanthkamireddi/skykeep</p>
+<p><strong>Phone Harness — contrôlez un téléphone réel depuis un agent IA</strong><br />
+Permettez à Claude Code ou tout autre agent d'interagir avec un vrai téléphone (touchers, saisies, lectures d'écran). Ferme la brèche entre l'automatisation logicielle et les appareils physiques. Licence MIT. 6 000 étoiles. https://github.com/phone-harness/phone-harness</p>
+<p><strong>OpenGame — transformez votre agent de codage local en studio de jeu complet</strong><br />
+Fournit à Claude Code, Codex ou tout agent comparable les outils nécessaires pour construire un jeu 3D jouable de bout en bout, avec rendu, logique et design intégrés. Apache-2.0. 2 200 étoiles. https://github.com/nexu-io/opengame</p>
+<p><strong>SoundEtch — éditeur de podcasts et médias dans le navigateur</strong><br />
+Éditeur audio open source fonctionnant entièrement dans le navigateur desktop, sans installation ni compte. Prend en charge podcast et média. https://soundetch.org</p>
+<p><strong>OxiCloud — serveur de fichiers, calendrier et contacts en Rust</strong><br />
+Serveur self-hosted proposant gestion de documents, synchronisation de calendrier et répertoire téléphonique, conçu avec Rust pour la sécurité et les performances. https://www.fredix.xyz/2026/11/oxicloud/</p>
+<p><strong>TorqWave — éditeur audio spectral et MAO</strong><br />
+Éditeur audio C++20/JUCE orienté analyse spectrale avec licence AGPL-3.0. Récent, mais pertinent pour l'audio professionnel. https://github.com/BobClawblaw/torqwave</p>
+<p><strong>Lelvo — sauvegarde photo chiffrée de bout en bout, sans serveurs</strong><br />
+Application open source de sauvegarde photo chiffrée ne reposant sur aucun serveur centralisé. Les données restent uniquement chez l'utilisateur. License GPL-3.0. https://github.com/shahil-kv/Lelvo</p>
+<p><strong>Flipper Zero — kit CAN bus pour Tesla</strong><br />
+Toolkit open source pour explorer et interagir avec le bus CAN des véhicules Tesla à partir d'un Flipper Zero (matériel dès 14 $). https://github.com/hypery11/flipper-tesla-fsd</p>
+<p><strong>Audio-SWARM — application de bureau Python pour formes d'onde audio</strong><br />
+Génère des images de forme d'onde propres à intégrer comme couvertures d'album, avec traitement par lots de dossiers, spectres circulaires/radiaux et intégration en masse. Licence AGPL-3.0. Auteur original s'exprimant ici même sur Reddit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Linux Mint 27 — version bêta</strong><br />
+Bêta annoncée avant la version officielle prévue pour les fêtes. Apporte un support Wayland plein (et non plus optionnel), ainsi que de nouvelles applications incluses. https://www.phoronix.com/news/Linux-Mint-27-Beta</p>
+<p><strong>Pop!_OS 26.04 LTS</strong><br />
+Version longue durée disponible, sortie de System76. https://system76.com/blog/post/pop_os-26-04-lts-has-landed</p>
+<p><strong>systemd 263-rc1</strong><br />
+Premier gel candidat pour la prochaine grande version. Introduit un support initial du langage Rust pour créer de nouveaux programmes, un service de courtier pseudo-TTY expérimental, un outil de manifeste et un nouveau service keyring. https://www.phoronix.com/news/systemd-263-rc1</p>
+<p><strong>Pilote Vulkan Intel — mode e64 activé par défaut</strong><br />
+Le pilote ANV pour Linux active maintenant en mode par défaut l'adressage mémoire 64 bits efficace (« e64 »), remplaçant le mode décalage 32 bits utilisé jusqu'alors. Débutera avec les processeurs Intel Nova Lake P à graphique Xe3P intégré. https://www.phoronix.com/news/Intel-Efficient-64-bit-e64-ANV</p>
+<p><strong>ZenSMU — suivi et overclocking AMD Ryzen</strong><br />
+Utilitaire open source fournissant une interface CLI/TUI et une véritable interface graphique Linux pour surveiller et ajuster les paramètres du processeur AMD Ryzen, en absence d'utilitaire officiel AMD. https://www.phoronix.com/news/ZenSMU-Linux-TUI-GUI</p>
+<p><strong>runtime Compute Intel 26.44.40734.8</strong><br />
+Nouvelle mise à jour du runtime GPU open-source pour Linux et Windows, apportant des améliorations de performance. https://www.phoronix.com/news/Intel-Compute-26.44.40734.8</p>
+<p><strong>Support RDNA 5 dans le noyau Linux 7.5</strong><br />
+Le pilote graphique initial pour la nouvelle puce GFC13 / GC 13 d'AMD (RDNA 5) devrait atterrir dans Linux 7.5. https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5</p>
+<p><strong>Omarchy 4.6 RC1</strong><br />
+Distribution Arch Linux centrée sur l'IA, avec davantage d'intégrations locales IA et son propre gestionnaire de fichiers. https://www.phoronix.com/news/Omarchy-4.6-Released</p>
+<p><strong>Quoth — reconnaissance vocale locale IA pour Linux</strong><br />
+Outil de speech-to-text local qui choisit votre matériel plutôt que de vous imposer un modèle prédéfini. Mentionné sur itsFOSS. https://feed.itsfoss.com/link/24361/17516378/passbolt-review</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Node Modules Inspector — visualisez node_modules</strong><br />
+Visualisez les dépendances de vos projets Node.js, inspectez les paquets dupliqués et évaluez les tailles d'installation. Licence MIT, ~3 000 étoiles. https://github.com/antfu/node-modules-inspector</p>
+<p><strong>DiscordChatExporter — export d'historique de discussion Discord</strong><br />
+Application open source pour exporter l'historique complet d'un serveur ou canal Discord vers un fichier. Une manière simple de récupérer les conversations sans passer par les API propriétaires. https://github.com/tyrrrz/discordchatexporter</p>
+<p><strong>ComfyUI — moteur de graphes de nœuds pour modèles de diffusion</strong><br />
+Moteur d'inférence open source basé sur un graphe de nœuds, capable d'exécuter les derniers modèles de diffusion sur 4 Go de VRAM. Déjà bien établi (près de 149 000 étoiles), présenté ici comme projet notable de la sélection quotidienne opensourceprojects.dev. https://github.com/comfy-org/comfyui</p>
+<h2>Volume</h2>
+<p>64 entrées examinées dans la shortlist, 22 retenues, 42 écartées. Vérification à la source effectuée auprès de l'API GitHub pour les dépôts cités. Aucune erreur de collecte signalée dans meta.json.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opensource — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Linux Mint 27 passe en bêta avec un support Wayland intégral et Pop!_OS 26.04 LTS est officiellement disponible. systemd 263 intègre ses premières lignes de code en Rust. Parmi les nouveaux projets sélectionnés : un éditeur vidéo complet, un accès natif à iCloud sur tous les systèmes, et un outil permettant à un agent IA d'interagir avec un téléphone réel.</p>
+<h2>Applications et outils nouveaux</h2>
+<p><strong>Concat — éditeur vidéo open source autonome</strong><br />
+Un éditeur vidéo qui propose souscription gratuite : sous-titrage automatique, isolation vocale, keyframes et montage non-linéaire. Alternative libre aux éditeurs par abonnement. Licence AGPL-3.0. 22 000 étoiles sur GitHub. https://github.com/jub0t/concat</p>
+<p><strong>SkyKeep — applications iCloud pour Windows, Linux et Android</strong><br />
+Accédez à vos notes, calendrier et autres données iCloud depuis n'importe quel système sans passer par le navigateur web. Écrit en Rust. GPL-3.0. 900 étoiles. https://github.com/yashwanthkamireddi/skykeep</p>
+<p><strong>Phone Harness — contrôlez un téléphone réel depuis un agent IA</strong><br />
+Permettez à Claude Code ou tout autre agent d'interagir avec un vrai téléphone (touchers, saisies, lectures d'écran). Ferme la brèche entre l'automatisation logicielle et les appareils physiques. Licence MIT. 6 000 étoiles. https://github.com/phone-harness/phone-harness</p>
+<p><strong>OpenGame — transformez votre agent de codage local en studio de jeu complet</strong><br />
+Fournit à Claude Code, Codex ou tout agent comparable les outils nécessaires pour construire un jeu 3D jouable de bout en bout, avec rendu, logique et design intégrés. Apache-2.0. 2 200 étoiles. https://github.com/nexu-io/opengame</p>
+<p><strong>SoundEtch — éditeur de podcasts et médias dans le navigateur</strong><br />
+Éditeur audio open source fonctionnant entièrement dans le navigateur desktop, sans installation ni compte. Prend en charge podcast et média. https://soundetch.org</p>
+<p><strong>OxiCloud — serveur de fichiers, calendrier et contacts en Rust</strong><br />
+Serveur self-hosted proposant gestion de documents, synchronisation de calendrier et répertoire téléphonique, conçu avec Rust pour la sécurité et les performances. https://www.fredix.xyz/2026/11/oxicloud/</p>
+<p><strong>TorqWave — éditeur audio spectral et MAO</strong><br />
+Éditeur audio C++20/JUCE orienté analyse spectrale avec licence AGPL-3.0. Récent, mais pertinent pour l'audio professionnel. https://github.com/BobClawblaw/torqwave</p>
+<p><strong>Lelvo — sauvegarde photo chiffrée de bout en bout, sans serveurs</strong><br />
+Application open source de sauvegarde photo chiffrée ne reposant sur aucun serveur centralisé. Les données restent uniquement chez l'utilisateur. License GPL-3.0. https://github.com/shahil-kv/Lelvo</p>
+<p><strong>Flipper Zero — kit CAN bus pour Tesla</strong><br />
+Toolkit open source pour explorer et interagir avec le bus CAN des véhicules Tesla à partir d'un Flipper Zero (matériel dès 14 $). https://github.com/hypery11/flipper-tesla-fsd</p>
+<p><strong>Audio-SWARM — application de bureau Python pour formes d'onde audio</strong><br />
+Génère des images de forme d'onde propres à intégrer comme couvertures d'album, avec traitement par lots de dossiers, spectres circulaires/radiaux et intégration en masse. Licence AGPL-3.0. Auteur original s'exprimant ici même sur Reddit.</p>
+<h2>Nouveautés et mises à jour</h2>
+<p><strong>Linux Mint 27 — version bêta</strong><br />
+Bêta annoncée avant la version officielle prévue pour les fêtes. Apporte un support Wayland plein (et non plus optionnel), ainsi que de nouvelles applications incluses. https://www.phoronix.com/news/Linux-Mint-27-Beta</p>
+<p><strong>Pop!_OS 26.04 LTS</strong><br />
+Version longue durée disponible, sortie de System76. https://system76.com/blog/post/pop_os-26-04-lts-has-landed</p>
+<p><strong>systemd 263-rc1</strong><br />
+Premier gel candidat pour la prochaine grande version. Introduit un support initial du langage Rust pour créer de nouveaux programmes, un service de courtier pseudo-TTY expérimental, un outil de manifeste et un nouveau service keyring. https://www.phoronix.com/news/systemd-263-rc1</p>
+<p><strong>Pilote Vulkan Intel — mode e64 activé par défaut</strong><br />
+Le pilote ANV pour Linux active maintenant en mode par défaut l'adressage mémoire 64 bits efficace (« e64 »), remplaçant le mode décalage 32 bits utilisé jusqu'alors. Débutera avec les processeurs Intel Nova Lake P à graphique Xe3P intégré. https://www.phoronix.com/news/Intel-Efficient-64-bit-e64-ANV</p>
+<p><strong>ZenSMU — suivi et overclocking AMD Ryzen</strong><br />
+Utilitaire open source fournissant une interface CLI/TUI et une véritable interface graphique Linux pour surveiller et ajuster les paramètres du processeur AMD Ryzen, en absence d'utilitaire officiel AMD. https://www.phoronix.com/news/ZenSMU-Linux-TUI-GUI</p>
+<p><strong>runtime Compute Intel 26.44.40734.8</strong><br />
+Nouvelle mise à jour du runtime GPU open-source pour Linux et Windows, apportant des améliorations de performance. https://www.phoronix.com/news/Intel-Compute-26.44.40734.8</p>
+<p><strong>Support RDNA 5 dans le noyau Linux 7.5</strong><br />
+Le pilote graphique initial pour la nouvelle puce GFC13 / GC 13 d'AMD (RDNA 5) devrait atterrir dans Linux 7.5. https://www.phoronix.com/news/AMD-RDNA5-Linux-7.5</p>
+<p><strong>Omarchy 4.6 RC1</strong><br />
+Distribution Arch Linux centrée sur l'IA, avec davantage d'intégrations locales IA et son propre gestionnaire de fichiers. https://www.phoronix.com/news/Omarchy-4.6-Released</p>
+<p><strong>Quoth — reconnaissance vocale locale IA pour Linux</strong><br />
+Outil de speech-to-text local qui choisit votre matériel plutôt que de vous imposer un modèle prédéfini. Mentionné sur itsFOSS. https://feed.itsfoss.com/link/24361/17516378/passbolt-review</p>
+<h2>Extensions et greffons</h2>
+<p><strong>Node Modules Inspector — visualisez node_modules</strong><br />
+Visualisez les dépendances de vos projets Node.js, inspectez les paquets dupliqués et évaluez les tailles d'installation. Licence MIT, ~3 000 étoiles. https://github.com/antfu/node-modules-inspector</p>
+<p><strong>DiscordChatExporter — export d'historique de discussion Discord</strong><br />
+Application open source pour exporter l'historique complet d'un serveur ou canal Discord vers un fichier. Une manière simple de récupérer les conversations sans passer par les API propriétaires. https://github.com/tyrrrz/discordchatexporter</p>
+<p><strong>ComfyUI — moteur de graphes de nœuds pour modèles de diffusion</strong><br />
+Moteur d'inférence open source basé sur un graphe de nœuds, capable d'exécuter les derniers modèles de diffusion sur 4 Go de VRAM. Déjà bien établi (près de 149 000 étoiles), présenté ici comme projet notable de la sélection quotidienne opensourceprojects.dev. https://github.com/comfy-org/comfyui</p>
+<h2>Volume</h2>
+<p>64 entrées examinées dans la shortlist, 22 retenues, 42 écartées. Vérification à la source effectuée auprès de l'API GitHub pour les dépôts cités. Aucune erreur de collecte signalée dans meta.json.</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/hermesagent — samedi 28 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/hermesagent/2026-11-28.html</link>
@@ -5132,140 +5294,6 @@ Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant
 <p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
 <h2>Volume</h2>
 <p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/macapps — mardi 24 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/macapps/2026-11-24.html</link>
-<guid isPermaLink="false">macapps-2026-11-24</guid>
-<pubDate>Tue, 24 Nov 2026 00:14:21 +0100</pubDate>
-<category>r/macapps</category>
-<description><![CDATA[<h1>Veille r/macapps — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Rien de nouveau qui mérite votre attention cette nuit — la collecte s'est achevée à minuit, les nouveaux fils ne sont pas encore dans les journaux. L'édition suivante prendra le relais dès que les prochains relevers seront passés.</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<p>Aucune nouvelle annonce détectée depuis l'édition d'hier. Les items retenus la veille restent en attente de traitement complet :</p>
-<ul>
-<li><strong>Chocky</strong> — assistant IA hors-ligne et traducteur Mandarin/Cantonais, 0,99 $ une fois (<a href="https://chocky.app">chocky.app</a>)</li>
-<li><strong>NO SPEAKER</strong> — pavé tactile qui parle via son moteur haptique, gratuit MIT, 1200 étoiles GitHub (<a href="https://github.com/os6/nospeaker">github.com/os6/nospeaker</a>)</li>
-<li><strong>Lume</strong> — gestionnaire de recettes et mode cuisine pour Mac/iOS/Watch, disponible sur la Mac App Store</li>
-<li><strong>TideGlass</strong> — mondes vivants animés, 10 mondes gratuits + débloquements à 12 $ (<a href="https://tideglass.app">tideglass.app</a>)</li>
-<li><strong>Auralyn</strong> — lecteur centralisé musique/films, essai 14 jours, CA$29,99 à vie (<a href="https://ironlabstech.com/auralyn">ironlabstech.com/auralyn</a>)</li>
-<li><strong>VelaTerm</strong> — terminal multiplexer et environnement agentic, libre MIT (<a href="https://velaterm.com">velaterm.com</a>)</li>
-<li><strong>FigmaMCP</strong> — laissez Claude Code ou Codex modifier vos fichiers Figma, gratuit (<a href="https://www.producthunt.com/products/figmamcp">Product Hunt</a>)</li>
-</ul>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<p>Aucune.</p>
-<hr />
-<h2>Extensions et greffons</h2>
-<p>Aucune.</p>
-<hr />
-<h2>Homebrew — nouveautés</h2>
-<p>Aucun cask nouvellement ajouté ce cycle.</p>
-<hr />
-<h2>Mention — Setapp</h2>
-<p>Aucune nouvelle newsletter reçue depuis celle du 23 novembre (AtAt, PocketWebTools, BX).</p>
-<hr />
-<h2>Volume</h2>
-<p>Zéro post publié dans l'intervalle. Collecte en attente du prochain cycle toutes les deux heures.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/macapps — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Rien de nouveau qui mérite votre attention cette nuit — la collecte s'est achevée à minuit, les nouveaux fils ne sont pas encore dans les journaux. L'édition suivante prendra le relais dès que les prochains relevers seront passés.</p>
-<hr />
-<h2>Applications et outils nouveaux</h2>
-<p>Aucune nouvelle annonce détectée depuis l'édition d'hier. Les items retenus la veille restent en attente de traitement complet :</p>
-<ul>
-<li><strong>Chocky</strong> — assistant IA hors-ligne et traducteur Mandarin/Cantonais, 0,99 $ une fois (<a href="https://chocky.app">chocky.app</a>)</li>
-<li><strong>NO SPEAKER</strong> — pavé tactile qui parle via son moteur haptique, gratuit MIT, 1200 étoiles GitHub (<a href="https://github.com/os6/nospeaker">github.com/os6/nospeaker</a>)</li>
-<li><strong>Lume</strong> — gestionnaire de recettes et mode cuisine pour Mac/iOS/Watch, disponible sur la Mac App Store</li>
-<li><strong>TideGlass</strong> — mondes vivants animés, 10 mondes gratuits + débloquements à 12 $ (<a href="https://tideglass.app">tideglass.app</a>)</li>
-<li><strong>Auralyn</strong> — lecteur centralisé musique/films, essai 14 jours, CA$29,99 à vie (<a href="https://ironlabstech.com/auralyn">ironlabstech.com/auralyn</a>)</li>
-<li><strong>VelaTerm</strong> — terminal multiplexer et environnement agentic, libre MIT (<a href="https://velaterm.com">velaterm.com</a>)</li>
-<li><strong>FigmaMCP</strong> — laissez Claude Code ou Codex modifier vos fichiers Figma, gratuit (<a href="https://www.producthunt.com/products/figmamcp">Product Hunt</a>)</li>
-</ul>
-<hr />
-<h2>Nouveautés et mises à jour</h2>
-<p>Aucune.</p>
-<hr />
-<h2>Extensions et greffons</h2>
-<p>Aucune.</p>
-<hr />
-<h2>Homebrew — nouveautés</h2>
-<p>Aucun cask nouvellement ajouté ce cycle.</p>
-<hr />
-<h2>Mention — Setapp</h2>
-<p>Aucune nouvelle newsletter reçue depuis celle du 23 novembre (AtAt, PocketWebTools, BX).</p>
-<hr />
-<h2>Volume</h2>
-<p>Zéro post publié dans l'intervalle. Collecte en attente du prochain cycle toutes les deux heures.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille ArtCraft — mardi 24 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/artcraft/2026-11-24.html</link>
-<guid isPermaLink="false">artcraft-2026-11-24</guid>
-<pubDate>Tue, 24 Nov 2026 00:01:34 +0100</pubDate>
-<category>r/ArtCraftAI</category>
-<description><![CDATA[<h1>Veille ArtCraft — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>ArtCraft Studio a publié la version 0.3.31 avec des améliorations importantes de l'Agent Beta. La communauté propose ModCraft, un outil d'aide au développement de plugins, et CraftLook étend les aperçus macOS aux projets ArtCraft. Le plugin Stream Deck pour LightCraft gagne en maturité.</p>
-<h2>Nouveautés et annonces</h2>
-<h3>ArtCraft Studio 0.3.31 — Agent Beta amélioré</h3>
-<p>L'équipe publie la version 0.3.31 de l'application desktop, centrée sur des améliorations de l'Agent Beta (le mode agent est désormais optionnel à activer) : meilleure compréhension des instructions utilisateur, gestion affinée de l'édition annotée (dessins, esquisses, encadrements ou flèches dessinés directement sur la couche image), possibilité de pointer EggLab vers une configuration OpenCode existante ou vers d'autres modèles de la famille Qwen-Image 2.1, contournement de l'Agent via <code>/invocation</code> pour envoyer une invite directe au modèle, et sessions de discussion et gestion de documents plus stables. Problème connu signalé : l'édition d'images peut parfois rencontrer des erreurs. Post officiel par AdditionCorrect2929 sur r/ArtCraftAI (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y28zd7/update/">lien</a>).</p>
-<h3>ModCraft — Outil de développement de plugins assisté par IA</h3>
-<p>La communauté annonce ModCraft, un outil interne visant à simplifier la création de plugins pour l'écosystème ArtCraft. L'utilisateur sélectionne l'app cible dans un menu déroulant, charge les instructions de l'agent IA vérifié de cette application (API hooks, schéma manifeste, règles interface, limites sandboxing), décrit le comportement du plugin à l'agent IA dans une session unique, puis déploie le plugin directement dans le répertoire plugins de l'app hôte avec incrément automatique de version et rechargement instantané. Flux basé sur un post Discord partagé sur Reddit par Eduliz (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y1895k/app_request_modcraft/">lien</a>).</p>
-<h3>PDFCraft v0.22.0 — Correction résolution impression</h3>
-<p>PDFCraft publie la version 0.22.0 qui résout le problème de résolution d'impression longtempssignalé. Ce fil marque l'une des entrées les plus votées de l'édition actuelle avec 617 upvotes et 42 commentaires, signe d'un besoin très attendu par la communauté. YEEG4R rapporte qu'il se débarrasse désormais des autres logiciels PDF (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">lien</a>).</p>
-<h3>VectorCraft sous FreeBSD — Exécution native sans daemon</h3>
-<p>WordCraft fonctionne maintenant sous FreeBSD avec fjord, conteneurs OCI natifs via AppJail — sans daemon requis. Cette capacité d'exécution s'étend à l'ensemble de la suite ArtCraft sur cette plateforme alternative, ajoutée au support Linux/macOS/Windows déjà couvert. Poste de grahamperrin sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2u96y/wordcraft_in_firefox_with_fjord/">lien</a>).</p>
-<h3>ArtCraft sur LibreNT — Compatibilité Windows open-source confirmée</h3>
-<p>Les applications ArtCraft fonctionnent sur LibreNT, système open-source compatible Windows. L'utilisateur Interesting_Ad_5676 confirme que plusieurs applis tournent sans problème sur le dernier ISO installé. Ce retour élargit la liste des systèmes compatibles confirmés par la communauté (Linux, macOS, Windows, FreeBSD, LibreNT). 64 upvotes, 10 commentaires (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/">lien</a>).</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>CraftLook — Vignettes et aperçus Finder macOS</h3>
-<p>Roccobot développe CraftLook, une application macOS gratuite offrant de vraies miniatures dans la vue icône, colonne et galerie du Finder, ainsi qu'un aperçu complet au appui sur Espace. Prise en charge simultanée de FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc .solidcraft), FilmCraft (.fcproj cadre tête lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj .ecprojx), SoundCraft (.scraft timeline complète), plus PSD et SVG. Le ZIP pèse environ 720 Mo (l'application ~1,6 Go décompressé) car il embarque les huit moteurs de rendu pour puces Intel et Apple. Signé et notarié Apple. Poste détaillé de Roccobot sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/">lien</a>).</p>
-<h3>Plugin Stream Deck pour LightCraft — Version disponible</h3>
-<p>ResearcherMasserMassive802 publie son plugin Stream Deck open-source pour LightCraft. Il se connecte directement au port local de LightCraft (127.0.0.1:7980) avec connexion bidirectionnelle : le deck affiche les valeurs des curseurs en direct et maintient les états des touches synchronisés. Compatible avec Stream Deck 6.5+ et OpenDeck, il couvre tous les encoders (120+ curseurs de développement, transformation/recadrage, culling, navigateur préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR…), culling (sélection, étoiles, drapeaux), masques IA (SAM 3), préréglages (application à intensité 0-200%, export) et commutateurs d'affichage. Téléchargeable depuis la page des versions. Poste de ResearcherMassive802 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">lien</a>).</p>
-<h3>Dōri v0.1.0-alpha.1 — DAW open-source Rust pour motion design</h3>
-<p>melble5 construit Dōri, une station audioration numérique open-source écrite en Rust pour l'audio de motion design, ciblant Linux et Windows. Bien que non spécifique à ArtCraft, cet outil comble un vide dans l'écosystème craft côté production audio professionnelle. Poste de melble5 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/"> lien</a>).</p>
-<h2>Autour d'ArtCraft</h2>
-<p><strong>Intégration craft-image-codecs en cours.</strong> Les commits récents (du 19 au 20 novembre) poursuivent le basculement systématique du décodage images depuis le crate <code>image</code> vers <code>craft-image-codecs</code> (partie de storytold/craft-libs#778). Sont concernés le cache média (<code>media_cache.rs</code>), le redimensionnement, le flip, la conversion PNG, et les tests de parité statique/animé entre chemins Tauri legacy et chemins Rust natif. Un correctif de build (<code>#2923</code>) a réparé une régression compile après <code>#2921</code>. Travail technique approfondi mais transparent pour l'utilisateur final — aucune nouvelle fonctionnalité visible directement.</p>
-<p><strong>Activité de maintenance CI/SonarCloud.</strong> L'équipe consacre un effort notable à la qualité du code : suppression de Promesses fire-and-forget non marquées (<code>void</code>), remplacement <code>Math.random</code> par <code>uuidv4</code>, migration <code>std::fs</code> vers <code>tokio::fs</code> en contexte asynchrone, conformité SonarCloud (S9383, S7493, S2245, S8786, S6852, S7059, S6848, S6853, S7773, S5725, S6505, S7637), sécurité GitHub Actions (Harden-Runner sur chaque job, actions StepSecurity). L'intégration continue inclut désormais une matrice complète de packages Linux (DEB, RPM, AppImage, tarball, Arch, Flatpak OCI) signés, avec FreeBSD CI. Aucun impact utilisateur direct.</p>
-<p><strong>Le futur des modèles open source.</strong> Un fil de discussion sur Reddit soulève des inquiétudes concernant la pérennité des modèles open source face aux évolutions des conditions d'utilisation des fournisseurs d'IA. 9 upvotes, 10 commentaires (DotRakianSteel, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3lgc8/the_future_of_our_open_source_models_is_safe/">lien</a>).</p>
-<p><strong>Qualité de code comparée Adobe.</strong> Un article de Software Improvement Group analyse la qualité du code ArtCraft en comparaison avec Adobe. 31 upvotes, 36 commentaires (Delicious_Recover543, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/">lien</a>).</p>
-<h2>À signaler</h2>
-<p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
-<h2>Volume</h2>
-<p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille ArtCraft — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>ArtCraft Studio a publié la version 0.3.31 avec des améliorations importantes de l'Agent Beta. La communauté propose ModCraft, un outil d'aide au développement de plugins, et CraftLook étend les aperçus macOS aux projets ArtCraft. Le plugin Stream Deck pour LightCraft gagne en maturité.</p>
-<h2>Nouveautés et annonces</h2>
-<h3>ArtCraft Studio 0.3.31 — Agent Beta amélioré</h3>
-<p>L'équipe publie la version 0.3.31 de l'application desktop, centrée sur des améliorations de l'Agent Beta (le mode agent est désormais optionnel à activer) : meilleure compréhension des instructions utilisateur, gestion affinée de l'édition annotée (dessins, esquisses, encadrements ou flèches dessinés directement sur la couche image), possibilité de pointer EggLab vers une configuration OpenCode existante ou vers d'autres modèles de la famille Qwen-Image 2.1, contournement de l'Agent via <code>/invocation</code> pour envoyer une invite directe au modèle, et sessions de discussion et gestion de documents plus stables. Problème connu signalé : l'édition d'images peut parfois rencontrer des erreurs. Post officiel par AdditionCorrect2929 sur r/ArtCraftAI (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y28zd7/update/">lien</a>).</p>
-<h3>ModCraft — Outil de développement de plugins assisté par IA</h3>
-<p>La communauté annonce ModCraft, un outil interne visant à simplifier la création de plugins pour l'écosystème ArtCraft. L'utilisateur sélectionne l'app cible dans un menu déroulant, charge les instructions de l'agent IA vérifié de cette application (API hooks, schéma manifeste, règles interface, limites sandboxing), décrit le comportement du plugin à l'agent IA dans une session unique, puis déploie le plugin directement dans le répertoire plugins de l'app hôte avec incrément automatique de version et rechargement instantané. Flux basé sur un post Discord partagé sur Reddit par Eduliz (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y1895k/app_request_modcraft/">lien</a>).</p>
-<h3>PDFCraft v0.22.0 — Correction résolution impression</h3>
-<p>PDFCraft publie la version 0.22.0 qui résout le problème de résolution d'impression longtempssignalé. Ce fil marque l'une des entrées les plus votées de l'édition actuelle avec 617 upvotes et 42 commentaires, signe d'un besoin très attendu par la communauté. YEEG4R rapporte qu'il se débarrasse désormais des autres logiciels PDF (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3fv9i/pdfcraft_v0220_the_printing_resolution_issue_has/">lien</a>).</p>
-<h3>VectorCraft sous FreeBSD — Exécution native sans daemon</h3>
-<p>WordCraft fonctionne maintenant sous FreeBSD avec fjord, conteneurs OCI natifs via AppJail — sans daemon requis. Cette capacité d'exécution s'étend à l'ensemble de la suite ArtCraft sur cette plateforme alternative, ajoutée au support Linux/macOS/Windows déjà couvert. Poste de grahamperrin sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2u96y/wordcraft_in_firefox_with_fjord/">lien</a>).</p>
-<h3>ArtCraft sur LibreNT — Compatibilité Windows open-source confirmée</h3>
-<p>Les applications ArtCraft fonctionnent sur LibreNT, système open-source compatible Windows. L'utilisateur Interesting_Ad_5676 confirme que plusieurs applis tournent sans problème sur le dernier ISO installé. Ce retour élargit la liste des systèmes compatibles confirmés par la communauté (Linux, macOS, Windows, FreeBSD, LibreNT). 64 upvotes, 10 commentaires (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2zefe/artcraft_on_librent_i_just_cant_believe_my_eyes/">lien</a>).</p>
-<h2>Nouveaux plugins et outils tiers</h2>
-<h3>CraftLook — Vignettes et aperçus Finder macOS</h3>
-<p>Roccobot développe CraftLook, une application macOS gratuite offrant de vraies miniatures dans la vue icône, colonne et galerie du Finder, ainsi qu'un aperçu complet au appui sur Espace. Prise en charge simultanée de FigCraft (.figcraft), DesignCraft (.designcraft), VectorCraft (.vectorcraft première planche), TextureCraft (.tcraft), PhotoCraft (.pcraft composite sauvegardé), SolidCraft (.sc .solidcraft), FilmCraft (.fcproj cadre tête lecture), MaterialCraft (.mcraft), EffectCraft (.ecproj .ecprojx), SoundCraft (.scraft timeline complète), plus PSD et SVG. Le ZIP pèse environ 720 Mo (l'application ~1,6 Go décompressé) car il embarque les huit moteurs de rendu pour puces Intel et Apple. Signé et notarié Apple. Poste détaillé de Roccobot sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2uigf/craftlook_for_macos_finder_thumbnails_and_quick/">lien</a>).</p>
-<h3>Plugin Stream Deck pour LightCraft — Version disponible</h3>
-<p>ResearcherMasserMassive802 publie son plugin Stream Deck open-source pour LightCraft. Il se connecte directement au port local de LightCraft (127.0.0.1:7980) avec connexion bidirectionnelle : le deck affiche les valeurs des curseurs en direct et maintient les états des touches synchronisés. Compatible avec Stream Deck 6.5+ et OpenDeck, il couvre tous les encoders (120+ curseurs de développement, transformation/recadrage, culling, navigateur préréglages), touches de développement (Auto Tone, N&amp;B, AI Denoise, HDR…), culling (sélection, étoiles, drapeaux), masques IA (SAM 3), préréglages (application à intensité 0-200%, export) et commutateurs d'affichage. Téléchargeable depuis la page des versions. Poste de ResearcherMassive802 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y36lz3/stream_deck_plugin_for_lightcraft/">lien</a>).</p>
-<h3>Dōri v0.1.0-alpha.1 — DAW open-source Rust pour motion design</h3>
-<p>melble5 construit Dōri, une station audioration numérique open-source écrite en Rust pour l'audio de motion design, ciblant Linux et Windows. Bien que non spécifique à ArtCraft, cet outil comble un vide dans l'écosystème craft côté production audio professionnelle. Poste de melble5 sur Reddit (<a href="https://www.reddit.com/r/ArtCraftAI/comments/1y2xgiw/i_built_an_opensource_daw_in_rust_for_motion/"> lien</a>).</p>
-<h2>Autour d'ArtCraft</h2>
-<p><strong>Intégration craft-image-codecs en cours.</strong> Les commits récents (du 19 au 20 novembre) poursuivent le basculement systématique du décodage images depuis le crate <code>image</code> vers <code>craft-image-codecs</code> (partie de storytold/craft-libs#778). Sont concernés le cache média (<code>media_cache.rs</code>), le redimensionnement, le flip, la conversion PNG, et les tests de parité statique/animé entre chemins Tauri legacy et chemins Rust natif. Un correctif de build (<code>#2923</code>) a réparé une régression compile après <code>#2921</code>. Travail technique approfondi mais transparent pour l'utilisateur final — aucune nouvelle fonctionnalité visible directement.</p>
-<p><strong>Activité de maintenance CI/SonarCloud.</strong> L'équipe consacre un effort notable à la qualité du code : suppression de Promesses fire-and-forget non marquées (<code>void</code>), remplacement <code>Math.random</code> par <code>uuidv4</code>, migration <code>std::fs</code> vers <code>tokio::fs</code> en contexte asynchrone, conformité SonarCloud (S9383, S7493, S2245, S8786, S6852, S7059, S6848, S6853, S7773, S5725, S6505, S7637), sécurité GitHub Actions (Harden-Runner sur chaque job, actions StepSecurity). L'intégration continue inclut désormais une matrice complète de packages Linux (DEB, RPM, AppImage, tarball, Arch, Flatpak OCI) signés, avec FreeBSD CI. Aucun impact utilisateur direct.</p>
-<p><strong>Le futur des modèles open source.</strong> Un fil de discussion sur Reddit soulève des inquiétudes concernant la pérennité des modèles open source face aux évolutions des conditions d'utilisation des fournisseurs d'IA. 9 upvotes, 10 commentaires (DotRakianSteel, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3lgc8/the_future_of_our_open_source_models_is_safe/">lien</a>).</p>
-<p><strong>Qualité de code comparée Adobe.</strong> Un article de Software Improvement Group analyse la qualité du code ArtCraft en comparaison avec Adobe. 31 upvotes, 36 commentaires (Delicious_Recover543, <a href="https://www.reddit.com/r/ArtCraftAI/comments/1y3eq7n/artcraft_code_quality/">lien</a>).</p>
-<h2>À signaler</h2>
-<p>Aucun incident ni alerte de sécurité détecté ce jour.</p>
-<h2>Volume</h2>
-<p>61 posts examinés (novembre 18-23), 10 retenus (annonces, nouveautés et outils tiers), 51 écartés (questions simples, retours d'expérience subjectifs, plaintes, spam, discussions hors sujet). Fils sources complémentaires : 20+ commits GitHub récents dans la fenêtre, 0 release, 0 vidéo YouTube récente.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>

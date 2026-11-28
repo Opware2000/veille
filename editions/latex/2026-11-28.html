@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/LaTeX — samedi 28 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../latex.xml" title="r/LaTeX">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/LaTeX — samedi 28 novembre 2026</h1>
+<h2>En bref — trois lignes au maximum.</h2>
+<p>Aucune publication récente n'a été recensée sur r/LaTeX depuis le 27 novembre. Le moteur Volt, créé par Henry Oswald (cofondateur de ShareLaTeX/Overleaf), attire l'attention avec son ambition d'être un remplacement compatible et rapide des moteurs TeX traditionnels, écrit en Zig. La suite ForjaTeX propose également une alternative open-source à la compilation locale avec un éditeur visuel intégré pour TikZ/PGFPlots.</p>
+<h2>Paquets, classes et outils nouveaux</h2>
+<h3>Volt — nouveau moteur LaTeX à compatibilité byte-to-byte</h3>
+<p>Henry Oswald, cofondateur de ShareLaTeX (acquis puis fusionné avec Overleaf), annonce Volt, un moteur de composition qui se veut un remplacement direct et fidèle — à_byte-près_ — de pdfTeX, XeTeX, LuaTeX et latexmk. Le projet est entièrement rédigé en Zig (environ 1,29 million de lignes) avec assistance de Lean 4, et devrait être publié sous licence libre prochainement. Selon la fiche du projet, Volt a vocation à s'intercaler sans modification dans les workflows existants tout en offrant des performances améliorées. Le site <a href="https://www.voltlatex.com/blog/next-gen-latex-tooling">voltlatex.com</a> accueille un billet introductif et un lien vers une présentation vidéo ainsi qu'une newsletter pour suivre l'avancement.</p>
+<h3>ForjaTeX App Suite — IDE LaTeX hors ligne et studio visuel TikZ/PGFPlots</h3>
+<p>Jean Pimenta présente ForjaTeX App Suite, une application de bureau gratuite et open-source (licence GPL v3.0) construite avec Tauri v2, Rust, React et TypeScript. Le projet se concentre sur le travail hors ligne pour l'écriture scientifique en LaTeX. ForjaTeX comprend plusieurs composants : un IDE LaTeX autonome (ForjaTeX Editor), un studio visuel interactif dédié aux diagrammes TikZ et graphiques PGFPlots (ForjaTikZ), et un outil de gestion des bibliographies (ForjaBib). L'ensemble vise à fournir une expérience locale rapide et légère, en alternative aux éditeurs en ligne comme Overleaf ou Prism. Liens : <a href="https://www.reddit.com/r/LaTeX/comments/1y6io20/open_source_forjatex_app_suite_free_offlinefirst/">reddit</a> / <a href="https://dicas-l.com.br/arquivo/forjatex_app_suite_suite_gratuita_e_open_source_para_escrita_cientifique_en_latex.php">Dicas-L</a>. Licence : GPL v3.0.</p>
+<h3>texpresso-view — aperçu LaTeX en direct dans Emacs, mis à jour à la frappe</h3>
+<p>Un fork de TeXstudio intègre désormais un aperçu en temps réel basé sur TeXpresso (l'utilitaire d'aperçu live pour Emacs et Vim). L'éditeur conserve l'interface TeXstudio habituelle tout en rafraîchissant le PDF pendant la saisie, avec le même outil de loupe et l'intégration Synctex. Le toggle entre vue live et PDF compilé permet de naviguer selon ses préférences. Source et installation disponibles via les dépôts du projet <a href="https://www.reddit.com/r/LaTeX/comments/1xpnkf9/texstudio_espresso_a_fork_of_texstudio_with_live/">reddit</a>.</p>
+<h3>Maintien simultané de versions HTML et PDF à partir d'un même fichier LaTeX</h3>
+<p>Un auteur explique comment il maintient actuellement une version web et une version PDF de son contenu LaTeX à partir d'un seul corpus de fichiers source. Il met en avant l'émergence d'outils rendant ce double flux « étonnamment simple » et partage le site web concret qu'il produit ainsi, comme démonstration pratique. L'article souligne aussi un point positif concernant l'usage de l'IA dans ce workflow, en contrepoint du discours généralement négatif. Lien : <a href="https://www.reddit.com/r/LaTeX/comments/1y6qmbi/maintaining_both_html_and_pdf_versions_of_latex/">reddit</a>.</p>
+<h2>Nouveautés et mises à jour</h2>
+<ul>
+<li><strong>Volt</strong> sera open-sourcé dans les prochains jours ; sa date de sortie définitive n'est pas encore annoncée. Le moteur ne nécessite aucune clé API ni connexion internet et se présente comme un exécutable unique.</li>
+<li><strong>TeXpresso</strong> poursuit son développement : l'éditeur navigateur <a href="https://texpresso.app">texpresso.app</a> entre en béta publique et propose désormais la collaboration en temps réel chiffrée de pair-à-pair, la synchronisation Dropbox/GitHub/Dossier local, et le support de BibTeX et beamer.</li>
+<li><strong>Overleaf Server Pro 6.3</strong> a été publiée en août 2026 avec des améliorations des workflows d'édition, du personnalisation institutionnelle et des mises à jour de sécurité, mais n'apporte rien de spécifique à l'édition technique courante.</li>
+</ul>
+<h2>Astuces et gabarits réutilisables</h2>
+<p>Aucun filtre technique notable ne passe le tri cette fois-ci. Les fils de dépannage ponctuels (polices, erreurs de compilation, citations non résolues) restent au-dessous du seuil de généralisabilité attendu.</p>
+<h2>Volume</h2>
+<p>4 publications examinées dans l'intervalle des quatre derniers jours, 3 retenues, 1 écartée (hors fenêtre de quatre jours). Taux de rétention : 75 %.</p>
+<footer>Édition du samedi 28 novembre 2026 — <a href="https://opware2000.github.io/veille/latex.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>
