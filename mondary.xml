@@ -6,9 +6,34 @@
 <description>Veille quotidienne — Clément Mondary — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/mondary.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 01:51:43 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 01:51:19 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille Clément Mondary — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/mondary/2026-11-28.html</link>
+<guid isPermaLink="false">mondary-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:51:19 +0100</pubDate>
+<category>Clément Mondary</category>
+<description><![CDATA[<h1>Veille Clément Mondary — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés ; deux retenus : un gestionnaire de machines distantes avec serveur intégré pour agents IA et une bibliothèque de lecture auto-hébergée multi-formats. Trois autres écartés (trading crypto, musique grand public, effets visuels artistiques).</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>MUXIN</strong> — Application de bureau native qui rassemble Macs, serveurs Linux, PC Windows et machines cloud dans une seule fenêtre. Chaque machine dispose de sessions de terminal persistantes (un petit agent installé garde les terminaux ouverts après fermeture de l'application), d'accès à distance au bureau en VNC jusqu'à 4K, de la visualisation des changements de code branchés sur pull request, et du pilotage de conteneurs Docker ainsi que de services systemd depuis le même espace. Un serveur MCP exposant plus de 90 outils permet aux agents IA (Claude Code, Codex, OpenCode, Gemini CLI, Amp…) d'emprunter vos machines comme espaces de travail. Les partions se font par lien pair à pair chiffré, sans ouvrir de ports sur le réseau. Gratuit et open source sur <a href="https://muxin.dev/">muxin.dev</a>. Fonctionne sur macOS, Linux, Windows et iPad.</p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>BOOKORBIT</strong> — Plateforme auto-hébergée transformant un serveur Docker en bibliothèque de lecture multi-utilisateurs. Prend en charge ebooks (EPUB, KEPUB, MOBI, AZW3, FB2), PDF, BD (CBZ, CBR, CB7) et livres audio (M4B, MP3, M4A, OPUS, OGG, FLAC), chacun avec son lecteur intégré directement dans le navigateur. La progression et les annotations sont synchronisées entre le web, une liseuse Kobo, KOReader et une application iPhone. Bibliothèques séparées par utilisateur, métadonnées enrichies automatiquement via une douzaine de fournisseurs, permissions fines et connexion OIDC/SSO (Authentik, Keycloak, Authelia). Tableau de bord avec statistiques de lecture et « Reading DNA ». Installation unique <code>docker compose up -d</code> avec PostgreSQL/pgvector, pas d'abonnement requis. Sur <a href="https://bookorbit.app/">bookorbit.app</a>.</p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 2 retenus, 3 écartés (trading crypto, conversion musicale Spotify, effets visuels artistiques rétro).</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille Clément Mondary — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>Cinq billets publiés ; deux retenus : un gestionnaire de machines distantes avec serveur intégré pour agents IA et une bibliothèque de lecture auto-hébergée multi-formats. Trois autres écartés (trading crypto, musique grand public, effets visuels artistiques).</p>
+<h2>Terminal, fichiers, sauvegarde, auto-hébergement et réseau</h2>
+<p><strong>MUXIN</strong> — Application de bureau native qui rassemble Macs, serveurs Linux, PC Windows et machines cloud dans une seule fenêtre. Chaque machine dispose de sessions de terminal persistantes (un petit agent installé garde les terminaux ouverts après fermeture de l'application), d'accès à distance au bureau en VNC jusqu'à 4K, de la visualisation des changements de code branchés sur pull request, et du pilotage de conteneurs Docker ainsi que de services systemd depuis le même espace. Un serveur MCP exposant plus de 90 outils permet aux agents IA (Claude Code, Codex, OpenCode, Gemini CLI, Amp…) d'emprunter vos machines comme espaces de travail. Les partions se font par lien pair à pair chiffré, sans ouvrir de ports sur le réseau. Gratuit et open source sur <a href="https://muxin.dev/">muxin.dev</a>. Fonctionne sur macOS, Linux, Windows et iPad.</p>
+<h2>Documents, notes et bureautique</h2>
+<p><strong>BOOKORBIT</strong> — Plateforme auto-hébergée transformant un serveur Docker en bibliothèque de lecture multi-utilisateurs. Prend en charge ebooks (EPUB, KEPUB, MOBI, AZW3, FB2), PDF, BD (CBZ, CBR, CB7) et livres audio (M4B, MP3, M4A, OPUS, OGG, FLAC), chacun avec son lecteur intégré directement dans le navigateur. La progression et les annotations sont synchronisées entre le web, une liseuse Kobo, KOReader et une application iPhone. Bibliothèques séparées par utilisateur, métadonnées enrichies automatiquement via une douzaine de fournisseurs, permissions fines et connexion OIDC/SSO (Authentik, Keycloak, Authelia). Tableau de bord avec statistiques de lecture et « Reading DNA ». Installation unique <code>docker compose up -d</code> avec PostgreSQL/pgvector, pas d'abonnement requis. Sur <a href="https://bookorbit.app/">bookorbit.app</a>.</p>
+<h2>Volume</h2>
+<p>5 billets publiés dans l'intervalle, 2 retenus, 3 écartés (trading crypto, conversion musicale Spotify, effets visuels artistiques rétro).</p>]]></content:encoded>
+</item>
 <item>
 <title>Veille Clément Mondary — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/mondary/2026-11-27.html</link>
