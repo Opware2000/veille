@@ -6,9 +6,44 @@
 <description>Veille quotidienne du subreddit r/opencode — éditions rédigées pour Nicolas.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/opencode.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Fri, 27 Nov 2026 01:25:10 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 01:21:36 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/opencode — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opencode/2026-11-28.html</link>
+<guid isPermaLink="false">opencode-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:21:36 +0100</pubDate>
+<category>r/opencode</category>
+<description><![CDATA[<h1>Veille r/opencode — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille est calme ce samedi. Le subreddit regorge toujours de questions sur les limites du plan gratuit et de comparatifs d'abonnement, mais rien de nouveau d'important sur opencode lui-même cette nuit. Deux signaux techniques méritent toutefois l'attention : une fonctionnalité de compaction native et un gain de 267× sur le contexte MCP.</p>
+<h2>Versions et fonctionnalités</h2>
+<p><strong>OpenCode compaction – prise en charge native du nettoyage du contexte.</strong> La documentation d'OpenCode publie désormais une section consacrée à la « compaction », le mécanisme intégré qui réduit automatiquement la taille du contexte au fil des sessions pour éviter les débordements. L'annonce était partagée dans le subreddit avec peu d'écho (un vote, aucun commentaire), ce qui suggère soit une découverte tardive, soit une fonctionnalité encore peu connue. Le lien : https://opencode.ai/docs/compaction/. Ce n'est pas une nouvelle version d'OpenCode, mais une documentation qui clarifie un mécanisme déjà présent et que beaucoup cherchent à comprendre.</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p>Rien de nouveau sur les modèles pris en charge par OpenCode Go, aucune annonce de changement de prix ou de limite vérifiable ce cycle.</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>Bloque – passerelle MCP hébergée pour les équipes sans département IT.</strong> Un développeur présente Bloque (https://bloque.run), un service de passerelle MCP hébergé pensé pour les petites structures qui n'ont ni ingénieurs dédié ni équipe informatique. L'auteur souligne que les alternatives existantes sont soit trop chères (à partir de 500 $/mois), soit nécessitent une infrastructure maison. Le fil vient d'être posté avec un seul vote et zéro commentaire. Pas encore de dépôt GitHub public identifié ni d'informations sur la licence ; il sera nécessaire de consulter le site pour vérifier ces détails avant toute recommandation.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Réduction de 267× de l'utilisation du contexte MCP.</strong> Octri publie un article détaillé sur une méthode qu'ils ont appliquée pour réduire l'utilisation du contexte dans leurs serveurs MCP d'un facteur jusqu'à 267. L'article explique comment leur architecture a été repensée pour limiter le flux de données vers les modèles tout en conservant la précision des réponses. Pour un utilisateur d'OpenCode qui configure ses propres serveurs MCP ou qui cherche à optimiser ses appels API, c'est un retour d'expérience concret avec des chiffres vérifiables. Lien : https://octri.dev/blog/how-we-reduced-mcp-context-window-usage.</p>
+<h2>Volume</h2>
+<p>Les sources Reddit/r/opencode ne publiant rien de nouveau depuis la dernière collecte (derniers éléments collectés le 30 octobre), la veille s'appuie principalement sur les sources complémentaires. Aucun post pertinent trouvé dans les fichiers bruts de hnrss, simonwillison ou latentspace qui corresponde au critère opencode. 0 post Reddit traité, 2 entrées retenues parmi les sources complémentaires, 66 écartées.</p>
+<p><em>Note : Le journal <code>meta.json</code> indique que la dernière collecte est passée sans erreur (champ <code>errors</code> absent).</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opencode — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille est calme ce samedi. Le subreddit regorge toujours de questions sur les limites du plan gratuit et de comparatifs d'abonnement, mais rien de nouveau d'important sur opencode lui-même cette nuit. Deux signaux techniques méritent toutefois l'attention : une fonctionnalité de compaction native et un gain de 267× sur le contexte MCP.</p>
+<h2>Versions et fonctionnalités</h2>
+<p><strong>OpenCode compaction – prise en charge native du nettoyage du contexte.</strong> La documentation d'OpenCode publie désormais une section consacrée à la « compaction », le mécanisme intégré qui réduit automatiquement la taille du contexte au fil des sessions pour éviter les débordements. L'annonce était partagée dans le subreddit avec peu d'écho (un vote, aucun commentaire), ce qui suggère soit une découverte tardive, soit une fonctionnalité encore peu connue. Le lien : https://opencode.ai/docs/compaction/. Ce n'est pas une nouvelle version d'OpenCode, mais une documentation qui clarifie un mécanisme déjà présent et que beaucoup cherchent à comprendre.</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p>Rien de nouveau sur les modèles pris en charge par OpenCode Go, aucune annonce de changement de prix ou de limite vérifiable ce cycle.</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>Bloque – passerelle MCP hébergée pour les équipes sans département IT.</strong> Un développeur présente Bloque (https://bloque.run), un service de passerelle MCP hébergé pensé pour les petites structures qui n'ont ni ingénieurs dédié ni équipe informatique. L'auteur souligne que les alternatives existantes sont soit trop chères (à partir de 500 $/mois), soit nécessitent une infrastructure maison. Le fil vient d'être posté avec un seul vote et zéro commentaire. Pas encore de dépôt GitHub public identifié ni d'informations sur la licence ; il sera nécessaire de consulter le site pour vérifier ces détails avant toute recommandation.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Réduction de 267× de l'utilisation du contexte MCP.</strong> Octri publie un article détaillé sur une méthode qu'ils ont appliquée pour réduire l'utilisation du contexte dans leurs serveurs MCP d'un facteur jusqu'à 267. L'article explique comment leur architecture a été repensée pour limiter le flux de données vers les modèles tout en conservant la précision des réponses. Pour un utilisateur d'OpenCode qui configure ses propres serveurs MCP ou qui cherche à optimiser ses appels API, c'est un retour d'expérience concret avec des chiffres vérifiables. Lien : https://octri.dev/blog/how-we-reduced-mcp-context-window-usage.</p>
+<h2>Volume</h2>
+<p>Les sources Reddit/r/opencode ne publiant rien de nouveau depuis la dernière collecte (derniers éléments collectés le 30 octobre), la veille s'appuie principalement sur les sources complémentaires. Aucun post pertinent trouvé dans les fichiers bruts de hnrss, simonwillison ou latentspace qui corresponde au critère opencode. 0 post Reddit traité, 2 entrées retenues parmi les sources complémentaires, 66 écartées.</p>
+<p><em>Note : Le journal <code>meta.json</code> indique que la dernière collecte est passée sans erreur (champ <code>errors</code> absent).</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/opencode — vendredi 27 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/opencode/2026-11-27.html</link>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Veille r/DeepSeek — samedi 28 novembre 2026</title>
+<link rel="alternate" type="application/rss+xml" href="../../deepseek.xml" title="r/DeepSeek">
+<style>
+ body { max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.55;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #1b1b1b; }
+ h1 { font-size: 1.7rem; } h2 { font-size: 1.25rem; margin-top: 2rem;
+        border-bottom: 1px solid #e5e5e5; padding-bottom: .2rem; }
+ h3 { font-size: 1.05rem; margin-bottom: .2rem; }
+ a { color: #0b5fa5; } code { background: #f4f4f4; padding: .1rem .3rem; border-radius: 3px; }
+ ul { padding-left: 1.2rem; } li { margin: .25rem 0; }
+ footer { margin-top: 3rem; font-size: .85rem; color: #666; }
+</style>
+</head>
+<body>
+<h1>Veille r/DeepSeek — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille d'aujourd'hui provient surtout des relais Hacker News et Lobsters relayés dans le subreddit ; le subreddit lui-même est resté calme. Trois sujets dominent : un guide détaillé d'inférence locale pour DeepSeek sur matériel AMD grand public, une nouvelle offre de recherche de Kimi/Moonshot, et une clarification sur l'exécution de GLM 5.3-Flash sur carte unique 24 Go. Les signalements chinois sur la mémoire haute bande passante relancent les débats sur les capacités locales de production.</p>
+<h2>Modèles et poids</h2>
+<h3>Kimi for Science — jusqu'à 20 000 $ de crédits API pour la recherche</h3>
+<p>Moonshot (la société derrière Kimi) lance un programme destiné aux chercheurs en sciences naturelles, ingénierie et domaines connexes : les équipes sélectionnées reçoivent jusqu'à 20 000 $ de crédits d'utilisation de l'API Kimi (environ 7 milliards de tokens). Candidatures ouvertes jusqu'au 8 décembre pour la première cohorte. Le programme inclut un support technique dédié et un accès anticipé aux nouveaux modèles.</p>
+<p>Cette initiative place Kimi en concurrence directe avec DeepSeek comme fournisseur d'accès économique à des modèles de raisonnement avancés. Pour un chercheur ou un développeur qui suit l'écosystème, c'est une information à surveiller : si les modèles Kimi gagnent en popularité auprès des laboratoires, cela pourrait modifier l'équilibre des coûts et des parts de marché dans les modèles ouverts et à bas prix.</p>
+<p>Source : <a href="https://www.kimi.ai/news/kimi-for-science-program">Kimi for Science</a> · Voir aussi sur <a href="https://news.ycombinator.com/item?id=50665920">Hacker News</a> (36 points, 8 commentaires).</p>
+<h3>Discussion sur un « nouveau » modèle dans le subreddit /r/DeepSeek</h3>
+<p>Un fil très actif (plus de 130 votes, 41 commentaires) titré simplement « New??? » a circulé dans le subreddit. Sans contenu extrait accessible via le collecteur, il semble s'agir de rumeurs ou de captures d'écran relatives à une mise à jour du modèle DeepChat. Les commentaires évoquent une amélioration des capacités, mais aucun communiqué officiel n'a été trouvé à ce jour. À confirmer.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y5s1zk/">reddit.com/r/DeepSeek/comments/1y5s1zk</a></p>
+<h3>Huawei se préparerait à publier une puce mémoire nouvelle génération</h3>
+<p>Des rumeurs signalent que Huawei Technologies prépare l'annonce d'une puce mémoire à large bande passante susceptible de surpasser les offres actuelles de Samsung Electronics et SK Hynix. Le lancement devrait inclure la production chinoise d'un composant clé actuellement bloqué par les sanctions américaines.</p>
+<p>Le fil sur le subreddit cumule plus de 300 votes et 56 commentaires, signe d'un fort intérêt. Si ces rumeurs sont fondées, cela représenterait une avancée majeure pour l'auto-suffisance chinoise dans les puces destinées au calcul IA, contournant potentiellement les restrictions d'exportation américaines.</p>
+<p>Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1y63lvy/">reddit.com/r/DeepSeek/comments/1y63lvy</a> · <a href="https://www.reddit.com/r/DeepSeek/comments/1y68203/">reddit.com/r/DeepSeek/comments/1y68203</a></p>
+<h2>Prix, accès et quotas</h2>
+<h3>DeepSeek affiche le quota restant quand il est bas et retire l'édition de message</h3>
+<p>L'application DeepSeek modifie son interface : lorsque le quota quotidien est faible, le solde restant s'affiche désormais explicitement. Parallèlement, la possibilité de modifier un message envoyée est désactivée jusqu'à ce que le quota soit rechargé. Cette mesure vise probablement à inciter les utilisateurs à consommer leurs crédits avant qu'ils ne s'écoulent.</p>
+<p>Les limites quotidiennes fonctionnent apparemment selon un algorithme non déterministe mêlant nombre de messages et temps d'inactivité : certains utilisateurs ont signalé perdre du quota sans envoyer de message, notamment lors de journées de faible activité.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y60r3m/">reddit.com/r/DeepSeek/comments/1y60r3m</a></p>
+<h2>Auto-hébergement et quantification</h2>
+<h3>DeepSeek-V4.1-Flash en grande charge sur quatre AMD RX 9070 XT : précision API, coût dérisoire</h3>
+<p>L'article le plus substantiel de cette édition vient de <a href="https://alexselzer.com/posts/large-batch-local-inference/">Alexander Selzer</a> et décrit l'exécution de DeepSeek-V4.1-Flash tel quel (poids MXFP4 originaux, 416 Go) sur quatre Radeon RX 9070 XT (64 Go VRAM total) avec 256 Go de RAM. Le modèle dépasse largement la VRAM disponible ; la plupart des experts sont chargés depuis la RAM.</p>
+<p>Résultats clés (benchmark BIRD text-to-SQL, 500 questions en parallèle) :</p>
+<ul>
+<li>Débit : 228 tokens/s en génération pure, ~360 au pic</li>
+<li>Précision : comparable aux déploiements API du même modèle</li>
+<li>Énergie : 1,29 Wh par mille tokens générés (six à dix fois moins qu'en requête unique)</li>
+<li>Coût réel : inférieur aux tarifs API grâce à l'amortissement du matériel</li>
+</ul>
+<p>L'article détaille également les résultats sur BIRD 2026 (revision avec prompts corrigés) où le débit chute à 155 tok/s en raison de la longueur accrue des prompts, mais la précision demeure identique.</p>
+<p>Ce type de configuration intéresse particulièrement ceux qui utilisent DeepSeek en mode inférence locale pour des charges de travail batch. La conclusion est claire : pour les tâches nécessitant une haute précision sur un grand volume, exécuter le modèle tel quel en auto-hébergement peut battre la API tant en qualité qu'en coût.</p>
+<p>Source : <a href="https://alexselzer.com/posts/large-batch-local-inference/">alexselzer.com/posts/large-batch-local-inference</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50668282">Hacker News</a> (1 point, 0 commentaire — très récent).</p>
+<h3>GLM 5.3-Flash sur carte unique 24 Go — Tensward propose un kit complet</h3>
+<p>Le projet <a href="https://github.com/Tensward/tensward">Tensward</a> publie un exemple d'exécution de GLM 5.3-Flash (modèle public 2-bit UD-Q2_K_XL, 109 Go) sur une seule carte NVIDIA 24 Go. Deux modes disponibles : pinned (environ 128 Go de RAM requis, poids experts maintenus en RAM) et mapped (lecture depuis SSD rapide, moins de RAM).</p>
+<p>Débits mesurés sur L4 : environ 12 tok/s en mode pinned contre 7,7 avec les défauts du moteur. Un prompt de 4 000 tokens se lit en 15 secondes contre 139 secondes par défaut. Le kit (<code>./run.sh</code>) vérifie la machine, installe et démarre sans <code>sudo</code>.</p>
+<p>Bien que ce guide concerne GLM et non DeepSeek, il illustre une tendance générale : les modèles de plus de 100 Go deviennent exécutables sur du matériel grand public grâce à la quantification extrême (Q2). Pour Nicolas, qui travaille avec des modèles ouverts et s'intéresse à l'auto-hébergement, c'est un repère concret sur les limites actuelles du matériel abordable.</p>
+<p>Source : <a href="https://github.com/Tensward/tensward/tree/main/examples/glm-5.3-flash-24gb">github.com/Tensward/tensward</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50660990">Hacker News</a> (2 points, 0 commentaire).</p>
+<h2>Intégrations et outils tiers</h2>
+<h3>Migrateur d'archives DeepSeek Chat publié sur GitHub</h3>
+<p>Un outil nommé <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">DeepSeek-Chat-Archive-Migrator</a> permet de migrer ses conversations DeepSeek vers un format autonome, avec conservation des images hébergées et continuité du persona. Projet open-source utile pour ceux qui veulent préserver leur historique de conversation hors de la plateforme.</p>
+<p>Source : <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">github.com/selsie/DeepSeek-Chat-Archive-Migrator</a></p>
+<h2>Méthodes et retours d'expérience</h2>
+<h3>L'IA a rendu l'auto-hébergement amusant de nouveau</h3>
+<p>Article de <a href="https://janlukas.blog/posts/ai-self-hosting">Jan-Lukas Else</a> (216 points sur HN, 123 commentaires) racontant comment les agents de codage alimentés par IA ont transformé sa pratique de l'auto-hébergement : configurer NixOS déclarativement, construire une image bootc personnalisée, automatiser les déploiements Docker Compose.</p>
+<p>L'auteur note que les technologies qu'il trouvait intéressantes mais trop ardues à apprendre seul (NixOS, bootc) sont devenues accessibles parce qu'il peut demander à un agent de l'aider sans avoir besoin de tout comprendre au préalable. Il apprend en chemin, ajuste ses configurations, et ce qui prenait une semaine auparavant prend maintenant quelques heures.</p>
+<p>Pour celui qui utilise déjà des agents de codage (OpenCode, Codex CLI) et des outils d'orchestration locaux, cet article résonne particulièrement. C'est un témoignage réel, pas une publicité, sur l'impact des assistants IA sur l'auto-hébergement — et sur la façon dont ils réduisent la friction entre une idée d'infrastructure et sa réalisation.</p>
+<p>Source : <a href="https://janlukas.blog/posts/ai-self-hosting">janlukas.blog/posts/ai-self-hosting</a> · Présent sur <a href="https://news.ycombinator.com/item?id=50660180">HN</a>, <a href="https://lobste.rs/s/xsjwvi/ai-made-self-hosting-fun-again">Lobsters</a>, et relayé dans <a href="https://www.reddit.com/r/DeepSeek/comments/1y68cnr/">/r/DeepSeek</a>.</p>
+<h2>Volume</h2>
+<p>57 posts publiés dans l'intervalle, 7 retenus, 50 écartés — taux de rétention 12 %.</p>
+<footer>Édition du samedi 28 novembre 2026 — <a href="https://opware2000.github.io/veille/deepseek.xml">lien du flux</a> · <a href="../../index.html">tous les flux</a></footer>
+</body>
+</html>

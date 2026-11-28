@@ -6,9 +6,151 @@
 <description>Toutes les veilles de Nicolas réunies : Reddit, logiciel libre, IA, LaTeX, YouTube.</description>
 <language>fr-fr</language>
 <atom:link href="https://opware2000.github.io/veille/veille.xml" rel="self" type="application/rss+xml"/>
-<lastBuildDate>Sat, 28 Nov 2026 01:12:54 +0100</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 01:32:51 +0100</lastBuildDate>
 <generator>Hermes Agent — veille_rss.py</generator>
 <ttl>15</ttl>
+<item>
+<title>Veille r/DeepSeek — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/deepseek/2026-11-28.html</link>
+<guid isPermaLink="false">deepseek-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:32:51 +0100</pubDate>
+<category>r/DeepSeek</category>
+<description><![CDATA[<h1>Veille r/DeepSeek — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille d'aujourd'hui provient surtout des relais Hacker News et Lobsters relayés dans le subreddit ; le subreddit lui-même est resté calme. Trois sujets dominent : un guide détaillé d'inférence locale pour DeepSeek sur matériel AMD grand public, une nouvelle offre de recherche de Kimi/Moonshot, et une clarification sur l'exécution de GLM 5.3-Flash sur carte unique 24 Go. Les signalements chinois sur la mémoire haute bande passante relancent les débats sur les capacités locales de production.</p>
+<h2>Modèles et poids</h2>
+<h3>Kimi for Science — jusqu'à 20 000 $ de crédits API pour la recherche</h3>
+<p>Moonshot (la société derrière Kimi) lance un programme destiné aux chercheurs en sciences naturelles, ingénierie et domaines connexes : les équipes sélectionnées reçoivent jusqu'à 20 000 $ de crédits d'utilisation de l'API Kimi (environ 7 milliards de tokens). Candidatures ouvertes jusqu'au 8 décembre pour la première cohorte. Le programme inclut un support technique dédié et un accès anticipé aux nouveaux modèles.</p>
+<p>Cette initiative place Kimi en concurrence directe avec DeepSeek comme fournisseur d'accès économique à des modèles de raisonnement avancés. Pour un chercheur ou un développeur qui suit l'écosystème, c'est une information à surveiller : si les modèles Kimi gagnent en popularité auprès des laboratoires, cela pourrait modifier l'équilibre des coûts et des parts de marché dans les modèles ouverts et à bas prix.</p>
+<p>Source : <a href="https://www.kimi.ai/news/kimi-for-science-program">Kimi for Science</a> · Voir aussi sur <a href="https://news.ycombinator.com/item?id=50665920">Hacker News</a> (36 points, 8 commentaires).</p>
+<h3>Discussion sur un « nouveau » modèle dans le subreddit /r/DeepSeek</h3>
+<p>Un fil très actif (plus de 130 votes, 41 commentaires) titré simplement « New??? » a circulé dans le subreddit. Sans contenu extrait accessible via le collecteur, il semble s'agir de rumeurs ou de captures d'écran relatives à une mise à jour du modèle DeepChat. Les commentaires évoquent une amélioration des capacités, mais aucun communiqué officiel n'a été trouvé à ce jour. À confirmer.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y5s1zk/">reddit.com/r/DeepSeek/comments/1y5s1zk</a></p>
+<h3>Huawei se préparerait à publier une puce mémoire nouvelle génération</h3>
+<p>Des rumeurs signalent que Huawei Technologies prépare l'annonce d'une puce mémoire à large bande passante susceptible de surpasser les offres actuelles de Samsung Electronics et SK Hynix. Le lancement devrait inclure la production chinoise d'un composant clé actuellement bloqué par les sanctions américaines.</p>
+<p>Le fil sur le subreddit cumule plus de 300 votes et 56 commentaires, signe d'un fort intérêt. Si ces rumeurs sont fondées, cela représenterait une avancée majeure pour l'auto-suffisance chinoise dans les puces destinées au calcul IA, contournant potentiellement les restrictions d'exportation américaines.</p>
+<p>Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1y63lvy/">reddit.com/r/DeepSeek/comments/1y63lvy</a> · <a href="https://www.reddit.com/r/DeepSeek/comments/1y68203/">reddit.com/r/DeepSeek/comments/1y68203</a></p>
+<h2>Prix, accès et quotas</h2>
+<h3>DeepSeek affiche le quota restant quand il est bas et retire l'édition de message</h3>
+<p>L'application DeepSeek modifie son interface : lorsque le quota quotidien est faible, le solde restant s'affiche désormais explicitement. Parallèlement, la possibilité de modifier un message envoyée est désactivée jusqu'à ce que le quota soit rechargé. Cette mesure vise probablement à inciter les utilisateurs à consommer leurs crédits avant qu'ils ne s'écoulent.</p>
+<p>Les limites quotidiennes fonctionnent apparemment selon un algorithme non déterministe mêlant nombre de messages et temps d'inactivité : certains utilisateurs ont signalé perdre du quota sans envoyer de message, notamment lors de journées de faible activité.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y60r3m/">reddit.com/r/DeepSeek/comments/1y60r3m</a></p>
+<h2>Auto-hébergement et quantification</h2>
+<h3>DeepSeek-V4.1-Flash en grande charge sur quatre AMD RX 9070 XT : précision API, coût dérisoire</h3>
+<p>L'article le plus substantiel de cette édition vient de <a href="https://alexselzer.com/posts/large-batch-local-inference/">Alexander Selzer</a> et décrit l'exécution de DeepSeek-V4.1-Flash tel quel (poids MXFP4 originaux, 416 Go) sur quatre Radeon RX 9070 XT (64 Go VRAM total) avec 256 Go de RAM. Le modèle dépasse largement la VRAM disponible ; la plupart des experts sont chargés depuis la RAM.</p>
+<p>Résultats clés (benchmark BIRD text-to-SQL, 500 questions en parallèle) :</p>
+<ul>
+<li>Débit : 228 tokens/s en génération pure, ~360 au pic</li>
+<li>Précision : comparable aux déploiements API du même modèle</li>
+<li>Énergie : 1,29 Wh par mille tokens générés (six à dix fois moins qu'en requête unique)</li>
+<li>Coût réel : inférieur aux tarifs API grâce à l'amortissement du matériel</li>
+</ul>
+<p>L'article détaille également les résultats sur BIRD 2026 (revision avec prompts corrigés) où le débit chute à 155 tok/s en raison de la longueur accrue des prompts, mais la précision demeure identique.</p>
+<p>Ce type de configuration intéresse particulièrement ceux qui utilisent DeepSeek en mode inférence locale pour des charges de travail batch. La conclusion est claire : pour les tâches nécessitant une haute précision sur un grand volume, exécuter le modèle tel quel en auto-hébergement peut battre la API tant en qualité qu'en coût.</p>
+<p>Source : <a href="https://alexselzer.com/posts/large-batch-local-inference/">alexselzer.com/posts/large-batch-local-inference</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50668282">Hacker News</a> (1 point, 0 commentaire — très récent).</p>
+<h3>GLM 5.3-Flash sur carte unique 24 Go — Tensward propose un kit complet</h3>
+<p>Le projet <a href="https://github.com/Tensward/tensward">Tensward</a> publie un exemple d'exécution de GLM 5.3-Flash (modèle public 2-bit UD-Q2_K_XL, 109 Go) sur une seule carte NVIDIA 24 Go. Deux modes disponibles : pinned (environ 128 Go de RAM requis, poids experts maintenus en RAM) et mapped (lecture depuis SSD rapide, moins de RAM).</p>
+<p>Débits mesurés sur L4 : environ 12 tok/s en mode pinned contre 7,7 avec les défauts du moteur. Un prompt de 4 000 tokens se lit en 15 secondes contre 139 secondes par défaut. Le kit (<code>./run.sh</code>) vérifie la machine, installe et démarre sans <code>sudo</code>.</p>
+<p>Bien que ce guide concerne GLM et non DeepSeek, il illustre une tendance générale : les modèles de plus de 100 Go deviennent exécutables sur du matériel grand public grâce à la quantification extrême (Q2). Pour Nicolas, qui travaille avec des modèles ouverts et s'intéresse à l'auto-hébergement, c'est un repère concret sur les limites actuelles du matériel abordable.</p>
+<p>Source : <a href="https://github.com/Tensward/tensward/tree/main/examples/glm-5.3-flash-24gb">github.com/Tensward/tensward</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50660990">Hacker News</a> (2 points, 0 commentaire).</p>
+<h2>Intégrations et outils tiers</h2>
+<h3>Migrateur d'archives DeepSeek Chat publié sur GitHub</h3>
+<p>Un outil nommé <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">DeepSeek-Chat-Archive-Migrator</a> permet de migrer ses conversations DeepSeek vers un format autonome, avec conservation des images hébergées et continuité du persona. Projet open-source utile pour ceux qui veulent préserver leur historique de conversation hors de la plateforme.</p>
+<p>Source : <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">github.com/selsie/DeepSeek-Chat-Archive-Migrator</a></p>
+<h2>Méthodes et retours d'expérience</h2>
+<h3>L'IA a rendu l'auto-hébergement amusant de nouveau</h3>
+<p>Article de <a href="https://janlukas.blog/posts/ai-self-hosting">Jan-Lukas Else</a> (216 points sur HN, 123 commentaires) racontant comment les agents de codage alimentés par IA ont transformé sa pratique de l'auto-hébergement : configurer NixOS déclarativement, construire une image bootc personnalisée, automatiser les déploiements Docker Compose.</p>
+<p>L'auteur note que les technologies qu'il trouvait intéressantes mais trop ardues à apprendre seul (NixOS, bootc) sont devenues accessibles parce qu'il peut demander à un agent de l'aider sans avoir besoin de tout comprendre au préalable. Il apprend en chemin, ajuste ses configurations, et ce qui prenait une semaine auparavant prend maintenant quelques heures.</p>
+<p>Pour celui qui utilise déjà des agents de codage (OpenCode, Codex CLI) et des outils d'orchestration locaux, cet article résonne particulièrement. C'est un témoignage réel, pas une publicité, sur l'impact des assistants IA sur l'auto-hébergement — et sur la façon dont ils réduisent la friction entre une idée d'infrastructure et sa réalisation.</p>
+<p>Source : <a href="https://janlukas.blog/posts/ai-self-hosting">janlukas.blog/posts/ai-self-hosting</a> · Présent sur <a href="https://news.ycombinator.com/item?id=50660180">HN</a>, <a href="https://lobste.rs/s/xsjwvi/ai-made-self-hosting-fun-again">Lobsters</a>, et relayé dans <a href="https://www.reddit.com/r/DeepSeek/comments/1y68cnr/">/r/DeepSeek</a>.</p>
+<h2>Volume</h2>
+<p>57 posts publiés dans l'intervalle, 7 retenus, 50 écartés — taux de rétention 12 %.</p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/DeepSeek — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille d'aujourd'hui provient surtout des relais Hacker News et Lobsters relayés dans le subreddit ; le subreddit lui-même est resté calme. Trois sujets dominent : un guide détaillé d'inférence locale pour DeepSeek sur matériel AMD grand public, une nouvelle offre de recherche de Kimi/Moonshot, et une clarification sur l'exécution de GLM 5.3-Flash sur carte unique 24 Go. Les signalements chinois sur la mémoire haute bande passante relancent les débats sur les capacités locales de production.</p>
+<h2>Modèles et poids</h2>
+<h3>Kimi for Science — jusqu'à 20 000 $ de crédits API pour la recherche</h3>
+<p>Moonshot (la société derrière Kimi) lance un programme destiné aux chercheurs en sciences naturelles, ingénierie et domaines connexes : les équipes sélectionnées reçoivent jusqu'à 20 000 $ de crédits d'utilisation de l'API Kimi (environ 7 milliards de tokens). Candidatures ouvertes jusqu'au 8 décembre pour la première cohorte. Le programme inclut un support technique dédié et un accès anticipé aux nouveaux modèles.</p>
+<p>Cette initiative place Kimi en concurrence directe avec DeepSeek comme fournisseur d'accès économique à des modèles de raisonnement avancés. Pour un chercheur ou un développeur qui suit l'écosystème, c'est une information à surveiller : si les modèles Kimi gagnent en popularité auprès des laboratoires, cela pourrait modifier l'équilibre des coûts et des parts de marché dans les modèles ouverts et à bas prix.</p>
+<p>Source : <a href="https://www.kimi.ai/news/kimi-for-science-program">Kimi for Science</a> · Voir aussi sur <a href="https://news.ycombinator.com/item?id=50665920">Hacker News</a> (36 points, 8 commentaires).</p>
+<h3>Discussion sur un « nouveau » modèle dans le subreddit /r/DeepSeek</h3>
+<p>Un fil très actif (plus de 130 votes, 41 commentaires) titré simplement « New??? » a circulé dans le subreddit. Sans contenu extrait accessible via le collecteur, il semble s'agir de rumeurs ou de captures d'écran relatives à une mise à jour du modèle DeepChat. Les commentaires évoquent une amélioration des capacités, mais aucun communiqué officiel n'a été trouvé à ce jour. À confirmer.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y5s1zk/">reddit.com/r/DeepSeek/comments/1y5s1zk</a></p>
+<h3>Huawei se préparerait à publier une puce mémoire nouvelle génération</h3>
+<p>Des rumeurs signalent que Huawei Technologies prépare l'annonce d'une puce mémoire à large bande passante susceptible de surpasser les offres actuelles de Samsung Electronics et SK Hynix. Le lancement devrait inclure la production chinoise d'un composant clé actuellement bloqué par les sanctions américaines.</p>
+<p>Le fil sur le subreddit cumule plus de 300 votes et 56 commentaires, signe d'un fort intérêt. Si ces rumeurs sont fondées, cela représenterait une avancée majeure pour l'auto-suffisance chinoise dans les puces destinées au calcul IA, contournant potentiellement les restrictions d'exportation américaines.</p>
+<p>Sources : <a href="https://www.reddit.com/r/DeepSeek/comments/1y63lvy/">reddit.com/r/DeepSeek/comments/1y63lvy</a> · <a href="https://www.reddit.com/r/DeepSeek/comments/1y68203/">reddit.com/r/DeepSeek/comments/1y68203</a></p>
+<h2>Prix, accès et quotas</h2>
+<h3>DeepSeek affiche le quota restant quand il est bas et retire l'édition de message</h3>
+<p>L'application DeepSeek modifie son interface : lorsque le quota quotidien est faible, le solde restant s'affiche désormais explicitement. Parallèlement, la possibilité de modifier un message envoyée est désactivée jusqu'à ce que le quota soit rechargé. Cette mesure vise probablement à inciter les utilisateurs à consommer leurs crédits avant qu'ils ne s'écoulent.</p>
+<p>Les limites quotidiennes fonctionnent apparemment selon un algorithme non déterministe mêlant nombre de messages et temps d'inactivité : certains utilisateurs ont signalé perdre du quota sans envoyer de message, notamment lors de journées de faible activité.</p>
+<p>Source : <a href="https://www.reddit.com/r/DeepSeek/comments/1y60r3m/">reddit.com/r/DeepSeek/comments/1y60r3m</a></p>
+<h2>Auto-hébergement et quantification</h2>
+<h3>DeepSeek-V4.1-Flash en grande charge sur quatre AMD RX 9070 XT : précision API, coût dérisoire</h3>
+<p>L'article le plus substantiel de cette édition vient de <a href="https://alexselzer.com/posts/large-batch-local-inference/">Alexander Selzer</a> et décrit l'exécution de DeepSeek-V4.1-Flash tel quel (poids MXFP4 originaux, 416 Go) sur quatre Radeon RX 9070 XT (64 Go VRAM total) avec 256 Go de RAM. Le modèle dépasse largement la VRAM disponible ; la plupart des experts sont chargés depuis la RAM.</p>
+<p>Résultats clés (benchmark BIRD text-to-SQL, 500 questions en parallèle) :</p>
+<ul>
+<li>Débit : 228 tokens/s en génération pure, ~360 au pic</li>
+<li>Précision : comparable aux déploiements API du même modèle</li>
+<li>Énergie : 1,29 Wh par mille tokens générés (six à dix fois moins qu'en requête unique)</li>
+<li>Coût réel : inférieur aux tarifs API grâce à l'amortissement du matériel</li>
+</ul>
+<p>L'article détaille également les résultats sur BIRD 2026 (revision avec prompts corrigés) où le débit chute à 155 tok/s en raison de la longueur accrue des prompts, mais la précision demeure identique.</p>
+<p>Ce type de configuration intéresse particulièrement ceux qui utilisent DeepSeek en mode inférence locale pour des charges de travail batch. La conclusion est claire : pour les tâches nécessitant une haute précision sur un grand volume, exécuter le modèle tel quel en auto-hébergement peut battre la API tant en qualité qu'en coût.</p>
+<p>Source : <a href="https://alexselzer.com/posts/large-batch-local-inference/">alexselzer.com/posts/large-batch-local-inference</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50668282">Hacker News</a> (1 point, 0 commentaire — très récent).</p>
+<h3>GLM 5.3-Flash sur carte unique 24 Go — Tensward propose un kit complet</h3>
+<p>Le projet <a href="https://github.com/Tensward/tensward">Tensward</a> publie un exemple d'exécution de GLM 5.3-Flash (modèle public 2-bit UD-Q2_K_XL, 109 Go) sur une seule carte NVIDIA 24 Go. Deux modes disponibles : pinned (environ 128 Go de RAM requis, poids experts maintenus en RAM) et mapped (lecture depuis SSD rapide, moins de RAM).</p>
+<p>Débits mesurés sur L4 : environ 12 tok/s en mode pinned contre 7,7 avec les défauts du moteur. Un prompt de 4 000 tokens se lit en 15 secondes contre 139 secondes par défaut. Le kit (<code>./run.sh</code>) vérifie la machine, installe et démarre sans <code>sudo</code>.</p>
+<p>Bien que ce guide concerne GLM et non DeepSeek, il illustre une tendance générale : les modèles de plus de 100 Go deviennent exécutables sur du matériel grand public grâce à la quantification extrême (Q2). Pour Nicolas, qui travaille avec des modèles ouverts et s'intéresse à l'auto-hébergement, c'est un repère concret sur les limites actuelles du matériel abordable.</p>
+<p>Source : <a href="https://github.com/Tensward/tensward/tree/main/examples/glm-5.3-flash-24gb">github.com/Tensward/tensward</a> · Relayé sur <a href="https://news.ycombinator.com/item?id=50660990">Hacker News</a> (2 points, 0 commentaire).</p>
+<h2>Intégrations et outils tiers</h2>
+<h3>Migrateur d'archives DeepSeek Chat publié sur GitHub</h3>
+<p>Un outil nommé <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">DeepSeek-Chat-Archive-Migrator</a> permet de migrer ses conversations DeepSeek vers un format autonome, avec conservation des images hébergées et continuité du persona. Projet open-source utile pour ceux qui veulent préserver leur historique de conversation hors de la plateforme.</p>
+<p>Source : <a href="https://github.com/selsie/DeepSeek-Chat-Archive-Migrator">github.com/selsie/DeepSeek-Chat-Archive-Migrator</a></p>
+<h2>Méthodes et retours d'expérience</h2>
+<h3>L'IA a rendu l'auto-hébergement amusant de nouveau</h3>
+<p>Article de <a href="https://janlukas.blog/posts/ai-self-hosting">Jan-Lukas Else</a> (216 points sur HN, 123 commentaires) racontant comment les agents de codage alimentés par IA ont transformé sa pratique de l'auto-hébergement : configurer NixOS déclarativement, construire une image bootc personnalisée, automatiser les déploiements Docker Compose.</p>
+<p>L'auteur note que les technologies qu'il trouvait intéressantes mais trop ardues à apprendre seul (NixOS, bootc) sont devenues accessibles parce qu'il peut demander à un agent de l'aider sans avoir besoin de tout comprendre au préalable. Il apprend en chemin, ajuste ses configurations, et ce qui prenait une semaine auparavant prend maintenant quelques heures.</p>
+<p>Pour celui qui utilise déjà des agents de codage (OpenCode, Codex CLI) et des outils d'orchestration locaux, cet article résonne particulièrement. C'est un témoignage réel, pas une publicité, sur l'impact des assistants IA sur l'auto-hébergement — et sur la façon dont ils réduisent la friction entre une idée d'infrastructure et sa réalisation.</p>
+<p>Source : <a href="https://janlukas.blog/posts/ai-self-hosting">janlukas.blog/posts/ai-self-hosting</a> · Présent sur <a href="https://news.ycombinator.com/item?id=50660180">HN</a>, <a href="https://lobste.rs/s/xsjwvi/ai-made-self-hosting-fun-again">Lobsters</a>, et relayé dans <a href="https://www.reddit.com/r/DeepSeek/comments/1y68cnr/">/r/DeepSeek</a>.</p>
+<h2>Volume</h2>
+<p>57 posts publiés dans l'intervalle, 7 retenus, 50 écartés — taux de rétention 12 %.</p>]]></content:encoded>
+</item>
+<item>
+<title>Veille r/opencode — samedi 28 novembre 2026</title>
+<link>https://opware2000.github.io/veille/editions/opencode/2026-11-28.html</link>
+<guid isPermaLink="false">opencode-2026-11-28</guid>
+<pubDate>Sat, 28 Nov 2026 01:21:36 +0100</pubDate>
+<category>r/opencode</category>
+<description><![CDATA[<h1>Veille r/opencode — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille est calme ce samedi. Le subreddit regorge toujours de questions sur les limites du plan gratuit et de comparatifs d'abonnement, mais rien de nouveau d'important sur opencode lui-même cette nuit. Deux signaux techniques méritent toutefois l'attention : une fonctionnalité de compaction native et un gain de 267× sur le contexte MCP.</p>
+<h2>Versions et fonctionnalités</h2>
+<p><strong>OpenCode compaction – prise en charge native du nettoyage du contexte.</strong> La documentation d'OpenCode publie désormais une section consacrée à la « compaction », le mécanisme intégré qui réduit automatiquement la taille du contexte au fil des sessions pour éviter les débordements. L'annonce était partagée dans le subreddit avec peu d'écho (un vote, aucun commentaire), ce qui suggère soit une découverte tardive, soit une fonctionnalité encore peu connue. Le lien : https://opencode.ai/docs/compaction/. Ce n'est pas une nouvelle version d'OpenCode, mais une documentation qui clarifie un mécanisme déjà présent et que beaucoup cherchent à comprendre.</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p>Rien de nouveau sur les modèles pris en charge par OpenCode Go, aucune annonce de changement de prix ou de limite vérifiable ce cycle.</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>Bloque – passerelle MCP hébergée pour les équipes sans département IT.</strong> Un développeur présente Bloque (https://bloque.run), un service de passerelle MCP hébergé pensé pour les petites structures qui n'ont ni ingénieurs dédié ni équipe informatique. L'auteur souligne que les alternatives existantes sont soit trop chères (à partir de 500 $/mois), soit nécessitent une infrastructure maison. Le fil vient d'être posté avec un seul vote et zéro commentaire. Pas encore de dépôt GitHub public identifié ni d'informations sur la licence ; il sera nécessaire de consulter le site pour vérifier ces détails avant toute recommandation.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Réduction de 267× de l'utilisation du contexte MCP.</strong> Octri publie un article détaillé sur une méthode qu'ils ont appliquée pour réduire l'utilisation du contexte dans leurs serveurs MCP d'un facteur jusqu'à 267. L'article explique comment leur architecture a été repensée pour limiter le flux de données vers les modèles tout en conservant la précision des réponses. Pour un utilisateur d'OpenCode qui configure ses propres serveurs MCP ou qui cherche à optimiser ses appels API, c'est un retour d'expérience concret avec des chiffres vérifiables. Lien : https://octri.dev/blog/how-we-reduced-mcp-context-window-usage.</p>
+<h2>Volume</h2>
+<p>Les sources Reddit/r/opencode ne publiant rien de nouveau depuis la dernière collecte (derniers éléments collectés le 30 octobre), la veille s'appuie principalement sur les sources complémentaires. Aucun post pertinent trouvé dans les fichiers bruts de hnrss, simonwillison ou latentspace qui corresponde au critère opencode. 0 post Reddit traité, 2 entrées retenues parmi les sources complémentaires, 66 écartées.</p>
+<p><em>Note : Le journal <code>meta.json</code> indique que la dernière collecte est passée sans erreur (champ <code>errors</code> absent).</em></p>]]></description>
+<content:encoded><![CDATA[<h1>Veille r/opencode — samedi 28 novembre 2026</h1>
+<h2>En bref</h2>
+<p>La veille est calme ce samedi. Le subreddit regorge toujours de questions sur les limites du plan gratuit et de comparatifs d'abonnement, mais rien de nouveau d'important sur opencode lui-même cette nuit. Deux signaux techniques méritent toutefois l'attention : une fonctionnalité de compaction native et un gain de 267× sur le contexte MCP.</p>
+<h2>Versions et fonctionnalités</h2>
+<p><strong>OpenCode compaction – prise en charge native du nettoyage du contexte.</strong> La documentation d'OpenCode publie désormais une section consacrée à la « compaction », le mécanisme intégré qui réduit automatiquement la taille du contexte au fil des sessions pour éviter les débordements. L'annonce était partagée dans le subreddit avec peu d'écho (un vote, aucun commentaire), ce qui suggère soit une découverte tardive, soit une fonctionnalité encore peu connue. Le lien : https://opencode.ai/docs/compaction/. Ce n'est pas une nouvelle version d'OpenCode, mais une documentation qui clarifie un mécanisme déjà présent et que beaucoup cherchent à comprendre.</p>
+<h2>Modèles, fournisseurs, limites et coûts</h2>
+<p>Rien de nouveau sur les modèles pris en charge par OpenCode Go, aucune annonce de changement de prix ou de limite vérifiable ce cycle.</p>
+<h2>Plugins, intégrations et outils annexes</h2>
+<p><strong>Bloque – passerelle MCP hébergée pour les équipes sans département IT.</strong> Un développeur présente Bloque (https://bloque.run), un service de passerelle MCP hébergé pensé pour les petites structures qui n'ont ni ingénieurs dédié ni équipe informatique. L'auteur souligne que les alternatives existantes sont soit trop chères (à partir de 500 $/mois), soit nécessitent une infrastructure maison. Le fil vient d'être posté avec un seul vote et zéro commentaire. Pas encore de dépôt GitHub public identifié ni d'informations sur la licence ; il sera nécessaire de consulter le site pour vérifier ces détails avant toute recommandation.</p>
+<h2>Méthodes et retours d'expérience</h2>
+<p><strong>Réduction de 267× de l'utilisation du contexte MCP.</strong> Octri publie un article détaillé sur une méthode qu'ils ont appliquée pour réduire l'utilisation du contexte dans leurs serveurs MCP d'un facteur jusqu'à 267. L'article explique comment leur architecture a été repensée pour limiter le flux de données vers les modèles tout en conservant la précision des réponses. Pour un utilisateur d'OpenCode qui configure ses propres serveurs MCP ou qui cherche à optimiser ses appels API, c'est un retour d'expérience concret avec des chiffres vérifiables. Lien : https://octri.dev/blog/how-we-reduced-mcp-context-window-usage.</p>
+<h2>Volume</h2>
+<p>Les sources Reddit/r/opencode ne publiant rien de nouveau depuis la dernière collecte (derniers éléments collectés le 30 octobre), la veille s'appuie principalement sur les sources complémentaires. Aucun post pertinent trouvé dans les fichiers bruts de hnrss, simonwillison ou latentspace qui corresponde au critère opencode. 0 post Reddit traité, 2 entrées retenues parmi les sources complémentaires, 66 écartées.</p>
+<p><em>Note : Le journal <code>meta.json</code> indique que la dernière collecte est passée sans erreur (champ <code>errors</code> absent).</em></p>]]></content:encoded>
+</item>
 <item>
 <title>Veille r/LaTeX — samedi 28 novembre 2026</title>
 <link>https://opware2000.github.io/veille/editions/latex/2026-11-28.html</link>
@@ -4992,308 +5134,6 @@ Source : <a href="https://mondary.design/2026/11/craft-anything-comprendre-un-lo
 <p>Sources mentionnées : note d'entrée en bourse d'Anthropic, chiffres officiels IPO.</p>
 <h2>Volume</h2>
 <p>1 vidéo examinée, 5 sujets retenus, 2 clips écartés (ZduisWJpkxE clip, IIhDcQY8xHk live), aucune transcription manquante.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/bestgithubrepos/2026-11-24.html</link>
-<guid isPermaLink="false">bestgithubrepos-2026-11-24</guid>
-<pubDate>Tue, 24 Nov 2026 00:32:43 +0100</pubDate>
-<category>r/BestGitHubRepos</category>
-<description><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
-<h2>Applications et outils nouveaux</h2>
-<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
-<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
-<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
-<h3>PyBot — Chatbot en Python pur sans modèles</h3>
-<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
-<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
-<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
-<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
-<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
-<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
-<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
-<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
-<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
-<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
-<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
-<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
-<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
-<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
-<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
-<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
-<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
-<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
-<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
-<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
-<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
-<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
-<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
-<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
-<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
-<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
-<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
-<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
-<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
-<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
-<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
-<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
-<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
-<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
-<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
-<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
-<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
-<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
-<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
-<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
-<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
-<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
-<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
-<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
-<h3>ChatWoot — Messagerie client et support multi-canal</h3>
-<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
-<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
-<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
-<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
-<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
-<h3>Kagi Mail — Passage en bêta publique</h3>
-<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
-<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
-<h3>Lexis World — Application créative pour enfants</h3>
-<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
-<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
-<h3>UltraIterator — Galerie interactive de fractales</h3>
-<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
-<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
-<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
-<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
-<a href="https://puresound.app">Lien : https://puresound.app</a></p>
-<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
-<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
-<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
-<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
-<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
-<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
-<h2>Nouvelles et mises à jour</h2>
-<h3>Ladybird passe en phase alpha</h3>
-<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
-<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
-<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
-<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
-<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
-<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
-<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
-<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
-<h3>DeepSeek Harness — Tout est plugin</h3>
-<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
-<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
-<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
-<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
-<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
-<h2>Extensions et greffons</h2>
-<h3>Skills Karpathy pour Claude Code</h3>
-<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
-<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
-<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
-<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
-<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
-<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
-<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
-<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
-<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
-<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
-<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
-<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
-<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
-<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
-<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
-<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
-<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
-<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
-<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
-<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
-<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
-<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
-<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
-<h2>Volume</h2>
-<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/BestGitHubRepos — Mardi 24 novembre 2026</h1>
-<h2>Applications et outils nouveaux</h2>
-<h3>BrowserOS — Navigateur agentic open-source alternatif</h3>
-<p>BrowserOS se présente comme un navigateur web agentic construit à partir de zéro, en Rust, sous licence AGPL-3.0. Il offre une navigation assistée par IA directement intégrée au navigateur, avec support des protocoles MCP et la possibilité d'utiliser plusieurs modèles (Claude, Ollama, LMStudio). L'objectif affiché est de fournir une alternative autonome aux navigateurs IA commerciaux comme ChatGPT Atlas, Perplexity Comet ou Dia. Le projet a rapidement atteint 14 462 étoiles sur GitHub depuis sa publication et fonctionne sur macOS, Windows et Linux. Les données restent contrôlées par l'utilisateur, ce qui le distingue des solutions propriétaires.<br />
-<a href="https://github.com/browseros-ai/BrowserOS">Lien : https://github.com/browseros-ai/BrowserOS</a> — Licence AGPL-3.0 · 14 462 étoiles · Dernière mise à jour : 23/11/2026 · Langage : Rust</p>
-<h3>PyBot — Chatbot en Python pur sans modèles</h3>
-<p>HuggingFace publie PyBot, un chatbot entièrement écrit en Python pur sans poids ni entraînement : tout repose sur des règles explicites. Développé par une « essaim » d'agents lors de son élaboration initiale, il illustre une approche différente du chatbot traditionnel : aucune base de connaissance apprise, uniquement des scripts déterministes. Idéal pour expérimenter la construction de chatbots à partir de zéro sans infrastructure ML. Apache-2.0, 1 143 étoiles.<br />
-<a href="https://github.com/huggingface/pybot">Lien : https://github.com/huggingface/pybot</a> — Licence Apache-2.0 · 1 143 étoiles · Dernière mise à jour : 16/11/2026 · Langage : Python</p>
-<h3>Phonebox — Transformez un vieux smartphone Android en panneau de contrôle bureau</h3>
-<p>Phonebox transforme un ancien téléphone Android en panneau de contrôle personnalisé pour votre espace de travail, compatible Windows, Linux et macOS. 124 widgets et 30 templates couvrant statistiques système, codage IA, médias et automatisation. Connexion USB ou Wi-Fi appairé, fonctionnement hors ligne sans cloud requis, interface traduite en 13 langues. Un excellent moyen de valoriser un terminal obsolete. Gratuit (open-source).<br />
-<a href="https://github.com/ersinkoc/phonebox">Lien : https://github.com/ersinkoc/phonebox</a></p>
-<h3>Wireless Device Battery Monitor — État des batteries sans fil dans la barre des tâches Windows</h3>
-<p>Application légère affichant le niveau de batterie de tous vos périphériques sans fil (souris, casques, claviers, manettes) directement dans la barre des tâches Windows 10/11. Supporte Logitech, Razer, SteelSeries, Corsair, HyperX, Glorious, PS4/PS5 DualSense, Xbox et les appareils Bluetooth. Aucune installation de logiciel fournisseur requise. Apparaît en vue « Rising this week » du manuel gitmanual ; visible également dans des articles de presse libre.<br />
-<a href="https://github.com/krisgfx9/Wireless-Device-Battery-Monitor">Lien : https://github.com/krisgfx9/Wireless-Device-Battery-Monitor</a></p>
-<h3>Fast Anything — Optimisez le 5 % lent sans réécrire toute l'application en Rust</h3>
-<p>Contrairement au mantra « rewrite in Rust », Fast Anything identifie les fonctions critiques consommatrices de temps dans vos applications Python, Node.js ou Ruby, les profile, puis permet de les réécrire avec un agent de codage en vérifiant que chaque fonction optimisée se comporte exactement comme l'originale. Approche pragmatique pour accélérer un programme sans le refaire intégralement.<br />
-<a href="https://github.com/EL4CTEO/fast-anything">Lien : https://github.com/EL4CTEO/fast-anything</a></p>
-<h3>Rust Anything — Réécrivez progressivement votre application dans un autre langage</h3>
-<p>Projet complémentaire de Fast Anything : réécrit l'entièreté d'une application dans un autre langage (TypeScript, Python, C, Go, Ruby, Java), morceau par morceau, en vérifiant à chaque étape que le comportement enregistré correspond. CLI, serveurs HTTP et bibliothèques pris en charge. Un cadre structuré pour migrations linguistiques.<br />
-<a href="https://github.com/erkamyaman/rust-anything">Lien : https://github.com/erkamyaman/rust-anything</a></p>
-<h3>Seelen-UI — Environnement de bureau Windows entièrement personnalisable</h3>
-<p>Interface desktop alternative pour Windows 10/11 offrant un haut degré de personnalisation, apparue dans les vues récemment consultées du gitmanual. Un élément qui mérite d'être surveillé car potentiellement adapté à un workflow spécifique.<br />
-<a href="https://github.com/eythaann/Seelen-UI">Lien : https://github.com/eythaann/Seelen-UI</a></p>
-<h3>LocalCode — Programmation agentic locale sur Mac en une commande</h3>
-<p>Dépôt publié sur Hacker News (7 points) permettant de lancer un environnement de programmation agentic local sur Mac à partir d'une seule commande. Alternative locale aux éditeurs en ligne SaaS. Un déploiement simple pour tester le concept avant adoption.<br />
-<a href="https://github.com/mjwsolo/localcode">Lien : https://github.com/mjwsolo/localcode</a></p>
-<h3>Hammerspoon 2 — Automatisation macOS rewriting complète en JavaScript</h3>
-<p>La première bêta de Hammerspoon 2 est publiée : rewriting complète de l'outil d'automatisation macOS populaire, remplaçant Lua par JavaScript via le moteur JavaScriptCore de Safari. Requiert macOS 27 ou plus récent. Configuration séparée de Hammerspoon 1 pour cohabitation pendant la transition. Évolution majeure d'un outil très utilisé par les administrateurs macOS.<br />
-<a href="https://www.hammerspoon.org/">Lien : https://www.hammerspoon.org/</a></p>
-<h3>Win4Wine — Exécutez l'interface Windows sur Linux via Wine</h3>
-<p>Projet HN (24 points, 9 commentaires) permettant de faire tourner l'interface Windows complète (bureau, menu démarrer, explorateur de fichiers) sur Linux grâce à Wine. Une proposition audacieuse si l'objectif est de rendre l'environnement Linux acceptable pour certains usages professionnels sans machine virtuelle lourde.<br />
-<a href="https://github.com/mikuta0407/win4wine">Lien : https://github.com/mikuta0407/win4wine</a></p>
-<h3>Nospeaker — Faites parler le trackpad MacBook via son moteur haptique</h3>
-<p>Application originaleHN (44 points) utilisant le moteur haptique du trackpad MacBook comme haut-parleur. Transforme un composant normalement silencieux en dispositif audio, une utilisation non conventionnelle du matériel existant. Intéressant d'un point de vue ingénierie et expérimentation matérielle.<br />
-<a href="https://github.com/os6/nospeaker">Lien : https://github.com/os6/nospeaker</a></p>
-<h3>GoVault — Client Bitwarden natif en Go avec CLI</h3>
-<p>Client VPN/passowrd manager Bitwarden écrit en Go, avec une interface native et un CLI compatible avec le binaire <code>bw</code> officiel. Alternative légère si vous préférez éviter les applications Electron.<br />
-<a href="https://github.com/txchen/govault">Lien : https://github.com/txchen/govault</a></p>
-<h3>Thir — Noyau Linux 6.12 avec environnement utilisateur entièrement en Rust</h3>
-<p>Projet ambitieux exécutant Linux 6.12 avec un userspace complet écrit en Rust et une interface graphique frame-buffer, sans X11 ni Wayland. Expérience technique intéressante mais destinée aux curieux plus qu'à un usage quotidien.<br />
-<a href="https://github.com/Adhishtanaka/thir">Lien : https://github.com/Adhishtanaka/thir</a></p>
-<h3>Taskcue — Tableau de suivi des sessions Claude Code et Codex</h3>
-<p>Application permettant de visualiser quelles sessions Claude Code ou Codex en attente nécessitent votre intervention. Interface simple, orienté productivité. Apparaît sur HN et dans la shortlist Reddit.<br />
-<a href="https://github.com/taskcue/taskcue">Lien : https://github.com/taskcue/taskcue</a></p>
-<h3>PortReaper — Trouvez et tuez les nœuds zombies</h3>
-<p>Outil léger de nettoyage réseau trouvant et fermant les connexions zombie sur vos machines. Simple mais utile en environnement de développement où les processus orphelins s'accumulent.<br />
-<a href="https://github.com/amitgal45/portreaper">Lien : https://github.com/amitgal45/portreaper</a></p>
-<h3>DataCat (Replit) — Observabilité auto-hébergée</h3>
-<p>Plateforme Replit fournissant métriques, logs, traces, tableaux de bord et alertes pour l'observabilité auto-hébergée. Stockage dans PostgreSQL ou ClickHouse, accepte les données OpenTelemetry. Alternative complète à Datadog/Sentry en mode self-hosted.<br />
-<a href="https://github.com/replit/datacat">Lien : https://github.com/replit/datacat</a></p>
-<h3>ChatWoot — Messagerie client et support multi-canal</h3>
-<p>Plateforme open-source de messagerie client, e-mail, support et desk en multi-canal. Alternative reconnue à Intercom, Zendesk et Salesforce Service Cloud. Utilisé par des milliers d'entreprises pour leur support client.<br />
-<a href="https://github.com/chatwoot/chatwoot">Lien : https://github.com/chatwoot/chatwoot</a></p>
-<h3>Deskflow — Partagez clavier et souris entre ordinateurs</h3>
-<p>Logiciel partageant un seul clavier et une seule souris entre plusieurs ordinateurs connectés. Alternative open-source à Synergy et Barrier. Indispensable si vous utilisez plusieurs machines côte à côte.<br />
-<a href="https://github.com/deskflow/deskflow">Lien : https://github.com/deskflow/deskflow</a></p>
-<h3>Kagi Mail — Passage en bêta publique</h3>
-<p>Kagi lance sa bêta publique pour Kagi Mail, leur service d'e-mail axé sur la confidentialité et payant. Non open-source mais mentionné sur HN (64 points, 29 commentaires) avec intérêt notable. À suivre.<br />
-<a href="https://blog.kagi.com/kagi-mail-public-beta">Lien : https://blog.kagi.com/kagi-mail-public-beta</a></p>
-<h3>Lexis World — Application créative pour enfants</h3>
-<p>Application de jeu éducative développée pendant quatre ans : un personnage nommé Lexi vit sur une petite planète et les enfants tapent le nom d'animaux et de plantes qui rejoignent ce monde. Clavier limitant aux mots reconnus. Créatif et bien pensé. Gratuit.<br />
-<a href="https://lexisworld.org">Lien : https://lexisworld.org</a></p>
-<h3>UltraIterator — Galerie interactive de fractales</h3>
-<p>Présentation interactive de fractales renderées en live (port vers web avec GPU/CPU) sur mobile et desktop. Projet artistique visuel, jouissif à explorer. Source code disponible sur GitHub.<br />
-<a href="https://danwills.github.io/ultraiterator/">Lien : https://danwills.github.io/ultraiterator/</a></p>
-<h3>PureSound — Mixage audio ambiant pour sommeil et concentration</h3>
-<p>Application iOS gratuite mélangeant enregistrements de terrain (pluie, vagues, feu de bois) avec synthétiseurs accordés automatiquement, bruits blancs et tonalités binaurales. Pas besoin de compte, pas de publicités. Pour dormir, se calmer ou se concentrer.<br />
-<a href="https://puresound.app">Lien : https://puresound.app</a></p>
-<h3>Situational Monitor — Tableau de bord géopolitique temps réel</h3>
-<p>Dashboard temps réel de surveillance des nouvelles mondiales, marchés financiers et événements géopolitiques. Apparu dans les vues récemment consultées du gitmanual.<br />
-<a href="https://github.com/hipcityreg/situation-monitor">Lien : https://github.com/hipcityreg/situation-monitor</a></p>
-<h3>DeepRubik — Cube de Rubik interactif généré par IA</h3>
-<p>Expérimentation impressionnante générant un cube de Rubik interactif en navigateur avec un appel unique à DeepSeek Flash (coût total : 1,20 $, 87 millions de jetons, taux de hit cache de 99 %). Le code source est dans le dépôt mentionné.<br />
-<a href="https://asamarts.github.io/deeprubik/">Lien : https://asamarts.github.io/deeprubik/</a> — Code : <a href="https://github.com/asamarts/deeprubik">https://github.com/asamarts/deeprubik</a></p>
-<h2>Nouvelles et mises à jour</h2>
-<h3>Ladybird passe en phase alpha</h3>
-<p>Le navigateur Ladybird développé par la société SerenityOS annonce officiellement son entrée en phase alpha. Article noté 534 points sur HN avec 142 commentaires. Ladybird est un navigateur indépendant écrit en C++, conçu comme une alternative moderne aux moteurs Blink, WebKit et Gecko. Son passage en alpha marque une étape significative pour un projet ambitieux dans l'espace navigateur open-source.<br />
-<a href="https://ladybird.org/posts/alpha/">Lien : https://ladybird.org/posts/alpha/</a></p>
-<h3>OpenClaw franchit la barre des 395 000 étoiles</h3>
-<p>L'assistant IA personnel multi-plateforme OpenClaw franchit le cap symbolique des 395 000 étoiles sur GitHub, devenant l'un des projets les plus populaires du site. Basé sur TypeScript, MIT, il promet « l'IA qui fait vraiment des choses » sur tout OS. Sa croissance continue signale un fort intérêt pour les assistants IA autonomes auto-hébergés.<br />
-<a href="https://github.com/openclaw/openclaw">Lien : https://github.com/openclaw/openclaw</a></p>
-<h3>WinRust remplace les composants de base de Windows par du Rust</h3>
-<p>Projet apparu dans les vues récentes du gitmanual proposant un shell Windows écrit intérement en Rust : barre des tâches, gestionnaire de fichiers, recherche NTFS, gestionnaire de tâches, nettoyeur de disque — le tout livré dans un seul exécutable installable. Ambitionneusement radical mais techniquement stimulant.<br />
-<a href="https://github.com/Lemxy/WinRust">Lien : https://github.com/Lemxy/WinRust</a></p>
-<h3>DeepSeek Harness — Tout est plugin</h3>
-<p>DeepSeek publie son propre « harness » déclarant « Everything is a Plugin ». Dans un écosystème où le modèle devienne progressivement une commodité, ces frameworks de plugins cherchent à verrouiller l'usage autour d'une plateforme spécifique. À observer de près.<br />
-<a href="https://github.com/deepseek-ai/deepseek-harness">Lien : https://github.com/deepseek-ai/deepseek-harness</a></p>
-<h3>RAgent — Orchestration LLM multi-agent en Rust</h3>
-<p>Framework de codage assisté par IA écrit en Rust avec support de nombreux fournisseurs de modèles et orchestration complexe d'agents LLM multiples. Apparaît dans les vues récentes du gitmanual. Rust pour la performance d'orchestration ? Original.<br />
-<a href="https://github.com/thawkins/ragent">Lien : https://github.com/thawkins/ragent</a></p>
-<h2>Extensions et greffons</h2>
-<h3>Skills Karpathy pour Claude Code</h3>
-<p>Andrej Karpathy publie un fichier CLAUDE.md unique visant à améliorer le comportement de Claude Code en matière de codage, dérivé de ses observations personnelles sur les pièges fréquents des LLM en production logicielle. Simple mais potentiellement efficace pour ceux qui utilisent Claude Code quotidiennement.<br />
-<a href="https://github.com/multica-ai/andrej-karpathy-skills">Lien : https://github.com/multica-ai/andrej-karpathy-skills</a></p>
-<h3>Motion-graphics-skill — Montage vidéo sans After Effects</h3>
-<p>Skill pour Claude Code, Codex et Cursor permettant de planifier, animer, monter, sous-titrer et sonoriser des vidéos complètes, rendues localement sans After Effects. Promet un pipeline de production vidéo intégré au flux de codage.<br />
-<a href="https://github.com/mattypark/Motion-graphics-skill">Lien : https://github.com/mattypark/Motion-graphics-skill</a></p>
-<h3>Hallmark — Skill anti-AI-slop pour designs propres</h3>
-<p>Skill conçue spécifiquement pour Claude Code, Cursor et Codex afin de produire des interfaces avec un design soigné plutôt que le style standard des interfaces générées par IA. Réponse directe à la prolifération de designs « AI-generated-looking ».<br />
-<a href="https://github.com/Nutlope/hallmark">Lien : https://github.com/Nutlope/hallmark</a></p>
-<h3>Stick-scene — Dessin animé de bonshommes allumettes</h3>
-<p>Skill produisant des animations de stick figures pour illustrer des concepts visuels dans des présentations ou tutoriels. Léger et adaptable.<br />
-<a href="https://github.com/nilbuild/stick-scene">Lien : https://github.com/nilbuild/stick-scene</a></p>
-<h3>Sprite-stacking — Sprites pixel-art en faux 3D</h3>
-<p>Skill transformant quatre vues pixel-art en sprites pseudo-3D rotatifs. Fonctionne avec Claude Code, Codex, Cursor, OpenCode, Gemini CLI et Pi. Utile pour le game development.<br />
-<a href="https://github.com/danielwh2/sprite-stacking">Lien : https://github.com/danielwh2/sprite-stacking</a></p>
-<h3>PonyTail — Compétence agent IA paresseux intelligent</h3>
-<p>Compétence promettant de faire penser l'agent comme « le développeur senior le plus fainéant de la pièce ». Philosophie : le meilleur code est celui que vous n'avez pas écrit. Prône les raccourcis intelligents et les abstractions réduisant le volume de code produit.<br />
-<a href="https://github.com/DietrichGebert/ponytail">Lien : https://github.com/DietrichGebert/ponytail</a></p>
-<h3>Aaf-gate — Portail politique et interrupteur d'urgence pour agents IA</h3>
-<p>Système de « kill switch » pouvant désactiver instantanément les agents IA malveillants au sein des réseaux d'entreprise. Apparait sur HN. Partie du mouvement croissant de garde-fous sécurité pour les systèmes multi-agents.<br />
-<a href="https://github.com/buberlo/aaf-gate">Lien : https://github.com/buberlo/aaf-gate</a></p>
-<h3>Inbox Envoy — Compétence de tri automatique d'e-mails pour votre agent IA</h3>
-<p>Skill open-source pour classifier et répondre intelligemment aux e-mails entrants lorsqu'on utilise son propre agent IA comme assistant. Contrôle total des données, contrairement aux solutions cloud.<br />
-<a href="https://github.com/salespeak-ai/inbox-envoy">Lien : https://github.com/salespeak-ai/inbox-envoy</a></p>
-<h2>Volume</h2>
-<p>~4092 posts traités dans l'intervalle (Reddit + sources complémentaires), ~26 retenus, ~300+ écartés. Note : la shortlist est tronquée (300 éléments retenus sur 451 possibles) ; des sujets peuvent manquer dans les JSONL bruts les plus anciens.</p>]]></content:encoded>
-</item>
-<item>
-<title>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</title>
-<link>https://opware2000.github.io/veille/editions/lovingopensourceai/2026-11-24.html</link>
-<guid isPermaLink="false">lovingopensourceai-2026-11-24</guid>
-<pubDate>Tue, 24 Nov 2026 00:21:22 +0100</pubDate>
-<category>r/LovingOpenSourceAI</category>
-<description><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Ladybird atteint sa version alpha et suscite un vif intérêt sur Hacker News (534 points). La mise à jour Kolibri 1.1 d'Aleph Alpha introduit une nouvelle architecture sparse attention. Un outil de vérification d'utilisation GPU en terminal fait son apparition sur le subreddit.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Nospeaker — Faire parler le pavé tactile de votre MacBook</strong><br />
-Un outil open source qui utilise la capacité haptique du pavé MaggyTrack pour restituer des sons et notifications via les vibrations plutôt que l'audio. Conçu par défaut dans un but d'accessibilité et d'intimité, il offre une alternative discrète aux alertes sonores. Le projet est sous licence MIT, entièrement gratuit, et a déjà récolté 1398 étoiles sur GitHub depuis son lancement fin novembre 2026. https://github.com/os6/nospeaker</p>
-<p><strong>XNU Linux — Interface graphique OS X dans un conteneur utilisateur sous Linux</strong><br />
-Le projet XNU Linux propose d'exécuter le système de fenêtres et l'interface macOS complète (docks, menus, Finder) au sein d'un environnement utilisateur Linux. C'est un portage complet du composant GUI d'OS X sur le noyau Linux. Pas encore de licence claire affichée, mais 1963 étoiles et des développements actifs ce jour même. https://github.com/AFK-surf/xnulinux</p>
-<p><strong>win4wine — Lancer l'environnement Windows comme bureau Linux via Wine</strong><br />
-Une approche originale qui s'appuie sur Wine pour exécuter le shell Windows (explorer.exe) directement sur un bureau Linux. L'objectif est de bénéficier d'une expérience Windows sans virtualisation lourde ni dual boot. Projet sous licence LGPL-2.1, environ 288 étoiles sur GitHub. https://github.com/mikuta0407/win4wine</p>
-<p><strong>Please CLI — Assistant IA en ligne de commande avec pontage SSH et moteur Metal 4</strong><br />
-Un outil en ligne de commandes qui permet d'interagir avec un modèle local en langage naturel. Toutes les inférences restent sur la machine locale (poids GPT-OSS chargés une fois, vérifiables par somme SHA-256). La fonctionnalité distinctive est le bridging : possibilité de lancer <code>please</code> dans un conteneur Docker ou une coquille distante tout en gardant les poids et le calcul sur la machine hôte, via forwarding socket SSH. Installation via Homebrew ou script direct. Rust. Début novembre 2026. https://github.com/xhjkl/please</p>
-<p><strong>GpuTaskMan — Moniteur d'utilisation GPU en terminal</strong><br />
-Un utilitaire terminal qui affiche les processus utilisant la mémoire vidéo GPU en temps réel. Utile quand un modèle local remplit le tampon graphique : chaque processus est identifié avec son empreinte mémoire propre, permettant de vérifier exactement quelle application consomme quoi. Dépôt partagé sur le subreddit r/LovingOpenSourceAI. https://www.reddit.com/r/LovingOpenSourceAI/comments/1y3i5zr/gputaskman_is_a_terminal_tool_to_see_the_programs/</p>
-<p><strong>News Blocklist — Liste DNS de blocage de 14 000 sites d'actualités</strong><br />
-Un projet né de la frustration face à l'invasion des nouvelles et de l'actualité dans la consommation quotidienne. Liste DNS permettant de bloquer plus de 14 000 sites de presse et d'actualité à l'échelle du réseau. Extension Mac fournie initialement, extension possible pour tout dispositif supportant les listes DNS. Libre. https://github.com/ruairidhflint/news-blocklist</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Ladybird — Navigateur libre en version alpha</strong><br />
-Ladybird, le navigateur développé à partir de zéro par l'équipe SerenityOS (et non un fork d'un moteur existant), passe officiellement en phase alpha. Le moteur HTML/CSS/Javascript est maison, écrit en C++. Les versions alpha sont disponibles pour macOS et Linux, avec un canal de mises à jour automatiques. Le navigateur supporte WebDriver pour les tests automatisés et le protocole Firefox DevTools. Il reconnaît qu'il s'agit d'une alpha — certains sites ne fonctionneront pas et des crashes sont possibles, d'où un système de signalement intégré. Très fort écho sur Hacker News (534 points, 142 commentaires). https://ladybird.org/posts/alpha/</p>
-<p><strong>Kolibri 1.1 — Modèle open-weights Aleph Alpha optimisé</strong><br />
-Aleph Alpha publie Kolibri 1.1, évolution de son modèle anglais-allemand open-weights de 75 milliards de paramètres (3 milliards actifs). Nouvelle architecture sparse attention, efficacité améliorée : 3,4 × moins de temps GPU par tâche que la version 1.0, scores supérieurs en mathématiques, code, instruction-following et traduction germano-anglaise. Licence Apache 2.0, disponible sur Hugging Face avec supports vLLM et transformers officiels. Construit et formé en Allemagne sous droit européen. https://aleph-alpha.com/en/blog/kolibri-1-1/</p>
-<p><strong>GLM-5.4 — Nouveau modèle de codage avec « Loop Transformer »</strong><br />
-Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant sur un nouvel architecture appelée Loop Transformer. Disponible pour tous les utilisateurs inscrits au plan de codage GLM. Fort écho sur Hacker News (189 points, 84 commentaires). https://z.ai/blog/glm-5.4</p>
-<h2>Extensions et greffons</h2>
-<p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
-<h2>Volume</h2>
-<p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>]]></description>
-<content:encoded><![CDATA[<h1>Veille r/LovingOpenSourceAI — mardi 24 novembre 2026</h1>
-<h2>En bref</h2>
-<p>Ladybird atteint sa version alpha et suscite un vif intérêt sur Hacker News (534 points). La mise à jour Kolibri 1.1 d'Aleph Alpha introduit une nouvelle architecture sparse attention. Un outil de vérification d'utilisation GPU en terminal fait son apparition sur le subreddit.</p>
-<h2>Applications et outils nouveaux</h2>
-<p><strong>Nospeaker — Faire parler le pavé tactile de votre MacBook</strong><br />
-Un outil open source qui utilise la capacité haptique du pavé MaggyTrack pour restituer des sons et notifications via les vibrations plutôt que l'audio. Conçu par défaut dans un but d'accessibilité et d'intimité, il offre une alternative discrète aux alertes sonores. Le projet est sous licence MIT, entièrement gratuit, et a déjà récolté 1398 étoiles sur GitHub depuis son lancement fin novembre 2026. https://github.com/os6/nospeaker</p>
-<p><strong>XNU Linux — Interface graphique OS X dans un conteneur utilisateur sous Linux</strong><br />
-Le projet XNU Linux propose d'exécuter le système de fenêtres et l'interface macOS complète (docks, menus, Finder) au sein d'un environnement utilisateur Linux. C'est un portage complet du composant GUI d'OS X sur le noyau Linux. Pas encore de licence claire affichée, mais 1963 étoiles et des développements actifs ce jour même. https://github.com/AFK-surf/xnulinux</p>
-<p><strong>win4wine — Lancer l'environnement Windows comme bureau Linux via Wine</strong><br />
-Une approche originale qui s'appuie sur Wine pour exécuter le shell Windows (explorer.exe) directement sur un bureau Linux. L'objectif est de bénéficier d'une expérience Windows sans virtualisation lourde ni dual boot. Projet sous licence LGPL-2.1, environ 288 étoiles sur GitHub. https://github.com/mikuta0407/win4wine</p>
-<p><strong>Please CLI — Assistant IA en ligne de commande avec pontage SSH et moteur Metal 4</strong><br />
-Un outil en ligne de commandes qui permet d'interagir avec un modèle local en langage naturel. Toutes les inférences restent sur la machine locale (poids GPT-OSS chargés une fois, vérifiables par somme SHA-256). La fonctionnalité distinctive est le bridging : possibilité de lancer <code>please</code> dans un conteneur Docker ou une coquille distante tout en gardant les poids et le calcul sur la machine hôte, via forwarding socket SSH. Installation via Homebrew ou script direct. Rust. Début novembre 2026. https://github.com/xhjkl/please</p>
-<p><strong>GpuTaskMan — Moniteur d'utilisation GPU en terminal</strong><br />
-Un utilitaire terminal qui affiche les processus utilisant la mémoire vidéo GPU en temps réel. Utile quand un modèle local remplit le tampon graphique : chaque processus est identifié avec son empreinte mémoire propre, permettant de vérifier exactement quelle application consomme quoi. Dépôt partagé sur le subreddit r/LovingOpenSourceAI. https://www.reddit.com/r/LovingOpenSourceAI/comments/1y3i5zr/gputaskman_is_a_terminal_tool_to_see_the_programs/</p>
-<p><strong>News Blocklist — Liste DNS de blocage de 14 000 sites d'actualités</strong><br />
-Un projet né de la frustration face à l'invasion des nouvelles et de l'actualité dans la consommation quotidienne. Liste DNS permettant de bloquer plus de 14 000 sites de presse et d'actualité à l'échelle du réseau. Extension Mac fournie initialement, extension possible pour tout dispositif supportant les listes DNS. Libre. https://github.com/ruairidhflint/news-blocklist</p>
-<h2>Nouveautés et mises à jour</h2>
-<p><strong>Ladybird — Navigateur libre en version alpha</strong><br />
-Ladybird, le navigateur développé à partir de zéro par l'équipe SerenityOS (et non un fork d'un moteur existant), passe officiellement en phase alpha. Le moteur HTML/CSS/Javascript est maison, écrit en C++. Les versions alpha sont disponibles pour macOS et Linux, avec un canal de mises à jour automatiques. Le navigateur supporte WebDriver pour les tests automatisés et le protocole Firefox DevTools. Il reconnaît qu'il s'agit d'une alpha — certains sites ne fonctionneront pas et des crashes sont possibles, d'où un système de signalement intégré. Très fort écho sur Hacker News (534 points, 142 commentaires). https://ladybird.org/posts/alpha/</p>
-<p><strong>Kolibri 1.1 — Modèle open-weights Aleph Alpha optimisé</strong><br />
-Aleph Alpha publie Kolibri 1.1, évolution de son modèle anglais-allemand open-weights de 75 milliards de paramètres (3 milliards actifs). Nouvelle architecture sparse attention, efficacité améliorée : 3,4 × moins de temps GPU par tâche que la version 1.0, scores supérieurs en mathématiques, code, instruction-following et traduction germano-anglaise. Licence Apache 2.0, disponible sur Hugging Face avec supports vLLM et transformers officiels. Construit et formé en Allemagne sous droit européen. https://aleph-alpha.com/en/blog/kolibri-1-1/</p>
-<p><strong>GLM-5.4 — Nouveau modèle de codage avec « Loop Transformer »</strong><br />
-Z.ai annonce GLM-5.4, son nouveau modèle orienté codage généralisé reposant sur un nouvel architecture appelée Loop Transformer. Disponible pour tous les utilisateurs inscrits au plan de codage GLM. Fort écho sur Hacker News (189 points, 84 commentaires). https://z.ai/blog/glm-5.4</p>
-<h2>Extensions et greffons</h2>
-<p>Aucune annonce d'extension ou de greffon pertinent cette veille.</p>
-<h2>Volume</h2>
-<p>23 entrées publiées dans l'intervalle, 7 retenues, 16 écartées.</p>]]></content:encoded>
 </item>
 </channel>
 </rss>
